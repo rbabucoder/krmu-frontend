@@ -1,3 +1,4 @@
+import { getHomePageData } from "@/lib/api/home";
 import ADecade from "./Home/ADecade";
 import AFS from "./Home/AFS";
 import ElevateCampus from "./Home/ElevateCampus";
@@ -12,10 +13,22 @@ import VisitExplore from "./Home/VisitExplore";
 import WhyKRMU from "./Home/WhyKRMU";
 import YourJourney from "./Home/YourJourney";
 
-export default function Home() {
+export default async function Home() {
+  const homepageContent = await getHomePageData();
+
+  const hero = homepageContent.find(
+    (component) => component.__component === "homepage-components.hero-section"
+  );
+
   return (
     <>
-      <HeroSection />
+      {hero && (
+        <HeroSection
+          title={hero.title}
+          subtitle={hero.subtitle}
+          video={hero.HeroSectionVideo}
+        />
+      )}
       <main className="w-full">
         <ADecade />
         <YourJourney />

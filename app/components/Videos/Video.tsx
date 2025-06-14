@@ -1,4 +1,17 @@
-const Video = () => {
+import { StrapiMedia } from "@/lib/types/home";
+
+ 
+ interface VideoProps {
+  video: StrapiMedia | null;
+}
+ 
+ 
+ const Video = ({video} : VideoProps) => {
+  if (!video) return null;
+
+  const videoUrl = `${process.env.NEXT_PUBLIC_STRAPI_API_URL || "http://localhost:1337"}${video.url}`;
+
+  
   return (
     <>
       <video
@@ -9,7 +22,7 @@ const Video = () => {
         playsInline
         preload="none"
       >
-        <source src="/hero-bg.mp4" type="video/mp4" />
+        <source src={videoUrl} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </>
