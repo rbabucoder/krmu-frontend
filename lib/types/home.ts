@@ -6,7 +6,7 @@ export interface StrapiMedia {
   caption: string | null;
   width: number | null;
   height: number | null;
-  formats: any | null;
+  formats: unknown | null;
   hash: string;
   ext: string;
   mime: string;
@@ -14,7 +14,7 @@ export interface StrapiMedia {
   url: string;
   previewUrl: string | null;
   provider: string;
-  provider_metadata: any | null;
+  provider_metadata: unknown | null;
   createdAt: string;
   updatedAt: string;
   publishedAt: string;
