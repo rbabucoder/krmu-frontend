@@ -4,8 +4,8 @@ import Video from "../components/Videos/Video";
 interface HeroSectionProps {
   title: string;
   subtitle: string;
-  video: StrapiMedia | null
-}
+  video: StrapiMedia | null 
+} 
 const HeroSection = ({title, subtitle, video}: HeroSectionProps) => {
   return (
     <>

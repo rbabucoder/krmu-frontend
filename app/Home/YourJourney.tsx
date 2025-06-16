@@ -1,6 +1,14 @@
+import Link from "next/link";
 import HomeYourJourneyForm from "../components/Forms/HomeYourJourneyForm";
+import { Button } from "@/lib/types/home";
 
-const YourJourney = () => {
+interface YourJourneyProps {
+  title: string;
+  content: string;
+  buttons: Button[];
+}
+
+const YourJourney = ({ title, content, buttons }: YourJourneyProps) => {
   return (
     <>
       <section
@@ -16,15 +24,25 @@ const YourJourney = () => {
         <div className="flex flex-col max-w-[1664px] mx-auto w-full py-12 lg:px-[30px] text-white xl:flex-row">
           <div className="w-full xl:w-1/2">
             <h4 className="text-4xl md:text-5xl lg:text-[80px] leading-[1.2] font-semibold my-5 xl:max-w-xl w-full text-center xl:text-left">
-              Your Journey to Excellence Begins Here
+              {title}
             </h4>
-            <p className="xl:max-w-md w-full text-center xl:text-left">
-              Our multidisciplinary approach to education ensures students
-              receive a well-rounded experience, blending theoretical knowledge
-              with real-world applications. As the leading university in
-              Gurugram, we commit to providing students with the necessary
-              skills and knowledge to thrive in the ever-changing world.
+            <p className="xl:max-w-md w-full text-center xl:text-left mb-5">
+              {content}
             </p>
+            <div className="flex items-center gap-16">
+              {buttons &&
+                buttons.map((button, i) => (
+                  <Link
+                    key={i}
+                    className={`text-[#e31e24] bg-white px-5 py-1.5 rounded-md font-bold ${
+                      button.buttonclass || ""
+                    }`}
+                    href={button.buttonlink}
+                  >
+                    {button.buttontext}
+                  </Link>
+                ))}
+            </div>
           </div>
           <div className="w-full xl:w-1/2 flex justify-center mt-10 xl:mt-0 xl:justify-end">
             <div className="max-w-xl w-full lg:my-5">

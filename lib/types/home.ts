@@ -29,8 +29,89 @@ export interface HeroSectionComponent {
   HeroSectionVideo: StrapiMedia | null;
 }
 
+// A-decade section subcomponent
+export interface ADecadeLeftCol {
+  id: number;
+  adecadetitle: string;
+  adecadesubtitle: string;
+  adecadedescription: string;
+  button1text: string;
+  button1link: string;
+  button2text: string;
+  button2link: string;
+}
+export interface ADecadeRightCol {
+  id: number;
+  counter1text: string;
+  counter1content: string;
+  counter2text: string;
+  counter2content: string;
+  counter3text: string;
+  counter3content: string;
+  counter4text: string;
+  counter4content: string;
+}
+// A-decade section main component
+export interface ADecadeSectionComponent {
+  __component: "homepage-components.a-decade-section";
+  id: number;
+  adecadeleftcol: ADecadeLeftCol;
+  adecaderightcol: ADecadeRightCol;
+}
+
+export interface Button {
+  id: number;
+  buttontext: string;
+  buttonlink: string;
+  buttonclass: string;
+}
+
+export interface YourJourneyComponent {
+  __component: "homepage-components.yourjourney";
+  id: number;
+  title: string;
+  description: string;
+  button: Button[];
+}
+
+export interface afsMedia {
+  id: number;
+  documentId: string;
+  name: string;
+  alternativeText: string | null;
+  caption: string | null;
+  width: number;
+  height: number;
+  formats: unknown; // You can define this further if formats structure is known
+  hash: string;
+  ext: string;
+  mime: string;
+  size: number;
+  url: string;
+  previewUrl: string | null;
+  provider: string;
+  provider_metadata: unknown;
+  createdAt: string; // ISO date string
+  updatedAt: string;
+  publishedAt: string;
+}
+
+export interface AFSComponent {
+  __component: "homepage-components.afs-section";
+  afs1content: string;
+  afs2content: string;
+  afs3content: string;
+  afsimage1: afsMedia;
+  afsimage2: afsMedia;
+  afsimage3: afsMedia;
+}
+
 // Full page content union
-export type PageComponent = HeroSectionComponent; // add other components as unions
+export type PageComponent =
+  | HeroSectionComponent
+  | ADecadeSectionComponent
+  | YourJourneyComponent
+  | AFSComponent;
 
 // Home page response structure
 export interface HomePageResponse {
