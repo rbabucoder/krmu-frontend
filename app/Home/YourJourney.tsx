@@ -6,7 +6,7 @@ interface YourJourneyProps {
   title: string;
   content: string;
   buttons: Button[]; 
-}
+} 
 
 const YourJourney = ({ title, content, buttons }: YourJourneyProps) => {
   return (

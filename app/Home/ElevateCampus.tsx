@@ -3,8 +3,27 @@ import Link from "next/link";
 import elevate from "../../public/elevate.webp";
 import discover from "../../public/discover.jpg";
 import fuel from "../../public/fuel.webp";
+import { ElevateCampusContent } from "@/lib/types/home";
+import { StrapiMedia } from "@/lib/types/common";
+import { imageURL } from "../constant";
 
-const ElevateCampus = () => {
+interface ElevateCampusProp {
+  elevateCampus: ElevateCampusContent;
+  elevateCampus2: ElevateCampusContent;
+  elevateCampus3: ElevateCampusContent;
+  elevateImage1: StrapiMedia;
+  elevateImage2: StrapiMedia;
+  elevateImage3: StrapiMedia;
+}
+
+const ElevateCampus = ({
+  elevateCampus,
+  elevateImage1,
+  elevateCampus2,
+  elevateImage2,
+  elevateCampus3,
+  elevateImage3,
+}: ElevateCampusProp) => {
   return (
     <>
       <section className="xl:-mt-[70px]">
@@ -12,78 +31,101 @@ const ElevateCampus = () => {
           <div className="xl:mt-[120px] xl:mb-5 w-full xl:w-1/2 ">
             <div className="p-5 2xl:mb-5 xl:py-[30px] xl:pr-20 xl:pl-[65px] bg-[#e5e6f3] xl:min-h-[503px] h-full">
               <h4 className="text-lg font-semibold mb-3">
-                Elevate Your Campus Life
+                {elevateCampus?.subtitle}
               </h4>
               <h3 className="text-2xl md:text-4xl xl:text-5xl font-semibold leading-[1.5] mb-8">
-                Vibrant <span className="text-[#000e8b]">Events</span> at <br />
-                KRMU
+                {elevateCampus?.beforehighlighttext}{" "}
+                <span className="text-[#000e8b]">
+                  {elevateCampus?.highlighttext}
+                </span>{" "}
+                <br />
+                {elevateCampus?.afterhighlighttext}
               </h3>
-              <p className="mb-5">
-                Explore the vibrant events of K.R. Mangalam University that
-                bring the campus to life. From thought-provoking seminars to
-                electrifying concerts and festivals, our events provide students
-                with endless opportunities to learn, connect, and grow.
-              </p>
-              <Link href="/" className="text-[#000e8b] pb-2">
-                Know More
-              </Link>
+              <p className="mb-5">{elevateCampus?.content}</p>
+              {(elevateCampus.link || elevateCampus.linkclass) && (
+                <Link href={elevateCampus.link} className="text-[#000e8b] pb-2">
+                  {elevateCampus?.linktext}
+                </Link>
+              )}
             </div>
             <div></div>
           </div>
           <div className="w-full xl:w-1/2">
-            <Image src={elevate} alt="Elevate" className="h-full w-full" />
+            <Image
+              src={`${imageURL}${elevateImage1.url}`}
+              alt="Elevate"
+              width={994}
+              height={607}
+              className={`h-full w-full ${elevateCampus?.linkclass}`}
+            />
           </div>
         </div>
         <div className="flex flex-col xl:flex-row">
           <div className="xl:mt-8 xl:mb-5 w-full xl:w-1/2">
             <div className="2xl:mb-8 p-5 xl:py-[30px] xl:pr-20 xl:pl-[65px] bg-[#fce8e9] xl:min-h-[503px] h-full">
               <h4 className="text-lg font-semibold mb-3">
-                Your Journey in a World-Class Campus
+                {elevateCampus2?.subtitle}
               </h4>
               <h3 className="text-2xl md:text-4xl xl:text-5xl font-semibold leading-[1.5] mb-8">
-                Discover
+                {elevateCampus2?.beforehighlighttext}
                 <span className="text-[#e31e24]">
-                  <br className="hidden xl:block" /> Infrastructure and <br className="hidden xl:block" /> Facilities
-                </span> at KRMU
+                  {elevateCampus2?.highlighttext}
+                </span>{" "}
+                {elevateCampus2?.afterhighlighttext}
               </h3>
-              <p className="mb-5">
-                Begin an Exceptional Journey at KRMU’s State-of-the-Art Campus.
-                Discover advanced facilities that enhance your educational
-                endeavors and elevate your campus life experience.
-              </p>
-              <Link href="/" className="text-[#e31e24] pb-2">
-                Know More
-              </Link>
+              <p className="mb-5">{elevateCampus2?.content}</p>
+              {(elevateCampus2?.link || elevateCampus2?.linkclass) && (
+                <Link
+                  href={elevateCampus2?.link}
+                  className={`text-[#e31e24] pb-2 ${elevateCampus2?.linkclass}`}
+                >
+                  {elevateCampus2?.linktext}
+                </Link>
+              )}
             </div>
           </div>
           <div className="w-full xl:w-1/2 xl:min-h-[575px]">
-            <Image src={discover} alt="Elevate" className="h-full w-full" />
+            <Image
+              src={`${imageURL}${elevateImage2?.url}`}
+              alt="Elevate"
+              width={993}
+              height={575}
+              className="h-full w-full"
+            />
           </div>
         </div>
         <div className="flex flex-col xl:flex-row items-center">
           <div className="2xl:mt-8 w-full xl:w-1/2">
             <div className="p-5 xl:mb-5  xl:py-[30px] xl:pr-20 xl:pl-[65px] bg-[#e5eff6] xl:min-h-[503px] h-full">
               <h4 className="text-lg font-semibold mb-3">
-                Elevate Your Campus Life
+                {elevateCampus3?.subtitle}
               </h4>
               <h3 className="text-2xl md:text-4xl xl:text-5xl font-semibold leading-[1.5] mb-8">
-                Discover KRMU’s
+                {elevateCampus3?.beforehighlighttext}
                 <span className="text-[#0060aa]">
-                  <br /> Clubs & Societies
+                  <br /> {elevateCampus3?.highlighttext}
                 </span>
+                {elevateCampus3?.afterhighlighttext}
               </h3>
-              <p className="mb-5">
-                Ignite your passions with KRMU’s diverse clubs & societies. From
-                arts to science, find your community and fuel your interests
-                while creating lasting connections.
-              </p>
-              <Link href="/" className="text-[#0060aa] pb-2">
-                Know More
-              </Link>
+              <p className="mb-5">{elevateCampus3?.content}</p>
+              {(elevateCampus3?.link || elevateCampus3?.linkclass) && (
+                <Link
+                  href={elevateCampus3?.link}
+                  className={`text-[#0060aa] pb-2 ${elevateCampus3?.linkclass}`}
+                >
+                  {elevateCampus3?.linktext}
+                </Link>
+              )}
             </div>
           </div>
           <div className="w-full xl:w-1/2 2xl:min-h-[575px] h-full">
-            <Image src={fuel} alt="Elevate" className="h-full w-full" />
+            <Image
+              src={`${imageURL}${elevateImage3.url}`}
+              alt="Elevate"
+              width={993}
+              height={596}
+              className="h-full w-full"
+            />
           </div>
         </div>
       </section>
