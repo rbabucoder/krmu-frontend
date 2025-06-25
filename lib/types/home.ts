@@ -1,3 +1,5 @@
+import { CounterItem } from "./common";
+
 // Strapi media type
 export interface StrapiMedia {
   id: number;
@@ -106,12 +108,20 @@ export interface AFSComponent {
   afsimage3: afsMedia;
 }
 
+export interface OurTopRecruitComp {
+  __component: "homepage-components.our-top-recruiters";
+  id: number;
+  counter: CounterItem[];
+  logos: StrapiMedia[];
+}
+
 // Full page content union
 export type PageComponent =
   | HeroSectionComponent
   | ADecadeSectionComponent
   | YourJourneyComponent
-  | AFSComponent;
+  | AFSComponent
+  | OurTopRecruitComp;
 
 // Home page response structure
 export interface HomePageResponse {

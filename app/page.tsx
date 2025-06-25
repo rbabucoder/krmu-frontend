@@ -25,18 +25,16 @@ export default async function Home() {
   );
 
   const yourJourneyData = homepageContent.find(
-    (component) =>
-      component.__component === "homepage-components.yourjourney"
+    (component) => component.__component === "homepage-components.yourjourney"
   );
   const AFSData = homepageContent.find(
-    (component) =>
-      component.__component === "homepage-components.afs-section"
+    (component) => component.__component === "homepage-components.afs-section"
   );
-  
 
-
-
-
+  const ourTopRecruitersData = homepageContent.find(
+    (component) =>
+      component.__component === "homepage-components.our-top-recruiters"
+  );
 
   return (
     <>
@@ -48,10 +46,24 @@ export default async function Home() {
         />
       )}
       <main className="w-full">
-        {aDecadeData && <ADecade leftContent={aDecadeData.adecadeleftcol} rightContent={aDecadeData.adecaderightcol} />}
-        {yourJourneyData && <YourJourney title={yourJourneyData.title} content={yourJourneyData.description} buttons={yourJourneyData.button} />}
+        {aDecadeData && (
+          <ADecade
+            leftContent={aDecadeData.adecadeleftcol}
+            rightContent={aDecadeData.adecaderightcol}
+          />
+        )}
+        {yourJourneyData && (
+          <YourJourney
+            title={yourJourneyData.title}
+            content={yourJourneyData.description}
+            buttons={yourJourneyData.button}
+          />
+        )}
         <AFS />
-        <OurTopRecruiters />
+        {ourTopRecruitersData && (
+          <OurTopRecruiters counters={ourTopRecruitersData?.counter} logos={ourTopRecruitersData?.logos} />
+        )}
+
         <PlacementsRecruiters />
         <WhyKRMU />
         <ElevateCampus />

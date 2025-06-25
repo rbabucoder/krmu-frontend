@@ -1,11 +1,16 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // basePath: "nextjs-demo",
-  // output: "export", // Ensures static export of the site
-  // images: {
-  //   unoptimized: true, // Disables Next.js image optimization (only use if needed)
-  // },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "http", // Use http for localhost
+        hostname: "localhost",
+        port: "1337",
+        pathname: "/uploads/**", // Match Strapi media URLs
+      },
+    ],
+  },
 };
 
 export default nextConfig;

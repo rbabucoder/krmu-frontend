@@ -5,7 +5,7 @@ import { Button } from "@/lib/types/home";
 interface YourJourneyProps {
   title: string;
   content: string;
-  buttons: Button[];
+  buttons: Button[]; 
 }
 
 const YourJourney = ({ title, content, buttons }: YourJourneyProps) => {
