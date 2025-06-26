@@ -19,7 +19,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="fixed top-0 left-0 w-full z-10">
+      <header className="fixed top-0 left-0 w-full z-20">
         <div
           className="px-2.5 xl:px-4"
           style={{

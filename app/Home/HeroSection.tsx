@@ -1,4 +1,5 @@
-import { StrapiMedia } from "@/lib/types/home";
+
+import { StrapiMedia } from "@/lib/types/common";
 import Video from "../components/Videos/Video";
 
 interface HeroSectionProps {

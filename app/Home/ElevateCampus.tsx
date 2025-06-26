@@ -1,8 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import elevate from "../../public/elevate.webp";
-import discover from "../../public/discover.jpg";
-import fuel from "../../public/fuel.webp";
 import { ElevateCampusContent } from "@/lib/types/home";
 import { StrapiMedia } from "@/lib/types/common";
 import { imageURL } from "../constant";
