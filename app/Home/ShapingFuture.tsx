@@ -96,7 +96,7 @@ const ShapingFuture = ({
             <div className="lg:w-2/5 lg:mx-8">
               <div className="mt-8">
                 <Image
-                  src={`${imageURL}${shapingimage.url}`}
+                  src={`${shapingimage.url}`}
                   width={292}
                   height={292}
                   style={{

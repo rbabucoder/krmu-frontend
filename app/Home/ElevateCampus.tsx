@@ -49,7 +49,7 @@ const ElevateCampus = ({
           </div>
           <div className="w-full xl:w-1/2">
             <Image
-              src={`${imageURL}${elevateImage1.url}`}
+              src={`${elevateImage1.url}`}
               alt="Elevate"
               width={994}
               height={607}
@@ -83,7 +83,7 @@ const ElevateCampus = ({
           </div>
           <div className="w-full xl:w-1/2 xl:min-h-[575px]">
             <Image
-              src={`${imageURL}${elevateImage2?.url}`}
+              src={`${elevateImage2?.url}`}
               alt="Elevate"
               width={993}
               height={575}
@@ -117,7 +117,7 @@ const ElevateCampus = ({
           </div>
           <div className="w-full xl:w-1/2 2xl:min-h-[575px] h-full">
             <Image
-              src={`${imageURL}${elevateImage3.url}`}
+              src={`${elevateImage3.url}`}
               alt="Elevate"
               width={993}
               height={596}

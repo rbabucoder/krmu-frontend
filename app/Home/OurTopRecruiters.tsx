@@ -7,9 +7,6 @@ interface OurTopRecruitProps {
   logos: StrapiMedia[];
 }
 
-const imageURL = `${
-  process.env.NEXT_PUBLIC_STRAPI_API_URL || "http://localhost:1337"
-}`;
 
 const OurTopRecruiters: React.FC<OurTopRecruitProps> = ({
   title,
@@ -47,7 +44,7 @@ const OurTopRecruiters: React.FC<OurTopRecruitProps> = ({
             >
               {logo.url && (
                 <Image
-                  src={`${imageURL}${logo.url}`}
+                  src={`${logo.url}`}
                   width={logo.width || 154} // Fallback width
                   height={logo.height || 67} // Fallback height
                   alt={logo.alternativeText || "Company Logo"}

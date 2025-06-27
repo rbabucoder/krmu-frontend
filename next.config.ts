@@ -1,23 +1,33 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // images: {
-  //   remotePatterns: [
-  //     {
-  //       protocol: "http", // Use http for localhost
-  //       hostname: "localhost",
-  //       port: "1337",
-  //       pathname: "/uploads/**", // Match Strapi media URLs
-  //     },
-  //   ],
-  // },
-  output: "export",
-  reactStrictMode: true,
   images: {
-    // You don't need to add anything specific for public/ images here.
-    // Next.js allows all public/ assets to be used with no domain config.
-    unoptimized: false, // Ensures optimization is on
+    remotePatterns: [
+      {
+        protocol: "http",
+        hostname: "localhost",
+        port: "1337",
+        pathname: "/uploads/**",
+      },
+      {
+        protocol: "https",
+        hostname: "truthful-cabbage-82fd27e8f6.media.strapiapp.com",
+        pathname: "/**",
+      },
+    ],
   },
 };
 
 export default nextConfig;
+
+// import type { NextConfig } from "next";
+
+// const nextConfig: NextConfig = {
+//   basePath: '/krm-2-test',
+//   output: "export",
+//   images: {
+//     unoptimized: true,
+//   },
+// };
+
+// export default nextConfig;
