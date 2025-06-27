@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { ElevateCampusContent } from "@/lib/types/home";
 import { StrapiMedia } from "@/lib/types/common";
-import { imageURL } from "../constant";
 
 interface ElevateCampusProp {
   elevateCampus: ElevateCampusContent;

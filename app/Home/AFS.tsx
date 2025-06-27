@@ -1,6 +1,5 @@
 import { StrapiMedia } from "@/lib/types/common";
 import Image from "next/image";
-import { imageURL } from "../constant";
 
 interface AFSDataProp {
   content1: string;

@@ -1,7 +1,7 @@
 import { CounterItem, StrapiMedia } from "@/lib/types/common";
 import Image from "next/image";
 import Link from "next/link";
-import { imageURL } from "../constant";
+
 
 interface ShapingFutureProp {
   highlight: string;
