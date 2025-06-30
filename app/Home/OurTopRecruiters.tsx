@@ -44,7 +44,7 @@ const OurTopRecruiters: React.FC<OurTopRecruitProps> = ({
             >
               {logo.url && (
                 <Image
-                  src={`${logo.url}`}
+                  src={`http://localhost:1337${logo.url}`}
                   width={logo.width || 154} // Fallback width
                   height={logo.height || 67} // Fallback height
                   alt={logo.alternativeText || "Company Logo"}

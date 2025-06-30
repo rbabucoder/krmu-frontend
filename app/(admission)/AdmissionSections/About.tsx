@@ -1,8 +1,18 @@
 import AboutCard from "@/app/components/Cards/AboutCard";
 import { aboutCardsData } from "@/lib/constants/about-card";
+import { AchievementsData } from "@/lib/types/admission";
 
+interface AboutWhyChooseProps {
+  achievements: AchievementsData[];
+  achievementstitle: string;
+  achievementsdescriptions: string;
+}
 
-const About = () => {
+const About = ({
+  achievements,
+  achievementstitle,
+  achievementsdescriptions,
+}: AboutWhyChooseProps) => {
   return (
     <>
       <div id="about">
@@ -35,41 +45,24 @@ const About = () => {
             <div className="bg-gradient-to-br from-university-blue to-university-red rounded-2xl p-8 mb-16">
               <div className="text-center mb-8">
                 <h3 className="text-2xl text-white mb-4 font-bold text-[36px]">
-                  Our Achievements
+                  {achievementstitle}
                 </h3>
-                <p className="text-white/90">
-                  Numbers that speak for our excellence
-                </p>
+                <p className="text-white/90">{achievementsdescriptions}</p>
               </div>
               <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 text-center">
-                <div>
-                  <div className="text-3xl text-white mb-2 font-bold">12+</div>
-                  <p className="text-white/80 text-sm">Years of Excellence</p>
-                </div>
-                <div>
-                  <div className="text-3xl text-white mb-2 font-bold">
-                    16,000+
-                  </div>
-                  <p className="text-white/80 text-sm">Alumni Network</p>
-                </div>
-                <div>
-                  <div className="text-3xl text-white mb-2 font-bold">600+</div>
-                  <p className="text-white/80 text-sm">Expert Faculty</p>
-                </div>
-                <div>
-                  <div className="text-3xl text-white mb-2 font-bold">100+</div>
-                  <p className="text-white/80 text-sm">Academic Programs</p>
-                </div>
-                <div>
-                  <div className="text-3xl text-white mb-2 font-bold">50+</div>
-                  <p className="text-white/80 text-sm">Industry Partners</p>
-                </div>
-                <div>
-                  <div className="text-3xl text-white mb-2 font-bold">
-                    ₹56.6L
-                  </div>
-                  <p className="text-white/80 text-sm">Highest Package</p>
-                </div>
+                {achievements &&
+                  achievements.map((achievement) => {
+                    return (
+                      <div key={achievement?.id}>
+                        <div className="text-3xl text-white mb-2 font-bold">
+                          {achievement?.value}
+                        </div>
+                        <p className="text-white/80 text-sm">
+                          {achievement?.content}
+                        </p>
+                      </div>
+                    );
+                  })}
               </div>
             </div>
             <div className="text-center">
@@ -120,6 +113,7 @@ const About = () => {
                     >
                       <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                     </svg>
+                    q
                   </div>
                   <h4 className="text-lg mb-2 text-gray-800">
                     Best Private University

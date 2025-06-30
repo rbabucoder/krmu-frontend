@@ -2,7 +2,7 @@ import { ADecadeLeftCol, ADecadeRightCol } from "@/lib/types/home";
 import Image from "next/image";
 import Link from "next/link";
 
-interface ADecadeProps {
+interface ADecadeProps { 
   leftContent: ADecadeLeftCol;
   rightContent: ADecadeRightCol;
 }

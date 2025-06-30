@@ -12,7 +12,7 @@ import ShapingFuture from "./Home/ShapingFuture";
 import VisitExplore from "./Home/VisitExplore";
 import WhyKRMU from "./Home/WhyKRMU";
 import YourJourney from "./Home/YourJourney";
-
+ 
 export default async function Home() {
   const homepageContent = await getHomePageData();
 

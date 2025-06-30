@@ -21,7 +21,7 @@ const PlacementsRecruiters = ({
           <div className="flex flex-wrap gap-2.5 items-center justify-around">
             <div className="flex items-center gap-2.5">
               <Image
-                src={`${feeImage.url}`}
+                src={`http://localhost:1337${feeImage.url}`}
                 width={38}
                 height={38}
                 alt={title2}
@@ -36,7 +36,7 @@ const PlacementsRecruiters = ({
             </div>
             <div className="flex items-center gap-2.5">
               <Image
-                src={`${scholarImage.url}`}
+                src={`http://localhost:1337${scholarImage.url}`}
                 width={54}
                 height={43}
                 alt={title2}

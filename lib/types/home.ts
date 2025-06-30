@@ -188,7 +188,7 @@ export type PageComponent =
   | FeeStructureScholar
   | whyKRMU
   | ElevateCampus
-  | HomeKRMTestimonial
+  | HomeKRMTestimonial 
   | ShapingFutureType
   | GlobalPartnerType
   | VisitExploreType
