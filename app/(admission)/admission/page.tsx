@@ -20,6 +20,10 @@ const page = async () => {
     (component) =>
       component.__component === "aboutwhychooseus-component.why-choose-us"
   );
+  // const awardsAndRecognitionData = admissionPageContent.find(
+  //   (component) =>
+  //     component.__component === "admissionpage-components.awards-and-recognition"
+  // );
 
   return (
     <>
@@ -27,7 +31,7 @@ const page = async () => {
       {admissionProcess && (
         <AdmissionProcess
           highlighttext={admissionProcess?.highlighttext}
-          beforehighlight={admissionProcess?.beforehighlightext}
+          beforehighlight={admissionProcess?.beforehighlight}
           badgetext={admissionProcess?.badgetext}
           desc={admissionProcess?.description}
           readybtns={admissionProcess?.readytobeginsbtns}
@@ -40,9 +44,16 @@ const page = async () => {
       )}
       {whyChooseData && (
         <About
+          badgeheading={whyChooseData?.badgeheading}
+          blueText={whyChooseData?.titlebluetext}
+          redtext={whyChooseData?.titlehighlighttext}
+          beforeBlue={whyChooseData?.beforetitlebluetext}
+          beforehighlight={whyChooseData?.beforehighlighttitletext}
           achievements={whyChooseData?.ourachievements}
           achievementsdescriptions={whyChooseData?.achievementstitle}
           achievementstitle={whyChooseData?.achievementstitle}
+          maindesc={whyChooseData?.maindescription}
+          awardsTitle={whyChooseData?.awardstitle}
         />
       )}
       <Programs />

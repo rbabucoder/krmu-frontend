@@ -6,12 +6,26 @@ interface AboutWhyChooseProps {
   achievements: AchievementsData[];
   achievementstitle: string;
   achievementsdescriptions: string;
+  blueText: string;
+  redtext: string;
+  beforehighlight: string;
+  beforeBlue: string;
+  maindesc: string;
+  badgeheading: string;
+  awardsTitle: string;
 }
 
 const About = ({
   achievements,
   achievementstitle,
   achievementsdescriptions,
+  blueText,
+  redtext,
+  beforehighlight,
+  beforeBlue,
+  badgeheading,
+  maindesc,
+  awardsTitle,
 }: AboutWhyChooseProps) => {
   return (
     <>
@@ -21,15 +35,14 @@ const About = ({
             <div className="text-center mb-16">
               <div className="inline-block bg-gradient-to-r from-university-red to-university-blue text-white rounded-full px-6 py-3 shadow-lg mb-6">
                 <span className="text-sm uppercase tracking-wide">
-                  Why Choose Us
+                  {badgeheading}
                 </span>
               </div>
               <h2 className="text-4xl md:text-5xl mb-6 text-gray-800 font-bold">
-                What Makes{" "}
-                <span className="text-university-red">
-                  K.R. Mangalam University
-                </span>{" "}
-                The <span className="text-university-blue">Best?</span>
+                {beforehighlight}
+                <span className="text-university-red">{redtext}</span>
+                {beforeBlue}
+                <span className="text-university-blue">{blueText}</span>
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 {`Discover the unique advantages that set us apart as one of
@@ -66,9 +79,7 @@ const About = ({
               </div>
             </div>
             <div className="text-center">
-              <h3 className="text-2xl text-gray-800 mb-8">
-                Awards &amp; Recognition
-              </h3>
+              <h3 className="text-2xl text-gray-800 mb-8">{awardsTitle}</h3>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-white p-6 rounded-xl shadow-lg">
                   <div className="w-16 h-16 bg-university-red rounded-full flex items-center justify-center mx-auto mb-4">
@@ -113,7 +124,6 @@ const About = ({
                     >
                       <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                     </svg>
-                    q
                   </div>
                   <h4 className="text-lg mb-2 text-gray-800">
                     Best Private University

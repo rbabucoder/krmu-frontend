@@ -12,7 +12,7 @@ import ShapingFuture from "./Home/ShapingFuture";
 import VisitExplore from "./Home/VisitExplore";
 import WhyKRMU from "./Home/WhyKRMU";
 import YourJourney from "./Home/YourJourney";
- 
+
 export default async function Home() {
   const homepageContent = await getHomePageData();
 
@@ -74,23 +74,23 @@ export default async function Home() {
     <>
       {hero && (
         <HeroSection
-          title={hero.title}
-          subtitle={hero.subtitle}
-          video={hero.HeroSectionVideo}
+          title={hero?.title}
+          subtitle={hero?.subtitle}
+          video={hero?.HeroSectionVideo}
         />
       )}
       <main className="w-full">
         {aDecadeData && (
           <ADecade
-            leftContent={aDecadeData.adecadeleftcol}
-            rightContent={aDecadeData.adecaderightcol}
+            leftContent={aDecadeData?.adecadeleftcol}
+            rightContent={aDecadeData?.adecaderightcol}
           />
         )}
         {yourJourneyData && (
           <YourJourney
-            title={yourJourneyData.title}
-            content={yourJourneyData.description}
-            buttons={yourJourneyData.button}
+            title={yourJourneyData?.title}
+            content={yourJourneyData?.description}
+            buttons={yourJourneyData?.button}
           />
         )}
         {AFSData && (

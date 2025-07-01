@@ -7,9 +7,16 @@ export interface AchievementsData {
 export interface WhyChoose {
   __component: "aboutwhychooseus-component.why-choose-us";
   id: string;
+  badgeheading: string;
+  titlebluetext: string;
+  titlehighlighttext: string;
+  beforehighlighttitletext: string;
+  maindescription: string;
+  beforetitlebluetext: string;
   achievementstitle: string;
   achievementsdescriptions: string;
   ourachievements: AchievementsData[];
+  awardstitle: string;
 }
 
 export interface readybtn {
@@ -24,7 +31,7 @@ export interface AdmissionProcess {
   __component: "admissionpage-components.admissionprocesscomponent";
   id: number;
   highlighttext: string;
-  beforehighlightext: string;
+  beforehighlight: string;
   badgetext: string;
   description: string;
   title2: string;
