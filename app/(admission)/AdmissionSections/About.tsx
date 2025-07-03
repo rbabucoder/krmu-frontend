@@ -1,4 +1,5 @@
 import AboutCard from "@/app/components/Cards/AboutCard";
+import AwardsRecognitionCard from "@/app/components/Cards/AwardsRecognitionCard";
 import { aboutCardsData } from "@/lib/constants/about-card";
 import { AchievementsData } from "@/lib/types/admission";
 
@@ -80,85 +81,7 @@ const About = ({
             </div>
             <div className="text-center">
               <h3 className="text-2xl text-gray-800 mb-8">{awardsTitle}</h3>
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="bg-white p-6 rounded-xl shadow-lg">
-                  <div className="w-16 h-16 bg-university-red rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="lucide lucide-trending-up w-8 h-8 text-white"
-                      aria-hidden="true"
-                    >
-                      <path d="M16 7h6v6"></path>
-                      <path d="m22 7-8.5 8.5-5-5L2 17"></path>
-                    </svg>
-                  </div>
-                  <h4 className="text-lg mb-2 text-gray-800">
-                    QS I-GAUGE Rating
-                  </h4>
-                  <p className="text-sm text-gray-600">
-                    Diamond Rating for Academic Excellence
-                  </p>
-                </div>
-                <div className="bg-white p-6 rounded-xl shadow-lg">
-                  <div className="w-16 h-16 bg-university-red rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="lucide lucide-shield w-8 h-8 text-white"
-                      aria-hidden="true"
-                    >
-                      <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
-                    </svg>
-                  </div>
-                  <h4 className="text-lg mb-2 text-gray-800">
-                    Best Private University
-                  </h4>
-                  <p className="text-sm text-gray-600">
-                    Delhi NCR Region Award
-                  </p>
-                </div>
-                <div className="bg-white p-6 rounded-xl shadow-lg">
-                  <div className="w-16 h-16 bg-university-red rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="lucide lucide-book-open w-8 h-8 text-white"
-                      aria-hidden="true"
-                    >
-                      <path d="M12 7v14"></path>
-                      <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path>
-                    </svg>
-                  </div>
-                  <h4 className="text-lg mb-2 text-gray-800">
-                    Innovation Excellence
-                  </h4>
-                  <p className="text-sm text-gray-600">
-                    Research &amp; Development Recognition
-                  </p>
-                </div>
-              </div>
+              <AwardsRecognitionCard />
             </div>
           </div>
         </section>

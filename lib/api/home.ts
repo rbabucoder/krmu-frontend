@@ -1,6 +1,7 @@
+import { STRAPI_URL } from "@/app/constant";
 import { HomePageResponse } from "../types/home";
 
-const STRAPI_URL = process.env.STRAPI_API_URL || "http://localhost:1337";
+
 
 export async function getHomePageData(): Promise<HomePageResponse["data"]["PageContent"]> {
   // const res = await fetch(`https://truthful-cabbage-82fd27e8f6.strapiapp.com/api/home-page?populate[PageContent][populate]=*`, {

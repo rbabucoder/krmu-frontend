@@ -3,10 +3,10 @@ import About from "../AdmissionSections/About";
 import AboutHeroBanner from "../AdmissionSections/AboutHeroBanner";
 import AdmissionProcess from "../AdmissionSections/AdmissionProcess";
 import Alumni from "../AdmissionSections/Alumni";
-import Contact from "../AdmissionSections/Contact";
 import FAQ from "../AdmissionSections/FAQ";
 import FeeDetails from "../AdmissionSections/FeeDetails";
 import Programs from "../AdmissionSections/Programs";
+import VisitUs from "../AdmissionSections/VisitUs";
 
 const page = async () => {
   const admissionPageContent = await getAdmissionPageData();
@@ -20,10 +20,9 @@ const page = async () => {
     (component) =>
       component.__component === "aboutwhychooseus-component.why-choose-us"
   );
-  // const awardsAndRecognitionData = admissionPageContent.find(
-  //   (component) =>
-  //     component.__component === "admissionpage-components.awards-and-recognition"
-  // );
+  const alumniData = admissionPageContent.find(
+    (component) => component.__component === "admissionpage-components.alumni"
+  );
 
   return (
     <>
@@ -58,9 +57,16 @@ const page = async () => {
       )}
       <Programs />
       <FeeDetails />
-      <Alumni />
+      {alumniData && (
+        <Alumni
+          highlightext={alumniData?.highlighttext}
+          beforehighlighttext={alumniData?.beforehighlighttext}
+          desc={alumniData?.content}
+          alumnis={alumniData?.alumniinfo}
+        />
+      )}
       <FAQ />
-      <Contact />
+      <VisitUs />
     </>
   );
 };

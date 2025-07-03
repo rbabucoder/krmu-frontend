@@ -1,3 +1,22 @@
+import { CardWithoutImage } from "./common";
+export interface FeeDetails {
+  __component: "admissionpage-components.fee-details";
+  id: number;
+  badgetext: string;
+  highlighttext: string;
+  beforehighlighttext: string;
+  content: string;
+}
+
+export interface Alumni {
+  __component: "admissionpage-components.alumni";
+  id: string;
+  highlighttext: string;
+  beforehighlighttext: string;
+  content: string;
+  alumniinfo: CardWithoutImage[];
+}
+
 export interface AchievementsData {
   id: number;
   value: string;
@@ -42,8 +61,42 @@ export interface AdmissionProcess {
   readytobeginsbtns: readybtn[];
 }
 
+export interface visitus {
+  id: number;
+  badgetext: string;
+  highlighttext: string;
+  beforehighlighttext: string;
+  description: string;
+}
+
+
+export interface VisitUs {
+  id: number;
+  badgetext: string;
+  highlighttext: string;
+  beforehighlighttext: string;
+  description: string;
+}
+
+export interface VisitUsResponse {
+  data: {
+    id: number;
+    documentId: string;
+    createdAt: string;
+    updatedAt: string;
+    publishedAt: string;
+    visitus: VisitUs;
+  };
+  meta: unknown;
+}
+
 // Union type for components in the AdmissionPageComponent array
-export type AdmissionPageComponent = AdmissionProcess | WhyChoose;
+export type AdmissionPageComponent =
+  | AdmissionProcess
+  | WhyChoose
+  | Alumni
+  | FeeDetails
+
 
 // Root response structure
 export interface AdmissionPageResponse {

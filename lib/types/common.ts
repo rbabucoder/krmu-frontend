@@ -1,10 +1,10 @@
-export interface CounterItem{
-    id: number;
-    countertext: string;
-    countercontent: string;
+export interface CounterItem {
+  id: number;
+  countertext: string;
+  countercontent: string;
 }
 
-export interface ButtonType{
+export interface ButtonType {
   id: number;
   buttontext: string;
   buttonlink: string;
@@ -31,4 +31,46 @@ export interface StrapiMedia {
   createdAt: string;
   updatedAt: string;
   publishedAt: string;
+}
+
+export interface CardWithoutImage {
+  id: number;
+  title: string;
+  description: string;
+}
+
+export interface CardWithImage {
+  id: number;
+  title: string;
+  cardimg: StrapiMedia;
+  cardclass: string;
+  cardcontent: string;
+}
+
+
+
+export interface Alumni {
+  id: number;
+  documentId: string;
+  name: string;
+  designation: string;
+  alumnicontent: string;
+  createdAt: string;
+  updatedAt: string;
+  publishedAt: string;
+  alumnimedia: StrapiMedia;
+}
+
+export interface AlumniResponseMeta {
+  pagination: {
+    page: number;
+    pageSize: number;
+    pageCount: number;
+    total: number;
+  };
+}
+
+export interface AlumniApiResponse {
+  data: Alumni[];
+  meta: AlumniResponseMeta;
 }
