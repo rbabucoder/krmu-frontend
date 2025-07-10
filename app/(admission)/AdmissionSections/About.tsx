@@ -1,5 +1,6 @@
 import AboutCard from "@/app/components/Cards/AboutCard";
 import AwardsRecognitionCard from "@/app/components/Cards/AwardsRecognitionCard";
+import { getFacilityData } from "@/lib/api/common";
 import { aboutCardsData } from "@/lib/constants/about-card";
 import { AchievementsData } from "@/lib/types/admission";
 
@@ -16,7 +17,7 @@ interface AboutWhyChooseProps {
   awardsTitle: string;
 }
 
-const About = ({
+const About = async ({
   achievements,
   achievementstitle,
   achievementsdescriptions,
@@ -28,6 +29,9 @@ const About = ({
   maindesc,
   awardsTitle,
 }: AboutWhyChooseProps) => {
+  const facilityData = await getFacilityData();
+
+
   return (
     <>
       <div id="about">
@@ -40,8 +44,8 @@ const About = ({
                 </span>
               </div>
               <h2 className="text-4xl md:text-5xl mb-6 text-gray-800 font-bold">
-                {beforehighlight}
-                <span className="text-university-red">{redtext}</span>
+                {beforehighlight}{" "}
+                <span className="text-university-red">{redtext}</span>{" "}
                 {beforeBlue}
                 <span className="text-university-blue">{blueText}</span>
               </h2>
@@ -51,9 +55,18 @@ const About = ({
               </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-              {aboutCardsData &&
-                aboutCardsData.map((card, i) => {
-                  return <AboutCard key={i} cardData={card} />;
+              {facilityData &&
+                facilityData.map((card) => {
+                  return (
+                    <AboutCard
+                      key={card.id}
+                      title={card.title}
+                      badgetext={card.badgetext}
+                      desc={card.description}
+                      url={card.link}
+                      image={card.bgimg}
+                    />
+                  );
                 })}
             </div>
             <div className="bg-gradient-to-br from-university-blue to-university-red rounded-2xl p-8 mb-16">

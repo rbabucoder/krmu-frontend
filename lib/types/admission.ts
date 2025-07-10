@@ -1,11 +1,14 @@
-import { CardWithoutImage } from "./common";
+import { ButtonType, CardWithoutImage, StrapiMedia } from "./common";
+import { Button } from "./home";
 export interface FeeDetails {
   __component: "admissionpage-components.fee-details";
   id: number;
   badgetext: string;
   highlighttext: string;
   beforehighlighttext: string;
-  content: string;
+  description: string;
+  paymentinfotitle: string;
+  paymentinfocontent: string;
 }
 
 export interface Alumni {
@@ -69,7 +72,6 @@ export interface visitus {
   description: string;
 }
 
-
 export interface VisitUs {
   id: number;
   badgetext: string;
@@ -90,13 +92,33 @@ export interface VisitUsResponse {
   meta: unknown;
 }
 
+export interface AcademicExcellence {
+  __component: "admissionpage-components.academic-excellence";
+  id: number;
+  badgetext: string;
+  highlighttext: string;
+  beforehighlighttext: string;
+  content: string;
+  button: Button;
+}
+
+export interface LocationType {
+  __component: "admissionpage-components.location";
+  id: string;
+  badgetext: string;
+  beforehighlighttext: string;
+  highlighttext: string;
+  description: string;
+}
+
 // Union type for components in the AdmissionPageComponent array
 export type AdmissionPageComponent =
   | AdmissionProcess
   | WhyChoose
   | Alumni
   | FeeDetails
-
+  | AcademicExcellence
+  | LocationType;
 
 // Root response structure
 export interface AdmissionPageResponse {
@@ -109,4 +131,25 @@ export interface AdmissionPageResponse {
     AdmissionPageComponent: AdmissionPageComponent[];
   };
   meta: unknown;
+}
+
+export interface AdmissionBanner {
+  id: number;
+  title: string;
+  subtitle: string;
+  description: string;
+  image: StrapiMedia;
+  badge: string;
+  ctas: ButtonType[];
+}
+
+export interface AdmissionHeroBannerResponse {
+  data: {
+    id: number;
+    documentId: string;
+    createdAt: string;
+    updatedAt: string;
+    publishedAt: string;
+    admissionherobanner: AdmissionBanner[];
+  };
 }

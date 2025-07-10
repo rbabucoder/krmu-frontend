@@ -17,7 +17,7 @@ const Alumni = async ({
   alumnis,
 }: AlumniProp) => {
   const alumniData = await getAlumniData();
-  console.log(alumniData);
+
 
   return (
     <>

@@ -1,6 +1,13 @@
 import { STRAPI_URL } from "@/app/constant";
-import { AdmissionPageResponse, VisitUs, VisitUsResponse } from "../types/admission";
+import {
+  AdmissionBanner,
+  AdmissionHeroBannerResponse,
+  AdmissionPageResponse,
+  VisitUs,
+  VisitUsResponse,
+} from "../types/admission";
 import { AdmissionCardsDataResponse } from "../types/admissioncards";
+import { FeeCardComponentResponse, FeeDetailsInfo } from "../types/FeeCard";
 
 export async function getAdmissionPageData(): Promise<
   AdmissionPageResponse["data"]["AdmissionPageComponent"]
@@ -80,3 +87,39 @@ export async function getVisitUsData(): Promise<VisitUs> {
   const json: VisitUsResponse = await res.json();
   return json.data.visitus;
 }
+
+export async function getFeeCardData(): Promise<FeeDetailsInfo[]> {
+  const res = await fetch(
+    `${STRAPI_URL}/api/admission?populate[feedetailsinfos][populate]=*`,
+    {
+      next: {
+        revalidate: 60,
+      },
+    }
+  );
+
+  if (!res.ok) {
+    throw new Error("Failed to fetch Fee Card Data");
+  }
+
+  const json: FeeCardComponentResponse = await res.json();
+  return json.data.feedetailsinfos;
+}
+export async function getAdmissionBannerData(): Promise<AdmissionBanner[]> {
+  const res = await fetch(
+    `${STRAPI_URL}/api/admission?populate[admissionherobanner][populate]=*`,
+    {
+      next: {
+        revalidate: 60,
+      },
+    }
+  );
+
+  if (!res.ok) {
+    throw new Error("Failed to fetch Fee Card Data");
+  }
+
+  const json: AdmissionHeroBannerResponse = await res.json();
+  return json.data.admissionherobanner;
+}
+

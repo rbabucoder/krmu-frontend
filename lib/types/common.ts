@@ -10,6 +10,12 @@ export interface ButtonType {
   buttonlink: string;
   buttonclass: string;
 }
+export interface BREADCRUMB {
+  id: number;
+  breadcrumbtext: string;
+  backgroundimage: StrapiMedia;
+  breadcrumbbgcolor: string;
+}
 
 // Strapi media type
 export interface StrapiMedia {
@@ -47,8 +53,6 @@ export interface CardWithImage {
   cardcontent: string;
 }
 
-
-
 export interface Alumni {
   id: number;
   documentId: string;
@@ -61,7 +65,7 @@ export interface Alumni {
   alumnimedia: StrapiMedia;
 }
 
-export interface AlumniResponseMeta {
+export interface CommonMeta {
   pagination: {
     page: number;
     pageSize: number;
@@ -72,5 +76,22 @@ export interface AlumniResponseMeta {
 
 export interface AlumniApiResponse {
   data: Alumni[];
-  meta: AlumniResponseMeta;
+  meta: CommonMeta;
+}
+
+export interface Facility {
+  id: number;
+  documentId: string;
+  createdAt: string;
+  updatedAt: string;
+  publishedAt: string;
+  title: string;
+  badgetext: string;
+  description: string;
+  link: string;
+  bgimg: StrapiMedia;
+}
+export interface FacilityAPIResponse {
+  data: Facility[];
+  meta: CommonMeta;
 }

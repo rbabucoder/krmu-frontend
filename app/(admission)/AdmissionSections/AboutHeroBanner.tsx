@@ -21,8 +21,21 @@ import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-const AboutHeroBanner = () => {
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { AdmissionBanner } from "@/lib/types/admission";
+import { STRAPI_URL } from "@/app/constant";
+import Link from "next/link";
+
+type AboutHeroBannerProps = {
+  banners: AdmissionBanner[];
+};
+const AboutHeroBanner = ({ banners }: AboutHeroBannerProps) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const [formData, setFormData] = useState({
@@ -33,35 +46,35 @@ const AboutHeroBanner = () => {
     qualification: "",
   });
 
-  const banners = [
-    {
-      image: "/heroimage1.webp",
-      title: "Step Into Future",
-      subtitle: "",
-      description:
-        "Empowering young minds with cutting-edge technology and innovation. Shape your career in the digital age with our world-class programs.",
-      cta1: "Apply Now",
-      cta2: "Explore Tech Programs",
-    },
-    {
-      image: "/heroimage2.webp",
-      title: "Excellence in Legal Education",
-      subtitle: "Future Legal Leaders",
-      description:
-        "Build a distinguished career in law with our comprehensive legal education program. Learn from experienced faculty and industry experts.",
-      cta1: "Apply for Law",
-      cta2: "Virtual Campus Tour",
-    },
-    {
-      image: "/heroimage3.webp",
-      title: "Creative Media & Communication",
-      subtitle: "Digital Storytellers",
-      description:
-        "Master the art of digital media, journalism, and communication. Create compelling content and build your personal brand in the media industry.",
-      cta1: "Join Media School",
-      cta2: "View Portfolio",
-    },
-  ];
+  // const banners = [
+  //   {
+  //     image: "/heroimage1.webp",
+  //     title: "Step Into Future",
+  //     subtitle: "",
+  //     description:
+  //       "Empowering young minds with cutting-edge technology and innovation. Shape your career in the digital age with our world-class programs.",
+  //     cta1: "Apply Now",
+  //     cta2: "Explore Tech Programs",
+  //   },
+  //   {
+  //     image: "/heroimage2.webp",
+  //     title: "Excellence in Legal Education",
+  //     subtitle: "Future Legal Leaders",
+  //     description:
+  //       "Build a distinguished career in law with our comprehensive legal education program. Learn from experienced faculty and industry experts.",
+  //     cta1: "Apply for Law",
+  //     cta2: "Virtual Campus Tour",
+  //   },
+  //   {
+  //     image: "/heroimage3.webp",
+  //     title: "Creative Media & Communication",
+  //     subtitle: "Digital Storytellers",
+  //     description:
+  //       "Master the art of digital media, journalism, and communication. Create compelling content and build your personal brand in the media industry.",
+  //     cta1: "Join Media School",
+  //     cta2: "View Portfolio",
+  //   },
+  // ];
 
   useEffect(() => {
     if (!isAutoPlaying) return;
@@ -95,7 +108,6 @@ const AboutHeroBanner = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
     // Handle form submission logic here
     alert("Thank you for your inquiry! We will contact you soon.");
   };
@@ -119,7 +131,7 @@ const AboutHeroBanner = () => {
                   {/* Background Image */}
                   <div className="absolute inset-0">
                     <Image
-                      src={banner.image}
+                      src={`${STRAPI_URL}${banner.image.url}`}
                       alt={`${banner.title} - University Banner`}
                       width={1200} // Specify the width
                       height={800} // Specify the height
@@ -137,7 +149,7 @@ const AboutHeroBanner = () => {
                         <div className="col-span-full lg:col-span-3 text-left text-white">
                           <div className="mb-4">
                             <span className="inline-block bg-white/30 backdrop-blur-md rounded-full px-4 py-2 text-sm uppercase tracking-wide shadow-lg">
-                              Admissions Open 2025-26
+                              {banner.badge}
                             </span>
                           </div>
                           <h1 className="text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight drop-shadow-lg font-bold">
@@ -150,12 +162,24 @@ const AboutHeroBanner = () => {
                             {banner.description}
                           </p>
                           <div>
-                            <Button
+                            {banner.ctas?.map((cta, idx) =>
+                              cta.buttonclass || cta.buttonlink ? (
+                                <Link
+                                  key={idx}
+                                  href={cta.buttonlink}
+                                  className={`${cta.buttonclass} bg-university-red mr-2.5 hover:bg-red-700 text-white px-8 py-4 text-lg rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105`}
+                                >
+                                  {cta.buttontext}
+                                </Link>
+                              ) : null
+                            )}
+
+                            {/* <Button
                               size="lg"
                               className="bg-university-red hover:bg-red-700 text-white px-8 py-4 text-lg rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
                             >
                               {banner.cta1}
-                            </Button>
+                            </Button> */}
                           </div>
                         </div>
 
