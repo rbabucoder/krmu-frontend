@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { getFeeCardData } from "@/lib/api/admission";
-import { STRAPI_URL } from "@/app/constant";
 
 const FeeDetailsCards = async () => {
   const feeInfo = await getFeeCardData();

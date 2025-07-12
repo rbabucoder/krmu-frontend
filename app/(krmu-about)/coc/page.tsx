@@ -1,6 +1,5 @@
 import { getCoC } from "@/lib/api/coc";
 import React from "react";
-import { STRAPI_URL } from "../../constant";
 import Image from "next/image";
 import Link from "next/link";
 

@@ -1,4 +1,4 @@
-import { STRAPI_URL } from "@/app/constant";
+
 import { getAdmissionProcessCardsData } from "@/lib/api/admission";
 import Image from "next/image";
 

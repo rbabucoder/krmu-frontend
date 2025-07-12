@@ -1,4 +1,4 @@
-import { STRAPI_URL } from "@/app/constant";
+
 import { Departments } from "@/lib/types/registrar-office";
 import Link from "next/link";
 import Image from "next/image";

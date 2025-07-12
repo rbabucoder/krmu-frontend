@@ -1,5 +1,4 @@
-import { STRAPI_URL } from "@/app/constant";
-import { AboutCardType } from "@/lib/types/about-type";
+
 import { StrapiMedia } from "@/lib/types/common";
 import Image from "next/image";
 import Link from "next/link";

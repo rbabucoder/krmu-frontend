@@ -1,4 +1,4 @@
-import { STRAPI_URL } from "@/app/constant";
+
 import { StrapiMedia } from "@/lib/types/common";
 import Image from "next/image";
 

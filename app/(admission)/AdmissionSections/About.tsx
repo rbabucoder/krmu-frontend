@@ -1,7 +1,6 @@
 import AboutCard from "@/app/components/Cards/AboutCard";
 import AwardsRecognitionCard from "@/app/components/Cards/AwardsRecognitionCard";
 import { getFacilityData } from "@/lib/api/common";
-import { aboutCardsData } from "@/lib/constants/about-card";
 import { AchievementsData } from "@/lib/types/admission";
 
 interface AboutWhyChooseProps {
@@ -26,7 +25,6 @@ const About = async ({
   beforehighlight,
   beforeBlue,
   badgeheading,
-  maindesc,
   awardsTitle,
 }: AboutWhyChooseProps) => {
   const facilityData = await getFacilityData();

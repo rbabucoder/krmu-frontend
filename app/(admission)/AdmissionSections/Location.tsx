@@ -211,8 +211,8 @@ export default function Location({
               <CardContent className="p-8 text-center">
                 <h3 className="text-2xl mb-4">Virtual Campus Tour</h3>
                 <p className="mb-6 text-blue-100">
-                  Can't visit in person? Take our interactive virtual tour and
-                  explore our beautiful campus from anywhere.
+                  {`Can't visit in person? Take our interactive virtual tour and
+                  explore our beautiful campus from anywhere.`}
                 </p>
                 <button className="bg-white text-university-blue hover:bg-gray-100 px-8 py-3 rounded-full transition-colors duration-300">
                   Start Virtual Tour

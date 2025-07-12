@@ -29,7 +29,6 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { AdmissionBanner } from "@/lib/types/admission";
-import { STRAPI_URL } from "@/app/constant";
 import Link from "next/link";
 
 type AboutHeroBannerProps = {

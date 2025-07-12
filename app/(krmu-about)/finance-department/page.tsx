@@ -1,4 +1,4 @@
-import { STRAPI_URL } from "@/app/constant";
+
 import { getFinanceData } from "@/lib/api/finance-department";
 import Image from "next/image";
 import Link from "next/link";
