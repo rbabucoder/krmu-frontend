@@ -24,7 +24,7 @@ const AlumniCard: React.FC<AlumniCardProps> = ({
         <div className="mb-6 relative">
           <div className="relative inline-block">
             <Image
-              src={`${STRAPI_URL}${alumniImg?.url}`}
+              src={`${alumniImg?.url}`}
               alt={alumniName}
               className="w-24 h-24 rounded-full mx-auto object-cover border-4 border-white shadow-lg transition-transform duration-300 group-hover:scale-110"
               width={alumniImg?.width ?? 88}

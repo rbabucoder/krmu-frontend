@@ -56,7 +56,7 @@ const page = async () => {
             <div className="lg:w-1/4">
               {regImage && (
                 <Image
-                  src={`${STRAPI_URL}${regImage}`}
+                  src={`${regImage}`}
                   width={523}
                   height={320}
                   alt={registrarData?.registrarname}

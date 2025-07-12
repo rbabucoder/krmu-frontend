@@ -20,7 +20,7 @@ const page = async () => {
           style={{
             backgroundColor: bgColor,
             backgroundImage: imageUrl
-              ? `url(${STRAPI_URL}${imageUrl})`
+              ? `url(${imageUrl})`
               : undefined,
             backgroundSize: "cover",
             backgroundPosition: "center",
@@ -42,7 +42,7 @@ const page = async () => {
                   <div key={emp.id} className="bg-boxshadow-1 p-5 w-full">
                     <div className="text-center mb-5">
                       <Image
-                        src={`${STRAPI_URL}${emp.employeeimage.url}`}
+                        src={`${emp.employeeimage.url}`}
                         width={312}
                         height={306}
                         alt={emp.employeename}

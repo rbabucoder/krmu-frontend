@@ -131,7 +131,7 @@ const AboutHeroBanner = ({ banners }: AboutHeroBannerProps) => {
                   {/* Background Image */}
                   <div className="absolute inset-0">
                     <Image
-                      src={`${STRAPI_URL}${banner.image.url}`}
+                      src={`${banner.image.url}`}
                       alt={`${banner.title} - University Banner`}
                       width={1200} // Specify the width
                       height={800} // Specify the height

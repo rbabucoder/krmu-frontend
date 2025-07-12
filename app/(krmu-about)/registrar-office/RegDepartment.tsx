@@ -21,7 +21,7 @@ const RegDepartment = ({ depData }: RegDepartmentProps) => {
                   <div key={employee?.id} className="bg-boxshadow-1 p-5 w-full">
                     <div className="text-center mb-5">
                       <Image
-                        src={`${STRAPI_URL}${employee?.employeeimage?.url}`}
+                        src={`${employee?.employeeimage?.url}`}
                         width={312}
                         height={306}
                         alt={employee.employeename}

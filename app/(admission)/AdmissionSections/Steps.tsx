@@ -29,7 +29,7 @@ const Steps = async () => {
               <div className="mb-4 md:mb-4 lg:mb-6">
                 <div className="w-12 h-12 md:w-12 md:h-12 lg:w-16 lg:h-16 bg-white/60 backdrop-blur-sm rounded-full flex items-center justify-center border border-gray-200">
                   <Image
-                    src={`${STRAPI_URL}${card.cardimg.url}`}
+                    src={`${card.cardimg.url}`}
                     alt={card.cardimg.alternativeText ?? "Card icon"}
                     width={card.cardimg.width ?? 24}
                     height={card.cardimg.height ?? 24}

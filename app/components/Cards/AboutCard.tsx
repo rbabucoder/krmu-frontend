@@ -26,7 +26,7 @@ const AboutCard: React.FC<WPAboutCardProp> = ({
     >
       <div className="relative overflow-hidden">
         <Image
-          src={`${STRAPI_URL}${image.url}`}
+          src={`${image.url}`}
           alt={image.alternativeText || ""}
           className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
           width={363}
