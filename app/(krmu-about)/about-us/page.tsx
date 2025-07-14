@@ -3,7 +3,6 @@ import KRMUGroupCard from "./KRMUGroupCard";
 import Link from "next/link";
 import IndustryCollabLogos from "./IndustryCollabLogos";
 import HallofFame from "./HallofFame";
-import AdvisoryDean from "./AdvisoryDean";
 
 const page = () => {
   return (
