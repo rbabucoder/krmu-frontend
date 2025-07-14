@@ -4,7 +4,7 @@ const KRMUGroupCard = () => {
   return (
     <>
       <div
-        className="relative after:content-[''] after:absolute after:top-0 after:right-0 after:w-[17%] after:h-full after:z-[100] after:bg-gradient-to-r after:from-white/0 after:to-white flex
+        className="relative after:content-[''] after:absolute after:top-0 after:right-0 after:w-[17%] after:h-full after:z-[100] after:bg-gradient-to-r after:from-white/0 after:to-white grid grid-cols-2 sm:flex
  gap-2.5"
       >
         <div>

@@ -21,7 +21,7 @@ const RegDepartment = ({ depData }: RegDepartmentProps) => {
                   <div key={employee?.id} className="bg-boxshadow-1 p-5 w-full">
                     <div className="text-center mb-5">
                       <Image
-                        src={`${employee?.employeeimage?.url}`}
+                        src={`v${employee?.employeeimage?.url}`}
                         width={312}
                         height={306}
                         alt={employee.employeename}

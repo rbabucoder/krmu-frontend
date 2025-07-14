@@ -1,2 +1,3 @@
+// export const STRAPI_URL =  "https://truthful-cabbage-82fd27e8f6.strapiapp.com";
 // export const STRAPI_URL =  "http://localhost:1337";
-export const STRAPI_URL =  "https://truthful-cabbage-82fd27e8f6.strapiapp.com";
+export const STRAPI_URL =  "http://localhost:1337";

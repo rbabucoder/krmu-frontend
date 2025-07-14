@@ -1,5 +1,6 @@
 import { StrapiMedia } from "@/lib/types/common";
 import Image from "next/image";
+import { STRAPI_URL } from "../constant";
 
 interface AFSDataProp {
   content1: string;
@@ -25,7 +26,7 @@ const AFS = ({
           <div className="flex flex-wrap gap-2.5 justify-center sm:grid md:grid-col-2 lg:grid-cols-3">
             <div className="flex items-center gap-2.5">
               <Image
-                src={`${image1.url}`}
+                src={`${STRAPI_URL}${image1.url}`}
                 width={33}
                 height={33}
                 alt="ADM"
@@ -40,7 +41,7 @@ const AFS = ({
             </div>
             <div className="flex items-center gap-2.5">
               <Image
-                src={`${image2.url}`}
+                src={`${STRAPI_URL}${image2.url}`}
                 width={38}
                 height={38}
                 alt="ADM"
@@ -55,7 +56,7 @@ const AFS = ({
             </div>
             <div className="flex items-center gap-2.5">
               <Image
-                src={`${image3.url}`}
+                src={`${STRAPI_URL}${image3.url}`}
                 width={54}
                 height={43}
                 alt="ADM"

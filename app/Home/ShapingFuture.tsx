@@ -1,6 +1,7 @@
 import { CounterItem, StrapiMedia } from "@/lib/types/common";
 import Image from "next/image";
 import Link from "next/link";
+import { STRAPI_URL } from "../constant";
 
 
 interface ShapingFutureProp {
@@ -96,7 +97,7 @@ const ShapingFuture = ({
             <div className="lg:w-2/5 lg:mx-8">
               <div className="mt-8">
                 <Image
-                  src={`${shapingimage.url}`}
+                  src={`${STRAPI_URL}${shapingimage.url}`}
                   width={292}
                   height={292}
                   style={{

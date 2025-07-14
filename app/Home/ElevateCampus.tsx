@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ElevateCampusContent } from "@/lib/types/home";
 import { StrapiMedia } from "@/lib/types/common";
+import { STRAPI_URL } from "../constant";
 
 interface ElevateCampusProp {
   elevateCampus: ElevateCampusContent;
@@ -48,7 +49,7 @@ const ElevateCampus = ({
           </div>
           <div className="w-full xl:w-1/2">
             <Image
-              src={`${elevateImage1.url}`}
+              src={`${STRAPI_URL}${elevateImage1.url}`}
               alt="Elevate"
               width={994}
               height={607}
@@ -82,7 +83,7 @@ const ElevateCampus = ({
           </div>
           <div className="w-full xl:w-1/2 xl:min-h-[575px]">
             <Image
-              src={`${elevateImage2?.url}`}
+              src={`${STRAPI_URL}${elevateImage2?.url}`}
               alt="Elevate"
               width={993}
               height={575}
@@ -116,7 +117,7 @@ const ElevateCampus = ({
           </div>
           <div className="w-full xl:w-1/2 2xl:min-h-[575px] h-full">
             <Image
-              src={`${elevateImage3.url}`}
+              src={`${STRAPI_URL}${elevateImage3.url}`}
               alt="Elevate"
               width={993}
               height={596}

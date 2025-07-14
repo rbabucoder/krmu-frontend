@@ -1,3 +1,4 @@
+import { STRAPI_URL } from "@/app/constant";
 import { StrapiMedia } from "@/lib/types/common";
 
 
@@ -10,7 +11,9 @@ import { StrapiMedia } from "@/lib/types/common";
  const Video = ({video} : VideoProps) => {
   if (!video) return null;
 
-  const videoUrl = `${video.url}`;
+  console.log(video);
+
+  const videoUrl = `http://localhost:1337${video.url}`;
 
 
   

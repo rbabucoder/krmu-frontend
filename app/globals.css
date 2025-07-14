@@ -51,6 +51,12 @@
     height: 100%;
     background: rgba(0, 0, 0, .5);
 }
+.membership-ranking-bg{
+    background-image: linear-gradient(180deg,#0944c8 0%, #fefefe 100%);
+}
+.membership-ranking-card{
+  box-shadow: 0 0 10px #ccc;
+}
   
   .bg-university-red {
     background-color: var(--color-university-red);

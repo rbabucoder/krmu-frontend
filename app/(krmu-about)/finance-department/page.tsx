@@ -1,4 +1,5 @@
 
+import { STRAPI_URL } from "@/app/constant";
 import { getFinanceData } from "@/lib/api/finance-department";
 import Image from "next/image";
 import Link from "next/link";
@@ -20,7 +21,7 @@ const page = async () => {
           style={{
             backgroundColor: bgColor,
             backgroundImage: imageUrl
-              ? `url(${imageUrl})`
+              ? `url(${STRAPI_URL}${imageUrl})`
               : undefined,
             backgroundSize: "cover",
             backgroundPosition: "center",
@@ -42,7 +43,7 @@ const page = async () => {
                   <div key={emp.id} className="bg-boxshadow-1 p-5 w-full">
                     <div className="text-center mb-5">
                       <Image
-                        src={`${emp.employeeimage.url}`}
+                        src={`${STRAPI_URL}${emp.employeeimage.url}`}
                         width={312}
                         height={306}
                         alt={emp.employeename}

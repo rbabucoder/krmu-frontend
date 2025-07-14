@@ -2,10 +2,10 @@ import { getCoC } from "@/lib/api/coc";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { STRAPI_URL } from "@/app/constant";
 
 const page = async () => {
   const cocData = await getCoC();
-  console.log('cocData', cocData);
 
   const breadcrumb = cocData.breadcrumb;
   const imageUrl = breadcrumb?.backgroundimage?.url;
@@ -19,7 +19,7 @@ const page = async () => {
           className="pt-32 md:pt-[187px] pb-[94px] px-2.5"
           style={{
             backgroundImage: imageUrl
-              ? `url(${imageUrl})`
+              ? `url(${STRAPI_URL}${imageUrl})`
               : undefined,
             backgroundSize: "cover",
             backgroundPosition: "center",
@@ -46,7 +46,7 @@ const page = async () => {
                   >
                     <li className="flex">
                       <Image
-                        src={`${item.listicon.url}`}
+                        src={`${STRAPI_URL}${item.listicon.url}`}
                         alt={item.listicon.alternativeText || ""}
                         width={20}
                         height={21}

@@ -1,5 +1,6 @@
 import { CounterItem, StrapiMedia } from "@/lib/types/common";
 import Image from "next/image";
+import { STRAPI_URL } from "../constant";
 
 interface OurTopRecruitProps {
   title: string;
@@ -44,7 +45,7 @@ const OurTopRecruiters: React.FC<OurTopRecruitProps> = ({
             >
               {logo.url && (
                 <Image
-                  src={`${logo.url}`}
+                  src={`${STRAPI_URL}${logo.url}`}
                   width={logo.width || 154} // Fallback width
                   height={logo.height || 67} // Fallback height
                   alt={logo.alternativeText || "Company Logo"}
