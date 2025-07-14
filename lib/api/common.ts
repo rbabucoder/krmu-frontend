@@ -1,8 +1,8 @@
-import { STRAPI_URL } from "@/app/constant";
+import { FETCH_STRAPI_URL } from "@/app/constant";
 import { AlumniApiResponse, FacilityAPIResponse } from "../types/common";
 
 export async function getAlumniData(): Promise<AlumniApiResponse["data"]> {
-  const res = await fetch(`${STRAPI_URL}/api/alumnis?populate=*`, {
+  const res = await fetch(`${FETCH_STRAPI_URL}/api/alumnis?populate=*`, {
     next: {
       revalidate: 60,
     },
@@ -14,7 +14,7 @@ export async function getAlumniData(): Promise<AlumniApiResponse["data"]> {
   return json.data;
 }
 export async function getFacilityData(): Promise<FacilityAPIResponse["data"]> {
-  const res = await fetch(`${STRAPI_URL}/api/facilities?populate=*`, {
+  const res = await fetch(`${FETCH_STRAPI_URL}/api/facilities?populate=*`, {
     next: {
       revalidate: 60,
     },

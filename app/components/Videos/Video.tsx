@@ -13,7 +13,7 @@ import { StrapiMedia } from "@/lib/types/common";
 
   console.log(video);
 
-  const videoUrl = `http://localhost:1337${video.url}`;
+  const videoUrl = `${STRAPI_URL}${video.url}`;
 
 
   

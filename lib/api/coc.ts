@@ -1,9 +1,9 @@
-import { STRAPI_URL } from "@/app/constant";
+import { FETCH_STRAPI_URL } from "@/app/constant";
 import { COCType } from "../types/coc";
 
 export async function getCoC(): Promise<COCType["data"]> {
   const res = await fetch(
-    `${STRAPI_URL}/api/code-of-conduct?populate[breadcrumb][fields][0]=breadcrumbtext&populate[breadcrumb][populate][backgroundimage]=true&populate[cocitems][fields][0]=listtext&populate[cocitems][fields][1]=listlink&populate[cocitems][populate][listicon]=true`,
+    `${FETCH_STRAPI_URL}/api/code-of-conduct?populate[breadcrumb][fields][0]=breadcrumbtext&populate[breadcrumb][populate][backgroundimage]=true&populate[cocitems][fields][0]=listtext&populate[cocitems][fields][1]=listlink&populate[cocitems][populate][listicon]=true`,
     {
       next: {
         revalidate: 60,
