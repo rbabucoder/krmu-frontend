@@ -24,7 +24,7 @@ const Ranking: React.FC<RankingProps> = ({ rankingData }) => {
         }}
         plugins={[
           Autoplay({
-            delay: 1000,
+            delay: 1500,
           }),
         ]}
       >

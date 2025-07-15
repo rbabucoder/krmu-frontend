@@ -12,8 +12,8 @@ const Footer = () => {
             <p className="text-white my-4 font-light">K.R. Mangalam University, established in 2013 under the Haryana Private University Act, is a pioneering institution committed to transformative education and nurturing future leaders.</p>
             <Link href="/" className="text-white bg-[#cb000d] py-[5px] px-5 hover:bg-[#034272] rounded font-semibold">Read More</Link>
           </div>
-          <div className="w-full  xl:w-1/4">
-            <div className="xl:mx-7">
+          <div className="w-full  xl:w-1/4 break-all">
+            <div className="xl:mx-7 break-all">
               <h6 className="text-2xl font-bold pb-5 border-b border-white w-1/2 text-white mt-2.5 mb-[15px]">Apply</h6>
               <ul className="text-white mb-5">
                 <li className="border-b border-[rgba(254,254,254,.27)] pb-1.5"><Link href="/" className="leading-[27.2px] text-base flex items-baseline justify-between">Admissions <Image src="/white-arrow.svg" width={19} height={27} alt="White arrow" /></Link></li>
@@ -51,7 +51,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="w-full  xl:w-1/4">
-          <div className="xl:mx-7">
+          <div className="xl:mx-7 break-all">
             <h6 className="text-2xl font-bold pb-5 w-1/2 border-b border-white  text-white mt-2.5 mb-[15px]">Address</h6>
             <ul className="text-white">
               <li className="flex gap-3 mb-2.5"><Image src="/loc.svg" alt="Location" width={12} height={16} /> <span className="text-white">Sohna Road, Gurugram, Haryana 122103</span></li>

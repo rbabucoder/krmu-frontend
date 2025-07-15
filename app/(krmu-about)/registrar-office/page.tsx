@@ -34,10 +34,10 @@ const page = async () => {
       </section>
       <section className="lg:py-12 lg:px-8 p-5">
         <div className="max-w-[1600px] mx-auto w-full">
-          <div className="flex items-center justify-between">
-            <div className="lg:w-3/4">
+          <div className="lg:flex items-center justify-between">
+            <div className="w-full lg:w-3/4">
               <p className="mb-5">{registrarData?.registrarinfo}</p>
-              <div className="flex flex-col gap-2.5 mb-5">
+              <div className="flex flex-col gap-2.5 mb-5 break-all">
                 <span>
                   <strong>{registrarData?.registrarname}</strong>
                 </span>
@@ -53,11 +53,11 @@ const page = async () => {
                 </span>
               </div>
             </div>
-            <div className="lg:w-1/4">
+            <div className="w-full lg:w-1/4 flex items-center justify-center">
               {regImage && (
                 <Image
-                  src={`${regImage}`}
-                  width={523}
+                  src={`${STRAPI_URL}${regImage}`}
+                  width={300}
                   height={320}
                   alt={registrarData?.registrarname}
                 />
@@ -65,15 +65,15 @@ const page = async () => {
             </div>
           </div>
           <div
-            className="prose max-w-none"
+            className="prose max-w-none pt-12 lg:pt-0 customlist"
             dangerouslySetInnerHTML={{
               __html: registrarData?.registrardescription || "",
             }}
           />
         </div>
       </section>
-      <section>
-        <div className="max-w-[1600px] mx-auto w-full">
+      <section className="pt-10">
+        <div className="max-w-[1600px] mx-auto w-full pb-12 lg:py-0 px-5">
           {departmentsData && <RegDepartment depData={departmentsData} />}
         </div>
       </section>

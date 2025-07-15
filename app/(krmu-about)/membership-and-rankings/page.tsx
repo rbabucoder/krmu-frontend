@@ -11,9 +11,9 @@ const page = async () => {
 
   return (
     <>
-      <section className="pt-40 pb-10 px-4 xl:px-0 membership-ranking-bg">
+      <section className="pt-40 pb-10 px-4 membership-ranking-bg">
         <div className="max-w-[1600px] mx-auto w-full">
-          <div className="text-white mb-10 px-4 lg:px-0 text-center">
+          <div className="text-white mb-10 px-4 lg:px-0 text-center md:text-left">
             <h3 className="text-4xl mb-5 lg:text-[64px] font-bold">
               {membershipRanking?.title}
             </h3>
@@ -45,7 +45,7 @@ const page = async () => {
         </div>
       </section>
       <section>
-        <div className="max-w-[1600px] mx-auto w-full mb-10 px-4 lg:px-0 text-center">
+        <div className="max-w-[1600px] mx-auto w-full mb-10 px-4 lg:px-0 text-center md:text-left">
           <h3 className="text-4xl lg:text-[64px] text-[#0944c8] font-bold mb-10">
             {membershipRanking?.rankingtitle}
           </h3>

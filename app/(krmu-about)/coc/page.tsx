@@ -38,23 +38,22 @@ const page = async () => {
             <ul className="lg:pl-10 my-4">
               {codeofconductlists.map((item) => {
                 return (
-                  <Link
-                    key={item.id}
-                    href={item.listlink}
-                    className="text-xl"
-                    target="_blank"
-                  >
-                    <li className="flex">
+                  <li key={item.id} className="mb-2.5 hover:text-[#0060aa]">
+                    <Link
+                      href={item.listlink}
+                      className="text-xl flex tracking-[-1px]"
+                      target="_blank"
+                    >
                       <Image
                         src={`${STRAPI_URL}${item.listicon.url}`}
                         alt={item.listicon.alternativeText || ""}
-                        width={20}
-                        height={21}
-                        className="mr-3.5"
+                        width={21}
+                        height={22}
+                        className="mr-4 object-contain"
                       />
                       {item.listtext}
-                    </li>
-                  </Link>
+                    </Link>
+                  </li>
                 );
               })}
             </ul>
