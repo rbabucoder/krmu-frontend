@@ -19,7 +19,7 @@ const RegDepartment = ({ depData }: RegDepartmentProps) => {
               {department?.employeecard.map((employee) => {
                 return (
                   <div key={employee?.id} className="bg-boxshadow-1 p-5 w-full">
-                    <div className="text-center mb-5">
+                    <div className="text-center flex justify-center mb-5">
                       <Image
                         src={`${STRAPI_URL}${employee?.employeeimage?.url}`}
                         width={312}
