@@ -5,6 +5,7 @@ import IndustryCollabLogos from "./IndustryCollabLogos";
 import HallofFame from "./HallofFame";
 import { getAboutKRMU } from "@/lib/api/about";
 import AccrediationLogo from "./AccrediationLogo";
+import { CircleCheckBig } from "lucide-react";
 
 const page = async () => {
   const aboutData = await getAboutKRMU();
@@ -80,38 +81,23 @@ const page = async () => {
               Our Mission
             </h4>
             <ul>
-              <li className="mb-2.5 flex gap-2.5">
-                <Image
-                  src="/check-solid.svg"
-                  width={27}
-                  height={16}
-                  alt="check solid"
-                />
+              <li className="mb-2.5 flex items-start gap-2.5">
+                <CircleCheckBig className="w-[50px]" />
                 <span>
                   Foster employability and entrepreneurship through futuristic
                   curriculum and progressive pedagogy with cutting-edge
                   technology
                 </span>
               </li>
-              <li className="mb-2.5 flex gap-2.5">
-                <Image
-                  src="/check-solid.svg"
-                  width={27}
-                  height={16}
-                  alt="check solid"
-                />
+              <li className="mb-2.5 flex items-start gap-2.5">
+                <CircleCheckBig className="w-[50px]" />
                 <span>
                   Instil notion of lifelong learning through stimulating
                   research, Outcomes-based education, and innovative thinking
                 </span>
               </li>
-              <li className="mb-2.5 flex gap-2.5">
-                <Image
-                  src="/check-solid.svg"
-                  width={27}
-                  height={16}
-                  alt="check solid"
-                />
+              <li className="mb-2.5 flex items-start gap-2.5">
+                <CircleCheckBig className="w-[50px]" />
                 <span>
                   {" "}
                   Integrate global needs and expectations through collaborative
@@ -119,13 +105,8 @@ const page = async () => {
                   industries, and professional bodies.
                 </span>
               </li>
-              <li className="flex gap-2.5">
-                <Image
-                  src="/check-solid.svg"
-                  width={27}
-                  height={16}
-                  alt="check solid"
-                />
+              <li className="flex items-start gap-2.5">
+                <CircleCheckBig className="w-[50px]" />
                 <span>
                   {" "}
                   IEnhance leadership qualities among the youth having
