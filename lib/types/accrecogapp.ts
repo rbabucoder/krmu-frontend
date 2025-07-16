@@ -21,5 +21,5 @@ export interface AccrediationRecogApprovalsData {
 
 export interface AccrediationRecogApprovalsResponse {
   data: AccrediationRecogApprovalsData;
-  meta: Record<string, any>;
+  meta: unknown;
 }

@@ -1,5 +1,4 @@
 import { FETCH_STRAPI_URL } from "@/app/constant";
-import { MembershipAndRankingResponseType } from "../types/membership-and-ranking";
 import { AccrediationRecogApprovalsResponse } from "../types/accrecogapp";
 
 export async function getAccrediationRecognitionApprovalData(): Promise<
