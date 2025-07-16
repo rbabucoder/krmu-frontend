@@ -42,11 +42,11 @@ export default function Location({
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">{desc}</p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start break-all">
           {/* Contact Information */}
           <div className="space-y-8">
             <Card className="border-0 shadow-xl">
-              <CardContent className="p-8 pt-[32px] pr-[32px] pb-[50px] pl-[32px]">
+              <CardContent className="p-3.5 xl:pt-[32px] xl:pr-[32px] xl:pb-[50px] xl:pl-[32px]">
                 <h3 className="text-2xl mb-6 text-gray-800">
                   Contact Information
                 </h3>
@@ -121,7 +121,7 @@ export default function Location({
 
             {/* Transportation */}
             <Card className="border-0 shadow-xl">
-              <CardContent className="p-8 pt-[32px] pr-[32px] pb-[30px] pl-[32px]">
+              <CardContent className="p-3.5 xl:pt-[32px] xl:pr-[32px] xl:pb-[50px] xl:pl-[32px]">
                 <h3 className="text-2xl mb-6 text-gray-800">How to Reach</h3>
 
                 <div className="space-y-4">
@@ -172,7 +172,7 @@ export default function Location({
 
             {/* Campus Highlights */}
             <Card className="border-0 shadow-xl">
-              <CardContent className="p-8">
+              <CardContent className="p-4 lg:p-8">
                 <h3 className="text-2xl mb-6 text-gray-800">
                   Campus Highlights
                 </h3>

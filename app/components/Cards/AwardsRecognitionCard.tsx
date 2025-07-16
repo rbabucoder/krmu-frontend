@@ -9,10 +9,6 @@ const AwardsRecognitionCard = async () => {
   return (
     <div className="grid md:grid-cols-3 gap-6">
       {awardsData?.map((card: AwardsRecognitionCardType) => {
-        const image = card.cardimg?.url
-          ? `${STRAPI_URL}${card.cardimg.url}`
-          : "/placeholder.png"; // fallback image if needed
-
         return (
           <div
             key={card.id}
@@ -21,7 +17,7 @@ const AwardsRecognitionCard = async () => {
             <div className="w-16 h-16 bg-university-red rounded-full flex items-center justify-center mx-auto mb-4 overflow-hidden">
               {card.cardimg?.url && (
                 <Image
-                  src={image}
+                  src={`${STRAPI_URL}${card.cardimg.url}`}
                   alt={card.cardimg.alternativeText || "Award icon"}
                   width={card.cardimg.width || 64}
                   height={card.cardimg.height || 64}

@@ -1,4 +1,5 @@
 
+import { STRAPI_URL } from "@/app/constant";
 import { StrapiMedia } from "@/lib/types/common";
 import Image from "next/image";
 import Link from "next/link";
@@ -25,7 +26,7 @@ const AboutCard: React.FC<WPAboutCardProp> = ({
     >
       <div className="relative overflow-hidden">
         <Image
-          src={`${image.url}`}
+          src={`${STRAPI_URL}${image.url}`}
           alt={image.alternativeText || ""}
           className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
           width={363}

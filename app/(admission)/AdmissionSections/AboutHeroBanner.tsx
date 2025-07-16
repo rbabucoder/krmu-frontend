@@ -30,6 +30,7 @@ import {
 } from "@/components/ui/select";
 import { AdmissionBanner } from "@/lib/types/admission";
 import Link from "next/link";
+import { STRAPI_URL } from "@/app/constant";
 
 type AboutHeroBannerProps = {
   banners: AdmissionBanner[];
@@ -115,7 +116,7 @@ const AboutHeroBanner = ({ banners }: AboutHeroBannerProps) => {
     <>
       <div id="home">
         <header className="relative bg-gradient-to-r from-blue-50 to-red-50 overflow-hidden">
-          <div className="relative h-[70vh] md:h-[100vh] min-h-[500px] md:min-h-[700px]">
+          <div className="relative h-[70vh] md:h-[100vh] min-h-[800px] sm:min-h-[500px] md:min-h-[700px]">
             {/* Carousel Container */}
             <div className="absolute inset-0">
               {banners.map((banner, index) => (
@@ -130,7 +131,7 @@ const AboutHeroBanner = ({ banners }: AboutHeroBannerProps) => {
                   {/* Background Image */}
                   <div className="absolute inset-0">
                     <Image
-                      src={`${banner.image.url}`}
+                      src={`${STRAPI_URL}${banner.image.url}`}
                       alt={`${banner.title} - University Banner`}
                       width={1200} // Specify the width
                       height={800} // Specify the height

@@ -19,12 +19,12 @@ const page = async () => {
   return (
     <>
       <section className="min-h-[1px] h-full pt-44 lg:h-[600px] bg-[url(/krmabout.webp)] bg-cover bg-center relative prog-banner-shade">
-        <div className="max-w-[1600px] mx-auto w-full text-white h-full flex flex-col justify-end px-4 xl:px-0">
+        <div className="max-w-[1600px] mx-auto w-full text-white h-full flex flex-col justify-end px-4">
           <div className="z-10">
             <h1 className="text-4xl md:text-5xl lg:text-8xl font-semibold mb-5">
               {aboutData?.title}
             </h1>
-            <p className="text-base md:text-xl lg:text-2xl mb-10">
+            <p className="text-base lg:text-xl lg:text-2xl mb-10">
               {aboutData?.subtitle}
             </p>
           </div>

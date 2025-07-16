@@ -69,7 +69,7 @@ const About = async ({
             </div>
             <div className="bg-gradient-to-br from-university-blue to-university-red rounded-2xl p-8 mb-16">
               <div className="text-center mb-8">
-                <h3 className="text-2xl text-white mb-4 font-bold text-[36px]">
+                <h3 className="text-xl md:text-2xl text-white mb-4 font-bold lg:text-[36px]">
                   {achievementstitle}
                 </h3>
                 <p className="text-white/90">{achievementsdescriptions}</p>

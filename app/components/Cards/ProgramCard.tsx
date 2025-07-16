@@ -50,7 +50,7 @@ const ProgramCard: React.FC<ProgramCardProps> = ({ cardData }) => {
             </svg>
             <span>
               Duration:
-              <span className="text-gray-800">{cardData.duration}</span>
+              <span className="text-gray-800"> {cardData.duration}</span>
             </span>
           </div>
           <div className="flex items-center text-gray-600">

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { getFeeCardData } from "@/lib/api/admission";
+import { STRAPI_URL } from "@/app/constant";
 
 const FeeDetailsCards = async () => {
   const feeInfo = await getFeeCardData();
@@ -17,7 +18,7 @@ const FeeDetailsCards = async () => {
               {card.feecardimg?.url && (
                 <div className="w-16 h-16 bg-university-red rounded-full flex items-center justify-center mr-4 shadow-lg overflow-hidden">
                   <Image
-                    src={`${card.feecardimg.url}`}
+                    src={`${STRAPI_URL}${card.feecardimg.url}`}
                     alt={card.feecardimg.alternativeText || "Fee Card Image"}
                     width={32}
                     height={32}
