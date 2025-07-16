@@ -1,9 +1,9 @@
-import { STRAPI_URL } from "@/app/constant";
+import { FETCH_STRAPI_URL } from "@/app/constant";
 import { AboutKRMU } from "../types/about";
 
 export async function getAboutKRMU(): Promise<AboutKRMU["data"]> {
   const res = await fetch(
-    `${STRAPI_URL}/api/about-krmu?populate[accrediation][fields][0]=title&populate[accrediation][populate][accrediationlogos]=true&populate[krmugroup][fields][0]=title&populate[krmugroup][fields][1]=subtitle&populate[krmugroup][fields][2]=description&populate[krmugroup][populate][krmbranch]=true&populate[halloffame][fields][0]=title&populate[halloffame][populate][hallfame]=true`,
+    `${FETCH_STRAPI_URL}/api/about-krmu?populate[accrediation][fields][0]=title&populate[accrediation][populate][accrediationlogos]=true&populate[krmugroup][fields][0]=title&populate[krmugroup][fields][1]=subtitle&populate[krmugroup][fields][2]=description&populate[krmugroup][populate][krmbranch]=true&populate[halloffame][fields][0]=title&populate[halloffame][populate][hallfame]=true`,
     {
       next: {
         revalidate: 60,
