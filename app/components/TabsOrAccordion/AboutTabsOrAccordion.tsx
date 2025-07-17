@@ -6,7 +6,6 @@ import AboutAccordion from "../Accordion/AboutAccordion";
 
 const AboutTabsOrAccordion = () => {
   const [isMobile, setIsMobile] = useState(false);
-  const [accTab, setAccTab] = useState([]);
 
   useEffect(() => {
     // Function to update state based on window width
