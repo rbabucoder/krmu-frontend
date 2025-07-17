@@ -6,6 +6,7 @@ import HallofFame from "./HallofFame";
 import { getAboutKRMU } from "@/lib/api/about";
 import AccrediationLogo from "./AccrediationLogo";
 import { CircleCheckBig } from "lucide-react";
+import AdvisoryOrDean from "./AdvisoryOrDean";
 
 const page = async () => {
   const aboutData = await getAboutKRMU();
@@ -176,6 +177,7 @@ const page = async () => {
           </div>
         </div>
       </section>
+      <AdvisoryOrDean />
       {/* <AdvisoryDean /> */}
       <section className="py-16 bg-[url(/kree-bg.webp)] bg-cover">
         <div className="max-w-[1600px] mx-auto w-full text-center bg-[url(/honor.webp)] bg-no-repeat bg-cover bg-center">
