@@ -17,7 +17,7 @@ const HomeTestimonialCard = ({
 }: ProfileProp) => {
   return (
     <div className="bg-white p-5 text-black rounded-[30px]  h-full">
-      <div className="flex items-center gap-4">
+      <div className="flex items-center flex-col sm:flex-row gap-4">
         <div>
           <Image
             src={`${STRAPI_URL}${profileImage?.url}`}
@@ -27,7 +27,7 @@ const HomeTestimonialCard = ({
             className="mb-5"
           />
         </div>
-        <div className="font-bold text-[20px]">
+        <div className="font-bold text-[20px] text-center sm:text-left">
           <p className="leading-[1.5]">{profilename}</p>
           <p>{desg}</p>
         </div>

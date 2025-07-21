@@ -8,7 +8,7 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
+} from "@/components/ui/carousel"; 
 import Autoplay from "embla-carousel-autoplay";
 
 interface GlobalLogosProps {
@@ -48,8 +48,8 @@ const HomeGlobalCarousel = ({ logos }: GlobalLogosProps) => {
               );
             })}
         </CarouselContent>
-        <CarouselPrevious className="bg-[#707070] text-white rounded-none" />
-        <CarouselNext className="bg-[#707070] text-white rounded-none" />
+        <CarouselPrevious className="bg-[#707070] text-white rounded-none left-[2%]" />
+        <CarouselNext className="bg-[#707070] text-white rounded-none right-[-2%]" />
       </Carousel>
     </>
   );

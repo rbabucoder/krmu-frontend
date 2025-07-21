@@ -12,6 +12,7 @@ import ShapingFuture from "./Home/ShapingFuture";
 import VisitExplore from "./Home/VisitExplore";
 import WhyKRMU from "./Home/WhyKRMU";
 import YourJourney from "./Home/YourJourney";
+import MobElevateCampus from "./Home/MobElevateCampus";
 
 export default async function Home() {
   const homepageContent = await getHomePageData();
@@ -126,16 +127,31 @@ export default async function Home() {
             description={whyKRMUData?.Descriptions}
           />
         )}
-        {elevateCampusData && (
-          <ElevateCampus
-            elevateCampus={elevateCampusData?.elevatecampus1}
-            elevateImage1={elevateCampusData?.elevatecampusimage1}
-            elevateCampus2={elevateCampusData?.ElevateCampus2}
-            elevateImage2={elevateCampusData?.elevatecampusimage2}
-            elevateCampus3={elevateCampusData?.elevatecampus3}
-            elevateImage3={elevateCampusData?.elevatecampusimage3}
-          />
-        )}
+        <div className="hidden lg:block">
+          {elevateCampusData && (
+            <ElevateCampus
+              elevateCampus={elevateCampusData?.elevatecampus1}
+              elevateImage1={elevateCampusData?.elevatecampusimage1}
+              elevateCampus2={elevateCampusData?.ElevateCampus2}
+              elevateImage2={elevateCampusData?.elevatecampusimage2}
+              elevateCampus3={elevateCampusData?.elevatecampus3}
+              elevateImage3={elevateCampusData?.elevatecampusimage3}
+            />
+          )}
+        </div>
+        <div className="lg:hidden">
+          {elevateCampusData && (
+            <MobElevateCampus
+              elevateCampus={elevateCampusData?.elevatecampus1}
+              elevateImage1={elevateCampusData?.elevatecampusimage1}
+              elevateCampus2={elevateCampusData?.ElevateCampus2}
+              elevateImage2={elevateCampusData?.elevatecampusimage2}
+              elevateCampus3={elevateCampusData?.elevatecampus3}
+              elevateImage3={elevateCampusData?.elevatecampusimage3}
+            />
+          )}
+        </div>
+
         {homeKRMTestimonialData && (
           <HomeTestimonial
             title={homeKRMTestimonialData?.title}
@@ -172,7 +188,7 @@ export default async function Home() {
             visitexplorebtns={visitExploreData?.visitexplorebtn}
           />
         )}
-        {eventsNewsData && <EventsAndNews title={eventsNewsData?.title} />}
+        {eventsNewsData && <EventsAndNews title={eventsNewsData?.title} newsandeventbtn={eventsNewsData?.newsandeventbtn} />}
       </main>
     </>
   );

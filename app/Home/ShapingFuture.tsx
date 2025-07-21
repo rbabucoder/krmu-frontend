@@ -54,7 +54,7 @@ const ShapingFuture = ({
                         key={counter?.id}
                         className="flex flex-col text-center items-center justify-center mb-5 lg:items-start lg:mx-4 lg:justify-start lg:text-left lg:w-1/4"
                       >
-                        <span className="text-[#e31e24] text-4xl font-bold mb-[10px] lg:text-[60px]">
+                        <span className="text-[#e31e24]  font-bold mb-[10px] text-4xl xl:text-[60px]">
                           {counter?.countertext}
                         </span>
                         <span className="text-xl font-semibold">

@@ -1,28 +1,51 @@
 import Image from "next/image";
 import Link from "next/link";
+import { StrapiMedia } from "@/lib/types/common";
+import { STRAPI_URL } from "@/app/constant";
 
-const HomeNewsEventsCard = () => {
+interface HomeNewsEventsCardProps {
+  data: {
+    id: number;
+    title: string;
+    createdAt: string;
+    newsmedia: StrapiMedia[];
+  };
+}
+
+const HomeNewsEventsCard: React.FC<HomeNewsEventsCardProps> = ({ data }) => {
+  const image = data.newsmedia?.[0];
+  const formattedDate = new Date(data.createdAt).toLocaleDateString("en-GB", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric",
+  });
+
   return (
     <div className="lg:py-5 lg:px-12">
-      <div className="">
-        <Link href="/">
+      <div>
+        <Link href={`/news-events/${data.id}`}>
           <Image
-            src="/International-Conference.webp"
-            alt="New and Events Image 1"
+            src={`${STRAPI_URL}${image.url}`}
+            alt={image?.alternativeText || data.title}
             width={466}
             height={312}
-            className="rounded-t-3xl"
+            className="rounded-t-3xl object-cover"
           />
         </Link>
         <div className="pt-5 pl-7 text-white">
-          <span className="text-sm">Published On: May 11, 2025</span>
+          <span className="text-sm text-[#898989]">Published On: {formattedDate}</span>
+          <div className="flex flex-col">
+
           <Link
-            href="/"
-            className="font-medium text-xl leading-[1] inline-block mt-2.5 mb-4"
-          >
-            <h5>International Conference on Envisioning the Future India</h5>
+            href="#"
+            className="font-medium text-xl leading-[1] mt-2.5 mb-4 inline-block h-[50px]"
+            >
+            <h5>{data.title}</h5>
           </Link>
-          <Link href="/" className="text-xs underline italic">Know More</Link>
+          <Link href="#" className="text-xs underline italic">
+            Know More
+          </Link>
+            </div>
         </div>
       </div>
     </div>

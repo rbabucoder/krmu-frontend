@@ -29,7 +29,7 @@ const YourJourney = ({ title, content, buttons }: YourJourneyProps) => {
             <p className="xl:max-w-md w-full text-center xl:text-left mb-5">
               {content}
             </p>
-            <div className="flex items-center gap-16">
+            <div className="flex items-center justify-center lg:justify-start flex-col lg:flex-row gap-5 lg:gap-16">
               {buttons &&
                 buttons.map((button, i) => (
                   <Link
@@ -45,7 +45,7 @@ const YourJourney = ({ title, content, buttons }: YourJourneyProps) => {
             </div>
           </div>
           <div className="w-full xl:w-1/2 flex justify-center mt-10 xl:mt-0 xl:justify-end">
-            <div className="max-w-xl w-full lg:my-5">
+            <div className="max-w-md w-full lg:my-5">
               <HomeYourJourneyForm />
             </div>
           </div>

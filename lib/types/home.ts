@@ -178,6 +178,7 @@ export interface HomeNewsandEventsType {
   __component: "homepage-components.home-events-and-news";
   id: number;
   title: string;
+  newsandeventbtn: ButtonType;
 }
 
 // Full page content union

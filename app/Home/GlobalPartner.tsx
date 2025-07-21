@@ -31,7 +31,7 @@ const GlobalPartner = ({
               </h4>
             </div>
             <div>
-              <HomeGlobalCarousel logos={globalLogos} />
+              <HomeGlobalCarousel logos={globalLogos} /> 
             </div>
           </div>
         </div>
