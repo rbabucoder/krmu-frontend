@@ -153,6 +153,7 @@ export interface ShapingFutureType {
   link2text: string;
   link2: string;
   shapingimage: StrapiMedia;
+  mobileshapingimage: StrapiMedia;
   shapingCounter: CounterItem[];
 }
 
@@ -162,6 +163,7 @@ export interface GlobalPartnerType {
   title: string;
   descriptions: string;
   logosliderheading: string;
+  globalpartnerimages: StrapiMedia[]
 }
 
 export interface VisitExploreType {

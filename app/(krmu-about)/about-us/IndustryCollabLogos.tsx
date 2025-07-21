@@ -7,8 +7,14 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import { StrapiMedia } from "@/lib/types/common";
+import { STRAPI_URL } from "@/app/constant";
 
-const IndustryCollabLogos = () => {
+interface IndustryCollabLogosProps {
+  indusLogos: StrapiMedia[];
+}
+
+const IndustryCollabLogos = ({ indusLogos }: IndustryCollabLogosProps) => {
   return (
     <div>
       <Carousel
@@ -23,29 +29,19 @@ const IndustryCollabLogos = () => {
         ]}
       >
         <CarouselContent>
-          <CarouselItem className="basis-1/2 lg:basis-1/3">
-            <Image src="/pranab.webp" width={201} height={115} alt="pranab" />
-          </CarouselItem>
-          <CarouselItem className="basis-1/2 lg:basis-1/3">
-            <Image
-              src="/Mugliann.webp"
-              width={201}
-              height={115}
-              alt="Mugliann"
-            />
-          </CarouselItem>
-          <CarouselItem className="basis-1/2 lg:basis-1/3">
-            <Image src="/rk.webp" width={201} height={115} alt="rk" />
-          </CarouselItem>
-          <CarouselItem className="basis-1/2 lg:basis-1/3">
-            <Image src="/polite.webp" width={201} height={115} alt="rk" />
-          </CarouselItem>
-          <CarouselItem className="basis-1/2 lg:basis-1/3">
-            <Image src="/odour.webp" width={201} height={115} alt="rk" />
-          </CarouselItem>
-          <CarouselItem className="basis-1/2 lg:basis-1/3">
-            <Image src="/namqqi.webp" width={201} height={115} alt="rk" />
-          </CarouselItem>
+          {indusLogos &&
+            indusLogos.map((logo) => {
+              return (
+                <CarouselItem key={logo?.id} className="basis-1/2 lg:basis-1/3">
+                  <Image
+                    src={`${STRAPI_URL}${logo?.url}`}
+                    width={201}
+                    height={115}
+                    alt={logo?.alternativeText || "Industry Colloboration Logo"}
+                  />
+                </CarouselItem>
+              );
+            })}
         </CarouselContent>
       </Carousel>
     </div>

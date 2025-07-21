@@ -1,15 +1,18 @@
+import { StrapiMedia } from "@/lib/types/common";
 import HomeGlobalCarousel from "../components/Carousels/HomeGlobalCarousel";
 
 interface GlobalPartenerProp {
   title: string;
   desc: string;
   logoSliderHeading: string;
+  globalLogos: StrapiMedia[]
 }
 
 const GlobalPartner = ({
   title,
   desc,
   logoSliderHeading,
+  globalLogos
 }: GlobalPartenerProp) => {
   return (
     <>
@@ -28,7 +31,7 @@ const GlobalPartner = ({
               </h4>
             </div>
             <div>
-              <HomeGlobalCarousel />
+              <HomeGlobalCarousel logos={globalLogos} />
             </div>
           </div>
         </div>

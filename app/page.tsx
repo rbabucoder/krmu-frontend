@@ -153,6 +153,7 @@ export default async function Home() {
             link2text={shapingFutureData?.link2text}
             link2={shapingFutureData?.link2}
             shapingimage={shapingFutureData?.shapingimage}
+            mobShapimage={shapingFutureData?.mobileshapingimage}
             shapingCounters={shapingFutureData?.shapingCounter}
           />
         )}
@@ -161,6 +162,7 @@ export default async function Home() {
             title={globalPartenerData?.title}
             desc={globalPartenerData?.descriptions}
             logoSliderHeading={globalPartenerData?.logosliderheading}
+            globalLogos={globalPartenerData?.globalpartnerimages}
           />
         )}
         {visitExploreData && (

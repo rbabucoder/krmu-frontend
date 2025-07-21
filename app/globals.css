@@ -15,13 +15,56 @@
 
 /* Custom utility class */
 @layer utilities {
+
+  .tick-li ul{
+    margin-left: 40px;
+  }
+  .tick-li ul li{
+    list-style: none;
+    position: relative;
+  }
+
+  .tick-li ul li::before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: url('/white-circle-check-big.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 0;
+    left: -40px;
+
+  }
+
+  .buttonPrevNextSize svg{
+    width: 55px !important;
+    height: 55px !important;
+    stroke-width: 1px;
+  }
+  .homebg-grad{
+    position: relative;
+  }
+  
+  .homebg-grad::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #0060AA80 41%, #E31E2480 74%);
+    /* background-color: red; */
+  }
+
+
   .faculty-post-card-image {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, .25));
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-.mobacc svg{
-  display: none;
-}
+  }
+  .mobacc svg {
+    display: none;
+  }
   .faculty-with-advisory {
     border-radius: 48px;
     background: #ebecec;

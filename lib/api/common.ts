@@ -1,5 +1,6 @@
 import { FETCH_STRAPI_URL } from "@/app/constant";
 import { AlumniApiResponse, FacilityAPIResponse } from "../types/common";
+import { TestimonialItem, TestimonialResponse } from "../constants/testimonial";
 
 export async function getAlumniData(): Promise<AlumniApiResponse["data"]> {
   const res = await fetch(`${FETCH_STRAPI_URL}/api/alumnis?populate=*`, {
@@ -23,5 +24,17 @@ export async function getFacilityData(): Promise<FacilityAPIResponse["data"]> {
   if (!res.ok) throw new Error("Failed to fetch Alumni Data");
 
   const json: FacilityAPIResponse = await res.json();
+  return json.data;
+}
+
+export async function getTestimonialsData(): Promise<TestimonialItem[]> {
+  const res = await fetch(`${FETCH_STRAPI_URL}/api/testimonials?populate=*`, {
+    next: {
+      revalidate: 50,
+    },
+  });
+  if (!res.ok) throw new Error("Failed to fetch Alumni Data");
+
+  const json: TestimonialResponse = await res.json();
   return json.data;
 }

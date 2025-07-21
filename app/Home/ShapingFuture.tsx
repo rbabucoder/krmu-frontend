@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { STRAPI_URL } from "../constant";
 
-
 interface ShapingFutureProp {
   highlight: string;
   subtitle: string;
@@ -14,6 +13,7 @@ interface ShapingFutureProp {
   link2text: string;
   link2: string;
   shapingimage: StrapiMedia;
+  mobShapimage: StrapiMedia;
   shapingCounters: CounterItem[];
 }
 
@@ -27,6 +27,7 @@ const ShapingFuture = ({
   link2text,
   link2,
   shapingimage,
+  mobShapimage,
   shapingCounters,
 }: ShapingFutureProp) => {
   return (
@@ -49,7 +50,10 @@ const ShapingFuture = ({
                 {shapingCounters &&
                   shapingCounters.map((counter) => {
                     return (
-                      <div key={counter?.id} className="flex flex-col text-center items-center justify-center mb-5 lg:items-start lg:mx-4 lg:justify-start lg:text-left lg:w-1/4">
+                      <div
+                        key={counter?.id}
+                        className="flex flex-col text-center items-center justify-center mb-5 lg:items-start lg:mx-4 lg:justify-start lg:text-left lg:w-1/4"
+                      >
                         <span className="text-[#e31e24] text-4xl font-bold mb-[10px] lg:text-[60px]">
                           {counter?.countertext}
                         </span>
@@ -59,39 +63,6 @@ const ShapingFuture = ({
                       </div>
                     );
                   })}
-
-                {/* <div className="flex flex-col text-center items-center justify-center mb-5 lg:items-start lg:mx-4 lg:justify-start lg:text-left lg:w-1/4">
-                  <span className="text-[#e31e24] text-4xl font-bold mb-[10px] lg:text-[60px]">
-                    100+
-                  </span>
-                  <span className="text-xl font-semibold">
-                    High-End Teaching and Research Labs
-                  </span>
-                </div>
-                <div className="flex flex-col text-center items-center justify-center mb-5 lg:items-start lg:mx-4 lg:justify-start lg:text-left lg:w-1/4">
-                  <span className="text-[#e31e24] text-4xl font-bold mb-[10px] lg:text-[60px]">
-                    3000+
-                  </span>
-                  <span className="text-xl font-semibold">
-                    No. of Research Publications
-                  </span>
-                </div>
-                <div className="flex flex-col text-center items-center justify-center mb-5 lg:items-start lg:mx-4 lg:justify-start lg:text-left lg:w-1/4">
-                  <span className="text-[#e31e24] text-4xl font-bold mb-[10px] lg:text-[60px]">
-                    7Cr+{" "}
-                  </span>
-                  <span className="text-xl font-semibold">
-                    Research and consultancy grants to the university
-                  </span>
-                </div>
-                <div className="flex flex-col text-center items-center justify-center mb-5 lg:items-start lg:mx-4 lg:justify-start lg:text-left lg:w-1/4">
-                  <span className="text-[#e31e24] text-4xl font-bold mb-[10px] lg:text-[60px]">
-                    200+
-                  </span>
-                  <span className="text-xl font-semibold">
-                    No. of Patents granted & published{" "}
-                  </span>
-                </div> */}
               </div>
             </div>
             <div className="lg:w-2/5 lg:mx-8">
@@ -104,8 +75,21 @@ const ShapingFuture = ({
                     width: "100%",
                     height: "auto",
                   }}
+                  className="hidden lg:block"
                   alt="Shaping Future"
                 />
+                <div className="homebg-grad lg:hidden">
+                  <Image
+                    src={`${STRAPI_URL}${mobShapimage?.url}`}
+                    width={292}
+                    height={292}
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                    }}
+                    alt="Shaping Future"
+                  />
+                </div>
               </div>
               <div className="text-center pt-2.5 pb-5 px-2.5 bg-[#e31e24] flex justify-center flex-col items-center text-white rounded-b-[41px] lg:hidden">
                 <Link
