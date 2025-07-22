@@ -53,7 +53,7 @@ const ElevateCampus = ({
               alt="Elevate"
               width={994}
               height={607}
-              className={`h-full w-full ${elevateCampus?.linkclass}`}
+              className={`h-full w-full object-cover ${elevateCampus?.linkclass}`}
             />
           </div>
         </div>
@@ -87,11 +87,11 @@ const ElevateCampus = ({
               alt="Elevate"
               width={993}
               height={575}
-              className="h-full w-full"
+              className="h-full w-full object-cover"
             />
           </div>
         </div>
-        <div className="flex flex-col xl:flex-row items-center">
+        <div className="flex flex-col xl:flex-row">
           <div className="2xl:mt-8 w-full xl:w-1/2">
             <div className="p-5 xl:mb-5  xl:py-[30px] xl:pr-20 xl:pl-[65px] bg-[#e5eff6] xl:min-h-[503px] h-full">
               <h4 className="text-lg font-semibold mb-3">
@@ -121,7 +121,7 @@ const ElevateCampus = ({
               alt="Elevate"
               width={993}
               height={596}
-              className="h-full w-full"
+              className="h-full w-full object-cover"
             />
           </div>
         </div>

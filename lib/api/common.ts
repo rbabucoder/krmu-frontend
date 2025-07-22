@@ -40,7 +40,9 @@ export async function getTestimonialsData(): Promise<TestimonialItem[]> {
   return json.data;
 }
 
-export async function getNewsAndEventsData(): Promise<NEWSANDEVENTSResponse["data"]> {
+export async function getNewsAndEventsData(): Promise<
+  NEWSANDEVENTSResponse["data"]
+> {
   const res = await fetch(
     `${FETCH_STRAPI_URL}/api/news-and-events?populate=*`,
     {
