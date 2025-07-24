@@ -88,7 +88,7 @@ const page = async () => {
         <div className="max-w-[1600px] mx-auto w-full">
           <div className="flex flex-wrap xl:flex-nowrap  gap-5 w-full">
             <div className="w-full xl:w-1/3 flex flex-col gap-5">
-              <div className="bg-[url(/industry.webp)] pt-[272px] pb-2.5 px-2.5 text-white font-semibold">
+              <div className="bg-[url(/industry.webp)] bg-cover pt-[272px] pb-2.5 px-2.5 text-white font-semibold">
                 <h3 className="text-3xl md:text-4xl mb-5">
                   Industry <br />
                   Collaborated
