@@ -3,6 +3,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/Footer/Footer";
 import HeaderWrapper from "./components/Header/HeaderWrapper";
+import { Button } from "@/components/ui/button";
 
 const montserrat = Montserrat({
   weight: ["300", "400", "500", "600", "700"],
@@ -25,6 +26,8 @@ export default function RootLayout({
         <HeaderWrapper />
         {children}
         <Footer />
+        <Button className="bg-[#f00] border border-none py-[6px] px-[15px] fixed top-[50%] right-[-42px] rotate-90 rounded-sm h-[27px] z-50">Enquire Now</Button>
+        <Button className="bg-[#f00] border border-none py-[6px] px-[15px] fixed top-[70%] right-[-57px] rotate-90 rounded-sm h-[27px] z-50">360° Virtual Tour</Button>
       </body>
     </html>
   );
