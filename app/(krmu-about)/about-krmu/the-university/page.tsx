@@ -88,7 +88,7 @@ const page = async () => {
         <div className="max-w-[1600px] mx-auto w-full">
           <div className="flex flex-wrap xl:flex-nowrap  gap-5 w-full">
             <div className="w-full xl:w-1/3 flex flex-col gap-5">
-              <div className="bg-[url(/industry.webp)] bg-cover pt-[272px] pb-2.5 px-2.5 text-white font-semibold">
+              <div className="bg-[url(/industry.webp)] pt-[272px] pb-2.5 px-2.5 text-white font-semibold">
                 <h3 className="text-3xl md:text-4xl mb-5">
                   Industry <br />
                   Collaborated
@@ -133,7 +133,7 @@ const page = async () => {
               </div>
             </div>
             <div className="w-full md:w-1/2">
-              <div className="bg-[url(/student.webp)] bg-cover pt-32 xl:pt-64 pb-[30px] px-[30px] text-white  h-full">
+              <div className="bg-[url(/andi.jpg)] bg-cover pt-32 xl:pt-64 pb-[30px] px-[30px] text-white  h-full">
                 <h4 className="text-3xl">Our Excellent</h4>
                 <h5 className="md:text-5xl font-semibold leading-[1.3]">
                   Teacher Pedagogy
