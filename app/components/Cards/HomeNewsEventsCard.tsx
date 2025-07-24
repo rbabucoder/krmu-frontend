@@ -21,7 +21,7 @@ const HomeNewsEventsCard: React.FC<HomeNewsEventsCardProps> = ({ data }) => {
   });
 
   return (
-    <div className="lg:py-5 lg:px-12">
+    <div className="lg:py-5 lg:px-5 xl:px-12">
       <div>
         <Link href={`/news-events/${data.id}`}>
           <Image
