@@ -26,13 +26,15 @@ const PlacementsRecruiters = ({
                 width={38}
                 height={38}
                 alt={title2}
+                className="w-[38px] h-[35px]"
               />
               <span className="text-lg font-medium">{title1}</span>
               <Image
-                src="/arrow-1.svg"
+                src="/tiltarrow.svg"
                 width={17}
-                height={32}
+                height={10}
                 alt="Black Arrow"
+                className="w-[17px] h-2.5"
               />
             </div>
             <div className="flex items-center gap-2.5">
@@ -41,13 +43,15 @@ const PlacementsRecruiters = ({
                 width={54}
                 height={43}
                 alt={title2}
+                className="w-[38px] h-[35px]"
               />
               <span className="text-lg font-medium">{title2}</span>
               <Image
-                src="/arrow-1.svg"
+                src="/tiltarrow.svg"
                 width={17}
-                height={32}
+                height={10}
                 alt="Black Arrow"
+                className="w-[17px] h-2.5"
               />
             </div>
           </div>
