@@ -29,10 +29,10 @@ const HomeNewsEventsCard: React.FC<HomeNewsEventsCardProps> = ({ data }) => {
             alt={image?.alternativeText || data.title}
             width={466}
             height={312}
-            className="rounded-t-3xl object-cover"
+            className="w-full rounded-t-3xl object-cover"
           />
         </Link>
-        <div className="pt-5 pl-7 text-white">
+        <div className="pt-5 pl-0 sm:pl-7 text-white">
           <span className="text-sm text-[#898989]">Published On: {formattedDate}</span>
           <div className="flex flex-col">
 

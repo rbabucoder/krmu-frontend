@@ -63,7 +63,6 @@ const MobElevateCampus = ({
                       </Link>
                     )}
                   </div>
-                  <div></div>
                 </div>
                 <div className="w-full xl:w-1/2">
                   <Image
@@ -71,7 +70,7 @@ const MobElevateCampus = ({
                     alt="Elevate"
                     width={994}
                     height={607}
-                    className={`h-full w-full ${elevateCampus?.linkclass}`}
+                    className={`h-full w-full object-cover ${elevateCampus?.linkclass}`}
                   />
                 </div>
               </div>
@@ -107,7 +106,7 @@ const MobElevateCampus = ({
                     alt="Elevate"
                     width={993}
                     height={575}
-                    className="h-full w-full"
+                    className="h-full w-full object-cover"
                   />
                 </div>
               </div>
@@ -143,7 +142,7 @@ const MobElevateCampus = ({
                     alt="Elevate"
                     width={993}
                     height={596}
-                    className="h-full w-full"
+                    className="h-full w-full object-cover"
                   />
                 </div>
               </div>

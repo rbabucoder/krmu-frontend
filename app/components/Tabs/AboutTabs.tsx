@@ -107,7 +107,7 @@ const AboutTabs = () => {
           </TabsContent>
           <TabsContent value="krmudean">
             {" "}
-            <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  lg:grid-cols-5 gap-5 xl:gap-10">
               <div className="w-full text-center faculty-post-card-image rounded-tr-3xl">
                 <div className="-z-10 rounded-tr-2xl">
                   <Image

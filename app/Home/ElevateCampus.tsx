@@ -45,7 +45,6 @@ const ElevateCampus = ({
                 </Link>
               )}
             </div>
-            <div></div>
           </div>
           <div className="w-full xl:w-1/2">
             <Image
@@ -121,7 +120,7 @@ const ElevateCampus = ({
               alt="Elevate"
               width={993}
               height={596}
-              className="h-full w-full object-cover"
+              className="h-[600px] w-full object-cover"
             />
           </div>
         </div>

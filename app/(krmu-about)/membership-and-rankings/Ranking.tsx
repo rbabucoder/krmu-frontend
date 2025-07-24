@@ -7,6 +7,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
@@ -51,6 +53,8 @@ const Ranking: React.FC<RankingProps> = ({ rankingData }) => {
               );
             })}
         </CarouselContent>
+        <CarouselPrevious className="left-0" />
+        <CarouselNext className="right-0" />
       </Carousel>
     </>
   );

@@ -2,6 +2,8 @@ import { FETCH_STRAPI_URL } from "@/app/constant";
 import { AlumniApiResponse, FacilityAPIResponse } from "../types/common";
 import { TestimonialItem, TestimonialResponse } from "../constants/testimonial";
 import { NEWSANDEVENTSResponse } from "../types/news-and-events";
+import { TOPBARResponse } from "../types/HeaderType";
+import { GlobalResponse } from "../types/global";
 
 export async function getAlumniData(): Promise<AlumniApiResponse["data"]> {
   const res = await fetch(`${FETCH_STRAPI_URL}/api/alumnis?populate=*`, {
@@ -54,5 +56,34 @@ export async function getNewsAndEventsData(): Promise<
   if (!res.ok) throw new Error("Failed to fetch Alumni Data");
 
   const json: NEWSANDEVENTSResponse = await res.json();
+  return json.data;
+}
+
+// http://localhost:1337/api/topbar-menu?populate[TopbarMenuItems]=true&populate[topbarsociallinks][populate][socialicon]=true&populate[topbarsociallinks][fields][0]=url
+
+export async function getTopbarData(): Promise<TOPBARResponse["data"]> {
+  const res = await fetch(
+    `${FETCH_STRAPI_URL}/api/topbar-menu?populate[TopbarMenuItems]=true&populate[topbarsociallinks][populate][socialicon]=true&populate[topbarsociallinks][fields][0]=url`,
+    {
+      next: {
+        revalidate: 60,
+      },
+    }
+  );
+  if (!res.ok) throw new Error("Failed to fetch Topbar Data");
+
+  const json: TOPBARResponse = await res.json();
+  return json.data;
+}
+
+export async function getMetaInfo(): Promise<GlobalResponse["data"]> {
+  const res = await fetch(`${FETCH_STRAPI_URL}/api/global?populate=*`, {
+    next: {
+      revalidate: 60,
+    },
+  });
+  if (!res.ok) throw new Error("Failed to fetch Meta info Data");
+
+  const json: GlobalResponse = await res.json();
   return json.data;
 }

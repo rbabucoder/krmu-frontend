@@ -15,48 +15,60 @@
 
 /* Custom utility class */
 @layer utilities {
+  .primary {
+    background: red;
+    padding: 8px 5px;
+    border-radius: 5px;
+  }
+  /* globals.css */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 
-  .tick-li ul{
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .tick-li ul {
     margin-left: 40px;
   }
-  .tick-li ul li{
+  .tick-li ul li {
     list-style: none;
     position: relative;
   }
 
-  .tick-li ul li::before{
-    content: '';
+  .tick-li ul li::before {
+    content: "";
     width: 30px;
     height: 30px;
     position: absolute;
-    background: url('/white-circle-check-big.svg');
+    background: url("/white-circle-check-big.svg");
     background-repeat: no-repeat;
     background-size: contain;
     top: 0;
     left: -40px;
-
   }
 
-  .buttonPrevNextSize svg{
+  .buttonPrevNextSize svg {
     width: 55px !important;
     height: 55px !important;
     stroke-width: 1px;
   }
-  .homebg-grad{
+  .homebg-grad {
     position: relative;
   }
-  
-  .homebg-grad::before{
+
+  .homebg-grad::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, #0060AA80 41%, #E31E2480 74%);
+    background: linear-gradient(180deg, #0060aa80 41%, #e31e2480 74%);
     /* background-color: red; */
   }
-
 
   .faculty-post-card-image {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -365,6 +377,78 @@
   .border-university-blue {
     border-color: var(--color-university-blue);
   }
+
+  /* Timeline Carousel */
+
+
+  /* .timeline {
+    padding: 120px 180px 50px 180px;
+  } */
+
+  /* .timeline-nav__item {
+    background-color: #ffffff;
+    content: url("/circle-ring.svg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+
+  /* .timeline .slick-current .timeline-nav__item::after {
+    background-color: #fff;
+    content: url(/circle-ring.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+
+  /* .timeline-slider .slick-slide > div {
+    max-width: 950px;
+    margin: 0 auto;
+  }
+
+  .timeline-slider .slick-prev {
+    left: 11% !important;
+    z-index: 99999999999999999999999;
+  }
+  .timeline-slider .slick-prev:before {
+    content: url("/prev-chevron.svg") !important;
+  }
+
+  .timeline-slider .slick-next {
+    right: 11% !important;
+    z-index: 99999999999999999999999;
+  }
+  .timeline-slider .slick-next:before {
+    content: url("/next-chevron.svg") !important;
+  }
+
+  .timelinetext-bg {
+    border-radius: 0px 25px 25px 0px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.09) 0%,
+      rgba(255, 255, 255, 0.0549) 100%
+    );
+    backdrop-filter: blur(10px);
+    opacity: 1;
+    transition: opacity 1s;
+  }
+
+  @media (max-width: 992px) {
+    .timeline-slider .slick-prev {
+      top: 100% !important;
+    }
+    .timeline-slider .slick-next {
+      top: 100% !important;
+    }
+  }
+  @media (max-width: 640px) {
+    .timelinetext-bg {
+      border-radius: 0px 0px 25px 25px;
+    }
+  } */
+
+  /* Timeline Carousel */
 }
 
 @theme inline {

@@ -3,11 +3,11 @@ import Link from "next/link";
 import { getAboutKRMU } from "@/lib/api/about";
 import { BlocksRenderer } from "@strapi/blocks-react-renderer";
 import { STRAPI_URL } from "@/app/constant";
-import AccrediationLogo from "./AccrediationLogo";
-import KRMUGroupCard from "./KRMUGroupCard";
-import HallofFame from "./HallofFame";
-import AdvisoryOrDean from "./AdvisoryOrDean";
-import IndustryCollabLogos from "./IndustryCollabLogos";
+import AccrediationLogo from "../AccrediationLogo";
+import KRMUGroupCard from "../KRMUGroupCard";
+import HallofFame from "../HallofFame";
+import AdvisoryOrDean from "../AdvisoryOrDean";
+import IndustryCollabLogos from "../IndustryCollabLogos";
 
 const page = async () => {
   const aboutData = await getAboutKRMU();
@@ -216,7 +216,7 @@ const page = async () => {
               aboutData?.krmucommittee?.committeebtn?.buttonclass) && (
               <Link
                 href={aboutData?.krmucommittee?.committeebtn?.buttonlink}
-                className={`p-2.5 px-[18px] bg-[#cb000d] text-base inline-block rounded-sm leading-4 text-white ${aboutData?.krmucommittee?.committeebtn?.buttonclass}`}
+                className={`mt-5 p-2.5 px-[18px] bg-[#cb000d] text-base inline-block rounded-sm leading-4 text-white ${aboutData?.krmucommittee?.committeebtn?.buttonclass}`}
               >
                 {aboutData?.krmucommittee?.committeebtn?.buttontext}
               </Link>

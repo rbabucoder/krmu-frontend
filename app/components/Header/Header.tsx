@@ -2,8 +2,14 @@
 import { useEffect, useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import Topbar from "./Topbar";
+import { TOPBARITEMS, TOPBARSOCIALLInks } from "@/lib/types/HeaderType";
 
-const Header = () => {
+type TOPBARPROPS = {
+  topbarmenu: TOPBARITEMS[];
+  topbarsociallinks: TOPBARSOCIALLInks[];
+};
+
+const Header = ({ topbarmenu, topbarsociallinks }: TOPBARPROPS) => {
   const [showTopbar, setShowTopbar] = useState(false);
 
   useEffect(() => {
@@ -27,10 +33,12 @@ const Header = () => {
               ? "#051730" // when scrolled down
               : "rgba(137, 137, 137, 0.7)", // default
           }}
-
-          
         >
-          {showTopbar ? "" : <Topbar />}
+          {showTopbar ? (
+            ""
+          ) : (
+            <Topbar topbarmenu={topbarmenu} sociallinks={topbarsociallinks} />
+          )}
           <Navbar />
         </div>
       </header>

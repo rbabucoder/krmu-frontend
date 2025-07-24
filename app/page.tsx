@@ -13,6 +13,7 @@ import VisitExplore from "./Home/VisitExplore";
 import WhyKRMU from "./Home/WhyKRMU";
 import YourJourney from "./Home/YourJourney";
 import MobElevateCampus from "./Home/MobElevateCampus";
+import PioneerExcellence from "./Home/PioneerExcellence";
 
 export default async function Home() {
   const homepageContent = await getHomePageData();
@@ -188,7 +189,13 @@ export default async function Home() {
             visitexplorebtns={visitExploreData?.visitexplorebtn}
           />
         )}
-        {eventsNewsData && <EventsAndNews title={eventsNewsData?.title} newsandeventbtn={eventsNewsData?.newsandeventbtn} />}
+        {eventsNewsData && (
+          <EventsAndNews
+            title={eventsNewsData?.title}
+            newsandeventbtn={eventsNewsData?.newsandeventbtn}
+          />
+        )}
+        <PioneerExcellence />
       </main>
     </>
   );

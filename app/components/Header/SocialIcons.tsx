@@ -1,19 +1,38 @@
-import Image from "next/image"
-import Link from "next/link"
+import { STRAPI_URL } from "@/app/constant";
+import { TOPBARSOCIALLInks } from "@/lib/types/HeaderType";
+import Image from "next/image";
+import Link from "next/link";
 
-const SocialIcons = () => {
+type SOCIALLINKSPROPS = {
+  sociallinks: TOPBARSOCIALLInks[];
+};
+
+const SocialIcons = ({ sociallinks }: SOCIALLINKSPROPS) => {
   return (
     <>
-    <ul className="flex gap-3.5 justify-center">
-        <li><Link href="/"><Image src="/whatsapp.svg" width={14} height={16} alt="Whatsapp icon" /></Link></li>
-        <li><Link href="/"><Image src="/phone-icon.svg" width={15} height={15} alt="Phone Call icon" /></Link></li>
-        <li><Link href="/"><Image src="/facebook.svg" width={10} height={16} alt="facebook" /></Link></li>
-        <li><Link href="/"><Image src="/linkedin.svg" width={14} height={16} alt="linkedin" /></Link></li>
-        <li><Link href="/"><Image src="/insta.svg" width={14} height={16} alt="Instagram"/></Link></li>
-        <li><Link href="/"><Image src="/youtube-icon.svg" width={14} height={19} alt="Youtube Icon" /></Link></li>
-    </ul>
+      <ul className="flex gap-3.5 justify-center">
+        {sociallinks &&
+          sociallinks.map((sociallink) => {
+            return (
+              <li key={sociallink.id}>
+                <Link href={sociallink.url}>
+                  <Image
+                    src={`${STRAPI_URL}${sociallink?.socialicon?.url}`}
+                    width={14}
+                    height={16}
+                    alt={
+                      sociallink?.socialicon?.alternativeText ||
+                      "topbarsocial links"
+                    }
+                    className="w-[14px] h-[16px]"
+                  />
+                </Link>
+              </li>
+            );
+          })}
+      </ul>
     </>
-  )
-}
+  );
+};
 
-export default SocialIcons
+export default SocialIcons;
