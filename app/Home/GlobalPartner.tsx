@@ -26,7 +26,7 @@ const GlobalPartner = ({
           </div>
           <div className="w-full lg:w-2/3 lg:mx-8">
             <div className="text-center">
-              <h4 className="text-4xl md:text-5xl leading-[1.5] mt-2.5 mb-4">
+              <h4 className="text-4xl md:text-5xl leading-[1.5] mt-2.5 mb-4 font-semibold">
                 {logoSliderHeading}
               </h4>
             </div>
