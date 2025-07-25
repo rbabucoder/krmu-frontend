@@ -470,7 +470,13 @@
   }
 
   .timeline .slick-list{
-    top: 106px !important;
+    top: 156px !important;
+  }
+
+  @media(max-width: 1440px){
+    .timeline .slick-list{
+      top: 106px  !important;
+    }
   }
   .timeline-content-container .timeline-content{
     margin-left: -20px;
