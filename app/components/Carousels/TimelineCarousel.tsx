@@ -71,7 +71,7 @@ const TimelineCarousel = () => {
   };
 
   return (
-    <div className="lg:pt-14 xl:pt-28 2xl:pt-60 pb-32 -mt-10 overflow-x-auto overflow-y-hidden no-scrollbar relative">
+    <div className=" pb-32 -mt-10 overflow-x-auto overflow-y-hidden no-scrollbar relative">
       {/* Timeline Nav */}
       <div className="timeline  xl:pb-[50px] xl:pl-[180px]">
         <Slider {...navSettings} ref={sliderRef1}>

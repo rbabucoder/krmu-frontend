@@ -26,7 +26,7 @@ const ElevateCampus = ({
       <section className="xl:-mt-[70px]">
         <div className="flex flex-col xl:flex-row">
           <div className="xl:mt-[120px] xl:mb-5 w-full xl:w-1/2 ">
-            <div className="p-5 2xl:mb-5 xl:py-[30px] xl:pr-20 xl:pl-[65px] bg-[#e5e6f3] xl:min-h-[503px] h-full">
+            <div className="p-5 2xl:mb-5 xl:py-[30px] xl:pr-20 xl:pl-[200px] bg-[#e5e6f3] xl:min-h-[503px] h-full">
               <h4 className="text-lg font-semibold mb-3">
                 {elevateCampus?.subtitle}
               </h4>
@@ -40,7 +40,7 @@ const ElevateCampus = ({
               </h3>
               <p className="mb-5">{elevateCampus?.content}</p>
               {(elevateCampus.link || elevateCampus.linkclass) && (
-                <Link href={elevateCampus.link} className="text-[#000e8b] pb-2">
+                <Link href={elevateCampus.link} className="text-[#000e8b] pb-2 underline underline-offset-8">
                   {elevateCampus?.linktext}
                 </Link>
               )}
@@ -58,12 +58,12 @@ const ElevateCampus = ({
         </div>
         <div className="flex flex-col xl:flex-row">
           <div className="xl:mt-8 xl:mb-5 w-full xl:w-1/2">
-            <div className="2xl:mb-8 p-5 xl:py-[30px] xl:pr-20 xl:pl-[65px] bg-[#fce8e9] xl:min-h-[503px] h-full">
+            <div className="2xl:mb-8 p-5 xl:py-[30px] xl:pr-20 lg:pl-[200px] bg-[#fce8e9] xl:min-h-[503px] h-full">
               <h4 className="text-lg font-semibold mb-3">
                 {elevateCampus2?.subtitle}
-              </h4>
+              </h4> 
               <h3 className="text-2xl md:text-4xl xl:text-5xl font-semibold leading-[1.5] mb-8">
-                {elevateCampus2?.beforehighlighttext}
+                {elevateCampus2?.beforehighlighttext} {" "}<br className="hidden lg:block" />
                 <span className="text-[#e31e24]">
                   {elevateCampus2?.highlighttext}
                 </span>{" "}
@@ -73,7 +73,7 @@ const ElevateCampus = ({
               {(elevateCampus2?.link || elevateCampus2?.linkclass) && (
                 <Link
                   href={elevateCampus2?.link}
-                  className={`text-[#e31e24] pb-2 ${elevateCampus2?.linkclass}`}
+                  className={`text-[#e31e24] pb-2 ${elevateCampus2?.linkclass} underline underline-offset-8`}
                 >
                   {elevateCampus2?.linktext}
                 </Link>
@@ -92,7 +92,7 @@ const ElevateCampus = ({
         </div>
         <div className="flex flex-col xl:flex-row">
           <div className="2xl:mt-8 w-full xl:w-1/2">
-            <div className="p-5 xl:mb-5  xl:py-[30px] xl:pr-20 xl:pl-[65px] bg-[#e5eff6] xl:min-h-[503px] h-full">
+            <div className="p-5 xl:mb-5  xl:py-[30px] xl:pr-20 xl:pl-[200px] bg-[#e5eff6] xl:min-h-[503px] h-full">
               <h4 className="text-lg font-semibold mb-3">
                 {elevateCampus3?.subtitle}
               </h4>
@@ -107,7 +107,7 @@ const ElevateCampus = ({
               {(elevateCampus3?.link || elevateCampus3?.linkclass) && (
                 <Link
                   href={elevateCampus3?.link}
-                  className={`text-[#0060aa] pb-2 ${elevateCampus3?.linkclass}`}
+                  className={`text-[#0060aa] pb-2 ${elevateCampus3?.linkclass} underline underline-offset-8`}
                 >
                   {elevateCampus3?.linktext}
                 </Link>
