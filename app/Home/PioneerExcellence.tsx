@@ -18,7 +18,7 @@ const PioneerExcellence = () => {
             umbrella has been a milestone in our quest for educational
             excellence.
           </p>
-          <p>
+          <p className="p-5 md:p-0 bg-[#051630] md:bg-transparent text-white md:text-black">
             Throughout our history, the K.R. Mangalam Group has been at the
             forefront of educational innovation, constantly evolving to meet the
             needs of a changing world. Our institutions are more than just

@@ -380,39 +380,56 @@
   }
 
   .grad-text-color {
-    background: -webkit-linear-gradient(0deg, #0060aa .43%, #e31e24 91.06%);
+    background: -webkit-linear-gradient(0deg, #0060aa 0.43%, #e31e24 91.06%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
+  }
 
   /* Timeline Carousel */
 
-
-  /* .timeline {
-    padding: 120px 180px 50px 180px;
-  } */
-
-  /* .timeline-nav__item {
-    background-color: #ffffff;
+  .timeline-nav__item::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #fff;
+    transition: 0.2s;
+  }
+  /* .timeline .slick-active .timeline-nav__item::before {
+    background-color: #fff;
     content: url("/circle-ring.svg");
     display: flex;
     justify-content: center;
     align-items: center;
   } */
 
-  /* .timeline .slick-current .timeline-nav__item::after {
-    background-color: #fff;
-    content: url(/circle-ring.svg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
-
-  /* .timeline-slider .slick-slide > div {
+  .timeline-slider .slick-slide > div {
     max-width: 950px;
     margin: 0 auto;
   }
-
+  .timeline-nav__item {
+    width: auto;
+    height: auto;
+    text-align: center;
+    opacity: 0.5;
+    background: transparent;
+    color: #fff;
+    margin: 15px 25px !important;
+    position: relative;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    outline: none;
+    cursor: pointer;
+  }
+  .timeline .slick-list {
+    padding-top: 200px !important;
+    padding-bottom: 120px !important;
+  }
   .timeline-slider .slick-prev {
     left: 11% !important;
     z-index: 99999999999999999999999;
@@ -440,6 +457,35 @@
     opacity: 1;
     transition: opacity 1s;
   }
+  .timeline .slick-track .slick-current .timeline-nav__item::before {
+    background-color: #fff;
+    content: url(/circle-ring.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .timeline .slick-track .slick-current .timeline-nav__item {
+    color: #fff;
+    opacity: 1;
+  }
+  @media (max-width: 1280) {
+    .timeline-slider .slick-prev {
+      left: 5% !important;
+    }
+    .timeline-slider .slick-next {
+      right: 5%;
+    }
+  }
+  @media (max-width: 1100px) {
+    .timeline-slider .slick-prev {
+      top: 100% !important;
+      left: 20% !important;
+    }
+    .timeline-slider .slick-next {
+      top: 100% !important;
+      right: 20% !important;
+    }
+  }
 
   @media (max-width: 992px) {
     .timeline-slider .slick-prev {
@@ -449,11 +495,193 @@
       top: 100% !important;
     }
   }
-  @media (max-width: 640px) {
+  /* @media (max-width: 640px) {
     .timelinetext-bg {
       border-radius: 0px 0px 25px 25px;
     }
   } */
+   @media(max-width: 576px){
+    .timeline-image{
+      width:  55%;
+    }
+    .timeline-content{
+      width: 45%;
+    }
+    .timeline-slider .slick-prev, .timeline-slider .slick-next{
+      top: 114% !important;
+    }
+   }
+   @media(max-width: 440px){
+    .timeline-content-container{
+      flex-direction: column;
+    }
+    .timeline-content-container .timeline-image{
+      width: 100% !important;
+    }
+    .timeline-content-container .timeline-content{
+      width: 100% !important;
+    border-radius: 0;
+    /* margin-top: -25px; */
+    border-radius: 0px 0px 25px 25px;
+    }
+
+   }
+  .ln1::after {
+    content: "";
+    position: absolute;
+    top: -24%;
+    left: 50%;
+    transform: rotate(10.5deg);
+    width: 100%;
+    border-top: 1px dashed #fff;
+  }
+
+  .ln2::after {
+    content: "";
+    position: absolute;
+    top: -103%;
+    left: 50%;
+    transform: rotate(3deg);
+    width: 100%;
+    border-top: 1px dashed #fff;
+  }
+
+  .ln3::after {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: rotate(3deg);
+    width: 100%;
+    border-top: 1px dashed #fff;
+  }
+
+  .ln4::after {
+    content: "";
+    position: absolute;
+    top: -178%;
+    left: 50%;
+    transform: rotate(355deg);
+    width: 100%;
+    border-top: 1px dashed #fff;
+  }
+
+  .ln5::after {
+    content: "";
+    position: absolute;
+    top: -170%;
+    left: 50%;
+    transform: rotate(355deg);
+    width: 100%;
+    border-top: 1px dashed #fff;
+  }
+
+  .ln6::after {
+    content: "";
+    position: absolute;
+    top: -80%;
+    left: 50%;
+    transform: rotate(4deg);
+    width: 100%;
+    border-top: 1px dashed #fff;
+  }
+
+  .ln7::after {
+    content: "";
+    position: absolute;
+    top: -98%;
+    left: 50%;
+    transform: rotate(3deg);
+    width: 100%;
+    border-top: 1px dashed #fff;
+  }
+
+  .ln8::after {
+    content: "";
+    position: absolute;
+    top: -152%;
+    left: 50%;
+    transform: rotate(357deg);
+    width: 100%;
+    border-top: 1px dashed #fff;
+  }
+
+  .ln9::after {
+    content: "";
+    position: absolute;
+    top: -130%;
+    left: 50%;
+    transform: rotate(360deg);
+    width: 100%;
+    border-top: 1px dashed #fff;
+  }
+
+  .ln10::after {
+    content: "";
+    position: absolute;
+    top: -127%;
+    left: 50%;
+    transform: rotate(360deg);
+    width: 100%;
+    border-top: 1px dashed #fff;
+  }
+
+  .ln11::after {
+    content: "";
+    position: absolute;
+    top: -128%;
+    left: 50%;
+    transform: rotate(360deg);
+    width: 100%;
+    border-top: 1px dashed #fff;
+  }
+
+  .ln12::after {
+    content: "";
+    position: absolute;
+    top: -170%;
+    left: 50%;
+    transform: rotate(355deg);
+    width: 130%;
+    border-top: 1px dashed #fff;
+  }
+
+  .timeline-nav__item.ln1 {
+    top: -60px;
+  }
+
+  .timeline-nav__item.ln3 {
+    top: 15px;
+  }
+
+  .timeline-nav__item.ln4 {
+    top: 30px;
+  }
+
+  .timeline-nav__item.ln6 {
+    top: -26px;
+  }
+
+  .timeline-nav__item.ln8 {
+    top: 15px;
+  }
+
+  .ln1::after {
+    content: "";
+    position: absolute;
+    top: -22%;
+    left: 50%;
+    transform: rotate(11deg);
+    width: 100%;
+    border-top: 1px dashed #fff;
+  }
+
+  @media(max-width: 768px){
+    .timeline .slick-list{
+      padding-top: 150px !important;
+      padding-bottom: 50px !important;
+    }
+  }
 
   /* Timeline Carousel */
 }
