@@ -310,7 +310,7 @@
   .bg-primary:hover {
     background-color: var(--bg-hover-1);
   }
-  .grad-text-color {
+  .grad-text-color-2 {
     background: -webkit-linear-gradient(0deg, #0060aa 0.43%, #e31e24 91.06%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -320,7 +320,7 @@
     -webkit-transform: translate3d(0, 0, 0);
     position: relative;
   }
-  .advisory-zoom-img::before{
+  .advisory-zoom-img::before {
     content: "";
     background: #d9d9d9;
     position: absolute;
@@ -337,7 +337,17 @@
     transform: scale3d(1.1, 1.1, 1);
   }
 
-
+  .grad-text-color-2-2 {
+    background: linear-gradient(
+      91deg,
+      #051630 2.47%,
+      #0060aa 40.77%,
+      #e31e24 82.76%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
   /* Inside your global CSS file */
   .bg-grad-1 {
@@ -402,7 +412,7 @@
     border-color: var(--color-university-blue);
   }
 
-  .grad-text-color {
+  .grad-text-color-2 {
     background: -webkit-linear-gradient(0deg, #0060aa 0.43%, #e31e24 91.06%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

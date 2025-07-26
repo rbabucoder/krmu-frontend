@@ -5,7 +5,7 @@ const PioneerExcellence = () => {
     <>
       <section className="pt-12 bg-[url(/clouduniversitybg.webp)] bg-cover bg-bottom bg-no-repeat">
         <div className="max-w-[1600px] mx-auto w-full pb-14 2xl:pb-0 px-4 2xl:px-[200px]">
-          <h3 className="text-4xl lg:text-5xl font-semibold mb-5 grad-text-color">
+          <h3 className="text-4xl lg:text-5xl font-semibold mb-5 grad-text-color-2-2">
             K.R. Mangalam Group: Pioneering Excellence in Education
           </h3>
           <p className="mb-5">

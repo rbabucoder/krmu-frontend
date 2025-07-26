@@ -19,7 +19,7 @@ const OurTopRecruiters: React.FC<OurTopRecruitProps> = ({
       <div className="flex flex-col lg:flex-row w-full">
         {/* Left Section */}
         <div className="w-full lg:w-1/2 pt-12 lg:py-20 px-5 lg:px-0 lg:mx-8 text-center md:text-left">
-          <h4 className="max-w-2xl w-full text-4xl md:text-5xl xl:text-[80px] font-medium leading-[1.13] grad-text-color">
+          <h4 className="max-w-2xl w-full text-4xl md:text-5xl xl:text-[80px] font-medium leading-[1.13] grad-text-color-2">
             {title}
           </h4>
           <div className="grid grid-cols-2 text-white mt-10">

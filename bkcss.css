@@ -21,7 +21,7 @@
   .bg-primary:hover {
     background-color: var(--bg-hover-1);
   }
-  .grad-text-color {
+  .grad-text-color-2 {
     background: -webkit-linear-gradient(0deg, #0060aa 0.43%, #e31e24 91.06%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

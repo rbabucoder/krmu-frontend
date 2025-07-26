@@ -36,10 +36,10 @@ const ADecade = ({ leftContent, rightContent }: ADecadeProps) => {
       <section className="px-4 py-8 lg:mb-20">
         <div className="flex flex-col text-center lg:flex-row lg:gap-5    max-w-[1664px] mx-auto md:text-left">
           <div className="w-full lg:w-1/2 lg:px-4">                     
-            <h2 className="primary-gradient-text-color leading-[1] text-2xl xl:text-[64px] font-medium lg:leading-[1.13] mb-2 md:mb-5 grad-text-color">
+            <h2 className="leading-[1] text-2xl xl:text-[64px] font-medium lg:leading-[1.13] mb-2 md:mb-5 grad-text-color-2">
               {leftContent.adecadetitle}
             </h2>
-            <h3 className="primary-gradient-text-color mb-4 text-4xl leading-[1.2]  xl:leading-[2] font-light grad-text-color">
+            <h3 className="mb-4 text-4xl leading-[1.2]  xl:leading-[2] font-light grad-text-color-2">
               {leftContent.adecadesubtitle}
             </h3>
             <p className="font-normal mb-5">{leftContent.adecadedescription}</p>
