@@ -169,7 +169,8 @@ export interface GlobalPartnerType {
 export interface VisitExploreType {
   __component: "homepage-components.visit-explore";
   id: number;
-  title: string;
+  title1: string;
+  title2: string;
   description: string;
   visitexplorebtn: ButtonType[];
 }

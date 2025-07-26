@@ -1,21 +1,30 @@
+import { ParagraphBlock } from "@/lib/types/about";
 import { ButtonType } from "@/lib/types/common";
+import { BlocksRenderer } from "@strapi/blocks-react-renderer";
 import Link from "next/link";
 
 interface VisitExploreProp {
-  title: string;
+  title1: string;
+  title2: string;
   desc: string;
   visitexplorebtns: ButtonType[];
 }
 
-const VisitExplore = ({ title, desc, visitexplorebtns }: VisitExploreProp) => {
+const VisitExplore = ({
+  title1,
+  title2,
+  desc,
+  visitexplorebtns,
+}: VisitExploreProp) => {
   return (
     <section className="py-12 px-5 lg:py-20 lg:px-8 bg-[url(/visitbg.webp)] bg-cover bg-no-repeat">
       <div className="max-w-[1664px] mx-auto w-full">
-        <div className="text-white text-center max-w-[900px] mx-auto w-full">
+        <div className="text-white text-center max-w-[1045px] mx-auto w-full">
           <h4 className="text-4xl md:text-6xl xl:text-[80px]  leading-[1.13] my-5">
-            {title}
+            {title1} <br /> {title2}
           </h4>
-          
+        
+
           <p className="mb-5">{desc}</p>
           <div className="flex flex-wrap gap-8 items-center justify-center">
             {visitexplorebtns &&

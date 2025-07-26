@@ -184,9 +184,10 @@ export default async function Home() {
         )}
         {visitExploreData && (
           <VisitExplore
-            title={visitExploreData?.title}
-            desc={visitExploreData?.description}
-            visitexplorebtns={visitExploreData?.visitexplorebtn}
+            title1={visitExploreData?.title1}
+            title2={visitExploreData?.title2}
+            desc={visitExploreData.description}
+            visitexplorebtns={visitExploreData.visitexplorebtn}
           />
         )}
         {eventsNewsData && (

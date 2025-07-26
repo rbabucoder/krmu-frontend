@@ -121,7 +121,7 @@ const ShapingFuture = ({
               </div>
             </div>
           </div>
-          <div className="text-center  py-2.5 px-8 bg-[#aa182c] justify-start items-center text-white rounded-b-[41px] hidden lg:flex">
+          <div className="text-center  py-2.5 pl-32 bg-[#aa182c] justify-start items-center text-white rounded-b-[41px] hidden lg:flex">
             <Link
               href={link1}
               className={`text-[18px]  font-semibold  flex gap-2.5 my-2.5 items-center w-1/4`}
