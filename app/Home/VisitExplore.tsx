@@ -1,6 +1,4 @@
-import { ParagraphBlock } from "@/lib/types/about";
 import { ButtonType } from "@/lib/types/common";
-import { BlocksRenderer } from "@strapi/blocks-react-renderer";
 import Link from "next/link";
 
 interface VisitExploreProp {
@@ -23,7 +21,6 @@ const VisitExplore = ({
           <h4 className="text-4xl md:text-6xl xl:text-[80px]  leading-[1.13] my-5">
             {title1} <br /> {title2}
           </h4>
-        
 
           <p className="mb-5">{desc}</p>
           <div className="flex flex-wrap gap-8 items-center justify-center">
