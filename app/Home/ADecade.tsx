@@ -2,7 +2,7 @@ import { ADecadeLeftCol, ADecadeRightCol } from "@/lib/types/home";
 import Image from "next/image";
 import Link from "next/link";
 
-interface ADecadeProps { 
+interface ADecadeProps {
   leftContent: ADecadeLeftCol;
   rightContent: ADecadeRightCol;
 }
@@ -11,7 +11,6 @@ type Counter = {
   counterContent: string;
 };
 const ADecade = ({ leftContent, rightContent }: ADecadeProps) => {
- 
   const counters: Counter[] = [
     {
       counterText: rightContent.counter1text,
@@ -35,11 +34,27 @@ const ADecade = ({ leftContent, rightContent }: ADecadeProps) => {
     <>
       <section className="px-4 py-8 lg:mb-20">
         <div className="flex flex-col text-center lg:flex-row lg:gap-5    max-w-[1664px] mx-auto md:text-left">
-          <div className="w-full lg:w-1/2 lg:px-4">                     
-            <h2 className="leading-[1] text-2xl xl:text-[64px] font-medium lg:leading-[1.13] mb-2 md:mb-5 grad-text-color-2">
+          <div className="w-full lg:w-1/2 lg:px-4">
+            <h2
+              className="leading-[1] text-2xl xl:text-[64px] font-medium lg:leading-[1.13] mb-2 md:mb-5"
+              style={{
+                background:
+                  "linear-gradient(91deg, #051630 2.47%, #0060aa 40.77%, #e31e24 82.76%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+            >
               {leftContent.adecadetitle}
             </h2>
-            <h3 className="mb-4 text-4xl leading-[1.2]  xl:leading-[2] font-light grad-text-color-2">
+            <h3
+              className="mb-4 text-4xl leading-[1.2]  xl:leading-[2] font-light"
+              style={{
+                background:
+                  "linear-gradient(91deg, #051630 2.47%, #0060aa 40.77%, #e31e24 82.76%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+            >
               {leftContent.adecadesubtitle}
             </h3>
             <p className="font-normal mb-5">{leftContent.adecadedescription}</p>

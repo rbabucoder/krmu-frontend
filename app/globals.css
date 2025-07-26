@@ -310,7 +310,7 @@
   .bg-primary:hover {
     background-color: var(--bg-hover-1);
   }
-  .grad-text-color-2 {
+  .grad-text-color {
     background: -webkit-linear-gradient(0deg, #0060aa 0.43%, #e31e24 91.06%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -337,7 +337,7 @@
     transform: scale3d(1.1, 1.1, 1);
   }
 
-  .grad-text-color-2-2 {
+  .grad-text-color-2 {
     background: linear-gradient(
       91deg,
       #051630 2.47%,
@@ -412,7 +412,7 @@
     border-color: var(--color-university-blue);
   }
 
-  .grad-text-color-2 {
+  .grad-text-color {
     background: -webkit-linear-gradient(0deg, #0060aa 0.43%, #e31e24 91.06%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
