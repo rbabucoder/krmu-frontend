@@ -4,6 +4,7 @@ import { TestimonialItem, TestimonialResponse } from "../constants/testimonial";
 import { NEWSANDEVENTSResponse } from "../types/news-and-events";
 import { TOPBARResponse } from "../types/HeaderType";
 import { GlobalResponse } from "../types/global";
+import { AdvisoryBoardResponse } from "../types/advisory-type";
 
 export async function getAlumniData(): Promise<AlumniApiResponse["data"]> {
   const res = await fetch(`${FETCH_STRAPI_URL}/api/alumnis?populate=*`, {
@@ -85,5 +86,22 @@ export async function getMetaInfo(): Promise<GlobalResponse["data"]> {
   if (!res.ok) throw new Error("Failed to fetch Meta info Data");
 
   const json: GlobalResponse = await res.json();
+  return json.data;
+}
+
+export async function getAdvisoryBoard(): Promise<
+  AdvisoryBoardResponse["data"]
+> {
+  const res = await fetch(
+    `${FETCH_STRAPI_URL}/api/advisory-board?populate[advisoryboard][fields][0]=title&populate[advisoryboard][fields][1]=advisoryboardinfo&populate[advisoryboard][populate][advisoryimage]=true`,
+    {
+      next: {
+        revalidate: 60,
+      },
+    }
+  );
+  if (!res.ok) throw new Error("Failed to fetch Meta info Data");
+
+  const json: AdvisoryBoardResponse = await res.json();
   return json.data;
 }
