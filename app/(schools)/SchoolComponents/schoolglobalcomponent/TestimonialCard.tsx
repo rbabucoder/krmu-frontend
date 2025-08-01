@@ -26,13 +26,13 @@ const TestimonialCard = () => {
       </div>
       <div className="text-lg p-5 bg-white rounded-b-[25px]">
         <p>
-          "As my B.Tech. journey comes to an end, I am confident that the
+          {`"As my B.Tech. journey comes to an end, I am confident that the
           skills, knowledge, and experiences I gained at K.R. Mangalam
           University will serve as a solid foundation for my future endeavours.
           I am grateful for the stimulating learning environment and the
           university's assistance in moulding me into a well-rounded and
           competent professional in the field of Computer Science and
-          Engineering."
+          Engineering."`}
         </p>
       </div>
     </div>

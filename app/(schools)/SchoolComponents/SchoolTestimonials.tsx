@@ -11,8 +11,8 @@ const SchoolTestimonials = () => {
             Testimonials
           </h4>
           <p>
-            Let's discover what our students have to say about their
-            transformative experiences at K.R. Mangalam University.
+            {`Let's discover what our students have to say about their
+            transformative experiences at K.R. Mangalam University.`}
           </p>
         </div>
         <div className="w-3/5">

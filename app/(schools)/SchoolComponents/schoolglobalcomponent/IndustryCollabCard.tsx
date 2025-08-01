@@ -16,16 +16,16 @@ const IndustryCollabCard = () => {
       </p>
       <ul>
         <li>
-          Utilize IBM's tools and techniques for comprehensive data analysis,
-          enabling informed decision-making.
+          {`Utilize IBM's tools and techniques for comprehensive data analysis,
+          enabling informed decision-making.`}
         </li>
         <li>
-          Gain practical experience working with enterprise software in the
-          university's IBM LAB, preparing for real-world scenarios.
+          {` Gain practical experience working with enterprise software in the
+          university's IBM LAB, preparing for real-world scenarios.`}
         </li>
         <li>
-          Engage in hands-on sessions and real-time case studies, honing
-          practical skills under industry experts' guidance.
+          {`Engage in hands-on sessions and real-time case studies, honing
+          practical skills under industry experts' guidance.`}
         </li>
       </ul>
     </div>
