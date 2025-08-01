@@ -746,6 +746,15 @@
   }
 
   /* Timeline Carousel */
+
+  /* School Styles */
+
+  .ic_list ul {
+    list-style-image: url("/schools/checked-1.svg");
+    padding-left: 25px;
+  }
+
+  /* School Styles */
 }
 
 @theme inline {
