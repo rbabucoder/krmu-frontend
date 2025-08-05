@@ -1,5 +1,4 @@
 import Link from "next/link";
-import EventsAndExperienceCard from "./schoolglobalcomponent/EventsAndExperienceCard";
 import SchoolEventsAndExperiencesCard from "./schoolglobalcomponent/SchoolEventsAndExperiencesCard";
 
 const SchoolEventAndExperience = () => {

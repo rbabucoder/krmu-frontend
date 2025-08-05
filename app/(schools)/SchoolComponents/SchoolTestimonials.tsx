@@ -1,7 +1,6 @@
-import TestimonialCard from "./schoolglobalcomponent/TestimonialCard";
 import SchoolTestimonialsCard from "./SchoolTestimonialsCard";
 
-const SchoolTestimonials = () => { 
+const SchoolTestimonials = () => {
   return (
     <section className="xl:py-[30px] pt-7 pb-40 bg-white px-4">
       <div className="max-w-[1664px] mx-auto w-full xl:flex">
