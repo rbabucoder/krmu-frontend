@@ -9,7 +9,7 @@ const TestimonialCard = () => {
       }}
     >
       <div
-        className="p-5 rounded-t-[25px] text-white flex flex-col gap-4"
+        className="p-5 rounded-t-[25px] text-white flex flex-col gap-2.5  sm:gap-4"
         style={{
           background: "linear-gradient(168deg,#051630 6.9%,#005ba1 162.66%)",
         }}
@@ -19,12 +19,12 @@ const TestimonialCard = () => {
           width={105}
           height={105}
           alt="mask"
-          className="rounded-full"
+          className="rounded-full w-[80px] h-[80px] md:w-[105px] md:h-[105px]"
         />
         <p className="text-3xl font-medium">Rishi </p>
         <p>B.Tech. CSE</p>
       </div>
-      <div className="text-lg p-5 bg-white rounded-b-[25px]">
+      <div className="text-base sm:text-lg p-5 bg-white rounded-b-[25px]">
         <p>
           {`"As my B.Tech. journey comes to an end, I am confident that the
           skills, knowledge, and experiences I gained at K.R. Mangalam

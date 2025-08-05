@@ -4,26 +4,26 @@ import Link from "next/link";
 const SchoolDeansVision = () => {
   return (
     <section
-      className="py-[50px]"
+      className="py-[50px] px-4"
       style={{
         background:
           "linear-gradient(95deg,#051630 2.69%,#0060aa 65.94%,#e31e24 97.54%)",
       }}
     >
       <div className="max-w-[1664px] mx-auto w-full">
-        <div className="text-center text-white text-[64px]">
+        <div className="text-center text-white text-3xl sm:text-5xl mb-5  lg:text-[64px]">
           <h4 className="leading-[1]">Know our</h4>
           <h5 className="leading-[1.2] font-bold">Dean’s vision</h5>
         </div>
         <div
-          className="rounded-4xl flex"
+          className="rounded-4xl flex flex-col xl:flex-row"
           style={{
             background:
               "linear-gradient(180deg,rgba(255,255,255,.2) 0%,rgba(255,255,255,.12) 100%)",
             backdropFilter: "blur(13.410955429077px)",
           }}
         >
-          <div className="w-2/6 p-[50px]">
+          <div className="xl:w-2/6 p-5 sm:p-10 xl:p-[50px] flex justify-center xl:block">
             <Image
               src="/schools/Dr.-Pankaj-Agarwal@KRMU-1.webp"
               width={358}
@@ -32,7 +32,7 @@ const SchoolDeansVision = () => {
               className="rounded-[25px]"
             />
           </div>
-          <div className="w-4/6 p-[50px] text-white">
+          <div className="xl:w-4/6 p-5 sm:px-10 sm:pb-10 xl:p-[50px] text-sm sm:text-base text-white">
             <p>
               The School of Engineering and Technology at K.R. Mangalam
               University, established in 2013, is dedicated to providing quality
@@ -64,14 +64,14 @@ const SchoolDeansVision = () => {
               anticipates and shapes the future of engineering and technology.
             </p>
             <br />
-            <p className="text-[32px] mb-3.5">
+            <p className="text-2xl md:text-[32px] mb-2.5 sm:mb-3.5">
               <strong>Dr. Pankaj Agarwal</strong>
             </p>
             <Link href="mailto:dean.soet@krmangalam.edu.in" className="text-base">
               dean.soet@krmangalam.edu.in
             </Link>
             <br />
-            <p className="text-base">Professor & Dean</p>
+            <p className="text-sm sm:text-base">Professor & Dean</p>
           </div>
         </div>
       </div>

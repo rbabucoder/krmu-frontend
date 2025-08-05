@@ -8,14 +8,14 @@ const SchoolLetsExplore = () => {
         backgroundImage: "linear-gradient(180deg,#051630 0%,#004e8a 100%)",
       }}
     >
-      <div className="max-w-[1664px] mx-auto w-full flex items-center">
-        <div className="w-2/6 text-white">
-          <h4 className="text-5xl font-semibold">
+      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row items-center">
+        <div className="w-full lg:w-2/6 text-white px-4">
+          <h4 className="mb-5 md:mb-0 text-2xl md:text-3xl lg:text-5xl font-semibold leading-[1.3] lg:mx-8 xl:mx-12">
             Let’s explore what makes KRMU’s SOET better than that of other
             universities
           </h4>
         </div>
-        <div className="w-4/6 flex">
+        <div className="w-full lg:w-4/6 flex overflow-x-auto">
           <div className="w-[23%] text-white py-[30px]">
             <div className="max-h-[60px] min-h-[60px] py-[30px]"></div>
             <ul>

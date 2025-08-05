@@ -1,18 +1,19 @@
 import Link from "next/link";
 import EventsAndExperienceCard from "./schoolglobalcomponent/EventsAndExperienceCard";
+import SchoolEventsAndExperiencesCard from "./schoolglobalcomponent/SchoolEventsAndExperiencesCard";
 
 const SchoolEventAndExperience = () => {
   return (
-    <section className="bg-[url(/schools/events-bg.webp)] bg-cover bg-center py-[30px]">
-      <div className="max-w-[1664px] mx-auto w-full flex items-center">
-        <div className="w-1/2 text-white">
-          <h3 className="text-9xl font-medium">
-            Events <br />
-            And <br />
+    <section className="bg-[url(/schools/events-bg.webp)] bg-cover bg-center py-[30px] px-4">
+      <div className="max-w-[1664px] mx-auto w-full lg:flex items-center gap-5">
+        <div className="lg:w-1/2 text-white">
+          <h3 className="text-3xl sm:text-5xl lg:ext-7xl 2xl:text-9xl font-medium mb-5 lg:mb-0">
+            Events <br className="hidden md:block" />
+            And <br className="hidden md:block" />
             Experiences
           </h3>
         </div>
-        <div className="w-1/2 text-white">
+        <div className="lg:w-1/2 text-white">
           <p>
             The School of Engineering and Technology is a common hub for dynamic
             events that go beyond the classroom. From tech fests to
@@ -29,12 +30,9 @@ const SchoolEventAndExperience = () => {
         </div>
       </div>
       <div className="max-w-[1664px] mx-auto w-full">
-        <div className="grid grid-cols-4 gap-5 mt-5">
-          <EventsAndExperienceCard />
-          <EventsAndExperienceCard />
-          <EventsAndExperienceCard />
-          <EventsAndExperienceCard />
-        </div>
+
+          <SchoolEventsAndExperiencesCard />
+        
       </div>
     </section>
   );

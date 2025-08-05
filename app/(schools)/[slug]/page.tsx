@@ -18,7 +18,6 @@ import SchoolStudentAchievements from "../SchoolComponents/SchoolStudentAchievem
 import SchoolTestimonials from "../SchoolComponents/SchoolTestimonials";
 
 export default async function Page() {
-  
   return (
     <>
       <SchoolHero />
@@ -34,10 +33,10 @@ export default async function Page() {
       <SchoolExcellence />
       <SchoolTestimonials />
       <SchoolDeansVision />
-      <SchoolFacultyAdvisory />
+      {/* <SchoolFacultyAdvisory /> */}
       <SchoolEventAndExperience />
       <SchoolStudentAchievements />
-      <SchoolFacilities />
+      {/* <SchoolFacilities /> */}
       <SchoolCommenceJourney />
     </>
   );

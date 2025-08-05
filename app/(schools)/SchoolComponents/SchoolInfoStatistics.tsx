@@ -2,13 +2,13 @@ import StatisticsCounter from "./schoolglobalcomponent/StatisticsCounter";
 
 const SchoolInfoStatistics = () => {
   return (
-    <section className="bg-[#fefefe00]">
-      <div className="max-w-[1664px] mx-auto w-full flex">
-        <div className="w-3/5 text-black">
+    <section className="bg-[#fefefe00] px-4 pb-10">
+      <div className="max-w-[1664px] mx-auto w-full flex items-center flex-col xl:flex-row">
+        <div className="w-full xl:w-3/5 text-black">
           <p className="text-2xl font-medium mb-5">
             Nurturing Intelligence, Crafting Innovation
           </p>
-          <h3 className="text-[64px] font-semibold leading-[1.23] mb-5">
+          <h3 className="text-4xl md:text-5xl lg:text-[64px] font-semibold leading-[1.23] mb-5">
             Imparting Profound Knowledge In Engineering
           </h3>
           <p className="mb-5">
@@ -30,7 +30,7 @@ const SchoolInfoStatistics = () => {
             academic and on-campus placement support.
           </p>
         </div>
-        <div className="w-2/5 px-28 flex flex-col gap-5">
+        <div className="w-full xl:w-2/5 lg:px-28 flex flex-col gap-5 mt-5 xl:mt-0">
           <StatisticsCounter />
           <StatisticsCounter />
           <StatisticsCounter />
