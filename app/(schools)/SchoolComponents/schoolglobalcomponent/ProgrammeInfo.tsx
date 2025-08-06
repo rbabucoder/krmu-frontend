@@ -4,10 +4,10 @@ import Link from "next/link";
 const ProgrammeInfo = () => {
   return (
     <div className="flex mb-10">
-      <div className="w-full xl:w-1/2 bg-[url(/schools/prog-bg.webp)] bg-cover bg-no-repeat p-5 z-10 rounded-3xl">
+      <div className="w-full xl:w-1/2 bg-[url(/schools/prog-bg.webp)] bg-cover bg-no-repeat p-2.5 sm:p-5 z-10 rounded-3xl">
         <Tabs defaultValue="ug">
           <TabsList
-            className="w-full flex-wrap justify-center rounded-full h-full p-4 sm:p-0 sm:h-[50px] my-4"
+            className="w-full flex-wrap justify-center rounded-full h-full p-2.5 sm:p-0 sm:h-[50px] my-4"
             style={{
               background:
                 "linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.12) 100%)",
@@ -40,13 +40,13 @@ const ProgrammeInfo = () => {
             </TabsTrigger>
           </TabsList>
           <TabsContent value="ug" className="flex flex-wrap items-center">
-            <div className="lg:w-1/2 hover:bg-white text-white  hover:text-black rounded-4xl h-full font-semibold">
-              <Link href="#" className="p-[30px] block w-full h-full">
+            <div className="lg:w-1/2 hover:bg-white text-white  hover:text-black rounded-4xl h-full font-semibold w-full">
+              <Link href="#" className="p-5 sm:p-[30px] block w-full h-full">
                 B.Tech. Computer Science & Engineering (CSE)
               </Link>
             </div>
-            <div className="lg:w-1/2 hover:bg-white text-white  hover:text-black rounded-4xl h-full font-semibold">
-              <Link href="#" className="p-[30px] block w-full h-full">
+            <div className="lg:w-1/2 hover:bg-white text-white  hover:text-black rounded-4xl h-full font-semibold w-full">
+              <Link href="#" className="p-5 sm:p-[30px] block w-full h-full">
                 B.Tech. Computer Science and Engineering (Robotics & AI) with
                 academic Support of IBM & powered by Microsoft Certifications
               </Link>
@@ -54,13 +54,13 @@ const ProgrammeInfo = () => {
           </TabsContent>
           <TabsContent value="pg" className="flex flex-wrap items-center">
             {" "}
-            <div className="lg:w-1/2 hover:bg-white text-white  hover:text-black rounded-4xl h-full font-semibold">
-              <Link href="#" className="p-[30px] block w-full h-full">
+            <div className="lg:w-1/2 hover:bg-white text-white  hover:text-black rounded-4xl h-full font-semibold w-full">
+              <Link href="#" className="p-5 sm:p-[30px] block w-full h-full">
                 MCA
               </Link>
             </div>
-            <div className="lg:w-1/2 hover:bg-white text-white  hover:text-black rounded-4xl h-full font-semibold">
-              <Link href="#" className="p-[30px] block w-full h-full">
+            <div className="lg:w-1/2 hover:bg-white text-white  hover:text-black rounded-4xl h-full font-semibold w-full">
+              <Link href="#" className="p-5 sm:p-[30px] block w-full h-full">
                 MCA (AI & ML) with academic support of IBM and powered by
                 Microsoft Certifications
               </Link>
@@ -68,26 +68,26 @@ const ProgrammeInfo = () => {
           </TabsContent>
           <TabsContent value="phd" className="flex flex-wrap items-center">
             {" "}
-            <div className="lg:w-1/2 hover:bg-white text-white  hover:text-black rounded-4xl h-full font-semibold">
-              <Link href="#" className="p-[30px] block w-full h-full">
+            <div className="lg:w-1/2 hover:bg-white text-white  hover:text-black rounded-4xl h-full font-semibold w-full">
+              <Link href="#" className="p-5 sm:p-[30px] block w-full h-full">
                 Ph.D. in Computer Science and Engineering
               </Link>
             </div>
-            <div className="lg:w-1/2 hover:bg-white text-white  hover:text-black rounded-4xl h-full font-semibold">
-              <Link href="#" className="p-[30px] block w-full h-full">
+            <div className="lg:w-1/2 hover:bg-white text-white  hover:text-black rounded-4xl h-full font-semibold w-full">
+              <Link href="#" className="p-5 sm:p-[30px] block w-full h-full">
                 Ph.D. in Mechanical Engineering
               </Link>
             </div>
           </TabsContent>
           <TabsContent value="diploma" className="flex flex-wrap items-center">
             {" "}
-            <div className="lg:w-1/2 hover:bg-white text-white  hover:text-black rounded-4xl h-full font-semibold">
-              <Link href="#" className="p-[30px] block w-full h-full">
+            <div className="lg:w-1/2 hover:bg-white text-white  hover:text-black rounded-4xl h-full font-semibold w-full">
+              <Link href="#" className="p-5 sm:p-[30px] block w-full h-full">
                 B.Tech. Computer Science & Engineering (CSE)
               </Link>
             </div>
-            <div className="lg:w-1/2 hover:bg-white text-white  hover:text-black rounded-4xl h-full font-semibold">
-              <Link href="#" className="p-[30px] block w-full h-full">
+            <div className="lg:w-1/2 hover:bg-white text-white  hover:text-black rounded-4xl h-full font-semibold w-full">
+              <Link href="#" className="p-5 sm:p-[30px] block w-full h-full">
                 B.Tech. Computer Science and Engineering (Robotics & AI) with
                 academic Support of IBM & powered by Microsoft Certifications
               </Link>

@@ -2,7 +2,7 @@ import ProgrammeInfo from "./schoolglobalcomponent/ProgrammeInfo";
 
 const SchoolProgrammeOffered = () => {
   return (
-    <>
+    <> 
       <section className="px-4">
         <div className="max-w-[1664px] mx-auto w-full">
           <div className="text-center mb-10">
