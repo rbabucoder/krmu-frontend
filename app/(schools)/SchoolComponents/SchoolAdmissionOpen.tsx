@@ -1,6 +1,12 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/lib/types/home";
+import Link from "next/link";
 
-const SchoolAdmissionOpen = () => {
+type Props = {
+  title: string;
+  admBtn: Button;
+};
+
+const SchoolAdmissionOpen = ({ title, admBtn }: Props) => {
   return (
     <div className="px-5">
       <div
@@ -10,11 +16,16 @@ const SchoolAdmissionOpen = () => {
         }}
       >
         <h3 className="text-xl md:text-4xl xl:text-5xl font-semibold leading-6  md:mb-5 lg:mb-0 lg:leading-14 text-center">
-          Admissions Open For Session 2025-26
+          {title}
         </h3>
-        <Button className="w-fit sm:w-full bg-red-500 md:max-w-4xl mx-auto p-2.5 text-lg font-bold h-[50px]">
-          Apply Now
-        </Button>
+        {(admBtn.buttonlink || admBtn.buttonclass) && (
+          <Link
+            href={admBtn.buttonlink}
+            className={`w-fit sm:w-full bg-red-500 md:max-w-4xl mx-auto p-2.5 text-lg font-bold h-[50px]  text-white rounded-lg text-center ${admBtn.buttonclass}`}
+          >
+            {admBtn?.buttontext}
+          </Link>
+        )}
       </div>
     </div>
   );

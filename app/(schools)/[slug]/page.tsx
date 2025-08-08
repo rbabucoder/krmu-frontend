@@ -17,14 +17,59 @@ import SchoolOurAlumni from "../SchoolComponents/SchoolOurAlumni";
 import SchoolProgrammeOffered from "../SchoolComponents/SchoolProgrammeOffered";
 import SchoolStudentAchievements from "../SchoolComponents/SchoolStudentAchievements";
 import SchoolTestimonials from "../SchoolComponents/SchoolTestimonials";
+import { notFound } from "next/navigation";
+import { getSchoolPage } from "@/lib/api/schools";
 
-export default async function Page() {
+type Props = {
+  params: {
+    slug: string;
+  };
+};
+
+export default async function Page({ params }: Props) {
+  const slug = params.slug;
+
+  const allSchools = await getSchoolPage();
+
+  const school = allSchools.find((school) => school.urlslug === slug);
+  // If not found, redirect to 404 page
+  if (!school) return notFound();
+
+  const schoolKnowComp = school.schoolcomps.find(
+    (component) => component.__component === "schoolcomponent.knowledge"
+  );
+
+  // console.log(schoolKnowComp);
+
+  //  const hero = homepageContent.find(
+  //   (component) => component.__component === "homepage-components.hero-section"
+  // );
+
   return (
     <>
-      <SchoolHero />
-      <SchoolAdmissionOpen />
-      <SchoolInfoStatistics />
-      <SchoolOurAlumni />
+      <SchoolHero
+        title={school.schoolname}
+        subheading={school.subheading}
+        heroBtns={school.herobutton}
+        videoFmt={school.videoformat}
+        iframeContent={school.iframe}
+        videoLink={school.videolink}
+      />
+      <SchoolAdmissionOpen
+        title={school.admissionsessiontitle}
+        admBtn={school.admissionbtn}
+      />
+      {schoolKnowComp && (
+        <SchoolInfoStatistics
+          heading={schoolKnowComp?.heading}
+          subheading={schoolKnowComp?.subheading}
+          desc={schoolKnowComp?.description}
+        />
+      )}
+      <SchoolOurAlumni
+        title={school?.alumnititle}
+        alumniLogos={school.alumnilogo}
+      />
       <SchoolProgrammeOffered />
       <SchoolExcitedAlready />
       <SchoolNewsletter />
