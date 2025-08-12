@@ -17,8 +17,6 @@ const SchoolHero = ({
   iframeContent,
   videoLink,
 }: Props) => {
-  console.log(videoFmt);
-
   return (
     <section className="pt-[150px] pb-20 lg:py-[10%] bg-[url(/schools/soet-bg.webp)] bg-cover bg-no-repeat bg-center px-4">
       <div className="max-w-[1850px] mx-auto w-full lg:flex items-center justify-between">

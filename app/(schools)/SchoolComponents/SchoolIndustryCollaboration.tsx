@@ -1,14 +1,17 @@
+import { ParagraphBlock } from "@/lib/types/about";
 import IndustryCollabCarousel from "./schoolglobalcomponent/IndustryCollabCarousel";
+import { BlocksRenderer } from "@strapi/blocks-react-renderer";
+type Props = {
+  title: ParagraphBlock[];
+};
 
-const SchoolIndustryCollaboration = () => {
+const SchoolIndustryCollaboration = ({ title }: Props) => {
   return (
     <section className="bg-[#051630] pt-8 pb-40 xl:py-8 px-4">
       <div className="max-w-[1664px] mx-auto w-full xl:flex">
         <div className="w-full xl:w-2/5">
           <h3 className="text-3xl mb-5 xl:mb-0 lg:text-5xl lg:text-[64px] text-white font-medium leading-[1.2]">
-            Industry
-            <br />
-            Collaborations
+            <BlocksRenderer content={title} />
           </h3>
         </div>
         <div className="w-full xl:w-3/5">

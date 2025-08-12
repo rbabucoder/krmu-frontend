@@ -1,5 +1,5 @@
 import { ParagraphBlock } from "./about";
-import { StrapiMedia } from "./common";
+import { ButtonType, CardWithImage, CounterItem, StrapiMedia } from "./common";
 import { Button } from "./home";
 
 export interface SchoolCategory {
@@ -19,6 +19,7 @@ export interface SchoolComps {
   heading: string;
   subheading: string;
   description: ParagraphBlock[];
+  counter: CounterItem[];
 }
 
 export interface School {
@@ -40,6 +41,18 @@ export interface School {
   schoolcomps: SchoolComps[];
   alumnititle: string;
   alumnilogo: StrapiMedia[];
+  excitedtitle: string;
+  exciteddescription: string;
+  excitedbtns: ButtonType[];
+  newslettertitle: string;
+  newsletterdesc: string;
+  newsletterbtns: ButtonType[];
+  advantagetitle: string;
+  advantagedesc: string;
+  advantagesubtitle: string;
+  advantagimg: StrapiMedia;
+  advantageCards: CardWithImage[];
+  induscollabtitle: ParagraphBlock[];
 }
 
 export interface SchoolsResponse {

@@ -39,12 +39,6 @@ export default async function Page({ params }: Props) {
     (component) => component.__component === "schoolcomponent.knowledge"
   );
 
-  // console.log(schoolKnowComp);
-
-  //  const hero = homepageContent.find(
-  //   (component) => component.__component === "homepage-components.hero-section"
-  // );
-
   return (
     <>
       <SchoolHero
@@ -64,6 +58,7 @@ export default async function Page({ params }: Props) {
           heading={schoolKnowComp?.heading}
           subheading={schoolKnowComp?.subheading}
           desc={schoolKnowComp?.description}
+          counters={schoolKnowComp?.counter}
         />
       )}
       <SchoolOurAlumni
@@ -71,10 +66,24 @@ export default async function Page({ params }: Props) {
         alumniLogos={school.alumnilogo}
       />
       <SchoolProgrammeOffered />
-      <SchoolExcitedAlready />
-      <SchoolNewsletter />
-      <SchoolAdvantages />
-      <SchoolIndustryCollaboration />
+      <SchoolExcitedAlready
+        heading={school?.excitedtitle}
+        desc={school?.exciteddescription}
+        excbtns={school?.excitedbtns}
+      />
+      <SchoolNewsletter
+        heading={school?.newslettertitle}
+        desc={school?.newsletterdesc}
+        btns={school?.newsletterbtns}
+      />
+      <SchoolAdvantages
+        heading={school?.advantagetitle}
+        desc={school?.advantagedesc}
+        subtitle={school?.advantagesubtitle}
+        advimg={school?.advantagimg}
+        advcards={school?.advantageCards}
+      />
+      <SchoolIndustryCollaboration title={school?.induscollabtitle} />
       <SchoolLetsExplore />
       <SchoolKnowledgePartner />
       <SchoolExcellence />

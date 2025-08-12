@@ -3,11 +3,10 @@ import AlumniCarousel from "./schoolglobalcomponent/AlumniCarousel";
 
 type Props = {
   title: string;
-  alumniLogos: StrapiMedia[]
+  alumniLogos: StrapiMedia[];
 };
 
 const SchoolOurAlumni = ({ title, alumniLogos }: Props) => {
-  console.log(alumniLogos);
   return (
     <section className="py-10 md:py-14 px-4">
       <div className="max-w-[1664px] mx-auto w-full text-center">
@@ -15,7 +14,7 @@ const SchoolOurAlumni = ({ title, alumniLogos }: Props) => {
           {title}
         </h3>
         <div className="w-full">
-          <AlumniCarousel />
+          <AlumniCarousel AluLogos={alumniLogos} />
         </div>
       </div>
     </section>

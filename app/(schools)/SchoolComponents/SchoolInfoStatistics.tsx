@@ -1,13 +1,20 @@
 import { ParagraphBlock } from "@/lib/types/about";
 import StatisticsCounter from "./schoolglobalcomponent/StatisticsCounter";
 import { BlocksRenderer } from "@strapi/blocks-react-renderer";
+import { CounterItem } from "@/lib/types/common";
 type Props = {
   heading: string;
   subheading: string;
   desc: ParagraphBlock[];
+  counters: CounterItem[];
 };
 
-const SchoolInfoStatistics = ({ heading, subheading, desc }: Props) => {
+const SchoolInfoStatistics = ({
+  heading,
+  subheading,
+  desc,
+  counters,
+}: Props) => {
   return (
     <section className="bg-[#fefefe00] px-4 pb-10">
       <div className="max-w-[1664px] mx-auto w-full flex items-center flex-col xl:flex-row">
@@ -19,9 +26,16 @@ const SchoolInfoStatistics = ({ heading, subheading, desc }: Props) => {
           <BlocksRenderer content={desc} />
         </div>
         <div className="w-full xl:w-2/5 lg:px-28 flex flex-col gap-5 mt-5 xl:mt-0">
-          <StatisticsCounter />
-          <StatisticsCounter />
-          <StatisticsCounter />
+          {counters &&
+            counters.map((counter) => {
+              return (
+                <StatisticsCounter
+                  key={counter.id}
+                  title={counter?.countertext}
+                  desc={counter?.countercontent}
+                />
+              );
+            })}
         </div>
       </div>
     </section>
