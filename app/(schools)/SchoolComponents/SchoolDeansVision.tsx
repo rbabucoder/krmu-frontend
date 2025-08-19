@@ -51,7 +51,7 @@ const SchoolDeansVision = ({
             />
           </div>
           <div className="xl:w-4/6 p-5 sm:px-10 sm:pb-10 xl:p-[50px] text-sm sm:text-base text-white">
-            <BlocksRenderer content={desc} />
+            {desc && <BlocksRenderer content={desc} />}
             <br />
             <p className="text-2xl md:text-[32px] mb-2.5 sm:mb-3.5">
               <strong>{deanName}</strong>

@@ -5,7 +5,7 @@ import { CollabCards } from "@/lib/types/schools";
 type Props = {
   title: ParagraphBlock[];
   collabCards: CollabCards[];
-};  
+};
 
 const SchoolIndustryCollaboration = ({ title }: Props) => {
   return (
@@ -13,7 +13,7 @@ const SchoolIndustryCollaboration = ({ title }: Props) => {
       <div className="max-w-[1664px] mx-auto w-full xl:flex">
         <div className="w-full xl:w-2/5">
           <h3 className="text-3xl mb-5 xl:mb-0 lg:text-5xl lg:text-[64px] text-white font-medium leading-[1.2]">
-            <BlocksRenderer content={title} />
+            {title && <BlocksRenderer content={title} />}
           </h3>
         </div>
         <div className="w-full xl:w-3/5">

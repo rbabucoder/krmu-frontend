@@ -20,13 +20,15 @@ const SchoolAdvantages = ({
   return (
     <section className="py-8 bg-[url(/schools/advantages-bg.webp)] bg-no-repeat bg-center bg-cover relative px-4">
       <div className="absolute left-[35%] lg :left-[40%] 2xl:left-[43%] bottom-0 hidden lg:block">
-        <Image
-          src={`${STRAPI_URL}${advimg?.url}`}
-          width={400}
-          height={705}
-          alt={advimg?.alternativeText || "Girl Side image"}
-          className="w-[300px] xl:w-[400px]"
-        />
+        {advimg?.url && (
+          <Image
+            src={`${STRAPI_URL}${advimg?.url}`}
+            width={400}
+            height={705}
+            alt={advimg?.alternativeText || "Girl Side image"}
+            className="w-[300px] xl:w-[400px]"
+          />
+        )}
       </div>
       <div className="max-w-[1664px] mx-auto w-full flex flex-wrap lg:flex-nowrap items-center justify-between">
         <div className="w-full lg:w-1/2">

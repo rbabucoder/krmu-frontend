@@ -25,7 +25,7 @@ const SchoolLetsExplore = ({ content, list1, list2, list3 }: Props) => {
             universities
           </h4> */}
           <div className="mb-5 md:mb-0 text-2xl md:text-3xl lg:text-5xl font-semibold leading-[1.3] lg:mx-8 xl:mx-12">
-            <BlocksRenderer content={content} />
+            {content && <BlocksRenderer content={content} />}
           </div>
         </div>
         <div className="w-full lg:w-4/6 flex overflow-x-auto">
@@ -59,8 +59,8 @@ const SchoolLetsExplore = ({ content, list1, list2, list3 }: Props) => {
                 {list2?.listheading}
               </div>
               <ul className="text-white">
-                {list2.listsitems &&
-                  list2.listsitems.map((list2) => {
+                {list2?.listsitems &&
+                  list2?.listsitems.map((list2) => {
                     return (
                       <li
                         key={list2?.id}
@@ -80,7 +80,7 @@ const SchoolLetsExplore = ({ content, list1, list2, list3 }: Props) => {
                 {list3?.listheading}
               </div>
               <ul className="text-black px-1">
-                {list3.listsitems &&
+                {list3?.listsitems &&
                   list3?.listsitems.map((list) => {
                     return (
                       <li
