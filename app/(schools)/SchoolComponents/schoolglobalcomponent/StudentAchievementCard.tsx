@@ -1,26 +1,32 @@
+import { STRAPI_URL } from "@/app/constant";
+import { StrapiMedia } from "@/lib/types/common";
 import Image from "next/image";
 
-const StudentAchievementCard = () => {
+type Props = {
+  info: string;
+  achieveImg: StrapiMedia[];
+};
+
+const StudentAchievementCard = ({ info, achieveImg }: Props) => {
   return (
     <div className="border border-[#e2e2e2] p-5">
-      <div className=" mb-5">
-        <Image
-          src="/schools/ggg.webp"
-          width={443}
-          height={476}
-          alt="Achievements"
-          className="w-full"
-        />
+      <div className="mb-5 space-y-4">
+        {achieveImg?.length > 0
+          ? achieveImg.map((img, index) => (
+              <Image
+                key={index}
+                src={`${STRAPI_URL}${img.url}`}
+                width={img.width || 443}
+                height={img.height || 476}
+                alt={img.alternativeText || `Achievement Image ${index + 1}`}
+                className="w-full"
+              />
+            ))
+          : ""}
       </div>
+
       <div>
-        <p>
-          Students of K.R. Mangalam University achieved a remarkable milestone
-          at the HackVerse National Hackathon held at IILM University, Gurugram,
-          by securing 1st place among top innovators from across the country.
-          The winning team, Wireless Wizards, comprising Anuj (BCA – AI & DS),
-          Somya Sharma (B.Tech – AI & ML), and Krish Agarwal (B.Tech – AI & ML),
-          showcased an outstanding project titled “EMP Gun.”
-        </p>
+        <p>{info}</p>
       </div>
     </div>
   );

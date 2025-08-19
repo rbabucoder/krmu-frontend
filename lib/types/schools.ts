@@ -1,4 +1,4 @@
-import { ParagraphBlock } from "./about";
+import { ListItemBlock, ParagraphBlock } from "./about";
 import { ButtonType, CardWithImage, CounterItem, StrapiMedia } from "./common";
 import { Button } from "./home";
 
@@ -20,6 +20,32 @@ export interface SchoolComps {
   subheading: string;
   description: ParagraphBlock[];
   counter: CounterItem[];
+}
+
+export interface CollabCards {
+  id: number;
+  cardContent: ParagraphBlock[] | ListItemBlock[];
+  cardimg: StrapiMedia;
+}
+
+export interface ListItem {
+  id: number;
+  listtext: string;
+  listlink: null | string;
+}
+
+export interface SchoolList {
+  id: number;
+  listheading: string | null;
+  listsitems: ListItem[];
+}
+
+export interface SchoolTestimonials {
+  id: number;
+  name: string;
+  education: string;
+  info: string;
+  userimg: StrapiMedia;
 }
 
 export interface School {
@@ -53,6 +79,31 @@ export interface School {
   advantagimg: StrapiMedia;
   advantageCards: CardWithImage[];
   induscollabtitle: ParagraphBlock[];
+  collabcards: CollabCards[];
+  letsexplorecontent: ParagraphBlock[];
+  listitem1: SchoolList;
+  listitem2: SchoolList;
+  listitem3: SchoolList;
+  coetitle1: string;
+  coetitle2: string;
+  coebtn1: ButtonType;
+  coebtn2: ButtonType;
+  knowledgetitle: string;
+  knowledgepartenerlogos: StrapiMedia[];
+  tetimonialtitle: string;
+  testimonialdesc: string;
+  testimonials: SchoolTestimonials[];
+  deanvisionsubtitle: string;
+  deanvisiontitle: string;
+  deancontent: ParagraphBlock[];
+  deansname: string;
+  deanemail: string;
+  deandesignation: string;
+  eventstitle: string;
+  eventsdesc: string;
+  eventsbtn: ButtonType;
+  studentachievementtitle: string;
+  studentachievementsbtn: Button;
 }
 
 export interface SchoolsResponse {

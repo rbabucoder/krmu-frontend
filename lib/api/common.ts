@@ -1,5 +1,9 @@
 import { FETCH_STRAPI_URL } from "@/app/constant";
-import { AlumniApiResponse, FacilityAPIResponse } from "../types/common";
+import {
+  AlumniApiResponse,
+  FacilityAPIResponse,
+  StudentAchievementResponse,
+} from "../types/common";
 import { TestimonialItem, TestimonialResponse } from "../constants/testimonial";
 import { NEWSANDEVENTSResponse } from "../types/news-and-events";
 import { TOPBARResponse } from "../types/HeaderType";
@@ -105,3 +109,51 @@ export async function getAdvisoryBoard(): Promise<
   const json: AdvisoryBoardResponse = await res.json();
   return json.data;
 }
+
+export async function getStudentAchievementsByCategoryByPagination(
+  cat: string,
+  num_of_data: number = 3
+): Promise<StudentAchievementResponse["data"]> {
+  const res = await fetch(
+    `${FETCH_STRAPI_URL}/api/student-achievements?pagination[page]=1&pagination[pageSize]=${num_of_data}&filters[school_category][slug][$eq]=${cat}&populate=*`,
+    {
+      next: {
+        revalidate: 60,
+      },
+    }
+  );
+  if (!res.ok) throw new Error("Failed to fetch Meta info Data");
+  const json: StudentAchievementResponse = await res.json();
+  return json.data;
+}
+// export async function getEventsByCategories(
+//   cat: string,
+// ): Promise<StudentAchievementResponse["data"]> {
+//   const res = await fetch(
+//     `${FETCH_STRAPI_URL}/api/events?filters[school_category][slug][$eq]=${cat}&populate=*`,
+//     {
+//       next: {
+//         revalidate: 60,
+//       },
+//     }
+//   );
+//   if (!res.ok) throw new Error("Failed to fetch Meta info Data");
+//   const json: StudentAchievementResponse = await res.json();
+//   return json.data;
+// }
+
+
+
+// export async function getEventsByCategories(cat: string) {
+//   const res = fetch(
+//     `${FETCH_STRAPI_URL}/api/events?filters[school_category][slug][$eq]=${cat}&populate=*`,
+//     {
+//       next: {
+//         revalidate: 60,
+//       },
+//     }
+//   );
+//   if (!res.ok) throw new Error("Failed to fetch Meta info Data");
+//   const json: StudentAchievementResponse = await res.json();
+//   return json.data;
+// }

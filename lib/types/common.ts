@@ -95,3 +95,55 @@ export interface FacilityAPIResponse {
   data: Facility[];
   meta: CommonMeta;
 }
+
+
+
+export interface StudentAchievementResponse {
+  data: StudentAchievement[];
+  meta: {
+    pagination: {
+      page: number;
+      pageSize: number;
+      pageCount: number;
+      total: number;
+    };
+  };
+}
+
+export interface StudentAchievement {
+  id: number;
+  documentId: string;
+  achievementcontent: string;
+  createdAt: string;
+  updatedAt: string;
+  publishedAt: string;
+  achivementimage: StrapiMedia[];
+  school_category: SchoolCategory;
+}
+
+
+
+export interface ImageFormat {
+  name: string;
+  hash: string;
+  ext: string;
+  mime: string;
+  path: string | null;
+  width: number;
+  height: number;
+  size: number;
+  sizeInBytes?: number;
+  url: string;
+}
+
+export interface SchoolCategory {
+  id: number;
+  documentId: string;
+  name: string;
+  slug: string;
+  description: string;
+  createdAt: string;
+  updatedAt: string;
+  publishedAt: string;
+}
+

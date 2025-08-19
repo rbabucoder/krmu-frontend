@@ -8,9 +8,14 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { SchoolTestimonials } from "@/lib/types/schools";
 import Autoplay from "embla-carousel-autoplay";
 
-const SchoolTestimonialsCard = () => {
+type Props = {
+  testimonials: SchoolTestimonials[];
+};
+
+const SchoolTestimonialsCard = ({ testimonials }: Props) => {
   return (
     <>
       <Carousel
@@ -25,18 +30,22 @@ const SchoolTestimonialsCard = () => {
         ]}
       >
         <CarouselContent>
-          <CarouselItem className="md:basis-1/2 py-5">
-            <TestimonialCard />
-          </CarouselItem>
-          <CarouselItem className="md:basis-1/2 py-5">
-            <TestimonialCard />
-          </CarouselItem>
-          <CarouselItem className="md:basis-1/2 py-5">
-            <TestimonialCard />
-          </CarouselItem>
-          <CarouselItem className="md:basis-1/2 py-5">
-            <TestimonialCard />
-          </CarouselItem>
+          {testimonials &&
+            testimonials.map((testimonial) => {
+              return (
+                <CarouselItem
+                  key={testimonial?.id}
+                  className="md:basis-1/2 py-5"
+                >
+                  <TestimonialCard
+                    name={testimonial?.name}
+                    edu={testimonial?.education}
+                    desc={testimonial?.info}
+                    img={testimonial?.userimg}
+                  />
+                </CarouselItem>
+              );
+            })}
         </CarouselContent>
         <CarouselPrevious
           className="bg-[#2c3a4f] text-[#bfc4ca] hover:bg-[#051630] hover:text-white cursor-pointer buttonPrevNextSize w-[60px] h-[60px]

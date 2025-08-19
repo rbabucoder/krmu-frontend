@@ -1,9 +1,11 @@
 import { ParagraphBlock } from "@/lib/types/about";
 import IndustryCollabCarousel from "./schoolglobalcomponent/IndustryCollabCarousel";
 import { BlocksRenderer } from "@strapi/blocks-react-renderer";
+import { CollabCards } from "@/lib/types/schools";
 type Props = {
   title: ParagraphBlock[];
-};
+  collabCards: CollabCards[];
+};  
 
 const SchoolIndustryCollaboration = ({ title }: Props) => {
   return (

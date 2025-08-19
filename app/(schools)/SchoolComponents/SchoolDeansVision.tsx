@@ -1,7 +1,25 @@
+import { ParagraphBlock } from "@/lib/types/about";
+import { BlocksRenderer } from "@strapi/blocks-react-renderer";
 import Image from "next/image";
 import Link from "next/link";
 
-const SchoolDeansVision = () => {
+type Props = {
+  title: string;
+  subtitle: string;
+  deanName: string;
+  deanEmail: string;
+  desg: string;
+  desc: ParagraphBlock[];
+};
+
+const SchoolDeansVision = ({
+  title,
+  subtitle,
+  deanName,
+  deanEmail,
+  desg,
+  desc,
+}: Props) => {
   return (
     <section
       className="py-[50px] px-4"
@@ -12,8 +30,8 @@ const SchoolDeansVision = () => {
     >
       <div className="max-w-[1664px] mx-auto w-full">
         <div className="text-center text-white text-3xl sm:text-5xl mb-5  lg:text-[64px]">
-          <h4 className="leading-[1]">Know our</h4>
-          <h5 className="leading-[1.2] font-bold">Dean’s vision</h5>
+          <h4 className="leading-[1]">{title}</h4>
+          <h5 className="leading-[1.2] font-bold">{subtitle}</h5>
         </div>
         <div
           className="rounded-4xl flex flex-col xl:flex-row"
@@ -33,45 +51,16 @@ const SchoolDeansVision = () => {
             />
           </div>
           <div className="xl:w-4/6 p-5 sm:px-10 sm:pb-10 xl:p-[50px] text-sm sm:text-base text-white">
-            <p>
-              The School of Engineering and Technology at K.R. Mangalam
-              University, established in 2013, is dedicated to providing quality
-              education, innovation, and entrepreneurship. Offering a diverse
-              array of undergraduate, postgraduate, and Ph.D. programmes, the
-              school emphasises cutting-edge teaching, research, and practical
-              industry experience through collaborations with leading companies
-              like IBM, EC-Council, Samatrix, ImaginXP, and Xebia etc. Our
-              curriculum is designed to address real-world challenges by
-              focusing on problem-solving, interdisciplinary learning, and skill
-              development, all in alignment with industry requirements. We
-              cultivate a culture of innovation and entrepreneurship, providing
-              students with state-of-the-art facilities and preparing them to
-              become leaders in the rapidly evolving technological landscape. We
-              maintain a strong emphasis on ethical behaviour and lifelong
-              learning, ensuring our students are not just academically
-              proficient but also responsible global citizens.
-            </p>
-            <br />
-            <p>
-              Looking ahead, the Dean envisions a future where our school not
-              only stays at the forefront of technological advancements but also
-              pioneers new realms of research and innovation. By continuously
-              evolving our curriculum and embracing emerging technologies, we
-              aim to equip our students with the skills necessary to thrive in
-              an increasingly digital and interconnected world. Our strategic
-              vision includes expanding our global partnerships and fostering a
-              diverse, inclusive, and forward-thinking academic community that
-              anticipates and shapes the future of engineering and technology.
-            </p>
+            <BlocksRenderer content={desc} />
             <br />
             <p className="text-2xl md:text-[32px] mb-2.5 sm:mb-3.5">
-              <strong>Dr. Pankaj Agarwal</strong>
+              <strong>{deanName}</strong>
             </p>
-            <Link href="mailto:dean.soet@krmangalam.edu.in" className="text-base">
-              dean.soet@krmangalam.edu.in
+            <Link href={`mailto:${deanEmail}`} className="text-base">
+              {deanEmail}
             </Link>
             <br />
-            <p className="text-sm sm:text-base">Professor & Dean</p>
+            <p className="text-sm sm:text-base">{desg}</p>
           </div>
         </div>
       </div>

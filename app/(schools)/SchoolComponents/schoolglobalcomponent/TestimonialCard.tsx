@@ -1,9 +1,18 @@
+import { STRAPI_URL } from "@/app/constant";
+import { StrapiMedia } from "@/lib/types/common";
 import Image from "next/image";
 
-const TestimonialCard = () => {
+type Props = {
+  name: string;
+  edu: string;
+  desc: string;
+  img: StrapiMedia;
+};
+
+const TestimonialCard = ({ name, edu, desc, img }: Props) => {
   return (
     <div
-      className="bg-white rounded-b-[25px]"
+      className="bg-white rounded-b-[25px] h-full"
       style={{
         boxShadow: "-2px 0px 20px 0px rgba(0,0,0,7%)",
       }}
@@ -15,25 +24,17 @@ const TestimonialCard = () => {
         }}
       >
         <Image
-          src="/schools/mask.webp"
+          src={`${STRAPI_URL}${img?.url}`}
           width={105}
           height={105}
           alt="mask"
           className="rounded-full w-[80px] h-[80px] md:w-[105px] md:h-[105px]"
         />
-        <p className="text-3xl font-medium">Rishi </p>
-        <p>B.Tech. CSE</p>
+        <p className="text-3xl font-medium">{name} </p>
+        <p>{edu}</p>
       </div>
       <div className="text-base sm:text-lg p-5 bg-white rounded-b-[25px]">
-        <p>
-          {`"As my B.Tech. journey comes to an end, I am confident that the
-          skills, knowledge, and experiences I gained at K.R. Mangalam
-          University will serve as a solid foundation for my future endeavours.
-          I am grateful for the stimulating learning environment and the
-          university's assistance in moulding me into a well-rounded and
-          competent professional in the field of Computer Science and
-          Engineering."`}
-        </p>
+        <p>{desc}</p>
       </div>
     </div>
   );

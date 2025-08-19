@@ -21,13 +21,11 @@ import { notFound } from "next/navigation";
 import { getSchoolPage } from "@/lib/api/schools";
 
 type Props = {
-  params: {
-    slug: string;
-  };
+  params: Promise<{ slug: string }>;
 };
 
 export default async function Page({ params }: Props) {
-  const slug = params.slug;
+  const { slug } = await params; // ✅ await params
 
   const allSchools = await getSchoolPage();
 
@@ -83,15 +81,49 @@ export default async function Page({ params }: Props) {
         advimg={school?.advantagimg}
         advcards={school?.advantageCards}
       />
-      <SchoolIndustryCollaboration title={school?.induscollabtitle} />
-      <SchoolLetsExplore />
-      <SchoolKnowledgePartner />
-      <SchoolExcellence />
-      <SchoolTestimonials />
-      <SchoolDeansVision />
+      <SchoolIndustryCollaboration
+        title={school?.induscollabtitle}
+        collabCards={school?.collabcards}
+      />
+      <SchoolLetsExplore
+        content={school?.letsexplorecontent}
+        list1={school?.listitem1?.listsitems}
+        list2={school?.listitem2}
+        list3={school?.listitem3}
+      />
+      <SchoolKnowledgePartner
+        title={school?.knowledgetitle}
+        logos={school?.knowledgepartenerlogos}
+      />
+      <SchoolExcellence
+        title1={school?.coetitle1}
+        title2={school?.coetitle2}
+        btn1={school?.coebtn1}
+        btn2={school?.coebtn2}
+      />
+      <SchoolTestimonials
+        title={school?.tetimonialtitle}
+        desc={school?.testimonialdesc}
+        testis={school?.testimonials}
+      />
+      <SchoolDeansVision
+        deanName={school?.deansname}
+        desg={school?.deandesignation}
+        deanEmail={school?.deanemail}
+        title={school?.deanvisiontitle}
+        subtitle={school?.deanvisionsubtitle}
+        desc={school?.deancontent}
+      />
       <SchoolFacultyAdvisory />
-      <SchoolEventAndExperience />
-      <SchoolStudentAchievements />
+      <SchoolEventAndExperience
+        title={school?.eventstitle}
+        desc={school?.eventsdesc}
+        btn={school?.eventsbtn}
+      />
+      <SchoolStudentAchievements
+        title={school?.studentachievementtitle}
+        btn={school?.studentachievementsbtn}
+      />
       <SchoolFacilities />
       <SchoolCommenceJourney />
     </>

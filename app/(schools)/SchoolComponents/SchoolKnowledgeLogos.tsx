@@ -6,8 +6,13 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import { StrapiMedia } from "@/lib/types/common";
+import { STRAPI_URL } from "@/app/constant";
 
-const SchoolKnowledgeLogos = () => {
+type Props = {
+  logos: StrapiMedia[];
+};
+const SchoolKnowledgeLogos = ({ logos }: Props) => {
   return (
     <div className="bg-white  px-5 rounded-[20px]">
       <Carousel
@@ -22,52 +27,22 @@ const SchoolKnowledgeLogos = () => {
         ]}
       >
         <CarouselContent className="items-center">
-          <CarouselItem className="basis-1/2 sm:basis-1/3 lg:basis-1/5">
-            <Image
-              src="/schools/networkbulls.webp"
-              width={161}
-              height={115}
-              alt="networkbulls"
-            />
-          </CarouselItem>
-          <CarouselItem className="basis-1/2 sm:basis-1/3 lg:basis-1/5">
-            <Image
-              src="/schools/princeton.webp"
-              width={196}
-              height={115}
-              alt="princeton"
-            />
-          </CarouselItem>
-          <CarouselItem className="basis-1/2 sm:basis-1/3 lg:basis-1/5">
-            <Image src="/schools/qsd.webp" width={162} height={115} alt="QSD" />
-          </CarouselItem>
-          <CarouselItem className="basis-1/2 sm:basis-1/3 lg:basis-1/5">
-            <Image src="/schools/srm.webp" width={200} height={115} alt="SRM" />
-          </CarouselItem>
-          <CarouselItem className="basis-1/2 sm:basis-1/3 lg:basis-1/5">
-            <Image
-              src="/schools/enviro.webp"
-              width={215}
-              height={115}
-              alt="Enviro"
-            />
-          </CarouselItem>
-          <CarouselItem className="basis-1/2 sm:basis-1/3 lg:basis-1/5">
-            <Image
-              src="/schools/enviro.webp"
-              width={215}
-              height={115}
-              alt="Enviro"
-            />
-          </CarouselItem>
-          <CarouselItem className="basis-1/2 sm:basis-1/3 lg:basis-1/5">
-            <Image
-              src="/schools/enviro.webp"
-              width={215}
-              height={115}
-              alt="Enviro"
-            />
-          </CarouselItem>
+          {logos &&
+            logos.map((logo) => {
+              return (
+                <CarouselItem
+                  key={logo?.id}
+                  className="basis-1/2 sm:basis-1/3 lg:basis-1/5"
+                >
+                  <Image
+                    src={`${STRAPI_URL}${logo?.url}`}
+                    width={logo?.width || 215}
+                    height={logo.height || 115}
+                    alt={logo.alternativeText || "Knowledge Partner Logo"}
+                  />
+                </CarouselItem>
+              );
+            })}
         </CarouselContent>
       </Carousel>
     </div>
