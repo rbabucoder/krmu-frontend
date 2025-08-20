@@ -26,6 +26,90 @@
     margin: 0 auto;
     text-align: center;
   }
+
+  .admis_proc_btn_grid_items {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .admis_proc_btn_content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px 0px;
+    text-align: center;
+  }
+
+  .admis_proc_btn_content .btn_text {
+    background: #db2a1a;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    max-width: 180px;
+    border-radius: 50px;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .admis_proc_btn_grid_item:nth-child(2) .admis_proc_btn_content .btn_text {
+    margin-left: -15px;
+  }
+  .admis_proc_btn_grid_item:nth-child(3) .admis_proc_btn_content .btn_text {
+    margin-left: -25px;
+  }
+
+  .admis_proc_btn_grid_item:nth-child(4) .admis_proc_btn_content .btn_text {
+    margin-left: -38px;
+  }
+  .admis_proc_btn_grid_item:nth-child(5) .admis_proc_btn_content .btn_text {
+    margin-left: -45px;
+  }
+
+  .admis_proc_btn_grid_item:nth-child(6) .admis_proc_btn_content .btn_text {
+    margin-left: -60px;
+  }
+
+  .admis_proc_btn_grid_item .admis_proc_btn_content .admis_btn_below_text {
+    max-width: 150px;
+    width: 100%;
+    font-size: 14px;
+    margin-top: 15px;
+    font-weight: 500;
+    color: #5d6670;
+    line-height: 1.5;
+  }
+  .admis_proc_btn_grid_item:nth-child(1)
+    .admis_proc_btn_content
+    .admis_btn_below_text {
+    margin-left: -15px;
+  }
+  .admis_proc_btn_grid_item:nth-child(2)
+    .admis_proc_btn_content
+    .admis_btn_below_text {
+    margin-left: -15px;
+  }
+  .admis_proc_btn_grid_item:nth-child(3)
+    .admis_proc_btn_content
+    .admis_btn_below_text {
+    margin-left: -10px;
+  }
+
+  .admis_proc_btn_grid_item:nth-child(4)
+    .admis_proc_btn_content
+    .admis_btn_below_text {
+    margin-left: -22px;
+  }
+  .admis_proc_btn_grid_item:nth-child(5)
+    .admis_proc_btn_content
+    .admis_btn_below_text {
+    margin-left: -30px;
+  }
+
+  .admis_proc_btn_grid_item:nth-child(6)
+    .admis_proc_btn_content
+    .admis_btn_below_text {
+    margin-left: -42px;
+  }
+
   .prog-global-padding {
     padding: 50px 0px;
   }
@@ -81,13 +165,13 @@
   .prog_highlight_content_container:hover
     .prog_highlight_content_inner_container {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    background: var(--color-2);
+    background: #ffffff;
   }
 
   .prog_highlight_content_container:hover
     .prog_highlight_content_inner_container
     .title {
-    color: var(--color-3);
+    color: #db2a1a;
   }
 
   .prog_highlight_btn_container {

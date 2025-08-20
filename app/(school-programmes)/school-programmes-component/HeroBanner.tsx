@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const HeroBanner = () => {
   return (
-    <section>
+    <section className="pt-40 pb-[50px]">
       <div className="max-w-[1664px] mx-auto w-full flex items-center justify-between">
         <div>
           <h4 className="text-2xl font-medium leading-[1.2] mb-2">
