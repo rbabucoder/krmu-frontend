@@ -37,9 +37,11 @@ export default async function Page({ params }: Props) {
     (component) => component.__component === "schoolcomponent.knowledge"
   );
 
+
   return (
     <>
       <SchoolHero
+        herobanner={school?.schoolherobanner}
         title={school.schoolname}
         subheading={school.subheading}
         heroBtns={school.herobutton}

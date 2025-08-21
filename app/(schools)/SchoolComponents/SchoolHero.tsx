@@ -1,3 +1,5 @@
+import { STRAPI_URL } from "@/app/constant";
+import { SchoolHeroBanner } from "@/lib/types/common";
 import { Button } from "@/lib/types/home";
 import Link from "next/link";
 
@@ -8,6 +10,7 @@ type Props = {
   videoFmt: string;
   iframeContent: string;
   videoLink: string;
+  herobanner: SchoolHeroBanner;
 };
 const SchoolHero = ({
   title,
@@ -16,9 +19,13 @@ const SchoolHero = ({
   videoFmt,
   iframeContent,
   videoLink,
+  herobanner,
 }: Props) => {
   return (
-    <section className="pt-[150px] pb-20 lg:py-[10%] bg-[url(/schools/soet-bg.webp)] bg-cover bg-no-repeat bg-center px-4">
+    <section
+      className="pt-[150px] pb-20 lg:py-[10%] bg-cover bg-no-repeat bg-center px-4"
+      style={{ backgroundImage: `url(${STRAPI_URL}${herobanner?.url})` }}
+    >
       <div className="max-w-[1850px] mx-auto w-full lg:flex items-center justify-between">
         <div className="text-center text-white w-full lg:w-1/2 xl:pr-52">
           <h2 className="text-sm md:text-[28px] lg:mb-5 font-medium">

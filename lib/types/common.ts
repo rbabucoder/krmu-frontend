@@ -96,8 +96,6 @@ export interface FacilityAPIResponse {
   meta: CommonMeta;
 }
 
-
-
 export interface StudentAchievementResponse {
   data: StudentAchievement[];
   meta: {
@@ -120,8 +118,6 @@ export interface StudentAchievement {
   achivementimage: StrapiMedia[];
   school_category: SchoolCategory;
 }
-
-
 
 export interface ImageFormat {
   name: string;
@@ -147,3 +143,34 @@ export interface SchoolCategory {
   publishedAt: string;
 }
 
+export interface ImageFormat {
+  name: string;
+  hash: string;
+  ext: string;
+  mime: string;
+  path: string | null;
+  width: number;
+  height: number;
+  size: number; // KB
+  sizeInBytes?: number; // optional to avoid TS conflicts
+  url: string;
+}
+
+export interface ImageFormats {
+  thumbnail?: ImageFormat;
+  small?: ImageFormat;
+  medium?: ImageFormat;
+  large?: ImageFormat;
+}
+
+export interface SchoolHeroBanner {
+  id: number;
+  documentId: string;
+  name: string;
+  alternativeText: string | null;
+  caption: string | null;
+  width: number;
+  height: number;
+  formats: ImageFormats;
+  url?: string; // Strapi sometimes includes this at root
+}

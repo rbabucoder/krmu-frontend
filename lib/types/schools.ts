@@ -1,5 +1,11 @@
 import { ListItemBlock, ParagraphBlock } from "./about";
-import { ButtonType, CardWithImage, CounterItem, StrapiMedia } from "./common";
+import {
+  ButtonType,
+  CardWithImage,
+  CounterItem,
+  SchoolHeroBanner,
+  StrapiMedia,
+} from "./common";
 import { Button } from "./home";
 
 export interface SchoolCategory {
@@ -104,6 +110,7 @@ export interface School {
   eventsbtn: ButtonType;
   studentachievementtitle: string;
   studentachievementsbtn: Button;
+  schoolherobanner: SchoolHeroBanner;
 }
 
 export interface SchoolsResponse {
