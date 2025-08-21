@@ -37,7 +37,6 @@ export default async function Page({ params }: Props) {
     (component) => component.__component === "schoolcomponent.knowledge"
   );
 
-
   return (
     <>
       <SchoolHero
@@ -108,14 +107,16 @@ export default async function Page({ params }: Props) {
         desc={school?.testimonialdesc}
         testis={school?.testimonials}
       />
-      <SchoolDeansVision
-        deanName={school?.deansname}
-        desg={school?.deandesignation}
-        deanEmail={school?.deanemail}
-        title={school?.deanvisiontitle}
-        subtitle={school?.deanvisionsubtitle}
-        desc={school?.deancontent}
-      />
+      {school?.showdeaninfo && (
+        <SchoolDeansVision
+          deanName={school?.deansname}
+          desg={school?.deandesignation}
+          deanEmail={school?.deanemail}
+          title={school?.deanvisiontitle}
+          subtitle={school?.deanvisionsubtitle}
+          desc={school?.deancontent}
+        />
+      )}
       <SchoolFacultyAdvisory />
       <SchoolEventAndExperience
         title={school?.eventstitle}

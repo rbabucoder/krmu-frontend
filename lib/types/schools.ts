@@ -111,6 +111,7 @@ export interface School {
   studentachievementtitle: string;
   studentachievementsbtn: Button;
   schoolherobanner: SchoolHeroBanner;
+  showdeaninfo: boolean;
 }
 
 export interface SchoolsResponse {
