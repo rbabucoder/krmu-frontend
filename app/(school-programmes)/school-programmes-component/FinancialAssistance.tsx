@@ -9,13 +9,13 @@ const FinancialAssistance = () => {
             Financial <span className="prog-highlight-text">Assistance</span>
           </h2>
           <p className="sub-heading">
-            K.R. Mangalam University has collaborated with leading banks to
+            {`K.R. Mangalam University has collaborated with leading banks to
             offer convenient Education Loan options, making it easier for
             students to finance their academic aspirations. These loans come
             with a moratorium period, allowing you to begin repayment either one
             year after course completion or six months after securing a job
             (whichever comes first). This ensures you can focus on your studies
-            now and manage repayments when you're financially ready.
+            now and manage repayments when you're financially ready.`}
           </p>
         </div>
         <div>
@@ -88,11 +88,36 @@ const FinancialAssistance = () => {
             Repayment tenure ranging from 5-15 years
           </div>
           <div className="grid grid-cols-6 items-center gap-5 w-8/12">
-            <Image src="/programmes/idfc.webp" width={126} height={41} alt="IDFC" />
-            <Image src="/programmes/propeeld.webp" width={126} height={41} alt="propeeld" />
-            <Image src="/programmes/grayquest.webp" width={126} height={41} alt="Grayquest" />
-            <Image src="/programmes/icici.webp" width={126} height={41} alt="ICICI" />
-            <Image src="/programmes/axis.webp" width={126} height={41} alt="AXIS" />
+            <Image
+              src="/programmes/idfc.webp"
+              width={126}
+              height={41}
+              alt="IDFC"
+            />
+            <Image
+              src="/programmes/propeeld.webp"
+              width={126}
+              height={41}
+              alt="propeeld"
+            />
+            <Image
+              src="/programmes/grayquest.webp"
+              width={126}
+              height={41}
+              alt="Grayquest"
+            />
+            <Image
+              src="/programmes/icici.webp"
+              width={126}
+              height={41}
+              alt="ICICI"
+            />
+            <Image
+              src="/programmes/axis.webp"
+              width={126}
+              height={41}
+              alt="AXIS"
+            />
           </div>
         </div>
       </div>
