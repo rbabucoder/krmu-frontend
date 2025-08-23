@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import LabFacilitiesSlider from "../school-prog-global-comps/LabFacilitiesSlider";
 
 const LabsFacilities = () => {
   return (
     <>
       <section className="prog-global-padding">
-        <div className="max-w-[1320px] mx-auto w-full flex gap-6 items-center">
-          <div className="w-1/2">
+        <div className="max-w-[1320px] mx-auto w-full flex gap-6 items-center px-2.5 md:px-4">
+          <div className="w-1/2 hidden md:block">
             <Image
               src="/programmes/6.webp"
               alt="labs"
@@ -15,7 +16,7 @@ const LabsFacilities = () => {
               className="w-full"
             />
           </div>
-          <div className="w-1/2">
+          <div className="w-full md:w-1/2">
             <h3 className="text-[50px] text-[#0a41a1] font-medium">
               Labs & <span className="text-[#db2a1a]">Facilities</span>
             </h3>
@@ -29,7 +30,7 @@ const LabsFacilities = () => {
             </p>
             <br />
             <p>Here’s everything KRMU B.Tech. CSE has to offer:</p>
-            <div>
+            <div className="hidden md:block">
               <div className="mt-2.5">
                 <h5 className="font-medium mb-2 text-xl">IoT Lab</h5>
                 <p>
@@ -63,6 +64,9 @@ const LabsFacilities = () => {
               >
                 Learn More
               </Link>
+            </div>
+            <div className="md:hidden">
+                <LabFacilitiesSlider />
             </div>
           </div>
         </div>

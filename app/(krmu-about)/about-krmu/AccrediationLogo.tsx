@@ -11,7 +11,7 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 
 interface ACCREDIATIONLOGOPROP {
-  logosData: StrapiMedia[];
+  logosData: StrapiMedia[]; 
 }
 
 const AccrediationLogo: React.FC<ACCREDIATIONLOGOPROP> = ({ logosData }) => {

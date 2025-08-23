@@ -3,15 +3,15 @@ import Image from "next/image";
 const Specialisation = () => {
   return (
     <section className="prog-global-padding">
-      <div className="max-w-[1320px] mx-auto w-full">
+      <div className="max-w-[1320px] mx-auto w-full px-2.5 md:px-4">
         <div className="common-prog-container">
           <h2 className="heading">
             Specialisations Curated{" "}
             <span className="prog-highlight-text">For You</span>
           </h2>
         </div>
-        <div className="flex mt-12">
-          <div className="w-1/2">
+        <div className="lg:flex mt-12">
+          <div className="w-full lg:w-1/2 md:px-[50px] sm:px-0 text-center">
             <Image
               src="/programmes/specilasation.webp"
               width={636}
@@ -20,8 +20,8 @@ const Specialisation = () => {
               className="w-full h-full"
             />
           </div>
-          <div className="w-1/2 pl-[30px]">
-            <div className="pl-[50px] flex flex-col justify-between gap-[30px] h-full relative before:absolute before:content-[''] before:top-0 before:left-0 before:w-[5px] before:h-full before:bg-[#db2a1a] before:rounded-[50px]">
+          <div className="w-full lg:w-1/2 lg:pl-[30px] mt-8 lg:mt-0 ">
+            <div className="lg:pl-[50px] flex flex-col justify-between gap-[30px] h-full relative before:hidden lg:before:block before:absolute before:content-[''] before:top-0 before:left-0 before:w-[5px] before:h-full before:bg-[#db2a1a] before:rounded-[50px]">
               <div className="prog_highlight_content_container">
                 <div className="prog_highlight_content_inner_container">
                   <div className="prog_highlight_img">

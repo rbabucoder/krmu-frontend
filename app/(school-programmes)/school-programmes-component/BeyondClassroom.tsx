@@ -1,4 +1,4 @@
-import Image from "next/image";
+import BeyondClassroomSlider from "../school-prog-global-comps/BeyondClassroomSlider";
 
 const BeyondClassroom = () => {
   return (
@@ -21,43 +21,7 @@ const BeyondClassroom = () => {
           </p>
         </div>
       </div>
-      <div className="flex items-center justify-between mt-4 gap-5 overflow-x-auto overflow-y-hidden">
-        <Image
-          src="/programmes/4.webp"
-          width={446}
-          height={336}
-          alt="Beyond"
-          className="h-full w-full"
-        />
-        <Image
-          src="/programmes/4.webp"
-          width={446}
-          height={336}
-          alt="Beyond"
-          className="h-full w-full"
-        />
-        <Image
-          src="/programmes/4.webp"
-          width={446}
-          height={336}
-          alt="Beyond"
-          className="h-full w-full"
-        />
-        <Image
-          src="/programmes/4.webp"
-          width={446}
-          height={336}
-          alt="Beyond"
-          className="h-full w-full"
-        />
-        <Image
-          src="/programmes/4.webp"
-          width={446}
-          height={336}
-          alt="Beyond"
-          className="h-full w-full"
-        />
-      </div>
+      <BeyondClassroomSlider />
     </section>
   );
 };

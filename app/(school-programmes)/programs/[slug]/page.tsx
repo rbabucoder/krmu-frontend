@@ -12,6 +12,7 @@ import OurLocation from "../../school-programmes-component/OurLocation";
 import ProgrammeHighlight from "../../school-programmes-component/ProgrammeHighlight";
 import ProgrammeScope from "../../school-programmes-component/ProgrammeScope";
 import Specialisation from "../../school-programmes-component/Specialisation";
+import TableOfContent from "../../school-programmes-component/TableOfContent";
 
 const page = () => {
   return (
@@ -21,14 +22,15 @@ const page = () => {
         <Eligibility />
         <ProgrammeScope />
         <ProgrammeHighlight />
-        <AdmissionProcess />
         <Specialisation />
+        <AdmissionProcess />
         <Curriculum />
         <LabsFacilities />
         <BeyondClassroom />
         <CareerProspects />
         <DreamCareer />
         <FinancialAssistance />
+        <TableOfContent />
         <OurLocation />
         <ConnectWithUs />
       </main>

@@ -31,7 +31,7 @@ const SchoolHero = ({
           <h2 className="text-sm md:text-[28px] lg:mb-5 font-medium">
             {subheading}
           </h2>
-          <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold leading-[1.2  ]">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold leading-[1.2]">
             {title}
           </h1>
           <div className="flex flex-col lg:flex-row items-center justify-center gap-5 my-4">

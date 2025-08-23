@@ -1,14 +1,23 @@
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const CareerProspects = () => {
   return (
     <>
       <section className="prog-global-padding bg-[#f8f9fd]">
-        <div className="max-w-[1320px] mx-auto w-full flex">
-          <div className="w-1/2">
-            <h3 className="text-[40px] font-semibold text-[#0a41a1] mb-6">
+        <div className="max-w-[1320px] mx-auto w-full xl:flex px-2.5 md:px-4">
+          <div className="w-full xl:w-1/2">
+            <h3 className="text-4xl md:text-[40px] font-semibold text-[#0a41a1] mb-6 text-center sm:text-left">
               Career <span className="text-[#db2a1a]">Prospects</span>
             </h3>
+            <Image
+              src="/programmes/7.webp"
+              width={660}
+              height={660}
+              className="w-full h-full lg:hidden"
+              alt="Career"
+            />
             <p className="mb-6">
               The B.Tech. in Computer Science and Engineering Programme opens a
               ton of opportunities for our graduates in the field of technology,
@@ -66,7 +75,7 @@ const CareerProspects = () => {
               </div>
             </div>
           </div>
-          <div className="w-1/2">
+          <div className="w-full xl:w-1/2 hidden lg:block">
             <Image
               src="/programmes/7.webp"
               width={660}
@@ -75,6 +84,14 @@ const CareerProspects = () => {
               alt="Career"
             />
           </div>
+        </div>
+        <div className="max-w-[1320px] mx-auto w-full flex justify-center mt-4">
+          <Link
+            href="#"
+            className="text-white bg-[#db2a1a] p-[15px] flex items-center justify-around max-w-3xs w-full rounded-lg font-semibold"
+          >
+            <span>Kick Off Your Journey</span> <ArrowRight />
+          </Link>
         </div>
       </section>
     </>
