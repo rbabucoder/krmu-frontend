@@ -4,53 +4,63 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
+import { HiglightCard } from "@/lib/types/school-programme";
 import Autoplay from "embla-carousel-autoplay";
-import { useState } from "react";
+import type { EmblaCarouselType } from "embla-carousel";
+import { useState, useEffect } from "react";
 
-const ProgramHighlightSlider = () => {
+type Props = {
+  highlights: HiglightCard[];
+};
+
+const ProgramHighlightSlider = ({ highlights }: Props) => {
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
+  const [api, setApi] = useState<EmblaCarouselType | null>(null);
+
+  // attach event listener once api is ready
+  useEffect(() => {
+    if (!api) return;
+
+    setCount(api.scrollSnapList().length);
+
+    const onSelect = () => {
+      setCurrent(api.selectedScrollSnap());
+    };
+
+    api.on("select", onSelect);
+    onSelect(); // run initially
+
+    return () => {
+      api.off("select", onSelect);
+    };
+  }, [api]);
 
   return (
     <div className="py-10">
       <Carousel
         opts={{
-          align: "center", // center active slide
+          align: "center",
           loop: true,
         }}
         plugins={[
           Autoplay({
-            delay: 1000,
+            delay: 2000,
           }),
         ]}
-        setApi={(api) => {
-          if (!api) return;
-          setCount(api.scrollSnapList().length);
-
-          api.on("select", () => {
-            setCurrent(api.selectedScrollSnap());
-          });
-        }}
+        setApi={(api) => setApi(api ?? null)} // ✅ normalize undefined → null
       >
         <CarouselContent className="px-0 my-5">
-          {[
-            {
-              title: "Advanced iOS Lab",
-              desc: "The Advanced iOS Lab offers Mac systems enabling students to design, code, and test high-performance applications and software systems.",
-            },
-            {
-              title: "AI & ML Lab",
-              desc: "The AI & ML Lab provides modern infrastructure for developing intelligent solutions with real-world applications.",
-            },
-            {
-              title: "Robotics Lab",
-              desc: "Equipped with advanced robots, sensors, and controllers to foster innovation in automation and robotics.",
-            },
-          ].map((item, i) => (
-            <CarouselItem key={i} className="basis-2/3 md:basis-1/3 h-full">
+          {highlights?.map((highlight, i) => (
+            <CarouselItem
+              key={highlight?.id}
+              className="basis-2/3 md:basis-1/3 h-full"
+            >
               <div
                 className={`p-5 rounded-2xl text-center transition-all duration-300 shadow-md flex flex-col items-center justify-center h-full ${
-                  current === i ? "bg-[#0a41a1] scale-105" : "bg-white scale-95"
+                  current === i
+                    ? "bg-[#0a41a1] scale-105"
+                    : "bg-white scale-95"
                 }`}
               >
                 <h5
@@ -58,14 +68,14 @@ const ProgramHighlightSlider = () => {
                     current === i ? "text-white" : "text-black"
                   }`}
                 >
-                  {item.title}
+                  {highlight?.title}
                 </h5>
                 <p
                   className={`mt-2 text-sm ${
                     current === i ? "text-[#97a6c0]" : "text-gray-600"
                   }`}
                 >
-                  {item.desc}
+                  {highlight?.subtitle}
                 </p>
               </div>
             </CarouselItem>
@@ -77,8 +87,9 @@ const ProgramHighlightSlider = () => {
           {Array.from({ length: count }).map((_, i) => (
             <button
               key={i}
-              className={`h-2 w-2 rounded-full transition-all ${
-                current === i ? "bg-[#0a41a1] w-6" : "bg-gray-400"
+              onClick={() => api?.scrollTo(i)}
+              className={`h-2 rounded-full transition-all duration-300 ${
+                current === i ? "bg-[#0a41a1] w-6" : "bg-gray-400 w-2"
               }`}
             />
           ))}

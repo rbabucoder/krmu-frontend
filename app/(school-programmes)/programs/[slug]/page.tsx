@@ -1,4 +1,4 @@
-import AdmissionProcess from "../../school-programmes-component/AdmissionProcess";
+import { getSchoolProgrammeData } from "@/lib/api/school-programmes";
 import BeyondClassroom from "../../school-programmes-component/BeyondClassroom";
 import CareerProspects from "../../school-programmes-component/CareerProspects";
 import { ConnectWithUs } from "../../school-programmes-component/ConnectWithUs";
@@ -13,22 +13,127 @@ import ProgrammeHighlight from "../../school-programmes-component/ProgrammeHighl
 import ProgrammeScope from "../../school-programmes-component/ProgrammeScope";
 import Specialisation from "../../school-programmes-component/Specialisation";
 import TableOfContent from "../../school-programmes-component/TableOfContent";
+import { notFound } from "next/navigation";
+import AdmissionProcessComp from "../../school-programmes-component/AdmissionProcessComp";
 
-const page = () => {
+type Props = {
+  params: Promise<{ slug: string }>;
+};
+
+const page = async ({ params }: Props) => {
+  const { slug } = await params; // ✅ await params
+
+  const allSchoolProgrammeData = await getSchoolProgrammeData();
+
+  const singleSchoolProgramme = allSchoolProgrammeData.find(
+    (programme) => programme.programmeslug === slug
+  );
+  // If not found, redirect to 404 page
+  if (!singleSchoolProgramme) return notFound();
+
+  const title = singleSchoolProgramme?.title;
+
+  const heroSection = singleSchoolProgramme?.herosection;
+  const eligibilitySection = singleSchoolProgramme?.programmeeligibility;
+  const programmeScopeSection = singleSchoolProgramme?.programmescope;
+  const programmeHighlightSection = singleSchoolProgramme?.programmehighlight;
+  const specialisationSection = singleSchoolProgramme?.specialisation;
+  const admissionProcessSection = singleSchoolProgramme?.admissionprocess;
+  const curriculumSection = singleSchoolProgramme?.curriculum;
+  const labfacilitiesSection = singleSchoolProgramme?.labsfacilities;
+  const beyondclassSection = singleSchoolProgramme?.beyondclassroom;
+  const careerProspectsSection = singleSchoolProgramme?.career;
+  const dreamcareerSection = singleSchoolProgramme?.dreamcareer;
+
+  console.log("dreamcareerSection", dreamcareerSection);
+
   return (
     <>
       <main className="school-prog-font">
-        <HeroBanner />
-        <Eligibility />
-        <ProgrammeScope />
-        <ProgrammeHighlight />
-        <Specialisation />
-        <AdmissionProcess />
-        <Curriculum />
-        <LabsFacilities />
-        <BeyondClassroom />
-        <CareerProspects />
-        <DreamCareer />
+        {heroSection && <HeroBanner title={title} heroSection={heroSection} />}
+        {eligibilitySection && (
+          <Eligibility
+            elgibilities={eligibilitySection?.elgibility}
+            mobherobtn={eligibilitySection?.mobherobtn}
+          />
+        )}
+        {programmeScopeSection && (
+          <ProgrammeScope scopeData={programmeScopeSection} />
+        )}
+        {programmeHighlightSection && (
+          <ProgrammeHighlight
+            heading={programmeHighlightSection?.heading}
+            highlightHeading={programmeHighlightSection?.highlightheading}
+            desc={programmeHighlightSection?.subheading}
+            highlights={programmeHighlightSection?.programmehighlightcards}
+          />
+        )}
+        {specialisationSection && (
+          <Specialisation
+            heading={specialisationSection?.heading}
+            highlightheading={specialisationSection?.highlightheading}
+            specialisations={specialisationSection?.specialisationcards}
+          />
+        )}
+        {admissionProcessSection && (
+          <AdmissionProcessComp
+            heading={admissionProcessSection?.heading}
+            highlight={admissionProcessSection?.highlightheading}
+            desc={admissionProcessSection?.description}
+            deskimg={admissionProcessSection?.desktopadmissionprocessimg}
+            admissionCards={admissionProcessSection?.admissionprocesscard}
+          />
+        )}
+        {curriculumSection && (
+          <Curriculum
+            heading={curriculumSection?.heading}
+            highlight={curriculumSection?.highlightheading}
+            desc={curriculumSection?.description}
+            programStruct={curriculumSection?.years}
+          />
+        )}
+        {labfacilitiesSection && (
+          <LabsFacilities
+            heading={labfacilitiesSection?.heading}
+            highlight={labfacilitiesSection?.highlightheading}
+            btn={labfacilitiesSection?.labbtn}
+            labimg={labfacilitiesSection?.labsimage}
+            labcontent={labfacilitiesSection?.labscontent}
+            labcards={labfacilitiesSection?.labcards}
+          />
+        )}
+        {beyondclassSection && (
+          <BeyondClassroom
+            heading={beyondclassSection?.heading}
+            highlight={beyondclassSection?.highlightheading}
+            desc={beyondclassSection?.description}
+            beyondclassimages={beyondclassSection?.beyondclassroomimages}
+          />
+        )}
+        {careerProspectsSection && (
+          <CareerProspects
+            heading={careerProspectsSection?.heading}
+            highlight={careerProspectsSection?.highlightheading}
+            desc={careerProspectsSection?.description}
+            btn={careerProspectsSection?.careerbtn}
+            careerimg={careerProspectsSection?.careerimg}
+            careercards={careerProspectsSection?.careercards}
+          />
+        )}
+        {dreamcareerSection && (
+          <DreamCareer
+            heading={dreamcareerSection.heading}
+            description={dreamcareerSection.description}
+            highestpackagenum={dreamcareerSection.highestpackagenum}
+            highestpackagetitle={dreamcareerSection.highestpackagetitle}
+            campusrecruitersnum={dreamcareerSection.campusrecruitersnum}
+            campusrecruitertitle={dreamcareerSection.campusrecruitertitle}
+            placementassistnum={dreamcareerSection.placementassistnum}
+            placementassisttitle={dreamcareerSection.placementassisttitle}
+            logos={dreamcareerSection?.careerlogos}
+          />
+        )}
+
         <FinancialAssistance />
         <TableOfContent />
         <OurLocation />

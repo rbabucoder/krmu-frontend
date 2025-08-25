@@ -1,19 +1,25 @@
 "use client";
+import { STRAPI_URL } from "@/app/constant";
+import { StrapiMedia } from "@/lib/types/common";
 import Image from "next/image";
 
-const BeyondClassroomSlider = () => {
+type Props = {
+  slideimages: StrapiMedia[];
+};
+
+const BeyondClassroomSlider = ({ slideimages }: Props) => {
   return (
     <div className="relative w-full overflow-hidden py-10">
       <div className="flex animate-marquee">
         {/* Original slides */}
-        {Array.from({ length: 8 }).map((_, i) => (
+        {slideimages.map((img) => (
           <div
-            key={i}
+            key={img.id}
             className="relative w-full sm:w-[calc(100%/3)] lg:w-[calc(100%/4)] mx-2 h-[336px] flex-shrink-0 rounded-xl overflow-hidden"
           >
             <Image
-              src="/programmes/4.webp"
-              alt={`Beyond ${i}`}
+              src={img.url}
+              alt={img.alternativeText || `Beyond ${img.id}`}
               fill
               className="object-cover"
             />
@@ -21,14 +27,14 @@ const BeyondClassroomSlider = () => {
         ))}
 
         {/* Duplicate slides for seamless loop */}
-        {Array.from({ length: 8 }).map((_, i) => (
+        {slideimages.map((img) => (
           <div
-            key={`dup-${i}`}
+            key={`dup-${img.id}`}
             className="relative w-full sm:w-[calc(100%/3)] lg:w-[calc(100%/4)] h-[336px] flex-shrink-0 rounded-xl overflow-hidden"
           >
             <Image
-              src="/programmes/4.webp"
-              alt={`Beyond duplicate ${i}`}
+              src={`${STRAPI_URL}${img.url}`}
+              alt={img.alternativeText || `Beyond duplicate ${img.id}`}
               fill
               className="object-cover"
             />

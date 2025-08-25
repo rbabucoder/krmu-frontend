@@ -4,10 +4,15 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
+import { LabCard } from "@/lib/types/school-programme";
 import Autoplay from "embla-carousel-autoplay";
 import { useState } from "react";
 
-const LabFacilitiesSlider = () => {
+type Props = {
+  labcards: LabCard[];
+};
+
+const LabFacilitiesSlider = ({ labcards }: Props) => {
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
 
@@ -33,43 +38,33 @@ const LabFacilitiesSlider = () => {
         }}
       >
         <CarouselContent className="px-0 my-5">
-          {[
-            {
-              title: "Advanced iOS Lab",
-              desc: "The Advanced iOS Lab offers Mac systems enabling students to design, code, and test high-performance applications and software systems.",
-            },
-            {
-              title: "AI & ML Lab",
-              desc: "The AI & ML Lab provides modern infrastructure for developing intelligent solutions with real-world applications.",
-            },
-            {
-              title: "Robotics Lab",
-              desc: "Equipped with advanced robots, sensors, and controllers to foster innovation in automation and robotics.",
-            },
-          ].map((item, i) => (
-            <CarouselItem key={i} className="basis-2/3 md:basis-1/3 h-full">
-              <div
-                className={`p-5 rounded-2xl text-center transition-all duration-300 shadow-md flex flex-col items-center justify-center h-full ${
-                  current === i ? "bg-[#0a41a1] scale-105" : "bg-white scale-95"
-                }`}
-              >
-                <h5
-                  className={`font-semibold ${
-                    current === i ? "text-white" : "text-black"
+          {labcards &&
+            labcards.map((item, i) => (
+              <CarouselItem key={i} className="basis-2/3 md:basis-1/3 h-full">
+                <div
+                  className={`p-5 rounded-2xl text-center transition-all duration-300 shadow-md flex flex-col items-center justify-center h-full ${
+                    current === i
+                      ? "bg-[#0a41a1] scale-105"
+                      : "bg-white scale-95"
                   }`}
                 >
-                  {item.title}
-                </h5>
-                <p
-                  className={`mt-2 text-sm ${
-                    current === i ? "text-[#97a6c0]" : "text-gray-600"
-                  }`}
-                >
-                  {item.desc}
-                </p>
-              </div>
-            </CarouselItem>
-          ))}
+                  <h5
+                    className={`font-semibold ${
+                      current === i ? "text-white" : "text-black"
+                    }`}
+                  >
+                    {item.title}
+                  </h5>
+                  <p
+                    className={`mt-2 text-sm ${
+                      current === i ? "text-[#97a6c0]" : "text-gray-600"
+                    }`}
+                  >
+                    {item?.description}
+                  </p>
+                </div>
+              </CarouselItem>
+            ))}
         </CarouselContent>
 
         {/* Dots */}

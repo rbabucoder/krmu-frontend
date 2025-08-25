@@ -1,97 +1,77 @@
+import { STRAPI_URL } from "@/app/constant";
+import { ButtonType, StrapiMedia } from "@/lib/types/common";
+import { CareerCard } from "@/lib/types/school-programme";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-const CareerProspects = () => {
+type Props = {
+  heading: string;
+  highlight: string;
+  desc: string;
+  btn: ButtonType;
+  careerimg: StrapiMedia;
+  careercards: CareerCard[];
+};
+
+const CareerProspects = ({
+  heading,
+  highlight,
+  desc,
+  btn,
+  careerimg,
+  careercards,
+}: Props) => {
   return (
     <>
       <section className="prog-global-padding bg-[#f8f9fd]">
         <div className="max-w-[1320px] mx-auto w-full xl:flex px-2.5 md:px-4">
           <div className="w-full xl:w-1/2">
             <h3 className="text-4xl md:text-[40px] font-semibold text-[#0a41a1] mb-6 text-center sm:text-left">
-              Career <span className="text-[#db2a1a]">Prospects</span>
+              {heading} <span className="text-[#db2a1a]">{highlight}</span>
             </h3>
             <Image
-              src="/programmes/7.webp"
+              src={`${STRAPI_URL}${careerimg?.url}`}
               width={660}
               height={660}
               className="w-full h-full lg:hidden"
-              alt="Career"
+              alt={careerimg?.alternativeText || "Career Prospectus"}
             />
-            <p className="mb-6">
-              The B.Tech. in Computer Science and Engineering Programme opens a
-              ton of opportunities for our graduates in the field of technology,
-              computing, and engineering. Our diverse curriculum ensures that
-              our graduates end up well-equipped with all the skills required to
-              navigate through the dynamic field of engineering.
-            </p>
+            <p className="mb-6">{desc}</p>
             <div>
-              <div className="pl-10 relative">
-                <span className="absolute -left-2 top-0 px-2.5 py-[5px] rounded-[10px] text-white bg-[#db2a1a]">
-                  01
-                </span>
-                <h4 className="font-medium text-2xl">Software Developer</h4>
-                <p className="mb-4">
-                  A software developer builds software with the use of code and
-                  programming languages to bring their innovative ideas into
-                  reality. A software developer builds software with the use of
-                  code and programming languages to bring their innovative ideas
-                  into reality.
-                </p>
-              </div>
-              <div className="pl-10 relative">
-                <span className="absolute -left-2 top-0 px-2.5 py-[5px] rounded-[10px] text-white bg-[#db2a1a]">
-                  02
-                </span>
-                <h4 className="font-medium text-2xl">Data Scientist</h4>
-                <p className="mb-4">
-                  As a data scientist, you will analyse data sets, performance,
-                  threads, graphs, and charts to find efficient solutions for
-                  your company/business.
-                </p>
-              </div>
-              <div className="pl-10 relative">
-                <span className="absolute -left-2 top-0 px-2.5 py-[5px] rounded-[10px] text-white bg-[#db2a1a]">
-                  03
-                </span>
-                <h4 className="font-medium text-2xl mb-2">AI/ML Engineer</h4>
-                <p className="mb-2">
-                  As an AI/ML Engineer, you will be responsible for developing
-                  cutting-edge technologies and enhancing the existing ones by
-                  incorporating AI technology with machine learning algorithms
-                  and automated codes.
-                </p>
-              </div>
-              <div className="pl-10 relative">
-                <span className="absolute -left-2 top-0 px-2.5 py-[5px] rounded-[10px] text-white bg-[#db2a1a]">
-                  04
-                </span>
-                <h4 className="font-medium text-2xl mb-2">IT Consultant</h4>
-                <p>
-                  These professionals consult IT experts, businesses, and
-                  industry tycoons to help their businesses grow more
-                  efficiently.
-                </p>
-              </div>
+              {careercards &&
+                careercards.map((card) => {
+                  return (
+                    <div key={card?.id} className="pl-10 relative">
+                      <span className="absolute -left-2 top-0 px-2.5 py-[5px] rounded-[10px] text-white bg-[#db2a1a]">
+                        {card?.num}
+                      </span>
+                      <h4 className="font-medium text-2xl">{card?.title}</h4>
+                      <p className="mb-4">{card?.description}</p>
+                    </div>
+                  );
+                })}
             </div>
           </div>
           <div className="w-full xl:w-1/2 hidden lg:block">
             <Image
-              src="/programmes/7.webp"
+              src={`${STRAPI_URL}${careerimg?.url}`}
               width={660}
               height={660}
               className="w-full h-full"
-              alt="Career"
+              alt={careerimg?.alternativeText || "Career Prospectus"}
             />
           </div>
         </div>
         <div className="max-w-[1320px] mx-auto w-full flex justify-center mt-4">
-          <Link
-            href="#"
-            className="text-white bg-[#db2a1a] p-[15px] flex items-center justify-around max-w-3xs w-full rounded-lg font-semibold"
-          >
-            <span>Kick Off Your Journey</span> <ArrowRight />
-          </Link>
+          {(btn?.buttonclass || btn?.buttonlink) && (
+            <Link
+              href={btn?.buttonlink}
+              className={`text-white bg-[#db2a1a] p-[15px] flex items-center justify-around max-w-3xs w-full rounded-lg font-semibold ${btn?.buttonclass}`}
+            >
+              <span>{btn?.buttontext}</span> <ArrowRight />
+            </Link>
+          )}
         </div>
       </section>
     </>
