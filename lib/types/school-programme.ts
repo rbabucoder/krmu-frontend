@@ -59,6 +59,7 @@ export interface AdmissionProcess {
   description: string;
   admissionprocesscard: AdmisionProcessCard[];
   desktopadmissionprocessimg: StrapiMedia;
+  admissionbtn: ButtonType;
 }
 export interface Subject {
   id: number;
@@ -173,6 +174,8 @@ export interface TOC {
   highlightheading: string;
   description: string;
   tocfaq: TOCFAQ[];
+  tocimg: StrapiMedia;
+  tocbtn: ButtonType;
 }
 
 export interface OurLocation {

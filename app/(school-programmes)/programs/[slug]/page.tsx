@@ -52,7 +52,13 @@ const page = async ({ params }: Props) => {
   return (
     <>
       <main className="school-prog-font">
-        {heroSection && <HeroBanner title={title} highlightitle={highlightTitle} heroSection={heroSection}  />}
+        {heroSection && (
+          <HeroBanner
+            title={title}
+            highlightitle={highlightTitle}
+            heroSection={heroSection}
+          />
+        )}
         {eligibilitySection && (
           <Eligibility
             elgibilities={eligibilitySection?.elgibility}
@@ -84,6 +90,7 @@ const page = async ({ params }: Props) => {
             desc={admissionProcessSection?.description}
             deskimg={admissionProcessSection?.desktopadmissionprocessimg}
             admissionCards={admissionProcessSection?.admissionprocesscard}
+            admisbtn={admissionProcessSection?.admissionbtn}
           />
         )}
         {curriculumSection && (
@@ -157,6 +164,8 @@ const page = async ({ params }: Props) => {
             highlight={tocSection?.highlightheading}
             desc={tocSection?.description}
             tocfaqs={tocSection?.tocfaq}
+            tocimg={tocSection?.tocimg}
+            tocbtn={tocSection?.tocbtn}
           />
         )}
         {ourLocationSection && (

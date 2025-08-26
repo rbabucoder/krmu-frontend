@@ -21,8 +21,8 @@ const Specialisation = ({
             <span className="prog-highlight-text">{highlightheading}</span>
           </h2>
         </div>
-        <div className="lg:flex mt-12">
-          <div className="w-full lg:w-1/2 md:px-[50px] sm:px-0 text-center">
+        <div className="lg:flex mt-12 lg:gap-6">
+          <div className="w-full lg:w-1/2 sm:px-0 text-center">
             <Image
               src="/programmes/specilasation.webp"
               width={636}

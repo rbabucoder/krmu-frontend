@@ -1,7 +1,9 @@
 import { STRAPI_URL } from "@/app/constant";
-import { StrapiMedia } from "@/lib/types/common";
+import { ButtonType, StrapiMedia } from "@/lib/types/common";
 import { AdmisionProcessCard } from "@/lib/types/school-programme";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 type Props = {
   heading: string;
@@ -9,6 +11,7 @@ type Props = {
   desc: string;
   deskimg: StrapiMedia;
   admissionCards: AdmisionProcessCard[];
+  admisbtn: ButtonType;
   // admissioncards: AdmissionProcessCard[];
 };
 
@@ -18,6 +21,7 @@ const AdmissionProcessComp = ({
   desc,
   deskimg,
   admissionCards,
+  admisbtn,
 }: Props) => {
   return (
     <section className="prog-global-padding bg-[#f9f9f9]">
@@ -67,6 +71,16 @@ const AdmissionProcessComp = ({
               );
             })}
         </div>
+      </div>
+      <div className="flex items-center justify-center">
+        {(admisbtn?.buttonclass || admisbtn?.buttonlink )&& (
+          <Link
+            href={admisbtn?.buttonlink}
+            className={`${admisbtn?.buttonclass} text-white bg-[#db2a1a] p-[15px] flex items-center justify-around max-w-3xs w-full rounded-lg font-semibold mt-10`}
+          >
+            <span>{admisbtn?.buttontext}</span> <ArrowRight />
+          </Link>
+        )}
       </div>
     </section>
   );

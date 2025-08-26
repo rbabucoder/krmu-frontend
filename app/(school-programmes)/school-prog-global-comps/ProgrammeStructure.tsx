@@ -9,9 +9,21 @@ type Props = {
 const ProgrammeStructure = ({ programStruct }: Props) => {
   return (
     <div className="w-full">
-      <Tabs defaultValue={programStruct[0]?.year.toLowerCase().replace(" ", "") || ""} className="flex-row items-center">
+      <Tabs
+        defaultValue={
+          programStruct[0]?.year.toLowerCase().replace(" ", "") || ""
+        }
+        className="flex-row items-center"
+      >
         {/* Years */}
         <TabsList className="flex-col w-1/4 h-full bg-transparent">
+          <Link
+            href="#"
+            className="py-[15px] px-[25px] inline-block font-normal rounded-[15px] text-2xl w-full text-white bg-[#db2a1a] text-center mb-6 "
+          >
+            Programme Handbook
+          </Link>
+
           {programStruct.map((year) => {
             const value = year.year.toLowerCase().replace(" ", "");
             return (
@@ -41,14 +53,26 @@ const ProgrammeStructure = ({ programStruct }: Props) => {
           {programStruct.map((year) => {
             const yearValue = year.year.toLowerCase().replace(" ", "");
             return (
-              <TabsContent key={year.id} value={yearValue} className="min-h-[520px] h-full py-10">
+              <TabsContent
+                key={year.id}
+                value={yearValue}
+                className="min-h-[520px] h-full py-10"
+              >
                 {year.semester.length > 0 ? (
-                  <Tabs defaultValue={year.semester[0]?.semestername.toLowerCase().replace(" ", "") || ""}>
+                  <Tabs
+                    defaultValue={
+                      year.semester[0]?.semestername
+                        .toLowerCase()
+                        .replace(" ", "") || ""
+                    }
+                  >
                     {/* Semester Tabs */}
                     <div className="flex mobsemtab sm:ml-0 justify-center items-center">
                       <TabsList className="bg-[#0a41a1] p-2.5 h-16 mobsemtablist">
                         {year.semester.map((sem) => {
-                          const semValue = sem.semestername.toLowerCase().replace(" ", "");
+                          const semValue = sem.semestername
+                            .toLowerCase()
+                            .replace(" ", "");
                           return (
                             <TabsTrigger
                               key={sem.id}
@@ -65,7 +89,9 @@ const ProgrammeStructure = ({ programStruct }: Props) => {
                     {/* Semester Content */}
                     <div className="p-6 mt-12">
                       {year.semester.map((sem) => {
-                        const semValue = sem.semestername.toLowerCase().replace(" ", "");
+                        const semValue = sem.semestername
+                          .toLowerCase()
+                          .replace(" ", "");
                         return (
                           <TabsContent key={sem.id} value={semValue}>
                             <div className="grid md:grid-cols-2 gap-x-10">
@@ -74,7 +100,9 @@ const ProgrammeStructure = ({ programStruct }: Props) => {
                                   key={sub.id}
                                   className="mb-[15px] pb-[15px] border-b border-[#ebebeb]"
                                 >
-                                  <h5 className="text-xs md:text-xl font-medium">{sub.subjectname}</h5>
+                                  <h5 className="text-xs md:text-xl font-medium">
+                                    {sub.subjectname}
+                                  </h5>
                                 </div>
                               ))}
                             </div>
@@ -83,7 +111,9 @@ const ProgrammeStructure = ({ programStruct }: Props) => {
                                 <Link
                                   key={btn.id}
                                   href={btn.buttonlink || "#"}
-                                  className={`text-xs sm:text-xl p-5 font-semibold text-center border border-[#d5d5d5] text-[#dc2e25] bg-[#f0f0f0] rounded-[20px] inline-block ${btn.buttonclass || ""}`}
+                                  className={`text-xs sm:text-xl p-5 font-semibold text-center border border-[#d5d5d5] text-[#dc2e25] bg-[#f0f0f0] rounded-[20px] inline-block ${
+                                    btn.buttonclass || ""
+                                  }`}
                                 >
                                   {btn.buttontext}
                                 </Link>
@@ -95,7 +125,9 @@ const ProgrammeStructure = ({ programStruct }: Props) => {
                     </div>
                   </Tabs>
                 ) : (
-                  <div className="text-center text-gray-400">No semesters available</div>
+                  <div className="text-center text-gray-400">
+                    No semesters available
+                  </div>
                 )}
               </TabsContent>
             );
