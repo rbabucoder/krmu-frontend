@@ -32,6 +32,7 @@ const page = async ({ params }: Props) => {
   if (!singleSchoolProgramme) return notFound();
 
   const title = singleSchoolProgramme?.title;
+  const highlightTitle = singleSchoolProgramme?.highlightitle;
 
   const heroSection = singleSchoolProgramme?.herosection;
   const eligibilitySection = singleSchoolProgramme?.programmeeligibility;
@@ -51,7 +52,7 @@ const page = async ({ params }: Props) => {
   return (
     <>
       <main className="school-prog-font">
-        {heroSection && <HeroBanner title={title} heroSection={heroSection} />}
+        {heroSection && <HeroBanner title={title} highlightitle={highlightTitle} heroSection={heroSection}  />}
         {eligibilitySection && (
           <Eligibility
             elgibilities={eligibilitySection?.elgibility}

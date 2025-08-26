@@ -191,6 +191,7 @@ export interface Programme {
   publishedAt: string;
   title: string;
   programmeslug: string;
+  highlightitle: string;
   school_categories?: SchoolCategory[]; // optional if missing sometimes
   herosection?: HeroSection; // optional (your JSON had {})
   programmeeligibility?: ProgrammeEligibility;

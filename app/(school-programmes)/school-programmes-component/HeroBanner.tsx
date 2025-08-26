@@ -6,10 +6,11 @@ import Link from "next/link";
 
 type Props = {
   title: string;
+  highlightitle: string;
   heroSection: HeroSection;
 };
 
-const HeroBanner = ({ title, heroSection }: Props) => {
+const HeroBanner = ({ title, highlightitle, heroSection }: Props) => {
   return (
     <section className="pt-24 sm:pt-40 sm:pb-[50px] px-2.5 sm:px-4">
       <div className="max-w-[1664px] mx-auto w-full md:flex items-center justify-between">
@@ -18,7 +19,7 @@ const HeroBanner = ({ title, heroSection }: Props) => {
             {heroSection?.subtitle}
           </h4>
           <h1 className="text-4xl sm:text-5xl font-semibold text-[#0060aa] leading-[1.2]">
-            {title}
+            {title} <span className="text-[#e61f21]">{highlightitle}</span>
           </h1>
           <p className="text-xs sm:text-[15px] font-medium mt-6 mb-4">
             {heroSection?.description}
