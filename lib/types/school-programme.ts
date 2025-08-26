@@ -85,6 +85,7 @@ export interface Curriculum {
   heading: string;
   description: string;
   years: Year[];
+  currbtn: ButtonType;
 }
 
 export interface LabCard {

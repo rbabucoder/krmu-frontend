@@ -1,14 +1,22 @@
 import { Year } from "@/lib/types/school-programme";
 import ProgrammeStructure from "../school-prog-global-comps/ProgrammeStructure";
+import { ButtonType } from "@/lib/types/common";
 
 type Props = {
   heading: string;
   highlight: string;
   desc: string;
   programStruct: Year[];
+  currbtn: ButtonType;
 };
 
-const Curriculum = ({ heading, highlight, desc, programStruct }: Props) => {
+const Curriculum = ({
+  heading,
+  highlight,
+  desc,
+  programStruct,
+  currbtn,
+}: Props) => {
   return (
     <>
       <section className="prog-global-padding">
@@ -19,7 +27,7 @@ const Curriculum = ({ heading, highlight, desc, programStruct }: Props) => {
             </h2>
             <p className="sub-heading">{desc}</p>
           </div>
-          <ProgrammeStructure programStruct={programStruct} />
+          <ProgrammeStructure currbtn={currbtn} programStruct={programStruct} />
         </div>
       </section>
     </>

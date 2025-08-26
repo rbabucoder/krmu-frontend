@@ -1,12 +1,14 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { ButtonType } from "@/lib/types/common";
 import { Year } from "@/lib/types/school-programme";
 import Link from "next/link";
 
 type Props = {
   programStruct: Year[];
+  currbtn: ButtonType;
 };
 
-const ProgrammeStructure = ({ programStruct }: Props) => {
+const ProgrammeStructure = ({ programStruct, currbtn }: Props) => {
   return (
     <div className="w-full">
       <Tabs
@@ -17,12 +19,14 @@ const ProgrammeStructure = ({ programStruct }: Props) => {
       >
         {/* Years */}
         <TabsList className="flex-col w-1/4 h-full bg-transparent">
-          <Link
-            href="#"
-            className="py-[15px] px-[25px] inline-block font-normal rounded-[15px] text-2xl w-full text-white bg-[#db2a1a] text-center mb-6 "
-          >
-            Programme Handbook
-          </Link>
+          {(currbtn?.buttonclass || currbtn?.buttonlink) && (
+            <Link
+              href={currbtn?.buttonlink}
+              className={`py-[15px] px-[25px] inline-block font-normal rounded-[15px] text-2xl w-full text-white bg-[#db2a1a] text-center mb-6 ${currbtn?.buttonclass}`}
+            >
+              {currbtn?.buttontext}
+            </Link>
+          )}
 
           {programStruct.map((year) => {
             const value = year.year.toLowerCase().replace(" ", "");

@@ -99,6 +99,7 @@ const page = async ({ params }: Props) => {
             highlight={curriculumSection?.highlightheading}
             desc={curriculumSection?.description}
             programStruct={curriculumSection?.years}
+            currbtn={curriculumSection?.currbtn}
           />
         )}
         {labfacilitiesSection && (
