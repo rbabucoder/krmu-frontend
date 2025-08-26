@@ -1,7 +1,15 @@
 import Image from "next/image";
 import TableOfContentTab from "../school-prog-global-comps/TableOfContentTab";
+import { TOCFAQ } from "@/lib/types/school-programme";
 
-const TableOfContent = () => {
+type Props = {
+  heading: string;
+  highlight: string;
+  desc: string;
+  tocfaqs: TOCFAQ[];
+};
+
+const TableOfContent = ({ heading, highlight, desc, tocfaqs }: Props) => {
   return (
     <>
       <section className="py-[50px]">
@@ -19,16 +27,13 @@ const TableOfContent = () => {
             <div className="mx-auto max-w-6xl">
               <div className="text-center mb-20">
                 <h3 className="text-[40px]  font-semibold mb-5 text-[#0a41a1]">
-                  Any Question?{" "}
-                  <span className="text-[#e61f21]">We’re Here To Help!</span>
+                  {heading}
+                  <span className="text-[#e61f21]">{highlight}</span>
                 </h3>
-                <p className="text-base">
-                  Can’t find your query? Call us at 8800697010 or email us at
-                  welcome@krmangalam.edu.in
-                </p>
+                <p className="text-base">{desc}</p>
               </div>
               <div className="p-5 lg:p-0 bg-[url(/programmes/faq.png)] bg-cover bg-no-repeat md:bg-none">
-                <TableOfContentTab />
+                <TableOfContentTab tocfaqs={tocfaqs} />
               </div>
             </div>
           </div>

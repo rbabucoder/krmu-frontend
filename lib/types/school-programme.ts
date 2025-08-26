@@ -140,6 +140,49 @@ export interface DreamCareer {
   careerlogos: StrapiMedia[];
 }
 
+export interface FinancialAssistance {
+  id: number;
+  heading: string;
+  highlightheading: string;
+  description: string;
+  point1: string;
+  point2: string;
+  point3: string;
+  point4: string;
+  point5: string;
+  point6: string;
+  point7: string;
+  financelogos: StrapiMedia[];
+}
+
+export interface FAQ {
+  id: number;
+  ques: string;
+  ans: string;
+}
+
+export interface TOCFAQ {
+  id: number;
+  tocpoint: string;
+  faq: FAQ[];
+}
+
+export interface TOC {
+  id: number;
+  heading: string;
+  highlightheading: string;
+  description: string;
+  tocfaq: TOCFAQ[];
+}
+
+export interface OurLocation {
+  id: number;
+  badgetext: string;
+  heading: string;
+  img1: StrapiMedia;
+  img2: StrapiMedia;
+}
+
 export interface Programme {
   id: number;
   documentId: string;
@@ -160,6 +203,9 @@ export interface Programme {
   beyondclassroom?: BeyondClassroom;
   career?: Career;
   dreamcareer?: DreamCareer;
+  financialassistance: FinancialAssistance;
+  toc?: TOC;
+  ourlocation: OurLocation;
 }
 
 export interface SchoolCategory {

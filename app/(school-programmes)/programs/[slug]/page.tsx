@@ -44,8 +44,9 @@ const page = async ({ params }: Props) => {
   const beyondclassSection = singleSchoolProgramme?.beyondclassroom;
   const careerProspectsSection = singleSchoolProgramme?.career;
   const dreamcareerSection = singleSchoolProgramme?.dreamcareer;
-
-  console.log("dreamcareerSection", dreamcareerSection);
+  const financialAssistanceSection = singleSchoolProgramme?.financialassistance;
+  const tocSection = singleSchoolProgramme?.toc;
+  const ourLocationSection = singleSchoolProgramme?.ourlocation;
 
   return (
     <>
@@ -134,9 +135,37 @@ const page = async ({ params }: Props) => {
           />
         )}
 
-        <FinancialAssistance />
-        <TableOfContent />
-        <OurLocation />
+        {financialAssistanceSection && (
+          <FinancialAssistance
+            heading={financialAssistanceSection?.heading}
+            highlightheading={financialAssistanceSection?.highlightheading}
+            description={financialAssistanceSection?.description}
+            point1={financialAssistanceSection?.point1}
+            point2={financialAssistanceSection?.point2}
+            point3={financialAssistanceSection?.point3}
+            point4={financialAssistanceSection?.point4}
+            point5={financialAssistanceSection?.point5}
+            point6={financialAssistanceSection?.point6}
+            point7={financialAssistanceSection?.point7}
+            logos={financialAssistanceSection?.financelogos}
+          />
+        )}
+        {tocSection && (
+          <TableOfContent
+            heading={tocSection?.heading}
+            highlight={tocSection?.highlightheading}
+            desc={tocSection?.description}
+            tocfaqs={tocSection?.tocfaq}
+          />
+        )}
+        {ourLocationSection && (
+          <OurLocation
+            badgetext={ourLocationSection?.badgetext}
+            heading={ourLocationSection?.badgetext}
+            img1={ourLocationSection?.img1}
+            img2={ourLocationSection?.img2}
+          />
+        )}
         <ConnectWithUs />
       </main>
     </>
