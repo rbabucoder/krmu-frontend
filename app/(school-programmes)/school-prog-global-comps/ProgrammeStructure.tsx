@@ -22,7 +22,7 @@ const ProgrammeStructure = ({ programStruct, currbtn }: Props) => {
           {(currbtn?.buttonclass || currbtn?.buttonlink) && (
             <Link
               href={currbtn?.buttonlink}
-              className={`py-[15px] px-[25px] inline-block font-normal rounded-[15px] text-2xl w-full text-white bg-[#db2a1a] text-center mb-6 ${currbtn?.buttonclass}`}
+              className={`p-2 sm:py-[15px] sm:px-[25px] inline-block font-normal rounded-[15px] text-xs sm:text-2xl w-full text-white bg-[#db2a1a] text-center mb-6 ${currbtn?.buttonclass}`}
             >
               {currbtn?.buttontext}
             </Link>
