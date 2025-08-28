@@ -49,7 +49,7 @@ const page = async ({ params }: Props) => {
   const tocSection = singleSchoolProgramme?.toc;
   const ourLocationSection = singleSchoolProgramme?.ourlocation;
 
-  console.log('dreamcareerSection', dreamcareerSection);
+
 
   return (
     <>
