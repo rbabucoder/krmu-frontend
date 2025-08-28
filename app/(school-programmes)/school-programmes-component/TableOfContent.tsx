@@ -25,7 +25,7 @@ const TableOfContent = ({
   return (
     <>
       <section className="py-[50px]">
-        <div className="flex items-center">
+        <div className="flex items-center lg:gap-6">
           <div className="w-1/4 hidden lg:block">
             {tocimg && (
               <Image

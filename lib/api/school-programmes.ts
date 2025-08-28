@@ -17,7 +17,6 @@ export async function getSchoolProgrammeData(): Promise<
   return json.data;
 }
 
-
 // {
 //   populate: {
 //     herosection: {
@@ -68,6 +67,9 @@ export async function getSchoolProgrammeData(): Promise<
 //     },
 //     career: {
 //       populate: '*'
+//      },
+//      dreamcareer: {
+//        populate: '*' 
 //      },
 //      financialassistance:{
 //        populate: '*' 
