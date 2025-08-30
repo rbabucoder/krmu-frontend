@@ -23,7 +23,7 @@ type Props = {
 const page = async ({ params }: Props) => {
   const { slug } = await params; // ✅ await params
 
-  const allSchoolProgrammeData = await getSchoolProgrammeData();
+  const allSchoolProgrammeData = await getSchoolProgrammeData(slug);
 
   const singleSchoolProgramme = allSchoolProgrammeData.find(
     (programme) => programme.programmeslug === slug
