@@ -4,7 +4,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <section className="px-5 py-12 xl:p-[50px]   bg-[#051630] mt-0.5">
+      <section className="px-5 py-12 xl:p-[50px] bg-[#051630]">
         <div className="grid grid-cols-1 md:grid-cols-2  xl:flex">
           <div className="w-full  xl:w-1/4 xl:mx-7">
             <h6 className="text-2xl font-bold pb-5 border-b border-white w-1/2 text-white mt-2.5 mb-[15px]">About Us</h6>

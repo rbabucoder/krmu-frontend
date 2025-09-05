@@ -178,6 +178,75 @@
     }
   }
 
+  .placementulli ul li {
+    padding-left: 24px;
+    position: relative;
+    padding-bottom: 8px;
+  }
+  .placementulli > ul > li::before {
+    content: "";
+    background: url("/programmes/circle-check-solid-full.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+  }
+
+  .placementulli > ul > li > ul li {
+    list-style: circle;
+    padding: 0;
+    margin-left: 20px;
+  }
+  .placementp p {
+    margin-bottom: 20px;
+  }
+
+  .ciful ul li {
+    list-style: disc;
+  }
+  .ciful ul {
+    padding-left: 40px;
+  }
+  .blink-effect {
+    animation: blink 1s linear infinite;
+  }
+
+  @keyframes blink {
+    25% {
+      opacity: 0.5;
+    }
+
+    50% {
+      opacity: 0;
+    }
+
+    75% {
+      opacity: 0.5;
+    }
+  }
+
+
+
+  .common-btn-3 {
+    line-height: 10px;
+    padding: 10px 20px;
+    display: inline-block;
+    background: #e31e24;
+    border-radius: 4px;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .cdccard-ul ul {
+    list-style: disc;
+    padding-left: 40px;
+    z-index: 9999999;
+    position: relative;
+  }
+
   .prog_highlight_content_container .prog_highlight_content_inner_container {
     background: #f8f9fd;
     /* padding: 0; */
