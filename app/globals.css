@@ -228,7 +228,50 @@
     }
   }
 
+  .profile-card {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
 
+  .profile-card .card {
+    position: relative;
+    width: 20%;
+    overflow: hidden;
+    max-width: 150px;
+    transition: all 0.4s ease;
+  }
+  .profile-card .card img {
+    position: relative;
+    z-index: 9;
+    max-width: 365px;
+    height: 360px;
+    object-fit: cover;
+  }
+
+  .profile-card .profile-card-content {
+    position: absolute;
+    background: #fff;
+    transform: translateY(-100%);
+    transition: 0.7s;
+    padding: 15px;
+    width: 100%;
+  }
+  .profile-card .card ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0;
+    margin: 0;
+  }
+
+  
+
+.profile-card .card:hover {
+    max-width: 332px;
+    width: 100%;
+}
 
   .common-btn-3 {
     line-height: 10px;

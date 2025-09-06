@@ -1,12 +1,15 @@
+import AcademicResources from "./comp/AcademicResources";
 import CIF from "./comp/CIF";
 import IPR from "./comp/IPR";
 import KEIC from "./comp/KEIC";
 import MessageDeanResearch from "./comp/MessageDeanResearch";
 import OnGoing from "./comp/OnGoing";
+import PublicationAchievements from "./comp/PublicationAchievements";
 import RDC from "./comp/RDC";
 import ResearchAchievements from "./comp/ResearchAchievements";
 import ResearchHighlight from "./comp/ResearchHighlight";
 import ResearchInnovationHeroSection from "./comp/ResearchInnovationHeroSection";
+import TeamLibrary from "./comp/TeamLibrary";
 import TeamRDC from "./comp/TeamRDC";
 
 const page = () => {
@@ -24,7 +27,11 @@ const page = () => {
       <OnGoing />
       <ResearchHighlight />
       <ResearchAchievements />
-      
+      <PublicationAchievements />
+      <section className="py-[50px] bg-[url(/research/acadbg.webp)] bg-cover">
+        <AcademicResources />
+        <TeamLibrary />
+      </section>
     </>
   );
 };
