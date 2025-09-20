@@ -3,16 +3,25 @@ import { useEffect, useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import Topbar from "./Topbar";
 import { TOPBARITEMS, TOPBARSOCIALLInks } from "@/lib/types/HeaderType";
+import MobileHeader from "./MobileHeader";
+import { HeaderMenus } from "@/lib/types/header-menu";
 
 type TOPBARPROPS = {
   topbarmenu: TOPBARITEMS[];
   topbarsociallinks: TOPBARSOCIALLInks[];
+  headerMenus: HeaderMenus[];
 };
 
-const Header = ({ topbarmenu, topbarsociallinks }: TOPBARPROPS) => {
+const Header = ({
+  topbarmenu,
+  topbarsociallinks,
+  headerMenus,
+}: TOPBARPROPS) => {
   const [showTopbar, setShowTopbar] = useState(false);
+  const [showMobileMenu, setMobileMenu] = useState(false);
 
   useEffect(() => {
+    setMobileMenu(false);
     const handler = () => {
       if (window.scrollY >= 150) setShowTopbar(true);
       if (window.scrollY < 150) setShowTopbar(false);
@@ -22,6 +31,10 @@ const Header = ({ topbarmenu, topbarsociallinks }: TOPBARPROPS) => {
       window.removeEventListener("scroll", handler);
     };
   }, []);
+
+  const handleMobileMenu = () => {
+    setMobileMenu((prev) => !prev);
+  };
 
   return (
     <>
@@ -39,8 +52,15 @@ const Header = ({ topbarmenu, topbarsociallinks }: TOPBARPROPS) => {
           ) : (
             <Topbar topbarmenu={topbarmenu} sociallinks={topbarsociallinks} />
           )}
-          <Navbar />
+          <Navbar
+            handleMobileMenu={handleMobileMenu}
+            showMobilebar={showMobileMenu}
+            navbarData={headerMenus}
+          />
         </div>
+        {showMobileMenu && (
+          <MobileHeader topbarmenu={topbarmenu} navbarData={headerMenus} />
+        )}
       </header>
     </>
   );

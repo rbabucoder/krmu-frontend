@@ -81,7 +81,7 @@ const ADecade = ({ leftContent, rightContent }: ADecadeProps) => {
           <div className="w-full grid grid-cols-2 lg:w-1/2 2xl:px-6 text-center gap-2.5 lg:text-left mt-10 md:mt-0">
             {counters.map(({ counterText, counterContent }, idx) => (
               <div key={idx} className="flex flex-col text-[#0060aa] mb-5">
-                <span className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl leading-[1.4] font-medium">
+                <span className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl leading-[1.4] font-medium">
                   {counterText}
                 </span>
                 <span className="text-sm md:text-xl font-normal leading-[1.3]">

@@ -6,6 +6,9 @@ const TeamLibrary = () => {
       <h3 className="text-5xl font-semibold text-white">Team Library</h3>
       <div className="profile-card">
         <TeamLibraryCard />
+        <TeamLibraryCard />
+        <TeamLibraryCard />
+        <TeamLibraryCard />
       </div>
     </div>
   );

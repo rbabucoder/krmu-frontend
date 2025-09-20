@@ -1,5 +1,6 @@
 import AcademicResources from "./comp/AcademicResources";
 import CIF from "./comp/CIF";
+import ContactEnquiries from "./comp/ContactEnquiries";
 import IPR from "./comp/IPR";
 import KEIC from "./comp/KEIC";
 import MessageDeanResearch from "./comp/MessageDeanResearch";
@@ -32,6 +33,7 @@ const page = () => {
         <AcademicResources />
         <TeamLibrary />
       </section>
+      <ContactEnquiries />
     </>
   );
 };
