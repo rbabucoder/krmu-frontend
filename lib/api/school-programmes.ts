@@ -2,18 +2,14 @@ import { FETCH_STRAPI_URL } from "@/app/constant";
 import { SchoolProgrammeResponse } from "../types/school-programme";
 
 export async function getSchoolProgrammeData(
-  slug: string
+  slug?: string
 ): Promise<SchoolProgrammeResponse["data"]> {
-  // const res = await fetch(
-  //   `${FETCH_STRAPI_URL}/api/school-programmes?populate[herosection][populate][herobtn][populate]=*&populate[herosection][populate][heroimg][populate]=*&populate[programmeeligibility][populate]=*&populate[programmescope][populate]=*&populate[programmehighlight][populate][programmehighlightcards][populate]=*&populate[specialisation][populate][specialisationcards][populate]=*&populate[admissionprocess][populate][admissionbtn][populate]=*&populate[admissionprocess][populate][admissionprocesscard][populate]=*&populate[admissionprocess][populate][desktopadmissionprocessimg][populate]=*&populate[curriculum][populate][currbtn][populate]=*&populate[curriculum][populate][years][populate][semester][populate][subjects][populate]=*&populate[curriculum][populate][years][populate][semester][populate][pdfbtns][populate]=*&populate[labsfacilities][populate]=*&populate[beyondclassroom][populate]=*&populate[career][populate]=*&populate[dreamcareer][populate]=*&populate[financialassistance][populate]=*&populate[toc][populate][tocfaq][populate]=*&populate[toc][populate][tocimg][populate]=*&populate[toc][populate][tocbtn][populate]=*&populate[ourlocation][populate]=*`,
-  //   {
-  //     next: {
-  //       revalidate: 60,
-  //     },
-  //   }
-  // );
+  let urlcode = "";
+  if (slug) {
+    urlcode = `filters[programmeslug][$eq]=${slug}&`;
+  }
   const res = await fetch(
-    `${FETCH_STRAPI_URL}/api/school-programmes?filters[programmeslug][$eq]=${slug}&populate[herosection][populate][herobtn][populate]=*&populate[herosection][populate][heroimg][populate]=*&populate[programmeeligibility][populate]=*&populate[programmescope][populate]=*&populate[programmehighlight][populate][programmehighlightcards][populate]=*&populate[specialisation][populate][specialisationcards][populate]=*&populate[admissionprocess][populate][admissionbtn][populate]=*&populate[admissionprocess][populate][admissionprocesscard][populate]=*&populate[admissionprocess][populate][desktopadmissionprocessimg][populate]=*&populate[curriculum][populate][currbtn][populate]=*&populate[curriculum][populate][years][populate][semester][populate][subjects][populate]=*&populate[curriculum][populate][years][populate][semester][populate][pdfbtns][populate]=*&populate[labsfacilities][populate]=*&populate[beyondclassroom][populate]=*&populate[career][populate]=*&populate[dreamcareer][populate]=*&populate[financialassistance][populate]=*&populate[toc][populate][tocfaq][populate]=*&populate[toc][populate][tocimg][populate]=*&populate[toc][populate][tocbtn][populate]=*&populate[ourlocation][populate]=*`,
+    `${FETCH_STRAPI_URL}/api/school-programmes?${urlcode}&populate[herosection][populate][herobtn][populate]=*&populate[herosection][populate][heroimg][populate]=*&populate[programmeeligibility][populate]=*&populate[programmescope][populate]=*&populate[programmehighlight][populate][programmehighlightcards][populate]=*&populate[specialisation][populate][specialisationcards][populate]=*&populate[admissionprocess][populate][admissionbtn][populate]=*&populate[admissionprocess][populate][admissionprocesscard][populate]=*&populate[admissionprocess][populate][desktopadmissionprocessimg][populate]=*&populate[curriculum][populate][currbtn][populate]=*&populate[curriculum][populate][years][populate][semester][populate][subjects][populate]=*&populate[curriculum][populate][years][populate][semester][populate][pdfbtns][populate]=*&populate[labsfacilities][populate]=*&populate[beyondclassroom][populate]=*&populate[career][populate]=*&populate[dreamcareer][populate]=*&populate[financialassistance][populate]=*&populate[toc][populate][tocfaq][populate]=*&populate[toc][populate][tocimg][populate]=*&populate[toc][populate][tocbtn][populate]=*&populate[ourlocation][populate]=*`,
     {
       next: {
         revalidate: 60,
@@ -48,7 +44,7 @@ export async function getSchoolProgrammeData(
 //     specialisation: {
 //       populate: {
 //         specialisationcards: { populate: '*' }
-//       } 
+//       }
 //     },
 //     admissionprocess: {
 //       populate: {
@@ -73,8 +69,8 @@ export async function getSchoolProgrammeData(
 //       }
 //     },  // <-- This is the closing bracket for curriculum
 //     labsfacilities: {
-//       populate: '*' 
-//     }, 
+//       populate: '*'
+//     },
 //     beyondclassroom:{
 //       populate: '*'
 //     },
@@ -82,23 +78,23 @@ export async function getSchoolProgrammeData(
 //       populate: '*'
 //      },
 //      dreamcareer: {
-//        populate: '*' 
+//        populate: '*'
 //      },
 //      financialassistance:{
-//        populate: '*' 
+//        populate: '*'
 //      },
 //      toc: {
 //      populate: {
 //        tocfaq: {
-//          populate: '*' 
+//          populate: '*'
 //        },
 //        tocimg: { populate:'*' },
 //        tocbtn: {populate: '*'}
-       
+
 //      }
 //      },
 //      ourlocation:{
 //        populate: '*'
-//      } 
+//      }
 //   }  // <-- This closes the main populate object
 // }
