@@ -67,19 +67,26 @@ export async function getNewsAndEventsData(): Promise<
 
 // http://localhost:1337/api/topbar-menu?populate[TopbarMenuItems]=true&populate[topbarsociallinks][populate][socialicon]=true&populate[topbarsociallinks][fields][0]=url
 
-export async function getTopbarData(): Promise<TOPBARResponse["data"]> {
-  const res = await fetch(
-    `${FETCH_STRAPI_URL}/api/topbar-menu?populate[TopbarMenuItems]=true&populate[topbarsociallinks][populate][socialicon]=true&populate[topbarsociallinks][fields][0]=url`,
-    {
-      next: {
-        revalidate: 60,
-      },
-    }
-  );
-  if (!res.ok) throw new Error("Failed to fetch Topbar Data");
+export async function getTopbarData(): Promise<TOPBARResponse["data"] | null> {
+  try {
+    const res = await fetch(
+      `${FETCH_STRAPI_URL}/api/topbar-menu?populate[TopbarMenuItems]=true&populate[topbarsociallinks][populate][socialicon]=true&populate[topbarsociallinks][fields][0]=url`,
+      {
+        cache: "no-store", // 🔑 prevents build-time caching
+      }
+    );
 
-  const json: TOPBARResponse = await res.json();
-  return json.data;
+    if (!res.ok) {
+      console.error("Failed to fetch Topbar Data:", res.statusText);
+      return null; // fallback
+    }
+
+    const json: TOPBARResponse = await res.json();
+    return json.data;
+  } catch (error) {
+    console.error("Error fetching Topbar Data:", error);
+    return null; // fallback
+  }
 }
 
 export async function getMainMenu() {
