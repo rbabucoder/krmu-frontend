@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
-export const PersonalInterview = () => {
+const PersonalInterview = () => {
   return (
     <>
       <section className="py-[48px] bg-[#051630] mt-24">
@@ -17,7 +16,9 @@ export const PersonalInterview = () => {
               Installment of the Ph.D. programme fee and security deposit within
               the specified time to confirm the admission.
             </p>
-            <h6 className="font-semibold mt-5 mb-2.5">For Further Queries, Contact</h6>
+            <h6 className="font-semibold mt-5 mb-2.5">
+              For Further Queries, Contact
+            </h6>
             <div className="flex">
               <div className="flex gap-2.5 w-1/2">
                 <div>
@@ -68,10 +69,18 @@ export const PersonalInterview = () => {
             </div>
           </div>
           <div className="w-1/2">
-          <Image src="/admission/Personal-Interview.webp" width={800} height={606} alt="" className="-mt-52" />
+            <Image
+              src="/admission/Personal-Interview.webp"
+              width={800}
+              height={606}
+              alt=""
+              className="-mt-52"
+            />
           </div>
         </div>
       </section>
     </>
   );
 };
+
+export default PersonalInterview;
