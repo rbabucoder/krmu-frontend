@@ -1,15 +1,15 @@
-import { getHeaderMenu } from "@/lib/api/common";
+import { getHeaderMenu, getTopbarData } from "@/lib/api/common";
 import Header from "./Header";
 
 const HeaderWrapper = async () => {
-  // const topbarData = await getTopbarData();
-  // const topbarmenus = topbarData?.TopbarMenuItems;
-  // const topbarsociallinks = topbarData?.topbarsociallinks;
+  const topbarData = await getTopbarData();
+  const topbarmenus = topbarData?.TopbarMenuItems;
+  const topbarsociallinks = topbarData?.topbarsociallinks;
 
   // Main Menu
 
   // const mainMenuData = await getMainMenu();
-  // const mainMenuItems = mainMenuData?.MainMenuItems
+  // const mainMenuItems = mainMenuData?.MainMenuItems;
 
   const headerMenuData = await getHeaderMenu();
 
@@ -17,11 +17,10 @@ const HeaderWrapper = async () => {
 
   return (
     <Header
-      // topbarmenu={topbarmenus}
-      // topbarsociallinks={topbarsociallinks}
+      topbarmenu={topbarmenus}
+      topbarsociallinks={topbarsociallinks}
       headerMenus={headerMenus}
     />
-    // <StaticHeader />
   );
 };
 

@@ -1,20 +1,20 @@
 "use client";
 import { useEffect, useState } from "react";
 import Navbar from "../Navbar/Navbar";
-// import Topbar from "./Topbar";
-// import { TOPBARITEMS, TOPBARSOCIALLInks } from "@/lib/types/HeaderType";
+import Topbar from "./Topbar";
+import { TOPBARITEMS, TOPBARSOCIALLInks } from "@/lib/types/HeaderType";
 import MobileHeader from "./MobileHeader";
 import { HeaderMenus } from "@/lib/types/header-menu";
 
 type TOPBARPROPS = {
-  // topbarmenu: TOPBARITEMS[];
-  // topbarsociallinks: TOPBARSOCIALLInks[];
+  topbarmenu: TOPBARITEMS[];
+  topbarsociallinks: TOPBARSOCIALLInks[];
   headerMenus: HeaderMenus[];
 };
 
 const Header = ({
-  // topbarmenu,
-  // topbarsociallinks,
+  topbarmenu,
+  topbarsociallinks,
   headerMenus,
 }: TOPBARPROPS) => {
   const [showTopbar, setShowTopbar] = useState(false);
@@ -47,9 +47,11 @@ const Header = ({
               : "rgba(137, 137, 137, 0.7)", // default
           }}
         >
-          {/* {showTopbar && (
+          {showTopbar ? (
+            ""
+          ) : (
             <Topbar topbarmenu={topbarmenu} sociallinks={topbarsociallinks} />
-          )} */}
+          )}
           <Navbar
             handleMobileMenu={handleMobileMenu}
             showMobilebar={showMobileMenu}
@@ -57,8 +59,7 @@ const Header = ({
           />
         </div>
         {showMobileMenu && (
-          // <MobileHeader topbarmenu={topbarmenu} navbarData={headerMenus} />
-          <MobileHeader navbarData={headerMenus} />
+          <MobileHeader topbarmenu={topbarmenu} navbarData={headerMenus} />
         )}
       </header>
     </>

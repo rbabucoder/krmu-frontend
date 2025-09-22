@@ -6,7 +6,7 @@ import {
 } from "../types/common";
 import { TestimonialItem, TestimonialResponse } from "../constants/testimonial";
 import { NEWSANDEVENTSResponse } from "../types/news-and-events";
-import { MainMenuResponse } from "../types/HeaderType";
+import { MainMenuResponse, TOPBARResponse } from "../types/HeaderType";
 import { GlobalResponse } from "../types/global";
 import { AdvisoryBoardResponse } from "../types/advisory-type";
 import { HeaderMenuResponse } from "../types/header-menu";
@@ -67,20 +67,20 @@ export async function getNewsAndEventsData(): Promise<
 
 // http://localhost:1337/api/topbar-menu?populate[TopbarMenuItems]=true&populate[topbarsociallinks][populate][socialicon]=true&populate[topbarsociallinks][fields][0]=url
 
-// export async function getTopbarData(): Promise<TOPBARResponse["data"]> {
-//   const res = await fetch(
-//     `${FETCH_STRAPI_URL}/api/topbar-menu?populate[TopbarMenuItems]=true&populate[topbarsociallinks][populate][socialicon]=true&populate[topbarsociallinks][fields][0]=url`,
-//     {
-//       next: {
-//         revalidate: 60,
-//       },
-//     }
-//   );
-//   if (!res.ok) throw new Error("Failed to fetch Topbar Data");
+export async function getTopbarData(): Promise<TOPBARResponse["data"]> {
+  const res = await fetch(
+    `${FETCH_STRAPI_URL}/api/topbar-menu?populate[TopbarMenuItems]=true&populate[topbarsociallinks][populate][socialicon]=true&populate[topbarsociallinks][fields][0]=url`,
+    {
+      next: {
+        revalidate: 60,
+      },
+    }
+  );
+  if (!res.ok) throw new Error("Failed to fetch Topbar Data");
 
-//   const json: TOPBARResponse = await res.json();
-//   return json.data;
-// }
+  const json: TOPBARResponse = await res.json();
+  return json.data;
+}
 
 export async function getMainMenu() {
   const res = await fetch(
@@ -132,7 +132,7 @@ export async function getHeaderMenu(): Promise<HeaderMenuResponse["data"]> {
       },
     }
   );
-  if (!res.ok) throw new Error("Failed to fetch Header Menu");
+  if (!res.ok) throw new Error("Failed to fetch Topbar Data");
 
   const json: HeaderMenuResponse = await res.json();
   return json.data;
