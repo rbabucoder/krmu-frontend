@@ -4,14 +4,14 @@ import { useState } from "react";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import { HeaderMenus } from "@/lib/types/header-menu";
-import { TOPBARITEMS } from "@/lib/types/HeaderType";
+// import { TOPBARITEMS } from "@/lib/types/HeaderType";
 
 type Props = {
   navbarData: HeaderMenus[];
-  topbarmenu: TOPBARITEMS[];
+  // topbarmenu: TOPBARITEMS[];
 };
 
-const MobileHeader = ({ topbarmenu, navbarData }: Props) => {
+const MobileHeader = ({  navbarData }: Props) => {
   const [openMenu, setOpenMenu] = useState<string | null>(null);
 
   const toggleMenu = (menu: string) => {
@@ -377,7 +377,7 @@ const MobileHeader = ({ topbarmenu, navbarData }: Props) => {
         </div>
 
         {/* Bottom Links */}
-        <div className="mt-8 flex gap-4 flex-wrap">
+        {/* <div className="mt-8 flex gap-4 flex-wrap">
           {topbarmenu.map((menu) => {
             return (
               <Link
@@ -390,7 +390,7 @@ const MobileHeader = ({ topbarmenu, navbarData }: Props) => {
               </Link>
             );
           })}
-        </div>
+        </div> */}
       </div>
     </>
   );
