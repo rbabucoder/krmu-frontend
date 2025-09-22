@@ -47,9 +47,7 @@ const Header = ({
               : "rgba(137, 137, 137, 0.7)", // default
           }}
         >
-          {showTopbar ? (
-            ""
-          ) : (
+          {showTopbar && (
             <Topbar topbarmenu={topbarmenu} sociallinks={topbarsociallinks} />
           )}
           <Navbar

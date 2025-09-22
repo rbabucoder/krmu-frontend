@@ -3,11 +3,17 @@ import Header from "./Header";
 
 const HeaderWrapper = async () => {
   const topbarData = await getTopbarData();
-  const topbarmenus = topbarData?.TopbarMenuItems || [];
-  const topbarsociallinks = topbarData?.topbarsociallinks || [];
+  const topbarmenus = topbarData?.TopbarMenuItems;
+  const topbarsociallinks = topbarData?.topbarsociallinks;
+
+  // Main Menu
+
+  // const mainMenuData = await getMainMenu();
+  // const mainMenuItems = mainMenuData?.MainMenuItems
 
   const headerMenuData = await getHeaderMenu();
-  const headerMenus = headerMenuData?.headermenus || [];
+
+  const headerMenus = headerMenuData?.headermenus;
 
   return (
     <Header
@@ -15,6 +21,7 @@ const HeaderWrapper = async () => {
       topbarsociallinks={topbarsociallinks}
       headerMenus={headerMenus}
     />
+    // <StaticHeader />
   );
 };
 

@@ -1,7 +1,7 @@
 import PrintCoverageHero from "./comp/PrintCoverageHero";
 import PrintCoverageTabs from "./comp/PrintCoverageTabs";
 
-const page = () => {
+const page = async () => {
   return (
     <>
       <PrintCoverageHero />
