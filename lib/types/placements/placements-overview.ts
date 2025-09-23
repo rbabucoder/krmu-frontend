@@ -1,4 +1,4 @@
-import { CounterItem, StrapiMedia } from "../common";
+import { StrapiMedia } from "../common";
 import { Button } from "../home";
 
 export type PlacementOverviewResponse = {
