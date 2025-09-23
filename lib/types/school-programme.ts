@@ -50,6 +50,7 @@ export interface AdmisionProcessCard {
   title: string;
   description: string;
   mobcounting: string;
+  link: string;
 }
 
 export interface AdmissionProcess {

@@ -41,14 +41,34 @@ const AdmissionProcessComp = ({
         <div className="admis_proc_btn_grid_items">
           {admissionCards &&
             admissionCards.map((card) => {
-              return (
-                <div key={card?.id} className="admis_proc_btn_grid_item">
-                  <div className="admis_proc_btn_content">
-                    <button className="btn_text">{card?.title}</button>
-                    <p className="admis_btn_below_text">{card?.description}</p>
+              if (card?.link) {
+                return (
+                  <Link
+                    href={card?.link}
+                    key={card?.id}
+                    className="admis_proc_btn_grid_item"
+                    target="_blank"
+                  >
+                    <div className="admis_proc_btn_content">
+                      <button className="btn_text">{card?.title}</button>
+                      <p className="admis_btn_below_text">
+                        {card?.description}
+                      </p>
+                    </div>
+                  </Link>
+                );
+              } else {
+                return (
+                  <div key={card?.id} className="admis_proc_btn_grid_item">
+                    <div className="admis_proc_btn_content">
+                      <button className="btn_text">{card?.title}</button>
+                      <p className="admis_btn_below_text">
+                        {card?.description}
+                      </p>
+                    </div>
                   </div>
-                </div>
-              );
+                );
+              }
             })}
         </div>
       </div>
@@ -73,7 +93,7 @@ const AdmissionProcessComp = ({
         </div>
       </div>
       <div className="flex items-center justify-center">
-        {(admisbtn?.buttonclass || admisbtn?.buttonlink )&& (
+        {(admisbtn?.buttonclass || admisbtn?.buttonlink) && (
           <Link
             href={admisbtn?.buttonlink}
             className={`${admisbtn?.buttonclass} text-white bg-[#db2a1a] p-[15px] flex items-center justify-around max-w-3xs w-full rounded-lg font-semibold mt-10`}
