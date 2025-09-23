@@ -70,7 +70,9 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                         return (
                           <li
                             key={menu?.id}
-                            className="text-[13px] capitalize pb-[7px] hover:text-blue-700"
+                            className={`text-[13px] capitalize pb-[7px] hover:text-blue-700 ${
+                              menu?.menuclass || ""
+                            }`}
                           >
                             <Link href={`${menu?.url || "#"}`}>
                               {menu?.title}
@@ -89,7 +91,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                         return (
                           <li
                             key={menu?.id}
-                            className="text-[13px] capitalize pb-[7px] hover:text-blue-700"
+                            className={`text-[13px] capitalize pb-[7px] hover:text-blue-700 ${menu?.menuclass}`}
                           >
                             <Link href={`${menu?.url || "#"}`}>
                               {menu?.title}
@@ -133,7 +135,9 @@ const NavbarMenu = ({ mainMenu }: Props) => {
             programmesLinks.__component === "menu.menu-links" && (
               <li className="relative">
                 <Link
-                  className={`font-semibold text-xs xl:text-[15px] text-white flex items-center gap-2.5 min-h-[64px] ${programmesLinks?.menuclass}`}
+                  className={`font-semibold text-xs xl:text-[15px] text-white flex items-center gap-2.5 min-h-[64px] ${
+                    programmesLinks?.menuclass || ""
+                  }`}
                   href={programmesLinks.url}
                 >
                   <span>{programmesLinks.title}</span>
@@ -198,7 +202,9 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                         return (
                           <li
                             key={menu?.id}
-                            className="text-[13px] capitalize pb-[7px] hover:text-blue-700"
+                            className={`text-[13px] capitalize pb-[7px] hover:text-blue-700 ${
+                              menu?.menuclass || ""
+                            }`}
                           >
                             <Link href={menu?.url || "#"}>{menu?.title}</Link>
                           </li>
@@ -394,7 +400,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                               return (
                                 <li
                                   key={menu?.id}
-                                  className="text-[13px] capitalize pb-[7px] hover:text-blue-700"
+                                  className={`text-[13px] capitalize pb-[7px] hover:text-blue-700 ${menu.menuclass}`}
                                 >
                                   <Link href={menu?.url}>{menu?.title}</Link>
                                 </li>
@@ -409,7 +415,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                             return (
                               <li
                                 key={menu?.id}
-                                className="text-[13px] capitalize pb-[7px] hover:text-blue-700"
+                                className={`text-[13px] capitalize pb-[7px] hover:text-blue-700 ${menu.menuclass}`}
                               >
                                 <Link href={menu?.url}>{menu?.title}</Link>
                               </li>
@@ -473,7 +479,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                         return (
                           <li
                             key={menu?.id}
-                            className="text-[13px] capitalize pb-[7px] hover:text-blue-700"
+                            className={`text-[13px] capitalize pb-[7px] hover:text-blue-700 ${menu.menuclass}`}
                           >
                             <Link href={menu?.url}>{menu?.title}</Link>
                           </li>
@@ -490,7 +496,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                         return (
                           <li
                             key={menu?.id}
-                            className="text-[13px] capitalize pb-[7px] hover:text-blue-700"
+                            className={`text-[13px] capitalize pb-[7px] hover:text-blue-700 ${menu.menuclass}`}
                           >
                             <Link href={menu?.url}>{menu?.title}</Link>
                           </li>

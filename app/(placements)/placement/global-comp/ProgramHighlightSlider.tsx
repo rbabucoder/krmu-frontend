@@ -1,3 +1,4 @@
+import { STRAPI_URL } from "@/app/constant";
 import {
   Carousel,
   CarouselContent,
@@ -5,27 +6,32 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { StrapiMedia } from "@/lib/types/common";
 import Image from "next/image";
 
-const ProgramHighlightSlider = () => {
+type Props = {
+  slideImages: StrapiMedia[];
+};
+
+const ProgramHighlightSlider = ({ slideImages }: Props) => {
   return (
     <>
       <Carousel
         opts={{
           align: "start",
-           loop: true,
+          loop: true,
         }}
         className="w-full"
       >
         <CarouselContent>
-          {Array.from({ length: 5 }).map((_, index) => (
+          {slideImages.map((image, index) => (
             <CarouselItem key={index} className="basis-1/2 sm:basis-1/4">
               <div>
                 <Image
-                  src="/programmes/Daksh-Mehta.webp"
+                  src={`${STRAPI_URL}${image?.url}`}
                   width={390}
                   height={390}
-                  alt="programme highlight"
+                  alt={image?.alternativeText || "programme highlight"}
                   className="w-full h-full"
                 />
               </div>
