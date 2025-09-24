@@ -35,12 +35,20 @@ const HeroBanner = ({ title, highlightitle, heroSection }: Props) => {
           )}
         </div>
         <div className="hidden  w-full md:w-5/12 md:flex items-center">
-          {heroSection?.heroimg && (
-            <Image
-              src={`${STRAPI_URL}${heroSection?.heroimg?.url}`}
-              width={600}
-              height={500}
-              alt={heroSection?.heroimg?.alternativeText || "Hero Image"}
+          {heroSection && heroSection?.imgvideo === "Image" ? (
+            heroSection?.heroimg && (
+              <Image
+                src={`${STRAPI_URL}${heroSection?.heroimg?.url}`}
+                width={600}
+                height={500}
+                alt={heroSection?.heroimg?.alternativeText || "Hero Image"}
+              />
+            )
+          ) : (
+            <div
+              dangerouslySetInnerHTML={{
+                __html: heroSection?.videofield || "",
+              }}
             />
           )}
         </div>

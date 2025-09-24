@@ -231,6 +231,8 @@ export interface HeroSection {
   description: string;
   herobtn: ButtonType;
   heroimg: StrapiMedia;
+  imgvideo: string;
+  videofield: string;
 }
 
 export interface ProgrammeEligibility {
