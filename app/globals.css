@@ -15,6 +15,12 @@
 
 /* Custom utility class */
 @layer utilities {
+  .school-programme-max-width {
+    max-width: 1765px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
   /* Header Menu */
   .krmsubmenu-container {
     opacity: 0;
@@ -42,7 +48,7 @@
 
   /* Header Menu */
 
-  .headermenu-side-blink{
+  .headermenu-side-blink {
     position: absolute;
     right: 0;
     top: 50%;

@@ -85,7 +85,7 @@ const AdmissionProcessComp = ({
                     {card?.title}
                   </h4>
                   <p className="z-10 leading-[1] text-sm text-[#0d6efd] break-all">
-                    {card?.description}
+                    <Link href={card?.link || "#"} target="_blank" >{card?.description}</Link>
                   </p>
                 </div>
               );
