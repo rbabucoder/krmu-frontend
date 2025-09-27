@@ -21,17 +21,83 @@
     width: 100%;
   }
 
-  .magazineref ul{
+  .prog-counter-container {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    background: #051630;
+    border-radius: 14px;
+    padding: 20px;
+  }
+
+  .program-outcome-new:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 250px;
+    max-height: 250px;
+    border-radius: 20px;
+    border: 3px solid transparent;
+    background: linear-gradient(135deg, #00d5f2 12%, rgba(255, 255, 255, .01) 32%) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+
+
+.admission-process-section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    border: 3px solid transparent;
+    background: linear-gradient(135deg, #00d5f2 12%, rgba(255, 255, 255, .01) 32%) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+
+.selection-process-section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    border: 3px solid transparent;
+    background: linear-gradient(308deg, #ab192d 12%, rgba(144, 134, 134, .29) 26%, rgba(255, 255, 255, .01) 32%) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+  .prog-counter-container .counter {
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 1.3;
+  }
+  .prog-counter-container .counter_content {
+    font-size: 20px;
+  }
+  .magazineref ul {
     padding-left: 40px;
     list-style: disc;
   }
-  .magazineref h4{
+  .magazineref h4 {
     font-size: 36px;
   }
 
-.clubsAcc p {
-  font-size: 1rem;
-}
+  .clubsAcc p {
+    font-size: 1rem;
+  }
   /* Header Menu */
   .krmsubmenu-container {
     opacity: 0;
