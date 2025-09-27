@@ -17,7 +17,6 @@ export interface RichTextBlock {
 export interface ClubAccordion {
   id: number;
   title: string;
-  //   content: RichTextBlock[];
   content: ParagraphBlock[];
   clubimages: StrapiMedia[];
 }
@@ -38,5 +37,5 @@ export interface ClubsAndSocietiesData {
 // Full API response
 export interface ClubsAndSocietiesResponse {
   data: ClubsAndSocietiesData;
-  meta: Record<string, any>;
+  meta: Record<string, unknown>;
 }

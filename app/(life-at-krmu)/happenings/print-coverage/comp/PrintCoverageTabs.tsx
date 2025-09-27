@@ -7,17 +7,18 @@ import {
   getAllPrintCoverageYears,
   getPrintCoverageAccordingToYear,
 } from "@/lib/api/print-coverages";
-import { DataItem } from "@/lib/types/print-coverage";
+import { DataItem, PrintCoverageYearItem } from "@/lib/types/print-coverage";
 
 const PrintCoverageTabs = () => {
   const [years, setYears] = useState<string[]>([]);
   const [activeYear, setActiveYear] = useState<string>("all");
-  const [coverageData, setCoverageData] = useState<any[]>([]);
+  const [coverageData, setCoverageData] = useState<DataItem[]>([]);
 
   useEffect(() => {
     async function fetchYears() {
-      const data = await getAllPrintCoverageYears();
-      const yearsList = (data || []).map((item: any) => item.Years);
+      const data: PrintCoverageYearItem[] | undefined =
+        await getAllPrintCoverageYears();
+      const yearsList = (data ?? []).map((item) => item.Years);
       setYears(yearsList);
     }
     fetchYears();
@@ -74,7 +75,7 @@ const PrintCoverageTabs = () => {
           <TabsContent value={activeYear}>
             {coverageData.length > 0 ? (
               <div className="flex flex-wrap gap-10">
-                {coverageData.map((item: any) => (
+                {coverageData.map((item) => (
                   <PrintCoverageCard key={item.id} data={item} />
                 ))}
               </div>

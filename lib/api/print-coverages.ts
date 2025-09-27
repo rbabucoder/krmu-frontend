@@ -5,19 +5,17 @@ import {
 } from "../types/print-coverage";
 
 export async function getPrintCoverageAccordingToYear(year: number = 2025) {
-  try {
-    const res = await fetch(
-      `${FETCH_STRAPI_URL}/api/print-coverages?filters[print_coverage_years][Years][$eq]=${year}&populate[upload_data]=true&populate[print_coverage_years]=true`,
-      {
-        next: {
-          revalidate: 60,
-        },
-      }
-    );
-    if (!res.ok) throw new Error("Failed to fetch Print Coverage Data");
-    const json: PrintCoverageResponse = await res.json();
-    return json.data;
-  } catch (error) {}
+  const res = await fetch(
+    `${FETCH_STRAPI_URL}/api/print-coverages?filters[print_coverage_years][Years][$eq]=${year}&populate[upload_data]=true&populate[print_coverage_years]=true`,
+    {
+      next: {
+        revalidate: 60,
+      },
+    }
+  );
+  if (!res.ok) throw new Error("Failed to fetch Print Coverage Data");
+  const json: PrintCoverageResponse = await res.json();
+  return json.data;
 }
 
 export async function getAllPrintCoverageYears() {
