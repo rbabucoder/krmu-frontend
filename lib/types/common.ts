@@ -39,6 +39,11 @@ export interface StrapiMedia {
   publishedAt: string;
 }
 
+
+
+
+
+
 export interface CardWithoutImage {
   id: number;
   title: string;
@@ -174,3 +179,6 @@ export interface SchoolHeroBanner {
   formats: ImageFormats;
   url?: string; // Strapi sometimes includes this at root
 }
+
+
+

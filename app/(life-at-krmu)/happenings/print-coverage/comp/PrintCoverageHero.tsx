@@ -1,13 +1,13 @@
 const PrintCoverageHero = () => {
   return (
     <>
-      <section className="pt-[15%] pb-[10%] bg-[url(/life-at-krmu/printcoveragebg.webp)] bg-cover bg-no-repeat">
+      <section className="pt-[200px] sm:pt-[15%] pb-[10%] bg-[url(/life-at-krmu/printcoveragebg.webp)] bg-cover bg-no-repeat px-4">
         <div className="max-w-[1664px] mx-auto w-full text-white">
           <div className="max-w-[1164px] w-full" >
             <h3 className="text-2xl mb-5 font-semibold">
               Vibrant Events at KRMU
             </h3>
-            <h1 className="text-[64px] leading-[1.2] font-semibold mb-5">
+            <h1 className="text-3xl md:text-[64px] leading-[1.2] font-semibold mb-5">
               Celebrating <br /> K.R. Mangalam University’s <br /> Achievements in Print Media
             </h1>
             <p>

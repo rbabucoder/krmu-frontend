@@ -13,7 +13,8 @@ const HostelWarden = () => {
             keep the entertainment going and help your child make the most out
             of their hostel life.
           </p>
-        
+
+
         </div>
         <div className="lg:w-1/2 mt-10 lg:mt-0">
           <div className="contact-card-container">

@@ -1,19 +1,27 @@
-import PDFCard from "./PDFCard"
+import { MagazineCard } from "@/lib/types/magazine-reflection";
+import PDFCard from "./PDFCard";
 
+type Props = {
+  magazinecards: MagazineCard[];
+};
 
-const ReflectionCards = () => {
+const ReflectionCards = ({ magazinecards }: Props) => {
   return (
     <>
-        <div className="max-w-[1910px] mx-auto w-full py-[60px] px-[30px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
-            <PDFCard />
-            <PDFCard />
-            <PDFCard />
-            <PDFCard />
-            <PDFCard />
-            <PDFCard />
-        </div>
+      <div className="max-w-[1910px] mx-auto w-full py-[60px] px-[30px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
+        {magazinecards &&
+          magazinecards.map((card) => {
+            return (
+              <PDFCard
+                key={card?.id}
+                magazineimg={card?.magazineimg}
+                magazinePDF={card?.magazinepdf}
+              />
+            );
+          })}
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default ReflectionCards
+export default ReflectionCards;

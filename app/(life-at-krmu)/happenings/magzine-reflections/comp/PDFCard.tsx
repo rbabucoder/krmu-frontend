@@ -1,8 +1,15 @@
+import { STRAPI_URL } from "@/app/constant";
+import { StrapiMedia } from "@/lib/types/common";
 import { Download } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-const PDFCard = () => {
+type Props = {
+  magazineimg: StrapiMedia;
+  magazinePDF: StrapiMedia;
+};
+
+const PDFCard = ({ magazineimg, magazinePDF }: Props) => {
   return (
     <div
       className="p-5 rounded-[8px]"
@@ -11,15 +18,23 @@ const PDFCard = () => {
       }}
     >
       <Image
-        src="/life-at-krmu/magazines.webp"
+        src={`${STRAPI_URL}${magazineimg?.url}`}
         width={392}
-        height={450}
-        alt=""
-        className="w-full"
+        height={446}
+        alt={`${magazineimg?.alternativeText || ""}`}
+        className="w-full h-[446px] object-contain"
       />
       <div className="mt-[30px] flex justify-center">
-        <Link href="#" className="flex items-center gap-3 p-5 sm:x-2.5 border-2 border-black rounded-full w-fit font-semibold hover:bg-[#034272] hover:text-white
-         duration-300 ease-in-out"><span>Download PDF</span><Download /></Link>
+        <Link
+          href={`${STRAPI_URL}${magazinePDF?.url}`}
+          className="flex items-center gap-3 p-5 sm:x-2.5 border-2 border-black rounded-full w-fit font-semibold hover:bg-[#034272] hover:text-white
+         duration-300 ease-in-out"
+         target="_blank"
+          download
+        >
+          <span>Download PDF</span>
+          <Download />
+        </Link>
       </div>
     </div>
   );

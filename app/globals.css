@@ -21,6 +21,17 @@
     width: 100%;
   }
 
+  .magazineref ul{
+    padding-left: 40px;
+    list-style: disc;
+  }
+  .magazineref h4{
+    font-size: 36px;
+  }
+
+.clubsAcc p {
+  font-size: 1rem;
+}
   /* Header Menu */
   .krmsubmenu-container {
     opacity: 0;
