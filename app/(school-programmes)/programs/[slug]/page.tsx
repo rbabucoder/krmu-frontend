@@ -15,6 +15,8 @@ import Specialisation from "../../school-programmes-component/Specialisation";
 import TableOfContent from "../../school-programmes-component/TableOfContent";
 import { notFound } from "next/navigation";
 import AdmissionProcessComp from "../../school-programmes-component/AdmissionProcessComp";
+import { getPHDProgramme } from "@/lib/api/phd-programmes";
+import PHDProgrammes from "../PHDProgramme";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -24,12 +26,25 @@ const page = async ({ params }: Props) => {
   const { slug } = await params; // ✅ await params
 
   const allSchoolProgrammeData = await getSchoolProgrammeData(slug);
+  const allSinglePHDProgramme = await getPHDProgramme(slug);
 
   const singleSchoolProgramme = allSchoolProgrammeData.find(
     (programme) => programme.programmeslug === slug
   );
+
+  const singlePHDProgramme = allSinglePHDProgramme?.find(
+    (phdprogram) => phdprogram?.phdslug === slug
+  );
+
+  console.log("singlePHDProgramme", singlePHDProgramme);
+
   // If not found, redirect to 404 page
-  if (!singleSchoolProgramme) return notFound();
+  // if (!singleSchoolProgramme) return notFound();
+
+  // Return 404 if either is missing
+  if (!singleSchoolProgramme && !singlePHDProgramme) {
+    return notFound();
+  }
 
   const title = singleSchoolProgramme?.title;
   const highlightTitle = singleSchoolProgramme?.highlightitle;
@@ -49,15 +64,17 @@ const page = async ({ params }: Props) => {
   const tocSection = singleSchoolProgramme?.toc;
   const ourLocationSection = singleSchoolProgramme?.ourlocation;
 
-
+  if (singlePHDProgramme?.degree === "Doctoral Programme") {
+    return <PHDProgrammes phdData={singlePHDProgramme} />;
+  }
 
   return (
     <>
       <main className="school-prog-font">
         {heroSection && (
           <HeroBanner
-            title={title}
-            highlightitle={highlightTitle}
+            title={title || ""}
+            highlightitle={highlightTitle || ""}
             heroSection={heroSection}
           />
         )}

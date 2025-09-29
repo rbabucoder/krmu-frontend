@@ -1,12 +1,28 @@
-import React from "react";
+import {
+  Duration,
+  EligibilityCriteria,
+  FeePerYear,
+} from "@/lib/types/phd-programmes";
 
-const PHDprogramHero = () => {
+type Props = {
+  heading: string;
+  duration: Duration;
+  feePerYear: FeePerYear;
+  eligibleCriteria: EligibilityCriteria;
+};
+
+const PHDprogramHero = ({
+  heading,
+  duration,
+  feePerYear,
+  eligibleCriteria,
+}: Props) => {
   return (
     <>
       <section className="py-[8%] bg-[url(/phdbg.webp)] bg-no-repeat bg-cover">
         <div className="max-w-[1664px] mx-auto w-full flex items-center h-[784px]">
           <div className="w-1/2 text-white text-5xl font-semibold p-5">
-            <h1>Ph.D. in Computer Science and Engineering</h1>
+            <h1>{heading}</h1>
           </div>
           <div className="w-1/2"></div>
         </div>
@@ -20,7 +36,8 @@ const PHDprogramHero = () => {
             borderRadius: "30px",
           }}
         >
-          Duration: Min. 3 Years
+          {duration?.countertext}
+          {duration?.countercontent}
         </div>
         <div
           className="w-[25%] flex items-center justify-center text-2xl font-semibold h-[130px] p-5 bg-white"
@@ -30,8 +47,8 @@ const PHDprogramHero = () => {
             borderRadius: "30px",
           }}
         >
-          <div className="w-1/2">Programme Fee Per Year:</div>
-          <div className="w-1/2">Rs.1,20,000/-</div>
+          <div className="w-1/2">{feePerYear?.countertext}</div>
+          <div className="w-1/2">{feePerYear?.countercontent}</div>
         </div>
         <div
           className="w-[50%] flex items-center justify-center h-[130px] p-5 bg-white"
@@ -42,13 +59,9 @@ const PHDprogramHero = () => {
           }}
         >
           <div className="text-2xl font-semibold w-[32%]">
-            Eligibility Criteria:
+            {eligibleCriteria?.countertext}
           </div>
-          <div className="w-[68%]">
-            The candidate should have a postgraduate degree or its equivalent
-            from a recognized University, in a respective discipline, with a
-            minimum ...Read More
-          </div>
+          <div className="w-[68%]">{eligibleCriteria?.countercontent}</div>
         </div>
       </div>
     </>
