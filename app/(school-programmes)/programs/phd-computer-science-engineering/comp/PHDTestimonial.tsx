@@ -11,12 +11,12 @@ const PHDTestimonial = () => {
     >
       <h3 className="text-xl font-semibold">Anjali Sinha</h3>
       <p>
-        The program's flexibility allowed me to tailor my research to align with
+        {`The program's flexibility allowed me to tailor my research to align with
         my interests, while the supportive faculty provided guidance every step
         of the way. The collaborative research culture and highly modern
         facilities helped me to discover the ever-evolving field of computer
         science. I’ll always be thankful to my teachers and this university who
-        helped me to become CSE professional.
+        helped me to become CSE professional.`}
       </p>
     </div>
   );
