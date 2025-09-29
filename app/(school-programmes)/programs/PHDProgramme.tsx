@@ -1,16 +1,16 @@
 import { PHDProgrammeData } from "@/lib/types/phd-programmes";
-import PHDAdmission from "../programs/phd-computer-science-engineering/comp/PHDAdmission";
-import PHDCareer from "../programs/phd-computer-science-engineering/comp/PHDCareer";
-import PHDConnectingDream from "../programs/phd-computer-science-engineering/comp/PHDConnectingDream";
-import PHDHighlight from "../programs/phd-computer-science-engineering/comp/PHDHighlight";
-import PHDOutcome from "../programs/phd-computer-science-engineering/comp/PHDOutcome";
-import PHDOverview from "../programs/phd-computer-science-engineering/comp/PHDOverview";
-import PHDprogramHero from "../programs/phd-computer-science-engineering/comp/PHDprogramHero";
-import PHDProgrammeHighlight from "../programs/phd-computer-science-engineering/comp/PHDProgrammeHighlight";
-import PHDPursue from "../programs/phd-computer-science-engineering/comp/PHDPursue";
-import PHDScholar from "../programs/phd-computer-science-engineering/comp/PHDScholar";
-import PHDSlide from "../programs/phd-computer-science-engineering/comp/PHDSlide";
-import PHDTestimonialsAcc from "./phd-computer-science-engineering/comp/PHDTestimonialsAcc";
+import PHDAdmission from "./phd/comp/PHDAdmission";
+import PHDCareer from "./phd/comp/PHDCareer";
+import PHDConnectingDream from "./phd/comp/PHDConnectingDream";
+import PHDHighlight from "./phd/comp/PHDHighlight";
+import PHDOutcome from "./phd/comp/PHDOutcome";
+import PHDOverview from "./phd/comp/PHDOverview";
+import PHDprogramHero from "./phd/comp/PHDprogramHero";
+import PHDProgrammeHighlight from "./phd/comp/PHDProgrammeHighlight";
+import PHDPursue from "./phd/comp/PHDPursue";
+import PHDScholar from "./phd/comp/PHDScholar";
+import PHDSlide from "./phd/comp/PHDSlide";
+import PHDTestimonialsAcc from "./phd/comp/PHDTestimonialsAcc";
 
 type Props = {
   phdData: PHDProgrammeData;
