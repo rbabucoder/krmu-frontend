@@ -39,7 +39,6 @@ const MobileHeader = ({ topbarmenu, navbarData }: Props) => {
     (component) => component.__component === "temp-menus.research-menu"
   );
 
-  console.log("academicMenu", academicMenu);
 
   const lifeatkrmuMenu = navbarData.find(
     (component) => component.__component === "temp-menus.life-at-krmu"

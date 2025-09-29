@@ -1,3 +1,5 @@
+import { STRAPI_URL } from "@/app/constant";
+import { StrapiMedia } from "@/lib/types/common";
 import {
   Duration,
   EligibilityCriteria,
@@ -9,6 +11,7 @@ type Props = {
   duration: Duration;
   feePerYear: FeePerYear;
   eligibleCriteria: EligibilityCriteria;
+  bgimg: StrapiMedia;
 };
 
 const PHDprogramHero = ({
@@ -16,10 +19,16 @@ const PHDprogramHero = ({
   duration,
   feePerYear,
   eligibleCriteria,
+  bgimg,
 }: Props) => {
   return (
     <>
-      <section className="py-[8%] bg-[url(/phdbg.webp)] bg-no-repeat bg-cover">
+      <section
+        className="py-[8%] bg-no-repeat bg-cover"
+        style={{
+          background: `url(${STRAPI_URL}${bgimg?.url})`,
+        }}
+      >
         <div className="max-w-[1664px] mx-auto w-full flex items-center h-[784px]">
           <div className="w-1/2 text-white text-5xl font-semibold p-5">
             <h1>{heading}</h1>

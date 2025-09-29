@@ -15,8 +15,9 @@ import Specialisation from "../../school-programmes-component/Specialisation";
 import TableOfContent from "../../school-programmes-component/TableOfContent";
 import { notFound } from "next/navigation";
 import AdmissionProcessComp from "../../school-programmes-component/AdmissionProcessComp";
-import { getPHDProgramme } from "@/lib/api/phd-programmes";
+
 import PHDProgrammes from "../PHDProgramme";
+import { getPHDProgramme } from "@/lib/api/phd-programmes";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -35,8 +36,6 @@ const page = async ({ params }: Props) => {
   const singlePHDProgramme = allSinglePHDProgramme?.find(
     (phdprogram) => phdprogram?.phdslug === slug
   );
-
-  console.log("singlePHDProgramme", singlePHDProgramme);
 
   // If not found, redirect to 404 page
   // if (!singleSchoolProgramme) return notFound();

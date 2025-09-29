@@ -24,6 +24,7 @@ const PHDProgrammes = ({ phdData }: Props) => {
         duration={phdData?.duration}
         feePerYear={phdData?.fee_per_year}
         eligibleCriteria={phdData?.eligibility_criteria}
+        bgimg={phdData?.bgimg}
       />
       <PHDOverview overviewData={phdData?.phdoverview} />
       <PHDScholar scholarShipsData={phdData?.scholarsponsoredparttime} />
