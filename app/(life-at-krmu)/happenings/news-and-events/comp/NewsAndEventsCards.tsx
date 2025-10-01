@@ -5,8 +5,6 @@ import NewsCard from "./NewsCard";
 import { getAllNewsAndEventsWithMeta } from "@/lib/api/news-events"; // import your function
 import { NewsEventItem } from "@/lib/types/news-events";
 
-
-
 const NewsAndEventsCards = () => {
   const [news, setNews] = useState<NewsEventItem[]>([]);
   const [page, setPage] = useState(1);
