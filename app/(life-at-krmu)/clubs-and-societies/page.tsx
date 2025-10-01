@@ -5,7 +5,6 @@ import ClubAndSocietiesAcc from "./comp/ClubAndSocietiesAcc";
 
 const page = async () => {
   const clubsData = await getClubAndSocitiesData();
-  console.log("clubsData", clubsData);
   return (
     <>
       <ClubAndSocitiesHero

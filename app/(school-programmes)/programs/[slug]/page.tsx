@@ -15,15 +15,14 @@ import Specialisation from "../../school-programmes-component/Specialisation";
 import TableOfContent from "../../school-programmes-component/TableOfContent";
 import { notFound } from "next/navigation";
 import AdmissionProcessComp from "../../school-programmes-component/AdmissionProcessComp";
-
-import PHDProgrammes from "../PHDProgramme";
 import { getPHDProgramme } from "@/lib/api/phd-programmes";
+import PHDProgrammes from "../PHDProgramme";
 
 type Props = {
   params: Promise<{ slug: string }>;
 };
 
-const page = async ({ params }: Props) => {
+const page = async ({ params }: Props) => { 
   const { slug } = await params; // ✅ await params
 
   const allSchoolProgrammeData = await getSchoolProgrammeData(slug);
@@ -36,6 +35,7 @@ const page = async ({ params }: Props) => {
   const singlePHDProgramme = allSinglePHDProgramme?.find(
     (phdprogram) => phdprogram?.phdslug === slug
   );
+
 
   // If not found, redirect to 404 page
   // if (!singleSchoolProgramme) return notFound();

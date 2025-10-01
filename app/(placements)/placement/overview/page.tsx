@@ -21,7 +21,6 @@ const page = async () => {
         component?.__component === "placement-overview.placement-highlight"
     );
 
-  console.log("overviewHero", overviewHero);
   return (
     <>
       {overviewHero && (
