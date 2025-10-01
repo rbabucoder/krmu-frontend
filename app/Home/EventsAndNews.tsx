@@ -1,6 +1,6 @@
 import { getNewsAndEventsData } from "@/lib/api/common";
 import HomeNewsEventsCard from "../components/Cards/HomeNewsEventsCard";
-import { NewsAndEventItem } from "@/lib/types/news-and-events";
+import { NewsAndEvent } from "@/lib/types/news-and-events";
 import Link from "next/link";
 import { ButtonType } from "@/lib/types/common";
 
@@ -14,7 +14,7 @@ const EventsAndNews = async ({
   newsandeventbtn,
 }: HomeEventsNewsProp) => {
   const response = await getNewsAndEventsData();
-  const newsandeventsdata: NewsAndEventItem[] =
+  const newsandeventsdata: NewsAndEvent[] =
     response 
       ?.sort(
         (a, b) =>

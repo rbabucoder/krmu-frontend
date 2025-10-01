@@ -5,7 +5,7 @@ import {
   StudentAchievementResponse,
 } from "../types/common";
 import { TestimonialItem, TestimonialResponse } from "../constants/testimonial";
-import { NEWSANDEVENTSResponse } from "../types/news-and-events";
+import { NewsAndEventResponse } from "../types/news-and-events";
 import { MainMenuResponse, TOPBARResponse } from "../types/HeaderType";
 import { GlobalResponse } from "../types/global";
 import { AdvisoryBoardResponse } from "../types/advisory-type";
@@ -49,7 +49,7 @@ export async function getTestimonialsData(): Promise<TestimonialItem[]> {
 }
 
 export async function getNewsAndEventsData(): Promise<
-  NEWSANDEVENTSResponse["data"]
+  NewsAndEventResponse["data"]
 > {
   const res = await fetch(
     `${FETCH_STRAPI_URL}/api/news-and-events?populate=*`,
@@ -61,7 +61,7 @@ export async function getNewsAndEventsData(): Promise<
   );
   if (!res.ok) throw new Error("Failed to fetch Alumni Data");
 
-  const json: NEWSANDEVENTSResponse = await res.json();
+  const json: NewsAndEventResponse = await res.json();
   return json.data;
 }
 
