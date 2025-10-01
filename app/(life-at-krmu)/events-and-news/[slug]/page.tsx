@@ -1,5 +1,5 @@
 import React from "react";
-import NewsEventsHero from "../comp/NewsEventsHero";
+import NewsEventsHero from "../comp/NewsEventsHero"; 
 import NewsEventsImageContent from "../comp/NewsEventsImageContent";
 import { getSingleNewsAndEvents } from "@/lib/api/single-news-events";
 import { notFound } from "next/navigation";

@@ -10,7 +10,7 @@ import { NewsEventItem } from "@/lib/types/news-events";
 const NewsAndEventsCards = () => {
   const [news, setNews] = useState<NewsEventItem[]>([]);
   const [page, setPage] = useState(1);
-  const [pageSize] = useState(4); // 4 per page
+  const [pageSize] = useState(12); // 4 per page
   const [totalPages, setTotalPages] = useState(1);
 
   useEffect(() => {
