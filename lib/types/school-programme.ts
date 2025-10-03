@@ -65,6 +65,12 @@ export interface AdmissionProcess {
 export interface Subject {
   id: number;
   subjectname: string;
+  course_name: ExtraCourseName[];
+}
+
+export interface ExtraCourseName {
+  id: number;
+  sub_name: string;
 }
 
 export interface Semester {
@@ -233,6 +239,7 @@ export interface HeroSection {
   heroimg: StrapiMedia;
   imgvideo: string;
   videofield: string;
+  formField: string;
 }
 
 export interface ProgrammeEligibility {

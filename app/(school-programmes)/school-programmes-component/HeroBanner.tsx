@@ -1,3 +1,4 @@
+import Popup from "@/app/components/Popup";
 import { STRAPI_URL } from "@/app/constant";
 import { HeroSection } from "@/lib/types/school-programme";
 import { MoveRight } from "lucide-react";
@@ -24,14 +25,30 @@ const HeroBanner = ({ title, highlightitle, heroSection }: Props) => {
           <p className="text-xs sm:text-[15px] font-medium mt-6 mb-4">
             {heroSection?.description}
           </p>
-          {(heroSection?.herobtn?.buttonclass ||
-            heroSection?.herobtn?.buttonlink) && (
-            <Link
-              href={heroSection?.herobtn?.buttonlink}
-              className={`hero-common-btn-b mt-12 ${heroSection?.herobtn?.buttonclass}`}
-            >
-              {heroSection?.herobtn?.buttontext} <MoveRight />
-            </Link>
+
+          {heroSection?.herobtn && (
+            <>
+              {heroSection.herobtn.buttonclass === "progPopup" ? (
+                <Popup
+                  buttonText={heroSection.herobtn.buttontext || "Apply Now"}
+                >
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html: heroSection?.formField || "",
+                    }}
+                  />
+                </Popup>
+              ) : heroSection.herobtn.buttonlink ? (
+                <Link
+                  href={heroSection.herobtn.buttonlink}
+                  className={`hero-common-btn-b mt-12 ${
+                    heroSection.herobtn.buttonclass || ""
+                  }`}
+                >
+                  {heroSection.herobtn.buttontext} <MoveRight />
+                </Link>
+              ) : null}
+            </>
           )}
         </div>
         <div className="hidden  w-full md:w-5/12 md:flex items-center">

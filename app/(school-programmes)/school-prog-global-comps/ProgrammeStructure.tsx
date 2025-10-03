@@ -1,3 +1,4 @@
+import Popup from "@/app/components/Popup";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ButtonType } from "@/lib/types/common";
 import { Year } from "@/lib/types/school-programme";
@@ -19,13 +20,40 @@ const ProgrammeStructure = ({ programStruct, currbtn }: Props) => {
       >
         {/* Years */}
         <TabsList className="flex-col w-1/4 h-full bg-transparent">
-          {(currbtn?.buttonclass || currbtn?.buttonlink) && (
+          {/* {(currbtn?.buttonclass || currbtn?.buttonlink) && (
             <Link
               href={currbtn?.buttonlink}
               className={`p-2 sm:py-[15px] sm:px-[25px] inline-block font-normal rounded-[15px] text-xs sm:text-2xl w-full text-white bg-[#db2a1a] text-center mb-6 ${currbtn?.buttonclass}`}
             >
               {currbtn?.buttontext}
             </Link>
+          )} */}
+
+          {currbtn && (
+            <>
+              {currbtn.buttonclass === "progPopup" ? (
+                <Popup
+                  buttonText={currbtn.buttontext || "Click Here"}
+                  buttonClass={`p-2 sm:py-[15px] sm:px-[25px] inline-block font-normal rounded-[15px] text-xs sm:text-2xl w-full text-white bg-[#db2a1a]  text-center mb-6 ${currbtn?.buttonclass}`}
+                  buttonIcon={null} // add an icon like <ArrowRight /> if needed
+                  formBodyTextColor="#000"
+                >
+                  <p>
+                    This is the content inside the popup for{" "}
+                    {currbtn.buttontext}.
+                  </p>
+                </Popup>
+              ) : currbtn.buttonlink ? (
+                <Link
+                  href={currbtn.buttonlink}
+                  className={`p-2 sm:py-[15px] sm:px-[25px] inline-block font-normal rounded-[15px] text-xs sm:text-2xl w-full text-white bg-[#db2a1a] text-center mb-6 ${
+                    currbtn.buttonclass || ""
+                  }`}
+                >
+                  {currbtn.buttontext}
+                </Link>
+              ) : null}
+            </>
           )}
 
           {programStruct.map((year) => {
@@ -104,9 +132,33 @@ const ProgrammeStructure = ({ programStruct, currbtn }: Props) => {
                                   key={sub.id}
                                   className="mb-[15px] pb-[15px] border-b border-[#ebebeb]"
                                 >
-                                  <h5 className="text-xs md:text-xl font-medium">
+                                  <div className="group">
+                                    <h5 className="text-xs md:text-xl font-medium cursor-pointer">
+                                      {sub.subjectname}
+                                    </h5>
+                                    <ul className="text-sm pl-2 hidden group-hover:block">
+                                      {sub?.course_name &&
+                                        sub.course_name.map((course) => (
+                                          <li key={course?.id}>
+                                            {course?.sub_name}
+                                          </li>
+                                        ))}
+                                    </ul>
+                                  </div>
+
+                                  {/* <h5 className="text-xs md:text-xl font-medium">
                                     {sub.subjectname}
-                                  </h5>
+                                    <ul className="text-xs pl-2">
+                                      {sub?.course_name &&
+                                        sub?.course_name?.map((course) => {
+                                          return (
+                                            <li key={course?.id}>
+                                              {course?.sub_name}
+                                            </li>
+                                          );
+                                        })}
+                                    </ul>
+                                  </h5> */}
                                 </div>
                               ))}
                             </div>

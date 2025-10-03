@@ -1,3 +1,4 @@
+import Popup from "@/app/components/Popup";
 import { STRAPI_URL } from "@/app/constant";
 import { ProgrammeScopeType } from "@/lib/types/school-programme";
 import Image from "next/image";
@@ -18,7 +19,7 @@ const ProgrammeScope = ({ scopeData }: Props) => {
           <p className="text-base md:text-xl 2xl:text-2xl leading-[2]">
             {scopeData?.scopecontent}
           </p>
-          {(scopeData?.scopebtn?.buttonclass ||
+          {/* {(scopeData?.scopebtn?.buttonclass ||
             scopeData?.scopebtn?.buttonlink) && (
             <Link
               href={scopeData?.scopebtn?.buttonlink}
@@ -26,6 +27,29 @@ const ProgrammeScope = ({ scopeData }: Props) => {
             >
               {scopeData?.scopebtn?.buttontext}
             </Link>
+          )} */}
+          {scopeData?.scopebtn && (
+            <>
+              {scopeData.scopebtn.buttonclass === "progPopup" ? (
+                <Popup
+                  buttonText={scopeData.scopebtn.buttontext || "Apply Now"}
+                  buttonClass={`bg-[#0a41a1] text-white text-base sm:bg-white p-[15px] flex items-center justify-center max-w-[220px] w-full mx-auto sm:mx-0 sm:text-[#0a41a1] rounded-md font-semibold mt-6`}
+                  buttonIcon={''}
+                  formBodyTextColor={`#000`}
+                >
+                  <p>This is the content inside the popup.</p>
+                </Popup>
+              ) : scopeData.scopebtn.buttonlink ? (
+                <Link
+                  href={scopeData.scopebtn.buttonlink}
+                  className={`bg-[#0a41a1] cursor-pointer text-white text-base sm:bg-white p-[15px] flex items-center justify-center max-w-[220px] w-full mx-auto sm:mx-0 sm:text-[#0a41a1] rounded-md font-semibold mt-6 ${
+                    scopeData.scopebtn.buttonclass || ""
+                  }`}
+                >
+                  {scopeData.scopebtn.buttontext}
+                </Link>
+              ) : null}
+            </>
           )}
         </div>
         <div className="w-full xl:w-1/2">

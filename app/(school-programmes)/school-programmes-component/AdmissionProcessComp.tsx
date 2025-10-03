@@ -1,3 +1,4 @@
+import Popup from "@/app/components/Popup";
 import { STRAPI_URL } from "@/app/constant";
 import { ButtonType, StrapiMedia } from "@/lib/types/common";
 import { AdmisionProcessCard } from "@/lib/types/school-programme";
@@ -85,7 +86,9 @@ const AdmissionProcessComp = ({
                     {card?.title}
                   </h4>
                   <p className="z-10 leading-[1] text-sm text-[#0d6efd] break-all">
-                    <Link href={card?.link || "#"} target="_blank" >{card?.description}</Link>
+                    <Link href={card?.link || "#"} target="_blank">
+                      {card?.description}
+                    </Link>
                   </p>
                 </div>
               );
@@ -93,13 +96,35 @@ const AdmissionProcessComp = ({
         </div>
       </div>
       <div className="flex items-center justify-center">
-        {(admisbtn?.buttonclass || admisbtn?.buttonlink) && (
+        {/* {(admisbtn?.buttonclass || admisbtn?.buttonlink) && (
           <Link
             href={admisbtn?.buttonlink}
             className={`${admisbtn?.buttonclass} text-white bg-[#db2a1a] p-[15px] flex items-center justify-around max-w-3xs w-full rounded-lg font-semibold mt-10`}
           >
             <span>{admisbtn?.buttontext}</span> <ArrowRight />
           </Link>
+        )} */}
+        {admisbtn && (
+          <div>
+            {admisbtn.buttonclass === "progPopup" ? (
+              <Popup
+                buttonText={admisbtn.buttontext || "Apply Now"}
+                buttonClass={`${admisbtn?.buttonclass} text-white bg-[#db2a1a] p-[15px] flex items-center justify-around w-3xs flex text-center rounded-lg font-semibold mt-10`}
+                buttonIcon={<ArrowRight />}
+              >
+                <p>This is the content inside the popup.</p>
+              </Popup>
+            ) : admisbtn.buttonlink ? (
+              <Link
+                href={admisbtn.buttonlink}
+                className={`${
+                  admisbtn.buttonclass || ""
+                } text-white bg-[#db2a1a] p-[15px] flex items-center justify-around max-w-3xs w-full rounded-lg font-semibold mt-10`}
+              >
+                <span>{admisbtn.buttontext}</span> <ArrowRight />
+              </Link>
+            ) : null}
+          </div>
         )}
       </div>
     </section>
