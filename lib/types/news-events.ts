@@ -36,9 +36,8 @@ export interface NewsEventItem {
   id: number;
   documentId: string;
   title: string;
-  slug: string ;
+  slug: string;
   publishedAt: string;
-  featured_img: StrapiMedia;
+  // featured_img: StrapiMedia;
+  newsmedia: StrapiMedia[];
 }
-
-

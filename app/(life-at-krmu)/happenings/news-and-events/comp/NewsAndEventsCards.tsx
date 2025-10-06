@@ -20,6 +20,8 @@ const NewsAndEventsCards = () => {
     fetchNews();
   }, [page, pageSize]);
 
+  console.log('NewsCard', news);
+
   return (
     <div>
       {/* News Cards */}
@@ -29,7 +31,7 @@ const NewsAndEventsCards = () => {
             key={item.id}
             title={item.title}
             slug={item.slug}
-            featuredImg={item.featured_img?.url}
+            firstImage={item?.newsmedia[0]?.url}
             publishedAt={item.publishedAt}
           />
         ))}

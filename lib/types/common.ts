@@ -39,11 +39,6 @@ export interface StrapiMedia {
   publishedAt: string;
 }
 
-
-
-
-
-
 export interface CardWithoutImage {
   id: number;
   title: string;
@@ -180,5 +175,23 @@ export interface SchoolHeroBanner {
   url?: string; // Strapi sometimes includes this at root
 }
 
+export type CustomPage = {
+  id: number;
+  documentId: string;
+  enable_disable_custom_page: boolean;
+  slug: string;
+};
 
+type Pagination = {
+  page: number;
+  pageSize: number;
+  pageCount: number;
+  total: number;
+};
 
+export type CustomPageResponse = {
+  data: CustomPage[];
+  meta: {
+    pagination: Pagination;
+  };
+};

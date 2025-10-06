@@ -5,11 +5,11 @@ import Link from "next/link";
 type NewsCardProps = {
   title: string;
   slug: string;
-  featuredImg: string | null;
+  firstImage: string | null;
   publishedAt: string;
 };
 
-const NewsCard = ({ title, slug, featuredImg, publishedAt }: NewsCardProps) => {
+const NewsCard = ({ title, slug, firstImage, publishedAt }: NewsCardProps) => {
   return (
     <div
       className="rounded-3xl"
@@ -18,9 +18,9 @@ const NewsCard = ({ title, slug, featuredImg, publishedAt }: NewsCardProps) => {
         backdropFilter: "blur(13.410955429077px)",
       }}
     >
-      {featuredImg && (
+      {firstImage && (
         <Image
-          src={`${STRAPI_URL}${featuredImg}`}
+          src={`${STRAPI_URL}${firstImage}`}
           alt={title}
           width={370}
           height={246}

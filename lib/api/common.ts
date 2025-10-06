@@ -1,6 +1,8 @@
 import { FETCH_STRAPI_URL } from "@/app/constant";
 import {
   AlumniApiResponse,
+  CustomPage,
+  CustomPageResponse,
   FacilityAPIResponse,
   StudentAchievementResponse,
 } from "../types/common";
@@ -279,3 +281,34 @@ export async function getStudentAchievementsByCategoryByPagination(
 //   const json: StudentAchievementResponse = await res.json();
 //   return json.data;
 // }
+
+// export async function isCustomPage(
+//   slug: string = "this-is-a-title"
+// ): Promise<CustomPageResponse["data"]> {
+//   const res = await fetch(
+//     `${FETCH_STRAPI_URL}/api/custom-pages?filters[slug][$eq]=${slug}&fields[0]=enable_disable_custom_page&fields[1]=slug`,
+//     {
+//       next: {
+//         revalidate: 60,
+//       },
+//     }
+//   );
+
+//   if (!res.ok) throw new Error("Failed to fetch Is Custom page or not");
+//   const json: CustomPageResponse = await res.json();
+//   return json.data;
+// }
+
+export async function isCustomPage(slug: string): Promise<CustomPage[]> {
+  try {
+    const res = await fetch(
+      `${FETCH_STRAPI_URL}/api/custom-pages?filters[slug][$eq]=${slug}&fields[0]=enable_disable_custom_page&fields[1]=slug&fields[2]=title&fields[3]=content`,
+      { next: { revalidate: 60 } }
+    );
+    if (!res.ok) return [];
+    const json: CustomPageResponse = await res.json();
+    return json.data;
+  } catch {
+    return [];
+  }
+}
