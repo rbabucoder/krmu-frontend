@@ -11,7 +11,7 @@ import LabsFacilities from "../../school-programmes-component/LabsFacilities";
 import OurLocation from "../../school-programmes-component/OurLocation";
 import ProgrammeHighlight from "../../school-programmes-component/ProgrammeHighlight";
 import ProgrammeScope from "../../school-programmes-component/ProgrammeScope";
-import Specialisation from "../../school-programmes-component/Specialisation";
+import Specialisation from "../../school-programmes-component/Specialisation"; 
 import TableOfContent from "../../school-programmes-component/TableOfContent";
 import { notFound } from "next/navigation";
 import AdmissionProcessComp from "../../school-programmes-component/AdmissionProcessComp";
@@ -21,7 +21,7 @@ import PHDProgrammes from "../PHDProgramme";
 type Props = {
   params: Promise<{ slug: string }>;
 };
-
+ 
 const page = async ({ params }: Props) => {
   const { slug } = await params; // ✅ await params
 

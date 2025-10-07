@@ -58,7 +58,7 @@ export async function getAllNewsAndEventsWithMeta(
 // sort: ['title:asc'],
 // fields: ['title', 'slug'],
 // populate: {
-//   featured_img: true
+//   newsmedia: true
 //    },
 
 // pagination: {

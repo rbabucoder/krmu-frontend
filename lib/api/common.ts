@@ -299,10 +299,10 @@ export async function getStudentAchievementsByCategoryByPagination(
 //   return json.data;
 // }
 
-export async function isCustomPage(slug: string): Promise<CustomPage[]> {
+export async function isCustomPage(slug: string = ""): Promise<CustomPage[]> {
   try {
     const res = await fetch(
-      `${FETCH_STRAPI_URL}/api/custom-pages?filters[slug][$eq]=${slug}&fields[0]=enable_disable_custom_page&fields[1]=slug&fields[2]=title&fields[3]=content`,
+      `${FETCH_STRAPI_URL}/api/custom-pages?filters[slug][$eq]=${slug}&fields[0]=slug&fields[1]=enable_disable_custom_page&status=published&locale[0]=en`,
       { next: { revalidate: 60 } }
     );
     if (!res.ok) return [];
