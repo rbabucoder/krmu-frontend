@@ -2,7 +2,7 @@ import { StrapiMedia } from "./common";
 
 export interface DeanHonorResponse {
   data: DeanHonorData;
-  meta: Record<string, any>;
+  meta: Record<string, unknown>;
 }
 
 export interface DeanHonorData {
