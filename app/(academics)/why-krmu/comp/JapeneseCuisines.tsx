@@ -1,30 +1,29 @@
+import { STRAPI_URL } from "@/app/constant";
+import { CUISINE } from "@/lib/types/industry-connect";
 import Image from "next/image";
 
-const JapeneseCuisines = () => {
+type Props = {
+  cuisine: CUISINE;
+};
+
+const JapeneseCuisines = ({ cuisine }: Props) => {
   return (
-    <section className="pb-[50px]">
-      <div className="max-w-[1664px] mx-auto w-full flex items-center gap-14">
-        <div className="w-1/2">
+    <section className="pb-[50px] px-4">
+      <div className="max-w-[1664px] mx-auto w-full md:flex items-center gap-14">
+        <div className="w-full md:w-1/2 mb-5 md:mb-0">
           <Image
-            src="/industry-connect/Workshop-on-Japanese-Cuisine.webp"
+            src={`${STRAPI_URL}${cuisine?.cuisine_img?.url}`}
             width={766}
             height={430}
-            alt=""
+            alt={cuisine?.heading}
             className="h-[430px] object-cover"
           />
         </div>
-        <div className="w-1/2">
-          <h3 className="text-[38px] font-bold mb-5">
-            Workshop on Japanese Cuisine
+        <div className="w-full md:w-1/2">
+          <h3 className="text-2xl md:text-[38px] font-bold mb-5">
+            {cuisine?.heading || ""}
           </h3>
-          <p>
-            Experience the culinary mastery of acclaimed Chef Kanhaiya Laal from
-            EBISU Fine Japanese Restaurant, who recently led a captivating
-            workshop on Japanese Cuisine. Delve into the artistry of Japanese
-            cooking as Chef Kanhaiya Laal shares invaluable techniques and
-            insights, unveiling a world of exotic flavors and dishes to eager
-            students.
-          </p>
+          <p>{cuisine?.desc}</p>
         </div>
       </div>
     </section>

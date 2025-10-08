@@ -1,32 +1,42 @@
+import { STRAPI_URL } from "@/app/constant";
+import { IDEAFORGE } from "@/lib/types/industry-connect";
 import Image from "next/image";
+type Props = {
+  forgeData: IDEAFORGE;
+};
 
-const IdeaForge = () => {
+const IdeaForge = ({ forgeData }: Props) => {
   return (
-    <section className="py-[50px] bg-[#051630]">
-      <div className="max-w-[1664px] mx-auto w-full flex items-center gap-14">
-        <div className="w-1/2 text-white">
-          <h3 className="text-[38px] font-bold mb-5 leading-[1.2]">
-            Workshop on Idea Forge: <br /> Navigating Problem Solving <br />{" "}
-            Ideation
+    <section className="py-[50px] bg-[#051630] px-4">
+      <div className="max-w-[1664px] mx-auto w-full lg:flex items-center gap-14">
+        <div className="lg:w-1/2 text-white">
+          <h3 className="text-2xl md:text-[38px] font-bold mb-5 leading-[1.2]">
+            {forgeData?.heading ? (
+              forgeData?.heading
+            ) : (
+              <>
+                Workshop on Idea Forge:
+                <br className="hidden md:block" />
+                Navigating Problem Solving
+                <br className="hidden md:block" />
+                Ideation
+              </>
+            )}
           </h3>
-          <p>
-            K.R. Mangalam University, in collaboration with Somany Ceramics,
-            recently concluded an engaging four-day tile art mural event. Led by
-            Mr. Anshuman Chakravarty, Head of Marketing & Communication at
-            Somany Ceramics, and Mr. Sujit Mohanty, GVT Vertical Head, the event
-            celebrated the creativity of talented students. Certificates were
-            awarded to commend their contributions to the wall tile art mural,
-            showcasing an inspiring fusion of art and sustainability in
-            architectural design.
-          </p>
+
+          <p>{forgeData?.desc}</p>
         </div>
-        <div className="w-1/2 border border-white rounded-sm">
+        <div className="lg:w-1/2 border border-white rounded-sm mt-5 md:mt-0">
           <Image
-            src="/industry-connect/Workshop-on-Japanese-Cuisine.webp"
+            src={`${STRAPI_URL}${forgeData?.idea_forge_img_1?.url}`}
             width={766}
             height={430}
-            alt=""
-            className="h-[430px] object-cover"
+            alt={
+              forgeData?.heading ||
+              forgeData?.idea_forge_img_1?.alternativeText ||
+              ""
+            }
+            className="md:h-[430px] object-cover"
           />
         </div>
       </div>

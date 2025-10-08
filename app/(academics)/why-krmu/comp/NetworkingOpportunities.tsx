@@ -1,59 +1,44 @@
+import { STRAPI_URL } from "@/app/constant";
+import { NETWORKINGOPPORTUNITIES } from "@/lib/types/industry-connect";
+import { BlocksRenderer } from "@strapi/blocks-react-renderer";
 import Image from "next/image";
 
-const NetworkingOpportunities = () => {
+type Props = {
+  netopp: NETWORKINGOPPORTUNITIES;
+};
+
+const NetworkingOpportunities = ({ netopp }: Props) => {
   return (
     <>
-      <section className="py-[60px] bg-[#faf9f6]">
+      <section className="py-[60px] bg-[#faf9f6] px-4">
         <div className="max-w-[1664px] mx-auto w-full text-center">
-          <h3 className="mb-5 text-[38px] font-bold leading-[1]">
-            Exclusive Networking Opportunities
+          <h3 className="mb-5 text-2xl md:text-[38px] font-bold leading-[1]">
+            {netopp?.heading}
           </h3>
-          <p>
-            “Join us in shaping the future of technology through
-            industry-academia collaboration at K.R. Mangalam University.”
-          </p>
+          <p>{netopp?.desc}</p>
         </div>
-        <div className="max-w-[1664px] mx-auto w-full flex items-center gap-10 mt-10 mb-5">
-          <div className="w-1/2 rounded-sm border border-[#051630]">
+        <div className="max-w-[1664px] mx-auto w-full lg:flex items-center gap-10 mt-10 mb-5">
+          <div className="lg:w-1/2 rounded-sm border border-[#051630]">
             <Image
-              src="/industry-connect/Workshop-on-Japanese-Cuisine.webp"
+              src={`${STRAPI_URL}${netopp?.opportunities_img_1?.url}`}
               width={766}
               height={430}
-              alt=""
-              className="h-[430px] w-full object-cover"
+              alt={netopp?.heading || ""}
+              className="h-full md:h-[430px] w-full object-cover"
             />
           </div>
-          <div className="w-1/2 rounded-sm border border-[#051630]">
+          <div className="lg:w-1/2 rounded-sm border border-[#051630] mt-5 lg:mt-0">
             <Image
-              src="/industry-connect/Workshop-on-Japanese-Cuisine.webp"
+              src={`${STRAPI_URL}${netopp?.opportunities_img_2?.url}`}
               width={766}
               height={430}
-              alt=""
-              className="h-[430px] w-full object-cover"
+              alt={netopp?.heading || ""}
+              className="h-full md:h-[430px] w-full object-cover"
             />
           </div>
         </div>
         <div className="max-w-[1664px] mx-auto w-full">
-          <p>
-            At K.R. Mangalam University, we believe that collaboration between
-            industry and academia is the key to driving innovation and
-            technological growth. Through strategic partnerships in every
-            department, we bridge the gap between theory and practice.
-          </p>
-          <br />
-          <p>
-            Our students thrive through industry engagement, gaining practical
-            learning experiences, accessing industry experts, enhancing career
-            readiness, fostering innovation and entrepreneurship, and
-            experiencing personal and professional growth.
-          </p>
-          <br />
-          <p>
-            Through initiatives like internships, mentorship programs, and
-            innovation challenges, students apply their skills, build networks,
-            develop entrepreneurial mindsets, and make meaningful contributions
-            to society while preparing for future careers.
-          </p>
+          <BlocksRenderer content={netopp?.opportunities_content} />
         </div>
       </section>
     </>

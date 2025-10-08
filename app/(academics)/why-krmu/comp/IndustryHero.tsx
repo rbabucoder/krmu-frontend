@@ -1,19 +1,22 @@
-import React from "react";
+import { STRAPI_URL } from "@/app/constant";
 
-const IndustryHero = () => {
+type Props = {
+  title: string;
+  desc: string;
+  bgImgURL: string;
+};
+
+const IndustryHero = ({ title, desc, bgImgURL }: Props) => {
   return (
-    <section className="pt-[15%] pb-[10%] bg-[url(/industry-connect/banner.webp)] bg-cover bg-no-repeat bg-center">
+    <section className="pt-[140px] pb-10 md:pt-[15%] md:pb-[10%] bg-cover bg-no-repeat bg-center px-4" style={{
+      background: `url(${STRAPI_URL}${bgImgURL})`
+    }}>
       <div className="max-w-[1664px] mx-auto w-full">
         <div className="text-white mx-[1.92%]">
-          <h1 className="text-[64px] font-semibold">Industry Connect</h1>
-          <p>
-            To foster global economic growth and collaboration, K.R. Mangalam
-            University has partnered with leading international organizations to
-            provide a unique model of collaboration between industry and the
-            university. Various top organizations have jointly identified
-            methods to enhance the curriculum and have designed new modules to
-            guide students and deliver lectures through industry experts.
-          </p>
+          <h1 className="text-2xl md:text-[64px] font-semibold mb-5 md:mb-0">
+            {title}
+          </h1>
+          <p>{desc}</p>
         </div>
       </div>
     </section>

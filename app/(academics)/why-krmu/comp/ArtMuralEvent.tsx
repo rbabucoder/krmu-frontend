@@ -1,28 +1,27 @@
+import { STRAPI_URL } from "@/app/constant";
+import { MURALEVENT } from "@/lib/types/industry-connect";
 import Image from "next/image";
 
-const ArtMuralEvent = () => {
+type Props = {
+  mural: MURALEVENT;
+};
+
+const ArtMuralEvent = ({ mural }: Props) => {
   return (
-    <section className="py-[50px] bg-[#051630]">
-      <div className="max-w-[1664px] mx-auto w-full flex items-center gap-14">
-        <div className="w-1/2 text-white">
-          <h3 className="text-[38px] font-bold mb-5">Art Mural Event</h3>
-          <p>
-            K.R. Mangalam University, in collaboration with Somany Ceramics,
-            recently concluded an engaging four-day tile art mural event. Led by
-            Mr. Anshuman Chakravarty, Head of Marketing & Communication at
-            Somany Ceramics, and Mr. Sujit Mohanty, GVT Vertical Head, the event
-            celebrated the creativity of talented students. Certificates were
-            awarded to commend their contributions to the wall tile art mural,
-            showcasing an inspiring fusion of art and sustainability in
-            architectural design.
-          </p>
+    <section className="py-[50px] bg-[#051630] px-4">
+      <div className="max-w-[1664px] mx-auto w-full md:flex items-center gap-14">
+        <div className="md:w-1/2 text-white">
+          <h3 className="text-2xl md:text-[38px] font-bold mb-5">
+            {mural?.heading}
+          </h3>
+          <p>{mural?.desc}</p>
         </div>
-        <div className="w-1/2">
+        <div className="md:w-1/2 mt-5 md:mt-0">
           <Image
-            src="/industry-connect/Workshop-on-Japanese-Cuisine.webp"
+            src={`${STRAPI_URL}${mural?.mural_img?.url}`}
             width={766}
             height={430}
-            alt=""
+            alt={mural?.heading || ""}
             className="h-[430px] object-cover"
           />
         </div>
