@@ -1,14 +1,14 @@
 import { getIndustryConnectPage } from "@/lib/api/industry-connect";
-import ArtMuralEvent from "../comp/ArtMuralEvent";
-import DeputyCommissioner from "../comp/DeputyCommissioner";
-import ExpertTalk from "../comp/ExpertTalk";
-import IdeaForge from "../comp/IdeaForge";
-import IndustryHero from "../comp/IndustryHero";
-import IndustryPartenerships from "../comp/IndustryPartenerships";
-import JapeneseCuisines from "../comp/JapeneseCuisines";
-import NetworkingOpportunities from "../comp/NetworkingOpportunities";
-import Seminar from "../comp/Seminar";
-import ShapingCareer from "../comp/ShapingCareer";
+import IndustryHero from "./comp/IndustryHero";
+import IndustryPartenerships from "./comp/IndustryPartenerships";
+import JapeneseCuisines from "./comp/JapeneseCuisines";
+import ArtMuralEvent from "./comp/ArtMuralEvent";
+import NetworkingOpportunities from "./comp/NetworkingOpportunities";
+import ShapingCareer from "./comp/ShapingCareer";
+import Seminar from "./comp/Seminar";
+import IdeaForge from "./comp/IdeaForge";
+import ExpertTalk from "./comp/ExpertTalk";
+import DeputyCommissioner from "./comp/DeputyCommissioner";
 
 const page = async () => {
   const getIndustryConnectPageData = await getIndustryConnectPage();
@@ -35,7 +35,9 @@ const page = async () => {
       <Seminar seminar={getIndustryConnectPageData?.seminar} />
       <IdeaForge forgeData={getIndustryConnectPageData?.idea_forge} />
       <ExpertTalk expertTalk={getIndustryConnectPageData?.expert_talk_role} />
-      <DeputyCommissioner deput={getIndustryConnectPageData?.deputy_commissioner} />
+      <DeputyCommissioner
+        deput={getIndustryConnectPageData?.deputy_commissioner}
+      />
     </>
   );
 };
