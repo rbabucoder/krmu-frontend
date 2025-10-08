@@ -15,6 +15,53 @@
 
 /* Custom utility class */
 @layer utilities {
+  .deanhonortable .deanhonortable-container table {
+    width: 100%;
+    margin: 10px 0px 15px;
+  }
+  .deanhonoracc_panel svg {
+    display: none;
+  }
+  .deanhonoracc_panel {
+    position: relative;
+  }
+
+  .deanhonoracc_panel::before {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .deanhonoracc_panel[data-state="open"]::before {
+    content: "−";
+  }
+  .deanhonortable-container {
+    overflow-x: auto;
+  }
+  .deanhonortable .deanhonortable-container table,
+  .deanhonortable .deanhonortable-container table td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 8px;
+    line-height: 30px;
+    font-size: 16px;
+  }
+  .deanhonortable .deanhonortable-container table tr:nth-child(1) {
+    background: #036;
+    color: #fff;
+  }
+  @media (max-width: 640px) {
+    .deanhonortable .deanhonortable-container table,
+    .deanhonortable .deanhonortable-container table td {
+      font-size: 14px;
+    }
+  }
+
   .school-programme-max-width {
     max-width: 1765px;
     margin: 0 auto;
@@ -43,14 +90,19 @@
     max-height: 250px;
     border-radius: 20px;
     border: 3px solid transparent;
-    background: linear-gradient(135deg, #00d5f2 12%, rgba(255, 255, 255, .01) 32%) border-box;
-    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    background: linear-gradient(
+        135deg,
+        #00d5f2 12%,
+        rgba(255, 255, 255, 0.01) 32%
+      )
+      border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+      linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
-}
+  }
 
-
-.admission-process-section:before {
+  .admission-process-section:before {
     content: "";
     position: absolute;
     top: 0;
@@ -59,13 +111,19 @@
     bottom: 0;
     border-radius: 20px;
     border: 3px solid transparent;
-    background: linear-gradient(135deg, #00d5f2 12%, rgba(255, 255, 255, .01) 32%) border-box;
-    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    background: linear-gradient(
+        135deg,
+        #00d5f2 12%,
+        rgba(255, 255, 255, 0.01) 32%
+      )
+      border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+      linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
-}
+  }
 
-.selection-process-section:before {
+  .selection-process-section:before {
     content: "";
     position: absolute;
     top: 0;
@@ -74,11 +132,18 @@
     bottom: 0;
     border-radius: 20px;
     border: 3px solid transparent;
-    background: linear-gradient(308deg, #ab192d 12%, rgba(144, 134, 134, .29) 26%, rgba(255, 255, 255, .01) 32%) border-box;
-    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    background: linear-gradient(
+        308deg,
+        #ab192d 12%,
+        rgba(144, 134, 134, 0.29) 26%,
+        rgba(255, 255, 255, 0.01) 32%
+      )
+      border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+      linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
-}
+  }
   .prog-counter-container .counter {
     font-weight: 700;
     font-size: 65px;
