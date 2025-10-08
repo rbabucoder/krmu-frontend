@@ -35,6 +35,7 @@ const InternationalCollabCards = ({
                       width={324}
                       height={203}
                       alt={item?.int_collab_img?.alternativeText || ""}
+                      className="h-[130px] w-fit object-contain"
                     />
                   </div>
                   <div>
