@@ -20,8 +20,6 @@ const NewsAndEventsCards = () => {
     fetchNews();
   }, [page, pageSize]);
 
-  console.log('NewsCard', news);
-
   return (
     <div>
       {/* News Cards */}
