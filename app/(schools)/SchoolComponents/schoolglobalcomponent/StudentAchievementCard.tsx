@@ -25,7 +25,7 @@ const StudentAchievementCard = ({ info, achieveImgUrl, imgALTText }: Props) => {
           width={443}
           height={476}
           alt={imgALTText || ""}
-          className="rounded-md w-full"
+          className="w-full h-[476px] object-cover"
         />
       </div>
 
