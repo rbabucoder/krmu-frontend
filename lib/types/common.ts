@@ -109,14 +109,13 @@ export interface StudentAchievementResponse {
 }
 
 export interface StudentAchievement {
+  publishedAt: string;
   id: number;
   documentId: string;
   achievementcontent: string;
   createdAt: string;
   updatedAt: string;
-  publishedAt: string;
   achivementimage: StrapiMedia[];
-  school_category: SchoolCategory;
 }
 
 export interface ImageFormat {

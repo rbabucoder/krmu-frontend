@@ -18,7 +18,10 @@ import SchoolProgrammeOffered from "../SchoolComponents/SchoolProgrammeOffered";
 import SchoolStudentAchievements from "../SchoolComponents/SchoolStudentAchievements";
 import SchoolTestimonials from "../SchoolComponents/SchoolTestimonials";
 import { notFound } from "next/navigation";
-import { getSchoolPage } from "@/lib/api/schools";
+import {
+  getEventsAndExperiencesBySchoolCat,
+  getSchoolPage,
+} from "@/lib/api/schools";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -35,6 +38,12 @@ export default async function Page({ params }: Props) {
 
   const schoolKnowComp = school.schoolcomps.find(
     (component) => component.__component === "schoolcomponent.knowledge"
+  );
+
+  const schoolCat = school?.school_category?.name;
+
+  const schoolEventsAndExperience = await getEventsAndExperiencesBySchoolCat(
+    schoolCat
   );
 
   return (
@@ -117,15 +126,17 @@ export default async function Page({ params }: Props) {
           desc={school?.deancontent}
         />
       )}
-      <SchoolFacultyAdvisory />
+      <SchoolFacultyAdvisory schoolCat={schoolCat} />
       <SchoolEventAndExperience
         title={school?.eventstitle}
         desc={school?.eventsdesc}
         btn={school?.eventsbtn}
+        eventsexp={schoolEventsAndExperience}
       />
       <SchoolStudentAchievements
         title={school?.studentachievementtitle}
         btn={school?.studentachievementsbtn}
+        schoolCat={schoolCat}
       />
       <SchoolFacilities />
       <SchoolCommenceJourney />

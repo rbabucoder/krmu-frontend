@@ -125,3 +125,94 @@ export interface SchoolsResponse {
     };
   };
 }
+
+// Meta pagination
+export interface Pagination {
+  page: number;
+  pageSize: number;
+  pageCount: number;
+  total: number;
+}
+
+export interface EventsAndExperienceCard {
+  id: number;
+  title: string;
+  documentId: string;
+  slug: string;
+  content: ParagraphBlock[];
+  newsmedia: StrapiMedia[];
+}
+
+export interface SCHOOLEVENTSANDEXPRESPONSE {
+  data: EventsAndExperienceCard[];
+  meta: {
+    pagination: Pagination;
+  };
+}
+
+////////////faculty///////////////
+export interface FACULTYCARD {
+  publishedAt: string;
+  id: number;
+  documentId: string;
+  faculty_name: string;
+  facultyslug: string;
+  faculty_card_desg: string;
+  faculty_qualification: string;
+  faculty_img: StrapiMedia; // or a more specific type if you know the structure
+  faculty_type: string;
+}
+
+export interface FacultyResponse {
+  data: FACULTYCARD[];
+  meta: {
+    pagination: {
+      page: number;
+      pageSize: number;
+      pageCount: number;
+      total: number;
+    };
+  };
+}
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////// Internation Collab
+// Text node
+export interface IntCollabTextNode {
+  type: "text";
+  text: string;
+}
+
+// Paragraph block
+export interface IntCollabParagraphBlock {
+  type: "paragraph";
+  children: IntCollabTextNode[];
+}
+
+// List item block
+export interface IntCollabListItemBlock {
+  type: "list-item";
+  children: IntCollabTextNode[];
+}
+
+// List block
+export interface IntCollabListBlock {
+  type: "list";
+  format: "unordered" | "ordered";
+  children: IntCollabListItemBlock[];
+}
+
+// Union type for any block
+export type IntCollabRichTextBlock = IntCollabParagraphBlock | IntCollabListBlock;
+
+// Full content array type
+export type IntCollabRichTextContent = IntCollabRichTextBlock[];

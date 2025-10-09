@@ -1,14 +1,16 @@
 import Link from "next/link";
 import SchoolEventsAndExperiencesCard from "./schoolglobalcomponent/SchoolEventsAndExperiencesCard";
 import { Button } from "@/lib/types/home";
+import { EventsAndExperienceCard } from "@/lib/types/schools";
 
 type Props = {
   title: string;
   desc: string;
   btn: Button;
+  eventsexp: EventsAndExperienceCard[]
 };
 
-const SchoolEventAndExperience = ({ title, desc, btn }: Props) => {
+const SchoolEventAndExperience = ({ title, desc, btn, eventsexp }: Props) => {
   return (
     <section className="bg-[url(/schools/events-bg.webp)] bg-cover bg-center py-[30px] px-4">
       <div className="max-w-[1664px] mx-auto w-full lg:flex items-center gap-5">
@@ -30,7 +32,7 @@ const SchoolEventAndExperience = ({ title, desc, btn }: Props) => {
         </div>
       </div>
       <div className="max-w-[1664px] mx-auto w-full">
-        <SchoolEventsAndExperiencesCard />
+        <SchoolEventsAndExperiencesCard eventsexp={eventsexp} />
       </div>
     </section>
   );

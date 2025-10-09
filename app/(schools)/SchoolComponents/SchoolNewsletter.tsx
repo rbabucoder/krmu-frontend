@@ -1,3 +1,4 @@
+import Popup from "@/app/components/Popup";
 import { Button } from "@/lib/types/home";
 import Link from "next/link";
 
@@ -21,16 +22,29 @@ const SchoolNewsletter = ({ heading, desc, btns }: Props) => {
           <div className="flex flex-wrap md:flex-nowrap justify-center gap-5 md:gap-12">
             {btns &&
               btns.map((btn) => {
-                return (
-                  <Link
-                    key={btn?.id}
-                    href={btn?.buttonlink || ""}
-                    className={`py-3.5 px-8 bg-[#cb000d] font-bold rounded-sm inline-block text-sm md:text-base ${btn?.buttonclass}`}
-                    target="_blank"
-                  >
-                    {btn?.buttontext}
-                  </Link>
-                );
+                if (btn?.buttonclass === "propPopup") {
+                  return (
+                    <Popup
+                      key={btn?.id}
+                      buttonText={btn.buttontext || "Apply Now"}
+                      buttonClass={`py-3.5 px-8 bg-[#cb000d] font-bold rounded-sm inline-block text-sm md:text-base ${btn?.buttonclass}`}
+                      buttonIcon=""
+                    >
+                      <p>This is the content inside the popup.</p>
+                    </Popup>
+                  );
+                } else {
+                  return (
+                    <Link
+                      key={btn?.id}
+                      href={btn?.buttonlink || ""}
+                      className={`py-3.5 px-8 bg-[#cb000d] font-bold rounded-sm inline-block text-sm md:text-base ${btn?.buttonclass}`}
+                      target="_blank"
+                    >
+                      {btn?.buttontext}
+                    </Link>
+                  );
+                }
               })}
           </div>
         </div>

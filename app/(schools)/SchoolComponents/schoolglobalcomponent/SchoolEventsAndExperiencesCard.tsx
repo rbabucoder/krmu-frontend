@@ -6,9 +6,14 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
+import { EventsAndExperienceCard as EvenyType } from "@/lib/types/schools";
 import Autoplay from "embla-carousel-autoplay";
 
-const SchoolEventsAndExperiencesCard = () => {
+type Props = {
+  eventsexp: EvenyType[];
+};
+
+const SchoolEventsAndExperiencesCard = ({ eventsexp }: Props) => {
   return (
     <>
       <Carousel
@@ -23,7 +28,19 @@ const SchoolEventsAndExperiencesCard = () => {
         ]}
       >
         <CarouselContent>
-          <CarouselItem className="md:basis-1/2 lg:basis-1/3 xl:basis-1/4 py-5">
+          {eventsexp &&
+            eventsexp?.map((item) => {
+              return (
+                <CarouselItem
+                  key={item?.id}
+                  className="md:basis-1/2 lg:basis-1/3 xl:basis-1/4 py-5"
+                >
+                  <EventsAndExperienceCard title={item?.title} content={item?.content} slug={item?.slug} featured_img_url={item?.newsmedia[0]?.url} />
+                </CarouselItem>
+              );
+            })}
+
+          {/* <CarouselItem className="md:basis-1/2 lg:basis-1/3 xl:basis-1/4 py-5">
             <EventsAndExperienceCard />
           </CarouselItem>
           <CarouselItem className="md:basis-1/2 lg:basis-1/3 xl:basis-1/4 py-5">
@@ -34,10 +51,7 @@ const SchoolEventsAndExperiencesCard = () => {
           </CarouselItem>
           <CarouselItem className="md:basis-1/2 lg:basis-1/3 xl:basis-1/4 py-5">
             <EventsAndExperienceCard />
-          </CarouselItem>
-          <CarouselItem className="md:basis-1/2 lg:basis-1/3 xl:basis-1/4 py-5">
-            <EventsAndExperienceCard />
-          </CarouselItem>
+          </CarouselItem> */}
         </CarouselContent>
       </Carousel>
     </>

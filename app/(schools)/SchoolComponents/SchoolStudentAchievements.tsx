@@ -5,9 +5,10 @@ import { Button } from "@/lib/types/home";
 type Props = {
   title: string;
   btn: Button;
+  schoolCat: string;
 };
 
-const SchoolStudentAchievements = ({ title, btn }: Props) => {
+const SchoolStudentAchievements = ({ title, btn, schoolCat }: Props) => {
   return (
     <section className="py-5 md:py-10 px-4">
       <div className="max-w-[1664px] mx-auto w-full">
@@ -17,7 +18,7 @@ const SchoolStudentAchievements = ({ title, btn }: Props) => {
           </h3>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-10 xl:gap-20">
-          <StudentAchievementsGrid />
+          <StudentAchievementsGrid schoolCat={schoolCat} />
         </div>
         <div className="flex items-center justify-center my-10">
           {(btn?.buttonclass || btn?.buttonlink) && (

@@ -1,20 +1,75 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import { EmployeeCard } from "@/app/components/Cards/EmployeeCard";
 import { Button } from "@/components/ui/button";
+import { getFacultyByCat } from "@/lib/api/schools";
+import { FACULTYCARD } from "@/lib/types/schools";
 
-const AdvisoryLoop = () => {
+type Props = {
+  schoolCat: string;
+};
+
+const AdvisoryLoop = ({ schoolCat }: Props) => {
+  const [faculties, setFaculties] = useState<FACULTYCARD[]>([]);
+  const [visibleCount, setVisibleCount] = useState(8);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    const fetchFaculties = async () => {
+      setLoading(true);
+      const data = await getFacultyByCat(schoolCat);
+      setFaculties(data || []);
+      setLoading(false);
+    };
+    fetchFaculties();
+  }, [schoolCat]);
+
+  const handleLoadMore = () => {
+    setVisibleCount((prev) => prev + 4);
+  };
+
+  // ✅ Show only Advisory members
+  const advisoryFaculties = faculties.filter(
+    (faculty) => faculty.faculty_type?.toLowerCase() === "advisory"
+  );
+
+  const visibleFaculties = advisoryFaculties.slice(0, visibleCount);
+
   return (
     <>
       <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-16 px-4 pb-4 gap-5 md:gap-0">
-        <EmployeeCard />
-        <EmployeeCard />
-        <EmployeeCard />
-        <EmployeeCard />
+        {visibleFaculties.length > 0 ? (
+          visibleFaculties.map((faculty) => (
+            <div key={faculty?.id}>
+              <EmployeeCard
+                name={faculty?.faculty_name}
+                imgUrl={faculty?.faculty_img?.url}
+                qual={faculty?.faculty_qualification}
+                desg={faculty?.faculty_card_desg}
+                slug={faculty?.facultyslug}
+              />
+            </div>
+          ))
+        ) : (
+          <div className="col-span-full text-center text-gray-500 py-10">
+            No advisory members found.
+          </div>
+        )}
       </div>
-      <div className="py-10 flex justify-center">
-        <Button className="py-3.5 px-8 bg-[#cb000d] font-bold rounded-sm text-sm sm:text-base text-white leading-[1] flex items-center">
-          Load More
-        </Button>
-      </div>
+
+      {/* Load More Button */}
+      {visibleCount < advisoryFaculties.length && (
+        <div className="py-10 flex justify-center">
+          <Button
+            onClick={handleLoadMore}
+            disabled={loading}
+            className="py-3.5 px-8 bg-[#cb000d] font-bold rounded-sm text-sm sm:text-base text-white leading-[1] flex items-center"
+          >
+            {loading ? "Loading..." : "Load More"}
+          </Button>
+        </div>
+      )}
     </>
   );
 };

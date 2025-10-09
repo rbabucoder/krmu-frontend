@@ -1,8 +1,12 @@
-import { getStudentAchievementsByCategoryByPagination } from "@/lib/api/common";
+import { getSchoolStudentAchievements } from "@/lib/api/common";
 import StudentAchievementCard from "./StudentAchievementCard";
 
-const StudentAchievementsGrid = async () => {
-  const achievements = await getStudentAchievementsByCategoryByPagination("soet");
+type Props = {
+  schoolCat: string;
+};
+
+const StudentAchievementsGrid = async ({ schoolCat }: Props) => {
+  const achievements = await getSchoolStudentAchievements(schoolCat);
 
   return (
     <>
@@ -11,7 +15,8 @@ const StudentAchievementsGrid = async () => {
           <StudentAchievementCard
             key={achievement?.id}
             info={achievement?.achievementcontent}
-            achieveImg={achievement?.achivementimage}
+            achieveImgUrl={achievement?.achivementimage[0]?.url}
+            imgALTText={achievement?.achivementimage[0]?.alternativeText}
           />
         ))}
     </>

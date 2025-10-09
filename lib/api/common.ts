@@ -236,19 +236,18 @@ export async function getAdvisoryBoard(): Promise<
   return json.data;
 }
 
-export async function getStudentAchievementsByCategoryByPagination(
-  cat: string,
-  num_of_data: number = 3
+export async function getSchoolStudentAchievements(
+  cat: string
 ): Promise<StudentAchievementResponse["data"]> {
   const res = await fetch(
-    `${FETCH_STRAPI_URL}/api/student-achievements?pagination[page]=1&pagination[pageSize]=${num_of_data}&filters[school_category][slug][$eq]=${cat}&populate=*`,
+    `${FETCH_STRAPI_URL}/api/student-achievements?sort[0]=publishedAt:asc&filters[school_categories][name][$eq]=${cat}&populate[achivementimage]=true&pagination[pageSize]=3&pagination[page]=1&status=published&locale[0]=en`,
     {
       next: {
         revalidate: 60,
       },
     }
   );
-  if (!res.ok) throw new Error("Failed to fetch Meta info Data");
+  if (!res.ok) throw new Error("Failed to fetch Student Achievements Data");
   const json: StudentAchievementResponse = await res.json();
   return json.data;
 }

@@ -1,3 +1,4 @@
+import Popup from "@/app/components/Popup";
 import { Button } from "@/lib/types/home";
 import Link from "next/link";
 type Props = {
@@ -18,15 +19,28 @@ const SchoolExcitedAlready = ({ heading, desc, excbtns }: Props) => {
           </p>
           {excbtns &&
             excbtns.map((btn) => {
-              return (
-                <Link
-                  key={btn?.id}
-                  href={btn?.buttonlink || "#"}
-                  className={`py-3.5 px-8 bg-[#cb000d] font-bold text-sm sm:text-base rounded-sm inline-block ${btn?.buttonclass}`}
-                >
-                  {btn?.buttontext}
-                </Link>
-              );
+              if (btn?.buttonclass === "progPopup") {
+                return (
+                  <Popup
+                    key={btn?.id}
+                    buttonText={btn.buttontext || "Apply Now"}
+                    buttonClass={`py-3.5 px-8 bg-[#cb000d] font-bold text-sm sm:text-base rounded-sm inline-block cursor-pointer ${btn.buttonclass}`}
+                    buttonIcon=""
+                  >
+                    <p>This is the content inside the popup.</p>
+                  </Popup>
+                );
+              } else {
+                return (
+                  <Link
+                    key={btn?.id}
+                    href={btn?.buttonlink || "#"}
+                    className={`py-3.5 px-8 bg-[#cb000d] font-bold text-sm sm:text-base rounded-sm inline-block cursor-pointer ${btn.buttonclass}`}
+                  >
+                    {btn.buttontext}
+                  </Link>
+                );
+              }
             })}
         </div>
         <div className="w-full xl:w-1/3"></div>
