@@ -75,7 +75,7 @@ export async function getSchoolPage(): Promise<SchoolsResponse["data"]> {
 
 export async function getEventsAndExperiencesBySchoolCat(cat: string = "SOET") {
   const res = await fetch(
-    `${FETCH_STRAPI_URL}/api/news-and-events?sort[0]=title:asc&filters[school_categories][name][$eq]=${cat}&fields[0]=slug&fields[1]=title&fields[2]=content&populate[newsmedia]=true&pagination[pageSize]=40&pagination[page]=1`,
+    `${FETCH_STRAPI_URL}/api/news-and-events?sort[0]=title:desc&filters[school_categories][name][$eq]=${cat}&fields[0]=slug&fields[1]=title&fields[2]=content&populate[newsmedia]=true&pagination[pageSize]=40&pagination[page]=1`,
     {
       next: {
         revalidate: 60,
