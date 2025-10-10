@@ -5,10 +5,10 @@ import { EmployeeCard } from "@/app/components/Cards/EmployeeCard";
 import { Button } from "@/components/ui/button";
 import { getFacultyByCat } from "@/lib/api/schools";
 import { FACULTYCARD } from "@/lib/types/schools";
-
+ 
 type Props = {
   schoolCat: string;
-};
+}; 
 
 const AdvisoryLoop = ({ schoolCat }: Props) => {
   const [faculties, setFaculties] = useState<FACULTYCARD[]>([]);

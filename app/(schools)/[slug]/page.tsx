@@ -46,6 +46,12 @@ export default async function Page({ params }: Props) {
     schoolCat
   );
 
+  console.log('school info', school?.school_category?.name);
+
+  const degreeName = school?.degree?.name;
+  const schoolCategoryName = school?.school_category?.name;
+
+
   return (
     <>
       <SchoolHero
@@ -73,7 +79,7 @@ export default async function Page({ params }: Props) {
         title={school?.alumnititle}
         alumniLogos={school.alumnilogo}
       />
-      <SchoolProgrammeOffered />
+      <SchoolProgrammeOffered degName={degreeName} schoolCategoryName={schoolCategoryName} />
       <SchoolExcitedAlready
         heading={school?.excitedtitle}
         desc={school?.exciteddescription}

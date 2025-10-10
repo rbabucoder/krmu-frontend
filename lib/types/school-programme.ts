@@ -218,6 +218,27 @@ export interface Programme {
   financialassistance: FinancialAssistance;
   toc?: TOC;
   ourlocation: OurLocation;
+  degree: ProgrammeDegreeCard;
+  criteria: CriteriaType;
+}
+
+export interface CriteriaType {
+  id: number;
+  eligibility_criteria: string;
+  Duration: string;
+  semester_i: string;
+  semester_ii: string;
+  programme_fee_per_year: string;
+  eligibility_utm_links: string;
+}
+export interface ProgrammeDegreeCard {
+  id: number;
+  documentId: string;
+  name: string;
+  slug: string;
+  createdAt: string;
+  updatedAt: string;
+  publishedAt: string;
 }
 
 export interface SchoolCategory {
@@ -259,4 +280,44 @@ export interface Pagination {
   pageSize: number;
   pageCount: number;
   total: number;
+}
+
+////////////////////// school Programme card info
+
+export interface SCHOOLPROGRAMMECARDINFORESPONSE {
+  data: ProgrammeCardData[];
+  meta: {
+    pagination: {
+      page: number;
+      pageSize: number;
+      pageCount: number;
+      total: number;
+    };
+  };
+}
+
+export interface ProgrammeCardData {
+  id: number;
+  documentId: string;
+  title: string;
+  programmeslug: string;
+  criteria: Criteria;
+}
+
+export interface Criteria {
+  id: number;
+  Duration: string;
+  eligibility_criteria: string;
+  semester_i: string;
+  semester_ii: string;
+  programme_fee_per_year: string;
+  eligibility_utm_links: string;
+  degree: ProgrammeDegree;
+}
+
+export interface ProgrammeDegree {
+  id: number;
+  documentId: string;
+  name: string;
+  slug: string;
 }

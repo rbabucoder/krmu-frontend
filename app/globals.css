@@ -15,6 +15,16 @@
 
 /* Custom utility class */
 @layer utilities {
+
+
+  .activehighlightprog{
+    background: #fff;
+    color: #000;
+  }
+
+
+
+
   .deanhonortable .deanhonortable-container table {
     width: 100%;
     margin: 10px 0px 15px;

@@ -54,6 +54,16 @@ export interface SchoolTestimonials {
   userimg: StrapiMedia;
 }
 
+export interface SchoolDegree {
+  id: number;
+  documentId: string;
+  name: string;
+  slug: string;
+  createdAt: string;
+  updatedAt: string;
+  publishedAt: string;
+}
+
 export interface School {
   id: number;
   documentId: string;
@@ -112,6 +122,7 @@ export interface School {
   studentachievementsbtn: Button;
   schoolherobanner: SchoolHeroBanner;
   showdeaninfo: boolean;
+  degree: SchoolDegree;
 }
 
 export interface SchoolsResponse {
@@ -175,16 +186,6 @@ export interface FacultyResponse {
   };
 }
 
-
-
-
-
-
-
-
-
-
-
 ////////////////////////////////////// Internation Collab
 // Text node
 export interface IntCollabTextNode {
@@ -212,7 +213,9 @@ export interface IntCollabListBlock {
 }
 
 // Union type for any block
-export type IntCollabRichTextBlock = IntCollabParagraphBlock | IntCollabListBlock;
+export type IntCollabRichTextBlock =
+  | IntCollabParagraphBlock
+  | IntCollabListBlock;
 
 // Full content array type
 export type IntCollabRichTextContent = IntCollabRichTextBlock[];

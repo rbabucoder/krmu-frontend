@@ -1,5 +1,8 @@
 import { FETCH_STRAPI_URL } from "@/app/constant";
-import { SchoolProgrammeResponse } from "../types/school-programme";
+import {
+  SCHOOLPROGRAMMECARDINFORESPONSE,
+  SchoolProgrammeResponse,
+} from "../types/school-programme";
 
 export async function getSchoolProgrammeData(
   slug?: string
@@ -86,5 +89,72 @@ export async function getSchoolProgrammeData(
 //       }
 //     },
 //     ourlocation: { populate: '*' }
+//   }
+// }
+
+export async function getSchoolProgrammeInfoByDegree(
+  deg: string = "Undergraduate Programmes",
+  schoolCatName: string
+): Promise<SCHOOLPROGRAMMECARDINFORESPONSE["data"]> {
+  const res = await fetch(
+    // `${FETCH_STRAPI_URL}/api/school-programmes?filters[degrees][name][$eq]=${deg}&filters[school_categories][name][$eq]=${schoolCatName}&fields[0]=title&fields[1]=programmeslug&populate[criteria][fields][0]=Duration&populate[criteria][fields][1]=eligibility_criteria&populate[criteria][fields][2]=semester_i&populate[criteria][fields][3]=semester_ii&populate[criteria][fields][4]=programme_fee_per_year&populate[criteria][fields][5]=eligibility_utm_links&populate[criteria][populate][degree][fields][0]=name&populate[criteria][populate][degree][fields][1]=slug&pagination[pageSize]=50&pagination[page]=1&sort[0]=id:asc`,
+    `${FETCH_STRAPI_URL}/api/school-programmes?filters[degree][name][$eq]=${deg}&filters[school_category][name][$eq]=${schoolCatName}&fields[0]=title&fields[1]=programmeslug&populate[criteria][fields][0]=Duration&populate[criteria][fields][1]=eligibility_criteria&populate[criteria][fields][2]=semester_i&populate[criteria][fields][3]=semester_ii&populate[criteria][fields][4]=programme_fee_per_year&populate[criteria][fields][5]=eligibility_utm_links&pagination[page]=1&pagination[pageSize]=50`,
+    {
+      next: {
+        revalidate: 60,
+      },
+    }
+  );
+  if (!res.ok) throw new Error("Failed to school Programme Info");
+  const json: SCHOOLPROGRAMMECARDINFORESPONSE = await res.json();
+  return json.data;
+}
+
+// {
+//   filters: {
+//     degrees: {
+//       name: {
+//         $eq: "Undergraduate Programmes"
+//       }
+//     }
+//   },
+//   fields: ["title", "programmeslug"],
+//   populate: {
+//     criteria: {
+//       fields: ["Duration", "eligibility_criteria", 'semester_i', 'semester_ii', 'programme_fee_per_year', 'eligibility_utm_links'],
+//       populate: {
+//        degree: {
+//          fields: ['name','slug' ]
+//        }
+//        }
+
+//     }
+//   },
+//   pagination: {
+//     pageSize: 50,
+//     page: 1
+//   },
+//   sort: ["id:asc"]
+// }
+
+// {
+//   filters: {
+//   degree: {
+//     name: { $eq: "Undergraduate Programmes" }
+//   },
+//  school_category: {
+//   name: { $eq: "SOET" }
+//  }
+// },
+//  fields: ["title", "programmeslug"],
+//  populate: {
+//    criteria: {
+//       fields: ["Duration", "eligibility_criteria", 'semester_i', 'semester_ii', 'programme_fee_per_year', 'eligibility_utm_links'],
+     
+//    }
+//  },
+//   pagination: {
+//     page: 1,
+//     pageSize: 50  // or any number you need
 //   }
 // }
