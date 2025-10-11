@@ -24,7 +24,7 @@ const IndustryCollabCarousel = ({ collabData }: Props) => {
       }}
       plugins={[
         Autoplay({
-          delay: 1000,
+          delay: 5000,
         }),
       ]}
     >
@@ -53,13 +53,13 @@ const IndustryCollabCarousel = ({ collabData }: Props) => {
         </CarouselItem> */}
       </CarouselContent>
       <CarouselPrevious
-        className="bg-[#2c3a4f] text-[#bfc4ca] hover:bg-[#051630] hover:text-white cursor-pointer buttonPrevNextSize w-[60px] h-[60px]
-         top-[115%] left-[20%] sm:left-[30%] xl:top-[80%] xl:left-[-66%]"
+        className="bg-[#2c3a4f] text-[#bfc4ca] hover:bg-[#051630] hover:text-white cursor-pointer buttonPrevNextSize w-[60px] h-[60px]"
       />
-      <CarouselNext
+      <CarouselNext className="bg-[#2c3a4f] text-[#bfc4ca] hover:bg-[#051630] hover:text-white cursor-pointer buttonPrevNextSize w-[60px] h-[60px]" />
+      {/* <CarouselNext
         className="bg-[#2c3a4f] text-[#bfc4ca] hover:bg-[#051630] hover:text-white cursor-pointer buttonPrevNextSize w-[60px] h-[60px] 
          top-[115%] right-[20%] sm:right-[30%] xl:top-[80%] xl:right-[145%]"
-      />
+      /> */}
     </Carousel>
   );
 };
