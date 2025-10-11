@@ -22,7 +22,7 @@
     color: #000;
   }
 
-  .anchor_blue a{
+  .anchor_blue a:hover{
     color: #0060aa;
   }
 
