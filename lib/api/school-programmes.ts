@@ -95,10 +95,10 @@ export async function getSchoolProgrammeData(
 export async function getSchoolProgrammeInfoByDegree(
   deg: string = "Undergraduate Programmes",
   schoolCatName: string
-): Promise<SCHOOLPROGRAMMECARDINFORESPONSE["data"]> {
+): Promise<SCHOOLPROGRAMMECARDINFORESPONSE["data"]> { 
   const res = await fetch(
     // `${FETCH_STRAPI_URL}/api/school-programmes?filters[degrees][name][$eq]=${deg}&filters[school_categories][name][$eq]=${schoolCatName}&fields[0]=title&fields[1]=programmeslug&populate[criteria][fields][0]=Duration&populate[criteria][fields][1]=eligibility_criteria&populate[criteria][fields][2]=semester_i&populate[criteria][fields][3]=semester_ii&populate[criteria][fields][4]=programme_fee_per_year&populate[criteria][fields][5]=eligibility_utm_links&populate[criteria][populate][degree][fields][0]=name&populate[criteria][populate][degree][fields][1]=slug&pagination[pageSize]=50&pagination[page]=1&sort[0]=id:asc`,
-    `${FETCH_STRAPI_URL}/api/school-programmes?filters[degree][name][$eq]=${deg}&filters[school_category][name][$eq]=${schoolCatName}&fields[0]=title&fields[1]=programmeslug&populate[criteria][fields][0]=Duration&populate[criteria][fields][1]=eligibility_criteria&populate[criteria][fields][2]=semester_i&populate[criteria][fields][3]=semester_ii&populate[criteria][fields][4]=programme_fee_per_year&populate[criteria][fields][5]=eligibility_utm_links&pagination[page]=1&pagination[pageSize]=50`,
+    `${FETCH_STRAPI_URL}/api/school-programmes?sort[0]=order_num:asc&filters[degree][name][$eq]=${deg}&filters[school_category][name][$eq]=${schoolCatName}&fields[0]=title&fields[1]=programmeslug&populate[criteria][fields][0]=Duration&populate[criteria][fields][1]=eligibility_criteria&populate[criteria][fields][2]=semester_i&populate[criteria][fields][3]=semester_ii&populate[criteria][fields][4]=programme_fee_per_year&populate[criteria][fields][5]=eligibility_utm_links&pagination[page]=1&pagination[pageSize]=50`,
     {
       next: {
         revalidate: 60,
