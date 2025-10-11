@@ -69,7 +69,7 @@ const InternationalCollabCards = ({
                       }
                     />
                   </div>
-                  <div>
+                  <div className="anchor_blue">
                     <BlocksRenderer
                       content={item?.int_collab_full_width_content}
                     />
