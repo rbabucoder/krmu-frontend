@@ -1,32 +1,29 @@
+import { STRAPI_URL } from "@/app/constant";
+import { StrapiMedia } from "@/lib/types/common";
+import { CardLISTITEM } from "@/lib/types/schools";
 import Image from "next/image";
 
-const IndustryCollabCard = () => {
+type Props = {
+  cardImg: StrapiMedia;
+  cardDesc: string;
+  cardLists: CardLISTITEM[];
+};
+
+const IndustryCollabCard = ({ cardImg, cardDesc, cardLists }: Props) => {
   return (
     <div className="bg-[#172a45] p-5 text-white ic_list rounded-[20px]">
       <Image
-        src="/schools/imaginxp.webp"
+        src={`${STRAPI_URL}${cardImg?.url}`}
         width={163}
         height={128}
-        alt="ImaginXp"
+        alt={cardImg?.alternativeText || ""}
       />
-      <p className="my-5">
-        ImaginXP is a leading Higher EdTech organisation helping students with
-        the execution of methodologies and implementation of new evolving
-        innovative techniques.{" "}
-      </p>
+      <p className="my-5">{cardDesc}</p>
       <ul>
-        <li>
-          {`Utilize IBM's tools and techniques for comprehensive data analysis,
-          enabling informed decision-making.`}
-        </li>
-        <li>
-          {` Gain practical experience working with enterprise software in the
-          university's IBM LAB, preparing for real-world scenarios.`}
-        </li>
-        <li>
-          {`Engage in hands-on sessions and real-time case studies, honing
-          practical skills under industry experts' guidance.`}
-        </li>
+        {cardLists &&
+          cardLists?.map((list) => {
+            return <li key={list?.id}>{list?.listtext}</li>;
+          })}
       </ul>
     </div>
   );

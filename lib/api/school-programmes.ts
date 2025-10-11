@@ -150,7 +150,7 @@ export async function getSchoolProgrammeInfoByDegree(
 //  populate: {
 //    criteria: {
 //       fields: ["Duration", "eligibility_criteria", 'semester_i', 'semester_ii', 'programme_fee_per_year', 'eligibility_utm_links'],
-     
+
 //    }
 //  },
 //   pagination: {

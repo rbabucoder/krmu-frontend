@@ -9,7 +9,13 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import IndustryCollabCard from "./IndustryCollabCard";
-const IndustryCollabCarousel = () => {
+import { CollabCards } from "@/lib/types/schools";
+
+type Props = {
+  collabData: CollabCards[];
+};
+
+const IndustryCollabCarousel = ({ collabData }: Props) => {
   return (
     <Carousel
       opts={{
@@ -23,7 +29,20 @@ const IndustryCollabCarousel = () => {
       ]}
     >
       <CarouselContent>
-        <CarouselItem className="md:basis-1/2">
+        {collabData &&
+          collabData?.map((card) => {
+            return (
+              <CarouselItem key={card?.id} className="md:basis-1/2">
+                <IndustryCollabCard
+                  cardImg={card?.cardimg}
+                  cardDesc={card?.card_desc}
+                  cardLists={card?.card_list_item}
+                />
+              </CarouselItem>
+            );
+          })}
+
+        {/* <CarouselItem className="md:basis-1/2">
           <IndustryCollabCard />
         </CarouselItem>
         <CarouselItem className="md:basis-1/2">
@@ -31,10 +50,7 @@ const IndustryCollabCarousel = () => {
         </CarouselItem>
         <CarouselItem className="md:basis-1/2">
           <IndustryCollabCard />
-        </CarouselItem>
-        <CarouselItem className="md:basis-1/2">
-          <IndustryCollabCard />
-        </CarouselItem>
+        </CarouselItem> */}
       </CarouselContent>
       <CarouselPrevious
         className="bg-[#2c3a4f] text-[#bfc4ca] hover:bg-[#051630] hover:text-white cursor-pointer buttonPrevNextSize w-[60px] h-[60px]

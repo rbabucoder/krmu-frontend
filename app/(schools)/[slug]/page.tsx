@@ -46,11 +46,8 @@ export default async function Page({ params }: Props) {
     schoolCat
   );
 
-  console.log('school info', school?.school_category?.name);
-
   const degreeName = school?.degree?.name;
   const schoolCategoryName = school?.school_category?.name;
-
 
   return (
     <>
@@ -79,7 +76,10 @@ export default async function Page({ params }: Props) {
         title={school?.alumnititle}
         alumniLogos={school.alumnilogo}
       />
-      <SchoolProgrammeOffered degName={degreeName} schoolCategoryName={schoolCategoryName} />
+      <SchoolProgrammeOffered
+        degName={degreeName}
+        schoolCategoryName={schoolCategoryName}
+      />
       <SchoolExcitedAlready
         heading={school?.excitedtitle}
         desc={school?.exciteddescription}

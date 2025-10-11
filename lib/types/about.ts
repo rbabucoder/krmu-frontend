@@ -58,6 +58,10 @@ export interface ListBlock {
   children: ListItemBlock[];
 }
 
+
+// --- Union Type for All Possible Content Blocks ---
+export type CardBlock = ParagraphBlock | ListBlock;
+
 // --------------------
 // VisionMission Section
 // --------------------

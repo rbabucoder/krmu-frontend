@@ -7,7 +7,7 @@ type Props = {
   collabCards: CollabCards[];
 };
 
-const SchoolIndustryCollaboration = ({ title }: Props) => {
+const SchoolIndustryCollaboration = ({ title, collabCards }: Props) => {
   return (
     <section className="bg-[#051630] pt-8 pb-40 xl:py-8 px-4">
       <div className="max-w-[1664px] mx-auto w-full xl:flex">
@@ -17,7 +17,7 @@ const SchoolIndustryCollaboration = ({ title }: Props) => {
           </h3>
         </div>
         <div className="w-full xl:w-3/5">
-          <IndustryCollabCarousel />
+          <IndustryCollabCarousel collabData={collabCards} />
         </div>
       </div>
     </section>

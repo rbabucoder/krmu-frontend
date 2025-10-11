@@ -1,4 +1,4 @@
-import { ListItemBlock, ParagraphBlock } from "./about";
+import { ParagraphBlock } from "./about";
 import {
   ButtonType,
   CardWithImage,
@@ -30,10 +30,14 @@ export interface SchoolComps {
 
 export interface CollabCards {
   id: number;
-  cardContent: ParagraphBlock[] | ListItemBlock[];
+  card_list_item: CardLISTITEM[];
   cardimg: StrapiMedia;
+  card_desc: string;
 }
-
+export interface CardLISTITEM {
+  id: number;
+  listtext: string;
+}
 export interface ListItem {
   id: number;
   listtext: string;
@@ -219,3 +223,27 @@ export type IntCollabRichTextBlock =
 
 // Full content array type
 export type IntCollabRichTextContent = IntCollabRichTextBlock[];
+
+//////////////////////////////////////////////
+
+export type SchoolPageCollabCard = {
+  id: number;
+  cardcontent: SchoolPageCardContent[];
+  cardimg: StrapiMedia;
+};
+
+export type SchoolPageCardContent = {
+  type: "paragraph" | "list";
+  format?: "unordered" | "ordered"; // applicable only for lists
+  children: SchoolPageCardChild[];
+};
+
+export type SchoolPageCardChild = {
+  type: "list-item" | "text";
+  text?: string;
+  children?: SchoolPageCardChild[]; // for nested items
+};
+
+// export type SchoolPageCollabCardsResponse = {
+//   collabcards: SchoolPageCollabCard[];
+// };
