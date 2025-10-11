@@ -38,7 +38,7 @@ const InternationalCollabCards = ({
                       className="h-[130px] w-fit object-contain"
                     />
                   </div>
-                  <div>
+                  <div className="anchor_blue">
                     <BlocksRenderer content={item?.int_collab_card_content} />
                   </div>
                 </div>
