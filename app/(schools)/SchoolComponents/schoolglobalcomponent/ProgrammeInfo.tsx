@@ -55,26 +55,29 @@ const ProgrammeInfo = ({ catName }: Props) => {
 
   const handleDegreeChange = (deg: string) => {
     setActiveDegree(deg);
-    setHoverProgramId(null);
     const loaded = programs[deg];
     if (loaded && loaded.length > 0) {
       setActiveProgramId(loaded[0].id);
+      setHoverProgramId(null);
     } else {
       setActiveProgramId(null);
+      setHoverProgramId(null);
     }
   };
 
   const handleProgramClick = (progId: number) => {
     setActiveProgramId(progId);
+    setHoverProgramId(progId);
   };
 
   const handleMouseEnter = (progId: number) => {
     setHoverProgramId(progId);
   };
 
-  const handleMouseLeave = () => {
-    setHoverProgramId(null);
-  };
+  // ✅ Removed handleMouseLeave — no longer needed
+  // const handleMouseLeave = () => {
+  //   setHoverProgramId(null);
+  // };
 
   // Get current active or hovered programme details
   const currentProgram =
@@ -132,9 +135,7 @@ const ProgrammeInfo = ({ catName }: Props) => {
                       key={prog.id}
                       onClick={() => handleProgramClick(prog.id)}
                       onMouseEnter={() => handleMouseEnter(prog.id)}
-                      onMouseLeave={handleMouseLeave}
                       onFocus={() => handleMouseEnter(prog.id)}
-                      onBlur={handleMouseLeave}
                       className={`lg:w-1/2 rounded-4xl h-full font-semibold w-full cursor-pointer p-5 sm:p-[30px] transition-colors ${
                         isActive
                           ? "activehighlightprog"

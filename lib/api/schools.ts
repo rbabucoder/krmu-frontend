@@ -111,7 +111,7 @@ export async function getFacultyByCat(
   cat: string = "SOET"
 ): Promise<FacultyResponse["data"]> {
   const res = await fetch(
-    `${FETCH_STRAPI_URL}/api/faculties?sort[0]=order_num:asc&filters[school_categories][name][$eq]=${cat}&populate[faculty_img]=true&fields[0]=faculty_name&fields[1]=facultyslug&fields[2]=faculty_card_desg&fields[3]=faculty_qualification&fields[4]=faculty_type&pagination[pageSize]=40&pagination[page]=1`,
+    `${FETCH_STRAPI_URL}/api/faculties?sort[0]=order_num:asc&filters[school_categories][name][$eq]=${cat}&populate[faculty_img]=true&fields[0]=faculty_name&fields[1]=facultyslug&fields[2]=faculty_card_desg&fields[3]=faculty_qualification&fields[4]=faculty_type&pagination[pageSize]=60&pagination[page]=1`,
     {
       next: {
         revalidate: 60,
