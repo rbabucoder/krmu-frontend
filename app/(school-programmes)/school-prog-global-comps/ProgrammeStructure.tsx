@@ -163,17 +163,38 @@ const ProgrammeStructure = ({ programStruct, currbtn }: Props) => {
                               ))}
                             </div>
                             <div className="flex items-center justify-end mt-4">
-                              {sem.pdfbtns?.map((btn) => (
-                                <Link
-                                  key={btn.id}
-                                  href={btn.buttonlink || "#"}
-                                  className={`text-xs sm:text-xl p-5 font-semibold text-center border border-[#d5d5d5] text-[#dc2e25] bg-[#f0f0f0] rounded-[20px] inline-block ${
-                                    btn.buttonclass || ""
-                                  }`}
-                                >
-                                  {btn.buttontext}
-                                </Link>
-                              ))}
+                              {sem.pdfbtns?.map((btn) => {
+                                if (btn?.buttonclass === "progPopup") {
+                                  return (
+                                    <Popup
+                                      key={btn.id}
+                                      buttonText={btn.buttontext}
+                                      buttonClass={`text-xs sm:text-xl p-5 font-semibold text-center border border-[#d5d5d5] text-[#dc2e25] bg-[#f0f0f0] rounded-[20px] inline-block ${
+                                        btn.buttonclass || ""
+                                      }`}
+                                      buttonIcon=""
+                                    >
+                                      <div
+                                        dangerouslySetInnerHTML={{
+                                          __html: sem?.semFormField || "",
+                                        }}
+                                      />
+                                    </Popup>
+                                  );
+                                } else {
+                                  return (
+                                    <Link
+                                      key={btn.id}
+                                      href={btn.buttonlink || "#"}
+                                      className={`text-xs sm:text-xl p-5 font-semibold text-center border border-[#d5d5d5] text-[#dc2e25] bg-[#f0f0f0] rounded-[20px] inline-block ${
+                                        btn.buttonclass || ""
+                                      }`}
+                                    >
+                                      {btn.buttontext}
+                                    </Link>
+                                  );
+                                }
+                              })}
                             </div>
                           </TabsContent>
                         );

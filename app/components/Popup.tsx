@@ -20,15 +20,19 @@ export default function Popup({
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div>
+    <>
       <button onClick={() => setIsOpen(true)} className={buttonClass}>
         {buttonText} {buttonIcon}
       </button>
 
       {isOpen && (
         <div className="fixed inset-0 bg-opacity-50 flex justify-center items-center z-50 text-black">
-          <div className={`bg-[#ddd] p-5 max-w-[500px] w-full z-10 shadow-lg relative rounded-[10px]`}>
-            <div className={`flex mb-2.5 text-[${formBodyTextColor || '#000'}]`}>
+          <div
+            className={`bg-[#ddd] p-5 max-w-[500px] w-full z-10 shadow-lg relative rounded-[10px]`}
+          >
+            <div
+              className={`flex mb-2.5 text-[${formBodyTextColor || "#000"}]`}
+            >
               <div className="w-4/5">
                 <h4 className="text-xl text-center font-bold">Apply Now</h4>
               </div>
@@ -45,6 +49,6 @@ export default function Popup({
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 }

@@ -1,3 +1,4 @@
+import Popup from "@/app/components/Popup";
 import { STRAPI_URL } from "@/app/constant";
 import { ButtonType, StrapiMedia } from "@/lib/types/common";
 import { CareerCard } from "@/lib/types/school-programme";
@@ -64,12 +65,27 @@ const CareerProspects = ({
           </div>
         </div>
         <div className="max-w-[1320px] mx-auto w-full flex justify-center mt-4">
-          {(btn?.buttonclass || btn?.buttonlink) && (
-            <Link
-              href={btn?.buttonlink}
-              className={`text-white bg-[#db2a1a] p-[15px] flex items-center justify-around max-w-3xs w-full rounded-lg font-semibold ${btn?.buttonclass}`}
+          {btn?.buttonclass === "progPopup" ? (
+            <Popup
+              buttonText={btn.buttontext}
+              buttonClass={`text-white bg-[#db2a1a] p-[15px] flex items-center justify-around max-w-[250px] w-full rounded-lg font-semibold ${btn?.buttonclass}`}
+              buttonIcon={<ArrowRight />}
             >
-              <span>{btn?.buttontext}</span> <ArrowRight />
+              {/* If you want to render HTML safely, uncomment this */}
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: btn?.careerFormField || "",
+                }}
+              />
+             
+            </Popup>
+          ) : (
+            <Link
+              href={btn?.buttonlink || "#"}
+              className={`text-white bg-[#db2a1a] p-[15px] flex items-center justify-around max-w-[250px] w-full rounded-lg font-semibold ${btn?.buttonclass}`}
+            >
+              <span>{btn?.buttontext || "Learn More"}</span>
+              <ArrowRight />
             </Link>
           )}
         </div>

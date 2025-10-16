@@ -43,6 +43,7 @@ const page = async ({ params }: Props) => {
   if (!singleSchoolProgramme && !singlePHDProgramme) {
     return notFound();
   }
+  console.log('singleSchoolProgramme', singleSchoolProgramme);
 
   const title = singleSchoolProgramme?.title;
   const highlightTitle = singleSchoolProgramme?.highlightitle;
@@ -108,6 +109,7 @@ const page = async ({ params }: Props) => {
             deskimg={admissionProcessSection?.desktopadmissionprocessimg}
             admissionCards={admissionProcessSection?.admissionprocesscard}
             admisbtn={admissionProcessSection?.admissionbtn}
+            admFormField={admissionProcessSection?.admFormField}
           />
         )}
         {curriculumSection && (

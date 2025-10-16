@@ -13,6 +13,7 @@ type Props = {
   deskimg: StrapiMedia;
   admissionCards: AdmisionProcessCard[];
   admisbtn: ButtonType;
+  admFormField: string;
   // admissioncards: AdmissionProcessCard[];
 };
 
@@ -23,6 +24,7 @@ const AdmissionProcessComp = ({
   deskimg,
   admissionCards,
   admisbtn,
+  admFormField,
 }: Props) => {
   return (
     <section className="prog-global-padding bg-[#f9f9f9]">
@@ -105,26 +107,30 @@ const AdmissionProcessComp = ({
           </Link>
         )} */}
         {admisbtn && (
-          <div>
+          <>
             {admisbtn.buttonclass === "progPopup" ? (
               <Popup
                 buttonText={admisbtn.buttontext || "Apply Now"}
-                buttonClass={`${admisbtn?.buttonclass} text-white bg-[#db2a1a] p-[15px] flex items-center justify-around w-3xs flex text-center rounded-lg font-semibold mt-10`}
+                buttonClass={`${admisbtn?.buttonclass} text-white cursor-pointer bg-[#db2a1a] p-[15px] flex items-center max-w-[250px] w-full justify-around text-center rounded-lg font-semibold mt-10`}
                 buttonIcon={<ArrowRight />}
               >
-                <p>This is the content inside the popup.</p>
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: admFormField,
+                  }}
+                />
               </Popup>
             ) : admisbtn.buttonlink ? (
               <Link
                 href={admisbtn.buttonlink}
                 className={`${
                   admisbtn.buttonclass || ""
-                } text-white bg-[#db2a1a] p-[15px] flex items-center justify-around max-w-3xs w-full rounded-lg font-semibold mt-10`}
+                } text-white cursor-pointer bg-[#db2a1a] p-[15px] flex items-center max-w-[250px] w-full justify-around text-center rounded-lg font-semibold mt-10`}
               >
                 <span>{admisbtn.buttontext}</span> <ArrowRight />
               </Link>
             ) : null}
-          </div>
+          </>
         )}
       </div>
     </section>

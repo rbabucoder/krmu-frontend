@@ -9,6 +9,7 @@ export interface ButtonType {
   buttontext: string;
   buttonlink: string;
   buttonclass: string;
+  careerFormField: string;
 }
 export interface BREADCRUMB {
   id: number;

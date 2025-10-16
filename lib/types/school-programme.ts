@@ -61,6 +61,7 @@ export interface AdmissionProcess {
   admissionprocesscard: AdmisionProcessCard[];
   desktopadmissionprocessimg: StrapiMedia;
   admissionbtn: ButtonType;
+  admFormField: string;
 }
 export interface Subject {
   id: number;
@@ -78,6 +79,7 @@ export interface Semester {
   semestername: string;
   subjects: Subject[];
   pdfbtns?: ButtonType[];
+  semFormField: string;
 }
 
 export interface Year {
