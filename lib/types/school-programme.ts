@@ -62,6 +62,7 @@ export interface AdmissionProcess {
   desktopadmissionprocessimg: StrapiMedia;
   admissionbtn: ButtonType;
   admFormField: string;
+  admissionFormId: string;
 }
 export interface Subject {
   id: number;
@@ -136,6 +137,7 @@ export interface Career {
   careerimg: StrapiMedia;
   careerbtn: ButtonType;
   careercards: CareerCard[];
+  careerFormId: string;
 }
 
 export interface DreamCareer {
@@ -222,6 +224,7 @@ export interface Programme {
   ourlocation: OurLocation;
   degree: ProgrammeDegreeCard;
   criteria: CriteriaType;
+  formId: string;
 }
 
 export interface CriteriaType {
@@ -263,6 +266,7 @@ export interface HeroSection {
   imgvideo: string;
   videofield: string;
   formField: string;
+  formId: string;
 }
 
 export interface ProgrammeEligibility {

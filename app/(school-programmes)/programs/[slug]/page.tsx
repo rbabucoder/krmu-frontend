@@ -28,6 +28,8 @@ const page = async ({ params }: Props) => {
   const allSchoolProgrammeData = await getSchoolProgrammeData(slug);
   const allSinglePHDProgramme = await getPHDProgramme(slug);
 
+  console.log('allSchoolProgrammeData', allSchoolProgrammeData);
+
   const singleSchoolProgramme = allSchoolProgrammeData.find(
     (programme) => programme.programmeslug === slug
   );
@@ -43,7 +45,6 @@ const page = async ({ params }: Props) => {
   if (!singleSchoolProgramme && !singlePHDProgramme) {
     return notFound();
   }
-  console.log('singleSchoolProgramme', singleSchoolProgramme);
 
   const title = singleSchoolProgramme?.title;
   const highlightTitle = singleSchoolProgramme?.highlightitle;
@@ -75,6 +76,7 @@ const page = async ({ params }: Props) => {
             title={title || ""}
             highlightitle={highlightTitle || ""}
             heroSection={heroSection}
+            formId={heroSection?.formId}
           />
         )}
         {eligibilitySection && (
@@ -109,7 +111,7 @@ const page = async ({ params }: Props) => {
             deskimg={admissionProcessSection?.desktopadmissionprocessimg}
             admissionCards={admissionProcessSection?.admissionprocesscard}
             admisbtn={admissionProcessSection?.admissionbtn}
-            admFormField={admissionProcessSection?.admFormField}
+            formId={admissionProcessSection?.admissionFormId}
           />
         )}
         {curriculumSection && (
@@ -147,6 +149,7 @@ const page = async ({ params }: Props) => {
             btn={careerProspectsSection?.careerbtn}
             careerimg={careerProspectsSection?.careerimg}
             careercards={careerProspectsSection?.careercards}
+            careerFormId={careerProspectsSection?.careerFormId}
           />
         )}
         {dreamcareerSection && (
