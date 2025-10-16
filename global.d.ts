@@ -1,8 +1,7 @@
-// global.d.ts
 export {};
 
 declare global {
   interface Window {
-    NpfWidgetsInit: any;
+    NpfWidgetsInit?: (options: unknown) => void;
   }
 }

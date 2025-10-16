@@ -21,22 +21,21 @@ const HeroBanner = ({ title, highlightitle, heroSection, formId }: Props) => {
   useEffect(() => {
     if (!formId || !btnRef.current) return;
 
-    loadNpfScript()
-      .then(() => {
-        window.NpfWidgetsInit({
-          widgetId: formId,
-          baseurl: "widgets.nopaperforms.com",
-          formTitle: heroSection?.herobtn?.buttontext || "Apply Now",
-          titleColor: "#FF0033",
-          backgroundColor: "#ddd",
-          iframeHeight: "500px",
-          buttonTextColor: "#FFF",
-          target: btnRef.current,
-        });
-      })
-      .catch((err) => {
-        console.error("Failed to load NPF script:", err);
+    loadNpfScript().then(() => {
+      // @ts-ignore
+      new NpfWidgetsInit({
+        widgetId: formId,
+        baseurl: "widgets.nopaperforms.com",
+        formTitle: heroSection?.herobtn?.buttontext || "Apply Now",
+        titleColor: "#FF0033",
+        backgroundColor: "#ddd",
+        iframeHeight: "500px",
+        buttonTextColor: "#FFF",
+        target: btnRef.current,
       });
+    }).catch((err) => {
+      console.error("Failed to load NPF script:", err);
+    });
   }, [formId, heroSection?.herobtn?.buttontext]);
 
   return (
@@ -56,18 +55,14 @@ const HeroBanner = ({ title, highlightitle, heroSection, formId }: Props) => {
           {formId ? (
             <button
               ref={btnRef}
-              className={`hero-common-btn-b mt-12 ${
-                heroSection.herobtn.buttonclass || ""
-              }`}
+              className={`hero-common-btn-b mt-12 ${heroSection.herobtn.buttonclass || ""}`}
             >
               {heroSection.herobtn.buttontext || "Apply Now"} <MoveRight />
             </button>
           ) : (
             <Link
               href={heroSection.herobtn.buttonlink || "#"}
-              className={`hero-common-btn-b mt-12 ${
-                heroSection.herobtn.buttonclass || ""
-              }`}
+              className={`hero-common-btn-b mt-12 ${heroSection.herobtn.buttonclass || ""}`}
             >
               {heroSection.herobtn.buttontext || "Apply Now"} <MoveRight />
             </Link>
@@ -98,6 +93,28 @@ const HeroBanner = ({ title, highlightitle, heroSection, formId }: Props) => {
 };
 
 export default HeroBanner;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // import { STRAPI_URL } from "@/app/constant";
 // import { HeroSection } from "@/lib/types/school-programme";
