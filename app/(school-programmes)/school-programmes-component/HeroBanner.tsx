@@ -18,32 +18,25 @@ type Props = {
 const HeroBanner = ({ title, highlightitle, heroSection, formId }: Props) => {
   const btnRef = useRef<HTMLButtonElement>(null);
 
- useEffect(() => {
-  if (!formId || !btnRef.current) return;
+  useEffect(() => {
+    if (!formId || !btnRef.current) return;
 
-  loadNpfScript()
-    .then(() => {
-      const NpfWidgetsInit = (window as any).NpfWidgetsInit as {
-        new (options: any): any;
-      };
-
-      if (NpfWidgetsInit) {
-        new NpfWidgetsInit({
-          widgetId: formId,
-          baseurl: "widgets.nopaperforms.com",
-          formTitle: heroSection?.herobtn?.buttontext || "Apply Now",
-          titleColor: "#FF0033",
-          backgroundColor: "#ddd",
-          iframeHeight: "500px",
-          buttonTextColor: "#FFF",
-          target: btnRef.current,
-        });
-      } else {
-        console.error("NPF script not loaded correctly");
-      }
-    })
-    .catch((err) => console.error("Failed to load NPF script:", err));
-}, [formId, heroSection?.herobtn?.buttontext]);
+    loadNpfScript().then(() => {
+      // @ts-expect-error - test
+      new NpfWidgetsInit({
+        widgetId: formId,
+        baseurl: "widgets.nopaperforms.com",
+        formTitle: heroSection?.herobtn?.buttontext || "Apply Now",
+        titleColor: "#FF0033",
+        backgroundColor: "#ddd",
+        iframeHeight: "500px",
+        buttonTextColor: "#FFF",
+        target: btnRef.current,
+      });
+    }).catch((err) => {
+      console.error("Failed to load NPF script:", err);
+    });
+  }, [formId, heroSection?.herobtn?.buttontext]);
 
   return (
     <section className="pt-24 sm:pt-40 sm:pb-[50px] px-2.5 sm:px-4">
