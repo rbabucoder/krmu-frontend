@@ -111,7 +111,7 @@ const page = async ({ params }: Props) => {
             deskimg={admissionProcessSection?.desktopadmissionprocessimg}
             admissionCards={admissionProcessSection?.admissionprocesscard}
             admisbtn={admissionProcessSection?.admissionbtn}
-            formId={admissionProcessSection?.admissionFormId}
+            // formId={admissionProcessSection?.admissionFormId}
           />
         )}
         {curriculumSection && (
@@ -149,7 +149,7 @@ const page = async ({ params }: Props) => {
             btn={careerProspectsSection?.careerbtn}
             careerimg={careerProspectsSection?.careerimg}
             careercards={careerProspectsSection?.careercards}
-            careerFormId={careerProspectsSection?.careerFormId}
+            // careerFormId={careerProspectsSection?.careerFormId}
           />
         )}
         {dreamcareerSection && (
