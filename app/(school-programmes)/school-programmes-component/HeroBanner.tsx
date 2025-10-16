@@ -22,7 +22,7 @@ const HeroBanner = ({ title, highlightitle, heroSection, formId }: Props) => {
     if (!formId || !btnRef.current) return;
 
     loadNpfScript().then(() => {
-      // @ts-ignore
+      // @ts-expect-error - test
       new NpfWidgetsInit({
         widgetId: formId,
         baseurl: "widgets.nopaperforms.com",
