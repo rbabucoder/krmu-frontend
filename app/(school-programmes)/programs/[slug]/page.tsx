@@ -28,7 +28,6 @@ const page = async ({ params }: Props) => {
   const allSchoolProgrammeData = await getSchoolProgrammeData(slug);
   const allSinglePHDProgramme = await getPHDProgramme(slug);
 
-  console.log('allSchoolProgrammeData', allSchoolProgrammeData);
 
   const singleSchoolProgramme = allSchoolProgrammeData.find(
     (programme) => programme.programmeslug === slug
@@ -121,6 +120,8 @@ const page = async ({ params }: Props) => {
             desc={curriculumSection?.description}
             programStruct={curriculumSection?.years}
             currbtn={curriculumSection?.currbtn}
+            // currFormId={curriculumSection?.currFormId}
+            // currFormContainerId={curriculumSection?.currContainerId}
           />
         )}
         {labfacilitiesSection && (

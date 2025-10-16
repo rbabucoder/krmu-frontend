@@ -14,6 +14,8 @@ export interface ProgrammeScopeType {
   scopecontent: string;
   scopeimg: StrapiMedia;
   scopebtn: ButtonType;
+  scopeFormId: string;
+  scopeContainerId: string;
 }
 
 export interface HiglightCard {
@@ -96,6 +98,8 @@ export interface Curriculum {
   description: string;
   years: Year[];
   currbtn: ButtonType;
+  currFormId: string;
+  currContainerId: string;
 }
 
 export interface LabCard {
