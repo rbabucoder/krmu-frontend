@@ -1,3 +1,9 @@
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import PopupForm from "@/lib/constants/PopupForm";
 import { ButtonType } from "@/lib/types/common";
@@ -16,7 +22,7 @@ const ProgrammeStructure = ({
   currFormId,
   currFormContainerId,
 }: Props) => {
-  console.log("programStruct", programStruct[0]?.year);
+  console.log("programStruct", programStruct);
   return (
     <div className="w-full">
       <Tabs
@@ -146,19 +152,52 @@ const ProgrammeStructure = ({
                                   key={sub.id}
                                   className="mb-[15px] pb-[15px] border-b border-[#ebebeb]"
                                 >
-                                  <div className="group">
+                                  {sub.course_name &&
+                                  sub.course_name.length > 0 &&
+                                  sub.course_name[0]?.sub_name ? (
+                                    // ✅ Show Accordion if course_name exists
+                                    <Accordion
+                                      type="single"
+                                      collapsible
+                                      className="w-full subjAccordion"
+                                    >
+                                      {sub.course_name.map((course, index) => (
+                                        <AccordionItem
+                                          key={course.id || index}
+                                          value={`item-${sub.id}-${index}`}
+                                        >
+                                          <AccordionTrigger className="text-sm md:text-lg font-medium subAccPaneltitle hover:no-underline">
+                                            <h5 className="text-xs md:text-xl font-medium cursor-pointer">
+                                              {sub.subjectname}
+                                            </h5>
+                                          </AccordionTrigger>
+                                          <AccordionContent className="whitespace-pre-line text-sm text-gray-700 subAccPanelContent">
+                                            {course.sub_name}
+                                          </AccordionContent>
+                                        </AccordionItem>
+                                      ))}
+                                    </Accordion>
+                                  ) : (
+                                    // ❌ Fallback if no course found
+                                    <h5 className="text-xs md:text-xl font-medium cursor-pointer">
+                                      {sub.subjectname}
+                                    </h5>
+                                  )}
+
+                                  {/* <div className="group">
                                     <h5 className="text-xs md:text-xl font-medium cursor-pointer">
                                       {sub.subjectname}
                                     </h5>
                                     <ul className="text-sm pl-2 hidden group-hover:block">
                                       {sub?.course_name &&
                                         sub.course_name.map((course) => (
+                                          
                                           <li key={course?.id}>
                                             {course?.sub_name}
                                           </li>
                                         ))}
                                     </ul>
-                                  </div>
+                                  </div> */}
 
                                   {/* <h5 className="text-xs md:text-xl font-medium">
                                     {sub.subjectname}

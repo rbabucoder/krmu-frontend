@@ -15,18 +15,51 @@
 
 /* Custom utility class */
 @layer utilities {
+  .subAccPaneltitle {
+    padding-left: 40px;
+    position: relative;
+  }
 
+  .subAccPaneltitle svg {
+    display: none;
+  }
+  .subAccPanelContent {
+    padding-left: 40px;
+  }
 
-  .activehighlightprog{
+  .subAccPaneltitle::before {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #0a41a1;
+    font-weight: 600;
+  }
+  .subAccPaneltitle[data-state="open"]::before {
+    content: "−";
+  }
+  .activehighlightprog {
     background: #fff;
     color: #000;
   }
 
-  .anchor_blue a:hover{
+  .anchor_blue a:hover {
     color: #0060aa;
   }
 
-/* .school_fac_text{
+  @media (max-width: 640px) {
+    .subAccPaneltitle{
+      padding-left: 25px;
+    }
+    
+    .subAccPanelContent {
+      padding-left: 25px;
+    }
+  }
+
+  /* .school_fac_text{
   display: none;
 }
  */
