@@ -1,6 +1,5 @@
 "use client";
 
-import Popup from "@/app/components/Popup";
 import { loadNpfScript } from "@/lib/constants/loadNpfScript";
 import { ButtonType } from "@/lib/types/common";
 import { EligibilityItem } from "@/lib/types/school-programme";
@@ -44,7 +43,7 @@ const Eligibility = ({ elgibilities, mobherobtn, formId }: Props) => {
       .catch((err) => {
         console.error("Failed to load NPF script:", err);
       });
-  }, [formId, "Apply Now"]);
+  }, [formId, mobherobtn?.buttontext]);
 
   return (
     <>
@@ -124,14 +123,14 @@ const Eligibility = ({ elgibilities, mobherobtn, formId }: Props) => {
             ref={btnRef}
             className={`bg-[#0a41a1] py-2.5 px-[30px] cursor-pointer flex items-center justify-around sm:hidden text-white rounded-[10px] w-fit mt-5 ${mobherobtn?.buttonclass}`}
           >
-            {"Apply Now"} <ArrowRight />
+            {mobherobtn?.buttontext} <ArrowRight />
           </button>
         ) : (
           <Link
             href={"#"}
             className={`bg-[#0a41a1] py-2.5 px-[30px] cursor-pointer flex items-center justify-around sm:hidden text-white rounded-[10px] w-fit mt-5 ${mobherobtn?.buttonclass}`}
           >
-            {"Apply Now"} <ArrowRight />
+            {mobherobtn?.buttontext} <ArrowRight />
           </Link>
         )}
       </div>
