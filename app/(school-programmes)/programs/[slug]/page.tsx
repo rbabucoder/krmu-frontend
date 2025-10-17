@@ -120,8 +120,8 @@ const page = async ({ params }: Props) => {
             desc={curriculumSection?.description}
             programStruct={curriculumSection?.years}
             currbtn={curriculumSection?.currbtn}
-            // currFormId={curriculumSection?.currFormId}
-            // currFormContainerId={curriculumSection?.currContainerId}
+            currFormId={curriculumSection?.currFormId}
+            currFormContainerId={curriculumSection?.currContainerId}
           />
         )}
         {labfacilitiesSection && (

@@ -8,6 +8,8 @@ type Props = {
   desc: string;
   programStruct: Year[];
   currbtn: ButtonType;
+  currFormId: string;
+  currFormContainerId: string;
 };
 
 const Curriculum = ({
@@ -16,6 +18,8 @@ const Curriculum = ({
   desc,
   programStruct,
   currbtn,
+  currFormId,
+  currFormContainerId
 }: Props) => {
   return (
     <>
@@ -27,7 +31,7 @@ const Curriculum = ({
             </h2>
             <p className="sub-heading">{desc}</p>
           </div>
-          <ProgrammeStructure currbtn={currbtn} programStruct={programStruct} />
+          <ProgrammeStructure currbtn={currbtn} currFormContainerId={currFormContainerId} currFormId={currFormId} programStruct={programStruct} />
         </div>
       </section>
     </>

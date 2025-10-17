@@ -1,4 +1,4 @@
-import Popup from "@/app/components/Popup";
+
 import { STRAPI_URL } from "@/app/constant";
 import { ButtonType, StrapiMedia } from "@/lib/types/common";
 import { AdmisionProcessCard } from "@/lib/types/school-programme";
@@ -104,7 +104,15 @@ const AdmissionProcessComp = ({
             <span>{admisbtn?.buttontext}</span> <ArrowRight />
           </Link>
         )} */}
-        {admisbtn && (
+        <Link
+          href={admisbtn.buttonlink}
+          className={`${
+            admisbtn.buttonclass || ""
+          } text-white bg-[#db2a1a] p-[15px] flex items-center justify-around max-w-3xs w-full rounded-lg font-semibold mt-10`}
+        >
+          <span>{admisbtn.buttontext}</span> <ArrowRight />
+        </Link>
+        {/* {admisbtn && (
           <div>
             {admisbtn.buttonclass === "progPopup" ? (
               <Popup
@@ -125,7 +133,7 @@ const AdmissionProcessComp = ({
               </Link>
             ) : null}
           </div>
-        )}
+        )} */}
       </div>
     </section>
   );

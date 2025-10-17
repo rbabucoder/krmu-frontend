@@ -1,8 +1,7 @@
-import Popup from "@/app/components/Popup";
 import { STRAPI_URL } from "@/app/constant";
+import PopupForm from "@/lib/constants/PopupForm";
 import { ProgrammeScopeType } from "@/lib/types/school-programme";
 import Image from "next/image";
-import Link from "next/link";
 
 type Props = {
   scopeData: ProgrammeScopeType;
@@ -28,7 +27,18 @@ const ProgrammeScope = ({ scopeData }: Props) => {
               {scopeData?.scopebtn?.buttontext}
             </Link>
           )} */}
-          {scopeData?.scopebtn && (
+
+          {/* <button className="bg-[#0a41a1] cursor-pointer text-white text-base sm:bg-white p-[15px] flex items-center justify-center max-w-[220px] w-full mx-auto sm:mx-0 sm:text-[#0a41a1] rounded-md font-semibold mt-6">  
+              Programme Scope
+            </button> */}
+          <PopupForm
+            formId={scopeData?.scopeFormId}
+            containerId={scopeData?.scopeContainerId}
+            buttonClass="bg-[#0a41a1] cursor-pointer text-white text-base sm:bg-white p-[15px] flex items-center justify-center max-w-[220px] w-full mx-auto sm:mx-0 sm:text-[#0a41a1] rounded-md font-semibold mt-6"
+            buttonText={scopeData?.scopebtn?.buttontext}
+          />
+
+          {/* {scopeData?.scopebtn && (
             <>
               {scopeData.scopebtn.buttonclass === "progPopup" ? (
                 <Popup
@@ -51,7 +61,7 @@ const ProgrammeScope = ({ scopeData }: Props) => {
                 </Link>
               ) : null}
             </>
-          )}
+          )} */}
         </div>
         <div className="w-full xl:w-1/2">
           <Image

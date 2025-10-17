@@ -1,15 +1,23 @@
-import Popup from "@/app/components/Popup";
+
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import PopupForm from "@/lib/constants/PopupForm";
 import { ButtonType } from "@/lib/types/common";
 import { Year } from "@/lib/types/school-programme";
-import Link from "next/link";
 
 type Props = {
   programStruct: Year[];
   currbtn: ButtonType;
+  currFormId: string;
+  currFormContainerId: string;
 };
 
-const ProgrammeStructure = ({ programStruct, currbtn }: Props) => {
+const ProgrammeStructure = ({
+  programStruct,
+  currbtn,
+  currFormId,
+  currFormContainerId,
+}: Props) => {
+  console.log("programStruct", programStruct[0]?.year);
   return (
     <div className="w-full">
       <Tabs
@@ -29,7 +37,13 @@ const ProgrammeStructure = ({ programStruct, currbtn }: Props) => {
             </Link>
           )} */}
 
-          {currbtn && (
+          <PopupForm
+            formId={currFormId}
+            containerId={currFormContainerId}
+            buttonClass="p-2 sm:py-[15px] sm:px-[25px] inline-block font-normal rounded-[15px] text-xs sm:text-2xl w-full text-white bg-[#db2a1a] text-center mb-6"
+            buttonText={currbtn?.buttontext}
+          />
+          {/* {currbtn && (
             <>
               {currbtn.buttonclass === "progPopup" ? (
                 <Popup
@@ -55,7 +69,7 @@ const ProgrammeStructure = ({ programStruct, currbtn }: Props) => {
                 </Link>
               ) : null}
             </>
-          )}
+          )} */}
 
           {programStruct.map((year) => {
             const value = year.year.toLowerCase().replace(" ", "");
@@ -165,15 +179,22 @@ const ProgrammeStructure = ({ programStruct, currbtn }: Props) => {
                             </div>
                             <div className="flex items-center justify-end mt-4">
                               {sem.pdfbtns?.map((btn) => (
-                                <Link
-                                  key={btn.id}
-                                  href={btn.buttonlink || "#"}
-                                  className={`text-xs sm:text-xl p-5 font-semibold text-center border border-[#d5d5d5] text-[#dc2e25] bg-[#f0f0f0] rounded-[20px] inline-block ${
-                                    btn.buttonclass || ""
-                                  }`}
-                                >
-                                  {btn.buttontext}
-                                </Link>
+                                <PopupForm
+                                  key={btn?.id}
+                                  formId={btn?.popupFormId}
+                                  containerId={btn?.containerPopupFormId}
+                                  buttonClass="text-xs sm:text-xl p-5 font-semibold text-center border border-[#d5d5d5] text-[#dc2e25] bg-[#f0f0f0] rounded-[20px] inline-block"
+                                  buttonText={btn?.buttontext}
+                                />
+                                // <Link
+                                //   key={btn.id}
+                                //   href={btn.buttonlink || "#"}
+                                //   className={`text-xs sm:text-xl p-5 font-semibold text-center border border-[#d5d5d5] text-[#dc2e25] bg-[#f0f0f0] rounded-[20px] inline-block ${
+                                //     btn.buttonclass || ""
+                                //   }`}
+                                // >
+                                //   {btn.buttontext}
+                                // </Link>
                               ))}
                             </div>
                           </TabsContent>

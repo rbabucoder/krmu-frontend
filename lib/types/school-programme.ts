@@ -83,6 +83,8 @@ export interface Semester {
   subjects: Subject[];
   pdfbtns?: ButtonType[];
   semFormField: string;
+  popupFormId: string;
+  containerPopupFormId: string;
 }
 
 export interface Year {
