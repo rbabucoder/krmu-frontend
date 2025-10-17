@@ -3,7 +3,6 @@ import { ButtonType, StrapiMedia } from "@/lib/types/common";
 import { CareerCard } from "@/lib/types/school-programme";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 
 type Props = {
   heading: string;
