@@ -1,25 +1,50 @@
 "use client";
 
 import Popup from "@/app/components/Popup";
+import { loadNpfScript } from "@/lib/constants/loadNpfScript";
 import { ButtonType } from "@/lib/types/common";
 import { EligibilityItem } from "@/lib/types/school-programme";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 type Props = {
   elgibilities: EligibilityItem[];
   mobherobtn: ButtonType;
+  formId?: string; // dynamic form id
 };
 
-const Eligibility = ({ elgibilities, mobherobtn }: Props) => {
+const Eligibility = ({ elgibilities, mobherobtn, formId }: Props) => {
   const [expanded, setExpanded] = useState(false);
+  const btnRef = useRef<HTMLButtonElement>(null);
 
   // limit characters for h2
   const maxChars = 50;
   const longTitle = elgibilities[2]?.title || "";
   const isLong = longTitle.length > maxChars;
   const displayTitle = expanded ? longTitle : longTitle.slice(0, maxChars);
+
+  useEffect(() => {
+    if (!formId || !btnRef.current) return;
+
+    loadNpfScript()
+      .then(() => {
+        // @ts-expect-error - test
+        new NpfWidgetsInit({
+          widgetId: formId,
+          baseurl: "widgets.nopaperforms.com",
+          formTitle: "Apply Now",
+          titleColor: "#FF0033",
+          backgroundColor: "#ddd",
+          iframeHeight: "500px",
+          buttonTextColor: "#FFF",
+          target: btnRef.current,
+        });
+      })
+      .catch((err) => {
+        console.error("Failed to load NPF script:", err);
+      });
+  }, [formId, "Apply Now"]);
 
   return (
     <>
@@ -68,7 +93,7 @@ const Eligibility = ({ elgibilities, mobherobtn }: Props) => {
             <span>{mobherobtn?.buttontext}</span> <ArrowRight />
           </Link>
         )} */}
-        {mobherobtn && (
+        {/* {mobherobtn && (
           <>
             {mobherobtn.buttonclass === "progPopup" ? (
               <Popup
@@ -92,6 +117,22 @@ const Eligibility = ({ elgibilities, mobherobtn }: Props) => {
               </Link>
             ) : null}
           </>
+        )} */}
+
+        {formId ? (
+          <button
+            ref={btnRef}
+            className={`bg-[#0a41a1] py-2.5 px-[30px] cursor-pointer flex items-center justify-around sm:hidden text-white rounded-[10px] w-fit mt-5 ${mobherobtn?.buttonclass}`}
+          >
+            {"Apply Now"} <ArrowRight />
+          </button>
+        ) : (
+          <Link
+            href={"#"}
+            className={`bg-[#0a41a1] py-2.5 px-[30px] cursor-pointer flex items-center justify-around sm:hidden text-white rounded-[10px] w-fit mt-5 ${mobherobtn?.buttonclass}`}
+          >
+            {"Apply Now"} <ArrowRight />
+          </Link>
         )}
       </div>
     </>

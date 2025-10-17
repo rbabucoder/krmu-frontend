@@ -13,7 +13,7 @@ type Props = {
   highlightitle: string;
   heroSection: HeroSection;
   formId?: string; // dynamic form id
-};
+}; 
 
 const HeroBanner = ({ title, highlightitle, heroSection, formId }: Props) => {
   const btnRef = useRef<HTMLButtonElement>(null);
