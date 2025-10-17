@@ -15,13 +15,13 @@ const PopupForm = ({
   formId,
   buttonText = "Download Prospectus",
   containerClass = "",
-    buttonClass = "",
+  buttonClass = "",
   buttonIcon = "",
-  containerId = ""
+  containerId = "",
 }: PopupFormProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [scriptLoaded, setScriptLoaded] = useState(false);
-//   const uniqueContainerId = `formContainer-${formId.replace(/\W/g, "")}`;
+  //   const uniqueContainerId = `formContainer-${formId.replace(/\W/g, "")}`;
   const uniqueContainerId = containerId;
 
   // ✅ Load the EasyForms script once (global)
@@ -79,10 +79,7 @@ const PopupForm = ({
   return (
     <div className={`popup-form ${containerClass}`}>
       {/* Trigger Button */}
-      <button
-        className={buttonClass}
-        onClick={() => setIsOpen(true)}
-      >
+      <button className={buttonClass} onClick={() => setIsOpen(true)}>
         <span>{buttonText}</span> {buttonIcon}
       </button>
 
