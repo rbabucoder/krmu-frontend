@@ -197,3 +197,42 @@ export type CustomPageResponse = {
     pagination: Pagination;
   };
 };
+
+// common seo keyword
+export interface SchoolProgrammeSEOResponse {
+  data: SchoolProgrammeSEOData[]; // ✅ data is an array
+  meta: {
+    pagination: {
+      page: number;
+      pageSize: number;
+      pageCounter: number;
+      total: number;
+    };
+  };
+}
+
+export interface SchoolProgrammeSEOData {
+  id: number;
+  documentId: string;
+  programmeslug: string;
+  SEO: SEO;
+}
+
+export type SEO = {
+  id: number;
+  metaTitle?: string;
+  metaDescription?: string;
+  metaKeyword?: string;
+  canonical?: string;
+  noIndex?: boolean;
+  tags?: string;
+};
+
+// export interface SEO {
+//   id: number;
+//   metaTitle: string;
+//   metaDescription: string;
+//   metaKeyword: string;
+//   canonical: string;
+//   noIndex: boolean;
+// }

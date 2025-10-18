@@ -4,6 +4,7 @@ import {
   CustomPage,
   CustomPageResponse,
   FacilityAPIResponse,
+  SchoolProgrammeSEOResponse,
   StudentAchievementResponse,
 } from "../types/common";
 import { TestimonialItem, TestimonialResponse } from "../constants/testimonial";
@@ -310,4 +311,22 @@ export async function isCustomPage(slug: string = ""): Promise<CustomPage[]> {
   } catch {
     return [];
   }
+}
+
+// common seo api function
+
+export async function getSchoolProgrammeSEO(
+  slug: string
+): Promise<SchoolProgrammeSEOResponse["data"]> {
+  const res = await fetch(
+    `${FETCH_STRAPI_URL}/api/school-programmes?filters[programmeslug][$eq]=${slug}&fields[0]=programmeslug&populate[SEO][fields][0]=metaTitle&populate[SEO][fields][1]=metaDescription&populate[SEO][fields][2]=metaKeyword&populate[SEO][fields][3]=canonical&populate[SEO][fields][4]=noIndex&populate[SEO][fields][5]=tags`,
+    {
+      next: {
+        revalidate: 60,
+      },
+    }
+  );
+  if (!res.ok) throw new Error("Failed to fetch School Programme SEO");
+  const json: SchoolProgrammeSEOResponse = await res.json();
+  return json.data;
 }

@@ -11,23 +11,50 @@ import LabsFacilities from "../../school-programmes-component/LabsFacilities";
 import OurLocation from "../../school-programmes-component/OurLocation";
 import ProgrammeHighlight from "../../school-programmes-component/ProgrammeHighlight";
 import ProgrammeScope from "../../school-programmes-component/ProgrammeScope";
-import Specialisation from "../../school-programmes-component/Specialisation"; 
+import Specialisation from "../../school-programmes-component/Specialisation";
 import TableOfContent from "../../school-programmes-component/TableOfContent";
 import { notFound } from "next/navigation";
 import AdmissionProcessComp from "../../school-programmes-component/AdmissionProcessComp";
 import { getPHDProgramme } from "@/lib/api/phd-programmes";
 import PHDProgrammes from "../PHDProgramme";
+import { getSchoolProgrammeSEO } from "@/lib/api/common";
+import { Metadata } from "next";
 
 type Props = {
   params: Promise<{ slug: string }>;
 };
- 
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params; // ✅ no await
+
+  const seoData = await getSchoolProgrammeSEO(slug);
+  const seo = seoData[0]?.SEO; // ✅ fixed access path
+
+  return {
+    title: seo?.metaTitle || "K.R. Mangalam University", // ✅ no semicolon here
+    description:
+      seo?.metaDescription || "Explore top programs and courses at KRMU.",
+    keywords: seo?.metaKeyword || "",
+    alternates: {
+      canonical: seo?.canonical || "",
+    },
+    robots: {
+      index: seo?.noIndex === false, // if noIndex is false, index the page
+      follow: true, // you can customize follow if needed
+    },
+  };
+}
+
 const page = async ({ params }: Props) => {
   const { slug } = await params; // ✅ await params
 
   const allSchoolProgrammeData = await getSchoolProgrammeData(slug);
   const allSinglePHDProgramme = await getPHDProgramme(slug);
-
+  const seoData = await getSchoolProgrammeSEO(slug);
+  const seo = seoData[0]?.SEO;
+  const tags = seo?.tags;
+  // const tagsArray = tags ? tags.split(",").map((tag) => tag.trim()) : [];
+  const tagsArray = tags ? tags.split(",").map((tag) => tag.trim()) : [];
 
   const singleSchoolProgramme = allSchoolProgrammeData.find(
     (programme) => programme.programmeslug === slug
@@ -69,7 +96,11 @@ const page = async ({ params }: Props) => {
 
   return (
     <>
+      <div
+        className={`p-0 m-0 ${tagsArray.map((tag) => `tag-${tag}`).join(" ")}`}
+      />
       <main className="school-prog-font">
+        {/* {tags && <TagDiv tags={tags} extraClass="hidden test-class" />} */}
         {heroSection && (
           <HeroBanner
             title={title || ""}
