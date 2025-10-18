@@ -16,7 +16,7 @@
 /* Custom utility class */
 @layer utilities {
   .subAccPaneltitle {
-    padding-left: 40px;
+    padding: 0 0 0 40px;
     position: relative;
   }
 
@@ -55,7 +55,7 @@
     }
     
     .subAccPanelContent {
-      padding-left: 25px;
+      padding: 10px 0 0 25px;
     }
   }
 

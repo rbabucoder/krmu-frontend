@@ -49,7 +49,7 @@ export default async function Page({ params }: Props) {
   const degreeName = school?.degree?.name;
   const schoolCategoryName = school?.school_category?.name;
 
-  console.log('school', school);
+
 
 
   return (

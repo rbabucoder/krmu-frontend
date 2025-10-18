@@ -22,7 +22,6 @@ const ProgrammeStructure = ({
   currFormId,
   currFormContainerId,
 }: Props) => {
-  console.log("programStruct", programStruct);
   return (
     <div className="w-full">
       <Tabs
