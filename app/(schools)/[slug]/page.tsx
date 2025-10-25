@@ -22,10 +22,33 @@ import {
   getEventsAndExperiencesBySchoolCat,
   getSchoolPage,
 } from "@/lib/api/schools";
+import { getSchoolSEO } from "@/lib/api/common";
+import { Metadata } from "next";
 
 type Props = {
   params: Promise<{ slug: string }>;
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params; // ✅ no await
+
+  const seoData = await getSchoolSEO(slug);
+  // console.log('seoData', seoData);
+  const seo = seoData?.school_seo;
+  return {
+    title: seo?.metaTitle || "K.R. Mangalam University", // ✅ no semicolon here
+    description:
+      seo?.metaDescription || "Explore top programs and courses at KRMU.",
+    keywords: seo?.metaKeyword || "",
+    alternates: {
+      canonical: seo?.canonical || "",
+    },
+    robots: {
+      index: seo?.noIndex === false, // if noIndex is false, index the page
+      follow: true, // you can customize follow if needed
+    },
+  };
+}
 
 export default async function Page({ params }: Props) {
   const { slug } = await params; // ✅ await params
@@ -48,9 +71,6 @@ export default async function Page({ params }: Props) {
 
   const degreeName = school?.degree?.name;
   const schoolCategoryName = school?.school_category?.name;
-
-
-
 
   return (
     <>
@@ -147,7 +167,7 @@ export default async function Page({ params }: Props) {
         btn={school?.studentachievementsbtn}
         schoolCat={schoolCat}
       />
-      <SchoolFacilities />
+      <SchoolFacilities fac_slides={school?.facility_slide} />
       <SchoolCommenceJourney />
     </>
   );

@@ -127,6 +127,13 @@ export interface School {
   schoolherobanner: SchoolHeroBanner;
   showdeaninfo: boolean;
   degree: SchoolDegree;
+  facility_slide: FacilitySlide[];
+}
+
+export interface FacilitySlide {
+  id: number;
+  title: string;
+  facility_img: StrapiMedia;
 }
 
 export interface SchoolsResponse {

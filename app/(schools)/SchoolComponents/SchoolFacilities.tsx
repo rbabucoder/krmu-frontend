@@ -1,25 +1,87 @@
-import Image from "next/image";
+"use client";
 
-const SchoolFacilities = () => {
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+  type CarouselApi,
+} from "@/components/ui/carousel";
+import { FacilitySlide } from "@/lib/types/schools";
+import { STRAPI_URL } from "@/app/constant";
+
+
+
+type Props = {
+  fac_slides: FacilitySlide[];
+};
+
+const SchoolFacilities = ({ fac_slides }: Props) => {
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    if (!api) return;
+    const updateCurrent = () => setCurrent(api.selectedScrollSnap());
+    api.on("select", updateCurrent);
+    updateCurrent();
+  }, [api]);
+
   return (
-    <div className="py-[30px] bg-[#051630]">
+    <div className="pt-[30px] pb-20 bg-[#051630]">
       <div className="max-w-[1664px] mx-auto w-full">
         <div className="text-center text-white px-4">
-          <h5 className="text-3xl md:text-5xl lg:text-6xl xl:text-[80px] font-medium">
+          <h5 className="text-3xl md:text-5xl lg:text-6xl xl:text-[80px] leading-[1.16] font-medium">
             Facilities
           </h5>
-          <h6 className="text-xl md:text-2xl mb-5 font-semibold">
-            Exceptional Library with a vast collection of influential books
-          </h6>
         </div>
-        <div className="flex items-center justify-center">
-          <Image
-            src="/schools/library.webp"
-            width={1140}
-            height={607}
-            alt="Library"
+      </div>
+
+      <div>
+        <Carousel
+          opts={{
+            loop: true,
+            align: "center",
+          }}
+          setApi={setApi}
+        >
+          <CarouselContent>
+            {fac_slides.map((slide, index) => (
+              <CarouselItem
+                key={slide.id}
+                className={`basis-[85%] md:basis-[70%] lg:basis-[60%] p-0 fac_slide ${
+                  index === current ? "fac_active_slide" : ""
+                }`}
+              >
+                <h6 className="text-xl md:text-2xl mb-5 font-semibold text-center fac_title text-white">
+                  {slide.title}
+                </h6>
+                <div className="fac_slide_img_container">
+                  <Image
+                    src={`${STRAPI_URL}${slide?.facility_img?.url}`}
+                    width={1140}
+                    height={607}
+                    alt={slide.title}
+                    className="w-full fac_slide_img"
+                  />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+
+          <CarouselPrevious
+            className="bg-[#2c3a4f] text-[#bfc4ca] hover:bg-[#051630] hover:text-white cursor-pointer buttonPrevNextSize w-[60px] h-[60px]
+            top-[105%] left-[45%]
+        "
           />
-        </div>
+          <CarouselNext
+            className="bg-[#2c3a4f] text-[#bfc4ca] hover:bg-[#051630] hover:text-white cursor-pointer buttonPrevNextSize w-[60px] h-[60px] 
+            top-[105%] right-[45%]"
+          />
+        </Carousel>
       </div>
     </div>
   );

@@ -15,6 +15,21 @@
 
 /* Custom utility class */
 @layer utilities {
+  .fac_slide .fac_slide_img_container {
+    opacity: 0.5;
+  }
+
+  .fac_slide.fac_active_slide .fac_slide_img_container {
+    opacity: 1;
+  }
+
+  .fac_title {
+    visibility: hidden;
+  }
+  .fac_active_slide .fac_title {
+    visibility: visible;
+  }
+
   .subAccPaneltitle {
     padding: 0 0 0 40px;
     position: relative;
@@ -50,10 +65,10 @@
   }
 
   @media (max-width: 640px) {
-    .subAccPaneltitle{
+    .subAccPaneltitle {
       padding-left: 25px;
     }
-    
+
     .subAccPanelContent {
       padding: 10px 0 0 25px;
     }

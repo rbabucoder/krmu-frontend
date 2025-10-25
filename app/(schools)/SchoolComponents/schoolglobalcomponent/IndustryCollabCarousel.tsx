@@ -41,25 +41,9 @@ const IndustryCollabCarousel = ({ collabData }: Props) => {
               </CarouselItem>
             );
           })}
-
-        {/* <CarouselItem className="md:basis-1/2">
-          <IndustryCollabCard />
-        </CarouselItem>
-        <CarouselItem className="md:basis-1/2">
-          <IndustryCollabCard />
-        </CarouselItem>
-        <CarouselItem className="md:basis-1/2">
-          <IndustryCollabCard />
-        </CarouselItem> */}
       </CarouselContent>
-      <CarouselPrevious
-        className="bg-[#2c3a4f] text-[#bfc4ca] hover:bg-[#051630] hover:text-white cursor-pointer buttonPrevNextSize w-[60px] h-[60px]"
-      />
-      <CarouselNext className="bg-[#2c3a4f] text-[#bfc4ca] hover:bg-[#051630] hover:text-white cursor-pointer buttonPrevNextSize w-[60px] h-[60px]" />
-      {/* <CarouselNext
-        className="bg-[#2c3a4f] text-[#bfc4ca] hover:bg-[#051630] hover:text-white cursor-pointer buttonPrevNextSize w-[60px] h-[60px] 
-         top-[115%] right-[20%] sm:right-[30%] xl:top-[80%] xl:right-[145%]"
-      /> */}
+      <CarouselPrevious className="bg-[#2c3a4f] text-[#bfc4ca] hover:bg-[#051630] hover:text-white cursor-pointer buttonPrevNextSize w-[60px] h-[60px] top-[115%] xl:top-[50%] left-[20%] sm:left-[35%] 2xl:left-[-10%]" />
+      <CarouselNext className="bg-[#2c3a4f] text-[#bfc4ca] hover:bg-[#051630] hover:text-white cursor-pointer buttonPrevNextSize w-[60px] h-[60px] top-[115%] xl:top-[50%] right-[20%] sm:right-[35%] 2xl:right-[-10%]" />
     </Carousel>
   );
 };

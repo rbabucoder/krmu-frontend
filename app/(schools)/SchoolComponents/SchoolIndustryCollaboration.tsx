@@ -16,7 +16,7 @@ const SchoolIndustryCollaboration = ({ title, collabCards }: Props) => {
             {title && <BlocksRenderer content={title} />}
           </h3>
         </div>
-        <div className="w-full xl:w-3/5 py-[30px]">
+        <div className="w-full xl:w-3/5 py-[30px] md:px-16 2xl:px-[100px]">
           <IndustryCollabCarousel collabData={collabCards} />
         </div>
       </div>

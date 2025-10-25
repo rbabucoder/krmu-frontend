@@ -6,7 +6,6 @@ import Link from "next/link";
 const Footer = async () => {
   const footerData = await getFooter();
 
-
   const footerComp1 = footerData?.footer_comp_1;
   const footerComp2 = footerData?.footer_comp_2;
   const footerComp3 = footerData?.footer_comp_3;

@@ -11,7 +11,7 @@ type Props = {
 
 const IndustryCollabCard = ({ cardImg, cardDesc, cardLists }: Props) => {
   return (
-    <div className="bg-[#172a45] p-5 text-white ic_list rounded-[20px] h-[496px]">
+    <div className="bg-[#172a45] p-5 text-white ic_list rounded-[20px] min-h-[1px] h-full">
       <Image
         src={`${STRAPI_URL}${cardImg?.url}`}
         width={163}
