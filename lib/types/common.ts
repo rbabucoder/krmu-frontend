@@ -236,3 +236,10 @@ export type SEO = {
 //   canonical: string;
 //   noIndex: boolean;
 // }
+
+export interface common_btn {
+  id: number;
+  btn_text: string;
+  btn_class: string;
+  btn_link: string;
+}
