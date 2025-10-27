@@ -3,9 +3,11 @@ import ExaminationABCDigilocker from "./comp/ExaminationABCDigilocker";
 import ExaminationDownload from "./comp/ExaminationDownload";
 import ExaminationFAQ from "./comp/ExaminationFAQ";
 import ExaminationHero from "./comp/ExaminationHero";
+import ExaminationApplyOnline from "./comp/ExaminationApplyOnline";
 
 const page = async () => {
   const examinationData = await getExaminationPageData();
+
 
   return (
     <>
@@ -26,6 +28,11 @@ const page = async () => {
           heading={examinationData?.abc_nad_digilocker?.heading}
           url={examinationData?.abc_nad_digilocker?.url}
           btns={examinationData?.abc_nad_digilocker?.abc_nad_btns}
+        />
+      )}
+      {examinationData?.apply_online && (
+        <ExaminationApplyOnline
+          applyContent={examinationData?.apply_online?.apply_online_content}
         />
       )}
       {examinationData?.examination_faq && (
