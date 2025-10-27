@@ -35,6 +35,7 @@ const ExaminationABCDigilocker = ({ heading, url, btns }: Props) => {
                   key={btn?.id}
                   href={btn?.btn_link || "#"}
                   className={`bg-[#cb000d] py-[5px] px-5 md:py-[13px] md:px-[29px] text-white text-xs lg:text-base font-semibold hover:bg-[#034272] inline-block w-fit rounded-sm`}
+                  target="_blank"
                 >
                   {btn?.btn_text}
                 </Link>
