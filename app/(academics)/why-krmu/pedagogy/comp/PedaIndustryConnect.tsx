@@ -25,10 +25,7 @@ const PedaIndustryConnect = ({
     rounded-[90px] xl:flex items-center gap-14 overflow-hidden
   `}
         style={{
-          backgroundImage:
-            typeof window !== "undefined" && window.innerWidth >= 1280
-              ? `url(${STRAPI_URL}${bgImgUrl})`
-              : "none",
+          backgroundImage: `url(${STRAPI_URL}${bgImgUrl})`,
         }}
       >
         <div className="xl:w-1/2 text-white">
