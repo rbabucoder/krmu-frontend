@@ -35,11 +35,32 @@
     position: relative;
   }
 
-  .subAccPaneltitle svg {
+  .subAccPaneltitle svg,
+  .examination-faq-panel svg {
     display: none;
   }
   .subAccPanelContent {
     padding-left: 40px;
+  }
+
+  .examination-faq-panel {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .examination-faq-panel::after {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+  }
+
+   .examination-faq-panel[data-state="open"]::after {
+    content: "−";
   }
 
   .subAccPaneltitle::before {
