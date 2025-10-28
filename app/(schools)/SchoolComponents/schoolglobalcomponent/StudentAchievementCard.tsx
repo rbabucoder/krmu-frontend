@@ -1,8 +1,8 @@
-"use client";
+// "use client";
 
 import { STRAPI_URL } from "@/app/constant";
 import Image from "next/image";
-import { useState } from "react";
+// import { useState } from "react";
 
 type Props = {
   info: string;
@@ -11,11 +11,11 @@ type Props = {
 };
 
 const StudentAchievementCard = ({ info, achieveImgUrl, imgALTText }: Props) => {
-  const [isExpanded, setIsExpanded] = useState(false);
-  const isLong = info.length > 100;
-  const displayText = isExpanded
-    ? info
-    : info.slice(0, 100).trim() + (isLong ? "..." : "");
+  // const [isExpanded, setIsExpanded] = useState(false);
+  // const isLong = info.length > 100;
+  // const displayText = isExpanded
+  //   ? info
+  //   : info.slice(0, 100).trim() + (isLong ? "..." : "");
 
   return (
     <div className="border border-[#e2e2e2] p-5 rounded-lg">
@@ -30,8 +30,8 @@ const StudentAchievementCard = ({ info, achieveImgUrl, imgALTText }: Props) => {
       </div>
 
       <div>
-        <p className="text-gray-800 leading-relaxed text-sm">
-          {displayText}{" "}
+        {/* <p className="text-gray-800 leading-relaxed text-sm"> */}
+          {/* {displayText}{" "}
           {isLong && (
             <button
               onClick={() => setIsExpanded(!isExpanded)}
@@ -39,8 +39,13 @@ const StudentAchievementCard = ({ info, achieveImgUrl, imgALTText }: Props) => {
             >
               {isExpanded ? "Read less" : "Read more"}
             </button>
-          )}
-        </p>
+          )} */}
+          <div
+            dangerouslySetInnerHTML={{
+              __html: info,
+            }}
+          />
+        {/* </p> */}
       </div>
     </div>
   );

@@ -130,6 +130,7 @@ export interface School {
   degree: SchoolDegree;
   facility_slide: FacilitySlide[];
   commence_journey: CommenceJourney;
+  fullwidthhero: boolean;
 }
 
 export interface CommenceJourney {

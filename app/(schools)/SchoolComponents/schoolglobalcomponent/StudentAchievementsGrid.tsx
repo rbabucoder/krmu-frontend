@@ -14,7 +14,7 @@ const StudentAchievementsGrid = async ({ schoolCat }: Props) => {
         achievements.map((achievement) => (
           <StudentAchievementCard
             key={achievement?.id}
-            info={achievement?.achievementcontent}
+            info={achievement?.achievement_content}
             achieveImgUrl={achievement?.achivementimage[0]?.url}
             imgALTText={achievement?.achivementimage[0]?.alternativeText}
           />

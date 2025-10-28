@@ -115,7 +115,7 @@ export interface StudentAchievement {
   publishedAt: string;
   id: number;
   documentId: string;
-  achievementcontent: string;
+  achievement_content: string;
   createdAt: string;
   updatedAt: string;
   achivementimage: StrapiMedia[];

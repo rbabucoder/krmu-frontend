@@ -82,6 +82,7 @@ export default async function Page({ params }: Props) {
         videoFmt={school.videoformat}
         iframeContent={school.iframe}
         videoLink={school.videolink}
+        fullWidth={school?.fullwidthhero}
       />
       <SchoolAdmissionOpen
         title={school.admissionsessiontitle}
