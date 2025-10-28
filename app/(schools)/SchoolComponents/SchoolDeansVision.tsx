@@ -1,3 +1,4 @@
+import { STRAPI_URL } from "@/app/constant";
 import { ParagraphBlock } from "@/lib/types/about";
 import { BlocksRenderer } from "@strapi/blocks-react-renderer";
 import Image from "next/image";
@@ -10,6 +11,7 @@ type Props = {
   deanEmail: string;
   desg: string;
   desc: ParagraphBlock[];
+  deanImgUrl: string;
 };
 
 const SchoolDeansVision = ({
@@ -19,6 +21,7 @@ const SchoolDeansVision = ({
   deanEmail,
   desg,
   desc,
+  deanImgUrl,
 }: Props) => {
   return (
     <section
@@ -43,7 +46,7 @@ const SchoolDeansVision = ({
         >
           <div className="xl:w-2/6 p-5 sm:p-10 xl:p-[50px] flex justify-center xl:block">
             <Image
-              src="/schools/Dr.-Pankaj-Agarwal@KRMU-1.webp"
+              src={`${STRAPI_URL}${deanImgUrl}`}
               width={358}
               height={465}
               alt="Pankaj Aggarwal"

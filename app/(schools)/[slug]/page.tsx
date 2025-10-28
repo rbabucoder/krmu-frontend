@@ -154,6 +154,7 @@ export default async function Page({ params }: Props) {
           title={school?.deanvisiontitle}
           subtitle={school?.deanvisionsubtitle}
           desc={school?.deancontent}
+          deanImgUrl={school?.deanimg?.url}
         />
       )}
       <SchoolFacultyAdvisory fac_adv={school?.fac_adv} schoolCat={schoolCat} />

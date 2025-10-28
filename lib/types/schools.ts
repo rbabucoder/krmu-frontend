@@ -115,6 +115,7 @@ export interface School {
   testimonialdesc: string;
   testimonials: SchoolTestimonials[];
   deanvisionsubtitle: string;
+  deanimg: StrapiMedia;
   deanvisiontitle: string;
   deancontent: ParagraphBlock[];
   deansname: string;
@@ -134,7 +135,7 @@ export interface School {
   fac_adv: FACADV;
 }
 
-export interface FACADV{
+export interface FACADV {
   fac_adv: string;
   fac_title: string;
 }
