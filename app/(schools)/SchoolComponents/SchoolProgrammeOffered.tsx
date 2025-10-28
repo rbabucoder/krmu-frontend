@@ -11,7 +11,7 @@ const SchoolProgrammeOffered = ({ degName, schoolCategoryName }: Props) => {
       <section className="px-4">
         <div className="max-w-[1664px] mx-auto w-full">
           <div className="text-center mb-10">
-            <h3 className="text-3xl mb-5 lg:mb-0 md:text-5xl lg:text-[64px] font-medium">
+            <h3 className="text-3xl mb-5 md:text-5xl lg:text-[64px] font-medium">
               Programmes Offered
             </h3>
             <p>

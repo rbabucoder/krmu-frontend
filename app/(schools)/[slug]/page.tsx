@@ -168,7 +168,12 @@ export default async function Page({ params }: Props) {
         schoolCat={schoolCat}
       />
       <SchoolFacilities fac_slides={school?.facility_slide} />
-      <SchoolCommenceJourney />
+      <SchoolCommenceJourney
+        highlight_heading={school?.commence_journey?.highlight_heading}
+        heading={school?.commence_journey?.heading}
+        imgUrl={school?.commence_journey?.commence_img?.url}
+        btn={school?.commence_journey?.commence_btn}
+      />
     </>
   );
 }

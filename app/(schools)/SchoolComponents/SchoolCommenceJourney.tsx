@@ -1,15 +1,29 @@
+import { STRAPI_URL } from "@/app/constant";
+import { common_btn } from "@/lib/types/common";
 import Image from "next/image";
 import Link from "next/link";
 
-const SchoolCommenceJourney = () => {
+type Props = {
+  highlight_heading: string;
+  heading: string;
+  imgUrl: string;
+  btn: common_btn;
+};
+
+const SchoolCommenceJourney = ({
+  highlight_heading,
+  heading,
+  imgUrl,
+  btn,
+}: Props) => {
   return (
     <div className="py-16">
       <div className="max-w-[1664px] mx-auto w-full px-4 mb-5 sm:mb-0">
         <h4 className="text-[#0078bf] text-2xl md:text-4xl lg:text-[64px] leading-[1.2] font-medium">
-          Commence Your Journey
+          {highlight_heading}
         </h4>
         <h4 className="text-2xl md:text-4xl lg:text-[64px] leading-[1.2] font-medium">
-          in 6 Simple Steps
+          {heading}
         </h4>
       </div>
       <div className="lg:hidden px-4">
@@ -136,19 +150,24 @@ const SchoolCommenceJourney = () => {
         </div>
       </div>
       <Image
-        src="/schools/yourjourney.webp"
+        // src={"/schools/yourjourney.webp"}
+        src={`${STRAPI_URL}${imgUrl}`}
         width={1921}
         height={689}
-        alt="Your journey"
+        alt={heading}
         className="w-full h-full hidden lg:block"
       />
       <div className="flex justify-center mt-5 lg:mt-0">
-        <Link
-          href="#"
-          className="py-3.5 px-8 bg-[#051630] font-bold rounded-sm inline-block text-white"
-        >
-          Apply Now
-        </Link>
+        {btn?.btn_link && (
+          <Link
+            href={btn?.btn_link || "#"}
+            className={`py-3.5 px-8 bg-[#051630] font-bold rounded-sm inline-block text-white ${
+              btn?.btn_class || ""
+            }`}
+          >
+            {btn?.btn_text || ""}
+          </Link>
+        )}
       </div>
     </div>
   );

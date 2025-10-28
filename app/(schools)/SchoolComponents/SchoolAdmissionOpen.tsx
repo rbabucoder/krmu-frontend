@@ -15,7 +15,7 @@ const SchoolAdmissionOpen = ({ title, admBtn }: Props) => {
           boxShadow: "0px 71px 80px 0px rgba(0, 0, 0, .07)",
         }}
       >
-        <h3 className="text-xl md:text-4xl xl:text-5xl font-semibold leading-6  md:mb-5 lg:mb-0 lg:leading-14 text-center">
+        <h3 className="text-xl md:text-4xl xl:text-5xl font-semibold leading-6  md:mb-5 lg:mb-0 lg:leading-14 text-center grad-text-color">
           {title}
         </h3>
         {(admBtn?.buttonlink || admBtn?.buttonclass) && (

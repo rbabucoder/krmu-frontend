@@ -15,6 +15,13 @@
 
 /* Custom utility class */
 @layer utilities {
+  .grad-text-color {
+    background: -webkit-linear-gradient(0deg, #0060aa 0.43%, #e31e24 91.06%);
+    /* background-clip: border-box; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   .fac_slide .fac_slide_img_container {
     opacity: 0.5;
   }
@@ -59,7 +66,7 @@
     font-weight: 600;
   }
 
-   .examination-faq-panel[data-state="open"]::after {
+  .examination-faq-panel[data-state="open"]::after {
     content: "−";
   }
 

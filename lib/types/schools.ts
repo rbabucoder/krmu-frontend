@@ -2,6 +2,7 @@ import { ParagraphBlock } from "./about";
 import {
   ButtonType,
   CardWithImage,
+  common_btn,
   CounterItem,
   SchoolHeroBanner,
   StrapiMedia,
@@ -128,6 +129,14 @@ export interface School {
   showdeaninfo: boolean;
   degree: SchoolDegree;
   facility_slide: FacilitySlide[];
+  commence_journey: CommenceJourney;
+}
+
+export interface CommenceJourney {
+  highlight_heading: string;
+  heading: string;
+  commence_btn: common_btn;
+  commence_img: StrapiMedia;
 }
 
 export interface FacilitySlide {
