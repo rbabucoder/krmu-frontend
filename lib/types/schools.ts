@@ -131,6 +131,12 @@ export interface School {
   facility_slide: FacilitySlide[];
   commence_journey: CommenceJourney;
   fullwidthhero: boolean;
+  fac_adv: FACADV;
+}
+
+export interface FACADV{
+  fac_adv: string;
+  fac_title: string;
 }
 
 export interface CommenceJourney {

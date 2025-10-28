@@ -156,7 +156,7 @@ export default async function Page({ params }: Props) {
           desc={school?.deancontent}
         />
       )}
-      <SchoolFacultyAdvisory schoolCat={schoolCat} />
+      <SchoolFacultyAdvisory fac_adv={school?.fac_adv} schoolCat={schoolCat} />
       <SchoolEventAndExperience
         title={school?.eventstitle}
         desc={school?.eventsdesc}
