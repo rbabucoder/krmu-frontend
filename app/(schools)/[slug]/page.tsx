@@ -163,18 +163,24 @@ export default async function Page({ params }: Props) {
         btn={school?.eventsbtn}
         eventsexp={schoolEventsAndExperience}
       />
-      <SchoolStudentAchievements
-        title={school?.studentachievementtitle}
-        btn={school?.studentachievementsbtn}
-        schoolCat={schoolCat}
-      />
-      <SchoolFacilities fac_slides={school?.facility_slide} />
-      <SchoolCommenceJourney
-        highlight_heading={school?.commence_journey?.highlight_heading}
-        heading={school?.commence_journey?.heading}
-        imgUrl={school?.commence_journey?.commence_img?.url}
-        btn={school?.commence_journey?.commence_btn}
-      />
+      {school?.studentachievementtitle && (
+        <SchoolStudentAchievements
+          title={school?.studentachievementtitle}
+          btn={school?.studentachievementsbtn}
+          schoolCat={schoolCat}
+        />
+      )}
+      {school?.facility_slide && (
+        <SchoolFacilities fac_slides={school?.facility_slide} />
+      )}
+      {school?.commence_journey && (
+        <SchoolCommenceJourney
+          highlight_heading={school?.commence_journey?.highlight_heading}
+          heading={school?.commence_journey?.heading}
+          imgUrl={school?.commence_journey?.commence_img?.url}
+          btn={school?.commence_journey?.commence_btn}
+        />
+      )}
     </>
   );
 }
