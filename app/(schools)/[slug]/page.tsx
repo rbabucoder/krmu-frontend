@@ -24,6 +24,7 @@ import {
 } from "@/lib/api/schools";
 import { getSchoolSEO } from "@/lib/api/common";
 import { Metadata } from "next";
+import SchoolIndustyVideo from "../SchoolComponents/SchoolIndustyVideo";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -186,6 +187,14 @@ export default async function Page({ params }: Props) {
           schoolCat={schoolCat}
         />
       )}
+
+      {school?.video_comp && (
+        <SchoolIndustyVideo
+          heading={school?.video_comp?.heading}
+          videoCards={school?.video_comp?.video_iframe_fields}
+        />
+      )}
+
       {school?.eventstitle && (
         <SchoolEventAndExperience
           title={school?.eventstitle}

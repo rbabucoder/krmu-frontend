@@ -135,6 +135,18 @@ export interface School {
   commence_journey: CommenceJourney;
   fullwidthhero: boolean;
   fac_adv: FACADV;
+  video_comp: VIDEOCOMP;
+}
+
+export interface VIDEOCOMP {
+  id: number;
+  heading: string;
+  video_iframe_fields: VIDEOIFRAME[];
+}
+
+export interface VIDEOIFRAME {
+  id: number;
+  videoiframefield: string;
 }
 
 export interface FACADV {
