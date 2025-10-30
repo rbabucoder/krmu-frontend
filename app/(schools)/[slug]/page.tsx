@@ -84,10 +84,12 @@ export default async function Page({ params }: Props) {
         videoLink={school.videolink}
         fullWidth={school?.fullwidthhero}
       />
-      <SchoolAdmissionOpen
-        title={school.admissionsessiontitle}
-        admBtn={school.admissionbtn}
-      />
+      {school.admissionsessiontitle && (
+        <SchoolAdmissionOpen
+          title={school.admissionsessiontitle}
+          admBtn={school.admissionbtn}
+        />
+      )}
       {schoolKnowComp && (
         <SchoolInfoStatistics
           heading={schoolKnowComp?.heading}
@@ -127,10 +129,12 @@ export default async function Page({ params }: Props) {
         advimg={school?.advantagimg}
         advcards={school?.advantageCards}
       />
-      <SchoolIndustryCollaboration
-        title={school?.induscollabtitle}
-        collabCards={school?.collabcards}
-      />
+      {school?.induscollabtitle && (
+        <SchoolIndustryCollaboration
+          title={school?.induscollabtitle}
+          collabCards={school?.collabcards}
+        />
+      )}
       {school?.letsexplorecontent && (
         <SchoolLetsExplore
           content={school?.letsexplorecontent}
@@ -139,21 +143,27 @@ export default async function Page({ params }: Props) {
           list3={school?.listitem3}
         />
       )}
-      <SchoolKnowledgePartner
-        title={school?.knowledgetitle}
-        logos={school?.knowledgepartenerlogos}
-      />
-      <SchoolExcellence
-        title1={school?.coetitle1}
-        title2={school?.coetitle2}
-        btn1={school?.coebtn1}
-        btn2={school?.coebtn2}
-      />
-      <SchoolTestimonials
-        title={school?.tetimonialtitle}
-        desc={school?.testimonialdesc}
-        testis={school?.testimonials}
-      />
+      {school?.knowledgetitle && (
+        <SchoolKnowledgePartner
+          title={school?.knowledgetitle}
+          logos={school?.knowledgepartenerlogos}
+        />
+      )}
+      {school?.coetitle1 && (
+        <SchoolExcellence
+          title1={school?.coetitle1}
+          title2={school?.coetitle2}
+          btn1={school?.coebtn1}
+          btn2={school?.coebtn2}
+        />
+      )}
+      {school?.tetimonialtitle && (
+        <SchoolTestimonials
+          title={school?.tetimonialtitle}
+          desc={school?.testimonialdesc}
+          testis={school?.testimonials}
+        />
+      )}
       {school?.showdeaninfo && (
         <SchoolDeansVision
           deanName={school?.deansname}
@@ -165,13 +175,20 @@ export default async function Page({ params }: Props) {
           deanImgUrl={school?.deanimg?.url}
         />
       )}
-      <SchoolFacultyAdvisory fac_adv={school?.fac_adv} schoolCat={schoolCat} />
-      <SchoolEventAndExperience
-        title={school?.eventstitle}
-        desc={school?.eventsdesc}
-        btn={school?.eventsbtn}
-        eventsexp={schoolEventsAndExperience}
-      />
+      {school?.fac_adv && (
+        <SchoolFacultyAdvisory
+          fac_adv={school?.fac_adv}
+          schoolCat={schoolCat}
+        />
+      )}
+      {school?.eventstitle && (
+        <SchoolEventAndExperience
+          title={school?.eventstitle}
+          desc={school?.eventsdesc}
+          btn={school?.eventsbtn}
+          eventsexp={schoolEventsAndExperience}
+        />
+      )}
       {school?.studentachievementtitle && (
         <SchoolStudentAchievements
           title={school?.studentachievementtitle}
