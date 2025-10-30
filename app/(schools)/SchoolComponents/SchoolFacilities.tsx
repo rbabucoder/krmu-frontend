@@ -31,7 +31,7 @@ const SchoolFacilities = ({ fac_slides }: Props) => {
   }, [api]);
 
   return (
-    <div className="pt-[30px] pb-20 bg-[#051630]">
+    <div className="pt-[30px] pb-32 sm:pb-20 bg-[#051630]">
       <div className="max-w-[1664px] mx-auto w-full">
         <div className="text-center text-white px-4">
           <h5 className="text-3xl md:text-5xl lg:text-6xl xl:text-[80px] leading-[1.16] font-medium">
@@ -52,14 +52,14 @@ const SchoolFacilities = ({ fac_slides }: Props) => {
             {fac_slides.map((slide, index) => (
               <CarouselItem
                 key={slide.id}
-                className={`basis-[85%] md:basis-[70%] lg:basis-[60%] p-0 fac_slide ${
+                className={`basis-[100%] md:basis-[70%] lg:basis-[60%] p-0 fac_slide ${
                   index === current ? "fac_active_slide" : ""
                 }`}
               >
-                <h6 className="text-xl md:text-2xl mb-5 font-semibold text-center fac_title text-white">
+                <h6 className="text-sm sm:text-xl md:text-2xl mt-5 font-semibold text-center fac_title text-white">
                   {slide.title}
                 </h6>
-                <div className="fac_slide_img_container">
+                <div className="fac_slide_img_container mt-10">
                   <Image
                     src={`${STRAPI_URL}${slide?.facility_img?.url}`}
                     width={1140}
@@ -74,12 +74,12 @@ const SchoolFacilities = ({ fac_slides }: Props) => {
 
           <CarouselPrevious
             className="bg-[#2c3a4f] text-[#bfc4ca] hover:bg-[#051630] hover:text-white cursor-pointer buttonPrevNextSize w-[60px] h-[60px]
-            top-[105%] left-[45%]
+           top-[115%] sm:top-[108%] xl:top-[105%] left-[20%] sm:left-[30%] xl:left-[45%]
         "
           />
           <CarouselNext
             className="bg-[#2c3a4f] text-[#bfc4ca] hover:bg-[#051630] hover:text-white cursor-pointer buttonPrevNextSize w-[60px] h-[60px] 
-            top-[105%] right-[45%]"
+            top-[115%] sm:top-[108%]  xl:top-[105%] right-[20%] sm:right-[30%] xl:right-[45%]"
           />
         </Carousel>
       </div>

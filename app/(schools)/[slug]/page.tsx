@@ -122,13 +122,15 @@ export default async function Page({ params }: Props) {
           newsletterbg={school?.newsletterbg?.url}
         />
       )}
-      <SchoolAdvantages
-        heading={school?.advantagetitle}
-        desc={school?.advantagedesc}
-        subtitle={school?.advantagesubtitle}
-        advimg={school?.advantagimg}
-        advcards={school?.advantageCards}
-      />
+      {school?.advantagetitle && (
+        <SchoolAdvantages
+          heading={school?.advantagetitle}
+          desc={school?.advantagedesc}
+          subtitle={school?.advantagesubtitle}
+          advimg={school?.advantagimg}
+          advcards={school?.advantageCards}
+        />
+      )}
       {school?.induscollabtitle && (
         <SchoolIndustryCollaboration
           title={school?.induscollabtitle}
