@@ -50,7 +50,7 @@ const SchoolDeansVision = ({
               width={358}
               height={465}
               alt="Pankaj Aggarwal"
-              className="rounded-[25px]"
+              className="rounded-[25px] w-full"
             />
           </div>
           <div className="xl:w-4/6 p-5 sm:px-10 sm:pb-10 xl:p-[50px] text-sm sm:text-base text-white">
