@@ -112,12 +112,14 @@ export default async function Page({ params }: Props) {
         excbtns={school?.excitedbtns}
         excbg={school?.excitedbg?.url}
       />
-      {school?.newslettertitle && <SchoolNewsletter
-        heading={school?.newslettertitle}
-        desc={school?.newsletterdesc}
-        btns={school?.newsletterbtns}
-        newsletterbg={school?.newsletterbg?.url}
-      />}
+      {school?.newslettertitle && (
+        <SchoolNewsletter
+          heading={school?.newslettertitle}
+          desc={school?.newsletterdesc}
+          btns={school?.newsletterbtns}
+          newsletterbg={school?.newsletterbg?.url}
+        />
+      )}
       <SchoolAdvantages
         heading={school?.advantagetitle}
         desc={school?.advantagedesc}
