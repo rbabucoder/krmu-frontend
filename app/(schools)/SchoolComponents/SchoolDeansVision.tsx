@@ -53,7 +53,7 @@ const SchoolDeansVision = ({
               className="rounded-[25px] w-full"
             />
           </div>
-          <div className="xl:w-4/6 p-5 sm:px-10 sm:pb-10 xl:p-[50px] text-sm sm:text-base text-white">
+          <div className="xl:w-4/6 p-5 sm:px-10 sm:pb-10 xl:p-[50px] text-sm sm:text-base text-white dean_heading_h3">
             {desc && <BlocksRenderer content={desc} />}
             <br />
             <p className="text-2xl md:text-[32px] mb-2.5 sm:mb-3.5">

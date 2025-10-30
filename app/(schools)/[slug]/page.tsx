@@ -131,12 +131,15 @@ export default async function Page({ params }: Props) {
           advcards={school?.advantageCards}
         />
       )}
-      {school?.induscollabtitle && (
-        <SchoolIndustryCollaboration
-          title={school?.induscollabtitle}
-          collabCards={school?.collabcards}
-        />
-      )}
+      {school?.induscollabtitle &&
+        Array.isArray(school?.collabcards) &&
+        school.collabcards.length > 0 && (
+          <SchoolIndustryCollaboration
+            title={school.induscollabtitle}
+            collabCards={school.collabcards}
+          />
+        )}
+
       {school?.letsexplorecontent && (
         <SchoolLetsExplore
           content={school?.letsexplorecontent}
