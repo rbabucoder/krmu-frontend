@@ -131,12 +131,14 @@ export default async function Page({ params }: Props) {
         title={school?.induscollabtitle}
         collabCards={school?.collabcards}
       />
-      <SchoolLetsExplore
-        content={school?.letsexplorecontent}
-        list1={school?.listitem1?.listsitems}
-        list2={school?.listitem2}
-        list3={school?.listitem3}
-      />
+      {school?.letsexplorecontent && (
+        <SchoolLetsExplore
+          content={school?.letsexplorecontent}
+          list1={school?.listitem1?.listsitems}
+          list2={school?.listitem2}
+          list3={school?.listitem3}
+        />
+      )}
       <SchoolKnowledgePartner
         title={school?.knowledgetitle}
         logos={school?.knowledgepartenerlogos}
