@@ -1,14 +1,23 @@
 import Popup from "@/app/components/Popup";
+import { STRAPI_URL } from "@/app/constant";
 import { Button } from "@/lib/types/home";
 import Link from "next/link";
 type Props = {
   heading: string;
   desc: string;
   excbtns: Button[];
+  excbg: string;
 };
-const SchoolExcitedAlready = ({ heading, desc, excbtns }: Props) => {
+const SchoolExcitedAlready = ({ heading, desc, excbtns, excbg }: Props) => {
   return (
-    <section className="bg-[url(/schools/excited-bg.webp)] bg-cover bg-center py-14 px-4">
+    <section
+      className="bg-cover bg-center py-14 px-4"
+      style={{
+        background: `url(${STRAPI_URL}${excbg})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
+    >
       <div className="max-w-[1664px] mx-auto w-full xl:flex">
         <div className="w-full xl:w-2/3 text-white text-center">
           <h4 className="text-3xl sm:text-6xl lg:text-8xl font-medium mb-5 lg:mb-0">

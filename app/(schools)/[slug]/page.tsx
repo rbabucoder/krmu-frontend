@@ -96,10 +96,12 @@ export default async function Page({ params }: Props) {
           counters={schoolKnowComp?.counter}
         />
       )}
-      <SchoolOurAlumni
-        title={school?.alumnititle}
-        alumniLogos={school.alumnilogo}
-      />
+      {school?.alumnititle && (
+        <SchoolOurAlumni
+          title={school?.alumnititle}
+          alumniLogos={school.alumnilogo}
+        />
+      )}
       <SchoolProgrammeOffered
         degName={degreeName}
         schoolCategoryName={schoolCategoryName}
@@ -108,12 +110,14 @@ export default async function Page({ params }: Props) {
         heading={school?.excitedtitle}
         desc={school?.exciteddescription}
         excbtns={school?.excitedbtns}
+        excbg={school?.excitedbg?.url}
       />
-      <SchoolNewsletter
+      {school?.newslettertitle && <SchoolNewsletter
         heading={school?.newslettertitle}
         desc={school?.newsletterdesc}
         btns={school?.newsletterbtns}
-      />
+        newsletterbg={school?.newsletterbg?.url}
+      />}
       <SchoolAdvantages
         heading={school?.advantagetitle}
         desc={school?.advantagedesc}

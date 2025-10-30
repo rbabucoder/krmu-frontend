@@ -116,6 +116,8 @@ export interface School {
   testimonials: SchoolTestimonials[];
   deanvisionsubtitle: string;
   deanimg: StrapiMedia;
+  newsletterbg: StrapiMedia;
+  excitedbg: StrapiMedia;
   deanvisiontitle: string;
   deancontent: ParagraphBlock[];
   deansname: string;

@@ -14,6 +14,7 @@ const AlumniLogoCard = ({ logoUrl, altText }: Props) => {
         width={150}
         height={80}
         alt={altText}
+        className="h-20 object-contain"
       />
     </div>
   );
