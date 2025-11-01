@@ -31,7 +31,7 @@ const AdvisoryLoop = ({ schoolCat }: Props) => {
 
   // ✅ Show only Advisory members
   const advisoryFaculties = faculties.filter(
-    (faculty) => faculty.faculty_type?.toLowerCase() === "advisory"
+    (faculty) => (faculty.faculty_type?.toLowerCase() === "advisory") || (faculty.faculty_type?.toLowerCase() === "both")
   );
 
   const visibleFaculties = advisoryFaculties.slice(0, visibleCount);
