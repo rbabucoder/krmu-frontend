@@ -15,10 +15,160 @@
 
 /* Custom utility class */
 @layer utilities {
-  .dean_heading_h3 h3{
+  .krmu_single_blog p {
+    margin-bottom: 20px;
+  }
+
+  .krmu_single_blog h2 {
+    color: #e50914;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    font-size: 32px;
+    position: relative;
+    margin: 0 0 10px 0px;
+  }
+
+  .krmu_single_blog h2::after {
+    content: "" !important;
+    position: absolute !important;
+    left: 0;
+    bottom: 0;
+    height: 4px !important;
+    width: 45px !important;
+    background: linear-gradient(to right, #d50000, #0000ff) !important;
+    border-radius: 2px !important;
+  }
+  .krmu_single_blog h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  .krmu_single_blog a {
+    color: #af406a;
+  }
+
+  .krmu_single_blog h4 {
+    margin: 0 0 10px 0px;
+    line-height: 1.2;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .krmu_single_blog ul {
+    padding-left: 40px;
+    list-style: disc;
+    margin: 16px 0px;
+  }
+  .krmu_single_blog ul li,
+  .krmu_single_blog ul li span {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .krmu_single_blog table {
+    width: 100%;
+  }
+  .krmu_single_blog table th {
+    background: linear-gradient(
+      68deg,
+      rgb(5 102 200 / 99%) 0%,
+      rgb(187 37 37) 100%
+    );
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 1.2;
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+  }
+  .krmu_single_blog table tr:nth-child(even) {
+    background-color: #f9f9f9 !important;
+  }
+
+  .krmu_single_blog table td {
+    font-size: 13px;
+    padding: 8px 15px;
+  }
+  .krmu_single_blog table p {
+    margin: 0;
+  }
+
+  .krmu_single_blog table td,
+  .krmu_single_blog table th {
+    padding: 8px 15px !important;
+    border: 1px solid #ddd !important;
+    text-align: left !important;
+  }
+
+  .krmu_single_blog table tr:hover {
+    background-color: #f1f1f1 !important;
+  }
+  .faq-wrapper {
+    margin-top: 50px;
+  }
+
+  .faq-wrapper .faq-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+  }
+  .faq-wrapper .faq-question {
+    font-size: 16px;
+    margin: 0px 0px 10px 0px;
+    color: #2246f3;
+    font-weight: 800;
+  }
+  .faq-wrapper .faq-answer {
+    margin: 0;
+    color: #222;
+    line-height: 1.6;
+    font-size: 15px;
+  }
+  .dean_heading_h3 h3 {
     font-size: 30px;
     font-weight: bold;
     line-height: 1.2;
+  }
+  .single_blog_author_container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .single_blog_author_image img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .single_blog_author_info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .single_blog_author_info .author_name {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .single_blog_author_info .author_name a {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .single_blog_author_info span {
+    line-height: 1.2;
+  }
+
+  .single_blog_author_info .author_designation {
+    font-size: 13px;
+    color: #fff;
   }
   .grad-text-color {
     background: -webkit-linear-gradient(0deg, #0060aa 0.43%, #e31e24 91.06%);
