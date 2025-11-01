@@ -1,4 +1,4 @@
-import { FAQS, SingleBlogComponent } from "@/lib/types/blogs/single-blog";
+import { FAQS } from "@/lib/types/blogs/single-blog";
 
 type Props = {
   content: string;
