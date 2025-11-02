@@ -38,12 +38,12 @@ const SchoolAdvantages = ({
             {subtitle}
           </h5>
           {/* <p className="xl:pr-28 font-medium text-[#0060aa]"></p> */}
-          <div
+          {school_advantage && <div
             dangerouslySetInnerHTML={{
               __html: school_advantage,
             }}
             className="xl:pr-28 font-medium adv_content"
-          />
+          />}
         </div>
         <div className="w-full lg:w-1/2 mt-5 lg:mt-0 lg:flex flex-col items-end 2xl:block">
           {advcards &&
