@@ -137,6 +137,12 @@ export interface School {
   fac_adv: FACADV;
   video_comp: VIDEOCOMP;
   programme_offered: ProgrammeOffered;
+  school_advantage: SCHOOLADVANTAGE;
+}
+
+export interface SCHOOLADVANTAGE {
+  id: number;
+  advantage_content: string;
 }
 
 export interface ProgrammeOffered {

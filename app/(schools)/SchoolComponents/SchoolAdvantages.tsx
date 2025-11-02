@@ -8,14 +8,15 @@ type Props = {
   subtitle: string;
   advimg: StrapiMedia;
   advcards: CardWithImage[];
+  school_advantage: string;
 };
 
 const SchoolAdvantages = ({
   heading,
-  desc,
   subtitle,
   advimg,
   advcards,
+  school_advantage,
 }: Props) => {
   return (
     <section className="py-8 bg-[url(/schools/advantages-bg.webp)] bg-no-repeat bg-center bg-cover relative px-4">
@@ -33,10 +34,16 @@ const SchoolAdvantages = ({
       <div className="max-w-[1664px] mx-auto w-full flex flex-wrap lg:flex-nowrap items-center justify-between">
         <div className="w-full lg:w-1/2">
           <h4 className="text-6xl lg:text-9xl font-semibold">{heading}</h4>
-          <h5 className="text-5xl lg:text-[64px] font-semibold mb-5 lg:mb-0">
+          <h5 className="text-5xl lg:text-[64px] font-semibold mb-5">
             {subtitle}
           </h5>
-          <p className="xl:pr-28 font-medium text-[#0060aa]">{desc}</p>
+          {/* <p className="xl:pr-28 font-medium text-[#0060aa]"></p> */}
+          <div
+            dangerouslySetInnerHTML={{
+              __html: school_advantage,
+            }}
+            className="xl:pr-28 font-medium adv_content"
+          />
         </div>
         <div className="w-full lg:w-1/2 mt-5 lg:mt-0 lg:flex flex-col items-end 2xl:block">
           {advcards &&

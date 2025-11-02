@@ -4,10 +4,11 @@ import {
   SCHOOLEVENTSANDEXPRESPONSE,
   SchoolsResponse,
 } from "../types/schools";
+import { SingleFacultyResponse } from "./common";
 
 export async function getSchoolPage(): Promise<SchoolsResponse["data"]> {
   const res = await fetch(
-    `${FETCH_STRAPI_URL}/api/schools?populate[school_category][populate]=*&populate[schoolcomps][populate]=*&populate[schoolherobanner]=true&populate[admissionbtn]=true&populate[herobutton]=true&populate[excitedbtns]=true&populate[excitedbg]=true&populate[newsletterbg]=true&populate[newsletterbtns]=true&populate[advantagimg]=true&populate[alumnilogo]=true&populate[advantageCards][populate][fields][0]=title&populate[advantageCards][populate][fields][1]=cardcontent&populate[advantageCards][populate][fields][2]=cardclass&populate[advantageCards][populate][cardimg]=true&populate[collabcards][populate]=*&populate[listitem1][populate][listsitems]=true&populate[listitem2][populate][listsitems]=true&populate[listitem3][populate][listsitems]=true&populate[coebtn1]=true&populate[coebtn2]=true&populate[knowledgepartenerlogos]=true&populate[testimonials][populate]=*&populate[eventsbtn][populate]=*&populate[facility_slide][populate]=*&populate[video_comp][populate]=*&populate[programme_offered][fields][0]=title&populate[programme_offered][fields][1]=content&populate[commence_journey][populate]=*&populate[fac_adv]=true&populate[fields][0]=deanvisionsubtitle&populate[deanimg][populate]=*`,
+    `${FETCH_STRAPI_URL}/api/schools?populate[school_category][populate]=*&populate[schoolcomps][populate]=*&populate[schoolherobanner]=true&populate[admissionbtn]=true&populate[herobutton]=true&populate[excitedbtns]=true&populate[excitedbg]=true&populate[newsletterbg]=true&populate[newsletterbtns]=true&populate[advantagimg]=true&populate[alumnilogo]=true&populate[advantageCards][populate][fields][0]=title&populate[advantageCards][populate][fields][1]=cardcontent&populate[advantageCards][populate][fields][2]=cardclass&populate[advantageCards][populate][cardimg]=true&populate[collabcards][populate]=*&populate[listitem1][populate][listsitems]=true&populate[listitem2][populate][listsitems]=true&populate[listitem3][populate][listsitems]=true&populate[coebtn1]=true&populate[coebtn2]=true&populate[knowledgepartenerlogos]=true&populate[testimonials][populate]=*&populate[eventsbtn][populate]=*&populate[facility_slide][populate]=*&populate[video_comp][populate]=*&populate[programme_offered][fields][0]=title&populate[programme_offered][fields][1]=content&populate[commence_journey][populate]=*&populate[school_advantage][populate]=*&populate[fac_adv]=true&populate[fields][0]=deanvisionsubtitle&populate[deanimg][populate]=*`,
     {
       next: {
         revalidate: 60,
@@ -33,8 +34,8 @@ export async function getSchoolPage(): Promise<SchoolsResponse["data"]> {
 //     admissionbtn: true,
 //     herobutton : true,
 //     excitedbtns : true,
-//     excitedbg: true, 
-//     newsletterbg: true, 
+//     excitedbg: true,
+//     newsletterbg: true,
 //     newsletterbtns : true,
 //     advantagimg: true,
 //     alumnilogo: true,
@@ -83,6 +84,7 @@ export async function getSchoolPage(): Promise<SchoolsResponse["data"]> {
 //  commence_journey: {
 //      populate: '*'
 //     },
+//     school_advantage: {populate: '*'},
 //     fac_adv: true,
 //     fields: ['deanvisionsubtitle'],
 //    deanimg: {
@@ -90,8 +92,6 @@ export async function getSchoolPage(): Promise<SchoolsResponse["data"]> {
 //    }
 //   }
 // }
-
-
 
 export async function getEventsAndExperiencesBySchoolCat(cat: string = "SOET") {
   const res = await fetch(
@@ -178,4 +178,50 @@ export async function getFacultyByCat(
 // },
 // }
 
-// fix the query
+export async function getSingleFacultyBySlug(
+  slug: string = "ankita-samuel-pt-1"
+): Promise<SingleFacultyResponse["data"]> {
+  const res = await fetch(
+    `${FETCH_STRAPI_URL}/api/faculties?filters[facultyslug][$eq]=${slug}&fields[0]=faculty_name&fields[1]=faculty_designation&fields[2]=facultyslug&populate[faculty_img][fields][0]=url&populate[faculty_interest_areas][fields][0]=fac_int_content&populate[faculty_social_links][fields][0]=listtext&populate[faculty_social_links][fields][1]=listlink&populate[faculty_social_links][populate][listicon][fields][0]=url&populate[faculty_tab_content][populate][faculty_tab][fields][0]=tabname&populate[faculty_tab_content][populate][faculty_tab][fields][1]=tabcontent`,
+    {
+      next: {
+        revalidate: 60,
+      },
+    }
+  );
+  if (!res.ok) throw new Error("Failed to fetch industry connect page data");
+  const json: SingleFacultyResponse = await res.json();
+  return json.data;
+}
+
+// {
+// filters: {
+//   facultyslug: {
+//     $eq: 'ankita-samuel-pt-1',
+//   },
+// },
+// fields: ['faculty_name', 'faculty_designation', 'facultyslug'],
+// populate: {
+// faculty_img: {
+//  fields: ['url'] 
+// }, 
+// faculty_interest_areas : {
+//  fields: ['fac_int_content']
+// },
+// faculty_social_links : {
+//  fields: ['listtext', 'listlink'],
+//  populate: {
+//    listicon: {
+//     fields: ['url'] 
+//    }
+//  } 
+// },
+//  faculty_tab_content: {
+//   populate: {
+//     faculty_tab :{
+//       fields: ['tabname', 'tabcontent']
+//     } 
+//   }
+// }
+// }
+// }

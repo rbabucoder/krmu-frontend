@@ -6,6 +6,7 @@ import {
   FacilityAPIResponse,
   SchoolProgrammeSEOResponse,
   SchoolSEOResponse,
+  StrapiMedia,
   StudentAchievementResponse,
 } from "../types/common";
 import { TestimonialItem, TestimonialResponse } from "../constants/testimonial";
@@ -346,4 +347,60 @@ export async function getSchoolSEO(
   if (!res.ok) throw new Error("Failed to fetch School Programme SEO");
   const json: SchoolSEOResponse = await res.json();
   return json.data;
+}
+
+///////////////////////////////
+
+export interface FacultyInterestArea {
+  id: number;
+  fac_int_content: string; // HTML string (contains <ul><li> etc.)
+}
+
+export interface FacultyTab {
+  id: number;
+  tabname: string;
+  tabcontent: string | null; // can be null
+}
+
+export interface FacultyTabContent {
+  id: number;
+  faculty_tab: FacultyTab[];
+}
+
+export interface Faculty {
+  id: number;
+  documentId: string;
+  faculty_name: string;
+  faculty_designation: string;
+  faculty_interest_areas: FacultyInterestArea[];
+  faculty_tab_content: FacultyTabContent;
+  faculty_img: StrapiMedia;
+  facultyslug: string;
+  faculty_social_links: FacultySocialLinks[];
+}
+
+export interface FacultySocialLinks {
+  id: number;
+  listtext: string;
+  listlink: string;
+  listicon: ListIconImage;
+}
+
+export interface ListIconImage {
+  id: number;
+  documentId: string;
+  url: string;
+}
+
+export interface SingleFacultyResponse {
+  data: Faculty[];
+  meta: {
+    pagination: StrapiPagination;
+  };
+}
+export interface StrapiPagination {
+  page: number;
+  pageSize: number;
+  pageCount: number;
+  total: number;
 }

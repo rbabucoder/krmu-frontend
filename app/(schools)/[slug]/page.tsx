@@ -134,6 +134,7 @@ export default async function Page({ params }: Props) {
           subtitle={school?.advantagesubtitle}
           advimg={school?.advantagimg}
           advcards={school?.advantageCards}
+          school_advantage={school?.school_advantage?.advantage_content}
         />
       )}
       {school?.induscollabtitle &&
