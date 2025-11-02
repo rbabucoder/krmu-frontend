@@ -136,6 +136,12 @@ export interface School {
   fullwidthhero: boolean;
   fac_adv: FACADV;
   video_comp: VIDEOCOMP;
+  programme_offered: ProgrammeOffered;
+}
+
+export interface ProgrammeOffered {
+  title: string;
+  content: string;
 }
 
 export interface VIDEOCOMP {

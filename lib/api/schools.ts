@@ -7,7 +7,7 @@ import {
 
 export async function getSchoolPage(): Promise<SchoolsResponse["data"]> {
   const res = await fetch(
-    `${FETCH_STRAPI_URL}/api/schools?populate[school_category][populate]=*&populate[schoolcomps][populate]=*&populate[schoolherobanner]=true&populate[admissionbtn]=true&populate[herobutton]=true&populate[excitedbtns]=true&populate[excitedbg]=true&populate[newsletterbg]=true&populate[newsletterbtns]=true&populate[advantagimg]=true&populate[alumnilogo]=true&populate[advantageCards][populate][fields][0]=title&populate[advantageCards][populate][fields][1]=cardcontent&populate[advantageCards][populate][fields][2]=cardclass&populate[advantageCards][populate][cardimg]=true&populate[collabcards][populate]=*&populate[listitem1][populate][listsitems]=true&populate[listitem2][populate][listsitems]=true&populate[listitem3][populate][listsitems]=true&populate[coebtn1]=true&populate[coebtn2]=true&populate[knowledgepartenerlogos]=true&populate[testimonials][populate]=*&populate[eventsbtn][populate]=*&populate[facility_slide][populate]=*&populate[video_comp][populate]=*&populate[commence_journey][populate]=*&populate[fac_adv]=true&populate[fields][0]=deanvisionsubtitle&populate[deanimg][populate]=*`,
+    `${FETCH_STRAPI_URL}/api/schools?populate[school_category][populate]=*&populate[schoolcomps][populate]=*&populate[schoolherobanner]=true&populate[admissionbtn]=true&populate[herobutton]=true&populate[excitedbtns]=true&populate[excitedbg]=true&populate[newsletterbg]=true&populate[newsletterbtns]=true&populate[advantagimg]=true&populate[alumnilogo]=true&populate[advantageCards][populate][fields][0]=title&populate[advantageCards][populate][fields][1]=cardcontent&populate[advantageCards][populate][fields][2]=cardclass&populate[advantageCards][populate][cardimg]=true&populate[collabcards][populate]=*&populate[listitem1][populate][listsitems]=true&populate[listitem2][populate][listsitems]=true&populate[listitem3][populate][listsitems]=true&populate[coebtn1]=true&populate[coebtn2]=true&populate[knowledgepartenerlogos]=true&populate[testimonials][populate]=*&populate[eventsbtn][populate]=*&populate[facility_slide][populate]=*&populate[video_comp][populate]=*&populate[programme_offered][fields][0]=title&populate[programme_offered][fields][1]=content&populate[commence_journey][populate]=*&populate[fac_adv]=true&populate[fields][0]=deanvisionsubtitle&populate[deanimg][populate]=*`,
     {
       next: {
         revalidate: 60,
@@ -77,6 +77,9 @@ export async function getSchoolPage(): Promise<SchoolsResponse["data"]> {
 //     video_comp: {
 //       populate: '*'
 //     },
+//     programme_offered: {
+//      fields: ['title', 'content']
+//     },
 //  commence_journey: {
 //      populate: '*'
 //     },
@@ -87,6 +90,7 @@ export async function getSchoolPage(): Promise<SchoolsResponse["data"]> {
 //    }
 //   }
 // }
+
 
 
 export async function getEventsAndExperiencesBySchoolCat(cat: string = "SOET") {

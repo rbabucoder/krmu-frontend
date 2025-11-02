@@ -66,7 +66,10 @@ const SchoolHero = ({
                 <Link
                   key={btn.id}
                   href={btn.buttonlink}
-                  className={`py-3.5 px-8 bg-[#cb000d] font-bold rounded-sm text-sm md:text-base ${btn.buttonclass}`}
+                  className={`py-3.5 px-8 bg-[#cb000d] font-bold rounded-sm text-sm md:text-base ${
+                    btn.buttonclass || ""
+                  }`}
+                  target="_blank"
                 >
                   {btn.buttontext}
                 </Link>

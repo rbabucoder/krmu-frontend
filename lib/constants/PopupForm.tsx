@@ -77,7 +77,7 @@ const PopupForm = ({
   }, [isOpen, scriptLoaded, formId, uniqueContainerId]);
 
   return (
-    <div className={`popup-form ${containerClass}`}>
+    <div className={`popup-form ${containerClass || ''}`}>
       {/* Trigger Button */}
       <button className={buttonClass} onClick={() => setIsOpen(true)}>
         <span>{buttonText}</span> {buttonIcon}

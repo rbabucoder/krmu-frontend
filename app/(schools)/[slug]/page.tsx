@@ -105,10 +105,14 @@ export default async function Page({ params }: Props) {
           alumniLogos={school.alumnilogo}
         />
       )}
-      <SchoolProgrammeOffered
-        degName={degreeName}
-        schoolCategoryName={schoolCategoryName}
-      />
+       (
+        <SchoolProgrammeOffered
+          degName={degreeName}
+          schoolCategoryName={schoolCategoryName}
+          title={school?.programme_offered?.title}
+          content={school?.programme_offered?.content}
+        />
+      )
       <SchoolExcitedAlready
         heading={school?.excitedtitle}
         desc={school?.exciteddescription}

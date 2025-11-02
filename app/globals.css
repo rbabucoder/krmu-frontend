@@ -15,6 +15,77 @@
 
 /* Custom utility class */
 @layer utilities {
+  .alumni-carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  /* -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  ); */
+}
+
+.alumni-carousel__track {
+  display: flex;
+  width: max-content;
+  animation: scroll 35s linear infinite;
+}
+
+.alumni-carousel__item {
+  flex: 0 0 320px; /* Each logo container fixed to 320px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+/* 🔁 Make responsive */
+@media (max-width: 1024px) {
+  .alumni-carousel__item {
+    flex: 0 0 250px;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .alumni-carousel__item {
+    flex: 0 0 200px;
+    padding: 0 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .alumni-carousel__item {
+    flex: 0 0 150px;
+    padding: 0 0.5rem;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Optional hover pause */
+.alumni-carousel:hover .alumni-carousel__track {
+  animation-play-state: paused;
+}
+
+
   .krmu_single_blog p {
     margin-bottom: 20px;
   }

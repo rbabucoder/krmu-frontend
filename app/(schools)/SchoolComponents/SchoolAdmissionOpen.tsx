@@ -22,6 +22,7 @@ const SchoolAdmissionOpen = ({ title, admBtn }: Props) => {
           <Link
             href={admBtn?.buttonlink}
             className={`w-fit sm:w-full bg-red-500 md:max-w-4xl mx-auto p-2.5 text-lg font-bold h-[50px]  text-white rounded-lg text-center ${admBtn.buttonclass}`}
+            target="_blank"
           >
             {admBtn?.buttontext}
           </Link>

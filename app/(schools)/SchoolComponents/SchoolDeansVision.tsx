@@ -1,6 +1,7 @@
 import { STRAPI_URL } from "@/app/constant";
 import { ParagraphBlock } from "@/lib/types/about";
 import { BlocksRenderer } from "@strapi/blocks-react-renderer";
+import { Mail } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -59,11 +60,14 @@ const SchoolDeansVision = ({
             <p className="text-2xl md:text-[32px] mb-2.5 sm:mb-3.5">
               <strong>{deanName}</strong>
             </p>
-            <Link href={`mailto:${deanEmail}`} className="text-base">
-              {deanEmail}
+            <Link
+              href={`mailto:${deanEmail}`}
+              className="text-base flex items-center gap-1"
+            >
+              <Mail size={16} /> <span>{deanEmail}</span>
             </Link>
-            <br />
-            <p className="text-sm sm:text-base">{desg}</p>
+
+            <p className="text-sm sm:text-base mt-2.5">{desg}</p>
           </div>
         </div>
       </div>
