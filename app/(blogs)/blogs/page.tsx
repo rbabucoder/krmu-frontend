@@ -2,7 +2,7 @@ import CommonBlogHeroSection from "./comp/CommonBlogHeroSection";
 import CommonBlogLayout from "./comp/CommonBlogLayout";
 
 type Props = {
-  searchParams: { page?: string };
+  searchParams: Promise<{ page?: string }>;
 };
 
 const Page = async ({ searchParams }: Props) => {
