@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // output: "export", 
+  // output: "export",
   images: {
     remotePatterns: [
       {
@@ -13,6 +13,11 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "truthful-cabbage-82fd27e8f6.media.strapiapp.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "www.krmangalam.edu.in",
         pathname: "/**",
       },
     ],

@@ -404,3 +404,6 @@ export interface StrapiPagination {
   pageCount: number;
   total: number;
 }
+
+
+

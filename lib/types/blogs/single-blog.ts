@@ -32,9 +32,66 @@ export interface Pagination {
   total: number;
 }
 
-export interface BlogResponse {
-  data: Blog[];
-  meta: {
-    pagination: Pagination;
+// export interface BlogResponse {
+//   data: Blog[];
+//   meta: {
+//     pagination: Pagination;
+//   };
+// }
+
+export type SingleBlogResponse = BlogPostContent[];
+
+export type BlogPostContent = {
+  date: string;
+  slug: string;
+  title: {
+    rendered: string;
   };
-}
+  content: {
+    rendered: string;
+    protected: boolean;
+  };
+  _embedded: {
+    author: BlogAuthor[];
+    "wp:featuredmedia"?: BlogFeaturedMedia[];
+  };
+};
+
+export type BlogAuthor = {
+  id: number;
+  name: string;
+  // url: string;
+  slug: string;
+  // description?: string;
+  // avatar_urls?: {
+  //   [size: string]: string;
+  // };
+  acf: AuthorACF;
+};
+
+export type AuthorACF = {
+  profile_image: number;
+  profile_position: string;
+  profile_about: string;
+  profile_verified: string;
+  profile_page_yes_or_no: string;
+  profile_name: string;
+};
+
+export type BlogFeaturedMedia = {
+  id: number;
+  date: string;
+  source_url?: string;
+  alt_text?: string;
+  media_type?: string;
+  mime_type?: string;
+};
+
+export type AllBlogCategoriesResponse = AllBlogCategories[];
+
+export type AllBlogCategories = {
+  id: number;
+  name: string;
+  slug: string;
+  taxonomy: string;
+};

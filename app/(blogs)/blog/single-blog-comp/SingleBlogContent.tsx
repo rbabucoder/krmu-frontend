@@ -1,42 +1,44 @@
-import { FAQS } from "@/lib/types/blogs/single-blog";
+"use client";
+import React, { useEffect, useState } from "react";
 
 type Props = {
   content: string;
-  faqsData: FAQS[];
 };
 
-const SingleBlogContent = ({ content, faqsData }: Props) => {
+const SingleBlogContent = ({ content }: Props) => {
+  const [processedContent, setProcessedContent] = useState<string>("");
+
+  useEffect(() => {
+    if (!content) return;
+
+    // Parse and modify only in the browser (client)
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(content, "text/html");
+    const h2Elements = Array.from(doc.querySelectorAll("h2"));
+
+    h2Elements.forEach((el, index) => {
+      const id = `heading-${index + 1}`;
+      el.setAttribute("id", id);
+      el.classList.add("toc-target");
+    });
+
+    setProcessedContent(doc.body.innerHTML);
+  }, [content]);
+
   return (
     <div
       className="w-full p-[15px]"
-      style={{
-        boxShadow: `0px 0px 6px 0px #C6DCFD`,
-      }}
+      style={{ boxShadow: "0px 0px 6px 0px #C6DCFD" }}
     >
-      <div
-        dangerouslySetInnerHTML={{
-          __html: content,
-        }}
-        className="krmu_single_blog"
-      />
-
-      <div className="faq-wrapper">
-        {faqsData &&
-          faqsData?.map((faq, i) => {
-            return (
-              <div className="faq-card" key={faq?.id}>
-                <h3
-                  className="faq-question text-blue-600 mb-2"
-                  data-fontsize="16"
-                  data-lineheight="19.2px"
-                >
-                  {i + 1}. {faq?.ques}
-                </h3>
-                <p className="faq-answer">{faq?.answer}</p>
-              </div>
-            );
-          })}
-      </div>
+      {/* Render only after client-side processing */}
+      {processedContent ? (
+        <div
+          className="krmu_single_blog"
+          dangerouslySetInnerHTML={{ __html: processedContent }}
+        />
+      ) : (
+        <div className="krmu_single_blog" dangerouslySetInnerHTML={{ __html: content }} />
+      )}
     </div>
   );
 };

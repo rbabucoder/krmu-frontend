@@ -1,7 +1,11 @@
 import Image from "next/image";
-import React from "react";
 
-const SingleBlogHeroAuthor = () => {
+type Props = {
+  authorName: string;
+  desg: string;
+};
+
+const SingleBlogHeroAuthor = ({ authorName, desg}: Props) => {
   return (
     <div className="single_blog_author_container">
       <div className="single_blog_author_image">
@@ -18,10 +22,10 @@ const SingleBlogHeroAuthor = () => {
             href="https://www.krmangalam.edu.in/blog/author/abhinavsharma/"
             target="_blank"
           >
-            Abhinav Sharma
+            {authorName}
           </a>
         </span>
-        <span className="author_designation">Content Writer</span>
+        <span className="author_designation">{desg}</span>
       </div>
     </div>
   );
