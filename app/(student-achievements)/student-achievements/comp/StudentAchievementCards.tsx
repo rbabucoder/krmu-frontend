@@ -1,4 +1,4 @@
-import StudentAchievementCard from "@/app/(schools)/SchoolComponents/schoolglobalcomponent/StudentAchievementCard";
+// import StudentAchievementCard from "@/app/(schools)/SchoolComponents/schoolglobalcomponent/StudentAchievementCard";
 
 const StudentAchievementCards = () => {
   return (
