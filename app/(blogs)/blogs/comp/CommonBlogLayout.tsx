@@ -11,7 +11,7 @@ type Props = {
 };
 
 const CommonBlogLayout = async ({ searchParams, slug }: Props) => {
-  const resolvedSearchParams = await searchParams; // ✅ Await it
+  const resolvedSearchParams =  searchParams; // ✅ Await it
   const currentPage = Number(resolvedSearchParams?.page) || 1;
   const blogsPerPage = 6;
 

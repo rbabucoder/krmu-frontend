@@ -4,7 +4,7 @@ import CommonBlogHeroSection from "../../comp/CommonBlogHeroSection";
 
 type Props = {
   params: Promise<{ slug: string }>;
-  searchParams: Promise<{ page?: string }>;
+  searchParams: { page?: string };
 };
 
 const Page = async ({ params, searchParams }: Props) => {
