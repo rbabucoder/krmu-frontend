@@ -4,12 +4,12 @@ import CommonBlogHeroSection from "../../comp/CommonBlogHeroSection";
 
 type Props = {
   params: Promise<{ slug: string }>;
-  searchParams: { page?: string };
+  searchParams: Promise<{ page?: string }>;
 };
 
 const Page = async ({ params, searchParams }: Props) => {
   const resolvedParams = await params;
-  const resolvedSearchParams = await searchParams;
+  const resolvedSearchParams =  searchParams;
 
   const { slug } = resolvedParams;
   const category = await getCategoryBySlug(slug);

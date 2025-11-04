@@ -6,12 +6,12 @@ import CommonBlogCard from "./CommonBlogCard";
 import CommonBlogRightSidebar from "./CommonBlogRightSidebar";
 
 type Props = {
-  searchParams: { page?: string };
+  searchParams: Promise<{ page?: string }>;
   slug?: string;
 };
 
 const CommonBlogLayout = async ({ searchParams, slug }: Props) => {
-  const resolvedSearchParams =  searchParams; // ✅ Await it
+  const resolvedSearchParams = await searchParams; // ✅ Await it
   const currentPage = Number(resolvedSearchParams?.page) || 1;
   const blogsPerPage = 6;
 

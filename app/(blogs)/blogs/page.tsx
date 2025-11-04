@@ -2,11 +2,10 @@ import CommonBlogHeroSection from "./comp/CommonBlogHeroSection";
 import CommonBlogLayout from "./comp/CommonBlogLayout";
 
 type Props = {
-  // params: { slug: string };
-  // searchParams: { page?: string };
-  searchParams: { page?: string }; // 👈 expects a Promise
+  searchParams: { page?: string };
 };
-const page = ({ searchParams }: Props) => {
+
+const Page = async ({ searchParams }: Props) => {
   return (
     <>
       <CommonBlogHeroSection />
@@ -15,4 +14,4 @@ const page = ({ searchParams }: Props) => {
   );
 };
 
-export default page;
+export default Page;
