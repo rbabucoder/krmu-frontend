@@ -48,7 +48,7 @@ const fetchProg = useCallback(
             id: item.id,
             documentId: item.documentId,
             title: item.heading,
-            programmeslug: item.school_category.slug, // use category slug or add your own if exists
+            programmeslug: item?.phdslug, // use category slug or add your own if exists
             highlightitle: "",
             criteria: item.criteria,
           })) || [];

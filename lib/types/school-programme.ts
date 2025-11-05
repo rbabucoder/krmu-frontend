@@ -355,6 +355,7 @@ export interface PhdProgrammeCardData {
   heading: string;
   degree: string;
   updatedAt: string;
+  phdslug: string;
   school_category: PhdProgrammeCategory;
   criteria: Criteria;
 }
