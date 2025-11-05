@@ -1,6 +1,5 @@
 import {
   getSchoolProgrammeData,
-  getSchoolProgrammePhdDataDegree,
 } from "@/lib/api/school-programmes";
 import BeyondClassroom from "../../school-programmes-component/BeyondClassroom";
 import CareerProspects from "../../school-programmes-component/CareerProspects";

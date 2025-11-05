@@ -5,7 +5,6 @@ import { loadNpfScript } from "@/lib/constants/loadNpfScript";
 import { HeroSection } from "@/lib/types/school-programme";
 import { MoveRight } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import { useEffect, useRef } from "react";
 
 type Props = {
