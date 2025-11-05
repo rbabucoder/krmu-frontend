@@ -31,6 +31,7 @@ const ProgrammeInfo = ({ catName }: Props) => {
     async (deg: string) => {
       try {
         const data = await getSchoolProgrammeInfoByDegree(deg, catName);
+        console.log('asdasd', data);
         setPrograms((prev) => ({ ...prev, [deg]: data || [] }));
 
         // Default active: first UG programme
@@ -147,7 +148,7 @@ const ProgrammeInfo = ({ catName }: Props) => {
                         className="block w-full h-full"
                         target="_blank"
                       >
-                        {prog.title}
+                        {prog.title}{prog.highlighttitle}
                       </Link>
                     </div>
                   );
