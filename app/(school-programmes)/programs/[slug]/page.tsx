@@ -64,6 +64,7 @@ const page = async ({ params }: Props) => {
     (phdprogram) => phdprogram?.phdslug === slug
   );
 
+
   // If not found, redirect to 404 page
   // if (!singleSchoolProgramme) return notFound();
 
@@ -153,6 +154,7 @@ const page = async ({ params }: Props) => {
             currbtn={curriculumSection?.currbtn}
             currFormId={curriculumSection?.currFormId}
             currFormContainerId={curriculumSection?.currContainerId}
+            isYear={curriculumSection?.only_years}
           />
         )}
         {labfacilitiesSection && (

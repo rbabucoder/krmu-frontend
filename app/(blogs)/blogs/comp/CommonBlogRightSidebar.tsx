@@ -21,7 +21,7 @@ const CommonBlogRightSidebar = async () => {
               <article
                 key={i}
                 className="text-white text-lg leading-8 pt-5 pb-2.5 border-t border-white relative before:content-[''] before:h-2.5 before:w-6 before:bg-white
-              before:max-w-2.5 before:min-w-2.5 before:rounded-full before:absolute pl-5 before:left-0 before:top-[30px] line-clamp-3 overflow-hidden "
+              before:max-w-2.5 before:min-w-2.5 before:rounded-full before:absolute pl-5 before:left-0 before:top-[30px] line-clamp-3 overflow-hidden"
               >
                 <Link
                   href={`/blog/${post?.slug}`}

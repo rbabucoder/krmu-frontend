@@ -14,6 +14,7 @@ type Props = {
   currbtn: ButtonType;
   currFormId: string;
   currFormContainerId: string;
+  isYear: boolean;
 };
 
 const ProgrammeStructure = ({
@@ -21,6 +22,7 @@ const ProgrammeStructure = ({
   currbtn,
   currFormId,
   currFormContainerId,
+  isYear,
 }: Props) => {
   return (
     <div className="w-full">
@@ -118,7 +120,11 @@ const ProgrammeStructure = ({
                     }
                   >
                     {/* Semester Tabs */}
-                    <div className="flex mobsemtab sm:ml-0 justify-center items-center">
+                    <div
+                      className={`flex mobsemtab sm:ml-0 justify-center items-center ${
+                        isYear ? "hidden" : ""
+                      }`}
+                    >
                       <TabsList className="bg-[#0a41a1] p-2.5 h-16 mobsemtablist">
                         {year.semester.map((sem) => {
                           const semValue = sem.semestername

@@ -10,6 +10,7 @@ type Props = {
   currbtn: ButtonType;
   currFormId: string;
   currFormContainerId: string;
+  isYear: boolean;
 };
 
 const Curriculum = ({
@@ -19,7 +20,8 @@ const Curriculum = ({
   programStruct,
   currbtn,
   currFormId,
-  currFormContainerId
+  currFormContainerId,
+  isYear
 }: Props) => {
   return (
     <>
@@ -31,7 +33,13 @@ const Curriculum = ({
             </h2>
             <p className="sub-heading">{desc}</p>
           </div>
-          <ProgrammeStructure currbtn={currbtn} currFormContainerId={currFormContainerId} currFormId={currFormId} programStruct={programStruct} />
+          <ProgrammeStructure
+            currbtn={currbtn}
+            currFormContainerId={currFormContainerId}
+            currFormId={currFormId}
+            programStruct={programStruct}
+            isYear={isYear}
+          />
         </div>
       </section>
     </>

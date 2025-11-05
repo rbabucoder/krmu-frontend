@@ -102,6 +102,7 @@ export interface Curriculum {
   currbtn: ButtonType;
   currFormId: string;
   currContainerId: string;
+  only_years: boolean;
 }
 
 export interface LabCard {

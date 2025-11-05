@@ -13,13 +13,15 @@ const ProgrammeHighlightCard = ({ title, desc, highlightimg }: Props) => {
     <>
       <div className="proghighcard flex justify-center cursor-pointer rounded-[30px]">
         <div className="w-1/5">
-          <Image
-            width={127}
-            height={144}
-            src={`${STRAPI_URL}${highlightimg?.url}`}
-            alt={highlightimg?.alternativeText || "ba-hons-psychology-krmu"}
-            className="w-full h-full object-cover rounded-l-[20px]"
-          />
+          {highlightimg?.url && (
+            <Image
+              width={127}
+              height={144}
+              src={`${STRAPI_URL}${highlightimg?.url}`}
+              alt={highlightimg?.alternativeText || "ba-hons-psychology-krmu"}
+              className="w-full h-full object-cover rounded-l-[20px]"
+            />
+          )}
         </div>
         <div className="w-4/5 py-2.5 pr-2.5 pl-5">
           <h5 className="text-xl text-[#0a41a1] hover:text-[#db2a1a] font-medium leading-[1.2] mb-2.5">

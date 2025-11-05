@@ -64,13 +64,15 @@ const ProgrammeScope = ({ scopeData }: Props) => {
           )} */}
         </div>
         <div className="w-full xl:w-1/2">
-          <Image
-            width={1728}
-            height={1248}
-            src={`${STRAPI_URL}${scopeData?.scopeimg?.url}`}
-            className="w-full h-full object-cover"
-            alt="scope image"
-          />
+          {scopeData?.scopeimg?.url && (
+            <Image
+              width={1728}
+              height={1248}
+              src={`${STRAPI_URL}${scopeData?.scopeimg?.url}`}
+              className="w-full h-full object-cover"
+              alt="scope image"
+            />
+          )}
         </div>
       </div>
     </section>
