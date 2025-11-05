@@ -148,7 +148,7 @@ const ProgrammeInfo = ({ catName }: Props) => {
                         className="block w-full h-full"
                         target="_blank"
                       >
-                        {prog.title}{prog.highlighttitle}
+                        {prog.title}{" "}{prog.highlightitle}
                       </Link>
                     </div>
                   );

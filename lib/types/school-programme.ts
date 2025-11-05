@@ -315,7 +315,7 @@ export interface ProgrammeCardData {
   title: string;
   programmeslug: string;
   criteria: Criteria;
-  highlighttitle: string;
+  highlightitle: string;
 }
 
 export interface Criteria {
