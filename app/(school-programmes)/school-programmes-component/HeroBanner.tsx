@@ -13,7 +13,7 @@ type Props = {
   highlightitle: string;
   heroSection: HeroSection;
   formId?: string; // dynamic form id
-}; 
+};
 
 const HeroBanner = ({ title, highlightitle, heroSection, formId }: Props) => {
   const btnRef = useRef<HTMLButtonElement>(null);
@@ -21,21 +21,23 @@ const HeroBanner = ({ title, highlightitle, heroSection, formId }: Props) => {
   useEffect(() => {
     if (!formId || !btnRef.current) return;
 
-    loadNpfScript().then(() => {
-      // @ts-expect-error - test
-      new NpfWidgetsInit({
-        widgetId: formId,
-        baseurl: "widgets.nopaperforms.com",
-        formTitle: heroSection?.herobtn?.buttontext || "Apply Now",
-        titleColor: "#FF0033",
-        backgroundColor: "#ddd",
-        iframeHeight: "500px",
-        buttonTextColor: "#FFF",
-        target: btnRef.current,
+    loadNpfScript()
+      .then(() => {
+        // @ts-expect-error - test
+        new NpfWidgetsInit({
+          widgetId: formId,
+          baseurl: "widgets.nopaperforms.com",
+          formTitle: heroSection?.herobtn?.buttontext || "Apply Now",
+          titleColor: "#FF0033",
+          backgroundColor: "#ddd",
+          iframeHeight: "500px",
+          buttonTextColor: "#FFF",
+          target: btnRef.current,
+        });
+      })
+      .catch((err) => {
+        console.error("Failed to load NPF script:", err);
       });
-    }).catch((err) => {
-      console.error("Failed to load NPF script:", err);
-    });
   }, [formId, heroSection?.herobtn?.buttontext]);
 
   return (
@@ -55,17 +57,14 @@ const HeroBanner = ({ title, highlightitle, heroSection, formId }: Props) => {
           {formId ? (
             <button
               ref={btnRef}
-              className={`hero-common-btn-b mt-12 ${heroSection.herobtn.buttonclass || ""}`}
+              className={`hero-common-btn-b mt-12 ${
+                heroSection.herobtn.buttonclass || ""
+              }`}
             >
               {heroSection.herobtn.buttontext || "Apply Now"} <MoveRight />
             </button>
           ) : (
-            <Link
-              href={heroSection.herobtn.buttonlink || "#"}
-              className={`hero-common-btn-b mt-12 ${heroSection.herobtn.buttonclass || ""}`}
-            >
-              {heroSection.herobtn.buttontext || "Apply Now"} <MoveRight />
-            </Link>
+            ""
           )}
         </div>
 
@@ -93,28 +92,6 @@ const HeroBanner = ({ title, highlightitle, heroSection, formId }: Props) => {
 };
 
 export default HeroBanner;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import { STRAPI_URL } from "@/app/constant";
 // import { HeroSection } from "@/lib/types/school-programme";

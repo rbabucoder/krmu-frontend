@@ -1,7 +1,10 @@
 "use client";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { getSchoolProgrammeInfoByDegree } from "@/lib/api/school-programmes";
+import {
+  getSchoolProgrammeInfoByDegree,
+  getSchoolProgrammePhdDataDegree,
+} from "@/lib/api/school-programmes";
 import { ProgrammeCardData } from "@/lib/types/school-programme";
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
@@ -27,23 +30,83 @@ const ProgrammeInfo = ({ catName }: Props) => {
   ];
 
   // Fetch programmes
-  const fetchProg = useCallback(
-    async (deg: string) => {
-      try {
-        const data = await getSchoolProgrammeInfoByDegree(deg, catName);
-        console.log('asdasd', data);
-        setPrograms((prev) => ({ ...prev, [deg]: data || [] }));
+const fetchProg = useCallback(
+  async (deg: string) => {
+    try {
+      let data: ProgrammeCardData[] = [];
 
-        // Default active: first UG programme
-        if (deg === "Undergraduate Programmes" && data?.length > 0) {
-          setActiveProgramId(data[0].id);
-        }
-      } catch (err) {
-        console.error("Failed to fetch programmes:", err);
+      if (deg === "Doctoral Programmes") {
+        // ✅ Fetch Ph.D. data (returns PhdProgrammeCardData[])
+        const phdData = await getSchoolProgrammePhdDataDegree(
+          "Doctoral Programme",
+          catName
+        );
+
+        // ✅ Map Ph.D. data to ProgrammeCardData structure
+        data =
+          phdData?.map((item) => ({
+            id: item.id,
+            documentId: item.documentId,
+            title: item.heading,
+            programmeslug: item.school_category.slug, // use category slug or add your own if exists
+            highlightitle: "",
+            criteria: item.criteria,
+          })) || [];
+      } else {
+        // ✅ Fetch UG/PG/Diploma data
+        const programmeData = await getSchoolProgrammeInfoByDegree(deg, catName);
+        data = programmeData || [];
       }
-    },
-    [catName]
-  );
+
+      // ✅ Update state
+      setPrograms((prev) => ({ ...prev, [deg]: data }));
+      if (data.length > 0) {
+        setActiveProgramId(data[0].id);
+      }
+    } catch (err) {
+      console.error("Failed to fetch programmes:", err);
+    }
+  },
+  [catName]
+);
+
+  // const fetchProg = useCallback(
+  //   async (deg: string) => {
+  //     try {
+  //       let data: ProgrammeCardData[] = [];
+
+  //       if (deg === "Doctoral Programmes") {
+  //         // 🔹 Fetch Ph.D. data using different API
+  //         const phdRes = await getSchoolProgrammePhdDataDegree(
+  //           "Doctoral Programme",
+  //           catName
+  //         );
+  //         // Convert PhD API format to match the rest
+  //         data = phdRes?.data?.map((item: any) => ({
+  //           id: item.id,
+  //           title: item.heading,
+  //           programmeslug: item.phdslug,
+  //           highlightitle: "",
+  //           criteria: item.criteria,
+  //         })) || [];
+  //       } else {
+  //         // 🔹 Fetch UG, PG, Diploma normally
+  //         const res = await getSchoolProgrammeInfoByDegree(deg, catName);
+  //         data = res || [];
+  //       }
+
+  //       setPrograms((prev) => ({ ...prev, [deg]: data }));
+
+  //       // Set default active program if none selected
+  //       if (data.length > 0) {
+  //         setActiveProgramId(data[0].id);
+  //       }
+  //     } catch (err) {
+  //       console.error("Failed to fetch programmes:", err);
+  //     }
+  //   },
+  //   [catName]
+  // );
 
   // On mount / degree change
   useEffect(() => {
@@ -75,12 +138,7 @@ const ProgrammeInfo = ({ catName }: Props) => {
     setHoverProgramId(progId);
   };
 
-  // ✅ Removed handleMouseLeave — no longer needed
-  // const handleMouseLeave = () => {
-  //   setHoverProgramId(null);
-  // };
-
-  // Get current active or hovered programme details
+  // Current selected or hovered program
   const currentProgram =
     programs[activeDegree]?.find(
       (p) => p.id === (hoverProgramId ?? activeProgramId)
@@ -148,7 +206,7 @@ const ProgrammeInfo = ({ catName }: Props) => {
                         className="block w-full h-full"
                         target="_blank"
                       >
-                        {prog.title}{" "}{prog.highlightitle}
+                        {prog.title} {prog.highlightitle}
                       </Link>
                     </div>
                   );
@@ -161,7 +219,7 @@ const ProgrammeInfo = ({ catName }: Props) => {
         </Tabs>
       </div>
 
-      {/* RIGHT SIDE (DYNAMIC) */}
+      {/* RIGHT SIDE */}
       <div
         className="xl:w-1/2 rounded-r-3xl bg-white py-[30px] pl-16 pr-10 -ml-10 hidden xl:block"
         style={{

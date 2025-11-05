@@ -335,3 +335,33 @@ export interface ProgrammeDegree {
   name: string;
   slug: string;
 }
+
+//////////////////////////// PHD Programmes
+export interface SchoolPhDProgrammeResponse {
+  data: PhdProgrammeCardData[];
+  meta: {
+    pagination: {
+      page: number;
+      pageSize: number;
+      pageCount: number;
+      total: number;
+    };
+  };
+}
+
+export interface PhdProgrammeCardData {
+  id: number;
+  documentId: string;
+  heading: string;
+  degree: string;
+  updatedAt: string;
+  school_category: PhdProgrammeCategory;
+  criteria: Criteria;
+}
+
+export interface PhdProgrammeCategory {
+  id: number;
+  documentId: string;
+  name: string;
+  slug: string;
+}

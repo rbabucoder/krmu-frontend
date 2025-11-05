@@ -1,4 +1,7 @@
-import { getSchoolProgrammeData } from "@/lib/api/school-programmes";
+import {
+  getSchoolProgrammeData,
+  getSchoolProgrammePhdDataDegree,
+} from "@/lib/api/school-programmes";
 import BeyondClassroom from "../../school-programmes-component/BeyondClassroom";
 import CareerProspects from "../../school-programmes-component/CareerProspects";
 import { ConnectWithUs } from "../../school-programmes-component/ConnectWithUs";
@@ -64,7 +67,6 @@ const page = async ({ params }: Props) => {
     (phdprogram) => phdprogram?.phdslug === slug
   );
 
-
   // If not found, redirect to 404 page
   // if (!singleSchoolProgramme) return notFound();
 
@@ -94,6 +96,7 @@ const page = async ({ params }: Props) => {
   if (singlePHDProgramme?.degree === "Doctoral Programme") {
     return <PHDProgrammes phdData={singlePHDProgramme} />;
   }
+
 
   return (
     <>
