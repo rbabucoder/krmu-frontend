@@ -1,3 +1,4 @@
+import { getImageById } from "@/lib/api/blogs/single-blog";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -5,9 +6,14 @@ type Props = {
   title: string;
   excerpt: string;
   slug: string;
-  imgUrl: string;
+  // imgUrl: string;
+  imgId: number;
 };
-const CommonBlogCard = ({ title, excerpt, slug, imgUrl }: Props) => {
+const CommonBlogCard = async ({ title, excerpt, slug, imgId }: Props) => {
+  const imgUrl = await getImageById(imgId);
+
+  if (!imgUrl) return null;
+
   return (
     <div className="w-full">
       <Link
@@ -20,14 +26,16 @@ const CommonBlogCard = ({ title, excerpt, slug, imgUrl }: Props) => {
       >
         <div className="p-2.5">
           <div>
-            <Image
-              src={imgUrl || ""}
-              width={426}
-              height={284}
-              alt=""
-              className="rounded-[24px] h-auto w-full"
-              sizes="(max-width: 768px) 100vw, 426px"
-            />
+            {imgUrl && (
+              <Image
+                src={imgUrl}
+                width={426}
+                height={284}
+                alt=""
+                className="rounded-[24px] h-auto w-full"
+                sizes="(max-width: 768px) 100vw, 426px"
+              />
+            )}
           </div>
           <div>
             <div

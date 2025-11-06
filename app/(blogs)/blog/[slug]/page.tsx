@@ -26,6 +26,9 @@ const page = async ({ params }: Props) => {
   const authorDesignation =
     currentSingleBlog?._embedded?.author?.[0]?.acf?.profile_position;
   const publishedDate = currentSingleBlog?.date;
+  const authorImageId =
+    currentSingleBlog?._embedded?.author?.[0]?.acf?.profile_image;
+
   return (
     <>
       <SingleBlogHero
@@ -34,6 +37,7 @@ const page = async ({ params }: Props) => {
         authorName={authorName}
         date={publishedDate}
         authorDesignation={authorDesignation}
+        imgId={authorImageId}
       />
       <SingleBlogLayout content={currentSingleBlog?.content?.rendered} />
     </>

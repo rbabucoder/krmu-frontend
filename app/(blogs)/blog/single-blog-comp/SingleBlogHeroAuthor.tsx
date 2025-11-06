@@ -1,20 +1,24 @@
 import Image from "next/image";
+import SingleBlogAuthorImage from "./SingleBlogAuthorImage";
 
 type Props = {
   authorName: string;
   desg: string;
+  imgId: number;
 };
 
-const SingleBlogHeroAuthor = ({ authorName, desg}: Props) => {
+const SingleBlogHeroAuthor = ({ authorName, desg, imgId }: Props) => {
   return (
     <div className="single_blog_author_container">
       <div className="single_blog_author_image">
-        <Image
+        {/* <Image
           src="/blogs/singleblogAuthor.jpg"
           width={50}
           height={50}
           alt=""
-        />
+        /> */}
+
+        <SingleBlogAuthorImage imgId={imgId} />
       </div>
       <div className="single_blog_author_info">
         <span className="author_name">

@@ -1,6 +1,7 @@
 // import { FETCH_STRAPI_URL } from "@/app/constant";
 import {
   AllBlogCategoriesResponse,
+  BlogImageIdResponse,
   SingleBlogResponse,
 } from "@/lib/types/blogs/single-blog";
 
@@ -59,4 +60,23 @@ export async function getAllBlogCategories(): Promise<AllBlogCategoriesResponse>
   if (!res.ok) throw new Error("Failed to fetch Single Blog");
   const json: AllBlogCategoriesResponse = await res.json();
   return json;
+}
+
+export async function getImageById(imgId: number): Promise<string> {
+  if (!imgId) throw new Error("Image ID is required");
+
+  const res = await fetch(
+    `https://www.krmangalam.edu.in/blog/wp-json/wp/v2/media/${imgId}?_fields=guid`,
+    {
+      next: { revalidate: 60 },
+    }
+  );
+
+  if (!res.ok) {
+    throw new Error("Failed to fetch image by ID");
+  }
+
+  const json: BlogImageIdResponse = await res.json();
+
+  return json?.guid?.rendered ?? "";
 }

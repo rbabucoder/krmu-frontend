@@ -9,9 +9,10 @@ type SingleBlogProps = {
   authorName: string;
   date: string;
   authorDesignation: string;
+  imgId: number;
 };
 
-const SingleBlogHero = ({ title, imgUrl, authorName, date, authorDesignation }: SingleBlogProps) => {
+const SingleBlogHero = ({ title, imgUrl, authorName, date, authorDesignation, imgId }: SingleBlogProps) => {
   return (
     <section
       className="pt-[106px] pb-10 px-5 sm:px-10"
@@ -28,7 +29,7 @@ const SingleBlogHero = ({ title, imgUrl, authorName, date, authorDesignation }: 
             className="text-[30px] md:text-[42px] 2xl:text-[64px] mb-10 text-white leading-[1.2] font-semibold"
           />
 
-          <SingleBlogHeroAuthor authorName={authorName} desg={authorDesignation} />
+          <SingleBlogHeroAuthor authorName={authorName} desg={authorDesignation} imgId={imgId} />
           <div className="py-[5px]">
             <SingleBlogDate date={date} />
           </div>

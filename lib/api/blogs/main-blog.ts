@@ -6,7 +6,8 @@ export async function getAllBlogsByPerPageOrCategorySlug(
   categorySlug?: string // optional category filter
 ) {
   // Base URL
-  let url = `https://www.krmangalam.edu.in/blog/wp-json/wp/v2/posts?per_page=${num_of_blogs}&page=${page}&_embed`;
+  // let url = `https://www.krmangalam.edu.in/blog/wp-json/wp/v2/posts?per_page=${num_of_blogs}&page=${page}&_embed`;
+  let url = `https://www.krmangalam.edu.in/blog/wp-json/wp/v2/posts?per_page=${num_of_blogs}&page=${page}&_fields=id,slug,title,featured_media,content,excerpt`;
 
   // If a category slug is provided, fetch its category ID first
   if (categorySlug) {

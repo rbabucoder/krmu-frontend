@@ -73,9 +73,7 @@ const CommonBlogLayout = async ({ searchParams, slug }: Props) => {
                 title={blog?.title?.rendered}
                 excerpt={blog?.excerpt?.rendered}
                 slug={blog?.slug}
-                imgUrl={
-                  blog?._embedded?.["wp:featuredmedia"]?.[0]?.source_url || ""
-                }
+                imgId={blog?.featured_media}
               />
             ))}
             <div>

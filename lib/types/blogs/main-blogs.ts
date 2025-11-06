@@ -1,4 +1,4 @@
-import { BlogFeaturedMedia } from "./single-blog";
+// import { BlogFeaturedMedia } from "./single-blog";
 
 export type MainBlogResponse = MainBlogs[];
 
@@ -9,9 +9,10 @@ export interface MainBlogs {
   title: {
     rendered: string;
   };
-  _embedded: {
-    "wp:featuredmedia"?: BlogFeaturedMedia[];
-  };
+  featured_media: number;
+  // _embedded: {
+  //   "wp:featuredmedia"?: BlogFeaturedMedia[];
+  // };
   excerpt: {
     rendered: string;
   };

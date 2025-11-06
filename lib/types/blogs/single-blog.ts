@@ -95,3 +95,9 @@ export type AllBlogCategories = {
   slug: string;
   taxonomy: string;
 };
+
+export type BlogImageIdResponse = {
+  guid: {
+    rendered: string;
+  };
+};
