@@ -191,6 +191,7 @@ export interface SchoolsResponse {
   };
 }
 
+
 // Meta pagination
 export interface Pagination {
   page: number;
