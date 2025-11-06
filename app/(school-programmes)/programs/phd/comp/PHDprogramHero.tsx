@@ -1,4 +1,5 @@
 import { STRAPI_URL } from "@/app/constant";
+import NoPaperForm from "@/lib/constants/NoPaperForm";
 import { StrapiMedia } from "@/lib/types/common";
 import {
   Duration,
@@ -12,6 +13,7 @@ type Props = {
   feePerYear: FeePerYear;
   eligibleCriteria: EligibilityCriteria;
   bgimg: StrapiMedia;
+  formfield: string;
 };
 
 const PHDprogramHero = ({
@@ -27,13 +29,25 @@ const PHDprogramHero = ({
         className="py-[8%] bg-no-repeat bg-cover"
         style={{
           background: `url(${STRAPI_URL}${bgimg?.url})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       >
         <div className="max-w-[1664px] mx-auto w-full flex items-center h-[784px]">
-          <div className="w-1/2 text-white text-5xl font-semibold p-5">
-            <h1>{heading}</h1>
+          <div className="w-3/5 text-white text-5xl font-semibold p-5">
+            <h1
+              dangerouslySetInnerHTML={{
+                __html: heading,
+              }}
+            />
           </div>
-          <div className="w-1/2"></div>
+          <div className="w-2/5">
+            <NoPaperForm
+              formId="0d2d6e28c86e4213b353bfe132035965"
+              height="500px"
+            />
+          </div>
         </div>
       </section>
       <div className="max-w-[1664px] mx-auto w-full flex  gap-1.5 relative z-10 -mt-[33px]">

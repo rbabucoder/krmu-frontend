@@ -4,7 +4,7 @@ export async function getDownloadProspectusSetting(): Promise<
   GlobalDownloadProspectusResponse["data"]
 > {
   const res = await fetch(
-    `${FETCH_STRAPI_URL}/api/controller-setting?fields[0]=download_prospectus_enable_disable`,
+    `${FETCH_STRAPI_URL}/api/controller-setting?fields[0]=download_prospectus_enable_disable&fields[1]=programme_handbook_enable_disable&fields[2]=open_elective_enable_disable&fields[3]=minor_enable_disable`,
     {
       next: {
         revalidate: 60,

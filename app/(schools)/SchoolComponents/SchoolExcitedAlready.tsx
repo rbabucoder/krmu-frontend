@@ -4,7 +4,7 @@ import PopupForm from "@/lib/constants/PopupForm";
 import { ButtonType } from "@/lib/types/common";
 import Link from "next/link";
 type Props = {
-  heading: string;
+  heading: string; 
   desc: string;
   excbtns: ButtonType[];
   excbg: string;

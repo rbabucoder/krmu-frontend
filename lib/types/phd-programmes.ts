@@ -1,5 +1,5 @@
 import { ListBlock, ParagraphBlock } from "./about";
-import { StrapiMedia } from "./common";
+import { common_btn, StrapiMedia } from "./common";
 
 export interface Duration {
   id: number;
@@ -149,6 +149,19 @@ export interface PHDProgrammeData {
   degree: string;
   phdfaqtitle: string;
   phdprogrammefaq: PHDFAQs[];
+  commence_journey: CommenceJourney;
+}
+
+export interface CommenceJourney {
+  id: number;
+  heading: string;
+  highlight_heading: string;
+  bgimg: {
+    id: number;
+    documentId: string;
+    url: string;
+  };
+  commence_btn: common_btn;
 }
 
 export interface PHDProgrammeResponse {
@@ -162,4 +175,3 @@ export interface PHDProgrammeResponse {
     };
   };
 }
-	

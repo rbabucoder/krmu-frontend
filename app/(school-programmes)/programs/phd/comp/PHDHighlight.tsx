@@ -1,7 +1,16 @@
+import { STRAPI_URL } from "@/app/constant";
+import { common_btn } from "@/lib/types/common";
 import Image from "next/image";
 import Link from "next/link";
 
-const PHDHighlight = () => {
+type Props = {
+  heading: string;
+  highlightheading: string;
+  btn: common_btn;
+  imgUrl: string;
+};
+
+const PHDHighlight = ({ heading, highlightheading, btn, imgUrl }: Props) => {
   return (
     <>
       <div
@@ -13,10 +22,10 @@ const PHDHighlight = () => {
       >
         <div className="max-w-[1664px] mx-auto w-full px-4 mb-5 sm:mb-0">
           <h4 className="text-[#0078bf] text-2xl md:text-4xl lg:text-[64px] leading-[1.2] font-medium">
-            Commence Your Journey
+            {heading}
           </h4>
           <h4 className="text-2xl md:text-4xl lg:text-[64px] leading-[1.2] font-medium text-white">
-            in 6 Simple Steps
+            {highlightheading}
           </h4>
         </div>
         <div className="lg:hidden px-4 text-white">
@@ -143,20 +152,29 @@ const PHDHighlight = () => {
             </div>
           </div>
         </div>
-        <Image
-          src="/Commence-Your-Journey.webp"
-          width={1921}
-          height={689}
-          alt="Your journey"
-          className="w-full h-full hidden lg:block"
-        />
+        {imgUrl && (
+          <Image
+            src={
+              imgUrl ? `${STRAPI_URL}${imgUrl}` : "/Commence-Your-Journey.webp"
+            }
+            width={1921}
+            height={689}
+            alt="Your journey"
+            className="w-full h-full hidden lg:block"
+          />
+        )}
         <div className="flex justify-center mt-5 lg:mt-0">
-          <Link
-            href="#"
-            className="py-3.5 px-8 bg-[#051630] font-bold rounded-sm inline-block text-white"
-          >
-            Apply Now
-          </Link>
+          {btn?.btn_link && (
+            <Link
+              href={btn?.btn_link}
+              className={`py-3.5 px-8 bg-[#051630] font-bold rounded-sm inline-block text-white ${
+                btn?.btn_class || ""
+              }`}
+              target="_blank"
+            >
+              {btn?.btn_text}
+            </Link>
+          )}
         </div>
       </div>
     </>

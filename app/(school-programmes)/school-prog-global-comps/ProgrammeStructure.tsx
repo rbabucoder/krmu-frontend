@@ -5,9 +5,11 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { getDownloadProspectusSetting } from "@/lib/api/global-setting";
 import PopupForm from "@/lib/constants/PopupForm";
 import { ButtonType } from "@/lib/types/common";
 import { Year } from "@/lib/types/school-programme";
+import Link from "next/link";
 
 type Props = {
   programStruct: Year[];
@@ -16,6 +18,13 @@ type Props = {
   currFormContainerId: string;
   isYear: boolean;
 };
+const getDownProsSettings = await getDownloadProspectusSetting();
+
+const enable_disable_handbook =
+  getDownProsSettings?.programme_handbook_enable_disable;
+const enable_disable_open_elective =
+  getDownProsSettings?.open_elective_enable_disable;
+const enable_disable_minor = getDownProsSettings?.minor_enable_disable;
 
 const ProgrammeStructure = ({
   programStruct,
@@ -43,12 +52,25 @@ const ProgrammeStructure = ({
             </Link>
           )} */}
 
-          <PopupForm
-            formId={currFormId}
-            containerId={currFormContainerId}
-            buttonClass="p-2 sm:py-[15px] sm:px-[25px] inline-block font-normal rounded-[15px] text-xs sm:text-2xl w-full text-white bg-[#db2a1a] text-center mb-6"
-            buttonText={currbtn?.buttontext}
-          />
+          {enable_disable_handbook === true ? (
+            <PopupForm
+              formId={currFormId}
+              containerId={currFormContainerId}
+              buttonClass="p-2 sm:py-[15px] sm:px-[25px] inline-block font-normal rounded-[15px] text-xs sm:text-2xl w-full text-white bg-[#db2a1a] text-center mb-6"
+              buttonText={currbtn?.buttontext}
+            />
+          ) : (
+            <Link
+              href={currbtn?.buttonlink}
+              className={`p-2 sm:py-[15px] sm:px-[25px] inline-block font-normal rounded-[15px] text-xs sm:text-2xl w-full text-white bg-[#db2a1a] text-center mb-6 ${
+                currbtn?.buttonclass || ""
+              }`}
+              target="_blank"
+            >
+              {currbtn?.buttontext}
+            </Link>
+          )}
+
           {/* {currbtn && (
             <>
               {currbtn.buttonclass === "progPopup" ? (
@@ -221,7 +243,61 @@ const ProgrammeStructure = ({
                               ))}
                             </div>
                             <div className="flex items-center justify-end mt-4">
-                              {sem.pdfbtns?.map((btn) => (
+                              {sem.pdfbtns?.map((btn) => {
+                                const text =
+                                  btn?.buttontext?.toLowerCase() || "";
+
+                                // Keyword groups
+                                const openElectiveKeywords = [
+                                  "open elective",
+                                  "open electives",
+                                  "value added",
+                                  "value added courses",
+                                ];
+                                const minorKeywords = ["minor", "minors"];
+
+                                // Check if text includes any keyword from each group
+                                const hasOpenElectiveKeyword =
+                                  openElectiveKeywords.some((word) =>
+                                    text.includes(word)
+                                  );
+                                const hasMinorKeyword = minorKeywords.some(
+                                  (word) => text.includes(word)
+                                );
+
+                                // Decide if popup should show
+                                const shouldShowPopup =
+                                  (hasOpenElectiveKeyword &&
+                                    enable_disable_open_elective) ||
+                                  (hasMinorKeyword && enable_disable_minor);
+
+                                // Render conditionally
+                                if (shouldShowPopup) {
+                                  return (
+                                    <PopupForm
+                                      key={btn?.id}
+                                      formId={btn?.popupFormId}
+                                      containerId={btn?.containerPopupFormId}
+                                      buttonClass="text-xs sm:text-xl p-5 font-semibold text-center border border-[#d5d5d5] text-[#dc2e25] bg-[#f0f0f0] rounded-[20px] inline-block"
+                                      buttonText={btn?.buttontext}
+                                    />
+                                  );
+                                }
+
+                                return (
+                                  <Link
+                                    key={btn?.id}
+                                    href={btn?.buttonlink || "#"}
+                                    className={`text-xs sm:text-xl p-5 font-semibold text-center border border-[#d5d5d5] text-[#dc2e25] bg-[#f0f0f0] rounded-[20px] inline-block ${
+                                      btn?.buttonclass || ""
+                                    }`}
+                                  >
+                                    {btn?.buttontext}
+                                  </Link>
+                                );
+                              })}
+
+                              {/* {sem.pdfbtns?.map((btn) => (
                                 <PopupForm
                                   key={btn?.id}
                                   formId={btn?.popupFormId}
@@ -238,7 +314,7 @@ const ProgrammeStructure = ({
                                 // >
                                 //   {btn.buttontext}
                                 // </Link>
-                              ))}
+                              ))} */}
                             </div>
                           </TabsContent>
                         );

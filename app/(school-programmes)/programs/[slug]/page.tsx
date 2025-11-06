@@ -88,7 +88,7 @@ const page = async ({ params }: Props) => {
   const beyondclassSection = singleSchoolProgramme?.beyondclassroom;
   const careerProspectsSection = singleSchoolProgramme?.career;
   const dreamcareerSection = singleSchoolProgramme?.dreamcareer;
-  const financialAssistanceSection = singleSchoolProgramme?.financialassistance;
+  const financialAssistanceSection = singleSchoolProgramme?.financialassistance; 
   const tocSection = singleSchoolProgramme?.toc;
   const ourLocationSection = singleSchoolProgramme?.ourlocation;
 

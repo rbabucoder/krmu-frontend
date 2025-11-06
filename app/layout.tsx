@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 import HeaderWrapper from "./components/Header/HeaderWrapper";
 // import { Button } from "@/components/ui/button";
 import Script from "next/script";
+import NoPaperFormProvider from "@/lib/constants/NoPaperFormProvider";
 
 const montserrat = Montserrat({
   weight: ["300", "400", "500", "600", "700"],
@@ -45,6 +46,7 @@ export default function RootLayout({
           ></iframe>
         </noscript>
         <HeaderWrapper />
+        <NoPaperFormProvider />
         {children}
         <Footer />
         {/* <Button className="bg-[#f00] border border-none py-[6px] px-[15px] fixed top-[40%] right-[-42px] rotate-90 rounded-sm h-[27px] z-10">
