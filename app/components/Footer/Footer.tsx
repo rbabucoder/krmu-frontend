@@ -1,10 +1,14 @@
 import { STRAPI_URL } from "@/app/constant";
 import { getFooter } from "@/lib/api/footer";
+import { getPageAssets } from "@/lib/api/global-setting";
 import Image from "next/image";
 import Link from "next/link";
 
 const Footer = async () => {
   const footerData = await getFooter();
+  const footerAssets = await getPageAssets();
+
+  const { js_in_footer } = footerAssets;
 
   const footerComp1 = footerData?.footer_comp_1;
   const footerComp2 = footerData?.footer_comp_2;
@@ -166,6 +170,9 @@ const Footer = async () => {
           </div>
         </div>
       </section>
+      {js_in_footer && (
+        <script dangerouslySetInnerHTML={{ __html: js_in_footer }} />
+      )}
     </>
   );
 };
