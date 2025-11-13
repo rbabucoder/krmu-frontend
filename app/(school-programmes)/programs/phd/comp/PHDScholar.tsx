@@ -1,9 +1,9 @@
 import { STRAPI_URL } from "@/app/constant";
-import { SchoolSponsoredPartTime } from "@/lib/types/phd-programmes";
+import { ScholarSponsoredPartTime } from "@/lib/types/phd-programmes";
 import Image from "next/image";
 
 type Props = {
-  scholarShipsData: SchoolSponsoredPartTime;
+  scholarShipsData: ScholarSponsoredPartTime;
 };
 
 const PHDScholar = ({ scholarShipsData }: Props) => {
@@ -30,7 +30,7 @@ const PHDScholar = ({ scholarShipsData }: Props) => {
               src={`${STRAPI_URL}${scholarShipsData?.scholarshipimg?.url}`}
               width={942}
               height={667}
-              alt={scholarShipsData?.scholarshipimg?.alternativeText || ""}
+              alt={scholarShipsData?.title1 || ""}
             />
           </span>
         </div>

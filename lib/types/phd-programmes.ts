@@ -78,7 +78,7 @@ export interface ConnectingTalent {
   desc: ParagraphBlock[];
   dreamimg: ImageAsset;
   dreamcounter: CounterBlock[];
-}
+} 
 
 export interface PhDLogo {
   id: number;

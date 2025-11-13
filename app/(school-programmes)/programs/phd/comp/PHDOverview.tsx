@@ -1,10 +1,10 @@
 import { STRAPI_URL } from "@/app/constant";
-import { PHDOverview as overData } from "@/lib/types/phd-programmes";
+import { PhDOverview } from "@/lib/types/phd-programmes";
 import { BlocksRenderer } from "@strapi/blocks-react-renderer";
 import Image from "next/image";
 
 type Props = {
-  overviewData: overData;
+  overviewData: PhDOverview;
 };
 
 const PHDOverview = ({ overviewData }: Props) => {
@@ -20,7 +20,7 @@ const PHDOverview = ({ overviewData }: Props) => {
             src={`${STRAPI_URL}${overviewData?.overviewimage?.url}`}
             width={768}
             height={396}
-            alt={overviewData?.overviewimage?.alternativeText || ""}
+            alt={overviewData?.title || ""}
           />
         </div>
       </div>

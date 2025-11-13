@@ -4,11 +4,11 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { PHDFAQs } from "@/lib/types/phd-programmes";
+import { PhDFaq } from "@/lib/types/phd-programmes";
 
 type Props = {
   faqTitle: string;
-  faqs: PHDFAQs[];
+  faqs: PhDFaq[];
 };
 
 const PHDTestimonialsAcc = ({ faqTitle, faqs }: Props) => {

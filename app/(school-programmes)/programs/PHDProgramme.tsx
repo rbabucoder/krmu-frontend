@@ -17,55 +17,76 @@ type Props = {
 };
 
 const PHDProgrammes = ({ phdData }: Props) => {
+  if (!phdData) return null; // prevent crash if no data at all
+
   return (
     <>
       {phdData?.heading && (
         <PHDprogramHero
-          heading={phdData?.heading}
-          duration={phdData?.duration}
-          feePerYear={phdData?.fee_per_year}
-          eligibleCriteria={phdData?.eligibility_criteria}
-          bgimg={phdData?.bgimg?.url}
+          heading={phdData.heading}
+          duration={phdData.duration}
+          feePerYear={phdData.fee_per_year}
+          eligibleCriteria={phdData.eligibility_criteria}
+          bgimg={phdData.bgimg?.url}
         />
       )}
 
-      {phdData?.phdoverview && (
-        <PHDOverview overviewData={phdData?.phdoverview} />
-      )}
+      {phdData?.phdoverview && <PHDOverview overviewData={phdData.phdoverview} />}
 
       {phdData?.scholarsponsoredparttime && (
-        <PHDScholar scholarShipsData={phdData?.scholarsponsoredparttime} />
+        <PHDScholar scholarShipsData={phdData.scholarsponsoredparttime} />
       )}
 
       {phdData?.connectingtalent && (
-        <PHDConnectingDream connectingTalent={phdData?.connectingtalent} />
+        <PHDConnectingDream connectingTalent={phdData.connectingtalent} />
       )}
-      <PHDSlide logoSlide={phdData?.phdlogoslide} />
 
-      <PHDCareer careerOptions={phdData?.careeroptions} />
+      {phdData?.phdlogoslide && phdData.phdlogoslide.length > 0 && (
+        <PHDSlide logoSlide={phdData.phdlogoslide} />
+      )}
 
-      <PHDOutcome phdoutcomecontent={phdData.phdoutcome} />
+      {phdData?.careeroptions && (
+        <PHDCareer careerOptions={phdData.careeroptions} />
+      )}
 
-      <PHDProgrammeHighlight highlightContent={phdData?.programmehighlight} />
+      {phdData?.phdoutcome && (
+        <PHDOutcome phdoutcomecontent={phdData.phdoutcome} />
+      )}
 
-      <PHDAdmission
-        title1={phdData?.phdadmissionselect?.title1}
-        title2={phdData?.phdadmissionselect?.title2}
-        desc1={phdData?.phdadmissionselect?.desc1}
-        desc2={phdData?.phdadmissionselect?.desc2}
-      />
+      {phdData?.programmehighlight && (
+        <PHDProgrammeHighlight highlightContent={phdData.programmehighlight} />
+      )}
 
-      <PHDPursue pursueContent={phdData?.pursue} />
-      <PHDTestimonialsAcc
-        faqTitle={phdData?.phdfaqtitle}
-        faqs={phdData?.phdprogrammefaq}
-      />
-      <PHDHighlight
-        heading={phdData?.commence_journey?.heading}
-        highlightheading={phdData?.commence_journey?.highlight_heading}
-        btn={phdData?.commence_journey?.commence_btn}
-        imgUrl={phdData?.commence_journey?.bgimg?.url}
-      />
+      {phdData?.phdadmissionselect &&
+        (phdData.phdadmissionselect.title1 ||
+          phdData.phdadmissionselect.title2 ||
+          phdData.phdadmissionselect.desc1 ||
+          phdData.phdadmissionselect.desc2) && (
+          <PHDAdmission
+            title1={phdData.phdadmissionselect.title1}
+            title2={phdData.phdadmissionselect.title2}
+            desc1={phdData.phdadmissionselect.desc1}
+            desc2={phdData.phdadmissionselect.desc2}
+          />
+        )}
+
+      {phdData?.pursue && <PHDPursue pursueContent={phdData.pursue} />}
+
+      {(phdData?.phdfaqtitle || phdData?.phdprogrammefaq?.length > 0) && (
+        <PHDTestimonialsAcc
+          faqTitle={phdData.phdfaqtitle}
+          faqs={phdData.phdprogrammefaq}
+        />
+      )}
+
+      {phdData?.commence_journey && (
+        <PHDHighlight
+          heading={phdData.commence_journey.heading}
+          highlightheading={phdData.commence_journey.highlight_heading}
+          btn={phdData.commence_journey.commence_btn}
+          imgUrl={phdData.commence_journey.bgimg?.url}
+        />
+      )}
     </>
   );
 };

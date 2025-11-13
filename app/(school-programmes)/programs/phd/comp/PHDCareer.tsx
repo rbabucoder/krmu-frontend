@@ -1,6 +1,12 @@
 import { CareerOptions } from "@/lib/types/phd-programmes";
 import PHDTestimonial from "./PHDTestimonial";
-
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 type Props = {
   careerOptions: CareerOptions;
 };
@@ -34,11 +40,33 @@ const PHDCareer = ({ careerOptions }: Props) => {
           </ul>
         </div>
         <div className="w-1/2">
-          <div className="py-[50px] px-[70px] bg-[#051630] rounded-[58px]">
+          <div className="pt-[50px] pb-[100px] px-[70px] bg-[#051630] rounded-[58px]">
             <h4 className="text-2xl font-semibold text-center text-white mb-5">
               {careerOptions?.testimonialheading}
             </h4>
-            <PHDTestimonial />
+            <Carousel>
+              <CarouselContent>
+                {careerOptions?.testimonials &&
+                  careerOptions?.testimonials?.map((item) => {
+                    return (
+                      <CarouselItem key={item?.id}>
+                        <PHDTestimonial
+                          name={item?.countertext}
+                          content={item?.countercontent}
+                        />
+                      </CarouselItem>
+                    );
+                  })}
+              </CarouselContent>
+              <CarouselPrevious
+                className="border border-white bg-transparent text-white cursor-pointer buttonPrevNextSize w-[60px] h-[60px]
+         top-[115%] left-[20%] sm:left-[30%] xl:top-[125%] "
+              />
+              <CarouselNext
+                className="border border-white bg-transparent text-white cursor-pointer buttonPrevNextSize w-[60px] h-[60px]
+         top-[115%] right-[20%] sm:right-[30%] xl:top-[125%] "
+              />
+            </Carousel>
           </div>
         </div>
       </div>
