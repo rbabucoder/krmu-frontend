@@ -203,21 +203,26 @@
     padding: 21px;
     max-height: calc(100vh - 4rem);
     overflow-y: auto;
-    position: sticky;
     border: 1px solid #f3f4f6;
     border-radius: 8px;
   }
 
-  .right_sidebar_singlepost_container
-    .singlepost_all_cat_container
-    .blogcattitle {
+  .right_sidebar_singlepost_container {
+    max-height: calc(100vh - 2rem);
+    overflow-y: auto;
+  }
+.blog-table-responsive{
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+  .blogcattitle {
     font-size: 24px;
     line-height: 1.2;
     color: #ff0000;
     font-weight: 800;
     margin: 0 0 10px 0px;
   }
-  .all_cat__inner-container {
+  .scroll-style-1 {
     /* scrollbar-width: thin; */
     scrollbar-color: #e31e24 #0060aa;
   }

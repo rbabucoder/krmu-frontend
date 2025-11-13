@@ -6,7 +6,7 @@ const SingleBlogCategorySidebar = async () => {
 
   return (
     <>
-      <div className="singlepost_all_cat_container">
+      <div className="singlepost_all_cat_container right_sidebar_singlepost_container sticky top-[100px]">
         <h3 className="blogcattitle">Blog Categories</h3>
         <div className="singleblog_divider"></div>
         <div className="all_cat_container">

@@ -45,7 +45,7 @@ const SingleBlogSidebar = ({ content }: Props) => {
   };
 
   return (
-    <div className="singleblog_sidebar_container krmu_single_blog_sidebar scrollbar-thin">
+    <div className="krmu_single_blog_sidebar singleblog_sidebar_container sticky top-[100px]">
       <div className="singleblog_sidebar">
         <h3 className="singleblog_title">Blog Content</h3>
         <div className="singleblog_divider"></div>
