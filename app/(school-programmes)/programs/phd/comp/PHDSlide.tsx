@@ -1,5 +1,4 @@
 import { STRAPI_URL } from "@/app/constant";
-import { StrapiMedia } from "@/lib/types/common";
 import { ImageAsset } from "@/lib/types/phd-programmes";
 import Image from "next/image";
 
