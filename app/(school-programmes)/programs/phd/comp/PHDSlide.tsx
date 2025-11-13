@@ -1,9 +1,10 @@
 import { STRAPI_URL } from "@/app/constant";
 import { StrapiMedia } from "@/lib/types/common";
+import { ImageAsset } from "@/lib/types/phd-programmes";
 import Image from "next/image";
 
 type Props = {
-  logoSlide: StrapiMedia[];
+  logoSlide: ImageAsset[];
 };
 
 const PHDSlide = ({ logoSlide }: Props) => {
@@ -18,7 +19,7 @@ const PHDSlide = ({ logoSlide }: Props) => {
                 src={`${STRAPI_URL}${logo?.url}`}
                 width={304}
                 height={84}
-                alt={logo?.alternativeText || ""}
+                alt={""}
                 className="object-contain h-[120px]"
               />
             );
