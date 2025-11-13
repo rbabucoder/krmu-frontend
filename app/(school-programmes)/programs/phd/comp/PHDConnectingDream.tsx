@@ -25,7 +25,7 @@ const PHDConnectingDream = ({ connectingTalent }: Props) => {
             src={`${STRAPI_URL}${connectingTalent?.dreamimg?.url}`}
             width={633}
             height={326}
-            alt={connectingTalent?.dreamimg?.alternativeText || ""}
+            alt={""}
           />
         </div>
       </div>
