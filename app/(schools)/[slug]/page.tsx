@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params; // ✅ no await
 
   const seoData = await getSchoolSEO(slug);
-  // console.log('seoData', seoData);
+
   const seo = seoData?.school_seo;
   return {
     title: seo?.metaTitle || "K.R. Mangalam University", // ✅ no semicolon here

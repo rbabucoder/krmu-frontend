@@ -1,3 +1,4 @@
+import { yoastToMetadata } from "@/lib/constants/yoastMeta";
 import SingleBlogHero from "../single-blog-comp/SingleBlogHero";
 import SingleBlogLayout from "../single-blog-comp/SingleBlogLayout";
 import { getSingleBlogDataBySlug } from "@/lib/api/blogs/single-blog";
@@ -7,6 +8,18 @@ type Props = {
   params: Promise<{ slug: string }>;
 };
 
+// -------------------------------
+// ✅ Generate Metadata (Yoast)
+// -------------------------------
+export async function generateMetadata({ params }: Props) {
+  const { slug } = await params;
+
+  const blog = await getSingleBlogDataBySlug(slug);
+
+  if (!blog || !blog[0]?.yoast_head_json) return {};
+
+  return yoastToMetadata(blog[0].yoast_head_json);
+}
 const page = async ({ params }: Props) => {
   const { slug } = await params;
 
@@ -20,6 +33,8 @@ const page = async ({ params }: Props) => {
 
   const featuredImageUrl =
     currentSingleBlog?._embedded?.["wp:featuredmedia"]?.[0]?.source_url;
+
+  const authorSlug = currentSingleBlog?._embedded?.author?.[0]?.slug;
 
   const authorName =
     currentSingleBlog?._embedded?.author?.[0]?.acf?.profile_name;
@@ -38,6 +53,7 @@ const page = async ({ params }: Props) => {
         date={publishedDate}
         authorDesignation={authorDesignation}
         imgId={authorImageId}
+        authorSlug={authorSlug}
       />
       <SingleBlogLayout content={currentSingleBlog?.content?.rendered} />
     </>

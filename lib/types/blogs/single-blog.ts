@@ -1,3 +1,4 @@
+import { YoastHeadJson } from "@/lib/constants/yoastMeta";
 import { StrapiMedia } from "../common";
 
 export interface SingleBlogComponent {
@@ -55,6 +56,19 @@ export type BlogPostContent = {
     author: BlogAuthor[];
     "wp:featuredmedia"?: BlogFeaturedMedia[];
   };
+  yoast_head_json: YoastHeadJson;
+};
+
+export type BlogOgImage = {
+  width: number;
+  height: number;
+  url: string;
+  type: string;
+};
+
+export type BlogRobot = {
+  index: string;
+  follow: string;
 };
 
 export type BlogAuthor = {

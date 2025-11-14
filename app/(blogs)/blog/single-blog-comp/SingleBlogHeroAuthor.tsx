@@ -1,12 +1,20 @@
+import Link from "next/link";
 import SingleBlogAuthorImage from "./SingleBlogAuthorImage";
+import { FETCH_STRAPI_URL } from "@/app/constant";
 
 type Props = {
   authorName: string;
   desg: string;
   imgId: number;
+  authorSlug: string;
 };
 
-const SingleBlogHeroAuthor = ({ authorName, desg, imgId }: Props) => {
+const SingleBlogHeroAuthor = ({
+  authorName,
+  desg,
+  imgId,
+  authorSlug,
+}: Props) => {
   return (
     <div className="single_blog_author_container">
       <div className="single_blog_author_image">
@@ -21,12 +29,12 @@ const SingleBlogHeroAuthor = ({ authorName, desg, imgId }: Props) => {
       </div>
       <div className="single_blog_author_info">
         <span className="author_name">
-          <a
-            href="https://www.krmangalam.edu.in/blog/author/abhinavsharma/"
+          <Link
+            href={`/blog/author/${authorSlug}`}
             target="_blank"
           >
             {authorName}
-          </a>
+          </Link>
         </span>
         <span className="author_designation">{desg}</span>
       </div>

@@ -17,7 +17,7 @@ const MobileHeader = ({ topbarmenu, navbarData }: Props) => {
   const toggleMenu = (menu: string) => {
     setOpenMenu(openMenu === menu ? null : menu);
   };
-  // console.log('mobile menu', navbarData);
+
   const academicMenu = navbarData.find(
     (component) => component.__component === "temp-menus.academic-menu"
   );

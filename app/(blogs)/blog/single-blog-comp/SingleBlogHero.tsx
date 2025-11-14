@@ -10,9 +10,18 @@ type SingleBlogProps = {
   date: string;
   authorDesignation: string;
   imgId: number;
+  authorSlug: string;
 };
 
-const SingleBlogHero = ({ title, imgUrl, authorName, date, authorDesignation, imgId }: SingleBlogProps) => {
+const SingleBlogHero = ({
+  title,
+  imgUrl,
+  authorName,
+  date,
+  authorDesignation,
+  imgId,
+  authorSlug,
+}: SingleBlogProps) => {
   return (
     <section
       className="pt-[106px] pb-10 px-5 sm:px-10"
@@ -29,7 +38,12 @@ const SingleBlogHero = ({ title, imgUrl, authorName, date, authorDesignation, im
             className="text-[30px] md:text-[42px] 2xl:text-[64px] mb-10 text-white leading-[1.2] font-semibold"
           />
 
-          <SingleBlogHeroAuthor authorName={authorName} desg={authorDesignation} imgId={imgId} />
+          <SingleBlogHeroAuthor
+            authorName={authorName}
+            authorSlug={authorSlug}
+            desg={authorDesignation}
+            imgId={imgId}
+          />
           <div className="py-[5px]">
             <SingleBlogDate date={date} />
           </div>

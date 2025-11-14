@@ -1,4 +1,9 @@
-import { MainBlogResponse } from "@/lib/types/blogs/main-blogs";
+import { FETCH_STRAPI_URL } from "@/app/constant";
+import {
+  BlogCategoryPageSEOResponse,
+  BlogPageSEOResponse,
+  MainBlogResponse,
+} from "@/lib/types/blogs/main-blogs";
 
 export async function getAllBlogsByPerPageOrCategorySlug(
   num_of_blogs: number = 6,
@@ -46,6 +51,41 @@ export async function getRecentPosts() {
   const json: MainBlogResponse = await res.json();
   return json;
 }
+
+export async function getBlogPageInfo(): Promise<BlogPageSEOResponse["data"]> {
+  const res = await fetch(`${FETCH_STRAPI_URL}/api/blog?fields[0]=Title&populate[blog_seo][populate][shareImage][fields][0]=url`, {
+    next: { revalidate: 60 },
+  });
+
+  if (!res.ok) throw new Error("Failed to fetch blog page info");
+
+  const json: BlogPageSEOResponse = await res.json();
+  return json.data;
+}
+export async function getBlogCategoryPageInfo(): Promise<BlogCategoryPageSEOResponse["data"]> {
+  const res = await fetch(`${FETCH_STRAPI_URL}/api/blog-category?fields[0]=Title&populate[blog_category_seo][populate][shareImage][fields][0]=url`, {
+    next: { revalidate: 60 },
+  });
+
+  if (!res.ok) throw new Error("Failed to fetch blog category page info");
+
+  const json: BlogCategoryPageSEOResponse = await res.json();
+  return json.data;
+}
+
+// {
+//  fields: ['Title'],
+//  populate: {
+//    blog_seo: {
+//     populate: {
+//       shareImage: {
+//         fields: ['url']
+//        }
+//     }
+
+//    }
+//  }
+// }
 
 // export async function getAllBlogsByPerPage(
 //   num_of_blogs: number = 6,

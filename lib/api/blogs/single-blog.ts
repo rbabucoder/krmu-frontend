@@ -6,7 +6,7 @@ import {
 } from "@/lib/types/blogs/single-blog";
 
 export async function getSingleBlogDataBySlug(
-  slug: string = "is-cat-exam-tough"
+  slug: string = ""
 ): Promise<SingleBlogResponse> {
   const res = await fetch(
     // `${FETCH_STRAPI_URL}/api/single-blogs?filters[blog_slug][$eq]=${slug}&fields[0]=title&fields[1]=blog_slug&populate[featured_image][populate]=*&populate[single_blog][on][blog.single-blog-component][populate][fields][0]=single_blog_content&populate[single_blog][on][blog.single-blog-component][populate][faqs][populate]=*`,
@@ -21,6 +21,10 @@ export async function getSingleBlogDataBySlug(
   const json: SingleBlogResponse = await res.json();
   return json;
 }
+
+
+
+
 
 // {
 //   filters: {
@@ -79,4 +83,13 @@ export async function getImageById(imgId: number): Promise<string> {
   const json: BlogImageIdResponse = await res.json();
 
   return json?.guid?.rendered ?? "";
+}
+
+
+
+
+export async function getImageByIdClientComp(id: number) {
+  const res = await fetch(`https://www.krmangalam.edu.in/blog/wp-json/wp/v2/media/${id}`);
+  const json = await res.json();
+  return json.source_url;
 }
