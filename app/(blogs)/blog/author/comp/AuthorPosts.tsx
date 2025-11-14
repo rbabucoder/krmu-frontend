@@ -1,6 +1,6 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import { getPostsByAuthId } from "@/lib/api/blogs/author-blog"; // adjust import path
+import React, { useEffect, useState, useCallback } from "react";
+import { getPostsByAuthId } from "@/lib/api/blogs/author-blog";
 import AuthorPostsCard from "./AuthorPostsCard";
 
 type Post = {
@@ -21,31 +21,39 @@ const AuthorPosts = ({ authId }: Props) => {
   const [hasMore, setHasMore] = useState(true);
   const [loading, setLoading] = useState(false);
 
-  // Fetch posts function
-  const fetchPosts = async (pageNum: number) => {
-    try {
-      setLoading(true);
-      const data = await getPostsByAuthId(authId, pageNum);
-      if (data.length < 6) setHasMore(false); // No more posts
-      setPosts((prev) => [...prev, ...data]);
-    } catch (err) {
-      console.error("Failed to load author posts:", err);
-      setHasMore(false);
-    } finally {
-      setLoading(false);
-    }
-  };
+  // Stable fetch function
+  const fetchPosts = useCallback(
+    async (pageNum: number) => {
+      try {
+        setLoading(true);
+        const data = await getPostsByAuthId(authId, pageNum);
+
+        if (data.length < 6) setHasMore(false);
+
+        setPosts((prev) => [...prev, ...data]);
+      } catch (err) {
+        console.error("Failed to load author posts:", err);
+        setHasMore(false);
+      } finally {
+        setLoading(false);
+      }
+    },
+    [authId] // dependencies
+  );
 
   useEffect(() => {
+    setPosts([]);      // Reset when author changes
+    setPage(1);
+    setHasMore(true);
+
     fetchPosts(1);
-  }, [authId]);
+  }, [authId, fetchPosts]);
 
   const handleViewMore = () => {
     const nextPage = page + 1;
     setPage(nextPage);
     fetchPosts(nextPage);
   };
-
 
   return (
     <div className="p-4">
@@ -57,17 +65,14 @@ const AuthorPosts = ({ authId }: Props) => {
 
       <div className="pt-4">
         {posts.length > 0 ? (
-          <div
-            className="
-          "
-          >
+          <div>
             {posts.map((post) => (
               <AuthorPostsCard
                 key={post.id}
-                title={post?.title?.rendered}
-                imgId={post?.featured_media}
-                date={post?.date}
-                slug={post?.slug}
+                title={post.title.rendered}
+                imgId={post.featured_media}
+                date={post.date}
+                slug={post.slug}
               />
             ))}
           </div>

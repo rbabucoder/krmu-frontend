@@ -1,6 +1,5 @@
 import {
   AuthorResponse,
-  PostByAuthorResponse,
 } from "@/lib/types/blogs/auth-blogs";
 
 export async function getAuthInfoBySlug(authSlug: string = "") {

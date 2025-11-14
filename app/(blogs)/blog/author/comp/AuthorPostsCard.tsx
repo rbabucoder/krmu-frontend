@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { getImageByIdClientComp } from "@/lib/api/blogs/single-blog";
 import { Skeleton } from "@/components/ui/skeleton";
 import Link from "next/link";
+import Image from "next/image";
 
 type Props = {
   title: string;
@@ -33,7 +34,7 @@ const AuthorPostsCard = ({ title, imgId, date, slug }: Props) => {
     >
       <div className="md:w-2/5">
         {imgUrl ? (
-          <img
+          <Image
             src={imgUrl}
             width={300}
             height={300}

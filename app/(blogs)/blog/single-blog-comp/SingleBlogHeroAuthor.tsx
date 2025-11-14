@@ -1,6 +1,5 @@
 import Link from "next/link";
 import SingleBlogAuthorImage from "./SingleBlogAuthorImage";
-import { FETCH_STRAPI_URL } from "@/app/constant";
 
 type Props = {
   authorName: string;
