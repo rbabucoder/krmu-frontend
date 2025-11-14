@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState, useEffect } from "react";
 // import Image from "next/image";
 
@@ -109,9 +110,9 @@ const CommonBlogSidebarSearchField = () => {
             //   post._embedded?.["wp:featuredmedia"]?.[0]?.source_url || "";
 
             return (
-              <a
+              <Link
                 key={post.id}
-                href={`/blogs/${post.slug}`}
+                href={`/blog/${post.slug}`}
                 className="flex justify-between items-center border-b border-gray-200 py-2 hover:bg-gray-50 transition"
               >
                 <div
@@ -131,7 +132,7 @@ const CommonBlogSidebarSearchField = () => {
                     No Image
                   </div>
                 )} */}
-              </a>
+              </Link>
             );
           })}
         </div>
