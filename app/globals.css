@@ -15,6 +15,138 @@
 
 /* Custom utility class */
 @layer utilities {
+  /* Complete Single Faculty Style */
+
+
+
+  .faculty_main_content_container .fusion-fullwidth {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  .faculty_main_content_container .fusion-column-wrapper .nav > ul.nav-tabs {
+    /* display: flex;
+    justify-content: space-between; */
+    border-bottom: 1px solid #fff;
+  }
+  .faculty_main_content_container .fusion-column-wrapper .nav ul.nav-tabs li {
+    padding: 14px 15px;
+    display: table-cell;
+    width: 1%;
+  }
+  .faculty_main_content_container .tab-content .tab-pane ul {
+    list-style-type: disc !important;
+    padding-left: 20px;
+  }
+  .faculty_main_content_container .tab-content .tab-pane ul li {
+    line-height: 1.7;
+  }
+
+  .fusion-mobile-tab-nav {
+    display: none;
+  }
+
+  .faculty_main_content_container
+    .fusion-column-wrapper
+    .nav
+    ul.nav-tabs
+    li.active {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.12) 100%
+    );
+    border-radius: 10px;
+  }
+
+  .faculty_main_content_container
+    .fusion-column-wrapper
+    .nav
+    ul
+    li
+    a.tab-link
+    .fusion-tab-heading {
+    font-size: 24px;
+    line-height: 3;
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .faculty_main_content_container
+    .fusion-column-wrapper
+    .nav
+    ul.nav-tabs
+    li.active
+    a.tab-link
+    .fusion-tab-heading {
+    color: #fff;
+  }
+  .faculty_main_content_container .tab-content {
+    margin-top: 40px;
+  }
+  .faculty_main_content_container .tab-content .tab-pane {
+    display: none;
+  }
+
+  .faculty_main_content_container .tab-content .tab-pane.active.in {
+    display: block;
+  }
+
+  @media (max-width: 1400px) {
+    /* .faculty_main_content_container
+      .fusion-layout-column
+      > .fusion-column-wrapper {
+      padding-left: 20px;
+      padding-right: 20px;
+    } */
+  }
+
+  @media (max-width: 1250px) {
+    .faculty_main_content_container .fusion-column-wrapper .nav > ul.nav-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .faculty_main_content_container
+      .fusion-column-wrapper
+      .nav
+      > ul.nav-tabs
+      li {
+      width: fit-content;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .faculty_main_content_container .fusion-column-wrapper .fusion-tabs > .nav {
+      display: none !important;
+    }
+    .fusion-mobile-tab-nav {
+      display: block;
+    }
+    .faculty_main_content_container .tab-content .tab-pane {
+      padding: 20px;
+    }
+    .faculty_main_content_container
+      .fusion-column-wrapper
+      .nav
+      > ul.nav-tabs
+      li {
+      width: 100%;
+    }
+    .faculty_main_content_container
+      .fusion-column-wrapper
+      .nav
+      ul
+      li
+      a.tab-link
+      .fusion-tab-heading {
+      line-height: 1.2;
+    }
+  }
+
+  /* Complete Single Faculty Style */
+
   .adv_content span {
     color: #0060aa;
   }
@@ -211,10 +343,10 @@
     max-height: calc(100vh - 2rem);
     overflow-y: auto;
   }
-.blog-table-responsive{
-  overflow-x: auto;
-  overflow-y: hidden;
-}
+  .blog-table-responsive {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
   .blogcattitle {
     font-size: 24px;
     line-height: 1.2;

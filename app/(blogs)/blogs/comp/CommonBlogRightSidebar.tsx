@@ -1,7 +1,7 @@
 import { getRecentPosts } from "@/lib/api/blogs/main-blog";
 import Link from "next/link";
 import CommonBlogSidebarSearchField from "./CommonBlogSidebarSearchField";
-import NoPaperForm from "./BlogNoPaperForm";
+import NoPaperForm from "./NoPaperForm";
 
 const CommonBlogRightSidebar = async () => {
   const recentPosts = await getRecentPosts();
