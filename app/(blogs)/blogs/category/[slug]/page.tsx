@@ -1,8 +1,8 @@
-import { getCategoryBySlug } from "@/lib/api/blogs/cat-blog";
+// import { getCategoryBySlug } from "@/lib/api/blogs/cat-blog";
 import CommonBlogLayout from "../../comp/CommonBlogLayout";
-import CommonBlogHeroSection from "../../comp/CommonBlogHeroSection";
 import { strapiSeoToMetadata } from "@/lib/constants/strapiMeta";
 import { getBlogCategoryPageInfo } from "@/lib/api/blogs/main-blog";
+// import CommonBlogHeroSection from "../../comp/CommonBlogHeroSection";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -25,11 +25,12 @@ const Page = async ({ params, searchParams }: Props) => {
   const resolvedSearchParams = searchParams;
 
   const { slug } = resolvedParams;
-  const category = await getCategoryBySlug(slug);
+  // const category = await getCategoryBySlug(slug);
 
   return (
     <>
-      <CommonBlogHeroSection catName={category?.name || "Category"} />
+      {/* <CommonBlogHeroSection catName={category?.name || "Category"} /> */}
+      {/* <CommonBlogHeroSection /> */}
       {/* ✅ pass the resolved object (not Promise) */}
       <CommonBlogLayout slug={slug} searchParams={resolvedSearchParams} />
     </>
