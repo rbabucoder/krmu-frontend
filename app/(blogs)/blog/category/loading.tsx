@@ -1,5 +1,4 @@
 import { BlogCardSkeleton } from "@/app/components/Skeleton/BlogCardSkeleton";
-import { Skeleton } from "@/components/ui/skeleton";
 
 export default function Loading() {
   return (
