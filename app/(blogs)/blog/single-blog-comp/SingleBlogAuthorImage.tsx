@@ -12,13 +12,15 @@ const SingleBlogAuthorImage = async ({ imgId }: Props) => {
 
   return (
     <div className="flex items-center gap-2">
-      <Image
-        src={imgUrl}
-        width={50}
-        height={50}
-        alt="Author Image"
-        className="rounded-full object-cover"
-      />
+      {imgUrl && (
+        <Image
+          src={imgUrl}
+          width={50}
+          height={50}
+          alt="Author Image"
+          className="rounded-full object-cover"
+        />
+      )}
     </div>
   );
 };

@@ -57,6 +57,7 @@ export type BlogPostContent = {
     "wp:featuredmedia"?: BlogFeaturedMedia[];
   };
   yoast_head_json: YoastHeadJson;
+  featured_media: number;
 };
 
 export type BlogOgImage = {

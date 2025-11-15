@@ -19,7 +19,7 @@ const CommonBlogSidebar = async () => {
                   </span>
                 </div>
                 <Link
-                  href={`/blogs/category/${cat?.slug}`}
+                  href={`/blog/category/${cat?.slug}`}
                   className="text-white text-base"
                   // target="_blank"
                   dangerouslySetInnerHTML={{

@@ -24,14 +24,11 @@ const SingleBlogHeroAuthor = ({
           alt=""
         /> */}
 
-        <SingleBlogAuthorImage imgId={imgId} />
+        {imgId && <SingleBlogAuthorImage imgId={imgId} />}
       </div>
       <div className="single_blog_author_info">
         <span className="author_name">
-          <Link
-            href={`/blog/author/${authorSlug}`}
-            target="_blank"
-          >
+          <Link href={`/blog/author/${authorSlug}`} target="_blank">
             {authorName}
           </Link>
         </span>

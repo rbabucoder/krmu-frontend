@@ -1,7 +1,10 @@
 import { yoastToMetadata } from "@/lib/constants/yoastMeta";
 import SingleBlogHero from "../single-blog-comp/SingleBlogHero";
 import SingleBlogLayout from "../single-blog-comp/SingleBlogLayout";
-import { getSingleBlogDataBySlug } from "@/lib/api/blogs/single-blog";
+import {
+  getImageById,
+  getSingleBlogDataBySlug,
+} from "@/lib/api/blogs/single-blog";
 import { notFound } from "next/navigation";
 
 type Props = {
@@ -31,10 +34,13 @@ const page = async ({ params }: Props) => {
 
   if (!currentSingleBlog?.title) return notFound();
 
-  const featuredImageUrl =
-    currentSingleBlog?._embedded?.["wp:featuredmedia"]?.[0]?.source_url;
+  // const featuredImageUrl =
+  //   currentSingleBlog?._embedded?.["wp:featuredmedia"]?.[0]?.source_url;
 
   const authorSlug = currentSingleBlog?._embedded?.author?.[0]?.slug;
+
+  const featuedImageId = currentSingleBlog?.featured_media;
+  const featuredImageUrl = await getImageById(featuedImageId);
 
   const authorName =
     currentSingleBlog?._embedded?.author?.[0]?.acf?.profile_name;
