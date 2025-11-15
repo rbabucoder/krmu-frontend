@@ -112,7 +112,7 @@ const CommonBlogSidebarSearchField = () => {
             return (
               <Link
                 key={post.id}
-                href={`/blog/${post.slug}`}
+                href={`/blog2/${post.slug}`}
                 className="flex justify-between items-center border-b border-gray-200 py-2 hover:bg-gray-50 transition"
               >
                 <div

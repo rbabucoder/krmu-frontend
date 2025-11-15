@@ -21,7 +21,7 @@ const CommonBlogSidebar = async () => {
               </div>
 
               <Link
-                href={`/blog/category/${cat.slug}`}
+                href={`/blog2/category/${cat.slug}`}
                 className="text-white text-base"
                 dangerouslySetInnerHTML={{ __html: cat.name }}
               />

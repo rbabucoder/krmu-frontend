@@ -17,11 +17,38 @@
 @layer utilities {
   /* Complete Single Faculty Style */
 
+  .faculty_container {
+    padding-top: 200px;
+  }
+  .faculty_main_content_container > .fusion-fullwidth > .fusion-builder-row {
+    margin: 0 auto !important;
+    padding: 0px 20px !important;
+  }
+  .fac_info_container {
+    padding: 30px;
 
+    max-width: 1600px;
+    margin: 0 auto 100px;
+    display: flex;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.12) 100%
+    );
+  }
+
+  .fac_img_container,
+  .fac_name_desg_int,
+  .fac_social_links {
+    width: 33.333%;
+  }
 
   .faculty_main_content_container .fusion-fullwidth {
-    padding-top: 200px;
+    /* padding-top: 200px; */
     padding-bottom: 200px;
+  }
+  .faculty_main_content_container .tab-content .tab-pane {
+    color: #fff;
   }
 
   .faculty_main_content_container .fusion-column-wrapper .nav > ul.nav-tabs {

@@ -18,7 +18,7 @@ const SingleBlogCategorySidebar = async () => {
                     <div className="singlepost_right_sidebar_card_left">
                       <div className="singlepost_right_sidebar_dot"></div>
                       <Link
-                        href={`/blog/category/${cat?.slug}`}
+                        href={`/blog2/category/${cat?.slug}`}
                         className="singlepost_right_sidebar_text"
                       >
                         {cat?.name}
