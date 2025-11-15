@@ -2,7 +2,7 @@ import { getBlogPageInfo } from "@/lib/api/blogs/main-blog";
 // import CommonBlogHeroSection from "./comp/CommonBlogHeroSection";
 import CommonBlogLayout from "./comp/CommonBlogLayout";
 import { strapiSeoToMetadata } from "@/lib/constants/strapiMeta";
-import CommonBlogHeroSection from "./comp/CommonBlogHeroSection";
+// import CommonBlogHeroSection from "./comp/CommonBlogHeroSection";
 
 type Props = {
   searchParams: Promise<{ page?: string }>;
@@ -22,7 +22,7 @@ export async function generateMetadata() {
 const Page = async ({ searchParams }: Props) => {
   return (
     <>
-      <CommonBlogHeroSection />
+      {/* <CommonBlogHeroSection /> */}
       <CommonBlogLayout searchParams={searchParams} />
     </>
   );

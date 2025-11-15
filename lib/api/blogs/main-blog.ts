@@ -18,7 +18,7 @@ export async function getAllBlogsByPerPageOrCategorySlug(
   if (categorySlug) {
     const categoryRes = await fetch(
       `https://www.krmangalam.edu.in/blog/wp-json/wp/v2/categories?slug=${categorySlug}`,
-      { next: { revalidate: 3600 } } // revalidate every hour
+      { next: { revalidate: 60 } } // revalidate every hour
     );
 
     if (categoryRes.ok) {
@@ -53,19 +53,27 @@ export async function getRecentPosts() {
 }
 
 export async function getBlogPageInfo(): Promise<BlogPageSEOResponse["data"]> {
-  const res = await fetch(`${FETCH_STRAPI_URL}/api/blog?fields[0]=Title&populate[blog_seo][populate][shareImage][fields][0]=url`, {
-    next: { revalidate: 60 },
-  });
+  const res = await fetch(
+    `${FETCH_STRAPI_URL}/api/blog?fields[0]=Title&populate[blog_seo][populate][shareImage][fields][0]=url`,
+    {
+      next: { revalidate: 60 },
+    }
+  );
 
   if (!res.ok) throw new Error("Failed to fetch blog page info");
 
   const json: BlogPageSEOResponse = await res.json();
   return json.data;
 }
-export async function getBlogCategoryPageInfo(): Promise<BlogCategoryPageSEOResponse["data"]> {
-  const res = await fetch(`${FETCH_STRAPI_URL}/api/blog-category?fields[0]=Title&populate[blog_category_seo][populate][shareImage][fields][0]=url`, {
-    next: { revalidate: 60 },
-  });
+export async function getBlogCategoryPageInfo(): Promise<
+  BlogCategoryPageSEOResponse["data"]
+> {
+  const res = await fetch(
+    `${FETCH_STRAPI_URL}/api/blog-category?fields[0]=Title&populate[blog_category_seo][populate][shareImage][fields][0]=url`,
+    {
+      next: { revalidate: 60 },
+    }
+  );
 
   if (!res.ok) throw new Error("Failed to fetch blog category page info");
 
