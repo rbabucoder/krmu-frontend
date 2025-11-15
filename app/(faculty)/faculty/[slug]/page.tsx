@@ -12,6 +12,8 @@ type Props = {
 const page = async ({ params }: Props) => {
   const facultyResData = await getFacultyBySlug();
 
+  console.log('params', params);
+
   //  const singleFaculty = await getSingleFacultyBySlug(slug);
 
   const facultyContent = facultyResData[0]?.content.rendered || "";
