@@ -13,7 +13,15 @@ export default async function CategorySlugPage({ params, children }: Props) {
 
   const catName = catData?.name;
 
-  return <>
-    <h3 className="mb-5 px-2.5 text-4xl font-semibold underline">{catName}</h3>
-  {children}</>;
+  return (
+    <>
+      <h3
+        className="mb-5 px-2.5 text-4xl font-semibold underline"
+        dangerouslySetInnerHTML={{
+          __html: catName,
+        }}
+      />
+      {children}
+    </>
+  );
 }
