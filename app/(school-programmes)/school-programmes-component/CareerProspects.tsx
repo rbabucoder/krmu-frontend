@@ -29,13 +29,15 @@ const CareerProspects = ({
             <h3 className="text-4xl md:text-[40px] font-semibold text-[#0a41a1] mb-6 text-center sm:text-left">
               {heading} <span className="text-[#db2a1a]">{highlight}</span>
             </h3>
-            <Image
-              src={`${STRAPI_URL}${careerimg?.url}`}
-              width={660}
-              height={660}
-              className="w-full h-full lg:hidden"
-              alt={careerimg?.alternativeText || "Career Prospectus"}
-            />
+            {careerimg?.url && (
+              <Image
+                src={`${STRAPI_URL}${careerimg?.url}`}
+                width={660}
+                height={660}
+                className="w-full h-full lg:hidden"
+                alt={careerimg?.alternativeText || "Career Prospectus"}
+              />
+            )}
             <p className="mb-6">{desc}</p>
             <div>
               {careercards &&
@@ -53,13 +55,15 @@ const CareerProspects = ({
             </div>
           </div>
           <div className="w-full xl:w-1/2 hidden lg:block">
-            <Image
-              src={`${STRAPI_URL}${careerimg?.url}`}
-              width={660}
-              height={660}
-              className="w-full h-full"
-              alt={careerimg?.alternativeText || "Career Prospectus"}
-            />
+            {careerimg?.url && (
+              <Image
+                src={`${STRAPI_URL}${careerimg?.url}`}
+                width={660}
+                height={660}
+                className="w-full h-full"
+                alt={careerimg?.alternativeText || "Career Prospectus"}
+              />
+            )}
           </div>
         </div>
         <div className="max-w-[1320px] mx-auto w-full flex justify-center mt-4">

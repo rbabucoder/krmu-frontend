@@ -61,7 +61,7 @@ const ProgrammeStructure = ({
             />
           ) : (
             <Link
-              href={currbtn?.buttonlink}
+              href={currbtn?.buttonlink || "#"}
               className={`p-2 sm:py-[15px] sm:px-[25px] inline-block font-normal rounded-[15px] text-xs sm:text-2xl w-full text-white bg-[#db2a1a] text-center mb-6 ${
                 currbtn?.buttonclass || ""
               }`}

@@ -29,13 +29,15 @@ const LabsFacilities = ({
       <section className="prog-global-padding">
         <div className="max-w-[1320px] mx-auto w-full flex gap-6 items-center px-2.5 md:px-4">
           <div className="w-1/2 hidden md:block">
-            <Image
-              src={`${STRAPI_URL}${labimg?.url}`}
-              alt={labimg?.alternativeText || "Lab Image"}
-              width={636}
-              height={733}
-              className="w-full"
-            />
+            {labimg?.url && (
+              <Image
+                src={`${STRAPI_URL}${labimg?.url}`}
+                alt={labimg?.alternativeText || "Lab Image"}
+                width={636}
+                height={733}
+                className="w-full"
+              />
+            )}
           </div>
           <div className="w-full md:w-1/2">
             <h3 className="text-[50px] text-[#0a41a1] font-medium">
