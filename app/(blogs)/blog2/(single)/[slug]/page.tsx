@@ -1,11 +1,11 @@
 import { yoastToMetadata } from "@/lib/constants/yoastMeta";
-import SingleBlogHero from "../single-blog-comp/SingleBlogHero";
-import SingleBlogLayout from "../single-blog-comp/SingleBlogLayout";
 import {
   getImageById,
   getSingleBlogDataBySlug,
 } from "@/lib/api/blogs/single-blog";
 import { notFound } from "next/navigation";
+import SingleBlogHero from "../../(listings)/single-blog-comp/SingleBlogHero";
+import SingleBlogLayout from "../../(listings)/single-blog-comp/SingleBlogLayout";
 
 type Props = {
   params: Promise<{ slug: string }>;

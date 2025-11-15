@@ -10,7 +10,7 @@ type Props = {
   intarea: FacultyInterestArea[];
   socialLinks: FacultySocialLinks[];
 };
-const SingleFacultyHero = ({
+const SingleFacultyHero = ({ 
   facultyImgURL,
   facName,
   desg,

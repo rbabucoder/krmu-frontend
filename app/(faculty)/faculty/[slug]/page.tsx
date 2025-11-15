@@ -4,14 +4,22 @@ import FacultyTabsScript from "./FacultyTabsScript";
 import { getImageById } from "@/lib/api/blogs/single-blog";
 import Image from "next/image";
 
-const page = async () => {
+
+type Props = {
+  params: Promise<{ slug: string }>;
+};
+
+const page = async ({ params }: Props) => {
   const facultyResData = await getFacultyBySlug();
+
+  //  const singleFaculty = await getSingleFacultyBySlug(slug);
 
   const facultyContent = facultyResData[0]?.content.rendered || "";
   const facultyImgId = facultyResData[0]?.featured_media;
 
   const facultyName = facultyResData[0]?.title?.rendered || "";
-  // const facultyDesignation = facultyResData[0]
+  const facultyDesignation = facultyResData[0]?.acf?.staff_designation || "";
+  const facImgUrl = await getImageById(facultyImgId);
 
   const $ = cheerio.load(facultyContent);
 
@@ -26,10 +34,6 @@ const page = async () => {
 
   // Cleaned main HTML
   const cleanedHTML = $.html();
-
-  const facImgUrl = await getImageById(facultyImgId);
-
-  console.log(facImgUrl);
 
   return (
     <section
@@ -51,13 +55,17 @@ const page = async () => {
           )}
         </div>
         <div className="fac_name_desg_int text-white">
-          <h1 className="text-2xl lg:text-[35px] font-semibold">
-            {facultyName}
-          </h1>
+          <div className="py-[15px] border-b border-white">
+            <h1 className="text-2xl lg:text-[35px] font-semibold">
+              {facultyName}
+            </h1>
+
+            <p className="text-[18px]">{facultyDesignation}</p>
+          </div>
           {/* Render extracted Interest Area(s) */}
           <div
             dangerouslySetInnerHTML={{ __html: interestHTML }}
-            className="faculty_interest_wrapper"
+            className="faculty_interest_wrapper mt-5"
           />
         </div>
         <div className="fac_social_links"></div>

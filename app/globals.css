@@ -36,7 +36,12 @@
       rgba(255, 255, 255, 0.12) 100%
     );
   }
-
+  .interest-title {
+    color: #fff;
+    margin-bottom: 0px;
+    font-size: 24px;
+    font-weight: 700;
+  }
   .fac_img_container,
   .fac_name_desg_int,
   .fac_social_links {

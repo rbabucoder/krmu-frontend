@@ -10,7 +10,8 @@ const CommonBlogSidebar = async () => {
       <h4 className="mb-5 text-white text-[32px]">Blog Categories</h4>
       <ul>
         {allCategories?.map((cat, i) => {
-          if (!cat?.name || cat.name.toLowerCase() === "uncategorized") return null;
+          if (!cat?.name || cat.name.toLowerCase() === "uncategorized")
+            return null;
 
           return (
             <li key={i} className="flex items-center gap-3 py-1.5">
