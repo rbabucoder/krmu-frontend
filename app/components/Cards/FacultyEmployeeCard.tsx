@@ -12,7 +12,7 @@ type Props = {
   slug: string;
 };
 
-export const EmployeeCard = ({ name, imgId, qual, desg, slug }: Props) => {
+export const FacultyEmployeeCard = ({ name, imgId, qual, desg, slug }: Props) => {
   const [imgURL, setImgUrl] = useState("");
 
   useEffect(() => {

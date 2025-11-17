@@ -1,14 +1,14 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { EmployeeCard } from "@/app/components/Cards/EmployeeCard";
+import { AdvisoryEmployeeCard } from "@/app/components/Cards/AdvisoryEmployeeCard";
 import { Button } from "@/components/ui/button";
 import { getFacultyByCat } from "@/lib/api/schools";
 import { FACULTYCARD } from "@/lib/types/schools";
- 
+
 type Props = {
   schoolCat: string;
-}; 
+};
 
 const AdvisoryLoop = ({ schoolCat }: Props) => {
   const [faculties, setFaculties] = useState<FACULTYCARD[]>([]);
@@ -31,7 +31,9 @@ const AdvisoryLoop = ({ schoolCat }: Props) => {
 
   // ✅ Show only Advisory members
   const advisoryFaculties = faculties.filter(
-    (faculty) => (faculty.faculty_type?.toLowerCase() === "advisory") || (faculty.faculty_type?.toLowerCase() === "both")
+    (faculty) =>
+      faculty.faculty_type?.toLowerCase() === "advisory" ||
+      faculty.faculty_type?.toLowerCase() === "both"
   );
 
   const visibleFaculties = advisoryFaculties.slice(0, visibleCount);
@@ -42,7 +44,7 @@ const AdvisoryLoop = ({ schoolCat }: Props) => {
         {visibleFaculties.length > 0 ? (
           visibleFaculties.map((faculty) => (
             <div key={faculty?.id}>
-              <EmployeeCard
+              <AdvisoryEmployeeCard
                 name={faculty?.faculty_name}
                 imgUrl={faculty?.faculty_img?.url}
                 qual={faculty?.faculty_qualification}
