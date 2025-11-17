@@ -5,10 +5,15 @@ import { FACADV } from "@/lib/types/schools";
 
 type Props = {
   schoolCat: string;
+  WordSchoolslug: string;
   fac_adv: FACADV;
 };
 
-const SchoolFacultyAdvisory = ({ schoolCat, fac_adv }: Props) => {
+const SchoolFacultyAdvisory = ({
+  schoolCat,
+  fac_adv,
+  WordSchoolslug,
+}: Props) => {
   return (
     <>
       <div className="max-w-[1664px] mx-auto w-full py-4 md:p-8">
@@ -20,7 +25,10 @@ const SchoolFacultyAdvisory = ({ schoolCat, fac_adv }: Props) => {
               }}
               className="text-[45px] text-center"
             />
-            <FacultyLoop schoolCat={schoolCat} />
+            <FacultyLoop
+              // schoolCat={schoolCat}
+              WordSchoolslug={WordSchoolslug}
+            />
           </>
         ) : (
           <Tabs defaultValue="tab1">
@@ -47,7 +55,10 @@ const SchoolFacultyAdvisory = ({ schoolCat, fac_adv }: Props) => {
               </TabsList>
             </div>
             <TabsContent value="tab1">
-              <FacultyLoop schoolCat={schoolCat} />
+              <FacultyLoop
+                // schoolCat={schoolCat}
+                WordSchoolslug={WordSchoolslug}
+              />
             </TabsContent>
             <TabsContent value="tab2">
               <AdvisoryLoop schoolCat={schoolCat} />

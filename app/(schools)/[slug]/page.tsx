@@ -72,6 +72,7 @@ export default async function Page({ params }: Props) {
 
   const degreeName = school?.degree?.name;
   const schoolCategoryName = school?.school_category?.name;
+  const WordSchoolslug = school?.wordschoolslug;
 
   return (
     <>
@@ -105,13 +106,13 @@ export default async function Page({ params }: Props) {
           alumniLogos={school.alumnilogo}
         />
       )}
-       (
-        <SchoolProgrammeOffered
-          degName={degreeName}
-          schoolCategoryName={schoolCategoryName}
-          title={school?.programme_offered?.title}
-          content={school?.programme_offered?.content}
-        />
+      (
+      <SchoolProgrammeOffered
+        degName={degreeName}
+        schoolCategoryName={schoolCategoryName}
+        title={school?.programme_offered?.title}
+        content={school?.programme_offered?.content}
+      />
       )
       <SchoolExcitedAlready
         heading={school?.excitedtitle}
@@ -145,7 +146,6 @@ export default async function Page({ params }: Props) {
             collabCards={school.collabcards}
           />
         )}
-
       {school?.letsexplorecontent && (
         <SchoolLetsExplore
           content={school?.letsexplorecontent}
@@ -190,16 +190,15 @@ export default async function Page({ params }: Props) {
         <SchoolFacultyAdvisory
           fac_adv={school?.fac_adv}
           schoolCat={schoolCat}
+          WordSchoolslug={WordSchoolslug}
         />
       )}
-
       {school?.video_comp && (
         <SchoolIndustyVideo
           heading={school?.video_comp?.heading}
           videoCards={school?.video_comp?.video_iframe_fields}
         />
       )}
-
       {school?.eventstitle && (
         <SchoolEventAndExperience
           title={school?.eventstitle}

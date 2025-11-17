@@ -203,8 +203,8 @@ export async function getSingleFacultyBySlug(
 // fields: ['faculty_name', 'faculty_designation', 'facultyslug'],
 // populate: {
 // faculty_img: {
-//  fields: ['url'] 
-// }, 
+//  fields: ['url']
+// },
 // faculty_interest_areas : {
 //  fields: ['fac_int_content']
 // },
@@ -212,16 +212,82 @@ export async function getSingleFacultyBySlug(
 //  fields: ['listtext', 'listlink'],
 //  populate: {
 //    listicon: {
-//     fields: ['url'] 
+//     fields: ['url']
 //    }
-//  } 
+//  }
 // },
 //  faculty_tab_content: {
 //   populate: {
 //     faculty_tab :{
 //       fields: ['tabname', 'tabcontent']
-//     } 
+//     }
 //   }
 // }
 // }
+// }
+
+export async function getSchoolInfoForFacultyBySlug(
+  slug: string = "school-of-agriculutural-sciences"
+) {
+  const res = await fetch(
+    `https://krmangalam.edu.in/wp-json/wp/v2/schools?slug=${slug}&_fields=id,school_faculty`,
+    {
+      next: {
+        revalidate: 60,
+      },
+    }
+  );
+
+  if (!res.ok) throw new Error("Failed to fetch school info");
+  const json = res.json();
+  return json;
+}
+
+export async function getWordSchoolFaculty(
+  wordFacultyId: number,
+  page: number = 1,
+  perPage: number = 4
+) {
+  const url = `https://krmangalam.edu.in/wp-json/wp/v2/faculty?school_faculty=${wordFacultyId}&_fields=id,title,acf,featured_media,slug&per_page=${perPage}&page=${page}`;
+
+  try {
+    const res = await fetch(url, {
+      next: { revalidate: 60 },
+    });
+
+    if (!res.ok) {
+      return { data: [], totalPages: 0 };
+    }
+
+    const data = await res.json();
+    const totalPages = Number(res.headers.get("X-WP-TotalPages")) || 0;
+
+    return {
+      data,
+      totalPages,
+    };
+  } catch (err) {
+    console.error("getWordSchoolFaculty error:", err);
+
+    return {
+      data: [],
+      totalPages: 0,
+    };
+  }
+}
+
+
+// export async function getWordSchoolFaculty(wordFacultyId: number) {
+//   const res = await fetch(
+//     `https://krmangalam.edu.in/wp-json/wp/v2/faculty?school_faculty=${wordFacultyId}&_fields=id,title,acf,featured_media,slug&per_page=4&page=1`,
+//     {
+//       next: {
+//         revalidate: 60,
+//       },
+//     }
+//   );
+
+//   if (!res.ok) throw new Error("Failed to fetch Faculty info");
+//   const json: WordSchoolFacultyResponse = await res.json();
+//   return json;
 // }

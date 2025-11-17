@@ -138,6 +138,7 @@ export interface School {
   video_comp: VIDEOCOMP;
   programme_offered: ProgrammeOffered;
   school_advantage: SCHOOLADVANTAGE;
+  wordschoolslug: string;
 }
 
 export interface SCHOOLADVANTAGE {
@@ -190,7 +191,6 @@ export interface SchoolsResponse {
     };
   };
 }
-
 
 // Meta pagination
 export interface Pagination {
@@ -298,3 +298,21 @@ export type SchoolPageCardChild = {
 // export type SchoolPageCollabCardsResponse = {
 //   collabcards: SchoolPageCollabCard[];
 // };
+
+export type WordSchoolFacultyResponse = WordSchoolFaculties[];
+
+export type WordSchoolFaculties = {
+  id: number;
+  title: {
+    rendered: string;
+  };
+  featured_media: number;
+  acf: WordSchoolACF;
+  slug: string;
+};
+
+export type WordSchoolACF = {
+  "staff-qualification": string;
+  staff_designation: string;
+  schools: number[];
+};

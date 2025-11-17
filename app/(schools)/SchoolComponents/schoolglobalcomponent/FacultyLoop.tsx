@@ -3,68 +3,103 @@
 import { useState, useEffect } from "react";
 import { EmployeeCard } from "@/app/components/Cards/EmployeeCard";
 import { Button } from "@/components/ui/button";
-import { getFacultyByCat } from "@/lib/api/schools";
-import { FACULTYCARD } from "@/lib/types/schools";
+import {
+  getSchoolInfoForFacultyBySlug,
+  getWordSchoolFaculty,
+} from "@/lib/api/schools";
+import { WordSchoolFaculties } from "@/lib/types/schools";
 
 type Props = {
-  schoolCat: string;
+  WordSchoolslug: string;
+  // schoolCat: string;
 };
 
-const FacultyLoop = ({ schoolCat }: Props) => {
-  const [faculties, setFaculties] = useState<FACULTYCARD[]>([]);
-  const [visibleCount, setVisibleCount] = useState(8);
+const FacultyLoop = ({  WordSchoolslug }: Props) => {
+  const [facultyList, setFacultyList] = useState<WordSchoolFaculties[]>([]);
+  const [page, setPage] = useState(1);
+  const [schoolFacultyId, setSchoolFacultyId] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    const fetchFaculties = async () => {
-      setLoading(true);
-      const data = await getFacultyByCat(schoolCat);
-      setFaculties(data || []);
-      setLoading(false);
-    };
-    fetchFaculties();
-  }, [schoolCat]);
+  const [totalPages, setTotalPages] = useState(1); // 👈 added
+  const perPage = 4;
 
-  const handleLoadMore = () => {
-    setVisibleCount((prev) => prev + 4);
+  // STEP 1 — Get school faculty ID
+  useEffect(() => {
+    const fetchSchoolInfo = async () => {
+      const info = await getSchoolInfoForFacultyBySlug(WordSchoolslug);
+      const id = info[0]?.school_faculty?.[0];
+      setSchoolFacultyId(id);
+    };
+
+    fetchSchoolInfo();
+  }, [WordSchoolslug]);
+
+  // STEP 2 — Load first page
+  useEffect(() => {
+    if (!schoolFacultyId) return;
+
+    const loadInitial = async () => {
+      const { data, totalPages } = await getWordSchoolFaculty(
+        schoolFacultyId,
+        1,
+        perPage
+      );
+
+      setFacultyList(data);
+      setTotalPages(totalPages); // 👈 set total pages
+    };
+
+    loadInitial();
+  }, [schoolFacultyId]);
+
+  // STEP 3 — Load More button
+  const handleLoadMore = async () => {
+    if (!schoolFacultyId) return;
+    if (page >= totalPages) return; // 👈 stop if last page
+
+    setLoading(true);
+
+    const nextPage = page + 1;
+
+    const { data } = await getWordSchoolFaculty(
+      schoolFacultyId,
+      nextPage,
+      perPage
+    );
+
+    setFacultyList((prev) => [...prev, ...data]);
+    setPage(nextPage);
+    setLoading(false);
   };
 
-  // ✅ Show all except Advisory
-  const filteredFaculties = faculties.filter(
-    (faculty) => faculty.faculty_type?.toLowerCase() !== "advisory"
-  );
-
-  const visibleFaculties = filteredFaculties.slice(0, visibleCount);
-
   return (
-    <>
-      <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-16 px-4 pb-4 gap-5">
-        {visibleFaculties.map((faculty) => (
-          <div key={faculty?.id}>
-            <EmployeeCard
-              name={faculty?.faculty_name}
-              imgUrl={faculty?.faculty_img?.url}
-              qual={faculty?.faculty_qualification}
-              desg={faculty?.faculty_card_desg}
-              slug={faculty?.facultyslug}
-            />
-          </div>
+    <div className="pt-16 px-4 pb-4">
+      <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+        {facultyList.map((faculty) => (
+          <EmployeeCard
+            key={faculty.id}
+            name={faculty.title?.rendered}
+            imgId={faculty.featured_media}
+            qual={faculty.acf?.["staff-qualification"]}
+            desg={faculty.acf?.staff_designation}
+            slug={faculty.slug}
+          />
         ))}
       </div>
 
-      {/* Load More Button */}
-      {visibleCount < filteredFaculties.length && (
-        <div className="py-10 flex justify-center">
+      {/* SHOW BUTTON ONLY IF MORE PAGES */}
+      {page < totalPages && (
+        <div className="flex justify-center mt-8">
           <Button
             onClick={handleLoadMore}
             disabled={loading}
-            className="py-3.5 px-8 bg-[#cb000d] font-bold rounded-sm text-sm sm:text-base text-white leading-[1] flex items-center"
+            className="py-3.5 px-8 bg-[#cb000d] text-white font-bold"
           >
             {loading ? "Loading..." : "Load More"}
           </Button>
         </div>
       )}
-    </>
+    </div>
   );
 };
 

@@ -13,6 +13,8 @@ const SingleBlogCategorySidebar = async () => {
           <div className="all_cat__inner-container">
             {allCategories &&
               allCategories?.map((cat) => {
+                if (!cat?.name || cat.name.toLowerCase() === "uncategorized")
+                  return null;
                 return (
                   <div key={cat?.id} className="singlepost_right_sidebar_card">
                     <div className="singlepost_right_sidebar_card_left">
