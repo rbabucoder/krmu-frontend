@@ -39,7 +39,7 @@ export async function getAllBlogsByPerPageOrCategorySlug(
     if (categoryId) params.append("categories", String(categoryId));
 
     // 🔥 Optimized single fetch call
-    const finalURL = `https://www.krmangalam.edu.in/blog/wp-json/wp/v2/posts?${params.toString()}`;
+    const finalURL = `${krmBlogURL}/wp-json/wp/v2/posts?${params.toString()}`;
 
     const res = await fetch(finalURL, { next: { revalidate: 300 } }); // 5-minute cache
 
@@ -57,7 +57,7 @@ export async function getAllBlogsByPerPageOrCategorySlug(
 
 export async function getRecentPosts() {
   const res = await fetch(
-    `https://www.krmangalam.edu.in/blog/wp-json/wp/v2/posts?per_page=3`,
+    `${krmBlogURL}/wp-json/wp/v2/posts?per_page=3`,
     { next: { revalidate: 60 } } // ISR caching (Next.js)
   );
   if (!res.ok) throw new Error("Failed to fetch recent posts");
@@ -113,7 +113,7 @@ export async function getBlogCategoryPageInfo(): Promise<
 //   page: number = 1
 // ) {
 //   const res = await fetch(
-//     `https://www.krmangalam.edu.in/blog/wp-json/wp/v2/posts?per_page=${num_of_blogs}&page=${page}&_embed`,
+//     `${krmBlogURL}/wp-json/wp/v2/posts?per_page=${num_of_blogs}&page=${page}&_embed`,
 //     {
 //       next: { revalidate: 60 },
 //     }
@@ -132,8 +132,8 @@ export async function getBlogCategoryPageInfo(): Promise<
 //   page: number = 1
 // ): Promise<MainBlogResponse> {
 //   const res = await fetch(
-//     // `https://www.krmangalam.edu.in/blog/wp-json/wp/v2/posts?per_page=${num_of_blogs}&_embed`,
-//     `https://www.krmangalam.edu.in/blog/wp-json/wp/v2/posts?per_page=${num_of_blogs}&page=${page}&_embed`,
+//     // `${krmBlogURL}/wp-json/wp/v2/posts?per_page=${num_of_blogs}&_embed`,
+//     `${krmBlogURL}/wp-json/wp/v2/posts?per_page=${num_of_blogs}&page=${page}&_embed`,
 //     {
 //       next: {
 //         revalidate: 60,

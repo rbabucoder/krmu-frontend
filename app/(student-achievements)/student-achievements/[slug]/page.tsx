@@ -1,11 +1,28 @@
-import StudentAchievementCards from "../comp/StudentAchievementCards";
+// import { getStudentsAchievements } from "@/lib/api/student-achievement";
+// import StudentAchievementCards from "../comp/StudentAchievementCards";
 import StudentAchievementHero from "../comp/StudentAchievementHero";
 
-const page = () => {
+type Props = {
+  params: Promise<{ slug: string }>;
+};
+
+const page = async ({ params }: Props) => {
+  const { slug } = await params;
+  console.log("Props", slug);
+
+  // const studentAchievementsCatName = slug.split("-")[0];
+
+  // const achievementData = await getStudentsAchievements(
+  //   studentAchievementsCatName
+  // );
+  // console.log(achievementData); // "soet"
+
   return (
     <>
       <StudentAchievementHero />
-      <StudentAchievementCards />
+      {/* {achievementData && (
+        <StudentAchievementCards achievementData={achievementData} />
+      )} */}
     </>
   );
 };
