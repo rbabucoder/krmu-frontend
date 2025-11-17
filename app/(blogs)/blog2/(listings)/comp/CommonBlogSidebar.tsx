@@ -2,7 +2,7 @@ import { getAllBlogCategories } from "@/lib/api/blogs/single-blog";
 import { Check } from "lucide-react";
 import Link from "next/link";
 
-const CommonBlogSidebar = async () => {
+const   CommonBlogSidebar = async () => {
   const allCategories = await getAllBlogCategories();
 
   return (
