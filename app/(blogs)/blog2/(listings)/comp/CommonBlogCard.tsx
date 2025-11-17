@@ -1,4 +1,4 @@
-import { getImageById } from "@/lib/api/blogs/single-blog";
+import { getBlogImageById } from "@/lib/api/blogs/single-blog";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -10,7 +10,7 @@ type Props = {
   imgId: number;
 };
 const CommonBlogCard = async ({ title, excerpt, slug, imgId }: Props) => {
-  const imgUrl = await getImageById(imgId);
+  const imgUrl = await getBlogImageById(imgId);
 
   if (!imgUrl) return null;
 

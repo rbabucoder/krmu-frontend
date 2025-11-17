@@ -1,5 +1,7 @@
 // File: lib/api/blogs/search-blog.ts
 
+import { krmBlogURL } from "@/app/constant";
+
 export interface WPBlog {
   id: number;
   slug: string;
@@ -16,7 +18,7 @@ export async function searchBlogs(
 ): Promise<WPBlog[]> {
   if (!query) return [];
 
-  const url = `https://www.krmangalam.edu.in/blog/wp-json/wp/v2/posts?search=${encodeURIComponent(
+  const url = `${krmBlogURL}/wp-json/wp/v2/posts?search=${encodeURIComponent(
     query
   )}&per_page=6&page=${page}&_embed`;
 

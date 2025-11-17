@@ -27,7 +27,10 @@ const FacultyLoop = ({ WordSchoolslug }: Props) => {
   useEffect(() => {
     const fetchSchoolInfo = async () => {
       const info = await getSchoolInfoForFacultyBySlug(WordSchoolslug);
+      console.log("info", info);
+
       const id = info[0]?.school_faculty?.[0];
+
       setSchoolFacultyId(id);
     };
 

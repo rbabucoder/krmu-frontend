@@ -1,7 +1,7 @@
 import * as cheerio from "cheerio";
 import { getFacultyBySlug, singleFaculty } from "@/lib/api/faculty";
 import FacultyTabsScript from "./FacultyTabsScript";
-import { getImageById } from "@/lib/api/blogs/single-blog";
+import { getBlogImageById } from "@/lib/api/blogs/single-blog";
 import Image from "next/image";
 
 import { Mail, Phone } from "lucide-react"; // NEW ICONS
@@ -28,7 +28,7 @@ const page = async ({ params }: Props) => {
   let facImgUrl = "";
 
   if (facultyImgId !== undefined && facultyImgId !== null) {
-    facImgUrl = await getImageById(facultyImgId);
+    facImgUrl = await getBlogImageById(facultyImgId);
   }
   // Load HTML
   const $ = cheerio.load(facultyContent);

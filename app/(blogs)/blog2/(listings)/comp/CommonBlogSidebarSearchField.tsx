@@ -1,5 +1,6 @@
 "use client";
 
+import { krmBlogURL } from "@/app/constant";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 // import Image from "next/image";
@@ -31,7 +32,7 @@ const CommonBlogSidebarSearchField = () => {
     setLoading(true);
     try {
       const res = await fetch(
-        `https://www.krmangalam.edu.in/blog/wp-json/wp/v2/posts?search=${encodeURIComponent(
+        `${krmBlogURL}/wp-json/wp/v2/posts?search=${encodeURIComponent(
           q
         )}&_embed&per_page=5&_fields=id,slug,title.rendered,_embedded`
       );

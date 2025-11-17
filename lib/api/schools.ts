@@ -229,14 +229,14 @@ export async function getSingleFacultyBySlug(
 export async function getSchoolInfoForFacultyBySlug(
   slug: string = "school-of-agriculutural-sciences"
 ) {
-  const res = await fetch(
-    `https://krmangalam.edu.in/wp-json/wp/v2/schools?slug=${slug}&_fields=id,school_faculty`,
-    {
-      next: {
-        revalidate: 60,
-      },
-    }
-  );
+  const url = `https://krmangalam.edu.in/wp-json/wp/v2/schools?slug=${slug}&_fields=id,school_faculty`;
+
+  console.log("url", url);
+  const res = await fetch(url, {
+    next: {
+      revalidate: 60,
+    },
+  });
 
   if (!res.ok) throw new Error("Failed to fetch school info");
   const json = res.json();
@@ -275,7 +275,6 @@ export async function getWordSchoolFaculty(
     };
   }
 }
-
 
 // export async function getWordSchoolFaculty(wordFacultyId: number) {
 //   const res = await fetch(

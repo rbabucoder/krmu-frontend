@@ -1,5 +1,6 @@
 "use client";
-import { getImageById } from "@/lib/api/blogs/single-blog";
+import { Skeleton } from "@/components/ui/skeleton";
+import { getWordImageById } from "@/lib/api/common";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -12,12 +13,19 @@ type Props = {
   slug: string;
 };
 
-export const FacultyEmployeeCard = ({ name, imgId, qual, desg, slug }: Props) => {
+export const FacultyEmployeeCard = ({
+  name,
+  imgId,
+  qual,
+  desg,
+  slug,
+}: Props) => {
   const [imgURL, setImgUrl] = useState("");
+  console.log("imgId", imgId);
 
   useEffect(() => {
     async function fetchImgUrl() {
-      const url = await getImageById(imgId).then((url) => url);
+      const url = await getWordImageById(imgId).then((url) => url);
       setImgUrl(url);
     }
 
@@ -35,7 +43,7 @@ export const FacultyEmployeeCard = ({ name, imgId, qual, desg, slug }: Props) =>
           target="_blank"
         >
           <div className="mb-4">
-            {imgURL && (
+            {imgURL ? (
               <Image
                 src={`${imgURL}`}
                 width={272}
@@ -46,6 +54,8 @@ export const FacultyEmployeeCard = ({ name, imgId, qual, desg, slug }: Props) =>
                 }}
                 className="rounded-[15px]"
               />
+            ) : (
+              <Skeleton className="w-[272px] h-[295px]" />
             )}
           </div>
 

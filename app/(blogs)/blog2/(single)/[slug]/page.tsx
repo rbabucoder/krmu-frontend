@@ -1,6 +1,6 @@
 import { yoastToMetadata } from "@/lib/constants/yoastMeta";
 import {
-  getImageById,
+  getBlogImageById,
   getSingleBlogDataBySlug,
 } from "@/lib/api/blogs/single-blog";
 import { notFound } from "next/navigation";
@@ -40,7 +40,7 @@ const page = async ({ params }: Props) => {
   const authorSlug = currentSingleBlog?._embedded?.author?.[0]?.slug;
 
   const featuedImageId = currentSingleBlog?.featured_media;
-  const featuredImageUrl = await getImageById(featuedImageId);
+  const featuredImageUrl = await getBlogImageById(featuedImageId);
 
   const authorName =
     currentSingleBlog?._embedded?.author?.[0]?.acf?.profile_name;

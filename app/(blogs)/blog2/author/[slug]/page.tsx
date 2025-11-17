@@ -1,7 +1,7 @@
 import { getAuthInfoBySlug } from "@/lib/api/blogs/author-blog";
 import AuthorHero from "../comp/AuthorHero";
 import { notFound } from "next/navigation";
-import { getImageById } from "@/lib/api/blogs/single-blog";
+import { getBlogImageById } from "@/lib/api/blogs/single-blog";
 import AuthorPosts from "../comp/AuthorPosts";
 
 type Props = {
@@ -28,7 +28,7 @@ const page = async ({ params }: Props) => {
   }
   const AuthorImgId = AuthACF?.profile_image;
 
-  const AuthImgUrl = await getImageById(AuthorImgId);
+  const AuthImgUrl = await getBlogImageById(AuthorImgId);
   const AuthId = authData?.id;
   const AuthName = AuthACF?.profile_name;
   const AuthDesg = AuthACF?.profile_position;

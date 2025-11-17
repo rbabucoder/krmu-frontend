@@ -1,12 +1,12 @@
 import Image from "next/image";
-import { getImageById } from "@/lib/api/blogs/single-blog";
+import { getBlogImageById } from "@/lib/api/blogs/single-blog";
 
 type Props = {
   imgId: number;
 };
 
 const SingleBlogAuthorImage = async ({ imgId }: Props) => {
-  const imgUrl = await getImageById(imgId);
+  const imgUrl = await getBlogImageById(imgId);
 
   if (!imgUrl) return null; // ✅ properly handle missing image
 

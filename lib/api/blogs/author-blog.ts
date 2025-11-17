@@ -1,6 +1,5 @@
-import {
-  AuthorResponse,
-} from "@/lib/types/blogs/auth-blogs";
+import { krmBlogURL } from "@/app/constant";
+import { AuthorResponse } from "@/lib/types/blogs/auth-blogs";
 
 export async function getAuthInfoBySlug(authSlug: string = "") {
   const res = await fetch(
@@ -22,7 +21,7 @@ export async function getAuthInfoBySlug(authSlug: string = "") {
 // lib/api/blogs/author-blog.ts
 export async function getPostsByAuthId(authId: number, page: number = 1) {
   const res = await fetch(
-    `https://www.krmangalam.edu.in/blog/wp-json/wp/v2/posts?author=${authId}&per_page=6&page=${page}&_fields=id,title,featured_media,date,slug`,
+    `${krmBlogURL}/wp-json/wp/v2/posts?author=${authId}&per_page=6&page=${page}&_fields=id,title,featured_media,date,slug`,
     {
       next: { revalidate: 60 },
     }
@@ -36,7 +35,7 @@ export async function getPostsByAuthId(authId: number, page: number = 1) {
 
 // export async function getPostsByAuthId(authId: number) {
 //   const res = await fetch(
-//     `https://www.krmangalam.edu.in/blog/wp-json/wp/v2/posts?${authId}&per_page=1&_fields=id,title,featured_media,date`,
+//     `${krmBlogURL}/wp-json/wp/v2/posts?${authId}&per_page=1&_fields=id,title,featured_media,date`,
 //     {
 //       next: {
 //         revalidate: 60,

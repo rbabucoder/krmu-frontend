@@ -1,4 +1,4 @@
-import { FETCH_STRAPI_URL } from "@/app/constant";
+import { FETCH_STRAPI_URL, krmBlogURL } from "@/app/constant";
 import {
   BlogCategoryPageSEOResponse,
   BlogPageSEOResponse,
@@ -22,7 +22,7 @@ export async function getAllBlogsByPerPageOrCategorySlug(
     // 🟢 Fetch category ID only if slug exists
     if (categorySlug) {
       const catRes = await fetch(
-        `https://www.krmangalam.edu.in/blog/wp-json/wp/v2/categories?slug=${categorySlug}`,
+        `${krmBlogURL}/wp-json/wp/v2/categories?slug=${categorySlug}`,
         { next: { revalidate: 300 } } // 5-minute cache
       );
 
@@ -54,43 +54,6 @@ export async function getAllBlogsByPerPageOrCategorySlug(
     return { blogs: [], totalPages: 0 };
   }
 }
-
-// export async function getAllBlogsByPerPageOrCategorySlug(
-//   num_of_blogs: number = 6,
-//   page: number = 1,
-//   categorySlug?: string // optional category filter
-// ) {
-//   // Base URL
-//   // let url = `https://www.krmangalam.edu.in/blog/wp-json/wp/v2/posts?per_page=${num_of_blogs}&page=${page}&_embed`;
-//   let url = `https://www.krmangalam.edu.in/blog/wp-json/wp/v2/posts?per_page=${num_of_blogs}&page=${page}&_fields=id,slug,title,featured_media,content,excerpt`;
-
-//   // If a category slug is provided, fetch its category ID first
-//   if (categorySlug) {
-//     const categoryRes = await fetch(
-//       `https://www.krmangalam.edu.in/blog/wp-json/wp/v2/categories?slug=${categorySlug}`,
-//       { next: { revalidate: 60 } } // revalidate every hour
-//     );
-
-//     if (categoryRes.ok) {
-//       const categories = await categoryRes.json();
-//       if (categories.length > 0) {
-//         const categoryId = categories[0].id;
-//         url += `&categories=${categoryId}`;
-//       }
-//     }
-//   }
-
-//   // Fetch posts with optional category
-//   const res = await fetch(url, { next: { revalidate: 60 } });
-
-//   if (!res.ok) throw new Error("Failed to fetch blogs");
-
-//   // Extract pagination info
-//   const totalPages = Number(res.headers.get("X-WP-TotalPages")) || 1;
-//   const json = await res.json();
-
-//   return { blogs: json, totalPages };
-// }
 
 export async function getRecentPosts() {
   const res = await fetch(

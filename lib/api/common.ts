@@ -15,6 +15,7 @@ import { MainMenuResponse, TOPBARResponse } from "../types/HeaderType";
 import { GlobalResponse } from "../types/global";
 import { AdvisoryBoardResponse } from "../types/advisory-type";
 import { HeaderMenuResponse } from "../types/header-menu";
+import { BlogImageIdResponse } from "../types/blogs/single-blog";
 
 export async function getAlumniData(): Promise<AlumniApiResponse["data"]> {
   const res = await fetch(`${FETCH_STRAPI_URL}/api/alumnis?populate=*`, {
@@ -407,3 +408,25 @@ export interface StrapiPagination {
 
 
 
+
+
+
+
+export async function getWordImageById(imgId: number): Promise<string> {
+  if (!imgId) throw new Error("Image ID is required");
+
+  const res = await fetch(
+    `https://www.krmangalam.edu.in/wp-json/wp/v2/media/${imgId}?_fields=guid`,
+    {
+      next: { revalidate: 60 },
+    }
+  );
+
+  if (!res.ok) {
+    throw new Error("Failed to fetch image by ID");
+  }
+
+  const json: BlogImageIdResponse = await res.json();
+
+  return json?.guid?.rendered ?? "";
+}
