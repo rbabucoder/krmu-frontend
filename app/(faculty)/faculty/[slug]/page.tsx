@@ -1,10 +1,10 @@
 import * as cheerio from "cheerio";
 import { getFacultyBySlug, singleFaculty } from "@/lib/api/faculty";
 import FacultyTabsScript from "./FacultyTabsScript";
-import { getBlogImageById } from "@/lib/api/blogs/single-blog";
 import Image from "next/image";
 
 import { Mail, Phone } from "lucide-react"; // NEW ICONS
+import { getWordImageById } from "@/lib/api/common";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -28,7 +28,7 @@ const page = async ({ params }: Props) => {
   let facImgUrl = "";
 
   if (facultyImgId !== undefined && facultyImgId !== null) {
-    facImgUrl = await getBlogImageById(facultyImgId);
+    facImgUrl = await getWordImageById(facultyImgId);
   }
   // Load HTML
   const $ = cheerio.load(facultyContent);
@@ -78,6 +78,9 @@ const page = async ({ params }: Props) => {
   const blocks = $(".fusion-fullwidth");
   blocks.not(blocks.eq(2)).remove();
   const cleanedHTML = $.html();
+
+
+  // console.log('facImgUrl', facImgUrl);
 
   return (
     <section
