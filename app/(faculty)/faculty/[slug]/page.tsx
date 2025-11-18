@@ -129,8 +129,7 @@ const page = async ({ params }: Props) => {
                   </div>
                 )}
                 {item.type === "linkedin" && (
-                  <div>
-                    {" "}
+                  <div className="contents">
                     <Image
                       src="/linkedin.svg"
                       width={28}
@@ -156,7 +155,7 @@ const page = async ({ params }: Props) => {
                       ? `tel:${item.value}`
                       : item.value
                   }
-                  className="text-base"
+                  className="text-base break-all"
                   target={item.type === "linkedin" ? "_blank" : undefined}
                 >
                   {item.text}
