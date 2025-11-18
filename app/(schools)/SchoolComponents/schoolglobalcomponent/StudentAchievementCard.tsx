@@ -1,51 +1,66 @@
-// "use client";
-
 import { STRAPI_URL } from "@/app/constant";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { Skeleton } from "@/components/ui/skeleton";
+import { StrapiMedia } from "@/lib/types/common";
 import Image from "next/image";
-// import { useState } from "react";
 
 type Props = {
   info: string;
-  achieveImgUrl: string;
-  imgALTText: string | null;
+  achievementsImages: StrapiMedia[];
 };
 
-const StudentAchievementCard = ({ info, achieveImgUrl, imgALTText }: Props) => {
-  // const [isExpanded, setIsExpanded] = useState(false);
-  // const isLong = info.length > 100;
-  // const displayText = isExpanded
-  //   ? info
-  //   : info.slice(0, 100).trim() + (isLong ? "..." : "");
-
+const StudentAchievementCard = ({ info, achievementsImages }: Props) => {
   return (
-    <div className="border border-[#e2e2e2] p-5 rounded-lg">
+    <div className="border border-[#e2e2e2] p-5 rounded-[5px]">
       <div className="mb-5 space-y-4">
-        <Image
-          src={`${STRAPI_URL}${achieveImgUrl}`}
-          width={443}
-          height={476}
-          alt={imgALTText || ""}
-          className="w-full h-[476px] object-cover"
-        />
+        <Carousel
+          className="w-full"
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+        >
+          <CarouselContent>
+            {achievementsImages &&
+              achievementsImages?.map((image, i) => {
+                return (
+                  <CarouselItem key={i}>
+                    {image?.url ? (
+                      <Image
+                        src={`${STRAPI_URL}${image?.url}`}
+                        width={443}
+                        height={476}
+                        alt=""
+                        className="h-80 w-full object-contain"
+                      />
+                    ) : (
+                      <Skeleton className="w-full h-80" />
+                    )}
+                  </CarouselItem>
+                );
+              })}
+          </CarouselContent>
+          {achievementsImages && achievementsImages.length > 1 && (
+            <>
+              <CarouselPrevious className="left-0 rounded-none text-white bg-black cursor-pointer" />
+              <CarouselNext className="right-0 rounded-none text-white bg-black cursor-pointer" />
+            </>
+          )}
+        </Carousel>
       </div>
-
       <div>
-        {/* <p className="text-gray-800 leading-relaxed text-sm"> */}
-          {/* {displayText}{" "}
-          {isLong && (
-            <button
-              onClick={() => setIsExpanded(!isExpanded)}
-              className="text-[#cd1c24] font-medium ml-1 focus:outline-none cursor-pointer"
-            >
-              {isExpanded ? "Read less" : "Read more"}
-            </button>
-          )} */}
-          <div
-            dangerouslySetInnerHTML={{
-              __html: info,
-            }}
-          />
-        {/* </p> */}
+        <div
+          dangerouslySetInnerHTML={{
+            __html: info,
+          }}
+          className="student_achiev_content"
+        />
       </div>
     </div>
   );

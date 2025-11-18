@@ -1,5 +1,5 @@
-// import { getStudentsAchievements } from "@/lib/api/student-achievement";
-// import StudentAchievementCards from "../comp/StudentAchievementCards";
+import { getStudentsAchievements } from "@/lib/api/student-achievement";
+import StudentAchievementCards from "../comp/StudentAchievementCards";
 import StudentAchievementHero from "../comp/StudentAchievementHero";
 
 type Props = {
@@ -8,21 +8,19 @@ type Props = {
 
 const page = async ({ params }: Props) => {
   const { slug } = await params;
-  console.log("Props", slug);
 
-  // const studentAchievementsCatName = slug.split("-")[0];
+  const studentAchievementsCatName = slug.split("-")[0];
 
-  // const achievementData = await getStudentsAchievements(
-  //   studentAchievementsCatName
-  // );
-  // console.log(achievementData); // "soet"
+  const achievementData = await getStudentsAchievements(
+    studentAchievementsCatName
+  );
 
   return (
     <>
-      <StudentAchievementHero />
-      {/* {achievementData && (
+      <StudentAchievementHero heading={studentAchievementsCatName} />
+      {achievementData && (
         <StudentAchievementCards achievementData={achievementData} />
-      )} */}
+      )}
     </>
   );
 };

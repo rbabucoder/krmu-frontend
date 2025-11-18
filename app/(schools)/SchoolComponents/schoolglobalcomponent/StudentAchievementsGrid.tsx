@@ -6,6 +6,7 @@ type Props = {
 };
 
 const StudentAchievementsGrid = async ({ schoolCat }: Props) => {
+  console.log("schoolCat", schoolCat);
   const achievements = await getSchoolStudentAchievements(schoolCat);
 
   return (
@@ -15,8 +16,7 @@ const StudentAchievementsGrid = async ({ schoolCat }: Props) => {
           <StudentAchievementCard
             key={achievement?.id}
             info={achievement?.achievement_content}
-            achieveImgUrl={achievement?.achivementimage[0]?.url}
-            imgALTText={achievement?.achivementimage[0]?.alternativeText}
+            achievementsImages={achievement?.achivementimage}
           />
         ))}
     </>

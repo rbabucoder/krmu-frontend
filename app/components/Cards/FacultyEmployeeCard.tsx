@@ -21,7 +21,6 @@ export const FacultyEmployeeCard = ({
   slug,
 }: Props) => {
   const [imgURL, setImgUrl] = useState("");
-  console.log("imgId", imgId);
 
   useEffect(() => {
     async function fetchImgUrl() {

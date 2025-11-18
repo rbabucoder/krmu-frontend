@@ -163,7 +163,7 @@ export interface GlobalPartnerType {
   title: string;
   descriptions: string;
   logosliderheading: string;
-  globalpartnerimages: StrapiMedia[]
+  globalpartnerimages: StrapiMedia[];
 }
 
 export interface VisitExploreType {
@@ -192,7 +192,7 @@ export type PageComponent =
   | FeeStructureScholar
   | whyKRMU
   | ElevateCampus
-  | HomeKRMTestimonial 
+  | HomeKRMTestimonial
   | ShapingFutureType
   | GlobalPartnerType
   | VisitExploreType

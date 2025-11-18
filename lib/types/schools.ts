@@ -141,6 +141,8 @@ export interface School {
   wordschoolslug: string;
 }
 
+
+
 export interface SCHOOLADVANTAGE {
   id: number;
   advantage_content: string;

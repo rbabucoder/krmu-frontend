@@ -15,6 +15,12 @@
 
 /* Custom utility class */
 @layer utilities {
+
+  .student_achiev_content p{
+    font-size: 14px;
+  }
+
+
   /* Complete Single Faculty Style */
 
   .faculty_container {
@@ -91,6 +97,7 @@
     );
     border-radius: 10px;
   }
+  
 
   .faculty_main_content_container
     .fusion-column-wrapper
