@@ -4,6 +4,20 @@ import Link from "next/link";
 const SingleBlogCategorySidebar = async () => {
   const allCategories = await getAllBlogCategories();
 
+  // 👉 Add your hidden category names/slugs here
+  // const HIDDEN_CATEGORIES = ["uncategorized", "events", "news"];
+  // ✔ SHOW ONLY these categories (by slug)
+  const HIDE_CATEGORIES: string[] = [
+    "general",
+    "medical-and-allied-science",
+    "school-of-management-and-commerce",
+    "travel-and-tourism",
+    "uncategorized",
+    // Add more slugs you want to show...
+  ];
+
+
+
   return (
     <>
       <div className="singlepost_all_cat_container right_sidebar_singlepost_container sticky top-[100px]">
@@ -12,10 +26,13 @@ const SingleBlogCategorySidebar = async () => {
         <div className="all_cat_container">
           <div className="all_cat__inner-container">
             {allCategories &&
-              allCategories?.map((cat) => {
-                if (!cat?.name || cat.name.toLowerCase() === "uncategorized")
-                  return null;
-                return (
+              allCategories
+                .filter(
+                  (cat) =>
+                    cat?.name &&
+                    !HIDE_CATEGORIES.includes(cat?.slug.toLowerCase())
+                )
+                .map((cat) => (
                   <Link
                     href={`/blog2/all-categories/${cat?.slug}`}
                     key={cat?.id}
@@ -23,14 +40,16 @@ const SingleBlogCategorySidebar = async () => {
                   >
                     <div className="singlepost_right_sidebar_card_left">
                       <div className="singlepost_right_sidebar_dot"></div>
-                      <span className="singlepost_right_sidebar_text">
-                        {cat?.name}
-                      </span>
+                      <span
+                        className="singlepost_right_sidebar_text"
+                        dangerouslySetInnerHTML={{
+                          __html: cat?.name,
+                        }}
+                      />
                     </div>
                     <div className="singlepost_right_sidebar_arrow">→</div>
                   </Link>
-                );
-              })}
+                ))}
           </div>
         </div>
       </div>

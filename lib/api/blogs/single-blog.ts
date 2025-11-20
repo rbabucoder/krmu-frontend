@@ -51,7 +51,7 @@ export async function getSingleBlogDataBySlug(
 
 export async function getAllBlogCategories(): Promise<AllBlogCategoriesResponse> {
   const res = await fetch(
-    `${krmBlogURL}/wp-json/wp/v2/categories?per_page=100`,
+    `${krmBlogURL}/wp-json/wp/v2/categories?per_page=100&_fields=id,name,slug,taxonomy`,
     {
       next: {
         revalidate: 60,
