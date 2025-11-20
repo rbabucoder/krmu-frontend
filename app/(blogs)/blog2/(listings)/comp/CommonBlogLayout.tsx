@@ -1,11 +1,8 @@
-import Link from "next/link";
 import { getAllBlogsByPerPageOrCategorySlug } from "@/lib/api/blogs/main-blog";
 // import CommonBlogSidebar from "./CommonBlogSidebar";
 import { MainBlogs } from "@/lib/types/blogs/main-blogs";
 import CommonBlogCard from "./CommonBlogCard";
-// import CommonBlogRightSidebar from "./CommonBlogRightSidebar";
-// import CommonBlogSidebar from "./CommonBlogSidebar";
-// import CommonBlogRightSidebar from "./CommonBlogRightSidebar";
+import Pagination from "./Pagination";
 
 type Props = {
   searchParams: Promise<{ page?: string }>;
@@ -79,48 +76,11 @@ const CommonBlogLayout = async ({
         ))}
       </div>
       {/* Pagination */}
-      <div className="flex justify-center items-center gap-2 mt-8 flex-wrap">
-        {/* Previous */}
-        {currentPage > 1 && (
-          <Link
-            href={`?page=${currentPage - 1}`}
-            className="px-3 py-1 border rounded hover:bg-gray-100"
-          >
-            &lt; Prev
-          </Link>
-        )}
-
-        {/* Page Numbers */}
-        {pageNumbers.map((num, idx) =>
-          num === "…" ? (
-            <span key={idx} className="px-3 py-1">
-              …
-            </span>
-          ) : (
-            <Link
-              key={idx}
-              href={`?page=${num}`}
-              className={`px-3 py-1 border ${
-                num === currentPage
-                  ? "bg-red-600 text-white border-red-600"
-                  : "bg-white text-black hover:bg-gray-100"
-              }`}
-            >
-              {num}
-            </Link>
-          )
-        )}
-
-        {/* Next */}
-        {currentPage < totalPages && (
-          <Link
-            href={`?page=${currentPage + 1}`}
-            className="px-3 py-1 border rounded hover:bg-gray-100"
-          >
-            Next &gt;
-          </Link>
-        )}
-      </div>
+      <Pagination
+        currentPage={currentPage}
+        totalPages={totalPages}
+        pageNumbers={pageNumbers}
+      />
     </>
   );
 };

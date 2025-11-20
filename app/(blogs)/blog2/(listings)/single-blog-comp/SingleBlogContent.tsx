@@ -22,6 +22,15 @@ const SingleBlogContent = ({ content }: Props) => {
       el.classList.add("toc-target");
     });
 
+    // Fix lazy-loaded images: replace src with data-orig-src
+    const images = Array.from(doc.querySelectorAll("img"));
+    images.forEach((img) => {
+      const original = img.getAttribute("data-orig-src");
+      if (original) {
+        img.setAttribute("src", original);
+      }
+    });
+
     // Wrap all tables with a div having class 'blog-table-responsive'
     const tables = Array.from(doc.querySelectorAll("table"));
     tables.forEach((table) => {
