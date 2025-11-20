@@ -1,6 +1,7 @@
 import CareerCurrentOpeningSection from "./comp/CareerCurrentOpeningSection";
 import CareerHeroSection from "./comp/CareerHeroSection";
 import CareerJobListings from "./comp/CareerJobListings";
+import CareerSubmitResume from "./comp/CareerSubmitResume";
 
 const page = () => {
   return (
@@ -8,6 +9,7 @@ const page = () => {
       <CareerHeroSection />
       <CareerCurrentOpeningSection />
       <CareerJobListings />
+      <CareerSubmitResume />
     </>
   );
 };

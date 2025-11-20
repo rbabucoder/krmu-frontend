@@ -34,7 +34,7 @@ const Page = async ({ params, searchParams }: Props) => {
       {/* <CommonBlogHeroSection catName={category?.name || "Category"} /> */}
       {/* <CommonBlogHeroSection /> */}
       {/* ✅ pass the resolved object (not Promise) */}
-      <CommonBlogLayout slug={slug} searchParams={resolvedSearchParams} />
+      <CommonBlogLayout slug={slug} searchParams={resolvedSearchParams} mainBlogClass={"grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6"} />
     </>
   );
 };

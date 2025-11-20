@@ -23,7 +23,7 @@ const Page = async ({ searchParams }: Props) => {
   return (
     <>
       {/* <CommonBlogHeroSection /> */}
-      <CommonBlogLayout searchParams={searchParams} />
+      <CommonBlogLayout searchParams={searchParams} mainBlogClass={"grid grid-cols-1 xl:grid-cols-2 gap-6"} />
     </>
   );
 };

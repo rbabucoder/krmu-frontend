@@ -10,9 +10,14 @@ import CommonBlogCard from "./CommonBlogCard";
 type Props = {
   searchParams: Promise<{ page?: string }>;
   slug?: string;
+  mainBlogClass: string;
 };
 
-const CommonBlogLayout = async ({ searchParams, slug }: Props) => {
+const CommonBlogLayout = async ({
+  searchParams,
+  slug,
+  mainBlogClass,
+}: Props) => {
   const resolvedSearchParams = await searchParams; // ✅ Await it
   const currentPage = Number(resolvedSearchParams?.page) || 1;
   const blogsPerPage = 6;
@@ -62,7 +67,7 @@ const CommonBlogLayout = async ({ searchParams, slug }: Props) => {
 
   return (
     <>
-      <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
+      <div className={mainBlogClass || ""}>
         {blogs?.map((blog: MainBlogs, i: number) => (
           <CommonBlogCard
             key={i}

@@ -70,7 +70,7 @@ const ProgrammesSearch = () => {
                     <ChevronDown color="#e61f21" />
                   </span>
                 </div>
-                <div className="py-2 absolute bg-white max-w-2xs rounded-[5px]  border border-[#0000002d] z-10">
+                <div className="py-2 absolute bg-white max-w-2xs rounded-[5px]  border border-[#0000002d] z-10 hidden">
                   <ul>
                     {allDegrees &&
                       allDegrees?.map((degree) => {

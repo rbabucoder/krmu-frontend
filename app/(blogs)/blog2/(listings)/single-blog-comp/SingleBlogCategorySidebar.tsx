@@ -16,18 +16,19 @@ const SingleBlogCategorySidebar = async () => {
                 if (!cat?.name || cat.name.toLowerCase() === "uncategorized")
                   return null;
                 return (
-                  <div key={cat?.id} className="singlepost_right_sidebar_card">
+                  <Link
+                    href={`/blog2/category/${cat?.slug}`}
+                    key={cat?.id}
+                    className="singlepost_right_sidebar_card"
+                  >
                     <div className="singlepost_right_sidebar_card_left">
                       <div className="singlepost_right_sidebar_dot"></div>
-                      <Link
-                        href={`/blog2/category/${cat?.slug}`}
-                        className="singlepost_right_sidebar_text"
-                      >
+                      <span className="singlepost_right_sidebar_text">
                         {cat?.name}
-                      </Link>
+                      </span>
                     </div>
                     <div className="singlepost_right_sidebar_arrow">→</div>
-                  </div>
+                  </Link>
                 );
               })}
           </div>
