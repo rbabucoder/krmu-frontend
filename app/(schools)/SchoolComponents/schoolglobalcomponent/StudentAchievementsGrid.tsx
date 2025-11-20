@@ -6,7 +6,7 @@ type Props = {
 };
 
 const StudentAchievementsGrid = async ({ schoolCat }: Props) => {
-  console.log("schoolCat", schoolCat);
+
   const achievements = await getSchoolStudentAchievements(schoolCat);
 
   return (

@@ -234,7 +234,6 @@ export async function getSchoolInfoForFacultyBySlug(
 ) {
   const url = `https://krmangalam.edu.in/wp-json/wp/v2/schools?slug=${slug}&_fields=id,school_faculty`;
 
-  console.log("url", url);
   const res = await fetch(url, {
     next: {
       revalidate: 60,

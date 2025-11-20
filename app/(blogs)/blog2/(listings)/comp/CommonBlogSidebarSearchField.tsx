@@ -92,7 +92,7 @@ const CommonBlogSidebarSearchField = () => {
             onBlur={() => setTimeout(() => setShowResults(false), 200)}
             onChange={(e) => setQuery(e.target.value)}
             className="block w-full p-4 ps-10 text-sm bg-transparent border border-gray-300 rounded-lg text-white focus:ring-blue-500 focus:border-blue-500"
-            placeholder="Search blog posts..."
+            placeholder="Search Blogs"
           />
         </div>
       </form>

@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: Props) {
 
   const seo = category.yoast_head_json;
 
-  // console.log("seo", seo);
+
 
   if (!seo) return {};
 
