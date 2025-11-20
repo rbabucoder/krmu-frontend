@@ -8,12 +8,12 @@ const SingleBlogCategorySidebar = async () => {
   // const HIDDEN_CATEGORIES = ["uncategorized", "events", "news"];
   // ✔ SHOW ONLY these categories (by slug)
   const HIDE_CATEGORIES: string[] = [
-    "general",
-    "medical-and-allied-science",
-    "school-of-management-and-commerce",
-    "travel-and-tourism",
+    // "general",
+    // "medical-and-allied-science",
+    // "school-of-management-and-commerce",
+    // "travel-and-tourism",
     "uncategorized",
-    // Add more slugs you want to show...
+    // // Add more slugs you want to show...
   ];
 
 

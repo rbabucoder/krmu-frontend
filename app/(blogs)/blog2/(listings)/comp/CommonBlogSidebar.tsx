@@ -12,6 +12,8 @@ const HIDE_CATEGORIES: string[] = [
   "medical-and-allied-science",
   "school-of-management-and-commerce",
   "travel-and-tourism",
+  "education",
+  "uncategorized"
   // Add more slugs you want to show...
 ];
 
