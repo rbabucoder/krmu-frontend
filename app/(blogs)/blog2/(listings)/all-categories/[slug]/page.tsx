@@ -1,10 +1,6 @@
-// import { getCategoryBySlug } from "@/lib/api/blogs/cat-blog";
 import CommonBlogLayout from "../../comp/CommonBlogLayout";
 import { strapiSeoToMetadata } from "@/lib/constants/strapiMeta";
-import { getBlogCategoryPageInfo } from "@/lib/api/blogs/main-blog";
-// import CommonBlogHeroSection from "../../comp/CommonBlogHeroSection";
-// import { getCategoryBySlug } from "@/lib/api/blogs/cat-blog";
-// import CommonBlogHeroSection from "../../comp/CommonBlogHeroSection";
+import { getCategoryBySlug } from "@/lib/api/blogs/cat-blog";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -13,10 +9,13 @@ type Props = {
 // ---------------------------
 // ✅ Metadata
 // ---------------------------
-export async function generateMetadata() {
-  const pageInfo = await getBlogCategoryPageInfo();
+export async function generateMetadata({ params }: Props) {
+  const { slug } = await params;
+  const category = await getCategoryBySlug(slug);
 
-  const seo = pageInfo.blog_category_seo;
+  const seo = category.yoast_head_json;
+
+  // console.log("seo", seo);
 
   if (!seo) return {};
 
@@ -27,14 +26,17 @@ const Page = async ({ params, searchParams }: Props) => {
   const resolvedSearchParams = searchParams;
 
   const { slug } = resolvedParams;
-  // const category = await getCategoryBySlug(slug);
 
   return (
     <>
       {/* <CommonBlogHeroSection catName={category?.name || "Category"} /> */}
       {/* <CommonBlogHeroSection /> */}
       {/* ✅ pass the resolved object (not Promise) */}
-      <CommonBlogLayout slug={slug} searchParams={resolvedSearchParams} mainBlogClass={"grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6"} />
+      <CommonBlogLayout
+        slug={slug}
+        searchParams={resolvedSearchParams}
+        mainBlogClass={"grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6"}
+      />
     </>
   );
 };

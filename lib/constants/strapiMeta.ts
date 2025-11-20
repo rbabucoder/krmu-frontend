@@ -3,7 +3,7 @@ import { BlogSEO } from "../types/blogs/main-blogs";
 
 export function strapiSeoToMetadata(seo: BlogSEO): Metadata {
   return {
-    title: seo.metaTitle ?? "",
+    title: seo.metaTitle ?? seo.title ?? "",
     description: seo.metaDescription ?? "",
     keywords: seo.metaKeyword ?? "",
 
