@@ -57,7 +57,7 @@ export async function getAllBlogsByPerPageOrCategorySlug(
 
 export async function getRecentPosts() {
   const res = await fetch(
-    `${krmBlogURL}/wp-json/wp/v2/posts?per_page=3`,
+    `${krmBlogURL}/wp-json/wp/v2/posts?per_page=20`,
     { next: { revalidate: 60 } } // ISR caching (Next.js)
   );
   if (!res.ok) throw new Error("Failed to fetch recent posts");

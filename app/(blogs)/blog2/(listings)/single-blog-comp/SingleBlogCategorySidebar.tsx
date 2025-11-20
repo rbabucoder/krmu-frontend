@@ -17,7 +17,7 @@ const SingleBlogCategorySidebar = async () => {
                   return null;
                 return (
                   <Link
-                    href={`/blog2/category/${cat?.slug}`}
+                    href={`/blog2/all-categories/${cat?.slug}`}
                     key={cat?.id}
                     className="singlepost_right_sidebar_card"
                   >

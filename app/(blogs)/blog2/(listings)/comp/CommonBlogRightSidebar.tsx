@@ -14,7 +14,7 @@ const CommonBlogRightSidebar = async () => {
       <div>
         <h4 className="text-white my-5 text-[32px]">Recent Posts</h4>
       </div>
-      <section>
+      <section className="min-h-[255px] max-h-[255px] overflow-auto scroll-style-1 mb-[50px]">
         {recentPosts &&
           recentPosts?.map((post, i) => {
             return (
