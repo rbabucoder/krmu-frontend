@@ -1,11 +1,11 @@
-import { ParagraphBlock } from "@/lib/types/about";
+// import { ParagraphBlock } from "@/lib/types/about";
 import StatisticsCounter from "./schoolglobalcomponent/StatisticsCounter";
-import { BlocksRenderer } from "@strapi/blocks-react-renderer";
 import { CounterItem } from "@/lib/types/common";
 type Props = {
   heading: string;
   subheading: string;
-  desc: ParagraphBlock[];
+  // desc: ParagraphBlock[];
+  desc: string;
   counters: CounterItem[];
 };
 
@@ -23,7 +23,12 @@ const SchoolInfoStatistics = ({
           <h3 className="text-4xl md:text-5xl lg:text-[64px] font-semibold leading-[1.23] mb-5">
             {heading}
           </h3>
-          <BlocksRenderer content={desc} />
+          {/* <BlocksRenderer content={desc} /> */}
+          <div
+            dangerouslySetInnerHTML={{
+              __html: desc,
+            }}
+          />
         </div>
         <div className="w-full xl:w-2/5 lg:px-28 flex flex-col gap-5 mt-5 xl:mt-0">
           {counters &&

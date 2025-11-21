@@ -25,7 +25,7 @@ export interface SchoolComps {
   id: number;
   heading: string;
   subheading: string;
-  description: ParagraphBlock[];
+  description: string;
   counter: CounterItem[];
 }
 
