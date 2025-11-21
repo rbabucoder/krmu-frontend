@@ -427,6 +427,18 @@
     font-weight: 800;
     margin: 0 0 10px 0px;
   }
+
+  .krmu_single_blog{
+    line-height: 30px;
+  }
+
+  .krmu_single_blog ol{
+    margin: 16px 0px;
+    padding-left: 40px;
+    line-height: 1.6;
+    list-style: decimal;
+  }
+
   .scroll-style-1 {
     /* scrollbar-width: thin; */
     scrollbar-color: #e31e24 #0060aa;
