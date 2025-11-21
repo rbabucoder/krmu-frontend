@@ -7,3 +7,19 @@ export type CareerJobs = {
     rendered: string;
   };
 };
+
+export type SingleJobResponse = SingleJob[];
+
+export type SingleJob = {
+  id: number;
+  date: string;
+  slug: string;
+  title: {
+    rendered: string;
+  };
+  content: {
+    rendered: string;
+    protected: boolean;
+  };
+  class_list: string[];
+};

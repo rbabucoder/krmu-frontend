@@ -26,7 +26,11 @@ const CareerJobListings = async () => {
         <div className=" flex flex-col gap-[15px]">
           {jobsData &&
             jobsData?.map((job) => (
-              <CareerJob key={job?.id} title={job?.title?.rendered} slug={job?.slug} />
+              <CareerJob
+                key={job?.id}
+                title={job?.title?.rendered}
+                slug={job?.slug}
+              />
             ))}
         </div>
       </div>

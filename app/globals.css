@@ -15,11 +15,37 @@
 
 /* Custom utility class */
 @layer utilities {
+  /* Career Jobs */
 
-  .student_achiev_content p{
-    font-size: 14px;
+  .singleJobsInfo {
+    line-height: 30px;
+  }
+  .singleJobsInfo p {
+    margin-bottom: 20px;
+    font-size: 18px;
   }
 
+  .singleJobsInfo ol{
+    list-style: decimal;
+    padding-left: 40px;
+    margin: 16px 0px;
+  }
+
+  .singleJobsInfo ul {
+    list-style: disc;
+    padding-left: 40px;
+  }
+
+  .singleJobsInfo ul ul {
+    list-style: circle;
+    padding-left: 40px;
+  }
+
+  /* Career Jobs */
+
+  .student_achiev_content p {
+    font-size: 14px;
+  }
 
   /* Complete Single Faculty Style */
 
@@ -97,7 +123,6 @@
     );
     border-radius: 10px;
   }
-  
 
   .faculty_main_content_container
     .fusion-column-wrapper
@@ -187,7 +212,7 @@
     .fusion-mobile-tab-nav {
       display: block;
     }
-    .faculty_container{
+    .faculty_container {
       padding-top: 140px;
     }
     .faculty_main_content_container .tab-content .tab-pane {
@@ -428,11 +453,11 @@
     margin: 0 0 10px 0px;
   }
 
-  .krmu_single_blog{
+  .krmu_single_blog {
     line-height: 30px;
   }
 
-  .krmu_single_blog ol{
+  .krmu_single_blog ol {
     margin: 16px 0px;
     padding-left: 40px;
     line-height: 1.6;

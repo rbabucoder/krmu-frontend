@@ -47,7 +47,7 @@ const SchoolCommenceJourney = ({
             </p>
             <p>
               At{" "}
-              <Link href="admissions.krmangalam.edu.in" className="underline">
+              <Link href="https://admissions.krmangalam.edu.in/" className="underline" target="_blank">
                 admissions.krmangalam.edu.in
               </Link>{" "}
             </p>
