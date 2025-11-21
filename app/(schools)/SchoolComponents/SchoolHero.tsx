@@ -25,7 +25,7 @@ const SchoolHero = ({
 }: Props) => {
   return (
     <section
-      className="pt-[150px] pb-20 lg:py-[10%] bg-cover bg-no-repeat bg-center px-4"
+      className="pt-[150px] pb-20 lg:py-[18%] bg-cover bg-no-repeat bg-center px-4"
       style={{ backgroundImage: `url(${STRAPI_URL}${herobanner?.url})` }}
     >
       {fullWidth ? (
