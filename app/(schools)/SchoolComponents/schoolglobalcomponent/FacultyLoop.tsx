@@ -27,15 +27,31 @@ const FacultyLoop = ({ WordSchoolslug }: Props) => {
   useEffect(() => {
     const fetchSchoolInfo = async () => {
       const info = await getSchoolInfoForFacultyBySlug(WordSchoolslug);
-      
 
-      const id = info[0]?.school_faculty?.[0];
+      let id = info[0]?.school_faculty?.[0];
+
+      // 👉 If no id found & slug matches, set default id (16)
+      if (!id && WordSchoolslug === "school-of-basic-and-applied-sciences") {
+        id = 16;
+      }
 
       setSchoolFacultyId(id);
     };
 
     fetchSchoolInfo();
   }, [WordSchoolslug]);
+
+  // useEffect(() => {
+  //   const fetchSchoolInfo = async () => {
+  //     const info = await getSchoolInfoForFacultyBySlug(WordSchoolslug);
+
+  //     const id = info[0]?.school_faculty?.[0];
+
+  //     setSchoolFacultyId(id);
+  //   };
+
+  //   fetchSchoolInfo();
+  // }, [WordSchoolslug]);
 
   // STEP 2 — Load first page
   useEffect(() => {
@@ -49,6 +65,7 @@ const FacultyLoop = ({ WordSchoolslug }: Props) => {
       );
 
       setFacultyList(data);
+
       setTotalPages(totalPages); // 👈 set total pages
     };
 
