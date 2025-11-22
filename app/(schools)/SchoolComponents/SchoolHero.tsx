@@ -63,18 +63,28 @@ const SchoolHero = ({
               {title}
             </h1>
             <div className="flex flex-col lg:flex-row items-center justify-center gap-5 my-4">
-              {heroBtns?.map((btn) => (
-                <Link
-                  key={btn.id}
-                  href={btn.buttonlink}
-                  className={`py-3.5 px-8 bg-[#cb000d] font-bold rounded-sm text-sm md:text-base ${
-                    btn.buttonclass || ""
-                  }`}
-                  target="_blank"
-                >
-                  {btn.buttontext}
-                </Link>
-              ))}
+              {heroBtns?.map((btn) =>
+                btn?.buttontext === "Explore Programmes" ? (
+                  <Link
+                    key={btn.id}
+                    href="/school-of-engineering-and-technology/#Explore-Courses"
+                    className="py-3.5 px-8 bg-[#cb000d] font-bold rounded-sm text-sm md:text-base"
+                  >
+                    {btn.buttontext}
+                  </Link>
+                ) : (
+                  <Link
+                    key={btn.id}
+                    href={btn.buttonlink}
+                    className={`py-3.5 px-8 bg-[#cb000d] font-bold rounded-sm text-sm md:text-base ${
+                      btn.buttonclass || ""
+                    }`}
+                    target="_blank"
+                  >
+                    {btn.buttontext}
+                  </Link>
+                )
+              )}
             </div>
           </div>
           <div className="w-full lg:w-1/2 lg:ml-20 lg:pl-20 flex justify-center lg:justify-end">
