@@ -67,7 +67,7 @@ const SchoolHero = ({
                 btn?.buttontext === "Explore Programmes" ? (
                   <Link
                     key={btn.id}
-                    href="/school-of-engineering-and-technology/#Explore-Courses"
+                    href={btn.buttonlink}
                     className="py-3.5 px-8 bg-[#cb000d] font-bold rounded-sm text-sm md:text-base"
                   >
                     {btn.buttontext}
