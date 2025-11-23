@@ -22,6 +22,11 @@ const nextConfig: NextConfig = {
         hostname: "www.krmangalam.edu.in",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "krmangalam.netlify.app",
+        pathname: "/**",
+      },
     ],
   },
 };
