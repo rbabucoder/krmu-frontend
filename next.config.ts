@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   // output: "export",
-  assetPrefix: "https://krmangalam.netlify.app/blog3",
+  assetPrefix: "/blog3",
   basePath: "/blog3",
   // assetPrefix: "https://krmangalam.netlify.app",
   images: {
