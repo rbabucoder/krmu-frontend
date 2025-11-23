@@ -1,4 +1,4 @@
-export default function Blog2Layout({
+export default function blog3Layout({
   children,
 }: {
   children: React.ReactNode;
