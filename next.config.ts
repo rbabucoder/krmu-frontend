@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   // output: "export",
   // assetPrefix: "/blog3",
   // basePath: "/blog3",
-  assetPrefix: "https://krmangalam.netlify.app",
+  // assetPrefix: "https://krmangalam.netlify.app",
   images: {
     remotePatterns: [
       {
