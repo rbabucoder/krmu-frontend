@@ -28,7 +28,7 @@ const SingleBlogHeroAuthor = ({
       </div>
       <div className="single_blog_author_info">
         <span className="author_name">
-          <Link href={`/blog2/author/${authorSlug}`} target="_blank">
+          <Link href={`/blog3/author/${authorSlug}`} target="_blank">
             {authorName}
           </Link>
         </span>
