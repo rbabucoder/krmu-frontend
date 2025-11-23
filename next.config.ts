@@ -2,8 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   // output: "export",
-  // basePath: "/blog2",
   // assetPrefix: "/blog2",
+  basePath: "https://krmangalam.netlify.app",
   assetPrefix: "https://krmangalam.netlify.app",
   images: {
     remotePatterns: [
@@ -21,11 +21,6 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "www.krmangalam.edu.in",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "krmangalam.netlify.app",
         pathname: "/**",
       },
     ],
