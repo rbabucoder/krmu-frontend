@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   // output: "export",
   // assetPrefix: "/blog2",
-  basePath: "https://krmangalam.netlify.app",
+  // basePath: "/blog2",
   assetPrefix: "https://krmangalam.netlify.app",
   images: {
     remotePatterns: [
