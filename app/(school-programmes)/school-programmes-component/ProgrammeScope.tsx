@@ -39,26 +39,26 @@ const ProgrammeScope = async ({ scopeData }: Props) => {
               Programme Scope
             </button> */}
 
-          {enable_disable_download_pros === true ? (
-            <PopupForm
-              formId={scopeData?.scopeFormId}
-              containerId={scopeData?.scopeContainerId}
-              buttonClass="bg-[#0a41a1] cursor-pointer text-white text-base sm:bg-white p-[15px] flex items-center justify-center max-w-[220px] w-full mx-auto sm:mx-0 sm:text-[#0a41a1] rounded-md font-semibold mt-6"
-              buttonText={scopeData?.scopebtn?.buttontext}
-            />
-          ) : (
-            scopeData?.scopebtn?.buttonlink && (
-              <Link
-                href={scopeData?.scopebtn?.buttonlink || "#"}
-                className={`bg-[#0a41a1] cursor-pointer text-white text-base sm:bg-white p-[15px] flex items-center justify-center max-w-[220px] w-full mx-auto sm:mx-0 sm:text-[#0a41a1] rounded-md font-semibold mt-6 ${
-                  scopeData?.scopebtn?.buttonclass || ""
-                }`}
-                target="_blank"
-              >
-                {scopeData?.scopebtn?.buttontext}
-              </Link>
-            )
-          )}
+          {enable_disable_download_pros === true
+            ? scopeData?.scopeFormId && (
+                <PopupForm
+                  formId={scopeData?.scopeFormId}
+                  containerId={scopeData?.scopeContainerId}
+                  buttonClass="bg-[#0a41a1] cursor-pointer text-white text-base sm:bg-white p-[15px] flex items-center justify-center max-w-[220px] w-full mx-auto sm:mx-0 sm:text-[#0a41a1] rounded-md font-semibold mt-6"
+                  buttonText={scopeData?.scopebtn?.buttontext}
+                />
+              )
+            : scopeData?.scopebtn && (
+                <Link
+                  href={scopeData?.scopebtn?.buttonlink || "#"}
+                  className={`bg-[#0a41a1] cursor-pointer text-white text-base sm:bg-white p-[15px] flex items-center justify-center max-w-[220px] w-full mx-auto sm:mx-0 sm:text-[#0a41a1] rounded-md font-semibold mt-6 ${
+                    scopeData?.scopebtn?.buttonclass || ""
+                  }`}
+                  target="_blank"
+                >
+                  {scopeData?.scopebtn?.buttontext}
+                </Link>
+              )}
 
           {/* {scopeData?.scopebtn && (
             <>
