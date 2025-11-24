@@ -7,6 +7,7 @@ import { notFound } from "next/navigation";
 import SingleBlogHero from "../../(listings)/single-blog-comp/SingleBlogHero";
 import SingleBlogLayout from "../../(listings)/single-blog-comp/SingleBlogLayout";
 
+
 type Props = {
   params: Promise<{ slug: string }>;
 };
