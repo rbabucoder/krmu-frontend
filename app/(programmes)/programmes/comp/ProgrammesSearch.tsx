@@ -1,141 +1,313 @@
 "use client";
 
-import { ChevronDown, Search} from "lucide-react";
-import { useEffect, useState } from "react";
+import { ArrowRight, ChevronDown, Search } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 import {
-  getAllDegreeInfo,
   getAllSchoolsInfo,
+  getAllDegreeInfo,
   ProgrammeLevel,
   SchoolItem,
+  getAllSchoolPhdProgrammeByCatPaginated,
+  getAllSchoolProgrammeByDegOrCatPaginated,
 } from "../../programmesApi/api";
-import ProgrammesHero from "./ProgrammesHero";
-import Link from "next/link";
+
 import Image from "next/image";
+import Link from "next/link";
+import ProgrammesHero from "./ProgrammesHero";
+import { Skeleton } from "@/components/ui/skeleton";
+import {
+  searchSchoolProgrammes,
+  searchPhdProgrammes,
+} from "../../programmesApi/api"; // import your search functions
 
 const ProgrammesSearch = () => {
   const [allSchools, setAllSchools] = useState<SchoolItem[]>([]);
   const [allDegrees, setAllDegrees] = useState<ProgrammeLevel[]>([]);
 
+  const [selectedSchool, setSelectedSchool] = useState("soet");
+  const [selectedDegree, setSelectedDegree] = useState(
+    "undergraduate-programmes"
+  );
+
+  const [openSchoolDropdown, setOpenSchoolDropdown] = useState(false);
+  const [openDegreeDropdown, setOpenDegreeDropdown] = useState(false);
+
+  const schoolRef = useRef(null);
+  const degreeRef = useRef(null);
+
+  const [programmes, setProgrammes] = useState<any[]>([]);
+  const [page, setPage] = useState(1);
+  const [showLoadMore, setShowLoadMore] = useState(true);
+
+  const [searchQuery, setSearchQuery] = useState("");
+
+  /** Close dropdown on outside click */
   useEffect(() => {
-    async function fetchAllSchools() {
-      const allSchoolsData = await getAllSchoolsInfo();
-      const allDegreesData = await getAllDegreeInfo();
-      setAllSchools(allSchoolsData || []);
-      setAllDegrees(allDegreesData || []);
+    function handleClickOutside(e: MouseEvent) {
+      if (schoolRef.current && !(schoolRef.current as any).contains(e.target)) {
+        setOpenSchoolDropdown(false);
+      }
+      if (degreeRef.current && !(degreeRef.current as any).contains(e.target)) {
+        setOpenDegreeDropdown(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  /** Load schools & degrees */
+  useEffect(() => {
+    async function loadFilters() {
+      const s = await getAllSchoolsInfo();
+      const d = await getAllDegreeInfo();
+      setAllSchools(s || []);
+      setAllDegrees(d || []);
+    }
+    loadFilters();
+  }, []);
+
+  /** Fetch programmes */
+  const fetchProgrammes = async (reset = false, query = "") => {
+    let nextPage = reset ? 1 : page;
+    let newData = [];
+
+    if (query) {
+      // Search overrides dropdowns
+      if (selectedDegree === "doctoral-programmes") {
+        const res = await searchPhdProgrammes(query, nextPage, 6);
+        newData = res.data || [];
+      } else {
+        const res = await searchSchoolProgrammes(query, nextPage, 6);
+        newData = res.data || [];
+      }
+      // Reset dropdowns
+      setSelectedSchool("");
+      setSelectedDegree("");
+    } else {
+      // Default behaviour
+      if (!selectedSchool) setSelectedSchool("soet");
+      if (!selectedDegree) setSelectedDegree("undergraduate-programmes");
+
+      if (selectedDegree === "doctoral-programmes") {
+        const res = await getAllSchoolPhdProgrammeByCatPaginated(
+          selectedSchool,
+          nextPage,
+          6
+        );
+        newData = res?.data || [];
+      } else {
+        const res = await getAllSchoolProgrammeByDegOrCatPaginated(
+          selectedDegree,
+          selectedSchool,
+          nextPage,
+          6
+        );
+        newData = res?.data || [];
+      }
     }
 
-    fetchAllSchools();
-  }, []);
-  return (
-    <>
-      <section className="pt-40 pb-[50px] bg-[#f9f9f9]">
-        <ProgrammesHero />
-        <div className="max-w-[1320px] mx-auto w-full">
-          <div className="bg-white rounded-[10px]">
-            <div className="py-2.5 px-5 flex gap-5">
-              <div className="w-1/4">
-                <div className="flex items-center justify-between gap-2.5 relative">
-                  <span className="text-lg font-semibold cursor-pointer">
-                    {" "}
-                    Select School
-                  </span>
-                  <span>
-                    <ChevronDown color="#e61f21" />
-                  </span>
-                </div>
-                <div className="py-2 absolute bg-white max-w-2xs rounded-[5px]  border border-[#0000002d] z-10 hidden">
-                  <ul>
-                    {allSchools &&
-                      allSchools.map((school) => {
-                        return (
-                          <li
-                            key={school?.id}
-                            className="hover:bg-[#f0f0f0] py-2 px-3 text-base cursor-pointer"
-                            data-school-catname={school?.school_category?.name}
-                            data-school-catslug={school?.school_category?.slug}
-                          >
-                            {school?.schoolname}
-                          </li>
-                        );
-                      })}
-                  </ul>
-                </div>
-              </div>
-              <div className="w-1/4">
-                <div className="flex items-center justify-between gap-2.5 relative">
-                  <span className="text-lg font-semibold">
-                    Select Programme Level
-                  </span>
-                  <span>
-                    <ChevronDown color="#e61f21" />
-                  </span>
-                </div>
-                <div className="py-2 absolute bg-white max-w-2xs rounded-[5px]  border border-[#0000002d] z-10 hidden">
-                  <ul>
-                    {allDegrees &&
-                      allDegrees?.map((degree) => {
-                        return (
-                          <li
-                            key={degree?.id}
-                            data-degree-slug={degree?.slug}
-                            className="hover:bg-[#f0f0f0] py-2 px-3 text-base cursor-pointer"
-                          >
-                            {degree?.name}
-                          </li>
-                        );
-                      })}
-                  </ul>
-                </div>
-              </div>
-              <div className="w-2/4">
-                <form className="w-full">
-                  <div className="flex">
-                    {/* Icons Wrapper */}
+    setProgrammes(reset ? newData : [...programmes, ...newData]);
+    setShowLoadMore(newData.length === 6);
+    if (reset) setPage(2);
+    else setPage(page + 1);
+  };
 
-                    {/* Input */}
-                    <input
-                      type="text"
-                      id="default-search"
-                      className="block w-full bg-transparent text-lg font-semibold placeholder:text-base"
-                      placeholder="Search by Programme Name (e.g. B.Tech Computer Science, MBA, B.Des)…"
-                    />
-                    <Search className="text-[#e61f21] peer-focus:hidden block" />
-                  </div>
-                </form>
+  /** Fetch when dropdowns or search query changes */
+  useEffect(() => {
+    fetchProgrammes(true, searchQuery);
+  }, [selectedSchool, selectedDegree, searchQuery]);
+
+  return (
+    <section className="pt-40 pb-[50px] px-4 bg-[#f9f9f9]">
+      <ProgrammesHero />
+
+      <div className="max-w-[1320px] mx-auto w-full">
+        {/* FILTER BOX */}
+        <div className="bg-white rounded-[10px]">
+          <div className="py-2.5 px-5 flex flex-col lg:flex-row items-center gap-5">
+            {/* SCHOOL DROPDOWN */}
+            <div className="lg:w-1/4 relative" ref={schoolRef}>
+              <div
+                className="flex items-center justify-between gap-2.5 cursor-pointer"
+                onClick={() => {
+                  setOpenSchoolDropdown(!openSchoolDropdown);
+                  setOpenDegreeDropdown(false);
+                }}
+              >
+                <span className="text-lg font-semibold">
+                  {allSchools.find(
+                    (s) => s.school_category.slug === selectedSchool
+                  )?.schoolname || "Select School"}
+                </span>
+                <ChevronDown color="#e61f21" />
               </div>
+
+              {openSchoolDropdown && (
+                <div className="py-2 absolute left-0 top-10 bg-white w-full rounded-[5px] border border-[#0000002d] z-10">
+                  <ul>
+                    {allSchools.map((school) => (
+                      <li
+                        key={school.id}
+                        onClick={() => {
+                          setSelectedSchool(school.school_category.slug);
+                          setOpenSchoolDropdown(false);
+                          setSearchQuery(""); // reset search
+                        }}
+                        className={`py-2 px-3 cursor-pointer hover:bg-[#f0f0f0] ${
+                          selectedSchool === school.school_category.slug
+                            ? "bg-[#f0f0f0] font-semibold"
+                            : ""
+                        }`}
+                      >
+                        {school.schoolname}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+
+            {/* DEGREE DROPDOWN */}
+            <div className="lg:w-1/4 relative" ref={degreeRef}>
+              <div
+                className="flex items-center justify-between gap-2.5 cursor-pointer"
+                onClick={() => {
+                  setOpenDegreeDropdown(!openDegreeDropdown);
+                  setOpenSchoolDropdown(false);
+                }}
+              >
+                <span className="text-lg font-semibold">
+                  {allDegrees.find((d) => d.slug === selectedDegree)?.name ||
+                    "Select Programme Level"}
+                </span>
+                <ChevronDown color="#e61f21" />
+              </div>
+
+              {openDegreeDropdown && (
+                <div className="py-2 absolute left-0 top-10 bg-white w-full rounded-[5px] border border-[#0000002d] z-10">
+                  <ul>
+                    {allDegrees.map((degree) => (
+                      <li
+                        key={degree.id}
+                        onClick={() => {
+                          setSelectedDegree(degree.slug);
+                          setOpenDegreeDropdown(false);
+                          setSearchQuery(""); // reset search
+                        }}
+                        className={`py-2 px-3 cursor-pointer hover:bg-[#f0f0f0] ${
+                          selectedDegree === degree.slug
+                            ? "bg-[#f0f0f0] font-semibold"
+                            : ""
+                        }`}
+                      >
+                        {degree.name}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+
+            {/* SEARCH INPUT */}
+            <div className="lg:w-2/4">
+              <form
+                className="w-full"
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  fetchProgrammes(true, searchQuery);
+                }}
+              >
+                <div className="flex">
+                  <input
+                    type="text"
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    id="default-search"
+                    className="block w-full bg-transparent text-lg font-semibold placeholder:text-base"
+                    placeholder="Search by Programme Name (e.g. B.Tech Computer Science, MBA, B.Des)…"
+                  />
+                  <Search className="text-[#e61f21] peer-focus:hidden block" />
+                </div>
+              </form>
             </div>
           </div>
-          <div className="mt-20">
-            <div className="grid grid-cols-3">
-              <div className="bg-[#0a41a1] py-[30px] px-10 rounded-[15px] h-[235px] text-white relative">
+        </div>
+
+        {/* PROGRAMMES LIST */}
+        {/* PROGRAMMES LIST */}
+        <div className="mt-20 grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
+          {programmes.length === 0 ? (
+            searchQuery || selectedSchool || selectedDegree ? (
+              <p className="col-span-3 text-center text-lg font-semibold text-gray-500">
+                No programme found
+              </p>
+            ) : (
+              // Show skeletons while loading default data
+              Array.from({ length: 6 }).map((_, idx) => (
+                <Skeleton key={idx} className="h-[235px] w-full rounded-xl" />
+              ))
+            )
+          ) : (
+            programmes.map((item) => (
+              <div
+                key={item.id}
+                className="bg-[#0a41a1] py-[15px] px-4 lg:py-[30px] lg:px-10 rounded-[15px] h-[175px] md:h-[235px] text-white relative"
+              >
                 <div className="mb-[30px]">
-                  <h6 className="font-semibold mb-2">
-                    B.Tech. Computer Science and Engineering (AI & ML) with
-                    academic support of IBM & powered by Microsoft
-                    Certifications
+                  <h6 className="font-semibold text-xs lg:text-base mb-2 line-clamp-2 sm:line-clamp-3">
+                    {item.title || item.heading}
                   </h6>
-                  <p className="text-sm">Duration:- 4 Years</p>
-                  <p className="text-sm">Fees:- Rs. 265000/-</p>
+                  <p className="text-[10px] sm:text-sm relative z-50">
+                    Duration: {item.criteria?.Duration || "N/A"}
+                  </p>
+                  <p className="text-[10px] sm:text-sm relative z-50">
+                    Fees:- Rs.{" "}
+                    {item?.criteria?.programme_fee_per_year
+                      ? `${item.criteria.programme_fee_per_year}/-`
+                      : "N/A"}
+                  </p>
                 </div>
+
                 <Link
-                  href="#"
-                  className="pb-0.5 font-medium border-b border-white"
+                  href={`/programs/${item.programmeslug || item.phdslug}`}
+                  className="text-[10px] md:text-base font-medium border-b border-white relative z-50"
+                  target="_blank"
                 >
                   Show More
                 </Link>
+
                 <Image
                   src="/programmes/dots.png"
                   width={45}
                   height={51}
-                  alt="dot"
+                  alt="dots"
                   className="absolute right-2.5 bottom-2.5"
                 />
               </div>
-            </div>
-          </div>
+            ))
+          )}
         </div>
-      </section>
-    </>
+        <div>
+          <p className="text-[#212529] text-base text-right p-4 md:p-12">
+            **Subject to Approval
+          </p>
+        </div>
+
+        {/* LOAD MORE BUTTON */}
+        {showLoadMore && (
+          <div className="p-4 md:p-12 flex items-center justify-center">
+            <button
+              onClick={() => fetchProgrammes(false, searchQuery)}
+              className="py-[15px] px-[30px] bg-[#e61f21] text-white flex items-center gap-5 rounded-[10px] font-semibold cursor-pointer"
+              style={{ boxShadow: "rgba(0,0,0,0.35) 0px 5px 15px" }}
+            >
+              <span>View More Programmes</span>
+              <ArrowRight color="#fff" />
+            </button>
+          </div>
+        )}
+      </div>
+    </section>
   );
 };
 

@@ -1,12 +1,20 @@
+import { STRAPI_URL } from "@/app/constant";
+import { ProgrammeAlumniData } from "@/lib/types/programme";
 import Image from "next/image";
 
-const AlumniSlide = () => {
+type Props = {
+  item: ProgrammeAlumniData;
+};
+
+const AlumniSlide = ({ item }: Props) => {
+
+
   return (
     <div className="flex gap-5">
       <div className="w-1/2 sm:w-2/5">
         <div>
           <Image
-            src="/programmes/t4.png"
+            src={`${STRAPI_URL}${item?.alumni_img?.url}`}
             width={325}
             height={300}
             alt=""
@@ -14,12 +22,12 @@ const AlumniSlide = () => {
           />
         </div>
         <div className="text-center mt-5 sm:hidden">
-          <h6 className="font-semibold">Prity Singh</h6>
-          <span>B.Ed</span>
+          <h6 className="font-semibold">{item?.name}</h6>
+          <span>{item?.qualification}</span>
         </div>
         <div className="text-center sm:hidden">
           <Image
-            src="/programmes/star.png"
+            src={`${STRAPI_URL}${item?.review_img?.url}`}
             width={164}
             height={30}
             alt="Star"
@@ -29,28 +37,17 @@ const AlumniSlide = () => {
       <div className="w-1/2 sm:w-3/5">
         <div className="mb-4">
           <p className="text-xs sm:text-base line-clamp-20 sm:line-clamp-5">
-            One of the best aspects of the B.Ed. program at K. R. Mangalam
-            University is the supportive learning environment created by the
-            faculty and peers. The small class sizes and interactive teaching
-            methods allow for meaningful discussions and a deeper understanding
-            of the subject matter. Beyond theoretical knowledge, the program
-            offers various opportunities to engage in practical learning through
-            workshops, storytelling sessions, and peer teaching. I particularly
-            enjoyed the focus on early childhood education and special
-            education, which helped me gain a broader perspective on diverse
-            learning needs. The exposure to the latest educational research and
-            methodologies has equipped me with the confidence to design creative
-            lesson plans and deliver impactful teaching experiences.
+            {item?.content}
           </p>
         </div>
         <div className="hidden sm:flex items-center justify-between">
           <div>
-            <h6 className="font-semibold">Prity Singh</h6>
-            <span>B.Ed</span>
+            <h6 className="font-semibold">{item?.name}</h6>
+            <span>{item?.qualification}</span>
           </div>
           <div>
             <Image
-              src="/programmes/star.png"
+              src={`${STRAPI_URL}${item?.review_img?.url}`}
               width={164}
               height={30}
               alt="Star"

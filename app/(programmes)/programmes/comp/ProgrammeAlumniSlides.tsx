@@ -8,16 +8,20 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
+import { ProgrammeAlumniData } from "@/lib/types/programme";
 
-const ProgrammeAlumniSlides = () => {
+type Props = {
+  alumniData: ProgrammeAlumniData[];
+};
+
+const ProgrammeAlumniSlides = ({ alumniData }: Props) => {
   const [api, setApi] = useState<EmblaCarouselType | undefined>(undefined);
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
-  const totalSlides = 5;
 
-  // Accept EmblaCarouselType | undefined and handle both cases
+  const totalSlides = alumniData.length; // <-- DYNAMIC SLIDES
+
   const onInit = (emblaApi: EmblaCarouselType | undefined) => {
     if (!emblaApi) {
-      // Carousel might be unmounted or not initialized yet
       setApi(undefined);
       setSelectedIndex(0);
       return;
@@ -26,7 +30,6 @@ const ProgrammeAlumniSlides = () => {
     setApi(emblaApi);
     setSelectedIndex(emblaApi.selectedScrollSnap());
 
-    // update selectedIndex when selection changes
     emblaApi.on("select", () => {
       setSelectedIndex(emblaApi.selectedScrollSnap());
     });
@@ -36,17 +39,15 @@ const ProgrammeAlumniSlides = () => {
     <div className="w-full">
       <Carousel
         className="w-full"
-        opts={{
-          align: "start",
-          loop: true,
-        }}
+        opts={{ align: "start", loop: true }}
         setApi={onInit}
       >
         <CarouselContent className="-ml-1">
-          {Array.from({ length: totalSlides }).map((_, index) => (
+          {alumniData.map((item, index) => (
             <CarouselItem key={index} className="lg:basis-1/2">
               <div className="p-1">
-                <AlumniSlide />
+                {/* FIX: pass correct prop */}
+                <AlumniSlide item={item} />
               </div>
             </CarouselItem>
           ))}
@@ -59,10 +60,10 @@ const ProgrammeAlumniSlides = () => {
           <button
             key={index}
             onClick={() => api?.scrollTo(index)}
-            className={`h-2 w-2 rounded-full transition-all ${
+            className={`h-2 rounded-full transition-all ${
               selectedIndex === index
                 ? "bg-[#1461ac] w-[30px]"
-                : "bg-gray-400 hover:bg-gray-600"
+                : "bg-gray-400 w-2 hover:bg-gray-600"
             }`}
           />
         ))}

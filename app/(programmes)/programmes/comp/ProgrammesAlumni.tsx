@@ -1,6 +1,11 @@
+import { ProgrammeAlumniData } from "@/lib/types/programme";
 import ProgrammeAlumniSlides from "./ProgrammeAlumniSlides";
 
-const ProgrammesAlumni = () => {
+type Props = {
+  alumniData: ProgrammeAlumniData[];
+};
+
+const ProgrammesAlumni = ({ alumniData }: Props) => {
   return (
     <section className="py-[50px]">
       <div className="max-w-[600px] mx-auto w-full text-center">
@@ -12,7 +17,7 @@ const ProgrammesAlumni = () => {
         </p>
       </div>
       <div className="mt-5">
-        <ProgrammeAlumniSlides />
+        <ProgrammeAlumniSlides alumniData={alumniData} />
       </div>
     </section>
   );
