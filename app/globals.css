@@ -15,6 +15,68 @@
 
 /* Custom utility class */
 @layer utilities {
+  /* kree */
+  .online_exam_table table {
+    width: 100%;
+  }
+  .online_exam_table table th {
+    padding: 20px;
+    font-weight: 600;
+    color: #fff;
+    background-image: linear-gradient(to right, #e31e24, #0060aa, #051630);
+    font-size: 22px;
+    text-align: left;
+  }
+  .online_exam_table table tr td {
+    padding: 10px 20px;
+  }
+
+  .online_exam_table table,
+  .online_exam_table th,
+  .online_exam_table td {
+    border: 1px solid #000;
+  }
+
+  .kree-toggles1 table {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .kree-toggles1 table td {
+    padding: 10px 20px;
+  }
+  .kree-toggles1 table ul li {
+    padding: 12px 30px 12px 30px;
+  }
+
+  .kree-toggles1 table,
+  .kree-toggles1 th,
+  .kree-toggles1 td {
+    border: 1px solid #000;
+  }
+  .kree-toggles1 table tr:nth-child(2n) {
+    background: #f6f6f6;
+  }
+
+  .online_exam_table,
+  .kree-toggles1 {
+    overflow-x: auto;
+  }
+
+  @media (max-width: 640px) {
+    .kree-toggles1 table td {
+      padding: 10px;
+      font-size: 14px;
+    }
+    .online_exam_table table,
+    .online_exam_table table th,
+    .online_exam_table table td {
+      padding: 8px;
+      border: 1px solid #000;
+    }
+  }
+
+  /* kree */
+
   /* Career Jobs */
 
   .singleJobsInfo {
@@ -25,7 +87,7 @@
     font-size: 18px;
   }
 
-  .singleJobsInfo ol{
+  .singleJobsInfo ol {
     list-style: decimal;
     padding-left: 40px;
     margin: 16px 0px;
@@ -1482,6 +1544,11 @@
     padding: 0 30px 12px 30px;
     margin: 0;
     font-size: 16px;
+  }
+  @media (max-width: 768px) {
+    .kree-toggles ul li ul li {
+      padding: 0 0 10px;
+    }
   }
   .pp-hd-card {
     display: block;

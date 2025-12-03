@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const KREEAdmissionOnline = () => {
   return (
-    <section className="bg-[url(/admission/kree-helplingbg.webp)] pt-10 bg-no-repeat bg-cover">
-      <div className="max-w-[1664px] mx-auto w-full flex gap-20">
-        <div className="w-2/5 flex justify-end">
+    <section className="bg-[url(/admission/kree-helplingbg.webp)] lg:pt-10 bg-no-repeat bg-cover lg:pb-0 py-10 px-4">
+      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-20">
+        <div className="lg:w-2/5  justify-end hidden lg:flex">
           <Image
             src="/admission/admission.webp"
             width={510}
@@ -12,16 +12,16 @@ const KREEAdmissionOnline = () => {
             alt=""
           />
         </div>
-        <div className="w-3/5">
-          <h2 className="text-5xl leading-[1.5] font-semibold text-center mt-[7%]">
+        <div className="lg:w-3/5">
+          <h2 className="text-[25px] md:text-5xl leading-[1.5] font-semibold text-center md:mt-[7%]">
             Admission
           </h2>
-          <h3 className="leading-[1.5] mb-[10%] text-4xl font-semibold text-center">
+          <h3 className="leading-[1.5] mb-[10%] text-2xl md:text-4xl font-semibold text-center">
             Helpline
           </h3>
-          <div className="flex gap-5">
+          <div className="flex flex-col lg:flex-row gap-5">
             <div
-              className="w-1/2 flex flex-col justify-center items-center bg-[#fefefe] py-2.5 rounded-[41px]"
+              className="lg:w-1/2 flex flex-col justify-center items-center bg-[#fefefe] py-2.5 rounded-[41px]"
               style={{
                 boxShadow:
                   "0px 2.76726px 2.21381px 0px rgba(0, 0, 0, 0.02), 0px 6.6501px 5.32008px 0px rgba(0, 0, 0, 0.03), 0px 12.52155px 10.01724px 0px rgba(0, 0, 0, 0.04), 0px 22.33631px 17.86905px 0px rgba(0, 0, 0, 0.04), 0px 41.77761px 33.42209px 0px rgba(0, 0, 0, 0.05), 0px 100px 80px 0px rgba(0, 0, 0, 0.07)",
@@ -45,7 +45,7 @@ const KREEAdmissionOnline = () => {
               </div>
             </div>
             <div
-              className="w-1/2 flex flex-col justify-center items-center bg-[#fefefe] py-2.5 rounded-[41px]"
+              className="lg:w-1/2 flex flex-col justify-center items-center bg-[#fefefe] py-2.5 rounded-[41px]"
               style={{
                 boxShadow:
                   "0px 2.76726px 2.21381px 0px rgba(0, 0, 0, 0.02), 0px 6.6501px 5.32008px 0px rgba(0, 0, 0, 0.03), 0px 12.52155px 10.01724px 0px rgba(0, 0, 0, 0.04), 0px 22.33631px 17.86905px 0px rgba(0, 0, 0, 0.04), 0px 41.77761px 33.42209px 0px rgba(0, 0, 0, 0.05), 0px 100px 80px 0px rgba(0, 0, 0, 0.07)",
@@ -57,6 +57,7 @@ const KREEAdmissionOnline = () => {
                   width={83}
                   height={68}
                   alt=""
+                  className="h-[70px] w-[70px]"
                 />
               </div>
               <h4 className="leading-[3] text-2xl font-semibold my-2.5">

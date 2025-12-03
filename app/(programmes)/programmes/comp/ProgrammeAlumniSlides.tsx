@@ -9,6 +9,7 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import { ProgrammeAlumniData } from "@/lib/types/programme";
+import Autoplay from "embla-carousel-autoplay";
 
 type Props = {
   alumniData: ProgrammeAlumniData[];
@@ -41,6 +42,11 @@ const ProgrammeAlumniSlides = ({ alumniData }: Props) => {
         className="w-full"
         opts={{ align: "start", loop: true }}
         setApi={onInit}
+        plugins={[
+          Autoplay({
+            delay: 1500,
+          }),
+        ]}
       >
         <CarouselContent className="-ml-1">
           {alumniData.map((item, index) => (

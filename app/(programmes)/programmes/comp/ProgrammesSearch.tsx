@@ -328,7 +328,7 @@ const ProgrammesSearch = () => {
               className="py-[15px] px-[30px] bg-[#e61f21] text-white flex items-center gap-5 rounded-[10px] font-semibold cursor-pointer"
               style={{ boxShadow: "rgba(0,0,0,0.35) 0px 5px 15px" }}
             >
-              <span>View More Programmes</span>
+              <span>View All Programmes</span>
               <ArrowRight color="#fff" />
             </button>
           </div>
