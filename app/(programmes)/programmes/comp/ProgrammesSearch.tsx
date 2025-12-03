@@ -1,7 +1,7 @@
 "use client";
 
 import { ArrowRight, ChevronDown, Search } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 import {
   getAllSchoolsInfo,
   getAllDegreeInfo,
@@ -9,16 +9,62 @@ import {
   SchoolItem,
   getAllSchoolPhdProgrammeByCatPaginated,
   getAllSchoolProgrammeByDegOrCatPaginated,
+  searchSchoolProgrammes,
+  searchPhdProgrammes,
 } from "../../programmesApi/api";
 
 import Image from "next/image";
 import Link from "next/link";
 import ProgrammesHero from "./ProgrammesHero";
 import { Skeleton } from "@/components/ui/skeleton";
-import {
-  searchSchoolProgrammes,
-  searchPhdProgrammes,
-} from "../../programmesApi/api"; // import your search functions
+
+// -------------------------
+// TYPES
+// -------------------------
+export interface Criteria {
+  id: number;
+  eligibility_criteria: string;
+  Duration: string;
+  semester_i: string;
+  semester_ii: string;
+  programme_fee_per_year: string;
+  eligibility_utm_links: string;
+  programme_offered_number: string;
+}
+
+export interface Programme {
+  id: number;
+  documentId: string;
+  title: string;
+  programmeslug: string;
+  criteria: Criteria;
+}
+
+export interface PhdProgramme {
+  id: number;
+  documentId: string;
+  heading: string;
+  phdslug: string;
+  criteria: Criteria;
+}
+
+export type ProgrammeItem = Programme | PhdProgramme;
+
+export interface Pagination {
+  page: number;
+  pageSize: number;
+  pageCount: number;
+  total: number;
+}
+
+export interface ProgrammesResponse {
+  data: ProgrammeItem[];
+  meta: {
+    pagination: Pagination;
+  };
+}
+
+// -----------------------------------------------------
 
 const ProgrammesSearch = () => {
   const [allSchools, setAllSchools] = useState<SchoolItem[]>([]);
@@ -32,30 +78,35 @@ const ProgrammesSearch = () => {
   const [openSchoolDropdown, setOpenSchoolDropdown] = useState(false);
   const [openDegreeDropdown, setOpenDegreeDropdown] = useState(false);
 
-  const schoolRef = useRef(null);
-  const degreeRef = useRef(null);
+  const schoolRef = useRef<HTMLDivElement | null>(null);
+  const degreeRef = useRef<HTMLDivElement | null>(null);
 
-  const [programmes, setProgrammes] = useState<any[]>([]);
+  const [programmes, setProgrammes] = useState<ProgrammeItem[]>([]);
   const [page, setPage] = useState(1);
   const [showLoadMore, setShowLoadMore] = useState(true);
 
   const [searchQuery, setSearchQuery] = useState("");
 
-  /** Close dropdown on outside click */
+  // -------------------------
+  // Close dropdown on outside click
+  // -------------------------
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
-      if (schoolRef.current && !(schoolRef.current as any).contains(e.target)) {
+      if (schoolRef.current && !schoolRef.current.contains(e.target as Node)) {
         setOpenSchoolDropdown(false);
       }
-      if (degreeRef.current && !(degreeRef.current as any).contains(e.target)) {
+      if (degreeRef.current && !degreeRef.current.contains(e.target as Node)) {
         setOpenDegreeDropdown(false);
       }
     }
     document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    return () =>
+      document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  /** Load schools & degrees */
+  // -------------------------
+  // Load filters
+  // -------------------------
   useEffect(() => {
     async function loadFilters() {
       const s = await getAllSchoolsInfo();
@@ -66,56 +117,67 @@ const ProgrammesSearch = () => {
     loadFilters();
   }, []);
 
-  /** Fetch programmes */
-  const fetchProgrammes = async (reset = false, query = "") => {
-    let nextPage = reset ? 1 : page;
-    let newData = [];
+  // -------------------------
+  // Fetch Programmes (wrapped in useCallback for safe dependency control)
+  // -------------------------
+  const fetchProgrammes = useCallback(
+    async (reset: boolean = false, query: string = "") => {
+      const nextPage = reset ? 1 : page;
+      let newData: ProgrammeItem[] = [];
 
-    if (query) {
-      // Search overrides dropdowns
-      if (selectedDegree === "doctoral-programmes") {
-        const res = await searchPhdProgrammes(query, nextPage, 6);
-        newData = res.data || [];
+      if (query) {
+        // Searching
+        if (selectedDegree === "doctoral-programmes") {
+          const res = await searchPhdProgrammes(query, nextPage, 6);
+          newData = res.data || [];
+        } else {
+          const res = await searchSchoolProgrammes(query, nextPage, 6);
+          newData = res.data || [];
+        }
+
+        // Reset dropdowns during search
+        setSelectedSchool("");
+        setSelectedDegree("");
       } else {
-        const res = await searchSchoolProgrammes(query, nextPage, 6);
-        newData = res.data || [];
+        // Dropdown filtering
+        if (!selectedSchool) setSelectedSchool("soet");
+        if (!selectedDegree) setSelectedDegree("undergraduate-programmes");
+
+        if (selectedDegree === "doctoral-programmes") {
+          const res = await getAllSchoolPhdProgrammeByCatPaginated(
+            selectedSchool,
+            nextPage,
+            6
+          );
+          newData = res?.data || [];
+        } else {
+          const res = await getAllSchoolProgrammeByDegOrCatPaginated(
+            selectedDegree,
+            selectedSchool,
+            nextPage,
+            6
+          );
+          newData = res?.data || [];
+        }
       }
-      // Reset dropdowns
-      setSelectedSchool("");
-      setSelectedDegree("");
-    } else {
-      // Default behaviour
-      if (!selectedSchool) setSelectedSchool("soet");
-      if (!selectedDegree) setSelectedDegree("undergraduate-programmes");
 
-      if (selectedDegree === "doctoral-programmes") {
-        const res = await getAllSchoolPhdProgrammeByCatPaginated(
-          selectedSchool,
-          nextPage,
-          6
-        );
-        newData = res?.data || [];
-      } else {
-        const res = await getAllSchoolProgrammeByDegOrCatPaginated(
-          selectedDegree,
-          selectedSchool,
-          nextPage,
-          6
-        );
-        newData = res?.data || [];
-      }
-    }
+      setProgrammes(reset ? newData : [...programmes, ...newData]);
+      setShowLoadMore(newData.length === 6);
 
-    setProgrammes(reset ? newData : [...programmes, ...newData]);
-    setShowLoadMore(newData.length === 6);
-    if (reset) setPage(2);
-    else setPage(page + 1);
-  };
+      if (reset) setPage(2);
+      else setPage(page + 1);
+    },
+    [page, programmes, selectedSchool, selectedDegree]
+  );
 
-  /** Fetch when dropdowns or search query changes */
+  // -------------------------
+  // Trigger fetch when dropdown or search query changes
+  // -------------------------
   useEffect(() => {
     fetchProgrammes(true, searchQuery);
-  }, [selectedSchool, selectedDegree, searchQuery]);
+  }, [selectedSchool, selectedDegree, searchQuery, fetchProgrammes]);
+
+  // -----------------------------------------------------
 
   return (
     <section className="pt-40 pb-[50px] px-4 bg-[#f9f9f9]">
@@ -234,7 +296,6 @@ const ProgrammesSearch = () => {
         </div>
 
         {/* PROGRAMMES LIST */}
-        {/* PROGRAMMES LIST */}
         <div className="mt-20 grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
           {programmes.length === 0 ? (
             searchQuery || selectedSchool || selectedDegree ? (
@@ -242,7 +303,6 @@ const ProgrammesSearch = () => {
                 No programme found
               </p>
             ) : (
-              // Show skeletons while loading default data
               Array.from({ length: 6 }).map((_, idx) => (
                 <Skeleton key={idx} className="h-[235px] w-full rounded-xl" />
               ))
@@ -255,7 +315,7 @@ const ProgrammesSearch = () => {
               >
                 <div className="mb-[30px]">
                   <h6 className="font-semibold text-xs lg:text-base mb-2 line-clamp-2 sm:line-clamp-3">
-                    {item.title || item.heading}
+                    {"title" in item ? item.title : item.heading}
                   </h6>
                   <p className="text-[10px] sm:text-sm relative z-50">
                     Duration: {item.criteria?.Duration || "N/A"}
@@ -269,8 +329,12 @@ const ProgrammesSearch = () => {
                 </div>
 
                 <Link
-                  href={`/programs/${item.programmeslug || item.phdslug}`}
-                  className="text-[10px] md:text-base font-medium border-b border-white relative z-50"
+                  href={`/programs/${
+                    "programmeslug" in item
+                      ? item.programmeslug
+                      : item.phdslug
+                  }`}
+                  className="text-[10px] md:text-base font-medium border-b border-white relative z-50 "
                   target="_blank"
                 >
                   Show More
@@ -287,13 +351,13 @@ const ProgrammesSearch = () => {
             ))
           )}
         </div>
+
         <div>
           <p className="text-[#212529] text-base text-right p-4 md:p-12">
             **Subject to Approval
           </p>
         </div>
 
-        {/* LOAD MORE BUTTON */}
         {showLoadMore && (
           <div className="p-4 md:p-12 flex items-center justify-center">
             <button
