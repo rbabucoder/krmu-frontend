@@ -9,7 +9,7 @@ const ScholarUGPG = () => {
   return (
     <section className="py-[60px]">
       <div className="max-w-[1664px] mx-auto w-full">
-        <Tabs defaultValue="account">
+        <Tabs defaultValue="undergraduate">
           <TabsList
             className="mx-auto bg-[#ebecec] rounded-full text-white h-[75px]"
             style={{
@@ -17,19 +17,19 @@ const ScholarUGPG = () => {
             }}
           >
             <TabsTrigger
-              value="account"
+              value="undergraduate"
               className="text-2xl leading-[3] px-[100px] hover:bg-[#cb000d] hover:text-white data-[state=active]:bg-[#cb000d] data-[state=active]:text-white rounded-full cursor-pointer font-semibold"
             >
               UG Programmes
             </TabsTrigger>
             <TabsTrigger
-              value="password"
+              value="postgraduate"
               className="text-2xl leading-[3] px-[100px] hover:bg-[#cb000d] hover:text-white data-[state=active]:bg-[#cb000d] data-[state=active]:text-white rounded-full cursor-pointer font-semibold"
             >
               PG Programmes
             </TabsTrigger>
           </TabsList>
-          <TabsContent value="account">
+          <TabsContent value="undergraduate">
             <h3 className="text-[64px] font-medium text-center mt-[50px] mb-[30px]">
               Under Graduate (UG) Programme
             </h3>
@@ -40,16 +40,24 @@ const ScholarUGPG = () => {
               className="w-full"
               defaultValue="item-1"
             >
-              <AccordionItem value="item-1">
+              <AccordionItem value="item-1" className="mb-[30px]">
                 <AccordionTrigger
-                  className="rounded-[12px] py-2.5 px-[30px] text-2xl leading-[1.83] text-white hover:no-underline cursor-pointer"
+                  className="rounded-[12px] data-[state=open]:rounded-b-none py-2.5 px-[30px] text-2xl leading-[1.83] text-white hover:no-underline cursor-pointer ugpgacctab"
                   style={{
                     background: `linear-gradient(18deg,#0060aa 14.28%,#051630 118.99%)`,
                   }}
                 >
                   Part A - On The Basis of Marks Scored in Class XII Examination
                 </AccordionTrigger>
-                <AccordionContent className="pt-[30px] px-5 pb-[15px] ugpgtable">
+                <AccordionContent
+                  className="pt-[30px] px-5 pb-[15px] ugpgtable"
+                  style={{
+                    background: `linear-gradient(180deg,rgba(255,255,255,.09) 0%,rgba(255,255,255,.05) 100%)`,
+                    boxShadow: `0px 0px 20px 0px rgba(0,0,0,.25)`,
+                    borderBottomLeftRadius: "12px",
+                    borderBottomRightRadius: "12px",
+                  }}
+                >
                   <table>
                     <thead>
                       <tr>
@@ -91,9 +99,580 @@ const ScholarUGPG = () => {
                   </table>
                 </AccordionContent>
               </AccordionItem>
+
+              <AccordionItem value="item-2" className="mb-[30px]">
+                <AccordionTrigger
+                  className="ugpgacctab rounded-[12px] data-[state=open]:rounded-b-none py-2.5 px-[30px] text-2xl leading-[1.83] text-white hover:no-underline cursor-pointer"
+                  style={{
+                    background: `linear-gradient(18deg,#0060aa 14.28%,#051630 118.99%)`,
+                  }}
+                >
+                  Part B - On The Basis of Other Category
+                </AccordionTrigger>
+                <AccordionContent
+                  className="pt-[30px] px-5 pb-[15px] ugpgtable"
+                  style={{
+                    background: `linear-gradient(180deg,rgba(255,255,255,.09) 0%,rgba(255,255,255,.05) 100%)`,
+                    boxShadow: `0px 0px 20px 0px rgba(0,0,0,.25)`,
+                    borderBottomLeftRadius: "12px",
+                    borderBottomRightRadius: "12px",
+                  }}
+                >
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Category</th>
+                        <th>Scholarship</th>
+                        <th>Remarks</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Shero Scholarship (For Female Students)</td>
+                        <td>10%</td>
+                        <td>
+                          For Female students securing 70% and above in Class
+                          XII
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Siblings</td>
+                        <td>15%</td>
+                        <td>
+                          Applicable to all siblings excluding the first child
+                          admitted at KRMU
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>K.R. Mangalam Group</td>
+                        <td>15%</td>
+                        <td>
+                          For students who have passed the 12th standard from
+                          K.R.Mangalam group
+                          <br />
+                          of schools or KRMU Graduates opting to pursue another
+                          Undergraduate (UG)
+                          <br />
+                          programme
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Defense Scholarship</td>
+                        <td>15%</td>
+                        <td>For children of Defense Personnel</td>
+                      </tr>
+                      <tr>
+                        <td>Staff Discount</td>
+                        <td>15%</td>
+                        <td>
+                          Children of KRMU staff seeking admission in all UG
+                          courses
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <b>Sports Quota</b> – Represented India in Olympic
+                          Games, Asian Games,
+                          <br />
+                          World University, World Games, World Championships,
+                          World Cups,
+                          <br />
+                          Commonwealth Games, Asian Meets, Test Matches in
+                          Cricket. Commonwealth
+                          <br />
+                          Championships, Asian Championship. Asia Cup, SAF
+                          Games, Davis Games,
+                          <br />
+                          Wimbledon Championship, US French, Australian Open
+                          Tennis Championship,
+                          <br />
+                          Thomas Cup, Uber Cup, ALL England Badminton Tournament
+                          and International
+                          <br />
+                          Athletic Permit Meet and any other International
+                          Tournament/
+                          <br />
+                          Championship, Games and Sports approved by IOA (Indian
+                          Olympic
+                          <br />
+                          Association) and Govt. of India recognized Sports
+                          Federations.
+                        </td>
+                        <td>100%</td>
+                        <td>Position and Participation</td>
+                      </tr>
+                      <tr>
+                        <td rowSpan={4}>
+                          <b>Sports Quota</b> – Senior National / National Games
+                          / Federation Cup
+                          <br />/ All India Inter University
+                        </td>
+                        <td>75%</td>
+                        <td>1st position</td>
+                      </tr>
+                      <tr>
+                        <td>50%</td>
+                        <td>2nd position</td>
+                      </tr>
+                      <tr>
+                        <td>25%</td>
+                        <td>3rd position</td>
+                      </tr>
+                      <tr>
+                        <td>10%</td>
+                        <td>Participation</td>
+                      </tr>
+                      <tr>
+                        <td rowSpan={4}>
+                          <b>Sports Quota </b>– Junior National / Zone wise
+                          university / Ranji
+                          <br />
+                          Trophy
+                        </td>
+                        <td>75%</td>
+                        <td>1st position</td>
+                      </tr>
+                      <tr>
+                        <td>50%</td>
+                        <td>2nd position</td>
+                      </tr>
+                      <tr>
+                        <td>25%</td>
+                        <td>3rd position</td>
+                      </tr>
+                      <tr>
+                        <td>10%</td>
+                        <td>Participation</td>
+                      </tr>
+                      <tr>
+                        <td rowSpan={4}>
+                          <b>Sports Quota</b> – National Women Championship /
+                          Rural Championship /<br />
+                          School National (SGFI)/ level
+                        </td>
+                        <td>75%</td>
+                        <td>1st position</td>
+                      </tr>
+                      <tr>
+                        <td>50%</td>
+                        <td>2nd position</td>
+                      </tr>
+                      <tr>
+                        <td>25%</td>
+                        <td>3rd position</td>
+                      </tr>
+                      <tr>
+                        <td>10%</td>
+                        <td>Participation</td>
+                      </tr>
+                      <tr>
+                        <td rowSpan={4}>
+                          <b>Sports Quota</b> – K.V.S National / C.B.S.E
+                          National / Navodaya
+                          <br />
+                          National / Sanik School National / All India Public
+                          School National
+                        </td>
+                        <td>25%</td>
+                        <td>1st position</td>
+                      </tr>
+                      <tr>
+                        <td>15%</td>
+                        <td>2nd position</td>
+                      </tr>
+                      <tr>
+                        <td>15%</td>
+                        <td>3rd position</td>
+                      </tr>
+                      <tr>
+                        <td>10%</td>
+                        <td>Participation</td>
+                      </tr>
+                      <tr>
+                        <td rowSpan={4}>
+                          <b>Sports Quota</b> – State Championship
+                        </td>
+                        <td>25%</td>
+                        <td>1st position</td>
+                      </tr>
+                      <tr>
+                        <td>15%</td>
+                        <td>2nd position</td>
+                      </tr>
+                      <tr>
+                        <td>15%</td>
+                        <td>3rd position</td>
+                      </tr>
+                      <tr>
+                        <td>10%</td>
+                        <td>Participation</td>
+                      </tr>
+                      <tr>
+                        <td rowSpan={4}>
+                          <b>Sports Quota</b> – C.B.S.E Cluster / K.V.S. /
+                          Navodaya / Sanik /<br />
+                          Zonal / District / State Women Festival
+                        </td>
+                        <td>25%</td>
+                        <td>1st position</td>
+                      </tr>
+                      <tr>
+                        <td>15%</td>
+                        <td>2nd position</td>
+                      </tr>
+                      <tr>
+                        <td>15%</td>
+                        <td>3rd position</td>
+                      </tr>
+                      <tr>
+                        <td>10%</td>
+                        <td>Participation</td>
+                      </tr>
+                      <tr>
+                        <th colSpan={3}>Remark</th>
+                      </tr>
+                      <tr>
+                        <td colSpan={3}>
+                          <ol>
+                            <li>
+                              For 100% Scholarship – To be paid in 3 instalments
+                              – 1st instalment (25%) will be paid upfront post
+                              document verification, and the amount of
+                              scholarship will be deducted from the semester fee
+                              at the time of registration. 2nd instalment (50%)
+                              and 3rd instalment (25%) will be paid by cheque in
+                              the 2nd Semester and 3rd Semester, respectively,
+                              if the student fulfills all the criteria listed
+                              under Note: 7) given below the table.
+                            </li>
+                            <li>
+                              For 75% / 50% / 25% / 10% Scholarship – To be paid
+                              in 2 equal instalments. The 1st instalment will be
+                              paid upfront post document verification, and the
+                              amount of scholarship will be deducted from the
+                              semester fee at the time of registration. The 2nd
+                              instalment will be paid by cheque in the 2nd
+                              Semester if the student fulfills all the criteria
+                              listed under Note: 7) given below the table.
+                            </li>
+                          </ol>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-3">
+                <AccordionTrigger
+                  className="ugpgacctab rounded-[12px] data-[state=open]:rounded-b-none py-2.5 px-[30px] text-2xl leading-[1.83] text-white hover:no-underline cursor-pointer"
+                  style={{
+                    background: `linear-gradient(18deg,#0060aa 14.28%,#051630 118.99%)`,
+                  }}
+                >
+                  Part C - On the Basis of Entrance Examination
+                </AccordionTrigger>
+                <AccordionContent
+                  className="pt-[30px] px-5 pb-[15px] ugpgtable"
+                  style={{
+                    background: `linear-gradient(180deg,rgba(255,255,255,.09) 0%,rgba(255,255,255,.05) 100%)`,
+                    boxShadow: `0px 0px 20px 0px rgba(0,0,0,.25)`,
+                    borderBottomLeftRadius: "12px",
+                    borderBottomRightRadius: "12px",
+                  }}
+                >
+                  <p className="font-semibold text-center mb-5">
+                    CUET -1 (On the basis of best 4 subjects score)
+                  </p>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Eligibility Criteria</th> <th>Scholarship</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>90% &amp; above</td> <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>75% to less than 90%</td> <td>50%</td>
+                      </tr>
+                      <tr>
+                        <td>60% to less than 75%</td> <td>35%</td>
+                      </tr>
+                      <tr>
+                        <td>50% to less than 60%</td> <td>25%</td>
+                      </tr>
+                      <tr>
+                        <td>45% to less than 50%</td> <td>10%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <p className="font-semibold text-center my-5">
+                    CUET -2 (On the basis average percentile of best 4 subjects)
+                  </p>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Eligibility Criteria</th> <th>Scholarship</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>95 percentile above</td> <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>85 percentile to less than 95 percentile</td>
+                        <td>35%</td>
+                      </tr>
+                      <tr>
+                        <td>70 percentile to less than 85 percentile</td>
+                        <td>25%</td>
+                      </tr>
+                      <tr>
+                        <td>50 percentile to less than 70 percentile</td>
+                        <td>10%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p className="font-semibold text-center my-5">JEE (MAIN)</p>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Eligibility Criteria</th> <th>Scholarship</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>95.01 percentile and above</td> <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>90.01 percentile to 95 percentile</td> <td>35%</td>
+                      </tr>
+                      <tr>
+                        <td>85.01 percentile to 90 percentile</td> <td>25%</td>
+                      </tr>
+                      <tr>
+                        <td>75.01 percentile to 85 percentile</td> <td>10%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p className="font-semibold text-center my-5">CLAT Rank</p>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Eligibility Criteria</th> <th>Scholarship</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1-2500</td> <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>2501-5000</td> <td>35%</td>
+                      </tr>
+                      <tr>
+                        <td>5001-10000</td> <td>25%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p className="font-semibold text-center my-5">NCHMCT Rank</p>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Eligibility Criteria</th> <th>Scholarship</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1-1000</td> <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>1001-3000</td> <td>35%</td>
+                      </tr>
+                      <tr>
+                        <td>3001-5000</td> <td>25%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table className="mt-5">
+                    <thead>
+                      <tr>
+                        <th colSpan={3}>Remark</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td colSpan={3}>
+                          1. For 100% Scholarship -To be paid in 3
+                          instalment-1st instalment (25%) will be paid upfront
+                          post documents verification and the amount of
+                          scholarship will be deducted from the semester fee at
+                          the time of registration. 2nd instalment (50%) and 3rd
+                          instalment (25%) will be paid by cheque in 2nd
+                          Semester and 3rd Semester respectively, if the student
+                          fulfills all the criteria listed under Note : 7) given
+                          below the table.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          2. For 75%/ 50%/ 25%/ 10% Scholarship – To be paid in
+                          2 equal instalments-1st instalment will be paid
+                          upfront post documents verification and the amount of
+                          scholarship will be deducted from the semester fee at
+                          the time of registration. 2nd instalment will be paid
+                          by cheque in 2nd Semester, if the student fulfils all
+                          the criteria listed under Note: 7) given below the
+                          table.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </AccordionContent>
+              </AccordionItem>
             </Accordion>
           </TabsContent>
-          <TabsContent value="password">kl;k;k;kl;</TabsContent>
+          <TabsContent value="postgraduate">
+            <h3 className="text-[64px] font-medium text-center mt-[50px] mb-[30px]">
+              Post Graduate (PG) Programmes
+            </h3>
+            <Accordion
+              type="single"
+              collapsible
+              className="w-full"
+              defaultValue="item-1"
+            >
+              <AccordionItem value="item-1" className="mb-[30px]">
+                <AccordionTrigger
+                  className="rounded-[12px] data-[state=open]:rounded-b-none py-2.5 px-[30px] text-2xl leading-[1.83] text-white hover:no-underline cursor-pointer ugpgacctab"
+                  style={{
+                    background: `linear-gradient(18deg,#0060aa 14.28%,#051630 118.99%)`,
+                  }}
+                >
+                  PG (MBA) on basis of Graduations Score
+                </AccordionTrigger>
+                <AccordionContent
+                  className="pt-[30px] px-5 pb-[15px] ugpgtable"
+                  style={{
+                    background: `linear-gradient(180deg,rgba(255,255,255,.09) 0%,rgba(255,255,255,.05) 100%)`,
+                    boxShadow: `0px 0px 20px 0px rgba(0,0,0,.25)`,
+                    borderBottomLeftRadius: "12px",
+                    borderBottomRightRadius: "12px",
+                  }}
+                >
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Eligibility Criteria</th> <th>Scholarship</th>
+                        <th>Remarks</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>95% and above</td> <td>100%</td>
+                        <td>
+                          <div>
+                            To be paid in 3 instalment-1st instalment (25%) will
+                            be paid by cheque in 1st Semester post documents
+                            verification &amp; there is no case of indiscipline.
+                            2nd instalment (50%) and 3rd instalment (25%) will
+                            be paid by cheque in 2nd Semester and 3rd Semester
+                            respectively, if the student fulfils all the
+                            criterion listed under Note : 2) given below the
+                            table.
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>85% to less than 95%</td>
+                        <td id="undergraduate">35%</td>
+                        <td rowSpan={2}>
+                          <div>
+                            To be paid in 2 equal instalment-1st instalment will
+                            be paid by cheque in 1st Semester post documents
+                            verification &amp; there is no case of indiscipline.
+                            2nd instalment will be paid by cheque in 2nd
+                            Semester, if the student fulfils all the criterion
+                            listed under Note: 2) given below the table.
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>75% to less than 85%</td> <td>25%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </AccordionContent>
+              </AccordionItem>
+
+
+
+              <AccordionItem value="item-2" className="mb-[30px]">
+                <AccordionTrigger
+                  className="rounded-[12px] data-[state=open]:rounded-b-none py-2.5 px-[30px] text-2xl leading-[1.83] text-white hover:no-underline cursor-pointer ugpgacctab"
+                  style={{
+                    background: `linear-gradient(18deg,#0060aa 14.28%,#051630 118.99%)`,
+                  }}
+                >
+                  PG (MBA) on basis of Graduations Score
+                </AccordionTrigger>
+                <AccordionContent
+                  className="pt-[30px] px-5 pb-[15px] ugpgtable"
+                  style={{
+                    background: `linear-gradient(180deg,rgba(255,255,255,.09) 0%,rgba(255,255,255,.05) 100%)`,
+                    boxShadow: `0px 0px 20px 0px rgba(0,0,0,.25)`,
+                    borderBottomLeftRadius: "12px",
+                    borderBottomRightRadius: "12px",
+                  }}
+                >
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Eligibility Criteria</th> <th>Scholarship</th>
+                        <th>Remarks</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>95% and above</td> <td>100%</td>
+                        <td>
+                          <div>
+                            To be paid in 3 instalment-1st instalment (25%) will
+                            be paid by cheque in 1st Semester post documents
+                            verification &amp; there is no case of indiscipline.
+                            2nd instalment (50%) and 3rd instalment (25%) will
+                            be paid by cheque in 2nd Semester and 3rd Semester
+                            respectively, if the student fulfils all the
+                            criterion listed under Note : 2) given below the
+                            table.
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>85% to less than 95%</td>
+                        <td id="undergraduate">35%</td>
+                        <td rowSpan={2}>
+                          <div>
+                            To be paid in 2 equal instalment-1st instalment will
+                            be paid by cheque in 1st Semester post documents
+                            verification &amp; there is no case of indiscipline.
+                            2nd instalment will be paid by cheque in 2nd
+                            Semester, if the student fulfils all the criterion
+                            listed under Note: 2) given below the table.
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>75% to less than 85%</td> <td>25%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </TabsContent>
         </Tabs>
       </div>
     </section>

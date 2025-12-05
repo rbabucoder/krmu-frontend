@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { HeroData } from '../mba-2025/constant/hero';
 
@@ -28,7 +27,6 @@ const Hero: React.FC<HeroProps> = ({
   formWidgetId = "70d97092be6d93eed32d53d664e6b5b1",
   formHeight = "550px",
   backgroundImage = "/assets/4_MBA.jpg",
-  stats = [],
   showPill = false,
   pillText = "Empower Your Leadership Journey",
   className = "",
@@ -98,6 +96,10 @@ const Hero: React.FC<HeroProps> = ({
 
     return () => {
       // Cleanup
+      const styleElement = document.getElementById('hero-responsive-styles');
+      if (styleElement) {
+        styleElement.remove();
+      }
     };
   }, []);
 
@@ -120,7 +122,7 @@ const Hero: React.FC<HeroProps> = ({
     return (
       <React.Fragment key={lineIndex}>
         {words.map((word, wordIndex) => {
-          let style: React.CSSProperties = {};
+          const style: React.CSSProperties = {};
           
           // Apply red color for specific words
           if (redTextLines[lineIndex]?.includes(wordIndex)) {
@@ -141,32 +143,6 @@ const Hero: React.FC<HeroProps> = ({
         })}
         <br />
       </React.Fragment>
-    );
-  };
-
-  // Render stats grid (for mobile only as per your design)
-  const renderStats = () => {
-    if (stats.length === 0) return null;
-    
-    return (
-      <div className="p-3 block lg:hidden md:hidden">
-        <div className="grid grid-cols-2 gap-4 mb-4">
-          {stats.slice(0, 2).map((stat, index) => (
-            <div key={index} className="text-center">
-              <h3 className="text-2xl font-bold text-white mb-1">{stat.value}</h3>
-              <p className="text-white text-sm">{stat.label}</p>
-            </div>
-          ))}
-        </div>
-        <div className="grid grid-cols-2 gap-4">
-          {stats.slice(2, 4).map((stat, index) => (
-            <div key={index + 2} className="text-center">
-              <h3 className="text-2xl font-bold text-white mb-1">{stat.value}</h3>
-              <p className="text-white text-sm">{stat.label}</p>
-            </div>
-          ))}
-        </div>
-      </div>
     );
   };
 
@@ -222,9 +198,6 @@ const Hero: React.FC<HeroProps> = ({
             >
               {headingLines.map((line, index) => renderHeadingLine(line, index))}
             </h1>
-            
-            {/* Stats - Mobile Only
-            {renderStats()} */}
             
             {/* Apply Button - Desktop Only */}
             <div className="flex items-center justify-start md:justify-start gap-3">
@@ -321,8 +294,6 @@ const Hero: React.FC<HeroProps> = ({
           }
         }
       `}</style>
-
-      
     </section>
   );
 };

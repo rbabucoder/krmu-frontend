@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { HeaderData } from '../mba-2025/constant/header';
 
 interface HeaderProps extends HeaderData {
@@ -9,7 +10,7 @@ interface HeaderProps extends HeaderData {
 
 const Header: React.FC<HeaderProps> = ({
   logo = {
-    src: "/assets/white-krm.webp",
+    src: "/landingpage/mba-2025/white-krm.webp",
     alt: "Logo",
     height: 55
   },
@@ -73,16 +74,22 @@ const Header: React.FC<HeaderProps> = ({
             <div className="flex items-center">
               <button 
                 onClick={handleLogoClick}
-                className="focus:outline-none focus:ring-2 focus:ring-red-500 rounded transition-transform hover:scale-105"
+                className="focus:outline-none focus:ring-2 focus:ring-red-500 rounded transition-transform hover:scale-105 relative"
+                style={{ 
+                  height: logo.height ? `${logo.height}px` : '55px',
+                  width: 'auto',
+                  maxHeight: '70px',
+                  minWidth: '120px' // Add minimum width to prevent collapse
+                }}
               >
-                <img
+                <Image
                   src={logo.src}
                   alt={logo.alt}
-                  className="h-12 md:h-14 lg:h-16"
-                  style={{ 
-                    height: logo.height ? `${logo.height}px` : '55px',
-                    maxHeight: '70px'
-                  }}
+                  width={150} // Provide explicit width
+                  height={logo.height || 55} // Use logo.height or default
+                  className="object-contain h-full w-auto"
+                  sizes="(max-width: 768px) 120px, (max-width: 1200px) 160px, 200px"
+                  priority={true}
                 />
               </button>
             </div>
@@ -98,9 +105,6 @@ const Header: React.FC<HeaderProps> = ({
                 </button>
               </div>
             )}
-
-            
-
           </div>
         </div>
       </div>

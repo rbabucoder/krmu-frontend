@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { CurriculumData } from '../mba-2025/constant/curriculum';
 
@@ -18,7 +16,7 @@ const CurriculumOverview: React.FC<CurriculumOverviewProps> = ({
   className = ""
 }) => {
   return (
-    <section>
+    <section className={className}>
       <div className="container mx-auto max-w-7xl px-4 pt-4">
         {/* Header Section */}
         <div className="text-center max-w-4xl mx-auto mb-12 md:mb-16">
@@ -104,8 +102,6 @@ const CurriculumOverview: React.FC<CurriculumOverviewProps> = ({
             </div>
           ))}
         </div>
-        
-        
       </div>
     </section>
   );

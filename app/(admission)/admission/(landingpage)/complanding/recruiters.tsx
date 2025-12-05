@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { 
   recruiterLogos, 
   studentTestimonials, 
@@ -18,7 +19,6 @@ interface RecruitersTestimonialsProps {
 
 const Recruiters: React.FC<RecruitersTestimonialsProps> = ({
   className = "",
-  title = "Our Prominent Recruiters",
   subtitle = "",
   testimonials = studentTestimonials,
   highlights = highlightPoints,
@@ -59,7 +59,6 @@ const Recruiters: React.FC<RecruitersTestimonialsProps> = ({
               width: calc(200px * ${logos.length} * 2);
             }
             
-            
             @media (max-width: 768px) {
               .logos-track {
                 width: calc(180px * ${logos.length} * 2);
@@ -75,11 +74,13 @@ const Recruiters: React.FC<RecruitersTestimonialsProps> = ({
                 className="shrink-0 w-[180px] md:w-[200px] px-3"
               >
                 <div className="bg-white rounded-xl p-4 md:p-6 shadow-md hover:shadow-lg transition-shadow duration-300 w-full h-full flex items-center justify-center">
-                  <img 
+                  <Image 
                     src={logo.src} 
                     alt={logo.alt}
-                    loading="lazy"
+                    width={120}
+                    height={80}
                     className="h-12 md:h-16 w-auto object-contain"
+                    priority={false}
                   />
                 </div>
               </div>
@@ -135,7 +136,6 @@ const Recruiters: React.FC<RecruitersTestimonialsProps> = ({
                       width: calc(300px * ${testimonials.length} * 2);
                     }
                     
-                    
                     @media (max-width: 768px) {
                       .testimonials-track {
                         width: calc(280px * ${testimonials.length} * 2);
@@ -152,12 +152,14 @@ const Recruiters: React.FC<RecruitersTestimonialsProps> = ({
                       >
                         <div className="student_testimonial_slide bg-white rounded-[20px] border border-gray-300 p-4 text-center h-[272px] flex flex-col justify-between hover:shadow-lg transition-shadow duration-300">
                           <div className="student_img_container mb-4">
-                            <div className="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-full overflow-hidden border-4 border-gray-100">
-                              <img 
+                            <div className="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-full overflow-hidden border-4 border-gray-100 relative">
+                              <Image 
                                 src={student.image} 
                                 alt={student.alt}
-                                loading="lazy"
-                                className="w-full h-full object-cover"
+                                fill
+                                className="object-cover"
+                                sizes="(max-width: 768px) 80px, 96px"
+                                priority={false}
                               />
                             </div>
                           </div>
@@ -185,7 +187,6 @@ const Recruiters: React.FC<RecruitersTestimonialsProps> = ({
               </div>
             </div>
           </div>
-          
         </div>
       </div>
     </section>

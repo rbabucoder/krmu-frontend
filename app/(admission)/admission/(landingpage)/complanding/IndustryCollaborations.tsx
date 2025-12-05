@@ -1,6 +1,5 @@
-
-
 import React from 'react';
+import Image from 'next/image';
 import { IndustryCollaborationsData } from '../mba-2025/constant/industry-collaborations';
 
 interface IndustryCollaborationsProps extends IndustryCollaborationsData {
@@ -18,7 +17,7 @@ const IndustryCollaborations: React.FC<IndustryCollaborationsProps> = ({
   className = ""
 }) => {
   return (
-    <section>
+    <section className={className}>
       <div className="container mx-auto max-w-7xl px-4 pt-4">
         {/* Header Section */}
         <div className="text-center max-w-4xl mx-auto mb-8 md:mb-12">
@@ -50,13 +49,18 @@ const IndustryCollaborations: React.FC<IndustryCollaborationsProps> = ({
             >
               <div className="bg-white rounded-lg p-4 md:p-6 shadow-[0_4px_12px_rgba(0,0,0,0.08)] hover:shadow-[0_6px_20px_rgba(0,0,0,0.12)] transition-all duration-300 h-full min-h-[120px] flex items-center justify-center group hover:scale-[1.02]">
                 <div className="relative w-full h-full flex items-center justify-center">
-                  <img 
-                    src={collaboration.logo}
-                    alt={collaboration.alt}
-                    loading="lazy"
-                    className="h-12 md:h-16 w-auto object-contain mx-auto opacity-90 group-hover:opacity-100 transition-opacity"
-                    style={collaboration.width ? { width: collaboration.width } : {}}
-                  />
+                  {/* Using Next.js Image component instead of img tag */}
+                  <div className="h-12 md:h-16 flex items-center justify-center">
+                    <Image 
+                      src={collaboration.logo}
+                      alt={collaboration.alt}
+                      width={120} // Default width, adjust as needed
+                      height={80} // Default height, adjust as needed
+                      className="w-auto h-full object-contain mx-auto opacity-90 group-hover:opacity-100 transition-opacity"
+                      style={collaboration.width ? { maxWidth: collaboration.width } : {}}
+                      priority={false}
+                    />
+                  </div>
                   {/* Optional tooltip on hover */}
                   <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
                     {collaboration.name}

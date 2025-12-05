@@ -43,14 +43,6 @@ export const MBA2025Client: React.FC = () => {
     }
   };
 
-  const handleHeroCTAClick = () => {
-    console.log('Hero CTA clicked');
-    const formSection = document.getElementById('formSection');
-    if (formSection) {
-      formSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   const handleContactClick = (): void => {
     console.log('Contact button clicked');
     // Implement contact logic

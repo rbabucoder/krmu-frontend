@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ScholarshipsData } from '../mba-2025/constant/scholarships';
 
@@ -40,7 +39,7 @@ const Scholarships: React.FC<ScholarshipsProps> = ({
   };
 
   return (
-    <section id="scholar_sec" className={`py-12 md:py-16`}>
+    <section id="scholar_sec" className={`py-12 md:py-16 ${className}`}>
       <div className="container mx-auto max-w-7xl px-4">
         <div 
           className="rounded-[30px] p-6 md:p-8 lg:p-10 relative overflow-hidden"

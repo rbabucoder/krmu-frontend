@@ -28,7 +28,7 @@
     text-align: left;
   }
 
-  .ugpgtable table tr th:first-child {
+  .ugpgtable table tr thead tr th:first-child {
     width: 20%;
     border-top-left-radius: 8px;
   }
@@ -36,19 +36,51 @@
     border-top-right-radius: 8px;
   }
 
-  .ugpgtable table tr td{
+  .ugpgtable table tr td {
     padding: 10px 20px;
     font-size: 16px;
     font-weight: 500;
     vertical-align: top;
   }
 
-
-  .ugpgtable table, .ugpgtable table th, .ugpgtable table td {
+  .ugpgtable table,
+  .ugpgtable table th,
+  .ugpgtable table td {
     border: 1px solid #000 !important;
     border-collapse: collapse;
     padding: 8px;
   }
+
+  .ugpgacctab svg {
+    display: none;
+  }
+
+  .ugpgacctab {
+    position: relative;
+  }
+  .ugpgacctab::before {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    color: #fff;
+    padding: 10px;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    line-height: 1;
+    justify-content: center;
+  }
+
+  .ugpgacctab[data-state="open"]::before {
+    content: "−";
+  }
+
   /* Scholarships */
 
   /* kree */

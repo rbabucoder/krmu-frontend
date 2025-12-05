@@ -1,6 +1,5 @@
-
-
 import React from 'react';
+import Image from 'next/image';
 import { AdmissionProcessData } from '../mba-2025/constant/admission-process';
 
 interface AdmissionProcessProps extends AdmissionProcessData {
@@ -41,20 +40,8 @@ const AdmissionProcess: React.FC<AdmissionProcessProps> = ({
     }
   };
 
-  const handleContactClick = (e: React.MouseEvent) => {
-    if (onContactClick) {
-      e.preventDefault();
-      onContactClick();
-    } else {
-      const formSection = document.getElementById('formSection');
-      if (formSection) {
-        formSection.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  };
-
   return (
-    <section className={`py-12 md:py-16`}>
+    <section className={`py-12 md:py-16 ${className}`}>
       <div className="container mx-auto max-w-7xl px-4">
         {/* Header Section */}
         <div className="text-center mb-12 md:mb-16">
@@ -69,19 +56,19 @@ const AdmissionProcess: React.FC<AdmissionProcessProps> = ({
           </h3>
         </div>
 
-        {/* Right - Image Desktop */}
-          <div className="lg:w-1/2 pb-6 block lg:hidden md:hidden">
-            <div className="relative">
-              <img 
-                src={image.src}
-                alt={image.alt}
-                loading="lazy"
-                className="w-full h-auto rounded-[40px] shadow-2xl hover:shadow-3xl transition-shadow duration-500"
-              />
-              
-              
-            </div>
+        {/* Mobile Image */}
+        <div className="lg:w-1/2 pb-6 block lg:hidden md:hidden">
+          <div className="relative">
+            <Image 
+              src={image.src}
+              alt={image.alt}
+              width={600}
+              height={400}
+              className="w-full h-auto rounded-[40px] shadow-2xl hover:shadow-3xl transition-shadow duration-500"
+              priority={false}
+            />
           </div>
+        </div>
 
         {/* Content Row */}
         <div className="flex flex-col lg:flex-row gap-8 md:gap-12 items-center">
@@ -103,8 +90,6 @@ const AdmissionProcess: React.FC<AdmissionProcessProps> = ({
                           {step.number}
                         </span>
                       </div>
-                     
-                      
                     </div>
                     
                     {/* Step Text */}
@@ -121,7 +106,7 @@ const AdmissionProcess: React.FC<AdmissionProcessProps> = ({
             </div>
             
             {/* Buttons */}
-            <div className="flex flex-row sm:flex-row lg:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row lg:flex-row gap-4">
               <button 
                 onClick={handleApplyClick}
                 className="bg-[#e31e24] hover:bg-[#c7181f] text-white font-bold px-6 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-[0px_10px_48px_-12px_rgba(227,30,36,0.7)] hover:shadow-xl flex items-center justify-center gap-2"
@@ -133,7 +118,7 @@ const AdmissionProcess: React.FC<AdmissionProcessProps> = ({
               </button>
               
               <button 
-                onClick={handleApplyClick}
+                onClick={() => onContactClick && onContactClick()}
                 className="bg-white hover:bg-gray-50 text-gray-800 border-2 border-gray-300 font-bold px-6 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow hover:shadow-lg flex items-center justify-center gap-2"
               >
                 <span>{buttons.contact.text}</span>
@@ -144,22 +129,20 @@ const AdmissionProcess: React.FC<AdmissionProcessProps> = ({
             </div>
           </div>
           
-          {/* Right - Image Desktop */}
+          {/* Desktop Image */}
           <div className="lg:w-1/2 hidden lg:block md:block">
             <div className="relative">
-              <img 
+              <Image 
                 src={image.src}
                 alt={image.alt}
-                loading="lazy"
+                width={600}
+                height={400}
                 className="w-full h-auto rounded-[40px] shadow-2xl hover:shadow-3xl transition-shadow duration-500"
+                priority={false}
               />
-              
-              
             </div>
           </div>
         </div>
-        
-     
       </div>
     </section>
   );

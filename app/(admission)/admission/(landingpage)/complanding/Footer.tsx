@@ -1,6 +1,5 @@
-
-
 import React from 'react';
+import Image from 'next/image';
 import { FooterData } from '../mba-2025/constant/footer';
 
 interface FooterProps extends FooterData {
@@ -25,10 +24,13 @@ const Footer: React.FC<FooterProps> = ({
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-0">
             {/* Logo */}
             <div className="md:w-1/2 flex justify-center md:justify-start">
-              <img 
+              <Image 
                 src={logo.src}
                 alt={logo.alt}
-                className="w-full max-w-[250px] h-auto"
+                width={logo.maxWidth || 250}
+                height={60} // Adjust height as needed
+                className="w-full max-w-[250px] h-auto object-contain"
+                priority={false}
               />
             </div>
             
@@ -58,8 +60,6 @@ const Footer: React.FC<FooterProps> = ({
             <p className="text-gray-800 text-sm md:text-base">
               {copyrightText}
             </p>
-            
-            
           </div>
         </div>
       </div>

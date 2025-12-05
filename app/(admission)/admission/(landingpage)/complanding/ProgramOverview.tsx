@@ -1,6 +1,5 @@
-
-
 import React from 'react';
+import Image from 'next/image';
 import { ProgramOverviewData } from '../mba-2025/constant/program-overview';
 
 interface ProgramOverviewProps extends ProgramOverviewData {
@@ -31,19 +30,19 @@ const ProgramOverview: React.FC<ProgramOverviewProps> = ({
           <div className="lg:w-1/2">
             <div className="text-center lg:text-left">
 
-                {/* Right Image Mobile */}
-          <div className="lg:w-1/2 w-full lg:mt-0">
-            <div className="relative">
-              <img 
-                src={image.src}
-                alt={image.alt}
-                loading="lazy"
-                className="w-full max-w-lg mx-auto lg:max-w-none block md:hidden lg:hidden"
-              />
-              
-              
-            </div>
-          </div>
+              {/* Mobile Image */}
+              <div className="lg:w-1/2 w-full lg:mt-0 lg:hidden">
+                <div className="relative mb-8">
+                  <Image 
+                    src={image.src}
+                    alt={image.alt}
+                    width={600}
+                    height={400}
+                    className="w-full max-w-lg mx-auto lg:max-w-none"
+                    priority={false}
+                  />
+                </div>
+              </div>
               
               {/* Badge */}
               <span className="inline-block bg-white font-light text-black rounded-[50px] px-4 py-2 mb-8 border border-gray-100 shadow-[rgba(100,100,111,0.2)_0px_7px_29px_0px] text-sm md:text-base">
@@ -92,17 +91,17 @@ const ProgramOverview: React.FC<ProgramOverviewProps> = ({
             </ul>
           </div>
           
-          {/* Right Image Desktop */}
-          <div className="lg:w-1/2 w-full lg:mt-0 ">
+          {/* Desktop Image */}
+          <div className="lg:w-1/2 w-full lg:mt-0 hidden lg:block">
             <div className="relative">
-              <img 
+              <Image 
                 src={image.src}
                 alt={image.alt}
-                loading="lazy"
-                className="w-full max-w-lg mx-auto lg:max-w-none lg:block md:block hidden"
+                width={600}
+                height={500}
+                className="w-full max-w-lg mx-auto lg:max-w-none"
+                priority={false}
               />
-              
-              
             </div>
           </div>
           

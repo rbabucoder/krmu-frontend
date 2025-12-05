@@ -29,7 +29,7 @@ export const mba2025IndustryCollaborations: IndustryCollaborationsData = {
   collaborations: [
     {
       id: 1,
-      logo: "/landingpage/mba-2025/discover/ibm.svg",
+      logo: "/landingpage/mba-2025/ibm.svg",
       alt: "IBM",
       name: "IBM"
     },

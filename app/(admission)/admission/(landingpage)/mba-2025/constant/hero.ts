@@ -44,12 +44,6 @@ export const mba2025HeroConfig: HeroData = {
   formWidgetId: "70d97092be6d93eed32d53d664e6b5b1",
   formHeight: "550px",
   backgroundImage: "/landingpage/mba-2025/4_MBA.jpg",
-  stats: [
-    { value: "56.6 LPA", label: "Highest Package" },
-    { value: "Upto 21Cr", label: "Scholarship" },
-    { value: "700+", label: "Recruiters" },
-    { value: "100%", label: "Placement Assistance" }
-  ],
   showPill: false,
   pillText: "Empower Your Leadership Journey"
 };

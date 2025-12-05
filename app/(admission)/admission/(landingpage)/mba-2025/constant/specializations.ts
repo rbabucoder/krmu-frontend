@@ -50,7 +50,7 @@ export const defaultSpecializations: SpecializationsData = {
         { id: 3, name: "Corporate Finance Manager" }
       ],
       industryPartners: [
-        { id: 1, logo: "/landingpage/mba-2025/discover/ibm.svg", alt: "IBM" }
+        { id: 1, logo: "/landingpage/mba-2025/ibm.svg", alt: "IBM" }
       ]
     },
     {
@@ -65,7 +65,7 @@ export const defaultSpecializations: SpecializationsData = {
         { id: 3, name: "Market Research Analyst" }
       ],
       industryPartners: [
-        { id: 1, logo: "/landingpage/mba-2025/discover/ibm.svg", alt: "IBM" }
+        { id: 1, logo: "/landingpage/mba-2025/ibm.svg", alt: "IBM" }
       ]
     },
     {
@@ -80,7 +80,7 @@ export const defaultSpecializations: SpecializationsData = {
         { id: 3, name: "Organisational Development Consultant" }
       ],
       industryPartners: [
-        { id: 1, logo: "/landingpage/mba-2025/discover/ibm.svg", alt: "IBM", className: "ec_council_img" }
+        { id: 1, logo: "/landingpage/mba-2025/ibm.svg", alt: "IBM", className: "ec_council_img" }
       ]
     },
     {
@@ -95,7 +95,7 @@ export const defaultSpecializations: SpecializationsData = {
         { id: 3, name: "Analytics Manager" }
       ],
       industryPartners: [
-        { id: 1, logo: "/landingpage/mba-2025/discover/ibm.svg", alt: "IBM" }
+        { id: 1, logo: "/landingpage/mba-2025/ibm.svg", alt: "IBM" }
       ]
     },
     {
@@ -110,7 +110,7 @@ export const defaultSpecializations: SpecializationsData = {
         { id: 3, name: "Supply Chain Manager" }
       ],
       industryPartners: [
-        { id: 1, logo: "/landingpage/mba-2025/discover/ibm.svg", alt: "IBM" }
+        { id: 1, logo: "/landingpage/mba-2025/ibm.svg", alt: "IBM" }
       ]
     },
     {

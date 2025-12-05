@@ -32,7 +32,7 @@ const FAQSection: React.FC<FAQSectionProps> = ({
         
         {/* FAQ Accordion using CSS details/summary */}
         <div className="mx-auto">
-          {faqs.map((faq, index) => (
+          {faqs.map((faq) => (
             <details 
               key={faq.id} 
               className="group border-b-2 border-gray-200 mb-5"
@@ -74,8 +74,6 @@ const FAQSection: React.FC<FAQSectionProps> = ({
             </details>
           ))}
         </div>
-        
-       
       </div>
     </section>
   );
