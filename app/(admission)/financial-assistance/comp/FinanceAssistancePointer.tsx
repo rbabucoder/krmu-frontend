@@ -3,10 +3,12 @@ import { Check } from "lucide-react";
 const FinanceAssistancePointer = () => {
   return (
     <>
-      <section className="pb-12">
-        <div className="max-w-[1664px] mx-auto w-full flex items-start gap-20">
-          <div className="w-1/2">
-            <h3 className="text-4xl font-bold mb-8">Benefits of Study loan</h3>
+      <section className="pb-12 px-4">
+        <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row items-start gap-20">
+          <div className="lg:w-1/2">
+            <h3 className="text-3xl sm:text-4xl font-bold mb-8">
+              Benefits of Study loan
+            </h3>
             <ul className="flex flex-col gap-2.5">
               <li className="flex items-center gap-2.5">
                 <span className="w-8 h-8 bg-[#051630] flex items-center justify-center rounded-full">
@@ -72,7 +74,9 @@ const FinanceAssistancePointer = () => {
                 <span>No joining fees</span>
               </li>
             </ul>
-            <h3 className="text-4xl font-bold my-8">Application process</h3>
+            <h3 className="text-3xl sm:text-4xl font-bold my-8">
+              Application process
+            </h3>
             <ul className="flex flex-col gap-2.5">
               <li className="flex items-center gap-2.5">
                 <span className="w-8 h-8 bg-[#051630] flex items-center justify-center rounded-full">
@@ -96,8 +100,10 @@ const FinanceAssistancePointer = () => {
               </li>
             </ul>
           </div>
-          <div className="w-1/2">
-            <h3 className="text-4xl font-bold mb-8">Eligibility Criteria</h3>
+          <div className="lg:w-1/2">
+            <h3 className="text-3xl sm:text-4xl font-bold mb-8">
+              Eligibility Criteria
+            </h3>
             <ul className="flex flex-col gap-2.5">
               <li className="flex items-center gap-2.5">
                 <span className="w-8 h-8 bg-[#051630] flex items-center justify-center rounded-full">
@@ -112,7 +118,9 @@ const FinanceAssistancePointer = () => {
                 <span>Submit an application at KRMU</span>
               </li>
             </ul>
-            <h3 className="text-4xl font-bold my-8">Documentation process</h3>
+            <h3 className="text-3xl sm:text-4xl font-bold my-8">
+              Documentation process
+            </h3>
             <ul className="flex flex-col gap-2.5">
               <li className="flex items-center gap-2.5">
                 <span className="w-8 h-8 bg-[#051630] flex items-center justify-center rounded-full">

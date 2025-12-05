@@ -1,42 +1,82 @@
+import { STRAPI_URL } from "@/app/constant";
+import { FinancialImg } from "@/lib/types/financialAssistance";
 import Image from "next/image";
 import Link from "next/link";
 
-const AccCard = () => {
+type Props = {
+  name: string;
+  content: string;
+  downloadUrl: string;
+  quickApplyUrl: string;
+  bankImgs: FinancialImg[];
+};
+
+const AccCard = ({
+  name,
+  content,
+  downloadUrl,
+  quickApplyUrl,
+  bankImgs,
+}: Props) => {
   return (
     <>
       <div className="p-5 border border-[#e2e2e2] rounded-[10px] text-base min-h-72 h-full">
-        <Image src="/admission/icici.jpg" width={150} height={50} alt="ICICI" />
+        {bankImgs &&
+          bankImgs?.map((img, i) => {
+            return (
+              <Image
+                key={i}
+                src={`${STRAPI_URL}${img?.url}`}
+                width={150}
+                height={50}
+                alt="Bank Img"
+              />
+            );
+          })}
+
         <div className="flex flex-wrap gap-2.5 my-2.5">
           <div className="underline font-bold">
-            <span>Yogesh Yadav</span>
+            <span>{name}</span>
           </div>
-          <div className="text-blue-700">
-            <Link href="mailto:Yogesh.yadav1@icicibank.com">
+          <div className="">
+            <div
+              dangerouslySetInnerHTML={{
+                __html: content,
+              }}
+              className="bankinfocontent"
+            />
+            {/* <Link href="mailto:Yogesh.yadav1@icicibank.com">
               Yogesh.yadav1@icicibank.com
-            </Link>
+            </Link> */}
           </div>
-          <div className="text-blue-700 w-full">
+          {/* <div className="text-blue-700 w-full">
             <Link href="tel:+919694136484">+91-9694136484</Link>
-          </div>
+          </div> */}
           <div className="flex gap-2.5 flex-wrap">
-            <Link
-              href="https://www.krmangalam.edu.in/pdfs/krmangalam-icici.pdf"
-              className="bg-[#288feb] py-1.5 px-2.5 flex text-white items-center gap-1 text-base"
-            >
-              <Image
-                src="/white-pdf.png"
-                width={20}
-                height={16}
-                alt="PDF Icon"
-              />{" "}
-              <span> Download</span>
-            </Link>
-            <Link
-              href="https://bit.ly/KRUEduloan"
-              className="bg-[#288feb] py-1.5 px-2.5 flex text-white items-center gap-1 text-base"
-            >
-              Quick Apply
-            </Link>
+            {downloadUrl && (
+              <Link
+                href={downloadUrl || "#"}
+                className="bg-[#288feb] py-1.5 px-2.5 flex text-white items-center gap-1 text-base"
+                target="_blank"
+              >
+                <Image
+                  src="/white-pdf.png"
+                  width={20}
+                  height={16}
+                  alt="PDF Icon"
+                />{" "}
+                <span> Download</span>
+              </Link>
+            )}
+            {quickApplyUrl && (
+              <Link
+                href={quickApplyUrl || "#"}
+                className="bg-[#288feb] py-1.5 px-2.5 flex text-white items-center gap-1 text-base"
+                target="_blank"
+              >
+                Quick Apply
+              </Link>
+            )}
           </div>
         </div>
       </div>

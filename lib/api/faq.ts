@@ -3,7 +3,7 @@ import { FAQsResponse } from "../types/faq";
 
 export async function getFaqsData(): Promise<FAQsResponse["data"]> {
   const res = await fetch(
-    `${FETCH_STRAPI_URL}/api/faq?fields[0]=heading&fields[1]=subheading&populate[btn][fields][0]=btn_text&populate[btn][fields][1]=btn_class&populate[btn][fields][2]=btn_link`,
+    `${FETCH_STRAPI_URL}/api/faq?fields[0]=heading&fields[1]=subheading&populate[btn][fields][0]=btn_text&populate[btn][fields][1]=btn_link&populate[faqs][fields][0]=ques&populate[faqs][fields][1]=ans`,
     {
       next: {
         revalidate: 60,
@@ -14,3 +14,16 @@ export async function getFaqsData(): Promise<FAQsResponse["data"]> {
   const json: FAQsResponse = await res.json();
   return json.data;
 }
+
+
+// {
+// fields: ['heading', 'subheading'],
+// populate: {
+//   btn: {
+//     fields: ['btn_text', 'btn_link']
+//   },
+//   faqs: {
+//     fields: ['ques', 'ans']
+//   }
+// }
+// }

@@ -12,7 +12,7 @@ const page = async () => {
         subheading={faqData?.subheading}
         btn={faqData?.btn}
       />
-      <FAQs />
+      {faqData?.faqs && <FAQs faqs={faqData?.faqs} />}
     </>
   );
 };

@@ -4,17 +4,17 @@ import Link from "next/link";
 const OnlineFee = () => {
   return (
     <>
-      <section>
-        <div className="max-w-[1664px] mx-auto w-full flex gap-10">
-          <div className="w-2/3 text-center">
+      <section className="px-4">
+        <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10">
+          <div className="lg:w-2/3 text-center">
             <h2
-              className="font-bold text-[64px] text-[#0060aa]"
+              className="font-bold text-2xl lg:text-[64px] text-[#0060aa] my-5 lg:my-0"
               style={{
                 textShadow: "-8px 6px 0px #ffefb8",
               }}
             >
               <span>
-                <span>Online Fee </span>
+                <span>Online Fee </span> <br className="lg:hidden" />
                 <span className="relative animate-svg-1">
                   <span>Payment Options </span>
                   <svg
@@ -27,10 +27,10 @@ const OnlineFee = () => {
                 </span>
               </span>
             </h2>
-            <div className="flex gap-2.5">
-              <div className="w-1/2 z-10">
+            <div className="flex flex-col md:flex-row gap-2.5">
+              <div className="md:w-1/2 z-10">
                 <div
-                  className="text-[28px] flex items-center justify-center font-bold py-16 text-white rounded-t-[22px]"
+                  className="text-[18px] md:text-[28px] flex items-center justify-center font-bold py-16 text-white rounded-t-[22px]"
                   style={{
                     background: "linear-gradient(45deg,#051630,#014d8b)",
                   }}
@@ -43,15 +43,15 @@ const OnlineFee = () => {
                 <div>
                   <Link
                     href="#"
-                    className="bg-[#e31e24] py-3 text-white px-[29px] inline-block w-full text-2xl font-semibold leading-[1] rounded-b-[22px] hover:bg-[#034272]"
+                    className="bg-[#e31e24] py-3 text-white text-base md:px-[29px] inline-block w-full md:text-2xl font-semibold leading-[1] rounded-b-[22px] hover:bg-[#034272]"
                   >
                     <span>Pay Through Collexo</span>
                   </Link>
                 </div>
               </div>
-              <div className="w-1/2 z-10">
+              <div className="md:w-1/2 z-10">
                 <div
-                  className="text-[28px] flex items-center justify-center font-bold py-16 text-white rounded-t-[22px]"
+                  className="text-[18px] md:text-[28px] flex items-center justify-center font-bold py-16 text-white rounded-t-[22px]"
                   style={{
                     background: "linear-gradient(45deg,#051630,#014d8b)",
                   }}
@@ -64,7 +64,7 @@ const OnlineFee = () => {
                 <div>
                   <Link
                     href="#"
-                    className="bg-[#e31e24] py-3 text-white px-[29px] inline-block w-full text-2xl font-semibold leading-[1] rounded-b-[22px] hover:bg-[#034272]"
+                    className="bg-[#e31e24] py-3 text-white px-[29px] inline-block w-full text-base md:text-2xl font-semibold leading-[1] rounded-b-[22px] hover:bg-[#034272]"
                   >
                     <span>Pay Through Collexo</span>
                   </Link>
@@ -72,7 +72,7 @@ const OnlineFee = () => {
               </div>
             </div>
           </div>
-          <div className="w-1/3">
+          <div className="lg:w-1/3 flex items-center justify-center">
             <Image
               src="/admission/payment-procedure.webp"
               width={490}
@@ -82,7 +82,7 @@ const OnlineFee = () => {
           </div>
         </div>
         <div className="max-w-[1664px] mx-auto w-full py-10">
-          <h3 className="text-5xl font-semibold pt-10 pb-5">
+          <h3 className="text-[26px] md:text-5xl font-semibold pt-10 pb-5">
             Offline Fee Payment Options
           </h3>
           <ul>

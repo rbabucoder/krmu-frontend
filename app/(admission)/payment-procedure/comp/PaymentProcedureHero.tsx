@@ -1,10 +1,10 @@
 const PaymentProcedureHero = () => {
   return (
     <>
-      <section className="pt-[8%] pb-20 bg-[#041c3b]">
+      <section className="pt-[140px] lg:pt-[8%] pb-20 px-4 bg-[#041c3b]">
         <div className="max-w-[1600px] mx-auto w-full text-center text-white">
-          <h1 className="text-[80px] font-semibold">Payment Procedure</h1>
-          <p className="text-2xl leading-[1]">
+          <h1 className="text-4xl mb-2.5 lg:mb-0 lg:text-[80px] font-semibold">Payment Procedure</h1>
+          <p className="text-xl lg:text-2xl leading-[1]">
             <em>
               K.R. Mangalam University offers a variety of secure and convenient
               payment methods for all fees, including registration, tuition,

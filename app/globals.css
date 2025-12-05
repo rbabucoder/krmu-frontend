@@ -15,6 +15,42 @@
 
 /* Custom utility class */
 @layer utilities {
+  /* Scholarships */
+
+  .ugpgtable table {
+    width: 100%;
+  }
+  .ugpgtable table tr th {
+    padding: 20px;
+    color: #fff;
+    background: #051630;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .ugpgtable table tr th:first-child {
+    width: 20%;
+    border-top-left-radius: 8px;
+  }
+  .ugpgtable table tr th:last-child {
+    border-top-right-radius: 8px;
+  }
+
+  .ugpgtable table tr td{
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    vertical-align: top;
+  }
+
+
+  .ugpgtable table, .ugpgtable table th, .ugpgtable table td {
+    border: 1px solid #000 !important;
+    border-collapse: collapse;
+    padding: 8px;
+  }
+  /* Scholarships */
+
   /* kree */
   .online_exam_table table {
     width: 100%;
@@ -76,6 +112,23 @@
   }
 
   /* kree */
+
+  .bankinfocontent p {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+  }
+  .bankinfocontent p a,
+  .bankinfocontent a {
+    color: #0000ff;
+  }
+
+  .bankloanaccpanel svg,
+  .paymentprocAccpanel svg {
+    color: #fff;
+    width: 30px;
+    height: 30px;
+  }
 
   /* Career Jobs */
 

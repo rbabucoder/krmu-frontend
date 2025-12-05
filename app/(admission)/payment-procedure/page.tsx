@@ -9,7 +9,7 @@ const page = () => {
       <PaymentProcedureHero />
       <OnlineFee />
       <PaymentProcedureFAQ />
-      <HelpDesk />  
+      <HelpDesk />
     </>
   );
 };
