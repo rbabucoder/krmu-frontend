@@ -15,6 +15,80 @@
 
 /* Custom utility class */
 @layer utilities {
+  /* Fee Structure table */
+
+  @media (max-width: 768px) {
+    .fee_struct_tab_container {
+      flex: none;
+      flex-direction: column;
+      margin: 0 auto 50px;
+    }
+  }
+
+  .feestructtable .table{
+    width: 100%;
+  }
+
+  .feestructtable table {
+    width: 100%;
+  }
+  .feestructtable table > tbody > tr > td {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  .feestructtable table tr:first-child td {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .feestructtable table,
+  .feestructtable table th,
+  .feestructtable table td {
+    border: 1px solid #000 !important;
+    border-collapse: collapse;
+  }
+
+  .feeaccpanel[data-state="open"] {
+    background: linear-gradient(to right, #e31e24, #0060aa, #051630);
+  }
+  .feeaccpanel svg {
+    display: none;
+  }
+
+  .feestructurepaymentaccpanel svg {
+    display: none;
+  }
+
+  .feestructurepaymentaccpanel {
+    position: relative;
+  }
+
+  .feestructurepaymentaccpanel::after {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    background-color: #0060aa;
+    color: #fff;
+    border-radius: 100%;
+    padding: 5px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  .feestructurepaymentaccpanel[data-state="open"]::after {
+    content: "-";
+    font-size: 30px;
+  }
+
+  /* Fee Structure table */
+
   /* Scholarships */
 
   .ugpgtable table {
