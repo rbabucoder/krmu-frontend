@@ -395,6 +395,7 @@ const ScholarUGPG = () => {
                     <table>
                       <thead>
                         <tr>
+                          {" "}
                           <th>Eligibility Criteria</th> <th>Scholarship</th>
                         </tr>
                       </thead>
