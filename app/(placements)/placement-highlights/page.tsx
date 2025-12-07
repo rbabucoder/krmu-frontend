@@ -1,26 +1,35 @@
+import { STRAPI_URL } from "@/app/constant";
+import { getPlacementHighlightData } from "@/lib/api/placement-highlight";
 import Image from "next/image";
 
-const page = () => {
+const page = async () => {
+  const placementHighlightData = await getPlacementHighlightData();
+  const heading = placementHighlightData?.heading;
+  const placementImgs = placementHighlightData?.placement_highlight_img;
+
   return (
     <>
       <section className="pt-20 md:pt-[15%] pb-[10%] bg-[url(/placements/74-scaled.webp)]">
         <div className="max-w-[1664px] mx-auto w-full">
           <h1 className="text-3xl md:text-5xl text-white text-center font-bold">
-            Placement Highlights
+            {heading}
           </h1>
         </div>
       </section>
       <section className="py-[50px] px-4">
         <div className="max-w-[1664px] mx-auto w-full">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-col-3 lg:grid-cols-4 gap-8">
-            {Array.from({ length: 10 }).map((_, i) => {
+            {placementImgs.map((img, i) => {
               return (
-                <div key={i} className="w-full flex items-center justify-center">
+                <div
+                  key={i}
+                  className="w-full flex items-center justify-center"
+                >
                   <Image
-                    src="/placements/rishav-bakshi-pr.webp"
+                    src={`${STRAPI_URL}${img?.url}`}
                     width={377}
                     height={377}
-                    alt="Rishav"
+                    alt={img?.alternativeText || ""}
                     className="border border-black"
                   />
                 </div>
