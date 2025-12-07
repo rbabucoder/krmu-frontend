@@ -3,7 +3,6 @@ import { NextResponse } from "next/server";
 import { ListObjectsV2Command } from "@aws-sdk/client-s3";
 import { r2 } from "@/lib/constants/r2";
 
-
 export async function POST(req: Request) {
   try {
     const { prefix } = await req.json();
@@ -11,7 +10,7 @@ export async function POST(req: Request) {
     const command = new ListObjectsV2Command({
       Bucket: process.env.R2_BUCKET!,
       Prefix: prefix ?? "",
-      Delimiter: "/", // groups "folders"
+      Delimiter: "/",
       MaxKeys: 1000,
     });
 
@@ -21,8 +20,15 @@ export async function POST(req: Request) {
       folders: data.CommonPrefixes?.map((p) => p.Prefix) || [],
       files: data.Contents?.filter((c) => c.Key !== (prefix ?? "")) || [],
     });
-  } catch (err: any) {
+  } catch (err: unknown) {
     console.error("R2 LIST ERROR", err);
-    return NextResponse.json({ error: err?.message || String(err) }, { status: 500 });
+
+    const message =
+      err instanceof Error ? err.message : "Unknown server error";
+
+    return NextResponse.json(
+      { error: message },
+      { status: 500 }
+    );
   }
 }

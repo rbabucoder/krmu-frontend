@@ -18,9 +18,9 @@ export default function R2Browser() {
   const PUBLIC_BASE = process.env.NEXT_PUBLIC_R2_PUBLIC_URL;
 
   // debug
-  useEffect(() => {
-    console.log("PUBLIC_BASE:", PUBLIC_BASE);
-  }, []);
+  // useEffect(() => {
+  //   console.log("PUBLIC_BASE:", PUBLIC_BASE);
+  // }, []);
 
   const loadData = async () => {
     try {

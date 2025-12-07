@@ -1,4 +1,3 @@
-import { FeeStructHero } from "@/lib/types/feestructure";
 import Link from "next/link";
 
 type Props = {

@@ -5,7 +5,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import Link from "next/link";
 import { FeeStructureSAARCTab } from "@/lib/types/feestructuresaarc";
 
 type Props = {

@@ -18,7 +18,7 @@ export async function getPlacementHighlightData(): Promise<
 
 export interface PlacementHighlightResponse {
   data: PlacementHighlightData;
-  meta: Record<string, any>;
+  meta: Record<string, unknown>;
 }
 
 export interface PlacementHighlightData {
