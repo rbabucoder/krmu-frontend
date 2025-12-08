@@ -6,7 +6,7 @@ const ContactEnquiries = () => {
     <section className="bg-[url(/placements/contact-bg.webp)] bg-no-repeat bg-cover bg-center py-[30px] px-4">
       <div className="max-w-[1664px] mx-auto lg:flex">
         <div className="lg:w-1/2 text-[#3d5fa5]">
-          <h4 className="leading-[1.2] text-[45px] font-semibold mb-5">
+          <h4 className="leading-[1.2] text-3xl sm:text-[45px] font-semibold mb-5">
             Contact and Inquiries
           </h4>
           <p className="mb-5">
@@ -25,7 +25,7 @@ const ContactEnquiries = () => {
               Link
             </Link>
           </p>
-          <ul>
+          <ul className="break-all">
             <li className="flex items-center gap-3 mb-2.5">
               <Image
                 src="/placements/phone-solid-full.svg"
@@ -42,7 +42,9 @@ const ContactEnquiries = () => {
                 height={22}
                 alt="phone"
               />{" "}
-              <Link href="mailto:director.cdc@krmangalam.edu.in">director.cdc@krmangalam.edu.in</Link>{" "}
+              <Link href="mailto:director.cdc@krmangalam.edu.in">
+                director.cdc@krmangalam.edu.in
+              </Link>{" "}
             </li>
           </ul>
         </div>

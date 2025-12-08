@@ -41,8 +41,6 @@ const page = async ({ params }: Props) => {
     ?.replace(/-/g, " ") // full time
     ?.replace(/\b\w/g, (c) => c.toUpperCase()); // Full Time
 
-  console.log("jobType", jobType);
-
   return (
     <section className="py-[140px]">
       <div className="max-w-[1600px] mx-auto w-full flex gap-[30px]">

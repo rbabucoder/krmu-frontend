@@ -1,10 +1,15 @@
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const TeamCIFCard = () => {
   return (
-    <div className="bg-[url(/research/card-bg.webp)] bg-no-repeat text-white bg-cover flex flex-col sm:flex-row items-center justify-center rounded-[20px] mt-5">
+    <Link
+      href="/faculty/dr-prabhakar-bhandari"
+      target="_blank"
+      className="bg-[url(/research/card-bg.webp)] bg-no-repeat text-white bg-cover flex flex-col sm:flex-row items-center justify-center rounded-[20px] mt-5"
+    >
       <div className="md:w-1/4">
         <Image
           src="/research/prabhakar.webp"
@@ -23,7 +28,7 @@ const TeamCIFCard = () => {
       <div className="md:w-1/4 flex justify-end">
         <ChevronRight size={60} color="#ffffff" strokeWidth={4} />
       </div>
-    </div>
+    </Link>
   );
 };
 

@@ -1,10 +1,10 @@
-import Image from "next/image";
+import CifSlides from "./CifSlides";
 
 export const CIFIntegral = () => {
   return (
     <section className="py-[50px] bg-[url(/research/ciintegralbg.webp)] bg-cover bg-no-repeat bg-center px-4">
       <div className="max-w-[1664px] mx-auto w-full text-white ciful md:flex gap-10">
-        <div className="md:w-1/2">
+        <div className="md:w-3/5">
           <p>
             Central Instrumentation Facility (CIF) is an Integral part of K.R
             Mangalam University. CIF is a modern lab equipped with advanced
@@ -17,9 +17,9 @@ export const CIFIntegral = () => {
             and students. The CIF endeavors to foster scientific innovation and
             enhance the quality of research.
           </p>
-          <br /> 
+          <br />
           <p>Objectives</p>
-          <br /> 
+          <br />
           <ul className="">
             <li>
               Provide access to advanced scientific instruments and equipment
@@ -36,8 +36,8 @@ export const CIFIntegral = () => {
             </li>
           </ul>
         </div>
-        <div className="md:w-1/2 flex items-center justify-center mt-10">
-            <Image src="/research/slideimg.webp" width={600} height={438} alt="" />
+        <div className="md:w-2/5">
+          <CifSlides />
         </div>
       </div>
     </section>

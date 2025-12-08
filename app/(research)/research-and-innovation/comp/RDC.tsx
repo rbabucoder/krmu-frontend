@@ -3,9 +3,9 @@ import Image from "next/image";
 const RDC = () => {
   return (
     <>
-      <div className="max-w-[1664px] mx-auto w-full flex items-center">
-        <div className="w-1/2 text-white">
-          <h2 className="text-5xl font-semibold mb-5">
+      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row items-center">
+        <div className="lg:w-1/2 text-white">
+          <h2 className="text-3xl md:text-5xl font-semibold mb-5">
             Research <br /> and Development Cell (RDC)
           </h2>
           <p>
@@ -30,7 +30,7 @@ const RDC = () => {
             conferences and both applied and granted projects.
           </p>
         </div>
-        <div className="w-1/2 flex justify-center">
+        <div className="lg:w-1/2 flex justify-center">
             <div className="text-center">
 
             <Image src="/research/seema.webp" width={431} height={537} alt="Seema" />

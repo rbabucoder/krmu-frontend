@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const ResearchHeroSection = () => {
   return (
@@ -19,9 +20,11 @@ const ResearchHeroSection = () => {
           </div>
           <div className="p-5 bg-[#051630] text-white font-semibold rounded-[14px] flex flex-col items-center justify-center text-center min-h-56">
             <span className="text-[44px] md:text-[65px] leading-[1.3]">
-              110+
+              2Cr+
             </span>
-            <span className="text-xl">Number of Ph.D. Awarded</span>
+            <span className="text-xl">
+              Total amount of consultancy <br /> grant awarded
+            </span>
           </div>
           <div className="p-5 bg-[#051630] text-white font-semibold rounded-[14px] flex flex-col items-center justify-center text-center min-h-56">
             <span className="text-[44px] md:text-[65px] leading-[1.3]">
@@ -33,19 +36,22 @@ const ResearchHeroSection = () => {
           </div>
           <div className="p-5 bg-[#051630] text-white font-semibold rounded-[14px] flex flex-col items-center justify-center text-center min-h-56">
             <span className="text-[44px] md:text-[65px] leading-[1.3]">
-              200+
+              4000+
             </span>
-            <span className="text-xl">Total number of Patents</span>
+            <span className="text-xl">
+              Total number of publications, <br /> chapters and books by
+              university
+            </span>
           </div>
         </div>
         <p>
           <strong>
-            Innovation fuels discovery at the K.R. Mangalam University,
+            {` Innovation fuels discovery at the K.R. Mangalam University,
             contributed by dedicated faculties and over 5,000 undergraduates,
             postgraduates, and research scholars working in the
             multidisciplinary domains reflecting compliance with the United
             Nation’s Sustainable Development Goals (SDG) and uplifting Research
-            Excellence Framework at the global level.
+            Excellence Framework at the global level.`}
           </strong>
         </p>
         <br />
@@ -67,7 +73,11 @@ const ResearchHeroSection = () => {
           inculcating the findings for benefit of the society.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-20 gap-5 gap">
-          <div className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit my-8">
+          <Link
+            href="/research-and-innovation"
+            className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit my-8"
+            target="_blank"
+          >
             <span>Research and Development Cell (RDC)</span>{" "}
             <Image
               src="/placements/white-arrow.svg"
@@ -75,8 +85,12 @@ const ResearchHeroSection = () => {
               height={30}
               alt=""
             />
-          </div>
-          <div className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8">
+          </Link>
+          <Link
+            href="/cif"
+            className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8"
+            target="_blank"
+          >
             <span>Central Instrumentation Facility (CIF)</span>{" "}
             <Image
               src="/placements/white-arrow.svg"
@@ -84,8 +98,12 @@ const ResearchHeroSection = () => {
               height={30}
               alt=""
             />
-          </div>
-          <div className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8">
+          </Link>
+          <Link
+            href="/keic"
+            className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8"
+            target="_blank"
+          >
             <span>
               K.R. Mangalam Entrepreneurship and Innovation Center (KEIC)
             </span>{" "}
@@ -95,8 +113,12 @@ const ResearchHeroSection = () => {
               height={30}
               alt=""
             />
-          </div>
-          <div className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8">
+          </Link>
+          <Link
+            href="/ipr-legal-ethical-matters-cell"
+            className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8"
+            target="_blank"
+          >
             <span>IPR, Legal & Ethical Matters Cell</span>{" "}
             <Image
               src="/placements/white-arrow.svg"
@@ -104,8 +126,12 @@ const ResearchHeroSection = () => {
               height={30}
               alt=""
             />
-          </div>
-          <div className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8">
+          </Link>
+          <Link
+            href="/research-and-innovation/#_ongoing-collab"
+            className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8"
+            target="_blank"
+          >
             <span>Ongoing Projects and Collaborations</span>{" "}
             <Image
               src="/placements/white-arrow.svg"
@@ -113,8 +139,12 @@ const ResearchHeroSection = () => {
               height={30}
               alt=""
             />
-          </div>
-          <div className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8">
+          </Link>
+          <Link
+            href="/research-and-innovation/#_res-highlights"
+            className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8"
+            target="_blank"
+          >
             <span>Research Highlights</span>{" "}
             <Image
               src="/placements/white-arrow.svg"
@@ -122,8 +152,12 @@ const ResearchHeroSection = () => {
               height={30}
               alt=""
             />
-          </div>
-          <div className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8">
+          </Link>
+          <Link
+            href="/research-and-innovation/#research-achievements"
+            className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8"
+            target="_blank"
+          >
             <span>Research Achievements</span>{" "}
             <Image
               src="/placements/white-arrow.svg"
@@ -131,8 +165,12 @@ const ResearchHeroSection = () => {
               height={30}
               alt=""
             />
-          </div>
-          <div className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8">
+          </Link>
+          <Link
+            href="/research-and-innovation/#_publications-achievements"
+            className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8"
+            target="_blank"
+          >
             <span>Publications and Achievements</span>{" "}
             <Image
               src="/placements/white-arrow.svg"
@@ -140,8 +178,12 @@ const ResearchHeroSection = () => {
               height={30}
               alt=""
             />
-          </div>
-          <div className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8">
+          </Link>
+          <Link
+            href="/research-and-innovation/#_academics-resources"
+            className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8"
+            target="_blank"
+          >
             <span>Academic Research</span>{" "}
             <Image
               src="/placements/white-arrow.svg"
@@ -149,7 +191,7 @@ const ResearchHeroSection = () => {
               height={30}
               alt=""
             />
-          </div>
+          </Link>
         </div>
       </div>
     </section>

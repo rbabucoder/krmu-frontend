@@ -17,7 +17,8 @@ const page = () => {
   return (
     <>
       <ResearchInnovationHeroSection />
-      <section className="pt-[30px] pb-[50px] bg-[url(/research/bg-gradient.webp)] bg-cover bg-center">
+
+      <section className=" px-4 pt-[30px] pb-[50px] bg-[url(/research/bg-gradient.webp)] bg-cover bg-center">
         <RDC />
         <MessageDeanResearch />
         <TeamRDC />
@@ -29,7 +30,7 @@ const page = () => {
       <ResearchHighlight />
       <ResearchAchievements />
       <PublicationAchievements />
-      <section className="py-[50px] bg-[url(/research/acadbg.webp)] bg-cover">
+      <section className="py-[50px] px-4 bg-[url(/research/acadbg.webp)] bg-cover">
         <AcademicResources />
         <TeamLibrary />
       </section>

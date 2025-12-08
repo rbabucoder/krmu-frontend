@@ -1,12 +1,12 @@
-import Image from "next/image";
 import Link from "next/link";
+import CIFSlide from "./CIFSlide";
 
 const CIF = () => {
   return (
-    <section className="bg-[url(/research/facbg.webp)] bg-cover bg-center pt-[50px] pb-[30px]">
-      <div className="max-w-[1664px] mx-auto w-full flex gap-10">
-        <div className="text-white w-3/5">
-          <h3 className="text-4xl font-semibold mb-5">
+    <section className="bg-[url(/research/facbg.webp)] bg-cover bg-center pt-[50px] pb-[30px] px-4">
+      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10">
+        <div className="text-white lg:w-3/5">
+          <h3 className="text-3xl md:text-5xl font-semibold mb-5">
             Central Instrumentation Facility (CIF)
           </h3>
           <p>
@@ -25,18 +25,13 @@ const CIF = () => {
             available at CIF include HPLC, UV-VIS spectrophotometer.
           </p>
         </div>
-        <div className="w-2/5">
-          <Image
-            src="/research/cifslide.webp"
-            width={600}
-            height={438}
-            alt=""
-          />
+        <div className="lg:w-2/5">
+          <CIFSlide />
         </div>
       </div>
       <div className="max-w-[1664px] mx-auto w-full flex items-center justify-center mt-10">
         <Link
-          href="#"
+          href="/cif"
           className="blink-effect bg-[#e31e24] py-2.5 px-5 leading-[1] inline-block text-white rounded-[4px]"
         >
           Know More

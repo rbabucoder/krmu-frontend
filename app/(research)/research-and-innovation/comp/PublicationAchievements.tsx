@@ -2,10 +2,10 @@ import Image from "next/image";
 
 const PublicationAchievements = () => {
   return (
-    <section className="pt-[30px] bg-[#393c68]">
-      <div className="max-w-[1664px] mx-auto w-full flex items-center">
-        <div className="text-white w-1/2">
-          <h3 className="text-5xl font-semibold mb-5">
+    <section className="pt-[30px] bg-[#393c68] px-4" id="_publications-achievements">
+      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row items-center">
+        <div className="text-white lg:w-1/2">
+          <h3 className="text-3xl md:text-5xl font-semibold mb-5">
             Publications and Achievements
           </h3>
           <p>
@@ -18,22 +18,22 @@ const PublicationAchievements = () => {
             practical application of our research. Opportunities for Researchers
             and Students.
           </p>
-          <div className="grid grid-cols-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
             <div className="flex flex-col justify-center text-center p-8 text-white">
-              <span className="text-[50px] leading-[1]">3000+</span>
+              <span className="text-[50px] leading-[1]">4000+</span>
               <span className="text-xl uppercase">Publications</span>
             </div>
             <div className="flex flex-col justify-center text-center p-8 text-white">
-              <span className="text-[50px] leading-[1]">7.6</span>
+              <span className="text-[50px] leading-[1]">8.9</span>
               <span className="text-xl uppercase">CITATION INDEX</span>
             </div>
             <div className="flex flex-col justify-center text-center p-8 text-white">
-              <span className="text-[50px] leading-[1]">47</span>
+              <span className="text-[50px] leading-[1]">50</span>
               <span className="text-xl">H INDEX</span>
             </div>
           </div>
         </div>
-        <div className="w-1/2 flex justify-center">
+        <div className="lg:w-1/2 flex justify-center">
             <Image src="/research/hand.webp" width={601} height={677} alt="" />
         </div>
       </div>

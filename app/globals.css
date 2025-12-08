@@ -15,6 +15,247 @@
 
 /* Custom utility class */
 @layer utilities {
+  /* KEIC */
+
+  .keic-member-table tr:nth-child(1) {
+    background: #051630;
+    color: #fff;
+  }
+  .keic-member-table table {
+    width: 100%;
+  }
+  .keic-member-table table tr:not(:first-child) td {
+    height: 68px;
+    text-align: center;
+  }
+  .keic-member-table table,
+  .keic-member-table table th,
+  .keic-member-table table td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 8px;
+  }
+
+  .keic-member-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  .keic-member-table {
+    max-width: 800px;
+    height: 435px;
+    overflow: auto;
+    width: 100%;
+  }
+
+  .keic-member-table tr td:nth-child(1) {
+    width: 10%;
+  }
+
+  .keicProgOffcontent p,
+  .keickeyinit p,
+  .keicevents p {
+    margin-bottom: 20px;
+  }
+
+  .keicProgOffcontent ol {
+    list-style: decimal;
+    padding-left: 40px;
+    margin: 10px 0px;
+  }
+  .keicevents ul {
+    list-style: disc;
+    padding-left: 40px;
+    margin: 10px 0px;
+  }
+
+  .keicProgOffcontent ol li,
+  .keicevents ul li {
+    margin: 10px 0px;
+  }
+
+  /* KEIC */
+
+  /* Research Centre */
+
+  .teamlibcard .teamlibcontent h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+
+  .res-cen-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .res-cen-table td {
+    padding: 14px 18px;
+    text-align: left;
+    font-size: 16px;
+  }
+  .res-cen-table td:first-child a {
+    text-decoration: none;
+    color: #222222;
+    font-weight: 500;
+    display: inline-block;
+    transition: 0.3s;
+
+    font-size: 16px;
+  }
+
+  .res-cen-table,
+  .res-cen-table th,
+  .res-cen-table td {
+    border: 1px solid #000000 !important;
+    border-collapse: collapse;
+  }
+  .res-cen-table td:last-child a:hover {
+    background-color: #004080;
+    color: #ffffff;
+  }
+
+  .res-cen-table td:last-child a {
+    text-decoration: none;
+    color: #004080;
+    font-weight: 600;
+    border: 1px solid #004080;
+    padding: 6px 12px !important;
+    border-radius: 6px;
+    transition: 0.3s;
+    display: inline-block;
+  }
+  .res-cen-table tr:nth-child(even) {
+    background-color: #f4f8fc;
+  }
+  /* Research Centre */
+
+  /* Admission2 */
+
+  .fee_tab {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(254, 253, 254);
+    height: 68px;
+    position: relative;
+    margin-bottom: 2px;
+  }
+
+  .fee_tab::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: url("/admission2/chevron-down-black.svg");
+    width: 20px;
+    height: 20px;
+  }
+
+  .cdc_card:hover .cdc_text_white {
+    color: #fff;
+    z-index: 99999999;
+    position: relative;
+  }
+
+  .fee_tab[data-state="active"] {
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 30px 20px;
+    transform: scale(1.01);
+    color: #0060aa;
+    align-items: center;
+  }
+  .fee_tab[data-state="active"]::after {
+    transform: rotate(270deg);
+  }
+
+  .admission-process .ap_badge {
+    background: #e61f21;
+    text-align: center;
+    border-radius: 50px;
+    padding: 10px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .admission-process .badge-content {
+    font-size: 18px;
+  }
+
+  .common-btn-1 {
+    background: #0a41a1;
+    color: #fff;
+    padding: 15px 30px;
+    line-height: 1;
+    border: 1px solid #0a41a1;
+    border-radius: 10px;
+    outline: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    gap: 20px;
+  }
+  .custom-card {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    /* border: 1px solid #e8e8e8; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+  .custom-card:hover {
+    transform: scale(1.01);
+  }
+  .custom-card img {
+    width: 90px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 15px;
+  }
+  .custom-card .card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+  .custom-card .card-text .card-title {
+    margin: 0 0 10px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #0a41a1;
+    line-height: 1 !important;
+  }
+  .custom-card .card-text p {
+    margin: 0;
+    font-size: 14px;
+    padding-right: 22px;
+    text-align: left;
+  }
+  .custom-button {
+    width: 100%;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border: none;
+  }
+
+  /* Admission2 */
+
   /* Fee Structure table */
 
   @media (max-width: 768px) {
@@ -25,7 +266,7 @@
     }
   }
 
-  .feestructtable .table{
+  .feestructtable .table {
     width: 100%;
   }
 
@@ -1398,6 +1639,16 @@
     overflow: hidden;
     max-width: 150px;
     transition: all 0.4s ease;
+  }
+  @media (max-width: 768px) {
+    .profile-card {
+      flex-direction: column;
+    }
+    .profile-card .card,
+    .profile-card .card img {
+      width: 100%;
+      max-width: 100%;
+    }
   }
   .profile-card .card img {
     position: relative;

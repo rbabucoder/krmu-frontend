@@ -1,20 +1,26 @@
-import Image from "next/image";
+import RISlide from "./RISlide";
 
 const OnGoing = () => {
+  const onGoingImgSlies = [
+    {
+      imgUrl: "/ongoing/item-1.webp",
+    },
+    {
+      imgUrl: "/ongoing/item-2.webp",
+    },
+    {
+      imgUrl: "/ongoing/item-3.jpg",
+    },
+  ];
+
   return (
-    <section className="bg-[#c4d9f4] bg-cover bg-center pt-[50px] pb-[30px]">
-      <div className="max-w-[1664px] mx-auto w-full flex gap-10 items-center">
-        <div className="w-1/2">
-          <Image
-            src="/research/cifslide.webp"
-            width={766}
-            height={451}
-            alt=""
-            className="w-full"
-          />
+    <section className="bg-[#c4d9f4] bg-cover bg-center pt-[50px] pb-[30px] px-4" id="_ongoing-collab">
+      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10 items-center">
+        <div className="lg:w-1/2">
+          <RISlide slide={onGoingImgSlies} />
         </div>
-        <div className=" w-1/2">
-          <h3 className="text-[44px] text-[#3d5fa5] font-semibold mb-5 leading-[1.2]">
+        <div className="lg:w-1/2">
+          <h3 className="text-3xl md:text-[44px] text-[#3d5fa5] font-semibold mb-5 leading-[1.2]">
             Ongoing Projects and <br /> Collaborations
           </h3>
           <p>

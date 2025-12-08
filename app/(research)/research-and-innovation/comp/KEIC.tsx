@@ -1,20 +1,15 @@
-import Image from "next/image";
 import Link from "next/link";
+import KeicSlide from "./KeicSlide";
 
 const KEIC = () => {
   return (
-    <section className="bg-black bg-cover bg-center pt-[50px] pb-[30px]">
-      <div className="max-w-[1664px] mx-auto w-full flex gap-10 items-center">
-        <div className="w-2/5">
-          <Image
-            src="/research/cifslide.webp"
-            width={600}
-            height={438}
-            alt=""
-          />
+    <section className="bg-black bg-cover bg-center pt-[50px] pb-[30px] px-4">
+      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10 items-center">
+        <div className="lg:w-2/5">
+          <KeicSlide />
         </div>
-        <div className="text-white w-3/5">
-          <h3 className="text-[44px] font-semibold mb-5 leading-[1.2]">
+        <div className="text-white lg:w-3/5">
+          <h3 className="text-3xl md:text-[44px] font-semibold mb-5 leading-[1.2]">
             K.R. Mangalam Entrepreneurship <br /> and Innovation Center (KEIC)
           </h3>
           <p>
@@ -27,10 +22,7 @@ const KEIC = () => {
             [https://www.gcecglobal.com], preparing the next generation of
             entrepreneurial leaders.
           </p>
-          <Link
-            href="#"
-            className="blink-effect common-btn-3 mt-5"
-          >
+          <Link href="/keic" className="blink-effect common-btn-3 mt-5">
             Know More
           </Link>
         </div>

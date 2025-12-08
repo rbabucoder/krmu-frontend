@@ -8,7 +8,6 @@ import FeeStructureSearch from "./FeeStructureSearch";
 const page = async () => {
   const feeStructure = await getFeeStructurePageData();
 
-  console.log('feeStructure', feeStructure);
 
   // API response → fee_structure_tab array
   const feeStructTab = feeStructure?.fee_structure_tab;

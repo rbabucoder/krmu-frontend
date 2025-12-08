@@ -4,12 +4,12 @@ import Link from "next/link";
 const AcademicResources = () => {
   return (
     <>
-      <div className="max-w-[1664px] mx-auto w-full text-white">
-        <h3 className="mb-5 text-[45px] font-semibold">Academic Resources</h3>
+      <div className="max-w-[1664px] mx-auto w-full text-white" id="_academics-resources">
+        <h3 className="mb-5 text-3xl md:text-[45px] font-semibold">Academic Resources</h3>
         <h4 className="mb-5 text-xl font-semibold">CENTRAL LIBRARY</h4>
       </div>
-      <div className="max-w-[1664px] mx-auto w-full flex text-white text-justify gap-10">
-        <div className="w-1/2">
+      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row text-white text-justify gap-10">
+        <div className="lg:w-1/2">
           <p>
             K.R. Mangalam University Library denoted as Central Library which
             has spreaded over 15683 sq. ft. and have a collection of 45,000
@@ -31,7 +31,7 @@ const AcademicResources = () => {
             platform.
           </p>
         </div>
-        <div className="w-1/2">
+        <div className="lg:w-1/2">
           <p>
             The Library alienated into many sections for its smooth functioning
             & services like, Acquisition Section, Technical Section, Processing
@@ -55,19 +55,19 @@ const AcademicResources = () => {
         </div>
       </div>
       <div className="max-w-[1664px] mx-auto w-full mt-10">
-        <div className="grid grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           <div>
-            <Image src="/research/acad.webp" width={490} height={278} alt="" />
+            <Image src="/academicResources/item-1.webp" width={490} height={278} alt="" />
           </div>
           <div>
-            <Image src="/research/acad.webp" width={490} height={278} alt="" />
+            <Image src="/academicResources/item-2.webp" width={490} height={278} alt="" />
           </div>
           <div>
-            <Image src="/research/acad.webp" width={490} height={278} alt="" />
+            <Image src="/academicResources/item-3.webp" width={490} height={278} alt="" />
           </div>
         </div>
         <div className="py-10 flex justify-center">
-          <Link href="" className="common-btn-3">
+          <Link href="https://library.krmangalam.edu.in/user?_gl=1*1i62dbw*_gcl_au*MTk0MzAxMjY5Mi4xNzY1MTcwMjg4#/home" className="common-btn-3">
             Know More
           </Link>
         </div>

@@ -5,6 +5,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
+import Link from "next/link";
 
 const MeetOurTeam = () => {
   return (
@@ -26,11 +27,26 @@ const MeetOurTeam = () => {
                 />
               </div>
               <CardContent className="bg-[#cb000d] px-2.5 pt-2.5 pb-4 text-white flex items-center justify-center flex-col min-h-[202px] f-full">
-                <CardTitle className="text-xl leading-[1.6] font-semibold">
+                <CardTitle className="text-xl leading-[1.6] font-semibold mb-5">
                   Dr. Vibha Thakur
                 </CardTitle>
                 <CardDescription className="min-h-24 text-center text-white text-base">
-                  Director (Career Development Center)
+                  <span>
+                    <strong>Director (Career Development Center)</strong>
+                  </span>
+                  
+                  <p className="my-5">
+                    <strong>Email- </strong>{" "}
+                    <Link href="mailto:director.cdc@krmangalam.edu.in">
+                      director.cdc@krmangalam.edu.in.
+                    </Link>
+                  </p>
+                  <p className="my-5">
+                    <strong>Contact Details- </strong>{" "}
+                    <Link href="tel:+91-9827085056">
+                      +91-9827085056
+                    </Link>
+                  </p>
                 </CardDescription>
               </CardContent>
             </Card>
