@@ -5,13 +5,7 @@ const nextConfig: NextConfig = {
   // assetPrefix: "/blog3",
   // basePath: "/blog3",
   // assetPrefix: "https://krmangalam.netlify.app",
-
   images: {
-    domains: [
-    "localhost",
-    "truthful-cabbage-82fd27e8f6.media.strapiapp.com",
-    "www.krmangalam.edu.in"
-  ],
     remotePatterns: [
       {
         protocol: "http",
