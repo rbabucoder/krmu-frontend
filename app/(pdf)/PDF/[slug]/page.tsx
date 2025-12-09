@@ -8,7 +8,7 @@ type Props = {
 const page = async ({ params }: Props) => {
   const { slug } = await params;
 
-  const pdfData = await getPDFPageData("phd-submission-checklist");
+  const pdfData = await getPDFPageData(slug);
   const currentPdfPage = pdfData?.find((pdf) => pdf?.slug === slug);
 
   if (!currentPdfPage) return notFound();
