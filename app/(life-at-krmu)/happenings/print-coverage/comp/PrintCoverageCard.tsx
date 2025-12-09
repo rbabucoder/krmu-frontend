@@ -16,7 +16,7 @@ interface PrintCoverageCardProps {
 
 const PrintCoverageCard = ({ data }: PrintCoverageCardProps) => {
   return (
-    <div className="p-5 bg-[#141444] flex text-white w-full sm:w-1/2 md:w-1/4 rounded-2xl">
+    <div className="p-5 bg-[#141444] flex text-white w-full  rounded-2xl">
       <div className="w-[70%]">
         <h4 className="text-lg font-semibold mb-2.5">{data.Title}</h4>
         <h5>{data?.desc}</h5>

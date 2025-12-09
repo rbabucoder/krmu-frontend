@@ -4,7 +4,7 @@ import { StrapiMedia } from "@/lib/types/common";
 
  
  interface VideoProps {
-  video: StrapiMedia | null;
+  video: StrapiMedia  | null;
 }
  
  

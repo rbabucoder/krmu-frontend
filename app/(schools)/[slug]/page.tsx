@@ -25,6 +25,8 @@ import {
 import { getSchoolSEO } from "@/lib/api/common";
 import { Metadata } from "next";
 import SchoolIndustyVideo from "../SchoolComponents/SchoolIndustyVideo";
+import { checkCustomPage } from "@/lib/constants/page";
+import CustomPage from "@/app/(page)/CustomPage";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -56,7 +58,14 @@ export default async function Page({ params }: Props) {
 
   const allSchools = await getSchoolPage();
 
+  const custPage = await checkCustomPage(slug);
+  const isPage = custPage[0];
+
   const school = allSchools.find((school) => school.urlslug === slug);
+  if (isPage?.is_custom_page === "custom_page") {
+    return <CustomPage slug={isPage?.slug || ""} />;
+  }
+
   // If not found, redirect to 404 page
   if (!school) return notFound();
 

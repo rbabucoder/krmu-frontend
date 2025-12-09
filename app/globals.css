@@ -15,6 +15,26 @@
 
 /* Custom utility class */
 @layer utilities {
+  /* Life At krmu overview */
+
+  .lkoverview {
+    max-width: calc(1600px + 0px);
+    margin-left: calc(-0px / 2);
+    margin-right: calc(-0px / 2);
+  }
+
+  .impactinglivescard ul{
+    list-style: disc;
+    padding-left: 40px;
+    margin: 10px 0px;
+  
+  }
+    .impactinglivescard ul li{
+      margin: 10px 0px;
+    }
+
+  /* Life At krmu overview */
+
   /* KEIC */
 
   .keic-member-table tr:nth-child(1) {

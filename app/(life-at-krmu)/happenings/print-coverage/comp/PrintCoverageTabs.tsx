@@ -74,7 +74,7 @@ const PrintCoverageTabs = () => {
 
           <TabsContent value={activeYear}>
             {coverageData.length > 0 ? (
-              <div className="flex flex-wrap gap-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                 {coverageData.map((item) => (
                   <PrintCoverageCard key={item.id} data={item} />
                 ))}
