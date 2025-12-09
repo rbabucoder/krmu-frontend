@@ -49,7 +49,7 @@ const PHDRegulationCards = () => {
         <div className="bg-[url(/phd-regulation/rectangle.webp)] bg-cover bg-no-repeat bg-center p-5 flex items-center justify-center text-white rounded-[40px]">
           <ul className="text-center flex flex-col gap-2.5 text-lg">
             <li className="relative">
-              <Link href="/regulations-2" className="hover:text-[#2d7cc1]">
+              <Link href="/PDF/regulations-2" className="hover:text-[#2d7cc1]">
                 <strong>Ph.D. Regulations and SoPs for Ph.D. Programmes</strong>
               </Link>{" "}
             </li>
