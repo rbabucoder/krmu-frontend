@@ -50,7 +50,7 @@ const PHDRegulationCards = () => {
           <ul className="text-center flex flex-col gap-2.5 text-lg">
             <li className="relative">
               <Link href="/regulations-2" className="hover:text-[#2d7cc1]">
-                <strong>Call for Ph.D. Admission</strong>
+                <strong>Ph.D. Regulations and SoPs for Ph.D. Programmes</strong>
               </Link>{" "}
             </li>
           </ul>
