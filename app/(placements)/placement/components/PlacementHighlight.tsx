@@ -61,6 +61,7 @@ const PlacementHighlight = ({ heading, slideImages, btn }: Props) => {
                 className={`py-[11px] px-[23px] text-sm text-white bg-[#e20910] hover:bg-[#034272] rounded-sm font-medium inline-block ${
                   btn?.buttonclass || ""
                 }`}
+                target="_blank"
               >
                 {btn?.buttontext}
               </Link>

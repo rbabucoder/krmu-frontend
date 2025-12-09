@@ -2,7 +2,7 @@ import { FETCH_STRAPI_URL } from "@/app/constant";
 
 export async function getCDCTeam(): Promise<CdcTeamResponse["data"]> {
   const res = await fetch(
-    `${FETCH_STRAPI_URL}/api/career-development-centre-teams?fields[0]=cdc_name&fields[1]=cdc_designation&populate[cdc_team_img][fields][0]=url`,
+    `${FETCH_STRAPI_URL}/api/career-development-centre-teams?fields[0]=cdc_name&fields[1]=cdc_designation&populate[cdc_team_img][fields][0]=url&pagination[pageSize]=30&pagination[page]=1`,
     {
       next: {
         revalidate: 60,
@@ -14,7 +14,6 @@ export async function getCDCTeam(): Promise<CdcTeamResponse["data"]> {
   const json = await res.json();
   return json.data;
 }
-
 export interface CdcTeamResponse {
   data: CdcTeamItem[];
   meta: {
@@ -42,10 +41,15 @@ export interface CdcTeamImage {
 }
 
 // {
-//   fields: ['cdc_name', 'cdc_designation'],
-//   populate: {
-//      cdc_team_img: {
-//        fields: ['url']
-//      }
+// fields: ['cdc_name', 'cdc_designation'],
+// populate: {
+//   cdc_team_img:{
+//     fields: ['url']
 //   }
+// },
+// pagination: {
+//   pageSize: 30,
+//   page: 1,
+// },
+
 // }

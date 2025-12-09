@@ -13,7 +13,7 @@ type Props = {
 };
 
 const BankNbfc = ({ bankLoansCards, nbfccardsData }: Props) => {
-  console.log("nbfccardsData", nbfccardsData);
+
 
   return (
     <>
