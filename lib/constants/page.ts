@@ -4,7 +4,7 @@ export async function getCustomPageData(
   slug: string = ""
 ): Promise<CustomPageResponse["data"]> {
   const res = await fetch(
-    `${FETCH_STRAPI_URL}/api/pages?filters[slug][$eq]=${slug}&populate[fields][0]=title&populate[fields][1]=maincontent&populate[fields][2]=custom_page_css&populate[fields][3]=custom_page_js&populate[fields][4]=is_custom_page&populate[seo][populate]=*`,
+    `${FETCH_STRAPI_URL}/api/pages?filters[slug][$eq]=${slug}&populate[fields][0]=title&populate[fields][1]=maincontent2&populate[fields][2]=custom_page_css&populate[fields][3]=custom_page_js&populate[fields][4]=is_custom_page&populate[seo][populate]=*`,
     {
       next: {
         revalidate: 60,
@@ -64,7 +64,7 @@ export interface PageData {
   documentId: string;
   slug: string;
   title: string;
-  maincontent: string | null;
+  maincontent2: string | null;
   is_custom_page: string;
   custom_page_css: string | null;
   custom_page_js: string | null;

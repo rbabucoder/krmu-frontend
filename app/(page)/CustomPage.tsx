@@ -24,7 +24,7 @@ const CustomPage = async ({ slug }: Props) => {
 
       <div
         dangerouslySetInnerHTML={{
-          __html: currentCustomPage?.maincontent || "",
+          __html: currentCustomPage?.maincontent2 || "",
         }}
       />
 

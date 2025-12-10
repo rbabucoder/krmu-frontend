@@ -61,6 +61,7 @@ export default async function Page({ params }: Props) {
   const custPage = await checkCustomPage(slug);
   const isPage = custPage[0];
 
+
   const school = allSchools.find((school) => school.urlslug === slug);
   if (isPage?.is_custom_page === "custom_page") {
     return <CustomPage slug={isPage?.slug || ""} />;
