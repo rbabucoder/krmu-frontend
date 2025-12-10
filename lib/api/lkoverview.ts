@@ -59,3 +59,29 @@ export type OverViewVideo = {
 //   }
 // }
 // }
+
+export async function getLifeAtKRMUOverviewLatestEvents():Promise<OverviewEventsResponse> {
+  const res = await fetch(
+    `https://krmangalam.edu.in/wp-json/wp/v2/events-and-news?per_page=20&orderby=date&order=desc&_fields=id,title,slug,excerpt,featured_media`,
+    {
+      next: {
+        revalidate: 60,
+      },
+    }
+  );
+  if (!res.ok) throw new Error("Failed to fetch overview latest events");
+  const json = await res.json();
+  return json.data;
+}
+
+export type OverviewEventsResponse = {
+  id: number;
+  slug: string;
+  title: {
+    rendered: string;
+  };
+  excerpt: {
+    rendered: string;
+  };
+  featured_media: number;
+};

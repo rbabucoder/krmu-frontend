@@ -1,9 +1,9 @@
 const OverviewImpacting = () => {
   return (
-    <div className="bg-[url(/gradient-3.webp)] bg-cover bg-center bg-no-repeat pt-[60px] px-[30px] flex gap-10 items-center">
-      <div className="w-1/3 text-white">
-        <h4 className="text-[32px]">Making a Difference Together</h4>
-        <h3 className="text-8xl font-bold my-2.5">Impacting Lives</h3>
+    <div className="bg-[url(/gradient-3.webp)] bg-cover bg-center bg-no-repeat flex-col lg:flex-row pt-[60px] px-[30px] flex gap-10 items-center">
+      <div className="lg:lg:w-1/3 text-white">
+        <h4 className="text-3xl md:text-[32px]">Making a Difference Together</h4>
+        <h3 className="text-3xl md:text-5xl lg:text-8xl font-bold my-2.5">Impacting Lives</h3>
         <p>
           <strong>
             It allows young students to participate in various government-led
@@ -22,10 +22,10 @@ const OverviewImpacting = () => {
           with dignity.
         </p>
       </div>
-      <div className="w-2/3">
-        <div className="flex gap-10 impactinglivescard">
+      <div className="lg:w-2/3">
+        <div className="flex flex-col lg:flex-row gap-10 impactinglivescard">
           <div
-            className="w-1/3 text-white p-5 rounded-[25px]"
+            className="lg:w-1/3 text-white p-5 rounded-[25px]"
             style={{
               background: `linear-gradient(180deg, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.12) 100%)`,
             }}
@@ -45,7 +45,7 @@ const OverviewImpacting = () => {
             </ul>
           </div>
           <div
-            className="w-1/3 text-white p-5 rounded-[25px]"
+            className="lg:w-1/3 text-white p-5 rounded-[25px]"
             style={{
               background: `linear-gradient(180deg, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.12) 100%)`,
             }}
@@ -66,7 +66,7 @@ const OverviewImpacting = () => {
             </ul>
           </div>
           <div
-            className="w-1/3 text-white p-5 rounded-[25px]"
+            className="lg:w-1/3 text-white p-5 rounded-[25px]"
             style={{
               background: `linear-gradient(180deg, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.12) 100%)`,
             }}

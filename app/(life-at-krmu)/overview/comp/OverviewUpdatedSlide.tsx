@@ -17,9 +17,15 @@ type Props = {
 };
 
 const OverviewUpdatedSlide = ({ data }: Props) => {
+
   return (
     <>
-      <Carousel className="w-full">
+      <Carousel
+        className="w-full"
+        opts={{
+          loop: true,
+        }}
+      >
         <CarouselContent>
           {data &&
             data.map((item, i) => (
@@ -39,12 +45,15 @@ const OverviewUpdatedSlide = ({ data }: Props) => {
                       {item?.title}
                     </h4>
 
-                    {/* <BlocksRenderer content={item.content} /> */}
+                    <span className="line-clamp-2">
+                      <BlocksRenderer content={item.content} />
+                    </span>
 
                     {item?.slug && (
                       <Link
-                        href={item.slug}
+                        href={`/events-and-news/${item.slug}`}
                         className="text-white text-xs underline underline-offset-2"
+                        target="_blank"
                       >
                         Show More
                       </Link>

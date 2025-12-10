@@ -21,15 +21,13 @@ const CustomPage = async ({ slug }: Props) => {
           }}
         />
       )}
-      <section className="pt-[140px] pb-[50px]">
-        <div className="max-w-[1664px] mx-auto w-full">
-          <div
-            dangerouslySetInnerHTML={{
-              __html: currentCustomPage?.maincontent || "",
-            }}
-          />
-        </div>
-      </section>
+
+      <div
+        dangerouslySetInnerHTML={{
+          __html: currentCustomPage?.maincontent || "",
+        }}
+      />
+
       {currentCustomPage?.custom_page_js && (
         <script
           dangerouslySetInnerHTML={{

@@ -8,7 +8,7 @@ type Props = {
 
 const OverviewHero = ({ overviewVideo }: Props) => {
   return (
-    <section className="relative overflow-hidden after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-[#00000099]">
+    <section id="_overview_hero" className="relative overflow-hidden after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-[#00000099]">
       <Video video={overviewVideo} />
       <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center flex-col text-center text-white px-4 md:px-0">
         <p className="text-xl md:text-2xl font-light z-10">

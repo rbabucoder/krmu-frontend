@@ -3,7 +3,7 @@ import { ListBlock, ParagraphBlock } from "../types/about";
 
 export async function getOverviewEvents(): Promise<NewsListResponse["data"]> {
   const res = await fetch(
-    `${FETCH_STRAPI_URL}/api/news-and-events?sort[0]=title:asc&populate[newsmedia][fields][0]=url&fields[0]=title&fields[1]=slug&pagination[pageSize]=30&pagination[page]=1`,
+    `${FETCH_STRAPI_URL}/api/news-and-events?sort[0]=title:asc&populate[newsmedia][fields][0]=url&fields[0]=title&fields[1]=slug&fields[2]=content&pagination[pageSize]=30&pagination[page]=1`,
     {
       next: {
         revalidate: 60,
@@ -50,7 +50,7 @@ export type NewsListResponse = {
 //     fields: ['url']
 //   }
 // },
-// fields: ['title', 'slug'],
+// fields: ['title', 'slug', 'content'],
 // pagination: {
 //   pageSize: 30,
 //   page: 1,
