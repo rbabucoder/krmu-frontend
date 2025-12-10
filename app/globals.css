@@ -17,6 +17,10 @@
 @layer utilities {
   /* Life At krmu overview */
 
+  /* .PeekSlideItem{
+    display: ;
+  } */
+
   .lkoverview {
     max-width: calc(1600px + 0px);
     margin-left: calc(-0px / 2);
