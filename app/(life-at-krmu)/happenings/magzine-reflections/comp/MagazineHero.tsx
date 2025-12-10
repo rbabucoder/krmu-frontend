@@ -10,6 +10,7 @@ const MagazineHero = ({ title, bgImage }: Props) => {
   return (
     <>
       <section
+        id="magazine_reflection_hero"
         className="pt-[140px] pb-20 px-4 md:py-[20%]"
         style={{
           background: `url(${STRAPI_URL}${bgImage?.url})`,

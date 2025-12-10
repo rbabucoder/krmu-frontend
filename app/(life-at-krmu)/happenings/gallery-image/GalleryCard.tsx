@@ -25,7 +25,7 @@ const GalleryCard = ({ title, publishedAt, slug, imageGallery }: Props) => {
         alt=""
         width={370}
         height={246}
-        className="w-full rounded-t-3xl"
+        className="w-full rounded-t-3xl h-[246px] object-fill"
       />
 
       <div className="pt-5 pl-[30px]">
@@ -43,6 +43,7 @@ const GalleryCard = ({ title, publishedAt, slug, imageGallery }: Props) => {
         <div>
           <Link
             href={`/photo-gallery/${slug}`}
+            target="_blank"
             className="italic text-white text-xs underline inline-block py-[29px]"
           >
             View More
