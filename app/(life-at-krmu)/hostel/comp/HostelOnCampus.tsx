@@ -1,6 +1,15 @@
-import Image from "next/image";
+
+import CommonSlide from "./CommonSlide";
 
 const HostelOnCampus = () => {
+  const HostelSlides = [
+    {
+      imgUrl: "/hostels/item-4.webp",
+    },
+    {
+      imgUrl: "/hostels/item-5.webp",
+    },
+  ];
   return (
     <div className="sm:mt-5">
       <h4 className="text-3xl md:text-4xl leding-[2] font-semibold mb-5 sm:my-5">
@@ -12,13 +21,7 @@ const HostelOnCampus = () => {
         facilities, and engage in campus activities.
       </p>
       <div className="mt-5">
-        <Image
-          src="/life-at-krmu/hostel.webp"
-          width={768}
-          height={407}
-          alt=""
-          className="w-full"
-        />
+        <CommonSlide data={HostelSlides} />
       </div>
     </div>
   );

@@ -2,10 +2,10 @@ import Image from "next/image";
 
 const YRCHero = () => {
   return (
-    <section className="bg-[url(/bg-gradient.webp)] bg-no-repeat bg-cover pt-[12%] pb-[10%]">
-      <div className="max-w-[1664px] mx-auto w-full flex items-center text-white gap-10">
-        <div className="w-2/3">
-          <h1 className="text-[40px] font-bold mb-5 leading-[1.2]">
+    <section className="bg-[url(/bg-gradient.webp)] bg-no-repeat bg-cover pt-[140px] px-4 lg:pt-[12%] pb-[10%]">
+      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row items-center text-white gap-10">
+        <div className="lg:w-2/3">
+          <h1 className="text-3xl md:text-[40px] font-bold mb-5 leading-[1.2]">
             Youth Red Cross Committee- YRC (KRMU) <br />
             <em>“Promoting Health, Serving Humanity.”</em>
           </h1>
@@ -39,7 +39,7 @@ const YRCHero = () => {
             continuous cycle of life and the unending spirit of service.
           </p>
         </div>
-        <div className="w-1/3">
+        <div className="lg:w-1/3">
           <Image src="/life-at-krmu/yrc.webp" width={352} height={352} alt="" />
         </div>
       </div>

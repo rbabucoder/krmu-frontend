@@ -1,8 +1,8 @@
 const SportsHero = () => {
   return (
-    <section className="pt-[10%] pb-[5%] bg-[url(/universitybg.webp)]">
+    <section className="pt-[140px] px-4 md:pt-[10%] pb-[5%] bg-[url(/universitybg.webp)]">
       <div className="max-w-[1664px] mx-auto w-full text-white text-center">
-        <h1 className="text-5xl font-semibold mb-5">
+        <h1 className="text-3xl md:text-5xl font-semibold mb-5">
           Sports Facilities at K.R. Mangalam University
         </h1>
         <h2>

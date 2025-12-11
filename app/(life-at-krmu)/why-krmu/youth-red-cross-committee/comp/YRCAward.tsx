@@ -3,10 +3,10 @@ import Image from "next/image";
 const YRCAward = () => {
   return (
     <>
-      <section className="py-5">
+      <section className="py-5 px-4">
         <div className="max-w-[1664px] mx-auto w-full">
           <h3 className="text-4xl font-bold mb-5">YRC AWARDS:</h3>
-          <div className="grid grid-cols-2 gap-20">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-20">
             <div>
               <Image
                 src="/life-at-krmu/img-1.webp"

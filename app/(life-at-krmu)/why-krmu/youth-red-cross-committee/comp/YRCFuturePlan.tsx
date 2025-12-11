@@ -1,7 +1,7 @@
 const YRCFuturePlan = () => {
   return (
     <>
-      <section className="pt-5 pb-[50px]">
+      <section className="pt-5 pb-[50px] px-4">
         <div className="max-w-[1664px] mx-auto w-full">
           <h3 className="text-4xl font-bold mb-5">Our Future Plans</h3>
           <p>We are not stopping here! YRC at KRMU is working on:</p>

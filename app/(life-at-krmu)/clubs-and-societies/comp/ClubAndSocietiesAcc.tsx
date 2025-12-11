@@ -30,7 +30,12 @@ const ClubAndSocietiesAcc = ({ accordionsData }: Props) => {
                     {accordion?.title}
                   </AccordionTrigger>
                   <AccordionContent className="flex flex-col gap-4 text-balance p-5 clubsAcc">
-                    <BlocksRenderer content={accordion?.content} />
+                    <div
+                      dangerouslySetInnerHTML={{
+                        __html: accordion?.content,
+                      }}
+                      className="clubcontent"
+                    />
                     <AccordionSlide slides={accordion?.clubimages} />
                   </AccordionContent>
                 </AccordionItem>

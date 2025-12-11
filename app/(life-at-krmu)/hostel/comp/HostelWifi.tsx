@@ -2,10 +2,10 @@ import Image from "next/image";
 
 const HostelWifi = () => {
   return (
-    <div className="md:flex mt-10 sm:mt-20 gap-10 text-center md:text-left">
+    <div className="md:flex mt-10 sm:mt-12 gap-10 text-center md:text-left">
       <div className="md:w-1/2">
         <Image
-          src="/life-at-krmu/hostel.webp"
+          src="/hostels/item-14.webp"
           width={768}
           height={407}
           alt=""

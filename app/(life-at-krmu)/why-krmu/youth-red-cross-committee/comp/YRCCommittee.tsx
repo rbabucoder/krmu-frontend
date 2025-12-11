@@ -1,8 +1,8 @@
 const YRCCommittee = () => {
   return (
-    <section className="pt-[6%] pb-[9%] bg-[url(/bg-gradient.webp)]">
+    <section className="pt-[6%] px-4 pb-[9%] bg-[url(/bg-gradient.webp)]">
       <div className="max-w-[1664px] mx-auto w-full text-white ">
-        <h2 className="text-5xl mb-5 font-bold">
+        <h2 className="text-3xl md:text-5xl mb-5 font-bold">
           YOUTH RED CROSS COMMITTEE @ KRMU, GURUGRAM
         </h2>
         <p>

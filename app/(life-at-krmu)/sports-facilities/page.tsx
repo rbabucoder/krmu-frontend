@@ -1,16 +1,19 @@
+import { getSportAndFacilityPageData } from "@/lib/api/sport-facility";
 import SportEventsAndTournament from "./comp/SportEventsAndTournament";
-import SportOutdoor from "./comp/SportOutdoor";
 import SportsHero from "./comp/SportsHero";
-import SportsIndoor from "./comp/SportsIndoor";
 import SportsIntro from "./comp/SportsIntro";
+import SportsIndoorOutDoor from "./comp/SportsIndoorOutDoor";
 
-const page = () => {
+const page = async () => {
+  const sportFacPageData = await getSportAndFacilityPageData();
+
+  const indoorOutdoorSports = sportFacPageData?.sport_facility_grid;
+
   return (
     <>
       <SportsHero />
       <SportsIntro />
-      <SportsIndoor />
-      <SportOutdoor />
+      <SportsIndoorOutDoor data={indoorOutdoorSports} />
       <SportEventsAndTournament />
     </>
   );

@@ -1,4 +1,4 @@
-import React from "react";
+
 import HostelWellFurnished from "./HostelWellFurnished";
 import HostelOnCampus from "./HostelOnCampus";
 import HostelSport from "./HostelSport";
@@ -6,6 +6,7 @@ import HostelSecurity from "./HostelSecurity";
 import HostelWifi from "./HostelWifi";
 
 const HostelFacilities = () => {
+  
   return (
     <>
       <section className="py-10 px-4">

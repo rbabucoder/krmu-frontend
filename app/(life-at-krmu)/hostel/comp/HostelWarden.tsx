@@ -14,7 +14,28 @@ const HostelWarden = () => {
             of their hostel life.
           </p>
 
-
+          <h5 className="text-2xl my-5 text-center font-semibold">
+            Hostel Fees
+          </h5>
+          <div className="overflow-x-auto flex justify-center">
+            <table className="hosteltable-table">
+              <thead>
+                <tr>
+                  <th>Description</th> <th>Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Hostel Fee (to be collected upfront)</td>
+                  <td>Rs. 1,60,000/-</td>
+                </tr>
+                <tr>
+                  <td>Hostel Security Deposit (Refundable)</td>
+                  <td>Rs. 20,000/-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
         <div className="lg:w-1/2 mt-10 lg:mt-0">
           <div className="contact-card-container">

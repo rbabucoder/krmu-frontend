@@ -1,4 +1,3 @@
-import { ParagraphBlock } from "./about";
 import { StrapiMedia } from "./common";
 
 // Rich text children
@@ -17,7 +16,7 @@ export interface RichTextBlock {
 export interface ClubAccordion {
   id: number;
   title: string;
-  content: ParagraphBlock[];
+  content: string;
   clubimages: StrapiMedia[];
 }
 

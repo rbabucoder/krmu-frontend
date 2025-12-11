@@ -1,4 +1,4 @@
-import React from "react";
+
 import GalleryPageHero from "./GalleryPageHero";
 import GalleryGridCards from "./GalleryGridCards";
 import { getImageGalleryPageData } from "@/lib/api/image-gallery";

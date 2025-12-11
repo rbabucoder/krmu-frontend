@@ -4,9 +4,9 @@ import React from "react";
 const YRCBenefits = () => {
   return (
     <section className="bg-[url(/bg-gradient-2.webp)] py-[50px]">
-      <div className="max-w-[1664px] mx-auto w-full flex gap-10">
-        <div className="w-1/2 mb-5">
-          <div className="py-[30px] pl-[40px] pr-[30px] text-white border border-[#0060aa5e] bg-[#0060aa5e] mx-8  rounded-b-[20px]">
+      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10">
+        <div className="lg:w-1/2 mb-5">
+          <div className="py-[30px] px-4 md:pl-[40px] md:pr-[30px] text-white border border-[#0060aa5e] bg-[#0060aa5e] mx-4 md:mx-8  rounded-b-[20px]">
             <p className="text-2xl mt-2.5 mb-[15px]">
               Benefits of Youth Red Cross Committee Participation:
             </p>
@@ -106,10 +106,10 @@ const YRCBenefits = () => {
             </ul>
           </div>
         </div>
-        <div className="w-1/2 text-white">
+        <div className="lg:w-1/2 text-white">
           <div className="text-center flex justify-center flex-col items-center">
             <Image
-              src="/life-at-krmu/hv.webp"
+              src="/life-at-krmu/benefits.webp"
               width={851}
               height={567}
               alt=""

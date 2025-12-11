@@ -3,9 +3,9 @@ import React from "react";
 
 const SportEventsAndTournament = () => {
   return (
-    <section className="pb-[50px]">
+    <section className="pb-[50px] px-4">
       <div className="max-w-[1664px] mx-auto w-full">
-        <h4 className="text-[38px] mb-5 font-bold">Events and Tournaments</h4>
+        <h4 className="text-3xl md:text-[38px] mb-5 font-bold">Events and Tournaments</h4>
         <p>
           The success of KRMU students extends far beyond the confines of their
           own campus. They have made their mark in various National, State, and
@@ -17,8 +17,8 @@ const SportEventsAndTournament = () => {
           teamwork, discipline, resilience, and sportsmanship, all of which are
           integral to personal and professional success.
         </p>
-        <div className="flex gap-10 mt-10">
-          <div className="w-1/2">
+        <div className="flex flex-col lg:flex-row gap-10 mt-10">
+          <div className="lg:w-1/2">
             <Image
               src="/life-at-krmu/img-5.webp"
               width={768}
@@ -38,7 +38,7 @@ const SportEventsAndTournament = () => {
               development among students from various academic institutions.
             </p>
           </div>
-          <div className="w-1/2">
+          <div className="lg:w-1/2">
             <Image
               src="/life-at-krmu/img-6.webp"
               width={768}
@@ -59,8 +59,8 @@ const SportEventsAndTournament = () => {
             </p>
           </div>
         </div>
-        <div className="flex gap-20 mt-10">
-          <div className="w-1/3">
+        <div className="flex flex-col lg:flex-row gap-5 md:gap-20 mt-10">
+          <div className="lg:w-1/3">
             <Image
               src="/life-at-krmu/img-7.webp"
               width={768}
@@ -85,7 +85,7 @@ const SportEventsAndTournament = () => {
               resilience.
             </p>
           </div>
-          <div className="w-1/3">
+          <div className="lg:w-1/3">
             <Image
               src="/life-at-krmu/img-8.webp"
               width={768}
@@ -103,7 +103,7 @@ const SportEventsAndTournament = () => {
               Men’s Relay – 3rd Position.
             </p>
           </div>
-          <div className="w-1/3">
+          <div className="lg:w-1/3">
             <Image
               src="/life-at-krmu/img-9.webp"
               width={768}

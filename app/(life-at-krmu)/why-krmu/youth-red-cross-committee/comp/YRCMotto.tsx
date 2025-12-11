@@ -1,14 +1,14 @@
 const YRCMotto = () => {
   return (
     <section
-      className="py-[50px]"
+      className="py-[50px] px-4"
       style={{
         backgroundImage: "linear-gradient(97deg,#051630 0%,#0060aa 99%)",
       }}
     >
       <div className="max-w-[1664px] mx-auto w-full text-white">
-        <div className="w-1/2">
-          <h3 className="text-5xl font-semibold mb-5 leading-[1.2]">
+        <div className="w-full lg:w-1/2">
+          <h3 className="text-3xl md:text-5xl font-semibold mb-5 leading-[1.2]">
             The motto of the Youth Red Cross:
           </h3>
           <p>
