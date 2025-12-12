@@ -1,10 +1,10 @@
-import { FETCH_STRAPI_URL, krmBlogURL, KRMUWordUrl } from "@/app/constant";
+import { FETCH_STRAPI_URL, KRMUWordUrl } from "@/app/constant";
 import { CareerResponse, SingleJobResponse } from "@/lib/types/careers/career";
 
 export async function getAllJobsOrAlsoWithSearch(
   search: string = ""
 ): Promise<CareerResponse> {
-  const baseURL = `${krmBlogURL}/careers/wp-json/wp/v2/awsm_job_openings`;
+  const baseURL = `${KRMUWordUrl}/careers/wp-json/wp/v2/awsm_job_openings`;
 
   const url = `${baseURL}?page=1&per_page=60&_fields=id,slug,title.rendered${
     search ? `&search=${search}` : ""
