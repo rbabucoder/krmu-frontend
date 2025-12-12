@@ -17,7 +17,7 @@ const CommonBlogCard = async ({ title, excerpt, slug, imgId }: Props) => {
   return (
     <div className="w-full">
       <Link
-        href={`/blog3/${slug}`}
+        href={`/blog/${slug}`}
         className="block w-full rounded-[24px]"
         style={{
           boxShadow: `0px 0px 6px 0px #c6dcfd`,

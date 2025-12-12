@@ -1,5 +1,6 @@
 import Link from "next/link";
-import SingleBlogAuthorImage from "./SingleBlogAuthorImage";
+// import SingleBlogAuthorImage from "./SingleBlogAuthorImage";
+import Image from "next/image";
 
 type Props = {
   authorName: string;
@@ -17,20 +18,23 @@ const SingleBlogHeroAuthor = ({
   return (
     <div className="single_blog_author_container">
       <div className="single_blog_author_image">
-        {/* <Image
-          src="/blogs/singleblogAuthor.jpg"
+        <Image
+          src="/blogs/blog-author.webp"
           width={50}
           height={50}
           alt=""
-        /> */}
+        />
 
-        {imgId && <SingleBlogAuthorImage imgId={imgId} />}
+        {/* {imgId && <SingleBlogAuthorImage imgId={imgId} />} */}
       </div>
       <div className="single_blog_author_info">
         <span className="author_name">
-          <Link href={`/author/${authorSlug}`} target="_blank">
+          <span>
+            KRMU Team
+          </span>
+          {/* <Link href={`/author/${authorSlug}`} target="_blank">
             {authorName}
-          </Link>
+          </Link> */}
         </span>
         <span className="author_designation">{desg}</span>
       </div>

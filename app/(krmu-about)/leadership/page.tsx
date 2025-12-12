@@ -1,8 +1,7 @@
+import { Leaderships } from "./comp/Leaderships";
 
 const page = () => {
-  return (
-    <div>page</div>
-  )
-}
+  return <Leaderships />;
+};
 
-export default page
+export default page;

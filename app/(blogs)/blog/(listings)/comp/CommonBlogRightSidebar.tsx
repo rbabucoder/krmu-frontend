@@ -24,7 +24,7 @@ const CommonBlogRightSidebar = async () => {
               before:max-w-2.5 before:min-w-2.5 before:rounded-full before:absolute pl-5 before:left-0 before:top-[30px] line-clamp-3 overflow-hidden"
               >
                 <Link
-                  href={`/blog3/${post?.slug}`}
+                  href={`/blog/${post?.slug}`}
                   dangerouslySetInnerHTML={{
                     __html: post?.title?.rendered,
                   }}

@@ -18,8 +18,9 @@ const Navbar = ({ navbarData, handleMobileMenu, showMobilebar }: Props) => {
         <div className="w-2/4 md:w-1/5 flex items-center justify-center">
           <Link href="/">
             <Image
-              src="/KRMU-logo-univ.png"
-              width={320}
+              // src="/KRMU-logo-univ.png"
+              src="/krmu-logo.svg"
+              width={370}
               height={60}
               alt="Website Logo"
             />

@@ -28,7 +28,7 @@ const AuthorPostsCard = ({ title, imgId, date, slug }: Props) => {
 
   return (
     <Link
-      href={`/blog3/${slug}`}
+      href={`/blog/${slug}`}
       className="flex flex-col md:flex-row gap-2.5 md:gap-5 mb-5 md:h-[172px] border-b border-[#d2d2d2] pb-5"
       target="_blank"
     >

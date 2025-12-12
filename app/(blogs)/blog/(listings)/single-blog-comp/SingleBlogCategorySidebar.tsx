@@ -34,7 +34,7 @@ const SingleBlogCategorySidebar = async () => {
                 )
                 .map((cat) => (
                   <Link
-                    href={`/blog3/all-categories/${cat?.slug}`}
+                    href={`/blog/all-categories/${cat?.slug}`}
                     key={cat?.id}
                     className="singlepost_right_sidebar_card"
                     target="_blank"
