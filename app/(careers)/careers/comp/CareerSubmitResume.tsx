@@ -1,8 +1,13 @@
+import { Openings } from "@/lib/api/careers/career";
 import { MoveRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-const CareerSubmitResume = () => {
+type Props = {
+  openings: Openings;
+};
+
+const CareerSubmitResume = ({ openings }: Props) => {
   return (
     <section className="py-10 md:py-[60px] px-4 md:px-0">
       <div className="max-w-[1600px] mx-auto w-full bg-[url(/careers/submitresumebg.webp)] bg-no-repeat bg-center md:bg-auto bg-cover flex flex-col md:flex-row items-center gap-4 md:gap-16 md:h-[410px]">
@@ -13,12 +18,15 @@ const CareerSubmitResume = () => {
           </h3>
           <p>No problem, if you think you would be a great fit for KRMU,</p>
           <p>we would still like your resume.</p>
-          <Link
-            href="#"
-            className="flex items-center bg-white text-black py-[13px] px-[29px] w-fit gap-2.5 text-sm rounded-sm mt-5 font-medium"
-          >
-            <span>Submit your Resume</span> <MoveRight />
-          </Link>
+          {openings?.opening_btn?.btn_link && (
+            <Link
+              href={openings?.opening_btn?.btn_link || "#"}
+              className="flex items-center bg-white text-black py-[13px] px-[29px] w-fit gap-2.5 text-sm rounded-sm mt-5 font-medium"
+              target="_blank"
+            >
+              <span>Submit your Resume</span> <MoveRight />
+            </Link>
+          )}
         </div>
         <div className="md:w-1/2 h-full relative">
           <div className="md:absolute bottom-0 right-0">

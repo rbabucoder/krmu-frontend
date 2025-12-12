@@ -15,6 +15,19 @@
 
 /* Custom utility class */
 @layer utilities {
+
+
+  .fedpolcys3 .fedpolcys{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    font-weight: 600;
+  }
+  .fedpolcys3 .fedpolcys2{
+    padding: 6px 0px;
+  }
+
   /* Student Welfare */
 
   .libtabcontent p {
@@ -74,7 +87,6 @@
       font-size: 30px;
     }
   }
-  
 
   .student_welfare-tab-scroll {
     display: flex;
@@ -1314,11 +1326,72 @@
     margin: 10px 0 10px 0px;
   }
 
-  .faq-card:first-child{
+  .faq-card:first-child {
     margin-top: 10px;
   }
+  .transparent-table tr,
+  .transparent-table table th {
+    background: transparent;
+    line-height: 1.5;
+  }
+  .transparent-table table {
+    box-shadow: 0px 0px 0px 0px;
+    background-color: #fff0;
+    color: #fff;
+    width: 100%;
+  }
+  .transparent-table table thead tr:first-child {
+    background: #53575c;
+    padding: 10px 20px;
+  }
+  .table-1 tr td {
+    /* border: 1px solid #dcdcdc; */
+    padding: 10px 20px;
+  }
 
-
+  .transparent-table table th:first-child {
+    border-radius: 70px 0px 0px 70px;
+    padding: 10px 20px;
+  }
+  .transparent-table table th:nth-child(2) {
+    border-radius: 0 70px 70px 0px;
+  }
+  .background-transparent {
+    background: rgba(255, 255, 255, 20%);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 10%);
+    backdrop-filter: blur(9.9px);
+    -webkit-backdrop-filter: blur(9.9px);
+  }
+  .committeebox {
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 30px;
+    background: #fff;
+    margin-bottom: 30px;
+  }
+  .table-1 table{
+    width: 100%;
+    overflow-x: auto;
+  }
+   .white-table table{
+    width: 100%;
+   }
+   .white-table table th:first-child{
+    border-radius: 70px 0px 0px 70px;
+   }
+   .white-table table th:nth-child(2){
+    border-radius: 0 70px 70px 0px;
+   }
+  .white-table tr,
+  .white-table table th {
+    background: transparent;
+    line-height: 1.5;
+    padding: 10px 20px;
+  }
+  .white-table table tr:first-child {
+    background: rgba(29, 66, 197, 0.3);
+  }
   .krmu_single_blog h2::after {
     content: "" !important;
     position: absolute !important;

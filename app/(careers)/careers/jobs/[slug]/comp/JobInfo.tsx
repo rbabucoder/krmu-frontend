@@ -23,7 +23,7 @@ const JobInfo = ({
   jobLocation,
 }: Props) => {
   return (
-    <div className={`${raleway.variable}`}>
+    <div className={`${raleway.variable} break-all`}>
       <div className="leading-[30px] text-lg mb-5">
         <p>
           <strong>Job Category: </strong>
