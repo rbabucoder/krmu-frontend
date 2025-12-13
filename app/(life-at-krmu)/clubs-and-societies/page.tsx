@@ -1,19 +1,19 @@
-// import { getClubAndSocitiesData } from "@/lib/api/club-and-societies";
-// import { ClubAndSocitiesHero } from "./comp/ClubAndSocitiesHero";
+import { ClubAndSocitiesHero } from "./comp/ClubAndSocitiesHero";
 // import ClubAndSocietiesInfo from "./comp/ClubAndSocietiesInfo";
 // import ClubAndSocietiesAcc from "./comp/ClubAndSocietiesAcc";
 
+import { getClubAndSocitiesData } from "@/lib/api/club-and-societies";
+
 const page = async () => {
-  // const clubsData = await getClubAndSocitiesData();
+  const clubsData = await getClubAndSocitiesData();
   return (
     <>
-      {/* <ClubAndSocitiesHero
+      <ClubAndSocitiesHero
         title={clubsData?.title}
         featured_image_url={clubsData?.featured_image?.url}
-      /> */}
+      />
       {/* <ClubAndSocietiesInfo content={clubsData?.desc} /> */}
       {/* <ClubAndSocietiesAcc accordionsData={clubsData?.clubsaccordions} /> */}
-      <h1>test</h1>
     </>
   );
 };
