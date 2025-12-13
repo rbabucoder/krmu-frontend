@@ -9,21 +9,26 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import type { Leadership } from "@/lib/api/leadership";
 import { STRAPI_URL } from "@/app/constant";
+import type { AcademicLeadership } from "@/lib/api/academic-leadership";
 
 type Props = {
-  data: Leadership[];
+  data: AcademicLeadership[];
 };
 
-export const Leaderships = ({ data }: Props) => {
+export const AcademicLeaderships = ({ data }: Props) => {
+
+
+
   if (!data || data.length === 0) return null;
 
-  const [selectedLeader, setSelectedLeader] = useState<Leadership>(data[0]);
+  const [selectedLeader, setSelectedLeader] =
+    useState<AcademicLeadership>(data[0]);
+
   const [expanded, setExpanded] = useState(false);
 
-  // reset read-more when leader changes
-  const handleSelectLeader = (leader: Leadership) => {
+  // Reset read-more on leader change
+  const handleSelectLeader = (leader: AcademicLeadership) => {
     setSelectedLeader(leader);
     setExpanded(false);
   };
@@ -47,9 +52,8 @@ export const Leaderships = ({ data }: Props) => {
               {selectedLeader.desg}
             </h4>
 
-            {selectedLeader?.content && (
+            {selectedLeader.content && (
               <div className="relative mt-5">
-                {/* CONTENT */}
                 <div
                   className={`prose max-w-none transition-all duration-300 overflow-hidden ${
                     expanded ? "max-h-[2000px]" : "max-h-[150px]"
@@ -59,12 +63,10 @@ export const Leaderships = ({ data }: Props) => {
                   }}
                 />
 
-                {/* FADE OVERLAY (only when collapsed) */}
                 {!expanded && (
                   <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-white to-transparent pointer-events-none" />
                 )}
 
-                {/* READ MORE / LESS */}
                 <button
                   onClick={() => setExpanded((prev) => !prev)}
                   className="mt-4 text-[#0060aa] font-semibold hover:underline"
@@ -77,14 +79,16 @@ export const Leaderships = ({ data }: Props) => {
 
           {/* RIGHT IMAGE */}
           <div className="md:w-2/5 flex justify-center">
-            <Image
-              src={`${STRAPI_URL}${selectedLeader.leadership_img?.url}`}
-              width={330}
-              height={430}
-              alt={selectedLeader.name}
-              unoptimized
-              className="object-contain"
-            />
+            {selectedLeader.academic_leadership_img?.url && (
+              <Image
+                src={`${STRAPI_URL}${selectedLeader.academic_leadership_img.url}`}
+                width={330}
+                height={430}
+                alt={selectedLeader.name}
+                unoptimized
+                className="object-contain"
+              />
+            )}
           </div>
         </div>
 
@@ -108,16 +112,18 @@ export const Leaderships = ({ data }: Props) => {
                           : "border-gray-200 opacity-80"
                       }`}
                     >
-                      <Image
-                        src={`${STRAPI_URL}${leader.leadership_img?.url}`}
-                        width={260}
-                        height={300}
-                        alt={leader.name}
-                        unoptimized
-                        className={`w-full h-[295px] object-cover transition-all duration-300 ${
-                          isActive ? "grayscale-0" : "grayscale"
-                        }`}
-                      />
+                      {leader.academic_leadership_img?.url && (
+                        <Image
+                          src={`${STRAPI_URL}${leader.academic_leadership_img.url}`}
+                          width={260}
+                          height={300}
+                          alt={leader.name}
+                          unoptimized
+                          className={`w-full h-[295px] object-cover transition-all duration-300 ${
+                            isActive ? "grayscale-0" : "grayscale"
+                          }`}
+                        />
+                      )}
 
                       <div className="text-[#555] text-center py-3">
                         <h5 className="font-bold">{leader.name}</h5>

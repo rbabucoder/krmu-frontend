@@ -12,7 +12,7 @@ const page = async ({ params }: Props) => {
 
   const singleJobData = await getSingleJobBySlug(slug);
 
-  console.log("singleJobData", singleJobData);
+
   const currentSingleJob = singleJobData?.find((job) => job?.slug === slug);
 
   if (!currentSingleJob) {
