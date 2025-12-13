@@ -5,7 +5,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { ClubAccordion } from "@/lib/types/club-and-societies";
-import { BlocksRenderer } from "@strapi/blocks-react-renderer";
 import AccordionSlide from "./AccordionSlide";
 
 type Props = {
