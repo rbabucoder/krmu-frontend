@@ -23,19 +23,20 @@ const AccordionSlide = ({ slides }: Props) => {
       className="w-full"
     >
       <CarouselContent>
-        {slides.map((image, index) => (
-          <CarouselItem key={index} className="basis-1/2 sm:basis-1/4">
-            <div>
-              <Image
-                src={`${STRAPI_URL}${image?.url}`}
-                width={390}
-                height={390}
-                alt={image?.alternativeText || "programme highlight"}
-                className="w-full h-full"
-              />
-            </div>
-          </CarouselItem>
-        ))}
+        {slides &&
+          slides.map((image, index) => (
+            <CarouselItem key={index} className="basis-1/2 sm:basis-1/4">
+              <div>
+                <Image
+                  src={`${STRAPI_URL}${image?.url}`}
+                  width={390}
+                  height={390}
+                  alt={image?.alternativeText || "programme highlight"}
+                  className="w-full h-full"
+                />
+              </div>
+            </CarouselItem>
+          ))}
       </CarouselContent>
       <CarouselPrevious className="left-0 bg-[#000000b2] text-white rounded-none" />
       <CarouselNext className="right-0 bg-[#000000b2] text-white rounded-none" />

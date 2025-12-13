@@ -31,7 +31,7 @@ const ClubAndSocietiesAcc = ({ accordionsData }: Props) => {
                   <AccordionContent className="flex flex-col gap-4 text-balance p-5 clubsAcc">
                     <div
                       dangerouslySetInnerHTML={{
-                        __html: accordion?.content,
+                        __html: accordion.content,
                       }}
                       className="clubcontent"
                     />
