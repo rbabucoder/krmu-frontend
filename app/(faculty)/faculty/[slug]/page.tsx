@@ -19,7 +19,6 @@ const page = async ({ params }: Props) => {
     (fac: singleFaculty) => fac?.slug === slug
   );
 
-
   const facultyContent = currentFaculty?.content.rendered || "";
   const facultyImgId = currentFaculty?.featured_media;
   const facultyName = currentFaculty?.title?.rendered || "";
@@ -78,9 +77,6 @@ const page = async ({ params }: Props) => {
   const blocks = $(".fusion-fullwidth");
   blocks.not(blocks.eq(2)).remove();
   const cleanedHTML = $.html();
-
-
-  // console.log('facImgUrl', facImgUrl);
 
   return (
     <section

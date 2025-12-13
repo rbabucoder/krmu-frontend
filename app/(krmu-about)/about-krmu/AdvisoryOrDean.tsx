@@ -1,11 +1,17 @@
 import AboutTabsOrAccordion from "@/app/components/TabsOrAccordion/AboutTabsOrAccordion";
+import { getFacultyAdvisory } from "@/lib/api/facAdv";
 
-const AdvisoryOrDean = () => {
+const AdvisoryOrDean = async () => {
+
+  const advisoryData = await getFacultyAdvisory();
+
+
+
   return (
     <>
       <section className="overflow-hidden">
         <div className="max-w-[1600px] mx-auto w-full flex justify-center px-4 py-10">
-          <AboutTabsOrAccordion />
+          <AboutTabsOrAccordion data={advisoryData} />
         </div>
       </section>
     </>

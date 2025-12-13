@@ -18,6 +18,8 @@ const MobileHeader = ({ topbarmenu, navbarData }: Props) => {
     setOpenMenu(openMenu === menu ? null : menu);
   };
 
+
+
   const academicMenu = navbarData.find(
     (component) => component.__component === "temp-menus.academic-menu"
   );
@@ -29,6 +31,10 @@ const MobileHeader = ({ topbarmenu, navbarData }: Props) => {
     (component) => component.title === "Careers"
   );
 
+  const sustainabilityLinks = navbarData.find(
+    (component) => component.title === "Sustainability"
+  );
+
   const admissionMenu = navbarData.find(
     (component) => component.__component === "temp-menus.admissions"
   );
@@ -38,7 +44,6 @@ const MobileHeader = ({ topbarmenu, navbarData }: Props) => {
   const researchMenu = navbarData.find(
     (component) => component.__component === "temp-menus.research-menu"
   );
-
 
   const lifeatkrmuMenu = navbarData.find(
     (component) => component.__component === "temp-menus.life-at-krmu"
@@ -268,7 +273,14 @@ const MobileHeader = ({ topbarmenu, navbarData }: Props) => {
                 </div>
               </div>
             </li>
-
+            {sustainabilityLinks &&
+              sustainabilityLinks.__component === "menu.menu-links" && (
+                <li className="pt-2.5 pb-4 text-white font-semibold">
+                  <Link href={sustainabilityLinks?.url || "#"}>
+                    {sustainabilityLinks?.title}
+                  </Link>
+                </li>
+              )}
             <li className="pt-2.5 pb-4 text-white font-semibold">
               <button
                 onClick={() => toggleMenu("lifeatkrmu")}

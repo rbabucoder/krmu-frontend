@@ -1,8 +1,14 @@
+import { STRAPI_URL } from "@/app/constant";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Advisory } from "@/lib/api/facAdv";
 import Image from "next/image";
 
-const AboutTabs = () => {
+type Props = {
+  data: Advisory[];
+};
+
+const AboutTabs = ({ data }: Props) => {
   return (
     <>
       <Tabs defaultValue="advisoryboard">
@@ -25,79 +31,28 @@ const AboutTabs = () => {
         <div className="pt-[60px] pb-36">
           <TabsContent value="advisoryboard">
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10">
-              <div className="w-full text-center">
-                <div className="-z-10 rounded-tr-2xl">
-                  <Image
-                    src="/roach.webp"
-                    alt="Faculty"
-                    width={264}
-                    height={295}
-                    className="w-full h-[295px]"
-                  />
-                </div>
-                <div className="p-10 h-[200px] text-white bg-[#051630] -mt-5 flex items-center justify-center flex-col">
-                  <h5 className="text-2xl">Mr. Pranav Roach</h5>
-                  <p className="text-sm">
-                    Hughes Network Systems India Limited
-                  </p>
-                  <p className="text-sm font-semibold">President</p>
-                </div>
-              </div>
-              <div className="w-full text-center">
-                <div className="-z-10 rounded-tr-2xl">
-                  <Image
-                    src="/kavi.webp"
-                    alt="Faculty"
-                    width={264}
-                    height={295}
-                    className="w-full h-[295px]"
-                  />
-                </div>
-                <div className="p-10 h-[200px] text-white bg-[#051630] -mt-5 flex items-center justify-center flex-col">
-                  <h5 className="text-2xl">Prof. Kavi Arya</h5>
-                  <p className="text-sm">
-                    Department of Computer Science IIT Bombay
-                  </p>
-                  <p className="text-sm font-semibold">Professor</p>
-                </div>
-              </div>
-              <div className="w-full tex-center">
-                <div className="-z-10 rounded-tr-2xl">
-                  <Image
-                    src="/sunil.webp"
-                    alt="Faculty"
-                    width={264}
-                    height={295}
-                    className="w-full h-[295px]"
-                  />
-                </div>
-                <div className="p-10 h-[200px] text-white bg-[#051630] -mt-5 flex items-center justify-center flex-col">
-                  <h5 className="text-2xl">Mr. Sunil Sethi</h5>
-                  <p className="text-sm">Fashion Design Council of India</p>
-                  <p className="text-sm font-semibold">Chairman</p>
-                </div>
-              </div>
-              <div className="w-full text-center">
-                <div className="-z-10 rounded-tr-2xl">
-                  <Image
-                    src="/umesh.webp"
-                    alt="Faculty"
-                    width={264}
-                    height={295}
-                    className="w-full h-[295px]"
-                  />
-                </div>
-                <div className="p-10 h-[200px] text-white bg-[#051630] -mt-5 flex items-center justify-center flex-col">
-                  <h5 className="text-2xl">Prof. Umesh Rai</h5>
-                  <p className="text-sm">
-                    Vice Chancellor, <br /> Jammu University Former Director,
-                    South Campus
-                  </p>
-                  <p className="text-sm font-semibold">
-                    Professor, Department of Zoology, University of Delhi
-                  </p>
-                </div>
-              </div>
+              {data &&
+                data?.map((item, i) => {
+                  return (
+                    <div key={i} className="w-full text-center">
+                      <div className="-z-10 rounded-tr-2xl">
+                        <Image
+                          src={`${STRAPI_URL}${item?.faculty_img?.url}`}
+                          alt={item?.faculty_name || ""}
+                          width={264}
+                          height={295}
+                          className="w-full h-[295px]"
+                          unoptimized={true}
+                        />
+                      </div>
+                      <div className="p-10 h-[200px] text-white bg-[#051630] -mt-5 flex items-center justify-center flex-col">
+                        <h5 className="text-2xl">{item?.faculty_name}</h5>
+                        <p className="text-sm">{item?.faculty_card_desg}</p>
+                        {/* <p className="text-sm font-semibold">President</p> */}
+                      </div>
+                    </div>
+                  );
+                })}
             </div>
             <div className="flex justify-center">
               <Button className="text-[#051630] bg-[#f2f3f5] h-[50px] border border-[#051630] font-semibold text-base hover:bg-[#cb000d] hover:text-white cursor-pointer mt-10">

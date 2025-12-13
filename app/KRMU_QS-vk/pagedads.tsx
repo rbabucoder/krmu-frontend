@@ -4,13 +4,13 @@
 import { useEffect, useState } from "react";
 
 type R2File = {
-  Key: string;
+  Key: string; 
   Size?: number;
   LastModified?: string;
 };
 
 export default function R2Browser() {
-  const [path, setPath] = useState("KRMU_QS/"); // starting folder
+  const [path, setPath] = useState("Main-Krmu-QS/"); // starting folder
   const [folders, setFolders] = useState<string[]>([]);
   const [files, setFiles] = useState<R2File[]>([]);
   const [loading, setLoading] = useState(false);
@@ -47,7 +47,7 @@ export default function R2Browser() {
   }, [path]);
 
   const goBack = () => {
-    if (path === "KRMU_QS/") return;
+    if (path === "Main-Krmu-QS/") return;
     const parts = path.split("/").filter(Boolean);
     parts.pop();
     setPath(parts.join("/") + "/");
@@ -57,7 +57,7 @@ export default function R2Browser() {
     <div className="pt-[140px] max-w-4xl mx-auto p-4">
       <div className="mb-4 flex items-center justify-between">
         <div>
-          {path !== "KRMU_QS/" && (
+          {path !== "Main-Krmu-QS/" && (
             <button onClick={goBack} className="mr-3 text-blue-600">
               ◀ Back
             </button>

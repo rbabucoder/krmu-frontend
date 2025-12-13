@@ -3,8 +3,13 @@
 import { useState, useEffect } from "react";
 import AboutTabs from "../Tabs/AboutTabs";
 import AboutAccordion from "../Accordion/AboutAccordion";
+import { Advisory } from "@/lib/api/facAdv";
 
-const AboutTabsOrAccordion = () => {
+type Props = {
+  data: Advisory[];
+};
+
+const AboutTabsOrAccordion = ({ data }: Props) => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -23,26 +28,7 @@ const AboutTabsOrAccordion = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // useEffect(() => {
-
-  //     const getAccTabData = async () => {
-  //         try {
-  //             const res = await fetch(`${BASE_API_URL}/wp-json/wp/v2/accordion`);
-
-  //             const data = await res.json();
-
-  //             setAccTab(data);
-
-  //         } catch (error) {
-  //             console.error(error);
-  //         }
-
-  //     }
-  //     getAccTabData();
-
-  // }, [])
-
-  return <>{isMobile ? <AboutAccordion /> : <AboutTabs />}</>;
+  return <>{isMobile ? <AboutAccordion  /> : <AboutTabs data={data} />}</>;
 };
 
 export default AboutTabsOrAccordion;
