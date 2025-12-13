@@ -23,6 +23,7 @@ const page = async () => {
       <Admission2Search />
       <Admission2Fee />
       <Admission2Alumni admAlumni={admAlumni} />
+
       <AdmissionTableOfContent
         heading={admTOC?.heading}
         highlight={admTOC?.highlightheading}

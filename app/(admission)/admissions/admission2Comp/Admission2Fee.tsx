@@ -2,7 +2,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const Admission2Fee = () => {
   return (
-    <section className="py-[50px]">
+    <section className="py-[50px] px-4">
       <div className="max-w-[1320px] mx-auto w-full pt-12 pb-20">
         <h4 className="text-[32px] mb-12 text-[#0a41a1] font-semibold">
           Fee Details
@@ -13,39 +13,39 @@ const Admission2Fee = () => {
           <Tabs
             defaultValue="item-1"
             orientation="vertical"
-            className="flex flex-row"
+            className="flex flex-col lg:flex-row"
           >
             {/* Vertical tab list */}
-            <div className="w-1/2">
-              <TabsList className="flex flex-col w-full mt-24 bg-none bg-transparent">
+            <div className="w-full lg:w-1/2">
+              <TabsList className="flex flex-col w-full lg:mt-24 bg-none bg-transparent">
                 <TabsTrigger
                   value="item-1"
-                  className="fee_tab w-full py-[30px] px-5 text-xl"
+                  className="fee_tab w-full py-[30px] px-5 break-all md:text-xl"
                 >
-                  Application Fee and Registration Fee
+                  Application Fee <br className="md:hidden" /> and Registration Fee
                 </TabsTrigger>
                 <TabsTrigger
                   value="item-2"
-                  className="fee_tab w-full py-[30px] px-5 text-xl"
+                  className="fee_tab w-full py-[30px] px-5 break-all md:text-xl"
                 >
                   Hostel Fee
                 </TabsTrigger>
                 <TabsTrigger
                   value="item-3"
-                  className="fee_tab w-full py-[30px] px-5 text-xl"
+                  className="fee_tab w-full py-[30px] px-5 break-all md:text-xl"
                 >
                   Transport Fee
                 </TabsTrigger>
                 <TabsTrigger
                   value="item-4"
-                  className="fee_tab w-full py-[30px] px-5 text-xl"
+                  className="fee_tab w-full py-[30px] px-5 break-all md:text-xl"
                 >
                   Security Deposit
                 </TabsTrigger>
               </TabsList>
             </div>
             {/* Content section */}
-            <div className="w-1/2">
+            <div className="w-full lg:w-1/2 pt-40 lg:pt-0">
               <TabsContent value="item-1">
                 <div
                   className="max-w-[636px] mx-auto w-full bg-white rounded-[10px]"
@@ -62,19 +62,19 @@ const Admission2Fee = () => {
                     </span>
                   </div>
                   <div className="flex justify-between border-b border-[#f2f2f2]">
-                    <span className="py-[15px] pr-[25px] pl-5 w-3/4">
+                    <span className="py-[15px] pr-[25px] pl-5 w-1/2 md:w-3/4">
                       Application Fee (one time) (Non refundable)
                     </span>
-                    <span className="py-[15px] pr-[25px] pl-5 font-semibold w-1/4">
+                    <span className="py-[15px] pr-[25px] pl-5 font-semibold w-1/2 md:w-1/4">
                       ₹ 1000/-
                     </span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="py-[15px] pr-[25px] pl-5 w-3/4">
+                    <span className="py-[15px] pr-[25px] pl-5 w-1/2 md:w-3/4">
                       Registration Fee (To be paid on offer of Admission,
                       adjusted in Semester Fee)
                     </span>
-                    <span className="py-[15px] pr-[25px] pl-5 w-1/4 font-semibold">
+                    <span className="py-[15px] pr-[25px] pl-5 w-1/2 md:w-1/4 font-semibold">
                       ₹ 25000/-
                     </span>
                   </div>
@@ -97,18 +97,18 @@ const Admission2Fee = () => {
                     </span>
                   </div>
                   <div className="flex justify-between border-b border-[#f2f2f2]">
-                    <span className="py-[15px] pr-[25px] pl-5 w-3/4">
+                    <span className="py-[15px] pr-[25px] pl-5 w-1/2 md:w-3/4">
                       Hostel Security Deposit (Refundable)
                     </span>
-                    <span className="py-[15px] pr-[25px] pl-5 font-semibold w-1/4">
+                    <span className="py-[15px] pr-[25px] pl-5 font-semibold w-1/2 md:w-1/4">
                       ₹ 20000/-
                     </span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="py-[15px] pr-[25px] pl-5 w-3/4">
+                    <span className="py-[15px] pr-[25px] pl-5 w-1/2 md:w-3/4">
                       Hostel Fee (per annum)
                     </span>
-                    <span className="py-[15px] pr-[25px] pl-5 w-1/4 font-semibold">
+                    <span className="py-[15px] pr-[25px] pl-5 w-1/2 md:w-1/4 font-semibold">
                       ₹ 160000/-
                     </span>
                   </div>
@@ -130,19 +130,19 @@ const Admission2Fee = () => {
                     </span>
                   </div>
                   <div className="flex justify-between border-b border-[#f2f2f2]">
-                    <span className="py-[15px] pr-[25px] pl-5 w-3/4">
+                    <span className="py-[15px] pr-[25px] pl-5 w-1/2 md:w-3/4">
                       Transport Fee (per annum)
                     </span>
-                    <span className="py-[15px] pr-[25px] pl-5 font-semibold w-1/4">
+                    <span className="py-[15px] pr-[25px] pl-5 font-semibold w-1/2 md:w-1/4">
                       ₹ 50000/-
                     </span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="py-[15px] pr-[25px] pl-5 w-3/4">
+                    <span className="py-[15px] pr-[25px] pl-5 w-1/2 md:w-3/4">
                       Shuttle Transport (per annum) (From Rajiv Chowk and Huda
                       City Centre to the University)
                     </span>
-                    <span className="py-[15px] pr-[25px] pl-5 w-1/4 font-semibold">
+                    <span className="py-[15px] pr-[25px] pl-5 w-1/2 md:w-1/4 font-semibold">
                       ₹ 25000/
                     </span>
                   </div>
@@ -164,10 +164,10 @@ const Admission2Fee = () => {
                     </span>
                   </div>
                   <div className="flex justify-between border-b border-[#f2f2f2]">
-                    <span className="py-[15px] pr-[25px] pl-5 w-3/4">
+                    <span className="py-[15px] pr-[25px] pl-5 w-1/2 md:w-3/4">
                       Security Deposit (Refundable)
                     </span>
-                    <span className="py-[15px] pr-[25px] pl-5 font-semibold w-1/4">
+                    <span className="py-[15px] pr-[25px] pl-5 font-semibold w-1/2 md:w-1/4">
                       ₹ 10000/-
                     </span>
                   </div>

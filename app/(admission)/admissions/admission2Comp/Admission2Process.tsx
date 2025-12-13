@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Admission2Process = () => {
   return (
-    <section className="py-[50px] bg-[#f9f9f9]">
-      <div className="max-w-[1320px] mx-auto w-full">
+    <section className="pb-[200px] lg:py-[50px] bg-[#f9f9f9] px-4">
+      <div className="max-w-[1320px] mx-auto w-full hidden lg:block">
         <h3 className="text-[40px] text-[#0a41a1] font-semibold text-center mb-5">
           Admission{" "}
           <span className="text-[#e61f21] font-semibold">Process</span>
@@ -42,6 +43,58 @@ const Admission2Process = () => {
               <span className="badge-content">
                 Receive Your Admission Offer
               </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="max-w-[540px] mx-auto w-full flex lg:hidden items-center justify-center md:px-4">
+        <div className="grid grid-cols-2 gap-2.5 md:gap-6">
+          <div
+            className={`w-full text-center relative  mob_admis_proc_col flex flex-col justify-end h-[150px] md:h-[180px]`}
+          >
+            <h4 className="text-lg text-[#e61f21] z-10 break-all font-semibold">
+              Registration
+            </h4>
+            <p className="z-10 leading-[1] text-sm">
+              <span>Register Online Through Our Portal</span>
+            </p>
+          </div>
+          <div
+            className={`w-full text-center relative  mob_admis_proc_col flex flex-col justify-end h-[150px] md:h-[180px]`}
+          >
+            <div className="z-10 relative -mt-[50px]">
+              <h4 className="text-lg text-[#e61f21] z-10 font-semibold">
+                Application Form
+              </h4>
+              <p className="z-10 leading-[1] text-sm">
+                <span>Submit Your Academic Credentials & Application Fee</span>
+              </p>
+            </div>
+          </div>
+          <div
+            className={`w-full text-center relative  mob_admis_proc_col flex flex-col justify-end h-[150px] md:h-[180px] mt-10`}
+          >
+            <div className="z-10 relative -mb-[50px]">
+              <h4 className="text-lg text-[#e61f21] z-10 font-semibold">
+                Admission Offer
+              </h4>
+              <p className="z-10 leading-[1] text-sm">
+                <span>Receive Your Admission Offer</span>
+              </p>
+            </div>
+          </div>
+          <div
+            className={`w-full text-center relative  mob_admis_proc_col flex flex-col justify-end h-[150px] md:h-[180px] mt-10`}
+          >
+            <div className="z-10 relative -mb-[50px]">
+              <h4 className="text-lg text-[#e61f21] z-10 font-semibold">
+                Entrance Exam
+              </h4>
+              <p className="z-10 leading-[1] text-sm">
+                <span>
+                  Appear for the University Entrance Exam (If Applicable)
+                </span>
+              </p>
             </div>
           </div>
         </div>

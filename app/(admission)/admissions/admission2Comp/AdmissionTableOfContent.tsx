@@ -41,7 +41,7 @@ const AdmissionTableOfContent = ({
           <div className="w-full lg:w-3/4">
             <div className="mx-auto max-w-6xl">
               <div className="text-center mb-20">
-                <h3 className="text-[40px]  font-semibold mb-5 text-[#0a41a1]">
+                <h3 className="text-3xl md:text-[40px]  font-semibold mb-5 text-[#0a41a1]">
                   {heading}
                   <span className="text-[#e61f21]">{highlight}</span>
                 </h3>

@@ -8,7 +8,7 @@ type Props = {
 
 const Admission2Alumni = ({ admAlumni }: Props) => {
   return (
-    <section className="py-[50px]">
+    <section className="py-[50px] px-4">
       <div className="max-w-[600px] mx-auto w-full text-center">
         <h3 className="text-[40px] font-semibold text-center mb-5 leading-[1.2] text-[#0a41a1]">
           Voices of <span className="text-[#e61f21]">Our Alumni</span>
