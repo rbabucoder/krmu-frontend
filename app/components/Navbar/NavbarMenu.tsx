@@ -18,6 +18,10 @@ const NavbarMenu = ({ mainMenu }: Props) => {
   const careersLinks = mainMenu.find(
     (component) => component.title === "Careers"
   );
+  const sustainabilityLinks = mainMenu.find(
+    (component) => component.title === "Sustainability"
+  );
+
   const applyNowButton = mainMenu.find(
     (component) => component.__component === "menu.menu-button"
   );
@@ -91,7 +95,9 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                         return (
                           <li
                             key={menu?.id}
-                            className={`text-[13px] capitalize pb-[7px] hover:text-blue-700 ${menu?.menuclass}`}
+                            className={`text-[13px] capitalize pb-[7px] hover:text-blue-700 ${
+                              menu?.menuclass || ""
+                            }`}
                           >
                             <Link href={`${menu?.url || "#"}`}>
                               {menu?.title}
@@ -328,7 +334,9 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                         return (
                           <li
                             key={menu?.id}
-                            className={`text-[13px] capitalize pb-[7px] hover:text-blue-700 ${menu.menuclass}`}
+                            className={`text-[13px] capitalize pb-[7px] hover:text-blue-700 ${
+                              menu.menuclass || ""
+                            }`}
                           >
                             <Link href={menu?.url || "#"}>{menu?.title}</Link>
                           </li>
@@ -360,6 +368,20 @@ const NavbarMenu = ({ mainMenu }: Props) => {
               </div>
             </li>
           )}
+
+          {sustainabilityLinks &&
+            sustainabilityLinks.__component === "menu.menu-links" && (
+              <li className="relative">
+                <Link
+                  className={`font-semibold text-xs xl:text-[15px] text-white flex items-center gap-2.5 min-h-[64px] ${
+                    sustainabilityLinks?.menuclass || ""
+                  }`}
+                  href={sustainabilityLinks.url}
+                >
+                  <span>{sustainabilityLinks.title}</span>
+                </Link>
+              </li>
+            )}
 
           {lifeatkrmuMenu && (
             <li className="relative krm-sub-menu-has-children">
@@ -400,7 +422,9 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                               return (
                                 <li
                                   key={menu?.id}
-                                  className={`text-[13px] capitalize pb-[7px] hover:text-blue-700 ${menu.menuclass}`}
+                                  className={`text-[13px] capitalize pb-[7px] hover:text-blue-700 ${
+                                    menu.menuclass || ""
+                                  }`}
                                 >
                                   <Link href={menu?.url}>{menu?.title}</Link>
                                 </li>
@@ -415,7 +439,9 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                             return (
                               <li
                                 key={menu?.id}
-                                className={`text-[13px] capitalize pb-[7px] hover:text-blue-700 ${menu.menuclass}`}
+                                className={`text-[13px] capitalize pb-[7px] hover:text-blue-700 ${
+                                  menu.menuclass || ""
+                                }`}
                               >
                                 <Link href={menu?.url}>{menu?.title}</Link>
                               </li>
@@ -479,7 +505,9 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                         return (
                           <li
                             key={menu?.id}
-                            className={`text-[13px] capitalize pb-[7px] hover:text-blue-700 ${menu.menuclass}`}
+                            className={`text-[13px] capitalize pb-[7px] hover:text-blue-700 ${
+                              menu.menuclass || ""
+                            }`}
                           >
                             <Link href={menu?.url}>{menu?.title}</Link>
                           </li>
@@ -496,7 +524,9 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                         return (
                           <li
                             key={menu?.id}
-                            className={`text-[13px] capitalize pb-[7px] hover:text-blue-700 ${menu.menuclass}`}
+                            className={`text-[13px] capitalize pb-[7px] hover:text-blue-700 ${
+                              menu.menuclass || ""
+                            }`}
                           >
                             <Link href={menu?.url}>{menu?.title}</Link>
                           </li>
@@ -512,7 +542,9 @@ const NavbarMenu = ({ mainMenu }: Props) => {
           {careersLinks && careersLinks.__component === "menu.menu-links" && (
             <li className="relative">
               <Link
-                className={`font-semibold text-xs xl:text-[15px] text-white flex items-center gap-2.5 min-h-[64px] ${careersLinks?.menuclass}`}
+                className={`font-semibold text-xs xl:text-[15px] text-white flex items-center gap-2.5 min-h-[64px] ${
+                  careersLinks?.menuclass || ""
+                }`}
                 href={careersLinks.url}
               >
                 <span>{careersLinks.title}</span>

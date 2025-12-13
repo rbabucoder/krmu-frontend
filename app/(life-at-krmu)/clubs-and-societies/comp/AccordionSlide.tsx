@@ -14,6 +14,8 @@ type Props = {
 };
 
 const AccordionSlide = ({ slides }: Props) => {
+
+
   return (
     <Carousel
       opts={{
