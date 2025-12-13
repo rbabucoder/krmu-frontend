@@ -12,7 +12,6 @@ const page = async ({ params }: Props) => {
 
   const singleJobData = await getSingleJobBySlug(slug);
 
-
   const currentSingleJob = singleJobData?.find((job) => job?.slug === slug);
 
   if (!currentSingleJob) {
@@ -44,9 +43,33 @@ const page = async ({ params }: Props) => {
 
   return (
     <section className="py-[140px] px-4">
-      <div className="max-w-[1600px] mx-auto w-full flex flex-col lg:flex-row gap-[30px]">
-        <div className="lg:w-1/2">
-          {currentSingleJob && (
+      <div
+        className={`${
+          jobId === 53831 ? "max-w-[800px]" : "max-w-[1600px]"
+        } mx-auto w-full flex flex-col lg:flex-row gap-[30px]`}
+      >
+        {jobId !== 53831 && currentSingleJob && (
+          <div className="lg:w-1/2">
+            <JobInfo
+              jobCategory={jobCategory ?? ""}
+              jobType={jobType ?? ""}
+              jobExperience={jobExperience ?? ""}
+              jobLocation={jobLocation ?? ""}
+              content={currentSingleJob?.content?.rendered}
+            />
+          </div>
+        )}
+
+        <div className={jobId === 53831 ? "w-full" : "lg:w-1/2"}>
+          <JobForm jobId={jobId} />
+        </div>
+      </div>
+      {/* <div className="max-w-[1600px] mx-auto w-full flex flex-col lg:flex-row gap-[30px]">
+        
+          {
+            jobId === '53831' ? '' : 
+          currentSingleJob && (
+            <div className="lg:w-1/2">
             <JobInfo
              
               jobCategory={jobCategory ?? ""}
@@ -60,7 +83,7 @@ const page = async ({ params }: Props) => {
         <div className="lg:w-1/2">
           <JobForm jobId={jobId} />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
