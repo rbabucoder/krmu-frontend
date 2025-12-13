@@ -1,5 +1,5 @@
 import { ClubAndSocitiesHero } from "./comp/ClubAndSocitiesHero";
-// import ClubAndSocietiesInfo from "./comp/ClubAndSocietiesInfo";
+import ClubAndSocietiesInfo from "./comp/ClubAndSocietiesInfo";
 // import ClubAndSocietiesAcc from "./comp/ClubAndSocietiesAcc";
 
 import { getClubAndSocitiesData } from "@/lib/api/club-and-societies";
@@ -12,7 +12,7 @@ const page = async () => {
         title={clubsData?.title}
         featured_image_url={clubsData?.featured_image?.url}
       />
-      {/* <ClubAndSocietiesInfo content={clubsData?.desc} /> */}
+      <ClubAndSocietiesInfo content={clubsData?.desc} />
       {/* <ClubAndSocietiesAcc accordionsData={clubsData?.clubsaccordions} /> */}
     </>
   );
