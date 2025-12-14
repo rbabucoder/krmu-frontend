@@ -1,6 +1,6 @@
 "use client";
 
-import { STRAPI_URL } from "@/app/constant";
+import { FETCH_STRAPI_URL } from "@/app/constant";
 import { useState } from "react";
 
 const ContactUsForm = () => {
@@ -39,7 +39,7 @@ const ContactUsForm = () => {
     setSuccess("");
 
     try {
-      const res = await fetch(`${STRAPI_URL}/api/contact-forms`, {
+      const res = await fetch(`${FETCH_STRAPI_URL}/api/contact-forms`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
