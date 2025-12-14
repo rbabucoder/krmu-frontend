@@ -15,16 +15,83 @@
 
 /* Custom utility class */
 @layer utilities {
+  .Reach-Out-to-Us-form {
+    background: rgba(122, 122, 122, 20%);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    /* backdrop-filter: blur(5px); */
+    /* -webkit-backdrop-filter: blur(5px); */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 60px 40px;
+  }
 
+  .Reach-Out-to-Us-form .title {
+    font-size: 48px;
+    font-weight: 600;
+    color: white;
+    line-height: 1.3;
+  }
 
-  .fedpolcys3 .fedpolcys{
+  .Reach-Out-to-Us-form .field {
+    color: white;
+    border-radius: 100px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .contactUsformField {
+    margin-bottom: 20px;
+    display: block;
+  }
+  .field_label {
+    margin-bottom: 20px;
+    display: block;
+  }
+  .contactUsformField .field_text,
+  .contactUsformField .field_email,
+  .contactUsformField .field_phone {
+    padding: 0 10px;
+    height: 50px;
+    background: #fff;
+    font-size: 16px;
+    border-radius: 100px;
+    width: 100%;
+  }
+  .campus-tour-btn {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .field_submit {
+    width: 100%;
+    padding: 13px 29px;
+    background-color: #0060aa;
+    color: #fff;
+    border-radius: 100px;
+  }
+
+  @media(max-width: 640px){
+    .Reach-Out-to-Us-form{
+      padding: 20px;
+    }
+    .Reach-Out-to-Us-form .title{
+      font-size: 30px;
+      line-height: 1.2;
+    }
+    .campus-tour-btn{
+      flex-direction: column;
+    }
+  }
+
+  .fedpolcys3 .fedpolcys {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 20px;
     font-weight: 600;
   }
-  .fedpolcys3 .fedpolcys2{
+  .fedpolcys3 .fedpolcys2 {
     padding: 6px 0px;
   }
 
@@ -1370,19 +1437,19 @@
     background: #fff;
     margin-bottom: 30px;
   }
-  .table-1 table{
+  .table-1 table {
     width: 100%;
     overflow-x: auto;
   }
-   .white-table table{
+  .white-table table {
     width: 100%;
-   }
-   .white-table table th:first-child{
+  }
+  .white-table table th:first-child {
     border-radius: 70px 0px 0px 70px;
-   }
-   .white-table table th:nth-child(2){
+  }
+  .white-table table th:nth-child(2) {
     border-radius: 0 70px 70px 0px;
-   }
+  }
   .white-table tr,
   .white-table table th {
     background: transparent;

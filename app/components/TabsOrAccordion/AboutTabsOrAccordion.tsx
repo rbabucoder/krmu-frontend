@@ -28,7 +28,7 @@ const AboutTabsOrAccordion = ({ data }: Props) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  return <>{isMobile ? <AboutAccordion  /> : <AboutTabs data={data} />}</>;
+  return <>{isMobile ? <AboutAccordion data={data}  /> : <AboutTabs data={data} />}</>;
 };
 
 export default AboutTabsOrAccordion;

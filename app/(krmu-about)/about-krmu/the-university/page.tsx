@@ -152,7 +152,7 @@ const page = async () => {
           </h3>
           <HallofFame fameData={hallOfFameData?.hallfame} />
           <Link
-            href="#"
+            href="/awards-and-achievements"
             className="p-2.5 px-[18px] bg-white text-base inline-block rounded-sm leading-4 text-[#cb000d]"
           >
             Know More
