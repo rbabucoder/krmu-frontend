@@ -1,178 +1,124 @@
 "use client";
 
-import { FETCH_STRAPI_URL } from "@/app/constant";
 import { useState } from "react";
 
 const ContactUsForm = () => {
-  const [form, setForm] = useState({
+  const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "",
-    agree: false,
+    message: "",
   });
 
-  const [loading, setLoading] = useState(false);
-  const [success, setSuccess] = useState("");
-  const [error, setError] = useState("");
+  const [errors, setErrors] = useState<{
+    name?: string;
+    email?: string;
+    message?: string;
+  }>({});
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value, type, checked } = e.target;
+  // ---------------- VALIDATION ----------------
+  const validate = () => {
+    const newErrors: typeof errors = {};
 
-    setForm((prev) => ({
+    if (!formData.name.trim()) {
+      newErrors.name = "Name is required";
+    }
+
+    if (!formData.email.trim()) {
+      newErrors.email = "Email is required";
+    } else if (
+      !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)
+    ) {
+      newErrors.email = "Enter a valid email address";
+    }
+
+    if (!formData.message.trim()) {
+      newErrors.message = "Message is required";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  // ---------------- HANDLERS ----------------
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+
+    setFormData((prev) => ({
       ...prev,
-      [name]: type === "checkbox" ? checked : value,
+      [name]: value,
+    }));
+
+    // clear error while typing
+    setErrors((prev) => ({
+      ...prev,
+      [name]: undefined,
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!form.agree) {
-      setError(
-        "Please agree to receive information before submitting the form."
-      );
-      return;
-    }
+    if (!validate()) return;
 
-    setLoading(true);
-    setError("");
-    setSuccess("");
-
-    try {
-      const res = await fetch(`${FETCH_STRAPI_URL}/api/contact-forms`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          data: {
-            name: form.name,
-            email: form.email,
-            phone: form.phone,
-            agree: form.agree,
-          },
-        }),
-      });
-
-      if (!res.ok) throw new Error("Failed");
-
-      setSuccess("Thank you! Your application has been submitted.");
-      setForm({
-        name: "",
-        email: "",
-        phone: "",
-        agree: false,
-      });
-    } catch {
-      setError("Something went wrong. Please try again later.");
-    } finally {
-      setLoading(false);
-    }
+    console.log("Form submitted:", formData);
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div className="Reach-Out-to-Us-form">
-        <div className="title">
-          <p>Reach Out to Us</p>
-        </div>
-
-        <p className="field description">
-          <br />
-          For any inquiries or information, feel free to connect with us. Our
-          team is ready to assist you with your academic journey.
-        </p>
-
-        {/* Name */}
-        <div className="field name">
-          <label className="field_label">Name:</label>
-          <p>
-            <span className="contactUsformField">
-              <input
-                type="text"
-                name="name"
-                value={form.name}
-                onChange={handleChange}
-                maxLength={400}
-                className="field_text text-black"
-                required
-              />
-            </span>
-          </p>
-        </div>
-
-        {/* Email */}
-        <div className="field email">
-          <label className="field_label">E-Mail ID:</label>
-          <p>
-            <span className="contactUsformField">
-              <input
-                type="email"
-                name="email"
-                value={form.email}
-                onChange={handleChange}
-                maxLength={400}
-                className="field_email text-black"
-                required
-              />
-            </span>
-          </p>
-        </div>
-
-        {/* Phone */}
-        <div className="field phone">
-          <label className="field_label">Mobile Number:</label>
-          <p>
-            <span className="contactUsformField">
-              <input
-                type="tel"
-                name="phone"
-                value={form.phone}
-                onChange={handleChange}
-                maxLength={11}
-                minLength={10}
-                className="field_phone text-black"
-                required
-              />
-            </span>
-          </p>
-        </div>
-
-        {/* Checkbox */}
-        <div className="field checkbox">
-          <p>
-            <span className="contactUsformField">
-              <label className="field_label flex gap-2 items-start">
-                <input
-                  type="checkbox"
-                  name="agree"
-                  checked={form.agree}
-                  onChange={handleChange}
-                />
-                <span>
-                  I agree to receive information regarding my submitted
-                  application by signing up on{" "}
-                  <strong>KR Mangalam University</strong>
-                </span>
-              </label>
-            </span>
-          </p>
-        </div>
-
-        {/* Submit */}
-        <div className="field submit pt-5">
-          <p>
-            <input
-              className="field_submit"
-              type="submit"
-              value={loading ? "Submitting..." : "Submit"}
-              disabled={loading}
-            />
-          </p>
-        </div>
-
-        {/* Messages */}
-        {success && <p className="text-green-600 pt-3">{success}</p>}
-        {error && <p className="text-red-600 pt-3">{error}</p>}
+    <form onSubmit={handleSubmit} className="Reach-Out-to-Us-form">
+      <div className="title">
+        <p>Reach Out to Us</p>
       </div>
+
+      {/* ---------------- NAME ---------------- */}
+      <div className="field name">
+        <label className="field_label">Name</label>
+        <input
+          type="text"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+          className="field_text"
+        />
+        {errors.name && (
+          <p className="text-red-600 text-sm mt-1">{errors.name}</p>
+        )}
+      </div>
+
+      {/* ---------------- EMAIL ---------------- */}
+      <div className="field email">
+        <label className="field_label">Email</label>
+        <input
+          type="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+          className="field_text"
+        />
+        {errors.email && (
+          <p className="text-red-600 text-sm mt-1">{errors.email}</p>
+        )}
+      </div>
+
+      {/* ---------------- MESSAGE ---------------- */}
+      <div className="field message">
+        <label className="field_label">Message</label>
+        <textarea
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+          className="field_text"
+          rows={4}
+        />
+        {errors.message && (
+          <p className="text-red-600 text-sm mt-1">{errors.message}</p>
+        )}
+      </div>
+
+      <button type="submit" className="submit-btn">
+        Submit
+      </button>
     </form>
   );
 };
