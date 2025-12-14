@@ -19,17 +19,24 @@ const JobForm = ({ jobId }: Props) => {
   });
 
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const [successMessage, setSuccessMessage] = useState("");
   const [file, setFile] = useState<File | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
-  // ALLOWED FILE TYPES
   const allowedTypes = [
     "application/pdf",
     "application/msword",
     "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
   ];
 
-  // ------------------ VALIDATION ------------------
+  const backendFieldMap: Record<string, string> = {
+    "Candidate Name": "awsm_applicant_name",
+    "Contact No.": "awsm_applicant_phone",
+    "Mail ID": "awsm_applicant_email",
+    "Upload CV/Resume": "awsm_file",
+  };
+
+  /* ---------------- VALIDATION ---------------- */
   const validateForm = () => {
     const newErrors: Record<string, string> = {};
 
@@ -40,7 +47,8 @@ const JobForm = ({ jobId }: Props) => {
     });
 
     if (!formData.awsm_form_privacy_policy) {
-      newErrors.awsm_form_privacy_policy = "You must accept the privacy policy";
+      newErrors.awsm_form_privacy_policy =
+        "You must accept the privacy policy";
     }
 
     if (!file) {
@@ -55,19 +63,20 @@ const JobForm = ({ jobId }: Props) => {
     return Object.keys(newErrors).length === 0;
   };
 
-  // ------------------ INPUT HANDLERS ------------------
+  /* ---------------- HANDLERS ---------------- */
   const handleChange = (e: any) => {
     const { name, value, type, checked } = e.target;
+
     setFormData((prev) => ({
       ...prev,
       [name]: type === "checkbox" ? checked : value,
     }));
 
-    setErrors((prev) => ({ ...prev, [name]: "" })); // remove error live
+    setErrors((prev) => ({ ...prev, [name]: "" }));
   };
 
   const handleFileSelect = (e: any) => {
-    const uploaded = e.target.files[0];
+    const uploaded = e.target.files?.[0];
     if (!uploaded) return;
 
     if (!allowedTypes.includes(uploaded.type)) {
@@ -76,11 +85,13 @@ const JobForm = ({ jobId }: Props) => {
     }
 
     setFile(uploaded);
-    setErrors({ awsm_file: "" });
+    setErrors((prev) => ({ ...prev, awsm_file: "" }));
   };
 
+  /* ---------------- SUBMIT ---------------- */
   const handleSubmit = async (e: any) => {
     e.preventDefault();
+    setSuccessMessage("");
 
     if (!validateForm()) return;
 
@@ -89,11 +100,10 @@ const JobForm = ({ jobId }: Props) => {
     fd.append("awsm_job_id", jobId.toString());
 
     Object.entries(formData).forEach(([key, value]) => {
-      if (key === "awsm_form_privacy_policy") {
-        fd.append(key, value ? "yes" : ""); // convert boolean → string
-      } else {
-        fd.append(key, String(value)); // ensures value is always string
-      }
+      fd.append(
+        key,
+        key === "awsm_form_privacy_policy" ? (value ? "yes" : "") : String(value)
+      );
     });
 
     if (file) fd.append("awsm_file_1", file);
@@ -102,15 +112,44 @@ const JobForm = ({ jobId }: Props) => {
       method: "POST",
       body: fd,
     });
+
     const result = await response.json();
 
-    if (!result.success) {
-      alert("Submission failed");
-      console.error(result.error);
+    /* 🔴 BACKEND ERRORS */
+    if (result?.error?.length) {
+      const apiErrors: Record<string, string> = {};
+
+      result.error.forEach((msg: string) => {
+        const clean = msg.replace(/<[^>]*>/g, "");
+        const [label, message] = clean.split(":");
+
+        const fieldKey = backendFieldMap[label?.trim()];
+        if (fieldKey) apiErrors[fieldKey] = message?.trim();
+      });
+
+      setErrors(apiErrors);
       return;
     }
 
-    alert("Form submitted successfully!");
+    /* 🟢 SUCCESS */
+    setSuccessMessage("Your application has been submitted successfully.");
+    setErrors({});
+    setFormData({
+      awsm_applicant_name: "",
+      awsm_applicant_phone: "",
+      awsm_applicant_email: "",
+      awsm_text_1: "",
+      awsm_text_4: "",
+      awsm_text_5: "",
+      awsm_text_6: "",
+      awsm_text_2: "",
+      awsm_text_3: "",
+      awsm_text_7: "",
+      awsm_form_privacy_policy: false,
+    });
+
+    setFile(null);
+    if (fileInputRef.current) fileInputRef.current.value = "";
   };
 
   const fields = [
@@ -119,7 +158,10 @@ const JobForm = ({ jobId }: Props) => {
     { label: "Mail ID", name: "awsm_applicant_email", type: "email" },
     { label: "Current Location", name: "awsm_text_1" },
     { label: "Native Location", name: "awsm_text_4" },
-    { label: "Education with Percentage (Bachelor,Master,P.HD) *", name: "awsm_text_5" },
+    {
+      label: "Education with Percentage (Bachelor,Master,P.HD)",
+      name: "awsm_text_5",
+    },
     { label: "Current Organization", name: "awsm_text_6" },
     { label: "Current Salary", name: "awsm_text_2" },
     { label: "Expected Salary", name: "awsm_text_3" },
@@ -127,21 +169,21 @@ const JobForm = ({ jobId }: Props) => {
   ];
 
   return (
-    <form
-      data-jobform-id={jobId}
-      onSubmit={handleSubmit}
-      className="p-5 md:p-[25px] rounded-[5px]"
-      style={{ boxShadow: `0 0 18px -4px #e3e3e3` }}
-    >
-      <h2 className="text-4xl font-semibold mb-[30px]">
+    <form onSubmit={handleSubmit} className="p-6 rounded-md shadow">
+      <h2 className="text-4xl font-semibold mb-6">
         Apply for this position
       </h2>
 
-      {/* FIELDS */}
-      {fields.map((field, i) => (
-        <div className="mb-5" key={i}>
-          <label className="block font-medium mb-2.5 text-base">
-            {field.label} <span className="text-[#db4c4c]">*</span>
+      {successMessage && (
+        <div className="mb-6 p-4 bg-green-100 text-green-800 rounded">
+          {successMessage}
+        </div>
+      )}
+
+      {fields.map((field) => (
+        <div className="mb-5" key={field.name}>
+          <label className="block font-medium mb-2">
+            {field.label} <span className="text-red-500">*</span>
           </label>
 
           <input
@@ -149,51 +191,47 @@ const JobForm = ({ jobId }: Props) => {
             name={field.name}
             value={(formData as any)[field.name]}
             onChange={handleChange}
-            className="px-[15px] border w-full h-[50px] rounded-[6px]"
+            className="w-full border rounded px-4 h-[48px]"
           />
 
           {errors[field.name] && (
-            <p className="text-red-600 text-sm mt-1">{errors[field.name]}</p>
+            <p className="text-red-600 text-sm mt-1">
+              {errors[field.name]}
+            </p>
           )}
         </div>
       ))}
 
       {/* FILE UPLOAD */}
       <div className="mb-5">
-        <label className="block font-medium mb-2.5 text-base">
-          Upload CV/Resume <span className="text-[#db4c4c]">*</span>
+        <label className="block font-medium mb-2">
+          Upload CV/Resume <span className="text-red-500">*</span>
         </label>
 
         <div
-          className="p-4 border border-dashed border-[#0000004d] cursor-pointer rounded-md"
+          className="p-4 border-dashed border cursor-pointer rounded text-center"
           onClick={() => fileInputRef.current?.click()}
         >
-          <div className="py-7 text-center">
-            {file ? (
-              <span className="font-medium text-green-600">
-                Selected: {file.name}
-              </span>
-            ) : (
-              "Click to upload (PDF, DOC, DOCX)"
-            )}
-          </div>
+          {file ? file.name : "Click to upload (PDF, DOC, DOCX)"}
         </div>
 
         <input
           type="file"
           ref={fileInputRef}
-          accept=".pdf,.doc,.docx"
           className="hidden"
+          accept=".pdf,.doc,.docx"
           onChange={handleFileSelect}
         />
-        <span className="text-xs">Allowed Type(s): .pdf, .doc, .docx</span>
+
         {errors.awsm_file && (
-          <p className="text-red-600 text-sm mt-1">{errors.awsm_file}</p>
+          <p className="text-red-600 text-sm mt-1">
+            {errors.awsm_file}
+          </p>
         )}
       </div>
 
-      {/* PRIVACY POLICY */}
-      <div className="mb-5 flex items-center">
+      {/* PRIVACY */}
+      <div className="mb-4 flex items-center">
         <input
           type="checkbox"
           name="awsm_form_privacy_policy"
@@ -201,22 +239,20 @@ const JobForm = ({ jobId }: Props) => {
           onChange={handleChange}
           className="mr-2"
         />
-        <label className="text-base">
-          By using this form you agree with the storage and handling of your
-          data by this website.
-          <span className="text-[#db4c4c]">*</span>
+        <label>
+          I agree to the privacy policy <span className="text-red-500">*</span>
         </label>
       </div>
+
       {errors.awsm_form_privacy_policy && (
-        <p className="text-red-600 text-sm mt-1">
+        <p className="text-red-600 text-sm mb-4">
           {errors.awsm_form_privacy_policy}
         </p>
       )}
 
-      {/* SUBMIT */}
       <button
         type="submit"
-        className="bg-[#cb000d] text-white py-[15px] px-10 rounded-full font-semibold"
+        className="bg-[#cb000d] text-white px-10 py-3 rounded-full font-semibold"
       >
         Submit
       </button>

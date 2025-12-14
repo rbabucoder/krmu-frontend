@@ -30,7 +30,7 @@ export async function POST(req: Request) {
     });
 
     const wpResponse = await fetch(
-      "https://www.krmangalam.edu.in/careers/wp-admin/admin-ajax.php",
+      "https://www.krmangalam.edu.in/careers2/wp-admin/admin-ajax.php",
       {
         method: "POST",
         body: forward,

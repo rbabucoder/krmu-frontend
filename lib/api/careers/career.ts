@@ -4,7 +4,7 @@ import { CareerResponse, SingleJobResponse } from "@/lib/types/careers/career";
 export async function getAllJobsOrAlsoWithSearch(
   search: string = ""
 ): Promise<CareerResponse> {
-  const baseURL = `${KRMUWordUrl}/careers/wp-json/wp/v2/awsm_job_openings`;
+  const baseURL = `${KRMUWordUrl}/careers2/wp-json/wp/v2/awsm_job_openings`;
 
   const url = `${baseURL}?page=1&per_page=60&_fields=id,slug,title.rendered${
     search ? `&search=${search}` : ""
@@ -34,7 +34,7 @@ export async function getAllJobsOrAlsoWithSearch(
 
 export async function getSingleJobBySlug(slug: string = "") {
   const res = await fetch(
-    `${KRMUWordUrl}/careers/wp-json/wp/v2/awsm_job_openings?per_page=1&slug=${slug}&_fields=id,content,title,date,slug,class_list`,
+    `${KRMUWordUrl}/careers2/wp-json/wp/v2/awsm_job_openings?per_page=1&slug=${slug}&_fields=id,content,title,date,slug,class_list`,
     {
       next: {
         revalidate: 60,
