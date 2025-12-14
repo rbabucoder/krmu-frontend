@@ -116,7 +116,7 @@ const ContactUsForm = () => {
         )}
       </div>
 
-      <button type="submit" className="submit-btn">
+      <button type="submit" className="submit-btn field_submit">
         Submit
       </button>
     </form>

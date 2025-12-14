@@ -46,9 +46,9 @@
     margin-bottom: 20px;
     display: block;
   }
-  .contactUsformField .field_text,
-  .contactUsformField .field_email,
-  .contactUsformField .field_phone {
+   .field_text,
+   .field_email,
+   .field_phone {
     padding: 0 10px;
     height: 50px;
     background: #fff;
