@@ -25,9 +25,7 @@ const ContactUsForm = () => {
 
     if (!formData.email.trim()) {
       newErrors.email = "Email is required";
-    } else if (
-      !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)
-    ) {
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
       newErrors.email = "Enter a valid email address";
     }
 
@@ -69,6 +67,12 @@ const ContactUsForm = () => {
     <form onSubmit={handleSubmit} className="Reach-Out-to-Us-form">
       <div className="title">
         <p>Reach Out to Us</p>
+      </div>
+      <div className="text-white my-5">
+        <p>
+          For any inquiries or information, feel free to connect with us. Our
+          team is ready to assist you with your academic journey.
+        </p>
       </div>
 
       {/* ---------------- NAME ---------------- */}
