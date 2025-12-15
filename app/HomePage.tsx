@@ -1,19 +1,19 @@
 import { getHomePageData } from "@/lib/api/home";
-import ADecade from "./Home/ADecade";
-import AFS from "./Home/AFS";
-import ElevateCampus from "./Home/ElevateCampus";
-import EventsAndNews from "./Home/EventsAndNews";
-import GlobalPartner from "./Home/GlobalPartner";
-import HeroSection from "./Home/HeroSection";
-import HomeTestimonial from "./Home/HomeTestimonial";
-import OurTopRecruiters from "./Home/OurTopRecruiters";
-import PlacementsRecruiters from "./Home/PlacementsRecruiters";
-import ShapingFuture from "./Home/ShapingFuture";
-import VisitExplore from "./Home/VisitExplore";
-import WhyKRMU from "./Home/WhyKRMU";
-import YourJourney from "./Home/YourJourney";
-import MobElevateCampus from "./Home/MobElevateCampus";
-import PioneerExcellence from "./Home/PioneerExcellence";
+import ADecade from "./(main-website)/Home/ADecade";
+import AFS from "./(main-website)/Home/AFS";
+import ElevateCampus from "./(main-website)/Home/ElevateCampus";
+import EventsAndNews from "./(main-website)/Home/EventsAndNews";
+import GlobalPartner from "./(main-website)/Home/GlobalPartner";
+import HeroSection from "./(main-website)/Home/HeroSection";
+import HomeTestimonial from "./(main-website)/Home/HomeTestimonial";
+import OurTopRecruiters from "./(main-website)/Home/OurTopRecruiters";
+import PlacementsRecruiters from "./(main-website)/Home/PlacementsRecruiters";
+import ShapingFuture from "./(main-website)/Home/ShapingFuture";
+import VisitExplore from "./(main-website)/Home/VisitExplore";
+import WhyKRMU from "./(main-website)/Home/WhyKRMU";
+import YourJourney from "./(main-website)/Home/YourJourney";
+import MobElevateCampus from "./(main-website)/Home/MobElevateCampus";
+import PioneerExcellence from "./(main-website)/Home/PioneerExcellence";
 
 export default async function HomePage() {
   const homepageContent = await getHomePageData();
