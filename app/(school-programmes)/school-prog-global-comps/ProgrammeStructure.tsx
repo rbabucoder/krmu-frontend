@@ -199,7 +199,11 @@ const ProgrammeStructure = ({
                                             </h5>
                                           </AccordionTrigger>
                                           <AccordionContent className="whitespace-pre-line text-sm text-gray-700 subAccPanelContent">
-                                            {course.sub_name}
+                                            <span
+                                              dangerouslySetInnerHTML={{
+                                                __html: course.sub_name,
+                                              }}
+                                            />
                                           </AccordionContent>
                                         </AccordionItem>
                                       ))}
