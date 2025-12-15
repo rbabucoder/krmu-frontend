@@ -1828,6 +1828,12 @@
   .prog-counter-container .counter_content {
     font-size: 20px;
   }
+
+  @media(max-width: 768px){
+    .prog-counter-container .counter{
+      font-size: 30px;
+    }
+  }
   .magazineref ul {
     padding-left: 40px;
     list-style: disc;

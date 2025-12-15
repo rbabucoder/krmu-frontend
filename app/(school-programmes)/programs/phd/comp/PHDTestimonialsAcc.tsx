@@ -14,14 +14,14 @@ type Props = {
 const PHDTestimonialsAcc = ({ faqTitle, faqs }: Props) => {
   return (
     <>
-      <section className="py-[60px]">
+      <section className="py-[60px] px-4">
         <div className="max-w-[1664px] mx-auto w-full">
-          <h3 className="text-5xl font-semibold mb-5">{faqTitle}</h3>
+          <h3 className="text-3xl md:text-5xl font-semibold mb-5">{faqTitle}</h3>
 
           <Accordion
             type="single"
             collapsible
-            className="w-full grid grid-cols-2 gap-x-[3.84%] gap-y-2.5"
+            className="w-full grid grid-cols-1 md:grid-cols-2 gap-x-[3.84%] gap-y-2.5"
             defaultValue="item-1"
           >
             {faqs &&

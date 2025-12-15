@@ -31,24 +31,21 @@ const PHDProgrammes = ({ phdData }: Props) => {
         />
       )}
 
-      {phdData?.phdoverview && <PHDOverview overviewData={phdData.phdoverview} />}
-
+      {phdData?.phdoverview && (
+        <PHDOverview overviewData={phdData.phdoverview} />
+      )}
       {phdData?.scholarsponsoredparttime && (
         <PHDScholar scholarShipsData={phdData.scholarsponsoredparttime} />
       )}
-
       {phdData?.connectingtalent && (
         <PHDConnectingDream connectingTalent={phdData.connectingtalent} />
       )}
-
       {phdData?.phdlogoslide && phdData.phdlogoslide.length > 0 && (
         <PHDSlide logoSlide={phdData.phdlogoslide} />
       )}
-
       {phdData?.careeroptions && (
         <PHDCareer careerOptions={phdData.careeroptions} />
       )}
-
       {phdData?.phdoutcome && (
         <PHDOutcome phdoutcomecontent={phdData.phdoutcome} />
       )}

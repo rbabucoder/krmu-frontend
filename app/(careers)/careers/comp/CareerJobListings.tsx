@@ -22,7 +22,7 @@ const CareerJobListings = () => {
     const controller = new AbortController();
     abortRef.current = controller;
 
-    const url = `${KRMUWordUrl}/careers/wp-json/wp/v2/awsm_job_openings?page=1&per_page=60&_fields=id,slug,title.rendered${
+    const url = `${KRMUWordUrl}/careers2/wp-json/wp/v2/awsm_job_openings?page=1&per_page=60&_fields=id,slug,title.rendered${
       text ? `&search=${text}` : ""
     }`;
 

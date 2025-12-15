@@ -11,14 +11,17 @@ const PHDPursue = ({ pursueContent }: Props) => {
       className="bg-cover bg-no-repeat py-[60px]"
       style={{
         background: `url(${STRAPI_URL}${pursueContent?.bgimage?.url})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        backgroundSize: 'cover'
       }}
     >
-      <div className="flex max-w-[1664px] mx-auto w-full">
-        <div className="w-2/5">
-          <h3 className="text-[64px] font-semibold leading-[1.2] mb-5">
+      <div className="flex flex-col lg:flex-row max-w-[1664px] mx-auto w-full">
+        <div className="lg:w-2/5 text-white">
+          <h3 className="text-3xl md:text-[64px] font-semibold leading-[1.2] mb-5">
             {pursueContent?.title}
           </h3>
-          <div className="leading-[2]">
+          <div className="lg:leading-[2]">
             <BlocksRenderer content={pursueContent?.pursue} />
           </div>
         </div>
