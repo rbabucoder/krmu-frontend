@@ -13,7 +13,9 @@ const page = async () => {
     <>
       <SportsHero />
       <SportsIntro />
-      <SportsIndoorOutDoor data={indoorOutdoorSports} />
+      {indoorOutdoorSports && (
+        <SportsIndoorOutDoor data={indoorOutdoorSports} />
+      )}
       <SportEventsAndTournament />
     </>
   );

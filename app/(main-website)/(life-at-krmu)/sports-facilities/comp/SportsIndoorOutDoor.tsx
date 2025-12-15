@@ -1,6 +1,5 @@
-import { STRAPI_URL } from "@/app/constant";
 import { SportFacilityGridItem } from "@/lib/api/sport-facility";
-import Image from "next/image";
+
 import SportFacilitySlide from "./SportFacilitySlide";
 
 type Props = {
