@@ -147,7 +147,7 @@ export async function examinationSEO(): Promise<
   ExaminationSeoResponse["data"]
 > {
   const res = await fetch(
-    `${FETCH_STRAPI_URL}/api/pedagogy?populate[seo][populate][shareImage][fields][0]=url`,
+    `${FETCH_STRAPI_URL}/api/examination?populate[seo][populate][shareImage][fields][0]=url`,
     {
       next: {
         revalidate: 30,
