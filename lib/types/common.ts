@@ -244,20 +244,4 @@ export interface common_btn {
   btn_link: string;
 }
 ///////////////////////
-// school Response
-
-export interface SchoolSEOResponse {
-  data: SchoolSEO;
-  meta: {
-    pagination: {
-      page: number;
-      pageSize: number;
-      pageCounter: number;
-      total: number;
-    };
-  };
-}
-
-export interface SchoolSEO {
-  school_seo: SEO;
-}
+// school Response 

@@ -59,8 +59,6 @@ const ContactUsForm = () => {
     e.preventDefault();
 
     if (!validate()) return;
-
-    console.log("Form submitted:", formData);
   };
 
   return (

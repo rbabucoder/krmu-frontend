@@ -5,7 +5,6 @@ import {
   CustomPageResponse,
   FacilityAPIResponse,
   SchoolProgrammeSEOResponse,
-  SchoolSEOResponse,
   StrapiMedia,
   StudentAchievementResponse,
 } from "../types/common";
@@ -334,22 +333,6 @@ export async function getSchoolProgrammeSEO(
   return json.data;
 }
 
-export async function getSchoolSEO(
-  slug: string
-): Promise<SchoolSEOResponse["data"]> {
-  const res = await fetch(
-    `${FETCH_STRAPI_URL}/api/schools?filters[urlslug][$eq]=${slug}&populate[school_seo][populate]=*`,
-    {
-      next: {
-        revalidate: 60,
-      },
-    }
-  );
-  if (!res.ok) throw new Error("Failed to fetch School Programme SEO");
-  const json: SchoolSEOResponse = await res.json();
-  return json.data;
-}
-
 ///////////////////////////////
 
 export interface FacultyInterestArea {
@@ -405,12 +388,6 @@ export interface StrapiPagination {
   pageCount: number;
   total: number;
 }
-
-
-
-
-
-
 
 export async function getWordImageById(imgId: number): Promise<string> {
   if (!imgId) throw new Error("Image ID is required");

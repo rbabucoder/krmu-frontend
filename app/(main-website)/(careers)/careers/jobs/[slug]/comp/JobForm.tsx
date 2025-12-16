@@ -1,4 +1,5 @@
 "use client";
+
 import { useState, useRef } from "react";
 
 type Props = { jobId: number };
@@ -21,6 +22,8 @@ const JobForm = ({ jobId }: Props) => {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [successMessage, setSuccessMessage] = useState("");
   const [file, setFile] = useState<File | null>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const allowedTypes = [
@@ -47,8 +50,7 @@ const JobForm = ({ jobId }: Props) => {
     });
 
     if (!formData.awsm_form_privacy_policy) {
-      newErrors.awsm_form_privacy_policy =
-        "You must accept the privacy policy";
+      newErrors.awsm_form_privacy_policy = "You must accept the privacy policy";
     }
 
     if (!file) {
@@ -91,65 +93,79 @@ const JobForm = ({ jobId }: Props) => {
   /* ---------------- SUBMIT ---------------- */
   const handleSubmit = async (e: any) => {
     e.preventDefault();
+    if (isSubmitting) return;
+
     setSuccessMessage("");
 
     if (!validateForm()) return;
 
-    const fd = new FormData();
-    fd.append("action", "awsm_applicant_form_submission");
-    fd.append("awsm_job_id", jobId.toString());
+    setIsSubmitting(true);
 
-    Object.entries(formData).forEach(([key, value]) => {
-      fd.append(
-        key,
-        key === "awsm_form_privacy_policy" ? (value ? "yes" : "") : String(value)
-      );
-    });
+    try {
+      const fd = new FormData();
+      fd.append("action", "awsm_applicant_form_submission");
+      fd.append("awsm_job_id", jobId.toString());
 
-    if (file) fd.append("awsm_file_1", file);
-
-    const response = await fetch("/api/submit-job", {
-      method: "POST",
-      body: fd,
-    });
-
-    const result = await response.json();
-
-    /* 🔴 BACKEND ERRORS */
-    if (result?.error?.length) {
-      const apiErrors: Record<string, string> = {};
-
-      result.error.forEach((msg: string) => {
-        const clean = msg.replace(/<[^>]*>/g, "");
-        const [label, message] = clean.split(":");
-
-        const fieldKey = backendFieldMap[label?.trim()];
-        if (fieldKey) apiErrors[fieldKey] = message?.trim();
+      Object.entries(formData).forEach(([key, value]) => {
+        fd.append(
+          key,
+          key === "awsm_form_privacy_policy"
+            ? value
+              ? "yes"
+              : ""
+            : String(value)
+        );
       });
 
-      setErrors(apiErrors);
-      return;
+      if (file) fd.append("awsm_file_1", file);
+
+      const response = await fetch("/api/submit-job", {
+        method: "POST",
+        body: fd,
+      });
+
+      const result = await response.json();
+
+      /* 🔴 BACKEND ERRORS */
+      if (result?.error?.length) {
+        const apiErrors: Record<string, string> = {};
+
+        result.error.forEach((msg: string) => {
+          const clean = msg.replace(/<[^>]*>/g, "");
+          const [label, message] = clean.split(":");
+
+          const fieldKey = backendFieldMap[label?.trim()];
+          if (fieldKey) apiErrors[fieldKey] = message?.trim();
+        });
+
+        setErrors(apiErrors);
+        return;
+      }
+
+      /* 🟢 SUCCESS */
+      setSuccessMessage("Your application has been submitted successfully.");
+      setErrors({});
+      setFormData({
+        awsm_applicant_name: "",
+        awsm_applicant_phone: "",
+        awsm_applicant_email: "",
+        awsm_text_1: "",
+        awsm_text_4: "",
+        awsm_text_5: "",
+        awsm_text_6: "",
+        awsm_text_2: "",
+        awsm_text_3: "",
+        awsm_text_7: "",
+        awsm_form_privacy_policy: false,
+      });
+
+      setFile(null);
+      if (fileInputRef.current) fileInputRef.current.value = "";
+    } catch (err) {
+      console.error("Form submit error", err);
+    } finally {
+      setIsSubmitting(false);
     }
-
-    /* 🟢 SUCCESS */
-    setSuccessMessage("Your application has been submitted successfully.");
-    setErrors({});
-    setFormData({
-      awsm_applicant_name: "",
-      awsm_applicant_phone: "",
-      awsm_applicant_email: "",
-      awsm_text_1: "",
-      awsm_text_4: "",
-      awsm_text_5: "",
-      awsm_text_6: "",
-      awsm_text_2: "",
-      awsm_text_3: "",
-      awsm_text_7: "",
-      awsm_form_privacy_policy: false,
-    });
-
-    setFile(null);
-    if (fileInputRef.current) fileInputRef.current.value = "";
   };
 
   const fields = [
@@ -170,15 +186,7 @@ const JobForm = ({ jobId }: Props) => {
 
   return (
     <form onSubmit={handleSubmit} className="p-6 rounded-md shadow">
-      <h2 className="text-4xl font-semibold mb-6">
-        Apply for this position
-      </h2>
-
-      {successMessage && (
-        <div className="mb-6 p-4 bg-green-100 text-green-800 rounded">
-          {successMessage}
-        </div>
-      )}
+      <h2 className="text-4xl font-semibold mb-6">Apply for this position</h2>
 
       {fields.map((field) => (
         <div className="mb-5" key={field.name}>
@@ -195,9 +203,7 @@ const JobForm = ({ jobId }: Props) => {
           />
 
           {errors[field.name] && (
-            <p className="text-red-600 text-sm mt-1">
-              {errors[field.name]}
-            </p>
+            <p className="text-red-600 text-sm mt-1">{errors[field.name]}</p>
           )}
         </div>
       ))}
@@ -224,9 +230,7 @@ const JobForm = ({ jobId }: Props) => {
         />
 
         {errors.awsm_file && (
-          <p className="text-red-600 text-sm mt-1">
-            {errors.awsm_file}
-          </p>
+          <p className="text-red-600 text-sm mt-1">{errors.awsm_file}</p>
         )}
       </div>
 
@@ -252,10 +256,48 @@ const JobForm = ({ jobId }: Props) => {
 
       <button
         type="submit"
-        className="bg-[#cb000d] text-white px-10 py-3 rounded-full font-semibold"
+        disabled={isSubmitting}
+        className={`px-10 py-3 rounded-full font-semibold transition
+          ${
+            isSubmitting
+              ? "bg-gray-400 cursor-not-allowed"
+              : "bg-[#cb000d] text-white hover:opacity-90"
+          }`}
       >
-        Submit
+        {isSubmitting ? (
+          <span className="flex items-center gap-2">
+            <svg
+              className="animate-spin h-5 w-5 text-white"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                className="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                strokeWidth="4"
+              />
+              <path
+                className="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+              />
+            </svg>
+            Submitting...
+          </span>
+        ) : (
+          "Submit"
+        )}
       </button>
+
+      {successMessage && (
+        <div className="my-6 p-4 bg-green-100 text-green-800 rounded">
+          {successMessage}
+        </div>
+      )}
     </form>
   );
 };
