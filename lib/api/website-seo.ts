@@ -95,7 +95,7 @@ export type AcademicAffairsSeoData = {
   createdAt: string;
   updatedAt: string;
   publishedAt: string;
-  seofields: SeoFields | null;
+  seo: SeoFields | null;
 };
 
 export type AcademicAffarisResponse = {

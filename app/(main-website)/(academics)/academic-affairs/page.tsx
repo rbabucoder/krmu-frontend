@@ -13,14 +13,12 @@ import { Metadata } from "next";
 
 export async function generateMetadata(): Promise<Metadata> {
   const seoData = await academicAffairsSEO();
-  const seo = seoData?.seofields;
+  const seo = seoData?.seo;
 
   const shareImageUrl = seo?.shareImage?.url
     ? `${STRAPI_URL}${seo?.shareImage?.url}`
     : undefined;
 
-
-    
   // ✅ Fallback if SEO is missing
   if (!seo) {
     return {
