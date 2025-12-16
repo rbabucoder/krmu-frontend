@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { CommonHeader } from "../commonComponent/header/CommonHeader";
 import CommonFooter from "../commonComponent/footer/CommonFooter";
-
+import "./landing.css";
 // import { Button } from "@/components/ui/button";
 
-const montserrat = Inter({
+
+const inter = Inter({
   weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
 });
@@ -23,7 +24,7 @@ export default function MbaLandingPageLayout({
   return (
     <html lang="en">
       <head></head>
-      <body className={`${montserrat.className} antialiased`}>
+      <body className={`${inter.className} antialiased`}>
         <CommonHeader />
         {children}
         <CommonFooter />

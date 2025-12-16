@@ -1,9 +1,7 @@
-
+import CommonHero from "../commonComponent/CommonHero";
 
 const page = () => {
-  return (
-    <div>page</div>
-  )
-}
+  return <CommonHero />;
+};
 
-export default page
+export default page;
