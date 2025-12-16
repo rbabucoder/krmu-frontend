@@ -1,6 +1,4 @@
-import {
-  getSchoolProgrammeData,
-} from "@/lib/api/school-programmes";
+import { getSchoolProgrammeData } from "@/lib/api/school-programmes";
 import BeyondClassroom from "../../school-programmes-component/BeyondClassroom";
 import CareerProspects from "../../school-programmes-component/CareerProspects";
 import { ConnectWithUs } from "../../school-programmes-component/ConnectWithUs";
@@ -24,25 +22,38 @@ import { Metadata } from "next";
 
 type Props = {
   params: Promise<{ slug: string }>;
-}; 
+};
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params; // ✅ no await
+  const { slug } = await  params; // ✅ no await
 
   const seoData = await getSchoolProgrammeSEO(slug);
-  const seo = seoData[0]?.SEO; // ✅ fixed access path
+  const seo = seoData?.[0]?.SEO; // ✅ safe access
 
+  // ✅ Fallback if SEO is missing
+  if (!seo) {
+    return {
+      title: "K.R. Mangalam University",
+      description: "",
+      robots: {
+        index: true,
+        follow: true,
+      },
+    };
+  }
+
+  // ✅ SEO exists
   return {
-    title: seo?.metaTitle || "K.R. Mangalam University", // ✅ no semicolon here
+    title: seo.metaTitle || "K.R. Mangalam University",
     description:
-      seo?.metaDescription || "Explore top programs and courses at KRMU.",
-    keywords: seo?.metaKeyword || "",
+      seo.metaDescription || "Explore top programs and courses at KRMU.",
+    keywords: seo.metaKeyword || "",
     alternates: {
-      canonical: seo?.canonical || "",
+      canonical: seo.canonical || "",
     },
     robots: {
-      index: seo?.noIndex === false, // if noIndex is false, index the page
-      follow: true, // you can customize follow if needed
+      index: seo.noIndex === false, // false → index
+      follow: true,
     },
   };
 }
@@ -88,14 +99,13 @@ const page = async ({ params }: Props) => {
   const beyondclassSection = singleSchoolProgramme?.beyondclassroom;
   const careerProspectsSection = singleSchoolProgramme?.career;
   const dreamcareerSection = singleSchoolProgramme?.dreamcareer;
-  const financialAssistanceSection = singleSchoolProgramme?.financialassistance; 
+  const financialAssistanceSection = singleSchoolProgramme?.financialassistance;
   const tocSection = singleSchoolProgramme?.toc;
   const ourLocationSection = singleSchoolProgramme?.ourlocation;
 
   if (singlePHDProgramme?.degree === "Doctoral Programme") {
     return <PHDProgrammes phdData={singlePHDProgramme} />;
   }
-
 
   return (
     <>

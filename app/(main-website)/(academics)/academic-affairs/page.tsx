@@ -17,7 +17,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
   const shareImageUrl = seo?.shareImage?.url
     ? `${STRAPI_URL}${seo?.shareImage?.url}`
-    : undefined;
+    : undefined; 
 
   // ✅ Fallback if SEO is missing
   if (!seo) {
