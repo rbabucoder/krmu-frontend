@@ -43,7 +43,7 @@ const SchoolFacultyAdvisory = ({ schoolCat, fac_adv }: Props) => {
                   value="tab1"
                   className="flex-none cursor-pointer mb-5 md:mb-0 data-[state=active]:bg-[#051630] data-[state=active]:text-white data-[state=active]:rounded-full text-2xl w-full lg:w-fit sm:px-[100px] bg-white rounded-full font-semibold"
                 >
-                  Faculty At Soet
+                  Faculty At {schoolCat.toUpperCase()}
                 </TabsTrigger>
                 <TabsTrigger
                   value="tab2"
