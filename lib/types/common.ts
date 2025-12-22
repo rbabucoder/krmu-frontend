@@ -245,3 +245,29 @@ export interface common_btn {
 }
 ///////////////////////
 // school Response 
+
+
+
+
+//// School Faculty
+
+
+
+export type SchoolFacultiesType = {
+  id: number;
+  slug: string;
+
+  title: {
+    rendered: string;
+  };
+
+  featured_media: number;
+
+  acf: {
+    "staff-qualification": string;
+    staff_designation: string;
+    schools: number[];
+  };
+
+  featured_media_url: string;
+};

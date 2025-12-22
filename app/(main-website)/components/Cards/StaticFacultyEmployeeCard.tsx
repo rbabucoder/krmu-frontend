@@ -1,38 +1,22 @@
-"use client";
 import { Skeleton } from "@/components/ui/skeleton";
-import { getWordImageById } from "@/lib/api/common";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 
 type Props = {
   name: string;
-  imgId: number;
-  qual: string;
-  desg?: string;
+  desg: string;
   slug: string;
+  qual: string;
+  imgURL: string;
 };
 
-export const FacultyEmployeeCard = ({
+export const StaticFacultyEmployeeCard = ({
   name,
-  imgId,
-  qual,
   desg,
   slug,
+  qual,
+  imgURL,
 }: Props) => {
-  const [imgURL, setImgUrl] = useState("");
-
-  useEffect(() => {
-    async function fetchImgUrl() {
-      const url = await getWordImageById(imgId).then((url) => url);
-      setImgUrl(url);
-    }
-
-    if (imgId) {
-      fetchImgUrl();
-    }
-  }, [imgId]);
-
   return (
     <>
       <div>

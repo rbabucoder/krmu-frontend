@@ -1,19 +1,16 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import FacultyLoop from "./schoolglobalcomponent/FacultyLoop";
+
 import AdvisoryLoop from "./schoolglobalcomponent/AdvisoryLoop";
 import { FACADV } from "@/lib/types/schools";
+import StaticFacultyLoop from "./schoolglobalcomponent/StaticFacultyLoop";
 
 type Props = {
   schoolCat: string;
-  WordSchoolslug: string;
+  WordSchoolslug?: string;
   fac_adv: FACADV;
 };
 
-const SchoolFacultyAdvisory = ({
-  schoolCat,
-  fac_adv,
-  WordSchoolslug,
-}: Props) => {
+const SchoolFacultyAdvisory = ({ schoolCat, fac_adv }: Props) => {
   return (
     <>
       <div className="max-w-[1664px] mx-auto w-full py-4 md:p-8">
@@ -25,10 +22,12 @@ const SchoolFacultyAdvisory = ({
               }}
               className="text-[45px] text-center"
             />
-            <FacultyLoop
+            {/* <FacultyLoop
               // schoolCat={schoolCat}
               WordSchoolslug={WordSchoolslug}
-            />
+            /> */}
+            {/* <StaticFacultyLoop /> */}
+            <StaticFacultyLoop schoolCat={schoolCat} />
           </>
         ) : (
           <Tabs defaultValue="tab1">
@@ -55,10 +54,11 @@ const SchoolFacultyAdvisory = ({
               </TabsList>
             </div>
             <TabsContent value="tab1">
-              <FacultyLoop
+              {/* <FacultyLoop
                 // schoolCat={schoolCat}
                 WordSchoolslug={WordSchoolslug}
-              />
+              /> */}
+              <StaticFacultyLoop schoolCat={schoolCat} />
             </TabsContent>
             <TabsContent value="tab2">
               <AdvisoryLoop schoolCat={schoolCat} />

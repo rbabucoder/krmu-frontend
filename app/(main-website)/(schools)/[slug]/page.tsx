@@ -115,7 +115,7 @@ export default async function Page({ params }: Props) {
 
   const degreeName = school?.degree?.name;
   const schoolCategoryName = school?.school_category?.name;
-  const WordSchoolslug = school?.wordschoolslug;
+  // const WordSchoolslug = school?.wordschoolslug;
 
   return (
     <>
@@ -233,7 +233,7 @@ export default async function Page({ params }: Props) {
         <SchoolFacultyAdvisory
           fac_adv={school?.fac_adv}
           schoolCat={schoolCat}
-          WordSchoolslug={WordSchoolslug}
+          // WordSchoolslug={WordSchoolslug}
         />
       )}
       {school?.video_comp && (

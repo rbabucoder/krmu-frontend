@@ -254,7 +254,7 @@ export async function getWordSchoolFaculty(
 
   try {
     const res = await fetch(url, {
-      next: { revalidate: 60 },
+      next: { revalidate: 300 },
     });
 
     if (!res.ok) {
