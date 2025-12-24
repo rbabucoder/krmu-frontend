@@ -15,21 +15,13 @@ const EventsAndNews = async ({
 }: HomeEventsNewsProp) => {
   const response = await getNewsAndEventsData();
 
-
-
-
-
   const newsandeventsdata: NewsAndEvent[] =
-    response 
+    response
       ?.sort(
         (a, b) =>
           new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
       )
       .slice(0, 3) || [];
-
-
-
-
 
   return (
     <section className="bg-[url(/homenewsevent.webp)] bg-cover bg-no-repeat px-5 pb-12 lg:px-8 lg:pb-20">

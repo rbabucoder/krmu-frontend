@@ -40,7 +40,7 @@ const HomeNewsEventsCard: React.FC<HomeNewsEventsCardProps> = ({ data }) => {
           <div className="flex flex-col">
             {data?.slug && (
               <Link
-                href={data?.slug}
+                href={`/events-and-news/${data?.slug}`}
                 className="font-medium text-xl leading-[1] mt-2.5 mb-4 inline-block h-[50px]"
                 target="_blank"
               >
@@ -49,7 +49,7 @@ const HomeNewsEventsCard: React.FC<HomeNewsEventsCardProps> = ({ data }) => {
             )}
             {data?.slug && (
               <Link
-                href={data?.slug}
+                href={`/events-and-news/${data?.slug}`}
                 className="text-xs underline italic"
                 target="_blank"
               >
