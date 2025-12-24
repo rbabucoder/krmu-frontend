@@ -29,7 +29,7 @@ const EventsAndNews = async ({
 
 
 
-      console.log('newsandeventsdata', newsandeventsdata);
+
 
   return (
     <section className="bg-[url(/homenewsevent.webp)] bg-cover bg-no-repeat px-5 pb-12 lg:px-8 lg:pb-20">
