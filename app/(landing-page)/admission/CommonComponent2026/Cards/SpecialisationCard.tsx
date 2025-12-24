@@ -1,7 +1,8 @@
 import { MoveUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { SpecialisationCardItem } from "../../law-2026/content";
+import { SpecialisationCardItem } from "../../law-2026/contentype";
+
 
 type Props = {
   data: SpecialisationCardItem;
