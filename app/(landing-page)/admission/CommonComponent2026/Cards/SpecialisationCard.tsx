@@ -37,7 +37,7 @@ const SpecialisationCard = ({ data }: Props) => {
         <p className="text-xs text-[#7f7f7f]">{data.desc}</p>
 
         {/* Extra Infos */}
-        <div className="flex flex-col sm:flex-row gap-2.5 my-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 my-10">
           {data.extraInfos.map((info, index) => (
             <div key={index} className="flex gap-2.5 items-baseline">
               <span className="flex items-center justify-center border p-2 rounded-full">

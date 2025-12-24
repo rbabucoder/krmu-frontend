@@ -161,117 +161,76 @@ export const industryExperts: IndustryExpertsSection = {
 };
 
 export const specialisationData: SpecialisationSection = {
-  subheading: "Choose your branch based on your interests and career goals.",
-  heading: `Our B.Tech Programmes & <br /> Specialisations`,
+  subheading: "Choose from KRMU’s undergraduate law programmes and begin your journey into the legal profession.",
+  heading: `Our Undergraduate Law Programmes`,
   specilisationCard: [
     {
       imgUrl: "/landingpage/common/dummy.png",
-      title: `B.Tech. Computer Science <br /> and Engineering`,
-      desc: `A 4-year, practitioner-led programme to learn business by running one.
-      Includes internship and domestic + global immersions`,
+      title: `BA. LL.B. (Hons.)`,
+      desc: `With this five-year integrated BA LLB programme that combines the arts and law, learn about the socio-legal aspects of law.`,
       extraInfos: [
         {
           iconUrl: "/landingpage/common/move-right.svg",
-          title: "Eligibility",
-          desc: `Class 12th Students & Pass- <br /> outs`,
+          title: "Duration:",
+          desc: `5 Years`,
         },
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Eligibility",
-          desc: `Class 12th Students & Pass- <br /> outs`,
+          desc: `10+2 with a minimum of 50% marks`,
+        },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Annual Fee",
+          desc: `Rs 1,85,000`,
         },
       ],
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      title: `B.Tech. Computer Science <br /> and Engineering`,
-      desc: `A 4-year, practitioner-led programme to learn business by running one.
-      Includes internship and domestic + global immersions`,
+      title: `BBA. LL.B. (Hons.)`,
+      desc: `With this five-year integrated curriculum that combines business administration and law, you may get ready for corporate legal difficulties. A thorough grasp of legal frameworks and managerial concepts is provided by the course.`,
       extraInfos: [
         {
           iconUrl: "/landingpage/common/move-right.svg",
-          title: "Eligibility",
-          desc: `Class 12th Students & Pass- <br /> outs`,
+          title: "Duration:",
+          desc: `5 Years`,
         },
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Eligibility",
-          desc: `Class 12th Students & Pass- <br /> outs`,
+          desc: `10+2 with a minimum of 50% marks`,
+        },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Annual Fee",
+          desc: `Rs 1,85,000`,
         },
       ],
     },
-    {
+      {
       imgUrl: "/landingpage/common/dummy.png",
-      title: `B.Tech. Computer Science <br /> and Engineering`,
-      desc: `A 4-year, practitioner-led programme to learn business by running one.
-      Includes internship and domestic + global immersions`,
+      title: `LL.B. (Hons.)`,
+      desc: `With this three-year undergraduate programme, graduates from any subject can enter the legal field. The course provides a thorough examination of procedural legislation and legal concepts. `,
       extraInfos: [
         {
           iconUrl: "/landingpage/common/move-right.svg",
-          title: "Eligibility",
-          desc: `Class 12th Students & Pass- <br /> outs`,
+          title: "Duration:",
+          desc: `5 Years`,
         },
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Eligibility",
-          desc: `Class 12th Students & Pass- <br /> outs`,
+          desc: `10+2 with a minimum of 50% marks`,
+        },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Annual Fee",
+          desc: `Rs 1,60,000`,
         },
       ],
     },
-    {
-      imgUrl: "/landingpage/common/dummy.png",
-      title: `B.Tech. Computer Science <br /> and Engineering`,
-      desc: `A 4-year, practitioner-led programme to learn business by running one.
-      Includes internship and domestic + global immersions`,
-      extraInfos: [
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Eligibility",
-          desc: `Class 12th Students & Pass- <br /> outs`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Eligibility",
-          desc: `Class 12th Students & Pass- <br /> outs`,
-        },
-      ],
-    },
-    {
-      imgUrl: "/landingpage/common/dummy.png",
-      title: `B.Tech. Computer Science <br /> and Engineering`,
-      desc: `A 4-year, practitioner-led programme to learn business by running one.
-      Includes internship and domestic + global immersions`,
-      extraInfos: [
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Eligibility",
-          desc: `Class 12th Students & Pass- <br /> outs`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Eligibility",
-          desc: `Class 12th Students & Pass- <br /> outs`,
-        },
-      ],
-    },
-    {
-      imgUrl: "/landingpage/common/dummy.png",
-      title: `B.Tech. Computer Science <br /> and Engineering`,
-      desc: `A 4-year, practitioner-led programme to learn business by running one.
-      Includes internship and domestic + global immersions`,
-      extraInfos: [
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Eligibility",
-          desc: `Class 12th Students & Pass- <br /> outs`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Eligibility",
-          desc: `Class 12th Students & Pass- <br /> outs`,
-        },
-      ],
-    },
+    
   ],
 };
 
