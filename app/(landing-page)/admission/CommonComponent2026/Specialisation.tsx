@@ -1,4 +1,5 @@
-import { SpecialisationSection } from "../law-2026/content";
+
+import { SpecialisationSection } from "../law-2026/contentype";
 import SpecialisationCard from "./Cards/SpecialisationCard";
 import {
   Carousel,
