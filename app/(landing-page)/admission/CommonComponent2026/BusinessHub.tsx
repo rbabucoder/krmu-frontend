@@ -1,11 +1,13 @@
 import Image from "next/image";
 import { BusinessHubSection } from "../law-2026/contentype";
+import NoPaperFormsWidget from "./NoPaperFormsWidget";
 
 type Props = {
   data: BusinessHubSection;
+  formId: string;
 };
 
-const BusinessHub = ({ data }: Props) => {
+const BusinessHub = ({ data, formId }: Props) => {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-[#0b63a5] via-[#083d6b] to-[#041b2e]">
       <div className="max-w-[1400px] mx-auto w-full px-6 py-20">
@@ -17,9 +19,7 @@ const BusinessHub = ({ data }: Props) => {
               dangerouslySetInnerHTML={{ __html: data.heading }}
             />
 
-            <p className="text-white/80 max-w-xl mb-8">
-              {data.description}
-            </p>
+            <p className="text-white/80 max-w-xl mb-8">{data.description}</p>
 
             <ul className="space-y-3 text-sm">
               {data.highlights.map((item, index) => (
@@ -49,15 +49,17 @@ const BusinessHub = ({ data }: Props) => {
               dangerouslySetInnerHTML={{ __html: data.formNote }}
             />
 
-            <div className="bg-white rounded-2xl shadow-2xl p-4">
-              <Image
+            {/* <div className="bg-white rounded-2xl shadow-2xl p-4"> */}
+            <div>
+              {/* <Image
                 src={data.formImage.src}
                 width={data.formImage.width}
                 height={data.formImage.height}
                 alt={data.formImage.alt}
                 className="rounded-xl"
                 priority
-              />
+              /> */}
+              {formId && <NoPaperFormsWidget widgetId={formId} />}
             </div>
           </div>
         </div>

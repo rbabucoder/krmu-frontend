@@ -76,7 +76,7 @@ const page = () => {
       <ComeToLife data={worldLifeData} />
       <LifeAsPhDScholar data={lifeData} />
       <FAQ data={faqData} />
-      <BusinessHub data={businessData} />
+      <BusinessHub data={businessData} formId={lawIdForm} />
       <ApplySection data={applyData} />
     </>
   );
