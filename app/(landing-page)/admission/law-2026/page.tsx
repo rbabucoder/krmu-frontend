@@ -1,0 +1,85 @@
+import ApplySection from "../CommonComponent2026/ApplyNow";
+import BusinessHub from "../CommonComponent2026/BusinessHub";
+import ComeToLife from "../CommonComponent2026/ComeToLife";
+import Counter from "../CommonComponent2026/Counter";
+import FAQ from "../CommonComponent2026/FAQ";
+import HeroSection from "../CommonComponent2026/HeroSection";
+import IndustryExperts from "../CommonComponent2026/IndustryExperts";
+import LifeAsPhDScholar from "../CommonComponent2026/LifeAsPhDScholar";
+import Opportunity from "../CommonComponent2026/Opportunity";
+import ProminentRecruiter from "../CommonComponent2026/ProminentRecruiter";
+// import ScholarResearchImpact from "../CommonComponent2026/ScholarResearchImpact";
+import Specialisation from "../CommonComponent2026/Specialisation";
+import Testimonials from "../CommonComponent2026/Testimonials";
+import WhyKRMangalam from "../CommonComponent2026/WhyKRMangalam";
+import { lawFormId } from "../constant/lpnpf";
+import FeeStructureTable from "./components/FeeStructure";
+import {
+  applySectionData,
+  businessHubData,
+  comeToLifeData,
+  Counters,
+  faqSectionData,
+  Hero,
+  heroMarqueeData,
+  industryExperts,
+  lifeAsPhDScholarData,
+  opportunityData,
+  prominentRecruiters,
+  scholarResearchImpactData,
+  specialisationData,
+  testimonialsData,
+  whyKRM,
+} from "./content";
+
+const page = () => {
+  const lawIdForm = lawFormId;
+  const heroContent = Hero;
+  const counters = Counters;
+  const recruiters = prominentRecruiters;
+  const whykrm = whyKRM;
+  const industryexpert = industryExperts;
+  const specialise = specialisationData;
+  const opport = opportunityData;
+  const testiomonial = testimonialsData;
+  // const scholarData = scholarResearchImpactData;
+  const worldLifeData = comeToLifeData;
+  const lifeData = lifeAsPhDScholarData;
+  const faqData = faqSectionData;
+  const businessData = businessHubData;
+  const applyData = applySectionData;
+  const heroMarqData = heroMarqueeData;
+
+  return (
+    <>
+      <HeroSection
+        content={heroContent?.title}
+        formId={lawIdForm}
+        desc={heroContent?.desc}
+        marqueeData={heroMarqData}
+      />
+      <Counter counters={counters} />
+      <ProminentRecruiter recruiters={recruiters} />
+      <WhyKRMangalam
+        heading={whykrm?.heading}
+        subheading={whykrm?.subheading}
+        desc={whykrm?.content}
+        imgUrl={whykrm?.imgUrl}
+        whykrmCards={whykrm?.whyKrmCards}
+      />
+      <IndustryExperts data={industryexpert} />
+      <Specialisation data={specialise} />
+      <Opportunity data={opport} />
+      <FeeStructureTable />
+      <Testimonials data={testiomonial} />
+      {/* <ScholarResearchImpact data={scholarData} /> */}
+      <ComeToLife data={worldLifeData} />
+      <LifeAsPhDScholar data={lifeData} />
+      <FAQ data={faqData} />
+      <BusinessHub data={businessData} />
+      <ApplySection data={applyData} />
+    </>
+  );
+};
+
+export default page;

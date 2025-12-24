@@ -1,0 +1,92 @@
+import { MoveUpRight } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { IndustryExpertsSection } from "../law-2026/content";
+
+
+type Props = {
+  data: IndustryExpertsSection;
+};
+
+const IndustryExperts = ({ data }: Props) => {
+  return (
+    <section className="py-20 px-4">
+      <div className="max-w-[1400px] mx-auto w-full bg-[#0060aa] pt-10 sm:pt-20 px-5 md:pt-20 sm:px-20 rounded-3xl">
+        {/* Header */}
+        <div className="flex flex-col lg:flex-row items-center justify-between text-white">
+          <div className="w-full lg:w-1/2 text-center md:text-left md:border-l-2 border-white md:pl-5">
+            <h3 className="text-sm">{data.eyebrow}</h3>
+            <h4
+              className="text-3xl md:text-4xl font-semibold leading-[1.2]"
+              dangerouslySetInnerHTML={{ __html: data.heading }}
+            />
+          </div>
+
+          {/* Desktop description + CTA */}
+          <div className="hidden lg:block w-full lg:w-1/2 lg:text-right mt-10 lg:mt-0">
+            <p className="mb-5 hidden md:block">{data.description}</p>
+
+            <div className="hidden md:flex lg:justify-end">
+              <Link
+                href={data.cta.href}
+                className="flex items-center justify-between max-w-2xs w-full py-0.5 px-2 gap-2 border border-white rounded-full"
+              >
+                <span className="w-4/5 text-center">{data.cta.label}</span>
+                <span className="bg-white p-3 rounded-full w-1/5">
+                  <MoveUpRight className="text-[#0060aa]" size={30} />
+                </span>
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* Cards */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 mt-5 md:mt-20 gap-5">
+          {data.cards.map((item, index) => (
+            <div
+              key={index}
+              className="bg-white p-2.5 sm:p-5 rounded-xl text-center flex flex-col items-center justify-center"
+            >
+              <Image
+                src={item.imgUrl}
+                width={120}
+                height={35}
+                alt={item.alt}
+              />
+              <p className="my-5 text-xs sm:text-base">{item.title}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* Mobile description + CTA */}
+        <div className="mt-10 sm:mt-20">
+          <div className="md:hidden text-white">
+            <p className="mb-5 text-center">{data.description}</p>
+            <div className="flex justify-center">
+              <Link
+                href={data.cta.href}
+                className="flex items-center justify-between max-w-2xs w-full py-0.5 px-2 gap-2 border border-white rounded-full"
+              >
+                <span className="w-4/5 text-center">{data.cta.label}</span>
+                <span className="bg-white p-3 rounded-full w-1/5">
+                  <MoveUpRight className="text-[#0060aa]" size={30} />
+                </span>
+              </Link>
+            </div>
+          </div>
+
+          {/* Banner */}
+          <Image
+            src={data.bannerImg}
+            width={1400}
+            height={500}
+            alt=""
+            className="w-full h-full"
+          />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default IndustryExperts;
