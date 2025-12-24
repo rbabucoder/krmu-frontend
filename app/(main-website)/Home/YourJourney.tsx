@@ -5,8 +5,8 @@ import { Button } from "@/lib/types/home";
 interface YourJourneyProps {
   title: string;
   content: string;
-  buttons: Button[]; 
-} 
+  buttons: Button[];
+}
 
 const YourJourney = ({ title, content, buttons }: YourJourneyProps) => {
   return (
@@ -47,6 +47,13 @@ const YourJourney = ({ title, content, buttons }: YourJourneyProps) => {
           <div className="w-full xl:w-1/2 flex justify-center mt-10 xl:mt-0 xl:justify-end">
             <div className="max-w-md w-full lg:my-5">
               <HomeYourJourneyForm />
+              <Link
+                href="/programmes"
+                className="py-1.5 px-5 bg-[#cb000d] text-white w-full text-center rounded-md font-bold inline-block"
+                target="_blank"
+              >
+                Explore Our Programmes
+              </Link>
             </div>
           </div>
         </div>

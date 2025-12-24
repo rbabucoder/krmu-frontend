@@ -23,7 +23,7 @@ const FeeStructureSearch = () => {
         setProgrammes(data);
       } catch (err) {
         console.error(err);
-      }
+      } 
       setLoading(false);
     };
 

@@ -103,6 +103,9 @@ export default async function HomePage() {
             image1={AFSData?.afsimage1}
             image2={AFSData?.afsimage2}
             image3={AFSData?.afsimage3}
+            link1={AFSData?.link1}
+            link2={AFSData?.link2}
+            link3={AFSData?.link3}
           />
         )}
         {ourTopRecruitersData && (
@@ -119,6 +122,8 @@ export default async function HomePage() {
             title2={feeStructureScholarData?.text2}
             feeImage={feeStructureScholarData?.FeeStructureImage}
             scholarImage={feeStructureScholarData?.ScholarshipImage}
+            link1={feeStructureScholarData?.link1}
+            link2={feeStructureScholarData?.link2}
           />
         )}
         {whyKRMUData && (

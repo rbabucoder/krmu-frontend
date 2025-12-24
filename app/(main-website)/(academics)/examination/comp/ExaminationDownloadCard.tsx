@@ -24,7 +24,7 @@ export const ExaminationDownloadCard = ({ title, btn }: Props) => {
       </div>
       {btn?.btn_link && (
         <Link
-          href="#"
+          href={btn?.btn_link}
           className={`inline-block w-full text-center p-[5px] md:py-[13px] md:px-[29px] bg-[#e31e24] rounded-b-[22px] text-base md:text-2xl text-white font-semibold ${
             btn?.btn_class || ""
           }`}

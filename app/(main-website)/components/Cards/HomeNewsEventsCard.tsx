@@ -9,6 +9,7 @@ interface HomeNewsEventsCardProps {
     title: string;
     createdAt: string;
     newsmedia: StrapiMedia[];
+    slug: string;
   };
 }
 
@@ -33,19 +34,29 @@ const HomeNewsEventsCard: React.FC<HomeNewsEventsCardProps> = ({ data }) => {
           />
         </Link>
         <div className="pt-5 pl-0 sm:pl-7 text-white">
-          <span className="text-sm text-[#898989]">Published On: {formattedDate}</span>
+          <span className="text-sm text-[#898989]">
+            Published On: {formattedDate}
+          </span>
           <div className="flex flex-col">
-
-          <Link
-            href="#"
-            className="font-medium text-xl leading-[1] mt-2.5 mb-4 inline-block h-[50px]"
-            >
-            <h5>{data.title}</h5>
-          </Link>
-          <Link href="#" className="text-xs underline italic">
-            Know More
-          </Link>
-            </div>
+            {data?.slug && (
+              <Link
+                href={data?.slug}
+                className="font-medium text-xl leading-[1] mt-2.5 mb-4 inline-block h-[50px]"
+                target="_blank"
+              >
+                <h5>{data.title}</h5>
+              </Link>
+            )}
+            {data?.slug && (
+              <Link
+                href={data?.slug}
+                className="text-xs underline italic"
+                target="_blank"
+              >
+                Know More
+              </Link>
+            )}
+          </div>
         </div>
       </div>
     </div>

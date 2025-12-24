@@ -14,6 +14,11 @@ const EventsAndNews = async ({
   newsandeventbtn,
 }: HomeEventsNewsProp) => {
   const response = await getNewsAndEventsData();
+
+
+
+
+
   const newsandeventsdata: NewsAndEvent[] =
     response 
       ?.sort(
@@ -21,6 +26,10 @@ const EventsAndNews = async ({
           new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
       )
       .slice(0, 3) || [];
+
+
+
+      console.log('newsandeventsdata', newsandeventsdata);
 
   return (
     <section className="bg-[url(/homenewsevent.webp)] bg-cover bg-no-repeat px-5 pb-12 lg:px-8 lg:pb-20">

@@ -84,6 +84,9 @@ export interface AFSComponent {
   afsimage1: afsMedia;
   afsimage2: afsMedia;
   afsimage3: afsMedia;
+  link1: string;
+  link2: string;
+  link3: string;
 }
 
 export interface OurTopRecruitComp {
@@ -101,6 +104,8 @@ export interface FeeStructureScholar {
   text2: string;
   FeeStructureImage: StrapiMedia;
   ScholarshipImage: StrapiMedia;
+  link1: string;
+  link2: string;
 }
 
 export interface whyKRMU {
