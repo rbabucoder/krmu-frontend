@@ -1,4 +1,5 @@
-import { CounterItem } from "../law-2026/content";
+import { CounterItem } from "../law-2026/contentype";
+
 
 type Props = {
   counters: CounterItem[];
