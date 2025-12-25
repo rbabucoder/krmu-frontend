@@ -57,11 +57,12 @@ const VirtualSchedule = () => {
           </div>
           <div className="w-10/12">
             <h6 className="text-xl">
-              <strong>Personalized Exploration</strong>
+              <strong>Connect with Your Future</strong>
             </h6>
             <p>
-              Our campus tours go beyond standard visits; they’re tailored
-              journeys that resonate with your interests and aspirations
+              This isn’t just a tour; it’s the beginning of your future, where
+              you’ll envision walking these paths, attending classes, and
+              forging lifelong friendships.
             </p>
           </div>
         </div>

@@ -39,8 +39,9 @@ const CampusHero = () => {
             Connect with Your Future
           </h4>
           <p>
-            Our campus tours go beyond standard visits; they’re tailored
-            journeys that resonate with your interests and aspirations
+            {` This isn’t just a tour; it’s the beginning of your future, where
+            you’ll envision walking these paths, attending classes, and forging
+            lifelong friendships.`}
           </p>
         </div>
         <div className="lg:w-1/3 text-white md:pt-[50px] md:px-[35px] md:pb-[35px]">

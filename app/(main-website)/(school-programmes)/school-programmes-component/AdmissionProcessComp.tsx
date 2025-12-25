@@ -1,4 +1,3 @@
-
 import { STRAPI_URL } from "@/app/constant";
 import { ButtonType, StrapiMedia } from "@/lib/types/common";
 import { AdmisionProcessCard } from "@/lib/types/school-programme";
@@ -42,6 +41,40 @@ const AdmissionProcessComp = ({
         <div className="admis_proc_btn_grid_items">
           {admissionCards &&
             admissionCards.map((card) => {
+              if (
+                card?.link === "admissions.krmangalam.edu.in" ||
+                card?.description === "admissions.krmangalam.edu.in "
+              ) {
+                return (
+                  <Link
+                    href={`https://${card?.description}`}
+                    key={card?.id}
+                    className="admis_proc_btn_grid_item"
+                    target="_blank"
+                  >
+                    <div className="admis_proc_btn_content">
+                      <button className="btn_text">{card?.title}</button>
+                      <p className="admis_btn_below_text">
+                        {card?.description}
+                      </p>
+                    </div>
+                  </Link>
+                );
+              } else {
+                return (
+                  <div key={card?.id} className="admis_proc_btn_grid_item">
+                    <div className="admis_proc_btn_content">
+                      <button className="btn_text">{card?.title}</button>
+                      <p className="admis_btn_below_text">
+                        {card?.description}
+                      </p>
+                    </div>
+                  </div>
+                );
+              }
+            })}
+          {/* {admissionCards &&
+            admissionCards.map((card) => {
               if (card?.link) {
                 return (
                   <Link
@@ -70,7 +103,7 @@ const AdmissionProcessComp = ({
                   </div>
                 );
               }
-            })}
+            })} */}
         </div>
       </div>
       <div className="max-w-[540px] mx-auto w-full flex lg:hidden items-center justify-center px-2.5 md:px-4">

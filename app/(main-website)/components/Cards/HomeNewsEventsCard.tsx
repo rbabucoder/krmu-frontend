@@ -30,7 +30,7 @@ const HomeNewsEventsCard: React.FC<HomeNewsEventsCardProps> = ({ data }) => {
             alt={image?.alternativeText || data.title}
             width={466}
             height={312}
-            className="w-full rounded-t-3xl object-cover"
+            className="w-full h-[420px] rounded-t-3xl object-cover"
           />
         </Link>
         <div className="pt-5 pl-0 sm:pl-7 text-white">
