@@ -6,12 +6,12 @@ const page = async () => {
   const pageData = await getKRMUTimesPageData();
 
   const heading = pageData?.heading;
-  const pdfCards = pageData?.krmu_time_cards
+  const pdfCards = pageData?.krmu_time_cards;
 
   return (
     <>
-      <KRMUTimesHeroSection heading={heading} />
-      <KRMUPDFCards data={pdfCards} />
+      {heading && <KRMUTimesHeroSection heading={heading} />}
+      {pdfCards && <KRMUPDFCards data={pdfCards} />}
     </>
   );
 };
