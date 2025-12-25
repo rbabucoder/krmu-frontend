@@ -4,12 +4,12 @@ import Image from "next/image";
 
 type Props = {
   badgetext: string;
-  heading: string;
+  heading?: string;
   img1: StrapiMedia;
   img2: StrapiMedia;
 };
 
-const OurLocation = ({ badgetext, heading, img1, img2 }: Props) => {
+const OurLocation = ({ badgetext, img1, img2 }: Props) => {
   return (
     <section className="py-[50px] px-2.5 sm:px-4">
       <div className="max-w-[1320px] mx-auto w-full p-4 md:p-12 bg-[#1461ac] rounded-[25px] sm:flex gap-3 md:gap-6 text-center sm:text-left">
@@ -27,7 +27,8 @@ const OurLocation = ({ badgetext, heading, img1, img2 }: Props) => {
             {badgetext}
           </span>
           <h3 className="text-white text-2xl md:text-[28px] font-medium leading-[1] mb-4">
-            {heading}
+            {/* {heading} */}
+            Learn at One of India’s Biggest Business Hubs, Gurgaon
           </h3>
 
           <Image
