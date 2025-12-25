@@ -15,6 +15,27 @@
 
 /* Custom utility class */
 @layer utilities {
+  a{
+    cursor: pointer;
+  }
+  .iprol{
+    list-style: decimal;
+    padding-left: 20px;
+    margin: 10px 0px;
+  }
+  .iprol li{
+    padding: 6px 0px;
+  }
+  .krm-cif-hero::before {
+    content: "";
+    background: rgba(255, 255, 255, 0.8);
+    /* background: rgba(0, 0, 0, 0.8); */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    Width: 100%;
+}
   .blue-gradient {
     background: linear-gradient(109deg, #051630 6.18%, #0060aa 63.03%);
        /* background: -webkit-linear-gradient(0deg, #0060aa 0.43%, #e31e24 91.06%); */
