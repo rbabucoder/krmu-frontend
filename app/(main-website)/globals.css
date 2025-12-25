@@ -15,9 +15,13 @@
 
 /* Custom utility class */
 @layer utilities {
-
-
-  
+  .blue-gradient {
+    background: linear-gradient(109deg, #051630 6.18%, #0060aa 63.03%);
+       /* background: -webkit-linear-gradient(0deg, #0060aa 0.43%, #e31e24 91.06%); */
+    /* background-clip: border-box; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
   .Reach-Out-to-Us-form {
     background: rgba(122, 122, 122, 20%);
     border-radius: 16px;
@@ -49,9 +53,9 @@
     margin-bottom: 20px;
     display: block;
   }
-   .field_text,
-   .field_email,
-   .field_phone {
+  .field_text,
+  .field_email,
+  .field_phone {
     padding: 0 10px;
     height: 50px;
     background: #fff;
@@ -75,15 +79,15 @@
     border-radius: 100px;
   }
 
-  @media(max-width: 640px){
-    .Reach-Out-to-Us-form{
+  @media (max-width: 640px) {
+    .Reach-Out-to-Us-form {
       padding: 20px;
     }
-    .Reach-Out-to-Us-form .title{
+    .Reach-Out-to-Us-form .title {
       font-size: 30px;
       line-height: 1.2;
     }
-    .campus-tour-btn{
+    .campus-tour-btn {
       flex-direction: column;
     }
   }
@@ -1833,8 +1837,8 @@
     font-size: 20px;
   }
 
-  @media(max-width: 768px){
-    .prog-counter-container .counter{
+  @media (max-width: 768px) {
+    .prog-counter-container .counter {
       font-size: 30px;
     }
   }

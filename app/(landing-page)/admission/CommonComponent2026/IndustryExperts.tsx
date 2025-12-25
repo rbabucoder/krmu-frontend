@@ -3,8 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { IndustryExpertsSection } from "../law-2026/contentype";
 
-
-
 type Props = {
   data: IndustryExpertsSection;
 };
@@ -25,7 +23,12 @@ const IndustryExperts = ({ data }: Props) => {
 
           {/* Desktop description + CTA */}
           <div className="hidden lg:block w-full lg:w-1/2 lg:text-right mt-10 lg:mt-0">
-            <p className="mb-5 hidden md:block">{data.description}</p>
+            <p
+              className="mb-5 hidden md:block"
+              dangerouslySetInnerHTML={{
+                __html: data.description,
+              }}
+            />
 
             <div className="hidden md:flex lg:justify-end">
               <Link
@@ -48,12 +51,7 @@ const IndustryExperts = ({ data }: Props) => {
               key={index}
               className="bg-white p-2.5 sm:p-5 rounded-xl text-center flex flex-col items-center justify-center"
             >
-              <Image
-                src={item.imgUrl}
-                width={120}
-                height={35}
-                alt={item.alt}
-              />
+              <Image src={item.imgUrl} width={120} height={35} alt={item.alt} />
               <p className="my-5 text-xs sm:text-base">{item.title}</p>
             </div>
           ))}

@@ -11,7 +11,7 @@ type Props = {
 const HeroSection = ({ formId, content, desc, marqueeData }: Props) => {
   return (
     <>
-      <section className="py-20 md:pt-36 md:pb-20 px-5 bg-[url(/landingpage/common/dummyherobg.png)] bg-cover bg-no-repeat">
+      <section className="py-20 md:pt-14 md:pb-14 px-5 bg-[url(https://www.krmangalam.edu.in/admission/law-2025/assets/5_law.jpg)] bg-cover bg-no-repeat" >
         <div className="max-w-[1400px] mx-auto w-full flex flex-col lg:flex-row items-center">
           <div className="w-full lg:w-2/5 text-white text-center md:text-left">
             <h1

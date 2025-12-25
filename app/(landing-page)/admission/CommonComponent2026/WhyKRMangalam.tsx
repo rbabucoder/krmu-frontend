@@ -17,7 +17,7 @@ const WhyKRMangalam = ({
   whykrmCards,
 }: Props) => {
   return (
-    <section className="py-20 px-4">
+    <section className="px-4">
       <div className="max-w-[1400px] mx-auto w-full flex flex-col lg:flex-row items-center gap-10 md:gap-20">
         <div className="w-full lg:w-1/2">
           <h4

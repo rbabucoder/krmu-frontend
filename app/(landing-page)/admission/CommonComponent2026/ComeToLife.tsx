@@ -9,12 +9,12 @@ type Props = {
 
 const ComeToLife = ({ data }: Props) => {
   return (
-    <section className="py-20 px-4">
+    <section className=" px-4">
       <div className="max-w-[1400px] mx-auto w-full">
         {/* Header */}
         <div>
           <h3
-            className="text-4xl text-[#013fa1] font-medium text-center"
+            className="text-4xl text-[#013fa1] font-medium text-center mb-5"
             dangerouslySetInnerHTML={{ __html: data.heading }}
           />
           <p

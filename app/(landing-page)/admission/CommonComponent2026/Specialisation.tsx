@@ -1,4 +1,3 @@
-
 import { SpecialisationSection } from "../law-2026/contentype";
 import SpecialisationCard from "./Cards/SpecialisationCard";
 import {
@@ -15,11 +14,16 @@ type Props = {
 
 const Specialisation = ({ data }: Props) => {
   return (
-    <section className="py-40 px-4 bg-[#f8f9fa]">
+    <section className="py-20 px-4 bg-[#f8f9fa]">
       <div className="max-w-[1664px] mx-auto w-full">
         <div className="flex lg:-mb-12">
           <div className="w-full xl:w-1/2 text-center sm:text-left">
-            <h4 className="text-xl sm:text-2xl">{data.subheading}</h4>
+            <h4
+              className="text-xl sm:text-2xl"
+              dangerouslySetInnerHTML={{
+                __html: data.subheading,
+              }}
+            />
             <h3
               className="text-2xl sm:text-5xl font-medium text-[#013fa1]"
               dangerouslySetInnerHTML={{ __html: data.heading }}

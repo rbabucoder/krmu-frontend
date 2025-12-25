@@ -15,7 +15,7 @@ type Props = {
 
 const Testimonials = ({ data }: Props) => {
   return (
-    <section className="py-20 px-4 md:pl-20 overflow-hidden w-full">
+    <section className="pt-20 px-4 md:pl-20 overflow-hidden w-full">
       <div className="w-full">
         {/* Header */}
         <div className="flex flex-col lg:flex-row">

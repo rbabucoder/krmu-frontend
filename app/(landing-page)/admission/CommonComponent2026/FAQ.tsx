@@ -43,7 +43,7 @@ const FAQSection = ({ data }: Props) => {
               <AccordionTrigger className="text-lg font-semibold text-gray-900 hover:no-underline py-6">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-gray-600 leading-relaxed pb-6">
+              <AccordionContent className="text-gray-600 leading-relaxed pb-6 lpul">
                 <span
                   dangerouslySetInnerHTML={{
                     __html: faq.answer,

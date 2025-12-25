@@ -63,12 +63,12 @@ export const Counters: CounterItem[] = [
 export const prominentRecruiters: ProminentRecruit[] = [
   {
     imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+      "https://www.krmangalam.edu.in/admission/law-2025/assets/trilegal.svg",
     alt: "Recruiter Logo",
   },
   {
     imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+      "https://www.krmangalam.edu.in/admission/btech-2025-b/assets/images/accenture.svg",
     alt: "Recruiter Logo",
   },
   {
@@ -453,7 +453,7 @@ export const businessHubData: BusinessHubSection = {
     { text: "₹60,000 Annual Fellowship" },
   ],
   mapImage: {
-    src: "/landing/map.png",
+    src: "/landingpage/common/map.webp",
     alt: "Campus Location Map",
     width: 520,
     height: 300,

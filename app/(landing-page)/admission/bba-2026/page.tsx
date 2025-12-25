@@ -13,7 +13,7 @@ import ProminentRecruiter from "../CommonComponent2026/ProminentRecruiter";
 import Specialisation from "../CommonComponent2026/Specialisation";
 import Testimonials from "../CommonComponent2026/Testimonials";
 import WhyKRMangalam from "../CommonComponent2026/WhyKRMangalam";
-import { lawFormId } from "../constant/lpnpf";
+import { bbaFormId, lawFormId } from "../constant/lpnpf";
 import FeeStructureTable from "./components/FeeStructure";
 import {
   applySectionData,
@@ -34,7 +34,6 @@ import {
 } from "./content";
 
 import { SeoData } from "./seo";
-
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -63,7 +62,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 const page = () => {
-  const lawIdForm = lawFormId;
+  const bbaIdForm = bbaFormId;
   const heroContent = Hero;
   const counters = Counters;
   const recruiters = prominentRecruiters;
@@ -84,7 +83,7 @@ const page = () => {
     <>
       <HeroSection
         content={heroContent?.title}
-        formId={lawIdForm}
+        formId={bbaIdForm}
         desc={heroContent?.desc}
         marqueeData={heroMarqData}
       />
@@ -106,7 +105,7 @@ const page = () => {
       <ComeToLife data={worldLifeData} />
       <LifeAsPhDScholar data={lifeData} />
       <FAQ data={faqData} />
-      <BusinessHub data={businessData} formId={lawIdForm} />
+      <BusinessHub data={businessData} formId={bbaIdForm} />
       <ApplySection data={applyData} />
     </>
   );
