@@ -10,10 +10,10 @@ import LifeAsPhDScholar from "../CommonComponent2026/LifeAsPhDScholar";
 import Opportunity from "../CommonComponent2026/Opportunity";
 import ProminentRecruiter from "../CommonComponent2026/ProminentRecruiter";
 // import ScholarResearchImpact from "../CommonComponent2026/ScholarResearchImpact";
-import Specialisation from "../CommonComponent2026/Specialisation";
+import Specialisation from "../CommonComponent2026/Specialisation"; 
 import Testimonials from "../CommonComponent2026/Testimonials";
 import WhyKRMangalam from "../CommonComponent2026/WhyKRMangalam";
-import { bdesFashionId } from "../constant/lpnpf";
+import { bbaFormId, lawFormId } from "../constant/lpnpf";
 import FeeStructureTable from "./components/FeeStructure";
 import {
   applySectionData,
@@ -62,7 +62,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 const page = () => {
-  const bdesFashionIdForm = bdesFashionId;
+  const bbaIdForm = bbaFormId;
   const heroContent = Hero;
   const counters = Counters;
   const recruiters = prominentRecruiters;
@@ -83,7 +83,7 @@ const page = () => {
     <>
       <HeroSection
         content={heroContent?.title}
-        formId={bdesFashionIdForm}
+        formId={bbaIdForm}
         desc={heroContent?.desc}
         marqueeData={heroMarqData}
       />
@@ -105,7 +105,7 @@ const page = () => {
       <ComeToLife data={worldLifeData} />
       <LifeAsPhDScholar data={lifeData} />
       <FAQ data={faqData} />
-      <BusinessHub data={businessData} formId={bdesFashionIdForm} />
+      <BusinessHub data={businessData} formId={bbaIdForm} />
       <ApplySection data={applyData} />
     </>
   );

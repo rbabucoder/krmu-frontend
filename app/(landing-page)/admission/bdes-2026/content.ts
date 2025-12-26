@@ -22,7 +22,7 @@ export const Hero: HeroContent = {
       ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
-       B.Des. Game
+       B.Des.
       </span>
       <br />
       PROGRAMMES 2026
