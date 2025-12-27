@@ -25,180 +25,27 @@ const FeeStructureTable = () => {
 
             <tbody className="bg-white">
               <tr className="text-sm border-b">
-                <td className="px-4 py-4">BBA (Human Resources)</td>
-                <td className="px-4 py-4">95,000</td>
-                <td className="px-4 py-4">90,000</td>
-                <td className="px-4 py-4">1,85,000</td>
-              </tr>
-
-              <tr className="text-sm border-b">
-                <td className="px-4 py-4">BBA (Marketing)</td>
-                <td className="px-4 py-4">95,000</td>
-                <td className="px-4 py-4">90,000</td>
-                <td className="px-4 py-4">1,85,000</td>
-              </tr>
-
-              <tr className="text-sm border-b">
-                <td className="px-4 py-4">BBA (Finance)</td>
-                <td className="px-4 py-4">95,000</td>
-                <td className="px-4 py-4">90,000</td>
-                <td className="px-4 py-4">1,85,000</td>
-              </tr>
-
-              <tr className="text-sm border-b">
-                <td className="px-4 py-4">BBA (International Business)</td>
-                <td className="px-4 py-4">95,000</td>
-                <td className="px-4 py-4">90,000</td>
-                <td className="px-4 py-4">1,85,000</td>
-              </tr>
-
-              <tr className="text-sm border-b">
-                <td className="px-4 py-4">BBA (Travel & Tourism)</td>
-                <td className="px-4 py-4">95,000</td>
-                <td className="px-4 py-4">90,000</td>
-                <td className="px-4 py-4">1,85,000</td>
-              </tr>
-
-              <tr className="text-sm border-b">
-                <td className="px-4 py-4">
-                  BBA (Hons./Hons with Research) Human Resources
-                </td>
-                <td className="px-4 py-4">95,000</td>
-                <td className="px-4 py-4">90,000</td>
-                <td className="px-4 py-4">1,85,000</td>
-              </tr>
-
-              <tr className="text-sm border-b">
-                <td className="px-4 py-4">
-                  BBA (Hons./Hons with Research) Marketing
-                </td>
-                <td className="px-4 py-4">95,000</td>
-                <td className="px-4 py-4">90,000</td>
-                <td className="px-4 py-4">1,85,000</td>
-              </tr>
-
-              <tr className="text-sm">
-                <td className="px-4 py-4">
-                  BBA (Hons./Hons with Research) Finance
-                </td>
-                <td className="px-4 py-4">95,000</td>
-                <td className="px-4 py-4">90,000</td>
-                <td className="px-4 py-4">1,85,000</td>
+                <td className="px-4 py-4">B.Sc. (Hons.) Computer Science (with Academic Support of IBM)</td>
+                <td className="px-4 py-4">70,000</td>
+                <td className="px-4 py-4">65,000</td>
+                <td className="px-4 py-4">1,35,000</td>
               </tr>
               <tr className="text-sm border-b">
-                <td className="px-4 py-4">
-                  BBA (Hons./Hons with Research) International Business
-                </td>
-                <td className="px-4 py-4">95,000</td>
-                <td className="px-4 py-4">90,000</td>
-                <td className="px-4 py-4">1,85,000</td>
-              </tr>
-
-              <tr className="text-sm border-b">
-                <td className="px-4 py-4">
-                  BBA (Hons./Hons with Research) Travel & Tourism
-                </td>
-                <td className="px-4 py-4">95,000</td>
-                <td className="px-4 py-4">90,000</td>
-                <td className="px-4 py-4">1,85,000</td>
-              </tr>
-
-              <tr className="text-sm border-b">
-                <td className="px-4 py-4">
-                  BBA (Entrepreneurship) with academic support of GCEC Global
-                  Foundation
-                </td>
-                <td className="px-4 py-4">1,05,000</td>
-                <td className="px-4 py-4">1,00,000</td>
-                <td className="px-4 py-4">2,05,000</td>
-              </tr>
-
-              <tr className="text-sm border-b">
-                <td className="px-4 py-4">
-                  BBA (Hons./Hons with Research) Administration Entrepreneurship
-                  with academic support of GCEC Global Foundation
-                </td>
-                <td className="px-4 py-4">1,05,000</td>
-                <td className="px-4 py-4">1,00,000</td>
-                <td className="px-4 py-4">2,05,000</td>
-              </tr>
-
-              <tr className="text-sm border-b">
-                <td className="px-4 py-4">
-                  BBA (Digital Marketing) with Academic Support of IIDE
-                </td>
-                <td className="px-4 py-4">1,05,000</td>
-                <td className="px-4 py-4">1,00,000</td>
-                <td className="px-4 py-4">2,05,000</td>
-              </tr>
-
-              <tr className="text-sm border-b">
-                <td className="px-4 py-4">
-                  BBA (Hons./Hons with Research) Digital Marketing with academic
-                  support of IIDE
-                </td>
-                <td className="px-4 py-4">1,05,000</td>
-                <td className="px-4 py-4">1,00,000</td>
-                <td className="px-4 py-4">2,05,000</td>
-              </tr>
-
-              <tr className="text-sm border-b">
-                <td className="px-4 py-4">
-                  BBA (Business Analytics) with Academic Support of Ernst &
-                  Young (EY)
-                </td>
-                <td className="px-4 py-4">1,05,000</td>
-                <td className="px-4 py-4">1,05,000</td>
-                <td className="px-4 py-4">2,10,000</td>
-              </tr>
-
-              <tr className="text-sm border-b">
-                <td className="px-4 py-4">
-                  BBA (Hons./Hons with Research) Business Analytics with
-                  academic support of Ernst & Young (EY)
-                </td>
-                <td className="px-4 py-4">1,05,000</td>
-                <td className="px-4 py-4">1,05,000</td>
-                <td className="px-4 py-4">2,10,000</td>
-              </tr>
-
-              <tr className="text-sm">
-                <td className="px-4 py-4">
-                  BBA (International Accounting & Finance) (ACCA UK)
-                </td>
-                <td className="px-4 py-4">1,05,000</td>
-                <td className="px-4 py-4">1,00,000</td>
-                <td className="px-4 py-4">2,05,000</td>
+                <td className="px-4 py-4">B.Sc. (Hons.) Cyber Security</td>
+                <td className="px-4 py-4">70,000</td>
+                <td className="px-4 py-4">65,000</td>
+                <td className="px-4 py-4">1,35,000</td>
               </tr>
               <tr className="text-sm border-b">
-                <td className="px-4 py-4">
-                  BBA (Hons./Hons with Research) International Accounting &
-                  Finance (ACCA UK)
-                </td>
-                <td className="px-4 py-4">1,05,000</td>
-                <td className="px-4 py-4">1,00,000</td>
-                <td className="px-4 py-4">2,05,000</td>
+                <td className="px-4 py-4">B.Sc. (Hons.) Data Science</td>
+                <td className="px-4 py-4">70,000</td>
+                <td className="px-4 py-4">65,000</td>
+                <td className="px-4 py-4">1,35,000</td>
               </tr>
 
-              <tr className="text-sm border-b">
-                <td className="px-4 py-4">
-                  BBA (Logistics and Supply Chain Management) with academic
-                  support of Safexpress
-                </td>
-                <td className="px-4 py-4">1,05,000</td>
-                <td className="px-4 py-4">1,00,000</td>
-                <td className="px-4 py-4">2,05,000</td>
-              </tr>
+             
 
-              <tr className="text-sm">
-                <td className="px-4 py-4">
-                  BBA (Hons./Hons with Research) Logistics and Supply Chain
-                  Management with academic support of Safexpress
-                </td>
-                <td className="px-4 py-4">1,05,000</td>
-                <td className="px-4 py-4">1,00,000</td>
-                <td className="px-4 py-4">2,05,000</td>
-              </tr>
+             
             </tbody>
           </table>
         </div>

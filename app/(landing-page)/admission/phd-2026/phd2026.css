@@ -4,5 +4,24 @@
 @custom-variant dark (&:is(.dark *));
 
 @layer utilities {
- 
+  .phdForm {
+    width: 100% !important;
+  }
+
+  .custom-border {
+    background: #ff1515;
+    height: 5px;
+    width: 84px;
+    border-radius: 50px;
+  }
+
+  /* .shadowtext{
+    content: "Why Ph.D at K.R. Mangalam";
+    color: #F1F1F1;
+    font-size: 52px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+  } */
+
 }

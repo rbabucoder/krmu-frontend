@@ -3,19 +3,21 @@
 import Script from "next/script";
 
 type NoPaperFormsWidgetProps = {
-  widgetId: string;        // data-w
-  height?: string;         // optional, default provided
+  widgetId: string; // data-w
+  height?: string; // optional, default provided
+  formClass?: string; // optional, default provided
 };
 
 export default function NoPaperFormsWidget({
   widgetId,
   height = "550px",
+  formClass = "lpnpf_wgts_style",
 }: NoPaperFormsWidgetProps) {
   return (
     <>
       {/* NoPaperForms Widget */}
       <div
-        className="npf_wgts lpnpf_wgts_style"
+        className={`npf_wgts ${formClass}`}
         data-height={height}
         data-w={widgetId}
       />
