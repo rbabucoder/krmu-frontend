@@ -161,7 +161,8 @@ export const industryExperts: IndustryExpertsSection = {
 };
 
 export const specialisationData: SpecialisationSection = {
-  subheading: "Choose from KRMU’s undergraduate law programmes and begin your journey into the legal profession.",
+  subheading:
+    "Choose from KRMU’s undergraduate law programmes and begin your journey into the legal profession.",
   heading: `Our Undergraduate Law Programmes`,
   specilisationCard: [
     {
@@ -208,7 +209,7 @@ export const specialisationData: SpecialisationSection = {
         },
       ],
     },
-      {
+    {
       imgUrl: "/landingpage/common/dummy.png",
       title: `LL.B. (Hons.)`,
       desc: `With this three-year undergraduate programme, graduates from any subject can enter the legal field. The course provides a thorough examination of procedural legislation and legal concepts. `,
@@ -230,7 +231,6 @@ export const specialisationData: SpecialisationSection = {
         },
       ],
     },
-    
   ],
 };
 
