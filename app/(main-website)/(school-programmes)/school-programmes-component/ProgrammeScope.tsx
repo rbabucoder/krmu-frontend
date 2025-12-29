@@ -4,6 +4,7 @@ import PopupForm from "@/lib/constants/PopupForm";
 import { ProgrammeScopeType } from "@/lib/types/school-programme";
 import Image from "next/image";
 import Link from "next/link";
+import CommonLeadPopup from "../../components/CommonLeadPopup";
 
 type Props = {
   scopeData: ProgrammeScopeType;
@@ -38,15 +39,35 @@ const ProgrammeScope = async ({ scopeData }: Props) => {
           {/* <button className="bg-[#0a41a1] cursor-pointer text-white text-base sm:bg-white p-[15px] flex items-center justify-center max-w-[220px] w-full mx-auto sm:mx-0 sm:text-[#0a41a1] rounded-md font-semibold mt-6">  
               Programme Scope
             </button> */}
+          {enable_disable_download_pros ? (
+            <CommonLeadPopup
+              buttonText={scopeData?.scopebtn?.buttontext || "Download"}
+              buttonClassName={`bg-[#0a41a1] cursor-pointer text-white text-base sm:bg-white p-[15px] flex items-center justify-center max-w-[220px] w-full mx-auto sm:mx-0 sm:text-[#0a41a1] rounded-md font-semibold mt-6 ${
+                scopeData?.scopebtn?.buttonclass || ""
+              }`}
+              redirectUrl={scopeData?.scopebtn?.buttonlink || "#"}
+            />
+          ) : (
+            <Link
+              href={scopeData?.scopebtn?.buttonlink || "#"}
+              className={`bg-[#0a41a1] cursor-pointer text-white text-base sm:bg-white p-[15px] flex items-center justify-center max-w-[220px] w-full mx-auto sm:mx-0 sm:text-[#0a41a1] rounded-md font-semibold mt-6 ${
+                scopeData?.scopebtn?.buttonclass || ""
+              }`}
+              target="_blank"
+            >
+              {scopeData?.scopebtn?.buttontext || "Download"}
+            </Link>
+          )}
 
-          {enable_disable_download_pros === true
+          {/* {enable_disable_download_pros === true
             ? scopeData?.scopeFormId && (
-                <PopupForm
-                  formId={scopeData?.scopeFormId}
-                  containerId={scopeData?.scopeContainerId}
-                  buttonClass="bg-[#0a41a1] cursor-pointer text-white text-base sm:bg-white p-[15px] flex items-center justify-center max-w-[220px] w-full mx-auto sm:mx-0 sm:text-[#0a41a1] rounded-md font-semibold mt-6"
-                  buttonText={scopeData?.scopebtn?.buttontext}
-                />
+                // <PopupForm
+                //   formId={scopeData?.scopeFormId}
+                //   containerId={scopeData?.scopeContainerId}
+                //   buttonClass="bg-[#0a41a1] cursor-pointer text-white text-base sm:bg-white p-[15px] flex items-center justify-center max-w-[220px] w-full mx-auto sm:mx-0 sm:text-[#0a41a1] rounded-md font-semibold mt-6"
+                //   buttonText={scopeData?.scopebtn?.buttontext}
+                // />
+                  
               )
             : scopeData?.scopebtn && (
                 <Link
@@ -58,7 +79,7 @@ const ProgrammeScope = async ({ scopeData }: Props) => {
                 >
                   {scopeData?.scopebtn?.buttontext}
                 </Link>
-              )}
+              )} */}
 
           {/* {scopeData?.scopebtn && (
             <>

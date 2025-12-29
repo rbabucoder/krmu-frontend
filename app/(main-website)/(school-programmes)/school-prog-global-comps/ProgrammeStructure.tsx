@@ -10,6 +10,7 @@ import PopupForm from "@/lib/constants/PopupForm";
 import { ButtonType } from "@/lib/types/common";
 import { Year } from "@/lib/types/school-programme";
 import Link from "next/link";
+import CommonLeadPopup from "../../components/CommonLeadPopup";
 
 type Props = {
   programStruct: Year[];
@@ -53,6 +54,22 @@ const ProgrammeStructure = ({
           )} */}
 
           {enable_disable_handbook === true ? (
+            <CommonLeadPopup
+              buttonText={currbtn?.buttontext}
+              buttonClassName={`p-2 sm:py-[15px] sm:px-[25px] inline-block font-normal rounded-[15px] text-xs sm:text-2xl w-full text-white bg-[#db2a1a] text-center mb-6`}
+              redirectUrl={currbtn?.buttonlink || "#"}
+            />
+          ) : (
+            <Link
+              href={currbtn?.buttonlink || "#"}
+              className={`p-2 sm:py-[15px] sm:px-[25px] inline-block font-normal rounded-[15px] text-xs sm:text-2xl w-full text-white bg-[#db2a1a] text-center mb-6`}
+              target="_blank"
+            >
+              {currbtn?.buttontext}
+            </Link>
+          )}
+
+          {/* {enable_disable_handbook === true ? (
             <PopupForm
               formId={currFormId}
               containerId={currFormContainerId}
@@ -69,7 +86,7 @@ const ProgrammeStructure = ({
             >
               {currbtn?.buttontext}
             </Link>
-          )}
+          )} */}
 
           {/* {currbtn && (
             <>
@@ -278,15 +295,25 @@ const ProgrammeStructure = ({
                                 // Render conditionally
                                 if (shouldShowPopup) {
                                   return (
-                                    <PopupForm
+                                    <CommonLeadPopup
                                       key={btn?.id}
-                                      formId={btn?.popupFormId}
-                                      containerId={btn?.containerPopupFormId}
-                                      buttonClass="text-xs sm:text-xl p-5 font-semibold text-center border border-[#d5d5d5] text-[#dc2e25] bg-[#f0f0f0] rounded-[20px] inline-block"
                                       buttonText={btn?.buttontext}
+                                      buttonClassName={`text-xs sm:text-xl p-5 font-semibold text-center border border-[#d5d5d5] text-[#dc2e25] bg-[#f0f0f0] rounded-[20px] inline-block`}
+                                      redirectUrl={btn?.buttonlink || "#"}
                                     />
                                   );
                                 }
+                                // if (shouldShowPopup) {
+                                //   return (
+                                //     <PopupForm
+                                //       key={btn?.id}
+                                //       formId={btn?.popupFormId}
+                                //       containerId={btn?.containerPopupFormId}
+                                //       buttonClass="text-xs sm:text-xl p-5 font-semibold text-center border border-[#d5d5d5] text-[#dc2e25] bg-[#f0f0f0] rounded-[20px] inline-block"
+                                //       buttonText={btn?.buttontext}
+                                //     />
+                                //   );
+                                // }
 
                                 return (
                                   <Link
