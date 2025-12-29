@@ -6,14 +6,14 @@ const PhdWhyphd = () => {
       <div className="max-w-[1300px] mx-auto w-full">
         <div className="whyphdHeading relative">
           <h2 className="text-[32px] font-semibold mb-2.5 text-center">
-            Why Ph.D at K.R. Mangalam
+            Why Choose a Ph.D at KRMU?
           </h2>
           <div
             className="faded-text font-bold text-gray-300 opacity-30
       tracking-wide uppercase
       select-none pointer-events-none"
           >
-            Why Ph.D at K.R. Mangalam
+           Why Choose a Ph.D at KRMU?
           </div>
           <div className="custom-border absolute left-[50%] translate-x-[-50%]"></div>
         </div>
@@ -41,9 +41,7 @@ const PhdWhyphd = () => {
                   />
                 </div>
                 <div className="font-light">
-                  The University publishes two research journals namely, Journal
-                  of Scientific and Technical Research (JSTR), and International
-                  Journal of Management Issues and Research (IJMIR) regularly.
+                  K.R. Mangalam University offers an intellectually stimulating environment for doctoral candidates across diverse disciplines. With expert faculty mentorship, state-of-the-art labs, and a multi-disciplinary approach, our Ph.D. programmes empower researchers to address real-world challenges and make meaningful academic contributions.
                 </div>
               </li>
               <li className="flex items-start gap-2 border-b-2 border-[#E2E8F0] py-3 text-lg">
@@ -56,8 +54,7 @@ const PhdWhyphd = () => {
                   />
                 </span>
                 <div className="font-light">
-                  Internationally Recognised Degrees, Approved by UGC, Govt. of{" "}
-                  <br /> India
+                  Interdisciplinary Research Across Multiple Disciplines
                 </div>
               </li>
 
@@ -71,8 +68,7 @@ const PhdWhyphd = () => {
                   />
                 </span>
                 <div className="font-light">
-                  Major funded research projects worth Rs. 22.74 crores are
-                  running in the university
+                 Renowned Faculty, Mentors, and Research Collaborators
                 </div>
               </li>
 
@@ -86,7 +82,7 @@ const PhdWhyphd = () => {
                   />
                 </span>
                 <div className="font-light">
-                  12 Research lab and 6 high-end research centres
+                 Access to Advanced Laboratories, Libraries, and Digital resources
                 </div>
               </li>
               <li className="flex items-start gap-2 border-b-2 border-[#E2E8F0] py-3 text-lg">
@@ -99,8 +95,7 @@ const PhdWhyphd = () => {
                   />
                 </span>
                 <div className="font-light">
-                  Education Excellence Award by ASSOCHAM supported by Ministry
-                  of Commerce, Govt. of India
+                  Flexible Course Structure with Emphasis on Original Research
                 </div>
               </li>
               <li className="flex items-start gap-2 border-b-2 border-[#E2E8F0] py-3 text-lg">
@@ -113,8 +108,7 @@ const PhdWhyphd = () => {
                   />
                 </span>
                 <div className="font-light">
-                  The faculty members/researchers have twelve patents pertaining
-                  to their innovative research work under their name.
+                  Opportunities to Publish in Reputed Journals and Represent at Conferences
                 </div>
               </li>
             </ul>

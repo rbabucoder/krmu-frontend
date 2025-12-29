@@ -6,14 +6,10 @@ const PhdGlobal = () => {
       <div className="max-w-[1300px] mx-auto w-full flex flex-col lg:flex-row gap-10">
         <div className="w-full lg:w-2/5 text-center md:text-left">
           <h3 className="text-4xl md:text-[50px] text-white font-semibold leading-[1.2] mb-5">
-            300+ GLOBAL <br /> MoUs
+            International Collaboration
           </h3>
           <p className="text-[#828282]">
-            K.R. Mangalam University’s 300+ global MoUs with leading
-            universities, research centres and industries provide joint research
-            opportunities, faculty exchange, and access to specialised
-            labs—connecting every scholar to a truly international knowledge
-            network.
+           Our international partnerships enable student and faculty exchange programmes, joint research, access to global labs, and study-abroad opportunities. Through strategic MoUs with leading universities and international organisations worldwide, KRMU equips students with global exposure and industry-ready skills—advancing its vision to emerge as a centre of world-class education.
           </p>
         </div>
         <div className="w-full lg:w-3/5 grid grid-cols-2 md:grid-cols-3 gap-5">

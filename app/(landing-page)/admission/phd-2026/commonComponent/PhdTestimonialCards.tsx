@@ -32,15 +32,7 @@ const PhdTestimonialCards = () => {
                 alt=""
               />
               <p className="my-5">
-                One of the best aspects of the B.Ed. program at K. R. Mangalam
-                University is the supportive learning environment created by the
-                faculty and peers. The small class sizes and interactive
-                teaching methods allow for meaningful discussions and a deeper
-                understanding of the subject matter. Beyond theoretical
-                knowledge, the program offers various opportunities to engage in
-                practical learning through workshops, storytelling sessions, and
-                peer teaching. I particularly enjoyed the focus on early
-                childhood education and.
+                “K.R. Mangalam University provided me with a strong research foundation and mentorship in the emerging field of econophysics. The dedication, innovative approach, and academic support of the faculty played a pivotal role in my successful PhD journey and subsequent growth in publications and career advancement. I sincerely credit KRMU for shaping my academic path and enabling me to reach the highest levels of professional achievement.”
               </p>
               <div className="flex gap-5 items-center">
                 <div className="border-2 border-[#ff1515] rounded-full">
@@ -52,8 +44,8 @@ const PhdTestimonialCards = () => {
                   />
                 </div>
                 <div className="flex flex-col font-semibold">
-                  <h4>Ms. Somya Aggarwal</h4>
-                  <h5>B.A. (Hons/Hons with Research) Economics 4.8</h5>
+                  <h4>Dr. Sushil Kumar </h4>
+                  {/* <h5>B.A. (Hons/Hons with Research) Economics 4.8</h5> */}
                 </div>
               </div>
             </div>
@@ -74,15 +66,7 @@ const PhdTestimonialCards = () => {
                 alt=""
               />
               <p className="my-5">
-                One of the best aspects of the B.Ed. program at K. R. Mangalam
-                University is the supportive learning environment created by the
-                faculty and peers. The small class sizes and interactive
-                teaching methods allow for meaningful discussions and a deeper
-                understanding of the subject matter. Beyond theoretical
-                knowledge, the program offers various opportunities to engage in
-                practical learning through workshops, storytelling sessions, and
-                peer teaching. I particularly enjoyed the focus on early
-                childhood education and.
+                “My academic journey began at K.R. Mangalam University, where the strong foundation, supportive faculty, and enriching research environment shaped my Ph.D. experience. Even years after graduating, I continue to value the guidance and opportunities I received at KRMU, which paved the way for my current professional role at NIFT Panchkula. I am deeply grateful to K.R. Mangalam University for its lasting impact on my career and personal growth.”
               </p>
               <div className="flex gap-5 items-center">
                 <div className="border-2 border-[#ff1515] rounded-full">
@@ -94,8 +78,42 @@ const PhdTestimonialCards = () => {
                   />
                 </div>
                 <div className="flex flex-col font-semibold">
-                  <h4>Ms. Somya Aggarwal</h4>
-                  <h5>B.A. (Hons/Hons with Research) Economics 4.8</h5>
+                  <h4>Dr. Shikha Sharma</h4>
+                  {/* <h5>B.A. (Hons/Hons with Research) Economics 4.8</h5> */}
+                </div>
+              </div>
+            </div>
+          </div>
+        </CarouselItem>
+        <CarouselItem className="md:basis-1/2">
+          <div>
+            <div
+              className="p-5 rounded-[20px] bg-white border-t-8 phdtestcard"
+              style={{
+                boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
+              }}
+            >
+              <Image
+                src="/landingpage/phd/star.svg"
+                width={180}
+                height={32}
+                alt=""
+              />
+              <p className="my-5">
+              “My journey at K.R. Mangalam University has been transformative and empowering. The strong academic foundation, research support, and encouragement I received at KRMU equipped me to grow as a dedicated researcher and successfully transition into post-doctoral work. I am grateful for the mentorship and vibrant scholarly environment at KRMU, which played a key role in shaping my academic path and enabling me to pursue new frontiers in research with confidence and purpose.”
+              </p>
+              <div className="flex gap-5 items-center">
+                <div className="border-2 border-[#ff1515] rounded-full">
+                  <Image
+                    src="/landingpage/phd/testimonial-1.webp"
+                    width={80}
+                    height={80}
+                    alt=""
+                  />
+                </div>
+                <div className="flex flex-col font-semibold">
+                  <h4>Dr. Unnati</h4>
+                  {/* <h5>B.A. (Hons/Hons with Research) Economics 4.8</h5> */}
                 </div>
               </div>
             </div>

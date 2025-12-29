@@ -25,7 +25,7 @@ const PhdImportantNotification = () => {
                       Application Fee
                     </td>
                     <td className="w-1/2 px-4 py-4 text-sm border border-gray-200">
-                      Rs. 1500/- (Rupees One Thousand Five Hundred Only)
+                      Rs. 2,000 (Rupees Two Thousand)
                     </td>
                   </tr>
 
@@ -34,73 +34,48 @@ const PhdImportantNotification = () => {
                       Last Date of Submission of Application
                     </td>
                     <td className="px-4 py-4 text-sm border border-gray-200">
-                      31st December 2026 (Wednesday) – 5:00 PM
+                      January 08, 2026 (Thursday)   (Even Semester)
                     </td>
                   </tr>
 
                   <tr className="bg-gray-100">
                     <td className="px-4 py-4 text-sm font-medium border border-gray-200">
-                      Date of Entrance Test (Online)
+                      Date of Entrance Test & Interview (Offline):
                     </td>
                     <td className="px-4 py-4 text-sm border border-gray-200">
-                      17th January 2026 (Saturday)
+                      January 10, 2026 (Saturday)
                     </td>
                   </tr>
 
                   <tr className="bg-white">
                     <td className="px-4 py-4 text-sm font-medium border border-gray-200">
-                      Date of Result Declaration of Entrance Test
+                      Date of Final Result Declaration:
                     </td>
                     <td className="px-4 py-4 text-sm border border-gray-200">
-                      21st January 2026 (Wednesday)
+                      January 14, 2026 (Wednesday)
                     </td>
                   </tr>
 
                   <tr className="bg-gray-100">
                     <td className="px-4 py-4 text-sm font-medium border border-gray-200">
-                      Date for Interview of Qualified Candidates (Online)
+                     Course Duration:
                     </td>
                     <td className="px-4 py-4 text-sm border border-gray-200">
-                      27th to 30th January 2026 (Tuesday – Friday)
+                      3 Years (Minimum)
                     </td>
                   </tr>
 
-                  <tr className="bg-white">
-                    <td className="px-4 py-4 text-sm font-medium border border-gray-200">
-                      Declaration of Final Result
-                    </td>
-                    <td className="px-4 py-4 text-sm border border-gray-200">
-                      7th February 2026 (Saturday)
-                    </td>
-                  </tr>
                 </tbody>
               </table>
             </div>
             <p className="leading-[1.5] mb-5">
-              <strong>
-                Admissions to Ph.D. program (full-time and part-time) for batch
-                January 2026
-              </strong>
-               of K.R. Mangalam University will be made strictly according to
-              the UGC guidelines for NET, GATE & other equivalent test qualified
-              candidates with valid score. The vacant seats shall be filled as
-              per merit and availability of seats in various departments /
-              schools through 
-              <strong>Entrance Test followed by Interview.</strong>{" "}
+              The Ph.D. programme offered by K. R. Mangalam University is framed according to standards set by University Grants Commission (UGC) under the able guidance of highly qualified and widely recognised faculty in their respective domains. We offer both full time and part time Ph.D. programmes in a wide range of domains. You will work closely with your supervisor on a research problem and push the frontiers of human knowledge and understanding. 
             </p>
             <p className="mb-5">
-              Ph.D. Ordinance of K.R. Mangalam University. Covered under
-              comprehensive research policy available on its website, governs
-              the Ph.D. Program. Full-tinie eligible students get{" "}
-              <strong>Fellowship</strong> as per K.R. Mangalam University rules.
+             K.R. Mangalam University has a well-established eco-system for impactful Research, Development and Innovation. We have a rich Central Instruments Facility (CIF) pertaining to Materials Science and Pharmacology related Research activities, in particular. You may get an opportunity to work in some of the Publicly Funded R&D Institutes/Laboratories and other Higher Education Institutes (HEIs). 
             </p>
             <p>
-              Applications are invited on prescribed application form only,
-              which can be filled online/collecting hard copy from
-              university/downloading application and sending complete form. the
-              admission fee of Rs 1500/- can be either paid online or by demand
-              draft in favour of K.R. Mangalam University payable at Greater
-              Noida.
+             Come and join us in the exciting and thrilling world of Research, Development and Innovation and become part of University’s endeavour in achieving the goal of Atma Nirbhar Bharat and contribute to solving Society’s problems. 
             </p>
           </div>
           <div className="w-full lg:w-1/2">
@@ -114,7 +89,7 @@ const PhdImportantNotification = () => {
               />
             </div>
             <div className="mt-2.5">
-              <span>For Further Contact (9:00 AM - 5:00 PM) us:</span>
+              <span>For further information, please contact our research department:</span>
               <span className="flex break-all flex-wrap sm:flex-nowrap gap-5">
                 <Link
                   href="mailto:welcome@krmangalam.edu.in"
@@ -126,7 +101,7 @@ const PhdImportantNotification = () => {
                     height={12}
                     alt="Mail"
                   />{" "}
-                  welcome@krmangalam.edu.in
+                  rdc@krmangalam.edu.in
                 </Link>
                 <Link
                   href="tel:8192888444"
@@ -138,7 +113,7 @@ const PhdImportantNotification = () => {
                     height={12}
                     alt="Mail"
                   />{" "}
-                  8192888444
+                    +91-8800697009, +91-9289143055  
                 </Link>
               </span>
               <Link

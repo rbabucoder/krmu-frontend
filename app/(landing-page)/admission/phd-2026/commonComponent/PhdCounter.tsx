@@ -20,9 +20,9 @@ const PhdCounter = () => {
               />
             </div>
             <span className="flex flex-col justify-center">
-              <span className="text-[22px] font-semibold">1023</span>
+              <span className="text-[22px] font-semibold">4,000</span>
               <span className="text-xs text-[#7F7F7F]">
-                Patents Published and 412 Granted
+                Publications
               </span>
             </span>
           </div>
@@ -36,9 +36,9 @@ const PhdCounter = () => {
               />
             </div>
             <span className="flex flex-col justify-center">
-              <span className="text-[22px] font-semibold">1023</span>
+              <span className="text-[22px] font-semibold">14 Cr</span>
               <span className="text-xs text-[#7F7F7F]">
-                Patents Published and 412 Granted
+                Research Grants  
               </span>
             </span>
           </div>
@@ -52,9 +52,9 @@ const PhdCounter = () => {
               />
             </div>
             <span className="flex flex-col justify-center">
-              <span className="text-[22px] font-semibold">1023</span>
+              <span className="text-[22px] font-semibold">250+</span>
               <span className="text-xs text-[#7F7F7F]">
-                Patents Published and 412 Granted
+                Patents 
               </span>
             </span>
           </div>
@@ -68,9 +68,9 @@ const PhdCounter = () => {
               />
             </div>
             <span className="flex flex-col justify-center">
-              <span className="text-[22px] font-semibold">1023</span>
+              <span className="text-[22px] font-semibold">9.2</span>
               <span className="text-xs text-[#7F7F7F]">
-                Patents Published and 412 Granted
+                Citation Index 
               </span>
             </span>
           </div>
