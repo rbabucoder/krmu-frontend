@@ -89,7 +89,7 @@ const CommonLeadPopup = ({
                 name="name"
                 required
                 placeholder="Your Name*"
-                className="w-full h-12 px-4 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full h-12 px-4 rounded-lg border border-gray-300 text-black shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
 
               <input
@@ -97,7 +97,7 @@ const CommonLeadPopup = ({
                 type="email"
                 required
                 placeholder="Email Address*"
-                className="w-full h-12 px-4 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full h-12 px-4 rounded-lg border border-gray-300 text-black shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
 
               <input
