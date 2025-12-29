@@ -4,3 +4,6 @@ export const bbaFormId = "05a47f33fc1a48e7f6b357b1aaa542c7";
 export const bdesGameId = "582d52b6cdbd1a5596d68c362183bece";
 export const bdesFashionId = "582d52b6cdbd1a5596d68c362183bece";
 export const bsccseId = "4d597afde3ab88251324a34fc94b0e6c";
+export const bscAgriId = "d686f5fb05fb715978a808a7f1a25b83";
+export const alliedHealthId = "5134f9e63722ad009d48f541c1185d79";
+export const brand2026Id = "bc75880ade367265cef841c19ef47621"

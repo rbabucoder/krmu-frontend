@@ -362,29 +362,34 @@ export const faqSectionData: FAQSectionData = {
   faqs: [
     {
       id: "item-1",
-      question: "What is the eligibility criteria for Medical & Allied Sciences courses?",
-      answer: `Candidates must have passed Class 12 in the Science stream with Physics, Chemistry, and Biology, securing a minimum of 50% marks.`,
+      question: "What are the benefits of B.Sc. (Hons.) Agriculture?",
+      answer: `The programme offers a robust foundation in agricultural sciences combined with practical training, state-of-the-art lab work, and real-world field experience, ensuring you are well-prepared for diverse career opportunities.`,
     },
     {
       id: "item-2",
-      question: "Are scholarships available?",
-      answer: `Yes, the University offers both merit-based and need-based scholarships. For detailed information, please visit the scholarships page.`,
+      question: "Is B.Sc. Agriculture good for the future?",
+      answer: `Absolutely Yes! As agriculture is the backbone of India's rural economy, this degree equips you with the skills and knowledge necessary to drive innovation and sustainable practices in the sector.`,
     },
     {
       id: "item-3",
       question:
-        "What placement support does the University provide?",
-      answer: `The University offers dedicated placement support, including structured training and placement drives with leading recruiters.`,
+        "What are the prerequisite skills for pursuing a B.Sc. (Hons.) Agriculture?",
+      answer: `Candidates should have passed 10+2 or an equivalent examination in Physics, Chemistry, Maths/Biology/Agriculture with a minimum of 50% marks and possess a strong passion for agricultural sciences.`,
     },
     {
       id: "item-4",
-      question: "What B.Sc. courses are available under the Allied Health Sciences domain?",
-      answer: `The University offers the following B.Sc. programmes:
-      <ul>
-      <li>Cardiovascular Technology</li>
-      <li>Respiratory Technology</li>
-      <li>Emergency Medical Technology</li>
-      </ul>`,
+      question: "What is the teaching methodology used in the B.Sc. (Hons.) Agriculture programme?",
+      answer: `The programme employs a blend of classroom lectures, hands-on laboratory experiments, extensive fieldwork, and internships—aligned with the ICAR curriculum—to ensure a balanced theoretical and practical learning experience.`,
+    },
+    {
+      id: "item-5",
+      question: "How does the programme prepare students for the evolving agricultural sector?",
+      answer: `By integrating modern agricultural techniques, sustainable farming practices, and advanced research projects, the curriculum equips you with the expertise needed to tackle current and future challenges in agriculture.`,
+    },
+    {
+      id: "item-6",
+      question: "Are there opportunities for students to participate in national or international agricultural conferences and seminars?",
+      answer: `Yes, students are encouraged to attend both national and international conferences and seminars to broaden their perspectives, network with industry leaders, and stay updated on global agricultural trends.`,
     },
   ],
 };
