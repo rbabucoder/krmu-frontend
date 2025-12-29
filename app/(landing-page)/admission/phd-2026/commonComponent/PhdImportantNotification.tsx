@@ -3,12 +3,16 @@ import Link from "next/link";
 
 const PhdImportantNotification = () => {
   return (
-    <section className="py-10">
+    <section className="py-10 px-4">
       <div className="max-w-[1320px] mx-auto w-full">
-        <h2 className="text-[32px]">Important Notification</h2>
-        <div className="custom-border"></div>
-        <div className="flex gap-9 mt-10">
-          <div className="w-1/2">
+        <div className="phdHeading">
+          <h2 className="text-[32px] font-semibold mb-2.5">
+            Important Notification
+          </h2>
+          <div className="custom-border"></div>
+        </div>
+        <div className="flex flex-col lg:flex-row gap-9 mt-10">
+          <div className="w-full lg:w-1/2">
             <h2 className="text-lg font-semibold border border-gray-200 rounded-t-md px-4 py-3 bg-white">
               Ph.D. Program and Details for Entrance Test (January 2026 Batch)
             </h2>
@@ -99,7 +103,7 @@ const PhdImportantNotification = () => {
               Noida.
             </p>
           </div>
-          <div className="w-1/2">
+          <div className="w-full lg:w-1/2">
             <div>
               <Image
                 src="/landingpage/phd/university.webp"
@@ -111,7 +115,7 @@ const PhdImportantNotification = () => {
             </div>
             <div className="mt-2.5">
               <span>For Further Contact (9:00 AM - 5:00 PM) us:</span>
-              <span className="flex gap-5">
+              <span className="flex break-all flex-wrap sm:flex-nowrap gap-5">
                 <Link
                   href="mailto:welcome@krmangalam.edu.in"
                   className="flex items-center gap-2.5 font-semibold"
@@ -136,9 +140,13 @@ const PhdImportantNotification = () => {
                   />{" "}
                   8192888444
                 </Link>
-               
               </span>
-              <Link href="" className="inline-block mt-5 py-2.5 px-5 bg-[#005DA9] text-white text-center max-w-[354px] w-full text-xl font-semibold rounded-[10px]">Important Instructions</Link>
+              <Link
+                href=""
+                className="inline-block mt-5 py-2.5 px-5 bg-[#005DA9] text-white text-center max-w-[354px] w-full text-xl font-semibold rounded-[10px]"
+              >
+                Important Instructions
+              </Link>
             </div>
           </div>
         </div>

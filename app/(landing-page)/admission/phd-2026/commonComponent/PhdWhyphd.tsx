@@ -4,19 +4,34 @@ const PhdWhyphd = () => {
   return (
     <section className="bg-[#F8F9FA] py-[140px] px-4">
       <div className="max-w-[1300px] mx-auto w-full">
-        <div className="flex gap-10">
-          <div className="w-1/2">
+        <div className="whyphdHeading relative">
+          <h2 className="text-[32px] font-semibold mb-2.5 text-center">
+            Why Ph.D at K.R. Mangalam
+          </h2>
+          <div
+            className="faded-text font-bold text-gray-300 opacity-30
+      tracking-wide uppercase
+      select-none pointer-events-none"
+          >
+            Why Ph.D at K.R. Mangalam
+          </div>
+          <div className="custom-border absolute left-[50%] translate-x-[-50%]"></div>
+        </div>
+
+        <div className="flex flex-col xl:flex-row gap-10 mt-20">
+          <div className="w-full xl:w-1/2">
             <Image
               src="/landingpage/phd/whyphd.webp"
               width={644}
               height={532}
               alt=""
+              className="w-full"
             />
           </div>
-          <div className="w-1/2">
+          <div className="w-full xl:w-1/2">
             <ul>
               <li className="flex items-start gap-2 border-b-2 border-[#E2E8F0] pb-3 text-lg">
-                <span className="mt-1">
+                <div className="mt-1">
                   <Image
                     src="/landingpage/phd/why-phd/item-1.svg"
                     width={18}
@@ -24,7 +39,7 @@ const PhdWhyphd = () => {
                     alt=""
                     className="w-12 h-12"
                   />
-                </span>
+                </div>
                 <div className="font-light">
                   The University publishes two research journals namely, Journal
                   of Scientific and Technical Research (JSTR), and International

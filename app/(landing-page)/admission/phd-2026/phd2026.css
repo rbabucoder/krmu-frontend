@@ -8,6 +8,27 @@
     width: 100% !important;
   }
 
+  .phd-bg-overlay {
+    position: relative;
+  }
+
+  .phd-bg-overlay::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .phdtestcard:nth-child(even){
+    border-color: #e30016;
+  }
+  .phdtestcard:nth-child(odd){
+    border-color: #005DA9;
+  }
+
   .custom-border {
     background: #ff1515;
     height: 5px;
@@ -15,13 +36,40 @@
     border-radius: 50px;
   }
 
-  /* .shadowtext{
-    content: "Why Ph.D at K.R. Mangalam";
-    color: #F1F1F1;
-    font-size: 52px;
+  .whyphdHeading {
+    /* padding: 40px 0px; */
+    position: relative;
+  }
+
+  .whyphdHeading .faded-text {
     position: absolute;
     left: 50%;
-    top: 0;
-  } */
+    top: -12px;
+    transform: translateX(-50%);
+    font-size: 40px;
+    /* top: 0; */
+  }
 
+  @media (max-width: 640px) {
+    .whyphdHeading .faded-text {
+      font-size: 30px;
+    }
+  }
+
+  .achive-trans-bg {
+    background: linear-gradient(90deg, #c4e1f3 0%, #82c7ff 100%);
+    opacity: 0.78;
+    border-radius: 15px;
+  }
+
+  .phdwhatbtn {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+
+  .phdwhatbtn svg {
+    width: 30px !important;
+    height: 30px !important;
+  }
 }

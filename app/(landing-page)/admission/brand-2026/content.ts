@@ -22,12 +22,12 @@ export const Hero: HeroContent = {
       ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
-       BBA (UG)
+       Undergraduate
       </span>
       <br />
-      PROGRAMMES 2026
+      PROGRAMMES 2026-27
     `,
-  desc: `Start Building Your Future in Business and Management`,
+  desc: `The K.R. Mangalam University strives to set new benchmarks for a holistic, value-driven education, with interdisciplinary learning, modern infrastructure, and the assimilation of the best global practices to match international standards.`,
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -42,20 +42,20 @@ export const heroMarqueeData: HeroMarqueeSection = {
 
 export const Counters: CounterItem[] = [
   {
-    title: "7.25 LPA",
-    subtitle: "Average Package",
+    title: "56.6 LPA",
+    subtitle: "Highest Package",
   },
   {
     title: "800+",
-    subtitle: "Recruiters",
+    subtitle: "Top Recruiters",
   },
   {
-    title: "Up To ₹21 Cr",
+    title: "₹21 Cr",
     subtitle: "Worth of Scholarships",
   },
   {
-    title: "56.6 LPA",
-    subtitle: "Highest Package",
+    title: "100%",
+    subtitle: "Placement Assistance",
   },
 ];
 
@@ -94,34 +94,34 @@ export const prominentRecruiters: ProminentRecruit[] = [
 ];
 
 export const whyKRM: WhyKRMSection = {
-  heading: "Why Opt for BBA Programmes of KRMU?",
-  subheading: "Shape Your Future with a Career-Focused Business Education",
-  content: `The BBA programmes at K.R. Mangalam University provide the groundwork for future business executives to succeed in a variety of corporate positions or entrepreneurial endeavours. Our program, which is in line with NEP criteria, guarantees flexibility in length (3 or 4 years), combining academic knowledge with practical experience and real-world insights.`,
+  heading: "What makes KRMU the Best option for the Undergraduate Course?",
+  subheading: "Preaching, Preparing & Perfectioning Tomorrow’s Pioneers",
+  content: `K.R. Mangalam University remains on the priority list of individuals seeking admission into undergraduate courses due to its innovative, interdisciplinary curriculum, strong industry-academia linkages, world-class infrastructure (smart classrooms, labs), experienced faculty, and focus on holistic development of students by equipping them with practical industry-required skills, critical thinking, and global exposure, thereby ensuring success in diverse fields.`,
   imgUrl: `/landingpage/common/whykrmtest.png`,
   whyKrmCards: [
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Multiple Specialisation Options in a NEP-Aligned Structure`,
+      content: `Holistic Curriculum: A unique blend of conceptual theoretical knowledge and modern industry-relevant coursework to keep pace with evolving academic fields.`,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Industry Partnerships Providing Real-World Education and Placements`,
+      content: `Placements: Impressive placement record via industry connections & support for resume building, communication skills, etc.`,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Mentoring from Skilled Academics and Business Experts`,
+      content: `Modern Infrastructure: Access to an array of facilities like libraries, labs, housing, sports facilities, and cultural resources.`,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Contemporary Campus Facilities Designed for Experiential and Interactive Education`,
+      content: `Global Exposure: Promotes holistic growth with opportunities like student exchange programs and collaborations with international scholars.`,
     },
   ],
 };
 
 export const industryExperts: IndustryExpertsSection = {
   eyebrow: "Why KR Mangalam PhD?",
-  heading: `Learn From <br /> Industry Experts`,
-  description: `KRMU partners with major organisations to provide <br /> industry-specific training.`,
+  heading: `Learn from<br />Leaders @ KRMU!`,
+  description: `K.R. Mangalam University takes pride in collaborating with industry leaders and skill professionals who offer unparalleled hands-on learning experiences to students.`,
   cta: {
     label: "Apply for B.Tech 2026",
     href: "#",
@@ -619,7 +619,7 @@ export const opportunityData: OpportunitySection = {
 
 export const testimonialsData: TestimonialsSection = {
   subheading: "Students’ Testimonials",
-  heading: `Why Do Our Students Trust Us?`,
+  heading: `Still in Doubt? </br> See What Our Students Say About Us!`,
   testimonials: [
     {
       image: "/landingpage/common/dummy.png",
@@ -715,8 +715,8 @@ export const scholarResearchImpactData: ScholarResearchImpactSection = {
 };
 
 export const comeToLifeData: ComeToLifeSection = {
-  heading: `World-Class Infrastructure`,
-  description: `K.R. Mangalam University offers a modern and student-centric campus designed to support effective learning and holistic development for BBA undergraduates. The university provides smart classrooms, a well-equipped central library with digital resources, computer and analytics labs, and seminar halls to enhance academic engagement. Dedicated spaces for innovation, entrepreneurship, and skill development create an environment that encourages practical learning, collaboration, and professional growth.`,
+  heading: `Modern Facilities & State-of-the Art Infrastructure`,
+  description: `At K.R. Mangalam University, the conceptual knowledge is imparted to students in modern smart classrooms that are equipped with interactive whiteboards and seamless tech integration. The availability of the industry-aligned labs, collaborative spaces, and round-the-clock student support facilities fosters innovation as well as leads to the holistic development of students, thereby making them ready to take on their future goals.`,
   footerText: ``,
   cta: {
     label: "Apply for BBA (UG) 2026-2027 ",
@@ -747,7 +747,7 @@ export const comeToLifeData: ComeToLifeSection = {
 };
 
 export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
-  heading: "Life as a BBA (UG) Student at KRMU",
+  heading: "Life as an Undergraduate Student at KRMU",
   description: "",
   image: {
     src: "/landingpage/common/test44.jpeg",
@@ -776,46 +776,29 @@ export const faqSectionData: FAQSectionData = {
   faqs: [
     {
       id: "item-1",
-      question: "What teaching methods are used in the BBA programmes?",
-      answer: `The BBA curriculum emphasizes: <br /> <br /><ul> <li>Case studies</li><li>Live projects</li><li> Internships</li><li>Industry interaction </li> <li>Presentations, simulations, and experiential learning</li></ul>`,
+      question: "What programmes does K.R. Mangalam University offer?",
+      answer: `The K.R. Mangalam University offers various undergraduate programmes in diverse fields, including engineering, management, law, applied sciences, architecture, health sciences, and humanities.`,
     },
     {
       id: "item-2",
-      question: "Are internships mandatory in the BBA programme?",
-      answer: `Yes. Internships and live projects are an integral part of the BBA curriculum to provide real-world business exposure and practical learning.`,
+      question: "What is the K.R. Mangalam University Admission Process?",
+      answer: `An individual can begin with his/her admission process at K.R. Mangalam University via the University’s online application portal available on the website. The KRMU also offers assistance through its admission office for any queries or guidance required during the application process.`,
     },
     {
       id: "item-3",
       question:
-        "What career opportunities are available after completing BBA from KRMU?",
-      answer: `Graduates can pursue careers in: <br /><br /> 
-       <ul>
-        <li>Marketing, HR, Finance, Operations</li>
-        <li>Business Analytics & Digital Marketing</li>
-        <li>Banking, Consulting, Logistics & Supply Chain</li>
-        <li>Entrepreneurship & Family Business</li>
-       </ul>
-       <br />
-       They may also opt for MBA, PGDM, professional certifications (ACCA, CFA, etc.), or start their own ventures.
-
-      `,
+        "Does KRMU provide hostel accommodation?",
+      answer: `Yes, KRMU provides separate hostels for boys and girls with modern amenities and 24/7 security.`,
     },
     {
       id: "item-4",
-      question: "What distinguishes BBA LLB from BA LLB?",
-      answer: `Yes. KRMU has a dedicated Career Development & Placement Cell that supports students through:
- <br /><br /> 
-       <ul>
-        <li>Career counselling</li>
-        <li>Skill development workshops</li>
-        <li>Internships</li>
-        <li>Campus placements with reputed organisations</li>
-       </ul>`,
+      question: "Does the university offer scholarships or financial aid to students?",
+      answer: `Yes, the KRMU offers various scholarships and financial aid programmes based on academic merit, sports achievements, and economic requirements. Detailed information about it can be found in the scholarships section of the website.`,
     },
     {
       id: "item-5",
-      question: "Are scholarships available for BBA students?",
-      answer: `Yes. KRMU offers merit-based and need-based scholarships as per university norms and applicable guidelines.`,
+      question: "Why is K.R. Mangalam University said to be one of the best colleges in Gurgaon?",
+      answer: `The unparalleled quality of learning, expert and experienced faculty, international collaborations, and an excellent placement record have placed KRMU among the top colleges in Gurgaon.`,
     },
   ],
 };
@@ -846,10 +829,10 @@ export const businessHubData: BusinessHubSection = {
 };
 
 export const applySectionData: ApplySectionData = {
-  heading: `Apply for K.R. Mangalam <br /> University now`,
+  heading: `Begin Your Journey at K.R. Mangalam University Now`,
   description: "Start Your Adventure Right Now at K.R. Mangalam University",
   cta: {
-    label: "Apply for Law (UG) 2026-2027",
+    label: "Apply for UG Programme",
     href: "#",
   },
   highlights: [

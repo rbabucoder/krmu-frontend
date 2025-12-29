@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { CommonHeader } from "../commonComponent/header/CommonHeader";
-import CommonFooter from "../commonComponent/footer/CommonFooter";
 import "./phd2026.css";
+import PhdFooter from "./commonComponent/PhdFooter";
+import PhdHeader from "./commonComponent/PhdHeader";
 // import { Button } from "@/components/ui/button";
-
 
 const inter = Inter({
   weight: ["300", "400", "500", "600", "700"],
@@ -25,9 +24,9 @@ export default function PhdLandingPageLayout({
     <html lang="en">
       <head></head>
       <body className={`${inter.className} antialiased`}>
-        <CommonHeader />
+        <PhdHeader />
         {children}
-        <CommonFooter />
+        <PhdFooter />
       </body>
     </html>
   );

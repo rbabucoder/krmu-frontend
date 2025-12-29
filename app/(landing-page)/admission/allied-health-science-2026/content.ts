@@ -22,12 +22,12 @@ export const Hero: HeroContent = {
       ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
-       BBA (UG)
+       Medical & Allied Sciences
       </span>
       <br />
       PROGRAMMES 2026
     `,
-  desc: `Start Building Your Future in Business and Management`,
+  desc: `Discover the foundation of agricultural excellence with K.R. Mangalam University’s four-year agriculture programme, designed to build strong agrarian knowledge, practical expertise, and an understanding of modern farming practices.`,
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -47,10 +47,10 @@ export const Counters: CounterItem[] = [
   },
   {
     title: "800+",
-    subtitle: "Recruiters",
+    subtitle: "Top Recruiters",
   },
   {
-    title: "Up To ₹21 Cr",
+    title: "₹27 Cr",
     subtitle: "Worth of Scholarships",
   },
   {
@@ -94,36 +94,40 @@ export const prominentRecruiters: ProminentRecruit[] = [
 ];
 
 export const whyKRM: WhyKRMSection = {
-  heading: "Why Opt for BBA Programmes of KRMU?",
-  subheading: "Shape Your Future with a Career-Focused Business Education",
-  content: `The BBA programmes at K.R. Mangalam University provide the groundwork for future business executives to succeed in a variety of corporate positions or entrepreneurial endeavours. Our program, which is in line with NEP criteria, guarantees flexibility in length (3 or 4 years), combining academic knowledge with practical experience and real-world insights.`,
+  heading: "Why Choose Medical and Allied Sciences Programmes at KRMU?",
+  subheading: "Build a Career That Makes a Real Difference",
+  content: `K.R. Mangalam University, in association with Emversity, offers industry-aligned Allied Health Sciences programmes built to global healthcare standards. Designed with doctors and practitioners, these work-integrated courses combine practical training, VR-enabled infrastructure, immersive internships, strong hospital partnerships, placement support, and international exposure to prepare students for impactful healthcare careers.`,
   imgUrl: `/landingpage/common/whykrmtest.png`,
   whyKrmCards: [
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Multiple Specialisation Options in a NEP-Aligned Structure`,
+      content: `•	Work-integrated courses with placement support and immersive industry internships`,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Industry Partnerships Providing Real-World Education and Placements`,
+      content: `•	Industry-relevant curriculum co-designed with doctors and practitioners`,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Mentoring from Skilled Academics and Business Experts`,
+      content: `•	State-of-the-art infrastructure with advanced VR labs`,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Contemporary Campus Facilities Designed for Experiential and Interactive Education`,
+      content: `•	Strong hospital partnerships offering placements and international exposure`,
     },
   ],
 };
 
 export const industryExperts: IndustryExpertsSection = {
-  eyebrow: "Why KR Mangalam PhD?",
-  heading: `Learn From <br /> Industry Experts`,
-  description: `KRMU partners with major organisations to provide <br /> industry-specific training.`,
+  eyebrow: "Why K.R. Mangalam allied sciences courses?",
+  heading: `Learn From <br /> Industry Expert`,
+  description: `Emversity offers India’s No. 1 Work-Integrated bachelor's degree in health sciences, combining academic excellence with real-world hospital training. Our programmes are designed in collaboration with leading healthcare institutions to ensure students graduate with job-ready skills and global career opportunities.
+•	Students are trained using real equipment and simulations, guided by industry practitioners. 
+•	Hands-on training at leading hospitals ensures students graduate with work-ready skills.
+•	Experience immersive learning with advanced VR simulations and modern healthcare training facilities.
+`,
   cta: {
-    label: "Apply for B.Tech 2026",
+    label: "Apply for Medical Allied Sciences 2026",
     href: "#",
   },
   cards: [
@@ -156,447 +160,73 @@ export const industryExperts: IndustryExpertsSection = {
 };
 
 export const specialisationData: SpecialisationSection = {
-  subheading: `Choose from KRMU’s BBA (UG) programmes and start building your future in business and management.`,
-  heading: `Our BBA (UG) Programmes`,
+  subheading: `Choose your specialisation based on your interests and career goals.`,
+  heading: `Our medical & allied sciences programmes & specialisations`,
   specilisationCard: [
     {
       imgUrl: "/landingpage/common/dummy.png",
-      title: `BBA (Human Resource)`,
-      desc: `With an emphasis on human capital, strategic HR techniques, and people-oriented leadership, you may become an expert in talent management and organisational success.`,
+      title: `B.Sc. (Hons.) Emergency Medical Technology with Academic & Industry support of Emversit`,
+      desc: `•	Acquire vital skills in emergency medical care, life-saving techniques, and trauma management to excel in the fast-paced world of emergency healthcare.`,
       extraInfos: [
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Duration:",
-          desc: `3 Years`,
+          desc: `3 + 1 Years (Including 1 Year Internship)`,
         },
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Eligibility",
-          desc: `10+2 with a minimum of 50% marks`,
+          desc: `Candidates must have passed 10+2 or an equivalent recognised examination with at least 50% aggregate in PCM, PCB, or PCMB.`,
         },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Annual Fee",
-          desc: `Rs 1,85,000`,
-        },
+        // {
+        //   iconUrl: "/landingpage/common/move-right.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 1,40,000`,
+        // },
       ],
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      title: `BBA (Hons. / Hons. with Research) Human Resource`,
-      desc: `You may become an authority in talent management and organisational performance by focussing on human capital, strategic HR approaches, and people-oriented leadership.`,
+      title: `B.Sc. (Hons.) Respiratory Technology with Academic & Industry Support of Emversity`,
+      desc: `Learn essential skills in respiratory care, diagnostic procedures, and patient management to build a strong foundation in today’s advanced healthcare industry.`,
       extraInfos: [
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Duration:",
-          desc: `4 Years`,
+          desc: `3 + 1 Years (Including 1 Year Internship)`,
         },
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Eligibility",
-          desc: `10+2 with a minimum of 50% marks`,
+          desc: `Candidates must have passed 10+2 or an equivalent recognised examination with at least 50% aggregate in PCM, PCB, or PCMB.`,
         },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Annual Fee",
-          desc: `Rs 1,85,000`,
-        },
+        // {
+        //   iconUrl: "/landingpage/common/move-right.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 1,40,000`,
+        // },
       ],
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      title: `BBA Marketing`,
-      desc: `With a BBA in Marketing, explore the realms of branding, consumer behaviour, and marketing tactics to develop successful marketing campaigns and spur company expansion.`,
+      title: `B. Sc. (Hons.) Cardiovascular Technology with Academic & Industry Support of Emversity`,
+      desc: `Gain expertise in cardiovascular diagnostics, interventional procedures, and patient care techniques to excel in today’s advanced healthcare environment`,
       extraInfos: [
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Duration:",
-          desc: `3 Years`,
+          desc: `3 + 1 Years (Including 1 Year Internship)`,
         },
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Eligibility",
-          desc: `10+2 with a minimum of 50% marks`,
+          desc: `Candidates must have passed 10+2 or an equivalent recognised examination with at least 50% aggregate in PCM, PCB, or PCMB.`,
         },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Annual Fee",
-          desc: `Rs 1,85,000`,
-        },
-      ],
-    },
-    {
-      imgUrl: "/landingpage/common/dummy.png",
-      title: `BBA (Hons. / Hons. with Research) Marketing`,
-      desc: `Investigate branding, consumer behaviour, and marketing strategies with a BBA in marketing to create effective marketing campaigns and promote business growth.`,
-      extraInfos: [
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Duration:",
-          desc: `4 Years`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Eligibility",
-          desc: `10+2 with a minimum of 50% marks`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Annual Fee",
-          desc: `Rs 1,85,000`,
-        },
-      ],
-    },
-    {
-      imgUrl: "/landingpage/common/dummy.png",
-      title: `BBA Finance`,
-      desc: `Gain expertise in risk management, investment techniques, and corporate finance to position yourself for leadership in the financial industry.`,
-      extraInfos: [
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Duration:",
-          desc: `3 Years`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Eligibility",
-          desc: `10+2 with a minimum of 50% marks`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Annual Fee",
-          desc: `Rs 1,85,000`,
-        },
-      ],
-    },
-    {
-      imgUrl: "/landingpage/common/dummy.png",
-      title: `BBA (Hons. /Hons. with Research) Finance`,
-      desc: `Develop your corporate finance, investment, and risk management abilities to position yourself for leadership in the financial industry.`,
-      extraInfos: [
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Duration:",
-          desc: `4 Years`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Eligibility",
-          desc: `10+2 with a minimum of 50% marks`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Annual Fee",
-          desc: `Rs 1,70,000`,
-        },
-      ],
-    },
-    {
-      imgUrl: "/landingpage/common/dummy.png",
-      title: `BBA (Digital Marketing) with Academic Support of IIDE`,
-      desc: `Proficiency in online branding, performance marketing, and social media analytics can help you succeed in the digital economy. `,
-      extraInfos: [
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Duration:",
-          desc: `3 Years`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Eligibility",
-          desc: `10+2 with a minimum of 50% marks`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,05,000`,
-        },
-      ],
-    },
-    {
-      imgUrl: "/landingpage/common/dummy.png",
-      title: `BBA (Hons./ Hons. with Research) in Digital Marketing with Academic Support of IIDE`,
-      desc: `You can succeed in the digital economy if you are proficient in social media analytics, performance marketing, and online branding.`,
-      extraInfos: [
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Duration:",
-          desc: `4 Years`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Eligibility",
-          desc: `10+2 with a minimum of 50% marks`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,05,000`,
-        },
-      ],
-    },
-    {
-      imgUrl: "/landingpage/common/dummy.png",
-      title: `BBA International Business`,
-      desc: `Gain knowledge of international trade, cross-cultural management, and international marketing techniques to get ready for a worldwide career.`,
-      extraInfos: [
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Duration:",
-          desc: `3 Years`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Eligibility",
-          desc: `10+2 with a minimum of 50% marks`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Annual Fee",
-          desc: `Rs 1,85,000`,
-        },
-      ],
-    },
-    {
-      imgUrl: "/landingpage/common/dummy.png",
-      title: `BBA (Hons./ Hons. with Research) International Business`,
-      desc: `Learn about international trade, cross-cultural management, and international marketing tactics to get ready for a worldwide job.`,
-      extraInfos: [
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Duration:",
-          desc: `4 Years`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Eligibility",
-          desc: `10+2 with a minimum of 50% marks`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Annual Fee",
-          desc: `Rs 1,85,000`,
-        },
-      ],
-    },
-    {
-      imgUrl: "/landingpage/common/dummy.png",
-      title: `BBA (Travel & Tourism)`,
-      desc: `Give yourself the abilities and information required to succeed in the fast-paced global tourist sector.`,
-      extraInfos: [
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Duration:",
-          desc: `3 Years`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Eligibility",
-          desc: `10+2 with a minimum of 50% marks`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Annual Fee",
-          desc: `Rs 1,85,000`,
-        },
-      ],
-    },
-    {
-      imgUrl: "/landingpage/common/dummy.png",
-      title: `BBA (Hons. / Hons. with Research) Travel & Tourism`,
-      desc: `Give yourself the skills and knowledge needed to thrive in the rapidly evolving global tourism industry. `,
-      extraInfos: [
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Duration:",
-          desc: `4 Years`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Eligibility",
-          desc: `10+2 with a minimum of 50% marks`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Annual Fee",
-          desc: `Rs 1,85,000`,
-        },
-      ],
-    },
-    {
-      imgUrl: "/landingpage/common/dummy.png",
-      title: `BBA  (Business Analytics) with Academic Support of Ernst & Young (EY)`,
-      desc: `Discover how to use decision-making tools, predictive analytics, and data visualisation to solve business problems.`,
-      extraInfos: [
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Duration:",
-          desc: `3 Years`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Eligibility",
-          desc: `10+2 with a minimum of 50% marks`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,10,000`,
-        },
-      ],
-    },
-    {
-      imgUrl: "/landingpage/common/dummy.png",
-      title: `BBA Hons. / Hons. with Research) (Business Analytics) with academic support of Ernst & Young (EY)`,
-      desc: `Discover how to use decision-making tools, predictive analytics, and data visualisation to solve business problems.`,
-      extraInfos: [
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Duration:",
-          desc: `4 Years`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Eligibility",
-          desc: `10+2 with a minimum of 50% marks`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,10,000`,
-        },
-      ],
-    },
-    {
-      imgUrl: "/landingpage/common/dummy.png",
-      title: `BBA (Hons. / Hons. with Research) Entrepreneurship with Academic Support of GCEC Global Foundation`,
-      desc: `You may use startup ideation, venture financing, and lean management strategies to transform innovative ideas into successful enterprises with a BBA in Entrepreneurship. `,
-      extraInfos: [
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Duration:",
-          desc: `4 Years`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Eligibility",
-          desc: `10+2 with a minimum of 50% marks`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,05,000`,
-        },
-      ],
-    },
-    {
-      imgUrl: "/landingpage/common/dummy.png",
-      title: `BBA (International Accounting and Finance) (ACCA – UK) with Academic Support of Grant Thornton`,
-      desc: `To focus on financial reporting and worldwide finance standards, pursue an internationally acknowledged ACCA-aligned programme.`,
-      extraInfos: [
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Duration:",
-          desc: `3 Years`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Eligibility",
-          desc: `10+2 with a minimum of 50% marks`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,05,000`,
-        },
-      ],
-    },
-    {
-      imgUrl: "/landingpage/common/dummy.png",
-      title: `BBA (Hons. / Hons. with Research) International Accounting and Finance (ACCA – UK) with academic support of Grant Thornton`,
-      desc: `Pursue a globally recognised ACCA-aligned curriculum with an emphasis on financial reporting and global finance standards.`,
-      extraInfos: [
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Duration:",
-          desc: `4 Years`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Eligibility",
-          desc: `10+2 with a minimum of 50% marks`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,05,000`,
-        },
-      ],
-    },
-    {
-      imgUrl: "/landingpage/common/dummy.png",
-      title: `BBA (Logistics and Supply Chain Management) with academic support of Safexpress)`,
-      desc: `With knowledge of procurement, warehousing, and logistics technology, focus on supply chain and logistics strategy.`,
-      extraInfos: [
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Duration:",
-          desc: `3 Years`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Eligibility",
-          desc: `10+2 with a minimum of 50% marks`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,05,000`,
-        },
-      ],
-    },
-    {
-      imgUrl: "/landingpage/common/dummy.png",
-      title: `BBA (Hons. / Hons. with Research) Logistics and Supply Chain Management with Academic Support of Safexpress`,
-      desc: `Focus on supply chain and logistics strategy and have knowledge of procurement, warehousing, and logistics technology.`,
-      extraInfos: [
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Duration:",
-          desc: `4 Years`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Eligibility",
-          desc: `10+2 with a minimum of 50% marks`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,05,000`,
-        },
-      ],
-    },
-    {
-      imgUrl: "/landingpage/common/dummy.png",
-      title: `BBA (Hons. / Hons. with Research) Logistics and Supply Chain Management with Academic Support of Safexpress`,
-      desc: `Focus on supply chain and logistics strategy and have knowledge of procurement, warehousing, and logistics technology.`,
-      extraInfos: [
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Duration:",
-          desc: `4 Years`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Eligibility",
-          desc: `10+2 with a minimum of 50% marks`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,05,000`,
-        },
+        // {
+        //   iconUrl: "/landingpage/common/move-right.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 1,40,000`,
+        // },
       ],
     },
   ],
@@ -619,43 +249,42 @@ export const opportunityData: OpportunitySection = {
 
 export const testimonialsData: TestimonialsSection = {
   subheading: "Students’ Testimonials",
-  heading: `Why Do Our Students Trust Us?`,
+  heading: `Why Do Our Students Trust Us? `,
   testimonials: [
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `Navigating through the BBA programme has been enlightening. The faculty's 
-guidance and the practical approach to learning have been invaluable. It has 
-equipped me with the skills and knowledge necessary for success in the business 
-realm.`,
-      name: "Ayush Rajput",
+      quote: `Thrilled with my education at K.R. Mangalam University, Sohna. I learned leadership, 
+time management, and embraced nature. Now, a project assistant in a DST government 
+project at the university`,
+      name: "Tufail",
+      programme: "Project Assistant DST, Govt. of India",
+    },
+    {
+      image: "/landingpage/common/dummy.png",
+      videoUrl: "#",
+      quote: `K.R. Mangalam University excels with its great environment and ragging-free campus, 
+particularly in hostel life. Now a farm supervisor, I pursue my passion for natural farming.`,
+      name: "Saqlain",
+      programme: "Farm Supervisor, Gir Amritphal Gaushala Trust",
+    },
+    {
+      image: "/landingpage/common/dummy.png",
+      videoUrl: "#",
+      quote: `At SOAS, BSc (H) Agriculture student Aayushi thrives on professor-led activities and 
+competitions. Field trips offer real-world insights into agriculture.
+`,
+      name: "Aayushi",
       programme: "",
     },
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `Choosing BBA has been pivotal for my career aspirations. The curriculum's balance 
-of theory and practical exposure has sharpened my business acumen. Grateful for 
-the supportive learning environment and dedicated faculty.`,
-      name: "Ankita",
+      quote: `K.R. Mangalam University provides us with the facilities to build live projects from lab to field 
+and field to lab to increase students' knowledge and skills with the latest technologies and 
+models.`,
+      name: "Sagar",
       programme: "",
-    },
-    {
-      image: "/landingpage/common/dummy.png",
-      videoUrl: "#",
-      quote: `Embracing the BBA program has been transformative. The dynamic learning 
-environment and emphasis on real-world applications have empowered me with the 
-skills needed to excel in business management and leadership roles.`,
-      name: "Arjun Sude",
-      programme: "",
-    },
-    {
-      image: "/landingpage/common/dummy.png",
-      videoUrl: "#",
-      quote: `Embarking on the BBA journey has been rewarding. The interactive sessions, industry 
-exposure, and supportive faculty. `,
-      name: "Kalpana",
-      programme: "BBA",
     },
   ],
 };
@@ -715,8 +344,8 @@ export const scholarResearchImpactData: ScholarResearchImpactSection = {
 };
 
 export const comeToLifeData: ComeToLifeSection = {
-  heading: `World-Class Infrastructure`,
-  description: `K.R. Mangalam University offers a modern and student-centric campus designed to support effective learning and holistic development for BBA undergraduates. The university provides smart classrooms, a well-equipped central library with digital resources, computer and analytics labs, and seminar halls to enhance academic engagement. Dedicated spaces for innovation, entrepreneurship, and skill development create an environment that encourages practical learning, collaboration, and professional growth.`,
+  heading: `World-Class Facilities`,
+  description: `K.R. Mangalam University offers world-class facilities that support both academic learning and practical training across disciplines. Students benefit from modern classrooms, well-equipped laboratories, a comprehensive resource library, and advanced teaching aids that encourage innovative learning approaches. In addition, discipline-specific facilities such as specialised labs, field-based learning spaces, and research support for agriculture-related studies further enhance hands-on exposure. Together, these facilities ensure students are well-prepared to excel in diverse professional and academic environments.`,
   footerText: ``,
   cta: {
     label: "Apply for BBA (UG) 2026-2027 ",
@@ -747,7 +376,7 @@ export const comeToLifeData: ComeToLifeSection = {
 };
 
 export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
-  heading: "Life as a BBA (UG) Student at KRMU",
+  heading: "Life as an Agriculture Student at KRMU ",
   description: "",
   image: {
     src: "/landingpage/common/test44.jpeg",
@@ -776,46 +405,34 @@ export const faqSectionData: FAQSectionData = {
   faqs: [
     {
       id: "item-1",
-      question: "What teaching methods are used in the BBA programmes?",
-      answer: `The BBA curriculum emphasizes: <br /> <br /><ul> <li>Case studies</li><li>Live projects</li><li> Internships</li><li>Industry interaction </li> <li>Presentations, simulations, and experiential learning</li></ul>`,
+      question: "What are the benefits of B.Sc. (Hons.) Agriculture?",
+      answer: `The programme offers a robust foundation in agricultural sciences combined with practical training, state-of-the-art lab work, and real-world field experience, ensuring you are well-prepared for diverse career opportunities.`,
     },
     {
       id: "item-2",
-      question: "Are internships mandatory in the BBA programme?",
-      answer: `Yes. Internships and live projects are an integral part of the BBA curriculum to provide real-world business exposure and practical learning.`,
+      question: "Is B.Sc. Agriculture good for the future?",
+      answer: `Absolutely Yes! As agriculture is the backbone of India's rural economy, this degree equips you with the skills and knowledge necessary to drive innovation and sustainable practices in the sector.`,
     },
     {
       id: "item-3",
       question:
-        "What career opportunities are available after completing BBA from KRMU?",
-      answer: `Graduates can pursue careers in: <br /><br /> 
-       <ul>
-        <li>Marketing, HR, Finance, Operations</li>
-        <li>Business Analytics & Digital Marketing</li>
-        <li>Banking, Consulting, Logistics & Supply Chain</li>
-        <li>Entrepreneurship & Family Business</li>
-       </ul>
-       <br />
-       They may also opt for MBA, PGDM, professional certifications (ACCA, CFA, etc.), or start their own ventures.
-
-      `,
+        "What are the prerequisite skills for pursuing a B.Sc. (Hons.) Agriculture?",
+      answer: `Candidates should have passed 10+2 or an equivalent examination in Physics, Chemistry, Maths/Biology/Agriculture with a minimum of 50% marks and possess a strong passion for agricultural sciences.`,
     },
     {
       id: "item-4",
-      question: "What distinguishes BBA LLB from BA LLB?",
-      answer: `Yes. KRMU has a dedicated Career Development & Placement Cell that supports students through:
- <br /><br /> 
-       <ul>
-        <li>Career counselling</li>
-        <li>Skill development workshops</li>
-        <li>Internships</li>
-        <li>Campus placements with reputed organisations</li>
-       </ul>`,
+      question: "What is the teaching methodology used in the B.Sc. (Hons.) Agriculture programme?",
+      answer: `The programme employs a blend of classroom lectures, hands-on laboratory experiments, extensive fieldwork, and internships—aligned with the ICAR curriculum—to ensure a balanced theoretical and practical learning experience.`,
     },
     {
       id: "item-5",
-      question: "Are scholarships available for BBA students?",
-      answer: `Yes. KRMU offers merit-based and need-based scholarships as per university norms and applicable guidelines.`,
+      question: "How does the programme prepare students for the evolving agricultural sector?",
+      answer: `By integrating modern agricultural techniques, sustainable farming practices, and advanced research projects, the curriculum equips you with the expertise needed to tackle current and future challenges in agriculture.`,
+    },
+    {
+      id: "item-6",
+      question: "Are there opportunities for students to participate in national or international agricultural conferences and seminars?",
+      answer: `Yes, students are encouraged to attend both national and international conferences and seminars to broaden their perspectives, network with industry leaders, and stay updated on global agricultural trends.`,
     },
   ],
 };
@@ -846,10 +463,10 @@ export const businessHubData: BusinessHubSection = {
 };
 
 export const applySectionData: ApplySectionData = {
-  heading: `Apply for K.R. Mangalam <br /> University now`,
+  heading: `Begin Your Journey at K.R. Mangalam<br /> University now`,
   description: "Start Your Adventure Right Now at K.R. Mangalam University",
   cta: {
-    label: "Apply for Law (UG) 2026-2027",
+    label: "Apply for Education Programme ",
     href: "#",
   },
   highlights: [
