@@ -25,10 +25,34 @@ const FeeStructureTable = () => {
 
             <tbody className="bg-white">
               <tr className="text-sm border-b">
-                <td className="px-4 py-4">Bachelor of Architecture</td>
-                <td className="px-4 py-4">95,000</td>
-                <td className="px-4 py-4">95,000</td>
-                <td className="px-4 py-4">1,90,000</td>
+                <td className="px-4 py-4">B.Com. (Hons.) </td>
+                <td className="px-4 py-4">70,000 </td>
+                <td className="px-4 py-4">70,000 </td>
+                <td className="px-4 py-4">1,40,000</td>
+              </tr>
+              <tr className="text-sm border-b">
+                <td className="px-4 py-4">B.Com. (Hons. / Hons. With Research) </td>
+                <td className="px-4 py-4">70,000 </td>
+                <td className="px-4 py-4">70,000 </td>
+                <td className="px-4 py-4">1,40,000</td>
+              </tr>
+              <tr className="text-sm border-b">
+                <td className="px-4 py-4">B.Com. (Hons.) (International Accounting and Finance) (ACCA - UK) With academic support of Grant Thornton </td>
+                <td className="px-4 py-4">85,000</td>
+                <td className="px-4 py-4">80,000</td>
+                <td className="px-4 py-4">16,5000</td>
+              </tr>
+              <tr className="text-sm border-b">
+                <td className="px-4 py-4">B.Com. (Hons. / Hons. with Research) (International Accounting and Finance) (ACCA - UK) With academic support of Grant Thornton </td>
+                <td className="px-4 py-4">85,000</td>
+                <td className="px-4 py-4">80,000</td>
+                <td className="px-4 py-4">16,5000</td>
+              </tr>
+              <tr className="text-sm border-b">
+                <td className="px-4 py-4">B.Com. Programme </td>
+                <td className="px-4 py-4">65,000</td>
+                <td className="px-4 py-4">60,000</td>
+                <td className="px-4 py-4">12,5000 </td>
               </tr>
 
             </tbody>

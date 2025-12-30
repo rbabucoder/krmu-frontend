@@ -22,12 +22,12 @@ export const Hero: HeroContent = {
       ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
-       B.Des.
+       B.Ed. and B.El.Ed.
       </span>
       <br />
       PROGRAMMES 2026
     `,
-  desc: `Immerse yourself in an inspiring environment that nurtures creativity, ignites innovation, and transforms ideas into impactful design solutions.`,
+  desc: `Your path to pursuing a teaching career begins with K.R. Mangalam University’s Education Programmes, preparing you to inspire the next generation.`,
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -94,30 +94,31 @@ export const prominentRecruiters: ProminentRecruit[] = [
 ];
 
 export const whyKRM: WhyKRMSection = {
-  heading: "Why Choose B.Des. Course at KRMU?",
-  subheading: "Preparing Creative Minds for Professional Design Careers",
-  content: `The B.Des. programme at K.R. Mangalam University is designed to nurture creative thinkers who are ready for the evolving design industry. With specialised pathways in Fashion Design, Game Design & Animation, Interior Design, and UX/UI & Interaction Design, the curriculum blends strong design fundamentals with hands-on learning, industry exposure, and advanced tools. Guided by experienced faculty and supported by a vibrant creative ecosystem, students develop practical skills, innovative thinking, and professional confidence to succeed across diverse design careers.`,
+  heading: "Why Choose B.Ed./B.El.Ed. Course at KRMU?",
+  subheading: "",
+  content: `K.R. Mangalam University’s Education Programmes offer a strong blend of theoretical foundations and practical learning, preparing students for real-world teaching careers. The School of Education regularly hosts seminars, workshops, collaborative projects, case studies, and expert lectures by prominent national speakers, ensuring continuous industry and academic exposure. With guidance from experienced educators and access to state-of-the-art facilities, students are encouraged to engage in research areas such as curriculum design, educational psychology, and learning disabilities, fostering a globally aligned learning environment that shapes confident and capable educators.
+`,
   imgUrl: `/landingpage/common/whykrmtest.png`,
   whyKrmCards: [
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `NEP-Compliant 4-Year Curriculum with an Honours Track`,
+      content: `Programmes curated by industry experts to merge practical learning with education theory`,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Industry Collaborations with Top Brands, and Retailers`,
+      content: `Mentorship from experts with years of industry experience`,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Chance to Go On a 2-Week Summer School Programme at a European University`,
+      content: `Future-proof programmes to ensure our students are industry ready`,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Blend of Theoretical & Practical Learning Covering Each and Every Aspect of Design`,
+      content: `International collaborations with institutions and global leaders to offer global exposure`,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Internship & Placement Support`,
+      content: `Student-centric infrastructure to promote better learning and campus life`,
     },
   ],
 };
@@ -127,7 +128,7 @@ export const industryExperts: IndustryExpertsSection = {
   heading: `Learn From <br /> Industry Experts`,
   description: `KRMU partners with major organisations to provide <br /> industry-specific training.`,
   cta: {
-    label: "Apply for B.Des Programme",
+    label: "Apply for Education Programme",
     href: "#",
   },
   cards: [
@@ -160,40 +161,41 @@ export const industryExperts: IndustryExpertsSection = {
 };
 
 export const specialisationData: SpecialisationSection = {
-  subheading: `Choose the specialisations based on your interest and career goals!`,
-  heading: `KRMU’s B.Des. Programmes`,
+  subheading: `Choose the Education Programme based on your interest and career goals!`,
+  heading: `KRMU’s Education Programmes `,
   specilisationCard: [
     {
       imgUrl: "/landingpage/common/dummy.png",
-      title: `Bachelor of Design (B.Des.) (Hons. / Hons. with Research) Fashion Design`,
-      desc: `This is a four-year undergraduate programme designed for aspiring fashion professionals. The curriculum blends contemporary trends with strong design fundamentals, offering hands-on training in garment construction, textiles, design techniques, and fashion business to prepare students for successful careers in the evolving fashion industry.`,
+      title: `Bachelor of Education (B.Ed.)`,
+      desc: `This two-year NCTE-approved programme prepares aspiring educators for successful teaching careers. The B.Ed. programme builds a strong foundation in educational processes, curriculum design, innovative teaching methods, and lesson planning, empowering future teachers to meet the evolving demands of modern education.`,
       extraInfos: [
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Duration:",
-          desc: `4 Years`,
+          desc: `2 Years`,
         },
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Eligibility",
-          desc: `Must have passed 10+2 or equivalent examination from any recognised board/university in any stream with a minimum of 50% aggregate marks.`,
+          desc: `Must possess a UG/PG degree from a recognised university with a minimum of 50% aggregate marks.`,
         },
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Annual Fee",
-          desc: `Rs 2,10,000`,
+          desc: `Rs 1,25,000`,
         },
       ],
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      title: `Bachelor of Design (B.Des.) (Hons. / Hons. with Research) Interior Design`,
-      desc: `This 4-year programme prepares students for the evolving interior design industry through a blend of creativity, technical skills, and industry-focused learning. Covering spatial planning, materials, lighting, and aesthetics, the programme equips graduates with industry-ready expertise for successful design careers.`,
+      title: `Bachelor of Elementary Education (B.El.Ed.)`,
+      desc: `This is a four-year undergraduate programme designed to prepare future educators for teaching at the elementary level (Classes I–VIII). Approved by the NCTE and UGC, the programme builds a strong foundation in child development and educational psychology, while integrating theoretical knowledge with practical teaching skills—equipping graduates to confidently address the evolving challenges of elementary education.
+`,
       extraInfos: [
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Duration:",
-          desc: `4 Years`,
+          desc: `5 Years`,
         },
         {
           iconUrl: "/landingpage/common/move-right.svg",
@@ -203,51 +205,7 @@ export const specialisationData: SpecialisationSection = {
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Annual Fee",
-          desc: `Rs 2,10,000`,
-        },
-      ],
-    },
-    {
-      imgUrl: "/landingpage/common/dummy.png",
-      title: `Bachelor of Design (B.Des.) (Hons. / Hons. with Research) UX/UI & Interaction Design with academic support of ImaginXP`,
-      desc: `Powered by ImaginXP, this 4-year programme equips students with industry-ready skills in user research, interface design, prototyping, and usability testing. Focusing on human-centred design and creative innovation, it enables students to transform ideas into impactful digital experiences, blending visual creativity with technology to craft seamless user interactions.`,
-      extraInfos: [
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Duration:",
-          desc: `4 Years`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Eligibility",
-          desc: `Must have passed 10+2 or equivalent examination from any recognised board/university in any stream with a minimum of 50% aggregate marks.`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,40,000`,
-        },
-      ],
-    },
-    {
-      imgUrl: "/landingpage/common/dummy.png",
-      title: `Bachelor of Design (B.Des.) (Hons. / Hons. with Research) Game Design & Animation with academic support of ImaginXP`,
-      desc: `Powered by ImaginXP, this 4-year programme combines expert storytelling and character design with hands-on projects, preparing students to lead in the global gaming and animation market.`,
-      extraInfos: [
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Duration:",
-          desc: `4 Years`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Eligibility",
-          desc: `Must have passed 10+2 or equivalent examination from any recognised board/university in any stream with a minimum of 50% aggregate marks.`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,40,000`,
+          desc: `Rs 1,25,000 `,
         },
       ],
     },
@@ -264,48 +222,62 @@ export const opportunityData: OpportunitySection = {
   heading: "Learn From Industry Experts",
   highlight: "Opportunity That Transforms",
   cta: {
-    label: "Apply for B.Des Programme",
+    label: "Apply for Education Programme",
     href: "#",
   },
 };
 
 export const testimonialsData: TestimonialsSection = {
   subheading: "Students’ Testimonials",
-  heading: `Why Do Our Students Trust Us?`,
+  heading: `Why Do Our Students Trust Us? `,
   testimonials: [
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `My journey at K.R. Mangalam University has been truly transformative. The faculty’s continuous  guidance played a key role in my academic and personal growth. Their mentorship extended  beyond the classroom, encouraging confidence and creativity. The opportunity for early placement gave me valuable industry exposure. The Training and Placement Cell provided 
-consistent and personalised support. Today, I feel confident, prepared, and ready to take the 
-next step in my professional journey. `,
-      name: "Jigyasa Batra",
-      programme: "B.Des. (Hons.) Interior Design",
+      quote: `Enrolling in the B.El.Ed. programme at K. R. Mangalam University has been one of the most 
+rewarding decisions of my academic career. From day one, I was immersed in an environment 
+that not only emphasised theoretical knowledge but also provided extensive practical exposure. 
+The micro-teaching sessions, simulated classroom experiences, and interactive workshops 
+helped me build confidence in lesson planning and classroom management. The faculty 
+members are highly experienced and supportive, always encouraging us to think critically and 
+creatively. 
+`,
+      name: "Nimisha Khaneja",
+      programme: "(B.El.Ed.) Trainee Counsellor, St. Joseph’s Academy",
     },
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `Hey, I'm Sumit Kushwaha from SOAD at K.R. Mangalam University, currently pursuing a B.Des 
-in Game Design and Animation. I aspire to become a VFX Artist/Compositor, and my journey 
-here has been incredibly enriching. The faculty, with their hands-on industry experience, have 
-been instrumental in shaping my skills. Their guidance and mentorship help make our dreams 
-come to reality.`,
-      name: "Sumit Kushwaha",
-      programme: "B.Des (Hons.) Game Design & Animation",
+      quote: `One of the best aspects of the B.Ed. programme at K. R. Mangalam University is the supportive 
+learning environment created by the faculty and peers. The small class sizes and interactive 
+teaching methods allow for meaningful discussions and a deeper understanding of the subject 
+matter. Beyond theoretical knowledge, the program offers various opportunities to engage in 
+practical learning through workshops, storytelling sessions, and peer teaching. I particularly 
+enjoyed the focus on early childhood education and special education, which helped me gain a 
+broader perspective on diverse learning needs. 
+`,
+      name: "Prity Singh",
+      programme: "(B.Ed.) Teacher, Hello kids - GJ International School",
     },
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `My journey as a fashion design student at K.R. Mangalam University has been truly transformative.  The Fashion Design programme strengthened my creative foundation while building the  confidence, discipline, and professional ethics that guide me today as Head Designer at Esha Koul, New Delhi. I am deeply grateful to the faculty for their constant support, insightful teaching, and encouragement, which helped me grow from a learner into a confident design professional.`,
-      name: "Mansi Bansal",
-      programme: "B.Des. (Hons.) Fashion Design",
+      quote: `The B.El.Ed. programme at K. R. Mangalam University seamlessly blends theory with practice, 
+ensuring that aspiring teachers are well-prepared for real-world challenges. The structured lessonplanning exercises, hands-on training in ICT tools, and workshops on classroom management have been instrumental in shaping my teaching skills. The university’s commitment to excellence is evident in its experienced faculty, who constantly push us to innovate and think critically about our roles as educators. The internship experience allowed me to understand the nuances of student behavior, curriculum design, and effective teaching strategies.
+`,
+      name: "Guruksha Bansal",
+      programme: "(B.El.Ed.) Pursuing M.Ed.",
     },
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `I am Harsh Kumar, a second semester B.Des UI/UX Design student. With a strong vision to build a career in UX design, this course has fuelled my skills and passion. K.R. Mangalam University has provided me with a solid foundation, enriching my knowledge and strengthening my background in design. My mentors and faculty have been my backbone, guiding and supporting me throughout my journey.`,
-      name: "Harsh Kumar",
-      programme: "B.Des (Hons.) Game Design & Animation",
+      quote: `I am proud to be an alumnus of K.R. Mangalam University, where I pursued my Ph.D. under the 
+expert guidance of Prof. P.C. Jena. The university provided an enriching academic environment, 
+excellent research facilities, and constant support that helped me grow both personally and 
+professionally. The university provided a vibrant learning environment with exceptional faculty who guided and supported me throughout my research. My experience at K.R. Mangalam University not only broadened my knowledge but also equipped me with the critical thinking and research skills that have been vital to my professional success. I cherish the memories and am proud to be associated with such a prestigious institution. 
+`,
+      name: "Dr. Anupam Bansal",
+      programme: "Ph.D., Associate Professor, KIIT Group of Colleges, Gurugram",
     },
   ],
 };
@@ -365,8 +337,9 @@ export const scholarResearchImpactData: ScholarResearchImpactSection = {
 };
 
 export const comeToLifeData: ComeToLifeSection = {
-  heading: `World-Class Infrastructure`,
-  description: `K.R. Mangalam University offers a modern and student-centric campus designed to support effective learning and holistic development for BBA undergraduates. The university provides smart classrooms, a well-equipped central library with digital resources, computer and analytics labs, and seminar halls to enhance academic engagement. Dedicated spaces for innovation, entrepreneurship, and skill development create an environment that encourages practical learning, collaboration, and professional growth.`,
+  heading: `World-Class Facilities`,
+  description: `K.R. Mangalam University offers world-class facilities that enhance both learning and practical training. Students have access to modern classrooms, well-equipped labs, a rich resource library, and advanced teaching aids, providing an environment that supports innovative teaching methods and hands-on experience. These facilities ensure that future educators are well-prepared to excel in diverse educational settings.
+`,
   footerText: ``,
   cta: {
     label: "Apply for BBA (UG) 2026-2027 ",
@@ -421,53 +394,47 @@ export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
 export const faqSectionData: FAQSectionData = {
   eyebrow: "(FAQs)",
   heading: "Frequently Asked Questions",
-  description:
-    "",
+  description: "",
   faqs: [
     {
       id: "item-1",
-      question: "What design programmes are offered at the School of Architecture & Design?",
-      answer: `KRMU offers several undergraduate design programmes including B.Des. in Fashion Design, Interior Design, Game Design & Animation, and UX/UI & Interaction Design. `,
+      question:
+        "What is the duration of education courses at K.R. Mangalam University?",
+      answer: `The B.Ed. course at K.R. Mangalam University is a 2-year course while B.El.Ed. is a 4-year programme that focuses on elementary education.`,
     },
     {
       id: "item-2",
-      question: "What is the duration of the B.Des. programmes?",
-      answer: `All Bachelor of Design (B.Des.) programmes are four-year undergraduate courses designed to provide comprehensive theoretical and practical training.`,
+      question: "How can I get a scholarship at K.R. Mangalam University?",
+      answer: `We offer up to 100% scholarships to talented and deserving students. You can learn more about scholarships on our admission page.`,
     },
     {
       id: "item-3",
-      question:
-        "What subjects or skills will I learn in these design courses?",
-      answer: `Students learn design fundamentals, creative process, software tools, project development, industry workshops, and domain-specific skills like fashion techniques, spatial planning, UI/UX design, or game animation.`,
+      question: "What job roles can I pursue after a B.Ed. or B.El.Ed.?",
+      answer: `After a B.Ed. or B.El.Ed. course, you can work as a School Teacher, Curriculum Developer, Education Policy Advocate, Assistant Professor, P.E. Instructor, Education Counsellor, Academic Coordinator, Educational Content Developer, School Administrator or Online Educator / EdTech Trainer.`,
     },
     {
       id: "item-4",
-      question: "Does the Fashion Design course include practical and studio-based learning?",
-      answer: `Yes. The programme emphasises hands-on studio work, workshops, and live projects, allowing students to translate creative concepts into finished designs and collections.
-`,
+      question:
+        "Which undergraduate courses does K.R. Mangalam University offer under its school of education?",
+      answer: `K.R. Mangalam University offers the following undergraduate education courses: <br />
+      <ul>
+        <li>B.Ed.</li>
+        <li>B.El.Ed.</li>
+       </ul>
+      `,
     },
     {
       id: "item-5",
-      question: "What career opportunities are available after completing Fashion Design at KRMU?",
-      answer: `Graduates can pursue careers as fashion designers, apparel designers, fashion stylists, visual merchandisers, fashion illustrators, or start their own labels and design ventures.`,
+      question: "Does KRMU provide global exposure in design programmes?",
+      answer: `Yes, students may get opportunities for international summer programmes, exchange experiences, and exposure to global design practices. `,
     },
     {
       id: "item-6",
-      question: "Does KRMU provide global exposure in design programmes?",
-      answer: `Yes, students may get opportunities for international summer programmes, exchange experiences, and exposure to global design practices.`,
-    },
-    {
-      id: "item-7",
-      question: "What facilities support design education at KRMU?",
-      answer: `The School has specialised studios, workshops, labs, and software for design practice in areas like fashion, interior spaces, animation, and UX/UI.`,
-    },
-    {
-      id: "item-8",
       question: "Is there placement and career support for design students?",
       answer: `Yes. KRMU offers 100% placement assistance with strong industry connections, helping students secure internships and job opportunities upon graduation.`,
     },
     {
-      id: "item-9",
+      id: "item-7",
       question: "Is hostel accommodation available for students?",
       answer: `Yes, KRMU offers modern, secure on-campus housing with all amenities.`,
     },
@@ -503,7 +470,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Apply for K.R. Mangalam <br /> University now`,
   description: "Start Your Adventure Right Now at K.R. Mangalam University",
   cta: {
-    label: "Apply for B.Des Programme",
+    label: "Apply for Education Programme",
     href: "#",
   },
   highlights: [

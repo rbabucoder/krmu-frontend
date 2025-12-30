@@ -22,12 +22,12 @@ export const Hero: HeroContent = {
       ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
-       Bachelor of <br /> Architecture
+      Pharmacy 
       </span>
       <br />
       PROGRAMMES 2026
     `,
-  desc: `Start Building Your Future in Business and Management`,
+  desc: `Unlock a world of opportunities with Pharmacy programmes offering D.Pharm., B.Pharm., and Master’s in Pharm. Gain industry-focused education for modern healthcare, build strong foundations in pharmaceutical sciences, explore specialised pathways, access hands-on training with advanced technology, and benefit from industry partnerships that prepare you for confident, career-ready roles in the pharmacy sector. `,
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -50,7 +50,7 @@ export const Counters: CounterItem[] = [
     subtitle: "Top Recruiters",
   },
   {
-    title: "Up To ₹21 Cr",
+    title: "₹27Cr",
     subtitle: "Worth of Scholarships",
   },
   {
@@ -94,30 +94,26 @@ export const prominentRecruiters: ProminentRecruit[] = [
 ];
 
 export const whyKRM: WhyKRMSection = {
-  heading: "What makes KRMU the Best option for the B.Arch Course?",
-  subheading: "From Drawing Design Sketches to Building Skyscrapers",
-  content: `Developed by the expert professionals in the field, K.R. Mangalam University's five-year B.Arch program offers architecture education through practical projects, immersive sessions, insightful workshops, and valuable insights into the intricacies of architectural planning. The university's multidisciplinary strategy aims to ensure that the holistic development of its students, who will be influencing the architectural world in the future, remains a top priority.`,
+  heading: "Why Choose Pharmacy Programmes at KRMU? ",
+  subheading: "Build a Career That Impacts Lives ",
+  content: `K.R. Mangalam University offers industry-aligned Pharmacy programmes, including D. Pharm., B.Pharm., and master's programmes in pharmacy, developed to meet global healthcare standards. Designed with pharmaceutical and healthcare experts, these programmes build strong scientific foundations, practical lab skills, industry exposure, internships, and placement support for career-ready professionals. `,
   imgUrl: `/landingpage/common/whykrmtest.png`,
   whyKrmCards: [
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Emphasis on Hands-on-learning, Practical experience with sophisticated software for advanced modelling and construction preparation.`,
+      content: `    Programmes shaped through consultation with experienced professionals from healthcare industry `,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Portfolio Development Guidance for Internship and Job Prospects in Architectural Firms, Government Organisations, etc.`,
+      content: `    Hands-on scientific training focused on real-world practices and professional excellence `,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Participation in live projects and real-world assignments.`,
+      content: `    Gain advanced knowledge, insights, and mentorship directly from industry experts .`,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `100% Placement and Internship Assistance.`,
-    },
-    {
-      imgUrl: "/landingpage/common/dummy.png",
-      content: `Global Exposure in the form of a paid visit to 2 weeks of summer school at a Prestigious European university.`,
+      content: `    Interactive sessions with leading pharmacists and physiotherapy professionals `,
     },
   ],
 };
@@ -161,28 +157,76 @@ export const industryExperts: IndustryExpertsSection = {
 };
 
 export const specialisationData: SpecialisationSection = {
-  subheading: ``,
-  heading: `KRMU’s B.Arch Programme`,
+  subheading: `Choose your specialisations based on your interests and career goals. 
+
+Our pharma programmes & specialisations `,
+  heading: `Our pharma programmes & specialisations   `,
   specilisationCard: [
     {
       imgUrl: "/landingpage/common/dummy.png",
-      title: `Bachelor of Architecture`,
-      desc: `The KRMU's Bachelor of Architecture (B.Arch) equips the students with all the necessary skills and theoretical knowledge they require to plan, design and construct structures, buildings and various functional spaces by integrating artistic aesthetics and technology in a seamless manner. This degree aims to cultivate both analytical and creative thinking, equipping students to navigate modern-world challenges while building successful careers.`,
+      title: `D.Pharm. `,
+      desc: `The programme blends theory and practical learning to build strong pharmacy skills. Through classes, lab work, and hands-on training, students gain essential knowledge of chemistry, pharmacology, biochemistry, and toxicology for successful pharmacy careers.`,
       extraInfos: [
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Duration:",
-          desc: `5 Years`,
+          desc: `2 Years`,
         },
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Eligibility",
-          desc: `Candidates must have passed the 10+2 or equivalent examination with Physics and Mathematics as compulsory subjects, along with one of the following: Chemistry, Biology, a Technical Vocational subject, Computer Science, Information Technology, Informatics Practices, Engineering Graphics, or Business Studies, with at least 45% aggregate marks. Alternatively, candidates may have passed the 10+3 Diploma Examination with Mathematics as a compulsory subject and at least 45% aggregate marks.`,
+          desc: `    Candidates must have passed 10+2 or an equivalent science qualification with physics, chemistry, and biology or mathematics, as approved by the Pharmacy Council of India. `,
+        },
+      ],
+    },
+    {
+      imgUrl: "/landingpage/common/dummy.png",
+      title: `B.Pharm. `,
+      desc: `The programme offers in-depth pharmaceutical education with strong scientific foundations. It blends advanced theory, laboratory training, industry exposure, and practical learning to prepare students for professional roles in drug development, research, production, and healthcare sectors.`,
+      extraInfos: [
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Duration:",
+          desc: `4 Years`,
         },
         {
           iconUrl: "/landingpage/common/move-right.svg",
-          title: "Annual Fee",
-          desc: `Rs 1,90,000`,
+          title: "Eligibility",
+          desc: `    Candidates must have passed 10+2 with physics, chemistry, and biology or maths, securing at least 50% marks from a recognised board. Applicants must be 17 years or older by 31 December of the admission year `,
+        },
+      ],
+    },
+    {
+      imgUrl: "/landingpage/common/dummy.png",
+      title: `Master of Pharmacy (M.Pharm.) – Pharmaceutics `,
+      desc: `    The M.Pharm. Pharmaceutics programme focuses on advanced drug development and production. It covers pharmaceutics, drug delivery systems, manufacturing processes, industry advancements, and research-based learning, preparing students with strong scientific and practical expertise across four semesters. `,
+      extraInfos: [
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Duration:",
+          desc: `2 Years`,
+        },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Eligibility",
+          desc: `Candidates must hold a B.Pharmacy degree from a PCI-approved Indian institution with at least 55% aggregate marks and be registered with the State Pharmacy Council or obtain registration within one month of admission.`,
+        },
+      ],
+    },
+    {
+      imgUrl: "/landingpage/common/dummy.png",
+      title: `Master of Pharmacy (M.Pharm.) – Pharmacology `,
+      desc: `       The M.Pharm. in pharmacology programme focuses on drug science, mechanisms, and therapeutic applications. It combines advanced theoretical learning with hands-on laboratory training, research, and projects, preparing graduates for careers in pharmaceutical, healthcare, and biomedical fields. `,
+      extraInfos: [
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Duration:",
+          desc: `2 Years`,
+        },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Eligibility",
+          desc: `    Candidates must hold a B.Pharmacy degree from a PCI-approved Indian institution with at least 55% aggregate marks and be registered with the State Pharmacy Council or obtain registration within one month of admission. `,
         },
       ],
     },
@@ -199,49 +243,52 @@ export const opportunityData: OpportunitySection = {
   heading: "Learn From Industry Experts",
   highlight: "Opportunity That Transforms",
   cta: {
-    label: "Apply for B.Arch. Programme",
+    label: "Apply for Pharmacy Programmes 2026-27",
     href: "#",
   },
 };
 
 export const testimonialsData: TestimonialsSection = {
-  subheading: "Students’ Testimonials",
-  heading: `Still in Doubt? <br /> See What Our Students Say About Us!`,
+  subheading: "Our Testimonials ",
+  heading: `Why do our schoolers love and trust K.R. Mangalam University? `,
   testimonials: [
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `SOAD's B.Arch program at K.R. Mangalam University is an incubator of creativity and 
-excellence. It provided me with the platform and guidance to thrive as an aspiring 
-Architect.
+      quote: ` The institution played a key role in shaping my journey. Supportive faculty encouraged critical thinking and helped me grow both personally and professionally.
 `,
-      name: "Ar. Divya Kharbanda",
-      programme: "B.Arch- Design Cell, New Delhi",
+      name: "Gaurav Kaushik",
+      programme: "PMBI",
     },
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `As a B.Arch student, I'm inspired daily by the dynamic environment of classes, empowering 
-me to push boundaries and innovate in architecture.
+      quote: `My academic experience stood out for its strong mix of theory and practical exposure, guided by dedicated teachers who truly invested in student success.
 `,
-      name: "Keerti Diwedi",
-      programme: "B.Arch- Gold Medalist, Arcop Associates, New Delhi",
+      name: "Hardik Madaan",
+      programme: "Abbott",
     },
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `From KRMU's School of Architecture & Design to Auctus Wear, I carry the essence of design 
-excellence instilled by the university.`,
-      name: "Lalita",
-      programme: "Auctus Wear",
+      quote: `I experienced a strong sense of belonging and collaboration, where peers and mentors consistently motivated one another to learn and improve. `,
+      name: "Nikita",
+      programme: "Assistant Professor ",
+    },
+    {
+      image: "/landingpage/common/dummy.png",
+      videoUrl: "#",
+      quote: `My journey transformed me into a confident professional, equipped with relevant skills, lasting values, and a mindset of continuous growth. `,
+      name: "Ashwani Yadav",
+      programme: "Micro Labs",
     },
   ],
 };
 
 export const scholarResearchImpactData: ScholarResearchImpactSection = {
-  heading: "Our Scholars’ Research Impact",
+  heading: "World-Class Facilities at KRMU for Pharma Programmes ",
   description:
-    "PhD candidates trust peer experiences more than institutional marketing. Real stories address fear of isolation, funding concerns, and career uncertainty.",
+    "K.R. Mangalam University offers a modern campus designed to support advanced pharmaceutical education and practical learning. Smart classrooms, high-speed Wi-Fi, and well-equipped pharma laboratories enable effective learning and hands-on training. The central library offers extensive academic and research resources, while seminar halls, innovation spaces, hostels, and recreational facilities ensure a balanced campus experience.",
   slides: [
     {
       image: "/landingpage/common/image.png",
@@ -297,7 +344,7 @@ export const comeToLifeData: ComeToLifeSection = {
   description: `The conceptual knowledge is imparted to students in modern smart classrooms that are equipped with interactive whiteboards and seamless tech integration. The availability of the latest software systems and powerful PCs enables students to develop skills necessary for advanced modelling and construction preparation`,
   footerText: ``,
   cta: {
-    label: "Apply for B.Arch. Programme ",
+    label: "Apply for Pharmacy Programmes 2026–27",
     href: "#",
   },
   slides: [
@@ -348,35 +395,50 @@ export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
 
 export const faqSectionData: FAQSectionData = {
   eyebrow: "(FAQs)",
-  heading: "Frequently Asked Questions",
+  heading: "Got Questions? We've Got Answers",
   description:
-    "K.R. Mangalam University offers Ph.D. programmes in a wide array of fields, encouraging cross-disciplinary exploration and innovation.",
+    "",
   faqs: [
     {
       id: "item-1",
-      question: "What is the role of workshops and guest lectures in the B.Arch. curriculum?",
-      answer: `They provide practical insights, exposure to industry trends, and valuable networking opportunities with leading architects and designers.`,
+      question:
+        "What are the eligibility criteria for Pharmacy programmes? ",
+      answer: `For D.Pharm., candidates must complete 10+2 with Physics, Chemistry, and Mathematics or Biology. For B.Pharm., candidates must complete 10+2 with physics, chemistry, mathematics or biology and meet the university’s admission criteria. For M.Pharm., candidates must hold a B.Pharm. degree from a recognised institution with at least 55% aggregate marks. `,
     },
     {
       id: "item-2",
-      question: "What skills will one develop in a B.Arch. programme?",
-      answer: `You will cultivate creative design solutions, technical competence in construction and modelling, and effective communication of your ideas through visual, oral, and written means.`,
+      question: "Are scholarships available? ",
+      answer: `Yes, K.R. Mangalam University offers merit-based and need-based scholarships. Students can visit the official scholarships page for detailed information. `,
     },
     {
       id: "item-3",
-      question:
-        "Does KRMU provide hostel accommodation?",
-      answer: `Yes, KRMU provides separate hostels for boys and girls with modern amenities and 24/7 security.`,
+      question: "What placement support does the university provide?",
+      answer: `The university offers dedicated placement support, including industry collaborations, mock interviews, career guidance, and placement drives with leading pharmaceutical and healthcare organisations. `,
     },
     {
       id: "item-4",
-      question: "What kind of projects are involved in the B.Arch. programme?",
-      answer: `The programme includes understanding elements of designing, being able to design from a single unit to complex projects such as mixed-use buildings, commercial complexes, institutional buildings, resorts, hospitals, housing and also large-scale urban design projects.`,
+      question: "What practical exposure will students receive? ",
+      answer: `Students gain hands-on experience through laboratory work, hospital pharmacy training, industrial visits, and internships with reputed pharmaceutical companies. `,
     },
     {
       id: "item-5",
-      question: "Are there internship opportunities in the B.Arch. programme?",
-      answer: `Yes, the strong industry collaborations of K.R. Mangalam University ensure robust internship and placement opportunities with reputed architectural firms and design studios.`,
+      question: "Is hostel accommodation available on campus? ",
+      answer: `Yes, the university provides secure and comfortable on-campus hostel facilities with modern amenities and 24/7 support. `,
+    },
+    {
+      id: "item-6",
+      question: "Can students pursue research projects during the course?",
+      answer: `Yes, the programmes encourage research through advanced laboratory facilities and faculty mentorship to support academic and industry-focused projects. `,
+    },
+    {
+      id: "item-7",
+      question: "Which are the best M.Pharm. colleges in Delhi NCR? ",
+      answer: `For students exploring M.Pharm. colleges in Gurgaon and Delhi NCR, K.R. Mangalam University offers a well-structured M.Pharm. programme. Admissions for M.Pharm. 2025 are currently open. `,
+    },
+    {
+      id: "item-8",
+      question: "Is there an entrance exam for B.Pharm. admission?",
+      answer: `B.Pharm. admission may or may not require an entrance examination. K.R. Mangalam University conducts its own KREE entrance exam for B.Pharm. admissions. Some pharmacy colleges also accept national-level exams such as CUET or NEET, as per eligibility norms. `,
     },
   ],
 };
@@ -410,7 +472,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Apply for K.R. Mangalam <br /> University now`,
   description: "Start Your Adventure Right Now at K.R. Mangalam University",
   cta: {
-    label: "Apply for B.Arch. Programme",
+    label: "Apply for Pharmacy Programmes 2026-27",
     href: "#",
   },
   highlights: [

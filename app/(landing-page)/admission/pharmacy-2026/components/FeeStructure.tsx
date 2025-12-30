@@ -25,10 +25,28 @@ const FeeStructureTable = () => {
 
             <tbody className="bg-white">
               <tr className="text-sm border-b">
-                <td className="px-4 py-4">Bachelor of Architecture</td>
-                <td className="px-4 py-4">95,000</td>
-                <td className="px-4 py-4">95,000</td>
-                <td className="px-4 py-4">1,90,000</td>
+                <td className="px-4 py-4">D.Pharm. </td>
+                <td className="px-4 py-4">60,000 </td>
+                <td className="px-4 py-4">60,000 </td>
+                <td className="px-4 py-4">1,20,000</td>
+              </tr>
+              <tr className="text-sm border-b">
+                <td className="px-4 py-4">B.Pharm. </td>
+                <td className="px-4 py-4">1,00,000</td>
+                <td className="px-4 py-4">95,000 </td>
+                <td className="px-4 py-4">1,95,000 </td>
+              </tr>
+              <tr className="text-sm border-b">
+                <td className="px-4 py-4">Master of Pharmacy (M.Pharm.) - Pharmaceutics </td>
+                <td className="px-4 py-4">77,000</td>
+                <td className="px-4 py-4">77,000</td>
+                <td className="px-4 py-4">1,54,000 </td>
+              </tr>
+              <tr className="text-sm border-b">
+                <td className="px-4 py-4">Master of Pharmacy (M.Pharm.) - Pharmacology</td>
+                <td className="px-4 py-4">77,000</td>
+                <td className="px-4 py-4">77,000</td>
+                <td className="px-4 py-4">1,54,000 </td>
               </tr>
 
             </tbody>

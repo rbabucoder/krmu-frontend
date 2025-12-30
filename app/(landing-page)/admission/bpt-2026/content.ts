@@ -22,12 +22,12 @@ export const Hero: HeroContent = {
       ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
-       B.Des.
+       Bachelor of Physiotherapy
       </span>
       <br />
       PROGRAMMES 2026
     `,
-  desc: `Immerse yourself in an inspiring environment that nurtures creativity, ignites innovation, and transforms ideas into impactful design solutions.`,
+  desc: `Learn to Lead in the realm of healthcare under the expert guidance of our distinguished faculty while utilising state-of-the-art facilities for hands-on physiotherapy learning.`,
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -94,30 +94,30 @@ export const prominentRecruiters: ProminentRecruit[] = [
 ];
 
 export const whyKRM: WhyKRMSection = {
-  heading: "Why Choose B.Des. Course at KRMU?",
-  subheading: "Preparing Creative Minds for Professional Design Careers",
-  content: `The B.Des. programme at K.R. Mangalam University is designed to nurture creative thinkers who are ready for the evolving design industry. With specialised pathways in Fashion Design, Game Design & Animation, Interior Design, and UX/UI & Interaction Design, the curriculum blends strong design fundamentals with hands-on learning, industry exposure, and advanced tools. Guided by experienced faculty and supported by a vibrant creative ecosystem, students develop practical skills, innovative thinking, and professional confidence to succeed across diverse design careers.`,
+  heading: "What makes KRMU the Best option for the BPT Course?",
+  subheading: "Turning Passionate Helpers into Professional Healers",
+  content: `The Bachelor of Physiotherapy programme at K.R. Mangalam University is structured in a way that it combines in-depth theoretical knowledge with hands-on clinical experience. The students are trained to utilise their conceptual learning in real-time healthcare settings under the expert supervision of our proficient physiotherapists and healthcare experts, who bring years of clinical and teaching experience, thereby ensuring personalised mentorship throughout the academic journey. Additionally, the state-of-the-art physiotherapy labs equipped with advanced modalities provide students with the much-needed exposure to therapeutic techniques used in the realm of rehabilitation. By actively taking part in rural health camps and awareness campaigns, students learn about public health issues while providing physiotherapy help to marginalised areas.`,
   imgUrl: `/landingpage/common/whykrmtest.png`,
   whyKrmCards: [
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `NEP-Compliant 4-Year Curriculum with an Honours Track`,
+      content: `State-of-the-art Physiotherapy Labs with Advanced Equipments`,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Industry Collaborations with Top Brands, and Retailers`,
+      content: `Focus on Practical Training, Patient Handling, and Evidence-Based Practice`,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Chance to Go On a 2-Week Summer School Programme at a European University`,
+      content: `Tie-Ups with Reputed Hospitals and Rehabilitation Centres for Clinical Postings`,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Blend of Theoretical & Practical Learning Covering Each and Every Aspect of Design`,
+      content: `Comprehensive 4-year Academic Programme + 6-month Compulsory Internship`,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Internship & Placement Support`,
+      content: `Dedicated Faculty Comprising Experienced Physiotherapists and Medical Professionals`,
     },
   ],
 };
@@ -127,7 +127,7 @@ export const industryExperts: IndustryExpertsSection = {
   heading: `Learn From <br /> Industry Experts`,
   description: `KRMU partners with major organisations to provide <br /> industry-specific training.`,
   cta: {
-    label: "Apply for B.Des Programme",
+    label: "Apply for BPT Programme",
     href: "#",
   },
   cards: [
@@ -160,94 +160,28 @@ export const industryExperts: IndustryExpertsSection = {
 };
 
 export const specialisationData: SpecialisationSection = {
-  subheading: `Choose the specialisations based on your interest and career goals!`,
-  heading: `KRMU’s B.Des. Programmes`,
+  subheading: ``,
+  heading: `KRMU’s BPT Programme`,
   specilisationCard: [
     {
       imgUrl: "/landingpage/common/dummy.png",
-      title: `Bachelor of Design (B.Des.) (Hons. / Hons. with Research) Fashion Design`,
-      desc: `This is a four-year undergraduate programme designed for aspiring fashion professionals. The curriculum blends contemporary trends with strong design fundamentals, offering hands-on training in garment construction, textiles, design techniques, and fashion business to prepare students for successful careers in the evolving fashion industry.`,
+      title: `Bachelor of Physiotherapy`,
+      desc: `The KRMU's Bachelor of Physiotherapy (BPT) programme leads to a wide array of rewarding and exciting job possibilities in the health and wellness industry. Graduates of this course are widely sought after in a variety of professional fields because they possess practical skills, ethical insights, and a thorough understanding of physiotherapy principles.`,
       extraInfos: [
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Duration:",
-          desc: `4 Years`,
+          desc: `4.5 Years`,
         },
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Eligibility",
-          desc: `Must have passed 10+2 or equivalent examination from any recognised board/university in any stream with a minimum of 50% aggregate marks.`,
+          desc: `Passed 10+2 or equivalent from any recognised board/university in any stream with Physics, Chemistry, Biology with minimum 50% aggregate marks.`,
         },
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Annual Fee",
-          desc: `Rs 2,10,000`,
-        },
-      ],
-    },
-    {
-      imgUrl: "/landingpage/common/dummy.png",
-      title: `Bachelor of Design (B.Des.) (Hons. / Hons. with Research) Interior Design`,
-      desc: `This 4-year programme prepares students for the evolving interior design industry through a blend of creativity, technical skills, and industry-focused learning. Covering spatial planning, materials, lighting, and aesthetics, the programme equips graduates with industry-ready expertise for successful design careers.`,
-      extraInfos: [
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Duration:",
-          desc: `4 Years`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Eligibility",
-          desc: `Must have passed 10+2 or equivalent examination from any recognised board/university in any stream with a minimum of 50% aggregate marks.`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,10,000`,
-        },
-      ],
-    },
-    {
-      imgUrl: "/landingpage/common/dummy.png",
-      title: `Bachelor of Design (B.Des.) (Hons. / Hons. with Research) UX/UI & Interaction Design with academic support of ImaginXP`,
-      desc: `Powered by ImaginXP, this 4-year programme equips students with industry-ready skills in user research, interface design, prototyping, and usability testing. Focusing on human-centred design and creative innovation, it enables students to transform ideas into impactful digital experiences, blending visual creativity with technology to craft seamless user interactions.`,
-      extraInfos: [
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Duration:",
-          desc: `4 Years`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Eligibility",
-          desc: `Must have passed 10+2 or equivalent examination from any recognised board/university in any stream with a minimum of 50% aggregate marks.`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,40,000`,
-        },
-      ],
-    },
-    {
-      imgUrl: "/landingpage/common/dummy.png",
-      title: `Bachelor of Design (B.Des.) (Hons. / Hons. with Research) Game Design & Animation with academic support of ImaginXP`,
-      desc: `Powered by ImaginXP, this 4-year programme combines expert storytelling and character design with hands-on projects, preparing students to lead in the global gaming and animation market.`,
-      extraInfos: [
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Duration:",
-          desc: `4 Years`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Eligibility",
-          desc: `Must have passed 10+2 or equivalent examination from any recognised board/university in any stream with a minimum of 50% aggregate marks.`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,40,000`,
+          desc: `Rs 1,58,000`,
         },
       ],
     },
@@ -264,48 +198,58 @@ export const opportunityData: OpportunitySection = {
   heading: "Learn From Industry Experts",
   highlight: "Opportunity That Transforms",
   cta: {
-    label: "Apply for B.Des Programme",
+    label: "Apply for BPT Programme",
     href: "#",
   },
 };
 
 export const testimonialsData: TestimonialsSection = {
   subheading: "Students’ Testimonials",
-  heading: `Why Do Our Students Trust Us?`,
+  heading: `Still in Doubt? <br />See What Our Students Say About Us!`,
   testimonials: [
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `My journey at K.R. Mangalam University has been truly transformative. The faculty’s continuous  guidance played a key role in my academic and personal growth. Their mentorship extended  beyond the classroom, encouraging confidence and creativity. The opportunity for early placement gave me valuable industry exposure. The Training and Placement Cell provided 
-consistent and personalised support. Today, I feel confident, prepared, and ready to take the 
-next step in my professional journey. `,
-      name: "Jigyasa Batra",
-      programme: "B.Des. (Hons.) Interior Design",
+      quote: `Studying BPT at K.R. Mangalam University was transformative. The blend of theoretical 
+learning, clinical practice, and research, supported by experienced faculty, enhanced my 
+skills and personal development, preparing me for a successful physiotherapy career. 
+Internships with diverse patients further deepened my understanding and passion for 
+making a difference. `,
+      name: "HARSHIT",
+      programme: "",
     },
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `Hey, I'm Sumit Kushwaha from SOAD at K.R. Mangalam University, currently pursuing a B.Des 
-in Game Design and Animation. I aspire to become a VFX Artist/Compositor, and my journey 
-here has been incredibly enriching. The faculty, with their hands-on industry experience, have 
-been instrumental in shaping my skills. Their guidance and mentorship help make our dreams 
-come to reality.`,
-      name: "Sumit Kushwaha",
-      programme: "B.Des (Hons.) Game Design & Animation",
+      quote: `My BPT journey at K.R. Mangalam University was fruitful by providing invaluable clinical 
+exposure and shaping me into a skilled physiotherapist. Grateful for the foundation, 
+I now apply my knowledge at a reputed rehabilitation centre, guided by empathy and 
+commitment instilled during my studies. Forever connected to this incredible institution.
+`,
+      name: "DHARNA",
+      programme: "",
     },
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `My journey as a fashion design student at K.R. Mangalam University has been truly transformative.  The Fashion Design programme strengthened my creative foundation while building the  confidence, discipline, and professional ethics that guide me today as Head Designer at Esha Koul, New Delhi. I am deeply grateful to the faculty for their constant support, insightful teaching, and encouragement, which helped me grow from a learner into a confident design professional.`,
-      name: "Mansi Bansal",
-      programme: "B.Des. (Hons.) Fashion Design",
+      quote: `I , Manisha, from B.P.T Third Year, attended a CME workshop on advancements and robotic 
+surgery in osteoarthritis. It highlighted cutting-edge techniques, surgical precision, and 
+improved patient outcomes, emphasising their importance for future physiotherapists in 
+delivering advanced care and early rehabilitation. This experience was highly informative 
+and inspiring. 
+`,
+      name: "MANISHA",
+      programme: "",
     },
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `I am Harsh Kumar, a second semester B.Des UI/UX Design student. With a strong vision to build a career in UX design, this course has fuelled my skills and passion. K.R. Mangalam University has provided me with a solid foundation, enriching my knowledge and strengthening my background in design. My mentors and faculty have been my backbone, guiding and supporting me throughout my journey.`,
-      name: "Harsh Kumar",
-      programme: "B.Des (Hons.) Game Design & Animation",
+      quote: `The physiotherapy department's visit to ISIC Institute on 21st March 2024 was transformative, 
+exposing students to advanced rehabilitation technologies, live sessions, and professional 
+insights, enriching academic knowledge and patient care passion.
+`,
+      name: "MUSKAN RANA",
+      programme: "",
     },
   ],
 };
@@ -365,8 +309,8 @@ export const scholarResearchImpactData: ScholarResearchImpactSection = {
 };
 
 export const comeToLifeData: ComeToLifeSection = {
-  heading: `World-Class Infrastructure`,
-  description: `K.R. Mangalam University offers a modern and student-centric campus designed to support effective learning and holistic development for BBA undergraduates. The university provides smart classrooms, a well-equipped central library with digital resources, computer and analytics labs, and seminar halls to enhance academic engagement. Dedicated spaces for innovation, entrepreneurship, and skill development create an environment that encourages practical learning, collaboration, and professional growth.`,
+  heading: `Modern Labs & Physiotherapy Clinics`,
+  description: `Guided by highly qualified healthcare experts, students utilise the advanced physiotherapy labs equipped with state-of-the-art facilities in order to gain practical exposure to therapeutic techniques and global best practices in healthcare.`,
   footerText: ``,
   cta: {
     label: "Apply for BBA (UG) 2026-2027 ",
@@ -421,55 +365,38 @@ export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
 export const faqSectionData: FAQSectionData = {
   eyebrow: "(FAQs)",
   heading: "Frequently Asked Questions",
-  description:
-    "",
+  description: "",
   faqs: [
     {
       id: "item-1",
-      question: "What design programmes are offered at the School of Architecture & Design?",
-      answer: `KRMU offers several undergraduate design programmes including B.Des. in Fashion Design, Interior Design, Game Design & Animation, and UX/UI & Interaction Design. `,
+      question: "What is the duration of the BPT programme?",
+      answer: `The programme spans 4 years of academic study followed by a 6-month compulsory internship.`,
     },
     {
       id: "item-2",
-      question: "What is the duration of the B.Des. programmes?",
-      answer: `All Bachelor of Design (B.Des.) programmes are four-year undergraduate courses designed to provide comprehensive theoretical and practical training.`,
+      question: "Are there clinical postings during the course?",
+      answer: `Yes, students undergo clinical postings from the 2nd/3rd year onwards to gain real patient experience.`,
     },
     {
       id: "item-3",
-      question:
-        "What subjects or skills will I learn in these design courses?",
-      answer: `Students learn design fundamentals, creative process, software tools, project development, industry workshops, and domain-specific skills like fashion techniques, spatial planning, UI/UX design, or game animation.`,
+      question: "Does KRMU provide hostel accommodation?",
+      answer: `Yes, KRMU provides separate hostels for boys and girls with modern amenities and 24/7 security.`,
     },
     {
       id: "item-4",
-      question: "Does the Fashion Design course include practical and studio-based learning?",
-      answer: `Yes. The programme emphasises hands-on studio work, workshops, and live projects, allowing students to translate creative concepts into finished designs and collections.
-`,
+      question: "What career options do I have after BPT?",
+      answer: `Graduates can work in hospitals, sports clinics, rehab centres, or set up private practices. Further specialisation or postgraduate study is also an option.`,
     },
     {
       id: "item-5",
-      question: "What career opportunities are available after completing Fashion Design at KRMU?",
+      question:
+        "What career opportunities are available after completing Fashion Design at KRMU?",
       answer: `Graduates can pursue careers as fashion designers, apparel designers, fashion stylists, visual merchandisers, fashion illustrators, or start their own labels and design ventures.`,
     },
     {
       id: "item-6",
-      question: "Does KRMU provide global exposure in design programmes?",
-      answer: `Yes, students may get opportunities for international summer programmes, exchange experiences, and exposure to global design practices.`,
-    },
-    {
-      id: "item-7",
-      question: "What facilities support design education at KRMU?",
-      answer: `The School has specialised studios, workshops, labs, and software for design practice in areas like fashion, interior spaces, animation, and UX/UI.`,
-    },
-    {
-      id: "item-8",
-      question: "Is there placement and career support for design students?",
-      answer: `Yes. KRMU offers 100% placement assistance with strong industry connections, helping students secure internships and job opportunities upon graduation.`,
-    },
-    {
-      id: "item-9",
-      question: "Is hostel accommodation available for students?",
-      answer: `Yes, KRMU offers modern, secure on-campus housing with all amenities.`,
+      question: "Are there opportunities for international exposure?",
+      answer: `KRMU often facilitates workshops and collaborative events with global healthcare experts. Consult the university’s international office for more information.`,
     },
   ],
 };
@@ -503,7 +430,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Apply for K.R. Mangalam <br /> University now`,
   description: "Start Your Adventure Right Now at K.R. Mangalam University",
   cta: {
-    label: "Apply for B.Des Programme",
+    label: "Apply for BPT Programme",
     href: "#",
   },
   highlights: [

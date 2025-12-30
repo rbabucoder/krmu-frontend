@@ -22,7 +22,7 @@ export const Hero: HeroContent = {
       ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
-       B.Des.
+      BCA (UG)
       </span>
       <br />
       PROGRAMMES 2026
@@ -94,30 +94,30 @@ export const prominentRecruiters: ProminentRecruit[] = [
 ];
 
 export const whyKRM: WhyKRMSection = {
-  heading: "Why Choose B.Des. Course at KRMU?",
-  subheading: "Preparing Creative Minds for Professional Design Careers",
-  content: `The B.Des. programme at K.R. Mangalam University is designed to nurture creative thinkers who are ready for the evolving design industry. With specialised pathways in Fashion Design, Game Design & Animation, Interior Design, and UX/UI & Interaction Design, the curriculum blends strong design fundamentals with hands-on learning, industry exposure, and advanced tools. Guided by experienced faculty and supported by a vibrant creative ecosystem, students develop practical skills, innovative thinking, and professional confidence to succeed across diverse design careers.`,
+  heading: "Why Select KRMU's BCA (UG) Programmes?",
+  subheading: "Future-Ready Learning in Computer Applications",
+  content: `The BCA programmes of K.R. Mangalam University (KRMU), created in partnership with international IT giants, provides a dynamic fusion of theory and hands-on learning. Our programmes train you for a successful career in technology by emphasising innovation, exposure to the industry, and practical skills.`,
   imgUrl: `/landingpage/common/whykrmtest.png`,
   whyKrmCards: [
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `NEP-Compliant 4-Year Curriculum with an Honours Track`,
+      content: `Flexible Duration and NEP-Aligned Structure (3 or 4 years)`,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Industry Collaborations with Top Brands, and Retailers`,
+      content: `Academic Assistance from Leaders in the Industry, such as IBM, Microsoft Certifications, and EC-Council`,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Chance to Go On a 2-Week Summer School Programme at a European University`,
+      content: `Advanced Laboratories and Practical Instruction in Up-and-Coming Technologies`,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Blend of Theoretical & Practical Learning Covering Each and Every Aspect of Design`,
+      content: `Mentoring by Skilled Teachers and Technology Experts`,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Internship & Placement Support`,
+      content: `Robust Placement Assistance and International Certifications`,
     },
   ],
 };
@@ -160,35 +160,37 @@ export const industryExperts: IndustryExpertsSection = {
 };
 
 export const specialisationData: SpecialisationSection = {
-  subheading: `Choose the specialisations based on your interest and career goals!`,
-  heading: `KRMU’s B.Des. Programmes`,
+  subheading: `Begin your journey into the IT industry by choosing KRMU’s BCA (UG) programmes.`,
+  heading: `Our BCA (UG) Programmes`,
   specilisationCard: [
     {
       imgUrl: "/landingpage/common/dummy.png",
-      title: `Bachelor of Design (B.Des.) (Hons. / Hons. with Research) Fashion Design`,
-      desc: `This is a four-year undergraduate programme designed for aspiring fashion professionals. The curriculum blends contemporary trends with strong design fundamentals, offering hands-on training in garment construction, textiles, design techniques, and fashion business to prepare students for successful careers in the evolving fashion industry.`,
+      title: `BCA (AI & Data Science) with Academic Support of IBM & Powered by Microsoft Certifications`,
+      desc: `Gain hands-on expertise in Artificial Intelligence, Data Science, and Machine Learning through industry-aligned learning. Build practical skills with real-world datasets, intelligent systems, and advanced analytics tools. Prepare for high-growth careers by mastering technologies that drive digital transformation across industries.
+`,
       extraInfos: [
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Duration:",
-          desc: `4 Years`,
+          desc: `3 Years`,
         },
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Eligibility",
-          desc: `Must have passed 10+2 or equivalent examination from any recognised board/university in any stream with a minimum of 50% aggregate marks.`,
+          desc: `10 + 2 with a minimum of 50% in any stream from any accredited board or university.`,
         },
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Annual Fee",
-          desc: `Rs 2,10,000`,
+          desc: `Rs. 1,65,000`,
         },
       ],
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      title: `Bachelor of Design (B.Des.) (Hons. / Hons. with Research) Interior Design`,
-      desc: `This 4-year programme prepares students for the evolving interior design industry through a blend of creativity, technical skills, and industry-focused learning. Covering spatial planning, materials, lighting, and aesthetics, the programme equips graduates with industry-ready expertise for successful design careers.`,
+      title: `BCA (Hons. / Hons. with Research) AI & Data Science with Academic Support of IBM & Powered by Microsoft Certifications`,
+      desc: `Through industry-aligned learning, develop practical competence in machine learning, data science, and artificial intelligence. Develop useful skills using intelligent systems, real-world information, and sophisticated analytics tools. Learn the technologies that propel digital change across sectors to get ready for high-growth employment.
+`,
       extraInfos: [
         {
           iconUrl: "/landingpage/common/move-right.svg",
@@ -198,41 +200,41 @@ export const specialisationData: SpecialisationSection = {
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Eligibility",
-          desc: `Must have passed 10+2 or equivalent examination from any recognised board/university in any stream with a minimum of 50% aggregate marks.`,
+          desc: `10 + 2 with a minimum of 50% in any stream from any accredited board or university.`,
         },
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Annual Fee",
-          desc: `Rs 2,10,000`,
+          desc: `Rs. 1,65,000`,
         },
       ],
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      title: `Bachelor of Design (B.Des.) (Hons. / Hons. with Research) UX/UI & Interaction Design with academic support of ImaginXP`,
-      desc: `Powered by ImaginXP, this 4-year programme equips students with industry-ready skills in user research, interface design, prototyping, and usability testing. Focusing on human-centred design and creative innovation, it enables students to transform ideas into impactful digital experiences, blending visual creativity with technology to craft seamless user interactions.`,
+      title: `BCA (Cyber Security) with Academic Support of EC-Council`,
+      desc: `Learn ethical hacking, network security, and cyber defence with the BCA (Cyber Security) programme at K.R. Mangalam University. The course offers hands-on experience with real-world cyber threats, penetration testing, and vulnerability assessment, equipping students with practical skills to protect digital systems and data. Students also gain expertise in industry-standard tools and techniques, preparing them for careers in cyber security, digital forensics, and IT risk management.`,
       extraInfos: [
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Duration:",
-          desc: `4 Years`,
+          desc: `3 Years`,
         },
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Eligibility",
-          desc: `Must have passed 10+2 or equivalent examination from any recognised board/university in any stream with a minimum of 50% aggregate marks.`,
+          desc: `10 + 2 with a minimum of 50% in any stream from any accredited board or university.`,
         },
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Annual Fee",
-          desc: `Rs 2,40,000`,
+          desc: `Rs. 1,65,000`,
         },
       ],
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      title: `Bachelor of Design (B.Des.) (Hons. / Hons. with Research) Game Design & Animation with academic support of ImaginXP`,
-      desc: `Powered by ImaginXP, this 4-year programme combines expert storytelling and character design with hands-on projects, preparing students to lead in the global gaming and animation market.`,
+      title: `BCA (Hons. / Hons. with Research) Cyber Security with Academic Support of EC-Council`,
+      desc: `This programme teaches ethical hacking, network security, and cyber defence. The course gives students practical skills to safeguard digital systems and data by providing them with hands-on experience with real-world cyber threats, penetration testing, and vulnerability assessment. Additionally, students acquire proficiency with industry-standard tools and methods, qualifying them for professions in IT risk management, digital forensics, and cyber security. `,
       extraInfos: [
         {
           iconUrl: "/landingpage/common/move-right.svg",
@@ -242,12 +244,12 @@ export const specialisationData: SpecialisationSection = {
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Eligibility",
-          desc: `Must have passed 10+2 or equivalent examination from any recognised board/university in any stream with a minimum of 50% aggregate marks.`,
+          desc: `10 + 2 with a minimum of 50% in any stream from any accredited board or university.`,
         },
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Annual Fee",
-          desc: `Rs 2,40,000`,
+          desc: `Rs. 1,65,000`,
         },
       ],
     },
@@ -271,41 +273,45 @@ export const opportunityData: OpportunitySection = {
 
 export const testimonialsData: TestimonialsSection = {
   subheading: "Students’ Testimonials",
-  heading: `Why Do Our Students Trust Us?`,
+  heading: `Why do Aspirants Prefer KRMU?`,
   testimonials: [
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `My journey at K.R. Mangalam University has been truly transformative. The faculty’s continuous  guidance played a key role in my academic and personal growth. Their mentorship extended  beyond the classroom, encouraging confidence and creativity. The opportunity for early placement gave me valuable industry exposure. The Training and Placement Cell provided 
-consistent and personalised support. Today, I feel confident, prepared, and ready to take the 
-next step in my professional journey. `,
-      name: "Jigyasa Batra",
-      programme: "B.Des. (Hons.) Interior Design",
+      quote: `K.R. Mangalam University has truly transformed my career. The BCA (AI & Data Science) 
+program not only provided me with technical expertise but also honed my problem-solving and 
+analytical skills. The university encouraged us to participate in hackathons, industry projects, 
+and internships, which gave me hands-on experience in real-world AI applications. Today, I am 
+working as a Sales manager at Rally M`,
+      name: "Rishav Bakshi",
+      programme: "Sales manager at Rally Motors",
     },
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `Hey, I'm Sumit Kushwaha from SOAD at K.R. Mangalam University, currently pursuing a B.Des 
-in Game Design and Animation. I aspire to become a VFX Artist/Compositor, and my journey 
-here has been incredibly enriching. The faculty, with their hands-on industry experience, have 
-been instrumental in shaping my skills. Their guidance and mentorship help make our dreams 
-come to reality.`,
-      name: "Sumit Kushwaha",
-      programme: "B.Des (Hons.) Game Design & Animation",
+      quote: `Looking back at my journey at K.R. Mangalam University, I feel grateful for the incredible 
+opportunities I received as a BCA (AI & Data Science) student. The curriculum was designed 
+in collaboration with industry experts, ensuring we were up to date with the latest AI trends. 
+The mentorship from experienced faculty, research-driven approach, and exposure to AI tools 
+like TensorFlow, PyTorch, and Big Data analytics helped me secure my dream job in the tech 
+industry. I highly recommend this programme to anyone passionate about AI and data science!
+`,
+      name: "Parminder Singh",
+      programme: "",
     },
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `My journey as a fashion design student at K.R. Mangalam University has been truly transformative.  The Fashion Design programme strengthened my creative foundation while building the  confidence, discipline, and professional ethics that guide me today as Head Designer at Esha Koul, New Delhi. I am deeply grateful to the faculty for their constant support, insightful teaching, and encouragement, which helped me grow from a learner into a confident design professional.`,
-      name: "Mansi Bansal",
-      programme: "B.Des. (Hons.) Fashion Design",
+      quote: `Enrolling in the BCA (AI & Data Science) programme at K.R. Mangalam University was one of the best decisions of my academic journey. The well-structured curriculum, combined with practical exposure through hands-on projects, helped me build a strong foundation in machine learning, data analytics, and cloud computing. The faculty’s guidance and the state-of-the-art labs played a crucial role in enhancing my technical skills. Thanks to the university’s placement cell, I secured a job at a leading AI firm, and I feel confident about tackling industry challenges`,
+      name: "Annanya Agarwal ",
+      programme: "",
     },
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `I am Harsh Kumar, a second semester B.Des UI/UX Design student. With a strong vision to build a career in UX design, this course has fuelled my skills and passion. K.R. Mangalam University has provided me with a solid foundation, enriching my knowledge and strengthening my background in design. My mentors and faculty have been my backbone, guiding and supporting me throughout my journey.`,
-      name: "Harsh Kumar",
-      programme: "B.Des (Hons.) Game Design & Animation",
+      quote: `K.R. Mangalam University didn’t just provide me with a degree—it shaped my career. The BCA (AI & Data Science) programme gave me the technical expertise, industry exposure, and confidence  to work on AI-driven solutions. The university’s tie-ups with industry leaders, guest lectures from AI professionals, and project-based learning approach made a significant difference in my  professional journey. Today, as a Data Analyst, I use the knowledge and skills I gained at KRMU daily. If you're looking for a programme that bridges the gap between academics and industry, this is the place to be!`,
+      name: "Shivangi Sharma",
+      programme: "",
     },
   ],
 };

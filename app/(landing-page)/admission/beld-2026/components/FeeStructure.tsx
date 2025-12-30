@@ -25,13 +25,10 @@ const FeeStructureTable = () => {
 
             <tbody className="bg-white">
               <tr className="text-sm border-b">
-                <td className="px-4 py-4">
-                  Bachelor of Design (B.Des.) (Hons./Hons. with Research)
-                  Fashion Design
-                </td>
-                <td className="px-4 py-4">1,05,000</td>
-                <td className="px-4 py-4">1,05,000</td>
-                <td className="px-4 py-4">2,10,000</td>
+                <td className="px-4 py-4">Bachelor of Education (B.Ed.)</td>
+                <td className="px-4 py-4">65,000</td>
+                <td className="px-4 py-4">60,000</td>
+                <td className="px-4 py-4">1,25,000</td>
               </tr>
 
               <tr className="text-sm border-b">
@@ -43,25 +40,13 @@ const FeeStructureTable = () => {
                 <td className="px-4 py-4">1,05,000</td>
                 <td className="px-4 py-4">2,10,000</td>
               </tr>
-
               <tr className="text-sm border-b">
                 <td className="px-4 py-4">
-                  Bachelor of Design (B.Des.) (Hons./Hons. with Research) UX/UI
-                  & Interaction Design with academic support of ImaginXP
+                  Bachelor of Elementary Education (B.El.Ed.)
                 </td>
-                <td className="px-4 py-4">1,20,000</td>
-                <td className="px-4 py-4">1,20,000</td>
-                <td className="px-4 py-4">2,40,000</td>
-              </tr>
-
-              <tr className="text-sm">
-                <td className="px-4 py-4">
-                  Bachelor of Design (B.Des.) (Hons./Hons. with Research) Game
-                  Design & Animation with academic support of ImaginXP
-                </td>
-                <td className="px-4 py-4">1,20,000</td>
-                <td className="px-4 py-4">1,20,000</td>
-                <td className="px-4 py-4">2,40,000</td>
+                <td className="px-4 py-4">1,05,000</td>
+                <td className="px-4 py-4">1,05,000</td>
+                <td className="px-4 py-4">2,10,000</td>
               </tr>
             </tbody>
           </table>

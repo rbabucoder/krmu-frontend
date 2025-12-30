@@ -22,7 +22,7 @@ export const Hero: HeroContent = {
       ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
-       Bachelor of <br /> Architecture
+       B.Com.
       </span>
       <br />
       PROGRAMMES 2026
@@ -43,19 +43,19 @@ export const heroMarqueeData: HeroMarqueeSection = {
 export const Counters: CounterItem[] = [
   {
     title: "7.25 LPA",
-    subtitle: "Highest Package",
+    subtitle: "Average Package",
   },
   {
     title: "800+",
-    subtitle: "Top Recruiters",
+    subtitle: "Visiting recruiters",
   },
   {
-    title: "Up To ₹21 Cr",
+    title: "₹27Cr ",
     subtitle: "Worth of Scholarships",
   },
   {
-    title: "100%",
-    subtitle: "Placement Assistance",
+    title: "56.6 LPA",
+    subtitle: "Highest Package",
   },
 ];
 
@@ -94,9 +94,9 @@ export const prominentRecruiters: ProminentRecruit[] = [
 ];
 
 export const whyKRM: WhyKRMSection = {
-  heading: "What makes KRMU the Best option for the B.Arch Course?",
-  subheading: "From Drawing Design Sketches to Building Skyscrapers",
-  content: `Developed by the expert professionals in the field, K.R. Mangalam University's five-year B.Arch program offers architecture education through practical projects, immersive sessions, insightful workshops, and valuable insights into the intricacies of architectural planning. The university's multidisciplinary strategy aims to ensure that the holistic development of its students, who will be influencing the architectural world in the future, remains a top priority.`,
+  heading: "Why Choose B.Com. Programme at KRMU? ",
+  subheading: "Build a Career with Strong Business Foundations ",
+  content: `K.R. mangalam university offers future-ready b.com. programmes designed to build strong foundations in commerce, accounting, finance, and management. The curriculum combines academic depth with practical exposure, helping students understand how businesses function in the real world. With experienced faculty, industry-oriented learning, skill-based training, internships, and career guidance, the programme prepares students for diverse careers in corporate roles, finance, entrepreneurship, and higher studies. `,
   imgUrl: `/landingpage/common/whykrmtest.png`,
   whyKrmCards: [
     {
@@ -123,8 +123,8 @@ export const whyKRM: WhyKRMSection = {
 };
 
 export const industryExperts: IndustryExpertsSection = {
-  eyebrow: "Why KR Mangalam PhD?",
-  heading: `Learn from <br /> Leaders @ KRMU!
+  eyebrow: "Why K.R. Mangalam b.com. courses?",
+  heading: `Learn from Industry Expert
 `,
   description: `K.R. Mangalam University takes pride in collaborating with industry leaders and skill professionals who offer unparalleled hands-on learning experiences to students.`,
   cta: {
@@ -136,53 +136,134 @@ export const industryExperts: IndustryExpertsSection = {
       imgUrl:
         "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
       alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
+      title: "Digital Marketing Expertise",
     },
     {
       imgUrl:
         "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
       alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
+      title: "Global Industry Insights",
     },
     {
       imgUrl:
         "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
       alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
+      title: "Skill Based Learning ",
     },
     {
       imgUrl:
         "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
       alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
+      title: "Professional Advisory Excellence ",
+    },
+    {
+      imgUrl:
+        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
+      alt: "Apple Logo",
+      title: "Global Academic Exposures",
+    },
+    {
+      imgUrl:
+        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
+      alt: "Apple Logo",
+      title: "Technology Driven Learning",
+    },
+    {
+      imgUrl:
+        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
+      alt: "Apple Logo",
+      title: "Industry Logistics Exposure ",
     },
   ],
   bannerImg: "/landingpage/common/dummy2.png",
 };
 
 export const specialisationData: SpecialisationSection = {
-  subheading: ``,
-  heading: `KRMU’s B.Arch Programme`,
+  subheading: `Choose your specialisation based on your interests and career goals.`,
+  heading: `Our B.Com. programmes & specialisations`,
   specilisationCard: [
     {
       imgUrl: "/landingpage/common/dummy.png",
-      title: `Bachelor of Architecture`,
-      desc: `The KRMU's Bachelor of Architecture (B.Arch) equips the students with all the necessary skills and theoretical knowledge they require to plan, design and construct structures, buildings and various functional spaces by integrating artistic aesthetics and technology in a seamless manner. This degree aims to cultivate both analytical and creative thinking, equipping students to navigate modern-world challenges while building successful careers.`,
+      title: `B.Com. (Hons.) `,
+      desc: `Build strong expertise in finance, accounting, business law, and taxation with B.Com. (Hons.). This specialised degree prepares you for careers in commerce, banking, financial analysis, and entrepreneurship by turning knowledge into practical, career-ready skills. `,
       extraInfos: [
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Duration:",
-          desc: `5 Years`,
+          desc: `3 Years`,
         },
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Eligibility",
-          desc: `Candidates must have passed the 10+2 or equivalent examination with Physics and Mathematics as compulsory subjects, along with one of the following: Chemistry, Biology, a Technical Vocational subject, Computer Science, Information Technology, Informatics Practices, Engineering Graphics, or Business Studies, with at least 45% aggregate marks. Alternatively, candidates may have passed the 10+3 Diploma Examination with Mathematics as a compulsory subject and at least 45% aggregate marks.`,
+          desc: `Passed 10+2 or equivalent examination from any recognised board/university with minimum 50% aggregate marks.`,
+        },
+      ],
+    },
+    {
+      imgUrl: "/landingpage/common/dummy.png",
+      title: `B.Com. (Hons. / Hons. With Research)`,
+      desc: `The programme builds strong foundations in business and commerce, combining theory, practical learning, research exposure, and entrepreneurial skills to prepare students for diverse careers and future business challenges. `,
+      extraInfos: [
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Duration:",
+          desc: `2 Years`,
         },
         {
           iconUrl: "/landingpage/common/move-right.svg",
-          title: "Annual Fee",
-          desc: `Rs 1,90,000`,
+          title: "Eligibility",
+          desc: `Passed 10+2 or equivalent examination from any recognised board/university with minimum 50% aggregate marks.`,
+        },
+      ],
+    },
+    {
+      imgUrl: "/landingpage/common/dummy.png",
+      title: `B.Com. (Hons.) (International Accounting and Finance) (ACCA - UK) With academic support of Grant Thornton `,
+      desc: `The programme, with academic support from Grant Thornton, prepares students for global finance careers by combining strong academic foundations with professional ACCA-aligned learning and international exposure. `,
+      extraInfos: [
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Duration:",
+          desc: `3 Years`,
+        },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Eligibility",
+          desc: `Passed 10+2 or equivalent examination from any recognised board/university with minimum 50% aggregate marks.`,
+        },
+      ],
+    },
+    {
+      imgUrl: "/landingpage/common/dummy.png",
+      title: `B.Com. (Hons. / Hons. with Research) (International Accounting and Finance) (ACCA - UK) With academic support of Grant Thornton `,
+      desc: `The programme supported by Grant Thornton Bharat, builds strong global accounting expertise and practical skills, preparing students for successful international careers in finance and accounting. `,
+      extraInfos: [
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Duration:",
+          desc: `4 Years`,
+        },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Eligibility",
+          desc: `Passed 10+2 or equivalent examination from any recognised board/university with minimum 50% aggregate marks. `,
+        },
+      ],
+    },
+    {
+      imgUrl: "/landingpage/common/dummy.png",
+      title: `B.Com. Programme`,
+      desc: `The programme builds strong analytical, financial, and managerial skills. It prepares students for careers in marketing, finance, banking, and insurance through a balanced blend of practical learning and theoretical knowledge. `,
+      extraInfos: [
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Duration:",
+          desc: `3 Years`,
+        },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Eligibility",
+          desc: `Passed 10+2 or equivalent examination from any recognised board/university with minimum 50% aggregate marks. `,
         },
       ],
     },
@@ -199,41 +280,44 @@ export const opportunityData: OpportunitySection = {
   heading: "Learn From Industry Experts",
   highlight: "Opportunity That Transforms",
   cta: {
-    label: "Apply for B.Arch. Programme",
+    label: "Apply for B.Com. Programmes 2026-27",
     href: "#",
   },
 };
 
 export const testimonialsData: TestimonialsSection = {
-  subheading: "Students’ Testimonials",
-  heading: `Still in Doubt? <br /> See What Our Students Say About Us!`,
+  subheading: "Our Testimonials ",
+  heading: `Why do our schoolers love and trust K.R. Mangalam University?`,
   testimonials: [
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `SOAD's B.Arch program at K.R. Mangalam University is an incubator of creativity and 
-excellence. It provided me with the platform and guidance to thrive as an aspiring 
-Architect.
+      quote: ` The B.Com. (Hons.) journey has been truly enriching. The comprehensive curriculum and industry-oriented projects have strengthened my analytical skills and prepared me for a successful career in commerce and beyond.
 `,
-      name: "Ar. Divya Kharbanda",
-      programme: "B.Arch- Design Cell, New Delhi",
+      name: "Ananya Agarwal",
+      programme: "B.Com. (Hons.)",
     },
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `As a B.Arch student, I'm inspired daily by the dynamic environment of classes, empowering 
-me to push boundaries and innovate in architecture.
+      quote: `Choosing B.Com. (Hons.) broadened my horizons. The holistic approach to education and strong focus on practical learning enhanced my understanding of commerce and built a solid foundation for my future. 
 `,
-      name: "Keerti Diwedi",
-      programme: "B.Arch- Gold Medalist, Arcop Associates, New Delhi",
+      name: "Sriram Narayana",
+      programme: "B.Com. (Hons.)",
     },
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `From KRMU's School of Architecture & Design to Auctus Wear, I carry the essence of design 
-excellence instilled by the university.`,
-      name: "Lalita",
-      programme: "Auctus Wear",
+      quote: `It was a great experience to be part of such an esteemed university. Completing my B.Com. (Hons.) degree here helped me acquire the essential skills required of a commerce professional. The state-of-the-art infrastructure makes it one of the best universities in Gurgaon.`,
+      name: "Tisha Arora",
+      programme: "B.Com. (Hons.) ",
+    },
+    {
+      image: "/landingpage/common/dummy.png",
+      videoUrl: "#",
+      quote: ` Campus life at K.R. Mangalam University was exciting and enriching. I gained valuable insights and skills that will benefit me in my future career. I am grateful to the faculty and the placement cell for their constant support and efforts toward student success. `,
+      name: "Nikita Sharma,",
+      programme: "B.Com. (Hons.) ",
     },
   ],
 };
@@ -293,11 +377,11 @@ export const scholarResearchImpactData: ScholarResearchImpactSection = {
 };
 
 export const comeToLifeData: ComeToLifeSection = {
-  heading: `Modern Facilities & State-of-the Art Infrastructure`,
-  description: `The conceptual knowledge is imparted to students in modern smart classrooms that are equipped with interactive whiteboards and seamless tech integration. The availability of the latest software systems and powerful PCs enables students to develop skills necessary for advanced modelling and construction preparation`,
+  heading: `World-Class Facilities at KRMU for B.Com. `,
+  description: `K.R. Mangalam University offers a modern campus environment that supports academic excellence and practical learning for B.Com. students. The university features smart classrooms with advanced teaching tools and high-speed Wi-Fi, creating an interactive learning experience. Students benefit from well-equipped commerce and computer labs designed for accounting software, data analysis, and business simulations. The central library provides extensive books, journals, and digital resources to support academic research and coursework. Dedicated seminar halls, discussion rooms, and collaboration spaces encourage teamwork and industry-focused learning. Beyond academics, KRMU offers secure hostels, sports facilities, recreational spaces, and 24×7 connectivity, ensuring a balanced and enriching campus life. `,
   footerText: ``,
   cta: {
-    label: "Apply for B.Arch. Programme ",
+    label: "Apply for B.Com. 2026–27",
     href: "#",
   },
   slides: [
@@ -325,7 +409,7 @@ export const comeToLifeData: ComeToLifeSection = {
 };
 
 export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
-  heading: "Life as a BBA (UG) Student at KRMU",
+  heading: "Life as a B.Com (UG) Student at KRMU",
   description: "",
   image: {
     src: "/landingpage/common/test44.jpeg",
@@ -354,29 +438,39 @@ export const faqSectionData: FAQSectionData = {
   faqs: [
     {
       id: "item-1",
-      question: "What is the role of workshops and guest lectures in the B.Arch. curriculum?",
-      answer: `They provide practical insights, exposure to industry trends, and valuable networking opportunities with leading architects and designers.`,
+      question:
+        "What is the advantage of academic support from Grant Thornton? ",
+      answer: `Students benefit from industry-driven insights, practical certifications, and hands-on exposure to real-world finance and accounting practices. `,
     },
     {
       id: "item-2",
-      question: "What skills will one develop in a B.Arch. programme?",
-      answer: `You will cultivate creative design solutions, technical competence in construction and modelling, and effective communication of your ideas through visual, oral, and written means.`,
+      question: "Can I switch from the 3-year track to the 4-year Honours track later? ",
+      answer: `Yes, eligible students may have the option to transition from the 3-year programme to the 4-year Honours track as per university guidelines. `,
     },
     {
       id: "item-3",
-      question:
-        "Does KRMU provide hostel accommodation?",
-      answer: `Yes, KRMU provides separate hostels for boys and girls with modern amenities and 24/7 security.`,
+      question: "Are internships compulsory in the B.Com programme?",
+      answer: ` Yes, internships are an integral part of the programme to ensure practical exposure and industry readiness. `,
     },
     {
       id: "item-4",
-      question: "What kind of projects are involved in the B.Arch. programme?",
-      answer: `The programme includes understanding elements of designing, being able to design from a single unit to complex projects such as mixed-use buildings, commercial complexes, institutional buildings, resorts, hospitals, housing and also large-scale urban design projects.`,
+      question: "Do the B.Com programmes offer ACCA exemptions? ",
+      answer: `Yes, the programme is aligned to provide ACCA exemptions, subject to meeting the required academic criteria. `,
     },
     {
       id: "item-5",
-      question: "Are there internship opportunities in the B.Arch. programme?",
-      answer: `Yes, the strong industry collaborations of K.R. Mangalam University ensure robust internship and placement opportunities with reputed architectural firms and design studios.`,
+      question: "Is hostel accommodation available for B.Com students? ",
+      answer: `Yes, K.R. Mangalam University offers secure on-campus hostel facilities for both male and female students. `,
+    },
+    {
+      id: "item-6",
+      question: "How can I find the best B.Com colleges in Delhi? ",
+      answer: `You can compare colleges based on curriculum, industry tie-ups, faculty expertise, placement records, and campus facilities. `,
+    },
+    {
+      id: "item-7",
+      question: "Where can I pursue a B.Com in Gurgaon?",
+      answer: `You can pursue a B.Com programme at K.R. Mangalam University, Gurgaon, which offers industry-aligned curriculum and strong academic support. `,
     },
   ],
 };
@@ -410,7 +504,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Apply for K.R. Mangalam <br /> University now`,
   description: "Start Your Adventure Right Now at K.R. Mangalam University",
   cta: {
-    label: "Apply for B.Arch. Programme",
+    label: "Apply for B.Com 2026-27  ",
     href: "#",
   },
   highlights: [

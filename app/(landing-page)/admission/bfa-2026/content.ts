@@ -22,7 +22,7 @@ export const Hero: HeroContent = {
       ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
-       B.Des.
+       BFA (UG)
       </span>
       <br />
       PROGRAMMES 2026
@@ -42,20 +42,20 @@ export const heroMarqueeData: HeroMarqueeSection = {
 
 export const Counters: CounterItem[] = [
   {
-    title: "56.6 LPA",
-    subtitle: "Highest Package",
+    title: "7.25 LPA",
+    subtitle: "Average Package",
   },
   {
     title: "800+",
-    subtitle: "Top Recruiters",
+    subtitle: "Recruiters",
   },
   {
-    title: "₹21 Cr",
+    title: "Up To ₹21 Cr",
     subtitle: "Worth of Scholarships",
   },
   {
-    title: "100%",
-    subtitle: "Placement Assistance",
+    title: "56.6 LPA",
+    subtitle: "Highest Package",
   },
 ];
 
@@ -94,30 +94,22 @@ export const prominentRecruiters: ProminentRecruit[] = [
 ];
 
 export const whyKRM: WhyKRMSection = {
-  heading: "Why Choose B.Des. Course at KRMU?",
-  subheading: "Preparing Creative Minds for Professional Design Careers",
-  content: `The B.Des. programme at K.R. Mangalam University is designed to nurture creative thinkers who are ready for the evolving design industry. With specialised pathways in Fashion Design, Game Design & Animation, Interior Design, and UX/UI & Interaction Design, the curriculum blends strong design fundamentals with hands-on learning, industry exposure, and advanced tools. Guided by experienced faculty and supported by a vibrant creative ecosystem, students develop practical skills, innovative thinking, and professional confidence to succeed across diverse design careers.`,
+  heading: "Why Select KRMU's BFA (UG) Programs?",
+  subheading: "Where Creativity Finds Its Direction",
+  content: `K.R. Mangalam University's Bachelor of Fine Arts (BFA) curriculum offers a thorough fusion of conventional methods and contemporary artistic approaches. This curriculum fosters creativity, ingenuity, and craftsmanship, regardless of your career goals—painting, sculpture, or graphic design. Students acquire the technical know-how, creative vision, and professional insights necessary to succeed in the creative business through cutting-edge studios, industry partnerships, and international exposure.`,
   imgUrl: `/landingpage/common/whykrmtest.png`,
   whyKrmCards: [
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `NEP-Compliant 4-Year Curriculum with an Honours Track`,
+      content: `Innovative Studios & Workshops: Fully furnished areas for mixed media, digital design, painting, and sculpting.`,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Industry Collaborations with Top Brands, and Retailers`,
+      content: `Exhibition Opportunities: Students increase their professional awareness by showcasing their work at public events and galleries.`,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Chance to Go On a 2-Week Summer School Programme at a European University`,
-    },
-    {
-      imgUrl: "/landingpage/common/dummy.png",
-      content: `Blend of Theoretical & Practical Learning Covering Each and Every Aspect of Design`,
-    },
-    {
-      imgUrl: "/landingpage/common/dummy.png",
-      content: `Internship & Placement Support`,
+      content: `Comprehensive Curriculum: A comprehensive curriculum that strikes a balance between theory, practical application, and contemporary creative tendencies.`,
     },
   ],
 };
@@ -127,7 +119,7 @@ export const industryExperts: IndustryExpertsSection = {
   heading: `Learn From <br /> Industry Experts`,
   description: `KRMU partners with major organisations to provide <br /> industry-specific training.`,
   cta: {
-    label: "Apply for B.Des Programme",
+    label: "Apply for BFA (UG) 2026-2027",
     href: "#",
   },
   cards: [
@@ -161,12 +153,12 @@ export const industryExperts: IndustryExpertsSection = {
 
 export const specialisationData: SpecialisationSection = {
   subheading: `Choose the specialisations based on your interest and career goals!`,
-  heading: `KRMU’s B.Des. Programmes`,
+  heading: `Our BFA (UG) Programme`,
   specilisationCard: [
     {
       imgUrl: "/landingpage/common/dummy.png",
-      title: `Bachelor of Design (B.Des.) (Hons. / Hons. with Research) Fashion Design`,
-      desc: `This is a four-year undergraduate programme designed for aspiring fashion professionals. The curriculum blends contemporary trends with strong design fundamentals, offering hands-on training in garment construction, textiles, design techniques, and fashion business to prepare students for successful careers in the evolving fashion industry.`,
+      title: `Bachelor of Fine Arts (BFA) (Painting & Applied Arts)`,
+      desc: `The Bachelor of Fine Arts (BFA) in Painting & Applied Arts is designed to nurture creative talent while developing strong technical and conceptual skills in visual arts. The programme combines traditional painting techniques with applied art practices, enabling students to explore creative expression alongside practical design applications. Through studio-based learning and expert mentorship, students build artistic proficiency and a professional creative identity.`,
       extraInfos: [
         {
           iconUrl: "/landingpage/common/move-right.svg",
@@ -176,78 +168,7 @@ export const specialisationData: SpecialisationSection = {
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Eligibility",
-          desc: `Must have passed 10+2 or equivalent examination from any recognised board/university in any stream with a minimum of 50% aggregate marks.`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,10,000`,
-        },
-      ],
-    },
-    {
-      imgUrl: "/landingpage/common/dummy.png",
-      title: `Bachelor of Design (B.Des.) (Hons. / Hons. with Research) Interior Design`,
-      desc: `This 4-year programme prepares students for the evolving interior design industry through a blend of creativity, technical skills, and industry-focused learning. Covering spatial planning, materials, lighting, and aesthetics, the programme equips graduates with industry-ready expertise for successful design careers.`,
-      extraInfos: [
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Duration:",
-          desc: `4 Years`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Eligibility",
-          desc: `Must have passed 10+2 or equivalent examination from any recognised board/university in any stream with a minimum of 50% aggregate marks.`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,10,000`,
-        },
-      ],
-    },
-    {
-      imgUrl: "/landingpage/common/dummy.png",
-      title: `Bachelor of Design (B.Des.) (Hons. / Hons. with Research) UX/UI & Interaction Design with academic support of ImaginXP`,
-      desc: `Powered by ImaginXP, this 4-year programme equips students with industry-ready skills in user research, interface design, prototyping, and usability testing. Focusing on human-centred design and creative innovation, it enables students to transform ideas into impactful digital experiences, blending visual creativity with technology to craft seamless user interactions.`,
-      extraInfos: [
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Duration:",
-          desc: `4 Years`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Eligibility",
-          desc: `Must have passed 10+2 or equivalent examination from any recognised board/university in any stream with a minimum of 50% aggregate marks.`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,40,000`,
-        },
-      ],
-    },
-    {
-      imgUrl: "/landingpage/common/dummy.png",
-      title: `Bachelor of Design (B.Des.) (Hons. / Hons. with Research) Game Design & Animation with academic support of ImaginXP`,
-      desc: `Powered by ImaginXP, this 4-year programme combines expert storytelling and character design with hands-on projects, preparing students to lead in the global gaming and animation market.`,
-      extraInfos: [
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Duration:",
-          desc: `4 Years`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Eligibility",
-          desc: `Must have passed 10+2 or equivalent examination from any recognised board/university in any stream with a minimum of 50% aggregate marks.`,
-        },
-        {
-          iconUrl: "/landingpage/common/move-right.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,40,000`,
+          desc: ` Passed the 10+2 or comparable exam in any stream with at least 50%.`,
         },
       ],
     },
@@ -264,48 +185,65 @@ export const opportunityData: OpportunitySection = {
   heading: "Learn From Industry Experts",
   highlight: "Opportunity That Transforms",
   cta: {
-    label: "Apply for B.Des Programme",
+    label: "Apply for BFA (UG) 2026-2027",
     href: "#",
   },
 };
 
 export const testimonialsData: TestimonialsSection = {
   subheading: "Students’ Testimonials",
-  heading: `Why Do Our Students Trust Us?`,
+  heading: `Why do Aspirants Prefer KRMU?`,
   testimonials: [
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `My journey at K.R. Mangalam University has been truly transformative. The faculty’s continuous  guidance played a key role in my academic and personal growth. Their mentorship extended  beyond the classroom, encouraging confidence and creativity. The opportunity for early placement gave me valuable industry exposure. The Training and Placement Cell provided 
-consistent and personalised support. Today, I feel confident, prepared, and ready to take the 
-next step in my professional journey. `,
-      name: "Jigyasa Batra",
-      programme: "B.Des. (Hons.) Interior Design",
+      quote: `As a BFA student at K.R. Mangalam University, I have grown tremendously as an artist 
+and individual. Coming from M.D Sr. Sec. School, where I first discovered my passion 
+for art, I was looking for a college that would nurture my creativity while providing 
+professional opportunities. K.R. Mangalam University has exceeded my expectations 
+with its inspiring and dynamic atmosphere, access to professional-grade studios, 
+galleries, and cutting-edge technology.
+`,
+      name: "Khushboo Dhariwal",
+      programme: "",
     },
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `Hey, I'm Sumit Kushwaha from SOAD at K.R. Mangalam University, currently pursuing a B.Des 
-in Game Design and Animation. I aspire to become a VFX Artist/Compositor, and my journey 
-here has been incredibly enriching. The faculty, with their hands-on industry experience, have 
-been instrumental in shaping my skills. Their guidance and mentorship help make our dreams 
-come to reality.`,
-      name: "Sumit Kushwaha",
-      programme: "B.Des (Hons.) Game Design & Animation",
+      quote: `I am Yashika Dang, a creative individual with a unique journey from commerce to 
+the arts. After earning my B.Com degree from M.D.U. and completing my schooling 
+at DAV, I realized my passion for creativity during COVID. This newfound interest led 
+me to pursue a BFA at KR Mangalam, where I am now exploring and refining my 
+artistic skills. My background gives me a diverse perspective, and I am eager to bring 
+innovation and creativity into my work.
+`,
+      name: "Yashika Dang",
+      programme: "",
     },
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `My journey as a fashion design student at K.R. Mangalam University has been truly transformative.  The Fashion Design programme strengthened my creative foundation while building the  confidence, discipline, and professional ethics that guide me today as Head Designer at Esha Koul, New Delhi. I am deeply grateful to the faculty for their constant support, insightful teaching, and encouragement, which helped me grow from a learner into a confident design professional.`,
-      name: "Mansi Bansal",
-      programme: "B.Des. (Hons.) Fashion Design",
+      quote: `I am currently a second-year BFA Applied Arts student, and my journey so far has 
+been both inspiring and transformative. Over the past two years, I have had the 
+opportunity to develop my creative skills, explore various art forms, and gain a deeper 
+understanding of visual communication. The faculty has been incredibly supportive, 
+guiding us through practical applications, industry trends, and conceptual thinking.
+`,
+      name: "Kanan Yadav",
+      programme: "",
     },
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `I am Harsh Kumar, a second semester B.Des UI/UX Design student. With a strong vision to build a career in UX design, this course has fuelled my skills and passion. K.R. Mangalam University has provided me with a solid foundation, enriching my knowledge and strengthening my background in design. My mentors and faculty have been my backbone, guiding and supporting me throughout my journey.`,
-      name: "Harsh Kumar",
-      programme: "B.Des (Hons.) Game Design & Animation",
+      quote: `I am a dedicated and passionate Bachelor of Fine Arts (BFA) student at K.R. Mangalam 
+University with a strong foundation in the arts. Immersed in various artistic disciplines, 
+including Applied Arts, Visual Art, and Sculpture, I bring enthusiasm and creativity to 
+every project. My keen eye for detail and deep commitment to artistic expression are 
+especially evident in my favorite field—Applied Arts. With a relentless drive to explore 
+and innovate, I aspire to make a meaningful impact in the world of visual arts.
+`,
+      name: "Megha",
+      programme: "",
     },
   ],
 };
@@ -365,11 +303,11 @@ export const scholarResearchImpactData: ScholarResearchImpactSection = {
 };
 
 export const comeToLifeData: ComeToLifeSection = {
-  heading: `World-Class Infrastructure`,
-  description: `K.R. Mangalam University offers a modern and student-centric campus designed to support effective learning and holistic development for BBA undergraduates. The university provides smart classrooms, a well-equipped central library with digital resources, computer and analytics labs, and seminar halls to enhance academic engagement. Dedicated spaces for innovation, entrepreneurship, and skill development create an environment that encourages practical learning, collaboration, and professional growth.`,
+  heading: `World-Class Facilities for BFA UG at KRMU`,
+  description: `K.R. Mangalam University provides a vibrant and creative environment with state-of-the-art art studios, well-equipped workshops, and dedicated exhibition spaces that support artistic exploration and expression. Students benefit from professional-grade tools and materials, digital design labs, and collaboration areas that promote experimentation and innovation. The university’s central library with rich visual arts resources, along with regular workshops, art events, and live projects, ensures exposure to diverse artistic practices and industry trends, helping students grow as confident creative professionals.`,
   footerText: ``,
   cta: {
-    label: "Apply for BBA (UG) 2026-2027 ",
+    label: "Apply for BFA (UG) 2026-2027 ",
     href: "#",
   },
   slides: [
@@ -421,56 +359,30 @@ export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
 export const faqSectionData: FAQSectionData = {
   eyebrow: "(FAQs)",
   heading: "Frequently Asked Questions",
-  description:
-    "",
+  description: "",
   faqs: [
     {
       id: "item-1",
-      question: "What design programmes are offered at the School of Architecture & Design?",
-      answer: `KRMU offers several undergraduate design programmes including B.Des. in Fashion Design, Interior Design, Game Design & Animation, and UX/UI & Interaction Design. `,
+      question:
+        "Do BFA students have access to internships at KRMU?",
+      answer: `Indeed, as part of the curriculum, students gain internships at advertising companies, museums, galleries, art studios, and creative agencies.`,
     },
     {
       id: "item-2",
-      question: "What is the duration of the B.Des. programmes?",
-      answer: `All Bachelor of Design (B.Des.) programmes are four-year undergraduate courses designed to provide comprehensive theoretical and practical training.`,
+      question: "What kind of facilities are available for BFA students?",
+      answer: `KRMU offers painting studios, sculpture labs, digital art labs, photography studios, and exhibition galleries to support creative learning.`,
     },
     {
       id: "item-3",
-      question:
-        "What subjects or skills will I learn in these design courses?",
-      answer: `Students learn design fundamentals, creative process, software tools, project development, industry workshops, and domain-specific skills like fashion techniques, spatial planning, UI/UX design, or game animation.`,
+      question: "Is there exposure to the industry and practical project experience?",
+      answer: `Indeed, students take part in actual projects, exhibits, workshops, design contests, and partnerships with businesses and experienced artists.`,
     },
     {
       id: "item-4",
-      question: "Does the Fashion Design course include practical and studio-based learning?",
-      answer: `Yes. The programme emphasises hands-on studio work, workshops, and live projects, allowing students to translate creative concepts into finished designs and collections.
-`,
+      question: "Are BFA students eligible for scholarships?",
+      answer: `Yes, KRMU offers scholarships for creative quality, distinction, and need to qualified students.`,
     },
-    {
-      id: "item-5",
-      question: "What career opportunities are available after completing Fashion Design at KRMU?",
-      answer: `Graduates can pursue careers as fashion designers, apparel designers, fashion stylists, visual merchandisers, fashion illustrators, or start their own labels and design ventures.`,
-    },
-    {
-      id: "item-6",
-      question: "Does KRMU provide global exposure in design programmes?",
-      answer: `Yes, students may get opportunities for international summer programmes, exchange experiences, and exposure to global design practices.`,
-    },
-    {
-      id: "item-7",
-      question: "What facilities support design education at KRMU?",
-      answer: `The School has specialised studios, workshops, labs, and software for design practice in areas like fashion, interior spaces, animation, and UX/UI.`,
-    },
-    {
-      id: "item-8",
-      question: "Is there placement and career support for design students?",
-      answer: `Yes. KRMU offers 100% placement assistance with strong industry connections, helping students secure internships and job opportunities upon graduation.`,
-    },
-    {
-      id: "item-9",
-      question: "Is hostel accommodation available for students?",
-      answer: `Yes, KRMU offers modern, secure on-campus housing with all amenities.`,
-    },
+    
   ],
 };
 
@@ -503,7 +415,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Apply for K.R. Mangalam <br /> University now`,
   description: "Start Your Adventure Right Now at K.R. Mangalam University",
   cta: {
-    label: "Apply for B.Des Programme",
+    label: "Apply for BFA (UG) 2026-2027",
     href: "#",
   },
   highlights: [
