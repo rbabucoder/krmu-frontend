@@ -57,21 +57,25 @@ const CommonLeadPopup = ({
       });
 
       /* 2️⃣ SEND TO NOPAPERFORMS */
-      await fetch("/api/send-to-npf", {
+      const npfRes = await fetch("/api/send-to-npf", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
-    } catch (err) {
-      console.error(err);
-      setError("Something went wrong, but your download will start.");
-    } finally {
-      /* ✅ ALWAYS REDIRECT */
-      window.open(redirectUrl, "_blank");
 
+      const npfResult = await npfRes.json();
+
+      // Optional: log success/error message
+      console.log("NPF response:", npfResult);
+    } catch (err) {
+      console.error("Submission failed:", err);
+    } finally {
+      /* ✅ ALWAYS REDIRECT (SUCCESS OR ERROR) */
       setLoading(false);
       setOpen(false);
       form.reset();
+
+      window.location.href = redirectUrl;
     }
   };
 
