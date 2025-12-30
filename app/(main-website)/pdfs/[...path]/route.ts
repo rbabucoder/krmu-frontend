@@ -3,12 +3,17 @@ export const runtime = 'edge';
 export async function GET(request: Request) {
   const url = new URL(request.url);
 
-  // Remove "/pdfs/" from pathname
-  const filePath = url.pathname.replace(/^\/pdfs\//, '');
+  // Split path and remove empty values
+  const segments = url.pathname.split('/').filter(Boolean);
 
-  if (!filePath) {
+  // Find "pdfs" and take everything after it
+  const pdfIndex = segments.indexOf('pdfs');
+
+  if (pdfIndex === -1 || pdfIndex === segments.length - 1) {
     return new Response('File path missing', { status: 400 });
   }
+
+  const filePath = segments.slice(pdfIndex + 1).join('/');
 
   const R2_BASE =
     'https://pub-d4effbf978f745d3994386d73dae804c.r2.dev/pdfs';
