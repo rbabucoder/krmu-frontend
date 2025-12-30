@@ -7,12 +7,14 @@ type Props = {
   buttonText: string;
   buttonClassName?: string;
   redirectUrl: string;
+  form_name: string;
 };
 
 const CommonLeadPopup = ({
   buttonText,
   buttonClassName,
   redirectUrl,
+  form_name,
 }: Props) => {
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -26,36 +28,50 @@ const CommonLeadPopup = ({
     const form = e.currentTarget;
     const data = new FormData(form);
 
+    const name = data.get("name")?.toString().trim();
+    const email = data.get("email")?.toString().trim();
+    const mobile = data.get("mobile")?.toString().trim();
+
+    const indianMobileRegex = /^[6-9]\d{9}$/;
+
+    if (!mobile || !indianMobileRegex.test(mobile)) {
+      setError("Please enter a valid 10-digit Indian mobile number.");
+      setLoading(false);
+      return;
+    }
+
     const payload = {
-      name: data.get("name"),
-      email: data.get("email"),
-      mobile: data.get("mobile"),
+      name,
+      email,
+      mobile,
+      form_name,
       page_url: window.location.href,
     };
 
     try {
-      const res = await fetch(`${FETCH_STRAPI_URL}/api/prospect-leads`, {
+      /* 1️⃣ SAVE TO STRAPI */
+      await fetch(`${FETCH_STRAPI_URL}/api/prospect-leads`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ data: payload }),
       });
 
-      if (!res.ok) throw new Error("Failed");
+      /* 2️⃣ SEND TO NOPAPERFORMS */
+      await fetch("/api/send-to-npf", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+    } catch (err) {
+      console.error(err);
+      setError("Something went wrong, but your download will start.");
+    } finally {
+      /* ✅ ALWAYS REDIRECT */
+      window.open(redirectUrl, "_blank");
 
-      // Open PDF / URL
-      const link = document.createElement("a");
-      link.href = redirectUrl;
-      link.target = "_blank";
-      document.body.appendChild(link);
-      link.click();
-      link.remove();
-
+      setLoading(false);
       setOpen(false);
       form.reset();
-    } catch {
-      setError("Something went wrong. Please try again.");
-    } finally {
-      setLoading(false);
     }
   };
 
@@ -89,7 +105,7 @@ const CommonLeadPopup = ({
                 name="name"
                 required
                 placeholder="Your Name*"
-                className="w-full h-12 px-4 rounded-lg border border-gray-300 text-black shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full h-12 px-4 rounded-lg border text-black border-gray-300"
               />
 
               <input
@@ -97,22 +113,26 @@ const CommonLeadPopup = ({
                 type="email"
                 required
                 placeholder="Email Address*"
-                className="w-full h-12 px-4 rounded-lg border border-gray-300 text-black shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full h-12 px-4 rounded-lg border text-black border-gray-300"
               />
 
               <input
                 name="mobile"
                 required
                 placeholder="Enter Mobile Number*"
-                className="w-full h-12 px-4 rounded-lg border border-gray-300 text-black shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                maxLength={10}
+                inputMode="numeric"
+                pattern="[6-9]{1}[0-9]{9}"
+                title="Enter a valid 10-digit Indian mobile number"
+                className="w-full h-12 px-4 rounded-lg text-black border border-gray-300"
               />
 
-              {/* Checkbox */}
               <label className="flex items-start gap-2 text-sm text-gray-700">
                 <input
                   type="checkbox"
                   required
-                  className="mt-1 accent-blue-600"
+                  className="mt-1"
+                  defaultChecked
                 />
                 I agree to receive information about my enquiry by signing up at
                 K.R. Mangalam University.
@@ -120,11 +140,10 @@ const CommonLeadPopup = ({
 
               {error && <p className="text-red-600 text-sm">{error}</p>}
 
-              {/* Submit */}
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full h-12 bg-[#e11c2a] text-white rounded-lg font-semibold tracking-wide hover:bg-red-700 transition disabled:opacity-60"
+                className="w-full h-12 bg-[#e11c2a] text-white rounded-lg font-semibold disabled:opacity-60"
               >
                 {loading ? "Please wait..." : "DOWNLOAD PROSPECTUS"}
               </button>

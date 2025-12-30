@@ -58,6 +58,7 @@ const ProgrammeStructure = ({
               buttonText={currbtn?.buttontext}
               buttonClassName={`p-2 sm:py-[15px] sm:px-[25px] inline-block font-normal rounded-[15px] text-xs sm:text-2xl w-full text-white bg-[#db2a1a] text-center mb-6`}
               redirectUrl={currbtn?.buttonlink || "#"}
+              form_name="Programme Handbook"
             />
           ) : (
             <Link
@@ -300,6 +301,7 @@ const ProgrammeStructure = ({
                                       buttonText={btn?.buttontext}
                                       buttonClassName={`text-xs sm:text-xl p-5 font-semibold text-center border border-[#d5d5d5] text-[#dc2e25] bg-[#f0f0f0] rounded-[20px] inline-block`}
                                       redirectUrl={btn?.buttonlink || "#"}
+                                      form_name={btn?.buttontext || ""} 
                                     />
                                   );
                                 }

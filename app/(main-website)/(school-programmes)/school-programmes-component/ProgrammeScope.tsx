@@ -46,6 +46,7 @@ const ProgrammeScope = async ({ scopeData }: Props) => {
                 scopeData?.scopebtn?.buttonclass || ""
               }`}
               redirectUrl={scopeData?.scopebtn?.buttonlink || "#"}
+              form_name="Download Prospectus"
             />
           ) : (
             <Link
