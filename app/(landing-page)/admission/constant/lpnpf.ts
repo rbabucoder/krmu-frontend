@@ -12,3 +12,4 @@ export const pharmacy2026Id = "ce24db1c5c6d3692958f6c9caf26139b";
 export const beld2026Id = "ca695b591a492af62592ab5b2b32cbc5";
 export const bpt2026Id = "8550621c77624a94239bba2342f9102e";
 export const bca2026Id = "2253054fedb9d73390dce9b7b5084d23";
+export const jmc2026Id = "acdc7065c22d12fc12a12848d5db1825";

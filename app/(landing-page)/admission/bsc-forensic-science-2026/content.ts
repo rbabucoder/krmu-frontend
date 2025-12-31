@@ -22,10 +22,10 @@ export const Hero: HeroContent = {
       ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
-       Bachelor of <br /> Architecture
+       B.Sc. Forensic Science
       </span>
       <br />
-      PROGRAMMES 2026
+      PROGRAMMES 2026-27 
     `,
   desc: `Start Building Your Future in Business and Management`,
 };
@@ -42,7 +42,7 @@ export const heroMarqueeData: HeroMarqueeSection = {
 
 export const Counters: CounterItem[] = [
   {
-    title: "7.25 LPA",
+    title: "56.6 LPA",
     subtitle: "Highest Package",
   },
   {
@@ -50,7 +50,7 @@ export const Counters: CounterItem[] = [
     subtitle: "Top Recruiters",
   },
   {
-    title: "Up To ₹21 Cr",
+    title: "₹21 Cr",
     subtitle: "Worth of Scholarships",
   },
   {
@@ -94,30 +94,31 @@ export const prominentRecruiters: ProminentRecruit[] = [
 ];
 
 export const whyKRM: WhyKRMSection = {
-  heading: "What makes KRMU the Best option for the B.Arch Course?",
-  subheading: "From Drawing Design Sketches to Building Skyscrapers",
-  content: `Developed by the expert professionals in the field, K.R. Mangalam University's five-year B.Arch program offers architecture education through practical projects, immersive sessions, insightful workshops, and valuable insights into the intricacies of architectural planning. The university's multidisciplinary strategy aims to ensure that the holistic development of its students, who will be influencing the architectural world in the future, remains a top priority.`,
+  heading: "Why Choose KRMU for the B.Sc. Forensic Science Courses?",
+  subheading: "Accurate Analysis of Evidences For Concrete Conclusions",
+  content: `The B.Sc. Forensic Science programmes intend to offer KRMU students an opportunity to apply science in the pursuit of justice. This multidisciplinary course strives to equip the learners with in-depth knowledge of forensic biology, toxicology, chemistry, ballistics, cyber forensics, and crime scene investigation. The curriculum is designed to meet the increasing reliance on scientific evidence in legal and criminal proceedings, thereby meeting the growing demand for trained forensic experts across government agencies, law enforcement departments, private labs, and legal consultancy firms.
+`,
   imgUrl: `/landingpage/common/whykrmtest.png`,
   whyKrmCards: [
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Emphasis on Hands-on-learning, Practical experience with sophisticated software for advanced modelling and construction preparation.`,
+      content: `NEP-Aligned Curriculum with Flexible Options for Research Integration.`,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Portfolio Development Guidance for Internship and Job Prospects in Architectural Firms, Government Organisations, etc.`,
+      content: `Advanced Forensic Labs with the Latest Tools for Real-World Case Analysis.`,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Participation in live projects and real-world assignments.`,
+      content: `Industry Exposure Through Field Visits, Forensic Agency Collaborations, and Expert-Led Workshops.`,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `100% Placement and Internship Assistance.`,
+      content: `Hands-On Learning with Crime Scene Simulation, Forensic Photography, and Digital Forensics.`,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Global Exposure in the form of a paid visit to 2 weeks of summer school at a Prestigious European university.`,
+      content: `100% Placement Assistance in Top Forensic Labs, Law Enforcement, and Private Consultancies.`,
     },
   ],
 };
@@ -162,27 +163,49 @@ export const industryExperts: IndustryExpertsSection = {
 
 export const specialisationData: SpecialisationSection = {
   subheading: ``,
-  heading: `KRMU’s B.Arch Programme`,
+  heading: `KRMU’s B.Sc. Forensic Science Courses`,
   specilisationCard: [
     {
       imgUrl: "/landingpage/common/dummy.png",
-      title: `Bachelor of Architecture`,
-      desc: `The KRMU's Bachelor of Architecture (B.Arch) equips the students with all the necessary skills and theoretical knowledge they require to plan, design and construct structures, buildings and various functional spaces by integrating artistic aesthetics and technology in a seamless manner. This degree aims to cultivate both analytical and creative thinking, equipping students to navigate modern-world challenges while building successful careers.`,
+      title: `B.Sc. (Hons.) Forensic Science`,
+      desc: `The Bachelor of Science (B.Sc.) Hons. in Forensic Science offered by KRMU is a multidisciplinary undergraduate program designed to prepare students for careers in crime investigation and forensic analysis. The meticulously drafted course combines principles of science, law, and technology to help students understand how scientific methods are applied to solve crimes. Students study core subjects such as forensic biology, forensic chemistry, toxicology, fingerprint analysis, questioned documents, and criminology.`,
       extraInfos: [
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Duration:",
-          desc: `5 Years`,
+          desc: `3 Years`,
         },
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Eligibility",
-          desc: `Candidates must have passed the 10+2 or equivalent examination with Physics and Mathematics as compulsory subjects, along with one of the following: Chemistry, Biology, a Technical Vocational subject, Computer Science, Information Technology, Informatics Practices, Engineering Graphics, or Business Studies, with at least 45% aggregate marks. Alternatively, candidates may have passed the 10+3 Diploma Examination with Mathematics as a compulsory subject and at least 45% aggregate marks.`,
+          desc: `Passed the 10+2 or equivalent examination from any recognised board/ University in Science (Physics/Chemistry/Biology/Mathematics) with minimum 50% aggregate marks.`,
         },
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Annual Fee",
-          desc: `Rs 1,90,000`,
+          desc: `Rs 1,30,000`,
+        },
+      ],
+    },
+    {
+      imgUrl: "/landingpage/common/dummy.png",
+      title: `B.Sc. (Hons. / Hons. with Research) Forensic Science`,
+      desc: `The program at K.R. Mangalam University aims to develop critical thinking, observation, analytical skills, and attention to detail, which are essential for forensic professionals. Graduates of this course can pursue careers as forensic analysts, crime scene investigators, laboratory technicians, or research assistants. They may also opt for higher studies such as M.Sc. in Forensic Science, Criminology, or related fields.`,
+      extraInfos: [
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Duration:",
+          desc: `4 Years`,
+        },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Eligibility",
+          desc: `Passed the 10+2 or equivalent examination from any recognised board/ University in Science (Physics/Chemistry/Biology/Mathematics) with minimum 50% aggregate marks.`,
+        },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Annual Fee",
+          desc: `Rs 1,30,000`,
         },
       ],
     },
@@ -211,29 +234,30 @@ export const testimonialsData: TestimonialsSection = {
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `SOAD's B.Arch program at K.R. Mangalam University is an incubator of creativity and 
-excellence. It provided me with the platform and guidance to thrive as an aspiring 
-Architect.
-`,
-      name: "Ar. Divya Kharbanda",
-      programme: "B.Arch- Design Cell, New Delhi",
+      quote: `My three years in the Forensic Science Department at K.R. Mangalam University have been a transformative journey filled with learning, growth, and invaluable life lessons. These years have shaped me into a more self-reliant and confident individual, preparing me to carve my own path in life. The memories and experiences I’ve gained here will always be cherished. I am deeply grateful to my amazing faculty, whose guidance has been instrumental in my academic and personal growth. KRMU will always be a part of me!`,
+      name: "Prakati Joshi",
+      programme: "B.Sc. (Hons) Forensic Science",
     },
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `As a B.Arch student, I'm inspired daily by the dynamic environment of classes, empowering 
-me to push boundaries and innovate in architecture.
-`,
-      name: "Keerti Diwedi",
-      programme: "B.Arch- Gold Medalist, Arcop Associates, New Delhi",
+      quote: `My name is Prayankar Rudra Paul, and I am a final-year student of B.Sc. (Hons.) Forensic Science at K.R. Mangalam University. My journey as an undergraduate student at this esteemed institution has been truly remarkable. As a student of the Department of Forensic Science, I  have had the privilege of gaining extensive hands-on experience through various internships. One of the most significant opportunities was working with the State Crime Records Bureau, Agartala, Tripura, where I analysed over 600+ registered FIR cases under the guidance of the Superintendent of Police.`,
+      name: "Prayankar Rudra Paul",
+      programme: "B.Sc. (Hons) Forensic Science",
     },
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `From KRMU's School of Architecture & Design to Auctus Wear, I carry the essence of design 
-excellence instilled by the university.`,
-      name: "Lalita",
-      programme: "Auctus Wear",
+      quote: `My three years at K.R. Mangalam University have been transformative and enriching, blending theoretical knowledge with extensive practical exposure. The police station training provided first-hand experience in investigative procedures, law enforcement protocols, and crime scene management, bridging the gap between classroom learning and real-world applications. Additionally, the CBI & CFSL training deepened my understanding of forensic methodologies, modern investigative techniques, and advanced technology in forensic science, boosting my confidence in practical scenarios. The supportive faculty and state-of-the-art facilities fostered critical thinking and hands-on learning, essential for a successful career.`,
+      name: "Khushboo",
+      programme: "B.Sc. (Hons) Forensic Science",
+    },
+    {
+      image: "/landingpage/common/dummy.png",
+      videoUrl: "#",
+      quote: `My journey at K.R. Mangalam University has been truly transformative. The supportive faculty, advanced facilities, and hands-on curriculum in the Forensic Science Department have equipped me with practical skills in crime scene investigation and laboratory analysis. Opportunities for research, internships, and collaboration with law enforcement have enriched my learning, preparing me for a successful career in forensic science. Grateful for this experience, I take pride in being a KRMU graduate and highly recommend this program to those passionate about solving crimes through science.`,
+      name: "Divya Panwar",
+      programme: "B.Sc. (Hons) Forensic Science",
     },
   ],
 };
@@ -294,7 +318,7 @@ export const scholarResearchImpactData: ScholarResearchImpactSection = {
 
 export const comeToLifeData: ComeToLifeSection = {
   heading: `Modern Facilities & State-of-the Art Infrastructure`,
-  description: `The conceptual knowledge is imparted to students in modern smart classrooms that are equipped with interactive whiteboards and seamless tech integration. The availability of the latest software systems and powerful PCs enables students to develop skills necessary for advanced modelling and construction preparation`,
+  description: `The K.R. Mangalam University offers strong support for the B.Sc. Forensic Science students in the form of an Advanced Forensic Lab with the latest tools for practical learning in physics, chemistry, and instrumentation. Expert faculty in the form of experienced professors with real-world and academic forensic experience, regular sessions with forensic experts and webinars are all designed for practical skill-building and career readiness.`,
   footerText: ``,
   cta: {
     label: "Apply for B.Arch. Programme ",
@@ -325,7 +349,7 @@ export const comeToLifeData: ComeToLifeSection = {
 };
 
 export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
-  heading: "Life as a BBA (UG) Student at KRMU",
+  heading: "Life as a B.Sc. Forensic Science Student at KRMU",
   description: "",
   image: {
     src: "/landingpage/common/test44.jpeg",
@@ -350,11 +374,12 @@ export const faqSectionData: FAQSectionData = {
   eyebrow: "(FAQs)",
   heading: "Frequently Asked Questions",
   description:
-    "K.R. Mangalam University offers Ph.D. programmes in a wide array of fields, encouraging cross-disciplinary exploration and innovation.",
+    "",
   faqs: [
     {
       id: "item-1",
-      question: "What is the role of workshops and guest lectures in the B.Arch. curriculum?",
+      question:
+        "What makes K.R. Mangalam University’s Forensic Science programme unique? ",
       answer: `They provide practical insights, exposure to industry trends, and valuable networking opportunities with leading architects and designers.`,
     },
     {
@@ -364,8 +389,7 @@ export const faqSectionData: FAQSectionData = {
     },
     {
       id: "item-3",
-      question:
-        "Does KRMU provide hostel accommodation?",
+      question: "Does KRMU provide hostel accommodation?",
       answer: `Yes, KRMU provides separate hostels for boys and girls with modern amenities and 24/7 security.`,
     },
     {

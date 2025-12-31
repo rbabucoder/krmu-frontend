@@ -6,7 +6,6 @@ import {
 } from "@/components/ui/accordion";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { getDownloadProspectusSetting } from "@/lib/api/global-setting";
-import PopupForm from "@/lib/constants/PopupForm";
 import { ButtonType } from "@/lib/types/common";
 import { Year } from "@/lib/types/school-programme";
 import Link from "next/link";
@@ -301,7 +300,7 @@ const ProgrammeStructure = ({
                                       buttonText={btn?.buttontext}
                                       buttonClassName={`text-xs sm:text-xl p-5 font-semibold text-center border border-[#d5d5d5] text-[#dc2e25] bg-[#f0f0f0] rounded-[20px] inline-block`}
                                       redirectUrl={btn?.buttonlink || "#"}
-                                      form_name={btn?.buttontext || ""} 
+                                      form_name={btn?.buttontext || ""}
                                     />
                                   );
                                 }
@@ -318,15 +317,24 @@ const ProgrammeStructure = ({
                                 // }
 
                                 return (
-                                  <Link
+                                  <CommonLeadPopup
                                     key={btn?.id}
-                                    href={btn?.buttonlink || "#"}
-                                    className={`text-xs sm:text-xl p-5 font-semibold text-center border border-[#d5d5d5] text-[#dc2e25] bg-[#f0f0f0] rounded-[20px] inline-block ${
+                                    buttonText={btn?.buttontext}
+                                    buttonClassName={`text-xs sm:text-xl p-5 font-semibold text-center border border-[#d5d5d5] text-[#dc2e25] bg-[#f0f0f0] rounded-[20px] inline-block ${
                                       btn?.buttonclass || ""
                                     }`}
-                                  >
-                                    {btn?.buttontext}
-                                  </Link>
+                                    redirectUrl={btn?.buttonlink || "#"}
+                                    form_name="Download Prospectus"
+                                  />
+                                  // <Link
+                                  //   key={btn?.id}
+                                  //   href={btn?.buttonlink || "#"}
+                                  //   className={`text-xs sm:text-xl p-5 font-semibold text-center border border-[#d5d5d5] text-[#dc2e25] bg-[#f0f0f0] rounded-[20px] inline-block ${
+                                  //     btn?.buttonclass || ""
+                                  //   }`}
+                                  // >
+                                  //   {btn?.buttontext}
+                                  // </Link>
                                 );
                               })}
 

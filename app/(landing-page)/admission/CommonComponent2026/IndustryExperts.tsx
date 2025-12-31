@@ -45,7 +45,7 @@ const IndustryExperts = ({ data }: Props) => {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 mt-5 md:mt-20 gap-5">
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(180px,1fr))] mt-5 md:mt-20 gap-5">
           {data.cards.map((item, index) => (
             <div
               key={index}

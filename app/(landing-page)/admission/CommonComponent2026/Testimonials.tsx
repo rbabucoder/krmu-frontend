@@ -8,7 +8,6 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-
 type Props = {
   data: TestimonialsSection;
 };
@@ -34,10 +33,7 @@ const Testimonials = ({ data }: Props) => {
           <Carousel opts={{ align: "start", loop: true }} className="w-full">
             <CarouselContent className="mb-10 sm:my-12 sm:pr-[20%]">
               {data.testimonials.map((item, index) => (
-                <CarouselItem
-                  key={index}
-                  className="md:basis-1/2 lg:basis-1/3"
-                >
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                   <TestimonialCard data={item} />
                 </CarouselItem>
               ))}

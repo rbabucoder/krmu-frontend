@@ -22,7 +22,7 @@ export const Hero: HeroContent = {
       ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
-       Bachelor of <br /> Architecture
+       Journalism & Mass Communication
       </span>
       <br />
       PROGRAMMES 2026
@@ -42,7 +42,7 @@ export const heroMarqueeData: HeroMarqueeSection = {
 
 export const Counters: CounterItem[] = [
   {
-    title: "7.25 LPA",
+    title: "56.6 LPA",
     subtitle: "Highest Package",
   },
   {
@@ -50,7 +50,7 @@ export const Counters: CounterItem[] = [
     subtitle: "Top Recruiters",
   },
   {
-    title: "Up To ₹21 Cr",
+    title: "₹21 Cr",
     subtitle: "Worth of Scholarships",
   },
   {
@@ -94,30 +94,30 @@ export const prominentRecruiters: ProminentRecruit[] = [
 ];
 
 export const whyKRM: WhyKRMSection = {
-  heading: "What makes KRMU the Best option for the B.Arch Course?",
-  subheading: "From Drawing Design Sketches to Building Skyscrapers",
-  content: `Developed by the expert professionals in the field, K.R. Mangalam University's five-year B.Arch program offers architecture education through practical projects, immersive sessions, insightful workshops, and valuable insights into the intricacies of architectural planning. The university's multidisciplinary strategy aims to ensure that the holistic development of its students, who will be influencing the architectural world in the future, remains a top priority.`,
+  heading: "Why Choose KRMU for the Journalism & Mass Communication Courses?",
+  subheading: "Sophisticated Story-telling for Smart Citizenry",
+  content: `The K.R. Mangalam University’s Journalism & Mass Communication programmes are designed for students passionate about news, storytelling, and media innovation. These NEP-compliant programmes equip students with skills in journalism, broadcasting, digital media, and public relations, ensuring they are industry-ready from day one. Additionally, students gain valuable practical experience by participating in intensive live projects, expert guest lectures, networking sessions, and internship programmes.`,
   imgUrl: `/landingpage/common/whykrmtest.png`,
   whyKrmCards: [
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Emphasis on Hands-on-learning, Practical experience with sophisticated software for advanced modelling and construction preparation.`,
+      content: `NEP-Compliant Curriculum - Undergraduate programme with industry-relevant curriculum.`,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Portfolio Development Guidance for Internship and Job Prospects in Architectural Firms, Government Organisations, etc.`,
+      content: `State-of-the-Art Media Studios - For gaining hands-on experience in Broadcasting, Video Production, and Editing.`,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Participation in live projects and real-world assignments.`,
+      content: `Industry Connect - Internships & Live Projects with Leading News Agencies, PR Firms, and Media Houses.`,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `100% Placement and Internship Assistance.`,
+      content: `Workshops & Guest Lectures - Expert guidance from Top Journalists and Media Professionals.`,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Global Exposure in the form of a paid visit to 2 weeks of summer school at a Prestigious European university.`,
+      content: `Placement - 100% Placement Assistance in Journalism, Advertising, PR, and Digital Media, etc.`,
     },
   ],
 };
@@ -162,27 +162,49 @@ export const industryExperts: IndustryExpertsSection = {
 
 export const specialisationData: SpecialisationSection = {
   subheading: ``,
-  heading: `KRMU’s B.Arch Programme`,
+  heading: `KRMU’s Journalism & Mass Communication Courses`,
   specilisationCard: [
     {
       imgUrl: "/landingpage/common/dummy.png",
-      title: `Bachelor of Architecture`,
-      desc: `The KRMU's Bachelor of Architecture (B.Arch) equips the students with all the necessary skills and theoretical knowledge they require to plan, design and construct structures, buildings and various functional spaces by integrating artistic aesthetics and technology in a seamless manner. This degree aims to cultivate both analytical and creative thinking, equipping students to navigate modern-world challenges while building successful careers.`,
+      title: `B.A. (Journalism and Mass Communication)`,
+      desc: `This undergraduate programme offered by K.R. Mangalam University perfectly blends conceptual knowledge with practical training in various fields of journalism, media, and communication. This degree aims to promote holistic education by striving to cultivate both analytical and creative thinking, preparing students to enter modern-world media with courage and confidence.`,
       extraInfos: [
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Duration:",
-          desc: `5 Years`,
+          desc: `3 Years`,
         },
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Eligibility",
-          desc: `Candidates must have passed the 10+2 or equivalent examination with Physics and Mathematics as compulsory subjects, along with one of the following: Chemistry, Biology, a Technical Vocational subject, Computer Science, Information Technology, Informatics Practices, Engineering Graphics, or Business Studies, with at least 45% aggregate marks. Alternatively, candidates may have passed the 10+3 Diploma Examination with Mathematics as a compulsory subject and at least 45% aggregate marks.`,
+          desc: `Passed 10+2 or equivalent examination from any recognised board/university in any stream with minimum 50% aggregate Marks.`,
         },
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Annual Fee",
-          desc: `Rs 1,90,000`,
+          desc: `Rs 1,60,000`,
+        },
+      ],
+    },
+    {
+      imgUrl: "/landingpage/common/dummy.png",
+      title: `B.A. (Hons. / Hons. with Research) Journalism And Mass Communication`,
+      desc: `The KRMU’s B.A. (Hons. / Hons. with Research) Journalism and Mass Communication is an innovative programme formulated to cultivate the next generation of media professionals and industry leaders. Students study a curriculum that covers the wide spectrum of mass media, ranging from traditional journalism to emerging digital platforms. Offering industry exposure from internships and workshops, the programme empowers students to gain career-relevant skills to take on diverse media-related roles.`,
+      extraInfos: [
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Duration:",
+          desc: `4 Years`,
+        },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Eligibility",
+          desc: `Passed 10+2 or equivalent examination from any recognised board/university in any stream with minimum 50% aggregate Marks.`,
+        },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Annual Fee",
+          desc: `Rs 1,60,000`,
         },
       ],
     },
@@ -199,7 +221,7 @@ export const opportunityData: OpportunitySection = {
   heading: "Learn From Industry Experts",
   highlight: "Opportunity That Transforms",
   cta: {
-    label: "Apply for B.Arch. Programme",
+    label: "Apply for JMC Programme",
     href: "#",
   },
 };
@@ -211,29 +233,31 @@ export const testimonialsData: TestimonialsSection = {
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `SOAD's B.Arch program at K.R. Mangalam University is an incubator of creativity and 
-excellence. It provided me with the platform and guidance to thrive as an aspiring 
-Architect.
+      quote: `SJMC equipped me with the skills to excel as a Social Media Coordinator at the Ministry of Jal Shakti. The hands-on experience and expert guidance were invaluable.
 `,
-      name: "Ar. Divya Kharbanda",
-      programme: "B.Arch- Design Cell, New Delhi",
+      name: "Ms Niharika Yadav",
+      programme: "Social Media Coordinator, Ministry of Jal Shakti",
     },
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `As a B.Arch student, I'm inspired daily by the dynamic environment of classes, empowering 
-me to push boundaries and innovate in architecture.
-`,
-      name: "Keerti Diwedi",
-      programme: "B.Arch- Gold Medalist, Arcop Associates, New Delhi",
+      quote: `JMC provided the platform to realise my dream of becoming a Producer/Anchor. I'm grateful for the opportunities and mentorship that prepared me for India Ahead Hindi.`,
+      name: "Ms Samika Rathore",
+      programme: "Producer/Anchor, India Ahead Hindi",
     },
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `From KRMU's School of Architecture & Design to Auctus Wear, I carry the essence of design 
-excellence instilled by the university.`,
-      name: "Lalita",
-      programme: "Auctus Wear",
+      quote: `SJMC equipped me with invaluable industry knowledge and practical skills. The hands-on experience and expert faculty guidance prepared me perfectly for my role at HT Media as a Content Writer.`,
+      name: "Ms Mahima Bhardwaj",
+      programme: "Content Writer, HT Media",
+    },
+    {
+      image: "/landingpage/common/dummy.png",
+      videoUrl: "#",
+      quote: `The knowledge and expertise gained at SJMC have been instrumental in my role as a Content Writer at Flifo Technologies. It's been a journey of growth and learning`,
+      name: "Ms Anjali Sinha",
+      programme: "Content Writer, Flifo Technologies",
     },
   ],
 };
@@ -294,10 +318,11 @@ export const scholarResearchImpactData: ScholarResearchImpactSection = {
 
 export const comeToLifeData: ComeToLifeSection = {
   heading: `Modern Facilities & State-of-the Art Infrastructure`,
-  description: `The conceptual knowledge is imparted to students in modern smart classrooms that are equipped with interactive whiteboards and seamless tech integration. The availability of the latest software systems and powerful PCs enables students to develop skills necessary for advanced modelling and construction preparation`,
+  description: `K.R. Mangalam University (KRMU) offers Journalism & Mass Comm students cutting-edge media labs (broadcasting/multimedia studios) equipped with the latest equipment and software. Also, modern smart classrooms, high-speed Wi-Fi, extensive library access, industry expert interactions, practical live projects, internships, and dedicated career support, alongside top-notch general campus amenities like AC hostels, sports facilities, and medical support, ensure a holistic learning experience.
+`,
   footerText: ``,
   cta: {
-    label: "Apply for B.Arch. Programme ",
+    label: "Apply for JMC Programme ",
     href: "#",
   },
   slides: [
@@ -325,7 +350,7 @@ export const comeToLifeData: ComeToLifeSection = {
 };
 
 export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
-  heading: "Life as a BBA (UG) Student at KRMU",
+  heading: "Life as a Journalism and Mass Communication Student at KRMU",
   description: "",
   image: {
     src: "/landingpage/common/test44.jpeg",
@@ -350,33 +375,33 @@ export const faqSectionData: FAQSectionData = {
   eyebrow: "(FAQs)",
   heading: "Frequently Asked Questions",
   description:
-    "K.R. Mangalam University offers Ph.D. programmes in a wide array of fields, encouraging cross-disciplinary exploration and innovation.",
+    "",
   faqs: [
     {
       id: "item-1",
-      question: "What is the role of workshops and guest lectures in the B.Arch. curriculum?",
-      answer: `They provide practical insights, exposure to industry trends, and valuable networking opportunities with leading architects and designers.`,
+      question:
+        "What are the career opportunities after graduation with a JMC degree?",
+      answer: `Graduates can work as Journalists, PR Specialists, TV Anchors, Social Media Managers, and Content Creators.`,
     },
     {
       id: "item-2",
-      question: "What skills will one develop in a B.Arch. programme?",
-      answer: `You will cultivate creative design solutions, technical competence in construction and modelling, and effective communication of your ideas through visual, oral, and written means.`,
+      question: "What skills will one develop in a JMC programme?",
+      answer: `One will cultivate skills related to news reporting, content creation, video production, digital marketing, and public relations.`,
     },
     {
       id: "item-3",
-      question:
-        "Does KRMU provide hostel accommodation?",
+      question: "Does KRMU provide hostel accommodation?",
       answer: `Yes, KRMU provides separate hostels for boys and girls with modern amenities and 24/7 security.`,
     },
     {
       id: "item-4",
-      question: "What kind of projects are involved in the B.Arch. programme?",
-      answer: `The programme includes understanding elements of designing, being able to design from a single unit to complex projects such as mixed-use buildings, commercial complexes, institutional buildings, resorts, hospitals, housing and also large-scale urban design projects.`,
+      question: "Does the K.R. Mangalam University focus on digital media trends?",
+      answer: `Yes. The JMC courses at KRMU cover digital media elements like SEO, social media marketing, influencer branding, and multimedia journalism.`,
     },
     {
       id: "item-5",
-      question: "Are there internship opportunities in the B.Arch. programme?",
-      answer: `Yes, the strong industry collaborations of K.R. Mangalam University ensure robust internship and placement opportunities with reputed architectural firms and design studios.`,
+      question: "Does KRMU provide placement support?",
+      answer: `Yes, the K.R. Mangalam University offers 100% placement assistance with top media & communication firms.`,
     },
   ],
 };
@@ -410,7 +435,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Apply for K.R. Mangalam <br /> University now`,
   description: "Start Your Adventure Right Now at K.R. Mangalam University",
   cta: {
-    label: "Apply for B.Arch. Programme",
+    label: "Apply for JMC Programme",
     href: "#",
   },
   highlights: [

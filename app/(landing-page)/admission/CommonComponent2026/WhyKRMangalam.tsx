@@ -50,7 +50,7 @@ const WhyKRMangalam = ({
           )}
         </div>
       </div>
-      <div className="max-w-[1400px] mx-auto w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 mt-10">
+      <div className="max-w-[1400px] mx-auto w-full grid grid-cols-[repeat(auto-fit,minmax(180px,1fr))] gap-5 mt-10">
         {whykrmCards &&
           whykrmCards?.map((card, i) => {
             return (

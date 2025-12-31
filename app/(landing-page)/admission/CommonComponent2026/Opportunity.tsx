@@ -9,11 +9,11 @@ type Props = {
 
 const Opportunity = ({ data }: Props) => {
   return (
-    <section className="py-20 px-4">
-      <div className="max-w-[1400px] mx-auto w-full bg-[#0060aa] flex flex-col-reverse sm:flex-row items-center justify-between pt-10 px-10 rounded-4xl lg:h-[250px]">
+    <section className="pt-10 md:pt-28 pb-20 px-4">
+      <div className="max-w-[1400px] mx-auto w-full bg-[url(/landingpage/common/blue-box.webp)] bg-cover bg-no-repeat flex flex-col-reverse sm:flex-row items-center justify-between pt-10 px-10 rounded-4xl lg:h-[250px]">
         {/* Image */}
         <div className="sm:w-1/2 h-full relative">
-          <div className="lg:absolute bottom-0">
+          <div className="lg:absolute bottom-0 mt-5 md:mt-0">
             <Image
               src={data.image.src}
               width={data.image.width}

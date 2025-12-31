@@ -63,32 +63,32 @@ export const Counters: CounterItem[] = [
 export const prominentRecruiters: ProminentRecruit[] = [
   {
     imgUrl:
-      "https://www.krmangalam.edu.in/admission/law-2025/assets/trilegal.svg",
+      "/landingpage/law-2026/prominent-recruiter/1.png",
     alt: "Recruiter Logo",
   },
   {
     imgUrl:
-      "https://www.krmangalam.edu.in/admission/btech-2025-b/assets/images/accenture.svg",
+      "/landingpage/law-2026/prominent-recruiter/2.png",
     alt: "Recruiter Logo",
   },
   {
     imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+      "/landingpage/law-2026/prominent-recruiter/3.png",
     alt: "Recruiter Logo",
   },
   {
     imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+      "/landingpage/law-2026/prominent-recruiter/4.png",
     alt: "Recruiter Logo",
   },
   {
     imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+      "/landingpage/law-2026/prominent-recruiter/5.png",
     alt: "Recruiter Logo",
   },
   {
     imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+      "/landingpage/law-2026/prominent-recruiter/6.png",
     alt: "Recruiter Logo",
   },
 ];
@@ -97,67 +97,73 @@ export const whyKRM: WhyKRMSection = {
   heading: "Why Choose Undergraduate Law Programmes at KRMU?",
   subheading: "Where Legal Theory Meets Real-World Practice",
   content: `Undergraduate Law Programmes at K.R. Mangalam University provides internationally relevant, industry-aligned programs aimed at producing capable and socially conscious attorneys. Our graduates are prepared to succeed in corporate law, litigation, public policy, and other fields thanks to a curriculum developed by legal professionals, practical experience, and interdisciplinary learning.`,
-  imgUrl: `/landingpage/common/whykrmtest.png`,
+  imgUrl: `/landingpage/law-2026/building.webp`,
   whyKrmCards: [
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/law-2026/why-choose-card/1-Card.jpg",
       content: `Curriculum that incorporates moot courts and real-world case studies`,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/law-2026/why-choose-card/2-Card.jpg",
       content: `Strong mentoring by retired judges, legal scholars, and active advocates`,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/law-2026/why-choose-card/3-Card.jpg",
       content: `Solid placement connections with top corporations, law firms, and legal organisations`,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/law-2026/why-choose-card/4-Card.jpg",
       content: `Study travels and international partnerships`,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/law-2026/why-choose-card/5-Card.jpg",
       content: `Focused skill development in research, advocacy, and legal writing combined with student-centered instruction`,
     },
   ],
 };
 
 export const industryExperts: IndustryExpertsSection = {
-  eyebrow: "Why KR Mangalam PhD?",
+  eyebrow: "",
   heading: `Learn From <br /> Industry Experts`,
   description:
-    "K.R. Mangalam University has collaborated with leading organisations to offer hands-on training, expert-led guest lectures.",
+    "The law programmes at KRMU are enriched by academic and professional inputs from experienced knowledge partners.",
   cta: {
-    label: "Apply for B.Tech 2026",
+    label: "Apply for Law (UG) 2026-2027",
     href: "#",
   },
   cards: [
     {
       imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
+        "/landingpage/law-2026/indus-exp/1.jpg",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
     {
       imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
+        "/landingpage/law-2026/indus-exp/2.png",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
     {
       imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
+        "/landingpage/law-2026/indus-exp/3.webp",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
     {
       imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
+        "/landingpage/law-2026/indus-exp/4.jpg",
+      alt: "Apple Logo",
+      title: "AI and Machine Learning Courses",
+    },
+    {
+      imgUrl:
+        "/landingpage/law-2026/indus-exp/5.png",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
   ],
-  bannerImg: "/landingpage/common/dummy2.png",
+  bannerImg: "/landingpage/common/indus-exp.webp",
 };
 
 export const specialisationData: SpecialisationSection = {
@@ -166,66 +172,66 @@ export const specialisationData: SpecialisationSection = {
   heading: `Our Undergraduate Law Programmes`,
   specilisationCard: [
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/law-2026/prog/BA-LL.B-Hons.jpg",
       title: `BA. LL.B. (Hons.)`,
       desc: `With this five-year integrated BA LLB programme that combines the arts and law, learn about the socio-legal aspects of law.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `5 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 1,85,000`,
         },
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/law-2026/prog/BBA-LLB-Hons.jpg",
       title: `BBA. LL.B. (Hons.)`,
       desc: `With this five-year integrated curriculum that combines business administration and law, you may get ready for corporate legal difficulties. A thorough grasp of legal frameworks and managerial concepts is provided by the course.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `5 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 1,85,000`,
         },
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/law-2026/prog/LLB-Hons.jpg",
       title: `LL.B. (Hons.)`,
       desc: `With this three-year undergraduate programme, graduates from any subject can enter the legal field. The course provides a thorough examination of procedural legislation and legal concepts. `,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `5 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 1,60,000`,
         },
@@ -236,7 +242,7 @@ export const specialisationData: SpecialisationSection = {
 
 export const opportunityData: OpportunitySection = {
   image: {
-    src: "/landingpage/common/test2.png",
+    src: "/landingpage/law-2026/opp.png",
     alt: "Industry Expert",
     width: 300,
     height: 400,
@@ -244,7 +250,7 @@ export const opportunityData: OpportunitySection = {
   heading: "Learn From Industry Experts",
   highlight: "Opportunity That Transforms",
   cta: {
-    label: "Apply for B.Tech 2026",
+    label: "Apply for Law (UG) 2026-2027",
     href: "#",
   },
 };
@@ -254,7 +260,7 @@ export const testimonialsData: TestimonialsSection = {
   heading: `Why our schoolers loves and <br /> trust K.R. Mangalam University?`,
   testimonials: [
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/law-2026/testimonials/1.webp",
       videoUrl: "#",
       quote: `Completing BBA.LLB (Hons) from K.R. Mangalam University in 2023 enhanced my 
 legal reasoning and business acumen. Pursuing a Master's in Corporate Law at the 
@@ -264,7 +270,7 @@ equipping me with analytical skills for a successful legal career.`,
       programme: "BBA LL.B. (Hons.) ",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/law-2026/testimonials/2.webp",
       videoUrl: "#",
       quote: `Proud K.R. Mangalam University alumni, my journey from student to professional 
 was enriched by diverse cultural and academic engagements, shaping my future 
@@ -275,7 +281,7 @@ After graduating, I applied my experiences to a fulfilling career journey.`,
       programme: "B.A. LL.B. (Hons.)",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/law-2026/testimonials/3.webp",
       videoUrl: "#",
       quote: `Proud K.R. Mangalam University alumni, my journey from student to professional 
 was enriched by diverse cultural and academic engagements, shaping my future 
@@ -286,7 +292,7 @@ After graduating, I applied my experiences to a fulfilling career journey.`,
       programme: "BBA LL. B. (Hons.)",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/law-2026/testimonials/4.webp",
       videoUrl: "#",
       quote: `My journey at K.R. Mangalam University transformed me, fostering my confidence and 
 competence in law. As an alumnus, I'm grateful for experiences like coordinating the 
@@ -368,23 +374,43 @@ export const comeToLifeData: ComeToLifeSection = {
   },
   slides: [
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/common/infra/1.webp",
       alt: "World Class Lab",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/common/infra/2.webp",
       alt: "Research Facility",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/common/infra/3.webp",
       alt: "Innovation Center",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/common/infra/4.webp",
       alt: "Library & Resources",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/common/infra/5.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/common/infra/6.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/common/infra/7.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/common/infra/8.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/common/infra/9.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/common/infra/10.webp",
       alt: "Campus Infrastructure",
     },
   ],
@@ -394,7 +420,7 @@ export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
   heading: "Life as a Law (UG) Student at KRMU ",
   description: "",
   image: {
-    src: "/landingpage/common/test44.jpeg",
+    src: "/landingpage/common/collage.webp",
     alt: "Life as a PhD Scholar at KR Mangalam",
   },
   facilities: [

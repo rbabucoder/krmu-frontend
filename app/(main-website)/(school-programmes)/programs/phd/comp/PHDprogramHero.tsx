@@ -35,7 +35,7 @@ const PHDprogramHero = ({
           background: `url(${STRAPI_URL}${bgimg}) center/cover no-repeat`,
         }}
       >
-        <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row items-center md:h-[784px]">
+        <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row items-center">
           <div className="lg:w-3/5 text-white text-3xl md:text-5xl font-semibold p-5">
             <h1
               dangerouslySetInnerHTML={{
@@ -45,8 +45,9 @@ const PHDprogramHero = ({
           </div>
           <div className="lg:w-2/5">
             <NoPaperForm
-              formId="0d2d6e28c86e4213b353bfe132035965"
-              height="500px"
+              // formId="0d2d6e28c86e4213b353bfe132035965"
+              formId="b8a1d46829929a0a7c19f4fc185e7d45"
+              height="600px"
             />
           </div>
         </div>
