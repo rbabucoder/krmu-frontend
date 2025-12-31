@@ -79,29 +79,33 @@ const page = async () => {
 
   return (
     <>
-      {getIndustryConnectPageData && (
-        <IndustryHero
-          title={getIndustryConnectPageData?.title}
-          desc={getIndustryConnectPageData?.description}
-          bgImgURL={getIndustryConnectPageData?.bgimage?.url}
+      <main className="indus_connect_content">
+        {getIndustryConnectPageData && (
+          <IndustryHero
+            title={getIndustryConnectPageData?.title}
+            desc={getIndustryConnectPageData?.description}
+            bgImgURL={getIndustryConnectPageData?.bgimage?.url}
+          />
+        )}
+        <IndustryPartenerships
+          title={getIndustryConnectPageData?.partnerships_title}
+          logos={getIndustryConnectPageData?.partnership_logos}
         />
-      )}
-      <IndustryPartenerships
-        title={getIndustryConnectPageData?.partnerships_title}
-        logos={getIndustryConnectPageData?.partnership_logos}
-      />
-      <JapeneseCuisines cuisine={getIndustryConnectPageData?.cuisines} />
-      <ArtMuralEvent mural={getIndustryConnectPageData?.mural_event} />
-      <NetworkingOpportunities
-        netopp={getIndustryConnectPageData?.networking_opportunities}
-      />
-      <ShapingCareer shapcareer={getIndustryConnectPageData?.shaping_career} />
-      <Seminar seminar={getIndustryConnectPageData?.seminar} />
-      <IdeaForge forgeData={getIndustryConnectPageData?.idea_forge} />
-      <ExpertTalk expertTalk={getIndustryConnectPageData?.expert_talk_role} />
-      <DeputyCommissioner
-        deput={getIndustryConnectPageData?.deputy_commissioner}
-      />
+        <JapeneseCuisines cuisine={getIndustryConnectPageData?.cuisines} />
+        <ArtMuralEvent mural={getIndustryConnectPageData?.mural_event} />
+        <NetworkingOpportunities
+          netopp={getIndustryConnectPageData?.networking_opportunities}
+        />
+        <ShapingCareer
+          shapcareer={getIndustryConnectPageData?.shaping_career}
+        />
+        <Seminar seminar={getIndustryConnectPageData?.seminar} />
+        <IdeaForge forgeData={getIndustryConnectPageData?.idea_forge} />
+        <ExpertTalk expertTalk={getIndustryConnectPageData?.expert_talk_role} />
+        <DeputyCommissioner
+          deput={getIndustryConnectPageData?.deputy_commissioner}
+        />
+      </main>
     </>
   );
 };

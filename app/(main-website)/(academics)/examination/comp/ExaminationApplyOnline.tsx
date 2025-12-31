@@ -13,6 +13,7 @@ const ExaminationApplyOnline = ({ applyContent }: Props) => {
           dangerouslySetInnerHTML={{
             __html: applyContent,
           }}
+          className="apply_online_content_table"
         />
       </div>
     </section>
