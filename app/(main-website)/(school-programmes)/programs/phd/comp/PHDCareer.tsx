@@ -22,7 +22,7 @@ const PHDCareer = ({ careerOptions }: Props) => {
       </div>
       <div className="max-w-[1664px] mx-auto w-full mt-10 flex flex-col lg:flex-row gap-10">
         <div className="lg:w-1/2">
-          <ul className="text-xl ml-5 break-all">
+          <ul className="text-xl ml-5">
             {careerOptions?.careerpointers &&
               careerOptions?.careerpointers.map((counter) => {
                 return (
@@ -32,8 +32,10 @@ const PHDCareer = ({ careerOptions }: Props) => {
              before:bg-no-repeat py-1.5
             "
                   >
-                    <span className="text-[#0060aa]">{counter?.listtext}</span>
-                    {counter?.listlink}
+                    <span className="text-[#0060aa] font-semibold">
+                      {counter?.listtext}
+                    </span>
+                    {" "}{counter?.listlink}
                   </li>
                 );
               })}
@@ -41,12 +43,17 @@ const PHDCareer = ({ careerOptions }: Props) => {
         </div>
         <div className="lg:w-1/2">
           {careerOptions?.testimonials?.length > 0 && (
-            <div className="pt-[50px] pb-[100px] px-[70px] bg-[#051630] rounded-[58px]">
+            <div className="p-5 md:pt-[50px] pb-[170px] md:pb-[100px] md:px-[70px] bg-[#051630] rounded-[58px]">
               <h4 className="text-2xl font-semibold text-center text-white mb-5">
                 {careerOptions?.testimonialheading}
               </h4>
 
-              <Carousel>
+              <Carousel
+                opts={{
+                  align: "start",
+                  loop: true,
+                }}
+              >
                 <CarouselContent>
                   {careerOptions.testimonials.map((item) => (
                     <CarouselItem key={item.id}>

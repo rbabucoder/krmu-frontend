@@ -15,7 +15,7 @@ const NetworkingOpportunities = ({ netopp }: Props) => {
           <h3 className="mb-5 text-2xl md:text-[38px] font-bold leading-[1]">
             {netopp?.heading}
           </h3>
-          <p>{netopp?.desc}</p>
+          <p></p>
         </div>
         <div className="max-w-[1664px] mx-auto w-full lg:flex items-center gap-10 mt-10 mb-5">
           <div className="lg:w-1/2 rounded-sm border border-[#051630]">
