@@ -7,6 +7,8 @@ import Script from "next/script";
 import NoPaperFormProvider from "@/lib/constants/NoPaperFormProvider";
 import HeaderWrapper from "./components/Header/HeaderWrapper";
 import Footer from "./components/Footer/Footer";
+import Link from "next/link";
+// import NpfPopupButton from "./components/NpfPopupButton";
 
 const montserrat = Montserrat({
   weight: ["300", "400", "500", "600", "700"],
@@ -52,10 +54,15 @@ export default function RootLayout({
         <Footer />
         {/* <Button className="bg-[#f00] border border-none py-[6px] px-[15px] fixed top-[40%] right-[-42px] rotate-90 rounded-sm h-[27px] z-10">
           Enquire Now
-        </Button>
-        <Button className="bg-[#f00] border border-none py-[6px] px-[15px] fixed top-[70%] right-[-57px] rotate-90 rounded-sm h-[27px] z-10">
-          360° Virtual Tour
         </Button> */}
+        {/* <NpfPopupButton formId="d63cf9c4d3104c39f3ac28164701a69c" /> */}
+
+        <Link
+          href="/campus-life/virtual-tour"
+          className="bg-[#f00] text-white border border-none py-[6px] px-[15px] fixed top-[70%] right-[-57px] rotate-90 rounded-sm h-[27px] z-10"
+        >
+          360° Virtual Tour
+        </Link>
       </body>
     </html>
   );

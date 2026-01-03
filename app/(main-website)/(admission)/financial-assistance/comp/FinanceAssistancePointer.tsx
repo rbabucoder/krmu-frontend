@@ -126,7 +126,7 @@ const FinanceAssistancePointer = () => {
                 <span className="w-8 h-8 bg-[#051630] flex items-center justify-center rounded-full">
                   <Check color="#ffffff" strokeWidth={3} size={25} />
                 </span>
-                <span>Documentation process</span>
+                <span>Offer Letter</span>
               </li>
               <li className="flex items-center gap-2.5">
                 <span className="w-8 h-8 bg-[#051630] flex items-center justify-center rounded-full">

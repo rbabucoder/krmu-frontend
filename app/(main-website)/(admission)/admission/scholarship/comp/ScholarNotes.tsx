@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const ScholarNotes = () => {
   return (
     <section className="bg-[url(/scholarship/notes-bg.webp)] bg-cover bg-no-repeat py-[30px] px-4">
@@ -16,7 +18,7 @@ const ScholarNotes = () => {
                 fee
               </span>
             </div>
-            <div className="flex gap-5 mb-8 lg:hidden">
+            <div className="flex gap-5 mb-8">
               <span className="rounded-full py-[3px] px-2 border border-white text-white w-[25px] h-[28px] flex items-center justify-center">
                 2
               </span>
@@ -78,7 +80,7 @@ const ScholarNotes = () => {
         <div className="lg:w-2/5">
           <div className="lg:flex gap-5 mb-8 hidden">
             <span className="rounded-full py-[3px] px-2 border border-white text-white w-[25px] h-[28px] flex items-center justify-center">
-              2
+              7
             </span>
             <span className="text-white font-semibold text-base notesul">
               2nd Instalment and 3rd instalment (where applicable) of
@@ -119,8 +121,8 @@ const ScholarNotes = () => {
             <span className="text-white font-semibold text-base">
               This policy is not applicable for Lateral Entry and Migration
               <p>
-                <strong>Important :</strong> For detailed sports scholarship
-                Click here
+                <strong>Important :</strong> For detailed sports scholarship{" "}
+                <Link href="https://www.krmangalam.edu.in/wp-content/uploads/2025/03/sports-club-sports-scholarship-policy-2025-26.pdf" target="_blank">Click here</Link>
               </p>
             </span>
           </div>

@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import Link from "next/link";
 
 const FeeStructurePaymentProc = () => {
   return (
@@ -18,7 +19,14 @@ const FeeStructurePaymentProc = () => {
             payment methods for all fees, including registration, tuition,
             hostel, transport, and other charges. These options are designed to
             streamline the payment process, ensuring a smooth and hassle-free
-            experience for students and their families. Read More
+            experience for students and their families.{" "}
+            <Link
+              href="/payment-procedure"
+              className="text-[#af406a] hover:text-[#0060aa]"
+              target="_blank"
+            >
+              Read More
+            </Link>
           </p>
           <h3 className="text-3xl md:text-[64px] font-semibold text-[#0060aa] leading-[1.67] mt-10 mb-5">
             Frequently Asked Questions
@@ -27,7 +35,7 @@ const FeeStructurePaymentProc = () => {
             <Accordion
               type="single"
               collapsible
-              className="w-full grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-2.5"
+              className="w-full grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-2.5 items-start"
               defaultValue="item-1"
             >
               <AccordionItem

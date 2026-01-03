@@ -27,7 +27,7 @@ const OnlineFee = () => {
                 </span>
               </span>
             </h2>
-            <div className="flex flex-col md:flex-row gap-2.5">
+            <div className="flex flex-col md:flex-row gap-2.5 my-10">
               <div className="md:w-1/2 z-10">
                 <div
                   className="text-[18px] md:text-[28px] flex items-center justify-center font-bold py-16 text-white rounded-t-[22px]"
@@ -36,14 +36,15 @@ const OnlineFee = () => {
                   }}
                 >
                   <p>
-                    For new students
-                    <br /> (Semester 1)
+                    For new students <br />
+                    (Semester 1)
                   </p>
                 </div>
                 <div>
                   <Link
-                    href="#"
+                    href="https://payment.collexo.com/user/login/?dest=/pay-fee/kr-mangalam-university-sohna-haryana-43490/"
                     className="bg-[#e31e24] py-3 text-white text-base md:px-[29px] inline-block w-full md:text-2xl font-semibold leading-[1] rounded-b-[22px] hover:bg-[#034272]"
+                    target="_blank"
                   >
                     <span>Pay Through Collexo</span>
                   </Link>
@@ -57,16 +58,17 @@ const OnlineFee = () => {
                   }}
                 >
                   <p>
-                    For new students
-                    <br /> (Semester 1)
+                    For existing students <br />
+                    (Semester 2 onwards)
                   </p>
                 </div>
                 <div>
                   <Link
-                    href="#"
+                    href="https://krmu.icloudems.com/"
                     className="bg-[#e31e24] py-3 text-white px-[29px] inline-block w-full text-base md:text-2xl font-semibold leading-[1] rounded-b-[22px] hover:bg-[#034272]"
+                    target="_blank"
                   >
-                    <span>Pay Through Collexo</span>
+                    <span>Pay Through iCloud</span>
                   </Link>
                 </div>
               </div>

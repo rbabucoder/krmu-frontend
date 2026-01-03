@@ -3,12 +3,19 @@ import Link from "next/link";
 type Props = {
   heading: string;
   url: string;
+  subHeading: string;
 };
 
-const FeeStructureSAARCHero = ({ heading, url }: Props) => {
+const FeeStructureSAARCHero = ({ heading, url, subHeading }: Props) => {
   return (
-    <section className="pt-[140px] px-4 md:pt-[10%] pb-[10%] bg-[url(/85.webp)] bg-cover bg-no-repeat">
+    <section className="pt-[140px] px-4 md:pt-[10%] pb-[10%] bg-[url(/fee-structurebanner-1.webp)] bg-cover bg-no-repeat">
       <div className="text-center max-w-[1600px] mx-auto w-full">
+        <h3
+          dangerouslySetInnerHTML={{
+            __html: subHeading,
+          }}
+          className="text-4xl text-white font-semibold leading-[1] mb-10"
+        />
         <h1
           className="text-2xl text-white md:text-[64px] font-semibold leading-[1] mb-10"
           dangerouslySetInnerHTML={{

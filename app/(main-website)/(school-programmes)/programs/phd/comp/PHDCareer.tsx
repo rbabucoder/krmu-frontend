@@ -22,7 +22,7 @@ const PHDCareer = ({ careerOptions }: Props) => {
       </div>
       <div className="max-w-[1664px] mx-auto w-full mt-10 flex flex-col lg:flex-row gap-10">
         <div className="lg:w-1/2">
-          <ul className="text-xl ml-5">
+          <ul className="text-xl ml-5 break-all sm:break-normal">
             {careerOptions?.careerpointers &&
               careerOptions?.careerpointers.map((counter) => {
                 return (

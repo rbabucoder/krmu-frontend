@@ -24,7 +24,7 @@ const ScholarUGPG = () => {
             </TabsTrigger>
             <TabsTrigger
               value="postgraduate"
-              className="text-base sm:text-xl md:text-2xl md:leading-[3] p-4md:px-[100px] hover:bg-[#cb000d] hover:text-white data-[state=active]:bg-[#cb000d] data-[state=active]:text-white rounded-full cursor-pointer font-semibold"
+              className="text-base sm:text-xl md:text-2xl md:leading-[3] p-4  md:px-[100px] hover:bg-[#cb000d] hover:text-white data-[state=active]:bg-[#cb000d] data-[state=active]:text-white rounded-full cursor-pointer font-semibold"
             >
               PG <br className="md:hidden" /> Programmes
             </TabsTrigger>
@@ -61,8 +61,8 @@ const ScholarUGPG = () => {
                   <div className="overflow-x-auto">
                     <table>
                       <thead>
-                        <tr>
-                          <th>Eligibility Criteria</th> <th>Scholarship</th>
+                        <tr>{" "}
+                          <th>Eligibility Criteria</th> <th>Scholarship</th>{" "}
                           <th>Remarks</th>
                         </tr>
                       </thead>
@@ -121,7 +121,7 @@ const ScholarUGPG = () => {
                     borderBottomRightRadius: "12px",
                   }}
                 >
-                  <div className="overflow-x-auto">
+                  <div className="overflow-x-auto ugpgtable_container">
                     <table>
                       <thead>
                         <tr>

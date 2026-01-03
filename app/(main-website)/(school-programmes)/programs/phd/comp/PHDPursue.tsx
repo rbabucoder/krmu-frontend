@@ -8,7 +8,7 @@ type Props = {
 const PHDPursue = ({ pursueContent }: Props) => {
   return (
     <section
-      className="bg-cover bg-no-repeat py-[60px]"
+      className="bg-cover bg-no-repeat py-[60px] px-4"
       style={{
         background: `url(${STRAPI_URL}${pursueContent?.bgimage?.url})`,
         backgroundRepeat: 'no-repeat',

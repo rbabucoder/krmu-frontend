@@ -49,7 +49,7 @@ const PHDHighlight = ({ heading, highlightheading, btn, imgUrl }: Props) => {
               </p>
               <p>
                 At{" "}
-                <Link href="admissions.krmangalam.edu.in" className="underline">
+                <Link href="https://admissions.krmangalam.edu.in/" target="_blank" className="underline">
                   admissions.krmangalam.edu.in
                 </Link>{" "}
               </p>

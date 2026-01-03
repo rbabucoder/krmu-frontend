@@ -781,8 +781,18 @@
     text-align: left;
   }
 
-  .ugpgtable table tr thead tr th:first-child {
+  .ugpgtable div table thead tr th:first-child{
     width: 20%;
+  }
+
+  
+    .ugpgtable div table thead tr td ol,  .ugpgtable div table tbody tr td ol{
+      list-style: decimal !important;
+      padding: 10px;
+    }
+
+  .ugpgtable table tr thead tr th:first-child {
+    width: 40%;
     border-top-left-radius: 8px;
   }
   .ugpgtable table tr th:last-child {

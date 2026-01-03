@@ -18,6 +18,7 @@ const page = async () => {
       <FeeStructureSAARCHero
         heading={feeStructureSAARC?.heading}
         url={feeStructureSAARC?.saarc_url}
+        subHeading={feeStructureSAARC?.subheading}
       />
       <FeeStructureSearch />
       <FeeStructureSAARCTable feeStructSAARCTab={feeStructSAARCTab} />
