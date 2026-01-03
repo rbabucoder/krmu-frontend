@@ -9,9 +9,9 @@ const page = async () => {
 
   return (
     <>
-      <section className="pt-20 md:pt-[15%] pb-[10%] bg-[url(/placements/74-scaled.webp)]">
+      <section className="pt-20 md:pt-[15%] pb-[10%] bg-[url(/placements/placement_banner.webp)] common-overlay">
         <div className="max-w-[1664px] mx-auto w-full">
-          <h1 className="text-3xl md:text-5xl text-white text-center font-bold">
+          <h1 className="text-3xl md:text-5xl text-white text-center font-bold z-10 relative">
             {heading}
           </h1>
         </div>

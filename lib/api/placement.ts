@@ -1,5 +1,8 @@
 import { FETCH_STRAPI_URL } from "@/app/constant";
-import { PlacementOverviewResponse } from "@/lib/types/placements/placements-overview";
+import {
+  PlacementOverviewResponse,
+  RecruitersApiResponse,
+} from "@/lib/types/placements/placements-overview";
 
 export async function getPlacementOverview(): Promise<
   PlacementOverviewResponse["data"]
@@ -15,6 +18,23 @@ export async function getPlacementOverview(): Promise<
   if (!res.ok) throw new Error("Failed to fetch Meta info Data");
 
   const json: PlacementOverviewResponse = await res.json();
+  return json.data;
+}
+
+export async function getPlacementRecruitersData(): Promise<
+  RecruitersApiResponse["data"]
+> {
+  const res = await fetch(
+    `${FETCH_STRAPI_URL}/api/placement-recruiter?populate[recruiters_logo][fields][0]=url&populate[recruiters_logo][fields][1]=alternativeText`,
+    {
+      next: {
+        revalidate: 60,
+      },
+    }
+  );
+  if (!res.ok) throw new Error("Failed to fetch Placement Recruiters Data");
+
+  const json: RecruitersApiResponse = await res.json();
   return json.data;
 }
 

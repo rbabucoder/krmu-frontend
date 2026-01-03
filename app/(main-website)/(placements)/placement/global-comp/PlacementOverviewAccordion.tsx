@@ -15,45 +15,38 @@ const PlacementOverviewAccordion = () => {
         defaultValue="item-1"
       >
         <AccordionItem value="item-1">
-          <AccordionTrigger>Product Information</AccordionTrigger>
+          <AccordionTrigger>Training</AccordionTrigger>
           <AccordionContent className="flex flex-col gap-4 text-balance">
             <p>
-              Our flagship product combines cutting-edge technology with sleek
-              design. Built with premium materials, it offers unparalleled
-              performance and reliability.
-            </p>
-            <p>
-              Key features include advanced processing capabilities, and an
-              intuitive user interface designed for both beginners and experts.
+              The University has signed a Memorandum of Understanding (MoU) with
+              renowned companies and institutions in diverse sectors to increase
+              industry exposure. This helps the learners apply their practical
+              skills to resolve real-life problems in all aspects.
             </p>
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2">
-          <AccordionTrigger>Shipping Details</AccordionTrigger>
+          <AccordionTrigger>Projects</AccordionTrigger>
           <AccordionContent className="flex flex-col gap-4 text-balance">
             <p>
-              We offer worldwide shipping through trusted courier partners.
-              Standard delivery takes 3-5 business days, while express shipping
-              ensures delivery within 1-2 business days.
-            </p>
-            <p>
-              All orders are carefully packaged and fully insured. Track your
-              shipment in real-time through our dedicated tracking portal.
+              As a part of the Project-Based Learning (PBL) pedagogy, students
+              complete their research projects and apply their innovative
+              solutions to fix industry-specific problems. The practice ensures
+              project relevance while enabling students to identify the existing
+              and potential requirements of the industry.
             </p>
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3">
-          <AccordionTrigger>Return Policy</AccordionTrigger>
+          <AccordionTrigger>Corporate Life</AccordionTrigger>
           <AccordionContent className="flex flex-col gap-4 text-balance">
             <p>
-              We stand behind our products with a comprehensive 30-day return
-              policy. If you&apos;re not completely satisfied, simply return the
-              item in its original condition.
-            </p>
-            <p>
-              Our hassle-free return process includes free return shipping and
-              full refunds processed within 48 hours of receiving the returned
-              item.
+              Students undergo in-house training in corporate houses to
+              understand the company hierarchy and office discipline. Graduates
+              acquire hands-on experience of job responsibilities under the
+              supervision of their mentors. The prime objective of the training
+              is to make students industry-ready with apt theoretical and
+              technical skills.
             </p>
           </AccordionContent>
         </AccordionItem>

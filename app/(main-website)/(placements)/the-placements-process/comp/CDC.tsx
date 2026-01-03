@@ -1,6 +1,9 @@
 const CDC = () => {
   return (
     <section className="pb-[60px] px-4">
+      <h3 className="text-center text-4xl font-semibold mb-5">
+        CAREER DEVELOPMENT CENTER
+      </h3>
       <div className="max-w-[1664px] mx-auto w-full lg:flex gap-[60px]">
         <div className="lg:w-1/2 p-10 md:p-[60px] bg-[#efefef] rounded-[60px] text-black placementp mb-5 lg:mb-0">
           <h4 className="my-2.5 font-semibold text-xl">

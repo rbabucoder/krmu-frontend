@@ -252,7 +252,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                     <h5 className="text-lg text-[#051630] my-2.5 font-semibold">
                       {placementMenu?.placement?.heading}
                     </h5>
-                    <ul className="mb-5">
+                    <ul className="mb-5 plac_menu">
                       {placementMenu?.placement?.menulinks.map((menu) => {
                         return (
                           <li

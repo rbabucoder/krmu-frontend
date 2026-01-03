@@ -37,7 +37,27 @@ export type PlacementOverviewHighlight = {
   highlightbtn: Button;
 };
 
-
 export type PlacementOverview =
   | PlacementOverviewHero
   | PlacementOverviewHighlight;
+
+export interface RecruiterLogo {
+  id: number;
+  documentId: string;
+  url: string;
+  alternativeText: string | null;
+}
+
+export interface RecruitersData {
+  id: number;
+  documentId: string;
+  createdAt: string;
+  updatedAt: string;
+  publishedAt: string;
+  recruiters_logo: RecruiterLogo[];
+}
+
+export interface RecruitersApiResponse {
+  data: RecruitersData;
+  meta: Record<string, unknown>;
+}
