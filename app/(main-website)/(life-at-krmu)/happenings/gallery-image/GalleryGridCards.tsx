@@ -14,7 +14,8 @@ const GalleryGridCards = async () => {
                 <GalleryCard
                   key={item?.id}
                   title={item?.title}
-                  publishedAt={item?.publishedAt}
+                  // publishedAt={item?.publishedAt}
+                  date_text={item?.published_date_text}
                   slug={item?.slug}
                   imageGallery={item?.gallery_images}
                 />

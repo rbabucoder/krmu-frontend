@@ -12,7 +12,7 @@ const SportsFitness = ({ sportFitness }: Props) => {
         <h3 className="text-3xl md:text-5xl font-semibold text-center mb-5">
           {sportFitness?.heading}
         </h3>
-        <p className="mb-10">{sportFitness?.content}</p>
+        <p className="mb-10 text-center">{sportFitness?.content}</p>
         <div>
           <SportFitnessSlide data={sportFitness?.sport_fitness_imgs} />
         </div>

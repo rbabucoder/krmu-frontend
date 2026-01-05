@@ -12,6 +12,7 @@ const StateofTheArt = ({ stateOfTheArt }: Props) => {
         <h3 className="text-3xl md:text-5xl font-semibold text-center mb-5">
           {stateOfTheArt?.heading}
         </h3>
+        <p className="mb-10 text-center">{stateOfTheArt?.content}</p>
         <div>
           <StateOftheArtSlide data={stateOfTheArt?.state_of_the_art_imgs} />
         </div>

@@ -3,15 +3,13 @@ import { ChevronsRight } from "lucide-react";
 const ReadingRoom = () => {
   return (
     <div className="libtabcontent">
-      <p>Maintaining Accountability</p>
+      <p>Fostering Focus</p>
       <br />
-      <h2>Structured Late Fine System</h2>
+      <h2>Reading Room Facilities and Discipline</h2>
       <p>
-        The library implements a clear late fine policy to ensure the timely
-        return of books. The fine structure is designed to maintain discipline
-        among users, with different rates for the initial and extended late
-        periods, reflecting the library’s commitment to resource availability
-        for all.
+        The library offers a dedicated reading room with a focus on discipline
+        and silence, creating an environment conducive to deep study and
+        concentration.
       </p>
       <div className="flex flex-col lg:flex-row gap-5">
         <div className="w-full lg:w-1/2 p-5 bg-[#051630] text-white rounded-[20px]">

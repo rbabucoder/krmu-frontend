@@ -21,22 +21,30 @@ const YRCHero = () => {
           </p>
           <br />
           <p>
-            The Red Cross Society’s motto, “Promoting Health, Serving Humanity
-            ,” emphasizes humanitarian values, encouraging individuals to
-            prioritize the well-being of others above personal interests. The
-            society provides students with opportunities to enhance their
-            personalities and develop leadership and organizational skills while
-            serving society. The Red Cross Society aims to nurture compassion
-            and social responsibility through initiatives such as healthcare
-            camps, blood donation drives, and awareness campaigns.
+            The{" "}
+            <strong>
+              Red Cross Society’s motto, “Promoting Health, Serving Humanity ,”
+              emphasizes humanitarian values, encouraging individuals to
+              prioritize the well-being of others above personal interests. The
+              society
+            </strong>{" "}
+            provides students with opportunities to enhance their personalities
+            and develop leadership and organizational skills while serving
+            society. The Red Cross Society aims to nurture compassion and social
+            responsibility through initiatives such as healthcare camps, blood
+            donation drives, and awareness campaigns.
           </p>
           <br />
           <p>
-            The Red Cross Society’s symbol, the Red Cross, on a white
-            background, is a globally recognized emblem of protection and aid.
-            It represents hope, care, and support in times of crisis, much like
-            the Roth wheel of the Konark Sun Temple, which symbolizes the
-            continuous cycle of life and the unending spirit of service.
+            The{" "}
+            <strong>
+              Red Cross Society’s symbol, the Red Cross, on a white background,
+              is a globally recognized emblem of protection and aid. It
+              represents hope, care, and support in times of crisis, much like
+              the Roth
+            </strong>{" "}
+            wheel of the Konark Sun Temple, which symbolizes the continuous
+            cycle of life and the unending spirit of service.
           </p>
         </div>
         <div className="lg:w-1/3">

@@ -20,6 +20,7 @@ const DSWMessage = () => {
               height={234}
               alt="Anjana Singh DSW"
             />
+            <h4 className="text-white text-[15px] mt-2.5">Dr. Anjana Singh, Dean Student Welfare</h4>
           </div>
           <div className="lg:w-4/5">
             <p>

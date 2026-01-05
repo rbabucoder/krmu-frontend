@@ -23,11 +23,15 @@ const OverviewHero = ({ overviewVideo }: Props) => {
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mt-4 z-10">
           We Shape Futures
         </h1>
-     
       </div>
-         <Link href="#lifeBeyond" className="z-10 absolute bottom-5 left-[50%]">
+      <Link href="#lifeBeyond" className="z-10 absolute bottom-5 left-[50%]">
+        <div className="relative">
           <Image src="/rotate-360.svg" width={100} height={100} alt="Scroll" />
-        </Link>
+          <div className="absolute top-[50%] left-[50%] z-10 translate-x-[-50%] translate-y-[-50%]">
+            <Image src="/arrow.svg" width={180} height={180} alt="Scroll" className="h-[100px] w-[100px] z-10 relative object-cover" />
+          </div>
+        </div>
+      </Link>
     </section>
   );
 };

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const YRCContactUs = () => {
@@ -11,9 +12,9 @@ const YRCContactUs = () => {
           University awaits you.
         </p>
         <br />
-        <p>Email: yrc@krmangalam.edu.in</p>
+        <p>Email: <Link href="mailto:yrc@krmangalam.edu.in" className="hover:text-blue-600">yrc@krmangalam.edu.in</Link></p>
         <br />
-        <p>monika.yadav@krmangalam.edu.in</p>
+        <p><Link href="mailto:monika.yadav@krmangalam.edu.in" className="hover:text-blue-600">monika.yadav@krmangalam.edu.in</Link></p>
         <br />
         <p>
           <strong>

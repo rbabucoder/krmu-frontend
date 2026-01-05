@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="break-all">
+    <div className="break-all lg:break-normal">
       <section className="pt-[140px] md:pt-[10%] pb-[60px] bg-[url(/krmu-committee/bg-banner.webp)] px-4">
         <div className="max-w-[1270px] mx-auto w-full text-white text-center">
           <h1 className="mb-5 text-3xl sm:text-4xl md:text-[64px] font-semibold">
@@ -27,6 +27,7 @@ const Hero = () => {
               condone any constituent of the higher educational institutions to
               discriminate such a student or group of such students”.
             </p>
+            <br />
             <p>
               The Officials/faculty members should desist from any act of
               discrimination against SC/ST students on grounds of their social
@@ -36,7 +37,7 @@ const Hero = () => {
             </p>
           </div>
           <div className="w-full lg:w-1/2 bg-[#343537] text-white rounded-[20px] p-5 background-transparent">
-            <h3 className="mb-5 text-2xl">Anti-Discrimination Cell</h3>
+            <h3 className="mb-5 text-2xl">KRMU Anti-Discrimination Cell shall consist of the following members:</h3>
             <div className="table-1 transparent-table committee-table ">
               <table>
                 <thead>
@@ -256,6 +257,7 @@ const Hero = () => {
               instances of sexual harassment at the workplace, which has now
               been codified in the POSH Act.
             </p>
+            <br />
             <p>
               Under the POSH Act, an employer is legally required to comply with
               certain statutory requirements. One of these is the constitution
@@ -267,7 +269,7 @@ const Hero = () => {
             </p>
           </div>
           <div className="w-full lg:w-1/2 bg-[#343537] text-white rounded-[20px] p-5 background-transparent">
-            <h3 className="mb-5 text-2xl">Anti-Discrimination Cell</h3>
+            <h3 className="mb-5 text-2xl">KRMU Internal Complaints Committee (ICC) Committee shall consist of the following members:</h3>
             <div className="table-1 transparent-table committee-table">
               {" "}
               <table width="100%">
@@ -620,7 +622,7 @@ const Hero = () => {
               <Link
                 href="https://www.krmangalam.edu.in/pdfs/Committee-Grievance-Redressal-2023.pdf"
                 target="_blank"
-                className="py-[13px] px-[29px] text-base text-white bg-[#0060aa] rounded-[4px] w-fit leading-[1] font-medium flex gap-2.5 items-center"
+                className="py-[13px] px-[29px] text-base text-white bg-[#0060aa] rounded-[4px] w-fit leading-[1] font-medium flex gap-2.5 items-center mb-5"
               >
                 <FileText color="#fff" />
                 Committee Grievance Redressal

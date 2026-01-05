@@ -21,10 +21,13 @@ const CareerJobListings = () => {
 
     const controller = new AbortController();
     abortRef.current = controller;
+    const url = `${KRMUWordUrl}/careers2/wp-json/wp/v2/awsm_job_openings?page=1&per_page=60&_fields=id,slug,title.rendered&search=${encodeURIComponent(
+      text
+    )}&search_columns[]=post_title`;
 
-    const url = `${KRMUWordUrl}/careers2/wp-json/wp/v2/awsm_job_openings?page=1&per_page=60&_fields=id,slug,title.rendered${
-      text ? `&search=${text}` : ""
-    }`;
+    // const url = `${KRMUWordUrl}/careers2/wp-json/wp/v2/awsm_job_openings?page=1&per_page=60&_fields=id,slug,title.rendered${
+    //   text ? `&search=${text}` : ""
+    // }`;
 
     try {
       setLoading(true);

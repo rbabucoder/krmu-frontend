@@ -7,12 +7,18 @@ const LifeKRMUPeek = () => {
       <div className="flex flex-col lg:flex-row max-w-[1664px] mx-auto w-full">
         <div className="w-full lg:w-1/2">
           <h4 className="text-3xl md:text-5xl font-semibold leading-[1.3]">
-            Unveiling the Dynamic
-            <br className="hidden md:block" /> World of K.R. Mangalam
-            <br className="hidden md:block" /> University’s Campus
-            <br className="hidden md:block" />
-            Facilities
+            A Peek into the Vibrant Student
+            <br className="hidden md:block" /> Experience at K.R. Mangalam
+            <br className="hidden md:block" /> University
           </h4>
+          <p className="mt-2.5">
+            K.R. Mangalam University encourages students to participate in
+            extracurricular activities for overall growth and development. The
+            University encourages student-centric bodies, cultural clubs, and
+            sports cells that cater to diverse needs and interests. These
+            platforms provide opportunities for students to explore their
+            passion, develop leadership skills, and foster a sense of community.
+          </p>
         </div>
         <div className="w-full lg:w-1/2 mt-5 lg:mt-0">
           <LifePeekSlide />

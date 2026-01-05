@@ -16,6 +16,7 @@ const ModernClassroom = ({modernClassroom}: Props) => {
         <h3 className="text-3xl md:text-5xl font-semibold text-center mb-5">
           {modernClassroom?.heading}
         </h3>
+        <p className="mb-10 text-center">{modernClassroom?.content}</p>
         <div>
           <ModernClassSlide data={modernClassroom?.modern_classrooms_imgs} />
         </div>

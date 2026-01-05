@@ -28,6 +28,14 @@ const CommunityConnectNSSJoin = () => {
                 <Check color="#ffffff" strokeWidth={3} />
               </div>
               <span>
+                The candidate should not be a member of any other club/ society.
+              </span>
+            </li>
+            <li className="flex items-center gap-3 py-1">
+              <div className="bg-black rounded-full flex items-center justify-center p-1 w-[27px] h-[27px] ">
+                <Check color="#ffffff" strokeWidth={3} />
+              </div>
+              <span>
                 Students are eligible to be part of NSS for a maximum of two
                 years.
               </span>
@@ -102,7 +110,7 @@ const CommunityConnectNSSJoin = () => {
               </div>
               <span>
                 On being satisfied that all requirements as per NSS norms have
-                been met, the certificate can be issued.    
+                been met, the certificate can be issued.
               </span>
             </li>
           </ul>

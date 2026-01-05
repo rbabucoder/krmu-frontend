@@ -4,12 +4,12 @@ const Suggestion = () => {
   return (
     <div className="max-w-[1664px] mx-auto w-full libtabcontent flex flex-col lg:flex-row items-center gap-10">
       <div className="w-full lg:w-1/2">
-        <p>Ensuring Accuracy</p>
-        <h2>Prompt Correction Services</h2>
+        <p>Valuing Feedback</p>
+        <h2>Library Complaint and Suggestion System</h2>
         <p>
-          The library provides an online platform for users to submit
-          corrections or changes in their details, ensuring that communication
-          and services remain efficient and personalized.
+          The library encourages users to submit complaints and suggestions
+          online, demonstrating its commitment to continuous improvement and
+          user satisfaction.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 mt-5">
           <div className="relative libcountcard w-full">

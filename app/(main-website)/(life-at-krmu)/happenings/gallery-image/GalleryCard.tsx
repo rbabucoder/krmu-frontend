@@ -5,12 +5,12 @@ import Link from "next/link";
 
 type Props = {
   title: string;
-  publishedAt: string;
+  date_text: string;
   slug: string;
   imageGallery: StrapiMedia[];
 };
 
-const GalleryCard = ({ title, publishedAt, slug, imageGallery }: Props) => {
+const GalleryCard = ({ title, date_text, slug, imageGallery }: Props) => {
   const featuredImage = imageGallery[0]?.url;
   return (
     <div
@@ -30,12 +30,12 @@ const GalleryCard = ({ title, publishedAt, slug, imageGallery }: Props) => {
 
       <div className="pt-5 pl-[30px]">
         <span className="text-xs text-[#898989]">
-          Published On:{" "}
-          {new Date(publishedAt).toLocaleDateString("en-US", {
+          Published On: {date_text}
+          {/* {new Date(publishedAt).toLocaleDateString("en-US", {
             year: "numeric",
             month: "long",
             day: "numeric",
-          })}
+          })} */}
         </span>
         <div className="text-white mt-2.5 mb-[15px] text-xl font-semibold">
           <h2>{title}</h2>

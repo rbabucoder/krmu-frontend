@@ -22,7 +22,9 @@ export interface PhotoGallery {
   title: string;
   slug: string;
   publishedAt: string;
+  published_date_text: string;
   gallery_images: StrapiMedia[];
+  
 }
 
 export interface Meta {

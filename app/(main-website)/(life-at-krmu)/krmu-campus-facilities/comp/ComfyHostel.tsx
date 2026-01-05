@@ -12,7 +12,7 @@ const ComfyHostel = ({comfyClassroom}: Props) => {
         <h3 className="text-3xl md:text-5xl font-semibold text-center mb-5">
           {comfyClassroom?.heading}
         </h3>
-        <p className="my-5">{comfyClassroom?.content}</p>
+        <p className="my-5 text-center">{comfyClassroom?.content}</p>
         <div>
           <ComfyHostelSlide data={comfyClassroom?.comfy_slide_imgs} />
         </div>

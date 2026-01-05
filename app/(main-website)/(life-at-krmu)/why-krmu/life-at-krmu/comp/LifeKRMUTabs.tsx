@@ -33,9 +33,9 @@ export default function LifeKRMUTabs() {
   const [active, setActive] = useState("research");
 
   return (
-    <section className="relative p-[30px] bg-[url('/life-at-krmu/facilities.webp')] bg-cover bg-no-repeat">
+    <section className="relative p-[30px] bg-[url('/life-at-krmu/facilities.webp')]  bg-cover bg-no-repeat">
       {/* dark overlay */}
-      <div className="absolute inset-0 bg-black/60"></div>
+      {/* <div className="absolute inset-0 bg-black/60"></div> */}
 
       {/* MAIN WRAPPER */}
       <div className="relative max-w-[1664px] mx-auto w-full flex items-center flex-col-reverse md:flex-row gap-10">
@@ -53,8 +53,8 @@ export default function LifeKRMUTabs() {
             {tabs.map((t) => (
               <li
                 key={t.id}
-                className={`relative pl-10 cursor-pointer text-white text-[22px] font-medium transition-all 
-                ${active === t.id ? "font-bold" : "opacity-70"}`}
+                className={`relative pl-10 cursor-pointer  text-[22px] font-medium transition-all  text-black
+                ${active === t.id ? "font-bold text-white" : "opacity-70"}`}
                 onClick={() => setActive(t.id)}
               >
                 <span

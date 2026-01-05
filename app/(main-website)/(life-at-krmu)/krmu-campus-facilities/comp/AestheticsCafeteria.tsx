@@ -13,7 +13,7 @@ const AestheticsCafeteria = ({aestheticsCafeteria}: Props) => {
         <h3 className="text-3xl md:text-5xl font-semibold text-center mb-5">
           {aestheticsCafeteria?.heading}
         </h3>
-        <p className="mb-10">{aestheticsCafeteria?.content}</p>
+        <p className="mb-10 text-center">{aestheticsCafeteria?.content}</p>
         <div>
           <AestheticsCafeteriaSlide data={aestheticsCafeteria?.aethetics_cafeteria_imgs} />
         </div>

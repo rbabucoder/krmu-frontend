@@ -12,6 +12,7 @@ const ResearchSupport = ({researchSupport}: Props) => {
         <h3 className="text-3xl md:text-5xl font-semibold text-center mb-5">
           {researchSupport?.heading}
         </h3>
+        <p className="mb-10 text-center">{researchSupport?.content}</p>
         <div>
           <ResearchSupportSlide data={researchSupport?.research_support_imgs} />
         </div>

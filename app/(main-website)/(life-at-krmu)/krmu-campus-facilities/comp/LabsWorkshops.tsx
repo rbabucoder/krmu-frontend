@@ -12,7 +12,7 @@ const LabsWorkshops = ({ labsWorkshop }: Props) => {
         <h3 className="text-3xl md:text-5xl font-semibold text-center mb-5">
           {labsWorkshop?.heading}
         </h3>
-        <p className="mb-10">{labsWorkshop?.content}</p>
+        <p className="mb-10 text-center">{labsWorkshop?.content}</p>
         <div>
           <LabsWorkshopSlide data={labsWorkshop?.lab_workshop_imgs} />
         </div>

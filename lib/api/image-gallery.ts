@@ -30,7 +30,7 @@ export async function getImageGalleryPageData() {
 
 export async function getAllImageUsingMeta() {
   const res = await fetch(
-    `${FETCH_STRAPI_URL}/api/photo-galleries?sort[0]=title:asc&populate[gallery_images][populate]=*&fields[0]=title&fields[1]=slug&fields[2]=publishedAt&pagination[pageSize]=50&pagination[page]=1`,
+    `${FETCH_STRAPI_URL}/api/photo-galleries?sort[0]=title:asc&populate[gallery_images][populate]=*&fields[0]=title&fields[1]=slug&fields[2]=publishedAt&fields[3]=published_date_text&pagination[pageSize]=50&pagination[page]=1`,
     {
       next: {
         revalidate: 60,

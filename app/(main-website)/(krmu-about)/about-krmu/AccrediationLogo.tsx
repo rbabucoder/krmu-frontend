@@ -7,6 +7,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
@@ -48,6 +50,8 @@ const AccrediationLogo: React.FC<ACCREDIATIONLOGOPROP> = ({ logosData }) => {
               );
             })}
         </CarouselContent>
+        <CarouselPrevious className="bg-black text-white rounded-none left-0" />
+        <CarouselNext className="bg-black text-white rounded-none right-0" />
       </Carousel>
     </>
   );
