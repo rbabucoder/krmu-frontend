@@ -7,8 +7,7 @@ import Script from "next/script";
 import NoPaperFormProvider from "@/lib/constants/NoPaperFormProvider";
 import HeaderWrapper from "./components/Header/HeaderWrapper";
 import Footer from "./components/Footer/Footer";
-import Link from "next/link";
-import NpfPopup from "./components/NpfPopup";
+
 // import EnquirePopup from "./components/EnquirePopup";
 
 // import NpfPopupButton from "./components/NpfPopupButton";
@@ -62,7 +61,6 @@ export default function RootLayout({
 
         {/* <NpfPopupButton /> */}
         {/* <EnquirePopup /> */}
-      
       </body>
     </html>
   );

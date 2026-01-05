@@ -3,7 +3,7 @@ import { getFooter } from "@/lib/api/footer";
 import { getPageAssets } from "@/lib/api/global-setting";
 import Image from "next/image";
 import Link from "next/link";
-import NpfPopup from "../NpfPopup";
+
 
 const Footer = async () => {
   const footerData = await getFooter();
@@ -18,12 +18,12 @@ const Footer = async () => {
 
   return (
     <>
-      <NpfPopup
+      {/* <NpfPopup
         formId="d63cf9c4d3104c39f3ac28164701a69c"
         btnClass={`bg-[#f00] text-white border border-none py-[6px] px-[15px] fixed top-[40%] right-[-42px] rotate-90 rounded-sm h-[27px] z-10 npfWidget-d63cf9c4d3104c39f3ac28164701a69c`}
         btnText="Enquire Now"
         showIcon={false}
-      />
+      /> */}
 
       <Link
         href="/campus-life/virtual-tour"

@@ -13,3 +13,5 @@ export const beld2026Id = "ca695b591a492af62592ab5b2b32cbc5";
 export const bpt2026Id = "8550621c77624a94239bba2342f9102e";
 export const bca2026Id = "2253054fedb9d73390dce9b7b5084d23";
 export const jmc2026Id = "acdc7065c22d12fc12a12848d5db1825";
+export const ba2026Id = "a6656f4837ac12a9cf6385db5fa3ccc9";
+export const bsc2026Id = "38eabdaacb7f536abf52165ec547e79c";

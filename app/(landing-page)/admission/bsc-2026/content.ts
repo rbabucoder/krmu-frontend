@@ -22,12 +22,12 @@ export const Hero: HeroContent = {
       ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
-       Bachelor of <br /> Architecture
+       B.Sc.
       </span>
       <br />
       PROGRAMMES 2026
     `,
-  desc: `Start Building Your Future in Business and Management`,
+  desc: `Begin a focused and future-oriented academic journey with B.Sc. programmes designed to strengthen scientific thinking, problem-solving, and practical skills. Choose from specialised disciplines aligned with your interests, gain hands-on learning exposure, and prepare for confident, career-ready roles across emerging and established industries. `,
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -43,14 +43,14 @@ export const heroMarqueeData: HeroMarqueeSection = {
 export const Counters: CounterItem[] = [
   {
     title: "7.25 LPA",
-    subtitle: "Highest Package",
+    subtitle: "Average Package",
   },
   {
     title: "800+",
-    subtitle: "Top Recruiters",
+    subtitle: "visiting recruiters",
   },
   {
-    title: "Up To ₹21 Cr",
+    title: "₹27Cr",
     subtitle: "Worth of Scholarships",
   },
   {
@@ -94,41 +94,37 @@ export const prominentRecruiters: ProminentRecruit[] = [
 ];
 
 export const whyKRM: WhyKRMSection = {
-  heading: "What makes KRMU the Best option for the B.Arch Course?",
-  subheading: "From Drawing Design Sketches to Building Skyscrapers",
-  content: `Developed by the expert professionals in the field, K.R. Mangalam University's five-year B.Arch program offers architecture education through practical projects, immersive sessions, insightful workshops, and valuable insights into the intricacies of architectural planning. The university's multidisciplinary strategy aims to ensure that the holistic development of its students, who will be influencing the architectural world in the future, remains a top priority.`,
+  heading: "Why Choose B.Sc. Programmes at KRMU?",
+  subheading: "Build a Career Grounded in Knowledge and Skills ",
+  content: `K.R. Mangalam University offers thoughtfully designed B.Sc. programmes that focus on strong scientific fundamentals, analytical thinking, and practical application. With expert faculty, hands-on learning, interdisciplinary exposure, and structured career support, students are prepared for industry roles, research opportunities, and higher education. `,
   imgUrl: `/landingpage/common/whykrmtest.png`,
   whyKrmCards: [
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Emphasis on Hands-on-learning, Practical experience with sophisticated software for advanced modelling and construction preparation.`,
+      content: `Interdisciplinary, Research-Driven, updated according to NEP guidelines `,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Portfolio Development Guidance for Internship and Job Prospects in Architectural Firms, Government Organisations, etc.`,
+      content: `Prolific Researchers, Visionary, adaptable `,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Participation in live projects and real-world assignments.`,
+      content: `Problem-Based Learning, Flipped Classroom, Peer Teaching `,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `100% Placement and Internship Assistance.`,
-    },
-    {
-      imgUrl: "/landingpage/common/dummy.png",
-      content: `Global Exposure in the form of a paid visit to 2 weeks of summer school at a Prestigious European university.`,
+      content: `Well-equipped and organized labs, Cutting-edge research facilities`,
     },
   ],
 };
 
 export const industryExperts: IndustryExpertsSection = {
-  eyebrow: "Why KR Mangalam PhD?",
-  heading: `Learn from <br /> Leaders @ KRMU!
+  eyebrow: "What Makes B.A. Programmes at K.R.M.U Stand Out? ",
+  heading: `Learn from <br /> Industry Expert
 `,
-  description: `K.R. Mangalam University takes pride in collaborating with industry leaders and skill professionals who offer unparalleled hands-on learning experiences to students.`,
+  description: `The B.Sc. programmes at KRMU are enriched by academic and professional inputs from experienced knowledge partners. `,
   cta: {
-    label: "Apply for B.Tech 2026",
+    label: "B.A. Programmes: 2026-27",
     href: "#",
   },
   cards: [
@@ -161,28 +157,91 @@ export const industryExperts: IndustryExpertsSection = {
 };
 
 export const specialisationData: SpecialisationSection = {
-  subheading: ``,
-  heading: `KRMU’s B.Arch Programme`,
+  subheading: `Choose your specialisations based on your interests and career goals.`,
+  heading: `Our B.Sc. programmes & specialisations `,
   specilisationCard: [
     {
       imgUrl: "/landingpage/common/dummy.png",
-      title: `Bachelor of Architecture`,
-      desc: `The KRMU's Bachelor of Architecture (B.Arch) equips the students with all the necessary skills and theoretical knowledge they require to plan, design and construct structures, buildings and various functional spaces by integrating artistic aesthetics and technology in a seamless manner. This degree aims to cultivate both analytical and creative thinking, equipping students to navigate modern-world challenges while building successful careers.`,
+      title: `B.Sc. (Hons. / Hons. with Research ) Physics `,
+      desc: `A programme that builds strong foundations in physics while introducing advanced theories and research-based learning. With modern laboratories and cutting-edge technology, students gain hands-on experience and develop analytical skills for deeper exploration in physics.`,
       extraInfos: [
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Duration:",
-          desc: `5 Years`,
+          desc: `4 Years`,
         },
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Eligibility",
-          desc: `Candidates must have passed the 10+2 or equivalent examination with Physics and Mathematics as compulsory subjects, along with one of the following: Chemistry, Biology, a Technical Vocational subject, Computer Science, Information Technology, Informatics Practices, Engineering Graphics, or Business Studies, with at least 45% aggregate marks. Alternatively, candidates may have passed the 10+3 Diploma Examination with Mathematics as a compulsory subject and at least 45% aggregate marks.`,
+          desc: `Passed 10+2 or an equivalent examination from a recognised board or university with PCB or PCM and a minimum of 50% aggregate marks.`,
+        },
+      ],
+    },
+    {
+      imgUrl: "/landingpage/common/dummy.png",
+      title: `B.Sc. (Hons. / Hons. with Research) Chemistry `,
+      desc: `    The programme blends strong theoretical foundations with practical and research-based learning in Chemistry. It builds advanced subject knowledge, research skills, and applied expertise, while offering hands-on training and internship exposure to support higher studies and research-driven careers. `,
+      extraInfos: [
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Duration:",
+          desc: `3 Years`,
         },
         {
           iconUrl: "/landingpage/common/move-right.svg",
-          title: "Annual Fee",
-          desc: `Rs 1,90,000`,
+          title: "Eligibility",
+          desc: `Passed 10+2 or an equivalent examination from a recognised board or university with PCB or PCM, securing at least 50% aggregate marks. `,
+        },
+      ],
+    },
+    {
+      imgUrl: "/landingpage/common/dummy.png",
+      title: `B.Sc. (Hons.) Forensic Science `,
+      desc: `    The programme prepares students for investigative careers through hands-on training, scientific analysis, and practical exposure. It builds strong foundations in forensic techniques, crime scene investigation, and laboratory skills aligned with modern criminal justice needs. `,
+      extraInfos: [
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Duration:",
+          desc: `3 Years`,
+        },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Eligibility",
+          desc: `Passed 10+2 or an equivalent examination in Science (Physics, Chemistry, Biology, or Mathematics) from a recognised board or university with at least 50% aggregate marks. `,
+        },
+      ],
+    },
+    {
+      imgUrl: "/landingpage/common/dummy.png",
+      title: `B.Sc. (Hons. / Hons. with Research) Forensic Science`,
+      desc: `    The programme blends theory with hands-on training, equipping students with practical skills in crime scene investigation, evidence handling, and forensic analysis through advanced laboratory exposure. `,
+      extraInfos: [
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Duration:",
+          desc: `4 Years`,
+        },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Eligibility",
+          desc: `    Passed 10+2 or an equivalent examination from a recognized board or university with Physics, Chemistry, Biology, or Mathematics as subjects, securing a minimum of 50% aggregate marks. `,
+        },
+      ],
+    },
+    {
+      imgUrl: "/landingpage/common/dummy.png",
+      title: `Integrated/Dual Degree B.Sc.-M.Sc. (Forensic Science) `,
+      desc: `    The programme offers strong theoretical and practical training in forensic science, preparing students for crime scene analysis and careers in investigation agencies, legal firms, and forensic laboratories through industry-relevant coursework and field-based learning. `,
+      extraInfos: [
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Duration:",
+          desc: `3 Years`,
+        },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Eligibility",
+          desc: `Passed 10+2 or equivalent examination from any recognized board/university in any stream with minimum 50% aggregate Marks.`,
         },
       ],
     },
@@ -196,17 +255,17 @@ export const opportunityData: OpportunitySection = {
     width: 300,
     height: 400,
   },
-  heading: "Learn From Industry Experts",
+  heading: "Learn From Knowledge Partners ",
   highlight: "Opportunity That Transforms",
   cta: {
-    label: "Apply for B.Arch. Programme",
+    label: "Apply for B.Sc. Programmes 2026",
     href: "#",
   },
 };
 
 export const testimonialsData: TestimonialsSection = {
-  subheading: "Students’ Testimonials",
-  heading: `Still in Doubt? <br /> See What Our Students Say About Us!`,
+  subheading: "Our Testimonials",
+  heading: `Why do our schoolers love and trust K.R. Mangalam University?`,
   testimonials: [
     {
       image: "/landingpage/common/dummy.png",
@@ -293,11 +352,11 @@ export const scholarResearchImpactData: ScholarResearchImpactSection = {
 };
 
 export const comeToLifeData: ComeToLifeSection = {
-  heading: `Modern Facilities & State-of-the Art Infrastructure`,
-  description: `The conceptual knowledge is imparted to students in modern smart classrooms that are equipped with interactive whiteboards and seamless tech integration. The availability of the latest software systems and powerful PCs enables students to develop skills necessary for advanced modelling and construction preparation`,
+  heading: `World-Class Facilities at KRMU for B.Sc. Programmes `,
+  description: `K.R. Mangalam University provides a dynamic campus designed to support academic excellence and holistic development. Advanced classrooms, high-speed Wi-Fi, modern laboratories, a central library, hostels, and recreational spaces together create a balanced and enriching learning environment. `,
   footerText: ``,
   cta: {
-    label: "Apply for B.Arch. Programme ",
+    label: "Apply for B.Sc. Programmes 2026–27",
     href: "#",
   },
   slides: [
@@ -348,35 +407,60 @@ export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
 
 export const faqSectionData: FAQSectionData = {
   eyebrow: "(FAQs)",
-  heading: "Frequently Asked Questions",
+  heading: "Got Questions? We've Got Answers ",
   description:
     "K.R. Mangalam University offers Ph.D. programmes in a wide array of fields, encouraging cross-disciplinary exploration and innovation.",
   faqs: [
     {
       id: "item-1",
-      question: "What is the role of workshops and guest lectures in the B.Arch. curriculum?",
-      answer: `They provide practical insights, exposure to industry trends, and valuable networking opportunities with leading architects and designers.`,
+      question:
+        "What is B.Sc. (Hons. / Hons. with Research)?",
+      answer: `It is an undergraduate science programme offering in-depth subject knowledge, with the research track including advanced coursework and a research project. `,
     },
     {
       id: "item-2",
-      question: "What skills will one develop in a B.Arch. programme?",
-      answer: `You will cultivate creative design solutions, technical competence in construction and modelling, and effective communication of your ideas through visual, oral, and written means.`,
+      question: "What is the duration of the programme?",
+      answer: ` The programme is typically completed in four years. `,
     },
     {
       id: "item-3",
-      question:
-        "Does KRMU provide hostel accommodation?",
-      answer: `Yes, KRMU provides separate hostels for boys and girls with modern amenities and 24/7 security.`,
+      question: "What are the career prospects after this course?",
+      answer: `Graduates can work in research labs, industry roles, analytics, education, and applied science sectors.`,
     },
     {
       id: "item-4",
-      question: "What kind of projects are involved in the B.Arch. programme?",
-      answer: `The programme includes understanding elements of designing, being able to design from a single unit to complex projects such as mixed-use buildings, commercial complexes, institutional buildings, resorts, hospitals, housing and also large-scale urban design projects.`,
+      question: "Can I pursue higher education after this programme? ",
+      answer: `Yes, students can opt for M.Sc., PhD, or other specialised postgraduate programmes.`,
     },
     {
       id: "item-5",
-      question: "Are there internship opportunities in the B.Arch. programme?",
-      answer: `Yes, the strong industry collaborations of K.R. Mangalam University ensure robust internship and placement opportunities with reputed architectural firms and design studios.`,
+      question: "What kind of internships are offered? ",
+      answer: `Students gain internships with research organisations, industry partners, and laboratories.`,
+    },
+    {
+      id: "item-6",
+      question: "Are there opportunities for government jobs? ",
+      answer: `Yes, graduates are eligible for various government and public sector roles. `,
+    },
+    {
+      id: "item-7",
+      question: "Does the university provide placement assistance?  ",
+      answer: `Yes, dedicated placement support helps students prepare for employment opportunities.`,
+    },
+    {
+      id: "item-8",
+      question: "What is the eligibility for admission?  ",
+      answer: `Candidates must have passed 10+2 in the Science stream from a recognised board. `,
+    },
+    {
+      id: "item-9",
+      question: "Does the programme offer international exposure?",
+      answer: `Yes, students may access global collaborations, exchange programmes, and study exposure. `,
+    },
+    {
+      id: "item-10",
+      question: "Are scholarships available for B.Sc. students? ",
+      answer: `Yes, the university offers merit-based and need-based scholarships.`,
     },
   ],
 };
