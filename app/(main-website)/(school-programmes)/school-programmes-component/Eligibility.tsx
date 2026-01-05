@@ -6,6 +6,7 @@ import { EligibilityItem } from "@/lib/types/school-programme";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
+import NpfPopup from "../../components/NpfPopup";
 
 type Props = {
   elgibilities: EligibilityItem[];
@@ -15,7 +16,7 @@ type Props = {
 
 const Eligibility = ({ elgibilities, mobherobtn, formId }: Props) => {
   const [expanded, setExpanded] = useState(false);
-  const btnRef = useRef<HTMLButtonElement>(null);
+  // const btnRef = useRef<HTMLButtonElement>(null);
 
   // limit characters for h2
   const maxChars = 50;
@@ -23,27 +24,27 @@ const Eligibility = ({ elgibilities, mobherobtn, formId }: Props) => {
   const isLong = longTitle.length > maxChars;
   const displayTitle = expanded ? longTitle : longTitle.slice(0, maxChars);
 
-  useEffect(() => {
-    if (!formId || !btnRef.current) return;
+  // useEffect(() => {
+  //   if (!formId || !btnRef.current) return;
 
-    loadNpfScript()
-      .then(() => {
-        // @ts-expect-error - test
-        new NpfWidgetsInit({
-          widgetId: formId,
-          baseurl: "widgets.nopaperforms.com",
-          formTitle: "Apply Now",
-          titleColor: "#FF0033",
-          backgroundColor: "#ddd",
-          iframeHeight: "500px",
-          buttonTextColor: "#FFF",
-          target: btnRef.current,
-        });
-      })
-      .catch((err) => {
-        console.error("Failed to load NPF script:", err);
-      });
-  }, [formId, mobherobtn?.buttontext]);
+  //   loadNpfScript()
+  //     .then(() => {
+  //       // @ts-expect-error - test
+  //       new NpfWidgetsInit({
+  //         widgetId: formId,
+  //         baseurl: "widgets.nopaperforms.com",
+  //         formTitle: "Apply Now",
+  //         titleColor: "#FF0033",
+  //         backgroundColor: "#ddd",
+  //         iframeHeight: "500px",
+  //         buttonTextColor: "#FFF",
+  //         target: btnRef.current,
+  //       });
+  //     })
+  //     .catch((err) => {
+  //       console.error("Failed to load NPF script:", err);
+  //     });
+  // }, [formId, mobherobtn?.buttontext]);
 
   return (
     <>
@@ -119,6 +120,21 @@ const Eligibility = ({ elgibilities, mobherobtn, formId }: Props) => {
         )} */}
 
         {formId ? (
+          <NpfPopup
+            formId={formId}
+            btnClass={`bg-[#0a41a1] py-2.5 px-[30px] cursor-pointer flex items-center justify-around sm:hidden text-white rounded-[10px] w-fit mt-5 ${mobherobtn?.buttonclass}`}
+            btnText={`${mobherobtn?.buttontext || ""}`}
+          />
+        ) : (
+          <Link
+            href={"#"}
+            className={`bg-[#0a41a1] py-2.5 px-[30px] cursor-pointer flex items-center justify-around sm:hidden text-white rounded-[10px] w-fit mt-5 ${mobherobtn?.buttonclass}`}
+          >
+            {mobherobtn?.buttontext} <ArrowRight />
+          </Link>
+        )}
+
+        {/* {formId ? (
           <button
             ref={btnRef}
             className={`bg-[#0a41a1] py-2.5 px-[30px] cursor-pointer flex items-center justify-around sm:hidden text-white rounded-[10px] w-fit mt-5 ${mobherobtn?.buttonclass}`}
@@ -132,7 +148,7 @@ const Eligibility = ({ elgibilities, mobherobtn, formId }: Props) => {
           >
             {mobherobtn?.buttontext} <ArrowRight />
           </Link>
-        )}
+        )} */}
       </div>
     </>
   );

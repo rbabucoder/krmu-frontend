@@ -3,6 +3,7 @@ import { getFooter } from "@/lib/api/footer";
 import { getPageAssets } from "@/lib/api/global-setting";
 import Image from "next/image";
 import Link from "next/link";
+import NpfPopup from "../NpfPopup";
 
 const Footer = async () => {
   const footerData = await getFooter();
@@ -17,6 +18,19 @@ const Footer = async () => {
 
   return (
     <>
+      <NpfPopup
+        formId="d63cf9c4d3104c39f3ac28164701a69c"
+        btnClass={`bg-[#f00] text-white border border-none py-[6px] px-[15px] fixed top-[40%] right-[-42px] rotate-90 rounded-sm h-[27px] z-10 npfWidget-d63cf9c4d3104c39f3ac28164701a69c`}
+        btnText="Enquire Now"
+        showIcon={false}
+      />
+
+      <Link
+        href="/campus-life/virtual-tour"
+        className="bg-[#f00] text-white border border-none py-[6px] px-[15px] fixed top-[70%] right-[-57px] rotate-90 rounded-sm h-[27px] z-10"
+      >
+        360° Virtual Tour
+      </Link>
       <section className="px-5 py-12 xl:p-[50px] bg-[#051630]">
         <div className="grid grid-cols-1 md:grid-cols-2  xl:flex">
           <div className="w-full  xl:w-1/4 xl:mx-7">

@@ -22,12 +22,12 @@ export const Hero: HeroContent = {
       ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
-       Bachelor of <br /> Architecture
+       Bachelor of Arts
       </span>
       <br />
       PROGRAMMES 2026
     `,
-  desc: `Start Building Your Future in Business and Management`,
+  desc: `Step into a broad and enriching academic journey with bachelor of arts programmes designed to build critical thinking, communication, and analytical skills. Explore diverse disciplines, follow specialised pathways aligned with your interests, gain practical learning exposure, and prepare for confident, career-ready roles across multiple sectors. `,
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -43,19 +43,19 @@ export const heroMarqueeData: HeroMarqueeSection = {
 export const Counters: CounterItem[] = [
   {
     title: "7.25 LPA",
-    subtitle: "Highest Package",
+    subtitle: "Average Package",
   },
   {
     title: "800+",
-    subtitle: "Top Recruiters",
+    subtitle: "visiting recruiters",
   },
   {
-    title: "Up To ₹21 Cr",
+    title: "₹27Cr",
     subtitle: "Worth of Scholarships",
   },
   {
-    title: "100%",
-    subtitle: "Placement Assistance",
+    title: "56.6 LPA",
+    subtitle: "Highest Package",
   },
 ];
 
@@ -94,18 +94,18 @@ export const prominentRecruiters: ProminentRecruit[] = [
 ];
 
 export const whyKRM: WhyKRMSection = {
-  heading: "What makes KRMU the Best option for the B.Arch Course?",
-  subheading: "From Drawing Design Sketches to Building Skyscrapers",
-  content: `Developed by the expert professionals in the field, K.R. Mangalam University's five-year B.Arch program offers architecture education through practical projects, immersive sessions, insightful workshops, and valuable insights into the intricacies of architectural planning. The university's multidisciplinary strategy aims to ensure that the holistic development of its students, who will be influencing the architectural world in the future, remains a top priority.`,
+  heading: "Why Choose B.A. Programmes at KRMU?",
+  subheading: "Build a Career with Purpose and Perspective ",
+  content: `K.R. Mangalam University offers well-structured B.A. programmes designed to develop strong academic foundations, critical thinking, and real-world understanding. With an interdisciplinary approach, experienced faculty, experiential learning, and career guidance, the programmes prepare students for diverse professional pathways and higher studies. `,
   imgUrl: `/landingpage/common/whykrmtest.png`,
   whyKrmCards: [
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Emphasis on Hands-on-learning, Practical experience with sophisticated software for advanced modelling and construction preparation.`,
+      content: `Programmes curated by industry experts that balance practical learning with strong theoretical foundations `,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Portfolio Development Guidance for Internship and Job Prospects in Architectural Firms, Government Organisations, etc.`,
+      content: `Mentorship from professionals with years of real-world industry experience `,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
@@ -113,22 +113,22 @@ export const whyKRM: WhyKRMSection = {
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `100% Placement and Internship Assistance.`,
+      content: `Future-ready programmes designed to prepare students for evolving industry demands `,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `Global Exposure in the form of a paid visit to 2 weeks of summer school at a Prestigious European university.`,
+      content: `International collaborations with leading institutions and global partners to provide meaningful global exposure`,
     },
   ],
 };
 
 export const industryExperts: IndustryExpertsSection = {
-  eyebrow: "Why KR Mangalam PhD?",
-  heading: `Learn from <br /> Leaders @ KRMU!
+  eyebrow: "Why Choose B.A. Courses at K.R. Mangalam University? ",
+  heading: `Learn from <br /> Industry Expert 
 `,
-  description: `K.R. Mangalam University takes pride in collaborating with industry leaders and skill professionals who offer unparalleled hands-on learning experiences to students.`,
+  description: `The B.A. programmes at KRMU are enriched by academic and professional inputs from experienced knowledge partners. `,
   cta: {
-    label: "Apply for B.Tech 2026",
+    label: "Apply for B.A. Programmes 2026–27",
     href: "#",
   },
   cards: [
@@ -161,28 +161,142 @@ export const industryExperts: IndustryExpertsSection = {
 };
 
 export const specialisationData: SpecialisationSection = {
-  subheading: ``,
-  heading: `KRMU’s B.Arch Programme`,
+  subheading: `Choose your specialisations based on your interests and career goals. `,
+  heading: `Our B.A. programmes & specialisations`,
   specilisationCard: [
     {
       imgUrl: "/landingpage/common/dummy.png",
-      title: `Bachelor of Architecture`,
-      desc: `The KRMU's Bachelor of Architecture (B.Arch) equips the students with all the necessary skills and theoretical knowledge they require to plan, design and construct structures, buildings and various functional spaces by integrating artistic aesthetics and technology in a seamless manner. This degree aims to cultivate both analytical and creative thinking, equipping students to navigate modern-world challenges while building successful careers.`,
+      title: `B.A. (Hons.) English `,
+      desc: `The programme offers a strong foundation in literature, language, and critical theory, building analytical, communication, and cultural understanding skills that prepare students for diverse career opportunities across industries. `,
       extraInfos: [
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Duration:",
-          desc: `5 Years`,
+          desc: `3 Years`,
         },
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Eligibility",
-          desc: `Candidates must have passed the 10+2 or equivalent examination with Physics and Mathematics as compulsory subjects, along with one of the following: Chemistry, Biology, a Technical Vocational subject, Computer Science, Information Technology, Informatics Practices, Engineering Graphics, or Business Studies, with at least 45% aggregate marks. Alternatively, candidates may have passed the 10+3 Diploma Examination with Mathematics as a compulsory subject and at least 45% aggregate marks.`,
+          desc: `Passed 10+2 or equivalent examination from any recognized board/university in any stream with minimum 50% aggregate Marks.`,
+        },
+      ],
+    },
+    {
+      imgUrl: "/landingpage/common/dummy.png",
+      title: `B.A. ( Hons. / Hons. with Research) English `,
+      desc: `    The programme focuses on English literature, language, and culture, developing critical thinking, writing, and research skills through the study of classic and contemporary texts, preparing students for careers in academia, media, publishing, and related fields. `,
+      extraInfos: [
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Duration:",
+          desc: `4 Years`,
         },
         {
           iconUrl: "/landingpage/common/move-right.svg",
-          title: "Annual Fee",
-          desc: `Rs 1,90,000`,
+          title: "Eligibility",
+          desc: `Passed 10+2 or equivalent examination from any recognized board/university in any stream with minimum 50% aggregate Marks. `,
+        },
+      ],
+    },
+    {
+      imgUrl: "/landingpage/common/dummy.png",
+      title: `B.A. (Hons.) Economics`,
+      desc: `        This programme builds a strong foundation in economics, covering micro and macroeconomics, global trade, and financial systems. It develops critical thinking and analytical skills, preparing graduates for careers in finance, policy, consulting, academia, or advanced studies. `,
+      extraInfos: [
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Duration:",
+          desc: `3 Years`,
+        },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Eligibility",
+          desc: `Passed 10+2 or equivalent examination from any recognized board/university in any stream with minimum 50% aggregate Marks.`,
+        },
+      ],
+    },
+    {
+      imgUrl: "/landingpage/common/dummy.png",
+      title: `B.A. (Hons. / Hons. with Research) Economics `,
+      desc: `Designed for aspiring economists, this programme blends strong academics, practical learning, and research. It builds analytical, mathematical, and policy skills, preparing graduates for careers in government, finance, consulting, academia, or advanced studies in economics and public policy.`,
+      extraInfos: [
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Duration:",
+          desc: `4 Years`,
+        },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Eligibility",
+          desc: `Passed 10+2 or equivalent examination from any recognized board/university in any stream with minimum 50% aggregate Marks. `,
+        },
+      ],
+    },
+    {
+      imgUrl: "/landingpage/common/dummy.png",
+      title: `B.A. (Hons.) Psychology  `,
+      desc: `    The programme opens career and academic paths in mental health, education, HR, and social work. Graduates can pursue higher studies or roles in healthcare, corporate wellness, NGOs, and government sectors, where demand for psychology professionals continues to grow. `,
+      extraInfos: [
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Duration:",
+          desc: `3 Years`,
+        },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Eligibility",
+          desc: `Passed 10+2 or equivalent examination from any recognized board/university in any stream with minimum 50% aggregate Marks. `,
+        },
+      ],
+    },
+    {
+      imgUrl: "/landingpage/common/dummy.png",
+      title: `B.A. (Hons. / Hons. with Research) Psychology `,
+      desc: `      The programme explores human psychology and behaviour through advanced subjects such as cognitive, clinical, social, and abnormal psychology. It builds strong foundations while developing critical thinking, research, communication, and data-handling skills for diverse career paths. `,
+      extraInfos: [
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Duration:",
+          desc: `4 Years`,
+        },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Eligibility",
+          desc: `Passed 10+2 or equivalent examination from any recognized board/university in any stream with minimum 50% aggregate Marks.`,
+        },
+      ],
+    },
+    {
+      imgUrl: "/landingpage/common/dummy.png",
+      title: `B.A. (Hons.) Political Science`,
+      desc: `    The programme builds strong research skills through hands-on projects, faculty collaboration, and conference exposure. It offers in-depth understanding of political systems, theories, international relations, and public administration, preparing students for careers in policy, diplomacy, analysis, and academia. `,
+      extraInfos: [
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Duration:",
+          desc: `3 Years`,
+        },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Eligibility",
+          desc: `Passed 10+2 or equivalent examination from any recognized board/university in any stream with minimum 50% aggregate Marks.`,
+        },
+      ],
+    },
+    {
+      imgUrl: "/landingpage/common/dummy.png",
+      title: `B.A. (Hons. / Hons. with Research) Political Science `,
+      desc: `    The programme builds a strong understanding of political theory, governance, and global politics while developing research, critical thinking, and communication skills. It prepares students for careers in academia, international organisations, journalism, law, and public service. `,
+      extraInfos: [
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Duration:",
+          desc: `4 Years`,
+        },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Eligibility",
+          desc: `Passed 10+2 or equivalent examination from any recognized board/university in any stream with minimum 50% aggregate Marks.`,
         },
       ],
     },
@@ -196,44 +310,47 @@ export const opportunityData: OpportunitySection = {
     width: 300,
     height: 400,
   },
-  heading: "Learn From Industry Experts",
+  heading: "Learn From Knowledge Partners ",
   highlight: "Opportunity That Transforms",
   cta: {
-    label: "Apply for B.Arch. Programme",
+    label: "Apply for B.A. Programmes 2026–27",
     href: "#",
   },
 };
 
 export const testimonialsData: TestimonialsSection = {
-  subheading: "Students’ Testimonials",
-  heading: `Still in Doubt? <br /> See What Our Students Say About Us!`,
+  subheading: "Our Testimonials",
+  heading: `Why do our schoolers love and trust K.R. Mangalam University? `,
   testimonials: [
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `SOAD's B.Arch program at K.R. Mangalam University is an incubator of creativity and 
-excellence. It provided me with the platform and guidance to thrive as an aspiring 
-Architect.
+      quote: `My time at K.R. Mangalam University was transformative, offering quality education, supportive faculty, and enriching theatre and cultural experiences that boosted my confidence, creativity, and career opportunities.
 `,
-      name: "Ar. Divya Kharbanda",
-      programme: "B.Arch- Design Cell, New Delhi",
+      name: "Mr. Ayush Gupta",
+      programme: "B.A. (Hons.) English",
     },
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `As a B.Arch student, I'm inspired daily by the dynamic environment of classes, empowering 
-me to push boundaries and innovate in architecture.
+      quote: `KRMU provided a strong academic foundation and excellent faculty mentorship, helping me develop critical thinking and research skills and prepare for my M.Sc. in Psychology at the University of Exeter, UK. 
 `,
-      name: "Keerti Diwedi",
-      programme: "B.Arch- Gold Medalist, Arcop Associates, New Delhi",
+      name: "Khushi Jain",
+      programme: "B.A. (Hons.) Psychology ",
     },
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `From KRMU's School of Architecture & Design to Auctus Wear, I carry the essence of design 
-excellence instilled by the university.`,
-      name: "Lalita",
-      programme: "Auctus Wear",
+      quote: `My journey at KRMU blended academic learning with holistic development. Supportive professors, recognition of achievements, and the Chancellor’s Excellence Award made my experience truly memorable.`,
+      name: "Arshleen Sodhi",
+      programme: "B.A. (Hons.) Economics",
+    },
+    {
+      image: "/landingpage/common/dummy.png",
+      videoUrl: "#",
+      quote: `KRMU’s supportive environment and engaging curriculum helped me grow academically and personally. The guidance from faculty and peers has made my learning journey rewarding and inspiring. `,
+      name: "Simran",
+      programme: "B.A. (Hons.) Psychology",
     },
   ],
 };
@@ -293,11 +410,11 @@ export const scholarResearchImpactData: ScholarResearchImpactSection = {
 };
 
 export const comeToLifeData: ComeToLifeSection = {
-  heading: `Modern Facilities & State-of-the Art Infrastructure`,
-  description: `The conceptual knowledge is imparted to students in modern smart classrooms that are equipped with interactive whiteboards and seamless tech integration. The availability of the latest software systems and powerful PCs enables students to develop skills necessary for advanced modelling and construction preparation`,
+  heading: `World-Class Facilities at KRMU for B.A. Programmes`,
+  description: `K.R. Mangalam University offers a vibrant campus that supports quality learning and overall student growth. Smart classrooms, high-speed Wi-Fi, and well-equipped learning spaces create an engaging academic environment. The central library, seminar halls, innovation areas, hostels, and recreational facilities ensure a well-rounded campus experience.`,
   footerText: ``,
   cta: {
-    label: "Apply for B.Arch. Programme ",
+    label: "Apply for B.A. Programmes 2026–27 ",
     href: "#",
   },
   slides: [
@@ -350,33 +467,38 @@ export const faqSectionData: FAQSectionData = {
   eyebrow: "(FAQs)",
   heading: "Frequently Asked Questions",
   description:
-    "K.R. Mangalam University offers Ph.D. programmes in a wide array of fields, encouraging cross-disciplinary exploration and innovation.",
+    "Got Questions? We've Got Answers ",
   faqs: [
     {
       id: "item-1",
-      question: "What is the role of workshops and guest lectures in the B.Arch. curriculum?",
-      answer: `They provide practical insights, exposure to industry trends, and valuable networking opportunities with leading architects and designers.`,
+      question:
+        "What is the duration of B.A. courses at K.R. Mangalam University? ",
+      answer: `B.A. programmes at K.R. Mangalam University are typically of three years, divided into six semesters.`,
     },
     {
       id: "item-2",
-      question: "What skills will one develop in a B.Arch. programme?",
-      answer: `You will cultivate creative design solutions, technical competence in construction and modelling, and effective communication of your ideas through visual, oral, and written means.`,
+      question: "Can students get scholarships for B.A. courses at K.R. Mangalam University?",
+      answer: `Yes, the university offers merit-based and need-based scholarships as per eligibility criteria. `,
     },
     {
       id: "item-3",
-      question:
-        "Does KRMU provide hostel accommodation?",
-      answer: `Yes, KRMU provides separate hostels for boys and girls with modern amenities and 24/7 security.`,
+      question: "What career opportunities can a student pursue after a B.A. course? ",
+      answer: `Graduates can explore careers in education, media, civil services, corporate roles, social sectors, or pursue higher studies.`,
     },
     {
       id: "item-4",
-      question: "What kind of projects are involved in the B.Arch. programme?",
-      answer: `The programme includes understanding elements of designing, being able to design from a single unit to complex projects such as mixed-use buildings, commercial complexes, institutional buildings, resorts, hospitals, housing and also large-scale urban design projects.`,
+      question: "What are the eligibility criteria for admission to a B.A. course at K.R. Mangalam University?",
+      answer: `Candidates must have completed 10+2 from a recognised board with the required minimum marks.`,
     },
     {
       id: "item-5",
-      question: "Are there internship opportunities in the B.Arch. programme?",
-      answer: `Yes, the strong industry collaborations of K.R. Mangalam University ensure robust internship and placement opportunities with reputed architectural firms and design studios.`,
+      question: "Which B.A. courses does K.R. Mangalam University offer? ",
+      answer: `The university offers B.A. programmes across disciplines such as Humanities, Social Sciences, and Liberal Arts. `,
+    },
+    {
+      id: "item-6",
+      question: "Does K.R. Mangalam University offer industry exposure in B.A. programmes?",
+      answer: `Yes, B.A. students benefit from internships, workshops, expert sessions, and practical learning opportunities.`,
     },
   ],
 };
@@ -410,7 +532,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Apply for K.R. Mangalam <br /> University now`,
   description: "Start Your Adventure Right Now at K.R. Mangalam University",
   cta: {
-    label: "Apply for B.Arch. Programme",
+    label: "Apply for UG Programme",
     href: "#",
   },
   highlights: [

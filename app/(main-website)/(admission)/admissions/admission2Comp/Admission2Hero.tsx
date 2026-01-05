@@ -1,36 +1,34 @@
-"use client";
-import { loadNpfScript } from "@/lib/constants/loadNpfScript";
+import NpfPopup from "@/app/(main-website)/components/NpfPopup";
 import { ArrowRight, MoveRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef } from "react";
 
 const Admission2Hero = () => {
-  const btnRef = useRef<HTMLButtonElement>(null);
+  // const btnRef = useRef<HTMLButtonElement>(null);
 
   const formId = "bc75880ade367265cef841c19ef47621";
 
-  useEffect(() => {
-    if (!formId || !btnRef.current) return;
+  // useEffect(() => {
+  //   if (!formId || !btnRef.current) return;
 
-    loadNpfScript()
-      .then(() => {
-        // @ts-expect-error - test
-        new NpfWidgetsInit({
-          widgetId: formId,
-          baseurl: "widgets.nopaperforms.com",
-          formTitle: "Apply Now",
-          titleColor: "#FF0033",
-          backgroundColor: "#ddd",
-          iframeHeight: "500px",
-          buttonTextColor: "#FFF",
-          target: btnRef.current,
-        });
-      })
-      .catch((err) => {
-        console.error("Failed to load NPF script:", err);
-      });
-  }, [formId, "Apply NOw"]);
+  //   loadNpfScript()
+  //     .then(() => {
+  //       // @ts-expect-error - test
+  //       new NpfWidgetsInit({
+  //         widgetId: formId,
+  //         baseurl: "widgets.nopaperforms.com",
+  //         formTitle: "Apply Now",
+  //         titleColor: "#FF0033",
+  //         backgroundColor: "#ddd",
+  //         iframeHeight: "500px",
+  //         buttonTextColor: "#FFF",
+  //         target: btnRef.current,
+  //       });
+  //     })
+  //     .catch((err) => {
+  //       console.error("Failed to load NPF script:", err);
+  //     });
+  // }, [formId, "Apply NOw"]);
 
   return (
     <section
@@ -70,7 +68,15 @@ const Admission2Hero = () => {
             Dive into a world of diverse programmes curated to guide you on your
             successful journey
           </p>
-          {formId ? (
+
+          {formId && (
+            <NpfPopup
+              formId={formId}
+              btnClass={`hero-common-btn-b mt-12 npfWidget-bc75880ade367265cef841c19ef47621`}
+              btnText="Apply Now"
+            />
+          )}
+          {/* {formId ? (
             <button
               ref={btnRef}
               className={`hero-common-btn-b mt-12 npfWidget-bc75880ade367265cef841c19ef47621`}
@@ -79,7 +85,7 @@ const Admission2Hero = () => {
             </button>
           ) : (
             ""
-          )}
+          )} */}
           {/* <Link href="#" className="common-btn-1 w-fit">
             Apply Now <ArrowRight color="#fff" />
           </Link> */}

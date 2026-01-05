@@ -73,3 +73,67 @@ export interface Pagination {
 //    }
 //  }
 // }
+
+export interface MainPdfPageResponse {
+  data: MainPdfPageData;
+  meta: MainPdfPageMeta;
+}
+
+/* ---------- Main Data ---------- */
+
+export interface MainPdfPageData {
+  id: number;
+  documentId: string;
+  createdAt: string;
+  updatedAt: string;
+  publishedAt: string;
+  pdf_cards: MainPdfPageCard[];
+}
+
+/* ---------- Cards ---------- */
+
+export interface MainPdfPageCard {
+  id: number;
+  content: string;
+  pdf_btn: MainPdfPageButton;
+}
+
+export interface MainPdfPageMeta {
+  pagination: MainPdfPagePagination;
+}
+
+export interface MainPdfPagePagination {
+  page: number;
+  pageSize: number;
+  pageCount: number;
+  total: number;
+}
+
+
+/* ---------- Button ---------- */
+
+export interface MainPdfPageButton {
+  id: number;
+  btn_text: string;
+  btn_link: string;
+}
+
+/* ---------- Meta ---------- */
+
+export async function getMainPDFPageData(): Promise<
+  MainPdfPageResponse["data"]
+> {
+  const res = await fetch(
+    `${FETCH_STRAPI_URL}/api/pdf-page?populate[pdf_cards][fields][0]=content&populate[pdf_cards][populate][pdf_btn][fields][0]=btn_text&populate[pdf_cards][populate][pdf_btn][fields][1]=btn_link`,
+    {
+      next: { revalidate: 60 },
+    }
+  );
+
+  if (!res.ok) {
+    throw new Error("Failed to fetch Main Pdf page data");
+  }
+
+  const json: MainPdfPageResponse = await res.json();
+  return json.data;
+}

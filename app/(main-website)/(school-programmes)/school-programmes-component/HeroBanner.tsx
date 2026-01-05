@@ -6,40 +6,39 @@ import { HeroSection } from "@/lib/types/school-programme";
 import { MoveRight } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
+import NpfPopup from "../../components/NpfPopup";
 
 type Props = {
   title: string;
   highlightitle: string;
-  heroSection: HeroSection; 
+  heroSection: HeroSection;
   formId?: string; // dynamic form id
 };
 
 const HeroBanner = ({ title, highlightitle, heroSection, formId }: Props) => {
-  const btnRef = useRef<HTMLButtonElement>(null);
+  // const btnRef = useRef<HTMLButtonElement>(null);
 
-  useEffect(() => {
-    if (!formId || !btnRef.current) return;
+  // useEffect(() => {
+  //   if (!formId || !btnRef.current) return;
 
-    loadNpfScript()
-      .then(() => {
-        // @ts-expect-error - test
-        new NpfWidgetsInit({
-          widgetId: formId,
-          baseurl: "widgets.nopaperforms.com",
-          formTitle: heroSection?.herobtn?.buttontext || "Apply Now",
-          titleColor: "#FF0033",
-          backgroundColor: "#ddd",
-          iframeHeight: "500px",
-          buttonTextColor: "#FFF",
-          target: btnRef.current,
-        });
-      })
-      .catch((err) => {
-        console.error("Failed to load NPF script:", err);
-      });
-  }, [formId, heroSection?.herobtn?.buttontext]);
-
-
+    // loadNpfScript()
+    //   .then(() => {
+    //     // @ts-expect-error - test
+    //     new NpfWidgetsInit({
+    //       widgetId: formId,
+    //       baseurl: "widgets.nopaperforms.com",
+    //       formTitle: heroSection?.herobtn?.buttontext || "Apply Now",
+    //       titleColor: "#FF0033",
+    //       backgroundColor: "#ddd",
+    //       iframeHeight: "500px",
+    //       buttonTextColor: "#FFF",
+    //       target: btnRef.current,
+    //     });
+    //   })
+  //     .catch((err) => {
+  //       console.error("Failed to load NPF script:", err);
+  //     });
+  // }, [formId, heroSection?.herobtn?.buttontext]);
 
   return (
     <section className="pt-24 sm:pt-40 sm:pb-[50px] px-2.5 sm:px-4">
@@ -54,8 +53,19 @@ const HeroBanner = ({ title, highlightitle, heroSection, formId }: Props) => {
           <p className="text-xs sm:text-[15px] font-medium mt-6 mb-4">
             {heroSection?.description}
           </p>
- 
-          {formId ? (
+
+          {formId && (
+            <NpfPopup
+              formId={formId}
+              btnClass={`hero-common-btn-b mt-12 ${
+                heroSection.herobtn.buttonclass || ""
+              }`}
+              btnText={`${heroSection.herobtn.buttontext || "Apply Now"}`}
+              showIcon={true}
+            />
+          )}
+
+          {/* {formId ? (
             <button
               ref={btnRef}
               className={`hero-common-btn-b mt-12 ${
@@ -66,7 +76,7 @@ const HeroBanner = ({ title, highlightitle, heroSection, formId }: Props) => {
             </button>
           ) : (
             ""
-          )}
+          )} */}
         </div>
 
         <div className="hidden w-full md:w-5/12 md:flex items-center">

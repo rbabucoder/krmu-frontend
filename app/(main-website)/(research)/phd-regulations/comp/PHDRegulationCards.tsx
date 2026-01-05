@@ -35,14 +35,14 @@ const PHDRegulationCards = () => {
                 <strong>ODD Semester 2025-26</strong>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 className="hover:text-[#2d7cc1]"
                 href="https://www.krmangalam.edu.in/wp-content/uploads/2024/08/Odd-Semester-2024-25-3rd-Call-1.pdf"
               >
                 <strong>Call for Ph.D. Admission</strong>
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
 

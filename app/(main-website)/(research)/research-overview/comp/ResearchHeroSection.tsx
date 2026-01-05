@@ -20,18 +20,16 @@ const ResearchHeroSection = () => {
           </div>
           <div className="p-5 bg-[#051630] text-white font-semibold rounded-[14px] flex flex-col items-center justify-center text-center min-h-56">
             <span className="text-[44px] md:text-[65px] leading-[1.3]">
+              110+
+            </span>
+            <span className="text-xl">Number of Ph.D. Awarded</span>
+          </div>
+          <div className="p-5 bg-[#051630] text-white font-semibold rounded-[14px] flex flex-col items-center justify-center text-center min-h-56">
+            <span className="text-[44px] md:text-[65px] leading-[1.3]">
               2Cr+
             </span>
             <span className="text-xl">
               Total amount of consultancy <br /> grant awarded
-            </span>
-          </div>
-          <div className="p-5 bg-[#051630] text-white font-semibold rounded-[14px] flex flex-col items-center justify-center text-center min-h-56">
-            <span className="text-[44px] md:text-[65px] leading-[1.3]">
-              200+
-            </span>
-            <span className="text-xl">
-              Total amount of consultancy grant awarded
             </span>
           </div>
           <div className="p-5 bg-[#051630] text-white font-semibold rounded-[14px] flex flex-col items-center justify-center text-center min-h-56">

@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const ResearchInnovationHeroSection = () => {
   return (
-    <section className="pt-[140px] sm:pt-20 pb-5 px-4 bg-[url(/research/duotone-2.webp)] bg-cover bg-center">
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-16">
+    <section className="pt-[140px] sm:pt-24 pb-5 px-4 bg-[url(/research/duotone-2.webp)] bg-cover bg-center">
+      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-16 lg:mt-5">
         <div className="lg:w-1/2">
           <h1 className="text-3xl md:text-4xl md:text-[64px] md:my-12 leading-[1.2] font-semibold mb-5">
             Innovating for a Better Tomorrow

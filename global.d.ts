@@ -6,9 +6,15 @@ declare global {
       widgetId: string;
       baseurl: string;
       formTitle?: string;
+      titleColor?: string;
+      backgroundColor?: string;
+      iframeHeight?: string;
+      buttonTextColor?: string;
+      target?: HTMLElement;
     }) => void;
   }
 }
+
 
 // export {};
 

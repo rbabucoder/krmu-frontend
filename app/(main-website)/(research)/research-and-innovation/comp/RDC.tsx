@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const RDC = () => {
   return (
@@ -34,7 +35,7 @@ const RDC = () => {
             <div className="text-center">
 
             <Image src="/research/seema.webp" width={431} height={537} alt="Seema" />
-            <h4 className="text-white mt-1.5"><strong>Dr. Seema Raj</strong> | Dean Research</h4>
+            <Link href="/dr-seema-raj" target="_blank" className="text-white mt-1.5"><strong>Dr. Seema Raj</strong> | Dean Research</Link>
             </div>
             
         </div>

@@ -23,7 +23,10 @@ const ProminentRecruiters = ({ recruitLogos }: Props) => {
                         width={234}
                         height={134}
                         alt={item?.alternativeText || ""}
-                        className="w-full h-full"
+                        className="w-full h-full transition-all duration-300 ease-linear
+    hover:grayscale
+    hover:scale-125
+    opacity-100"
                         unoptimized={true}
                       />
                     )}
