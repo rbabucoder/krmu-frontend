@@ -61,9 +61,9 @@ const PrintCoverageTabs = () => {
             >
               All
             </TabsTrigger>
-            {years.map((year) => (
+            {years.map((year, i) => (
               <TabsTrigger
-                key={year}
+                key={i}
                 value={year}
                 className="rounded-full px-5 border border-white not-last:mr-[30px]  text-base py-4 text-white data-[state=active]:text-black cursor-pointer"
               >
@@ -74,9 +74,9 @@ const PrintCoverageTabs = () => {
 
           <TabsContent value={activeYear}>
             {coverageData.length > 0 ? (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-                {coverageData.map((item) => (
-                  <PrintCoverageCard key={item.id} data={item} />
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                {coverageData.map((item, i) => (
+                  <PrintCoverageCard key={i} data={item} />
                 ))}
               </div>
             ) : (
