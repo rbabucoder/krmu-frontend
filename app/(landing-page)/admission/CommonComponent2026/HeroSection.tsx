@@ -7,8 +7,8 @@ type Props = {
   content?: string;
   desc?: string;
   marqueeData: HeroMarqueeSection;
-  heroBg: string;
-  middleImg: string;
+  heroBg?: string;
+  middleImg?: string;
 };
 
 const HeroSection = ({
