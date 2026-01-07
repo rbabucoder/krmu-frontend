@@ -28,6 +28,8 @@ export const Hero: HeroContent = {
       PROGRAMMES 2026
     `,
   desc: `Shape Your Legal Journey with Practical and Career-Focused Learning.`,
+  heroBg: "/landingpage/law-2026/law-bg.webp",
+  middleImg: "/landingpage/law-2026/law.webp",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -62,33 +64,27 @@ export const Counters: CounterItem[] = [
 // Recruiters list
 export const prominentRecruiters: ProminentRecruit[] = [
   {
-    imgUrl:
-      "/landingpage/law-2026/prominent-recruiter/1.png",
+    imgUrl: "/landingpage/law-2026/prominent-recruiter/1.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "/landingpage/law-2026/prominent-recruiter/2.png",
+    imgUrl: "/landingpage/law-2026/prominent-recruiter/2.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "/landingpage/law-2026/prominent-recruiter/3.png",
+    imgUrl: "/landingpage/law-2026/prominent-recruiter/3.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "/landingpage/law-2026/prominent-recruiter/4.png",
+    imgUrl: "/landingpage/law-2026/prominent-recruiter/4.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "/landingpage/law-2026/prominent-recruiter/5.png",
+    imgUrl: "/landingpage/law-2026/prominent-recruiter/5.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "/landingpage/law-2026/prominent-recruiter/6.png",
+    imgUrl: "/landingpage/law-2026/prominent-recruiter/6.png",
     alt: "Recruiter Logo",
   },
 ];
@@ -97,7 +93,7 @@ export const whyKRM: WhyKRMSection = {
   heading: "Why Choose Undergraduate Law Programmes at KRMU?",
   subheading: "Where Legal Theory Meets Real-World Practice",
   content: `Undergraduate Law Programmes at K.R. Mangalam University provides internationally relevant, industry-aligned programs aimed at producing capable and socially conscious attorneys. Our graduates are prepared to succeed in corporate law, litigation, public policy, and other fields thanks to a curriculum developed by legal professionals, practical experience, and interdisciplinary learning.`,
-  imgUrl: `/landingpage/law-2026/building.webp`,
+  imgUrl: `/landingpage/common/building.webp`,
   whyKrmCards: [
     {
       imgUrl: "/landingpage/law-2026/why-choose-card/1-Card.jpg",
@@ -133,32 +129,27 @@ export const industryExperts: IndustryExpertsSection = {
   },
   cards: [
     {
-      imgUrl:
-        "/landingpage/law-2026/indus-exp/1.jpg",
+      imgUrl: "/landingpage/law-2026/indus-exp/1.jpg",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
     {
-      imgUrl:
-        "/landingpage/law-2026/indus-exp/2.png",
+      imgUrl: "/landingpage/law-2026/indus-exp/2.png",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
     {
-      imgUrl:
-        "/landingpage/law-2026/indus-exp/3.webp",
+      imgUrl: "/landingpage/law-2026/indus-exp/3.webp",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
     {
-      imgUrl:
-        "/landingpage/law-2026/indus-exp/4.jpg",
+      imgUrl: "/landingpage/law-2026/indus-exp/4.jpg",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
     {
-      imgUrl:
-        "/landingpage/law-2026/indus-exp/5.png",
+      imgUrl: "/landingpage/law-2026/indus-exp/5.png",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },

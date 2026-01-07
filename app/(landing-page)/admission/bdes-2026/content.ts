@@ -28,6 +28,8 @@ export const Hero: HeroContent = {
       PROGRAMMES 2026
     `,
   desc: `Immerse yourself in an inspiring environment that nurtures creativity, ignites innovation, and transforms ideas into impactful design solutions.`,
+  heroBg: "/landingpage/bdes-2026/bdes-bg.webp",
+  middleImg: "/landingpage/bdes-2026/middle-img.webp",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -97,7 +99,7 @@ export const whyKRM: WhyKRMSection = {
   heading: "Why Choose B.Des. Course at KRMU?",
   subheading: "Preparing Creative Minds for Professional Design Careers",
   content: `The B.Des. programme at K.R. Mangalam University is designed to nurture creative thinkers who are ready for the evolving design industry. With specialised pathways in Fashion Design, Game Design & Animation, Interior Design, and UX/UI & Interaction Design, the curriculum blends strong design fundamentals with hands-on learning, industry exposure, and advanced tools. Guided by experienced faculty and supported by a vibrant creative ecosystem, students develop practical skills, innovative thinking, and professional confidence to succeed across diverse design careers.`,
-  imgUrl: `/landingpage/common/whykrmtest.png`,
+  imgUrl: `/landingpage/common/building.webp`,
   whyKrmCards: [
     {
       imgUrl: "/landingpage/common/dummy.png",
@@ -421,12 +423,12 @@ export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
 export const faqSectionData: FAQSectionData = {
   eyebrow: "(FAQs)",
   heading: "Frequently Asked Questions",
-  description:
-    "",
+  description: "",
   faqs: [
     {
       id: "item-1",
-      question: "What design programmes are offered at the School of Architecture & Design?",
+      question:
+        "What design programmes are offered at the School of Architecture & Design?",
       answer: `KRMU offers several undergraduate design programmes including B.Des. in Fashion Design, Interior Design, Game Design & Animation, and UX/UI & Interaction Design. `,
     },
     {
@@ -436,19 +438,20 @@ export const faqSectionData: FAQSectionData = {
     },
     {
       id: "item-3",
-      question:
-        "What subjects or skills will I learn in these design courses?",
+      question: "What subjects or skills will I learn in these design courses?",
       answer: `Students learn design fundamentals, creative process, software tools, project development, industry workshops, and domain-specific skills like fashion techniques, spatial planning, UI/UX design, or game animation.`,
     },
     {
       id: "item-4",
-      question: "Does the Fashion Design course include practical and studio-based learning?",
+      question:
+        "Does the Fashion Design course include practical and studio-based learning?",
       answer: `Yes. The programme emphasises hands-on studio work, workshops, and live projects, allowing students to translate creative concepts into finished designs and collections.
 `,
     },
     {
       id: "item-5",
-      question: "What career opportunities are available after completing Fashion Design at KRMU?",
+      question:
+        "What career opportunities are available after completing Fashion Design at KRMU?",
       answer: `Graduates can pursue careers as fashion designers, apparel designers, fashion stylists, visual merchandisers, fashion illustrators, or start their own labels and design ventures.`,
     },
     {

@@ -28,6 +28,8 @@ export const Hero: HeroContent = {
       PROGRAMMES 2026
     `,
   desc: `Start Building Your Future in Business and Management`,
+  heroBg: "/landingpage/bba-2026/bba-bg.webp",
+  middleImg: "/landingpage/bba-2026/middle-img.webp",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -62,34 +64,24 @@ export const Counters: CounterItem[] = [
 // Recruiters list
 export const prominentRecruiters: ProminentRecruit[] = [
   {
-    imgUrl:
-      "https://www.krmangalam.edu.in/admission/law-2025/assets/trilegal.svg",
-    alt: "Recruiter Logo",
+    imgUrl: "/landingpage/bba-2026/prominent/accenture.png",
+    alt: "accenture Logo",
   },
   {
-    imgUrl:
-      "https://www.krmangalam.edu.in/admission/btech-2025-b/assets/images/accenture.svg",
-    alt: "Recruiter Logo",
+    imgUrl: "/landingpage/bba-2026/prominent/amazon.png",
+    alt: "amazon Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
-    alt: "Recruiter Logo",
+    imgUrl: "/landingpage/bba-2026/prominent/deloitte.png",
+    alt: "deloitte Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
-    alt: "Recruiter Logo",
+    imgUrl: "/landingpage/bba-2026/prominent/kpmg.png",
+    alt: "kpmg Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
-    alt: "Recruiter Logo",
-  },
-  {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
-    alt: "Recruiter Logo",
+    imgUrl: "/landingpage/bba-2026/prominent/pepsico.png",
+    alt: "pepsico Logo",
   },
 ];
 
@@ -97,22 +89,22 @@ export const whyKRM: WhyKRMSection = {
   heading: "Why Opt for BBA Programmes of KRMU?",
   subheading: "Shape Your Future with a Career-Focused Business Education",
   content: `The BBA programmes at K.R. Mangalam University provide the groundwork for future business executives to succeed in a variety of corporate positions or entrepreneurial endeavours. Our program, which is in line with NEP criteria, guarantees flexibility in length (3 or 4 years), combining academic knowledge with practical experience and real-world insights.`,
-  imgUrl: `/landingpage/common/whykrmtest.png`,
+  imgUrl: `/landingpage/common/building.webp`,
   whyKrmCards: [
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bba-2026/why-opt/1-Card.jpg",
       content: `Multiple Specialisation Options in a NEP-Aligned Structure`,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bba-2026/why-opt/2-Card.jpg",
       content: `Industry Partnerships Providing Real-World Education and Placements`,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bba-2026/why-opt/3-Card.jpg",
       content: `Mentoring from Skilled Academics and Business Experts`,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bba-2026/why-opt/4-Card.jpg",
       content: `Contemporary Campus Facilities Designed for Experiential and Interactive Education`,
     },
   ],
@@ -129,30 +121,36 @@ export const industryExperts: IndustryExpertsSection = {
   cards: [
     {
       imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
-      alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
+        "/landingpage/bba-2026/experts/iide.webp",
+      alt: "IIDE",
+      title: "",
     },
     {
       imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
-      alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
+        "/landingpage/bba-2026/experts/ey-logo.webp",
+      alt: "EY Logo",
+      title: "",
     },
     {
       imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
-      alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
+        "/landingpage/bba-2026/experts/samatrix.webp",
+      alt: "Samatrix Logo",
+      title: "",
     },
     {
       imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
-      alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
+        "/landingpage/bba-2026/experts/grant.webp",
+      alt: "Grant Logo",
+      title: "",
+    },
+    {
+      imgUrl:
+        "/landingpage/bba-2026/experts/gcec.webp",
+      alt: "GCEC Logo",
+      title: "",
     },
   ],
-  bannerImg: "/landingpage/common/dummy2.png",
+  bannerImg: "/landingpage/common/indus-exp.webp",
 };
 
 export const specialisationData: SpecialisationSection = {
@@ -160,7 +158,7 @@ export const specialisationData: SpecialisationSection = {
   heading: `Our BBA (UG) Programmes`,
   specilisationCard: [
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bba-2026/programs/bba-hr.jpg",
       title: `BBA (Human Resource)`,
       desc: `With an emphasis on human capital, strategic HR techniques, and people-oriented leadership, you may become an expert in talent management and organisational success.`,
       extraInfos: [
@@ -182,7 +180,7 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bba-2026/programs/bba-hons-hr.jpg",
       title: `BBA (Hons. / Hons. with Research) Human Resource`,
       desc: `You may become an authority in talent management and organisational performance by focussing on human capital, strategic HR approaches, and people-oriented leadership.`,
       extraInfos: [
@@ -204,7 +202,7 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bba-2026/programs/bba-marketing.jpg",
       title: `BBA Marketing`,
       desc: `With a BBA in Marketing, explore the realms of branding, consumer behaviour, and marketing tactics to develop successful marketing campaigns and spur company expansion.`,
       extraInfos: [
@@ -226,7 +224,7 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bba-2026/programs/bba-hons-marketing.jpg",
       title: `BBA (Hons. / Hons. with Research) Marketing`,
       desc: `Investigate branding, consumer behaviour, and marketing strategies with a BBA in marketing to create effective marketing campaigns and promote business growth.`,
       extraInfos: [
@@ -248,7 +246,7 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bba-2026/programs/bba-finance.jpg",
       title: `BBA Finance`,
       desc: `Gain expertise in risk management, investment techniques, and corporate finance to position yourself for leadership in the financial industry.`,
       extraInfos: [
@@ -270,7 +268,7 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bba-2026/programs/bba-hons-finance.jpg",
       title: `BBA (Hons. /Hons. with Research) Finance`,
       desc: `Develop your corporate finance, investment, and risk management abilities to position yourself for leadership in the financial industry.`,
       extraInfos: [
@@ -292,7 +290,8 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl:
+        "/landingpage/bba-2026/programs/bba-digital-marketing-with-academic-support-of-iide.jpg",
       title: `BBA (Digital Marketing) with Academic Support of IIDE`,
       desc: `Proficiency in online branding, performance marketing, and social media analytics can help you succeed in the digital economy. `,
       extraInfos: [
@@ -314,7 +313,8 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl:
+        "/landingpage/bba-2026/programs/bba-hons-digital-marketing-with-academic-support-of-iide.jpg",
       title: `BBA (Hons./ Hons. with Research) in Digital Marketing with Academic Support of IIDE`,
       desc: `You can succeed in the digital economy if you are proficient in social media analytics, performance marketing, and online branding.`,
       extraInfos: [
@@ -336,7 +336,7 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bba-2026/programs/bba-International-business.jpg",
       title: `BBA International Business`,
       desc: `Gain knowledge of international trade, cross-cultural management, and international marketing techniques to get ready for a worldwide career.`,
       extraInfos: [
@@ -358,7 +358,7 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bba-2026/programs/bba-hons-international-business.jpg",
       title: `BBA (Hons./ Hons. with Research) International Business`,
       desc: `Learn about international trade, cross-cultural management, and international marketing tactics to get ready for a worldwide job.`,
       extraInfos: [
@@ -380,7 +380,7 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bba-2026/programs/bba-travel-tourism.jpg",
       title: `BBA (Travel & Tourism)`,
       desc: `Give yourself the abilities and information required to succeed in the fast-paced global tourist sector.`,
       extraInfos: [
@@ -402,7 +402,7 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bba-2026/programs/bba-hons-travel-tourism.jpg",
       title: `BBA (Hons. / Hons. with Research) Travel & Tourism`,
       desc: `Give yourself the skills and knowledge needed to thrive in the rapidly evolving global tourism industry. `,
       extraInfos: [
@@ -424,7 +424,7 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bba-2026/programs/bba-ey.jpg",
       title: `BBA  (Business Analytics) with Academic Support of Ernst & Young (EY)`,
       desc: `Discover how to use decision-making tools, predictive analytics, and data visualisation to solve business problems.`,
       extraInfos: [
@@ -446,7 +446,7 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bba-2026/programs/bba-hons-ey.jpg",
       title: `BBA Hons. / Hons. with Research) (Business Analytics) with academic support of Ernst & Young (EY)`,
       desc: `Discover how to use decision-making tools, predictive analytics, and data visualisation to solve business problems.`,
       extraInfos: [
@@ -468,7 +468,7 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bba-2026/programs/bba-hons-gcec.jpg",
       title: `BBA (Hons. / Hons. with Research) Entrepreneurship with Academic Support of GCEC Global Foundation`,
       desc: `You may use startup ideation, venture financing, and lean management strategies to transform innovative ideas into successful enterprises with a BBA in Entrepreneurship. `,
       extraInfos: [
@@ -490,7 +490,7 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bba-2026/programs/bba-icf-grant-thornton.jpg",
       title: `BBA (International Accounting and Finance) (ACCA – UK) with Academic Support of Grant Thornton`,
       desc: `To focus on financial reporting and worldwide finance standards, pursue an internationally acknowledged ACCA-aligned programme.`,
       extraInfos: [
@@ -512,7 +512,7 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bba-2026/programs/bba-hons-icf-grant-thornton.jpg",
       title: `BBA (Hons. / Hons. with Research) International Accounting and Finance (ACCA – UK) with academic support of Grant Thornton`,
       desc: `Pursue a globally recognised ACCA-aligned curriculum with an emphasis on financial reporting and global finance standards.`,
       extraInfos: [
@@ -534,7 +534,7 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bba-2026/programs/bba-logistics-safexpress.jpg",
       title: `BBA (Logistics and Supply Chain Management) with academic support of Safexpress)`,
       desc: `With knowledge of procurement, warehousing, and logistics technology, focus on supply chain and logistics strategy.`,
       extraInfos: [
@@ -556,7 +556,7 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bba-2026/programs/bba-logistics-safexpress.jpg",
       title: `BBA (Hons. / Hons. with Research) Logistics and Supply Chain Management with Academic Support of Safexpress`,
       desc: `Focus on supply chain and logistics strategy and have knowledge of procurement, warehousing, and logistics technology.`,
       extraInfos: [
@@ -578,7 +578,7 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bba-2026/programs/bba-hons-logistics-safexpress.jpg",
       title: `BBA (Hons. / Hons. with Research) Logistics and Supply Chain Management with Academic Support of Safexpress`,
       desc: `Focus on supply chain and logistics strategy and have knowledge of procurement, warehousing, and logistics technology.`,
       extraInfos: [
@@ -604,7 +604,7 @@ export const specialisationData: SpecialisationSection = {
 
 export const opportunityData: OpportunitySection = {
   image: {
-    src: "/landingpage/common/test2.png",
+    src: "/landingpage/bba-2026/opp/opp.png",
     alt: "Industry Expert",
     width: 300,
     height: 400,
@@ -622,7 +622,7 @@ export const testimonialsData: TestimonialsSection = {
   heading: `Why Do Our Students Trust Us?`,
   testimonials: [
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bba-2026/testimonials/1.jpg",
       videoUrl: "#",
       quote: `Navigating through the BBA programme has been enlightening. The faculty's 
 guidance and the practical approach to learning have been invaluable. It has 
@@ -632,7 +632,7 @@ realm.`,
       programme: "",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bba-2026/testimonials/2.jpg",
       videoUrl: "#",
       quote: `Choosing BBA has been pivotal for my career aspirations. The curriculum's balance 
 of theory and practical exposure has sharpened my business acumen. Grateful for 
@@ -641,7 +641,7 @@ the supportive learning environment and dedicated faculty.`,
       programme: "",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bba-2026/testimonials/3.jpg",
       videoUrl: "#",
       quote: `Embracing the BBA program has been transformative. The dynamic learning 
 environment and emphasis on real-world applications have empowered me with the 
@@ -650,7 +650,7 @@ skills needed to excel in business management and leadership roles.`,
       programme: "",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bba-2026/testimonials/4.jpg",
       videoUrl: "#",
       quote: `Embarking on the BBA journey has been rewarding. The interactive sessions, industry 
 exposure, and supportive faculty. `,
@@ -724,24 +724,44 @@ export const comeToLifeData: ComeToLifeSection = {
   },
   slides: [
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/common/infra/1.webp",
       alt: "World Class Lab",
     },
     {
-      image: "/landingpage/common/image.png",
-      alt: "Research Facility",
+      image: "/landingpage/common/infra/2.webp",
+      alt: "World Class Lab",
     },
     {
-      image: "/landingpage/common/image.png",
-      alt: "Innovation Center",
+      image: "/landingpage/common/infra/3.webp",
+      alt: "World Class Lab",
     },
     {
-      image: "/landingpage/common/image.png",
-      alt: "Library & Resources",
+      image: "/landingpage/common/infra/4.webp",
+      alt: "World Class Lab",
     },
     {
-      image: "/landingpage/common/image.png",
-      alt: "Campus Infrastructure",
+      image: "/landingpage/common/infra/5.webp",
+      alt: "World Class Lab",
+    },
+    {
+      image: "/landingpage/common/infra/6.webp",
+      alt: "World Class Lab",
+    },
+    {
+      image: "/landingpage/common/infra/7.webp",
+      alt: "World Class Lab",
+    },
+    {
+      image: "/landingpage/common/infra/8.webp",
+      alt: "World Class Lab",
+    },
+    {
+      image: "/landingpage/common/infra/9.webp",
+      alt: "World Class Lab",
+    },
+    {
+      image: "/landingpage/common/infra/10.webp",
+      alt: "World Class Lab",
     },
   ],
 };
@@ -750,7 +770,7 @@ export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
   heading: "Life as a BBA (UG) Student at KRMU",
   description: "",
   image: {
-    src: "/landingpage/common/test44.jpeg",
+    src: "/landingpage/common/collage.webp",
     alt: "Life as a PhD Scholar at KR Mangalam",
   },
   facilities: [
@@ -849,7 +869,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Apply for K.R. Mangalam <br /> University now`,
   description: "Start Your Adventure Right Now at K.R. Mangalam University",
   cta: {
-    label: "Apply for Law (UG) 2026-2027",
+    label: "Apply for BBA (UG) 2026-2027",
     href: "#",
   },
   highlights: [

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { HeroMarqueeSection } from "../law-2026/contentype";
 import HeroMarquee from "./HeroMarquee";
 import NoPaperFormsWidget from "./NoPaperFormsWidget";
@@ -6,14 +7,30 @@ type Props = {
   content?: string;
   desc?: string;
   marqueeData: HeroMarqueeSection;
+  heroBg: string;
+  middleImg: string;
 };
 
-const HeroSection = ({ formId, content, desc, marqueeData }: Props) => {
+const HeroSection = ({
+  formId,
+  content,
+  desc,
+  marqueeData,
+  heroBg,
+  middleImg,
+}: Props) => {
   return (
     <>
-      <section className="py-20 md:pt-14 md:pb-14 px-5 bg-[url(https://www.krmangalam.edu.in/admission/law-2025/assets/5_law.jpg)] bg-cover bg-no-repeat" >
-        <div className="max-w-[1400px] mx-auto w-full flex flex-col lg:flex-row items-center">
-          <div className="w-full lg:w-2/5 text-white text-center md:text-left">
+      <section
+        className={`py-20 md:pt-14 md:pb-14 px-5`}
+        style={{
+          background: `url(${heroBg})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className="max-w-[1400px] mx-auto w-full flex flex-col lg:flex-row items-center gap-5">
+          <div className="w-full xl:w-1/3 text-white text-center md:text-left">
             <h1
               className="text-white font-semibold text-2xl md:text-5xl leading-[1.4]"
               dangerouslySetInnerHTML={{
@@ -27,7 +44,18 @@ const HeroSection = ({ formId, content, desc, marqueeData }: Props) => {
               }}
             />
           </div>
-          <div className="w-full lg:w-3/5 flex justify-center md:justify-end mt-5 lg:mt-0">
+          <div className="w-1/3 hidden xl:block">
+            {middleImg && (
+              <Image
+                src={middleImg}
+                width={570}
+                height={735}
+                alt="Hero"
+                className="-mb-28"
+              />
+            )}
+          </div>
+          <div className="w-full xl:w-1/3 mt-5 lg:mt-0">
             {formId && <NoPaperFormsWidget widgetId={formId} />}
           </div>
         </div>

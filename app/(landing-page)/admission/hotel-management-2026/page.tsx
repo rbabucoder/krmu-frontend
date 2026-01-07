@@ -13,7 +13,7 @@ import ProminentRecruiter from "../CommonComponent2026/ProminentRecruiter";
 import Specialisation from "../CommonComponent2026/Specialisation";
 import Testimonials from "../CommonComponent2026/Testimonials";
 import WhyKRMangalam from "../CommonComponent2026/WhyKRMangalam";
-import { alliedHealthId } from "../constant/lpnpf";
+import { hotelMangament2026Id } from "../constant/lpnpf";
 
 import { SeoData } from "./seo";
 import {
@@ -62,7 +62,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 const page = () => {
-  const alliedHealthIdForm = alliedHealthId;
+  const hotelManagementIdForm = hotelMangament2026Id;
   const heroContent = Hero;
   const counters = Counters;
   const recruiters = prominentRecruiters;
@@ -83,7 +83,7 @@ const page = () => {
     <>
       <HeroSection
         content={heroContent?.title}
-        formId={alliedHealthIdForm}
+        formId={hotelManagementIdForm}
         desc={heroContent?.desc}
         marqueeData={heroMarqData}
       />
@@ -105,7 +105,7 @@ const page = () => {
       <ComeToLife data={worldLifeData} />
       <LifeAsPhDScholar data={lifeData} />
       <FAQ data={faqData} />
-      <BusinessHub data={businessData} formId={alliedHealthIdForm} />
+      <BusinessHub data={businessData} formId={hotelManagementIdForm} />
       <ApplySection data={applyData} />
     </>
   );

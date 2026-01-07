@@ -3,7 +3,7 @@ import NoPaperFormsWidget from "../../CommonComponent2026/NoPaperFormsWidget";
 
 type Props = {
   formId: string;
-};
+};  
 
 const PhdHeroSection = ({ formId }: Props) => {
   return (

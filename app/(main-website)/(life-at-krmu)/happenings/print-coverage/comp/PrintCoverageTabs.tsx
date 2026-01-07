@@ -72,17 +72,19 @@ const PrintCoverageTabs = () => {
             ))}
           </TabsList>
 
-          <TabsContent value={activeYear}>
-            {coverageData.length > 0 ? (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-                {coverageData.map((item, i) => (
-                  <PrintCoverageCard key={i} data={item} />
-                ))}
-              </div>
-            ) : (
-              <p className="text-white">No data available</p>
-            )}
-          </TabsContent>
+          <div className="mt-28 sm:mt-0">
+            <TabsContent value={activeYear}>
+              {coverageData.length > 0 ? (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                  {coverageData.map((item, i) => (
+                    <PrintCoverageCard key={i} data={item} />
+                  ))}
+                </div>
+              ) : (
+                <p className="text-white">No data available</p>
+              )}
+            </TabsContent>
+          </div>
         </Tabs>
       </div>
     </section>

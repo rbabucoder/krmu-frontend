@@ -35,7 +35,6 @@ import {
 
 import { SeoData } from "./seo";
 
-
 export async function generateMetadata(): Promise<Metadata> {
   return {
     title: SeoData.title,
@@ -87,6 +86,8 @@ const page = () => {
         formId={lawIdForm}
         desc={heroContent?.desc}
         marqueeData={heroMarqData}
+        heroBg={heroContent?.heroBg}
+        middleImg={heroContent?.middleImg}
       />
       <Counter counters={counters} />
       <ProminentRecruiter recruiters={recruiters} />

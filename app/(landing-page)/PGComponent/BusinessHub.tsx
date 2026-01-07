@@ -1,0 +1,64 @@
+import Image from "next/image";
+import { BusinessHubSection } from "../admission/mca-2026/contentType";
+import NoPaperFormsWidget from "../admission/CommonComponent2026/NoPaperFormsWidget";
+
+type Props = {
+  data: BusinessHubSection;
+  formId: string;
+};
+
+const BusinessHub = ({ data, formId }: Props) => {
+  return (
+    <section className="relative overflow-hidden bg-gradient-to-br from-[#0b63a5] via-[#083d6b] to-[#041b2e]">
+      <div className="max-w-[1400px] mx-auto w-full px-6 py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
+          {/* LEFT CONTENT */}
+          <div className="text-white">
+            <h1
+              className="text-4xl xl:text-5xl font-bold leading-tight mb-6"
+              dangerouslySetInnerHTML={{ __html: data.heading }}
+            />
+
+            <p className="text-white/80 max-w-xl mb-8">{data.description}</p>
+
+            <ul className="space-y-3 text-sm">
+              {data.highlights.map((item, index) => (
+                <li key={index} className="flex items-center gap-3">
+                  <span className="text-green-400">✔</span>
+                  {item.text}
+                </li>
+              ))}
+            </ul>
+
+            {/* MAP IMAGE */}
+            <div className="mt-12 bg-white rounded-xl p-3 shadow-xl">
+              <Image
+                src={data.mapImage.src}
+                width={data.mapImage.width}
+                height={data.mapImage.height}
+                alt={data.mapImage.alt}
+                className="rounded-lg w-full"
+              />
+            </div>
+          </div>
+
+          {/* RIGHT FORM IMAGE */}
+          <div className="relative">
+            <p
+              className="text-white text-sm text-right mb-3 italic"
+              dangerouslySetInnerHTML={{ __html: data.formNote }}
+            />
+
+            <div>
+              {formId && (
+                <NoPaperFormsWidget widgetId={formId} height="640px" />
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default BusinessHub;
