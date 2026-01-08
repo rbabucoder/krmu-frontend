@@ -100,7 +100,7 @@ const CommonLeadPopup = ({
 
             {/* Header */}
             <div className="bg-[#005da9] text-white text-center py-3 rounded-t-2xl text-lg font-semibold">
-              Download Prospectus
+              {form_name}
             </div>
 
             {/* Form */}
@@ -149,7 +149,7 @@ const CommonLeadPopup = ({
                 disabled={loading}
                 className="w-full h-12 bg-[#e11c2a] text-white rounded-lg font-semibold disabled:opacity-60"
               >
-                {loading ? "Please wait..." : "DOWNLOAD PROSPECTUS"}
+                {loading ? "Please wait..." : "DOWNLOAD"}
               </button>
             </form>
           </div>

@@ -3,8 +3,9 @@ import { getDownloadProspectusSetting } from "@/lib/api/global-setting";
 import PopupForm from "@/lib/constants/PopupForm";
 import { ButtonType } from "@/lib/types/common";
 import Link from "next/link";
+import CommonLeadPopup from "../../components/CommonLeadPopup";
 type Props = {
-  heading: string; 
+  heading: string;
   desc: string;
   excbtns: ButtonType[];
   excbg: string;
@@ -41,13 +42,20 @@ const SchoolExcitedAlready = async ({
             excbtns.map((btn) => {
               if (enable_disable_download_pros === true) {
                 return (
-                  <PopupForm
+                  <CommonLeadPopup
                     key={btn?.id}
-                    formId={btn?.popupFormId}
-                    containerId={btn?.containerPopupFormId}
-                    buttonClass="py-3.5 px-8 bg-[#cb000d] font-bold text-sm sm:text-base rounded-sm inline-block cursor-pointer text-white"
-                    buttonText={btn?.buttontext}
+                    buttonText={btn?.buttontext || "Download Prospectus"}
+                    buttonClassName={`py-3.5 px-8 bg-[#cb000d] font-bold text-sm sm:text-base rounded-sm inline-block cursor-pointer text-white`}
+                    redirectUrl={btn?.buttonlink || "#"}
+                    form_name="Download Prospectus"
                   />
+                  // <PopupForm
+                  //   key={btn?.id}
+                  //   formId={btn?.popupFormId}
+                  //   containerId={btn?.containerPopupFormId}
+                  //   buttonClass="py-3.5 px-8 bg-[#cb000d] font-bold text-sm sm:text-base rounded-sm inline-block cursor-pointer text-white"
+                  //   buttonText={btn?.buttontext}
+                  // />
                 );
               } else {
                 return (
