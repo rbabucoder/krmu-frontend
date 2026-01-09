@@ -1,21 +1,28 @@
 import { ArrowUpRight } from "lucide-react";
-import { admissionProcessContent } from "../admission/mca-2026/content";
+import { admisCTA, AdmissionStep } from "../admission/PGType";
 
+type Props = {
+  eyebrow: string;
+  title: string;
+  description: string;
+  cta: admisCTA;
+  steps: AdmissionStep[];
+};
 
-export default function AdmissionProcess() {
-  const { eyebrow, title, description, cta, steps } =
-    admissionProcessContent;
-
+export default function AdmissionProcess({
+  eyebrow,
+  title,
+  description,
+  cta,
+  steps,
+}: Props) {
   return (
     <section className="px-4 py-12 md:py-16 bg-white">
       <div className="max-w-7xl mx-auto">
-        
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-14">
           <div>
-            <p className="text-sm font-medium text-gray-500 mb-2">
-              {eyebrow}
-            </p>
+            <p className="text-sm font-medium text-gray-500 mb-2">{eyebrow}</p>
 
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#003DA5] leading-tight">
               {title.split(" ").slice(0, 4).join(" ")} <br />
@@ -49,9 +56,7 @@ export default function AdmissionProcess() {
                 Step
               </p>
 
-              <h4 className="font-semibold text-gray-900 mb-4">
-                {item.title}
-              </h4>
+              <h4 className="font-semibold text-gray-900 mb-4">{item.title}</h4>
 
               <ul className="space-y-3">
                 {item.points.map((point, i) => (

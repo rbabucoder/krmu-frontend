@@ -27,6 +27,7 @@ import ComeToLife from "../../PGComponent/ComeToLife";
 const page = () => {
   const mcaFormId = mca2026Id;
   const { title, description, primaryCta, secondaryCta, image } = heroContent;
+
   const businessData = businessHubData;
   const faqData = faqSectionData;
   const lifeData = lifeAsPhDScholarData;
@@ -34,6 +35,7 @@ const page = () => {
   const semesterTabProgCard = PGProgrammeCard;
   const testiData = PGTestimonialsData;
   const admissionProcessData = admissionProcessContent;
+
   return (
     <>
       <HeroSection

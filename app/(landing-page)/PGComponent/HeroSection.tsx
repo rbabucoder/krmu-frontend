@@ -1,11 +1,23 @@
 import { ChevronRight, MoveUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { heroContent } from "../admission/mca-2026/content";
+import { HeroCTA, ImageType } from "../admission/PGType";
 
-const HeroSection = () => {
-  const { title, description, primaryCta, secondaryCta, image } = heroContent;
+type Props = {
+  title: string;
+  description: string;
+  primaryCta: HeroCTA;
+  secondaryCta: HeroCTA;
+  image: ImageType;
+};
 
+const HeroSection = ({
+  title,
+  description,
+  primaryCta,
+  secondaryCta,
+  image,
+}: Props) => {
   return (
     <section className="bg-[#051630] py-12 md:py-16 lg:py-20">
       <div className="max-w-[1400px] mx-auto w-full px-4 sm:px-6 lg:px-8 flex flex-col-reverse lg:flex-row items-center gap-10 lg:gap-16">

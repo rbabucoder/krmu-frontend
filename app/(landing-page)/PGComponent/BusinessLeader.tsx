@@ -1,7 +1,13 @@
 import { businessLeaderContent } from "../admission/mca-2026/content";
+import { PGProgramCard } from "../admission/PGType";
+
 import SemesterTabs from "./SemesterTabs";
 
-const BusinessLeader = () => {
+type Props = {
+  data: PGProgramCard[];
+};
+
+const BusinessLeader = ({ data }: Props) => {
   const { sectionTitle, sectionDescription, semesters } = businessLeaderContent;
 
   return (
@@ -16,7 +22,7 @@ const BusinessLeader = () => {
       </div>
 
       <div className="max-w-[1400px] mx-auto w-full">
-        <SemesterTabs semesters={semesters} />
+        <SemesterTabs semesters={semesters} data={data} />
       </div>
     </section>
   );

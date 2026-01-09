@@ -8,30 +8,31 @@ import {
   Lightbulb,
 } from "lucide-react";
 import {
+  HeroContent,
   AboutUsContent,
   AdmissionProcessContent,
   BusinessHubSection,
   BusinessLeaderContent,
   ComeToLifeSection,
   FAQSectionData,
-  HeroContent,
   IndustryExpertsContent,
   LifeAsPhDScholarSection,
   MbaComparisonContent,
   PlacementStatsContent,
   ProminentRecruiterContent,
   ProspectusDownloadContent,
-} from "./contentType";
-import { PGTestimonial, PGTestimonialsBlock, ProgramCardType } from "../PGType";
+  ProgramCardType,
+  PGTestimonialsBlock,
+} from "../PGType";
 
 export const heroContent: HeroContent = {
   title: `
-            Click, Code & Conquer <br />
-            with <span class="text-[#e31e24]">MCA</span> Programmes<br />
-             2026-27
+            Learn Today To Make A
+            Mark On Tomorrow with <br /> <span class="text-[#e31e24]">MBA</span> Programmes
+            
           `,
   description:
-    "The MCA courses are meticulously prepared to enable students to comprehend complex coding processes that, in turn, lead to a successful career path.",
+    "The MBA courses are structured not just for comprehending management principles but to develop the vision and resilience required to lead an era of constant change.",
   primaryCta: {
     label: "Apply Now",
     href: "#",
@@ -138,8 +139,8 @@ export const prominentRecruiterContent: ProminentRecruiterContent = {
 
 export const aboutUsContent: AboutUsContent = {
   title: "About Us",
-  description: `<p>K.R. Mangalam University is a prominent university in Gurugram that was founded in 2013 under the Haryana Private University Act. The university's NAAC Grade "A" accreditation demonstrates a strong dedication to academic excellence, high-quality instruction, and continuous development.</p> <br /> 
-  <p>The MBA programmes provided by K.R. Mangalam University, via their curriculum, offer strong professional growth and excellent earning potential by combining fundamental business concepts with dedicated hands-on learning experience. It's a very popular course among individuals who desire jobs with a global perspective.
+  description: `<p>K.R. Mangalam University is a prominent university in Gurugram that was founded in 2013 under the Haryana Private University Act. The university's NAAC Grade "A" accreditation demonstrates a strong dedication to academic excellence, high-quality instruction, and continuous development.
+</p> <br /> <p>The MCA courses at K.R. Mangalam University offer a vast scope for students aiming to build successful careers in the rapidly evolving realm of technology. The Master of Computer Application programmes strive to equip the students with advanced skills in programming and software development. Moreover, the programme not only opens up diverse career opportunities in the IT and tech sector but also prepares students for entrepreneurship, research, and innovation-driven roles.
 </p>`,
   image: {
     src: "/landingpage/mca-2026/univ.png",
@@ -183,11 +184,10 @@ export const industryExpertsContent: IndustryExpertsContent = {
 };
 
 export const businessLeaderContent: BusinessLeaderContent = {
-  sectionTitle:
-    "Why Choose KRMU for the Master of Business Administration (MBA) Courses?",
+  sectionTitle: "Why Choose a MCA Programme at KRMU?",
 
   sectionDescription:
-    "The K.R. Mangalam University (KRMU) offers MBA programme that comprises of an industry-aligned curriculum, strong practical exposure (live projects, case studies, internships with top firms like EY), specialization options, and focus on modern tech (AI, Tableau, R), plus unique perks like fully sponsored European summer schools to selected students, preparing students for dynamic corporate roles.",
+    "Master of Computer Applications is a postgraduate program designed to build strong foundations in computer science, software development, and emerging technologies. The MCA program offered by K.R. Mangalam University combines academic rigour with industry-oriented learning as modern laboratories, experienced faculty, and industry collaborations enhance practical exposure.",
 
   semesters: [
     {
@@ -212,7 +212,7 @@ export const businessLeaderContent: BusinessLeaderContent = {
       title: "",
       duration: "",
       subtitle:
-        "The curriculum integrates real-world industry practices for a holistic learning experience.",
+        "Curriculum focuses equally on conceptual clarity and practical precision.",
       heading: "",
       description: "",
       courses: [
@@ -229,7 +229,7 @@ export const businessLeaderContent: BusinessLeaderContent = {
       title: "",
       duration: "",
       subtitle:
-        "Entrepreneurship and Incubation Centre and Design Thinking Lab, designed to nurture innovative startup ideas",
+        "600+ Journal articles in Scopus and WoS, 100+ Published Patents highlighting the University’s research excellence.",
       heading: "",
       description: "",
       courses: [
@@ -263,7 +263,7 @@ export const businessLeaderContent: BusinessLeaderContent = {
       title: "",
       duration: "",
       subtitle:
-        "100% placement assistance with Internship and Placement opportunities in leading companies.",
+        "100% placement assistance with over 700+ recruiters visiting the campus for placement drives every year.",
       heading: "",
       description: "",
       courses: [
@@ -278,37 +278,130 @@ export const businessLeaderContent: BusinessLeaderContent = {
   ],
 };
 
+export const PGTestimonialsData: PGTestimonialsBlock = {
+  header: {
+    eyebrow: "Still in Doubt?",
+    title: "Why our schoolers love and trust",
+    highlight: "See What Our Students Say About Us!",
+  },
+
+  items: [
+    {
+      brand: "",
+      text: `KRMU has been a turning point in my academic journey. The curriculum is practical, 
+industry-focused, and taught by faculty who genuinely care about our growth. The 
+exposure I received through live projects, workshops, and industry interactions has 
+boosted my confidence and shaped my career path.
+`,
+      author: "Veeresh Tarnal, MBA",
+      color: "bg-[#EAF6FF]",
+      featured: false,
+    },
+    {
+      brand: "",
+      text: `It was a great experience studying at K.R. Mangalam University. I completed my MBA 
+degree last year. And I was very much fortunate to have all my mentors who helped me 
+during my post-graduation. Also, I would like to thank the training and placement cell 
+for supporting each and every student.
+`,
+      author: "Prateek kumar, MBA",
+      color: "bg-white",
+      featured: false,
+    },
+    {
+      brand: "",
+      text: `No doubt I made the best choice of my career; K.R. Mangalam University is one among those 
+unique institutions which help students in not only building their career but also enhances 
+distinctive competencies and skill sets that help students grow in their professional life.
+`,
+      author: "Prachi, MBA",
+      color: "bg-white",
+      featured: false,
+    },
+    {
+      brand: "",
+      text: `The skill development opportunities at KRMU made a huge difference in my confidence. 
+Through workshops, projects, and hands-on training, I gained practical abilities that I now 
+use every day in my career.`,
+      author: "Rajan Kumar, MBA",
+      color: "bg-white",
+      featured: false,
+    },
+  ],
+};
+
+// export const PGtestimonialsData: PGTestimonial[] = [
+//   {
+//     brand: "",
+//     text: "K.R. Mangalam University has truly transformed my career. The program not only provided me with technical expertise but also honed my problem-solving and analytical skills. The university encouraged us to participate in hackathons, industry projects, and internships, which gave me hands-on experience in real-world AI applications. Today, I am working as a Sales manager at Rally Motors, and I owe my success to the incredible faculty and supportive environment at KRMU. ",
+//     author: "Rishav Bakshi",
+//     color: "bg-[#EAF6FF]",
+//     featured: false,
+//   },
+//   {
+//     brand: "",
+//     text: "Looking back at my journey at K.R. Mangalam University, I feel grateful for the incredible opportunities I received here. The curriculum was designed in collaboration with industry experts, ensuring we were up to date with the latest AI trends. The mentorship from experienced faculty, research-driven approach, and exposure to AI tools like TensorFlow, PyTorch, and Big Data analytics helped me secure my dream job in the tech industry. I highly recommend this programme to anyone passionate about AI and data science!",
+//     author: "Parminder Singh",
+//     color: "bg-white",
+//     featured: false,
+//   },
+//   {
+//     brand: "",
+//     text: "Studying at K.R. Mangalam University was one of the best decisions of my academic journey. The well-structured curriculum, combined with practical exposure through hands-on projects, helped me build a strong foundation in machine learning, data analytics, and cloud computing. The faculty’s guidance and the state-of-the-art labs played a crucial role in enhancing my technical skills. Thanks to the university’s placement cell, I secured a job at a leading AI firm, and I feel confident about tackling industry challenges.",
+//     author: "Annanya Agarwal",
+//     color: "bg-white",
+//     featured: false,
+//   },
+//   {
+//     brand: "",
+//     text: "K.R. Mangalam University didn’t just provide me with a degree—it shaped my career. The MCA programme gave me the technical expertise, industry exposure, and confidence to work on AI-driven solutions. The university’s tie-ups with industry leaders, guest lectures from  AI professionals, and project-based learning approach made a significant difference in my  professional journey. Today, as a Data Analyst, I use the knowledge and skills I gained at KRMU  daily. If you're looking for a programme that bridges the gap between academics and industry, this is the place to be!",
+//     author: "Shivangi Sharma",
+//     color: "bg-white",
+//     featured: false,
+//   },
+// ];
 export const PGProgrammeCard: ProgramCardType = [
   {
     image: "/landingpage/common/dummy.png",
-    title: "Master of Computer Applications (MCA)",
+    title: "MBA with Academic Support from IBM",
     description:
-      "K.R. Mangalam University offers cutting-edge equipment, state-of-the-art labs, and industry-focused education to improve hands-on learning. Through projects, internships, and seminars, the curriculum places a strong emphasis on professional abilities, creativity, and problem-solving. Graduates are equipped for a variety of professions in the quickly changing IT sector across international technology-driven organisations, such as software developers, system analysts, data specialists, or entrepreneurs.",
-    format: "Full-time",
+      "K.R. Mangalam University offers an MBA with Academic Support from IBM, which is a specialised business degree program that focuses on Digital Transformation, Data Analytics, AI, and Cloud Computing. It integrates IBM's state-of-the-art tools, an industry-aligned curriculum, expert sessions, and certifications to provide students with practical skills and enhanced career readiness for tech-driven roles.",
+    format: "",
     duration: "2 Years",
     eligibility:
-      "Any graduation degree with Mathematics at 10+2 level or at Graduation level with minimum 50% aggregate marks.",
-    focus: "Software Development, Data & Systems",
-    annualFee: "Rs 1,20,000",
+      "Candidate must have a bachelor's degree or equivalent degree from a recognised university with a minimum 50% aggregate marks.",
+    focus: "",
+    annualFee: "Rs 3,00,000",
   },
   {
     image: "/landingpage/common/dummy.png",
-    title: "Bachelor of Computer Applications (BCA)",
+    title: "MBA (Fintech) with academic support of Ernst & Young (EY)",
     description:
-      "The BCA program focuses on building strong foundations in computer science, programming, and modern application development with hands-on industry exposure.",
-    format: "Full-time",
-    duration: "3 Years",
+      "The two-year MBA Fintech program of K.R. Mangalam University prepares students for a career in the rapidly expanding and changing industry of technology-enabled finance. In addition to analysing the complexities of digital, open, and neo banking, blockchain, digital payments and lending solutions, growth and challenges of cryptocurrency and digital currency, financial risk management, and financial analytics, the program seeks to equip students with the fundamental skills necessary to comprehend and develop AI-driven financial products and services.",
+    format: "",
+    duration: "2 Years",
     eligibility:
-      "10+2 with Mathematics or equivalent with minimum 50% aggregate marks.",
-    focus: "Programming & Application Development",
-    annualFee: "Rs 1,10,000",
+      "Candidate must have a bachelor's degree or equivalent degree from a recognised university with a minimum 50% aggregate marks.",
+    focus: "",
+    annualFee: "Rs 3,50,000",
+  },
+  {
+    image: "/landingpage/common/dummy.png",
+    title: "MBA (Digital Marketing) with academic support of IIDE",
+    description:
+      "In partnership with IIDE, K.R. Mangalam University has developed the MBA (Digital Marketing) curriculum to address the changing needs of the digital marketing industry. By enrolling in this program, you will be able to strategise entrepreneurial marketing difficulties and give organisations a simplified strategy to promote their growth and sales in the digital world.",
+    format: "",
+    duration: "2 Years",
+    eligibility:
+      "Candidate must have a bachelor's degree or equivalent degree from a recognised university with a minimum 50% aggregate marks.",
+    focus: "",
+    annualFee: "Rs 3,50,000",
   },
 ];
-
 export const prospectusDownloadContent: ProspectusDownloadContent = {
-  title: "Download the M.C.A Programme Prospectus",
+  title: "Download the MBA Programme Prospectus",
   description:
-    "Download the M.C.A. programme prospectus to explore programme details, specialisations, curriculum, and career prospects.",
+    "Download the MBA programme prospectus to explore programme details, specialisations, curriculum, and career prospects.",
   button: {
     label: "Download Now",
     href: "#", // can be file link or NPF popup later
@@ -317,44 +410,6 @@ export const prospectusDownloadContent: ProspectusDownloadContent = {
     src: "/images/prospectus-girls.png",
     alt: "MBA Prospectus",
   },
-};
-export const PGTestimonialsData: PGTestimonialsBlock = {
-  header: {
-    eyebrow: "Our Testimonials",
-    title: "Why our schoolers love and trust",
-    highlight: "K.R. Mangalam University?",
-  },
-
-  items: [
-    {
-      brand: "",
-      text: "K.R. Mangalam University has truly transformed my career. The program not only provided me with technical expertise but also honed my problem-solving and analytical skills. The university encouraged us to participate in hackathons, industry projects, and internships, which gave me hands-on experience in real-world AI applications. Today, I am working as a Sales manager at Rally Motors, and I owe my success to the incredible faculty and supportive environment at KRMU.",
-      author: "Rishav Bakshi",
-      color: "bg-[#EAF6FF]",
-      featured: false,
-    },
-    {
-      brand: "",
-      text: "Looking back at my journey at K.R. Mangalam University, I feel grateful for the incredible opportunities I received here. The curriculum was designed in collaboration with industry experts, ensuring we were up to date with the latest AI trends. The mentorship from experienced faculty, research-driven approach, and exposure to AI tools like TensorFlow, PyTorch, and Big Data analytics helped me secure my dream job in the tech industry. I highly recommend this programme to anyone passionate about AI and data science!",
-      author: "Parminder Singh",
-      color: "bg-white",
-      featured: false,
-    },
-    {
-      brand: "",
-      text: "Studying at K.R. Mangalam University was one of the best decisions of my academic journey. The well-structured curriculum, combined with practical exposure through hands-on projects, helped me build a strong foundation in machine learning, data analytics, and cloud computing. The faculty’s guidance and the state-of-the-art labs played a crucial role in enhancing my technical skills. Thanks to the university’s placement cell, I secured a job at a leading AI firm, and I feel confident about tackling industry challenges.",
-      author: "Annanya Agarwal",
-      color: "bg-white",
-      featured: false,
-    },
-    {
-      brand: "",
-      text: "K.R. Mangalam University didn’t just provide me with a degree—it shaped my career. The MCA programme gave me the technical expertise, industry exposure, and confidence to work on AI-driven solutions. The university’s tie-ups with industry leaders, guest lectures from AI professionals, and project-based learning approach made a significant difference in my professional journey. Today, as a Data Analyst, I use the knowledge and skills I gained at KRMU daily. If you're looking for a programme that bridges the gap between academics and industry, this is the place to be!",
-      author: "Shivangi Sharma",
-      color: "bg-white",
-      featured: false,
-    },
-  ],
 };
 
 export const admissionProcessContent: AdmissionProcessContent = {
@@ -373,29 +428,29 @@ export const admissionProcessContent: AdmissionProcessContent = {
   steps: [
     {
       step: "1",
-      title: "Register Online Through Our Portal",
+      title: "Register Online Through the KRMU Portal",
       points: [
         // "Complete the online application form through the official admissions portal.",
       ],
     },
     {
       step: "2",
-      title: "Submit Your Academic Credentials & Application Fee",
+      title: "Submit Academic Documents & Application Fee",
       points: [],
     },
     {
       step: "3",
-      title: "Appear for KREE (Entrance Exam)",
+      title: "Take the KREE (Entrance Exam)",
       points: [],
     },
     {
       step: "4",
-      title: "Attend the Faculty Led Interview",
+      title: "Attend the Faculty-Led Interview",
       points: [],
     },
     {
       step: "5",
-      title: "Receive Your Admission Offer",
+      title: "Receive Admission Confirmation",
       points: [],
     },
   ],
@@ -494,17 +549,17 @@ export const faqSectionData: FAQSectionData = {
   eyebrow: "(FAQs)",
   heading: "Frequently Asked Questions",
   description:
-    "K.R. Mangalam University offers Ph.D. programmes in a wide array of fields, encouraging cross-disciplinary exploration and innovation.",
+    "",
   faqs: [
     {
       id: "item-1",
-      question: "What is the average salary of an MCA graduate?",
-      answer: `In India, an MCA graduate can bag a starting package of 5-8 LPA after graduating.`,
+      question: "What are the eligibility criteria for the MBA programme?",
+      answer: `Candidates must have completed a Bachelor’s degree from a recognised institution and meet the university’s admission standards.`,
     },
     {
       id: "item-2",
-      question: "What skills will a student learn from KRMU’s MCA programme?",
-      answer: `The MCA programmes at K.R. Mangalam University focus on helping students develop technical skills like web development, analytical thinking, data structures, and much more.`,
+      question: "Are scholarships available at KRMU?",
+      answer: `Yes, K.R. Mangalam University offers merit-based and need-based scholarships. Visit our scholarships page for more details.`,
     },
     {
       id: "item-3",
@@ -513,13 +568,13 @@ export const faqSectionData: FAQSectionData = {
     },
     {
       id: "item-4",
-      question: "Does the programme include industry exposure?",
-      answer: `Yes, the K.R. Mangalam University offers internships, field visits, and guest lectures by expert professionals.`,
+      question: "What placement support does the university provide?",
+      answer: `The K.R. Mangalam University provides dedicated placement assistance, including industry collaborations, mock interviews, and placement drives with top recruiters.`,
     },
     {
       id: "item-5",
-      question: "Does KRMU provide placement support?",
-      answer: `Yes, the K.R. Mangalam University offers 100% placement assistance with over 700+ recruiters visiting the campus for placement drives.`,
+      question: "What are the available specialisations in the MBA programme?",
+      answer: `The KRMU offers specialisations in Finance, Marketing, HR, Business Analytics, Operations, Digital Marketing, Technology Management, Product Management, IT, Entrepreneurship, and Fintech.`,
     },
   ],
 };
@@ -548,7 +603,7 @@ export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
 
 export const comeToLifeData: ComeToLifeSection = {
   heading: `Modern Facilities & State-of-the Art Infrastructure`,
-  description: `Strong support is provided to MCA students by K.R. Mangalam University. The institution has cutting-edge computer labs with the latest equipment, sophisticated tools, and industry-standard software for practical projects, research, and simulations. To promote an immersive learning environment, classrooms are equipped with smart technology, such as interactive whiteboards, projectors, high-speed Wi-Fi, and comfortable, ergonomic seating. They also have central air conditioning. For in-depth study and research, students have access to a well-stocked central library with a comprehensive selection of books, periodicals, research materials, and e-resources.
+  description: `Within a lush, green campus designed for interactive learning, research, and holistic development, K.R. Mangalam University offers state-of-the-art MBA infrastructure, including smart, air-conditioned classrooms, high-speed Wi-Fi, sophisticated computer labs, a well-stocked library with digital access, incubation centres, and career development facilities. These features are complemented by first-rate dorms, sports facilities, and a lively student body.
 
 `,
   footerText: ``,

@@ -7,17 +7,72 @@ export type HeroCTA = {
   href: string;
 };
 
+export type ImageType = {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+};
+
+export type PGProgramCard = {
+  image: string;
+  title: string;
+  description: string;
+  format: string; // Full-time / Part-time / Online
+  duration: string; // e.g. "2 Years"
+  eligibility: string;
+  focus: string; // Specialization or Key Focus
+  annualFee: string; // e.g. "Rs 1,20,000"
+};
+
+export type ProgramCardType = PGProgramCard[];
+
+export type PGTestimonial = {
+  brand: string;
+  text: string;
+  author: string;
+  color: string;
+  featured: boolean;
+};
+
+export type PGTestimonialsBlock = {
+  header: {
+    eyebrow: string;
+    title: string;
+    highlight: string;
+    cta?: {
+      label: string;
+      href?: string;
+    };
+  };
+  items: PGTestimonial[];
+};
+
+// export type PGTestimonial = {
+//   brand: string;
+//   text: string;
+//   author: string;
+//   color: string; // Tailwind / hex background class
+//   featured: boolean;
+// };
+
+// export type ProgramCardType = {
+//   image: string;
+//   title: string;
+//   description: string;
+//   format: string; // e.g. Full-time / Part-time / Online
+//   duration: string; // e.g. "2 Years"
+//   eligibility: string;
+//   focus: string; // e.g. Specialization or Key Focus
+//   annualFee: string; // e.g. "Rs 1,20,000"
+// }[];
+
 export type HeroContent = {
   title: string;
   description: string;
   primaryCta: HeroCTA;
   secondaryCta: HeroCTA;
-  image: {
-    src: string;
-    alt: string;
-    width: number;
-    height: number;
-  };
+  image: ImageType;
 };
 // placementStats.types.ts
 
@@ -103,9 +158,6 @@ export type Semester = {
   courses: Course[];
 };
 
-
-
-
 export type BusinessLeaderContent = {
   sectionTitle: string;
   sectionDescription: string;
@@ -135,14 +187,16 @@ export type AdmissionStep = {
   points: string[];
 };
 
+export type admisCTA = {
+  label: string;
+  href?: string;
+};
+
 export type AdmissionProcessContent = {
   eyebrow: string;
   title: string;
   description: string;
-  cta: {
-    label: string;
-    href?: string;
-  };
+  cta: admisCTA;
   steps: AdmissionStep[];
 };
 
