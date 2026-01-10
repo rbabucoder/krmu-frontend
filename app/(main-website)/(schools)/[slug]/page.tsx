@@ -229,19 +229,19 @@ export default async function Page({ params }: Props) {
           deanImgUrl={school?.deanimg?.url}
         />
       )}
-      {school?.fac_adv && (
+      {/* {school?.fac_adv && (
         <SchoolFacultyAdvisory
           fac_adv={school?.fac_adv}
           schoolCat={schoolCat}
           // WordSchoolslug={WordSchoolslug}
         />
-      )}
-      {school?.video_comp && (
+      )} */}
+      {/* {school?.video_comp && (
         <SchoolIndustyVideo
           heading={school?.video_comp?.heading}
           videoCards={school?.video_comp?.video_iframe_fields}
         />
-      )}
+      )} */}
       {school?.eventstitle && (
         <SchoolEventAndExperience
           title={school?.eventstitle}
