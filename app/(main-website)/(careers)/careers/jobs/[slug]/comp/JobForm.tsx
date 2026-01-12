@@ -21,6 +21,7 @@ const JobForm = ({ jobId }: Props) => {
 
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [successMessage, setSuccessMessage] = useState("");
+  const [formError, setFormError] = useState(""); // 🔴 error below button
   const [file, setFile] = useState<File | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -39,7 +40,6 @@ const JobForm = ({ jobId }: Props) => {
     "Upload CV/Resume": "awsm_file",
   };
 
-  /* ---------------- VALIDATION ---------------- */
   const validateForm = () => {
     const newErrors: Record<string, string> = {};
 
@@ -65,7 +65,6 @@ const JobForm = ({ jobId }: Props) => {
     return Object.keys(newErrors).length === 0;
   };
 
-  /* ---------------- HANDLERS ---------------- */
   const handleChange = (e: any) => {
     const { name, value, type, checked } = e.target;
 
@@ -90,12 +89,12 @@ const JobForm = ({ jobId }: Props) => {
     setErrors((prev) => ({ ...prev, awsm_file: "" }));
   };
 
-  /* ---------------- SUBMIT ---------------- */
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     if (isSubmitting) return;
 
     setSuccessMessage("");
+    setFormError("");
 
     if (!validateForm()) return;
 
@@ -109,11 +108,7 @@ const JobForm = ({ jobId }: Props) => {
       Object.entries(formData).forEach(([key, value]) => {
         fd.append(
           key,
-          key === "awsm_form_privacy_policy"
-            ? value
-              ? "yes"
-              : ""
-            : String(value)
+          key === "awsm_form_privacy_policy" ? (value ? "yes" : "") : String(value)
         );
       });
 
@@ -126,25 +121,31 @@ const JobForm = ({ jobId }: Props) => {
 
       const result = await response.json();
 
-      /* 🔴 BACKEND ERRORS */
-      if (result?.error?.length) {
+      let parsedResponse = null;
+      if (result.response) {
+        parsedResponse = JSON.parse(result.response);
+      }
+
+      /* 🔴 BACKEND VALIDATION ERRORS */
+      if (parsedResponse?.error?.length) {
         const apiErrors: Record<string, string> = {};
 
-        result.error.forEach((msg: string) => {
+        parsedResponse.error.forEach((msg: string) => {
           const clean = msg.replace(/<[^>]*>/g, "");
           const [label, message] = clean.split(":");
-
           const fieldKey = backendFieldMap[label?.trim()];
           if (fieldKey) apiErrors[fieldKey] = message?.trim();
         });
 
         setErrors(apiErrors);
+        setFormError(Object.values(apiErrors)[0]); // show first error below button
         return;
       }
 
       /* 🟢 SUCCESS */
       setSuccessMessage("Your application has been submitted successfully.");
       setErrors({});
+      setFormError("");
       setFormData({
         awsm_applicant_name: "",
         awsm_applicant_phone: "",
@@ -174,10 +175,7 @@ const JobForm = ({ jobId }: Props) => {
     { label: "Mail ID", name: "awsm_applicant_email", type: "email" },
     { label: "Current Location", name: "awsm_text_1" },
     { label: "Native Location", name: "awsm_text_4" },
-    {
-      label: "Education with Percentage (Bachelor,Master,P.HD)",
-      name: "awsm_text_5",
-    },
+    { label: "Education with Percentage (Bachelor,Master,P.HD)", name: "awsm_text_5" },
     { label: "Current Organization", name: "awsm_text_6" },
     { label: "Current Salary", name: "awsm_text_2" },
     { label: "Expected Salary", name: "awsm_text_3" },
@@ -264,37 +262,19 @@ const JobForm = ({ jobId }: Props) => {
               : "bg-[#cb000d] text-white hover:opacity-90"
           }`}
       >
-        {isSubmitting ? (
-          <span className="flex items-center gap-2">
-            <svg
-              className="animate-spin h-5 w-5 text-white"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <circle
-                className="opacity-25"
-                cx="12"
-                cy="12"
-                r="10"
-                stroke="currentColor"
-                strokeWidth="4"
-              />
-              <path
-                className="opacity-75"
-                fill="currentColor"
-                d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
-              />
-            </svg>
-            Submitting...
-          </span>
-        ) : (
-          "Submit"
-        )}
+        {isSubmitting ? "Submitting..." : "Submit"}
       </button>
 
+      {/* 🔴 BACKEND ERROR BELOW BUTTON */}
+      {formError && (
+        <div className="mt-3 p-3 bg-red-100 text-red-700 rounded">
+          {formError}
+        </div>
+      )}
+
+      {/* 🟢 SUCCESS BELOW BUTTON */}
       {successMessage && (
-        <div className="my-6 p-4 bg-green-100 text-green-800 rounded">
+        <div className="mt-3 p-3 bg-green-100 text-green-800 rounded">
           {successMessage}
         </div>
       )}
