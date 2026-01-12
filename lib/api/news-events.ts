@@ -48,7 +48,7 @@ export async function getAllNewsAndEventsWithMeta(
     // `${FETCH_STRAPI_URL}/api/news-and-events?sort[0]=title:desc&fields[0]=title&fields[1]=slug&fields[2]=publishedAt&populate[featured_img]=true&pagination[pageSize]=${pageSize}&pagination[page]=${page}&status=published&locale[0]=en`,
     // `${FETCH_STRAPI_URL}/api/news-and-events?sort[0]=title:asc&fields[0]=title&fields[1]=slug&populate[newsmedia]=true&pagination[pageSize]=${pageSize}&pagination[page]=${page}&status=published&locale[0]=en`,
     `${FETCH_STRAPI_URL}/api/news-and-events?sort[0]=publishedAt:asc&fields[0]=title&fields[1]=slug&fields[2]=publishedAt&populate[newsmedia]=true&pagination[pageSize]=${pageSize}&pagination[page]=${page}&status=published&locale[0]=en`,
-    { next: { revalidate: 60 } }
+    { next: { revalidate: 600 } }
   );
 
   if (!res.ok) throw new Error("Failed to fetch All news and events");

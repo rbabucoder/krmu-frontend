@@ -6,11 +6,15 @@ type Props = {
   title: string;
   excerpt: string;
   slug: string;
-  // imgUrl: string;
   imgId: number;
 };
+
 const CommonBlogCard = async ({ title, excerpt, slug, imgId }: Props) => {
-  const imgUrl = await getBlogImageById(imgId);
+  let imgUrl = await getBlogImageById(imgId);
+
+  if (imgUrl) {
+    imgUrl = imgUrl.replace("/blog/wp-content", "/wp-content");
+  }
 
   if (!imgUrl) return null;
 
@@ -19,36 +23,29 @@ const CommonBlogCard = async ({ title, excerpt, slug, imgId }: Props) => {
       <Link
         href={`/blog/${slug}`}
         className="block w-full rounded-[24px]"
-        style={{
-          boxShadow: `0px 0px 6px 0px #c6dcfd`,
-        }}
+        style={{ boxShadow: `0px 0px 6px 0px #c6dcfd` }}
         target="_blank"
       >
-        <div className="p-2.5">
+        <div className="p-2.5" data-test={imgUrl}>
           <div>
-            {imgUrl && (
-              <Image
-                src={imgUrl}
-                width={426}
-                height={284}
-                alt=""
-                className="rounded-[24px] h-auto w-full"
-                sizes="(max-width: 768px) 100vw, 426px"
-              />
-            )}
+            <Image
+              src={imgUrl}
+              width={426}
+              height={284}
+              alt=""
+              className="rounded-[24px] h-auto w-full"
+              sizes="(max-width: 768px) 100vw, 426px"
+            />
           </div>
+
           <div>
             <div
-              dangerouslySetInnerHTML={{
-                __html: title,
-              }}
+              dangerouslySetInnerHTML={{ __html: title }}
               className="text-[#093475] mt-2.5 mb-[15px] text-lg font-bold leading-[1.2]"
             />
 
             <div
-              dangerouslySetInnerHTML={{
-                __html: excerpt,
-              }}
+              dangerouslySetInnerHTML={{ __html: excerpt }}
               className="mb-5"
             />
 

@@ -1,3 +1,4 @@
+import { KRMUWordUrl } from "@/app/constant";
 import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
@@ -30,7 +31,7 @@ export async function POST(req: Request) {
     });
 
     const wpResponse = await fetch(
-      "https://www.krmangalam.edu.in/careers2/wp-admin/admin-ajax.php",
+      `${KRMUWordUrl}/careers2/wp-admin/admin-ajax.php`,
       {
         method: "POST",
         body: forward,

@@ -73,6 +73,9 @@ const page = async ({ params }: Props) => {
     (programme) => programme.programmeslug === slug
   );
 
+
+ 
+
   const singlePHDProgramme = allSinglePHDProgramme?.find(
     (phdprogram) => phdprogram?.phdslug === slug
   );

@@ -19,7 +19,7 @@ const Navbar = ({ navbarData, handleMobileMenu, showMobilebar }: Props) => {
           <Link href="/">
             <Image
               // src="/KRMU-logo-univ.png"
-              src="/krmu-logo.svg"
+              src="/KRMU-Logo-NAAC.webp"
               width={370}
               height={60}
               alt="Website Logo"
