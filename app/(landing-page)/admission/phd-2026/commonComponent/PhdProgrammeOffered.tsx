@@ -16,7 +16,7 @@ const PhdProgrammeOffered = () => {
         <div className="flex items-center justify-center w-full h-full">
 
 
-        <h4 className="text-white font-semibold text-4xl">Ph.D PROGRAMME OFFERED</h4>
+        <h4 className="text-white font-semibold text-4xl">Ph.D. PROGRAMMES OFFERED</h4>
         </div>
       </section>
       <PhdProgrammeOfferedAccordionTab />

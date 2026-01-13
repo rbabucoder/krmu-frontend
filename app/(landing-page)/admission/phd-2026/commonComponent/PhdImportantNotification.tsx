@@ -13,11 +13,11 @@ const PhdImportantNotification = () => {
         </div>
         <div className="flex flex-col lg:flex-row gap-9 mt-10">
           <div className="w-full lg:w-1/2">
-            <h2 className="text-lg font-semibold border border-gray-200 rounded-t-md px-4 py-3 bg-white">
+            {/* <h2 className="text-lg font-semibold border border-gray-200 rounded-t-md px-4 py-3 bg-white">
               Ph.D. Program and Details for Entrance Test (January 2026 Batch)
-            </h2>
+            </h2> */}
 
-            <div className="overflow-x-auto border border-t-0 border-gray-200 rounded-b-md mb-5">
+            <div className="overflow-x-auto rounded-b-md mb-5">
               {/* <table className="w-full border-collapse">
                 <tbody>
                   <tr className="bg-gray-100">

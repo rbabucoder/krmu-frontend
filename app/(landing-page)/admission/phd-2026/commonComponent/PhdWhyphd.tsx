@@ -1,3 +1,4 @@
+import { Dot } from "lucide-react";
 import Image from "next/image";
 
 const PhdWhyphd = () => {
@@ -39,12 +40,15 @@ const PhdWhyphd = () => {
                     alt=""
                     className="w-12 h-12"
                   /> */}
+                  
                 </div>
                 <div className="font-light text-justify text-balance">
                   K.R. Mangalam University offers an intellectually stimulating environment for doctoral candidates across diverse disciplines. With expert faculty mentorship, state-of-the-art labs, and a multi-disciplinary approach, our Ph.D. programmes empower researchers to address real-world challenges and make meaningful academic contributions.
                 </div>
               </li>
-              <li className="flex items-start gap-2 border-b-2 border-[#E2E8F0] py-3 text-lg">
+              </ul>
+              <ul>
+              <li className="flex items-center gap-2 border-b-2 border-[#E2E8F0] py-3 text-lg">
                 <span className="mt-1">
                   {/* <Image
                     src="/landingpage/phd/why-phd/item-2.svg"
@@ -52,13 +56,14 @@ const PhdWhyphd = () => {
                     height={24}
                     alt=""
                   /> */}
+                  <Dot size={30} strokeWidth={3} />
                 </span>
                 <div className="font-semibold">
                   Interdisciplinary Research Across Multiple Disciplines
                 </div>
               </li>
 
-              <li className="flex items-start gap-2 border-b-2 border-[#E2E8F0] py-3 text-lg">
+              <li className="flex items-center gap-2 border-b-2 border-[#E2E8F0] py-3 text-lg">
                 <span className="mt-1">
                   {/* <Image
                     src="/landingpage/phd/why-phd/item-3.svg"
@@ -66,13 +71,14 @@ const PhdWhyphd = () => {
                     height={24}
                     alt=""
                   /> */}
+                  <Dot size={30} strokeWidth={3} />
                 </span>
                 <div className="font-semibold">
                  Renowned Faculty, Mentors, and Research Collaborators
                 </div>
               </li>
 
-              <li className="flex items-start gap-2 border-b-2 border-[#E2E8F0] py-3 text-lg">
+              <li className="flex items-center gap-2 border-b-2 border-[#E2E8F0] py-3 text-lg">
                 <span className="mt-1">
                   {/* <Image
                     src="/landingpage/phd/why-phd/item-4.svg"
@@ -80,12 +86,13 @@ const PhdWhyphd = () => {
                     height={24}
                     alt=""
                   /> */}
+                  <Dot size={30} strokeWidth={3} />
                 </span>
                 <div className="font-semibold">
                  Access to Advanced Laboratories, Libraries, and Digital resources
                 </div>
               </li>
-              <li className="flex items-start gap-2 border-b-2 border-[#E2E8F0] py-3 text-lg">
+              <li className="flex items-center gap-2 border-b-2 border-[#E2E8F0] py-3 text-lg">
                 <span className="mt-1">
                   {/* <Image
                     src="/landingpage/phd/why-phd/item-2.svg"
@@ -93,12 +100,13 @@ const PhdWhyphd = () => {
                     height={24}
                     alt=""
                   /> */}
+                  <Dot size={30} strokeWidth={3} />
                 </span>
                 <div className="font-semibold">
                   Flexible Course Structure with Emphasis on Original Research
                 </div>
               </li>
-              <li className="flex items-start gap-2 border-b-2 border-[#E2E8F0] py-3 text-lg">
+              <li className="flex items-center gap-2 border-b-2 border-[#E2E8F0] py-3 text-lg">
                 <span className="mt-1">
                   {/* <Image
                     src="/landingpage/phd/why-phd/item-5.svg"
@@ -106,6 +114,7 @@ const PhdWhyphd = () => {
                     height={24}
                     alt=""
                   /> */}
+                  <Dot size={30} strokeWidth={3} />
                 </span>
                 <div className="font-semibold">
                   Opportunities to Publish in Reputed Journals and Represent at Conferences
