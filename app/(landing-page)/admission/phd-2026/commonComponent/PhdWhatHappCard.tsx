@@ -132,7 +132,7 @@ const PhdWhatHappCard = () => {
               ></iframe>
             </div>
             <div className="text-center">
-              <h4 className="text-2xl">IDEAS 3.0</h4>
+              <h4 className="text-2xl">Student Life</h4>
               <div className="text-sm text-[#7F7F7F]">
                 {/* <p>
                   <i>Our campus was delighted with the presence of Mr. Aman Gupta</i>

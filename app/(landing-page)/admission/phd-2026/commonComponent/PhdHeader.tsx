@@ -19,7 +19,7 @@ const PhdHeader = () => {
           />
         </div>
         <div className="w-3/5">
-          <ul className="flex items-center justify-end lg:justify-center gap-10">
+          {/* <ul className="flex items-center justify-end lg:justify-center gap-10">
             <li className="hidden lg:block">
               <Link href="#">Home</Link>
             </li>
@@ -43,7 +43,7 @@ const PhdHeader = () => {
                 8192888444
               </Link>
             </li>
-          </ul>
+          </ul> */}
         </div>
         <div className="lg:w-1/5"></div>
       </div>
