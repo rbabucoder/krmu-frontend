@@ -12,7 +12,7 @@ const PhdHeroSection = ({ formId }: Props) => {
         <div className="w-full md:w-1/3">
           <h1 className="text-2xl text-center sm:text-left sm:not-first:text-[40px] text-white leading-[1] font-semibold">
             Ready to Add ‘Dr.’ to Your Name?  <br />
-            <span className="text-4xl sm:text-8xl xl:text-[190px] font-bold">Ph.D</span> <br />
+            <span className="text-4xl sm:text-8xl xl:text-[190px] font-bold">Ph.D.</span> <br />
             <span>Enroll in a Ph.D. Programme Today</span>
           </h1>
           <h3 className="text-xl mx-auto sm:mx-0 sm:text-2xl md:text-3xl font-semibold bg-white p-5 w-fit my-5 text-center sm:text-left">

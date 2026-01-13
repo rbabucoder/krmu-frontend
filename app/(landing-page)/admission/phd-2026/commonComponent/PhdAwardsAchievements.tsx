@@ -8,80 +8,80 @@ const PhdAwardsAchievements = () => {
           <div className="achive-trans-bg flex flex-col justify-center items-center p-10 h-full">
             <div>
               <Image
-                src="/landingpage/phd/trophy-icon.svg"
-                width={100}
-                height={80}
+                src="/landingpage/phd/naac-logo.png"
+                width={300}
+                height={280}
                 alt="Trophy Icon"
                 className="z-10"
               />
             </div>
-            <div className="text-center">
+            {/* <div className="text-center">
               <h5 className="text-2xl font-semibold">NAAC A Accredited</h5>
               <span>
                 Celebrating excellence and outstanding achievements in
                 education, research, and innovation that have been recognized
                 nationally and internationally.
               </span>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="w-full md:w-3/5">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             <div className="flex flex-col justify-center items-center text-center bg-white py-5 px-10 rounded-[10px]">
               <Image
-                src="/landingpage/phd/naac.png"
-                width={124}
-                height={124}
+                src="/landingpage/phd/awards/ioh.png"
+                width={250}
+                height={250}
                 alt="NAAC"
               />
-              <div className="">
+              {/* <div className="">
                 <h5 className="text-2xl font-semibold">NAAC A Accredited</h5>
                 <span className="text-xs text-[#777777]">
                   Ranked 87th in University Category
                 </span>
-              </div>
+              </div> */}
             </div>
             <div className="flex flex-col justify-center items-center text-center bg-white py-5 px-10 rounded-[10px]">
               <Image
-                src="/landingpage/phd/naac.png"
-                width={124}
-                height={124}
+                src="/landingpage/phd/awards/gu.png"
+                width={250}
+                height={250}
                 alt="NAAC"
               />
-              <div className="">
+              {/* <div className="">
                 <h5 className="text-2xl font-semibold">NAAC A Accredited</h5>
                 <span className="text-xs text-[#777777]">
                   Ranked 87th in University Category
                 </span>
-              </div>
+              </div> */}
             </div>
             <div className="flex flex-col justify-center items-center text-center bg-white py-5 px-10 rounded-[10px]">
               <Image
-                src="/landingpage/phd/naac.png"
-                width={124}
-                height={124}
+                src="/landingpage/phd/awards/coe.png"
+                width={800}
+                height={600}
                 alt="NAAC"
               />
-              <div className="">
+              {/* <div className="">
                 <h5 className="text-2xl font-semibold">NAAC A Accredited</h5>
                 <span className="text-xs text-[#777777]">
                   Ranked 87th in University Category
                 </span>
-              </div>
+              </div> */}
             </div>
             <div className="flex flex-col justify-center items-center text-center bg-white py-5 px-10 rounded-[10px]">
               <Image
-                src="/landingpage/phd/naac.png"
-                width={124}
-                height={124}
+                src="/landingpage/phd/awards/irsd.webp"
+                width={800}
+                height={600}
                 alt="NAAC"
               />
-              <div className="">
+              {/* <div className="">
                 <h5 className="text-2xl font-semibold">NAAC A Accredited</h5>
                 <span className="text-xs text-[#777777]">
                   Ranked 87th in University Category
                 </span>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

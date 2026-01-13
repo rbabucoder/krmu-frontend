@@ -36,7 +36,7 @@ const PhdCounter = () => {
               />
             </div>
             <span className="flex flex-col justify-center">
-              <span className="text-[22px] font-semibold">14 Cr</span>
+              <span className="text-[22px] font-semibold">16 Cr</span>
               <span className="text-xs text-[#7F7F7F]">
                 Research Grants  
               </span>
@@ -68,7 +68,7 @@ const PhdCounter = () => {
               />
             </div>
             <span className="flex flex-col justify-center">
-              <span className="text-[22px] font-semibold">9.2</span>
+              <span className="text-[22px] font-semibold">7.9</span>
               <span className="text-xs text-[#7F7F7F]">
                 Citation Index 
               </span>

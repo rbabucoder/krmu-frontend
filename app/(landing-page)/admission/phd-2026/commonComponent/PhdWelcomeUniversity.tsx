@@ -31,43 +31,43 @@ const PhdWelcomeUniversity = () => {
         <div className="w-full xl:w-1/3 flex flex-col gap-5 text-center sm:text-left md:gap-x-10 md:gap-y-20">
           <div className="grid grid-cols-2">
             <div className="flex flex-col">
-              <h4 className="text-2xl sm:text-4xl text-[#E50404] font-semibold">
-               18000+ 
+              <h4 className="text-2xl sm:text-3xl text-[#E50404] font-semibold">
+               18,000+ 
               </h4>
               <h5 className="font-semibold">Alumni Base</h5>
             </div>
             <div className="flex flex-col">
-              <h4 className="text-2xl sm:text-4xl text-[#005DA9] font-semibold">12000+ </h4>
+              <h4 className="text-2xl sm:text-3xl text-[#005DA9] font-semibold">12,000+ </h4>
               <h5 className="font-semibold">Students On Campus</h5>
             </div>
           </div>
           <div className="grid grid-cols-2">
             <div className="flex flex-col">
-              <h4 className="text-2xl sm:text-4xl text-[#005DA9] font-semibold">800+ </h4>
+              <h4 className="text-2xl sm:text-3xl text-[#005DA9] font-semibold">800+ </h4>
               <h5 className="font-semibold">Recruiters</h5>
             </div>
             <div className="flex flex-col">
-              <h4 className="text-2xl sm:text-4xl text-[#E50404] font-semibold">100% </h4>
+              <h4 className="text-2xl sm:text-3xl text-[#E50404] font-semibold">100% </h4>
               <h5 className="font-semibold">Placement Assistance </h5>
             </div>
           </div>
           <div className="grid grid-cols-2">
             <div className="flex flex-col">
-              <h4 className="text-2xl sm:text-4xl text-[#E50404] font-semibold">700+ </h4>
+              <h4 className="text-2xl sm:text-3xl text-[#E50404] font-semibold">700+ </h4>
               <h5 className="font-semibold">Experienced Educators </h5>
             </div>
             <div className="flex flex-col">
-              <h4 className="text-2xl sm:text-4xl text-[#005DA9] font-semibold">28+ </h4>
+              <h4 className="text-2xl sm:text-3xl text-[#005DA9] font-semibold">28+ </h4>
               <h5 className="font-semibold">Acres Campus </h5>
             </div>
           </div>
           <div className="grid grid-cols-2">
             <div className="flex flex-col">
-              <h4 className="text-2xl sm:text-4xl text-[#E50404] font-semibold">Up to 100% </h4>
+              <h4 className="text-2xl sm:text-3xl text-[#E50404] font-semibold">Up to 100% </h4>
               <h5 className="font-semibold">Scholarships </h5>
             </div>
             <div className="flex flex-col">
-              <h4 className="text-2xl sm:text-4xl text-[#005DA9] font-semibold">Fully Sponsored </h4>
+              <h4 className="text-2xl sm:text-3xl text-[#005DA9] font-semibold">Fully Sponsored </h4>
               <h5 className="font-semibold">International Study Tour </h5>
             </div>
           </div>

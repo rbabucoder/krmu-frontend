@@ -31,7 +31,7 @@ const PhdTestimonialCards = () => {
                 height={32}
                 alt=""
               />
-              <p className="my-5">
+              <p className="my-5 italic">
                 “K.R. Mangalam University provided me with a strong research foundation and mentorship in the emerging field of econophysics. The dedication, innovative approach, and academic support of the faculty played a pivotal role in my successful PhD journey and subsequent growth in publications and career advancement. I sincerely credit KRMU for shaping my academic path and enabling me to reach the highest levels of professional achievement.”
               </p>
               <div className="flex gap-5 items-center">
@@ -65,7 +65,7 @@ const PhdTestimonialCards = () => {
                 height={32}
                 alt=""
               />
-              <p className="my-5">
+              <p className="my-5 italic">
                 “My academic journey began at K.R. Mangalam University, where the strong foundation, supportive faculty, and enriching research environment shaped my Ph.D. experience. Even years after graduating, I continue to value the guidance and opportunities I received at KRMU, which paved the way for my current professional role at NIFT Panchkula. I am deeply grateful to K.R. Mangalam University for its lasting impact on my career and personal growth.”
               </p>
               <div className="flex gap-5 items-center">
@@ -99,7 +99,7 @@ const PhdTestimonialCards = () => {
                 height={32}
                 alt=""
               />
-              <p className="my-5">
+              <p className="my-5 italic">
               “My journey at K.R. Mangalam University has been transformative and empowering. The strong academic foundation, research support, and encouragement I received at KRMU equipped me to grow as a dedicated researcher and successfully transition into post-doctoral work. I am grateful for the mentorship and vibrant scholarly environment at KRMU, which played a key role in shaping my academic path and enabling me to pursue new frontiers in research with confidence and purpose.”
               </p>
               <div className="flex gap-5 items-center">

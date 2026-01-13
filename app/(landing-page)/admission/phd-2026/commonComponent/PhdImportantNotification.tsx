@@ -7,7 +7,7 @@ const PhdImportantNotification = () => {
       <div className="max-w-[1320px] mx-auto w-full">
         <div className="phdHeading">
           <h2 className="text-[32px] font-semibold mb-2.5">
-            Important Notification
+            Ph.D. at KRMU
           </h2>
           <div className="custom-border"></div>
         </div>
@@ -18,7 +18,7 @@ const PhdImportantNotification = () => {
             </h2>
 
             <div className="overflow-x-auto border border-t-0 border-gray-200 rounded-b-md mb-5">
-              <table className="w-full border-collapse">
+              {/* <table className="w-full border-collapse">
                 <tbody>
                   <tr className="bg-gray-100">
                     <td className="w-1/2 px-4 py-4 text-sm font-medium border border-gray-200">
@@ -66,7 +66,7 @@ const PhdImportantNotification = () => {
                   </tr>
 
                 </tbody>
-              </table>
+              </table> */}
             </div>
             <p className="leading-[1.5] mb-5">
               The Ph.D. programme offered by K. R. Mangalam University is framed according to standards set by University Grants Commission (UGC) under the able guidance of highly qualified and widely recognised faculty in their respective domains. We offer both full time and part time Ph.D. programmes in a wide range of domains. You will work closely with your supervisor on a research problem and push the frontiers of human knowledge and understanding. 
@@ -89,7 +89,7 @@ const PhdImportantNotification = () => {
               />
             </div>
             <div className="mt-2.5">
-              <span>For further information, please contact our research department:</span>
+              <span>For Further Information, Please Contact Our Research Department:</span>
               <span className="flex break-all flex-wrap sm:flex-nowrap gap-5">
                 <Link
                   href="mailto:welcome@krmangalam.edu.in"
@@ -116,12 +116,12 @@ const PhdImportantNotification = () => {
                     +91-8800697009, +91-9289143055  
                 </Link>
               </span>
-              <Link
+              {/* <Link
                 href=""
                 className="inline-block mt-5 py-2.5 px-5 bg-[#005DA9] text-white text-center max-w-[354px] w-full text-xl font-semibold rounded-[10px]"
               >
                 Important Instructions
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
