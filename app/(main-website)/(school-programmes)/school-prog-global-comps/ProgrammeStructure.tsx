@@ -324,7 +324,7 @@ const ProgrammeStructure = ({
                                       btn?.buttonclass || ""
                                     }`}
                                     redirectUrl={btn?.buttonlink || "#"}
-                                    form_name="Download Prospectus"
+                                    form_name={btn?.buttontext}
                                   />
                                   // <Link
                                   //   key={btn?.id}

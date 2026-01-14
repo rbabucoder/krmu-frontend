@@ -70,7 +70,7 @@ const CareerProspects = ({
           {(btn?.buttonclass || btn?.buttonlink) && (
             <button
               // href={btn?.buttonlink}
-              className={`text-white bg-[#db2a1a] p-[15px] flex items-center justify-around max-w-3xs w-full rounded-lg font-semibold ${btn?.buttonclass}`}
+              className={`text-white bg-[#db2a1a] p-[15px] flex items-center justify-around max-w-3xs w-full rounded-lg font-semibold cursor-pointer ${btn?.buttonclass}`}
             >
               <span>{btn?.buttontext}</span> <ArrowRight />
             </button>
