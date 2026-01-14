@@ -13,7 +13,7 @@ const PhdCounter = () => {
           <div className="flex flex-col sm:flex-row text-center sm:text-left gap-3.5 items-center">
             <div className="bg-[#00BFE7] rounded-full flex items-center justify-center w-[50px] h-[50px]">
               <Image
-                src="/landingpage/phd/icon-1.svg"
+                src="/landingpage/phd/icons/patent.svg"
                 width={27}
                 height={24}
                 alt="Patents"
@@ -27,9 +27,9 @@ const PhdCounter = () => {
             </span>
           </div>
           <div className="flex flex-col sm:flex-row text-center sm:text-left gap-3.5 items-center">
-            <div className="bg-[#00BFE7] rounded-full flex items-center justify-center w-[50px] h-[50px]">
+            <div className="bg-[#00C1A1] rounded-full flex items-center justify-center w-[50px] h-[50px]">
               <Image
-                src="/landingpage/phd/icon-1.svg"
+                src="/landingpage/phd/icons/scholar.svg"
                 width={27}
                 height={24}
                 alt="Patents"
@@ -43,9 +43,9 @@ const PhdCounter = () => {
             </span>
           </div>
           <div className="flex flex-col sm:flex-row text-center sm:text-left gap-3.5 items-center">
-            <div className="bg-[#00BFE7] rounded-full flex items-center justify-center w-[50px] h-[50px]">
+            <div className="bg-[#FC654C] rounded-full flex items-center justify-center w-[50px] h-[50px]">
               <Image
-                src="/landingpage/phd/icon-1.svg"
+                src="/landingpage/phd/icons/research.svg"
                 width={27}
                 height={24}
                 alt="Patents"
@@ -59,9 +59,9 @@ const PhdCounter = () => {
             </span>
           </div>
           <div className="flex flex-col sm:flex-row text-center sm:text-left gap-3.5 items-center">
-            <div className="bg-[#00BFE7] rounded-full flex items-center justify-center w-[50px] h-[50px]">
+            <div className="bg-[#FF9C00] rounded-full flex items-center justify-center w-[50px] h-[50px]">
               <Image
-                src="/landingpage/phd/icon-1.svg"
+                src="/landingpage/phd/icons/play.svg"
                 width={27}
                 height={24}
                 alt="Patents"

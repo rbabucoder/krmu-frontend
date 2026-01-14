@@ -13,7 +13,16 @@ const PhdSuperComputer = () => {
             </h3>
             <div className="custom-border"></div>
           </div>
-          <ol className="my-5 pl-5 list-decimal text-[17px] flex flex-col gap-2.5">
+          <div className="mt-5">
+
+            <Image
+            src="/landingpage/phd/steps.svg"
+            width={400}
+            height={580}
+            alt=""
+            />
+            </div>
+          {/* <ol className="my-5 pl-5 list-decimal text-[17px] flex flex-col gap-2.5">
             <li>Register Online Through the KRMU Portal</li>
 
             <li>Submit Academic Documents & Application Fee</li>
@@ -23,7 +32,7 @@ const PhdSuperComputer = () => {
             <li>Attend the Faculty Led Interview</li>
 
             <li>Receive Admission Confirmation</li>
-          </ol>
+          </ol> */}
           {/* <p className="mt-10 mb-5">
             K.R. Mangalam University Proudly Owns Super Computer for Research in
             A.I. & Emerging Technologies
@@ -42,7 +51,13 @@ const PhdSuperComputer = () => {
           </Link> */}
         </div>
         <div className="w-full xl:w-1/3">
-          <div className="bg-[#FBBF24] py-10 px-2.5 rounded-[5px] break-all sm:break-normal">
+          <Image
+            src="/landingpage/phd/merit.webp"
+            width={400}
+            height={580}
+            alt=""
+          />
+          {/* <div className="bg-[#FBBF24] py-10 px-2.5 rounded-[5px] break-all sm:break-normal">
             <h3 className="font-semibold mb-5 text-2xl">University Research Fellowship (URF) for Meritorious Candidates for 3 Years</h3>
             
             <div className="border-b border-white flex gap-2.5 items-start pb-2.5 ">
@@ -88,11 +103,11 @@ const PhdSuperComputer = () => {
               </span>
             </div>
             
-          </div>
+          </div> */}
         </div>
         <div className="w-full xl:w-1/3">
           <Image
-            src="/landingpage/phd/new-research.webp"
+            src="/landingpage/phd/phd-book.webp"
             width={400}
             height={580}
             alt=""

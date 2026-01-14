@@ -81,11 +81,11 @@ const PhdImportantNotification = () => {
           <div className="w-full lg:w-1/2">
             <div>
               <Image
-                src="/landingpage/phd/university.webp"
+                src="/landingpage/phd/univ.jpg"
                 width={685}
                 height={800}
                 alt=""
-                className="w-full h-[680px] object-cover"
+                className="w-full object-cover"
               />
             </div>
             <div className="mt-2.5">
