@@ -16,13 +16,13 @@ const rdcTeamData = [
   {
     name: "Dr. Surendra Kumar Yadav (PhD)",
     desg: "Associate Dean PhD Programme",
-    facultyUrl: "/faculty/dr-surendra-yadav",
+    facultyUrl: "/faculty/dr-surendra",
     facImgUrl: "/teamrdc/surendra.webp",
   },
   {
     name: "Dr. Prabhakar Bhandari (PhD)",
     desg: "Research Finance Officer",
-    facultyUrl: "/faculty/dr-prabhakar-bhandari",
+    facultyUrl: "/faculty/dr-prabhakar",
     facImgUrl: "/teamrdc/prabhakar.webp",
   },
   {

@@ -82,7 +82,7 @@ const CommonLeadPopup = ({
   return (
     <>
       {/* Trigger Button */}
-      <button onClick={() => setOpen(true)} className={buttonClassName}>
+      <button onClick={() => setOpen(true)} className={`${buttonClassName} cursor-pointer`}>
         {buttonText}
       </button>
 

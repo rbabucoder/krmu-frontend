@@ -31,8 +31,8 @@ const AboutTabs = ({ data }: Props) => {
           </TabsList>
         </div>
         <div className="pt-[60px] pb-36">
-          <TabsContent value="advisoryboard">
-            <AdvisorySlide data={data} />
+          <TabsContent value="advisoryboard" className="w-full">
+            <AdvisorySlide  />
           </TabsContent>
           <TabsContent value="krmudean">
             <DeansSlide />

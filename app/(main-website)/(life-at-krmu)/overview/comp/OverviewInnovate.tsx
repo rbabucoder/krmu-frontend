@@ -66,6 +66,15 @@ const OverviewInnovate = async () => {
           <div className="lg:w-[56%]">
             <div className="bg-[#051630] px-5 py-10 lg:pt-[60px] lg:pr-[30px] lg:pb-[50px] lg:pl-[60px] text-white">
               <OverviewUpdatedSlide data={data} />
+              <div className="flex  justify-center lg:justify-end">
+                <Link
+                  href="/happenings/news-events/"
+                  className="text-white bg-[#e31e24] py-[11px] px-[23px] rounded-[4px]"
+                  target="_blank"
+                >
+                  View More
+                </Link>
+              </div>
             </div>
             <div className="py-5 px-[60px] bg-[url(/bg.webp)] bg-cover bg-center bg-no-repeat">
               <Link

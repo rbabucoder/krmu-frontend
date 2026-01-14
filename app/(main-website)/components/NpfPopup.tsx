@@ -42,7 +42,7 @@ const NpfPopup = ({
   }, [formId, btnText]);
 
   return (
-    <button ref={btnRef} className={btnClass}>
+    <button ref={btnRef} className={`${btnClass} cursor-pointer`}>
       {btnText} {showIcon && <MoveRight size={16} />}
     </button>
   );

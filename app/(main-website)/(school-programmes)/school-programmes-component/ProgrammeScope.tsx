@@ -1,4 +1,4 @@
-import { STRAPI_URL } from "@/app/constant";
+import { FETCH_STRAPI_URL, STRAPI_URL } from "@/app/constant";
 import { getDownloadProspectusSetting } from "@/lib/api/global-setting";
 import PopupForm from "@/lib/constants/PopupForm";
 import { ProgrammeScopeType } from "@/lib/types/school-programme";
@@ -116,6 +116,7 @@ const ProgrammeScope = async ({ scopeData }: Props) => {
               src={`${STRAPI_URL}${scopeData?.scopeimg?.url}`}
               className="w-full h-full object-cover"
               alt="scope image"
+              
             />
           )}
         </div>

@@ -18,7 +18,7 @@ const BeyondClassroomSlider = ({ slideimages }: Props) => {
             className="relative w-full sm:w-[calc(100%/3)] lg:w-[calc(100%/4)] mx-2 h-[336px] flex-shrink-0 rounded-xl overflow-hidden"
           >
             <Image
-              src={img.url}
+              src={`${STRAPI_URL}${img.url}`}
               alt={img.alternativeText || `Beyond ${img.id}`}
               fill
               className="object-cover"

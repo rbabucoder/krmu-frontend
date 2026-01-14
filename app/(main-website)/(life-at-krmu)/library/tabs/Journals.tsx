@@ -4,7 +4,7 @@ const Journals = () => {
   return (
     <div className="libcontent">
       <h4>Journals </h4>
-      <h3>Branch Wise E-Books</h3>
+      <h3>Journals/ E-Journals/ Periodicals</h3>
       <div className="libtable">
         <table>
           <tbody>

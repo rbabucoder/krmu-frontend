@@ -45,7 +45,7 @@ const Specialisation = ({
                           <Image
                             width={111}
                             height={80}
-                            src={`${STRAPI_URL}${specialisation?.specialisationimg?.url}`}
+                            src={`${specialisation?.specialisationimg?.url}`}
                             alt={specialisation?.title}
                           />
                         </div>

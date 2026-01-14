@@ -141,7 +141,7 @@ const AdmissionProcessComp = ({
           // href={admisbtn.buttonlink}
           className={`${
             admisbtn.buttonclass || ""
-          } text-white bg-[#db2a1a] p-[15px] flex items-center justify-around max-w-3xs w-full rounded-lg font-semibold mt-10`}
+          } text-white bg-[#db2a1a] p-[15px] flex items-center justify-around max-w-3xs w-full rounded-lg font-semibold mt-10 cursor-pointer`}
         >
           <span>{admisbtn.buttontext}</span> <ArrowRight />
         </button> 

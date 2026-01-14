@@ -4,11 +4,10 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+
 import DeansSlide from "../Tabs/DeansSlide";
 import { Advisory } from "@/lib/api/facAdv";
-import { STRAPI_URL } from "@/app/constant";
+
 import AdvisorySlide from "../Tabs/AdvisorySlide";
 
 type Props = {
@@ -29,8 +28,9 @@ const AboutAccordion = ({ data }: Props) => {
             <div className="">Advisory Board</div>
           </AccordionTrigger>
           <AccordionContent className="text-balance py-5">
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10">
-             <AdvisorySlide data={data} />
+            <div className="">
+             {/* <AdvisorySlide data={data} /> */}
+             <AdvisorySlide  />
             </div>
             {/* <div className="flex justify-center">
               <Button className="text-[#051630] bg-[#f2f3f5] h-[50px] border border-[#051630] font-semibold text-base hover:bg-[#cb000d] hover:text-white cursor-pointer mt-10">

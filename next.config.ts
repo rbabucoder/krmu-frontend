@@ -19,6 +19,11 @@ const nextConfig: NextConfig = {
         pathname: "/**",
       },
       {
+        protocol: "http",
+        hostname: "techapi.krmangalam.edu.in",
+        pathname: "/**",
+      },
+      {
         protocol: "https",
         hostname: "www.krmangalam.edu.in",
         pathname: "/**",
