@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ScrollButton from "../../CommonComponent2026/ScrollButton";
 
 export const CommonHeader = () => {
   return (
@@ -18,9 +19,12 @@ export const CommonHeader = () => {
           />
         </div>
         <div className="w-1/2 hidden sm:flex justify-end">
-          <button className="max-w-[180px] w-full py-[15px] px-[25px] text-white bg-[#e31e24] rounded-[15px]">
+          {/* <button className="max-w-[180px] w-full py-[15px] px-[25px] text-white bg-[#e31e24] rounded-[15px]">
             Apply Now
-          </button>
+          </button> */}
+          <ScrollButton targetId="apply-section" highlightClass="flash-border" btnClass="max-w-[180px] w-full py-[15px] px-[25px] text-white bg-[#e31e24] rounded-[15px]" >
+            Apply Now
+          </ScrollButton>
         </div>
       </div>
     </header>

@@ -1,6 +1,7 @@
 import { MoveUpRight, Check } from "lucide-react";
 import Link from "next/link";
 import { ApplySectionData } from "../law-2026/contentype";
+import ScrollButton from "./ScrollButton";
 
 type Props = {
   data: ApplySectionData;
@@ -20,7 +21,7 @@ const ApplySection = ({ data }: Props) => {
 
         {/* CTA Button */}
         <div className="flex justify-center mb-16">
-          <Link
+          {/* <Link
             href={data.cta.href}
             className="inline-flex items-center gap-3 bg-[#0060aa] text-white px-2 py-2 rounded-full hover:bg-[#004d8a] transition-colors group"
           >
@@ -28,7 +29,18 @@ const ApplySection = ({ data }: Props) => {
             <span className="bg-white rounded-full p-2 group-hover:translate-x-1 transition-transform">
               <MoveUpRight className="text-[#0060aa]" size={20} />
             </span>
-          </Link>
+          </Link> */}
+
+          <ScrollButton
+            targetId="apply-section"
+            highlightClass="flash-border"
+            btnClass="inline-flex items-center gap-3 bg-[#0060aa] text-white px-2 py-2 rounded-full hover:bg-[#004d8a] transition-colors group"
+          >
+            <span className="text-lg font-medium">{data.cta.label}</span>
+            <span className="bg-white rounded-full p-2 group-hover:translate-x-1 transition-transform">
+              <MoveUpRight className="text-[#0060aa]" size={20} />
+            </span>
+          </ScrollButton>
         </div>
 
         {/* Highlights */}

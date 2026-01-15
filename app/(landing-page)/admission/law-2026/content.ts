@@ -25,11 +25,12 @@ export const Hero: HeroContent = {
         Law (UG)
       </span>
       <br />
-      PROGRAMMES 2026
+      PROGRAMMES 2026-27
     `,
   desc: `Shape Your Legal Journey with Practical and Career-Focused Learning.`,
-  heroBg: "/landingpage/law-2026/law-bg.webp",
-  middleImg: "/landingpage/law-2026/law.webp",
+  heroBg: "/landingpage/law-2026/law.jpg",
+  // middleImg: "/landingpage/law-2026/law.webp",
+  middleImg: "",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -52,7 +53,7 @@ export const Counters: CounterItem[] = [
     subtitle: "Recruiters",
   },
   {
-    title: "Up To ₹21 Cr",
+    title: "Up To ₹27 Cr",
     subtitle: "Worth of Scholarships",
   },
   {
@@ -92,7 +93,7 @@ export const prominentRecruiters: ProminentRecruit[] = [
 export const whyKRM: WhyKRMSection = {
   heading: "Why Choose Undergraduate Law Programmes at KRMU?",
   subheading: "Where Legal Theory Meets Real-World Practice",
-  content: `Undergraduate Law Programmes at K.R. Mangalam University provides internationally relevant, industry-aligned programs aimed at producing capable and socially conscious attorneys. Our graduates are prepared to succeed in corporate law, litigation, public policy, and other fields thanks to a curriculum developed by legal professionals, practical experience, and interdisciplinary learning.`,
+  content: `Undergraduate Law Programmes at K.R. Mangalam University provides internationally relevant, industry-aligned programs aimed at producing capable and socially conscious attorneys. Our graduates are prepared to succeed in corporate law, litigation, public policy, and other fields thanks to a curriculum developed by legal professionals which focuses on practical experience and interdisciplinary learning.`,
   imgUrl: `/landingpage/common/building.webp`,
   whyKrmCards: [
     {
@@ -131,27 +132,27 @@ export const industryExperts: IndustryExpertsSection = {
     {
       imgUrl: "/landingpage/law-2026/indus-exp/1.jpg",
       alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
+      title: "",
     },
     {
       imgUrl: "/landingpage/law-2026/indus-exp/2.png",
       alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
+      title: "",
     },
     {
       imgUrl: "/landingpage/law-2026/indus-exp/3.webp",
       alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
+      title: "",
     },
     {
       imgUrl: "/landingpage/law-2026/indus-exp/4.jpg",
       alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
+      title: "",
     },
     {
       imgUrl: "/landingpage/law-2026/indus-exp/5.png",
       alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
+      title: "",
     },
   ],
   bannerImg: "/landingpage/common/indus-exp.webp",
@@ -238,8 +239,15 @@ export const opportunityData: OpportunitySection = {
     width: 300,
     height: 400,
   },
-  heading: "Learn From Industry Experts",
-  highlight: "Opportunity That Transforms",
+  heading: "KRMU Highlights",
+  highlight: `<ul>
+            <li>56.6 LPA Highest Package</li>
+            <li>800+ Recruiters</li>
+            <li>Scholarships Worth Up To ₹27 Cr</li>
+            <li>700+ Experienced Educators</li>
+            <li>100% Placement Assistance</li>
+            <li>100% Sponsored International Study Tour</li>
+          </ul>`,
   cta: {
     label: "Apply for Law (UG) 2026-2027",
     href: "#",
@@ -247,8 +255,8 @@ export const opportunityData: OpportunitySection = {
 };
 
 export const testimonialsData: TestimonialsSection = {
-  subheading: "Our Testimonials",
-  heading: `Why our schoolers loves and <br /> trust K.R. Mangalam University?`,
+  subheading: "Students’ Testimonials",
+  heading: `Why Do Our Students Trust Us?`,
   testimonials: [
     {
       image: "/landingpage/law-2026/testimonials/1.webp",
@@ -274,11 +282,10 @@ After graduating, I applied my experiences to a fulfilling career journey.`,
     {
       image: "/landingpage/law-2026/testimonials/3.webp",
       videoUrl: "#",
-      quote: `Proud K.R. Mangalam University alumni, my journey from student to professional 
-was enriched by diverse cultural and academic engagements, shaping my future 
-personally and professionally. Immersed in a vibrant academic environment, guided 
-by distinguished professors, I gained confidence and insight into the legal career. 
-After graduating, I applied my experiences to a fulfilling career journey.`,
+      quote: `Hello, I'm Komal Sharma, a 2013 BBA LL. B. (Hons.) graduate from K.R. Mangalam 
+University. Blessed to join KRMU, its top-notch infrastructure and supportive atmosphere 
+enriched my learning journey. Grateful to professors for their expertise. Now, as a director 
+at "Ataraxia IP," I aim to apply KRMU's teachings to achieve my goals.`,
       name: "KOMAL SHARMA",
       programme: "BBA LL. B. (Hons.)",
     },
@@ -433,7 +440,7 @@ export const faqSectionData: FAQSectionData = {
   eyebrow: "(FAQs)",
   heading: "Frequently Asked Questions",
   description:
-    "K.R. Mangalam University offers Ph.D. programmes in a wide array of fields, encouraging cross-disciplinary exploration and innovation.",
+    "",
   faqs: [
     {
       id: "item-1",
@@ -454,6 +461,11 @@ export const faqSectionData: FAQSectionData = {
     {
       id: "item-4",
       question: "What distinguishes BBA LLB from BA LLB?",
+      answer: `In every Indian LLB school, an LLB program lasts around three years. However, the course length is often five years if you're studying an integrated LL.B. program, like as a B.A. LL.B. or a BBA LLB in India.`,
+    },
+    {
+      id: "item-5",
+      question: "How long does an LLB law programme in India last?",
       answer: `In every Indian LLB school, an LLB program lasts around three years. However, the course length is often five years if you're studying an integrated LL.B. program, like as a B.A. LL.B. or a BBA LLB in India.`,
     },
   ],

@@ -2,6 +2,7 @@ import { MoveUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { IndustryExpertsSection } from "../law-2026/contentype";
+import ScrollButton from "./ScrollButton";
 
 type Props = {
   data: IndustryExpertsSection;
@@ -31,7 +32,7 @@ const IndustryExperts = ({ data }: Props) => {
             />
 
             <div className="hidden md:flex lg:justify-end">
-              <Link
+              {/* <Link
                 href={data.cta.href}
                 className="flex items-center justify-between max-w-2xs w-full py-0.5 px-2 gap-2 border border-white rounded-full"
               >
@@ -39,7 +40,18 @@ const IndustryExperts = ({ data }: Props) => {
                 <span className="bg-white p-3 rounded-full w-1/5">
                   <MoveUpRight className="text-[#0060aa]" size={30} />
                 </span>
-              </Link>
+              </Link> */}
+
+              <ScrollButton
+                targetId="apply-section"
+                highlightClass="flash-border"
+                btnClass="flex items-center justify-between max-w-2xs w-full py-0.5 px-2 gap-2 border border-white rounded-full"
+              >
+                <span className="w-4/5 text-center">{data.cta.label}</span>
+                <span className="bg-white p-3 rounded-full w-1/5">
+                  <MoveUpRight className="text-[#0060aa]" size={30} />
+                </span>
+              </ScrollButton>
             </div>
           </div>
         </div>

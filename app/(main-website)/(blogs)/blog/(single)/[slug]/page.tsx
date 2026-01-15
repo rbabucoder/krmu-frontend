@@ -11,7 +11,7 @@ import Script from "next/script";
 type Props = {
   params: Promise<{ slug: string }>;
 };
- 
+
 // -------------------------------
 // ✅ Generate Metadata (Yoast)
 // -------------------------------
@@ -57,7 +57,8 @@ const page = async ({ params }: Props) => {
     <>
       {schemaScript && (
         <Script
-          
+          id="yoast-schema"
+          type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: schemaScript
               .replace(/<script[^>]*>/g, "")

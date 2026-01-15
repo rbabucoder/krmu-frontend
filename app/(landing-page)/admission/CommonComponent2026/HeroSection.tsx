@@ -27,6 +27,7 @@ const HeroSection = ({
           background: `url(${heroBg})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
         }}
       >
         <div className="max-w-[1400px] mx-auto w-full flex flex-col lg:flex-row items-center gap-5">
@@ -55,7 +56,7 @@ const HeroSection = ({
               />
             )}
           </div>
-          <div className="w-full xl:w-1/3 mt-5 lg:mt-0">
+          <div className="w-full xl:w-1/3 mt-5 lg:mt-0" id="apply-section">
             {formId && <NoPaperFormsWidget widgetId={formId} />}
           </div>
         </div>
