@@ -34,7 +34,7 @@ const AccordionSlide = ({ slides }: Props) => {
                   width={390}
                   height={390}
                   alt={image?.alternativeText || "programme highlight"}
-                  className="w-full h-full"
+                  className="w-full h-[390px] object-cover"
                 />
               </div>
             </CarouselItem>

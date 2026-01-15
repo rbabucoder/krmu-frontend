@@ -7,6 +7,22 @@ type Props = {
   params: Promise<{ slug: string }>;
 };
 
+import { Metadata } from "next";
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+
+  const singleJobData = await getSingleJobBySlug(slug);
+
+  const currentSingleJob = singleJobData?.find((job) => job?.slug === slug);
+
+  const siteTitle = currentSingleJob?.title?.rendered;
+
+  return {
+    title: siteTitle || "K.R. Mangalam University",
+  };
+}
+
 const page = async ({ params }: Props) => {
   const { slug } = await params;
 

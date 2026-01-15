@@ -58,6 +58,9 @@ export type BlogPostContent = {
   };
   yoast_head_json: YoastHeadJson;
   featured_media: number;
+  acf?: {
+    krmscript?: string;
+  };
 };
 
 export type BlogOgImage = {

@@ -1,4 +1,5 @@
 import { STRAPI_URL } from "@/app/constant";
+import NpfChatbot from "@/app/NpfChatbot";
 import { getFooter } from "@/lib/api/footer";
 import { getPageAssets } from "@/lib/api/global-setting";
 import Image from "next/image";
@@ -187,6 +188,8 @@ const Footer = async () => {
       {js_in_footer && (
         <script dangerouslySetInnerHTML={{ __html: js_in_footer }} />
       )}
+
+    <NpfChatbot />
     </>
   );
 };

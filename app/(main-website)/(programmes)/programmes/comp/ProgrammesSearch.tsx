@@ -205,6 +205,7 @@ const ProgrammesSearch = () => {
                         onClick={() => {
                           setSelectedSchool(school.school_category.slug);
                           setSearchQuery(""); // clear search
+                          setOpenSchoolDropdown(false);
                         }}
                         className={`py-2 px-3 cursor-pointer hover:bg-[#f0f0f0] ${
                           selectedSchool === school.school_category.slug
@@ -245,6 +246,7 @@ const ProgrammesSearch = () => {
                         onClick={() => {
                           setSelectedDegree(degree.slug);
                           setSearchQuery(""); // clear search
+                          setOpenDegreeDropdown(false);
                         }}
                         className={`py-2 px-3 cursor-pointer hover:bg-[#f0f0f0] ${
                           selectedDegree === degree.slug

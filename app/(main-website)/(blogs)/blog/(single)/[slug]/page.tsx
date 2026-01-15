@@ -6,7 +6,7 @@ import {
 import { notFound } from "next/navigation";
 import SingleBlogHero from "../../(listings)/single-blog-comp/SingleBlogHero";
 import SingleBlogLayout from "../../(listings)/single-blog-comp/SingleBlogLayout";
-
+import Script from "next/script";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -35,6 +35,8 @@ const page = async ({ params }: Props) => {
 
   if (!currentSingleBlog?.title) return notFound();
 
+  const schemaScript = singleBlogData[0]?.acf?.krmscript;
+
   // const featuredImageUrl =
   //   currentSingleBlog?._embedded?.["wp:featuredmedia"]?.[0]?.source_url;
 
@@ -53,6 +55,18 @@ const page = async ({ params }: Props) => {
 
   return (
     <>
+      {schemaScript && (
+        <Script
+          id="yoast-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: schemaScript
+              .replace(/<script[^>]*>/g, "")
+              .replace(/<\/script>/g, ""),
+          }}
+          strategy="beforeInteractive"
+        />
+      )}
       <SingleBlogHero
         title={currentSingleBlog?.title?.rendered}
         imgUrl={featuredImageUrl ?? ""}

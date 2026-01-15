@@ -7,6 +7,23 @@ type Props = {
   params: Promise<{ slug: string }>;
 };
 
+import { Metadata } from "next";
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params; // ✅ await params
+  const photoGalleryUsingSlug = await getGallerImagesUsingSlug(slug);
+
+  const photoGalleryData = photoGalleryUsingSlug.find(
+    (item) => item.slug === slug
+  );
+
+  const title = photoGalleryData?.title;
+
+  return {
+    title: title || "K.R. Mangalam University",
+  };
+}
+
 const page = async ({ params }: Props) => {
   const { slug } = await params; // ✅ await params
   const photoGalleryUsingSlug = await getGallerImagesUsingSlug(slug);

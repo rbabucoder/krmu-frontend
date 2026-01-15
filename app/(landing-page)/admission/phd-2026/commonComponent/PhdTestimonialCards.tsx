@@ -22,7 +22,7 @@ const PhdTestimonialCards = () => {
             <div
               className="p-5 rounded-[20px] bg-white border-t-8 phdtestcard"
               style={{
-                boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px;",
+                boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
               }}
             >
               <Image

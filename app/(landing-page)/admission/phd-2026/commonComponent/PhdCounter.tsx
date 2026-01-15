@@ -6,7 +6,7 @@ const PhdCounter = () => {
       <div
         className="max-w-[1300px] mx-auto w-full rounded-[10px] z-10 relative -mt-24 bg-white"
         style={{
-          boxShadow: `rgba(149, 157, 165, 0.2) 0px 8px 24px;`,
+          boxShadow: `rgba(149, 157, 165, 0.2) 0px 8px 24px`,
         }}
       >
         <div className="p-5 md:py-12 md:px-20 grid grid-cols-2 lg:grid-cols-4 gap-5">
