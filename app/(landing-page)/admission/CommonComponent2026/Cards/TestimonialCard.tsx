@@ -24,7 +24,7 @@ const TestimonialCard = ({ data }: Props) => {
       />
 
       {/* Play Button */}
-      {data.videoUrl && (
+      {/* {data.videoUrl && (
         <div className="absolute top-4 left-4 bg-white/90 p-3 rounded-full z-20">
           <Link href={data.videoUrl}>
             <Image
@@ -35,16 +35,16 @@ const TestimonialCard = ({ data }: Props) => {
             />
           </Link>
         </div>
-      )}
+      )} */}
 
       {/* Overlay */}
-      <div className="absolute bottom-0 left-0 w-full z-10">
+      <div className="absolute bottom-0 left-[50%] translate-x-[-50%] w-[94%] mx-auto z-10">
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent" />
 
-        <div className="relative backdrop-blur-md px-5 pb-5 pt-10">
+        <div className="relative px-5 pb-5 pt-5 mb-4 rounded-2xl bg-white opacity-[0.8]">
           {/* Quote */}
           <p
-            className={`text-white text-sm leading-relaxed mb-2 transition-all ${
+            className={`text-black text-sm leading-relaxed mb-2 transition-all ${
               expanded ? "" : "line-clamp-3"
             }`}
           >
@@ -55,14 +55,14 @@ const TestimonialCard = ({ data }: Props) => {
           {data.quote.length > 120 && (
             <button
               onClick={() => setExpanded(!expanded)}
-              className="text-xs text-white underline mb-3"
+              className="text-xs text-red-500 underline mb-3 cursor-pointer"
             >
               {expanded ? "Read less" : "Read more"}
             </button>
           )}
 
           {/* Name + Programme */}
-          <div className="flex gap-4 text-xs text-[#cdb9bb]">
+          <div className="flex gap-4 text-xs text-black">
             <span>{data.name}</span>
             <span>{data.programme}</span>
           </div>

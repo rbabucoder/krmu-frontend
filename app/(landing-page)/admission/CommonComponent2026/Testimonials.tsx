@@ -19,9 +19,14 @@ const Testimonials = ({ data }: Props) => {
         {/* Header */}
         <div className="flex flex-col lg:flex-row">
           <div className="w-full lg:w-1/2 text-center md:text-left">
-            <h4 className="text-xl md:text-2xl">{data.subheading}</h4>
+            <h4
+              className="text-xl md:text-2xl"
+              dangerouslySetInnerHTML={{
+                __html: data.subheading,
+              }}
+            />
             <h3
-              className="text-2xl md:text-4xl font-medium text-[#013fa1]"
+              className="text-2xl md:text-4xl font-semibold text-[#013fa1]"
               dangerouslySetInnerHTML={{ __html: data.heading }}
             />
           </div>
@@ -31,9 +36,14 @@ const Testimonials = ({ data }: Props) => {
         {/* Carousel */}
         <div className="w-full mt-10">
           <Carousel opts={{ align: "start", loop: true }} className="w-full">
-            <CarouselContent className="mb-10 sm:my-12 sm:pr-[20%]">
+            {/* <CarouselContent className="mb-10 sm:my-12 sm:pr-[20%]"> */}
+            <CarouselContent className="mb-10 sm:my-12">
               {data.testimonials.map((item, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                // <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 pl-2">
+                <CarouselItem
+                  key={index}
+                  className="md:basis-1/2 lg:basis-1/3 xl:basis-1/4 pl-2"
+                >
                   <TestimonialCard data={item} />
                 </CarouselItem>
               ))}

@@ -15,24 +15,29 @@ const AssistantDSWMessage = () => {
         <div className="flex flex-col lg:flex-row gap-5">
           <div className="lg:w-1/5">
             <Image
-              src="/student-welfare/assistant-dsw.webp"
+              src="/life-at-krmu/shivani.jpg"
               width={304}
               height={234}
               alt="Assistant DSW"
             />
-            <h4 className="text-white text-[15px] mt-2.5">Dr. Anshul Saluja, Assistant Dean Student Welfare</h4>
+            <h4 className="text-white text-[15px] mt-2.5">
+              Dr. Shivani Sehgal, Assistant Dean DSW
+            </h4>
           </div>
           <div className="lg:w-4/5">
             <p>
-              The Office of Student Welfare is committed to working with
-              students to take full advantage of the opportunities they will
-              find at this great University. Our team consists of dedicated
-              individuals who connect, support, educate, empower, and engage
-              with students in life outside of the classroom. Student Welfare
-              aims to create and implements programmes that foster student
-              engagement, learning, and development. It initiates campus and
-              community partnerships for effective, seamless student services
-              and experiences.
+              The Department of Student Welfare is dedicated to the holistic
+              development of students—academically, personally, and socially.
+              Guided by our vision of integrated growth, we strive to equip
+              students with essential life skills, emotional resilience, and
+              ethical grounding to thrive in a diverse and global society.
+              Through structured initiatives, counseling support, and
+              experiential learning, we nurture confident individuals with
+              strong moral values and a sense of purpose. Our focus is on
+              developing leadership, adaptability, and well-being beyond
+              classroom learning. We believe in transforming students into
+              capable, compassionate, and future-ready global citizens—prepared
+              not only to succeed, but to lead with integrity.  
             </p>
           </div>
         </div>

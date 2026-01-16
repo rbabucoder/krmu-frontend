@@ -81,11 +81,19 @@ const page = () => {
 
   return (
     <>
+      {/* <HeroSection
+        content={heroContent?.title}
+        formId={bbaIdForm}
+        desc={heroContent?.desc}
+        marqueeData={heroMarqData}
+      /> */}
       <HeroSection
         content={heroContent?.title}
         formId={bbaIdForm}
         desc={heroContent?.desc}
         marqueeData={heroMarqData}
+        heroBg={heroContent?.heroBg}
+        middleImg={heroContent?.middleImg}
       />
       <Counter counters={counters} />
       <ProminentRecruiter recruiters={recruiters} />

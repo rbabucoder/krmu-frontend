@@ -33,6 +33,52 @@ const TeamMember = () => {
           </div>
           <div className="w-full flex flex-col justify-center items-center">
             <Image
+              src="/student-welfare/team-member/jagjeet.webp"
+              width={150}
+              height={150}
+              className="mb-2.5 rounded-full"
+              alt="Puneet"
+            />
+            <span className="font-semibold">Mr. Jagjeet Singh</span>
+            <span className="text-sm">Sports Incharge</span>
+          </div>
+
+          <div className="w-full flex flex-col justify-center items-center">
+            <Image
+              src="/student-welfare/team-member/sunil.webp"
+              width={150}
+              height={150}
+              className="mb-2.5 rounded-full"
+              alt="Puneet"
+            />
+            <span className="font-semibold">Mr. Sunil</span>
+            <span className="text-sm">Coach</span>
+          </div>
+
+          <div className="w-full flex flex-col justify-center items-center">
+            <Image
+              src="/student-welfare/team-member/ankita.webp"
+              width={150}
+              height={150}
+              className="mb-2.5 rounded-full"
+              alt="Puneet"
+            />
+            <span className="font-semibold">Ms. Ankita</span>
+            <span className="text-sm">Student Success Manager</span>
+          </div>
+          <div className="w-full flex flex-col justify-center items-center">
+            <Image
+              src="/student-welfare/team-member/isha.webp"
+              width={150}
+              height={150}
+              className="mb-2.5 rounded-full"
+              alt="Puneet"
+            />
+            <span className="font-semibold">Ms. Isha Sharma</span>
+            <span className="text-sm">Event Manager</span>
+          </div>
+          {/* <div className="w-full flex flex-col justify-center items-center">
+            <Image
               src="/student-welfare/team-member/harikant.webp"
               width={150}
               height={150}
@@ -45,28 +91,6 @@ const TeamMember = () => {
 
           <div className="w-full flex flex-col justify-center items-center">
             <Image
-              src="/student-welfare/team-member/jagjeet.webp"
-              width={150}
-              height={150}
-              className="mb-2.5 rounded-full"
-              alt="Puneet"
-            />
-            <span className="font-semibold">Mr. Jagjeet Singh</span>
-            <span className="text-sm">Sports Incharge</span>
-          </div>
-          <div className="w-full flex flex-col justify-center items-center">
-            <Image
-              src="/student-welfare/team-member/sunil.webp"
-              width={150}
-              height={150}
-              className="mb-2.5 rounded-full"
-              alt="Puneet"
-            />
-            <span className="font-semibold">Mr. Sunil</span>
-            <span className="text-sm">Coach</span>
-          </div>
-              <div className="w-full flex flex-col justify-center items-center">
-            <Image
               src="/student-welfare/team-member/balram.webp"
               width={150}
               height={150}
@@ -75,7 +99,7 @@ const TeamMember = () => {
             />
             <span className="font-semibold">Mr. Balram Kasana</span>
             <span className="text-sm">Office Assistant</span>
-          </div>    
+          </div> */}
         </div>
       </div>
     </section>

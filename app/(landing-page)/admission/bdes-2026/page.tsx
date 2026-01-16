@@ -5,7 +5,7 @@ import ComeToLife from "../CommonComponent2026/ComeToLife";
 import Counter from "../CommonComponent2026/Counter";
 import FAQ from "../CommonComponent2026/FAQ";
 import HeroSection from "../CommonComponent2026/HeroSection";
-import IndustryExperts from "../CommonComponent2026/IndustryExperts";
+// import IndustryExperts from "../CommonComponent2026/IndustryExperts";
 import LifeAsPhDScholar from "../CommonComponent2026/LifeAsPhDScholar";
 import Opportunity from "../CommonComponent2026/Opportunity";
 import ProminentRecruiter from "../CommonComponent2026/ProminentRecruiter";
@@ -23,7 +23,7 @@ import {
   faqSectionData,
   Hero,
   heroMarqueeData,
-  industryExperts,
+  // industryExperts,
   lifeAsPhDScholarData,
   opportunityData,
   prominentRecruiters,
@@ -67,7 +67,7 @@ const page = () => {
   const counters = Counters;
   const recruiters = prominentRecruiters;
   const whykrm = whyKRM;
-  const industryexpert = industryExperts;
+  // const industryexpert = industryExperts;
   const specialise = specialisationData;
   const opport = opportunityData;
   const testiomonial = testimonialsData;
@@ -98,7 +98,7 @@ const page = () => {
         imgUrl={whykrm?.imgUrl}
         whykrmCards={whykrm?.whyKrmCards}
       />
-      <IndustryExperts data={industryexpert} />
+      {/* <IndustryExperts data={industryexpert} /> */}
       <Specialisation data={specialise} />
       <Opportunity data={opport} />
       <FeeStructureTable />

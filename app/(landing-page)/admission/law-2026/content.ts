@@ -22,7 +22,7 @@ export const Hero: HeroContent = {
       ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
-        Law (UG)
+        Law
       </span>
       <br />
       PROGRAMMES 2026-27
@@ -45,8 +45,8 @@ export const heroMarqueeData: HeroMarqueeSection = {
 
 export const Counters: CounterItem[] = [
   {
-    title: "7.25 LPA",
-    subtitle: "Average Package",
+    title: "92%",
+    subtitle: "Placement Record",
   },
   {
     title: "800+",
@@ -94,7 +94,7 @@ export const whyKRM: WhyKRMSection = {
   heading: "Why Choose Undergraduate Law Programmes at KRMU?",
   subheading: "Where Legal Theory Meets Real-World Practice",
   content: `Undergraduate Law Programmes at K.R. Mangalam University provides internationally relevant, industry-aligned programs aimed at producing capable and socially conscious attorneys. Our graduates are prepared to succeed in corporate law, litigation, public policy, and other fields thanks to a curriculum developed by legal professionals which focuses on practical experience and interdisciplinary learning.`,
-  imgUrl: `/landingpage/common/building.webp`,
+  imgUrl: `/landingpage/common/build.webp`,
   whyKrmCards: [
     {
       imgUrl: "/landingpage/law-2026/why-choose-card/1-Card.jpg",
@@ -125,7 +125,7 @@ export const industryExperts: IndustryExpertsSection = {
   description:
     "The law programmes at KRMU are enriched by academic and professional inputs from experienced knowledge partners.",
   cta: {
-    label: "Apply for Law (UG) 2026-2027",
+    label: "Apply for Law 2026-27",
     href: "#",
   },
   cards: [
@@ -249,7 +249,7 @@ export const opportunityData: OpportunitySection = {
             <li>100% Sponsored International Study Tour</li>
           </ul>`,
   cta: {
-    label: "Apply for Law (UG) 2026-2027",
+    label: "Apply for Law 2026-27",
     href: "#",
   },
 };
@@ -367,7 +367,7 @@ export const comeToLifeData: ComeToLifeSection = {
 `,
   footerText: ``,
   cta: {
-    label: "Apply for Law (UG) 2026-2027",
+    label: "Apply for Law 2026-27",
     href: "#",
   },
   slides: [
@@ -415,7 +415,7 @@ export const comeToLifeData: ComeToLifeSection = {
 };
 
 export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
-  heading: "Life as a Law (UG) Student at KRMU ",
+  heading: "Life as a Law Student at KRMU ",
   description: "",
   image: {
     src: "/landingpage/common/collage.webp",
@@ -500,7 +500,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Apply for K.R. Mangalam <br /> University now`,
   description: "Start Your Adventure Right Now at K.R. Mangalam University",
   cta: {
-    label: "Apply for Law (UG) 2026-2027",
+    label: "Apply for Law 2026-27",
     href: "#",
   },
   highlights: [

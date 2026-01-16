@@ -1,8 +1,6 @@
-import { MoveUpRight } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
-import { SpecialisationCardItem } from "../../law-2026/contentype";
 
+import { SpecialisationCardItem } from "../../law-2026/contentype";
 
 type Props = {
   data: SpecialisationCardItem;
@@ -11,7 +9,7 @@ type Props = {
 const SpecialisationCard = ({ data }: Props) => {
   return (
     <div
-      className="p-5 rounded-2xl bg-white"
+      className="p-5 rounded-2xl bg-white h-full"
       style={{
         boxShadow: "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px",
       }}
@@ -60,12 +58,12 @@ const SpecialisationCard = ({ data }: Props) => {
         </div>
 
         {/* CTA */}
-        <Link
+        {/* <Link
           href="#"
           className="bg-[#0060aa] p-5 rounded-full text-white flex w-fit items-center gap-5"
         >
           Explore Programme <MoveUpRight color="#fff" />
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

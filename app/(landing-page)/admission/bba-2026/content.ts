@@ -25,7 +25,7 @@ export const Hero: HeroContent = {
        BBA (UG)
       </span>
       <br />
-      PROGRAMMES 2026
+      PROGRAMMES 2026-27
     `,
   desc: `Start Building Your Future in Business and Management`,
   heroBg: "/landingpage/bba-2026/bba-bg.webp",
@@ -52,7 +52,7 @@ export const Counters: CounterItem[] = [
     subtitle: "Recruiters",
   },
   {
-    title: "Up To ₹21 Cr",
+    title: "Up To ₹27 Cr",
     subtitle: "Worth of Scholarships",
   },
   {
@@ -111,11 +111,11 @@ export const whyKRM: WhyKRMSection = {
 };
 
 export const industryExperts: IndustryExpertsSection = {
-  eyebrow: "Why KR Mangalam PhD?",
+  eyebrow: "",
   heading: `Learn From <br /> Industry Experts`,
   description: `KRMU partners with major organisations to provide <br /> industry-specific training.`,
   cta: {
-    label: "Apply for B.Tech 2026",
+    label: "Apply for BBA 2026",
     href: "#",
   },
   cards: [
@@ -579,13 +579,13 @@ export const specialisationData: SpecialisationSection = {
     },
     {
       imgUrl: "/landingpage/bba-2026/programs/bba-hons-logistics-safexpress.jpg",
-      title: `BBA (Hons. / Hons. with Research) Logistics and Supply Chain Management with Academic Support of Safexpress`,
-      desc: `Focus on supply chain and logistics strategy and have knowledge of procurement, warehousing, and logistics technology.`,
+      title: `BBA (Entrepreneurship) with Academic Support of GCEC Global Foundation`,
+      desc: `With a BBA in Entrepreneurship, you can turn creative concepts into profitable businesses through startup ideation, venture capital, and learn management techniques.`,
       extraInfos: [
         {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Duration:",
-          desc: `4 Years`,
+          desc: `3 Years`,
         },
         {
           iconUrl: "/landingpage/common/move-right.svg",
@@ -792,7 +792,7 @@ export const faqSectionData: FAQSectionData = {
   eyebrow: "(FAQs)",
   heading: "Frequently Asked Questions",
   description:
-    "K.R. Mangalam University offers Ph.D. programmes in a wide array of fields, encouraging cross-disciplinary exploration and innovation.",
+    "",
   faqs: [
     {
       id: "item-1",
@@ -822,7 +822,7 @@ export const faqSectionData: FAQSectionData = {
     },
     {
       id: "item-4",
-      question: "What distinguishes BBA LLB from BA LLB?",
+      question: "Does the university provide placement support?",
       answer: `Yes. KRMU has a dedicated Career Development & Placement Cell that supports students through:
  <br /><br /> 
        <ul>

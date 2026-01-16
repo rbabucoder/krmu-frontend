@@ -104,8 +104,7 @@ const OnlineFee = () => {
                   2
                 </span>
               </div>
-              Debit/Credit Card swipe at Cash counter, Cash at Demand
-              Draft/Cheque – Please draw the DD/Cheque in favour of “K R
+              Demand Draft/Cheque – Please draw the DD/Cheque in favour of “K R
               Mangalam University”. In case of DD, it should be payable at
               Gurugram. Please mention your name, application no, programme name
               and contact number on the backside.

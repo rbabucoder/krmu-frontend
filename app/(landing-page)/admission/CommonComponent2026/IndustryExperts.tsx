@@ -10,9 +10,10 @@ type Props = {
 
 const IndustryExperts = ({ data }: Props) => {
   return (
-    <section className="py-20 px-4">
-      <div className="max-w-[1400px] mx-auto w-full bg-[#0060aa] pt-10 sm:pt-20 px-5 md:pt-20 sm:px-20 rounded-3xl">
+    <section className="pt-20">
+      <div className="w-full bg-[#0060aa] pt-12 px-5 sm:px-20">
         {/* Header */}
+        <div className="max-w-[1400px] mx-auto w-full">
         <div className="flex flex-col lg:flex-row items-center justify-between text-white">
           <div className="w-full lg:w-1/2 text-center md:text-left md:border-l-2 border-white md:pl-5">
             <h3 className="text-sm">{data.eyebrow}</h3>
@@ -61,10 +62,10 @@ const IndustryExperts = ({ data }: Props) => {
           {data.cards.map((item, index) => (
             <div
               key={index}
-              className="bg-white p-2.5 sm:p-5 rounded-xl text-center flex flex-col items-center justify-center"
+              className="bg-white p-2.5 sm:p-5 rounded-xl text-center flex  items-center justify-center h-[150px]"
             >
-              <Image src={item.imgUrl} width={120} height={35} alt={item.alt} />
-              <p className="my-5 text-xs sm:text-base">{item.title}</p>
+              <Image src={item.imgUrl} width={130} height={60} alt={item.alt} />
+              {/* <p className="my-5 text-xs sm:text-base">{item.title}</p> */}
             </div>
           ))}
         </div>
@@ -94,6 +95,7 @@ const IndustryExperts = ({ data }: Props) => {
             alt=""
             className="w-full h-full"
           />
+        </div>
         </div>
       </div>
     </section>

@@ -25,7 +25,7 @@ export const Hero: HeroContent = {
        B.Des.
       </span>
       <br />
-      PROGRAMMES 2026
+      PROGRAMMES 2026-27
     `,
   desc: `Immerse yourself in an inspiring environment that nurtures creativity, ignites innovation, and transforms ideas into impactful design solutions.`,
   heroBg: "/landingpage/bdes-2026/bdes-bg.webp",
@@ -52,12 +52,12 @@ export const Counters: CounterItem[] = [
     subtitle: "Top Recruiters",
   },
   {
-    title: "₹21 Cr",
+    title: "₹27 Cr",
     subtitle: "Worth of Scholarships",
   },
   {
-    title: "100%",
-    subtitle: "Placement Assistance",
+    title: "92%",
+    subtitle: "Placement Record",
   },
 ];
 
@@ -367,11 +367,11 @@ export const scholarResearchImpactData: ScholarResearchImpactSection = {
 };
 
 export const comeToLifeData: ComeToLifeSection = {
-  heading: `World-Class Infrastructure`,
-  description: `K.R. Mangalam University offers a modern and student-centric campus designed to support effective learning and holistic development for BBA undergraduates. The university provides smart classrooms, a well-equipped central library with digital resources, computer and analytics labs, and seminar halls to enhance academic engagement. Dedicated spaces for innovation, entrepreneurship, and skill development create an environment that encourages practical learning, collaboration, and professional growth.`,
+  heading: `World-Class Facilities`,
+  description: `K.R. Mangalam University offers top-notch, industry-standard facilities and specialized design labs, creating a sophisticated ecosystem of high-end studios and cutting-edge technology that empowers B.Des. students to bring their creative visions to life.`,
   footerText: ``,
   cta: {
-    label: "Apply for BBA (UG) 2026-2027 ",
+    label: "Apply for B.Des. 2026-2027 ",
     href: "#",
   },
   slides: [
@@ -399,7 +399,7 @@ export const comeToLifeData: ComeToLifeSection = {
 };
 
 export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
-  heading: "Life as a BBA (UG) Student at KRMU",
+  heading: "Life as a B.Des. Student at KRMU",
   description: "",
   image: {
     src: "/landingpage/common/test44.jpeg",

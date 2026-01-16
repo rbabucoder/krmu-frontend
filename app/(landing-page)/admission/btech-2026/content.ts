@@ -25,9 +25,11 @@ export const Hero: HeroContent = {
        B.Tech
       </span>
       <br />
-      PROGRAMMES 2026
+      PROGRAMMES 2026-27
     `,
-  desc: `Start Building Your Future in Business and Management`,
+  desc: `Ideate, Innovate and Influence the Turf of Technology with our B.Tech Programmes comprising an industry-driven curriculum to shape tomorrow’s tech leaders!`,
+  heroBg: "/landingpage/bdes-2026/bdes-bg.webp",
+  middleImg: "/landingpage/bdes-2026/middle-img.webp",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -50,12 +52,12 @@ export const Counters: CounterItem[] = [
     subtitle: "Top Recruiters",
   },
   {
-    title: "₹21 Cr",
+    title: "₹27 Cr",
     subtitle: "Worth of Scholarships",
   },
   {
-    title: "100%",
-    subtitle: "Placement Assistance",
+    title: "92%",
+    subtitle: "Placement Record",
   },
 ];
 
@@ -124,9 +126,9 @@ export const whyKRM: WhyKRMSection = {
 };
 
 export const industryExperts: IndustryExpertsSection = {
-  eyebrow: "Why KR Mangalam PhD?",
-  heading: `Learn From <br /> Industry Experts`,
-  description: `KRMU partners with major organisations to provide <br /> industry-specific training.`,
+  eyebrow: "",
+  heading: `Learn from <br /> Industry Leaders @ KRMU!`,
+  description: `K.R. Mangalam University takes pride in collaborating with the industry leaders who offer top-notch hands-on learning experiences to students.`,
   cta: {
     label: "Apply for B.Tech 2026",
     href: "#",
@@ -331,13 +333,13 @@ export const opportunityData: OpportunitySection = {
   heading: "Learn From Industry Experts",
   highlight: "Opportunity That Transforms",
   cta: {
-    label: "Apply for BBA (UG) 2026-2027",
+    label: "Apply for B.Tech 2026-2027",
     href: "#",
   },
 };
 
 export const testimonialsData: TestimonialsSection = {
-  subheading: "See What Our Students Say About Us!",
+  subheading: `Still in Doubt? <br /> See What Our Students Say About Us!`,
   heading: `Students’ Testimonials`,
   testimonials: [
     {
@@ -451,7 +453,7 @@ export const comeToLifeData: ComeToLifeSection = {
   description: `Students at K.R. Mangalam University have access to modern computer labs equipped with the latest software and hardware, high-performance computing resources, and dedicated project spaces. This enables hands-on learning and experimentation with real-world technologies.`,
   footerText: ``,
   cta: {
-    label: "Apply for BBA (UG) 2026-2027 ",
+    label: "Apply for B.Tech 2026-2027 ",
     href: "#",
   },
   slides: [
@@ -479,7 +481,7 @@ export const comeToLifeData: ComeToLifeSection = {
 };
 
 export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
-  heading: "Life as a BBA (UG) Student at KRMU",
+  heading: "Life as a B.Tech Student at KRMU",
   description: "",
   image: {
     src: "/landingpage/common/test44.jpeg",
@@ -567,7 +569,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Apply for K.R. Mangalam <br /> University now`,
   description: "Start Your Adventure Right Now at K.R. Mangalam University",
   cta: {
-    label: "Apply for Law (UG) 2026-2027",
+    label: "Apply for B.Tech 2026-2027",
     href: "#",
   },
   highlights: [

@@ -13,7 +13,7 @@ const ApplySection = ({ data }: Props) => {
       <div className="max-w-[1400px] mx-auto w-full text-center">
         {/* Header */}
         <h2
-          className="text-[#003d7a] text-2xl sm:text-4xl md:text-5xl font-bold mb-4"
+          className="text-[#013fa1] text-2xl sm:text-4xl font-semibold mb-4"
           dangerouslySetInnerHTML={{ __html: data.heading }}
         />
 

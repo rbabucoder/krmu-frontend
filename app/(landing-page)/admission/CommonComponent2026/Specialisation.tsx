@@ -14,22 +14,23 @@ type Props = {
 
 const Specialisation = ({ data }: Props) => {
   return (
-    <section className="py-20 px-4 bg-[#f8f9fa]">
+    // <section className="py-20 px-4 bg-[#f8f9fa]">
+    <section className="pt-10 px-4 bg-[#fff]">
       <div className="max-w-[1664px] mx-auto w-full">
         <div className="flex lg:-mb-12">
-          <div className="w-full xl:w-1/2 text-center sm:text-left">
-            <h4
+          <div className="w-full text-center sm:text-left">
+            {/* <h4
               className="text-xl sm:text-2xl"
               dangerouslySetInnerHTML={{
                 __html: data.subheading,
               }}
-            />
+            /> */}
             <h3
-              className="text-2xl sm:text-5xl font-medium text-[#013fa1]"
+              className="text-2xl sm:text-4xl text-center font-semibold text-[#013fa1]"
               dangerouslySetInnerHTML={{ __html: data.heading }}
             />
           </div>
-          <div className="xl:w-1/2"></div>
+          {/* <div className="xl:w-1/2"></div> */}
         </div>
         <div className="w-full mt-10">
           <Carousel
@@ -46,10 +47,12 @@ const Specialisation = ({ data }: Props) => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <div className="pt-10">
-              <CarouselPrevious className="bottom-0 top-full left-[25%] sm:left-0 md:top-0 md:left-[85%] xl:left-[90%] xlright-0 landingpagePrevArrow" />
-              <CarouselNext className="bottom-0 top-full md:top-0 right-[25%] sm:right-0 landingpageNextArrow" />
-            </div>
+            {data?.specilisationCard?.length > 3 && (
+              <div className="pt-10">
+                <CarouselPrevious className="bottom-0 top-full left-[25%] sm:left-0 md:top-0 md:left-[85%] xl:left-[90%] xlright-0 landingpagePrevArrow" />
+                <CarouselNext className="bottom-0 top-full md:top-0 right-[25%] sm:right-0 landingpageNextArrow" />
+              </div>
+            )}
           </Carousel>
         </div>
       </div>

@@ -91,7 +91,7 @@ const page = async () => {
       <AssistantDSWMessage />
       <VisionMission />
       <TeamMember />
-      <WelfareImage />
+      {/* <WelfareImage /> */}
       <TabScroll />
       {photoGallery && <PhotoGallery photoGallery={photoGallery} />}
     </>

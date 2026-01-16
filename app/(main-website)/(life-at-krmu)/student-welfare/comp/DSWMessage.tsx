@@ -15,27 +15,29 @@ const DSWMessage = () => {
         <div className="flex flex-col lg:flex-row gap-5">
           <div className="lg:w-1/5">
             <Image
-              src="/student-welfare/dsw.webp"
+              src="/life-at-krmu/shwetamam.jpg"
               width={304}
               height={234}
               alt="Anjana Singh DSW"
             />
-            <h4 className="text-white text-[15px] mt-2.5">Dr. Anjana Singh, Dean Student Welfare</h4>
+            <h4 className="text-white text-[15px] mt-2.5">
+              Dr. Shweta Bansal, Dean DSW
+            </h4>
           </div>
           <div className="lg:w-4/5">
             <p>
-              Dear Students, you all are the moral and ethical leaders of both
-              your family and our university. Although you are blessed to have a
-              higher education, for a sustainable society, every drop counts.
-              K.R. Mangalam University is committed to bringing new ideas,
-              views, and responsibility for a sustainable future in this rapidly
-              changing, challenging world. Your productivity for the betterment
-              of society will constitute high-standard benchmarks for the
-              inspiration of future students at K.R. Mangalam University. Get
-              involved in campus life by joining a club or organization. From
-              academic clubs to service organizations, there’s something for
-              everyone. You’ll meet new people and gain leadership skills that
-              will serve you well beyond your time at school.
+              Dear Students,Welcome to our vibrant academic community, where
+              learning meets purpose and growth goes beyond the classroom. Your
+              university journey is not just about learning a degree, but about
+              discovering your strengths, building resilience, and shaping
+              values for life. At the Department of Student Welfare, we are
+              committed to your holistic development—intellectual, emotional,
+              cultural, and social—ensuring a supportive and inspiring campus
+              for all.We encourage you to engage actively in academics,
+              co-curricular activities, and social initiatives. Each experience
+              will help you grow into thoughtful,responsible, and compassionate
+              individuals.Dream big, learn continuously, and lead with
+              integrity—the world needs your ideas, energy, and empathy.
             </p>
           </div>
         </div>

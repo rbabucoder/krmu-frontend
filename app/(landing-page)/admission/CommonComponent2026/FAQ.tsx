@@ -19,7 +19,7 @@ const FAQSection = ({ data }: Props) => {
           <p className="text-[#003d7a] text-sm font-medium mb-2">
             {data.eyebrow}
           </p>
-          <h2 className="text-[#003d7a] text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-[#013fa1] text-4xl font-semibold mb-4">
             {data.heading}
           </h2>
           <p className="text-gray-600 text-base max-w-3xl mx-auto">

@@ -5,8 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import useStudentWelfareTabs from "./useStudentWelfareTabs";
 
-
-
 const TabScroll = () => {
   const { containerRef } = useStudentWelfareTabs();
 
@@ -44,7 +42,7 @@ const TabScroll = () => {
                     Counseling
                   </li>
 
-                  <li
+                  {/* <li
                     className="student_welfare-sidebar__item"
                     data-target="#tab5"
                   >
@@ -55,14 +53,11 @@ const TabScroll = () => {
                     data-target="#tab6"
                   >
                     Sports Club
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
-            <div
-              ref={containerRef}
-              className="student_welfare-tab-content"
-            >
+            <div ref={containerRef} className="student_welfare-tab-content">
               <div id="tab1" className="student_welfare-tab-content__container">
                 <h2 className="student_welfare-tab-content__title">
                   Clubs and Societies
@@ -143,25 +138,23 @@ const TabScroll = () => {
                 <div className="student_welfare-tab-content__image-wrapper">
                   <Image
                     className="student_welfare-tab-content__image"
-                    src="https://truthful-cabbage-82fd27e8f6.media.strapiapp.com/thumbnail_image_227759556d.webp"
+                    src="/student-welfare/council.jpeg"
                     alt=""
                     width={1040}
                     height={300}
                   />
                 </div>
 
-                <div className="student_welfare-tab-content__text-wrapper">
+                <div className="student_welfare-tab-content__text-wrapper mt-5">
                   <p className="student_welfare-tab-content__text">
-                    The Student Council of K.R. Mangalam University is a dynamic
-                    and enthusiastic group of students who are committed to
-                    making a positive impact on campus life. They serve as role
-                    models for their fellow students and are a testament to the
-                    university’s commitment to fostering leadership and personal
-                    growth among its students. Led by the Dean of Student
-                    Welfare and the Assistant Dean of Student Welfare, the
-                    Student Council plays a crucial role in organizing events,
-                    programmes, and activities that foster a sense of community
-                    and engagement among students.
+                    The K.R. Mangalam University Student Council is a
+                    representative body that upholds student interests and
+                    enriches campus life for all stakeholders. The Council works
+                    in close collaboration with the Student Affairs Advisory
+                    Body and the University Administration to formulate
+                    solutions to issues faced by students, organize meaningful
+                    initiatives, and foster leadership, inclusivity, and
+                    democratic values on campus.
                   </p>
                 </div>
               </div>
@@ -189,7 +182,7 @@ const TabScroll = () => {
                   </p>
                 </div>
               </div>
-              <div id="tab5" className="student_welfare-tab-content__container">
+              {/* <div id="tab5" className="student_welfare-tab-content__container">
                 <h2 className="student_welfare-tab-content__title">
                   Cultural Club
                 </h2>
@@ -232,13 +225,12 @@ const TabScroll = () => {
                     competitions, rap competitions, duet competitions and so on.
                   </p>
                 </div>
-              </div>
-              <div id="tab6" className="student_welfare-tab-content__container">
+              </div> */}
+              {/* <div id="tab6" className="student_welfare-tab-content__container">
                 <h2 className="student_welfare-tab-content__title">
                   Sports Club
                 </h2>
 
-                {/* Image wrapper removed as in your source */}
 
                 <div className="student_welfare-tab-content__text-wrapper">
                   <strong>Outdoor Sports:</strong>
@@ -272,9 +264,9 @@ const TabScroll = () => {
                   </strong>
                   <br />
 
-                  {/* Sports Club Cards Section */}
+                  
                   <div className="student_welfare-sports_club student_welfare-cards">
-                    {/* Athletics Club */}
+                  
                     <div className="student_welfare-card">
                       <div className="student_welfare-card-inner">
                         <div className="student_welfare-card-front">
@@ -307,7 +299,7 @@ const TabScroll = () => {
                       </div>
                     </div>
 
-                    {/* Billiards Club */}
+                    
                     <div className="student_welfare-card">
                       <div className="student_welfare-card-inner">
                         <div className="student_welfare-card-front">
@@ -343,7 +335,7 @@ const TabScroll = () => {
                       </div>
                     </div>
 
-                    {/* Badminton Club */}
+                    
                     <div className="student_welfare-card">
                       <div className="student_welfare-card-inner">
                         <div className="student_welfare-card-front">
@@ -370,7 +362,7 @@ const TabScroll = () => {
                       </div>
                     </div>
 
-                    {/* Basketball Club */}
+                   
                     <div className="student_welfare-card">
                       <div className="student_welfare-card-inner">
                         <div className="student_welfare-card-front">
@@ -398,7 +390,7 @@ const TabScroll = () => {
                       </div>
                     </div>
 
-                    {/* Cricket Club */}
+                  
                     <div className="student_welfare-card">
                       <div className="student_welfare-card-inner">
                         <div className="student_welfare-card-front">
@@ -427,7 +419,6 @@ const TabScroll = () => {
                       </div>
                     </div>
 
-                    {/* Chess & Carrom Club */}
                     <div className="student_welfare-card">
                       <div className="student_welfare-card-inner">
                         <div className="student_welfare-card-front">
@@ -460,7 +451,7 @@ const TabScroll = () => {
                       </div>
                     </div>
 
-                    {/* Football Club */}
+                  
                     <div className="student_welfare-card">
                       <div className="student_welfare-card-inner">
                         <div className="student_welfare-card-front">
@@ -491,7 +482,7 @@ const TabScroll = () => {
                       </div>
                     </div>
 
-                    {/* Kho-Kho Club */}
+                   
                     <div className="student_welfare-card">
                       <div className="student_welfare-card-inner">
                         <div className="student_welfare-card-front">
@@ -523,7 +514,7 @@ const TabScroll = () => {
                       </div>
                     </div>
 
-                    {/* Pickleball Club */}
+                
                     <div className="student_welfare-card">
                       <div className="student_welfare-card-inner">
                         <div className="student_welfare-card-front">
@@ -554,7 +545,6 @@ const TabScroll = () => {
                       </div>
                     </div>
 
-                    {/* Table Tennis Club */}
                     <div className="student_welfare-card">
                       <div className="student_welfare-card-inner">
                         <div className="student_welfare-card-front">
@@ -585,7 +575,7 @@ const TabScroll = () => {
                       </div>
                     </div>
 
-                    {/* Tennis Club */}
+                    
                     <div className="student_welfare-card">
                       <div className="student_welfare-card-inner">
                         <div className="student_welfare-card-front">
@@ -617,7 +607,7 @@ const TabScroll = () => {
                       </div>
                     </div>
 
-                    {/* Volleyball Club */}
+                    
                     <div className="student_welfare-card">
                       <div className="student_welfare-card-inner">
                         <div className="student_welfare-card-front">
@@ -649,7 +639,7 @@ const TabScroll = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

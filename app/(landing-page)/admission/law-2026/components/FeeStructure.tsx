@@ -1,8 +1,8 @@
 const FeeStructureTable = () => {
   return (
-    <section className="w-full px-4 py-10">
+    <section className="w-full px-4 py-10 mt-10">
       <div className="max-w-[1400px] mx-auto w-full">
-        <h2 className="text-center text-2xl font-semibold mb-6">
+        <h2 className="text-center text-4xl text-[#013fa1] font-semibold mb-6">
           Fee Structure
         </h2>
 
