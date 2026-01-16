@@ -28,6 +28,9 @@ export const Hero: HeroContent = {
       PROGRAMMES 2026-27 
     `,
   desc: `Discover the foundation of agricultural excellence with K.R. Mangalam University’s four-year agriculture programme, designed to build strong agrarian knowledge, practical expertise, and an understanding of modern farming practices.`,
+  heroBg: "/landingpage/law-2026/law.jpg",
+  // middleImg: "/landingpage/law-2026/law.webp",
+  middleImg: "",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -50,12 +53,12 @@ export const Counters: CounterItem[] = [
     subtitle: "Top Recruiters",
   },
   {
-    title: "₹21 Cr",
+    title: "₹27 Cr",
     subtitle: "Worth of Scholarships",
   },
   {
-    title: "100%",
-    subtitle: "Placement Assistance",
+    title: "92%",
+    subtitle: "Placement Record",
   },
 ];
 
@@ -101,7 +104,7 @@ export const whyKRM: WhyKRMSection = {
   whyKrmCards: [
     {
       imgUrl: "/landingpage/common/dummy.png",
-      content: `MIndustry-aligned curriculum designed by agricultural experts, integrating scientific theory with hands-on farming and field practices`,
+      content: `Industry-aligned curriculum designed by agricultural experts, integrating scientific theory with hands-on farming and field practices`,
     },
     {
       imgUrl: "/landingpage/common/dummy.png",
@@ -200,18 +203,17 @@ export const opportunityData: OpportunitySection = {
 };
 
 export const testimonialsData: TestimonialsSection = {
-  subheading: "Our Testimonials",
-  heading: `Why do our schoolers love and trust K.R. Mangalam University?`,
+  subheading: "Students’ Testimonials",
+  heading: `Why Do Our Students Trust Us?`,
   testimonials: [
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `My journey as a B.Sc. (Hons.) EMT student at K.R. Mangalam University has been truly 
-enriching. The university offers a supportive learning environment, experienced faculty, 
-and strong practical exposure that have helped me build a solid foundation in medical 
-Knowledge`,
-      name: "Kashish Pal",
-      programme: "B.Sc. (Hons.) EMT",
+      quote: `Thrilled with my education at K.R. Mangalam University, Sohna. I learned leadership, 
+time management, and embraced nature. Now, a project assistant in a DST government 
+project at the university.`,
+      name: "Tufail- Project Assistant DST",
+      programme: "Govt. of India",
     },
     {
       image: "/landingpage/common/dummy.png",
@@ -224,24 +226,21 @@ particularly in hostel life. Now a farm supervisor, I pursue my passion for natu
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `I am proud to be a student of K.R. Mangalam University, pursuing B.Sc. (Hons.) in Cardiovascular Technology. The university offers an excellent academic environment with advanced infrastructure, well-equipped laboratories, and a strong focus on practical and Clinical Learning.
+      quote: `At SOAS, BSc (H) Agriculture student Aayushi thrives on professor-led activities and 
+competitions. Field trips offer real-world insights into agriculture.
 `,
-      name: "Divyanshu University",
-      programme: "B.Sc. (Hons)",
+      name: "Aayushi",
+      programme: "",
     },
     {
       image: "/landingpage/common/dummy.png",
       videoUrl: "#",
-      quote: `K.R. Mangalam University offers state-of-the-art laboratories, modern classrooms, a well-stocked library, sports facilities, hostels, and innovation hubs that greatly enhance the student learning experience. The Emergency Medical Technology program prepared me to become skilled healthcare professionals capable of delivering pre-hospital emergency care and basic life support.`,
-      name: "Anshu ",
-      programme: "B.Sc. (Hons.) EMT",
-    },
-    {
-      image: "/landingpage/common/dummy.png",
-      videoUrl: "#",
-      quote: `My experience at K.R. Mangalam University has been extremely positive and enriching. The university provides a nurturing academic environment where students are encouraged to learn, grow, and excel.`,
-      name: "Vanshika",
-      programme: "B.Sc (Hons.)",
+      quote: `K.R. Mangalam University provides us with the facilities to build live projects from lab to field 
+and field to lab to increase students' knowledge and skills with the latest technologies and 
+models.
+`,
+      name: "Sagar  ",
+      programme: "",
     },
   ],
 };
@@ -301,8 +300,8 @@ export const scholarResearchImpactData: ScholarResearchImpactSection = {
 };
 
 export const comeToLifeData: ComeToLifeSection = {
-  heading: `World-Class Facilities at KRMU for B.Sc.`,
-  description: ` K.R. Mangalam University offers a modern campus designed to support academic excellence and hands-on learning for B.Sc. students. Smart classrooms with advanced teaching tools and high-speed Wi-Fi create an interactive learning environment. Well-equipped laboratories enable practical training, experimentation, and skill development across disciplines. The central library provides extensive print and digital resources to support learning and research. Dedicated seminar halls, collaborative spaces, and innovation areas encourage teamwork and creative thinking. Beyond academics, the campus features secure hostels, sports and recreational facilities, and round-the-clock connectivity, ensuring a balanced and enriching student life.`,
+  heading: `World-Class Facilities`,
+  description: `K.R. Mangalam University offers world-class facilities that support both academic learning and practical training across disciplines. Students benefit from modern classrooms, well-equipped laboratories, a comprehensive resource library, and advanced teaching aids that encourage innovative learning approaches. In addition, discipline-specific facilities such as specialised labs, field-based learning spaces, and research support for agriculture-related studies further enhance hands-on exposure. Together, these facilities ensure students are well-prepared to excel in diverse professional and academic environments.`,
   footerText: ``,
   cta: {
     label: "Apply for B.Sc. 2026–2027",
@@ -357,8 +356,7 @@ export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
 export const faqSectionData: FAQSectionData = {
   eyebrow: "(FAQs)",
   heading: "Frequently Asked Questions",
-  description:
-    "K.R. Mangalam University offers Ph.D. programmes in a wide array of fields, encouraging cross-disciplinary exploration and innovation.",
+  description: "",
   faqs: [
     {
       id: "item-1",
@@ -378,17 +376,20 @@ export const faqSectionData: FAQSectionData = {
     },
     {
       id: "item-4",
-      question: "What is the teaching methodology used in the B.Sc. (Hons.) Agriculture programme?",
+      question:
+        "What is the teaching methodology used in the B.Sc. (Hons.) Agriculture programme?",
       answer: `The programme employs a blend of classroom lectures, hands-on laboratory experiments, extensive fieldwork, and internships—aligned with the ICAR curriculum—to ensure a balanced theoretical and practical learning experience.`,
     },
     {
       id: "item-5",
-      question: "How does the programme prepare students for the evolving agricultural sector?",
+      question:
+        "How does the programme prepare students for the evolving agricultural sector?",
       answer: `By integrating modern agricultural techniques, sustainable farming practices, and advanced research projects, the curriculum equips you with the expertise needed to tackle current and future challenges in agriculture.`,
     },
     {
       id: "item-6",
-      question: "Are there opportunities for students to participate in national or international agricultural conferences and seminars?",
+      question:
+        "Are there opportunities for students to participate in national or international agricultural conferences and seminars?",
       answer: `Yes, students are encouraged to attend both national and international conferences and seminars to broaden their perspectives, network with industry leaders, and stay updated on global agricultural trends.`,
     },
   ],
@@ -397,7 +398,7 @@ export const faqSectionData: FAQSectionData = {
 export const businessHubData: BusinessHubSection = {
   heading: `Learn at One of India’s Biggest <br /> Business Hubs, Gurgaon`,
   description:
-    "Launch your engineering career with future-ready specialisations, industry-aligned curriculum, and hands-on project learning at our modern Gurugram campus.",
+    "Launch your career with future-ready specialisations, industry-aligned curriculum, and hands-on project learning at our modern Gurugram campus.",
   highlights: [
     { text: "UGC Approved University" },
     { text: "NAAC A+ Accredited" },

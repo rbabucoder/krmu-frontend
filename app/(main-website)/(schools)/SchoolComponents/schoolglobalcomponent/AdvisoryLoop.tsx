@@ -12,7 +12,7 @@ type Props = {
 
 const AdvisoryLoop = ({ schoolCat }: Props) => {
   const [faculties, setFaculties] = useState<FACULTYCARD[]>([]);
-  const [visibleCount, setVisibleCount] = useState(8);
+  const [visibleCount, setVisibleCount] = useState(4);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {

@@ -806,7 +806,7 @@ export const faqSectionData: FAQSectionData = {
 export const businessHubData: BusinessHubSection = {
   heading: `Learn at One of India’s Biggest <br /> Business Hubs, Gurgaon`,
   description:
-    "Launch your engineering career with future-ready specialisations, industry-aligned curriculum, and hands-on project learning at our modern Gurugram campus.",
+    "Launch your career with future-ready specialisations, industry-aligned curriculum, and hands-on project learning at our modern Gurugram campus.",
   highlights: [
     { text: "UGC Approved University" },
     { text: "NAAC A+ Accredited" },

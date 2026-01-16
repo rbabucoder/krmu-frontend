@@ -14,7 +14,6 @@ import Specialisation from "../CommonComponent2026/Specialisation";
 import Testimonials from "../CommonComponent2026/Testimonials";
 import WhyKRMangalam from "../CommonComponent2026/WhyKRMangalam";
 
-
 import {
   applySectionData,
   businessHubData,
@@ -88,6 +87,8 @@ const page = () => {
         formId={bscAgriIdForm}
         desc={heroContent?.desc}
         marqueeData={heroMarqData}
+        heroBg={heroContent?.heroBg}
+        middleImg={heroContent?.middleImg}
       />
       <Counter counters={counters} />
       <ProminentRecruiter recruiters={recruiters} />

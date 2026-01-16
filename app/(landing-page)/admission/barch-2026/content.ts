@@ -25,9 +25,12 @@ export const Hero: HeroContent = {
        Bachelor of <br /> Architecture
       </span>
       <br />
-      PROGRAMMES 2026
+      PROGRAMMES 2026-27
     `,
-  desc: `Start Building Your Future in Business and Management`,
+  desc: `From conceptual learning in classrooms to building creative constructions <br /> via immersive projects,  the B.Arch course will enable you to shape the future of architecture.`,
+  heroBg: "/landingpage/law-2026/law.jpg",
+  // middleImg: "/landingpage/law-2026/law.webp",
+  middleImg: "",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -42,53 +45,43 @@ export const heroMarqueeData: HeroMarqueeSection = {
 
 export const Counters: CounterItem[] = [
   {
-    title: "7.25 LPA",
-    subtitle: "Highest Package",
+    title: "92%",
+    subtitle: "Placement Record",
   },
   {
     title: "800+",
     subtitle: "Top Recruiters",
   },
   {
-    title: "Up To ₹21 Cr",
+    title: "Up To ₹27 Cr",
     subtitle: "Worth of Scholarships",
   },
   {
-    title: "100%",
-    subtitle: "Placement Assistance",
+    title: "56.6 LPA",
+    subtitle: "Highest Package",
   },
 ];
 
 // Recruiters list
 export const prominentRecruiters: ProminentRecruit[] = [
   {
-    imgUrl:
-      "https://www.krmangalam.edu.in/admission/law-2025/assets/trilegal.svg",
+    imgUrl: "/landingpage/barch-2026/recruiters/amazon.webp",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://www.krmangalam.edu.in/admission/btech-2025-b/assets/images/accenture.svg",
+    imgUrl: "/landingpage/barch-2026/recruiters/zara.webp",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+    imgUrl: "/landingpage/barch-2026/recruiters/zynga.webp",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+    imgUrl: "/landingpage/barch-2026/recruiters/splash.webp",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
-    alt: "Recruiter Logo",
-  },
-  {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+    imgUrl: "/landingpage/barch-2026/recruiters/lifestyle.webp",
     alt: "Recruiter Logo",
   },
 ];
@@ -97,38 +90,38 @@ export const whyKRM: WhyKRMSection = {
   heading: "What makes KRMU the Best option for the B.Arch Course?",
   subheading: "From Drawing Design Sketches to Building Skyscrapers",
   content: `Developed by the expert professionals in the field, K.R. Mangalam University's five-year B.Arch program offers architecture education through practical projects, immersive sessions, insightful workshops, and valuable insights into the intricacies of architectural planning. The university's multidisciplinary strategy aims to ensure that the holistic development of its students, who will be influencing the architectural world in the future, remains a top priority.`,
-  imgUrl: `/landingpage/common/whykrmtest.png`,
+  imgUrl: `/landingpage/barch-2026/why-choose/Building.webp`,
   whyKrmCards: [
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/barch-2026/why-choose/1.webp",
       content: `Emphasis on Hands-on-learning, Practical experience with sophisticated software for advanced modelling and construction preparation.`,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/barch-2026/why-choose/2.webp",
       content: `Portfolio Development Guidance for Internship and Job Prospects in Architectural Firms, Government Organisations, etc.`,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/barch-2026/why-choose/3.webp",
       content: `Participation in live projects and real-world assignments.`,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/barch-2026/why-choose/4.webp",
       content: `100% Placement and Internship Assistance.`,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/barch-2026/why-choose/5.webp",
       content: `Global Exposure in the form of a paid visit to 2 weeks of summer school at a Prestigious European university.`,
     },
   ],
 };
 
 export const industryExperts: IndustryExpertsSection = {
-  eyebrow: "Why KR Mangalam PhD?",
+  eyebrow: "",
   heading: `Learn from <br /> Leaders @ KRMU!
 `,
   description: `K.R. Mangalam University takes pride in collaborating with industry leaders and skill professionals who offer unparalleled hands-on learning experiences to students.`,
   cta: {
-    label: "Apply for B.Tech 2026",
+    label: "Apply for B.Arch 2026",
     href: "#",
   },
   cards: [
@@ -165,7 +158,7 @@ export const specialisationData: SpecialisationSection = {
   heading: `KRMU’s B.Arch Programme`,
   specilisationCard: [
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/barch-2026/specialisations/1.webp",
       title: `Bachelor of Architecture`,
       desc: `The KRMU's Bachelor of Architecture (B.Arch) equips the students with all the necessary skills and theoretical knowledge they require to plan, design and construct structures, buildings and various functional spaces by integrating artistic aesthetics and technology in a seamless manner. This degree aims to cultivate both analytical and creative thinking, equipping students to navigate modern-world challenges while building successful careers.`,
       extraInfos: [
@@ -199,7 +192,7 @@ export const opportunityData: OpportunitySection = {
   heading: "Learn From Industry Experts",
   highlight: "Opportunity That Transforms",
   cta: {
-    label: "Apply for B.Arch. Programme",
+    label: "Apply for B.Arch Programme",
     href: "#",
   },
 };
@@ -209,7 +202,7 @@ export const testimonialsData: TestimonialsSection = {
   heading: `Still in Doubt? <br /> See What Our Students Say About Us!`,
   testimonials: [
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/barch-2026/testimonials/1.webp",
       videoUrl: "#",
       quote: `SOAD's B.Arch program at K.R. Mangalam University is an incubator of creativity and 
 excellence. It provided me with the platform and guidance to thrive as an aspiring 
@@ -219,7 +212,7 @@ Architect.
       programme: "B.Arch- Design Cell, New Delhi",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/barch-2026/testimonials/2.webp",
       videoUrl: "#",
       quote: `As a B.Arch student, I'm inspired daily by the dynamic environment of classes, empowering 
 me to push boundaries and innovate in architecture.
@@ -228,7 +221,7 @@ me to push boundaries and innovate in architecture.
       programme: "B.Arch- Gold Medalist, Arcop Associates, New Delhi",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/barch-2026/testimonials/3.webp",
       videoUrl: "#",
       quote: `From KRMU's School of Architecture & Design to Auctus Wear, I carry the essence of design 
 excellence instilled by the university.`,
@@ -269,7 +262,7 @@ export const scholarResearchImpactData: ScholarResearchImpactSection = {
       id: 1,
       name: "Rahul Khanna",
       role: "PhD Journalism & Mass Communication",
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/barch-2026/testimonials/1.webp",
       quote:
         "My research at K.R. Mangalam University on social media's influence in modern society has been incredibly fulfilling. The mentorship and focus on real-world change truly set this programme apart.",
     },
@@ -302,30 +295,50 @@ export const comeToLifeData: ComeToLifeSection = {
   },
   slides: [
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/barch-2026/infrastructure/1.webp",
       alt: "World Class Lab",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/barch-2026/infrastructure/2.webp",
       alt: "Research Facility",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/barch-2026/infrastructure/3.webp",
       alt: "Innovation Center",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/barch-2026/infrastructure/4.webp",
       alt: "Library & Resources",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/barch-2026/infrastructure/5.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/barch-2026/infrastructure/6.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/barch-2026/infrastructure/7.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/barch-2026/infrastructure/8.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/barch-2026/infrastructure/9.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/barch-2026/infrastructure/10.webp",
       alt: "Campus Infrastructure",
     },
   ],
 };
 
 export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
-  heading: "Life as a BBA (UG) Student at KRMU",
+  heading: "Life as a B.Arch Student at KRMU",
   description: "",
   image: {
     src: "/landingpage/common/test44.jpeg",
@@ -350,11 +363,12 @@ export const faqSectionData: FAQSectionData = {
   eyebrow: "(FAQs)",
   heading: "Frequently Asked Questions",
   description:
-    "K.R. Mangalam University offers Ph.D. programmes in a wide array of fields, encouraging cross-disciplinary exploration and innovation.",
+    "",
   faqs: [
     {
       id: "item-1",
-      question: "What is the role of workshops and guest lectures in the B.Arch. curriculum?",
+      question:
+        "What is the role of workshops and guest lectures in the B.Arch. curriculum?",
       answer: `They provide practical insights, exposure to industry trends, and valuable networking opportunities with leading architects and designers.`,
     },
     {
@@ -364,8 +378,7 @@ export const faqSectionData: FAQSectionData = {
     },
     {
       id: "item-3",
-      question:
-        "Does KRMU provide hostel accommodation?",
+      question: "Does KRMU provide hostel accommodation?",
       answer: `Yes, KRMU provides separate hostels for boys and girls with modern amenities and 24/7 security.`,
     },
     {
@@ -410,7 +423,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Apply for K.R. Mangalam <br /> University now`,
   description: "Start Your Adventure Right Now at K.R. Mangalam University",
   cta: {
-    label: "Apply for B.Arch. Programme",
+    label: "Apply for B.Arch Programme",
     href: "#",
   },
   highlights: [

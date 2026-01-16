@@ -31,7 +31,7 @@ const HeroSection = ({
         }}
       >
         <div className="max-w-[1400px] mx-auto w-full flex flex-col lg:flex-row items-center gap-5">
-          <div className="w-full xl:w-1/3 text-white text-center md:text-left">
+          <div className="w-full xl:w-2/3 text-white text-center md:text-left">
             <h1
               className="text-white font-semibold text-2xl md:text-5xl leading-[1.4]"
               dangerouslySetInnerHTML={{
@@ -45,7 +45,7 @@ const HeroSection = ({
               }}
             />
           </div>
-          <div className="w-1/3 hidden xl:block">
+          {/* <div className="w-1/3 hidden xl:block">
             {middleImg && (
               <Image
                 src={middleImg}
@@ -55,7 +55,7 @@ const HeroSection = ({
                 className="-mb-28"
               />
             )}
-          </div>
+          </div> */}
           <div className="w-full xl:w-1/3 mt-5 lg:mt-0" id="apply-section">
             {formId && <NoPaperFormsWidget widgetId={formId} />}
           </div>

@@ -27,7 +27,10 @@ export const Hero: HeroContent = {
       <br />
       PROGRAMMES 2026-2027
     `,
-  desc: `Start Building Your Future in Business and Management`,
+  desc: `Begin Your Journey into the World of Technology`,
+    heroBg: "/landingpage/law-2026/law.jpg",
+  // middleImg: "/landingpage/law-2026/law.webp",
+  middleImg: "",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -42,15 +45,15 @@ export const heroMarqueeData: HeroMarqueeSection = {
 
 export const Counters: CounterItem[] = [
   {
-    title: "7.25 LPA",
-    subtitle: "Average Package",
+    title: "92%",
+    subtitle: "Placement Record",
   },
   {
     title: "800+",
     subtitle: "Recruiters",
   },
   {
-    title: "Up To ₹21 Cr",
+    title: "Up To ₹27 Cr",
     subtitle: "Worth of Scholarships",
   },
   {
@@ -94,7 +97,7 @@ export const prominentRecruiters: ProminentRecruit[] = [
 ];
 
 export const whyKRM: WhyKRMSection = {
-  heading: "Why Choose B.Sc.-CSE (UG) Programmes of KRMU? ",
+  heading: "Why Choose B.Sc.-CSE Programmes of KRMU? ",
   subheading: "Step Into the Future of Computing",
   content: `K.R. Mangalam University's B.Sc. Computer Science programs offer cutting-edge curriculum developed in partnership with industry professionals. Our NEP-compliant curricula provide students with practical, hands-on experience and global certifications to help them flourish in a fast changing technology field.`,
   imgUrl: `/landingpage/common/whykrmtest.png`,
@@ -119,11 +122,11 @@ export const whyKRM: WhyKRMSection = {
 };
 
 export const industryExperts: IndustryExpertsSection = {
-  eyebrow: "Why KR Mangalam PhD?",
+  eyebrow: "",
   heading: `Learn From <br /> Industry Experts`,
-  description: `KRMU partners with major organisations to provide <br /> industry-specific training.`,
+  description: `KRMU collaborates with leading organisations to offer industry-driven training.`,
   cta: {
-    label: "Apply for B.Tech 2026",
+    label: "Apply for B.Sc. - CSE 2026",
     href: "#",
   },
   cards: [
@@ -157,7 +160,7 @@ export const industryExperts: IndustryExpertsSection = {
 
 export const specialisationData: SpecialisationSection = {
   subheading: `Choose from KRMU's B.Sc. (UG) programmes to begin creating your career in the information technology sector.`,
-  heading: `Our B.Sc. - CSE (UG) Programmes`,
+  heading: `Our B.Sc. - CSE  Programmes`,
   specilisationCard: [
     {
       imgUrl: "/landingpage/common/dummy.png",
@@ -385,7 +388,7 @@ export const comeToLifeData: ComeToLifeSection = {
 };
 
 export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
-  heading: "Life as a BBA (UG) Student at KRMU",
+  heading: "Life as a B.Sc. - CSE Student at KRMU",
   description: "",
   image: {
     src: "/landingpage/common/test44.jpeg",
@@ -410,7 +413,7 @@ export const faqSectionData: FAQSectionData = {
   eyebrow: "(FAQs)",
   heading: "Frequently Asked Questions",
   description:
-    "K.R. Mangalam University offers Ph.D. programmes in a wide array of fields, encouraging cross-disciplinary exploration and innovation.",
+    "",
   faqs: [
     {
       id: "item-1",
@@ -436,7 +439,7 @@ export const faqSectionData: FAQSectionData = {
 export const businessHubData: BusinessHubSection = {
   heading: `Learn at One of India’s Biggest <br /> Business Hubs, Gurgaon`,
   description:
-    "Launch your engineering career with future-ready specialisations, industry-aligned curriculum, and hands-on project learning at our modern Gurugram campus.",
+    "Launch your career with future-ready specialisations, industry-aligned curriculum, and hands-on project learning at our modern Gurugram campus.",
   highlights: [
     { text: "UGC Approved University" },
     { text: "NAAC A+ Accredited" },
