@@ -30,6 +30,16 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+
+  async redirects() {
+    return [
+      {
+        source: "/valuable-industry-interface-at-krmu/",
+        destination: "/blog/valuable-industry-interface-at-krmu/",
+        permanent: true, // 301
+      },
+    ];
+  },
 };
 
 export default nextConfig;

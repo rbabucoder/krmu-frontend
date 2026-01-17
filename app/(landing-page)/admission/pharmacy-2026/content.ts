@@ -25,9 +25,11 @@ export const Hero: HeroContent = {
       Pharmacy 
       </span>
       <br />
-      PROGRAMMES 2026
+      PROGRAMMES 2026-27
     `,
-  desc: `Unlock a world of opportunities with Pharmacy programmes offering D.Pharm., B.Pharm., and Master’s in Pharm. Gain industry-focused education for modern healthcare, build strong foundations in pharmaceutical sciences, explore specialised pathways, access hands-on training with advanced technology, and benefit from industry partnerships that prepare you for confident, career-ready roles in the pharmacy sector. `,
+  desc: `Gain industry-focused education, build strong foundations in pharmaceutical sciences, and benefit from industry partnerships that prepare you for confident, career-ready roles in the pharmacy sector `,
+  heroBg: "",
+  middleImg: "",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -42,8 +44,8 @@ export const heroMarqueeData: HeroMarqueeSection = {
 
 export const Counters: CounterItem[] = [
   {
-    title: "7.25 LPA",
-    subtitle: "Highest Package",
+    title: "92%",
+    subtitle: "Placement Record",
   },
   {
     title: "800+",
@@ -124,7 +126,7 @@ export const industryExperts: IndustryExpertsSection = {
 `,
   description: `K.R. Mangalam University takes pride in collaborating with industry leaders and skill professionals who offer unparalleled hands-on learning experiences to students.`,
   cta: {
-    label: "Apply for B.Tech 2026",
+    label: "Apply for Pharmacy Programmes 2026-2027",
     href: "#",
   },
   cards: [
@@ -177,6 +179,11 @@ Our pharma programmes & specialisations `,
           title: "Eligibility",
           desc: `    Candidates must have passed 10+2 or an equivalent science qualification with physics, chemistry, and biology or mathematics, as approved by the Pharmacy Council of India. `,
         },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Annual Fee",
+          desc: `Rs. 1,20,000`,
+        },
       ],
     },
     {
@@ -193,6 +200,11 @@ Our pharma programmes & specialisations `,
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Eligibility",
           desc: `    Candidates must have passed 10+2 with physics, chemistry, and biology or maths, securing at least 50% marks from a recognised board. Applicants must be 17 years or older by 31 December of the admission year `,
+        },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Annual Fee",
+          desc: `Rs. 1,95,000`,
         },
       ],
     },
@@ -211,6 +223,11 @@ Our pharma programmes & specialisations `,
           title: "Eligibility",
           desc: `Candidates must hold a B.Pharmacy degree from a PCI-approved Indian institution with at least 55% aggregate marks and be registered with the State Pharmacy Council or obtain registration within one month of admission.`,
         },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Annual Fee",
+          desc: `Rs. 1,54,000`,
+        },
       ],
     },
     {
@@ -227,6 +244,11 @@ Our pharma programmes & specialisations `,
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Eligibility",
           desc: `    Candidates must hold a B.Pharmacy degree from a PCI-approved Indian institution with at least 55% aggregate marks and be registered with the State Pharmacy Council or obtain registration within one month of admission. `,
+        },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Annual Fee",
+          desc: `Rs. 1,54,000`,
         },
       ],
     },
@@ -340,8 +362,8 @@ export const scholarResearchImpactData: ScholarResearchImpactSection = {
 };
 
 export const comeToLifeData: ComeToLifeSection = {
-  heading: `Modern Facilities & State-of-the Art Infrastructure`,
-  description: `The conceptual knowledge is imparted to students in modern smart classrooms that are equipped with interactive whiteboards and seamless tech integration. The availability of the latest software systems and powerful PCs enables students to develop skills necessary for advanced modelling and construction preparation`,
+  heading: `World-Class Facilities at KRMU for Pharma Programmes`,
+  description: `K.R. Mangalam University offers a modern campus designed to support advanced pharmaceutical education and practical learning. Smart classrooms, high-speed Wi-Fi, and well-equipped pharma laboratories enable effective learning and hands-on training. The central library offers extensive academic and research resources, while seminar halls, innovation spaces, hostels, and recreational facilities ensure a balanced campus experience.`,
   footerText: ``,
   cta: {
     label: "Apply for Pharmacy Programmes 2026–27",
@@ -372,7 +394,7 @@ export const comeToLifeData: ComeToLifeSection = {
 };
 
 export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
-  heading: "Life as a BBA (UG) Student at KRMU",
+  heading: "Life as a Pharmacy Student at KRMU",
   description: "",
   image: {
     src: "/landingpage/common/test44.jpeg",
@@ -396,13 +418,11 @@ export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
 export const faqSectionData: FAQSectionData = {
   eyebrow: "(FAQs)",
   heading: "Got Questions? We've Got Answers",
-  description:
-    "",
+  description: "",
   faqs: [
     {
       id: "item-1",
-      question:
-        "What are the eligibility criteria for Pharmacy programmes? ",
+      question: "What are the eligibility criteria for Pharmacy programmes? ",
       answer: `For D.Pharm., candidates must complete 10+2 with Physics, Chemistry, and Mathematics or Biology. For B.Pharm., candidates must complete 10+2 with physics, chemistry, mathematics or biology and meet the university’s admission criteria. For M.Pharm., candidates must hold a B.Pharm. degree from a recognised institution with at least 55% aggregate marks. `,
     },
     {

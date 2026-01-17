@@ -25,9 +25,9 @@ export const Hero: HeroContent = {
        B.Ed. and B.El.Ed.
       </span>
       <br />
-      PROGRAMMES 2026
+      PROGRAMMES 2026-27
     `,
-  desc: `Your path to pursuing a teaching career begins with K.R. Mangalam University’s Education Programmes, preparing you to inspire the next generation.`,
+  desc: `Your path to pursuing a teaching career begins with K.R. Mangalam University’s <br />Education Programmes, preparing you to inspire the next generation`,
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -50,12 +50,12 @@ export const Counters: CounterItem[] = [
     subtitle: "Top Recruiters",
   },
   {
-    title: "₹21 Cr",
+    title: "₹27 Cr",
     subtitle: "Worth of Scholarships",
   },
   {
-    title: "100%",
-    subtitle: "Placement Assistance",
+    title: "92%",
+    subtitle: "Placement Record",
   },
 ];
 
@@ -124,11 +124,11 @@ export const whyKRM: WhyKRMSection = {
 };
 
 export const industryExperts: IndustryExpertsSection = {
-  eyebrow: "Why KR Mangalam PhD?",
+  eyebrow: "",
   heading: `Learn From <br /> Industry Experts`,
   description: `KRMU partners with major organisations to provide <br /> industry-specific training.`,
   cta: {
-    label: "Apply for Education Programme",
+    label: "Apply for Education Programme 2026-2027",
     href: "#",
   },
   cards: [
@@ -222,7 +222,7 @@ export const opportunityData: OpportunitySection = {
   heading: "Learn From Industry Experts",
   highlight: "Opportunity That Transforms",
   cta: {
-    label: "Apply for Education Programme",
+    label: "Apply for Education Programme 2026-2027",
     href: "#",
   },
 };
@@ -342,7 +342,7 @@ export const comeToLifeData: ComeToLifeSection = {
 `,
   footerText: ``,
   cta: {
-    label: "Apply for BBA (UG) 2026-2027 ",
+    label: "Apply for Education Programme 2026-2027 ",
     href: "#",
   },
   slides: [
@@ -370,7 +370,7 @@ export const comeToLifeData: ComeToLifeSection = {
 };
 
 export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
-  heading: "Life as a BBA (UG) Student at KRMU",
+  heading: "Life as an Education Student at KRMU",
   description: "",
   image: {
     src: "/landingpage/common/test44.jpeg",
@@ -425,12 +425,12 @@ export const faqSectionData: FAQSectionData = {
     },
     {
       id: "item-5",
-      question: "Does KRMU provide global exposure in design programmes?",
-      answer: `Yes, students may get opportunities for international summer programmes, exchange experiences, and exposure to global design practices. `,
+      question: "Does KRMU provide global exposure in B.Ed. and B.El.Ed. programmes?",
+      answer: `Yes, through a multidisciplinary curriculum with global perspectives, innovative learning, and opportunities for international exposure, the K.R. Mangalam University (KRMU) seeks to provide global exposure in its B.Ed. and B.El.Ed. programmes.`,
     },
     {
       id: "item-6",
-      question: "Is there placement and career support for design students?",
+      question: "Is there placement and career support for students studying at KRMU?",
       answer: `Yes. KRMU offers 100% placement assistance with strong industry connections, helping students secure internships and job opportunities upon graduation.`,
     },
     {
@@ -470,7 +470,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Apply for K.R. Mangalam <br /> University now`,
   description: "Start Your Adventure Right Now at K.R. Mangalam University",
   cta: {
-    label: "Apply for Education Programme",
+    label: "Apply for Education Programme 2026-2027",
     href: "#",
   },
   highlights: [

@@ -30,16 +30,6 @@ const FeeStructureTable = () => {
                 <td className="px-4 py-4">60,000</td>
                 <td className="px-4 py-4">1,25,000</td>
               </tr>
-
-              <tr className="text-sm border-b">
-                <td className="px-4 py-4">
-                  Bachelor of Design (B.Des.) (Hons./Hons. with Research)
-                  Interior Design
-                </td>
-                <td className="px-4 py-4">1,05,000</td>
-                <td className="px-4 py-4">1,05,000</td>
-                <td className="px-4 py-4">2,10,000</td>
-              </tr>
               <tr className="text-sm border-b">
                 <td className="px-4 py-4">
                   Bachelor of Elementary Education (B.El.Ed.)

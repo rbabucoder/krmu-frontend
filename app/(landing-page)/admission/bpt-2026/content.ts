@@ -25,9 +25,11 @@ export const Hero: HeroContent = {
        Bachelor of Physiotherapy
       </span>
       <br />
-      PROGRAMMES 2026
+      PROGRAMMES 2026-27
     `,
-  desc: `Learn to Lead in the realm of healthcare under the expert guidance of our distinguished faculty while utilising state-of-the-art facilities for hands-on physiotherapy learning.`,
+  desc: `Learn to Lead in the realm of healthcare under the expert guidance of our distinguished <br /> faculty while utilising state-of-the-art facilities for hands-on physiotherapy learning`,
+  heroBg: "/landingpage/bdes-2026/bdes-bg.webp",
+  middleImg: "/landingpage/bdes-2026/middle-img.webp",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -50,12 +52,12 @@ export const Counters: CounterItem[] = [
     subtitle: "Top Recruiters",
   },
   {
-    title: "₹21 Cr",
+    title: "₹27 Cr",
     subtitle: "Worth of Scholarships",
   },
   {
-    title: "100%",
-    subtitle: "Placement Assistance",
+    title: "92%",
+    subtitle: "Placement Record",
   },
 ];
 
@@ -63,32 +65,27 @@ export const Counters: CounterItem[] = [
 export const prominentRecruiters: ProminentRecruit[] = [
   {
     imgUrl:
-      "https://www.krmangalam.edu.in/admission/law-2025/assets/trilegal.svg",
+      "/landingpage/bpt-2026/recruiters/amazon.webp",
     alt: "Recruiter Logo",
   },
   {
     imgUrl:
-      "https://www.krmangalam.edu.in/admission/btech-2025-b/assets/images/accenture.svg",
+      "/landingpage/bpt-2026/recruiters/zara.webp",
     alt: "Recruiter Logo",
   },
   {
     imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+      "/landingpage/bpt-2026/recruiters/zynga.webp",
     alt: "Recruiter Logo",
   },
   {
     imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+      "/landingpage/bpt-2026/recruiters/lifestyle.webp",
     alt: "Recruiter Logo",
   },
   {
     imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
-    alt: "Recruiter Logo",
-  },
-  {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+      "/landingpage/bpt-2026/recruiters/splash.webp",
     alt: "Recruiter Logo",
   },
 ];
@@ -97,37 +94,37 @@ export const whyKRM: WhyKRMSection = {
   heading: "What makes KRMU the Best option for the BPT Course?",
   subheading: "Turning Passionate Helpers into Professional Healers",
   content: `The Bachelor of Physiotherapy programme at K.R. Mangalam University is structured in a way that it combines in-depth theoretical knowledge with hands-on clinical experience. The students are trained to utilise their conceptual learning in real-time healthcare settings under the expert supervision of our proficient physiotherapists and healthcare experts, who bring years of clinical and teaching experience, thereby ensuring personalised mentorship throughout the academic journey. Additionally, the state-of-the-art physiotherapy labs equipped with advanced modalities provide students with the much-needed exposure to therapeutic techniques used in the realm of rehabilitation. By actively taking part in rural health camps and awareness campaigns, students learn about public health issues while providing physiotherapy help to marginalised areas.`,
-  imgUrl: `/landingpage/common/whykrmtest.png`,
+  imgUrl: `/landingpage/bpt-2026/why-choose/Building.webp`,
   whyKrmCards: [
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bpt-2026/why-choose/1.webp",
       content: `State-of-the-art Physiotherapy Labs with Advanced Equipments`,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bpt-2026/why-choose/2.webp",
       content: `Focus on Practical Training, Patient Handling, and Evidence-Based Practice`,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bpt-2026/why-choose/3.webp",
       content: `Tie-Ups with Reputed Hospitals and Rehabilitation Centres for Clinical Postings`,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bpt-2026/why-choose/4.webp",
       content: `Comprehensive 4-year Academic Programme + 6-month Compulsory Internship`,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bpt-2026/why-choose/5.webp",
       content: `Dedicated Faculty Comprising Experienced Physiotherapists and Medical Professionals`,
     },
   ],
 };
 
 export const industryExperts: IndustryExpertsSection = {
-  eyebrow: "Why KR Mangalam PhD?",
+  eyebrow: "",
   heading: `Learn From <br /> Industry Experts`,
   description: `KRMU partners with major organisations to provide <br /> industry-specific training.`,
   cta: {
-    label: "Apply for BPT Programme",
+    label: "Apply for BPT Programme 2026",
     href: "#",
   },
   cards: [
@@ -164,7 +161,7 @@ export const specialisationData: SpecialisationSection = {
   heading: `KRMU’s BPT Programme`,
   specilisationCard: [
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bpt-2026/specialisations/1.webp",
       title: `Bachelor of Physiotherapy`,
       desc: `The KRMU's Bachelor of Physiotherapy (BPT) programme leads to a wide array of rewarding and exciting job possibilities in the health and wellness industry. Graduates of this course are widely sought after in a variety of professional fields because they possess practical skills, ethical insights, and a thorough understanding of physiotherapy principles.`,
       extraInfos: [
@@ -190,7 +187,7 @@ export const specialisationData: SpecialisationSection = {
 
 export const opportunityData: OpportunitySection = {
   image: {
-    src: "/landingpage/common/test2.png",
+    src: "/landingpage/bpt-2026/student-at-krmu/Collage.webp",
     alt: "Industry Expert",
     width: 300,
     height: 400,
@@ -198,7 +195,7 @@ export const opportunityData: OpportunitySection = {
   heading: "Learn From Industry Experts",
   highlight: "Opportunity That Transforms",
   cta: {
-    label: "Apply for BPT Programme",
+    label: "Apply for BPT Programme 2026",
     href: "#",
   },
 };
@@ -208,7 +205,7 @@ export const testimonialsData: TestimonialsSection = {
   heading: `Still in Doubt? <br />See What Our Students Say About Us!`,
   testimonials: [
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bpt-2026/testimonials/1.webp",
       videoUrl: "#",
       quote: `Studying BPT at K.R. Mangalam University was transformative. The blend of theoretical 
 learning, clinical practice, and research, supported by experienced faculty, enhanced my 
@@ -219,7 +216,7 @@ making a difference. `,
       programme: "",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bpt-2026/testimonials/2.webp",
       videoUrl: "#",
       quote: `My BPT journey at K.R. Mangalam University was fruitful by providing invaluable clinical 
 exposure and shaping me into a skilled physiotherapist. Grateful for the foundation, 
@@ -230,7 +227,7 @@ commitment instilled during my studies. Forever connected to this incredible ins
       programme: "",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bpt-2026/testimonials/3.webp",
       videoUrl: "#",
       quote: `I , Manisha, from B.P.T Third Year, attended a CME workshop on advancements and robotic 
 surgery in osteoarthritis. It highlighted cutting-edge techniques, surgical precision, and 
@@ -242,7 +239,7 @@ and inspiring.
       programme: "",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bpt-2026/testimonials/4.webp",
       videoUrl: "#",
       quote: `The physiotherapy department's visit to ISIC Institute on 21st March 2024 was transformative, 
 exposing students to advanced rehabilitation technologies, live sessions, and professional 
@@ -313,35 +310,55 @@ export const comeToLifeData: ComeToLifeSection = {
   description: `Guided by highly qualified healthcare experts, students utilise the advanced physiotherapy labs equipped with state-of-the-art facilities in order to gain practical exposure to therapeutic techniques and global best practices in healthcare.`,
   footerText: ``,
   cta: {
-    label: "Apply for BBA (UG) 2026-2027 ",
+    label: "Apply for BPT Programme 2026 ",
     href: "#",
   },
   slides: [
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bpt-2026/infrastructure/1.webp",
       alt: "World Class Lab",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bpt-2026/infrastructure/2.webp",
       alt: "Research Facility",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bpt-2026/infrastructure/3.webp",
       alt: "Innovation Center",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bpt-2026/infrastructure/4.webp",
       alt: "Library & Resources",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bpt-2026/infrastructure/5.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bpt-2026/infrastructure/6.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bpt-2026/infrastructure/7.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bpt-2026/infrastructure/8.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bpt-2026/infrastructure/9.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bpt-2026/infrastructure/10.webp",
       alt: "Campus Infrastructure",
     },
   ],
 };
 
 export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
-  heading: "Life as a BBA (UG) Student at KRMU",
+  heading: "Life as a BPT Student at KRMU",
   description: "",
   image: {
     src: "/landingpage/common/test44.jpeg",
@@ -375,7 +392,7 @@ export const faqSectionData: FAQSectionData = {
     {
       id: "item-2",
       question: "Are there clinical postings during the course?",
-      answer: `Yes, students undergo clinical postings from the 2nd/3rd year onwards to gain real patient experience.`,
+      answer: `Yes, students undergo clinical postings from the 2nd/3rd year onwards to gain real patient-handling experience.`,
     },
     {
       id: "item-3",
@@ -389,12 +406,6 @@ export const faqSectionData: FAQSectionData = {
     },
     {
       id: "item-5",
-      question:
-        "What career opportunities are available after completing Fashion Design at KRMU?",
-      answer: `Graduates can pursue careers as fashion designers, apparel designers, fashion stylists, visual merchandisers, fashion illustrators, or start their own labels and design ventures.`,
-    },
-    {
-      id: "item-6",
       question: "Are there opportunities for international exposure?",
       answer: `KRMU often facilitates workshops and collaborative events with global healthcare experts. Consult the university’s international office for more information.`,
     },
@@ -430,7 +441,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Apply for K.R. Mangalam <br /> University now`,
   description: "Start Your Adventure Right Now at K.R. Mangalam University",
   cta: {
-    label: "Apply for BPT Programme",
+    label: "Apply for BPT Programme 2026",
     href: "#",
   },
   highlights: [

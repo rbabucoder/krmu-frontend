@@ -25,9 +25,12 @@ export const Hero: HeroContent = {
        Medical & Allied Sciences
       </span>
       <br />
-      PROGRAMMES 2026
+      PROGRAMMES 2026-27
     `,
-  desc: `Discover the foundation of agricultural excellence with K.R. Mangalam University’s four-year agriculture programme, designed to build strong agrarian knowledge, practical expertise, and an understanding of modern farming practices.`,
+  desc: `Start your healthcare journey with knowledgeable instructors, <br /> cutting-edge labs, industry-exposure, and career-focused curriculum`,
+  heroBg: "/landingpage/allied-health-science-2026/hero-image/BG.webp",
+  // middleImg: "/landingpage/law-2026/law.webp",
+  middleImg: "",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -42,8 +45,8 @@ export const heroMarqueeData: HeroMarqueeSection = {
 
 export const Counters: CounterItem[] = [
   {
-    title: "7.25 LPA",
-    subtitle: "Average Package",
+    title: "92%",
+    subtitle: "Placement Record",
   },
   {
     title: "800+",
@@ -62,33 +65,19 @@ export const Counters: CounterItem[] = [
 // Recruiters list
 export const prominentRecruiters: ProminentRecruit[] = [
   {
-    imgUrl:
-      "https://www.krmangalam.edu.in/admission/law-2025/assets/trilegal.svg",
+    imgUrl: "/landingpage/allied-health-science-2026/recruiters/zara.webp",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://www.krmangalam.edu.in/admission/btech-2025-b/assets/images/accenture.svg",
+    imgUrl: "/landingpage/allied-health-science-2026/recruiters/amzon.webp",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+    imgUrl: "/landingpage/allied-health-science-2026/recruiters/lifestyle.webp",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
-    alt: "Recruiter Logo",
-  },
-  {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
-    alt: "Recruiter Logo",
-  },
-  {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+    imgUrl: "/landingpage/allied-health-science-2026/recruiters/splash.webp",
     alt: "Recruiter Logo",
   },
 ];
@@ -97,22 +86,22 @@ export const whyKRM: WhyKRMSection = {
   heading: "Why Choose Medical and Allied Sciences Programmes at KRMU?",
   subheading: "Build a Career That Makes a Real Difference",
   content: `K.R. Mangalam University, in association with Emversity, offers industry-aligned Allied Health Sciences programmes built to global healthcare standards. Designed with doctors and practitioners, these work-integrated courses combine practical training, VR-enabled infrastructure, immersive internships, strong hospital partnerships, placement support, and international exposure to prepare students for impactful healthcare careers.`,
-  imgUrl: `/landingpage/common/whykrmtest.png`,
+  imgUrl: `/landingpage/allied-health-science-2026/why-choose/Building.webp`,
   whyKrmCards: [
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/allied-health-science-2026/why-choose/1.webp",
       content: `•	Work-integrated courses with placement support and immersive industry internships`,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/allied-health-science-2026/why-choose/2.webp",
       content: `•	Industry-relevant curriculum co-designed with doctors and practitioners`,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/allied-health-science-2026/why-choose/3.webp",
       content: `•	State-of-the-art infrastructure with advanced VR labs`,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/allied-health-science-2026/why-choose/4.webp",
       content: `•	Strong hospital partnerships offering placements and international exposure`,
     },
   ],
@@ -121,37 +110,29 @@ export const whyKRM: WhyKRMSection = {
 export const industryExperts: IndustryExpertsSection = {
   eyebrow: "Why K.R. Mangalam allied sciences courses?",
   heading: `Learn From <br /> Industry Expert`,
-  description: `Emversity offers India’s No. 1 Work-Integrated bachelor's degree in health sciences, combining academic excellence with real-world hospital training. Our programmes are designed in collaboration with leading healthcare institutions to ensure students graduate with job-ready skills and global career opportunities.
-•	Students are trained using real equipment and simulations, guided by industry practitioners. 
-•	Hands-on training at leading hospitals ensures students graduate with work-ready skills.
-•	Experience immersive learning with advanced VR simulations and modern healthcare training facilities.
-`,
+  description: `K.R. Mangalam University takes pride in collaborating with the industry leaders who offer top-notch hands-on learning experiences to students.`,
   cta: {
     label: "Apply for Medical Allied Sciences 2026",
     href: "#",
   },
   cards: [
     {
-      imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
+      imgUrl: "/landingpage/allied-health-science-2026/recruiters/apple.svg",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
     {
-      imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
+      imgUrl: "/landingpage/allied-health-science-2026/recruiters/apple.svg",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
     {
-      imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
+      imgUrl: "/landingpage/allied-health-science-2026/recruiters/apple.svg",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
     {
-      imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
+      imgUrl: "/landingpage/allied-health-science-2026/recruiters/apple.svg",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
@@ -164,8 +145,8 @@ export const specialisationData: SpecialisationSection = {
   heading: `Our medical & allied sciences programmes & specialisations`,
   specilisationCard: [
     {
-      imgUrl: "/landingpage/common/dummy.png",
-      title: `B.Sc. (Hons.) Emergency Medical Technology with Academic & Industry support of Emversit`,
+      imgUrl: "/landingpage/allied-health-science-2026/specialisations/s1.webp",
+      title: `B.Sc. (Hons.) Emergency Medical Technology with Academic & Industry support of Emversity`,
       desc: `•	Acquire vital skills in emergency medical care, life-saving techniques, and trauma management to excel in the fast-paced world of emergency healthcare.`,
       extraInfos: [
         {
@@ -178,15 +159,15 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Candidates must have passed 10+2 or an equivalent recognised examination with at least 50% aggregate in PCM, PCB, or PCMB.`,
         },
-        // {
-        //   iconUrl: "/landingpage/common/move-right.svg",
-        //   title: "Annual Fee",
-        //   desc: `Rs 1,40,000`,
-        // },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Annual Fee",
+          desc: `Rs 2,40,000`,
+        },
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/allied-health-science-2026/specialisations/s2.webp",
       title: `B.Sc. (Hons.) Respiratory Technology with Academic & Industry Support of Emversity`,
       desc: `Learn essential skills in respiratory care, diagnostic procedures, and patient management to build a strong foundation in today’s advanced healthcare industry.`,
       extraInfos: [
@@ -200,15 +181,15 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Candidates must have passed 10+2 or an equivalent recognised examination with at least 50% aggregate in PCM, PCB, or PCMB.`,
         },
-        // {
-        //   iconUrl: "/landingpage/common/move-right.svg",
-        //   title: "Annual Fee",
-        //   desc: `Rs 1,40,000`,
-        // },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Annual Fee",
+          desc: `Rs 2,40,000`,
+        },
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/allied-health-science-2026/specialisations/s3.webp",
       title: `B. Sc. (Hons.) Cardiovascular Technology with Academic & Industry Support of Emversity`,
       desc: `Gain expertise in cardiovascular diagnostics, interventional procedures, and patient care techniques to excel in today’s advanced healthcare environment`,
       extraInfos: [
@@ -222,11 +203,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Candidates must have passed 10+2 or an equivalent recognised examination with at least 50% aggregate in PCM, PCB, or PCMB.`,
         },
-        // {
-        //   iconUrl: "/landingpage/common/move-right.svg",
-        //   title: "Annual Fee",
-        //   desc: `Rs 1,40,000`,
-        // },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Annual Fee",
+          desc: `Rs 2,40,000`,
+        },
       ],
     },
   ],
@@ -242,49 +223,46 @@ export const opportunityData: OpportunitySection = {
   heading: "Learn From Industry Experts",
   highlight: "Opportunity That Transforms",
   cta: {
-    label: "Apply for BBA (UG) 2026-2027",
+    label: "Apply for Medical Allied Sciences 2026",
     href: "#",
   },
 };
 
 export const testimonialsData: TestimonialsSection = {
-  subheading: "Students’ Testimonials",
-  heading: `Why Do Our Students Trust Us? `,
+  subheading: "Our Testimonials",
+  heading: `Why do our schoolers love and trust K.R. Mangalam University?`,
   testimonials: [
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/allied-health-science-2026/testimonials/1.webp",
       videoUrl: "#",
-      quote: `Thrilled with my education at K.R. Mangalam University, Sohna. I learned leadership, 
-time management, and embraced nature. Now, a project assistant in a DST government 
-project at the university`,
-      name: "Tufail",
-      programme: "Project Assistant DST, Govt. of India",
+      quote: `My journey as a B.Sc. (Hons.) EMT student at K.R. Mangalam University has been truly  
+enriching. The university offers a supportive learning environment, experienced faculty, and strong practical exposure that have helped me build a solid foundation in medical   Knowledge.`,
+      name: "Kashish Pal pursuing B.Sc. (Hons.) EMT",
+      programme: "",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/allied-health-science-2026/testimonials/2.webp",
       videoUrl: "#",
-      quote: `K.R. Mangalam University excels with its great environment and ragging-free campus, 
-particularly in hostel life. Now a farm supervisor, I pursue my passion for natural farming.`,
-      name: "Saqlain",
-      programme: "Farm Supervisor, Gir Amritphal Gaushala Trust",
+      quote: `I am proud to be a student of K.R. Mangalam University, pursuing B.Sc. (Hons.) in Cardiovascular Technology. 
+      The university offers an excellent academic environment with advanced infrastructure, well-equipped laboratories,
+       and a strong focus on practical and Clinical Learning.`,
+      name: "Divyanshu University,",
+      programme: "pursuing B.Sc. (Hons) ",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/allied-health-science-2026/testimonials/3.webp",
       videoUrl: "#",
-      quote: `At SOAS, BSc (H) Agriculture student Aayushi thrives on professor-led activities and 
-competitions. Field trips offer real-world insights into agriculture.
+      quote: `K.R. Mangalam University offers state-of-the-art laboratories, modern classrooms, a well-stocked library, sports facilities, hostels, and innovation hubs that greatly enhance the student learning experience. The Emergency Medical Technology program prepared me to become skilled healthcare professionals capable of delivering pre-hospital emergency care and basic life support. 
 `,
-      name: "Aayushi",
-      programme: "",
+      name: "Anshu",
+      programme: "B.Sc. (Hons.) EMT ",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/allied-health-science-2026/testimonials/4.webp",
       videoUrl: "#",
-      quote: `K.R. Mangalam University provides us with the facilities to build live projects from lab to field 
-and field to lab to increase students' knowledge and skills with the latest technologies and 
-models.`,
-      name: "Sagar",
-      programme: "",
+      quote: `My experience at K.R. Mangalam University has been extremely positive and enriching. The university provides a nurturing academic environment where students are encouraged to learn, grow, and excel. `,
+      name: "Vanshika",
+      programme: "B.Sc (Hons.) ",
     },
   ],
 };
@@ -320,7 +298,7 @@ export const scholarResearchImpactData: ScholarResearchImpactSection = {
       id: 1,
       name: "Rahul Khanna",
       role: "PhD Journalism & Mass Communication",
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/why-choose/1.webp",
       quote:
         "My research at K.R. Mangalam University on social media's influence in modern society has been incredibly fulfilling. The mentorship and focus on real-world change truly set this programme apart.",
     },
@@ -345,41 +323,61 @@ export const scholarResearchImpactData: ScholarResearchImpactSection = {
 
 export const comeToLifeData: ComeToLifeSection = {
   heading: `World-Class Facilities`,
-  description: `K.R. Mangalam University offers world-class facilities that support both academic learning and practical training across disciplines. Students benefit from modern classrooms, well-equipped laboratories, a comprehensive resource library, and advanced teaching aids that encourage innovative learning approaches. In addition, discipline-specific facilities such as specialised labs, field-based learning spaces, and research support for agriculture-related studies further enhance hands-on exposure. Together, these facilities ensure students are well-prepared to excel in diverse professional and academic environments.`,
+  description: `K.R. Mangalam University offers a modern campus designed to support academic excellence and hands-on learning for B.Sc. students. Smart classrooms with advanced teaching tools and high-speed Wi-Fi create an interactive learning environment. Well-equipped laboratories enable practical training, experimentation, and skill development across disciplines. The central library provides extensive print and digital resources to support learning and research. Dedicated seminar halls, collaborative spaces, and innovation areas encourage teamwork and creative thinking. Beyond academics, the campus features secure hostels, sports and recreational facilities, and round-the-clock connectivity, ensuring a balanced and enriching student life.`,
   footerText: ``,
   cta: {
-    label: "Apply for BBA (UG) 2026-2027 ",
+    label: "Apply for Medical Allied Sciences 2026",
     href: "#",
   },
   slides: [
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/allied-health-science-2026/infrastructure/1.webp",
       alt: "World Class Lab",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/allied-health-science-2026/infrastructure/2.webp",
       alt: "Research Facility",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/allied-health-science-2026/infrastructure/3.webp",
       alt: "Innovation Center",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/allied-health-science-2026/infrastructure/4.webp",
       alt: "Library & Resources",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/allied-health-science-2026/infrastructure/5.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/allied-health-science-2026/infrastructure/6.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/allied-health-science-2026/infrastructure/7.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/allied-health-science-2026/infrastructure/8.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/allied-health-science-2026/infrastructure/9.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/allied-health-science-2026/infrastructure/10.webp",
       alt: "Campus Infrastructure",
     },
   ],
 };
 
 export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
-  heading: "Life as an Agriculture Student at KRMU ",
+  heading: "Life as an B.Sc. Student at KRMU ",
   description: "",
   image: {
-    src: "/landingpage/common/test44.jpeg",
+    src: "/landingpage/allied-health-science-2026/student-at-krmu/Collage.webp",
     alt: "Life as a PhD Scholar at KR Mangalam",
   },
   facilities: [
@@ -401,11 +399,12 @@ export const faqSectionData: FAQSectionData = {
   eyebrow: "(FAQs)",
   heading: "Frequently Asked Questions",
   description:
-    "K.R. Mangalam University offers Ph.D. programmes in a wide array of fields, encouraging cross-disciplinary exploration and innovation.",
+    "",
   faqs: [
     {
       id: "item-1",
-      question: "What is the eligibility criteria for Medical & Allied Sciences courses?",
+      question:
+        "What is the eligibility criteria for Medical & Allied Sciences courses?",
       answer: `Candidates must have passed Class 12 in the Science stream with Physics, Chemistry, and Biology, securing a minimum of 50% marks.`,
     },
     {
@@ -415,13 +414,13 @@ export const faqSectionData: FAQSectionData = {
     },
     {
       id: "item-3",
-      question:
-        "What placement support does the University provide?",
+      question: "What placement support does the University provide?",
       answer: `The University offers dedicated placement support, including structured training and placement drives with leading recruiters.`,
     },
     {
       id: "item-4",
-      question: "What B.Sc. courses are available under the Allied Health Sciences domain?",
+      question:
+        "What B.Sc. courses are available under the Allied Health Sciences domain?",
       answer: `The University offers the following B.Sc. programmes:
       <ul>
       <li>Cardiovascular Technology</li>
@@ -461,7 +460,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Begin Your Journey at K.R. Mangalam<br /> University now`,
   description: "Start Your Adventure Right Now at K.R. Mangalam University",
   cta: {
-    label: "Apply for Education Programme ",
+    label: "Apply for Medical Allied Sciences 2026 ",
     href: "#",
   },
   highlights: [

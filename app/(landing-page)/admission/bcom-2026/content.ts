@@ -25,9 +25,11 @@ export const Hero: HeroContent = {
        B.Com.
       </span>
       <br />
-      PROGRAMMES 2026
+      PROGRAMMES 2026-27
     `,
-  desc: `Start Building Your Future in Business and Management`,
+  desc: `Choose from specialised, industry-backed B.Com. programmes and <br /> step confidently into the world of business and finance`,
+  heroBg: "",
+  middleImg: "",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -42,8 +44,8 @@ export const heroMarqueeData: HeroMarqueeSection = {
 
 export const Counters: CounterItem[] = [
   {
-    title: "7.25 LPA",
-    subtitle: "Average Package",
+    title: "92%",
+    subtitle: "Placement Record",
   },
   {
     title: "800+",
@@ -62,33 +64,23 @@ export const Counters: CounterItem[] = [
 // Recruiters list
 export const prominentRecruiters: ProminentRecruit[] = [
   {
-    imgUrl:
-      "https://www.krmangalam.edu.in/admission/law-2025/assets/trilegal.svg",
+    imgUrl: "/landingpage/bcom-2026/recruiters/amazon.webp",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://www.krmangalam.edu.in/admission/btech-2025-b/assets/images/accenture.svg",
+    imgUrl: "/landingpage/bcom-2026/recruiters/splash.webp",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+    imgUrl: "/landingpage/bcom-2026/recruiters/lifestyle.webp",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+    imgUrl: "/landingpage/bcom-2026/recruiters/zara.webp",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
-    alt: "Recruiter Logo",
-  },
-  {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+    imgUrl: "/landingpage/bcom-2026/recruiters/zynga.webp",
     alt: "Recruiter Logo",
   },
 ];
@@ -96,39 +88,39 @@ export const prominentRecruiters: ProminentRecruit[] = [
 export const whyKRM: WhyKRMSection = {
   heading: "Why Choose B.Com. Programme at KRMU? ",
   subheading: "Build a Career with Strong Business Foundations ",
-  content: `K.R. mangalam university offers future-ready b.com. programmes designed to build strong foundations in commerce, accounting, finance, and management. The curriculum combines academic depth with practical exposure, helping students understand how businesses function in the real world. With experienced faculty, industry-oriented learning, skill-based training, internships, and career guidance, the programme prepares students for diverse careers in corporate roles, finance, entrepreneurship, and higher studies. `,
-  imgUrl: `/landingpage/common/whykrmtest.png`,
+  content: `K.R. Mangalam University offers future-ready B.Com. programmes designed to build strong foundations in commerce, accounting, finance, and management. The curriculum combines academic depth with practical exposure, helping students understand how businesses function in the real world. With experienced faculty, industry-oriented learning, skill-based training, internships, and career guidance, the programme prepares students for diverse careers in corporate roles, finance, entrepreneurship, and higher studies. `,
+  imgUrl: `/landingpage/bcom-2026/why-choose/Building.webp`,
   whyKrmCards: [
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bcom-2026/why-choose/1.webp",
       content: `Emphasis on Hands-on-learning, Practical experience with sophisticated software for advanced modelling and construction preparation.`,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bcom-2026/why-choose/2.webp",
       content: `Portfolio Development Guidance for Internship and Job Prospects in Architectural Firms, Government Organisations, etc.`,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bcom-2026/why-choose/3.webp",
       content: `Participation in live projects and real-world assignments.`,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bcom-2026/why-choose/4.webp",
       content: `100% Placement and Internship Assistance.`,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bcom-2026/why-choose/5.webp",
       content: `Global Exposure in the form of a paid visit to 2 weeks of summer school at a Prestigious European university.`,
     },
   ],
 };
 
 export const industryExperts: IndustryExpertsSection = {
-  eyebrow: "Why K.R. Mangalam b.com. courses?",
+  eyebrow: "Why K.R. Mangalam B.Com. courses?",
   heading: `Learn from Industry Expert
 `,
   description: `K.R. Mangalam University takes pride in collaborating with industry leaders and skill professionals who offer unparalleled hands-on learning experiences to students.`,
   cta: {
-    label: "Apply for B.Tech 2026",
+    label: "Apply for B.Com. 2026-27",
     href: "#",
   },
   cards: [
@@ -183,7 +175,7 @@ export const specialisationData: SpecialisationSection = {
   heading: `Our B.Com. programmes & specialisations`,
   specilisationCard: [
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bcom-2026/specialisations/B.Com.-(Hons.).webp",
       title: `B.Com. (Hons.) `,
       desc: `Build strong expertise in finance, accounting, business law, and taxation with B.Com. (Hons.). This specialised degree prepares you for careers in commerce, banking, financial analysis, and entrepreneurship by turning knowledge into practical, career-ready skills. `,
       extraInfos: [
@@ -197,10 +189,16 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognised board/university with minimum 50% aggregate marks.`,
         },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Annual Fee",
+          desc: `Rs. 1,40,000`,
+        },
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl:
+        "/landingpage/bcom-2026/specialisations/B.Com.-(Hons.--Hons.-With-Research).webp",
       title: `B.Com. (Hons. / Hons. With Research)`,
       desc: `The programme builds strong foundations in business and commerce, combining theory, practical learning, research exposure, and entrepreneurial skills to prepare students for diverse careers and future business challenges. `,
       extraInfos: [
@@ -214,10 +212,16 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognised board/university with minimum 50% aggregate marks.`,
         },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Annual Fee",
+          desc: `Rs. 1,40,000`,
+        },
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl:
+        "/landingpage/bcom-2026/specialisations/B.Com.-(Hons.)-(International-Accounting-and-Finance)-(ACCA---UK)-With-academic-support-of-Grant-Thornton.webp",
       title: `B.Com. (Hons.) (International Accounting and Finance) (ACCA - UK) With academic support of Grant Thornton `,
       desc: `The programme, with academic support from Grant Thornton, prepares students for global finance careers by combining strong academic foundations with professional ACCA-aligned learning and international exposure. `,
       extraInfos: [
@@ -231,10 +235,16 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognised board/university with minimum 50% aggregate marks.`,
         },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Annual Fee",
+          desc: `Rs. 1,65,000`,
+        },
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl:
+        "/landingpage/bcom-2026/specialisations/B.Com.-(Hons.-Hons.-with-Research)-(International-Accounting-and-Finance)-(ACCA---UK)-With-academic-support-of-Grant-Thornton.webp",
       title: `B.Com. (Hons. / Hons. with Research) (International Accounting and Finance) (ACCA - UK) With academic support of Grant Thornton `,
       desc: `The programme supported by Grant Thornton Bharat, builds strong global accounting expertise and practical skills, preparing students for successful international careers in finance and accounting. `,
       extraInfos: [
@@ -248,10 +258,15 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognised board/university with minimum 50% aggregate marks. `,
         },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Annual Fee",
+          desc: `Rs. 1,65,000`,
+        },
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bcom-2026/specialisations/B.Com.-Programme.webp",
       title: `B.Com. Programme`,
       desc: `The programme builds strong analytical, financial, and managerial skills. It prepares students for careers in marketing, finance, banking, and insurance through a balanced blend of practical learning and theoretical knowledge. `,
       extraInfos: [
@@ -264,6 +279,11 @@ export const specialisationData: SpecialisationSection = {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognised board/university with minimum 50% aggregate marks. `,
+        },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Annual Fee",
+          desc: `Rs. 1,25,000`,
         },
       ],
     },
@@ -280,7 +300,7 @@ export const opportunityData: OpportunitySection = {
   heading: "Learn From Industry Experts",
   highlight: "Opportunity That Transforms",
   cta: {
-    label: "Apply for B.Com. Programmes 2026-27",
+    label: "Apply for B.Com. 2026-27",
     href: "#",
   },
 };
@@ -290,7 +310,7 @@ export const testimonialsData: TestimonialsSection = {
   heading: `Why do our schoolers love and trust K.R. Mangalam University?`,
   testimonials: [
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bcom-2026/testimonials/1.webp",
       videoUrl: "#",
       quote: ` The B.Com. (Hons.) journey has been truly enriching. The comprehensive curriculum and industry-oriented projects have strengthened my analytical skills and prepared me for a successful career in commerce and beyond.
 `,
@@ -298,7 +318,7 @@ export const testimonialsData: TestimonialsSection = {
       programme: "B.Com. (Hons.)",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bcom-2026/testimonials/2.webp",
       videoUrl: "#",
       quote: `Choosing B.Com. (Hons.) broadened my horizons. The holistic approach to education and strong focus on practical learning enhanced my understanding of commerce and built a solid foundation for my future. 
 `,
@@ -306,14 +326,14 @@ export const testimonialsData: TestimonialsSection = {
       programme: "B.Com. (Hons.)",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bcom-2026/testimonials/3.webp",
       videoUrl: "#",
       quote: `It was a great experience to be part of such an esteemed university. Completing my B.Com. (Hons.) degree here helped me acquire the essential skills required of a commerce professional. The state-of-the-art infrastructure makes it one of the best universities in Gurgaon.`,
       name: "Tisha Arora",
       programme: "B.Com. (Hons.) ",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bcom-2026/testimonials/4.webp",
       videoUrl: "#",
       quote: ` Campus life at K.R. Mangalam University was exciting and enriching. I gained valuable insights and skills that will benefit me in my future career. I am grateful to the faculty and the placement cell for their constant support and efforts toward student success. `,
       name: "Nikita Sharma,",
@@ -353,7 +373,7 @@ export const scholarResearchImpactData: ScholarResearchImpactSection = {
       id: 1,
       name: "Rahul Khanna",
       role: "PhD Journalism & Mass Communication",
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bcom-2026/",
       quote:
         "My research at K.R. Mangalam University on social media's influence in modern society has been incredibly fulfilling. The mentorship and focus on real-world change truly set this programme apart.",
     },
@@ -386,33 +406,53 @@ export const comeToLifeData: ComeToLifeSection = {
   },
   slides: [
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bcom-2026/infrastructure/1.webp",
       alt: "World Class Lab",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bcom-2026/infrastructure/2.webp",
       alt: "Research Facility",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bcom-2026/infrastructure/3.webp",
       alt: "Innovation Center",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bcom-2026/infrastructure/4.webp",
       alt: "Library & Resources",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bcom-2026/infrastructure/5.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bcom-2026/infrastructure/6.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bcom-2026/infrastructure/7.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bcom-2026/infrastructure/8.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bcom-2026/infrastructure/9.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bcom-2026/infrastructure/10.webp",
       alt: "Campus Infrastructure",
     },
   ],
 };
 
 export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
-  heading: "Life as a B.Com (UG) Student at KRMU",
+  heading: "Life as a B.Com. Student at KRMU",
   description: "",
   image: {
-    src: "/landingpage/common/test44.jpeg",
+    src: "/landingpage/bcom-2026/student-at-krmu/Collage.webp",
     alt: "Life as a PhD Scholar at KR Mangalam",
   },
   facilities: [
@@ -434,7 +474,7 @@ export const faqSectionData: FAQSectionData = {
   eyebrow: "(FAQs)",
   heading: "Frequently Asked Questions",
   description:
-    "K.R. Mangalam University offers Ph.D. programmes in a wide array of fields, encouraging cross-disciplinary exploration and innovation.",
+    "",
   faqs: [
     {
       id: "item-1",
@@ -444,7 +484,8 @@ export const faqSectionData: FAQSectionData = {
     },
     {
       id: "item-2",
-      question: "Can I switch from the 3-year track to the 4-year Honours track later? ",
+      question:
+        "Can I switch from the 3-year track to the 4-year Honours track later? ",
       answer: `Yes, eligible students may have the option to transition from the 3-year programme to the 4-year Honours track as per university guidelines. `,
     },
     {
@@ -504,7 +545,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Apply for K.R. Mangalam <br /> University now`,
   description: "Start Your Adventure Right Now at K.R. Mangalam University",
   cta: {
-    label: "Apply for B.Com 2026-27  ",
+    label: "Apply for B.Com. 2026-27  ",
     href: "#",
   },
   highlights: [

@@ -22,7 +22,7 @@ export const Hero: HeroContent = {
       ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
-       BBA (UG)
+       BBA 
       </span>
       <br />
       PROGRAMMES 2026-27
@@ -154,8 +154,8 @@ export const industryExperts: IndustryExpertsSection = {
 };
 
 export const specialisationData: SpecialisationSection = {
-  subheading: `Choose from KRMU’s BBA (UG) programmes and start building your future in business and management.`,
-  heading: `Our BBA (UG) Programmes`,
+  subheading: `Choose from KRMU’s BBA  programmes and start building your future in business and management.`,
+  heading: `Our BBA  Programmes`,
   specilisationCard: [
     {
       imgUrl: "/landingpage/bba-2026/programs/bba-hr.jpg",
@@ -612,7 +612,7 @@ export const opportunityData: OpportunitySection = {
   heading: "Learn From Industry Experts",
   highlight: "Opportunity That Transforms",
   cta: {
-    label: "Apply for BBA (UG) 2026-2027",
+    label: "Apply for BBA  2026-2027",
     href: "#",
   },
 };
@@ -719,7 +719,7 @@ export const comeToLifeData: ComeToLifeSection = {
   description: `K.R. Mangalam University offers a modern and student-centric campus designed to support effective learning and holistic development for BBA undergraduates. The university provides smart classrooms, a well-equipped central library with digital resources, computer and analytics labs, and seminar halls to enhance academic engagement. Dedicated spaces for innovation, entrepreneurship, and skill development create an environment that encourages practical learning, collaboration, and professional growth.`,
   footerText: ``,
   cta: {
-    label: "Apply for BBA (UG) 2026-2027 ",
+    label: "Apply for BBA  2026-2027 ",
     href: "#",
   },
   slides: [
@@ -767,7 +767,7 @@ export const comeToLifeData: ComeToLifeSection = {
 };
 
 export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
-  heading: "Life as a BBA (UG) Student at KRMU",
+  heading: "Life as a BBA  Student at KRMU",
   description: "",
   image: {
     src: "/landingpage/common/collage.webp",
@@ -869,7 +869,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Apply for K.R. Mangalam <br /> University now`,
   description: "Start Your Adventure Right Now at K.R. Mangalam University",
   cta: {
-    label: "Apply for BBA (UG) 2026-2027",
+    label: "Apply for BBA  2026-2027",
     href: "#",
   },
   highlights: [

@@ -1,4 +1,4 @@
-import { FETCH_STRAPI_URL } from "@/app/constant";
+import { FETCH_STRAPI_URL, KRMUWordUrl } from "@/app/constant";
 
 export async function getAllBlogs() {
   let allPosts: any[] = [];
@@ -22,6 +22,55 @@ export async function getAllBlogs() {
   }
 
   return allPosts;
+}
+
+export async function getAllNewsEvents() {
+  let allNewsEvents: any[] = [];
+  let page = 1;
+  const perPage = 100;
+
+  while (true) {
+    const res = await fetch(
+      // `https://krmangalam.edu.in/wp-json/wp/v2/posts?_fields=slug,modified&per_page=${perPage}&page=${page}`,
+      `${KRMUWordUrl}/wp-json/wp/v2/events-and-news?_fields=slug,modified&page=${page}&per_page=${perPage}`,
+      { next: { revalidate: 3600 } }
+    );
+
+    if (!res.ok) break;
+
+    const data = await res.json();
+
+    if (!data.length) break;
+
+    allNewsEvents = [...allNewsEvents, ...data];
+    page++;
+  }
+
+  return allNewsEvents;
+}
+export async function getAllFaculties() {
+  let allFaculties: any[] = [];
+  let page = 1;
+  const perPage = 100;
+
+  while (true) {
+    const res = await fetch(
+      // `https://krmangalam.edu.in/wp-json/wp/v2/posts?_fields=slug,modified&per_page=${perPage}&page=${page}`,
+      `${KRMUWordUrl}/wp-json/wp/v2/faculty?_fields=slug,modified&page=${page}&per_page=${perPage}`,
+      { next: { revalidate: 3600 } }
+    );
+
+    if (!res.ok) break;
+
+    const data = await res.json();
+
+    if (!data.length) break;
+
+    allFaculties = [...allFaculties, ...data];
+    page++;
+  }
+
+  return allFaculties;
 }
 
 export type FolderRouteShareImage = {
@@ -90,10 +139,6 @@ export async function getAllSchools() {
   }[];
 }
 
-
-
-
-
 export async function getAllSchoolProgrammes() {
   let allProgrammes: any[] = [];
   let page = 1;
@@ -118,4 +163,31 @@ export async function getAllSchoolProgrammes() {
     documentId: string;
     programmeslug: string;
   }[];
+}
+export async function getAllPhotoGalleries() {
+  let allGalleries: {
+    id: number;
+    documentId: string;
+    slug: string;
+  }[] = [];
+
+  let page = 1;
+  let pageCount = 1;
+
+  while (page <= pageCount) {
+    const res = await fetch(
+      `${FETCH_STRAPI_URL}/api/photo-galleries?fields[0]=slug&pagination[pageSize]=50&pagination[page]=${page}`,
+      { cache: "no-store" }
+    );
+
+    if (!res.ok) throw new Error("Failed to fetch photo galleries");
+
+    const json = await res.json();
+
+    allGalleries = allGalleries.concat(json.data);
+    pageCount = json.meta.pagination.pageCount;
+    page++;
+  }
+
+  return allGalleries;
 }

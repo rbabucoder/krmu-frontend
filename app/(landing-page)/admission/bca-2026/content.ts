@@ -22,12 +22,12 @@ export const Hero: HeroContent = {
       ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
-      BCA (UG)
+      BCA
       </span>
       <br />
-      PROGRAMMES 2026
+      PROGRAMMES 2026-27
     `,
-  desc: `Immerse yourself in an inspiring environment that nurtures creativity, ignites innovation, and transforms ideas into impactful design solutions.`,
+  desc: `Start Your Journey into the World of IT and Applications`,
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -50,84 +50,74 @@ export const Counters: CounterItem[] = [
     subtitle: "Top Recruiters",
   },
   {
-    title: "₹21 Cr",
+    title: "₹27 Cr",
     subtitle: "Worth of Scholarships",
   },
   {
-    title: "100%",
-    subtitle: "Placement Assistance",
+    title: "92%",
+    subtitle: "Placement Record",
   },
 ];
 
 // Recruiters list
 export const prominentRecruiters: ProminentRecruit[] = [
   {
-    imgUrl:
-      "https://www.krmangalam.edu.in/admission/law-2025/assets/trilegal.svg",
+    imgUrl: "/landingpage/bca-2026/recruiters/amazon.webp",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://www.krmangalam.edu.in/admission/btech-2025-b/assets/images/accenture.svg",
+    imgUrl: "/landingpage/bca-2026/recruiters/zara.webp",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+    imgUrl: "/landingpage/bca-2026/recruiters/zynga.webp",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+    imgUrl: "/landingpage/bca-2026/recruiters/lifestyle.webp",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
-    alt: "Recruiter Logo",
-  },
-  {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+    imgUrl: "/landingpage/bca-2026/recruiters/splash.webp",
     alt: "Recruiter Logo",
   },
 ];
 
 export const whyKRM: WhyKRMSection = {
-  heading: "Why Select KRMU's BCA (UG) Programmes?",
+  heading: "Why Select KRMU's BCA Programmes?",
   subheading: "Future-Ready Learning in Computer Applications",
   content: `The BCA programmes of K.R. Mangalam University (KRMU), created in partnership with international IT giants, provides a dynamic fusion of theory and hands-on learning. Our programmes train you for a successful career in technology by emphasising innovation, exposure to the industry, and practical skills.`,
-  imgUrl: `/landingpage/common/whykrmtest.png`,
+  imgUrl: `/landingpage/bca-2026/why-choose/Building.webp`,
   whyKrmCards: [
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bca-2026/why-choose/1.webp",
       content: `Flexible Duration and NEP-Aligned Structure (3 or 4 years)`,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bca-2026/why-choose/2.webp",
       content: `Academic Assistance from Leaders in the Industry, such as IBM, Microsoft Certifications, and EC-Council`,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bca-2026/why-choose/3.webp",
       content: `Advanced Laboratories and Practical Instruction in Up-and-Coming Technologies`,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bca-2026/why-choose/4.webp",
       content: `Mentoring by Skilled Teachers and Technology Experts`,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bca-2026/why-choose/5.webp",
       content: `Robust Placement Assistance and International Certifications`,
     },
   ],
 };
 
 export const industryExperts: IndustryExpertsSection = {
-  eyebrow: "Why KR Mangalam PhD?",
+  eyebrow: "",
   heading: `Learn From <br /> Industry Experts`,
   description: `KRMU partners with major organisations to provide <br /> industry-specific training.`,
   cta: {
-    label: "Apply for B.Des Programme",
+    label: "Apply for BCA Programme 2026-2027",
     href: "#",
   },
   cards: [
@@ -160,11 +150,12 @@ export const industryExperts: IndustryExpertsSection = {
 };
 
 export const specialisationData: SpecialisationSection = {
-  subheading: `Begin your journey into the IT industry by choosing KRMU’s BCA (UG) programmes.`,
-  heading: `Our BCA (UG) Programmes`,
+  subheading: `Begin your journey into the IT industry by choosing KRMU’s BCA programmes.`,
+  heading: `Our BCA Programmes`,
   specilisationCard: [
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl:
+        "/landingpage/bca-2026/specialisations/BCA-(AI-&-Data-Science)-with-Academic-Support-of-IBM-&-Powered-by-Microsoft-Certifications.webp",
       title: `BCA (AI & Data Science) with Academic Support of IBM & Powered by Microsoft Certifications`,
       desc: `Gain hands-on expertise in Artificial Intelligence, Data Science, and Machine Learning through industry-aligned learning. Build practical skills with real-world datasets, intelligent systems, and advanced analytics tools. Prepare for high-growth careers by mastering technologies that drive digital transformation across industries.
 `,
@@ -187,7 +178,8 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl:
+        "/landingpage/bca-2026/specialisations/BCA-(Hons.Hons.-with-Research)-AI-&-Data-Science-with-Academic-Support-of-IBM-&-Powered-by-Microsoft-Certifications.webp",
       title: `BCA (Hons. / Hons. with Research) AI & Data Science with Academic Support of IBM & Powered by Microsoft Certifications`,
       desc: `Through industry-aligned learning, develop practical competence in machine learning, data science, and artificial intelligence. Develop useful skills using intelligent systems, real-world information, and sophisticated analytics tools. Learn the technologies that propel digital change across sectors to get ready for high-growth employment.
 `,
@@ -210,7 +202,8 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl:
+        "/landingpage/bca-2026/specialisations/BCA-(Cyber-Security)-with-Academic-Support-of-EC-Council.webp",
       title: `BCA (Cyber Security) with Academic Support of EC-Council`,
       desc: `Learn ethical hacking, network security, and cyber defence with the BCA (Cyber Security) programme at K.R. Mangalam University. The course offers hands-on experience with real-world cyber threats, penetration testing, and vulnerability assessment, equipping students with practical skills to protect digital systems and data. Students also gain expertise in industry-standard tools and techniques, preparing them for careers in cyber security, digital forensics, and IT risk management.`,
       extraInfos: [
@@ -232,7 +225,8 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl:
+        "/landingpage/bca-2026/specialisations/BCA-(Hons.-Hons.-with-Research)-Cyber-Security-with-Academic-Support-of-EC-Council.webp",
       title: `BCA (Hons. / Hons. with Research) Cyber Security with Academic Support of EC-Council`,
       desc: `This programme teaches ethical hacking, network security, and cyber defence. The course gives students practical skills to safeguard digital systems and data by providing them with hands-on experience with real-world cyber threats, penetration testing, and vulnerability assessment. Additionally, students acquire proficiency with industry-standard tools and methods, qualifying them for professions in IT risk management, digital forensics, and cyber security. `,
       extraInfos: [
@@ -266,7 +260,7 @@ export const opportunityData: OpportunitySection = {
   heading: "Learn From Industry Experts",
   highlight: "Opportunity That Transforms",
   cta: {
-    label: "Apply for B.Des Programme",
+    label: "Apply for BCA Programme 2026-2027",
     href: "#",
   },
 };
@@ -276,7 +270,7 @@ export const testimonialsData: TestimonialsSection = {
   heading: `Why do Aspirants Prefer KRMU?`,
   testimonials: [
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bca-2026/testimonials/1.webp",
       videoUrl: "#",
       quote: `K.R. Mangalam University has truly transformed my career. The BCA (AI & Data Science) 
 program not only provided me with technical expertise but also honed my problem-solving and 
@@ -287,7 +281,7 @@ working as a Sales manager at Rally M`,
       programme: "Sales manager at Rally Motors",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bca-2026/testimonials/2.webp",
       videoUrl: "#",
       quote: `Looking back at my journey at K.R. Mangalam University, I feel grateful for the incredible 
 opportunities I received as a BCA (AI & Data Science) student. The curriculum was designed 
@@ -300,14 +294,14 @@ industry. I highly recommend this programme to anyone passionate about AI and da
       programme: "",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bca-2026/testimonials/3.webp",
       videoUrl: "#",
       quote: `Enrolling in the BCA (AI & Data Science) programme at K.R. Mangalam University was one of the best decisions of my academic journey. The well-structured curriculum, combined with practical exposure through hands-on projects, helped me build a strong foundation in machine learning, data analytics, and cloud computing. The faculty’s guidance and the state-of-the-art labs played a crucial role in enhancing my technical skills. Thanks to the university’s placement cell, I secured a job at a leading AI firm, and I feel confident about tackling industry challenges`,
       name: "Annanya Agarwal ",
       programme: "",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bca-2026/testimonials/4.webp",
       videoUrl: "#",
       quote: `K.R. Mangalam University didn’t just provide me with a degree—it shaped my career. The BCA (AI & Data Science) programme gave me the technical expertise, industry exposure, and confidence  to work on AI-driven solutions. The university’s tie-ups with industry leaders, guest lectures from AI professionals, and project-based learning approach made a significant difference in my  professional journey. Today, as a Data Analyst, I use the knowledge and skills I gained at KRMU daily. If you're looking for a programme that bridges the gap between academics and industry, this is the place to be!`,
       name: "Shivangi Sharma",
@@ -347,7 +341,7 @@ export const scholarResearchImpactData: ScholarResearchImpactSection = {
       id: 1,
       name: "Rahul Khanna",
       role: "PhD Journalism & Mass Communication",
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bca-2026/",
       quote:
         "My research at K.R. Mangalam University on social media's influence in modern society has been incredibly fulfilling. The mentorship and focus on real-world change truly set this programme apart.",
     },
@@ -372,41 +366,61 @@ export const scholarResearchImpactData: ScholarResearchImpactSection = {
 
 export const comeToLifeData: ComeToLifeSection = {
   heading: `World-Class Infrastructure`,
-  description: `K.R. Mangalam University offers a modern and student-centric campus designed to support effective learning and holistic development for BBA undergraduates. The university provides smart classrooms, a well-equipped central library with digital resources, computer and analytics labs, and seminar halls to enhance academic engagement. Dedicated spaces for innovation, entrepreneurship, and skill development create an environment that encourages practical learning, collaboration, and professional growth.`,
+  description: `K.R. Mangalam University offers state-of-the-art infrastructure to support hands-on and technology-driven learning for BCA students. The campus features advanced computer laboratories equipped with the latest hardware and software, high-speed internet connectivity, and modern classrooms designed for interactive learning. Students benefit from dedicated innovation labs, cyber security and analytics-enabled environments, and access to industry-relevant tools and platforms. Well-stocked digital libraries, collaborative learning spaces, and expert academic support together create an ecosystem that nurtures technical expertise, innovation, and career readiness.`,
   footerText: ``,
   cta: {
-    label: "Apply for BBA (UG) 2026-2027 ",
+    label: "Apply for BCA 2026-2027 ",
     href: "#",
   },
   slides: [
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bca-2026/infrastructure/1.webp",
       alt: "World Class Lab",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bca-2026/infrastructure/2.webp",
       alt: "Research Facility",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bca-2026/infrastructure/3.webp",
       alt: "Innovation Center",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bca-2026/infrastructure/4.webp",
       alt: "Library & Resources",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bca-2026/infrastructure/5.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bca-2026/infrastructure/6.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bca-2026/infrastructure/7.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bca-2026/infrastructure/8.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bca-2026/infrastructure/9.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bca-2026/infrastructure/10.webp",
       alt: "Campus Infrastructure",
     },
   ],
 };
 
 export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
-  heading: "Life as a BBA (UG) Student at KRMU",
+  heading: "Life as a BCA Student at KRMU",
   description: "",
   image: {
-    src: "/landingpage/common/test44.jpeg",
+    src: "/landingpage/bca-2026/student-at-krmu/Collage.webp",
     alt: "Life as a PhD Scholar at KR Mangalam",
   },
   facilities: [
@@ -427,55 +441,29 @@ export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
 export const faqSectionData: FAQSectionData = {
   eyebrow: "(FAQs)",
   heading: "Frequently Asked Questions",
-  description:
-    "",
+  description: "",
   faqs: [
     {
       id: "item-1",
-      question: "What design programmes are offered at the School of Architecture & Design?",
-      answer: `KRMU offers several undergraduate design programmes including B.Des. in Fashion Design, Interior Design, Game Design & Animation, and UX/UI & Interaction Design. `,
+      question: "Does the programme involve internships?",
+      answer: `Yes, via collaborations with leading IT businesses, students get access to internships and real-world projects.`,
     },
     {
       id: "item-2",
-      question: "What is the duration of the B.Des. programmes?",
-      answer: `All Bachelor of Design (B.Des.) programmes are four-year undergraduate courses designed to provide comprehensive theoretical and practical training.`,
+      question: "What programming languages will I learn?",
+      answer: `Students will learn Python, Java, C, SQL, and specialisation-specific tools like R for AI/ML and Shell Scripting for Cyber Security.`,
     },
     {
       id: "item-3",
       question:
-        "What subjects or skills will I learn in these design courses?",
-      answer: `Students learn design fundamentals, creative process, software tools, project development, industry workshops, and domain-specific skills like fashion techniques, spatial planning, UI/UX design, or game animation.`,
+        "After finishing the programme, what are the employment prospects?",
+      answer: `Graduates can work as ethical hackers, machine learning engineers, cyber security analysts, AI developers, and more.`,
     },
     {
       id: "item-4",
-      question: "Does the Fashion Design course include practical and studio-based learning?",
-      answer: `Yes. The programme emphasises hands-on studio work, workshops, and live projects, allowing students to translate creative concepts into finished designs and collections.
+      question: "Are there any hostels available?",
+      answer: `Indeed, KRMU offers state-of-the-art dorms with fast internet and round-the-clock security.
 `,
-    },
-    {
-      id: "item-5",
-      question: "What career opportunities are available after completing Fashion Design at KRMU?",
-      answer: `Graduates can pursue careers as fashion designers, apparel designers, fashion stylists, visual merchandisers, fashion illustrators, or start their own labels and design ventures.`,
-    },
-    {
-      id: "item-6",
-      question: "Does KRMU provide global exposure in design programmes?",
-      answer: `Yes, students may get opportunities for international summer programmes, exchange experiences, and exposure to global design practices.`,
-    },
-    {
-      id: "item-7",
-      question: "What facilities support design education at KRMU?",
-      answer: `The School has specialised studios, workshops, labs, and software for design practice in areas like fashion, interior spaces, animation, and UX/UI.`,
-    },
-    {
-      id: "item-8",
-      question: "Is there placement and career support for design students?",
-      answer: `Yes. KRMU offers 100% placement assistance with strong industry connections, helping students secure internships and job opportunities upon graduation.`,
-    },
-    {
-      id: "item-9",
-      question: "Is hostel accommodation available for students?",
-      answer: `Yes, KRMU offers modern, secure on-campus housing with all amenities.`,
     },
   ],
 };
@@ -483,7 +471,7 @@ export const faqSectionData: FAQSectionData = {
 export const businessHubData: BusinessHubSection = {
   heading: `Learn at One of India’s Biggest <br /> Business Hubs, Gurgaon`,
   description:
-    "Launch your career with future-ready specialisations, industry-aligned curriculum, and hands-on project learning at our modern Gurugram campus.",
+    "Launch your engineering career with future-ready specialisations, industry-aligned curriculum, and hands-on project learning at our modern Gurugram campus.",
   highlights: [
     { text: "UGC Approved University" },
     { text: "NAAC A+ Accredited" },
@@ -509,7 +497,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Apply for K.R. Mangalam <br /> University now`,
   description: "Start Your Adventure Right Now at K.R. Mangalam University",
   cta: {
-    label: "Apply for B.Des Programme",
+    label: "Apply for BCA Programme 2026-2027",
     href: "#",
   },
   highlights: [

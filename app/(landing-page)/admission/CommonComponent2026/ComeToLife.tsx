@@ -39,7 +39,7 @@ const ComeToLife = ({ data }: Props) => {
         <div className="flex justify-center my-10">
           <Link
             href={data.cta.href}
-            className="flex items-center bg-[#0060aa] text-white justify-between w-fit py-0.5 pl-3 pr-2 text-sm gap-2 border border-white rounded-full"
+            className="flex items-center bg-[#0060aa] text-white justify-between max-w-[320px] w-full py-0.5 pl-3 pr-2 text-sm gap-2 border border-white rounded-full"
           >
             <span className="w-4/5 text-center">{data.cta.label}</span>
             <span className="bg-white p-3 rounded-full w-1/5">

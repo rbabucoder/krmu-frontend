@@ -87,6 +87,8 @@ const page = () => {
         formId={bptGameIdForm}
         desc={heroContent?.desc}
         marqueeData={heroMarqData}
+        heroBg={heroContent?.heroBg}
+        middleImg={heroContent?.middleImg}
       />
       <Counter counters={counters} />
       <ProminentRecruiter recruiters={recruiters} />

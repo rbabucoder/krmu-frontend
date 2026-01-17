@@ -27,7 +27,7 @@ export const Hero: HeroContent = {
       <br />
       PROGRAMMES 2026-27 
     `,
-  desc: `Discover the foundation of agricultural excellence with K.R. Mangalam University’s four-year agriculture programme, designed to build strong agrarian knowledge, practical expertise, and an understanding of modern farming practices.`,
+  desc: `Discover the foundation of agricultural excellence with K.R. Mangalam University’s four-year agriculture programme, designed to build strong agrarian knowledge, practical expertise, and an understanding of modern farming practices`,
   heroBg: "/landingpage/law-2026/law.jpg",
   // middleImg: "/landingpage/law-2026/law.webp",
   middleImg: "",

@@ -27,7 +27,7 @@ export const Hero: HeroContent = {
       <br />
       PROGRAMMES 2026-27
     `,
-  desc: `From conceptual learning in classrooms to building creative constructions <br /> via immersive projects,  the B.Arch course will enable you to shape the future of architecture.`,
+  desc: `From conceptual learning in classrooms to building creative constructions <br /> via immersive projects,  the B.Arch course will enable you to shape the future of architecture`,
   heroBg: "/landingpage/law-2026/law.jpg",
   // middleImg: "/landingpage/law-2026/law.webp",
   middleImg: "",
@@ -397,7 +397,7 @@ export const faqSectionData: FAQSectionData = {
 export const businessHubData: BusinessHubSection = {
   heading: `Learn at One of India’s Biggest <br /> Business Hubs, Gurgaon`,
   description:
-    "Launch your engineering career with future-ready specialisations, industry-aligned curriculum, and hands-on project learning at our modern Gurugram campus.",
+    "Launch your career with future-ready specialisations, industry-aligned curriculum, and hands-on project learning at our modern Gurugram campus.",
   highlights: [
     { text: "UGC Approved University" },
     { text: "NAAC A+ Accredited" },
