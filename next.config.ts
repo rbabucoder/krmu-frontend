@@ -34,21 +34,15 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
-        source: "/valuable-industry-interface-at-krmu/",
-        destination: "/blog/valuable-industry-interface-at-krmu/",
-        permanent: true, // 301
-      },
-      {
-        source: "/valuable-industry-interface-at-krmu",
-        destination: "/blog/valuable-industry-interface-at-krmu",
-        permanent: true, // 301
+        source: "/:slug((?!blog).*)",
+        destination: "/blog/:slug",
+        permanent: true,
       },
     ];
   },
 };
 
 export default nextConfig;
-
 
 // import type { NextConfig } from "next";
 
