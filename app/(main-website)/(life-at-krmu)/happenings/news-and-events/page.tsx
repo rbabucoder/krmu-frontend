@@ -1,14 +1,11 @@
 import { getNewsEvents } from "@/lib/api/news-events";
-import NewsAndEventsCards from "./comp/NewsAndEventsCards";
-import { BlocksRenderer } from "@strapi/blocks-react-renderer";
 
+import { BlocksRenderer } from "@strapi/blocks-react-renderer";
 
 import { Metadata } from "next";
 import { folderRouteSEO } from "@/lib/api/siteseo";
 import { STRAPI_URL } from "@/app/constant";
-
-
-
+import NewsAndEventsCards from "./comp/NewsAndEventsCards";
 
 export async function generateMetadata(): Promise<Metadata> {
   const seoData = await folderRouteSEO("news-and-events");

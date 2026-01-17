@@ -10,8 +10,8 @@ type Props = {
 
 const IndustryExperts = ({ data }: Props) => {
   return (
-    <section className="pt-20">
-      <div className="w-full bg-[#0060aa] pt-12 px-5 sm:px-20">
+    <section className="">
+      <div className="w-full bg-[#06081f] pt-12 px-5 sm:px-20">
         {/* Header */}
         <div className="max-w-[1400px] mx-auto w-full">
         <div className="flex flex-col lg:flex-row items-center justify-between text-white">
@@ -58,7 +58,7 @@ const IndustryExperts = ({ data }: Props) => {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(180px,1fr))] mt-5 md:mt-20 gap-5">
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(180px,1fr))] mt-5 md:mt-5 gap-5">
           {data.cards.map((item, index) => (
             <div
               key={index}
@@ -71,7 +71,7 @@ const IndustryExperts = ({ data }: Props) => {
         </div>
 
         {/* Mobile description + CTA */}
-        <div className="mt-10 sm:mt-20">
+        <div className="mt-10 sm:mt-5">
           <div className="md:hidden text-white">
             <p className="mb-5 text-center">{data.description}</p>
             <div className="flex justify-center">

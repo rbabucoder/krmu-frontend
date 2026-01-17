@@ -1,4 +1,4 @@
-import { FETCH_STRAPI_URL } from "@/app/constant";
+import { FETCH_STRAPI_URL, KRMUWordUrl } from "@/app/constant";
 import { NewsEventsPageResponse } from "../types/news-events";
 
 export async function getNewsEvents(): Promise<NewsEventsPageResponse["data"]> {
@@ -69,3 +69,33 @@ export async function getAllNewsAndEventsWithMeta(
 // status: 'published',
 // locale: ['en'],
 // }
+
+export async function getNewsEventsWP(page = 1, perPage = 10) {
+  const res = await fetch(
+    `${KRMUWordUrl}/wp-json/wp/v2/events-and-news?_fields=id,title,slug,acf,featured_media,modified&page=${page}&per_page=${perPage}`,
+    {
+      next: {
+        revalidate: 60,
+      },
+    }
+  );
+
+  if (!res.ok) {
+    throw new Error("Failed to fetch news & events");
+  }
+
+  const data = await res.json();
+
+  const total = Number(res.headers.get("X-WP-Total"));
+  const totalPages = Number(res.headers.get("X-WP-TotalPages"));
+
+  return {
+    data,
+    pagination: {
+      page,
+      perPage,
+      total,
+      totalPages,
+    },
+  };
+}

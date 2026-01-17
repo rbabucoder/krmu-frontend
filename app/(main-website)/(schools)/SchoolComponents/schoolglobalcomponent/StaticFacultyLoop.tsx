@@ -31,7 +31,7 @@ export const SCHOOL_CATEGORIES = [
   "SOLA",
   "SOAD",
   "SBAS",
-  "SJMC",
+  "SEMCE",
   "SOHMCT",
   "SOED",
   "SOAS",
@@ -74,7 +74,7 @@ const facultyMap: Record<SchoolCategory, Faculty[]> = {
   SOLA: solaFaculties,
   SOAD: soadFaculties,
   SBAS: sbasFaculties,
-  SJMC: sjmcFaculties,
+  SEMCE: sjmcFaculties,
   SOHMCT: sohmctFaculties,
   SOED: soedFaculties,
   SOAS: soasFaculties,
@@ -82,6 +82,7 @@ const facultyMap: Record<SchoolCategory, Faculty[]> = {
 
 // ---------- Component ----------
 const StaticFacultyLoop = ({ schoolCat }: Props) => {
+  console.log('schoolCat', schoolCat);
   // ✅ Runtime safety
   if (!isSchoolCategory(schoolCat)) return null;
 

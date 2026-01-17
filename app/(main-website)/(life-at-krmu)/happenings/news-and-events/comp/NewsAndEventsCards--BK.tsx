@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import NewsCard from "./NewsCard";
-import { getAllNewsAndEventsWithMeta, getNewsEventsWP } from "@/lib/api/news-events"; // import your function
+import { getAllNewsAndEventsWithMeta } from "@/lib/api/news-events"; // import your function
 import { NewsEventItem } from "@/lib/types/news-events";
 
 const NewsAndEventsCards = () => {
@@ -13,14 +13,9 @@ const NewsAndEventsCards = () => {
 
   useEffect(() => {
     async function fetchNews() {
-      // const res = await getAllNewsAndEventsWithMeta(page, pageSize);
-      const res = await getNewsEventsWP(page, pageSize);
-
-      // console.log('res', res);
+      const res = await getAllNewsAndEventsWithMeta(page, pageSize);
       setNews(res.data);
-      setTotalPages(res.pagination.totalPages);
-      // setNews(res.data);
-      // setTotalPages(res.meta.pagination.pageCount);
+      setTotalPages(res.meta.pagination.pageCount);
     }
     fetchNews();
   }, [page, pageSize]);
@@ -29,13 +24,13 @@ const NewsAndEventsCards = () => {
     <div>
       {/* News Cards */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-        {news.map((item, i) => (
+        {news.map((item) => (
           <NewsCard
-            key={i}
-            title={item.title.rendered}
+            key={item.id}
+            title={item.title}
             slug={item.slug}
-            firstImage={item?.featured_media}
-            publishedAt={item.modified}
+            firstImage={item?.newsmedia[0]?.url}
+            publishedAt={item.publishedAt}
           />
         ))}
       </div>

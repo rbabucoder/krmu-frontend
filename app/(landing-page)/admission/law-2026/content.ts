@@ -92,8 +92,8 @@ export const prominentRecruiters: ProminentRecruit[] = [
 
 export const whyKRM: WhyKRMSection = {
   heading: "Why Choose Undergraduate Law Programmes at KRMU?",
-  subheading: "Where Legal Theory Meets Real-World Practice",
-  content: `Undergraduate Law Programmes at K.R. Mangalam University provides internationally relevant, industry-aligned programs aimed at producing capable and socially conscious attorneys. Our graduates are prepared to succeed in corporate law, litigation, public policy, and other fields thanks to a curriculum developed by legal professionals which focuses on practical experience and interdisciplinary learning.`,
+  subheading: "",
+  content: `Undergraduate Law Programmes at K.R. Mangalam University provides internationally relevant,  industry-aligned programs aimed at producing capable and socially conscious attorneys. Our graduates are prepared to succeed in corporate law, litigation, public policy, and other fields thanks to a curriculum developed by legal professionals which focuses on practical experience and interdisciplinary learning.`,
   imgUrl: `/landingpage/common/build.webp`,
   whyKrmCards: [
     {

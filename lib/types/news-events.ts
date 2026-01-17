@@ -35,9 +35,18 @@ export interface Pagination {
 export interface NewsEventItem {
   id: number;
   documentId: string;
-  title: string;
+  title: {
+    rendered: string;
+  };
   slug: string;
-  publishedAt: string;
+  modified: string;
+  // publishedAt: string;
   // featured_img: StrapiMedia;
-  newsmedia: StrapiMedia[];
+  // newsmedia: StrapiMedia[];
+  featured_media: number;
+  acf: {
+    event_start_date: null;
+    event_venue: string;
+    event_images: number[];
+  };
 }

@@ -383,7 +383,7 @@ export interface SingleFacultyResponse {
   };
 }
 export interface StrapiPagination {
-  page: number;
+  page: number; 
   pageSize: number;
   pageCount: number;
   total: number;
