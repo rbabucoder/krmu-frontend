@@ -38,6 +38,11 @@ const nextConfig: NextConfig = {
         destination: "/blog/valuable-industry-interface-at-krmu/",
         permanent: true, // 301
       },
+      {
+        source: "/valuable-industry-interface-at-krmu",
+        destination: "/blog/valuable-industry-interface-at-krmu",
+        permanent: true, // 301
+      },
     ];
   },
 };
