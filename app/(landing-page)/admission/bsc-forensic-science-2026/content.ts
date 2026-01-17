@@ -63,32 +63,27 @@ export const Counters: CounterItem[] = [
 export const prominentRecruiters: ProminentRecruit[] = [
   {
     imgUrl:
-      "https://www.krmangalam.edu.in/admission/law-2025/assets/trilegal.svg",
+      "/landingpage/bsc-forensic-science-2026/recruiters/amazon.webp",
     alt: "Recruiter Logo",
   },
   {
     imgUrl:
-      "https://www.krmangalam.edu.in/admission/btech-2025-b/assets/images/accenture.svg",
+      "/landingpage/bsc-forensic-science-2026/recruiters/zara.webp",
     alt: "Recruiter Logo",
   },
   {
     imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+      "/landingpage/bsc-forensic-science-2026/recruiters/zynga.webp",
     alt: "Recruiter Logo",
   },
   {
     imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+      "/landingpage/bsc-forensic-science-2026/recruiters/lifestyle.webp",
     alt: "Recruiter Logo",
   },
   {
     imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
-    alt: "Recruiter Logo",
-  },
-  {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+      "/landingpage/bsc-forensic-science-2026/recruiters/splash.webp",
     alt: "Recruiter Logo",
   },
 ];
@@ -98,26 +93,26 @@ export const whyKRM: WhyKRMSection = {
   subheading: "Accurate Analysis of Evidences For Concrete Conclusions",
   content: `The B.Sc. Forensic Science programmes intend to offer KRMU students an opportunity to apply science in the pursuit of justice. This multidisciplinary course strives to equip the learners with in-depth knowledge of forensic biology, toxicology, chemistry, ballistics, cyber forensics, and crime scene investigation. The curriculum is designed to meet the increasing reliance on scientific evidence in legal and criminal proceedings, thereby meeting the growing demand for trained forensic experts across government agencies, law enforcement departments, private labs, and legal consultancy firms.
 `,
-  imgUrl: `/landingpage/common/whykrmtest.png`,
+  imgUrl: `/landingpage/bsc-forensic-science-2026/why-choose/Building.webp`,
   whyKrmCards: [
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bsc-forensic-science-2026/why-choose/1.webp",
       content: `NEP-Aligned Curriculum with Flexible Options for Research Integration.`,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bsc-forensic-science-2026/why-choose/2.webp",
       content: `Advanced Forensic Labs with the Latest Tools for Real-World Case Analysis.`,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bsc-forensic-science-2026/why-choose/3.webp",
       content: `Industry Exposure Through Field Visits, Forensic Agency Collaborations, and Expert-Led Workshops.`,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bsc-forensic-science-2026/why-choose/4.webp",
       content: `Hands-On Learning with Crime Scene Simulation, Forensic Photography, and Digital Forensics.`,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bsc-forensic-science-2026/why-choose/5.webp",
       content: `100% Placement Assistance in Top Forensic Labs, Law Enforcement, and Private Consultancies.`,
     },
   ],
@@ -166,7 +161,7 @@ export const specialisationData: SpecialisationSection = {
   heading: `KRMU’s B.Sc. Forensic Science Courses`,
   specilisationCard: [
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bsc-forensic-science-2026/specialisations/B.Sc.-(Hons.)-Forensic-Science.webp",
       title: `B.Sc. (Hons.) Forensic Science`,
       desc: `The Bachelor of Science (B.Sc.) Hons. in Forensic Science offered by KRMU is a multidisciplinary undergraduate program designed to prepare students for careers in crime investigation and forensic analysis. The meticulously drafted course combines principles of science, law, and technology to help students understand how scientific methods are applied to solve crimes. Students study core subjects such as forensic biology, forensic chemistry, toxicology, fingerprint analysis, questioned documents, and criminology.`,
       extraInfos: [
@@ -188,7 +183,7 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bsc-forensic-science-2026/specialisations/B.Sc.-(Hons.-Hons.-with-Research)-Forensic-Science.webp",
       title: `B.Sc. (Hons. / Hons. with Research) Forensic Science`,
       desc: `The program at K.R. Mangalam University aims to develop critical thinking, observation, analytical skills, and attention to detail, which are essential for forensic professionals. Graduates of this course can pursue careers as forensic analysts, crime scene investigators, laboratory technicians, or research assistants. They may also opt for higher studies such as M.Sc. in Forensic Science, Criminology, or related fields.`,
       extraInfos: [
@@ -326,23 +321,43 @@ export const comeToLifeData: ComeToLifeSection = {
   },
   slides: [
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bsc-forensic-science-2026/infrastructure/1.webp",
       alt: "World Class Lab",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bsc-forensic-science-2026/infrastructure/2.webp",
       alt: "Research Facility",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bsc-forensic-science-2026/infrastructure/3.webp",
       alt: "Innovation Center",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bsc-forensic-science-2026/infrastructure/4.webp",
       alt: "Library & Resources",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bsc-forensic-science-2026/infrastructure/5.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bsc-forensic-science-2026/infrastructure/6.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bsc-forensic-science-2026/infrastructure/7.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bsc-forensic-science-2026/infrastructure/8.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bsc-forensic-science-2026/infrastructure/9.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bsc-forensic-science-2026/infrastructure/10.webp",
       alt: "Campus Infrastructure",
     },
   ],
@@ -352,7 +367,7 @@ export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
   heading: "Life as a B.Sc. Forensic Science Student at KRMU",
   description: "",
   image: {
-    src: "/landingpage/common/test44.jpeg",
+    src: "/landingpage/bsc-forensic-science-2026/student-at-krmu/Collage.webp",
     alt: "Life as a PhD Scholar at KR Mangalam",
   },
   facilities: [
@@ -408,7 +423,7 @@ export const faqSectionData: FAQSectionData = {
 export const businessHubData: BusinessHubSection = {
   heading: `Learn at One of India’s Biggest <br /> Business Hubs, Gurgaon`,
   description:
-    "Launch your career with future-ready specialisations, industry-aligned curriculum, and hands-on project learning at our modern Gurugram campus.",
+    "Launch your engineering career with future-ready specialisations, industry-aligned curriculum, and hands-on project learning at our modern Gurugram campus.",
   highlights: [
     { text: "UGC Approved University" },
     { text: "NAAC A+ Accredited" },

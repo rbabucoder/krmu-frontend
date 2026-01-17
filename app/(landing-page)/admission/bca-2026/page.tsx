@@ -15,13 +15,33 @@ import Testimonials from "../CommonComponent2026/Testimonials";
 import WhyKRMangalam from "../CommonComponent2026/WhyKRMangalam";
 
 import FeeStructureTable from "./components/FeeStructure";
+// import {
+// applySectionData,
+// businessHubData,
+// comeToLifeData,
+// Counters,
+// faqSectionData,
+// Hero,
+// heroMarqueeData,
+// industryExperts,
+// lifeAsPhDScholarData,
+// opportunityData,
+// prominentRecruiters,
+// // scholarResearchImpactData,
+// specialisationData,
+// testimonialsData,
+// whyKRM,
+// } from "./content";
+
+import { SeoData } from "./seo";
+import { bca2026Id } from "../constant/lpnpf";
 import {
+  Hero,
   applySectionData,
   businessHubData,
   comeToLifeData,
   Counters,
   faqSectionData,
-  Hero,
   heroMarqueeData,
   industryExperts,
   lifeAsPhDScholarData,
@@ -32,9 +52,6 @@ import {
   testimonialsData,
   whyKRM,
 } from "./content";
-
-import { SeoData } from "./seo";
-import { bca2026Id } from "../constant/lpnpf";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -87,6 +104,8 @@ const page = () => {
         formId={bcaIdForm}
         desc={heroContent?.desc}
         marqueeData={heroMarqData}
+        heroBg={heroContent?.heroBg}
+        middleImg={heroContent?.middleImg}
       />
       <Counter counters={counters} />
       <ProminentRecruiter recruiters={recruiters} />

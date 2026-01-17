@@ -28,6 +28,8 @@ export const Hero: HeroContent = {
       PROGRAMMES 2026-27
     `,
   desc: `Start Your Journey into the World of IT and Applications`,
+  heroBg: "/landingpage/bca-2026/BCA.webp",
+  middleImg: "",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
