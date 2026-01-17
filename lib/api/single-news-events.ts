@@ -18,8 +18,6 @@ export async function getSingleNewsAndEvents(
   return json.data;
 }
 
-
-
 // {
 // filters: {
 //   slug: {
@@ -29,8 +27,23 @@ export async function getSingleNewsAndEvents(
 // populate: {
 //   bgimg: { populate: '*' },
 //   newsmedia:{
-//     populate:'*' 
-//   } 
+//     populate:'*'
+//   }
 // },
 
 // }
+
+export async function getSingleNewsAndEventsWP(newsandeventsslug: string = "") {
+  const res = await fetch(
+    `https://www.krmangalam.edu.in/wp-json/wp/v2/events-and-news?slug=${newsandeventsslug}&_fields=id,title,content,featured_media,acf.event_images,slug`,
+    {
+      next: {
+        revalidate: 60,
+      },
+    }
+  );
+
+  const data = res.json();
+
+  return data;
+}

@@ -21,7 +21,7 @@ const NewsCard = ({ title, slug, firstImage, publishedAt }: NewsCardProps) => {
 
       try {
         const url = await getWordImageById(firstImage);
-       
+
         setImageUrl(url);
       } catch (error) {
         console.error("Failed to load image:", error);
@@ -60,11 +60,16 @@ const NewsCard = ({ title, slug, firstImage, publishedAt }: NewsCardProps) => {
         </span>
 
         <div className="text-white mt-2.5 mb-[15px] text-xl font-semibold">
-          <h2>{title}</h2>
+          <h2
+            dangerouslySetInnerHTML={{
+              __html: title,
+            }}
+          />
         </div>
 
         <Link
           href={`/events-and-news/${slug || "#"}`}
+          target="_blank"
           className="italic text-white text-xs underline inline-block py-[29px]"
         >
           View More

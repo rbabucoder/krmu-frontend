@@ -11,7 +11,7 @@ type Props = {
 const IndustryExperts = ({ data }: Props) => {
   return (
     <section className="">
-      <div className="w-full bg-[#06081f] pt-12 px-5 sm:px-20">
+      <div className="w-full bg-[#003fa1] pt-12 px-5 sm:px-20">
         {/* Header */}
         <div className="max-w-[1400px] mx-auto w-full">
         <div className="flex flex-col lg:flex-row items-center justify-between text-white">

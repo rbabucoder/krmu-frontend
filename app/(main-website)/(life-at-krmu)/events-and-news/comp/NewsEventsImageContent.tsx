@@ -1,38 +1,38 @@
-import { STRAPI_URL } from "@/app/constant";
-import { ParagraphBlock } from "@/lib/types/about";
-import { StrapiMedia } from "@/lib/types/common";
-import { BlocksRenderer } from "@strapi/blocks-react-renderer";
+import { getWordImageById } from "@/lib/api/common";
 import Image from "next/image";
 
 type Props = {
-  bgSlide: StrapiMedia[];
-  content: ParagraphBlock[];
+  bgSlideImageIds: number[];
+  content: string;
 };
 
-const NewsEventsImageContent = ({ bgSlide, content }: Props) => {
+const NewsEventsImageContent = async ({ bgSlideImageIds, content }: Props) => {
+  const imageUrls = await Promise.all(
+    (bgSlideImageIds || []).map((id) => getWordImageById(id))
+  );
+
   return (
     <section className="py-12">
       <div className="max-w-[1664px] mx-auto w-full flex">
         <div className="w-1/2">
-          <div className="bg-[#051630] text-white p-5 mx-8 text-sm">
-           <BlocksRenderer content={content} />
-          </div>
+          <div
+            className="bg-[#051630] text-white p-5 mx-8 text-sm"
+            dangerouslySetInnerHTML={{ __html: content }}
+          />
         </div>
+
         <div className="w-1/2">
           <div className="grid grid-cols-2 gap-1.5">
-            {bgSlide &&
-              bgSlide.map((slide) => {
-                return (
-                  <Image
-                    key={slide?.id}
-                    src={`${STRAPI_URL}${slide?.url}`}
-                    width={381}
-                    height={305}
-                    alt={slide?.alternativeText || ""}
-                    className="w-full h-full"
-                  />
-                );
-              })}
+            {imageUrls.map((imgUrl, i) => (
+              <Image
+                key={i}
+                src={imgUrl}
+                width={381}
+                height={305}
+                alt=""
+                className="w-full h-full object-cover"
+              />
+            ))}
           </div>
         </div>
       </div>

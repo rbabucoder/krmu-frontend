@@ -78,7 +78,7 @@ export async function getNewsEventsWP(page = 1, perPage = 10) {
         revalidate: 60,
       },
     }
-  );
+  ); 
 
   if (!res.ok) {
     throw new Error("Failed to fetch news & events");

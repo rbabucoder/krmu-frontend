@@ -1,4 +1,4 @@
-import { FETCH_STRAPI_URL } from "@/app/constant";
+import { FETCH_STRAPI_URL, KRMUWordUrl } from "@/app/constant";
 import {
   AlumniApiResponse,
   CustomPage,
@@ -393,7 +393,7 @@ export async function getWordImageById(imgId: number): Promise<string> {
   if (!imgId) throw new Error("Image ID is required");
 
   const res = await fetch(
-    `https://www.krmangalam.edu.in/wp-json/wp/v2/media/${imgId}?_fields=guid`,
+    `${KRMUWordUrl}/wp-json/wp/v2/media/${imgId}?_fields=guid`,
     {
       next: { revalidate: 60 },
     }

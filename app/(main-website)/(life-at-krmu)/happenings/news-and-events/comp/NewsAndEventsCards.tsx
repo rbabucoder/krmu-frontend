@@ -2,48 +2,58 @@
 
 import { useEffect, useState } from "react";
 import NewsCard from "./NewsCard";
-import { getAllNewsAndEventsWithMeta, getNewsEventsWP } from "@/lib/api/news-events"; // import your function
+import { getNewsEventsWP } from "@/lib/api/news-events";
 import { NewsEventItem } from "@/lib/types/news-events";
 
 const NewsAndEventsCards = () => {
   const [news, setNews] = useState<NewsEventItem[]>([]);
   const [page, setPage] = useState(1);
-  const [pageSize] = useState(12); // 4 per page
+  const [pageSize] = useState(12);
   const [totalPages, setTotalPages] = useState(1);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     async function fetchNews() {
-      // const res = await getAllNewsAndEventsWithMeta(page, pageSize);
-      const res = await getNewsEventsWP(page, pageSize);
-
-      // console.log('res', res);
-      setNews(res.data);
-      setTotalPages(res.pagination.totalPages);
-      // setNews(res.data);
-      // setTotalPages(res.meta.pagination.pageCount);
+      setLoading(true);
+      try {
+        const res = await getNewsEventsWP(page, pageSize);
+        setNews(res.data);
+        setTotalPages(res.pagination.totalPages);
+      } finally {
+        setLoading(false);
+      }
     }
     fetchNews();
   }, [page, pageSize]);
 
   return (
     <div>
+      {/* Loader */}
+      {loading && (
+        <div className="flex justify-center items-center py-10 text-white">
+          Loading...
+        </div>
+      )}
+
       {/* News Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-        {news.map((item, i) => (
-          <NewsCard
-            key={i}
-            title={item.title.rendered}
-            slug={item.slug}
-            firstImage={item?.featured_media}
-            publishedAt={item.modified}
-          />
-        ))}
-      </div>
+      {!loading && (
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+          {news.map((item, i) => (
+            <NewsCard
+              key={i}
+              title={item.title.rendered}
+              slug={item.slug}
+              firstImage={item?.featured_media}
+              publishedAt={item.modified}
+            />
+          ))}
+        </div>
+      )}
 
       {/* Pagination */}
       <div className="flex justify-center gap-4 mt-6">
         <button
-          disabled={page === 1}
+          disabled={page === 1 || loading}
           onClick={() => setPage((p) => p - 1)}
           className="px-4 py-2 bg-gray-700 text-white rounded disabled:opacity-50"
         >
@@ -53,7 +63,7 @@ const NewsAndEventsCards = () => {
           Page {page} of {totalPages}
         </span>
         <button
-          disabled={page === totalPages}
+          disabled={page === totalPages || loading}
           onClick={() => setPage((p) => p + 1)}
           className="px-4 py-2 bg-gray-700 text-white rounded disabled:opacity-50"
         >

@@ -18,7 +18,13 @@ const WhyKRMangalam = ({
 }: Props) => {
   return (
     <>
-      <section className="bg-[url(/test-2.jpg)] h-[800px] py-10 bg-cover bg-no-repeat bg-center px-4">
+      <section
+        className="h-[800px]  py-10 bg-cover bg-no-repeat bg-center px-4"
+        style={{
+          backgroundColor: `#003fa1`,
+          backgroundImage: `url(/test-3.png)`,
+        }}
+      >
         <div className="max-w-[1400px] mx-auto w-full flex justify-center flex-col">
           <h4
             className="text-center text-3xl md:text-4xl text-white leading-[1.4] mb-2.5 font-semibold"

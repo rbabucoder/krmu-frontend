@@ -1,29 +1,45 @@
 import React from "react";
 import NewsEventsHero from "../comp/NewsEventsHero";
 import NewsEventsImageContent from "../comp/NewsEventsImageContent";
-import { getSingleNewsAndEvents } from "@/lib/api/single-news-events";
+import {
+  getSingleNewsAndEvents,
+  getSingleNewsAndEventsWP,
+} from "@/lib/api/single-news-events";
 import { notFound } from "next/navigation";
+import { Metadata } from "next";
 
 type Props = {
   params: Promise<{ slug: string }>;
 };
 
-import { Metadata } from "next";
-
-import { STRAPI_URL } from "@/app/constant";
+type NewsEventItem = {
+  slug: string;
+  title: {
+    rendered: string;
+  };
+  content: {
+    rendered: string;
+  };
+  acf: {
+    event_images: number[];
+  };
+};
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // const seoData = await folderRouteSEO("gallery-image");
 
   const { slug } = await params; // ✅ await params
 
-  const singleNewsAndEventsData = await getSingleNewsAndEvents(slug);
+  const singleNewsAndEventsData: NewsEventItem[] =
+    await getSingleNewsAndEventsWP(slug);
+
+  // const singleNewsAndEventsData = await getSingleNewsAndEvents(slug);
 
   const singleNewsEvents = singleNewsAndEventsData.find(
     (items) => items.slug === slug
   );
 
-  const siteTitle = singleNewsEvents?.title;
+  const siteTitle = singleNewsEvents?.title?.rendered;
 
   return {
     title: siteTitle || "K.R. Mangalam University",
@@ -44,29 +60,29 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 const page = async ({ params }: Props) => {
   const { slug } = await params; // ✅ await params
 
-  const singleNewsAndEventsData = await getSingleNewsAndEvents(slug);
+  const singleNewsAndEventsData: NewsEventItem[] =
+    await getSingleNewsAndEventsWP(slug);
+
+  // const singleNewsAndEventsData = await getSingleNewsAndEvents(slug);
 
   const singleNewsEvents = singleNewsAndEventsData.find(
     (items) => items.slug === slug
   );
 
-  // Return 404 if either is missing
-  if (!singleNewsEvents) {
-    return notFound();
-  }
+  // // Return 404 if either is missing
+  // if (!singleNewsEvents) {
+  //   return notFound();
+  // }
 
   return (
     <>
       {singleNewsEvents && (
-        <NewsEventsHero
-          title={singleNewsEvents?.title}
-          bgimage={singleNewsEvents?.bgimg}
-        />
+        <NewsEventsHero title={singleNewsEvents?.title?.rendered} />
       )}
       {singleNewsEvents && (
         <NewsEventsImageContent
-          content={singleNewsEvents?.content}
-          bgSlide={singleNewsEvents?.newsmedia}
+          content={singleNewsEvents?.content?.rendered}
+          bgSlideImageIds={singleNewsEvents?.acf?.event_images}
         />
       )}
     </>
