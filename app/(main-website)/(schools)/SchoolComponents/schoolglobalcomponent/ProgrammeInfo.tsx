@@ -300,7 +300,7 @@ const fetchProg = useCallback(
           </>
         ) : (
           <div className="text-gray-600 mt-20 text-lg">
-            <p>No programme selected or details unavailable.</p>
+            <p>{activeDegree} is not available in this school</p>
           </div>
         )}
       </div>

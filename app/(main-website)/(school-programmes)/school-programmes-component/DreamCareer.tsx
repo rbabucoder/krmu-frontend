@@ -63,7 +63,7 @@ const DreamCareer = ({
             <div className="w-full sm:w-2/5 p-2.5 sm:p-5 border border-[#d8d8d8] rounded-[30px]">
               <div className="text-center">
                 <h4 className="text-[#db2a1a] text-4xl md:text-[45px] font-normal">
-                  {campusrecruitersnum}
+                  {/* {campusrecruitersnum} */}800+
                 </h4>
                 <p>{campusrecruitertitle}</p>
               </div>
