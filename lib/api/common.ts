@@ -407,3 +407,28 @@ export async function getWordImageById(imgId: number): Promise<string> {
 
   return json?.guid?.rendered ?? "";
 }
+
+
+
+
+type BlogFaqItem = {
+  question: string;
+  answer: string;
+};
+
+export function createFaqSchema(faqs: BlogFaqItem[]) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer.replace(/\r?\n|\r/g, "").trim(),
+      },
+    })),
+  };
+
+  return JSON.stringify(schema);
+}

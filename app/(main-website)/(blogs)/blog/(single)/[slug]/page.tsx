@@ -6,7 +6,8 @@ import {
 import { notFound } from "next/navigation";
 import SingleBlogHero from "../../(listings)/single-blog-comp/SingleBlogHero";
 import SingleBlogLayout from "../../(listings)/single-blog-comp/SingleBlogLayout";
-
+import { createFaqSchema } from "@/lib/api/common";
+import Script from "next/script";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -21,9 +22,8 @@ export async function generateMetadata({ params }: Props) {
   const blog = await getSingleBlogDataBySlug(slug);
 
   if (!blog || !blog[0]?.yoast_head_json) return {};
-  const blogFaqSchema = blog[0]?.acf?.faqs_section;
 
-  return yoastToMetadata(blog[0].yoast_head_json, blogFaqSchema);
+  return yoastToMetadata(blog[0].yoast_head_json);
 }
 const page = async ({ params }: Props) => {
   const { slug } = await params;
@@ -54,7 +54,8 @@ const page = async ({ params }: Props) => {
   const authorImageId =
     currentSingleBlog?._embedded?.author?.[0]?.acf?.profile_image;
 
-  console.log("check ", currentSingleBlog?.content?.rendered);
+  const blogFaqSchema = currentSingleBlog?.acf?.faqs_section;
+  const faqJsonLd = createFaqSchema(blogFaqSchema || []);
 
   return (
     <>
@@ -70,6 +71,10 @@ const page = async ({ params }: Props) => {
           strategy="beforeInteractive"
         />
       )} */}
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: faqJsonLd }}
+      />
       <SingleBlogHero
         title={currentSingleBlog?.title?.rendered}
         imgUrl={featuredImageUrl ?? ""}
