@@ -62,7 +62,7 @@ export async function getNewsAndEventsData(): Promise<
       next: {
         revalidate: 50,
       },
-    }
+    },
   );
   if (!res.ok) throw new Error("Failed to fetch Alumni Data");
 
@@ -79,7 +79,7 @@ export async function getTopbarData(): Promise<TOPBARResponse["data"]> {
       next: {
         revalidate: 60,
       },
-    }
+    },
   );
   if (!res.ok) throw new Error("Failed to fetch Topbar Data");
 
@@ -94,7 +94,7 @@ export async function getMainMenu() {
       next: {
         revalidate: 60,
       },
-    }
+    },
   );
   if (!res.ok) throw new Error("Failed to fetch Topbar Data");
 
@@ -135,7 +135,7 @@ export async function getHeaderMenu(): Promise<HeaderMenuResponse["data"]> {
       next: {
         revalidate: 20,
       },
-    }
+    },
   );
   if (!res.ok) throw new Error("Failed to fetch Topbar Data");
 
@@ -231,7 +231,7 @@ export async function getAdvisoryBoard(): Promise<
       next: {
         revalidate: 60,
       },
-    }
+    },
   );
   if (!res.ok) throw new Error("Failed to fetch Meta info Data");
 
@@ -240,7 +240,7 @@ export async function getAdvisoryBoard(): Promise<
 }
 
 export async function getSchoolStudentAchievements(
-  cat: string
+  cat: string,
 ): Promise<StudentAchievementResponse["data"]> {
   const res = await fetch(
     `${FETCH_STRAPI_URL}/api/student-achievements?sort[0]=updatedAt:desc&filters[school_categories][name][$eq]=${cat}&populate[achivementimage]=true&pagination[pageSize]=3&pagination[page]=1&status=published&locale[0]=en`,
@@ -248,7 +248,7 @@ export async function getSchoolStudentAchievements(
       next: {
         revalidate: 60,
       },
-    }
+    },
   );
   if (!res.ok) throw new Error("Failed to fetch Student Achievements Data");
   const json: StudentAchievementResponse = await res.json();
@@ -305,7 +305,7 @@ export async function isCustomPage(slug: string = ""): Promise<CustomPage[]> {
   try {
     const res = await fetch(
       `${FETCH_STRAPI_URL}/api/custom-pages?filters[slug][$eq]=${slug}&fields[0]=slug&fields[1]=enable_disable_custom_page&status=published&locale[0]=en`,
-      { next: { revalidate: 60 } }
+      { next: { revalidate: 60 } },
     );
     if (!res.ok) return [];
     const json: CustomPageResponse = await res.json();
@@ -318,7 +318,7 @@ export async function isCustomPage(slug: string = ""): Promise<CustomPage[]> {
 // common seo api function
 
 export async function getSchoolProgrammeSEO(
-  slug: string
+  slug: string,
 ): Promise<SchoolProgrammeSEOResponse["data"]> {
   const res = await fetch(
     `${FETCH_STRAPI_URL}/api/school-programmes?filters[programmeslug][$eq]=${slug}&fields[0]=programmeslug&populate[SEO][fields][0]=metaTitle&populate[SEO][fields][1]=metaDescription&populate[SEO][fields][2]=metaKeyword&populate[SEO][fields][3]=canonical&populate[SEO][fields][4]=noIndex&populate[SEO][fields][5]=tags`,
@@ -326,7 +326,7 @@ export async function getSchoolProgrammeSEO(
       next: {
         revalidate: 60,
       },
-    }
+    },
   );
   if (!res.ok) throw new Error("Failed to fetch School Programme SEO");
   const json: SchoolProgrammeSEOResponse = await res.json();
@@ -383,7 +383,7 @@ export interface SingleFacultyResponse {
   };
 }
 export interface StrapiPagination {
-  page: number; 
+  page: number;
   pageSize: number;
   pageCount: number;
   total: number;
@@ -396,7 +396,7 @@ export async function getWordImageById(imgId: number): Promise<string> {
     `${KRMUWordUrl}/wp-json/wp/v2/media/${imgId}?_fields=guid`,
     {
       next: { revalidate: 60 },
-    }
+    },
   );
 
   if (!res.ok) {
@@ -407,9 +407,6 @@ export async function getWordImageById(imgId: number): Promise<string> {
 
   return json?.guid?.rendered ?? "";
 }
-
-
-
 
 type BlogFaqItem = {
   question: string;
@@ -433,6 +430,27 @@ export function createFaqSchema(faqs: BlogFaqItem[]) {
   return JSON.stringify(schema);
 }
 
+type progFaqItem = {
+  ques: string;
+  ans: string;
+};
+
+export function createProgFaqSchema(faqs: progFaqItem[]) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((item) => ({
+      "@type": "Question",
+      name: item.ques,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.ans.replace(/\r?\n|\r/g, "").trim(),
+      },
+    })),
+  };
+
+  return JSON.stringify(schema);
+}
 
 type BreadcrumbItem = {
   name: string;
@@ -453,8 +471,6 @@ export function createBreadcrumbSchema(items: BreadcrumbItem[]) {
 
   return JSON.stringify(schema);
 }
-
-
 
 type ArticleSchemaProps = {
   url: string;
@@ -498,8 +514,6 @@ export function createArticleSchema(data: ArticleSchemaProps) {
   return JSON.stringify(schema);
 }
 
-
-
 type PersonSchemaProps = {
   name: string;
   url: string;
@@ -516,4 +530,23 @@ export function createPersonSchema(data: PersonSchemaProps) {
   };
 
   return JSON.stringify(schema);
+}
+
+type TocFaq = {
+  id: number;
+  tocpoint: string;
+  faq: {
+    id: number;
+    ques: string;
+    ans: string;
+  }[];
+};
+
+export function mapTocToFaqSchemaData(tocData: TocFaq[]) {
+  return tocData.flatMap((section) =>
+    section.faq.map((item) => ({
+      question: item.ques.trim(),
+      answer: item.ans.replace(/\r?\n|\r/g, "").trim(),
+    })),
+  );
 }

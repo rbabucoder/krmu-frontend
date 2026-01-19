@@ -17,15 +17,20 @@ import { notFound } from "next/navigation";
 import AdmissionProcessComp from "../../school-programmes-component/AdmissionProcessComp";
 import { getPHDProgramme } from "@/lib/api/phd-programmes";
 import PHDProgrammes from "../PHDProgramme";
-import { getSchoolProgrammeSEO } from "@/lib/api/common";
+import {
+  createFaqSchema,
+  createProgFaqSchema,
+  getSchoolProgrammeSEO,
+} from "@/lib/api/common";
 import { Metadata } from "next";
+import Script from "next/script";
 
 type Props = {
   params: Promise<{ slug: string }>;
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await  params; // ✅ no await
+  const { slug } = await params; // ✅ no await
 
   const seoData = await getSchoolProgrammeSEO(slug);
   const seo = seoData?.[0]?.SEO; // ✅ safe access
@@ -70,14 +75,11 @@ const page = async ({ params }: Props) => {
   const tagsArray = tags ? tags.split(",").map((tag) => tag.trim()) : [];
 
   const singleSchoolProgramme = allSchoolProgrammeData.find(
-    (programme) => programme.programmeslug === slug
+    (programme) => programme.programmeslug === slug,
   );
 
-
- 
-
   const singlePHDProgramme = allSinglePHDProgramme?.find(
-    (phdprogram) => phdprogram?.phdslug === slug
+    (phdprogram) => phdprogram?.phdslug === slug,
   );
 
   // If not found, redirect to 404 page
@@ -110,8 +112,33 @@ const page = async ({ params }: Props) => {
     return <PHDProgrammes phdData={singlePHDProgramme} />;
   }
 
+  type FAQProg = {
+    ques: string;
+    ans: string;
+  };
+
+  const faqToC = singleSchoolProgramme?.toc?.tocfaq || [];
+
+  const allFaqs: FAQProg[] = faqToC.flatMap((section) =>
+    section.faq.map((item) => ({
+      id: item.id,
+      ques: item.ques,
+      ans: item.ans,
+      tocpoint: section.tocpoint, // optional, keep category info
+    })),
+  );
+
+  // const singleProgFAQLD = createProgFaqSchema(allFaqs);
+
+  
+
   return (
     <>
+      {/* <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: singleProgFAQLD }}
+      /> */}
+
       <div
         className={`p-0 m-0 ${tagsArray.map((tag) => `tag-${tag}`).join(" ")}`}
       />

@@ -74,13 +74,13 @@ const page = async ({ params }: Props) => {
     url: `https://www.krmangalam.edu.in/blog/${currentSingleBlog?.slug}`,
     headline: currentSingleBlog?.title?.rendered,
     description: currentSingleBlog?.yoast_head_json?.description,
-    image: currentSingleBlog?.yoast_head_json?.og_image[0]?.url,
+    image: currentSingleBlog?.yoast_head_json?.og_image?.[0]?.url,
     authorName: "KRMU Team",
     publisherName: "K.R. Mangalam University",
     publisherLogo:
       "https://www.krmangalam.edu.in/wp-content/uploads/2025/11/KRMU-Logo-NAAC.webp",
-    datePublished: currentSingleBlog?.date_gmt,
-    dateModified: currentSingleBlog?.modified_gmt,
+    datePublished: `${currentSingleBlog?.date_gmt}Z`,
+    dateModified: `${currentSingleBlog?.modified_gmt}Z`,
   });
 
   // const personJsonLd = createPersonSchema({
