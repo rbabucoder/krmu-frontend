@@ -1,37 +1,53 @@
 import Image from "next/image";
 import Link from "next/link";
-import { StrapiMedia } from "@/lib/types/common";
-import { STRAPI_URL } from "@/app/constant";
+
+import { getWordImageById } from "@/lib/api/common";
 
 interface HomeNewsEventsCardProps {
   data: {
     id: number;
-    title: string;
-    createdAt: string;
-    newsmedia: StrapiMedia[];
+    title: {
+      rendered: string;
+    };
+    modified: string;
+    featured_media: number;
     slug: string;
+    acf: {
+      event_images: number[];
+    };
   };
+  // data: {
+  //   id: number;
+  //   title: string;
+  //   createdAt: string;
+  //   newsmedia: StrapiMedia[];
+  //   slug: string;
+  // };
 }
 
-const HomeNewsEventsCard: React.FC<HomeNewsEventsCardProps> = ({ data }) => {
-  const image = data.newsmedia?.[0];
-  const formattedDate = new Date(data.createdAt).toLocaleDateString("en-GB", {
+const HomeNewsEventsCard: React.FC<HomeNewsEventsCardProps> = async ({
+  data,
+}) => {
+  const formattedDate = new Date(data.modified).toLocaleDateString("en-US", {
     day: "2-digit",
     month: "short",
     year: "numeric",
   });
+  const getImgUrl = await getWordImageById(data?.featured_media);
 
   return (
     <div>
       <div>
         <Link href={`/news-events/${data.id}`}>
-          <Image
-            src={`${STRAPI_URL}${image.url}`}
-            alt={image?.alternativeText || data.title}
-            width={466}
-            height={312}
-            className="w-full h-[420px] rounded-t-3xl object-cover"
-          />
+          {getImgUrl && (
+            <Image
+              src={getImgUrl}
+              alt={data.title?.rendered || ""}
+              width={466}
+              height={312}
+              className="w-full h-[420px] rounded-t-3xl object-cover"
+            />
+          )}
         </Link>
         <div className="pt-5 pl-0 sm:pl-7 text-white">
           <span className="text-sm text-[#898989]">
@@ -44,7 +60,7 @@ const HomeNewsEventsCard: React.FC<HomeNewsEventsCardProps> = ({ data }) => {
                 className="font-medium text-xl leading-[1] mt-2.5 mb-4 inline-block h-[50px]"
                 target="_blank"
               >
-                <h5>{data.title}</h5>
+                <h5>{data.title?.rendered || ""}</h5>
               </Link>
             )}
             {data?.slug && (

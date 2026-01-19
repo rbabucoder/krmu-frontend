@@ -60,6 +60,10 @@ export type BlogPostContent = {
   featured_media: number;
   acf?: {
     krmscript?: string;
+    faqs_section: {
+      question: string;
+      answer: string;
+    }[];
   };
 };
 

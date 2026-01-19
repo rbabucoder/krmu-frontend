@@ -1,8 +1,9 @@
-import { getNewsAndEventsData } from "@/lib/api/common";
 import HomeNewsEventsCard from "../components/Cards/HomeNewsEventsCard";
-import { NewsAndEvent } from "@/lib/types/news-and-events";
+
 import Link from "next/link";
 import { ButtonType } from "@/lib/types/common";
+import { getNewsEventsWP } from "@/lib/api/news-events";
+import { NewsEventItem } from "@/lib/types/news-events";
 
 interface HomeEventsNewsProp {
   title: string;
@@ -13,15 +14,7 @@ const EventsAndNews = async ({
   title,
   newsandeventbtn,
 }: HomeEventsNewsProp) => {
-  const response = await getNewsAndEventsData();
-
-  const newsandeventsdata: NewsAndEvent[] =
-    response
-      ?.sort(
-        (a, b) =>
-          new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
-      )
-      .slice(0, 3) || [];
+  const newsandeventsdata = await getNewsEventsWP(1, 3);
 
   return (
     <section className="bg-[url(/homenewsevent.webp)] bg-cover bg-no-repeat px-5 pb-12 lg:px-8 lg:pb-20">
@@ -31,8 +24,8 @@ const EventsAndNews = async ({
             {title}
           </h4>
           <div className="grid gap-5 lg:gap-20 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 lg:px-0 mt-5 lg:mt-0">
-            {newsandeventsdata.map((item) => (
-              <HomeNewsEventsCard key={item.id} data={item} />
+            {newsandeventsdata?.data?.map((item: NewsEventItem, i: number) => (
+              <HomeNewsEventsCard key={i} data={item} />
             ))}
           </div>
           <div className="flex justify-center py-4">
