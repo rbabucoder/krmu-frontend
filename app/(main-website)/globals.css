@@ -16,7 +16,6 @@
 /* Custom utility class */
 @layer utilities {
 
- 
   .schIndCollbaheadingPara p{
     font-size: 16px;
     font-weight: 400;
@@ -990,6 +989,13 @@
 
   .student_achiev_content p {
     font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .student_achiev_content ul{
+    list-style: disc;
+    padding-left: 40px;
+    margin: 10px 0px;
   }
 
   /* Complete Single Faculty Style */

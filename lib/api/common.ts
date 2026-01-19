@@ -243,7 +243,7 @@ export async function getSchoolStudentAchievements(
   cat: string
 ): Promise<StudentAchievementResponse["data"]> {
   const res = await fetch(
-    `${FETCH_STRAPI_URL}/api/student-achievements?sort[0]=publishedAt:asc&filters[school_categories][name][$eq]=${cat}&populate[achivementimage]=true&pagination[pageSize]=3&pagination[page]=1&status=published&locale[0]=en`,
+    `${FETCH_STRAPI_URL}/api/student-achievements?sort[0]=updatedAt:desc&filters[school_categories][name][$eq]=${cat}&populate[achivementimage]=true&pagination[pageSize]=3&pagination[page]=1&status=published&locale[0]=en`,
     {
       next: {
         revalidate: 60,
