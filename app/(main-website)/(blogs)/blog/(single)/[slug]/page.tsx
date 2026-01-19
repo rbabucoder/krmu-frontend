@@ -6,7 +6,12 @@ import {
 import { notFound } from "next/navigation";
 import SingleBlogHero from "../../(listings)/single-blog-comp/SingleBlogHero";
 import SingleBlogLayout from "../../(listings)/single-blog-comp/SingleBlogLayout";
-import { createFaqSchema } from "@/lib/api/common";
+import {
+  createArticleSchema,
+  createBreadcrumbSchema,
+  createFaqSchema,
+  createPersonSchema,
+} from "@/lib/api/common";
 import Script from "next/script";
 
 type Props = {
@@ -36,6 +41,8 @@ const page = async ({ params }: Props) => {
 
   if (!currentSingleBlog?.title) return notFound();
 
+  console.log("currentSingleBlog", currentSingleBlog);
+
   // const schemaScript = singleBlogData[0]?.acf?.krmscript;
 
   // const featuredImageUrl =
@@ -57,6 +64,35 @@ const page = async ({ params }: Props) => {
   const blogFaqSchema = currentSingleBlog?.acf?.faqs_section;
   const faqJsonLd = createFaqSchema(blogFaqSchema || []);
 
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Home", url: "https://www.krmangalam.edu.in/" },
+    { name: "Blog", url: "https://www.krmangalam.edu.in/blog/" },
+    {
+      name: currentSingleBlog?.title?.rendered,
+      url: `https://www.krmangalam.edu.in/blog/${currentSingleBlog?.slug}`,
+    },
+  ]);
+
+  const articleJsonLd = createArticleSchema({
+    url: `https://www.krmangalam.edu.in/blog/${currentSingleBlog?.slug}`,
+    headline: currentSingleBlog?.title?.rendered,
+    description: currentSingleBlog?.yoast_head_json?.description,
+    image: currentSingleBlog?.yoast_head_json?.og_image[0]?.url,
+    authorName: "KRMU Team",
+    publisherName: "K.R. Mangalam University",
+    publisherLogo:
+      "https://www.krmangalam.edu.in/wp-content/uploads/2025/11/KRMU-Logo-NAAC.webp",
+    datePublished: "2026-01-16",
+    dateModified: "2026-01-16",
+  });
+
+  // const personJsonLd = createPersonSchema({
+  //   name: "KRMU Team",
+  //   url: "https://www.krmangalam.edu.in/faculty/dr-john-doe/",
+  //   image:
+  //     "https://www.krmangalam.edu.in/wp-content/uploads/2026/01/john-doe.webp",
+  // });
+
   return (
     <>
       {/* {schemaScript && (
@@ -75,6 +111,15 @@ const page = async ({ params }: Props) => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: faqJsonLd }}
       />
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: breadcrumbSchema }}
+      />
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: articleJsonLd }}
+      />
+
       <SingleBlogHero
         title={currentSingleBlog?.title?.rendered}
         imgUrl={featuredImageUrl ?? ""}

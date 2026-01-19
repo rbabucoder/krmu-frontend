@@ -432,3 +432,88 @@ export function createFaqSchema(faqs: BlogFaqItem[]) {
 
   return JSON.stringify(schema);
 }
+
+
+type BreadcrumbItem = {
+  name: string;
+  url: string;
+};
+
+export function createBreadcrumbSchema(items: BreadcrumbItem[]) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: item.url,
+    })),
+  };
+
+  return JSON.stringify(schema);
+}
+
+
+
+type ArticleSchemaProps = {
+  url: string;
+  headline: string;
+  description: string;
+  image: string;
+  authorName: string;
+  publisherName: string;
+  publisherLogo: string;
+  datePublished: string;
+  dateModified: string;
+};
+
+export function createArticleSchema(data: ArticleSchemaProps) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": data.url,
+    },
+    headline: data.headline,
+    description: data.description,
+    image: data.image,
+    author: {
+      "@type": "Organization",
+      name: data.authorName,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: data.publisherName,
+      logo: {
+        "@type": "ImageObject",
+        url: data.publisherLogo,
+      },
+    },
+    datePublished: data.datePublished,
+    dateModified: data.dateModified,
+  };
+
+  return JSON.stringify(schema);
+}
+
+
+
+type PersonSchemaProps = {
+  name: string;
+  url: string;
+  image: string;
+};
+
+export function createPersonSchema(data: PersonSchemaProps) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: data.name,
+    url: data.url,
+    image: data.image,
+  };
+
+  return JSON.stringify(schema);
+}
