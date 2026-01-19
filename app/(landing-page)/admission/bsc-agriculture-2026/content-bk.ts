@@ -27,8 +27,8 @@ export const Hero: HeroContent = {
       <br />
       PROGRAMMES 2026-27 
     `,
-  desc: `Discover the foundation of agricultural excellence with K.R. Mangalam University’s four-year agriculture programme, designed to build strong agrarian knowledge, practical expertise, and an understanding of modern farming practices.`,
-  heroBg: "/landingpage/bsc-agriculture-2026/hero-image/bscagri.webp",
+  desc: `Discover the foundation of agricultural excellence with K.R. Mangalam University’s four-year agriculture programme, designed to build strong agrarian knowledge, practical expertise, and an understanding of modern farming practices`,
+  heroBg: "/landingpage/law-2026/law.jpg",
   // middleImg: "/landingpage/law-2026/law.webp",
   middleImg: "",
 };
@@ -66,32 +66,32 @@ export const Counters: CounterItem[] = [
 export const prominentRecruiters: ProminentRecruit[] = [
   {
     imgUrl:
-      "/landingpage/bsc-agriculture-2026/recruiters/cargill.png",
+      "https://www.krmangalam.edu.in/admission/law-2025/assets/trilegal.svg",
     alt: "Recruiter Logo",
   },
   {
     imgUrl:
-      "/landingpage/bsc-agriculture-2026/recruiters/cnh.png",
+      "https://www.krmangalam.edu.in/admission/btech-2025-b/assets/images/accenture.svg",
     alt: "Recruiter Logo",
   },
   {
     imgUrl:
-      "/landingpage/bsc-agriculture-2026/recruiters/john.png",
+      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
     alt: "Recruiter Logo",
   },
   {
     imgUrl:
-      "/landingpage/bsc-agriculture-2026/recruiters/zyndex.png",
+      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
     alt: "Recruiter Logo",
   },
   {
     imgUrl:
-      "/landingpage/bsc-agriculture-2026/recruiters/syngeta.png",
+      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
     alt: "Recruiter Logo",
   },
   {
     imgUrl:
-      "/landingpage/bsc-agriculture-2026/recruiters/mahyco.png",
+      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
     alt: "Recruiter Logo",
   },
 ];
@@ -100,44 +100,62 @@ export const whyKRM: WhyKRMSection = {
   heading: "Why Choose B.Sc. (Hons.) Agriculture Course at KRMU?",
   subheading: "Shape Your Future with a Career-Focused Business Education",
   content: `K.R. Mangalam University’s Agriculture Programmes blend strong theoretical knowledge with hands-on training to prepare students for real-world agricultural challenges. Through field visits, workshops, expert lectures, and practical exposure, students gain insight into modern farming practices. Supported by experienced faculty, advanced laboratories, and research facilities, the programme encourages learning in areas such as agronomy, soil science, and sustainable agriculture, shaping skilled and industry-ready professionals.`,
-  imgUrl: `/landingpage/bsc-agriculture-2026/why-choose/Building.webp`,
+  imgUrl: `/landingpage/common/whykrmtest.png`,
   whyKrmCards: [
     {
-      imgUrl: "/landingpage/bsc-agriculture-2026/why-choose/1.webp",
+      imgUrl: "/landingpage/common/dummy.png",
       content: `Industry-aligned curriculum designed by agricultural experts, integrating scientific theory with hands-on farming and field practices`,
     },
     {
-      imgUrl: "/landingpage/bsc-agriculture-2026/why-choose/2.webp",
+      imgUrl: "/landingpage/common/dummy.png",
       content: `Mentorship by experienced agri-professionals and researchers with strong industry and academic backgrounds`,
     },
     {
-      imgUrl: "/landingpage/bsc-agriculture-2026/why-choose/3.webp",
+      imgUrl: "/landingpage/common/dummy.png",
       content: `Future-ready programme that equips students with skills aligned to evolving agricultural technologies and sustainable practices`,
     },
     {
-      imgUrl: "/landingpage/bsc-agriculture-2026/why-choose/4.webp",
+      imgUrl: "/landingpage/common/dummy.png",
       content: `Student-centric infrastructure, including modern laboratories, research farms, and smart classrooms to enhance learning and campus life`,
     },
   ],
 };
 
 export const industryExperts: IndustryExpertsSection = {
-  eyebrow: "",
+  eyebrow: "Why KR Mangalam PhD?",
   heading: `Learn From <br /> Industry Experts`,
   description: `KRMU partners with major organisations to provide <br /> industry-specific training.`,
   cta: {
-    label: "Apply for B.Sc. Agriculture 2026",
+    label: "Apply for B.Tech 2026",
     href: "#",
   },
   cards: [
     {
       imgUrl:
-        "",
-      alt: "",
-      title: "",
+        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
+      alt: "Apple Logo",
+      title: "AI and Machine Learning Courses",
+    },
+    {
+      imgUrl:
+        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
+      alt: "Apple Logo",
+      title: "AI and Machine Learning Courses",
+    },
+    {
+      imgUrl:
+        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
+      alt: "Apple Logo",
+      title: "AI and Machine Learning Courses",
+    },
+    {
+      imgUrl:
+        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
+      alt: "Apple Logo",
+      title: "AI and Machine Learning Courses",
     },
   ],
-  bannerImg: "",
+  bannerImg: "/landingpage/common/dummy2.png",
 };
 
 export const specialisationData: SpecialisationSection = {
@@ -189,7 +207,7 @@ export const testimonialsData: TestimonialsSection = {
   heading: `Why Do Our Students Trust Us?`,
   testimonials: [
     {
-      image: "/landingpage/bsc-agriculture-2026/testimonials/1.webp",
+      image: "/landingpage/common/dummy.png",
       videoUrl: "#",
       quote: `Thrilled with my education at K.R. Mangalam University, Sohna. I learned leadership, 
 time management, and embraced nature. Now, a project assistant in a DST government 
@@ -198,7 +216,7 @@ project at the university.`,
       programme: "Govt. of India",
     },
     {
-      image: "/landingpage/bsc-agriculture-2026/testimonials/2.webp",
+      image: "/landingpage/common/dummy.png",
       videoUrl: "#",
       quote: `K.R. Mangalam University excels with its great environment and ragging-free campus, 
 particularly in hostel life. Now a farm supervisor, I pursue my passion for natural farming.`,
@@ -206,7 +224,7 @@ particularly in hostel life. Now a farm supervisor, I pursue my passion for natu
       programme: "Farm Supervisor, Gir Amritphal Gaushala Trust",
     },
     {
-      image: "/landingpage/bsc-agriculture-2026/testimonials/3.webp",
+      image: "/landingpage/common/dummy.png",
       videoUrl: "#",
       quote: `At SOAS, BSc (H) Agriculture student Aayushi thrives on professor-led activities and 
 competitions. Field trips offer real-world insights into agriculture.
@@ -215,7 +233,7 @@ competitions. Field trips offer real-world insights into agriculture.
       programme: "",
     },
     {
-      image: "/landingpage/bsc-agriculture-2026/testimonials/4.webp",
+      image: "/landingpage/common/dummy.png",
       videoUrl: "#",
       quote: `K.R. Mangalam University provides us with the facilities to build live projects from lab to field 
 and field to lab to increase students' knowledge and skills with the latest technologies and 
@@ -291,43 +309,23 @@ export const comeToLifeData: ComeToLifeSection = {
   },
   slides: [
     {
-      image: "/landingpage/bsc-agriculture-2026/infrastructure/1.webp",
+      image: "/landingpage/common/image.png",
       alt: "World Class Lab",
     },
     {
-      image: "/landingpage/bsc-agriculture-2026/infrastructure/2.webp",
+      image: "/landingpage/common/image.png",
       alt: "Research Facility",
     },
     {
-      image: "/landingpage/bsc-agriculture-2026/infrastructure/3.webp",
+      image: "/landingpage/common/image.png",
       alt: "Innovation Center",
     },
     {
-      image: "/landingpage/bsc-agriculture-2026/infrastructure/4.webp",
+      image: "/landingpage/common/image.png",
       alt: "Library & Resources",
     },
     {
-      image: "/landingpage/bsc-agriculture-2026/infrastructure/5.webp",
-      alt: "Campus Infrastructure",
-    },
-    {
-      image: "/landingpage/bsc-agriculture-2026/infrastructure/6.webp",
-      alt: "Campus Infrastructure",
-    },
-    {
-      image: "/landingpage/bsc-agriculture-2026/infrastructure/7.webp",
-      alt: "Campus Infrastructure",
-    },
-    {
-      image: "/landingpage/bsc-agriculture-2026/infrastructure/8.webp",
-      alt: "Campus Infrastructure",
-    },
-    {
-      image: "/landingpage/bsc-agriculture-2026/infrastructure/9.webp",
-      alt: "Campus Infrastructure",
-    },
-    {
-      image: "/landingpage/bsc-agriculture-2026/infrastructure/10.webp",
+      image: "/landingpage/common/image.png",
       alt: "Campus Infrastructure",
     },
   ],
@@ -337,7 +335,7 @@ export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
   heading: "Life as an Agriculture Student at KRMU ",
   description: "",
   image: {
-    src: "/landingpage/bsc-agriculture-2026/student-at-krmu/Collage.webp",
+    src: "/landingpage/common/test44.jpeg",
     alt: "Life as a PhD Scholar at KR Mangalam",
   },
   facilities: [

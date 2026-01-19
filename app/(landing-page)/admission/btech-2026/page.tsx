@@ -10,7 +10,7 @@ import LifeAsPhDScholar from "../CommonComponent2026/LifeAsPhDScholar";
 import Opportunity from "../CommonComponent2026/Opportunity";
 import ProminentRecruiter from "../CommonComponent2026/ProminentRecruiter";
 // import ScholarResearchImpact from "../CommonComponent2026/ScholarResearchImpact";
-import Specialisation from "../CommonComponent2026/Specialisation"; 
+import Specialisation from "../CommonComponent2026/Specialisation";
 import Testimonials from "../CommonComponent2026/Testimonials";
 import WhyKRMangalam from "../CommonComponent2026/WhyKRMangalam";
 import { bbaFormId, lawFormId } from "../constant/lpnpf";

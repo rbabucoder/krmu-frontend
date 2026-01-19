@@ -28,8 +28,8 @@ export const Hero: HeroContent = {
       PROGRAMMES 2026-27
     `,
   desc: `Ideate, Innovate and Influence the Turf of Technology with our B.Tech Programmes comprising an industry-driven curriculum to shape tomorrow’s tech leaders`,
-  heroBg: "/landingpage/btech-2026/hero-image/btechbg.webp",
-  middleImg: "",
+  heroBg: "/landingpage/bdes-2026/bdes-bg.webp",
+  middleImg: "/landingpage/bdes-2026/middle-img.webp",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -64,27 +64,33 @@ export const Counters: CounterItem[] = [
 // Recruiters list
 export const prominentRecruiters: ProminentRecruit[] = [
   {
-    imgUrl: "/landingpage/btech-2026/recruiters/amazon.webp",
+    imgUrl:
+      "https://www.krmangalam.edu.in/admission/law-2025/assets/trilegal.svg",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/btech-2026/recruiters/infosys.svg",
+    imgUrl:
+      "https://www.krmangalam.edu.in/admission/btech-2025-b/assets/images/accenture.svg",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/btech-2026/recruiters/apple.svg",
+    imgUrl:
+      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/btech-2026/recruiters/deliotte.svg",
+    imgUrl:
+      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/btech-2026/recruiters/icici.svg",
+    imgUrl:
+      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/btech-2026/recruiters/accenture.svg",
+    imgUrl:
+      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
     alt: "Recruiter Logo",
   },
 ];
@@ -94,26 +100,26 @@ export const whyKRM: WhyKRMSection = {
   subheading:
     "Securing The Future of Technology with Intelligence and Integrity",
   content: `With an emphasis on cutting-edge technologies like Artificial Intelligence (AI), Machine Learning (ML), Data Science, the Internet of Things (IoT), Cyber Security, Robotics, and UI/UX Design, etc., K.R. Mangalam University's B.Tech. programme aims to give students a solid foundation in technology. Students become industry-ready by getting real-world experience through a one-year industry internship. Additionally, owing to a well-crafted industry-academia linkage, students get a plethora of opportunities for advancing their professional career and creating their own network.`,
-  imgUrl: `/landingpage/btech-2026/why-choose/Building.webp`,
+  imgUrl: `/landingpage/common/whykrmtest.png`,
   whyKrmCards: [
     {
-      imgUrl: "/landingpage/btech-2026/why-choose/1.webp",
+      imgUrl: "/landingpage/common/dummy.png",
       content: `Future-Proof Curriculum made in collaboration with Top Engineering Experts`,
     },
     {
-      imgUrl: "/landingpage/btech-2026/why-choose/2.webp",
+      imgUrl: "/landingpage/common/dummy.png",
       content: `Personal 1:1 Monthly Mentorship with Industry Professionals`,
     },
     {
-      imgUrl: "/landingpage/btech-2026/why-choose/3.webp",
+      imgUrl: "/landingpage/common/dummy.png",
       content: `1-Year Industry Internship for practical experience`,
     },
     {
-      imgUrl: "/landingpage/btech-2026/why-choose/4.webp",
+      imgUrl: "/landingpage/common/dummy.png",
       content: `Classes by dedicated expert Instructors who have built FB Messenger, Uber, and more`,
     },
     {
-      imgUrl: "/landingpage/btech-2026/why-choose/5.webp",
+      imgUrl: "/landingpage/common/dummy.png",
       content: `Build 50+ Real-World products that mimic engineering challenges`,
     },
   ],
@@ -121,40 +127,39 @@ export const whyKRM: WhyKRMSection = {
 
 export const industryExperts: IndustryExpertsSection = {
   eyebrow: "",
-  heading: `Learn From <br /> Industry Experts`,
-  description: `KRMU partners with major organisations to provide <br /> industry-specific training.`,
+  heading: `Learn from <br /> Industry Leaders @ KRMU!`,
+  description: `K.R. Mangalam University takes pride in collaborating with the industry leaders who offer top-notch hands-on learning experiences to students.`,
   cta: {
     label: "Apply for B.Tech 2026",
     href: "#",
   },
   cards: [
     {
-      imgUrl: "/landingpage/btech-2026/learn-from/ibm.png",
+      imgUrl:
+        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
     {
-      imgUrl: "/landingpage/btech-2026/learn-from/imaginxp.svg",
+      imgUrl:
+        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
     {
-      imgUrl: "/landingpage/btech-2026/learn-from/eccoun.jpg",
+      imgUrl:
+        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
     {
-      imgUrl: "/landingpage/btech-2026/learn-from/eydark.webp",
-      alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
-    },
-    {
-      imgUrl: "/landingpage/btech-2026/learn-from/xebia.png",
+      imgUrl:
+        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
   ],
-  bannerImg: "/landingpage/common/indus-exp.webp",
+  bannerImg: "/landingpage/common/dummy2.png",
 };
 
 export const specialisationData: SpecialisationSection = {
@@ -162,8 +167,7 @@ export const specialisationData: SpecialisationSection = {
   heading: `KRMU’s B.Tech. Programmes`,
   specilisationCard: [
     {
-      imgUrl:
-        "/landingpage/btech-2026/specialisations/B.Tech.-Computer-Science-and-Engineering-(CSE).webp",
+      imgUrl: "/landingpage/common/dummy.png",
       title: `B.Tech. Computer Science and Engineering (CSE)`,
       desc: `The B.Tech. Computer Science and Engineering programme at K.R. Mangalam University enables students to develop a strong basic foundation in concepts like programming, algorithms, data structures, and system design. With a future-ready and industry-relevant curriculum, learners gain hands-on experience in artificial intelligence, data science, cybersecurity, cloud computing, and software engineering. Expert faculty, modern laboratories, and industry-aligned projects ensure practical exposure and innovation. Finally, Students benefit from internships, research opportunities, hackathons, and global certifications that enhance employability. `,
       extraInfos: [
@@ -185,8 +189,7 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl:
-        "/landingpage/btech-2026/specialisations/B.Tech.-Computer-Science-and-Engineering-(Robotics-&-AI)-with-Academic-Support-of-IBM-&-powered-by-Microsoft-Certifications.webp",
+      imgUrl: "/landingpage/common/dummy.png",
       title: `B.Tech. Computer Science and Engineering (Robotics & AI) with Academic Support of IBM & powered by Microsoft Certifications`,
       desc: `The K.R. Mangalam University’s B.Tech. Computer Science and Engineering (Robotics & AI), designed with academic support from IBM and powered by Microsoft Certifications, is an industry-aligned program that blends strong engineering foundations with hands-on learning in AI, robotics, cloud, data, and automation. IBM-led curricula and Microsoft credentials enhance employability, validating real-world skills employers seek.`,
       extraInfos: [
@@ -208,8 +211,7 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl:
-        "/landingpage/btech-2026/specialisations/B.Tech.-Computer-Science-and-Engineering-(AI-&-ML)-with-academic-support-of-IBM-&-powered-by-Microsoft-Certifications.webp",
+      imgUrl: "/landingpage/common/dummy.png",
       title: `B.Tech. Computer Science and Engineering (AI & ML) with academic support of IBM & powered by Microsoft Certifications`,
       desc: `The B.Tech. Computer Science and Engineering (AI & ML) program of K.R. Mangalam University is meticulously designed to shape industry-ready innovators. This program blends strong computer science fundamentals with cutting-edge Artificial Intelligence and Machine Learning, enhanced by academic support from IBM and powered by Microsoft Certifications. Graduates are prepared for high-demand roles such as AI engineer, data scientist, and ML developer, equipped with skills that meet evolving industry needs and drive innovation across diverse sectors.`,
       extraInfos: [
@@ -231,8 +233,7 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl:
-        "/landingpage/btech-2026/specialisations/B.Tech.-CSE-(Cybersecurity)-with-academic-support-of-EC-Council-&-IBM.webp",
+      imgUrl: "/landingpage/common/dummy.png",
       title: `B.Tech. CSE (Cybersecurity) with academic support of EC-Council & IBM`,
       desc: `The K.R. Mangalam University strives to build a secure future for its students with the B.Tech. CSE (Cybersecurity) programme that’s crafted to meet the growing global demand for cyber professionals. This industry-focused course is offered with academic support from EC-Council and IBM, combining strong computer science foundations with advanced cybersecurity expertise. `,
       extraInfos: [
@@ -254,8 +255,7 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl:
-        "/landingpage/btech-2026/specialisations/B.Tech.-CSE-(Data-Science)-with-the-academic-support-of-IBM.webp",
+      imgUrl: "/landingpage/common/dummy.png",
       title: `B.Tech. CSE (Data Science) with the academic support of IBM`,
       desc: `The B.Tech. CSE (Data Science) programme of K.R. Mangalam University is intricately designed to create the next generation of data-driven professionals. With academic support from IBM, this industry-aligned course blends strong computer science fundamentals with advanced data science, analytics, and AI skills. `,
       extraInfos: [
@@ -277,8 +277,7 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl:
-        "/landingpage/btech-2026/specialisations/B.Tech.-CSE-(Full-Stack-Development)-with-academic-support-of-ImaginXP.webp",
+      imgUrl: "/landingpage/common/dummy.png",
       title: `B.Tech. CSE (Full Stack Development) with academic support of ImaginXP`,
       desc: `The students of K.R. Mangalam University enrolled in the B.Tech. CSE (Full Stack Development) programme, master the art of developing robust, scalable, and user-centric applications as well as learn to seamlessly integrate front-end design with powerful back-end infrastructure while working with modern frameworks and cloud technologies.`,
       extraInfos: [
@@ -300,8 +299,7 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl:
-        "/landingpage/btech-2026/specialisations/B.Tech.-CSE-(UX-UI)-with-academic-support-of-ImaginXP.webp",
+      imgUrl: "/landingpage/common/dummy.png",
       title: `B.Tech. CSE (UX/UI) with academic support of ImaginXP`,
       desc: `The B.Tech. CSE (UX/UI) is a four-year undergraduate programme of K.R. Mangalam University meticulously designed to provide educational excellence in technological design. In this comprehensive programme, students learn computing approaches and technologies to become User Interface (UI) and User Experience (UX) designers. With the academic association with ImaginXP, students learn practical knowledge from industry experts and have access to advanced tools. `,
       extraInfos: [
@@ -341,11 +339,11 @@ export const opportunityData: OpportunitySection = {
 };
 
 export const testimonialsData: TestimonialsSection = {
-  subheading: "See What Our Students Say About Us!",
+  subheading: `Still in Doubt? <br /> See What Our Students Say About Us!`,
   heading: `Students’ Testimonials`,
   testimonials: [
     {
-      image: "/landingpage/btech-2026/testimonials/1.webp",
+      image: "/landingpage/common/dummy.png",
       videoUrl: "#",
       quote: `My 4 years at K.R. Mangalam University were full of learning something useful every 
 day that I can carry forward through my life. I highly appreciate the efforts of my 
@@ -356,7 +354,7 @@ proper career guidance. The facilities provided really helped me fully enjoy my 
       programme: "B.Tech. CSE",
     },
     {
-      image: "/landingpage/btech-2026/testimonials/2.webp",
+      image: "/landingpage/common/dummy.png",
       videoUrl: "#",
       quote: `I would like to extend my gratitude to the Training and Placement Cell of K.R. 
 Mangalam University for their continued efforts in providing ample amount of 
@@ -368,7 +366,7 @@ decision that helped me to pursue my dream.
       programme: "B.Tech. CSE",
     },
     {
-      image: "/landingpage/btech-2026/testimonials/3.webp",
+      image: "/landingpage/common/dummy.png",
       videoUrl: "#",
       quote: `Choosing K.R. Mangalam University for my B.Tech in CSE was one of the best decisions 
 I've ever made. The university's rigorous curriculum and industry-relevant training 
@@ -381,7 +379,7 @@ advancement.
       programme: "B.Tech. CSE",
     },
     {
-      image: "/landingpage/btech-2026/testimonials/4.webp",
+      image: "/landingpage/common/dummy.png",
       videoUrl: "#",
       quote: `K.R. Mangalam University was a transformative journey for me. The exceptional 
 education and hands-on experience I received in Computer Science Engineering have 
@@ -460,43 +458,23 @@ export const comeToLifeData: ComeToLifeSection = {
   },
   slides: [
     {
-      image: "/landingpage/btech-2026/infrastructure/1.webp",
+      image: "/landingpage/common/image.png",
       alt: "World Class Lab",
     },
     {
-      image: "/landingpage/btech-2026/infrastructure/2.webp",
+      image: "/landingpage/common/image.png",
       alt: "Research Facility",
     },
     {
-      image: "/landingpage/btech-2026/infrastructure/3.webp",
+      image: "/landingpage/common/image.png",
       alt: "Innovation Center",
     },
     {
-      image: "/landingpage/btech-2026/infrastructure/4.webp",
+      image: "/landingpage/common/image.png",
       alt: "Library & Resources",
     },
     {
-      image: "/landingpage/btech-2026/infrastructure/5.webp",
-      alt: "Campus Infrastructure",
-    },
-    {
-      image: "/landingpage/btech-2026/infrastructure/6.webp",
-      alt: "Campus Infrastructure",
-    },
-    {
-      image: "/landingpage/btech-2026/infrastructure/7.webp",
-      alt: "Campus Infrastructure",
-    },
-    {
-      image: "/landingpage/btech-2026/infrastructure/8.webp",
-      alt: "Campus Infrastructure",
-    },
-    {
-      image: "/landingpage/btech-2026/infrastructure/9.webp",
-      alt: "Campus Infrastructure",
-    },
-    {
-      image: "/landingpage/btech-2026/infrastructure/10.webp",
+      image: "/landingpage/common/image.png",
       alt: "Campus Infrastructure",
     },
   ],
@@ -506,7 +484,7 @@ export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
   heading: "Life as a B.Tech Student at KRMU",
   description: "",
   image: {
-    src: "/landingpage/btech-2026/student-at-krmu/Collage.webp",
+    src: "/landingpage/common/test44.jpeg",
     alt: "Life as a PhD Scholar at KR Mangalam",
   },
   facilities: [
@@ -591,7 +569,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Apply for K.R. Mangalam <br /> University now`,
   description: "Start Your Adventure Right Now at K.R. Mangalam University",
   cta: {
-    label: "Apply for B.Tech 2026",
+    label: "Apply for B.Tech 2026-2027",
     href: "#",
   },
   highlights: [

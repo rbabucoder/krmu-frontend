@@ -14,6 +14,27 @@ import Specialisation from "../CommonComponent2026/Specialisation";
 import Testimonials from "../CommonComponent2026/Testimonials";
 import WhyKRMangalam from "../CommonComponent2026/WhyKRMangalam";
 
+// import {
+// applySectionData,
+// businessHubData,
+// comeToLifeData,
+// Counters,
+// faqSectionData,
+// Hero,
+// heroMarqueeData,
+// industryExperts,
+// lifeAsPhDScholarData,
+// opportunityData,
+// prominentRecruiters,
+// // scholarResearchImpactData,
+// specialisationData,
+// testimonialsData,
+// whyKRM,
+// } from "./content";
+
+import { SeoData } from "./seo";
+import { bscAgriId } from "../constant/lpnpf";
+import FeeStructureTable from "./components/FeeStructure";
 import {
   applySectionData,
   businessHubData,
@@ -31,10 +52,6 @@ import {
   testimonialsData,
   whyKRM,
 } from "./content";
-
-import { SeoData } from "./seo";
-import { bscAgriId } from "../constant/lpnpf";
-import FeeStructureTable from "./components/FeeStructure";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -99,7 +116,7 @@ const page = () => {
         imgUrl={whykrm?.imgUrl}
         whykrmCards={whykrm?.whyKrmCards}
       />
-      <IndustryExperts data={industryexpert} />
+      {/* <IndustryExperts data={industryexpert} /> */}
       <Specialisation data={specialise} />
       <Opportunity data={opport} />
       <FeeStructureTable />
