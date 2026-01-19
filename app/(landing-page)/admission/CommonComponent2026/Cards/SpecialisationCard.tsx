@@ -49,7 +49,7 @@ const SpecialisationCard = ({ data }: Props) => {
               <div>
                 <h5>{info.title}</h5>
                 <p
-                  className="text-sm text-[#7f7f7f]"
+                  className="text-sm text-[#7f7f7f] break-word-custom"
                   dangerouslySetInnerHTML={{ __html: info.desc }}
                 />
               </div>

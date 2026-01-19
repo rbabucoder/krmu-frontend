@@ -38,9 +38,9 @@ const FeeStructureTable = () => {
               </tr>
               <tr className="text-sm border-b">
                 <td className="px-4 py-4">B.Sc. (Hons.) Forensic Science </td>
-                <td className="px-4 py-4">45, 000</td>
-                <td className="px-4 py-4">45, 000</td>
-                <td className="px-4 py-4">90,000</td>
+                <td className="px-4 py-4">65, 000</td>
+                <td className="px-4 py-4">65, 000</td>
+                <td className="px-4 py-4">1,30,000</td>
               </tr>
               <tr className="text-sm border-b">
                 <td className="px-4 py-4">B.Sc. (Hons. / Hons. with Research) Forensic Science  </td>

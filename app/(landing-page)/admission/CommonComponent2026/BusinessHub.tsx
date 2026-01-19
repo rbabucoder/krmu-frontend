@@ -59,7 +59,9 @@ const BusinessHub = ({ data, formId }: Props) => {
                 className="rounded-xl"
                 priority
               /> */}
-              {formId && <NoPaperFormsWidget widgetId={formId} height="600px" />}
+              {formId && (
+                <NoPaperFormsWidget widgetId={formId} height="600px" />
+              )}
             </div>
           </div>
         </div>

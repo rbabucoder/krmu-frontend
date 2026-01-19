@@ -44,7 +44,10 @@ export type SingleBlogResponse = BlogPostContent[];
 
 export type BlogPostContent = {
   date: string;
+  date_gmt: string;
   slug: string;
+  modified: string;
+  modified_gmt: string;
   title: {
     rendered: string;
   };

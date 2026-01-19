@@ -15,6 +15,9 @@ import Testimonials from "../CommonComponent2026/Testimonials";
 import WhyKRMangalam from "../CommonComponent2026/WhyKRMangalam";
 
 import FeeStructureTable from "./components/FeeStructure";
+
+import { SeoData } from "./seo";
+import { bsc2026Id } from "../constant/lpnpf";
 import {
   applySectionData,
   businessHubData,
@@ -32,9 +35,6 @@ import {
   testimonialsData,
   whyKRM,
 } from "./content";
-
-import { SeoData } from "./seo";
-import { bsc2026Id } from "../constant/lpnpf";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -87,6 +87,8 @@ const page = () => {
         formId={bscIdForm}
         desc={heroContent?.desc}
         marqueeData={heroMarqData}
+        heroBg={heroContent?.heroBg}
+        middleImg={heroContent?.middleImg}
       />
       <Counter counters={counters} />
       <ProminentRecruiter recruiters={recruiters} />

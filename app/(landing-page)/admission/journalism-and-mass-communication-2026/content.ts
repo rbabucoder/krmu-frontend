@@ -25,9 +25,12 @@ export const Hero: HeroContent = {
        Journalism & Mass Communication
       </span>
       <br />
-      PROGRAMMES 2026
+      PROGRAMMES 2026-27
     `,
-  desc: `Start Building Your Future in Business and Management`,
+  desc: `The JMC course focuses on developing critical thinking, communication skills, creativity, and social awareness, preparing students for the fast-changing world of media, communication and storytelling`,
+  heroBg: "/landingpage/law-2026/law.jpg",
+  // middleImg: "/landingpage/law-2026/law.webp",
+  middleImg: "",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -50,12 +53,12 @@ export const Counters: CounterItem[] = [
     subtitle: "Top Recruiters",
   },
   {
-    title: "₹21 Cr",
+    title: "₹27 Cr",
     subtitle: "Worth of Scholarships",
   },
   {
-    title: "100%",
-    subtitle: "Placement Assistance",
+    title: "92%",
+    subtitle: "Placement Record",
   },
 ];
 
@@ -123,12 +126,12 @@ export const whyKRM: WhyKRMSection = {
 };
 
 export const industryExperts: IndustryExpertsSection = {
-  eyebrow: "Why KR Mangalam PhD?",
+  eyebrow: "",
   heading: `Learn from <br /> Leaders @ KRMU!
 `,
-  description: `K.R. Mangalam University takes pride in collaborating with industry leaders and skill professionals who offer unparalleled hands-on learning experiences to students.`,
+  description: `K.R. Mangalam University takes pride in collaborating with industry leaders and skill professionals who offer unparalleled hands-on learning experiences to students`,
   cta: {
-    label: "Apply for B.Tech 2026",
+    label: "Apply for JMC 2026-2027",
     href: "#",
   },
   cards: [
@@ -208,6 +211,28 @@ export const specialisationData: SpecialisationSection = {
         },
       ],
     },
+    {
+      imgUrl: "/landingpage/common/dummy.png",
+      title: `M.A. (Journalism And Mass Communication)`,
+      desc: `The aim of KRMU's M.A. JMC course is to prepare students for the fast-paced world of media, communication, and narrative. In order to assist students in comprehending how news, information, and messages are produced and disseminated across many platforms, the curriculum aims to integrate theoretical knowledge with hands-on training. Through guest lectures, workshops, and internships with media organisations, the students' understanding of fundamental subjects like journalistic ethics, media regulations, reporting, and editing is further developed.`,
+      extraInfos: [
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Duration:",
+          desc: `2 Years`,
+        },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Eligibility",
+          desc: `Candidate must have a bachelor's degree or equivalent degree from a recognised university with a minimum 50% aggregate marks`,
+        },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Annual Fee",
+          desc: `Rs 1,10,000`,
+        },
+      ],
+    },
   ],
 };
 
@@ -221,7 +246,7 @@ export const opportunityData: OpportunitySection = {
   heading: "Learn From Industry Experts",
   highlight: "Opportunity That Transforms",
   cta: {
-    label: "Apply for JMC Programme",
+    label: "Apply for JMC Programme 2026-2027",
     href: "#",
   },
 };
@@ -322,7 +347,7 @@ export const comeToLifeData: ComeToLifeSection = {
 `,
   footerText: ``,
   cta: {
-    label: "Apply for JMC Programme ",
+    label: "Apply for JMC Programme <br />2026-2027",
     href: "#",
   },
   slides: [
@@ -374,8 +399,7 @@ export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
 export const faqSectionData: FAQSectionData = {
   eyebrow: "(FAQs)",
   heading: "Frequently Asked Questions",
-  description:
-    "",
+  description: "",
   faqs: [
     {
       id: "item-1",
@@ -395,7 +419,8 @@ export const faqSectionData: FAQSectionData = {
     },
     {
       id: "item-4",
-      question: "Does the K.R. Mangalam University focus on digital media trends?",
+      question:
+        "Does the K.R. Mangalam University focus on digital media trends?",
       answer: `Yes. The JMC courses at KRMU cover digital media elements like SEO, social media marketing, influencer branding, and multimedia journalism.`,
     },
     {
@@ -435,7 +460,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Apply for K.R. Mangalam <br /> University now`,
   description: "Start Your Adventure Right Now at K.R. Mangalam University",
   cta: {
-    label: "Apply for JMC Programme",
+    label: "Apply for JMC Programme 2026-2027",
     href: "#",
   },
   highlights: [

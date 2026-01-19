@@ -25,9 +25,12 @@ export const Hero: HeroContent = {
        B.Sc.
       </span>
       <br />
-      PROGRAMMES 2026
+      PROGRAMMES 2026-27
     `,
-  desc: `Begin a focused and future-oriented academic journey with B.Sc. programmes designed to strengthen scientific thinking, problem-solving, and practical skills. Choose from specialised disciplines aligned with your interests, gain hands-on learning exposure, and prepare for confident, career-ready roles across emerging and established industries. `,
+  desc: `Begin a focused and future-oriented academic journey with B.Sc. programmes <br /> designed to inculcate scientific thinking, <br /> problem-solving, and practical skills among students for diverse roles across emerging and established industries`,
+  heroBg: "/landingpage/law-2026/law.jpg",
+  // middleImg: "/landingpage/law-2026/law.webp",
+  middleImg: "",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -42,8 +45,8 @@ export const heroMarqueeData: HeroMarqueeSection = {
 
 export const Counters: CounterItem[] = [
   {
-    title: "7.25 LPA",
-    subtitle: "Average Package",
+    title: "56.6 LPA",
+    subtitle: "Highest Package",
   },
   {
     title: "800+",
@@ -54,77 +57,66 @@ export const Counters: CounterItem[] = [
     subtitle: "Worth of Scholarships",
   },
   {
-    title: "100%",
-    subtitle: "Placement Assistance",
+    title: "92%",
+    subtitle: "Placement Record",
   },
 ];
 
 // Recruiters list
 export const prominentRecruiters: ProminentRecruit[] = [
   {
-    imgUrl:
-      "https://www.krmangalam.edu.in/admission/law-2025/assets/trilegal.svg",
+    imgUrl: "/landingpage/bsc-2026/recruiters/amazon.webp",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://www.krmangalam.edu.in/admission/btech-2025-b/assets/images/accenture.svg",
+    imgUrl: "/landingpage/bsc-2026/recruiters/zara.webp",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+    imgUrl: "/landingpage/bsc-2026/recruiters/zynga.webp",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+    imgUrl: "/landingpage/bsc-2026/recruiters/lifestyle.webp",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
-    alt: "Recruiter Logo",
-  },
-  {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+    imgUrl: "/landingpage/bsc-2026/recruiters/splash.webp",
     alt: "Recruiter Logo",
   },
 ];
-
 export const whyKRM: WhyKRMSection = {
   heading: "Why Choose B.Sc. Programmes at KRMU?",
   subheading: "Build a Career Grounded in Knowledge and Skills ",
   content: `K.R. Mangalam University offers thoughtfully designed B.Sc. programmes that focus on strong scientific fundamentals, analytical thinking, and practical application. With expert faculty, hands-on learning, interdisciplinary exposure, and structured career support, students are prepared for industry roles, research opportunities, and higher education. `,
-  imgUrl: `/landingpage/common/whykrmtest.png`,
+  imgUrl: `/landingpage/bsc-2026/why-choose/Building.webp`,
   whyKrmCards: [
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bsc-2026/why-choose/1.webp",
       content: `Interdisciplinary, Research-Driven, updated according to NEP guidelines `,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bsc-2026/why-choose/2.webp",
       content: `Prolific Researchers, Visionary, adaptable `,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bsc-2026/why-choose/3.webp",
       content: `Problem-Based Learning, Flipped Classroom, Peer Teaching `,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bsc-2026/why-choose/4.webp",
       content: `Well-equipped and organized labs, Cutting-edge research facilities`,
     },
   ],
 };
 
 export const industryExperts: IndustryExpertsSection = {
-  eyebrow: "What Makes B.A. Programmes at K.R.M.U Stand Out? ",
+  eyebrow: "What Makes B.Sc. Programmes at K.R.M.U Stand Out? ",
   heading: `Learn from <br /> Industry Expert
 `,
-  description: `The B.Sc. programmes at KRMU are enriched by academic and professional inputs from experienced knowledge partners. `,
+  description: `The B.Sc. programmes at KRMU are enriched by academic and professional inputs from experienced knowledge partners`,
   cta: {
-    label: "B.A. Programmes: 2026-27",
+    label: `B.Sc. Programmes 2026-2027`,
     href: "#",
   },
   cards: [
@@ -158,10 +150,11 @@ export const industryExperts: IndustryExpertsSection = {
 
 export const specialisationData: SpecialisationSection = {
   subheading: `Choose your specialisations based on your interests and career goals.`,
-  heading: `Our B.Sc. programmes & specialisations `,
+  heading: `Our B.Sc. Programmes & Specialisations `,
   specilisationCard: [
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl:
+        "/landingpage/bsc-2026/specialisations/B.Sc.-(Hons.--Hons.-with-Research-)-Physics.webp",
       title: `B.Sc. (Hons. / Hons. with Research ) Physics `,
       desc: `A programme that builds strong foundations in physics while introducing advanced theories and research-based learning. With modern laboratories and cutting-edge technology, students gain hands-on experience and develop analytical skills for deeper exploration in physics.`,
       extraInfos: [
@@ -175,10 +168,16 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Passed 10+2 or an equivalent examination from a recognised board or university with PCB or PCM and a minimum of 50% aggregate marks.`,
         },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Annual Fee",
+          desc: `Rs. 90,000`,
+        },
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl:
+        "/landingpage/bsc-2026/specialisations/B.Sc.-(Hons.--Hons.-with-Research)-Chemistry.webp",
       title: `B.Sc. (Hons. / Hons. with Research) Chemistry `,
       desc: `    The programme blends strong theoretical foundations with practical and research-based learning in Chemistry. It builds advanced subject knowledge, research skills, and applied expertise, while offering hands-on training and internship exposure to support higher studies and research-driven careers. `,
       extraInfos: [
@@ -192,10 +191,16 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Passed 10+2 or an equivalent examination from a recognised board or university with PCB or PCM, securing at least 50% aggregate marks. `,
         },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Annual Fee",
+          desc: `Rs. 90,000`,
+        },
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl:
+        "/landingpage/bsc-2026/specialisations/B.Sc.-(Hons.)-Forensic-Science.webp",
       title: `B.Sc. (Hons.) Forensic Science `,
       desc: `    The programme prepares students for investigative careers through hands-on training, scientific analysis, and practical exposure. It builds strong foundations in forensic techniques, crime scene investigation, and laboratory skills aligned with modern criminal justice needs. `,
       extraInfos: [
@@ -209,10 +214,16 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Passed 10+2 or an equivalent examination in Science (Physics, Chemistry, Biology, or Mathematics) from a recognised board or university with at least 50% aggregate marks. `,
         },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Annual Fee",
+          desc: `Rs. 1,30,000`,
+        },
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl:
+        "/landingpage/bsc-2026/specialisations/B.Sc.-(Hons.--Hons.-with-Research)-Forensic-Science.webp",
       title: `B.Sc. (Hons. / Hons. with Research) Forensic Science`,
       desc: `    The programme blends theory with hands-on training, equipping students with practical skills in crime scene investigation, evidence handling, and forensic analysis through advanced laboratory exposure. `,
       extraInfos: [
@@ -226,10 +237,16 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `    Passed 10+2 or an equivalent examination from a recognized board or university with Physics, Chemistry, Biology, or Mathematics as subjects, securing a minimum of 50% aggregate marks. `,
         },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Annual Fee",
+          desc: `Rs. 1,30,000`,
+        },
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl:
+        "/landingpage/bsc-2026/specialisations/Integrated-Dual-Degree-B.Sc.-M.Sc.-(Forensic-Science).webp",
       title: `Integrated/Dual Degree B.Sc.-M.Sc. (Forensic Science) `,
       desc: `    The programme offers strong theoretical and practical training in forensic science, preparing students for crime scene analysis and careers in investigation agencies, legal firms, and forensic laboratories through industry-relevant coursework and field-based learning. `,
       extraInfos: [
@@ -242,6 +259,11 @@ export const specialisationData: SpecialisationSection = {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognized board/university in any stream with minimum 50% aggregate Marks.`,
+        },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Annual Fee",
+          desc: `Rs. 1,30,000`,
         },
       ],
     },
@@ -268,31 +290,58 @@ export const testimonialsData: TestimonialsSection = {
   heading: `Why do our schoolers love and trust K.R. Mangalam University?`,
   testimonials: [
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bsc-2026/testimonials/1.webp",
       videoUrl: "#",
-      quote: `SOAD's B.Arch program at K.R. Mangalam University is an incubator of creativity and 
-excellence. It provided me with the platform and guidance to thrive as an aspiring 
-Architect.
+      quote: `It has been a transformative experience at K.R. Mangalam University. The university's emphasizes on experiential learning, practical skills and prepares us for success in   the professional world. I am grateful for the invaluable education and unforgettable memories I have gained here. 
 `,
-      name: "Ar. Divya Kharbanda",
-      programme: "B.Arch- Design Cell, New Delhi",
+      name: "Ms. Chhavi",
+      programme: "B.Sc. (Hons.) Chemistry",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bsc-2026/testimonials/2.webp",
       videoUrl: "#",
-      quote: `As a B.Arch student, I'm inspired daily by the dynamic environment of classes, empowering 
-me to push boundaries and innovate in architecture.
+      quote: `My academic journey at KRMU as a B.Sc. (Hons.) Physics student was truly enriching.  
+
+The structured curriculum, well-equipped laboratories, and supportive faculty  
+
+strengthened my conceptual understanding and analytical skills. Beyond academics,  
+
+the vibrant campus culture helped shape me into a confident individual. I feel proud  
+
+to be an alumnus of K.R. Mangalam University and remain grateful for the guidance,  
+
+values, and opportunities that contributed to my overall growth. 
 `,
-      name: "Keerti Diwedi",
-      programme: "B.Arch- Gold Medalist, Arcop Associates, New Delhi",
+      name: "Kashish",
+      programme: "B.Sc. (Hons.) Physics",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bsc-2026/testimonials/3.webp",
       videoUrl: "#",
-      quote: `From KRMU's School of Architecture & Design to Auctus Wear, I carry the essence of design 
-excellence instilled by the university.`,
-      name: "Lalita",
-      programme: "Auctus Wear",
+      quote: `K.R. Mangalam University boasts a highly supportive and knowledgeable faculty.  
+
+With top-tier infrastructure, fully equipped laboratories, and a continually updated  
+
+curriculum, my academic journey was enriched with practical exposure. My time there  
+
+was immensely valuable, thanks to the expert faculty members who consistently  
+
+supported my intellectual growth. `,
+      name: "Jeetika",
+      programme: "B. Sc. (Hons.) Mathematics ",
+    },
+    {
+      image: "/landingpage/bsc-2026/testimonials/3.webp",
+      videoUrl: "#",
+      quote: `KRMU offers one with a myriad range of opportunities. It is a great experience to  
+
+write research papers related to mathematics, organize events and visit other places.  
+
+Here I have published a research work and presented research work in international  
+
+conference during my first year itself.`,
+      name: "Agniwesh Tiwari",
+      programme: "B. Sc. (Hons.) Mathematics",
     },
   ],
 };
@@ -361,33 +410,53 @@ export const comeToLifeData: ComeToLifeSection = {
   },
   slides: [
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bsc-2026/infrastructure/1.webp",
       alt: "World Class Lab",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bsc-2026/infrastructure/2.webp",
       alt: "Research Facility",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bsc-2026/infrastructure/3.webp",
       alt: "Innovation Center",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bsc-2026/infrastructure/4.webp",
       alt: "Library & Resources",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bsc-2026/infrastructure/5.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bsc-2026/infrastructure/6.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bsc-2026/infrastructure/7.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bsc-2026/infrastructure/8.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bsc-2026/infrastructure/9.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bsc-2026/infrastructure/10.webp",
       alt: "Campus Infrastructure",
     },
   ],
 };
 
 export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
-  heading: "Life as a BBA (UG) Student at KRMU",
+  heading: "Life as a B.Sc. Student at KRMU",
   description: "",
   image: {
-    src: "/landingpage/common/test44.jpeg",
+    src: "/landingpage/bsc-2026/student-at-krmu/Collage.webp",
     alt: "Life as a PhD Scholar at KR Mangalam",
   },
   facilities: [
@@ -409,12 +478,11 @@ export const faqSectionData: FAQSectionData = {
   eyebrow: "(FAQs)",
   heading: "Got Questions? We've Got Answers ",
   description:
-    "K.R. Mangalam University offers Ph.D. programmes in a wide array of fields, encouraging cross-disciplinary exploration and innovation.",
+    "",
   faqs: [
     {
       id: "item-1",
-      question:
-        "What is B.Sc. (Hons. / Hons. with Research)?",
+      question: "What is B.Sc. (Hons. / Hons. with Research)?",
       answer: `It is an undergraduate science programme offering in-depth subject knowledge, with the research track including advanced coursework and a research project. `,
     },
     {
@@ -494,7 +562,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Apply for K.R. Mangalam <br /> University now`,
   description: "Start Your Adventure Right Now at K.R. Mangalam University",
   cta: {
-    label: "Apply for B.Arch. Programme",
+    label: "Apply for B.Sc. Programme 2026-2027",
     href: "#",
   },
   highlights: [

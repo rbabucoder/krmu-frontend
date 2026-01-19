@@ -22,12 +22,15 @@ export const Hero: HeroContent = {
       ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
-       BFA (UG)
+       BFA
       </span>
       <br />
-      PROGRAMMES 2026
+      PROGRAMMES 2026-27
     `,
-  desc: `Immerse yourself in an inspiring environment that nurtures creativity, ignites innovation, and transforms ideas into impactful design solutions.`,
+  desc: `A Structured Pathway to Professional Fine Arts Practice`,
+  heroBg: "/landingpage/law-2026/law.jpg",
+  // middleImg: "/landingpage/law-2026/law.webp",
+  middleImg: "",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -42,15 +45,15 @@ export const heroMarqueeData: HeroMarqueeSection = {
 
 export const Counters: CounterItem[] = [
   {
-    title: "7.25 LPA",
-    subtitle: "Average Package",
+    title: "92%",
+    subtitle: "Placement Record",
   },
   {
     title: "800+",
     subtitle: "Recruiters",
   },
   {
-    title: "Up To ₹21 Cr",
+    title: "Up To ₹27 Cr",
     subtitle: "Worth of Scholarships",
   },
   {
@@ -62,64 +65,54 @@ export const Counters: CounterItem[] = [
 // Recruiters list
 export const prominentRecruiters: ProminentRecruit[] = [
   {
-    imgUrl:
-      "https://www.krmangalam.edu.in/admission/law-2025/assets/trilegal.svg",
+    imgUrl: "/landingpage/bfa-2026/recruiters/amazon.webp",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://www.krmangalam.edu.in/admission/btech-2025-b/assets/images/accenture.svg",
+    imgUrl: "/landingpage/bfa-2026/recruiters/zara.webp",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+    imgUrl: "/landingpage/bfa-2026/recruiters/zynga.webp",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+    imgUrl: "/landingpage/bfa-2026/recruiters/lifestyle.webp",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
-    alt: "Recruiter Logo",
-  },
-  {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+    imgUrl: "/landingpage/bfa-2026/recruiters/splash.webp",
     alt: "Recruiter Logo",
   },
 ];
 
 export const whyKRM: WhyKRMSection = {
-  heading: "Why Select KRMU's BFA (UG) Programs?",
+  heading: "Why Select KRMU's BFA Programmes?",
   subheading: "Where Creativity Finds Its Direction",
-  content: `K.R. Mangalam University's Bachelor of Fine Arts (BFA) curriculum offers a thorough fusion of conventional methods and contemporary artistic approaches. This curriculum fosters creativity, ingenuity, and craftsmanship, regardless of your career goals—painting, sculpture, or graphic design. Students acquire the technical know-how, creative vision, and professional insights necessary to succeed in the creative business through cutting-edge studios, industry partnerships, and international exposure.`,
-  imgUrl: `/landingpage/common/whykrmtest.png`,
+  content: `K.R. Mangalam University's Bachelor of Fine Arts (BFA) curriculum offers a unparalleled fusion of conventional methods and contemporary artistic approaches. This curriculum fosters creativity, ingenuity, and craftsmanship, regardless of your career goals—painting, sculpture, or graphic design. Students acquire the technical know-how, creative vision, and professional insights necessary to succeed in the creative business through cutting-edge studios, industry partnerships, and international exposure.`,
+  imgUrl: `/landingpage/bfa-2026/why-choose/Building.webp`,
   whyKrmCards: [
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bfa-2026/why-choose/1.webp",
       content: `Innovative Studios & Workshops: Fully furnished areas for mixed media, digital design, painting, and sculpting.`,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bfa-2026/why-choose/2.webp",
       content: `Exhibition Opportunities: Students increase their professional awareness by showcasing their work at public events and galleries.`,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bfa-2026/why-choose/3.webp",
       content: `Comprehensive Curriculum: A comprehensive curriculum that strikes a balance between theory, practical application, and contemporary creative tendencies.`,
     },
   ],
 };
 
 export const industryExperts: IndustryExpertsSection = {
-  eyebrow: "Why KR Mangalam PhD?",
+  eyebrow: "",
   heading: `Learn From <br /> Industry Experts`,
-  description: `KRMU partners with major organisations to provide <br /> industry-specific training.`,
+  description: `KRMU partners with major organisations to provide <br /> industry-specific training`,
   cta: {
-    label: "Apply for BFA (UG) 2026-2027",
+    label: "Apply for BFA 2026-2027",
     href: "#",
   },
   cards: [
@@ -148,15 +141,15 @@ export const industryExperts: IndustryExpertsSection = {
       title: "AI and Machine Learning Courses",
     },
   ],
-  bannerImg: "/landingpage/common/dummy2.png",
+  bannerImg: "/landingpage/common/indus-exp.webp",
 };
 
 export const specialisationData: SpecialisationSection = {
   subheading: `Choose the specialisations based on your interest and career goals!`,
-  heading: `Our BFA (UG) Programme`,
+  heading: `Our BFA  Programme`,
   specilisationCard: [
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bfa-2026/specialisations/1.webp",
       title: `Bachelor of Fine Arts (BFA) (Painting & Applied Arts)`,
       desc: `The Bachelor of Fine Arts (BFA) in Painting & Applied Arts is designed to nurture creative talent while developing strong technical and conceptual skills in visual arts. The programme combines traditional painting techniques with applied art practices, enabling students to explore creative expression alongside practical design applications. Through studio-based learning and expert mentorship, students build artistic proficiency and a professional creative identity.`,
       extraInfos: [
@@ -169,6 +162,11 @@ export const specialisationData: SpecialisationSection = {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Eligibility",
           desc: ` Passed the 10+2 or comparable exam in any stream with at least 50%.`,
+        },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Annual Fee",
+          desc: `Rs. 1,20,000`,
         },
       ],
     },
@@ -195,7 +193,7 @@ export const testimonialsData: TestimonialsSection = {
   heading: `Why do Aspirants Prefer KRMU?`,
   testimonials: [
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bfa-2026/testimonials/1.webp",
       videoUrl: "#",
       quote: `As a BFA student at K.R. Mangalam University, I have grown tremendously as an artist 
 and individual. Coming from M.D Sr. Sec. School, where I first discovered my passion 
@@ -208,11 +206,11 @@ galleries, and cutting-edge technology.
       programme: "",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bfa-2026/testimonials/2.webp",
       videoUrl: "#",
       quote: `I am Yashika Dang, a creative individual with a unique journey from commerce to 
 the arts. After earning my B.Com degree from M.D.U. and completing my schooling 
-at DAV, I realized my passion for creativity during COVID. This newfound interest led 
+at DAV, I realised my passion for creativity during COVID. This newfound interest led 
 me to pursue a BFA at KR Mangalam, where I am now exploring and refining my 
 artistic skills. My background gives me a diverse perspective, and I am eager to bring 
 innovation and creativity into my work.
@@ -221,7 +219,7 @@ innovation and creativity into my work.
       programme: "",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bfa-2026/testimonials/3.webp",
       videoUrl: "#",
       quote: `I am currently a second-year BFA Applied Arts student, and my journey so far has 
 been both inspiring and transformative. Over the past two years, I have had the 
@@ -233,13 +231,13 @@ guiding us through practical applications, industry trends, and conceptual think
       programme: "",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bfa-2026/testimonials/5.webp",
       videoUrl: "#",
       quote: `I am a dedicated and passionate Bachelor of Fine Arts (BFA) student at K.R. Mangalam 
 University with a strong foundation in the arts. Immersed in various artistic disciplines, 
 including Applied Arts, Visual Art, and Sculpture, I bring enthusiasm and creativity to 
 every project. My keen eye for detail and deep commitment to artistic expression are 
-especially evident in my favorite field—Applied Arts. With a relentless drive to explore 
+especially evident in my favourite field—Applied Arts. With a relentless drive to explore 
 and innovate, I aspire to make a meaningful impact in the world of visual arts.
 `,
       name: "Megha",
@@ -279,7 +277,7 @@ export const scholarResearchImpactData: ScholarResearchImpactSection = {
       id: 1,
       name: "Rahul Khanna",
       role: "PhD Journalism & Mass Communication",
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bfa-2026/why-choose/Building.webp",
       quote:
         "My research at K.R. Mangalam University on social media's influence in modern society has been incredibly fulfilling. The mentorship and focus on real-world change truly set this programme apart.",
     },
@@ -303,42 +301,62 @@ export const scholarResearchImpactData: ScholarResearchImpactSection = {
 };
 
 export const comeToLifeData: ComeToLifeSection = {
-  heading: `World-Class Facilities for BFA UG at KRMU`,
-  description: `K.R. Mangalam University provides a vibrant and creative environment with state-of-the-art art studios, well-equipped workshops, and dedicated exhibition spaces that support artistic exploration and expression. Students benefit from professional-grade tools and materials, digital design labs, and collaboration areas that promote experimentation and innovation. The university’s central library with rich visual arts resources, along with regular workshops, art events, and live projects, ensures exposure to diverse artistic practices and industry trends, helping students grow as confident creative professionals.`,
+  heading: `World-Class Facilities for BFA at KRMU`,
+  description: `K.R. Mangalam University provides a vibrant and creative environment with state-of-the-art Art studios, well-equipped workshops, and dedicated exhibition spaces that support artistic exploration and expression. Students benefit from professional-grade tools and materials, digital design labs, and collaboration areas that promote experimentation and innovation. The university’s central library with rich visual arts resources, along with regular workshops, art events, and live projects, ensures exposure to diverse artistic practices and industry trends, helping students grow as confident creative professionals.`,
   footerText: ``,
   cta: {
-    label: "Apply for BFA (UG) 2026-2027 ",
+    label: "Apply for BFA 2026-2027 ",
     href: "#",
   },
   slides: [
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bfa-2026/infrastructure/1.webp",
       alt: "World Class Lab",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bfa-2026/infrastructure/2.webp",
       alt: "Research Facility",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bfa-2026/infrastructure/3.webp",
       alt: "Innovation Center",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bfa-2026/infrastructure/4.webp",
       alt: "Library & Resources",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bfa-2026/infrastructure/5.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bfa-2026/infrastructure/6.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bfa-2026/infrastructure/7.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bfa-2026/infrastructure/8.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bfa-2026/infrastructure/9.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bfa-2026/infrastructure/10.webp",
       alt: "Campus Infrastructure",
     },
   ],
 };
 
 export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
-  heading: "Life as a BBA (UG) Student at KRMU",
+  heading: "Life as a BFA Student at KRMU",
   description: "",
   image: {
-    src: "/landingpage/common/test44.jpeg",
+    src: "/landingpage/bfa-2026/student-at-krmu/Collage.webp",
     alt: "Life as a PhD Scholar at KR Mangalam",
   },
   facilities: [
@@ -363,8 +381,7 @@ export const faqSectionData: FAQSectionData = {
   faqs: [
     {
       id: "item-1",
-      question:
-        "Do BFA students have access to internships at KRMU?",
+      question: "Do BFA students have access to internships at KRMU?",
       answer: `Indeed, as part of the curriculum, students gain internships at advertising companies, museums, galleries, art studios, and creative agencies.`,
     },
     {
@@ -374,7 +391,8 @@ export const faqSectionData: FAQSectionData = {
     },
     {
       id: "item-3",
-      question: "Is there exposure to the industry and practical project experience?",
+      question:
+        "Is there exposure to the industry and practical project experience?",
       answer: `Indeed, students take part in actual projects, exhibits, workshops, design contests, and partnerships with businesses and experienced artists.`,
     },
     {
@@ -382,7 +400,6 @@ export const faqSectionData: FAQSectionData = {
       question: "Are BFA students eligible for scholarships?",
       answer: `Yes, KRMU offers scholarships for creative quality, distinction, and need to qualified students.`,
     },
-    
   ],
 };
 
@@ -415,7 +432,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Apply for K.R. Mangalam <br /> University now`,
   description: "Start Your Adventure Right Now at K.R. Mangalam University",
   cta: {
-    label: "Apply for BFA (UG) 2026-2027",
+    label: "Apply for BFA 2026-2027",
     href: "#",
   },
   highlights: [

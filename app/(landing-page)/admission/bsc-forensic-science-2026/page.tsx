@@ -86,6 +86,8 @@ const page = () => {
         formId={bbaIdForm}
         desc={heroContent?.desc}
         marqueeData={heroMarqData}
+        heroBg={heroContent?.heroBg}
+        middleImg={heroContent?.middleImg}
       />
       <Counter counters={counters} />
       <ProminentRecruiter recruiters={recruiters} />
@@ -96,7 +98,7 @@ const page = () => {
         imgUrl={whykrm?.imgUrl}
         whykrmCards={whykrm?.whyKrmCards}
       />
-      <IndustryExperts data={industryexpert} />
+      {/* <IndustryExperts data={industryexpert} /> */}
       <Specialisation data={specialise} />
       <Opportunity data={opport} />
       <FeeStructureTable />

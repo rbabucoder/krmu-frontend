@@ -10,7 +10,6 @@ import {
   createArticleSchema,
   createBreadcrumbSchema,
   createFaqSchema,
-  createPersonSchema,
 } from "@/lib/api/common";
 import Script from "next/script";
 
@@ -40,8 +39,6 @@ const page = async ({ params }: Props) => {
   const currentSingleBlog = singleBlogData.find((blog) => blog?.slug === slug);
 
   if (!currentSingleBlog?.title) return notFound();
-
-  console.log("currentSingleBlog", currentSingleBlog);
 
   // const schemaScript = singleBlogData[0]?.acf?.krmscript;
 
@@ -82,8 +79,8 @@ const page = async ({ params }: Props) => {
     publisherName: "K.R. Mangalam University",
     publisherLogo:
       "https://www.krmangalam.edu.in/wp-content/uploads/2025/11/KRMU-Logo-NAAC.webp",
-    datePublished: "2026-01-16",
-    dateModified: "2026-01-16",
+    datePublished: currentSingleBlog?.date_gmt,
+    dateModified: currentSingleBlog?.modified_gmt,
   });
 
   // const personJsonLd = createPersonSchema({

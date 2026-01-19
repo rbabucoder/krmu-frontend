@@ -36,6 +36,12 @@ const FeeStructureTable = () => {
                 <td className="px-4 py-4">80,000</td>
                 <td className="px-4 py-4">1,60,000</td>
               </tr>
+              <tr className="text-sm border-b">
+                <td className="px-4 py-4">M.A. (Journalism And Mass Communication)</td>
+                <td className="px-4 py-4">55,000</td>
+                <td className="px-4 py-4">55,000</td>
+                <td className="px-4 py-4">1,10,000</td>
+              </tr>
 
             </tbody>
           </table>

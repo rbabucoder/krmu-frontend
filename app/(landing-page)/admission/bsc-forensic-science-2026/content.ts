@@ -27,7 +27,10 @@ export const Hero: HeroContent = {
       <br />
       PROGRAMMES 2026-27 
     `,
-  desc: `Start Building Your Future in Business and Management`,
+  desc: `The B.Sc. Forensic Science course strives to prepare the next generation of professional <br /> analysts who pursue truth with the precision of science and integrity`,
+  heroBg: "/landingpage/law-2026/law.jpg",
+  // middleImg: "/landingpage/law-2026/law.webp",
+  middleImg: "",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -50,40 +53,35 @@ export const Counters: CounterItem[] = [
     subtitle: "Top Recruiters",
   },
   {
-    title: "₹21 Cr",
+    title: "₹27 Cr",
     subtitle: "Worth of Scholarships",
   },
   {
-    title: "100%",
-    subtitle: "Placement Assistance",
+    title: "92%",
+    subtitle: "Placement Record",
   },
 ];
 
 // Recruiters list
 export const prominentRecruiters: ProminentRecruit[] = [
   {
-    imgUrl:
-      "/landingpage/bsc-forensic-science-2026/recruiters/amazon.webp",
+    imgUrl: "/landingpage/bsc-forensic-science-2026/recruiters/amazon.webp",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "/landingpage/bsc-forensic-science-2026/recruiters/zara.webp",
+    imgUrl: "/landingpage/bsc-forensic-science-2026/recruiters/zara.webp",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "/landingpage/bsc-forensic-science-2026/recruiters/zynga.webp",
+    imgUrl: "/landingpage/bsc-forensic-science-2026/recruiters/zynga.webp",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "/landingpage/bsc-forensic-science-2026/recruiters/lifestyle.webp",
+    imgUrl: "/landingpage/bsc-forensic-science-2026/recruiters/lifestyle.webp",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "/landingpage/bsc-forensic-science-2026/recruiters/splash.webp",
+    imgUrl: "/landingpage/bsc-forensic-science-2026/recruiters/splash.webp",
     alt: "Recruiter Logo",
   },
 ];
@@ -161,7 +159,8 @@ export const specialisationData: SpecialisationSection = {
   heading: `KRMU’s B.Sc. Forensic Science Courses`,
   specilisationCard: [
     {
-      imgUrl: "/landingpage/bsc-forensic-science-2026/specialisations/B.Sc.-(Hons.)-Forensic-Science.webp",
+      imgUrl:
+        "/landingpage/bsc-forensic-science-2026/specialisations/B.Sc.-(Hons.)-Forensic-Science.webp",
       title: `B.Sc. (Hons.) Forensic Science`,
       desc: `The Bachelor of Science (B.Sc.) Hons. in Forensic Science offered by KRMU is a multidisciplinary undergraduate program designed to prepare students for careers in crime investigation and forensic analysis. The meticulously drafted course combines principles of science, law, and technology to help students understand how scientific methods are applied to solve crimes. Students study core subjects such as forensic biology, forensic chemistry, toxicology, fingerprint analysis, questioned documents, and criminology.`,
       extraInfos: [
@@ -183,7 +182,8 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl: "/landingpage/bsc-forensic-science-2026/specialisations/B.Sc.-(Hons.-Hons.-with-Research)-Forensic-Science.webp",
+      imgUrl:
+        "/landingpage/bsc-forensic-science-2026/specialisations/B.Sc.-(Hons.-Hons.-with-Research)-Forensic-Science.webp",
       title: `B.Sc. (Hons. / Hons. with Research) Forensic Science`,
       desc: `The program at K.R. Mangalam University aims to develop critical thinking, observation, analytical skills, and attention to detail, which are essential for forensic professionals. Graduates of this course can pursue careers as forensic analysts, crime scene investigators, laboratory technicians, or research assistants. They may also opt for higher studies such as M.Sc. in Forensic Science, Criminology, or related fields.`,
       extraInfos: [
@@ -217,7 +217,7 @@ export const opportunityData: OpportunitySection = {
   heading: "Learn From Industry Experts",
   highlight: "Opportunity That Transforms",
   cta: {
-    label: "Apply for B.Arch. Programme",
+    label: "Apply for B.Sc. Programme 2026-2027",
     href: "#",
   },
 };
@@ -316,7 +316,7 @@ export const comeToLifeData: ComeToLifeSection = {
   description: `The K.R. Mangalam University offers strong support for the B.Sc. Forensic Science students in the form of an Advanced Forensic Lab with the latest tools for practical learning in physics, chemistry, and instrumentation. Expert faculty in the form of experienced professors with real-world and academic forensic experience, regular sessions with forensic experts and webinars are all designed for practical skill-building and career readiness.`,
   footerText: ``,
   cta: {
-    label: "Apply for B.Arch. Programme ",
+    label: `Apply for B.Sc. Programme <br />2026-2027 `,
     href: "#",
   },
   slides: [
@@ -388,19 +388,19 @@ export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
 export const faqSectionData: FAQSectionData = {
   eyebrow: "(FAQs)",
   heading: "Frequently Asked Questions",
-  description:
-    "",
+  description: "",
   faqs: [
     {
       id: "item-1",
       question:
         "What makes K.R. Mangalam University’s Forensic Science programme unique? ",
-      answer: `They provide practical insights, exposure to industry trends, and valuable networking opportunities with leading architects and designers.`,
+      answer: `The curriculum at KRMU is research-oriented with real-world forensic case studies, hands-on crime scene analysis, and internships with forensic experts.`,
     },
     {
       id: "item-2",
-      question: "What skills will one develop in a B.Arch. programme?",
-      answer: `You will cultivate creative design solutions, technical competence in construction and modelling, and effective communication of your ideas through visual, oral, and written means.`,
+      question: "What career options does a student have after completing a B.Sc. Forensic Science?",
+      answer: `Graduates can work as Forensic Scientists, Crime Scene Investigators, Digital Forensic Analysts, Toxicologists, and Consultants in law enforcement, forensic labs, and private agencies.
+`,
     },
     {
       id: "item-3",
@@ -409,12 +409,12 @@ export const faqSectionData: FAQSectionData = {
     },
     {
       id: "item-4",
-      question: "What kind of projects are involved in the B.Arch. programme?",
-      answer: `The programme includes understanding elements of designing, being able to design from a single unit to complex projects such as mixed-use buildings, commercial complexes, institutional buildings, resorts, hospitals, housing and also large-scale urban design projects.`,
+      question: "Does the programme include industry exposure?",
+      answer: `Yes, the K.R. Mangalam University offers internships, field visits, guest lectures by forensic professionals, and collaborations with forensic labs & law enforcement agencies.`,
     },
     {
       id: "item-5",
-      question: "Are there internship opportunities in the B.Arch. programme?",
+      question: "Does KRMU provide placement support?",
       answer: `Yes, the strong industry collaborations of K.R. Mangalam University ensure robust internship and placement opportunities with reputed architectural firms and design studios.`,
     },
   ],
@@ -423,7 +423,7 @@ export const faqSectionData: FAQSectionData = {
 export const businessHubData: BusinessHubSection = {
   heading: `Learn at One of India’s Biggest <br /> Business Hubs, Gurgaon`,
   description:
-    "Launch your engineering career with future-ready specialisations, industry-aligned curriculum, and hands-on project learning at our modern Gurugram campus.",
+    "Launch your career with future-ready specialisations, industry-aligned curriculum, and hands-on project learning at our modern Gurugram campus.",
   highlights: [
     { text: "UGC Approved University" },
     { text: "NAAC A+ Accredited" },
@@ -449,7 +449,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Apply for K.R. Mangalam <br /> University now`,
   description: "Start Your Adventure Right Now at K.R. Mangalam University",
   cta: {
-    label: "Apply for B.Arch. Programme",
+    label: "Apply for B.Sc. Programme 2026-2027",
     href: "#",
   },
   highlights: [

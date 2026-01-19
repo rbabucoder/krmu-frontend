@@ -82,7 +82,7 @@ const facultyMap: Record<SchoolCategory, Faculty[]> = {
 
 // ---------- Component ----------
 const StaticFacultyLoop = ({ schoolCat }: Props) => {
-  console.log('schoolCat', schoolCat);
+
   // ✅ Runtime safety
   if (!isSchoolCategory(schoolCat)) return null;
 

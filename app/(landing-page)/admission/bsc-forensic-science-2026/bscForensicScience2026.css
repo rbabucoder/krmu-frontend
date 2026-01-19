@@ -4,6 +4,9 @@
 @custom-variant dark (&:is(.dark *));
 
 @layer utilities {
+  .break-word-custom {
+    word-break: break-word;
+  }
   .prominentrecruitShadow {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     padding: 20px;
@@ -112,7 +115,9 @@
     background-repeat: no-repeat;
   }
   .embla__slide {
-    transition: transform 0.5s ease, opacity 0.5s ease;
+    transition:
+      transform 0.5s ease,
+      opacity 0.5s ease;
   }
 
   .highlight-section .npf_wgts {

@@ -25,9 +25,12 @@ export const Hero: HeroContent = {
        Bachelor of Arts
       </span>
       <br />
-      PROGRAMMES 2026
+      PROGRAMMES 2026-27
     `,
-  desc: `Step into a broad and enriching academic journey with bachelor of arts programmes designed to build critical thinking, communication, and analytical skills. Explore diverse disciplines, follow specialised pathways aligned with your interests, gain practical learning exposure, and prepare for confident, career-ready roles across multiple sectors. `,
+  desc: `The Bachelor of Arts programmes are designed to build critical thinking, communication, and analytical skills among students to prepare them for confident, career-ready roles across multiple sectors`,
+  heroBg: "/landingpage/law-2026/law.jpg",
+  // middleImg: "/landingpage/law-2026/law.webp",
+  middleImg: "",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -42,8 +45,8 @@ export const heroMarqueeData: HeroMarqueeSection = {
 
 export const Counters: CounterItem[] = [
   {
-    title: "7.25 LPA",
-    subtitle: "Average Package",
+    title: "92%",
+    subtitle: "Placement Record",
   },
   {
     title: "800+",
@@ -62,33 +65,23 @@ export const Counters: CounterItem[] = [
 // Recruiters list
 export const prominentRecruiters: ProminentRecruit[] = [
   {
-    imgUrl:
-      "https://www.krmangalam.edu.in/admission/law-2025/assets/trilegal.svg",
+    imgUrl: "/landingpage/bachelor-of-arts-2026/recruiters/amazon.webp",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://www.krmangalam.edu.in/admission/btech-2025-b/assets/images/accenture.svg",
+    imgUrl: "/landingpage/bachelor-of-arts-2026/recruiters/splash.webp",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+    imgUrl: "/landingpage/bachelor-of-arts-2026/recruiters/lifestyle.webp",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+    imgUrl: "/landingpage/bachelor-of-arts-2026/recruiters/zara.webp",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
-    alt: "Recruiter Logo",
-  },
-  {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+    imgUrl: "/landingpage/bachelor-of-arts-2026/recruiters/zynga.webp",
     alt: "Recruiter Logo",
   },
 ];
@@ -97,26 +90,26 @@ export const whyKRM: WhyKRMSection = {
   heading: "Why Choose B.A. Programmes at KRMU?",
   subheading: "Build a Career with Purpose and Perspective ",
   content: `K.R. Mangalam University offers well-structured B.A. programmes designed to develop strong academic foundations, critical thinking, and real-world understanding. With an interdisciplinary approach, experienced faculty, experiential learning, and career guidance, the programmes prepare students for diverse professional pathways and higher studies. `,
-  imgUrl: `/landingpage/common/whykrmtest.png`,
+  imgUrl: `/landingpage/bachelor-of-arts-2026/why-choose/Building.webp`,
   whyKrmCards: [
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bachelor-of-arts-2026/why-choose/1.webp",
       content: `Programmes curated by industry experts that balance practical learning with strong theoretical foundations `,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bachelor-of-arts-2026/why-choose/2.webp",
       content: `Mentorship from professionals with years of real-world industry experience `,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bachelor-of-arts-2026/why-choose/3.webp",
       content: `Participation in live projects and real-world assignments.`,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bachelor-of-arts-2026/why-choose/4.webp",
       content: `Future-ready programmes designed to prepare students for evolving industry demands `,
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bachelor-of-arts-2026/why-choose/5.webp",
       content: `International collaborations with leading institutions and global partners to provide meaningful global exposure`,
     },
   ],
@@ -126,7 +119,7 @@ export const industryExperts: IndustryExpertsSection = {
   eyebrow: "Why Choose B.A. Courses at K.R. Mangalam University? ",
   heading: `Learn from <br /> Industry Expert 
 `,
-  description: `The B.A. programmes at KRMU are enriched by academic and professional inputs from experienced knowledge partners. `,
+  description: `The B.A. programmes at KRMU are enriched by academic and professional inputs from experienced knowledge partners`,
   cta: {
     label: "Apply for B.A. Programmes 2026–27",
     href: "#",
@@ -162,10 +155,11 @@ export const industryExperts: IndustryExpertsSection = {
 
 export const specialisationData: SpecialisationSection = {
   subheading: `Choose your specialisations based on your interests and career goals. `,
-  heading: `Our B.A. programmes & specialisations`,
+  heading: `Our B.A. Programmes & Specialisations`,
   specilisationCard: [
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl:
+        "/landingpage/bachelor-of-arts-2026/specialisations/B.A.-(Hons.)-English.webp",
       title: `B.A. (Hons.) English `,
       desc: `The programme offers a strong foundation in literature, language, and critical theory, building analytical, communication, and cultural understanding skills that prepare students for diverse career opportunities across industries. `,
       extraInfos: [
@@ -179,10 +173,16 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognized board/university in any stream with minimum 50% aggregate Marks.`,
         },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Annual Fee",
+          desc: `Rs. 1,20,000`,
+        },
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl:
+        "/landingpage/bachelor-of-arts-2026/specialisations/B.A.-(-Hons.-Hons.-with-Research)-English.webp",
       title: `B.A. ( Hons. / Hons. with Research) English `,
       desc: `    The programme focuses on English literature, language, and culture, developing critical thinking, writing, and research skills through the study of classic and contemporary texts, preparing students for careers in academia, media, publishing, and related fields. `,
       extraInfos: [
@@ -196,10 +196,16 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognized board/university in any stream with minimum 50% aggregate Marks. `,
         },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Annual Fee",
+          desc: `Rs. 1,20,000`,
+        },
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl:
+        "/landingpage/bachelor-of-arts-2026/specialisations/B.A.-(Hons.)-Economics.webp",
       title: `B.A. (Hons.) Economics`,
       desc: `        This programme builds a strong foundation in economics, covering micro and macroeconomics, global trade, and financial systems. It develops critical thinking and analytical skills, preparing graduates for careers in finance, policy, consulting, academia, or advanced studies. `,
       extraInfos: [
@@ -213,10 +219,16 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognized board/university in any stream with minimum 50% aggregate Marks.`,
         },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Annual Fee",
+          desc: `Rs. 1,20,000`,
+        },
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl:
+        "/landingpage/bachelor-of-arts-2026/specialisations/B.A.-(Hons.-Hons.-with-Research)-Economics.webp",
       title: `B.A. (Hons. / Hons. with Research) Economics `,
       desc: `Designed for aspiring economists, this programme blends strong academics, practical learning, and research. It builds analytical, mathematical, and policy skills, preparing graduates for careers in government, finance, consulting, academia, or advanced studies in economics and public policy.`,
       extraInfos: [
@@ -230,12 +242,18 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognized board/university in any stream with minimum 50% aggregate Marks. `,
         },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Annual Fee",
+          desc: `Rs. 1,20,000`,
+        },
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl:
+        "/landingpage/bachelor-of-arts-2026/specialisations/B.A.-(Hons.)-Psychology.webp",
       title: `B.A. (Hons.) Psychology  `,
-      desc: `    The programme opens career and academic paths in mental health, education, HR, and social work. Graduates can pursue higher studies or roles in healthcare, corporate wellness, NGOs, and government sectors, where demand for psychology professionals continues to grow. `,
+      desc: `The programme opens career and academic paths in mental health, education, HR, and social work. Graduates can pursue higher studies or roles in healthcare, corporate wellness, NGOs, and government sectors, where there is a growing need for psychologists. `,
       extraInfos: [
         {
           iconUrl: "/landingpage/common/move-right.svg",
@@ -247,10 +265,16 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognized board/university in any stream with minimum 50% aggregate Marks. `,
         },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Annual Fee",
+          desc: `Rs. 1,20,000`,
+        },
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl:
+        "/landingpage/bachelor-of-arts-2026/specialisations/B.A.-(Hons.-Hons.-with-Research)-Psychology.webp",
       title: `B.A. (Hons. / Hons. with Research) Psychology `,
       desc: `      The programme explores human psychology and behaviour through advanced subjects such as cognitive, clinical, social, and abnormal psychology. It builds strong foundations while developing critical thinking, research, communication, and data-handling skills for diverse career paths. `,
       extraInfos: [
@@ -264,10 +288,16 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognized board/university in any stream with minimum 50% aggregate Marks.`,
         },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Annual Fee",
+          desc: `Rs. 1,20,000`,
+        },
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl:
+        "/landingpage/bachelor-of-arts-2026/specialisations/B.A.-(Hons.)-Political-Science.webp",
       title: `B.A. (Hons.) Political Science`,
       desc: `    The programme builds strong research skills through hands-on projects, faculty collaboration, and conference exposure. It offers in-depth understanding of political systems, theories, international relations, and public administration, preparing students for careers in policy, diplomacy, analysis, and academia. `,
       extraInfos: [
@@ -281,10 +311,16 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognized board/university in any stream with minimum 50% aggregate Marks.`,
         },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Annual Fee",
+          desc: `Rs. 1,20,000`,
+        },
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl:
+        "/landingpage/bachelor-of-arts-2026/specialisations/B.A.-(Hons.Hons.-with-Research)-Political-Science.webp",
       title: `B.A. (Hons. / Hons. with Research) Political Science `,
       desc: `    The programme builds a strong understanding of political theory, governance, and global politics while developing research, critical thinking, and communication skills. It prepares students for careers in academia, international organisations, journalism, law, and public service. `,
       extraInfos: [
@@ -297,6 +333,11 @@ export const specialisationData: SpecialisationSection = {
           iconUrl: "/landingpage/common/move-right.svg",
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognized board/university in any stream with minimum 50% aggregate Marks.`,
+        },
+        {
+          iconUrl: "/landingpage/common/move-right.svg",
+          title: "Annual Fee",
+          desc: `Rs. 1,20,000`,
         },
       ],
     },
@@ -323,7 +364,7 @@ export const testimonialsData: TestimonialsSection = {
   heading: `Why do our schoolers love and trust K.R. Mangalam University? `,
   testimonials: [
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bachelor-of-arts-2026/testimonials/1.webp",
       videoUrl: "#",
       quote: `My time at K.R. Mangalam University was transformative, offering quality education, supportive faculty, and enriching theatre and cultural experiences that boosted my confidence, creativity, and career opportunities.
 `,
@@ -331,7 +372,7 @@ export const testimonialsData: TestimonialsSection = {
       programme: "B.A. (Hons.) English",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bachelor-of-arts-2026/testimonials/2.webp",
       videoUrl: "#",
       quote: `KRMU provided a strong academic foundation and excellent faculty mentorship, helping me develop critical thinking and research skills and prepare for my M.Sc. in Psychology at the University of Exeter, UK. 
 `,
@@ -339,14 +380,14 @@ export const testimonialsData: TestimonialsSection = {
       programme: "B.A. (Hons.) Psychology ",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bachelor-of-arts-2026/testimonials/3.webp",
       videoUrl: "#",
       quote: `My journey at KRMU blended academic learning with holistic development. Supportive professors, recognition of achievements, and the Chancellor’s Excellence Award made my experience truly memorable.`,
       name: "Arshleen Sodhi",
       programme: "B.A. (Hons.) Economics",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bachelor-of-arts-2026/testimonials/4.webp",
       videoUrl: "#",
       quote: `KRMU’s supportive environment and engaging curriculum helped me grow academically and personally. The guidance from faculty and peers has made my learning journey rewarding and inspiring. `,
       name: "Simran",
@@ -414,38 +455,58 @@ export const comeToLifeData: ComeToLifeSection = {
   description: `K.R. Mangalam University offers a vibrant campus that supports quality learning and overall student growth. Smart classrooms, high-speed Wi-Fi, and well-equipped learning spaces create an engaging academic environment. The central library, seminar halls, innovation areas, hostels, and recreational facilities ensure a well-rounded campus experience.`,
   footerText: ``,
   cta: {
-    label: "Apply for B.A. Programmes 2026–27 ",
+    label: "Apply for B.A. Programmes <br /> 2026–2027 ",
     href: "#",
   },
   slides: [
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bachelor-of-arts-2026/infrastructure/1.webp",
       alt: "World Class Lab",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bachelor-of-arts-2026/infrastructure/2.webp",
       alt: "Research Facility",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bachelor-of-arts-2026/infrastructure/3.webp",
       alt: "Innovation Center",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bachelor-of-arts-2026/infrastructure/4.webp",
       alt: "Library & Resources",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bachelor-of-arts-2026/infrastructure/5.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bachelor-of-arts-2026/infrastructure/6.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bachelor-of-arts-2026/infrastructure/7.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bachelor-of-arts-2026/infrastructure/8.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bachelor-of-arts-2026/infrastructure/9.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bachelor-of-arts-2026/infrastructure/10.webp",
       alt: "Campus Infrastructure",
     },
   ],
 };
 
 export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
-  heading: "Life as a BBA (UG) Student at KRMU",
+  heading: "Life as a B.A. Student at KRMU",
   description: "",
   image: {
-    src: "/landingpage/common/test44.jpeg",
+    src: "/landingpage/bachelor-of-arts-2026/student-at-krmu/Collage.webp",
     alt: "Life as a PhD Scholar at KR Mangalam",
   },
   facilities: [
@@ -466,8 +527,7 @@ export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
 export const faqSectionData: FAQSectionData = {
   eyebrow: "(FAQs)",
   heading: "Frequently Asked Questions",
-  description:
-    "Got Questions? We've Got Answers ",
+  description: "Got Questions? We've Got Answers ",
   faqs: [
     {
       id: "item-1",
@@ -477,17 +537,20 @@ export const faqSectionData: FAQSectionData = {
     },
     {
       id: "item-2",
-      question: "Can students get scholarships for B.A. courses at K.R. Mangalam University?",
+      question:
+        "Can students get scholarships for B.A. courses at K.R. Mangalam University?",
       answer: `Yes, the university offers merit-based and need-based scholarships as per eligibility criteria. `,
     },
     {
       id: "item-3",
-      question: "What career opportunities can a student pursue after a B.A. course? ",
+      question:
+        "What career opportunities can a student pursue after a B.A. course? ",
       answer: `Graduates can explore careers in education, media, civil services, corporate roles, social sectors, or pursue higher studies.`,
     },
     {
       id: "item-4",
-      question: "What are the eligibility criteria for admission to a B.A. course at K.R. Mangalam University?",
+      question:
+        "What are the eligibility criteria for admission to a B.A. course at K.R. Mangalam University?",
       answer: `Candidates must have completed 10+2 from a recognised board with the required minimum marks.`,
     },
     {
@@ -497,7 +560,8 @@ export const faqSectionData: FAQSectionData = {
     },
     {
       id: "item-6",
-      question: "Does K.R. Mangalam University offer industry exposure in B.A. programmes?",
+      question:
+        "Does K.R. Mangalam University offer industry exposure in B.A. programmes?",
       answer: `Yes, B.A. students benefit from internships, workshops, expert sessions, and practical learning opportunities.`,
     },
   ],
@@ -532,7 +596,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Apply for K.R. Mangalam <br /> University now`,
   description: "Start Your Adventure Right Now at K.R. Mangalam University",
   cta: {
-    label: "Apply for UG Programme",
+    label: "Apply for B.A. Programmes 2026–27",
     href: "#",
   },
   highlights: [
