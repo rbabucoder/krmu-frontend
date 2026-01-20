@@ -33,7 +33,12 @@ const HomeTestimonialCard = ({
         </div>
       </div>
       <div>
-        <p className="my-5">{info}</p>
+        <p
+          className="my-5"
+          dangerouslySetInnerHTML={{
+            __html: info,
+          }}
+        />
       </div>
     </div>
   );

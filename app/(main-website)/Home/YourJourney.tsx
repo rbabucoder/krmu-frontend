@@ -15,7 +15,7 @@ const YourJourney = ({ title, content, buttons }: YourJourneyProps) => {
         className="px-5 bg-[#00074b]"
         style={{
           backgroundImage:
-            'url("your-journey.webp"), linear-gradient(280.68deg, #aa182c 3.8%, #0060aa 60.66%, #00074b 86.63%)',
+            'url("/home/your-journey.png"), linear-gradient(280.68deg, #aa182c 3.8%, #0060aa 60.66%, #00074b 86.63%)',
           backgroundRepeat: "no-repeat",
           backgroundSize: "contain",
           backgroundPosition: "center",

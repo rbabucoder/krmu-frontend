@@ -27,9 +27,9 @@ export const Hero: HeroContent = {
       <br />
       PROGRAMMES 2026-27
     `,
-  desc: `Immerse yourself in an inspiring environment that nurtures creativity, ignites innovation, and transforms ideas into impactful design solutions`,
-  heroBg: "/landingpage/bdes-2026/bdes-bg.webp",
-  middleImg: "/landingpage/bdes-2026/middle-img.webp",
+  desc: `Immerse yourself in an inspiring environment that nurtures creativity,<br /> ignites innovation, and transforms ideas into impactful design solutions`,
+  heroBg: "/landingpage/bdes-2026/bdesbg.webp",
+  middleImg: "",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -64,34 +64,40 @@ export const Counters: CounterItem[] = [
 // Recruiters list
 export const prominentRecruiters: ProminentRecruit[] = [
   {
-    imgUrl:
-      "https://www.krmangalam.edu.in/admission/law-2025/assets/trilegal.svg",
-    alt: "Recruiter Logo",
+    imgUrl: "/landingpage/bdes-2026/recruiters/zynga.webp",
+    alt: "Zynga Logo",
   },
   {
-    imgUrl:
-      "https://www.krmangalam.edu.in/admission/btech-2025-b/assets/images/accenture.svg",
-    alt: "Recruiter Logo",
+    imgUrl: "/landingpage/bdes-2026/recruiters/hplabs.png",
+    alt: "HPLabs Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
-    alt: "Recruiter Logo",
+    imgUrl: "/landingpage/bdes-2026/recruiters/greenply.png",
+    alt: "Greenply Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
-    alt: "Recruiter Logo",
+    imgUrl: "/landingpage/bdes-2026/recruiters/splash.webp",
+    alt: "Splash Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
-    alt: "Recruiter Logo",
+    imgUrl: "/landingpage/bdes-2026/recruiters/myntra-logo.png",
+    alt: "Myntra Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
-    alt: "Recruiter Logo",
+    imgUrl: "/landingpage/bdes-2026/recruiters/cognizant.png",
+    alt: "Cognizant Logo",
+  },
+  {
+    imgUrl: "/landingpage/bdes-2026/recruiters/zara.webp",
+    alt: "ZARA Logo",
+  },
+  {
+    imgUrl: "/landingpage/bdes-2026/recruiters/lifestyle.png",
+    alt: "Lifestyle Logo",
+  },
+  {
+    imgUrl: "/landingpage/bdes-2026/recruiters/ubisoft.png",
+    alt: "Ubisoft Logo",
   },
 ];
 
@@ -166,7 +172,8 @@ export const specialisationData: SpecialisationSection = {
   heading: `KRMU’s B.Des. Programmes`,
   specilisationCard: [
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl:
+        "/landingpage/bdes-2026/program/bachelor-of-design-bdes-hons-hons-with-research-fashion-design.jpg",
       title: `Bachelor of Design (B.Des.) (Hons. / Hons. with Research) Fashion Design`,
       desc: `This is a four-year undergraduate programme designed for aspiring fashion professionals. The curriculum blends contemporary trends with strong design fundamentals, offering hands-on training in garment construction, textiles, design techniques, and fashion business to prepare students for successful careers in the evolving fashion industry.`,
       extraInfos: [
@@ -188,7 +195,8 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl:
+        "/landingpage/bdes-2026/program/bachelor-of-design-bdes-hons-hons-with-research-interior-design.jpg",
       title: `Bachelor of Design (B.Des.) (Hons. / Hons. with Research) Interior Design`,
       desc: `This 4-year programme prepares students for the evolving interior design industry through a blend of creativity, technical skills, and industry-focused learning. Covering spatial planning, materials, lighting, and aesthetics, the programme equips graduates with industry-ready expertise for successful design careers.`,
       extraInfos: [
@@ -210,7 +218,8 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl:
+        "/landingpage/bdes-2026/program/bachelor-of-design-bdes-hons-hons-with-research-ux-ui-&-interaction-design-with-academic-support-of-imaginxp.jpg",
       title: `Bachelor of Design (B.Des.) (Hons. / Hons. with Research) UX/UI & Interaction Design with academic support of ImaginXP`,
       desc: `Powered by ImaginXP, this 4-year programme equips students with industry-ready skills in user research, interface design, prototyping, and usability testing. Focusing on human-centred design and creative innovation, it enables students to transform ideas into impactful digital experiences, blending visual creativity with technology to craft seamless user interactions.`,
       extraInfos: [
@@ -232,7 +241,8 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl:
+        "/landingpage/bdes-2026/program/bachelor-of-design-bdes-hons-hons-with-research-game-design-&-animation-with-academic-support-of-imaginxp.jpg",
       title: `Bachelor of Design (B.Des.) (Hons. / Hons. with Research) Game Design & Animation with academic support of ImaginXP`,
       desc: `Powered by ImaginXP, this 4-year programme combines expert storytelling and character design with hands-on projects, preparing students to lead in the global gaming and animation market.`,
       extraInfos: [
@@ -276,7 +286,7 @@ export const testimonialsData: TestimonialsSection = {
   heading: `Why Do Our Students Trust Us?`,
   testimonials: [
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bdes-2026/testimonials/1.jpg",
       videoUrl: "#",
       quote: `My journey at K.R. Mangalam University has been truly transformative. The faculty’s continuous  guidance played a key role in my academic and personal growth. Their mentorship extended  beyond the classroom, encouraging confidence and creativity. The opportunity for early placement gave me valuable industry exposure. The Training and Placement Cell provided 
 consistent and personalised support. Today, I feel confident, prepared, and ready to take the 
@@ -285,7 +295,7 @@ next step in my professional journey. `,
       programme: "B.Des. (Hons.) Interior Design",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bdes-2026/testimonials/2.jpg",
       videoUrl: "#",
       quote: `Hey, I'm Sumit Kushwaha from SOAD at K.R. Mangalam University, currently pursuing a B.Des 
 in Game Design and Animation. I aspire to become a VFX Artist/Compositor, and my journey 
@@ -296,14 +306,14 @@ come to reality.`,
       programme: "B.Des (Hons.) Game Design & Animation",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bdes-2026/testimonials/3.jpg",
       videoUrl: "#",
       quote: `My journey as a fashion design student at K.R. Mangalam University has been truly transformative.  The Fashion Design programme strengthened my creative foundation while building the  confidence, discipline, and professional ethics that guide me today as Head Designer at Esha Koul, New Delhi. I am deeply grateful to the faculty for their constant support, insightful teaching, and encouragement, which helped me grow from a learner into a confident design professional.`,
       name: "Mansi Bansal",
       programme: "B.Des. (Hons.) Fashion Design",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bdes-2026/testimonials/4.jpg",
       videoUrl: "#",
       quote: `I am Harsh Kumar, a second semester B.Des UI/UX Design student. With a strong vision to build a career in UX design, this course has fuelled my skills and passion. K.R. Mangalam University has provided me with a solid foundation, enriching my knowledge and strengthening my background in design. My mentors and faculty have been my backbone, guiding and supporting me throughout my journey.`,
       name: "Harsh Kumar",
@@ -376,23 +386,43 @@ export const comeToLifeData: ComeToLifeSection = {
   },
   slides: [
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bsc-cse-2026/infrastructure/1.webp",
       alt: "World Class Lab",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bsc-cse-2026/infrastructure/2.webp",
       alt: "Research Facility",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bsc-cse-2026/infrastructure/3.webp",
       alt: "Innovation Center",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bsc-cse-2026/infrastructure/4.webp",
       alt: "Library & Resources",
     },
     {
-      image: "/landingpage/common/image.png",
+      image: "/landingpage/bsc-cse-2026/infrastructure/5.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bsc-cse-2026/infrastructure/6.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bsc-cse-2026/infrastructure/7.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bsc-cse-2026/infrastructure/8.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bsc-cse-2026/infrastructure/9.webp",
+      alt: "Campus Infrastructure",
+    },
+    {
+      image: "/landingpage/bsc-cse-2026/infrastructure/10.webp",
       alt: "Campus Infrastructure",
     },
   ],
@@ -402,7 +432,7 @@ export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
   heading: "Life as a B.Des. Student at KRMU",
   description: "",
   image: {
-    src: "/landingpage/common/test44.jpeg",
+    src: "/landingpage/common/collage.webp",
     alt: "Life as a PhD Scholar at KR Mangalam",
   },
   facilities: [

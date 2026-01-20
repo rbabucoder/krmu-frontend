@@ -17,7 +17,7 @@ const IndustryCollabCard = ({ cardImg, cardDesc, cardLists }: Props) => {
         width={163}
         height={128}
         alt={cardImg?.alternativeText || ""}
-        className="h-[122px]"
+          
       />
       <p className="my-5">{cardDesc}</p>
       <ul>

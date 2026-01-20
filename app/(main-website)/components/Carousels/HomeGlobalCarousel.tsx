@@ -39,10 +39,10 @@ const HomeGlobalCarousel = ({ logos }: GlobalLogosProps) => {
                 >
                   <Image
                     src={`${STRAPI_URL}${logo.url}`}
-                    width={150}
-                    height={107}
+                    width={100}
+                    height={100}
                     alt={logo.alternativeText || "Global Logos"}
-                    className="w-[150px] h-[150px] object-contain"
+                    className="w-[200px] h-[100px] object-contain"
                   />
                 </CarouselItem>
               );

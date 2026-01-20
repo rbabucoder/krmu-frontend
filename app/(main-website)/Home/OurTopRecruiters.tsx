@@ -8,7 +8,6 @@ interface OurTopRecruitProps {
   logos: StrapiMedia[];
 }
 
-
 const OurTopRecruiters: React.FC<OurTopRecruitProps> = ({
   title,
   counters,
@@ -46,8 +45,8 @@ const OurTopRecruiters: React.FC<OurTopRecruitProps> = ({
               {logo.url && (
                 <Image
                   src={`${STRAPI_URL}${logo.url}`}
-                  width={logo.width || 154} // Fallback width
-                  height={logo.height || 67} // Fallback height
+                  width={100} // Fallback width
+                  height={50} // Fallback height
                   alt={logo.alternativeText || "Company Logo"}
                 />
               )}
