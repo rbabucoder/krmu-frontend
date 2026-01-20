@@ -24,7 +24,7 @@ const PublicationAchievements = () => {
               <span className="text-xl uppercase">Publications</span>
             </div>
             <div className="flex flex-col justify-center text-center p-8 text-white">
-              <span className="text-[50px] leading-[1]">8.9</span>
+              <span className="text-[50px] leading-[1]">7.9</span>
               <span className="text-xl uppercase">CITATION INDEX</span>
             </div>
             <div className="flex flex-col justify-center text-center p-8 text-white">

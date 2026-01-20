@@ -38,7 +38,7 @@ const HomeNewsEventsCard: React.FC<HomeNewsEventsCardProps> = async ({
   return (
     <div>
       <div>
-        <Link href={`/news-events/${data.id}`}>
+        <Link href={`/news-events/${data.slug}`}>
           {getImgUrl && (
             <Image
               src={getImgUrl}
