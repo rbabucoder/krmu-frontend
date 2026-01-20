@@ -92,6 +92,7 @@ const page = async () => {
       <Admission2WhatMakes />
       <Admission2Search />
       <Admission2Fee />
+      <Admission2Alumni admAlumni={admAlumni} />
       <AdmissionTableOfContent
         heading={admTOC?.heading}
         highlight={admTOC?.highlightheading}
@@ -100,7 +101,6 @@ const page = async () => {
         tocimg={admTOC?.tocimg}
         tocbtn={admTOC?.tocbtn}
       />
-      <Admission2Alumni admAlumni={admAlumni} />
       <AdmissionLocation />
       <ContactWithUs />
       {/* 

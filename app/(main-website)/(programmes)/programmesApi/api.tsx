@@ -126,7 +126,7 @@ export interface ProgrammesResponse {
   };
 }
 
-export async function getAllSchoolProgrammeByDegOrCatPaginated(
+export async function getAllSchoolProgrammeByDegOrCatPaginated( 
   deg: string = "undergraduate-programmes",
   cat: string = "soet",
   page: number = 1,
@@ -134,7 +134,7 @@ export async function getAllSchoolProgrammeByDegOrCatPaginated(
 ): Promise<ProgrammesResponse> {
   const url =
     `${FETCH_STRAPI_URL}/api/school-programmes` +
-    `?filters[degree][slug][$eq]=${deg}` +
+    `?sort[0]=order_num:asc&filters[degree][slug][$eq]=${deg}` +
     `&filters[school_category][slug][$eq]=${cat}` +
     `&fields[0]=title` +
     `&fields[1]=programmeslug` +

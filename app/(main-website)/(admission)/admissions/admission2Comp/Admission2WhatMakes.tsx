@@ -62,7 +62,7 @@ const Admission2WhatMakes = () => {
             <div className="card-text">
               <h5 className="card-title">Placements and Career Support </h5>
               <p className="card-desc">
-                Over 700 On-Campus Recruiters ,100% Placement Assistance
+                Over 800 On-Campus Recruiters ,100% Placement Assistance
                 ,Placement Interview Training ,Internship Opportunities
               </p>
             </div>
