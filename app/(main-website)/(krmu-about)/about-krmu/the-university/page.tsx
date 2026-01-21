@@ -220,7 +220,7 @@ const page = async () => {
       <AdvisoryOrDean />
       {/* <AdvisoryDean /> */}
       <section className="py-16 bg-[url(/kree-bg.webp)] bg-cover">
-        <div className="max-w-[1600px] mx-auto w-full text-center bg-[url(/honor.webp)] bg-no-repeat bg-cover bg-center">
+        <div className="max-w-[1600px] mx-auto w-full text-center">
           <h3 className="text-white text-5xl font-semibold mb-5">
             {hallOfFameData?.title}
           </h3>

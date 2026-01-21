@@ -33,7 +33,7 @@ const HallofFame: React.FC<HALLFAMEPROP> = ({ fameData }) => {
                 return (
                   <CarouselItem
                     key={fame?.id}
-                    className="md:basis-1/2 xl:basis-1/3"
+                    className="md:basis-1/2 xl:basis-1/3 bg-[url(/honor.webp)] bg-no-repeat bg-cover bg-center"
                   >
                     <div className="text-base text-white text-center min-h-[1px] md:h-[400px] flex items-center justify-center flex-col py-2.5 px-0 md:px-16">
                       <h4 className="text-3xl">{fame?.title} </h4>

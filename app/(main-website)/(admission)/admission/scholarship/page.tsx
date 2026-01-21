@@ -6,6 +6,7 @@ import ScholarUGPG from "./comp/ScholarUGPG";
 import { Metadata } from "next";
 import { folderRouteSEO } from "@/lib/api/siteseo";
 import { STRAPI_URL } from "@/app/constant";
+import ScholarTestimonials from "./comp/ScholarTestimonials";
 
 
 
@@ -76,6 +77,7 @@ const page = () => {
       <ScholarHero />
       <ScholarUGPG />
       <ScholarNotes />
+      <ScholarTestimonials />
     </>
   );
 };

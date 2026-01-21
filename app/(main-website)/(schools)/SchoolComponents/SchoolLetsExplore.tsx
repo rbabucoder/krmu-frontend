@@ -87,7 +87,10 @@ const SchoolLetsExplore = ({ content, list1, list2, list3 }: Props) => {
                         key={list?.id}
                         className="min-h-[135px] h-full flex items-center gap-5 pl-5 py-[5.6px] border-b border-[#051630]"
                       >
-                        <CircleCheckBig className="text-[#2ea975] w-6 h-4" />
+                        <div>
+                          {" "}
+                          <CircleCheckBig className="text-[#2ea975] w-10 h-6" />
+                        </div>
                         <span className="text-base font-medium">
                           {list?.listtext}
                         </span>

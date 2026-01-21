@@ -15,13 +15,69 @@
 
 /* Custom utility class */
 @layer utilities {
+  .rekhi-program-box {
+    background: linear-gradient(
+      135deg,
+      rgba(30, 95, 126, 0.1) 0%,
+      rgba(122, 58, 94, 0.1) 100%
+    );
+    padding: 30px;
+    border-radius: 20px;
+    border-left: 5px solid #7a3a5e;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+  }
 
-  .schIndCollbaheadingPara p{
+  .rekhi-program-box::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(
+      circle,
+      rgba(76, 175, 80, 0.1) 0%,
+      transparent 70%
+    );
+    animation: pulse 3s ease-in-out infinite;
+  }
+
+  .rekhi-program-title {
+    color: #1e5f7e;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    position: relative;
+    z-index: 1;
+    line-height: 1.2;
+  }
+
+  .rekhi-program-description {
+    padding-left: 20px;
+    margin: 10px 0px;
+    list-style: disc;
+  }
+  .rekhi-program-description li{
+    padding: 6px 0px;
+  }
+
+  .indConTabPanel svg {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+  }
+  .scholTestibtn svg {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .schIndCollbaheadingPara p {
     font-size: 16px;
     font-weight: 400;
     margin: 20px 0px;
   }
-
 
   .common-overlay {
     position: relative;
@@ -198,7 +254,8 @@
 
   .libtable table {
     background: #fff;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08),
+    box-shadow:
+      0 1px 3px rgba(0, 0, 0, 0.08),
       inset 0 0 0 1px rgba(255, 255, 255, 0.5);
   }
 
@@ -336,7 +393,9 @@
     transform-style: preserve-3d;
 
     -webkit-transition: -webkit-transform 0.999s;
-    transition: transform 0.999s, -webkit-transform 0.999s;
+    transition:
+      transform 0.999s,
+      -webkit-transform 0.999s;
 
     color: #fff;
   }
@@ -992,7 +1051,7 @@
     margin-bottom: 20px;
   }
 
-  .student_achiev_content ul{
+  .student_achiev_content ul {
     list-style: disc;
     padding-left: 40px;
     margin: 10px 0px;
@@ -1862,7 +1921,8 @@
         rgba(255, 255, 255, 0.01) 32%
       )
       border-box;
-    -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+    -webkit-mask:
+      linear-gradient(#fff 0 0) padding-box,
       linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
@@ -1883,7 +1943,8 @@
         rgba(255, 255, 255, 0.01) 32%
       )
       border-box;
-    -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+    -webkit-mask:
+      linear-gradient(#fff 0 0) padding-box,
       linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
@@ -1905,7 +1966,8 @@
         rgba(255, 255, 255, 0.01) 32%
       )
       border-box;
-    -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+    -webkit-mask:
+      linear-gradient(#fff 0 0) padding-box,
       linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
@@ -1970,9 +2032,20 @@
   }
 
   .school-prog-font {
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
-      "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
-      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family:
+      system-ui,
+      -apple-system,
+      "Segoe UI",
+      Roboto,
+      "Helvetica Neue",
+      "Noto Sans",
+      "Liberation Sans",
+      Arial,
+      sans-serif,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      "Noto Color Emoji";
   }
   .common-prog-container {
     max-width: 650px;
@@ -2502,7 +2575,9 @@
     font-size: 25px;
     color: #0a41a1;
     transform: translateY(-50%);
-    transition: transform 0.2s ease, content 0.2s ease;
+    transition:
+      transform 0.2s ease,
+      content 0.2s ease;
   }
 
   /* Open state: show − */
@@ -2719,7 +2794,8 @@
   .faculty-with-advisory {
     border-radius: 48px;
     background: #ebecec;
-    box-shadow: 0px 1.30061px 2.21381px 0px rgba(0, 0, 0, 0.01),
+    box-shadow:
+      0px 1.30061px 2.21381px 0px rgba(0, 0, 0, 0.01),
       0px 3.12555px 5.32008px 0px rgba(0, 0, 0, 0.02),
       0px 5.88513px 10.01724px 0px rgba(0, 0, 0, 0.03),
       0px 10.49806px 17.86905px 0px rgba(0, 0, 0, 0.03),
@@ -2799,7 +2875,8 @@
 
   .via-black\/20 {
     --tw-gradient-via: #0003;
-    --tw-gradient-via-stops: var(--tw-gradient-position),
+    --tw-gradient-via-stops:
+      var(--tw-gradient-position),
       var(--tw-gradient-from) var(--tw-gradient-from-position),
       var(--tw-gradient-via) var(--tw-gradient-via-position),
       var(--tw-gradient-to) var(--tw-gradient-to-position);
@@ -2818,7 +2895,8 @@
 
   .via-blue-100 {
     --tw-gradient-via: var(--color-blue-100);
-    --tw-gradient-via-stops: var(--tw-gradient-position),
+    --tw-gradient-via-stops:
+      var(--tw-gradient-position),
       var(--tw-gradient-from) var(--tw-gradient-from-position),
       var(--tw-gradient-via) var(--tw-gradient-via-position),
       var(--tw-gradient-to) var(--tw-gradient-to-position);
@@ -2827,7 +2905,8 @@
 
   .via-orange-100 {
     --tw-gradient-via: var(--color-orange-100);
-    --tw-gradient-via-stops: var(--tw-gradient-position),
+    --tw-gradient-via-stops:
+      var(--tw-gradient-position),
       var(--tw-gradient-from) var(--tw-gradient-from-position),
       var(--tw-gradient-via) var(--tw-gradient-via-position),
       var(--tw-gradient-to) var(--tw-gradient-to-position);
@@ -2836,7 +2915,8 @@
 
   .via-purple-100 {
     --tw-gradient-via: var(--color-purple-100);
-    --tw-gradient-via-stops: var(--tw-gradient-position),
+    --tw-gradient-via-stops:
+      var(--tw-gradient-position),
       var(--tw-gradient-from) var(--tw-gradient-from-position),
       var(--tw-gradient-via) var(--tw-gradient-via-position),
       var(--tw-gradient-to) var(--tw-gradient-to-position);
@@ -2845,7 +2925,8 @@
 
   .via-white {
     --tw-gradient-via: var(--color-white);
-    --tw-gradient-via-stops: var(--tw-gradient-position),
+    --tw-gradient-via-stops:
+      var(--tw-gradient-position),
       var(--tw-gradient-from) var(--tw-gradient-from-position),
       var(--tw-gradient-via) var(--tw-gradient-via-position),
       var(--tw-gradient-to) var(--tw-gradient-to-position);
@@ -2968,7 +3049,9 @@
     height: 80%;
   }
   .advisory-zoom-img img {
-    transition: opacity 1s, transform 1s;
+    transition:
+      opacity 1s,
+      transform 1s;
   }
   .advisory-zoom-img:hover img {
     opacity: 0.9;

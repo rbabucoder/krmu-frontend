@@ -33,7 +33,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params; // ✅ no await
 
   const seoData = await getSchoolProgrammeSEO(slug);
-  const seo = seoData?.[0]?.SEO; // ✅ safe access
+  const seoPhdData = await getPHDProgramme(slug);
+
+  let seo = seoData?.[0]?.SEO || seoPhdData[0]?.seo; // ✅ safe access
+  // const phdSeo = seoPhdData[0]?.seo;
 
   // ✅ Fallback if SEO is missing
   if (!seo) {
@@ -129,8 +132,6 @@ const page = async ({ params }: Props) => {
   );
 
   // const singleProgFAQLD = createProgFaqSchema(allFaqs);
-
-  
 
   return (
     <>

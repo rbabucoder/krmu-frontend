@@ -12,6 +12,8 @@ import DeputyCommissioner from "./comp/DeputyCommissioner";
 import { industryConnectSEO } from "@/lib/api/website-seo";
 import { Metadata } from "next";
 import { STRAPI_URL } from "@/app/constant";
+import IndustryConnectAccordion from "./comp/IndustryConnectAccordion";
+import IndusAcadCollab from "./comp2/IndusAcadCollab";
 
 export async function generateMetadata(): Promise<Metadata> {
   const seoData = await industryConnectSEO();
@@ -87,10 +89,17 @@ const page = async () => {
             bgImgURL={getIndustryConnectPageData?.bgimage?.url}
           />
         )}
-        <IndustryPartenerships
+        <div className="py-10">
+          <IndusAcadCollab />
+        </div>
+        <div className="py-10">
+          <IndustryConnectAccordion />
+        </div>
+        {/* <IndustryPartenerships
           title={getIndustryConnectPageData?.partnerships_title}
           logos={getIndustryConnectPageData?.partnership_logos}
         />
+
         <JapeneseCuisines cuisine={getIndustryConnectPageData?.cuisines} />
         <ArtMuralEvent mural={getIndustryConnectPageData?.mural_event} />
         <NetworkingOpportunities
@@ -99,12 +108,12 @@ const page = async () => {
         <ShapingCareer
           shapcareer={getIndustryConnectPageData?.shaping_career}
         />
-        <Seminar seminar={getIndustryConnectPageData?.seminar} />
+
         <IdeaForge forgeData={getIndustryConnectPageData?.idea_forge} />
         <ExpertTalk expertTalk={getIndustryConnectPageData?.expert_talk_role} />
         <DeputyCommissioner
           deput={getIndustryConnectPageData?.deputy_commissioner}
-        />
+        /> */}
       </main>
     </>
   );
