@@ -18,13 +18,13 @@ import AdmissionProcessComp from "../../school-programmes-component/AdmissionPro
 import { getPHDProgramme } from "@/lib/api/phd-programmes";
 import PHDProgrammes from "../PHDProgramme";
 import {
+  createBreadcrumbProgSchema,
   createFaqSchema,
   createProgFaqSchema,
   getSchoolProgrammeSEO,
 } from "@/lib/api/common";
 import { Metadata } from "next";
 import Script from "next/script";
-
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -125,6 +125,11 @@ const page = async ({ params }: Props) => {
 
   const faqToC = singleSchoolProgramme?.toc?.tocfaq || [];
 
+  let schemaSlug = singleSchoolProgramme?.programmeslug || "";
+
+  let schemaTitle =
+    singleSchoolProgramme?.title + "" + singleSchoolProgramme?.highlightitle;
+
   const allFaqs: FAQProg[] = faqToC.flatMap((section) =>
     section.faq.map((item) => ({
       id: item.id,
@@ -136,12 +141,22 @@ const page = async ({ params }: Props) => {
 
   const singleProgFAQLD = createProgFaqSchema(allFaqs);
 
-
+  const breadcrumbSchema = createBreadcrumbProgSchema([
+    { name: "Programs", url: "https://www.krmangalam.edu.in/programs" },
+    {
+      name: schemaTitle,
+      url: `https://www.krmangalam.edu.in/programs/${schemaSlug}`,
+    },
+  ]);
   return (
     <>
       <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: singleProgFAQLD }}
+      />
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: breadcrumbSchema }}
       />
 
       <div

@@ -472,6 +472,22 @@ export function createBreadcrumbSchema(items: BreadcrumbItem[]) {
   return JSON.stringify(schema);
 }
 
+
+export function createBreadcrumbProgSchema(items: BreadcrumbItem[]) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: item.url,
+    })),
+  };
+
+  return JSON.stringify(schema);
+}
+
 type ArticleSchemaProps = {
   url: string;
   headline: string;
