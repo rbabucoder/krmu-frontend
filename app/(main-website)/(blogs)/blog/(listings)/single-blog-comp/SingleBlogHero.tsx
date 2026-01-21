@@ -31,7 +31,7 @@ const SingleBlogHero = ({
     >
       <div className="max-w-[1664px] mx-auto w-full lg:flex items-center gap-[50px] pt-[50px]">
         <div className="lg:w-1/2">
-          <div
+          <h1
             dangerouslySetInnerHTML={{
               __html: title,
             }}
