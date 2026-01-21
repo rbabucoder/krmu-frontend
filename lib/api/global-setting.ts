@@ -10,7 +10,7 @@ export async function getDownloadProspectusSetting(): Promise<
     `${FETCH_STRAPI_URL}/api/controller-setting?fields[0]=download_prospectus_enable_disable&fields[1]=programme_handbook_enable_disable&fields[2]=open_elective_enable_disable&fields[3]=minor_enable_disable`,
     {
       next: {
-        revalidate: 60,
+        revalidate: 600,
       },
     }
   );
@@ -26,7 +26,7 @@ export async function getPageAssets(): Promise<
     `${FETCH_STRAPI_URL}/api/page-asset?fields[0]=css_in_header&fields[1]=js_in_footer`,
     {
       next: {
-        revalidate: 60,
+        revalidate: 600,
       },
     }
   );

@@ -8,7 +8,7 @@ export async function getSingleNewsAndEvents(
     `${FETCH_STRAPI_URL}/api/news-and-events?filters[slug][$eq]=${newsandeventsslug}&populate[bgimg][populate]=*&populate[newsmedia][populate]=*`,
     {
       next: {
-        revalidate: 60,
+        revalidate: 600,
       },
     }
   );
@@ -38,7 +38,7 @@ export async function getSingleNewsAndEventsWP(newsandeventsslug: string = "") {
     `https://www.krmangalam.edu.in/wp-json/wp/v2/events-and-news?slug=${newsandeventsslug}&_fields=id,title,content,featured_media,acf.event_images,slug`,
     {
       next: {
-        revalidate: 60,
+        revalidate: 600,
       },
     }
   );

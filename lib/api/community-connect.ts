@@ -8,7 +8,7 @@ export async function getNSSCommunityConnectData(): Promise<
     `${FETCH_STRAPI_URL}/api/community-connect?populate[nss_connect_connect_img_grid][fields][0]=heading&populate[nss_connect_connect_img_grid][populate][nssimgs][fields][0]=url`,
     {
       next: {
-        revalidate: 60,
+        revalidate: 600,
       },
     }
   );

@@ -6,7 +6,7 @@ export async function getFaqsData(): Promise<FAQsResponse["data"]> {
     `${FETCH_STRAPI_URL}/api/faq?fields[0]=heading&fields[1]=subheading&populate[btn][fields][0]=btn_text&populate[btn][fields][1]=btn_link&populate[faqs][fields][0]=ques&populate[faqs][fields][1]=ans`,
     {
       next: {
-        revalidate: 60,
+        revalidate: 600,
       },
     }
   );

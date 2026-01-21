@@ -8,7 +8,7 @@ export async function getLifeAtKRMUOverviewData(): Promise<
     `${FETCH_STRAPI_URL}/api/life-at-krmu-overview?fields[0]=heading&fields[1]=subheading&populate[overview_video][fields][0]=url&populate[hear_it_testimonials][fields][0]=name&populate[hear_it_testimonials][fields][1]=qualification&populate[hear_it_testimonials][fields][2]=info&populate[hear_it_testimonials][populate][img][fields][0]=url`,
     {
       next: {
-        revalidate: 60,
+        revalidate: 600,
       },
     }
   );
@@ -65,7 +65,7 @@ export async function getLifeAtKRMUOverviewLatestEvents():Promise<OverviewEvents
     `https://krmangalam.edu.in/wp-json/wp/v2/events-and-news?per_page=20&orderby=date&order=desc&_fields=id,title,slug,excerpt,featured_media`,
     {
       next: {
-        revalidate: 60,
+        revalidate: 600,
       },
     }
   );

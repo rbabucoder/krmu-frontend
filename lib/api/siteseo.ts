@@ -111,7 +111,7 @@ export async function folderRouteSEO(
     `${FETCH_STRAPI_URL}/api/site-seos?sort[0]=title:asc&filters[slug][$eq]=${slug}&fields[0]=title&fields[1]=metaDescription&fields[2]=canonicalUrl&fields[3]=index&fields[4]=keyword&populate[shareImg][fields][0]=url`,
     {
       next: {
-        revalidate: 60,
+        revalidate: 600,
       },
     }
   );

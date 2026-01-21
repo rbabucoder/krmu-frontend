@@ -43,7 +43,7 @@ export async function getSchoolSEO(
     `${FETCH_STRAPI_URL}/api/schools?filters[urlslug][$eq]=${slug}&fields[0]=schoolname&populate[school_seo][populate][shareImage][fields][0]=url`,
     {
       next: {
-        revalidate: 60,
+        revalidate: 600,
       },
     }
   );

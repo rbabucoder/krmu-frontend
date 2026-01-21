@@ -15,7 +15,7 @@ export async function getAllProgramme(
   const res = await fetch(
     `${FETCH_STRAPI_URL}/api/school-programmes?${queryParams.toString()}`,
     {
-      next: { revalidate: 60 },
+      next: { revalidate: 600 },
     }
   );
 

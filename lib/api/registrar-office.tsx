@@ -33,7 +33,7 @@ export async function getRegistrarOfficeData(): Promise<
     `${FETCH_STRAPI_URL}/api/registrar-office?populate[registrarimage]=true&populate[breadcrumb][fields][0]=breadcrumbtext&populate[breadcrumb][fields][1]=breadcrumbbgcolor&populate[breadcrumb][populate][backgroundimage]=true&populate[department][fields][0]=departmentname&populate[department][populate][employeecard][populate][employeeimage]=true`,
     {
       next: {
-        revalidate: 60,
+        revalidate: 600,
       },
     }
   );

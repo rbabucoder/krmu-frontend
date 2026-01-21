@@ -19,7 +19,7 @@ import { BlogImageIdResponse } from "../types/blogs/single-blog";
 export async function getAlumniData(): Promise<AlumniApiResponse["data"]> {
   const res = await fetch(`${FETCH_STRAPI_URL}/api/alumnis?populate=*`, {
     next: {
-      revalidate: 60,
+      revalidate: 600,
     },
   });
 
@@ -31,7 +31,7 @@ export async function getAlumniData(): Promise<AlumniApiResponse["data"]> {
 export async function getFacilityData(): Promise<FacilityAPIResponse["data"]> {
   const res = await fetch(`${FETCH_STRAPI_URL}/api/facilities?populate=*`, {
     next: {
-      revalidate: 60,
+      revalidate: 600,
     },
   });
 
@@ -77,7 +77,7 @@ export async function getTopbarData(): Promise<TOPBARResponse["data"]> {
     `${FETCH_STRAPI_URL}/api/topbar-menu?populate[TopbarMenuItems]=true&populate[topbarsociallinks][populate][socialicon]=true&populate[topbarsociallinks][fields][0]=url`,
     {
       next: {
-        revalidate: 60,
+        revalidate: 600,
       },
     },
   );
@@ -92,7 +92,7 @@ export async function getMainMenu() {
     `${FETCH_STRAPI_URL}/api/main-menu?populate[MainMenuItems][on][menu.dropdown-menu][fields][0]=title&populate[MainMenuItems][on][menu.dropdown-menu][populate][menu_sections][populate]=*&populate[MainMenuItems][on][menu.dropdown-menu][populate][menuimg][populate]=*&populate[MainMenuItems][on][menu.menu-button][populate]=*&populate[MainMenuItems][on][menu.menu-links][populate]=*`,
     {
       next: {
-        revalidate: 60,
+        revalidate: 600,
       },
     },
   );
@@ -213,7 +213,7 @@ export async function getHeaderMenu(): Promise<HeaderMenuResponse["data"]> {
 export async function getMetaInfo(): Promise<GlobalResponse["data"]> {
   const res = await fetch(`${FETCH_STRAPI_URL}/api/global?populate=*`, {
     next: {
-      revalidate: 60,
+      revalidate: 600,
     },
   });
   if (!res.ok) throw new Error("Failed to fetch Meta info Data");
@@ -229,7 +229,7 @@ export async function getAdvisoryBoard(): Promise<
     `${FETCH_STRAPI_URL}/api/advisory-board?populate[advisoryboard][fields][0]=title&populate[advisoryboard][fields][1]=advisoryboardinfo&populate[advisoryboard][populate][advisoryimage]=true`,
     {
       next: {
-        revalidate: 60,
+        revalidate: 600,
       },
     },
   );
@@ -246,7 +246,7 @@ export async function getSchoolStudentAchievements(
     `${FETCH_STRAPI_URL}/api/student-achievements?sort[0]=updatedAt:desc&filters[school_categories][name][$eq]=${cat}&populate[achivementimage]=true&pagination[pageSize]=3&pagination[page]=1&status=published&locale[0]=en`,
     {
       next: {
-        revalidate: 60,
+        revalidate: 600,
       },
     },
   );
@@ -261,7 +261,7 @@ export async function getSchoolStudentAchievements(
 //     `${FETCH_STRAPI_URL}/api/events?filters[school_category][slug][$eq]=${cat}&populate=*`,
 //     {
 //       next: {
-//         revalidate: 60,
+//         revalidate: 600,
 //       },
 //     }
 //   );
@@ -275,7 +275,7 @@ export async function getSchoolStudentAchievements(
 //     `${FETCH_STRAPI_URL}/api/events?filters[school_category][slug][$eq]=${cat}&populate=*`,
 //     {
 //       next: {
-//         revalidate: 60,
+//         revalidate: 600,
 //       },
 //     }
 //   );
@@ -291,7 +291,7 @@ export async function getSchoolStudentAchievements(
 //     `${FETCH_STRAPI_URL}/api/custom-pages?filters[slug][$eq]=${slug}&fields[0]=enable_disable_custom_page&fields[1]=slug`,
 //     {
 //       next: {
-//         revalidate: 60,
+//         revalidate: 600,
 //       },
 //     }
 //   );
@@ -305,7 +305,7 @@ export async function isCustomPage(slug: string = ""): Promise<CustomPage[]> {
   try {
     const res = await fetch(
       `${FETCH_STRAPI_URL}/api/custom-pages?filters[slug][$eq]=${slug}&fields[0]=slug&fields[1]=enable_disable_custom_page&status=published&locale[0]=en`,
-      { next: { revalidate: 60 } },
+      { next: { revalidate: 600 } },
     );
     if (!res.ok) return [];
     const json: CustomPageResponse = await res.json();
@@ -324,7 +324,7 @@ export async function getSchoolProgrammeSEO(
     `${FETCH_STRAPI_URL}/api/school-programmes?filters[programmeslug][$eq]=${slug}&fields[0]=programmeslug&populate[SEO][fields][0]=metaTitle&populate[SEO][fields][1]=metaDescription&populate[SEO][fields][2]=metaKeyword&populate[SEO][fields][3]=canonical&populate[SEO][fields][4]=noIndex&populate[SEO][fields][5]=tags`,
     {
       next: {
-        revalidate: 60,
+        revalidate: 600,
       },
     },
   );
@@ -395,7 +395,7 @@ export async function getWordImageById(imgId: number): Promise<string> {
   const res = await fetch(
     `${KRMUWordUrl}/wp-json/wp/v2/media/${imgId}?_fields=guid`,
     {
-      next: { revalidate: 60 },
+      next: { revalidate: 600 },
     },
   );
 

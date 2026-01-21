@@ -11,7 +11,7 @@ export async function getAllJobsOrAlsoWithSearch(
   }`;
 
   const res = await fetch(url, {
-    next: { revalidate: 60 },
+    next: { revalidate: 600 },
   });
 
   if (!res.ok) throw new Error("Failed to fetch jobs");
@@ -23,7 +23,7 @@ export async function getAllJobsOrAlsoWithSearch(
 //     "https://www.krmangalam.edu.in/careers/wp-json/wp/v2/awsm_job_openings?page=1&per_page=60&_fields=id,slug,title.rendered",
 //     {
 //       next: {
-//         revalidate: 60,
+//         revalidate: 600,
 //       },
 //     }
 //   );
@@ -37,7 +37,7 @@ export async function getSingleJobBySlug(slug: string = "") {
     `${KRMUWordUrl}/careers2/wp-json/wp/v2/awsm_job_openings?per_page=1&slug=${slug}&_fields=id,content,title,date,slug,class_list`,
     {
       next: {
-        revalidate: 60,
+        revalidate: 600,
       },
     }
   );
@@ -50,7 +50,7 @@ export async function getCareerPageData(): Promise<CareerPageResponse["data"]> {
     `${FETCH_STRAPI_URL}/api/career?populate[openings][populate][opening_btn][fields][0]=btn_text&populate[openings][populate][opening_btn][fields][1]=btn_link`,
     {
       next: {
-        revalidate: 60,
+        revalidate: 600,
       },
     }
   );

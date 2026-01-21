@@ -8,7 +8,7 @@ export async function getKRMUCampusFacility(): Promise<
     `${FETCH_STRAPI_URL}/api/krmu-campus-facility?populate[state_of_art][fields][0]=heading&populate[state_of_art][fields][1]=content&populate[state_of_art][populate][state_of_the_art_imgs][fields][0]=url&populate[lab_workshops][fields][0]=heading&populate[lab_workshops][fields][1]=content&populate[lab_workshops][populate][lab_workshop_imgs][fields][0]=url&populate[modern_classroom][fields][0]=heading&populate[modern_classroom][fields][1]=content&populate[modern_classroom][populate][modern_classrooms_imgs][fields][0]=url&populate[comfy_hostel][fields][0]=heading&populate[comfy_hostel][fields][1]=content&populate[comfy_hostel][populate][comfy_slide_imgs][fields][0]=url&populate[sport_fitness][fields][0]=heading&populate[sport_fitness][fields][1]=content&populate[sport_fitness][populate][sport_fitness_imgs][fields][0]=url&populate[research_support][fields][0]=heading&populate[research_support][fields][1]=content&populate[research_support][populate][research_support_imgs][fields][0]=url&populate[aesthetics_cafeteria][fields][0]=heading&populate[aesthetics_cafeteria][fields][1]=content&populate[aesthetics_cafeteria][populate][aethetics_cafeteria_imgs][fields][0]=url`,
     {
       next: {
-        revalidate: 60,
+        revalidate: 600,
       },
     }
   );

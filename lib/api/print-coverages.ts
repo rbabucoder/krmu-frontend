@@ -9,7 +9,7 @@ export async function getPrintCoverageAccordingToYear(year: number = 2025) {
     `${FETCH_STRAPI_URL}/api/print-coverages?filters[print_coverage_years][Years][$eq]=${year}&populate[upload_data]=true&populate[print_coverage_years]=true`,
     {
       next: {
-        revalidate: 60,
+        revalidate: 600,
       },
     }
   );
@@ -24,7 +24,7 @@ export async function getAllPrintCoverageYears() {
       `${FETCH_STRAPI_URL}/api/print-coverage-years?populate=*`,
       {
         next: {
-          revalidate: 60,
+          revalidate: 600,
         },
       }
     );

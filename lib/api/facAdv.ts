@@ -8,7 +8,7 @@ export async function getFacultyAdvisory(): Promise<
     `${FETCH_STRAPI_URL}/api/faculties?filters[faculty_type][$eq]=Advisory&fields[0]=faculty_name&fields[1]=faculty_type&fields[2]=facultyslug&fields[3]=faculty_card_desg&populate[faculty_img][fields][0]=url`,
     {
       next: {
-        revalidate: 60,
+        revalidate: 600,
       },
     }
   );

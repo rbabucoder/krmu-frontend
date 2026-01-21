@@ -5,7 +5,7 @@ export async function getCDCTeam(): Promise<CdcTeamResponse["data"]> {
     `${FETCH_STRAPI_URL}/api/career-development-centre-teams?fields[0]=cdc_name&fields[1]=cdc_designation&populate[cdc_team_img][fields][0]=url&pagination[pageSize]=30&pagination[page]=1`,
     {
       next: {
-        revalidate: 60,
+        revalidate: 600,
       },
     }
   );

@@ -8,7 +8,7 @@ export async function getProgrammePageData(): Promise<
     `${FETCH_STRAPI_URL}/api/programme?populate[alumni][populate]=*`,
     {
       next: {
-        revalidate: 60,
+        revalidate: 600,
       },
     }
   );

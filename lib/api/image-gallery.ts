@@ -9,7 +9,7 @@ export async function getImageGalleryPageData() {
     `${FETCH_STRAPI_URL}/api/image-gallery-page?fields[0]=title&populate[bgimage][populate]=*&status=published&locale[0]=en`,
     {
       next: {
-        revalidate: 60,
+        revalidate: 600,
       },
     }
   );
@@ -33,7 +33,7 @@ export async function getAllImageUsingMeta() {
     `${FETCH_STRAPI_URL}/api/photo-galleries?sort[0]=order_num:asc&populate[gallery_images][populate]=*&fields[0]=title&fields[1]=slug&fields[2]=publishedAt&fields[3]=published_date_text&pagination[pageSize]=50&pagination[page]=1`,
     {
       next: {
-        revalidate: 60,
+        revalidate: 600,
       },
     }
   );

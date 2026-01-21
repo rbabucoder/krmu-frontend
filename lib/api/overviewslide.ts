@@ -6,7 +6,7 @@ export async function getOverviewEvents(): Promise<NewsListResponse["data"]> {
     `${FETCH_STRAPI_URL}/api/news-and-events?sort[0]=title:asc&populate[newsmedia][fields][0]=url&fields[0]=title&fields[1]=slug&fields[2]=content&pagination[pageSize]=30&pagination[page]=1`,
     {
       next: {
-        revalidate: 60,
+        revalidate: 600,
       },
     }
   );

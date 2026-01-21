@@ -7,7 +7,7 @@ export async function getCorpAdvisoryTeamData(): Promise<
     `${FETCH_STRAPI_URL}/api/corporate-advisory-boards?fields[0]=name&fields[1]=corp_adv_info&populate[corp_adv_img][fields][0]=url&pagination[pageSize]=20&pagination[page]=1`,
     {
       next: {
-        revalidate: 60,
+        revalidate: 600,
       },
     }
   );

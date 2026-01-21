@@ -8,7 +8,7 @@ export async function getDeansHonorsData(): Promise<
     `${FETCH_STRAPI_URL}/api/dean-honor-list?fields[0]=title&populate[herobg]=true&populate[dean_honor_acc][fields][0]=title&populate[dean_honor_acc][populate][dean_honor_html][populate]=*`,
     {
       next: {
-        revalidate: 60,
+        revalidate: 600,
       },
     }
   );

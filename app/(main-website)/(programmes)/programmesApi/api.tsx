@@ -7,7 +7,7 @@ export async function getAllSchoolsInfo() {
     `${FETCH_STRAPI_URL}/api/schools?fields[0]=schoolname&populate[school_category][fields][0]=name&populate[school_category][fields][1]=slug`,
     {
       next: {
-        revalidate: 60,
+        revalidate: 600,
       },
     }
   );
@@ -21,7 +21,7 @@ export async function getAllDegreeInfo() {
     `${FETCH_STRAPI_URL}/api/degrees?sort[0]=name:desc&fields[0]=name&fields[1]=slug`,
     {
       next: {
-        revalidate: 60,
+        revalidate: 600,
       },
     }
   );
@@ -143,7 +143,7 @@ export async function getAllSchoolProgrammeByDegOrCatPaginated(
     `&pagination[pageSize]=${pageSize}`;
 
   const res = await fetch(url, {
-    next: { revalidate: 60 },
+    next: { revalidate: 600 },
   });
 
   if (!res.ok) throw new Error("Failed to fetch programmes");
@@ -200,7 +200,7 @@ export async function getAllSchoolPhdProgrammeByCatPaginated(
     `&pagination[pageSize]=${pageSize}`;
 
   const res = await fetch(url, {
-    next: { revalidate: 60 },
+    next: { revalidate: 600 },
   });
 
   if (!res.ok) {
@@ -232,7 +232,7 @@ export async function searchSchoolProgrammes(
 
   const url = `${FETCH_STRAPI_URL}/api/school-programmes?${queryParams.toString()}`;
 
-  const res = await fetch(url, { next: { revalidate: 60 } });
+  const res = await fetch(url, { next: { revalidate: 600 } });
   if (!res.ok) throw new Error("Failed to fetch school programmes");
 
   return res.json();
@@ -258,7 +258,7 @@ export async function searchPhdProgrammes(
 
   const url = `${FETCH_STRAPI_URL}/api/phd-single-programmes?${queryParams.toString()}`;
 
-  const res = await fetch(url, { next: { revalidate: 60 } });
+  const res = await fetch(url, { next: { revalidate: 600 } });
   if (!res.ok) throw new Error("Failed to fetch PhD programmes");
 
   return res.json();

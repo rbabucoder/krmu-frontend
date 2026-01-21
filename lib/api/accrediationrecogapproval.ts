@@ -8,7 +8,7 @@ export async function getAccrediationRecognitionApprovalData(): Promise<
     `${FETCH_STRAPI_URL}/api/accreditations-recognition-and-approval?populate[accrediationrecogapprovals][fields][0]=cardtitle&populate[accrediationrecogapprovals][fields][1]=cardurl&populate[accrediationrecogapprovals][populate][cardimg]=true`,
     {
       next: {
-        revalidate: 60,
+        revalidate: 600,
       },
     }
   );

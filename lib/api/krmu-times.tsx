@@ -8,7 +8,7 @@ export async function getKRMUTimesPageData(): Promise<
     `${FETCH_STRAPI_URL}/api/krmu-time?fields[0]=heading&populate[krmu_time_cards][fields][0]=pdf_url&populate[krmu_time_cards][populate][img][fields][0]=url`,
     {
       next: {
-        revalidate: 60,
+        revalidate: 600,
       },
     }
   );
