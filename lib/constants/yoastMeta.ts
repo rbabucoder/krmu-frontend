@@ -20,13 +20,16 @@ export type YoastHeadJson = {
   og_image: BlogOgImage[];
 };
 
+const removeTrailingSlash = (url: string) =>
+  url.endsWith("/") ? url.slice(0, -1) : url;
 export function yoastToMetadata(yoast: YoastHeadJson): Metadata {
+  const canonical = removeTrailingSlash(yoast.canonical);
   return {
     title: yoast.title,
     description: yoast.description,
 
     alternates: {
-      canonical: yoast.canonical,
+      canonical: canonical,
     },
 
     robots: {
