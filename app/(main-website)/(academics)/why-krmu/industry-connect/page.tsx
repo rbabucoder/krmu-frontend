@@ -1,26 +1,80 @@
 import { getIndustryConnectPage } from "@/lib/api/industry-connect";
 import IndustryHero from "./comp/IndustryHero";
-import IndustryPartenerships from "./comp/IndustryPartenerships";
-import JapeneseCuisines from "./comp/JapeneseCuisines";
-import ArtMuralEvent from "./comp/ArtMuralEvent";
-import NetworkingOpportunities from "./comp/NetworkingOpportunities";
-import ShapingCareer from "./comp/ShapingCareer";
-import Seminar from "./comp/Seminar";
-import IdeaForge from "./comp/IdeaForge";
-import ExpertTalk from "./comp/ExpertTalk";
-import DeputyCommissioner from "./comp/DeputyCommissioner";
-import { industryConnectSEO } from "@/lib/api/website-seo";
+
 import { Metadata } from "next";
 import { STRAPI_URL } from "@/app/constant";
 import IndustryConnectAccordion from "./comp/IndustryConnectAccordion";
 import IndusAcadCollab from "./comp2/IndusAcadCollab";
+import { folderRouteSEO } from "@/lib/api/siteseo";
+import IndustryPartenerships from "./comp/IndustryPartenerships";
+
+// export async function generateMetadata(): Promise<Metadata> {
+//   const seoData = await industryConnectSEO();
+//   const seo = seoData?.seo;
+
+//   const shareImageUrl = seo?.shareImage?.url
+//     ? `${STRAPI_URL}${seo?.shareImage?.url}`
+//     : undefined;
+
+//   // ✅ Fallback if SEO is missing
+//   if (!seo) {
+//     return {
+//       title: "K.R. Mangalam University",
+//       description: "",
+//       robots: {
+//         index: true,
+//         follow: true,
+//       },
+//     };
+//   }
+
+//   return {
+//     title: seo?.metaTitle || "K.R. Mangalam University",
+//     description: seo?.metaDescription || "",
+//     keywords: seo?.metaKeyword || "",
+//     alternates: {
+//       canonical: seo?.canonical || "",
+//     },
+//     robots: {
+//       index: seo?.noIndex === false,
+//       follow: true,
+//     },
+
+//     // ✅ Open Graph (Facebook, LinkedIn, WhatsApp)
+//     openGraph: {
+//       title: seo?.metaTitle || "K.R. Mangalam University",
+//       description: seo?.metaDescription || "",
+//       url: seo?.canonical || "",
+//       siteName: "K.R. Mangalam University",
+//       images: shareImageUrl
+//         ? [
+//             {
+//               url: shareImageUrl,
+//               width: 1200,
+//               height: 630,
+//               alt: seo?.metaTitle || "K.R. Mangalam University",
+//             },
+//           ]
+//         : [],
+//       type: "website",
+//     },
+
+//     // ✅ Twitter Card
+//     twitter: {
+//       card: "summary_large_image",
+//       title: seo?.metaTitle || "K.R. Mangalam University",
+//       description: seo?.metaDescription || "",
+//       images: shareImageUrl ? [shareImageUrl] : [],
+//     },
+//   };
+// }
 
 export async function generateMetadata(): Promise<Metadata> {
-  const seoData = await industryConnectSEO();
-  const seo = seoData?.seo;
+  const seoData = await folderRouteSEO("industryconnect");
+  const seo = seoData[0];
 
-  const shareImageUrl = seo?.shareImage?.url
-    ? `${STRAPI_URL}${seo?.shareImage?.url}`
+  const shareImageUrl = seo?.shareImg?.url
+    ? `${STRAPI_URL}${seo?.shareImg?.url}`
     : undefined;
 
   // ✅ Fallback if SEO is missing
@@ -36,22 +90,22 @@ export async function generateMetadata(): Promise<Metadata> {
   }
 
   return {
-    title: seo?.metaTitle || "K.R. Mangalam University",
+    title: seo?.title || "K.R. Mangalam University",
     description: seo?.metaDescription || "",
-    keywords: seo?.metaKeyword || "",
+    keywords: seo?.keyword || "",
     alternates: {
-      canonical: seo?.canonical || "",
+      canonical: seo?.canonicalUrl || "",
     },
     robots: {
-      index: seo?.noIndex === false,
+      index: seo?.index === false,
       follow: true,
     },
 
     // ✅ Open Graph (Facebook, LinkedIn, WhatsApp)
     openGraph: {
-      title: seo?.metaTitle || "K.R. Mangalam University",
+      title: seo?.title || "K.R. Mangalam University",
       description: seo?.metaDescription || "",
-      url: seo?.canonical || "",
+      url: seo?.canonicalUrl || "",
       siteName: "K.R. Mangalam University",
       images: shareImageUrl
         ? [
@@ -59,7 +113,7 @@ export async function generateMetadata(): Promise<Metadata> {
               url: shareImageUrl,
               width: 1200,
               height: 630,
-              alt: seo?.metaTitle || "K.R. Mangalam University",
+              alt: seo?.title || "K.R. Mangalam University",
             },
           ]
         : [],
@@ -69,7 +123,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // ✅ Twitter Card
     twitter: {
       card: "summary_large_image",
-      title: seo?.metaTitle || "K.R. Mangalam University",
+      title: seo?.title || "K.R. Mangalam University",
       description: seo?.metaDescription || "",
       images: shareImageUrl ? [shareImageUrl] : [],
     },
@@ -89,17 +143,18 @@ const page = async () => {
             bgImgURL={getIndustryConnectPageData?.bgimage?.url}
           />
         )}
+        <IndustryPartenerships
+          title={getIndustryConnectPageData?.partnerships_title}
+          logos={getIndustryConnectPageData?.partnership_logos}
+        />
+
         <div className="py-10">
           <IndusAcadCollab />
         </div>
         <div className="py-10">
           <IndustryConnectAccordion />
         </div>
-        {/* <IndustryPartenerships
-          title={getIndustryConnectPageData?.partnerships_title}
-          logos={getIndustryConnectPageData?.partnership_logos}
-        />
-
+        {/* 
         <JapeneseCuisines cuisine={getIndustryConnectPageData?.cuisines} />
         <ArtMuralEvent mural={getIndustryConnectPageData?.mural_event} />
         <NetworkingOpportunities

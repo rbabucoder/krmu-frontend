@@ -5,7 +5,7 @@ import { folderRouteSEO } from "@/lib/api/siteseo";
 import { STRAPI_URL } from "@/app/constant";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const seoData = await folderRouteSEO("research-centre");
+  const seoData = await folderRouteSEO("researchcentre");
   const seo = seoData[0];
 
   const shareImageUrl = seo?.shareImg?.url

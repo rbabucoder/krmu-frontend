@@ -14,7 +14,7 @@ import { folderRouteSEO } from "@/lib/api/siteseo";
 
 
 export async function generateMetadata(): Promise<Metadata> {
-  const seoData = await folderRouteSEO("placement-highlights");
+  const seoData = await folderRouteSEO("placementhighlights");
   const seo = seoData[0];
 
   const shareImageUrl = seo?.shareImg?.url
