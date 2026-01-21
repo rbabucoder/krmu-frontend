@@ -22,6 +22,11 @@ const SingleBlogHero = ({
   imgId,
   authorSlug,
 }: SingleBlogProps) => {
+
+    if (imgUrl) {
+    imgUrl = imgUrl.replace("/blog/wp-content", "/wp-content");
+  }
+
   return (
     <section
       className="pt-[106px] pb-10 px-5 sm:px-10"
