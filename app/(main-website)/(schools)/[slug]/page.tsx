@@ -54,7 +54,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: seo?.canonical || "",
     },
     robots: {
-      index: seo?.noIndex === false,
+      index: true,
       follow: true,
     },
 

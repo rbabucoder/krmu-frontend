@@ -25,6 +25,7 @@ import {
 import { Metadata } from "next";
 import Script from "next/script";
 
+
 type Props = {
   params: Promise<{ slug: string }>;
 };
@@ -133,14 +134,15 @@ const page = async ({ params }: Props) => {
     })),
   );
 
-  // const singleProgFAQLD = createProgFaqSchema(allFaqs);
+  const singleProgFAQLD = createProgFaqSchema(allFaqs);
+
 
   return (
     <>
-      {/* <Script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: singleProgFAQLD }}
-      /> */}
+      />
 
       <div
         className={`p-0 m-0 ${tagsArray.map((tag) => `tag-${tag}`).join(" ")}`}

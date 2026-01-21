@@ -34,7 +34,7 @@ import { folderRouteSEO } from "@/lib/api/siteseo";
 //       canonical: seo?.canonical || "",
 //     },
 //     robots: {
-//       index: seo?.noIndex === false,
+//       index: true,
 //       follow: true,
 //     },
 

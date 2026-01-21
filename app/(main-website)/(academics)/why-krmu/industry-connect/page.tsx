@@ -36,7 +36,7 @@ import IndustryPartenerships from "./comp/IndustryPartenerships";
 //       canonical: seo?.canonical || "",
 //     },
 //     robots: {
-//       index: seo?.noIndex === false,
+//       index: true,
 //       follow: true,
 //     },
 
