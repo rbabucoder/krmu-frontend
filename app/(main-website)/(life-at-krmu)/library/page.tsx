@@ -57,7 +57,7 @@ import Journals from "./tabs/Journals";
 //       canonical: seo?.canonicalUrl || "",
 //     },
 //     robots: {
-//       index: seo?.index === false,
+//       index: true,
 //       follow: true,
 //     },
 
