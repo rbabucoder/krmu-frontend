@@ -35,7 +35,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const seoData = await getSchoolProgrammeSEO(slug);
   const seoPhdData = await getPHDProgramme(slug);
 
-  let seo = seoData?.[0]?.SEO || seoPhdData[0]?.seo; // ✅ safe access
+  // let seo = seoData?.[0]?.SEO || seoPhdData[0]?.seo; // ✅ safe access
+  const seo = seoData?.[0]?.SEO ?? seoPhdData?.[0]?.seo ?? null;
+
   // const phdSeo = seoPhdData[0]?.seo;
 
   // ✅ Fallback if SEO is missing
