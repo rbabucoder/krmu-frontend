@@ -9,48 +9,47 @@ import { TOPBARITEMS } from "@/lib/types/HeaderType";
 type Props = {
   navbarData: HeaderMenus[];
   topbarmenu: TOPBARITEMS[];
+  onClose: () => void;
 };
 
-const MobileHeader = ({ topbarmenu, navbarData }: Props) => {
+const MobileHeader = ({ topbarmenu, navbarData, onClose }: Props) => {
   const [openMenu, setOpenMenu] = useState<string | null>(null);
 
   const toggleMenu = (menu: string) => {
     setOpenMenu(openMenu === menu ? null : menu);
   };
 
-
-
   const academicMenu = navbarData.find(
-    (component) => component.__component === "temp-menus.academic-menu"
+    (component) => component.__component === "temp-menus.academic-menu",
   );
 
   const programmesLinks = navbarData.find(
-    (component) => component.title === "Programmes"
+    (component) => component.title === "Programmes",
   );
   const careersLinks = navbarData.find(
-    (component) => component.title === "Careers"
+    (component) => component.title === "Careers",
   );
 
   const sustainabilityLinks = navbarData.find(
-    (component) => component.title === "Sustainability"
+    (component) => component.title === "Sustainability",
   );
 
   const admissionMenu = navbarData.find(
-    (component) => component.__component === "temp-menus.admissions"
+    (component) => component.__component === "temp-menus.admissions",
   );
   const placementMenu = navbarData.find(
-    (component) => component.__component === "temp-menus.placement-menu"
+    (component) => component.__component === "temp-menus.placement-menu",
   );
   const researchMenu = navbarData.find(
-    (component) => component.__component === "temp-menus.research-menu"
+    (component) => component.__component === "temp-menus.research-menu",
   );
 
   const lifeatkrmuMenu = navbarData.find(
-    (component) => component.__component === "temp-menus.life-at-krmu"
+    (component) => component.__component === "temp-menus.life-at-krmu",
   );
 
   const aboutusMenu = navbarData.find(
-    (component) => component.__component === "temp-menus.about-us-menu"
+    (component) => component.__component === "temp-menus.about-us-menu",
   );
 
   return (
@@ -92,7 +91,8 @@ const MobileHeader = ({ topbarmenu, navbarData }: Props) => {
                         <li key={menu?.id}>
                           <Link
                             href={menu?.url || "#"}
-                            className="text-black text-[13px] font-normal"
+                            className={`text-black text-[13px] font-normal`}
+                            onClick={onClose}
                           >
                             {menu?.title}
                           </Link>
@@ -111,6 +111,7 @@ const MobileHeader = ({ topbarmenu, navbarData }: Props) => {
                           <Link
                             href={menu?.url || "#"}
                             className="text-black text-[13px] font-normal"
+                            onClick={onClose}
                           >
                             {menu?.title}
                           </Link>
@@ -124,7 +125,7 @@ const MobileHeader = ({ topbarmenu, navbarData }: Props) => {
             {programmesLinks &&
               programmesLinks.__component === "menu.menu-links" && (
                 <li className="pt-2.5 pb-4 text-white font-semibold">
-                  <Link href={programmesLinks?.url || "#"}>
+                  <Link href={programmesLinks?.url || "#"} onClick={onClose}>
                     {programmesLinks?.title}
                   </Link>
                 </li>
@@ -162,6 +163,7 @@ const MobileHeader = ({ topbarmenu, navbarData }: Props) => {
                           <Link
                             href={menu?.url || "#"}
                             className="text-black text-[13px] font-normal"
+                            onClick={onClose}
                           >
                             {menu?.title}
                           </Link>
@@ -179,6 +181,7 @@ const MobileHeader = ({ topbarmenu, navbarData }: Props) => {
                           <Link
                             href={menu?.url || "#"}
                             className="text-black text-[13px] font-normal"
+                            onClick={onClose}
                           >
                             {menu?.title}
                           </Link>
@@ -221,6 +224,7 @@ const MobileHeader = ({ topbarmenu, navbarData }: Props) => {
                           <Link
                             href={menu?.url || "#"}
                             className="text-black text-[13px] font-normal"
+                            onClick={onClose}
                           >
                             {menu?.title}
                           </Link>
@@ -263,6 +267,7 @@ const MobileHeader = ({ topbarmenu, navbarData }: Props) => {
                           <Link
                             href={menu?.url || "#"}
                             className="text-black text-[13px] font-normal"
+                            onClick={onClose}
                           >
                             {menu?.title}
                           </Link>
@@ -276,7 +281,10 @@ const MobileHeader = ({ topbarmenu, navbarData }: Props) => {
             {sustainabilityLinks &&
               sustainabilityLinks.__component === "menu.menu-links" && (
                 <li className="pt-2.5 pb-4 text-white font-semibold">
-                  <Link href={sustainabilityLinks?.url || "#"}>
+                  <Link
+                    href={sustainabilityLinks?.url || "#"}
+                    onClick={onClose}
+                  >
                     {sustainabilityLinks?.title}
                   </Link>
                 </li>
@@ -313,6 +321,7 @@ const MobileHeader = ({ topbarmenu, navbarData }: Props) => {
                           <Link
                             href={menu?.url || "#"}
                             className="text-black text-[13px] font-normal"
+                            onClick={onClose}
                           >
                             {menu?.title}
                           </Link>
@@ -325,6 +334,7 @@ const MobileHeader = ({ topbarmenu, navbarData }: Props) => {
                           <Link
                             href={menu?.url || "#"}
                             className="text-black text-[13px] font-normal"
+                            onClick={onClose}
                           >
                             {menu?.title}
                           </Link>
@@ -366,6 +376,7 @@ const MobileHeader = ({ topbarmenu, navbarData }: Props) => {
                             <Link
                               href={menu?.url || "#"}
                               className="text-black text-[13px] font-normal"
+                              onClick={onClose}
                             >
                               {menu?.title}
                             </Link>
@@ -379,7 +390,7 @@ const MobileHeader = ({ topbarmenu, navbarData }: Props) => {
             </li>
             {careersLinks && careersLinks.__component === "menu.menu-links" && (
               <li className="pt-2.5 pb-4 text-white font-semibold">
-                <Link href={careersLinks?.url || "#"}>
+                <Link href={careersLinks?.url || "#"} onClick={onClose}>
                   {careersLinks?.title}
                 </Link>
               </li>
@@ -396,6 +407,7 @@ const MobileHeader = ({ topbarmenu, navbarData }: Props) => {
                 href={menu?.url || "#"}
                 target="_blank"
                 className="text-white py-1.5 px-3 rounded-[5px] border border-white"
+                onClick={onClose}
               >
                 {menu?.title}
               </Link>

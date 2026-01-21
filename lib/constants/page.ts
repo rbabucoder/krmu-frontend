@@ -1,7 +1,8 @@
 import { FETCH_STRAPI_URL } from "@/app/constant";
+import { StrapiMedia } from "../types/common";
 
 export async function getCustomPageData(
-  slug: string = ""
+  slug: string = "",
 ): Promise<CustomPageResponse["data"]> {
   const res = await fetch(
     `${FETCH_STRAPI_URL}/api/pages?filters[slug][$eq]=${slug}&populate[fields][0]=title&populate[fields][1]=maincontent2&populate[fields][2]=custom_page_css&populate[fields][3]=custom_page_js&populate[fields][4]=is_custom_page&populate[seo][populate]=*`,
@@ -9,7 +10,7 @@ export async function getCustomPageData(
       next: {
         revalidate: 3600,
       },
-    }
+    },
   );
   if (!res.ok) throw new Error("Failed to fetch Custom page data");
   const json = await res.json();
@@ -17,7 +18,7 @@ export async function getCustomPageData(
 }
 
 export async function checkCustomPage(
-  slug: string = ""
+  slug: string = "",
 ): Promise<IsCustomPageResponse["data"]> {
   const res = await fetch(
     `${FETCH_STRAPI_URL}/api/pages?filters[slug][$eq]=${slug}&fields[0]=is_custom_page&fields[1]=slug`,
@@ -25,7 +26,7 @@ export async function checkCustomPage(
       next: {
         revalidate: 3600,
       },
-    }
+    },
   );
   if (!res.ok) throw new Error("Failed to fetch is Custom page data");
   const json = await res.json();
@@ -82,7 +83,7 @@ export interface Seo {
   metaKeyword: string | null;
   noIndex: boolean;
   tags: string | null;
-  shareImage: string | null;
+  shareImage: StrapiMedia;
 }
 
 export interface Meta {
