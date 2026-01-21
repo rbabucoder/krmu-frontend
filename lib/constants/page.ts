@@ -7,7 +7,7 @@ export async function getCustomPageData(
     `${FETCH_STRAPI_URL}/api/pages?filters[slug][$eq]=${slug}&populate[fields][0]=title&populate[fields][1]=maincontent2&populate[fields][2]=custom_page_css&populate[fields][3]=custom_page_js&populate[fields][4]=is_custom_page&populate[seo][populate]=*`,
     {
       next: {
-        revalidate: 600,
+        revalidate: 3600,
       },
     }
   );
@@ -23,7 +23,7 @@ export async function checkCustomPage(
     `${FETCH_STRAPI_URL}/api/pages?filters[slug][$eq]=${slug}&fields[0]=is_custom_page&fields[1]=slug`,
     {
       next: {
-        revalidate: 600,
+        revalidate: 3600,
       },
     }
   );

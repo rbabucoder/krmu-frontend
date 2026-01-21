@@ -122,7 +122,7 @@ export async function getSchoolProgrammePhdDataDegree(
     `${FETCH_STRAPI_URL}/api/phd-single-programmes?filters[degree][$eq]=${deg}&filters[school_category][name][$eq]=${schoolCatName}&field[0]=title&field[1]=phdslug&field[2]=degree&populate[school_category][fields][0]=name&populate[school_category][fields][1]=slug&populate[criteria][populate]=*`,
     {
       next: {
-        revalidate: 600,
+        revalidate: 3600,
       },
     }
   );

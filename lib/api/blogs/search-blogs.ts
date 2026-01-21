@@ -23,7 +23,7 @@ export async function searchBlogs(
   )}&per_page=6&page=${page}&_embed`;
 
   try {
-    const res = await fetch(url, { next: { revalidate: 600 } });
+    const res = await fetch(url, { next: { revalidate: 3600 } });
     if (!res.ok) {
       console.error("Failed to fetch search results:", res.statusText);
       return [];

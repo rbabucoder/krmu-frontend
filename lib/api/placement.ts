@@ -11,7 +11,7 @@ export async function getPlacementOverview(): Promise<
     `${FETCH_STRAPI_URL}/api/placement-overview?populate[placementsoverviewcontainer][on][placement-overview.placement-hero][populate][fields][0]=title&populate[placementsoverviewcontainer][on][placement-overview.placement-hero][populate][fields][1]=subtitle&populate[placementsoverviewcontainer][on][placement-overview.placement-hero][populate][fields][2]=overviewvideo&populate[placementsoverviewcontainer][on][placement-overview.placement-hero][populate][overviewcounter][populate]=*&populate[placementsoverviewcontainer][on][placement-overview.placement-highlight][populate]=*&populate[placementsoverviewcontainer][on][placement-overview.placement-path][populate]=*`,
     {
       next: {
-        revalidate: 600,
+        revalidate: 3600,
       },
     }
   );
@@ -28,7 +28,7 @@ export async function getPlacementRecruitersData(): Promise<
     `${FETCH_STRAPI_URL}/api/placement-recruiter?populate[recruiters_logo][fields][0]=url&populate[recruiters_logo][fields][1]=alternativeText`,
     {
       next: {
-        revalidate: 600,
+        revalidate: 3600,
       },
     }
   );

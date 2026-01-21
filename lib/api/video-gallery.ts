@@ -4,7 +4,7 @@ import { VideoGalleriesResponse } from "../types/video-gallery";
 export async function getVideoGallery() {
   const res = await fetch(`${FETCH_STRAPI_URL}/api/video-gallery?populate=*`, {
     next: {
-      revalidate: 600,
+      revalidate: 3600,
     },
   });
 

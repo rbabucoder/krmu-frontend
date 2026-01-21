@@ -6,7 +6,7 @@ export async function getClubAndSocitiesData() {
     `${FETCH_STRAPI_URL}/api/club-and-society?populate[fields][0]=title&populate[fields][1]=desc&populate[featured_image][fields][0]=url&populate[clubsaccordions][fields][0]=title&populate[clubsaccordions][fields][1]=content&populate[clubsaccordions][populate][clubimages]=true`,
     {
       next: {
-        revalidate: 600,
+        revalidate: 3600,
       },
     }
   );

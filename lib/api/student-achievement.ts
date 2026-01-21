@@ -8,7 +8,7 @@ export async function getStudentsAchievements(
     `${FETCH_STRAPI_URL}/api/student-achievements?filters[school_categories][slug][$eq]=${slug}&fields[0]=achievement_content&populate[achivementimage][fields][0]=url&populate[achivementimage][fields][1]=alternativeText&populate[school_categories][fields][0]=name&populate[school_categories][fields][1]=slug`,
     {
       next: {
-        revalidate: 600,
+        revalidate: 3600,
       },
     }
   );

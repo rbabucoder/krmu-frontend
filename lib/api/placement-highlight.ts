@@ -7,7 +7,7 @@ export async function getPlacementHighlightData(): Promise<
     `${FETCH_STRAPI_URL}/api/placement-hightlight?fields[0]=heading&populate[placement_highlight_img][fields][0]=url&populate[placement_highlight_img][fields][1]=alternativeText`,
     {
       next: {
-        revalidate: 600,
+        revalidate: 3600,
       },
     }
   );

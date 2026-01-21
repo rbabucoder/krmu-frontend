@@ -14,7 +14,7 @@ export async function getSingleBlogDataBySlug(
     `${krmBlogURL}/wp-json/wp/v2/posts?slug=${slug}&_embed`,
     {
       next: {
-        revalidate: 600,
+        revalidate: 3600,
       },
     }
   );
@@ -54,7 +54,7 @@ export async function getAllBlogCategories(): Promise<AllBlogCategoriesResponse>
     `${krmBlogURL}/wp-json/wp/v2/categories?per_page=100&_fields=id,name,slug,taxonomy`,
     {
       next: {
-        revalidate: 600,
+        revalidate: 3600,
       },
     }
   );
@@ -69,7 +69,7 @@ export async function getBlogImageById(imgId: number): Promise<string> {
   const res = await fetch(
     `${krmBlogURL}/wp-json/wp/v2/media/${imgId}?_fields=guid`,
     {
-      next: { revalidate: 600 },
+      next: { revalidate: 3600 },
     }
   );
 

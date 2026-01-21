@@ -7,7 +7,7 @@ export async function getPDFPageData(
     `${FETCH_STRAPI_URL}/api/pdfs?filters[slug][$eq]=${slug}&populate[pdf_content_card][fields][0]=content&populate[pdf_content_card][populate][pdf_btn][fields][0]=btn_text&populate[pdf_content_card][populate][pdf_btn][fields][1]=btn_link`,
     {
       next: {
-        revalidate: 600,
+        revalidate: 3600,
       },
     }
   );
@@ -126,7 +126,7 @@ export async function getMainPDFPageData(): Promise<
   const res = await fetch(
     `${FETCH_STRAPI_URL}/api/pdf-page?populate[pdf_cards][fields][0]=content&populate[pdf_cards][populate][pdf_btn][fields][0]=btn_text&populate[pdf_cards][populate][pdf_btn][fields][1]=btn_link`,
     {
-      next: { revalidate: 600 },
+      next: { revalidate: 3600 },
     }
   );
 

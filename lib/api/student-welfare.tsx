@@ -8,7 +8,7 @@ export async function getStudentWelfareData(): Promise<
     `${FETCH_STRAPI_URL}/api/student-welfare?populate[tab_scroll][fields][0]=html&populate[tab_scroll][fields][1]=css&populate[tab_scroll][fields][2]=js&populate[photo_gallery][fields][0]=heading&populate[photo_gallery][populate][photo_gallery_imgs][fields][0]=url`,
     {
       next: {
-        revalidate: 600,
+        revalidate: 3600,
       },
     }
   );

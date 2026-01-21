@@ -6,7 +6,7 @@ export async function getMagazineReflection() {
     `${FETCH_STRAPI_URL}/api/magazine-reflection?populate[bgimage]=true&populate[magazinecard][populate]=*`,
     {
       next: {
-        revalidate: 600,
+        revalidate: 3600,
       },
     }
   );

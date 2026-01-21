@@ -58,7 +58,7 @@ export async function getAllBlogsByPerPageOrCategorySlug(
 export async function getRecentPosts() {
   const res = await fetch(
     `${krmBlogURL}/wp-json/wp/v2/posts?per_page=20`,
-    { next: { revalidate: 600 } } // ISR caching (Next.js)
+    { next: { revalidate: 3600 } } // ISR caching (Next.js)
   );
   if (!res.ok) throw new Error("Failed to fetch recent posts");
   const json: MainBlogResponse = await res.json();
@@ -69,7 +69,7 @@ export async function getBlogPageInfo(): Promise<BlogPageSEOResponse["data"]> {
   const res = await fetch(
     `${FETCH_STRAPI_URL}/api/blog?fields[0]=Title&populate[blog_seo][populate][shareImage][fields][0]=url`,
     {
-      next: { revalidate: 600 },
+      next: { revalidate: 3600 },
     }
   );
 
@@ -84,7 +84,7 @@ export async function getBlogCategoryPageInfo(): Promise<
   const res = await fetch(
     `${FETCH_STRAPI_URL}/api/blog-category?fields[0]=Title&populate[blog_category_seo][populate][shareImage][fields][0]=url`,
     {
-      next: { revalidate: 600 },
+      next: { revalidate: 3600 },
     }
   );
 
@@ -115,7 +115,7 @@ export async function getBlogCategoryPageInfo(): Promise<
 //   const res = await fetch(
 //     `${krmBlogURL}/wp-json/wp/v2/posts?per_page=${num_of_blogs}&page=${page}&_embed`,
 //     {
-//       next: { revalidate: 600 },
+//       next: { revalidate: 3600 },
 //     }
 //   );
 
@@ -136,7 +136,7 @@ export async function getBlogCategoryPageInfo(): Promise<
 //     `${krmBlogURL}/wp-json/wp/v2/posts?per_page=${num_of_blogs}&page=${page}&_embed`,
 //     {
 //       next: {
-//         revalidate: 600,
+//         revalidate: 3600,
 //       },
 //     }
 //   );

@@ -5,7 +5,7 @@ export async function getLeadershipData(): Promise<LeadershipResponse["data"]> {
     `${FETCH_STRAPI_URL}/api/leadership?populate[leadership][fields][0]=id&populate[leadership][fields][1]=name&populate[leadership][fields][2]=desg&populate[leadership][fields][3]=content&populate[leadership][populate][leadership_img][fields][0]=url`,
     {
       next: {
-        revalidate: 600,
+        revalidate: 3600,
       },
     }
   );

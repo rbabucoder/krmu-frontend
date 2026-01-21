@@ -9,7 +9,7 @@ export async function getHomePageData(): Promise<
     `${FETCH_STRAPI_URL}/api/home-page?populate[PageContent][populate]=*`,
     {
       // Use ISR (revalidates every 60 seconds)
-      next: { revalidate: 600 },
+      next: { revalidate: 3600 },
     }
   );
 

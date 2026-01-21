@@ -6,7 +6,7 @@ export async function getNewsEvents(): Promise<NewsEventsPageResponse["data"]> {
     `${FETCH_STRAPI_URL}/api/news-event?fields[0]=main_heading&fields[1]=main_desc&status=published&locale[0]=en`,
     {
       next: {
-        revalidate: 600,
+        revalidate: 3600,
       },
     }
   );
@@ -30,7 +30,7 @@ export async function getNewsEvents(): Promise<NewsEventsPageResponse["data"]> {
 //     `${FETCH_STRAPI_URL}/api/news-and-events?sort[0]=title:asc&fields[0]=title&fields[1]=slug&populate[featured_img]=true&pagination[pageSize]=${pageSize}&pagination[page]=${page}&status=published&locale[0]=en`,
 //     {
 //       next: {
-//         revalidate: 600,
+//         revalidate: 3600,
 //       },
 //     }
 //   );
@@ -48,7 +48,7 @@ export async function getAllNewsAndEventsWithMeta(
     // `${FETCH_STRAPI_URL}/api/news-and-events?sort[0]=title:desc&fields[0]=title&fields[1]=slug&fields[2]=publishedAt&populate[featured_img]=true&pagination[pageSize]=${pageSize}&pagination[page]=${page}&status=published&locale[0]=en`,
     // `${FETCH_STRAPI_URL}/api/news-and-events?sort[0]=title:asc&fields[0]=title&fields[1]=slug&populate[newsmedia]=true&pagination[pageSize]=${pageSize}&pagination[page]=${page}&status=published&locale[0]=en`,
     `${FETCH_STRAPI_URL}/api/news-and-events?sort[0]=publishedAt:asc&fields[0]=title&fields[1]=slug&fields[2]=publishedAt&populate[newsmedia]=true&pagination[pageSize]=${pageSize}&pagination[page]=${page}&status=published&locale[0]=en`,
-    { next: { revalidate: 6000 } }
+    { next: { revalidate: 36000 } }
   );
 
   if (!res.ok) throw new Error("Failed to fetch All news and events");
@@ -75,7 +75,7 @@ export async function getNewsEventsWP(page = 1, perPage = 10) {
     `${KRMUWordUrl}/wp-json/wp/v2/events-and-news?_fields=id,title,slug,acf,featured_media,modified&page=${page}&per_page=${perPage}`,
     {
       next: {
-        revalidate: 600,
+        revalidate: 3600,
       },
     }
   ); 

@@ -6,7 +6,7 @@ export async function getNoticePageData(): Promise<NoticeResponse["data"]> {
     `${FETCH_STRAPI_URL}/api/notice?fields[0]=title&populate[bgimage]=true&populate[noticepdfs][populate]=*`,
     {
       next: {
-        revalidate: 600,
+        revalidate: 3600,
       },
     }
   );

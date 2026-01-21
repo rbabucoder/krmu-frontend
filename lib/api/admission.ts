@@ -17,7 +17,7 @@ export async function getAdmissionPageData(): Promise<
     `${FETCH_STRAPI_URL}/api/admission?populate[AdmissionPageComponent][populate]=*`,
     {
       // Use ISR (revalidates every 60 seconds)
-      next: { revalidate: 600 },
+      next: { revalidate: 3600 },
     }
   );
 
@@ -34,7 +34,7 @@ export async function getAdmissionProcessCardsData(): Promise<
     `${FETCH_STRAPI_URL}/api/admission?populate[admissionprocesscards][fields][0]=title&populate[admissionprocesscards][fields][1]=cardclass&populate[admissionprocesscards][fields][2]=cardcontent&populate[admissionprocesscards][populate][cardimg]=true`,
     {
       // Use ISR (revalidates every 60 seconds)
-      next: { revalidate: 600 },
+      next: { revalidate: 3600 },
     }
   );
 
@@ -63,7 +63,7 @@ export async function getAwardsRecognition(): Promise<
     `${FETCH_STRAPI_URL}/api/admission?populate[awardsrecognition][fields][0]=title&populate[awardsrecognition][fields][1]=cardclass&populate[awardsrecognition][fields][2]=cardcontent&populate[awardsrecognition][populate][cardimg]=true`,
     {
       // Use ISR (revalidates every 60 seconds)
-      next: { revalidate: 600 },
+      next: { revalidate: 3600 },
     }
   );
 
@@ -76,7 +76,7 @@ export async function getAwardsRecognition(): Promise<
 export async function getVisitUsData(): Promise<VisitUs> {
   const res = await fetch(`${FETCH_STRAPI_URL}/api/admission?populate[visitus]=*`, {
     next: {
-      revalidate: 600,
+      revalidate: 3600,
     },
   });
 
@@ -93,7 +93,7 @@ export async function getFeeCardData(): Promise<FeeDetailsInfo[]> {
     `${FETCH_STRAPI_URL}/api/admission?populate[feedetailsinfos][populate]=*`,
     {
       next: {
-        revalidate: 600,
+        revalidate: 3600,
       },
     }
   );
@@ -110,7 +110,7 @@ export async function getAdmissionBannerData(): Promise<AdmissionBanner[]> {
     `${FETCH_STRAPI_URL}/api/admission?populate[admissionherobanner][populate]=*`,
     {
       next: {
-        revalidate: 600,
+        revalidate: 3600,
       },
     }
   );

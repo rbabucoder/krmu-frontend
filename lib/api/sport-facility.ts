@@ -7,7 +7,7 @@ export async function getSportAndFacilityPageData(): Promise<
     `${FETCH_STRAPI_URL}/api/sport-facility?populate[sport_facility_grid][fields][0]=heading&populate[sport_facility_grid][populate][sport_fac_img][fields][0]=caption&populate[sport_facility_grid][populate][sport_fac_img][populate][img][fields][0]=url`,
     {
       next: {
-        revalidate: 600,
+        revalidate: 3600,
       },
     }
   );

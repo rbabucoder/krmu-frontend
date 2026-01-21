@@ -6,7 +6,7 @@ export async function getAuthInfoBySlug(authSlug: string = "") {
     `https://krmangalam.edu.in/blog/wp-json/wp/v2/users?slug=${authSlug}&_fields=id,name,slug,acf.profile_image,acf`,
     {
       next: {
-        revalidate: 600,
+        revalidate: 3600,
       },
     }
   );
@@ -23,7 +23,7 @@ export async function getPostsByAuthId(authId: number, page: number = 1) {
   const res = await fetch(
     `${krmBlogURL}/wp-json/wp/v2/posts?author=${authId}&per_page=6&page=${page}&_fields=id,title,featured_media,date,slug`,
     {
-      next: { revalidate: 600 },
+      next: { revalidate: 3600 },
     }
   );
 
@@ -38,7 +38,7 @@ export async function getPostsByAuthId(authId: number, page: number = 1) {
 //     `${krmBlogURL}/wp-json/wp/v2/posts?${authId}&per_page=1&_fields=id,title,featured_media,date`,
 //     {
 //       next: {
-//         revalidate: 600,
+//         revalidate: 3600,
 //       },
 //     }
 //   );
