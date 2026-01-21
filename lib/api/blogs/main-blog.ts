@@ -23,7 +23,7 @@ export async function getAllBlogsByPerPageOrCategorySlug(
     if (categorySlug) {
       const catRes = await fetch(
         `${krmBlogURL}/wp-json/wp/v2/categories?slug=${categorySlug}`,
-        { next: { revalidate: 300 } } // 5-minute cache
+        { next: { revalidate: 3600 } } // 5-minute cache
       );
 
       if (catRes.ok) {
@@ -41,7 +41,7 @@ export async function getAllBlogsByPerPageOrCategorySlug(
     // 🔥 Optimized single fetch call
     const finalURL = `${krmBlogURL}/wp-json/wp/v2/posts?${params.toString()}`;
 
-    const res = await fetch(finalURL, { next: { revalidate: 300 } }); // 5-minute cache
+    const res = await fetch(finalURL, { next: { revalidate: 3600 } }); // 5-minute cache
 
     if (!res.ok) throw new Error("Failed to fetch blogs");
 

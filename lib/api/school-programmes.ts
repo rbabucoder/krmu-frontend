@@ -18,7 +18,7 @@ export async function getSchoolProgrammeData(
     `${FETCH_STRAPI_URL}/api/school-programmes?${urlcode}populate[herosection][populate][herobtn][populate]=*&populate[herosection][populate][heroimg][populate]=*&populate[programmeeligibility][populate]=*&populate[programmescope][populate]=*&populate[programmehighlight][populate][programmehighlightcards][populate]=*&populate[specialisation][populate][specialisationcards][populate]=*&populate[admissionprocess][populate][admissionbtn][populate]=*&populate[admissionprocess][populate][admissionprocesscard][populate]=*&populate[admissionprocess][populate][desktopadmissionprocessimg][populate]=*&populate[curriculum][populate][currbtn][populate]=*&populate[curriculum][populate][years][populate][semester][populate][subjects][populate][course_name][populate]=*&populate[curriculum][populate][years][populate][semester][populate][pdfbtns][populate]=*&populate[labsfacilities][populate]=*&populate[beyondclassroom][populate]=*&populate[career][populate]=*&populate[dreamcareer][populate]=*&populate[financialassistance][populate]=*&populate[toc][populate][tocfaq][populate]=*&populate[toc][populate][tocimg][populate]=*&populate[toc][populate][tocbtn][populate]=*&populate[ourlocation][populate]=*`,
     {
       next: {
-        revalidate: 300,
+        revalidate: 3600,
       },
     }
   );
@@ -104,7 +104,7 @@ export async function getSchoolProgrammeInfoByDegree(
     `${FETCH_STRAPI_URL}/api/school-programmes?sort[0]=order_num:asc&filters[degree][name][$eq]=${deg}&filters[school_category][name][$eq]=${schoolCatName}&fields[0]=title&fields[1]=programmeslug&fields[2]=highlightitle&populate[criteria][fields][0]=Duration&populate[criteria][fields][1]=eligibility_criteria&populate[criteria][fields][2]=semester_i&populate[criteria][fields][3]=semester_ii&populate[criteria][fields][4]=programme_fee_per_year&populate[criteria][fields][5]=eligibility_utm_links&pagination[page]=1&pagination[pageSize]=50`,
     {
       next: {
-        revalidate: 300,
+        revalidate: 43200,
       },
     }
   );
@@ -122,7 +122,7 @@ export async function getSchoolProgrammePhdDataDegree(
     `${FETCH_STRAPI_URL}/api/phd-single-programmes?filters[degree][$eq]=${deg}&filters[school_category][name][$eq]=${schoolCatName}&field[0]=title&field[1]=phdslug&field[2]=degree&populate[school_category][fields][0]=name&populate[school_category][fields][1]=slug&populate[criteria][populate]=*`,
     {
       next: {
-        revalidate: 3600,
+        revalidate: 28800,
       },
     }
   );
