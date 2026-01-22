@@ -9,7 +9,7 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import type { CarouselApi } from "@/components/ui/carousel";
-import { ComeToLifeSlideItem } from "../admission/mca-2026/contentType";
+import { ComeToLifeSlideItem } from "../admission/mca-2026-bk/contentType";
 
 type Props = {
   slides: ComeToLifeSlideItem[];

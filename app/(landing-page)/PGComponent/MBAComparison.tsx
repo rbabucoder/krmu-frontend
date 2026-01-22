@@ -1,18 +1,20 @@
-import { mbaComparisonContent } from "../admission/mca-2026/content";
+import { MbaComparisonContent } from "../admission/PGType";
 
-export default function MbaComparison() {
-  const { title, highlight, description, traditionalHeader, krmuHeader, rows } =
-    mbaComparisonContent;
+type Props = {
+  data: MbaComparisonContent;
+};
 
+export default function MbaComparison({ data }: Props) {
   return (
     <section className="bg-gradient-to-b from-[#04162E] to-[#020B18] py-12 md:py-16 lg:py-20 px-4 text-white">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-14">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-3">
-            <span className="text-pink-300">{highlight}</span> {title}
+            <span className="text-pink-300">{data?.highlight}</span>{" "}
+            {data?.title}
           </h2>
-          <p className="text-gray-300 max-w-3xl mx-auto">{description}</p>
+          <p className="text-gray-300 max-w-3xl mx-auto">{data?.description}</p>
         </div>
 
         {/* Comparison Table */}
@@ -20,14 +22,14 @@ export default function MbaComparison() {
           {/* Header Row */}
           <div className="hidden lg:block" />
           <div className="bg-[#1E2C44] p-6 text-center font-semibold">
-            {traditionalHeader}
+            {data?.traditionalHeader}
           </div>
           <div className="bg-white text-black p-6 text-center font-semibold">
-            {krmuHeader}
+            {data?.krmuHeader}
           </div>
 
           {/* Rows */}
-          {rows.map((row, i) => (
+          {data?.rows.map((row, i) => (
             <div key={i} className="contents">
               {/* Label */}
               <div className="bg-[#071A33] p-6 flex items-center gap-3 border-t border-white/10">

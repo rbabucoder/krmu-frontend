@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Home } from "lucide-react";
-import { LifeAsPhDScholarSection } from "../admission/mca-2026/contentType";
+import { LifeAsPhDScholarSection } from "../admission/mca-2026-bk/contentType";
 
 
 

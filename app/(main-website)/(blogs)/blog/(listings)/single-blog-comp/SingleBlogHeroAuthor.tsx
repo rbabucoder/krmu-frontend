@@ -36,7 +36,7 @@ const SingleBlogHeroAuthor = ({
             {authorName}
           </Link> */}
         </span>
-        <span className="author_designation">{desg}</span>
+        {/* <span className="author_designation">{desg}</span> */}
       </div>
     </div>
   );

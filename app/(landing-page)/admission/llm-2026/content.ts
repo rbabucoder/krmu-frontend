@@ -26,11 +26,11 @@ import { PGTestimonialsBlock, ProgramCardType } from "../PGType";
 
 export const heroContent: HeroContent = {
   title: `
-            Expand Your Career <br />
-           Horizons with a <br /> <span class="text-[#e31e24]">Master’s</span> Programmes<br />
+            Deepen Your Legal Expertise that’ll <br /> Define Your Future <br />
+          with  <span class="text-[#e31e24]">LL.M.</span> Programmes 2026-27<br />
           `,
   description:
-    "The M.A. programmes at KRMU focus on subject expertise, practical application, and skill development, enabling graduates to excel across multiple career options or pursue further research.",
+    "Advance Your Legal Expertise. Lead with Specialisation.",
   primaryCta: {
     label: "Apply Now",
     href: "#",
@@ -137,8 +137,7 @@ export const prominentRecruiterContent: ProminentRecruiterContent = {
 
 export const aboutUsContent: AboutUsContent = {
   title: "About Us",
-  description: `<p>A postgraduate programme called the Master of Laws (LL.M.) is intended to offer in-depth expertise in a particular field of law. By providing advanced insights into areas including international law, corporate law, intellectual property law, criminal law, and commercial law, earning an LL.M. improves legal knowledge and professional prospects. The curriculum strengthens professionals' practice and skill by giving them a better awareness of changing laws and regulations, building on their core legal knowledge. Graduates can investigate employment prospects in fields such as corporate law, real estate, consulting, legal process outsourcing, and more.</p>  
-  `,
+  description: `<p>The Master of Laws (LL.M.) is a postgraduate programme intended to offer in-depth expertise in a particular field of law. By providing advanced insights into areas including international law, corporate law, intellectual property law, criminal law, and commercial law, earning an LL.M. improves legal knowledge and professional prospects. The curriculum strengthens professionals' practice and skills by giving them a better awareness of changing laws and regulations, building on their core legal knowledge. Graduates can explore employment opportunities in various fields, including corporate law, real estate, consulting, legal process outsourcing, and more.</p>`,
   image: {
     src: "/landingpage/mca-2026/univ.png",
     alt: "K.R. Mangalam University Campus",
@@ -562,11 +561,6 @@ export const faqSectionData: FAQSectionData = {
       id: "item-4",
       question: "Is there a hybrid version of the LL.M. programme?",
       answer: `Indeed, a hybrid style of delivery is used for the LL.M. programme. You get the best of both worlds by using online materials in addition to attending in-person classes on Saturdays.`,
-    },
-    {
-      id: "item-5",
-      question: "Is there placement and career support for design students?",
-      answer: `Yes. KRMU offers 100% placement assistance with strong industry connections, helping students secure internships and job opportunities upon graduation.`,
     },
   ],
 };

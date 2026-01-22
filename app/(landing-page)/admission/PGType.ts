@@ -136,7 +136,7 @@ export type IndustryExpertLogo = {
 export type IndustryExpertsContent = {
   title: string;
   description: string;
-  experts: IndustryExpertLogo[];
+  experts?: IndustryExpertLogo[];
 };
 
 // businessLeader.types.ts

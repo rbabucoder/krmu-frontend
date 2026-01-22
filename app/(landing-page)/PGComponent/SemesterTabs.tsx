@@ -1,19 +1,15 @@
-// import { useState } from "react";
-import { PGProgrammeCard } from "../admission/mca-2026/content";
-import { Semester } from "../admission/mca-2026/contentType";
-import { PGProgramCard } from "../admission/PGType";
+import { Semester } from "../admission/mca-2026-bk/contentType";
+import { ProgramCardType } from "../admission/PGType";
 import ProgramCard from "./ProgramCard";
 
 type Props = {
   semesters: Semester[];
-  data: PGProgramCard[];
+  progData: ProgramCardType;
 };
 
-const SemesterTabs = ({ semesters, data }: Props) => {
+const SemesterTabs = ({ semesters, progData }: Props) => {
   // const [active, setActive] = useState(semesters[0].id);
   // const current = semesters.find((s) => s.id === active)!;
-
- 
 
   return (
     <section className="py-10">
@@ -43,7 +39,7 @@ const SemesterTabs = ({ semesters, data }: Props) => {
 
         {/* Right Content */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-          {data.map((program, index) => (
+          {progData.map((program, index) => (
             <ProgramCard
               key={index}
               image={program.image}

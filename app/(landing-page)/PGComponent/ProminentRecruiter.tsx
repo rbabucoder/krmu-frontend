@@ -1,16 +1,18 @@
 import Image from "next/image";
 import ProminentRecruiterCard from "./ProminentRecruiterCard";
-import { prominentRecruiterContent } from "../admission/mca-2026/content";
+import { prominentRecruiterContent } from "../admission/mca-2026-bk/content";
+import { ProminentRecruiterContent } from "../admission/PGType";
 
+type Props = {
+  data: ProminentRecruiterContent;
+};
 
-const ProminentRecruiter = () => {
-  const { title, logos, people } = prominentRecruiterContent;
-
+const ProminentRecruiter = ({ data }: Props) => {
   return (
     <section className="py-16 px-4 overflow-hidden bg-white">
       <div className="max-w-[1400px] mx-auto w-full">
         <h3 className="text-3xl md:text-4xl text-center font-medium mb-20">
-          {title}
+          {data?.title}
         </h3>
 
         {/* LOGO MARQUEE */}
@@ -19,7 +21,7 @@ const ProminentRecruiter = () => {
           <div className="pointer-events-none absolute right-0 top-0 h-full w-32 bg-gradient-to-l from-white to-transparent z-10" />
 
           <div className="flex w-max animate-marquee gap-8">
-            {[...logos, ...logos].map((logo, i) => (
+            {[...data?.logos, ...data?.logos].map((logo, i) => (
               <div
                 key={i}
                 className="flex items-center justify-center min-w-[240px] h-[100px] rounded-xl bg-[#f5fbff] shadow-sm"
@@ -44,7 +46,7 @@ const ProminentRecruiter = () => {
           <div className="pointer-events-none absolute right-0 top-0 h-full w-32 bg-gradient-to-l from-white to-transparent z-10" />
 
           <div className="flex w-max animate-marquee gap-8">
-            {[...people, ...people].map((person, i) => (
+            {[...data?.people, ...data?.people].map((person, i) => (
               <ProminentRecruiterCard key={i} data={person} />
             ))}
           </div>

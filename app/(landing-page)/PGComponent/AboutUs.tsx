@@ -1,9 +1,18 @@
 import Image from "next/image";
-import { aboutUsContent } from "../admission/mca-2026/content";
+import { aboutUsContent } from "../admission/mca-2026-bk/content";
 
-const AboutUs = () => {
-  const { title, description, image } = aboutUsContent;
+type Props = {
+  title: string;
+  description: string;
+  image: {
+    src: string;
+    alt: string;
+    width: number;
+    height: number;
+  };
+};
 
+const AboutUs = ({ title, description, image }: Props) => {
   return (
     <section className="py-10 md:py-14 lg:py-20 px-4">
       <div className="max-w-[1400px] mx-auto w-full flex flex-col-reverse lg:flex-row gap-10 items-center">
@@ -27,7 +36,7 @@ const AboutUs = () => {
             src={image.src}
             width={image.width}
             height={image.height}
-            alt={image.alt}
+            alt={image.alt || ""}
             className="w-full h-auto rounded-md"
             priority
           />
