@@ -1,4 +1,4 @@
-import { FETCH_STRAPI_URL } from "@/app/constant";
+import { FETCH_STRAPI_URL, KRMUWordUrl } from "@/app/constant";
 import { NewsAndEventResponse } from "../types/news-and-events";
 
 export async function getSingleNewsAndEvents(
@@ -35,7 +35,7 @@ export async function getSingleNewsAndEvents(
 
 export async function getSingleNewsAndEventsWP(newsandeventsslug: string = "") {
   const res = await fetch(
-    `https://www.krmangalam.edu.in/wp-json/wp/v2/events-and-news?slug=${newsandeventsslug}&_fields=id,title,content,featured_media,acf.event_images,slug`,
+    `${KRMUWordUrl}/wp-json/wp/v2/events-and-news?slug=${newsandeventsslug}&_fields=id,title,content,featured_media,acf.event_images,slug`,
     {
       next: {
         revalidate: 3600,
