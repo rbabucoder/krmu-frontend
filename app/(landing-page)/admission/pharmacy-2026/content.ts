@@ -27,8 +27,8 @@ export const Hero: HeroContent = {
       <br />
       PROGRAMMES 2026-27
     `,
-  desc: `Gain industry-focused education, build strong foundations in pharmaceutical sciences, and benefit from industry partnerships that prepare you for confident, career-ready roles in the pharmacy sector `,
-  heroBg: "",
+  desc: `Gain industry-focused education, build strong foundations in pharmaceutical<br /> sciences, and benefit  from industry partnerships that prepare you for confident, <br />career-ready roles in the pharmacy sector `,
+  heroBg: "/landingpage/pharmacy-2026/pharmacy.webp",
   middleImg: "",
 };
 
@@ -64,33 +64,27 @@ export const Counters: CounterItem[] = [
 // Recruiters list
 export const prominentRecruiters: ProminentRecruit[] = [
   {
-    imgUrl:
-      "https://www.krmangalam.edu.in/admission/law-2025/assets/trilegal.svg",
+    imgUrl: "/landingpage/pharmacy-2026/recruiters/astra.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://www.krmangalam.edu.in/admission/btech-2025-b/assets/images/accenture.svg",
+    imgUrl: "/landingpage/pharmacy-2026/recruiters/lupin.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+    imgUrl: "/landingpage/pharmacy-2026/recruiters/sun.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+    imgUrl: "/landingpage/pharmacy-2026/recruiters/glenmark.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+    imgUrl: "/landingpage/pharmacy-2026/recruiters/drreddy.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+    imgUrl: "/landingpage/pharmacy-2026/recruiters/max.png",
     alt: "Recruiter Logo",
   },
 ];
@@ -131,31 +125,27 @@ export const industryExperts: IndustryExpertsSection = {
   },
   cards: [
     {
-      imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
-      alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
+      imgUrl: "/landingpage/pharmacy-2026/learn-from/ibm.png",
+      alt: "IBM Logo",
+      title: "",
     },
     {
-      imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
-      alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
+      imgUrl: "/landingpage/pharmacy-2026/learn-from/imaginxp.svg",
+      alt: "ImaginXP Logo",
+      title: "",
     },
     {
-      imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
-      alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
+      imgUrl: "/landingpage/pharmacy-2026/learn-from/eccoun.jpg",
+      alt: "EC-Councils Logo",
+      title: "",
     },
     {
-      imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
-      alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
+      imgUrl: "/landingpage/pharmacy-2026/learn-from/xebia.png",
+      alt: "Xebia Logo",
+      title: "",
     },
   ],
-  bannerImg: "/landingpage/common/dummy2.png",
+  bannerImg: "/landingpage/common/indus-exp.webp",
 };
 
 export const specialisationData: SpecialisationSection = {
@@ -165,7 +155,7 @@ Our pharma programmes & specialisations `,
   heading: `Our pharma programmes & specialisations   `,
   specilisationCard: [
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/pharmacy-2026/specilisation/d-pharm.jpg",
       title: `D.Pharm. `,
       desc: `The programme blends theory and practical learning to build strong pharmacy skills. Through classes, lab work, and hands-on training, students gain essential knowledge of chemistry, pharmacology, biochemistry, and toxicology for successful pharmacy careers.`,
       extraInfos: [
@@ -187,7 +177,7 @@ Our pharma programmes & specialisations `,
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/pharmacy-2026/specilisation/b-pharm.jpg",
       title: `B.Pharm. `,
       desc: `The programme offers in-depth pharmaceutical education with strong scientific foundations. It blends advanced theory, laboratory training, industry exposure, and practical learning to prepare students for professional roles in drug development, research, production, and healthcare sectors.`,
       extraInfos: [
@@ -209,7 +199,7 @@ Our pharma programmes & specialisations `,
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/pharmacy-2026/specilisation/m-pharm.jpg",
       title: `Master of Pharmacy (M.Pharm.) – Pharmaceutics `,
       desc: `    The M.Pharm. Pharmaceutics programme focuses on advanced drug development and production. It covers pharmaceutics, drug delivery systems, manufacturing processes, industry advancements, and research-based learning, preparing students with strong scientific and practical expertise across four semesters. `,
       extraInfos: [
@@ -231,7 +221,7 @@ Our pharma programmes & specialisations `,
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/pharmacy-2026/specilisation/m-pharmaco.jpg",
       title: `Master of Pharmacy (M.Pharm.) – Pharmacology `,
       desc: `       The M.Pharm. in pharmacology programme focuses on drug science, mechanisms, and therapeutic applications. It combines advanced theoretical learning with hands-on laboratory training, research, and projects, preparing graduates for careers in pharmaceutical, healthcare, and biomedical fields. `,
       extraInfos: [
@@ -275,7 +265,7 @@ export const testimonialsData: TestimonialsSection = {
   heading: `Why do our schoolers love and trust K.R. Mangalam University? `,
   testimonials: [
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/pharmacy-2026/testimonials/1.jpg",
       videoUrl: "#",
       quote: ` The institution played a key role in shaping my journey. Supportive faculty encouraged critical thinking and helped me grow both personally and professionally.
 `,
@@ -283,7 +273,7 @@ export const testimonialsData: TestimonialsSection = {
       programme: "PMBI",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/pharmacy-2026/testimonials/2.jpg",
       videoUrl: "#",
       quote: `My academic experience stood out for its strong mix of theory and practical exposure, guided by dedicated teachers who truly invested in student success.
 `,
@@ -291,14 +281,14 @@ export const testimonialsData: TestimonialsSection = {
       programme: "Abbott",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/pharmacy-2026/testimonials/3.jpg",
       videoUrl: "#",
       quote: `I experienced a strong sense of belonging and collaboration, where peers and mentors consistently motivated one another to learn and improve. `,
       name: "Nikita",
       programme: "Assistant Professor ",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/pharmacy-2026/testimonials/4.jpg",
       videoUrl: "#",
       quote: `My journey transformed me into a confident professional, equipped with relevant skills, lasting values, and a mindset of continuous growth. `,
       name: "Ashwani Yadav",

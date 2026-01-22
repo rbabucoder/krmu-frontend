@@ -21,14 +21,14 @@ export const Hero: HeroContent = {
   title: `
       ADMISSIONS <br />
       OPEN FOR <br />
-      <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
-       Medical & Allied Sciences
+      <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold">
+       Medical & Allied <br />Sciences
       </span>
       <br />
-      PROGRAMMES 2026-27
+      PROGRAMMES <br />2026-27
     `,
-  desc: `Start your healthcare journey with knowledgeable instructors, <br /> cutting-edge labs, industry-exposure, and career-focused curriculum`,
-  heroBg: "/landingpage/allied-health-science-2026/hero-image/BG.webp",
+  desc: `Start your healthcare journey with knowledgeable instructors, <br /> cutting-edge labs, industry-exposure, and career-focused <br />  curriculum`,
+  heroBg: "/landingpage/allied-health-science-2026/hero-image/allied-health-science.webp",
   // middleImg: "/landingpage/law-2026/law.webp",
   middleImg: "",
 };

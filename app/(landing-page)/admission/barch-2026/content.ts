@@ -28,7 +28,7 @@ export const Hero: HeroContent = {
       PROGRAMMES 2026-27
     `,
   desc: `From conceptual learning in classrooms to building creative constructions <br /> via immersive projects,  the B.Arch course will enable you to shape the future of architecture`,
-  heroBg: "/landingpage/law-2026/law.jpg",
+  heroBg: "/landingpage/barch-2026/hero-image/barch-bg.webp",
   // middleImg: "/landingpage/law-2026/law.webp",
   middleImg: "",
 };
@@ -65,24 +65,28 @@ export const Counters: CounterItem[] = [
 // Recruiters list
 export const prominentRecruiters: ProminentRecruit[] = [
   {
-    imgUrl: "/landingpage/barch-2026/recruiters/amazon.webp",
-    alt: "Recruiter Logo",
+    imgUrl: "/landingpage/barch-2026/recruiters/lodha.png",
+    alt: "Lodha Logo",
   },
   {
-    imgUrl: "/landingpage/barch-2026/recruiters/zara.webp",
-    alt: "Recruiter Logo",
+    imgUrl: "/landingpage/barch-2026/recruiters/mace.png",
+    alt: "Mace Logo",
   },
   {
-    imgUrl: "/landingpage/barch-2026/recruiters/zynga.webp",
-    alt: "Recruiter Logo",
+    imgUrl: "/landingpage/barch-2026/recruiters/sp.png",
+    alt: "SP Logo",
   },
   {
-    imgUrl: "/landingpage/barch-2026/recruiters/splash.webp",
-    alt: "Recruiter Logo",
+    imgUrl: "/landingpage/barch-2026/recruiters/aecom.png",
+    alt: "AECOM Logo",
   },
   {
-    imgUrl: "/landingpage/barch-2026/recruiters/lifestyle.webp",
-    alt: "Recruiter Logo",
+    imgUrl: "/landingpage/barch-2026/recruiters/dsa.png",
+    alt: "DSA Logo",
+  },
+  {
+    imgUrl: "/landingpage/barch-2026/recruiters/gmr.png",
+    alt: "GMR Logo",
   },
 ];
 
@@ -127,30 +131,30 @@ export const industryExperts: IndustryExpertsSection = {
   cards: [
     {
       imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
+        "/landingpage/barch-2026/learn-from/ibm.png",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
     {
       imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
+        "/landingpage/barch-2026/learn-from/imaginxp.svg",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
     {
       imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
+        "/landingpage/barch-2026/learn-from/eccoun.jpg",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
     {
       imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
+        "/landingpage/barch-2026/learn-from/xebia.png",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
   ],
-  bannerImg: "/landingpage/common/dummy2.png",
+  bannerImg: "/landingpage/common/indus-exp.webp",
 };
 
 export const specialisationData: SpecialisationSection = {

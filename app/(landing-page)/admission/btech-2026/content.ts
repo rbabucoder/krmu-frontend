@@ -27,8 +27,8 @@ export const Hero: HeroContent = {
       <br />
       PROGRAMMES 2026-27
     `,
-  desc: `Ideate, Innovate and Influence the Turf of Technology with our B.Tech Programmes comprising an industry-driven curriculum to shape tomorrow’s tech leaders`,
-  heroBg: "/landingpage/btech-2026/hero-image/btechbg.webp",
+  desc: `Ideate, Innovate and Influence the Turf of Technology with our B.Tech Programmes <br /> comprising an industry-driven curriculum to shape tomorrow’s tech leaders`,
+  heroBg: "/landingpage/btech-2026/hero-image/btech-bg.webp",
   middleImg: "",
 };
 

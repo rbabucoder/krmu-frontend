@@ -28,7 +28,7 @@ export const Hero: HeroContent = {
       PROGRAMMES 2026-27
     `,
   desc: `Choose from specialised, industry-backed B.Com. programmes and <br /> step confidently into the world of business and finance`,
-  heroBg: "",
+  heroBg: "/landingpage/bcom-2026/hero-image/BCom.webp",
   middleImg: "",
 };
 
@@ -64,23 +64,39 @@ export const Counters: CounterItem[] = [
 // Recruiters list
 export const prominentRecruiters: ProminentRecruit[] = [
   {
-    imgUrl: "/landingpage/bcom-2026/recruiters/amazon.webp",
+    imgUrl: "/landingpage/bcom-2026/recruiters/byjus.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/bcom-2026/recruiters/splash.webp",
+    imgUrl: "/landingpage/bcom-2026/recruiters/hcl.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/bcom-2026/recruiters/lifestyle.webp",
+    imgUrl: "/landingpage/bcom-2026/recruiters/kpmg.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/bcom-2026/recruiters/zara.webp",
+    imgUrl: "/landingpage/bcom-2026/recruiters/hul.svg",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/bcom-2026/recruiters/zynga.webp",
+    imgUrl: "/landingpage/bcom-2026/recruiters/decathalon.svg",
+    alt: "Recruiter Logo",
+  },
+  {
+    imgUrl: "/landingpage/bcom-2026/recruiters/icici.svg",
+    alt: "Recruiter Logo",
+  },
+  {
+    imgUrl: "/landingpage/bcom-2026/recruiters/abg.png",
+    alt: "Recruiter Logo",
+  },
+  {
+    imgUrl: "/landingpage/bcom-2026/recruiters/wipro.png",
+    alt: "Recruiter Logo",
+  },
+  {
+    imgUrl: "/landingpage/bcom-2026/recruiters/dabur.png",
     alt: "Recruiter Logo",
   },
 ];
@@ -125,49 +141,32 @@ export const industryExperts: IndustryExpertsSection = {
   },
   cards: [
     {
-      imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
-      alt: "Apple Logo",
-      title: "Digital Marketing Expertise",
+      imgUrl: "/landingpage/bcom-2026/learn-from/iide.png",
+      alt: "IIDE Logo",
+      title: "",
     },
     {
-      imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
-      alt: "Apple Logo",
-      title: "Global Industry Insights",
+      imgUrl: "/landingpage/bcom-2026/learn-from/eydark.webp",
+      alt: "Ey Logo",
+      title: "",
     },
     {
-      imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
-      alt: "Apple Logo",
-      title: "Skill Based Learning ",
+      imgUrl: "/landingpage/bcom-2026/learn-from/samatrix.jpg",
+      alt: "Samatrix Logo",
+      title: "",
     },
     {
-      imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
-      alt: "Apple Logo",
-      title: "Professional Advisory Excellence ",
+      imgUrl: "/landingpage/bcom-2026/learn-from/grant-thornton.png",
+      alt: "Grant Thornton Logo",
+      title: "",
     },
     {
-      imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
-      alt: "Apple Logo",
-      title: "Global Academic Exposures",
-    },
-    {
-      imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
-      alt: "Apple Logo",
-      title: "Technology Driven Learning",
-    },
-    {
-      imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
-      alt: "Apple Logo",
-      title: "Industry Logistics Exposure ",
+      imgUrl: "/landingpage/bcom-2026/learn-from/gcec.png",
+      alt: "GCEC Logo",
+      title: "",
     },
   ],
-  bannerImg: "/landingpage/common/dummy2.png",
+  bannerImg: "/landingpage/common/indus-exp.webp",
 };
 
 export const specialisationData: SpecialisationSection = {
@@ -473,8 +472,7 @@ export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
 export const faqSectionData: FAQSectionData = {
   eyebrow: "(FAQs)",
   heading: "Frequently Asked Questions",
-  description:
-    "",
+  description: "",
   faqs: [
     {
       id: "item-1",

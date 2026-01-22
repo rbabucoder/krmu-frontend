@@ -34,7 +34,7 @@ const WhyKRMangalam = ({
           />
           <p className="text-[#c3c3ca] text-center text-3xl">{subheading}</p>
           <p
-            className="text-[#c3c3ca] text-center my-5"
+            className="text-white md:text-[#c3c3ca] text-center my-5"
             dangerouslySetInnerHTML={{
               __html: desc,
             }}

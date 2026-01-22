@@ -255,7 +255,7 @@ const JobForm = ({ jobId }: Props) => {
       <button
         type="submit"
         disabled={isSubmitting}
-        className={`px-10 py-3 rounded-full font-semibold transition
+        className={`px-10 py-3 rounded-full font-semibold transition cursor-pointer
           ${
             isSubmitting
               ? "bg-gray-400 cursor-not-allowed"

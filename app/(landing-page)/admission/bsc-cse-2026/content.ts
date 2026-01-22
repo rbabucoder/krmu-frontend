@@ -28,7 +28,7 @@ export const Hero: HeroContent = {
       PROGRAMMES 2026-2027
     `,
   desc: `Begin Your Journey into the World of Technology`,
-  heroBg: "/landingpage/bsc-cse-2026/hero-image/bse-cse.webp",
+  heroBg: "/landingpage/bsc-cse-2026/hero-image/bsc-cse-bg.webp",
   // middleImg: "/landingpage/law-2026/law.webp",
   middleImg: "",
 };

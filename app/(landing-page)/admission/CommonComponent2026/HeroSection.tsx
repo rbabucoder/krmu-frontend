@@ -22,9 +22,9 @@ const HeroSection = ({
   return (
     <>
       <section
-        className={`py-20 md:pt-14 md:pb-14 px-5`}
+        className="py-20 md:pt-14 md:pb-14 px-5"
         style={{
-          background: `url(${heroBg})`,
+          backgroundImage: `url(${heroBg})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
