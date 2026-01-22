@@ -1,5 +1,4 @@
-import { Semester } from "../admission/mca-2026-bk/contentType";
-import { ProgramCardType } from "../admission/PGType";
+import { ProgramCardType, Semester } from "../admission/PGType";
 import ProgramCard from "./ProgramCard";
 
 type Props = {

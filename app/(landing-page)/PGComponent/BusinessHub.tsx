@@ -1,6 +1,7 @@
 import Image from "next/image";
-import { BusinessHubSection } from "../admission/mca-2026-bk/contentType";
+
 import NoPaperFormsWidget from "../admission/CommonComponent2026/NoPaperFormsWidget";
+import { BusinessHubSection } from "../admission/PGType";
 
 type Props = {
   data: BusinessHubSection;

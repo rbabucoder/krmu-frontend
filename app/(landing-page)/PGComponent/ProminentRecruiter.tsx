@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ProminentRecruiterCard from "./ProminentRecruiterCard";
-import { prominentRecruiterContent } from "../admission/mca-2026-bk/content";
+
 import { ProminentRecruiterContent } from "../admission/PGType";
 
 type Props = {

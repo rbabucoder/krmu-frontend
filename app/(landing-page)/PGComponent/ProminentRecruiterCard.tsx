@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { ProminentRecruiterPerson } from "../admission/mca-2026-bk/contentType";
+import { ProminentRecruiterPerson } from "../admission/PGType";
+
 
 
 type Props = {

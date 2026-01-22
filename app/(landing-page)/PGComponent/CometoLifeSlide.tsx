@@ -9,7 +9,7 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import type { CarouselApi } from "@/components/ui/carousel";
-import { ComeToLifeSlideItem } from "../admission/mca-2026-bk/contentType";
+import { ComeToLifeSlideItem } from "../admission/PGType";
 
 type Props = {
   slides: ComeToLifeSlideItem[];
@@ -22,7 +22,7 @@ const CometoLifeSlide = ({ slides }: Props) => {
   const autoplay = useRef(
     Autoplay({
       delay: 3000,
-    })
+    }),
   );
 
   useEffect(() => {

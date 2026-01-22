@@ -1,7 +1,8 @@
-import { ArrowUpRight, MoveUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
-import { ComeToLifeSection } from "../admission/mca-2026-bk/contentType";
+
 import CometoLifeSlide from "./CometoLifeSlide";
+import { ComeToLifeSection } from "../admission/PGType";
 
 type Props = {
   data: ComeToLifeSection;

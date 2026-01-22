@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { aboutUsContent } from "../admission/mca-2026-bk/content";
+
 
 type Props = {
   title: string;

@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { IndustryExpertLogo } from "../admission/mca-2026-bk/contentType";
+import { IndustryExpertLogo } from "../admission/PGType";
+
 
 type Props = {
   data: IndustryExpertLogo;

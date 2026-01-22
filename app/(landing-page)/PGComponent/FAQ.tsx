@@ -4,8 +4,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { FAQSectionData } from "../admission/mca-2026-bk/contentType";
+
 import Image from "next/image";
+import { FAQSectionData } from "../admission/PGType";
 
 type Props = {
   data: FAQSectionData;
