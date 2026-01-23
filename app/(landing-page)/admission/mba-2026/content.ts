@@ -26,11 +26,11 @@ import { PGTestimonialsBlock, ProgramCardType } from "../PGType";
 
 export const heroContent: HeroContent = {
   title: `
-            Deepen Your Legal Expertise that’ll <br /> Define Your Future <br />
-          with  <span class="text-[#e31e24]">LL.M.</span> Programmes 2026-27<br />
+            Learn Today To Make A Mark On Tomorrow <br />
+          with  <span class="text-[#e31e24]">MBA </span> Programmes 2026-27<br />
           `,
   description:
-    "Advance Your Legal Expertise. Lead with Specialisation.",
+    "The MBA courses are structured not just for comprehending management principles but to develop the vision and resilience required to lead an era of constant change.",
   primaryCta: {
     label: "Apply Now",
     href: "#",
@@ -137,7 +137,9 @@ export const prominentRecruiterContent: ProminentRecruiterContent = {
 
 export const aboutUsContent: AboutUsContent = {
   title: "About Us",
-  description: `<p>K.R. Mangalam University is a prominent university in Gurugram that was founded in 2013 under the Haryana Private University Act. The university's NAAC Grade "A" accreditation demonstrates a strong dedication to academic excellence, high-quality instruction, and continuous development.</p> <br /><p>The Master of Laws (LL.M.) is a postgraduate programme intended to offer in-depth expertise in a particular field of law. By providing advanced insights into areas including international law, corporate law, intellectual property law, criminal law, and commercial law, earning an LL.M. improves legal knowledge and professional prospects. The curriculum strengthens professionals' practice and skills by giving them a better awareness of changing laws and regulations, building on their core legal knowledge. Graduates can explore employment opportunities in various fields, including corporate law, real estate, consulting, legal process outsourcing, and more.</p>`,
+  description: `<p>K.R. Mangalam University is a prominent university in Gurugram that was founded in 2013 under the Haryana Private University Act. 
+  The university's NAAC Grade "A" accreditation demonstrates a strong dedication to academic excellence, 
+  high-quality instruction, and continuous development.</p> <br /><p>The MBA programmes provided by K.R. Mangalam University, via their curriculum, offer strong professional growth and excellent earning potential by combining fundamental business concepts with dedicated hands-on learning experience. It's a very popular course among individuals who desire jobs with a global perspective.</p>`,
   image: {
     src: "/landingpage/mca-2026/univ.png",
     alt: "K.R. Mangalam University Campus",
@@ -180,10 +182,10 @@ export const industryExpertsContent: IndustryExpertsContent = {
 };
 
 export const businessLeaderContent: BusinessLeaderContent = {
-  sectionTitle: "Preparing the Next Generation of Legal Thought Leaders",
+  sectionTitle: "Why Choose KRMU for the MBA Courses?",
 
   sectionDescription:
-    "The LL.M. programme at K.R. Mangalam University is designed for law graduates who seek advanced legal knowledge, research expertise, and specialisation in emerging and core areas of law.",
+    "The K.R. Mangalam University (KRMU) offers MBA programme that comprises of an industry-aligned curriculum, strong practical exposure (live projects, case studies, internships with top firms like EY), specialization options, and focus on modern tech (AI, Tableau, R), plus unique perks like fully sponsored European summer schools to selected students, preparing students for dynamic corporate roles.",
 
   semesters: [
     {
@@ -191,7 +193,7 @@ export const businessLeaderContent: BusinessLeaderContent = {
       title: "",
       duration: "",
       subtitle:
-        "Specially Designed Curriculum in Consultation with Top Experts and Law Practitioners",
+        "Programmes are designed in collaboration with Industry Leaders and Professional Experts.",
       heading: "",
       description: "",
       courses: [
@@ -208,7 +210,7 @@ export const businessLeaderContent: BusinessLeaderContent = {
       title: "",
       duration: "",
       subtitle:
-        "Consistent Mentoring by Acclaimed Academicians, Judges, Industry Experts from Top Law Firms and Senior Advocates from High Courts and The Supreme Court of India",
+        "The curriculum integrates real-world industry practices for a holistic learning experience.",
       heading: "",
       description: "",
       courses: [
@@ -225,7 +227,7 @@ export const businessLeaderContent: BusinessLeaderContent = {
       title: "",
       duration: "",
       subtitle:
-        "Develop Strong Analytical and Creative Skills Essential for Legal Professions",
+        "Entrepreneurship and Incubation Centre and Design Thinking Lab, designed to nurture innovative startup ideas",
       heading: "",
       description: "",
       courses: [
@@ -242,7 +244,7 @@ export const businessLeaderContent: BusinessLeaderContent = {
       title: "",
       duration: "",
       subtitle:
-        "Practical Exposure through Moot Court Practices, Field Studies, and Legal Aid Sessions",
+        "Students get an opportunity to attend a fully sponsored 2-week summer school at a Prestigious European University.",
       heading: "",
       description: "",
       courses: [
@@ -258,7 +260,8 @@ export const businessLeaderContent: BusinessLeaderContent = {
       id: 5,
       title: "",
       duration: "",
-      subtitle: "100% Placement Support and Internship Opportunities",
+      subtitle:
+        "100% placement assistance with Internship and Placement opportunities in leading companies.",
       heading: "",
       description: "",
       courses: [
@@ -276,82 +279,48 @@ export const businessLeaderContent: BusinessLeaderContent = {
 export const PGProgrammeCard: ProgramCardType = [
   {
     image: "/landingpage/common/dummy.png",
-    title: "LL.M. in Corporate Law",
+    title: "MBA with Academic Support from IBM",
     description:
-      "The LL.M. in Corporate Law is designed to develop advanced expertise in corporate governance, mergers and acquisitions, compliance, and commercial regulations. The programme equips law graduates with in-depth legal insight, strategic thinking, and practical exposure to address complex corporate and business legal challenges in a globalised economy.",
+      "K.R. Mangalam University offers an MBA with Academic Support from IBM, which is a specialised business degree program that focuses on Digital Transformation, Data Analytics, AI, and Cloud Computing. It integrates IBM's state-of-the-art tools, an industry-aligned curriculum, expert sessions, and certifications to provide students with practical skills and enhanced career readiness for tech-driven roles.",
     format: "",
-    duration: "1 Years",
+    duration: "2 Years",
     eligibility:
-      "The candidate must hold an LL.B. degree with at least 50% of the possible points from an accredited university.",
+      "Candidate must have a bachelor's degree or equivalent degree from a recognised university with a minimum 50% aggregate marks.",
     focus: "",
-    annualFee: "Rs 1,50,000",
+    annualFee: "Rs 3,00,000",
   },
   {
     image: "/landingpage/common/dummy.png",
-    title: "LL.M. in Human Rights and Humanitarian Law",
+    title:
+      "MBA (Fintech) with academic support of Ernst & Young (EY)",
     description:
-      "The LL.M. in Human Rights and Humanitarian Law focuses on the protection and promotion of human dignity through advanced study of international human rights frameworks, humanitarian principles, and global justice systems. The programme prepares legal professionals to address contemporary human rights challenges through critical analysis, research, and policy-oriented legal practice.",
+      "The two-year MBA Fintech program of K.R. Mangalam University prepares students for a career in the rapidly expanding and changing industry of technology-enabled finance. In addition to analysing the complexities of digital, open, and neo banking, blockchain, digital payments and lending solutions, growth and challenges of cryptocurrency and digital currency, financial risk management, and financial analytics, the program seeks to equip students with the fundamental skills necessary to comprehend and develop AI-driven financial products and services.",
     format: "",
-    duration: "1 Years",
+    duration: "2 Years",
     eligibility:
-      "The candidate must hold an LL.B. degree with at least 50% of the possible points from an accredited university.",
+      "Candidate must have a bachelor's degree or equivalent degree from a recognised university with a minimum 50% aggregate marks.",
     focus: "",
-    annualFee: "Rs 1,50,000",
+    annualFee: "Rs 3,50,000",
   },
   {
     image: "/landingpage/common/dummy.png",
-    title: "LL.M. in Criminal Law",
+    title:
+      "MBA (Digital Marketing) with academic support of IIDE",
     description:
-      "The LL.M. in Criminal Law offers advanced study of criminal justice systems, penal laws, and procedural frameworks. The programme develops strong analytical, research, and advocacy skills, preparing legal professionals to address complex criminal cases, policy reforms, and evolving challenges in the justice system.",
+      "In partnership with IIDE, K.R. Mangalam University has developed the MBA (Digital Marketing) curriculum to address the changing needs of the digital marketing industry. By enrolling in this program, you will be able to strategise entrepreneurial marketing difficulties and give organisations a simplified strategy to promote their growth and sales in the digital world.",
     format: "",
-    duration: "1 Years",
+    duration: "2 Years",
     eligibility:
-      "The candidate must hold an LL.B. degree with at least 50% of the possible points from an accredited university.",
+      "Candidate must have a bachelor's degree or equivalent degree from a recognised university with a minimum 50% aggregate marks.",
     focus: "",
-    annualFee: "Rs 1,50,000",
-  },
-  {
-    image: "/landingpage/common/dummy.png",
-    title: "LL.M. in Intellectual Property Rights",
-    description:
-      "The LL.M. in Intellectual Property Rights equips legal professionals with advanced knowledge of patents, trademarks, copyrights, and emerging IP laws in the digital and innovation-driven economy. The programme develops expertise in IP protection, enforcement, and policy, preparing graduates for specialised legal practice, corporate advisory roles, and research in intellectual property law.",
-    format: "",
-    duration: "1 Years",
-    eligibility:
-      "The candidate must hold an LL.B. degree with at least 50% of the possible points from an accredited university.",
-    focus: "",
-    annualFee: "Rs 1,50,000",
-  },
-  {
-    image: "/landingpage/common/dummy.png",
-    title: "LL.M. in Cyber Law",
-    description:
-      "The LL.M. in Cyber Law focuses on the legal and regulatory frameworks governing cyberspace, data protection, and digital transactions. The programme equips legal professionals with specialised knowledge to address cyber crimes, privacy issues, and emerging challenges in technology-driven legal environments.",
-    format: "",
-    duration: "1 Years",
-    eligibility:
-      "The candidate must hold an LL.B. degree with at least 50% of the possible points from an accredited university.",
-    focus: "",
-    annualFee: "Rs 1,50,000",
-  },
-  {
-    image: "/landingpage/common/dummy.png",
-    title: "LL.M. in Alternative Dispute Resolution",
-    description:
-      "The LL.M. in Alternative Dispute Resolution focuses on modern dispute resolution mechanisms, including arbitration, mediation, and negotiation. The programme develops advanced legal, analytical, and advocacy skills, preparing professionals to resolve complex disputes efficiently across commercial, corporate, and international legal settings.",
-    format: "",
-    duration: "1 Years",
-    eligibility:
-      "The candidate must hold an LL.B. degree with at least 50% of the possible points from an accredited university.",
-    focus: "",
-    annualFee: "Rs 1,50,000",
+    annualFee: "Rs 3,50,000",
   },
 ];
 
 export const prospectusDownloadContent: ProspectusDownloadContent = {
-  title: "Download the LL.M. Programme prospectus",
+  title: "Download the MBA Programme Prospectus",
   description:
-    "Download the LL.M. programme prospectus to explore programme details, specialisations, curriculum, and career prospects.",
+    "Download the MBA programme prospectus to explore programme details, specialisations, curriculum, and career prospects.",
   button: {
     label: "Download Now",
     href: "#", // can be file link or NPF popup later
@@ -363,7 +332,7 @@ export const prospectusDownloadContent: ProspectusDownloadContent = {
 };
 export const PGTestimonialsData: PGTestimonialsBlock = {
   header: {
-    eyebrow: "Our Testimonials",
+    eyebrow: "Students’ Testimonials ",
     title: "Why do Aspirants Prefer KRMU?",
     highlight: "",
   },
@@ -371,29 +340,29 @@ export const PGTestimonialsData: PGTestimonialsBlock = {
   items: [
     {
       brand: "",
-      text: "Pursuing a LLM  at the  University of Edinburgh deepened my understanding of global corporate governance, equipping me with analytical skills for a successful legal career.",
-      author: "TANMAYA JHA",
+      text: "KRMU has been a turning point in my academic journey. The curriculum is practical, industry-focused, and taught by faculty who genuinely care about our growth. The exposure I received through live projects, workshops, and industry interactions has boosted my confidence and shaped my career path.",
+      author: "Veeresh Tarnal, MBA",
       color: "bg-[#EAF6FF]",
       featured: false,
     },
     {
       brand: "",
-      text: "Proud K.R. Mangalam University alumni, my journey from student to professional  was enriched by diverse cultural and academic engagements, shaping my future personally and professionally. Immersed in a vibrant academic environment, guided by distinguished professors, I gained confidence and insight into the leg",
-      author: "SAGAR KUMAR",
+      text: "It was a great experience studying at K.R. Mangalam University. I completed my MBA degree last year. And I was very fortunate to have all my mentors who helped me during my post-graduation. Also, I would like to thank the training and placement cell for supporting each and every student.",
+      author: "Prateek kumar, MBA",
       color: "bg-white",
       featured: false,
     },
     {
       brand: "",
-      text: "Blessed to join KRMU, its top-notch infrastructure and supportive atmosphere enriched my learning journey. Grateful to professors for their expertise. Now, as a director at 'Ataraxia IP,' I aim to apply KRMU's teachings to achieve my goals",
-      author: "KOMAL SHARMA",
+      text: "No doubt, I made the best choice of my career; K.R. Mangalam University is one among those unique institutions which help students not only in building their career but also enhance distinctive competencies and skill sets that help students grow in their professional lives.",
+      author: "Prachi, MBA",
       color: "bg-white",
       featured: false,
     },
     {
       brand: "",
-      text: "Navigating Legal Frontiers with K.R. Mangalam University My journey at K.R. Mangalam University transformed me, fostering my confidence and competence in law. As an alumnus, I'm grateful for experiences like coordinating the Legal Aid Committee and serving as a Social Media Ambassador, amplifying social  responsibility. Over 15 internships honed my skills, paving the way for roles as a Legal Consultant and founder of a law firm. K.R. Mangalam's interdisciplinary approach and faculty support laid the foundation for my success, instilling values of integrity and compassion. Thank you for shaping me into the legal professional I am today.",
-      author: "JAI SIKAND",
+      text: "The skill development opportunities at KRMU made a huge difference in my confidence. Through workshops, projects, and hands-on training, I gained practical abilities that I now use it every day in my career.",
+      author: "Rajan Kumar, MBA",
       color: "bg-white",
       featured: false,
     },
@@ -445,8 +414,8 @@ export const admissionProcessContent: AdmissionProcessContent = {
 };
 
 export const mbaComparisonContent: MbaComparisonContent = {
-  title: "vs LL.M. at KRMU",
-  highlight: "LL.M. at a Traditional University",
+  title: "vs MBA at KRMU",
+  highlight: "MBA at a Traditional University",
   description:
     "The program at KRMU emphasizes real-world learning through internships, business simulations, and industry-driven projects.",
 
@@ -457,51 +426,51 @@ export const mbaComparisonContent: MbaComparisonContent = {
     {
       icon: BookOpen,
       label: "Curriculum",
-      traditional:
-        "Theory-heavy with limited focus on emerging legal areas.",
+      traditional: "Conventional syllabus with limited industry or contemporary relevance",
       krmu: {
         title:
-          "Industry-aligned curriculum with specialisations in contemporary and evolving areas of law.",
+          "Industry-aligned and interdisciplinary curriculum updated to current academic and professional needs",
         desc: "",
       },
     },
     {
       icon: Lightbulb,
       label: "Pedagogy",
-      traditional: "Primarily lecture-based teaching methods.",
+      traditional: "Primarily lecture-based and theory-driven learning",
       krmu: {
         title:
-          "Experiential learning through case studies, research projects, seminars, and practical exposure.",
+          "Experiential learning through case studies, projects, presentations, and research-based activities",
         desc: "",
       },
     },
     {
       icon: GraduationCap,
       label: "Faculty",
-      traditional: "Predominantly academic faculty with limited industry interaction.",
+      traditional:
+        "Largely academic, with minimal practical or field exposure",
       krmu: {
         title:
-          "Experienced academicians supported by legal practitioners, jurists, and industry experts.",
+          "Experienced academicians and practitioners with strong research and domain expertise",
         desc: "",
       },
     },
     {
       icon: Briefcase,
-      label: "Placements",
-      traditional: "Limited placement assistance and industry networking.",
+      label: "Career Exposure",
+      traditional: "Limited career guidance and traditional career pathways",
       krmu: {
         title:
-          "Dedicated career support with industry connections, internships, and professional guidance.",
+          "Career-oriented training, research exposure, internships, and guidance for civil services, academia, and professional roles",
         desc: "",
       },
     },
     {
       icon: Award,
       label: "Assessment System",
-      traditional: "Rigid and exam-centric evaluation.",
+      traditional: "End-term, theory-focused examinations",
       krmu: {
         title:
-          "Continuous assessment through research work, presentations, projects, and examinations.",
+          "Continuous assessment through assignments, projects, presentations, and practical evaluations",
         desc: "",
       },
     },
@@ -536,31 +505,33 @@ export const businessHubData: BusinessHubSection = {
 export const faqSectionData: FAQSectionData = {
   eyebrow: "(FAQs)",
   heading: "Frequently Asked Questions",
-  description:
-    "",
+  description: "",
   faqs: [
     {
       id: "item-1",
-      question:
-        "How long does the LL.M. program last?",
-      answer: `The program lasts for a full year.`,
+      question: "What are the eligibility criteria for the MBA programme?",
+      answer: `Candidates must have completed a Bachelor’s degree from a recognised institution and meet the university’s admission standards.`,
     },
     {
       id: "item-2",
       question:
-        "What are the requirements to be eligible for the LL.M. program?",
-      answer: `Candidates must hold an LL.B. degree with at least 50% of the possible points from an accredited university.`,
+        "Are scholarships available at KRMU?",
+      answer: `Yes, K.R. Mangalam University offers merit-based and need-based scholarships. Visit our scholarships page for more details.`,
     },
     {
       id: "item-3",
-      question:
-        "Which specialisations are available in the LL.M. programme?",
-      answer: `Corporate law, human rights and humanitarian law, criminal law, intellectual property rights, alternative dispute resolution, and cyber law are among the specialisations offered by the program.`,
+      question: "Does KRMU provide hostel accommodation?",
+      answer: `Yes, KRMU provides separate hostels for boys and girls with modern amenities and 24/7 security.`,
     },
     {
       id: "item-4",
-      question: "Is there a hybrid version of the LL.M. programme?",
-      answer: `Indeed, a hybrid style of delivery is used for the LL.M. programme. You get the best of both worlds by using online materials in addition to attending in-person classes on Saturdays.`,
+      question: "What placement support does the university provide?",
+      answer: `The K.R. Mangalam University provides dedicated placement assistance, including industry collaborations, mock interviews, and placement drives with top recruiters.`,
+    },
+    {
+      id: "item-5",
+      question: "What are the available specialisations in the MBA programme?",
+      answer: `The KRMU offers specialisations in Finance, Marketing, HR, Business Analytics, Operations, Digital Marketing, Technology Management, Product Management, IT, Entrepreneurship, and Fintech.`,
     },
   ],
 };
@@ -592,7 +563,7 @@ export const comeToLifeData: ComeToLifeSection = {
   description: `The modern facilities of K.R. Mangalam University intend to provide strong support to students. The institution has cutting-edge computer labs with the latest equipment, sophisticated tools, and industry-standard software for practical projects, research, and simulations. To promote an immersive learning environment, classrooms are equipped with smart technology, such as interactive whiteboards, projectors, high-speed Wi-Fi, and comfortable, ergonomic seating. They also have central air conditioning. For in-depth study and research, students have access to a well-stocked central library with a comprehensive selection of books, periodicals, research materials, and e-resources.`,
   footerText: ``,
   cta: {
-    label: "Apply for LL.M. 2026-2027",
+    label: "Apply for MBA 2026-2027",
     href: "#",
   },
   slides: [

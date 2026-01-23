@@ -26,11 +26,11 @@ import { PGTestimonialsBlock, ProgramCardType } from "../PGType";
 
 export const heroContent: HeroContent = {
   title: `
-            Deepen Your Legal Expertise that’ll <br /> Define Your Future <br />
-          with  <span class="text-[#e31e24]">LL.M.</span> Programmes 2026-27<br />
+            Click, Code & Conquer <br />
+          with  <span class="text-[#e31e24]">MCA </span> Programmes 2026-27<br />
           `,
   description:
-    "Advance Your Legal Expertise. Lead with Specialisation.",
+    "The MCA courses are meticulously prepared to enable students to comprehend complex coding processes that, in turn, lead to a successful career path. ",
   primaryCta: {
     label: "Apply Now",
     href: "#",
@@ -137,7 +137,9 @@ export const prominentRecruiterContent: ProminentRecruiterContent = {
 
 export const aboutUsContent: AboutUsContent = {
   title: "About Us",
-  description: `<p>K.R. Mangalam University is a prominent university in Gurugram that was founded in 2013 under the Haryana Private University Act. The university's NAAC Grade "A" accreditation demonstrates a strong dedication to academic excellence, high-quality instruction, and continuous development.</p> <br /><p>The Master of Laws (LL.M.) is a postgraduate programme intended to offer in-depth expertise in a particular field of law. By providing advanced insights into areas including international law, corporate law, intellectual property law, criminal law, and commercial law, earning an LL.M. improves legal knowledge and professional prospects. The curriculum strengthens professionals' practice and skills by giving them a better awareness of changing laws and regulations, building on their core legal knowledge. Graduates can explore employment opportunities in various fields, including corporate law, real estate, consulting, legal process outsourcing, and more.</p>`,
+  description: `<p>K.R. Mangalam University is a prominent university in Gurugram that was founded in 2013 under the Haryana Private University Act. 
+  The university's NAAC Grade "A" accreditation demonstrates a strong dedication to academic excellence, 
+  high-quality instruction, and continuous development.</p> <br /><p>The MCA courses at K.R. Mangalam University offer a vast scope for students aiming to build successful careers in the rapidly evolving realm of technology. The Master of Computer Application programmes strive to equip the students with advanced skills in programming and software development. Moreover, the programme not only opens up diverse career opportunities in the IT and tech sector but also prepares students for entrepreneurship, research, and innovation-driven roles.</p>`,
   image: {
     src: "/landingpage/mca-2026/univ.png",
     alt: "K.R. Mangalam University Campus",
@@ -180,10 +182,10 @@ export const industryExpertsContent: IndustryExpertsContent = {
 };
 
 export const businessLeaderContent: BusinessLeaderContent = {
-  sectionTitle: "Preparing the Next Generation of Legal Thought Leaders",
+  sectionTitle: "Why Choose a MCA Programme at KRMU?",
 
   sectionDescription:
-    "The LL.M. programme at K.R. Mangalam University is designed for law graduates who seek advanced legal knowledge, research expertise, and specialisation in emerging and core areas of law.",
+    "Master of Computer Applications is a postgraduate program designed to build strong foundations in computer science, software development, and emerging technologies. The MCA program offered by K.R. Mangalam University combines academic rigour with industry-oriented learning as modern laboratories, experienced faculty, and industry collaborations enhance practical exposure.",
 
   semesters: [
     {
@@ -191,7 +193,7 @@ export const businessLeaderContent: BusinessLeaderContent = {
       title: "",
       duration: "",
       subtitle:
-        "Specially Designed Curriculum in Consultation with Top Experts and Law Practitioners",
+        "Programmes are designed in collaboration with Industry Leaders and Professional Experts.",
       heading: "",
       description: "",
       courses: [
@@ -208,7 +210,7 @@ export const businessLeaderContent: BusinessLeaderContent = {
       title: "",
       duration: "",
       subtitle:
-        "Consistent Mentoring by Acclaimed Academicians, Judges, Industry Experts from Top Law Firms and Senior Advocates from High Courts and The Supreme Court of India",
+        "Curriculum focuses equally on conceptual clarity and practical precision.",
       heading: "",
       description: "",
       courses: [
@@ -225,7 +227,7 @@ export const businessLeaderContent: BusinessLeaderContent = {
       title: "",
       duration: "",
       subtitle:
-        "Develop Strong Analytical and Creative Skills Essential for Legal Professions",
+        "600+ Journal articles in Scopus and WoS, 100+ Published Patents highlighting the University’s research excellence.",
       heading: "",
       description: "",
       courses: [
@@ -242,7 +244,7 @@ export const businessLeaderContent: BusinessLeaderContent = {
       title: "",
       duration: "",
       subtitle:
-        "Practical Exposure through Moot Court Practices, Field Studies, and Legal Aid Sessions",
+        "Students get an opportunity to attend a fully sponsored 2-week summer school at a Prestigious European University.",
       heading: "",
       description: "",
       courses: [
@@ -258,7 +260,8 @@ export const businessLeaderContent: BusinessLeaderContent = {
       id: 5,
       title: "",
       duration: "",
-      subtitle: "100% Placement Support and Internship Opportunities",
+      subtitle:
+        "100% placement assistance with over 700+ recruiters visiting the campus for placement drives every year.",
       heading: "",
       description: "",
       courses: [
@@ -276,82 +279,35 @@ export const businessLeaderContent: BusinessLeaderContent = {
 export const PGProgrammeCard: ProgramCardType = [
   {
     image: "/landingpage/common/dummy.png",
-    title: "LL.M. in Corporate Law",
+    title: "Master of Computer Applications (MCA)",
     description:
-      "The LL.M. in Corporate Law is designed to develop advanced expertise in corporate governance, mergers and acquisitions, compliance, and commercial regulations. The programme equips law graduates with in-depth legal insight, strategic thinking, and practical exposure to address complex corporate and business legal challenges in a globalised economy.",
+      "K.R. Mangalam University offers cutting-edge equipment, state-of-the-art labs, and industry-focused education to improve hands-on learning. Through projects, internships, and seminars, the curriculum places a strong emphasis on professional abilities, creativity, and problem-solving. Graduates are equipped for a variety of professions in the quickly changing IT sector across international technology-driven organisations, such as software developers, system analysts, data specialists, or entrepreneurs.",
     format: "",
-    duration: "1 Years",
+    duration: "2 Years",
     eligibility:
-      "The candidate must hold an LL.B. degree with at least 50% of the possible points from an accredited university.",
+      "Any graduation degree with Mathematics at 10+2 level or at Graduation level with minimum 50% aggregate marks.",
     focus: "",
-    annualFee: "Rs 1,50,000",
+    annualFee: "Rs 1,20,000",
   },
   {
     image: "/landingpage/common/dummy.png",
-    title: "LL.M. in Human Rights and Humanitarian Law",
+    title:
+      "MCA (AI & ML) with academic support of IBM and powered by Microsoft Certifications",
     description:
-      "The LL.M. in Human Rights and Humanitarian Law focuses on the protection and promotion of human dignity through advanced study of international human rights frameworks, humanitarian principles, and global justice systems. The programme prepares legal professionals to address contemporary human rights challenges through critical analysis, research, and policy-oriented legal practice.",
+      "MCA in Artificial Intelligence and Machine Learning is a specialised postgraduate program offered by the K.R. Mangalam University. The program is designed with academic support of IBM and powered by Microsoft Certifications, ensuring strong industry alignment. Students learn core computer science along with AI, ML, data science, cloud computing, and analytics.",
     format: "",
-    duration: "1 Years",
+    duration: "2 Years",
     eligibility:
-      "The candidate must hold an LL.B. degree with at least 50% of the possible points from an accredited university.",
-    focus: "",
-    annualFee: "Rs 1,50,000",
-  },
-  {
-    image: "/landingpage/common/dummy.png",
-    title: "LL.M. in Criminal Law",
-    description:
-      "The LL.M. in Criminal Law offers advanced study of criminal justice systems, penal laws, and procedural frameworks. The programme develops strong analytical, research, and advocacy skills, preparing legal professionals to address complex criminal cases, policy reforms, and evolving challenges in the justice system.",
-    format: "",
-    duration: "1 Years",
-    eligibility:
-      "The candidate must hold an LL.B. degree with at least 50% of the possible points from an accredited university.",
-    focus: "",
-    annualFee: "Rs 1,50,000",
-  },
-  {
-    image: "/landingpage/common/dummy.png",
-    title: "LL.M. in Intellectual Property Rights",
-    description:
-      "The LL.M. in Intellectual Property Rights equips legal professionals with advanced knowledge of patents, trademarks, copyrights, and emerging IP laws in the digital and innovation-driven economy. The programme develops expertise in IP protection, enforcement, and policy, preparing graduates for specialised legal practice, corporate advisory roles, and research in intellectual property law.",
-    format: "",
-    duration: "1 Years",
-    eligibility:
-      "The candidate must hold an LL.B. degree with at least 50% of the possible points from an accredited university.",
-    focus: "",
-    annualFee: "Rs 1,50,000",
-  },
-  {
-    image: "/landingpage/common/dummy.png",
-    title: "LL.M. in Cyber Law",
-    description:
-      "The LL.M. in Cyber Law focuses on the legal and regulatory frameworks governing cyberspace, data protection, and digital transactions. The programme equips legal professionals with specialised knowledge to address cyber crimes, privacy issues, and emerging challenges in technology-driven legal environments.",
-    format: "",
-    duration: "1 Years",
-    eligibility:
-      "The candidate must hold an LL.B. degree with at least 50% of the possible points from an accredited university.",
-    focus: "",
-    annualFee: "Rs 1,50,000",
-  },
-  {
-    image: "/landingpage/common/dummy.png",
-    title: "LL.M. in Alternative Dispute Resolution",
-    description:
-      "The LL.M. in Alternative Dispute Resolution focuses on modern dispute resolution mechanisms, including arbitration, mediation, and negotiation. The programme develops advanced legal, analytical, and advocacy skills, preparing professionals to resolve complex disputes efficiently across commercial, corporate, and international legal settings.",
-    format: "",
-    duration: "1 Years",
-    eligibility:
-      "The candidate must hold an LL.B. degree with at least 50% of the possible points from an accredited university.",
+      "Any graduation degree with Mathematics at 10+2 level or at Graduation level with minimum 50% aggregate marks.",
     focus: "",
     annualFee: "Rs 1,50,000",
   },
 ];
 
 export const prospectusDownloadContent: ProspectusDownloadContent = {
-  title: "Download the LL.M. Programme prospectus",
+  title: "Download the M.C.A Programme Prospectus",
   description:
-    "Download the LL.M. programme prospectus to explore programme details, specialisations, curriculum, and career prospects.",
+    "Download the M.C.A. programme prospectus to explore programme details, specialisations, curriculum, and career prospects.",
   button: {
     label: "Download Now",
     href: "#", // can be file link or NPF popup later
@@ -371,29 +327,29 @@ export const PGTestimonialsData: PGTestimonialsBlock = {
   items: [
     {
       brand: "",
-      text: "Pursuing a LLM  at the  University of Edinburgh deepened my understanding of global corporate governance, equipping me with analytical skills for a successful legal career.",
-      author: "TANMAYA JHA",
+      text: "K.R. Mangalam University has truly transformed my career. The program not only provided me with technical expertise but also honed my problem-solving and analytical skills. The university encouraged us to participate in hackathons, industry projects, and internships, which gave me hands-on experience in real-world AI applications. Today, I am working as a Sales manager at Rally Motors, and I owe my success to the incredible faculty and supportive environment at KRMU. ",
+      author: "Rishav Bakshi",
       color: "bg-[#EAF6FF]",
       featured: false,
     },
     {
       brand: "",
-      text: "Proud K.R. Mangalam University alumni, my journey from student to professional  was enriched by diverse cultural and academic engagements, shaping my future personally and professionally. Immersed in a vibrant academic environment, guided by distinguished professors, I gained confidence and insight into the leg",
-      author: "SAGAR KUMAR",
+      text: "Looking back at my journey at K.R. Mangalam University, I feel grateful for the incredible opportunities I received here. The curriculum was designed in collaboration with industry experts, ensuring we were up to date with the latest AI trends. The mentorship from experienced faculty, research-driven approach, and exposure to AI tools like TensorFlow, PyTorch, and Big Data analytics helped me secure my dream job in the tech industry. I highly recommend this programme to anyone passionate about AI and data science!",
+      author: "Parminder Singh",
       color: "bg-white",
       featured: false,
     },
     {
       brand: "",
-      text: "Blessed to join KRMU, its top-notch infrastructure and supportive atmosphere enriched my learning journey. Grateful to professors for their expertise. Now, as a director at 'Ataraxia IP,' I aim to apply KRMU's teachings to achieve my goals",
-      author: "KOMAL SHARMA",
+      text: "Studying at K.R. Mangalam University was one of the best decisions of my academic journey. The well-structured curriculum, combined with practical exposure through hands-on projects, helped me build a strong foundation in machine learning, data analytics, and cloud computing. The faculty’s guidance and the state-of-the-art labs played a crucial role in enhancing my technical skills. Thanks to the university’s placement cell, I secured a job at a leading AI firm, and I feel confident about tackling industry challenges.",
+      author: "Annanya Agarwal",
       color: "bg-white",
       featured: false,
     },
     {
       brand: "",
-      text: "Navigating Legal Frontiers with K.R. Mangalam University My journey at K.R. Mangalam University transformed me, fostering my confidence and competence in law. As an alumnus, I'm grateful for experiences like coordinating the Legal Aid Committee and serving as a Social Media Ambassador, amplifying social  responsibility. Over 15 internships honed my skills, paving the way for roles as a Legal Consultant and founder of a law firm. K.R. Mangalam's interdisciplinary approach and faculty support laid the foundation for my success, instilling values of integrity and compassion. Thank you for shaping me into the legal professional I am today.",
-      author: "JAI SIKAND",
+      text: "K.R. Mangalam University didn’t just provide me with a degree—it shaped my career. The MCA programme gave me the technical expertise, industry exposure, and confidence to work on AI-driven solutions. The university’s tie-ups with industry leaders, guest lectures from  AI professionals, and project-based learning approach made a significant difference in my  professional journey. Today, as a Data Analyst, I use the knowledge and skills I gained at KRMU daily. If you're looking for a programme that bridges the gap between academics and industry, this is the place to be!",
+      author: "Shivangi Sharma",
       color: "bg-white",
       featured: false,
     },
@@ -445,8 +401,8 @@ export const admissionProcessContent: AdmissionProcessContent = {
 };
 
 export const mbaComparisonContent: MbaComparisonContent = {
-  title: "vs LL.M. at KRMU",
-  highlight: "LL.M. at a Traditional University",
+  title: "vs M.C.A. at KRMU",
+  highlight: "M.C.A. at a Traditional University",
   description:
     "The program at KRMU emphasizes real-world learning through internships, business simulations, and industry-driven projects.",
 
@@ -457,51 +413,51 @@ export const mbaComparisonContent: MbaComparisonContent = {
     {
       icon: BookOpen,
       label: "Curriculum",
-      traditional:
-        "Theory-heavy with limited focus on emerging legal areas.",
+      traditional: "Conventional syllabus with limited industry or contemporary relevance",
       krmu: {
         title:
-          "Industry-aligned curriculum with specialisations in contemporary and evolving areas of law.",
+          "Industry-aligned and interdisciplinary curriculum updated to current academic and professional needs",
         desc: "",
       },
     },
     {
       icon: Lightbulb,
       label: "Pedagogy",
-      traditional: "Primarily lecture-based teaching methods.",
+      traditional: "Primarily lecture-based and theory-driven learning",
       krmu: {
         title:
-          "Experiential learning through case studies, research projects, seminars, and practical exposure.",
+          "Experiential learning through case studies, projects, presentations, and research-based activities",
         desc: "",
       },
     },
     {
       icon: GraduationCap,
       label: "Faculty",
-      traditional: "Predominantly academic faculty with limited industry interaction.",
+      traditional:
+        "Largely academic, with minimal practical or field exposure",
       krmu: {
         title:
-          "Experienced academicians supported by legal practitioners, jurists, and industry experts.",
+          "Experienced academicians and practitioners with strong research and domain expertise",
         desc: "",
       },
     },
     {
       icon: Briefcase,
-      label: "Placements",
-      traditional: "Limited placement assistance and industry networking.",
+      label: "Career Exposure",
+      traditional: "Limited career guidance and traditional career pathways",
       krmu: {
         title:
-          "Dedicated career support with industry connections, internships, and professional guidance.",
+          "Career-oriented training, research exposure, internships, and guidance for civil services, academia, and professional roles",
         desc: "",
       },
     },
     {
       icon: Award,
       label: "Assessment System",
-      traditional: "Rigid and exam-centric evaluation.",
+      traditional: "End-term, theory-focused examinations",
       krmu: {
         title:
-          "Continuous assessment through research work, presentations, projects, and examinations.",
+          "Continuous assessment through assignments, projects, presentations, and practical evaluations",
         desc: "",
       },
     },
@@ -536,31 +492,33 @@ export const businessHubData: BusinessHubSection = {
 export const faqSectionData: FAQSectionData = {
   eyebrow: "(FAQs)",
   heading: "Frequently Asked Questions",
-  description:
-    "",
+  description: "",
   faqs: [
     {
       id: "item-1",
-      question:
-        "How long does the LL.M. program last?",
-      answer: `The program lasts for a full year.`,
+      question: "What is the average salary of an MCA graduate?",
+      answer: `In India, an MCA graduate can bag a starting package of 5-8 LPA after graduating.`,
     },
     {
       id: "item-2",
       question:
-        "What are the requirements to be eligible for the LL.M. program?",
-      answer: `Candidates must hold an LL.B. degree with at least 50% of the possible points from an accredited university.`,
+        "What skills will a student learn from KRMU’s MCA programme?",
+      answer: `The MCA programmes at K.R. Mangalam University focus on helping students develop technical skills like web development, analytical thinking, data structures, and much more.`,
     },
     {
       id: "item-3",
-      question:
-        "Which specialisations are available in the LL.M. programme?",
-      answer: `Corporate law, human rights and humanitarian law, criminal law, intellectual property rights, alternative dispute resolution, and cyber law are among the specialisations offered by the program.`,
+      question: "Does KRMU provide hostel accommodation?",
+      answer: `Yes, KRMU provides separate hostels for boys and girls with modern amenities and 24/7 security.`,
     },
     {
       id: "item-4",
-      question: "Is there a hybrid version of the LL.M. programme?",
-      answer: `Indeed, a hybrid style of delivery is used for the LL.M. programme. You get the best of both worlds by using online materials in addition to attending in-person classes on Saturdays.`,
+      question: "Does the programme include industry exposure?",
+      answer: `Yes, the K.R. Mangalam University offers internships, field visits, and guest lectures by expert professionals.`,
+    },
+    {
+      id: "item-5",
+      question: "Does KRMU provide placement support?",
+      answer: `Yes, the K.R. Mangalam University offers 100% placement assistance with over 700+ recruiters visiting the campus for placement drives.`,
     },
   ],
 };
@@ -592,7 +550,7 @@ export const comeToLifeData: ComeToLifeSection = {
   description: `The modern facilities of K.R. Mangalam University intend to provide strong support to students. The institution has cutting-edge computer labs with the latest equipment, sophisticated tools, and industry-standard software for practical projects, research, and simulations. To promote an immersive learning environment, classrooms are equipped with smart technology, such as interactive whiteboards, projectors, high-speed Wi-Fi, and comfortable, ergonomic seating. They also have central air conditioning. For in-depth study and research, students have access to a well-stocked central library with a comprehensive selection of books, periodicals, research materials, and e-resources.`,
   footerText: ``,
   cta: {
-    label: "Apply for LL.M. 2026-2027",
+    label: "Apply for MCA 2026-2027",
     href: "#",
   },
   slides: [

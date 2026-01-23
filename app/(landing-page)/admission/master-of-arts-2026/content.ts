@@ -26,11 +26,11 @@ import { PGTestimonialsBlock, ProgramCardType } from "../PGType";
 
 export const heroContent: HeroContent = {
   title: `
-            Deepen Your Legal Expertise that’ll <br /> Define Your Future <br />
-          with  <span class="text-[#e31e24]">LL.M.</span> Programmes 2026-27<br />
+            Expand Your Career Horizons with a <br />
+          <span class="text-[#e31e24]">Master’s </span> Programmes 2026-27<br />
           `,
   description:
-    "Advance Your Legal Expertise. Lead with Specialisation.",
+    "The M.A. programmes at KRMU focus on subject expertise, practical application, and skill development, enabling graduates to excel across multiple career options or pursue further research.",
   primaryCta: {
     label: "Apply Now",
     href: "#",
@@ -137,7 +137,9 @@ export const prominentRecruiterContent: ProminentRecruiterContent = {
 
 export const aboutUsContent: AboutUsContent = {
   title: "About Us",
-  description: `<p>K.R. Mangalam University is a prominent university in Gurugram that was founded in 2013 under the Haryana Private University Act. The university's NAAC Grade "A" accreditation demonstrates a strong dedication to academic excellence, high-quality instruction, and continuous development.</p> <br /><p>The Master of Laws (LL.M.) is a postgraduate programme intended to offer in-depth expertise in a particular field of law. By providing advanced insights into areas including international law, corporate law, intellectual property law, criminal law, and commercial law, earning an LL.M. improves legal knowledge and professional prospects. The curriculum strengthens professionals' practice and skills by giving them a better awareness of changing laws and regulations, building on their core legal knowledge. Graduates can explore employment opportunities in various fields, including corporate law, real estate, consulting, legal process outsourcing, and more.</p>`,
+  description: `<p>K.R. Mangalam University is a prominent university in Gurugram that was founded in 2013 under the Haryana Private University Act. 
+  The university's NAAC Grade "A" accreditation demonstrates a strong dedication to academic excellence, 
+  high-quality instruction, and continuous development.</p> <br /><p>The University’s M.A. programmes in English, Economics, Political Science, and Applied Psychology are designed to offer strong theoretical foundations, research-oriented learning, and practical exposure. These programmes equip students with critical thinking abilities, analytical skills, and subject expertise, preparing them for diverse professional roles, civil services, research, and advanced academic pursuits.</p>`,
   image: {
     src: "/landingpage/mca-2026/univ.png",
     alt: "K.R. Mangalam University Campus",
@@ -180,10 +182,10 @@ export const industryExpertsContent: IndustryExpertsContent = {
 };
 
 export const businessLeaderContent: BusinessLeaderContent = {
-  sectionTitle: "Preparing the Next Generation of Legal Thought Leaders",
+  sectionTitle: "Why Choose a Master of Arts Programme at KRMU?",
 
   sectionDescription:
-    "The LL.M. programme at K.R. Mangalam University is designed for law graduates who seek advanced legal knowledge, research expertise, and specialisation in emerging and core areas of law.",
+    "K.R. Mangalam University’s Master of Arts Programmes offer the perfect blend of theory and practical understanding. The programmes are designed in alignment with global trends to create a learning environment that carves the best out of our students.",
 
   semesters: [
     {
@@ -191,7 +193,7 @@ export const businessLeaderContent: BusinessLeaderContent = {
       title: "",
       duration: "",
       subtitle:
-        "Specially Designed Curriculum in Consultation with Top Experts and Law Practitioners",
+        "Programmes Curated by Industry Experts to Merge Practical Learning with Higher Education Theory",
       heading: "",
       description: "",
       courses: [
@@ -208,7 +210,7 @@ export const businessLeaderContent: BusinessLeaderContent = {
       title: "",
       duration: "",
       subtitle:
-        "Consistent Mentoring by Acclaimed Academicians, Judges, Industry Experts from Top Law Firms and Senior Advocates from High Courts and The Supreme Court of India",
+        "Mentorship from Experts with Years of Industry Experience",
       heading: "",
       description: "",
       courses: [
@@ -225,7 +227,7 @@ export const businessLeaderContent: BusinessLeaderContent = {
       title: "",
       duration: "",
       subtitle:
-        "Develop Strong Analytical and Creative Skills Essential for Legal Professions",
+        "Future-Proof Programmes to Ensure our Students are Industry Ready",
       heading: "",
       description: "",
       courses: [
@@ -242,7 +244,7 @@ export const businessLeaderContent: BusinessLeaderContent = {
       title: "",
       duration: "",
       subtitle:
-        "Practical Exposure through Moot Court Practices, Field Studies, and Legal Aid Sessions",
+        "International Collaborations with Institutions and Global Leaders to Offer Global Exposure",
       heading: "",
       description: "",
       courses: [
@@ -258,7 +260,8 @@ export const businessLeaderContent: BusinessLeaderContent = {
       id: 5,
       title: "",
       duration: "",
-      subtitle: "100% Placement Support and Internship Opportunities",
+      subtitle:
+        "Student-Centric Infrastructure to Promote Better Learning and Research Opportunities",
       heading: "",
       description: "",
       courses: [
@@ -276,82 +279,61 @@ export const businessLeaderContent: BusinessLeaderContent = {
 export const PGProgrammeCard: ProgramCardType = [
   {
     image: "/landingpage/common/dummy.png",
-    title: "LL.M. in Corporate Law",
+    title: "M.A. English",
     description:
-      "The LL.M. in Corporate Law is designed to develop advanced expertise in corporate governance, mergers and acquisitions, compliance, and commercial regulations. The programme equips law graduates with in-depth legal insight, strategic thinking, and practical exposure to address complex corporate and business legal challenges in a globalised economy.",
+      "The M.A. English programme offers strong theoretical foundations in literature, language, and critical theory, combined with analytical and research-oriented learning. It equips students with advanced communication, critical thinking, and interpretative skills to pursue careers in academics, media, publishing, content creation, and related fields, while preparing them for higher studies and research.",
     format: "",
-    duration: "1 Years",
+    duration: "2 Years",
     eligibility:
-      "The candidate must hold an LL.B. degree with at least 50% of the possible points from an accredited university.",
+      "Must have passed a Bachelor degree (any discipline) or equivalent degree from a recognised university with a minimum of 50% marks in aggregate.",
     focus: "",
-    annualFee: "Rs 1,50,000",
+    annualFee: "Rs 1,10,000",
   },
   {
     image: "/landingpage/common/dummy.png",
-    title: "LL.M. in Human Rights and Humanitarian Law",
+    title:
+      "M.A. Economics",
     description:
-      "The LL.M. in Human Rights and Humanitarian Law focuses on the protection and promotion of human dignity through advanced study of international human rights frameworks, humanitarian principles, and global justice systems. The programme prepares legal professionals to address contemporary human rights challenges through critical analysis, research, and policy-oriented legal practice.",
+      "The M.A. Economics programme provides strong theoretical foundations in economic theory, quantitative analysis, and policy studies, combined with applied and research-oriented learning. It equips students with analytical, problem-solving, and data interpretation skills to pursue careers in policy research, banking, analytics, public services, and higher academic studies.",
     format: "",
-    duration: "1 Years",
+    duration: "2 Years",
     eligibility:
-      "The candidate must hold an LL.B. degree with at least 50% of the possible points from an accredited university.",
+      "Must have passed a Bachelor degree (any discipline) or equivalent degree from a recognised university with a minimum of 50% marks in aggregate.",
     focus: "",
-    annualFee: "Rs 1,50,000",
+    annualFee: "Rs 1,10,000",
   },
   {
     image: "/landingpage/common/dummy.png",
-    title: "LL.M. in Criminal Law",
+    title:
+      "M.A. Political Science",
     description:
-      "The LL.M. in Criminal Law offers advanced study of criminal justice systems, penal laws, and procedural frameworks. The programme develops strong analytical, research, and advocacy skills, preparing legal professionals to address complex criminal cases, policy reforms, and evolving challenges in the justice system.",
+      "The M.A. Political Science programme offers in-depth understanding of political theory, governance, international relations, and public policy through critical and analytical learning. It develops research, analytical, and policy-evaluation skills, preparing students for careers in civil services, public administration, research organisations, think tanks, and advanced academic pursuits.",
     format: "",
-    duration: "1 Years",
+    duration: "2 Years",
     eligibility:
-      "The candidate must hold an LL.B. degree with at least 50% of the possible points from an accredited university.",
+      "Must have passed a Bachelor degree (any discipline) or equivalent degree from a recognised university with a minimum of 50% marks in aggregate.",
     focus: "",
-    annualFee: "Rs 1,50,000",
+    annualFee: "Rs 1,15,000",
   },
   {
     image: "/landingpage/common/dummy.png",
-    title: "LL.M. in Intellectual Property Rights",
+    title:
+      "M.A. Applied Psychology",
     description:
-      "The LL.M. in Intellectual Property Rights equips legal professionals with advanced knowledge of patents, trademarks, copyrights, and emerging IP laws in the digital and innovation-driven economy. The programme develops expertise in IP protection, enforcement, and policy, preparing graduates for specialised legal practice, corporate advisory roles, and research in intellectual property law.",
+      "The M.A. Applied Psychology programme blends strong theoretical foundations with practical training in psychological assessment, methodologies, and mental processes. It equips students with essential analytical, interpersonal, and professional skills to interpret human behaviour, address real-world challenges, and build careers in psychology while promoting mental health awareness.",
     format: "",
-    duration: "1 Years",
+    duration: "2 Years",
     eligibility:
-      "The candidate must hold an LL.B. degree with at least 50% of the possible points from an accredited university.",
+      "Must have passed a Bachelor degree (any discipline) or equivalent degree from a recognised university with a minimum of 50% marks in aggregate.",
     focus: "",
-    annualFee: "Rs 1,50,000",
-  },
-  {
-    image: "/landingpage/common/dummy.png",
-    title: "LL.M. in Cyber Law",
-    description:
-      "The LL.M. in Cyber Law focuses on the legal and regulatory frameworks governing cyberspace, data protection, and digital transactions. The programme equips legal professionals with specialised knowledge to address cyber crimes, privacy issues, and emerging challenges in technology-driven legal environments.",
-    format: "",
-    duration: "1 Years",
-    eligibility:
-      "The candidate must hold an LL.B. degree with at least 50% of the possible points from an accredited university.",
-    focus: "",
-    annualFee: "Rs 1,50,000",
-  },
-  {
-    image: "/landingpage/common/dummy.png",
-    title: "LL.M. in Alternative Dispute Resolution",
-    description:
-      "The LL.M. in Alternative Dispute Resolution focuses on modern dispute resolution mechanisms, including arbitration, mediation, and negotiation. The programme develops advanced legal, analytical, and advocacy skills, preparing professionals to resolve complex disputes efficiently across commercial, corporate, and international legal settings.",
-    format: "",
-    duration: "1 Years",
-    eligibility:
-      "The candidate must hold an LL.B. degree with at least 50% of the possible points from an accredited university.",
-    focus: "",
-    annualFee: "Rs 1,50,000",
+    annualFee: "Rs 1,15,000",
   },
 ];
 
 export const prospectusDownloadContent: ProspectusDownloadContent = {
-  title: "Download the LL.M. Programme prospectus",
+  title: "Download the M.A. Programme Prospectus",
   description:
-    "Download the LL.M. programme prospectus to explore programme details, specialisations, curriculum, and career prospects.",
+    "Download the M.A. programme prospectus to explore programme details, specialisations, curriculum, and career prospects.",
   button: {
     label: "Download Now",
     href: "#", // can be file link or NPF popup later
@@ -371,29 +353,29 @@ export const PGTestimonialsData: PGTestimonialsBlock = {
   items: [
     {
       brand: "",
-      text: "Pursuing a LLM  at the  University of Edinburgh deepened my understanding of global corporate governance, equipping me with analytical skills for a successful legal career.",
-      author: "TANMAYA JHA",
+      text: "My journey at K.R. Mangalam University has been truly transformative, shaping both my academic foundation and passion for extracurricular activities. Studying at KRMU, I received a quality education that opened new career opportunities for me. The well-structured curriculum and guidance from dedicated faculty helped me master the language, its cultural nuances, and practical applications. Beyond academics, KRMU provided enriching opportunities in theatre, Nukkad Natak and cultural events, which enhanced my confidence and creativity. These experiences refined my performance skills and deepened my passion for storytelling.",
+      author: "Ayush Gupta",
       color: "bg-[#EAF6FF]",
       featured: false,
     },
     {
       brand: "",
-      text: "Proud K.R. Mangalam University alumni, my journey from student to professional  was enriched by diverse cultural and academic engagements, shaping my future personally and professionally. Immersed in a vibrant academic environment, guided by distinguished professors, I gained confidence and insight into the leg",
-      author: "SAGAR KUMAR",
+      text: "My journey at K.R. Mangalam University was truly enriching and transformative. The university provided a strong academic foundation, fostering critical thinking and research skills that have been invaluable in my further studies. I am especially grateful to my dedicated faculty mentors, whose guidance and encouragement played a crucial role in shaping my academic and professional aspirations. Their support not only helped me excel in my undergraduate studies but also prepared me for the rigorous academic environment of the University of Exeter, UK, where I am currently pursuing my higher studies.",
+      author: "Khushi Jain",
       color: "bg-white",
       featured: false,
     },
     {
       brand: "",
-      text: "Blessed to join KRMU, its top-notch infrastructure and supportive atmosphere enriched my learning journey. Grateful to professors for their expertise. Now, as a director at 'Ataraxia IP,' I aim to apply KRMU's teachings to achieve my goals",
-      author: "KOMAL SHARMA",
+      text: "My journey at KRMU has been nothing short of a fun rollercoaster. It was an amalgamation of learning, joyful experiences and holistic personality development. I was lucky enough to get the support of my really helpful professors, who were a guiding light at all points. My achievements were always given recognition. I was appreciated by everyone around me, which gave me a further boost to excel in all fields. The Chancellor’s Excellence Award and a 100% sponsored trip to the United Kingdom will always be close to my heart, and I will always cherish my “good-old” days with K.R.Mangalam!",
+      author: "Annanya Agarwal",
       color: "bg-white",
       featured: false,
     },
     {
       brand: "",
-      text: "Navigating Legal Frontiers with K.R. Mangalam University My journey at K.R. Mangalam University transformed me, fostering my confidence and competence in law. As an alumnus, I'm grateful for experiences like coordinating the Legal Aid Committee and serving as a Social Media Ambassador, amplifying social  responsibility. Over 15 internships honed my skills, paving the way for roles as a Legal Consultant and founder of a law firm. K.R. Mangalam's interdisciplinary approach and faculty support laid the foundation for my success, instilling values of integrity and compassion. Thank you for shaping me into the legal professional I am today.",
-      author: "JAI SIKAND",
+      text: "I am incredibly grateful to K.R. Mangalam University for the opportunity to join their esteemed institution. From day one, I’ve felt supported by both my professors and peers, which has made a real difference in my academic journey. The courses are challenging yet rewarding, and I’ve already grown so much—both personally and in my understanding of psychology. I’m excited to see where this path takes me.",
+      author: "Shivangi Sharma",
       color: "bg-white",
       featured: false,
     },
@@ -445,8 +427,8 @@ export const admissionProcessContent: AdmissionProcessContent = {
 };
 
 export const mbaComparisonContent: MbaComparisonContent = {
-  title: "vs LL.M. at KRMU",
-  highlight: "LL.M. at a Traditional University",
+  title: "vs M.A. at KRMU",
+  highlight: "M.A. at a Traditional University",
   description:
     "The program at KRMU emphasizes real-world learning through internships, business simulations, and industry-driven projects.",
 
@@ -457,51 +439,51 @@ export const mbaComparisonContent: MbaComparisonContent = {
     {
       icon: BookOpen,
       label: "Curriculum",
-      traditional:
-        "Theory-heavy with limited focus on emerging legal areas.",
+      traditional: "Conventional syllabus with limited industry or contemporary relevance",
       krmu: {
         title:
-          "Industry-aligned curriculum with specialisations in contemporary and evolving areas of law.",
+          "Industry-aligned and interdisciplinary curriculum updated to current academic and professional needs",
         desc: "",
       },
     },
     {
       icon: Lightbulb,
       label: "Pedagogy",
-      traditional: "Primarily lecture-based teaching methods.",
+      traditional: "Primarily lecture-based and theory-driven learning",
       krmu: {
         title:
-          "Experiential learning through case studies, research projects, seminars, and practical exposure.",
+          "Experiential learning through case studies, projects, presentations, and research-based activities",
         desc: "",
       },
     },
     {
       icon: GraduationCap,
       label: "Faculty",
-      traditional: "Predominantly academic faculty with limited industry interaction.",
+      traditional:
+        "Largely academic, with minimal practical or field exposure",
       krmu: {
         title:
-          "Experienced academicians supported by legal practitioners, jurists, and industry experts.",
+          "Experienced academicians and practitioners with strong research and domain expertise",
         desc: "",
       },
     },
     {
       icon: Briefcase,
-      label: "Placements",
-      traditional: "Limited placement assistance and industry networking.",
+      label: "Career Exposure",
+      traditional: "Limited career guidance and traditional career pathways",
       krmu: {
         title:
-          "Dedicated career support with industry connections, internships, and professional guidance.",
+          "Career-oriented training, research exposure, internships, and guidance for civil services, academia, and professional roles",
         desc: "",
       },
     },
     {
       icon: Award,
       label: "Assessment System",
-      traditional: "Rigid and exam-centric evaluation.",
+      traditional: "End-term, theory-focused examinations",
       krmu: {
         title:
-          "Continuous assessment through research work, presentations, projects, and examinations.",
+          "Continuous assessment through assignments, projects, presentations, and practical evaluations",
         desc: "",
       },
     },
@@ -536,31 +518,45 @@ export const businessHubData: BusinessHubSection = {
 export const faqSectionData: FAQSectionData = {
   eyebrow: "(FAQs)",
   heading: "Frequently Asked Questions",
-  description:
-    "",
+  description: "",
   faqs: [
     {
       id: "item-1",
-      question:
-        "How long does the LL.M. program last?",
-      answer: `The program lasts for a full year.`,
+      question: "What is the duration of M.A. courses at K.R. Mangalam University?",
+      answer: `Our M.A. programmes have a duration of 2 years covering in-depth concepts, making you a specialist in your domain.`,
     },
     {
       id: "item-2",
       question:
-        "What are the requirements to be eligible for the LL.M. program?",
-      answer: `Candidates must hold an LL.B. degree with at least 50% of the possible points from an accredited university.`,
+        "Can students get scholarships for M.A. courses at K.R. Mangalam University?",
+      answer: `Yes, we offer up to 100% scholarships to talented and deserving students. You can learn more about scholarships on our admission page.`,
     },
     {
       id: "item-3",
-      question:
-        "Which specialisations are available in the LL.M. programme?",
-      answer: `Corporate law, human rights and humanitarian law, criminal law, intellectual property rights, alternative dispute resolution, and cyber law are among the specialisations offered by the program.`,
+      question: "What is the eligibility criteria to get admission to the M.A. Applied Psychology at K.R. Mangalam University?",
+      answer: `The candidate should have passed a Bachelor degree (any discipline) or equivalent degree from a recognised university with a minimum of 50% marks in aggregate.`,
     },
     {
       id: "item-4",
-      question: "Is there a hybrid version of the LL.M. programme?",
-      answer: `Indeed, a hybrid style of delivery is used for the LL.M. programme. You get the best of both worlds by using online materials in addition to attending in-person classes on Saturdays.`,
+      question: "Which M.A. courses does K.R. Mangalam University offer?",
+      answer: `K.R. Mangalam University offers the following M.A. courses: <br /> 
+       <ul>
+        <li>M.A. English</li>
+        <li>M.A. Economics</li>
+        <li>M.A. Political Science</li>
+        <li>M.A. Applied Psychology</li>
+       </ul>
+      `,
+    },
+    {
+      id: "item-5",
+      question: "Is there placement and career support for design students?",
+      answer: `Yes. KRMU offers 100% placement assistance with strong industry connections, helping students secure internships and job opportunities upon graduation.`,
+    },
+    {
+      id: "item-6",
+      question: "Is hostel accommodation available for students?",
+      answer: `Yes, KRMU offers modern, secure on-campus housing with all amenities.`,
     },
   ],
 };
@@ -592,7 +588,7 @@ export const comeToLifeData: ComeToLifeSection = {
   description: `The modern facilities of K.R. Mangalam University intend to provide strong support to students. The institution has cutting-edge computer labs with the latest equipment, sophisticated tools, and industry-standard software for practical projects, research, and simulations. To promote an immersive learning environment, classrooms are equipped with smart technology, such as interactive whiteboards, projectors, high-speed Wi-Fi, and comfortable, ergonomic seating. They also have central air conditioning. For in-depth study and research, students have access to a well-stocked central library with a comprehensive selection of books, periodicals, research materials, and e-resources.`,
   footerText: ``,
   cta: {
-    label: "Apply for LL.M. 2026-2027",
+    label: "Apply for M.A. 2026-2027",
     href: "#",
   },
   slides: [

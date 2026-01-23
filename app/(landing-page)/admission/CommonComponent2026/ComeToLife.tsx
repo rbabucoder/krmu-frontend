@@ -17,10 +17,21 @@ const ComeToLife = ({ data }: Props) => {
             className="text-4xl text-[#013fa1] font-semibold text-center mb-5"
             dangerouslySetInnerHTML={{ __html: data.heading }}
           />
-          <p
+          {/* <p
             className="text-[#666666] text-center"
             dangerouslySetInnerHTML={{ __html: data.description }}
-          />
+          /> */}
+          <p className="text-[#666666] text-center">
+            K.R. Mangalam University offers a modern and student-centric campus
+            designed to support effective learning and holistic development for
+            its students. The university provides smart classrooms, a
+            well-equipped central library with digital resources, computer and
+            analytics labs, and seminar halls to enhance academic engagement.
+            Additionally, the availability of dedicated spaces for innovation,
+            entrepreneurship, and skill development create an environment that
+            encourages practical learning, collaboration, and professional
+            growth.
+          </p>
         </div>
       </div>
 
