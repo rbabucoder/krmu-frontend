@@ -24,7 +24,7 @@ export async function checkCustomPage(
     `${FETCH_STRAPI_URL}/api/pages?filters[slug][$eq]=${slug}&fields[0]=is_custom_page&fields[1]=slug`,
     {
       next: {
-        revalidate: 3600,
+        revalidate: 60,
       },
     },
   );
