@@ -9,40 +9,40 @@ type Props = {
 
 const NavbarMenu = ({ mainMenu }: Props) => {
   const academicMenu = mainMenu.find(
-    (component) => component.__component === "temp-menus.academic-menu"
+    (component) => component.__component === "temp-menus.academic-menu",
   );
 
   const programmesLinks = mainMenu.find(
-    (component) => component.title === "Programmes"
+    (component) => component.title === "Programmes",
   );
   const careersLinks = mainMenu.find(
-    (component) => component.title === "Careers"
+    (component) => component.title === "Careers",
   );
   const sustainabilityLinks = mainMenu.find(
-    (component) => component.title === "Sustainability"
+    (component) => component.title === "Sustainability",
   );
 
   const applyNowButton = mainMenu.find(
-    (component) => component.__component === "menu.menu-button"
+    (component) => component.__component === "menu.menu-button",
   );
 
   const admissionMenu = mainMenu.find(
-    (component) => component.__component === "temp-menus.admissions"
+    (component) => component.__component === "temp-menus.admissions",
   );
 
   const placementMenu = mainMenu.find(
-    (component) => component.__component === "temp-menus.placement-menu"
+    (component) => component.__component === "temp-menus.placement-menu",
   );
   const researchMenu = mainMenu.find(
-    (component) => component.__component === "temp-menus.research-menu"
+    (component) => component.__component === "temp-menus.research-menu",
   );
 
   const lifeatkrmuMenu = mainMenu.find(
-    (component) => component.__component === "temp-menus.life-at-krmu"
+    (component) => component.__component === "temp-menus.life-at-krmu",
   );
 
   const aboutusMenu = mainMenu.find(
-    (component) => component.__component === "temp-menus.about-us-menu"
+    (component) => component.__component === "temp-menus.about-us-menu",
   );
 
   return (
@@ -377,6 +377,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                     sustainabilityLinks?.menuclass || ""
                   }`}
                   href={sustainabilityLinks.url}
+                  target="_blank"
                 >
                   <span>{sustainabilityLinks.title}</span>
                 </Link>
@@ -429,7 +430,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                                   <Link href={menu?.url}>{menu?.title}</Link>
                                 </li>
                               );
-                            }
+                            },
                           )}
                         </ul>
                       </div>

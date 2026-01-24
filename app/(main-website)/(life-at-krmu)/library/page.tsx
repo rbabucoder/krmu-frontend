@@ -19,9 +19,6 @@ import Feedback from "./tabs/Feedback";
 import NeedHelp from "./tabs/NeedHelp";
 import EBooks from "./tabs/EBooks";
 import Journals from "./tabs/Journals";
-import { folderRouteSEO } from "@/lib/api/siteseo";
-import { Metadata } from "next";
-import { STRAPI_URL } from "@/app/constant";
 
 
 
