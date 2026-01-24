@@ -1,4 +1,3 @@
-
 import { getCustomPageData } from "@/lib/constants/page";
 import { notFound } from "next/navigation";
 

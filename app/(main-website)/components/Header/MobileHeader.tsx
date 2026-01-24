@@ -284,6 +284,7 @@ const MobileHeader = ({ topbarmenu, navbarData, onClose }: Props) => {
                   <Link
                     href={sustainabilityLinks?.url || "#"}
                     onClick={onClose}
+                    target="_blank"
                   >
                     {sustainabilityLinks?.title}
                   </Link>
