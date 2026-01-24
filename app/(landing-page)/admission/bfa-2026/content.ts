@@ -149,7 +149,7 @@ export const specialisationData: SpecialisationSection = {
         {
           iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
-          desc: ` Passed the 10+2 or comparable exam in any stream with at least 50%.`,
+          desc: ` Passed the 10+2 or comparable exam in any stream with at least 50% marks.`,
         },
         {
           iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
