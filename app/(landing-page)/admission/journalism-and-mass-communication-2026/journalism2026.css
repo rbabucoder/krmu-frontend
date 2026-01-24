@@ -70,7 +70,7 @@
     transform: translate(-50%, -50%);
     width: 30px;
     height: 30px;
-    background: url("/landingpage/common/move-left.svg");
+    background: url("/wp-content/landingpage/common/move-left.svg");
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -82,7 +82,7 @@
     transform: translate(-50%, -50%);
     width: 30px;
     height: 30px;
-    background: url("/landingpage/common/move-right.svg");
+    background: url("/wp-content/landingpage/common/move-right.svg");
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -95,7 +95,7 @@
     transform: translate(-50%, -50%);
     width: 30px;
     height: 30px;
-    background: url("/landingpage/common/move-left-white.svg");
+    background: url("/wp-content/landingpage/common/move-left-white.svg");
     background-size: contain;
     background-repeat: no-repeat;
   }
