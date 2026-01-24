@@ -163,17 +163,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `With an emphasis on human capital, strategic HR techniques, and people-oriented leadership, you may become an expert in talent management and organisational success.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `3 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 1,85,000`,
         },
@@ -185,17 +185,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `You may become an authority in talent management and organisational performance by focussing on human capital, strategic HR approaches, and people-oriented leadership.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 1,85,000`,
         },
@@ -207,17 +207,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `With a BBA in Marketing, explore the realms of branding, consumer behaviour, and marketing tactics to develop successful marketing campaigns and spur company expansion.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `3 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 1,85,000`,
         },
@@ -229,17 +229,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `Investigate branding, consumer behaviour, and marketing strategies with a BBA in marketing to create effective marketing campaigns and promote business growth.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 1,85,000`,
         },
@@ -251,17 +251,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `Gain expertise in risk management, investment techniques, and corporate finance to position yourself for leadership in the financial industry.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `3 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 1,85,000`,
         },
@@ -273,17 +273,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `Develop your corporate finance, investment, and risk management abilities to position yourself for leadership in the financial industry.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 1,70,000`,
         },
@@ -296,17 +296,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `Proficiency in online branding, performance marketing, and social media analytics can help you succeed in the digital economy. `,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `3 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 2,05,000`,
         },
@@ -319,17 +319,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `You can succeed in the digital economy if you are proficient in social media analytics, performance marketing, and online branding.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 2,05,000`,
         },
@@ -341,17 +341,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `Gain knowledge of international trade, cross-cultural management, and international marketing techniques to get ready for a worldwide career.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `3 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 1,85,000`,
         },
@@ -363,17 +363,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `Learn about international trade, cross-cultural management, and international marketing tactics to get ready for a worldwide job.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 1,85,000`,
         },
@@ -385,17 +385,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `Give yourself the abilities and information required to succeed in the fast-paced global tourist sector.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `3 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 1,85,000`,
         },
@@ -407,17 +407,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `Give yourself the skills and knowledge needed to thrive in the rapidly evolving global tourism industry. `,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 1,85,000`,
         },
@@ -429,17 +429,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `Discover how to use decision-making tools, predictive analytics, and data visualisation to solve business problems.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `3 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 2,10,000`,
         },
@@ -451,17 +451,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `Discover how to use decision-making tools, predictive analytics, and data visualisation to solve business problems.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 2,10,000`,
         },
@@ -473,17 +473,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `You may use startup ideation, venture financing, and lean management strategies to transform innovative ideas into successful enterprises with a BBA in Entrepreneurship. `,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 2,05,000`,
         },
@@ -495,17 +495,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `To focus on financial reporting and worldwide finance standards, pursue an internationally acknowledged ACCA-aligned programme.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `3 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 2,05,000`,
         },
@@ -517,17 +517,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `Pursue a globally recognised ACCA-aligned curriculum with an emphasis on financial reporting and global finance standards.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 2,05,000`,
         },
@@ -539,17 +539,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `With knowledge of procurement, warehousing, and logistics technology, focus on supply chain and logistics strategy.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `3 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 2,05,000`,
         },
@@ -561,17 +561,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `Focus on supply chain and logistics strategy and have knowledge of procurement, warehousing, and logistics technology.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 2,05,000`,
         },
@@ -583,17 +583,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `With a BBA in Entrepreneurship, you can turn creative concepts into profitable businesses through startup ideation, venture capital, and learn management techniques.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `3 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 2,05,000`,
         },

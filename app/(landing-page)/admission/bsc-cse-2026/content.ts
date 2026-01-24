@@ -158,17 +158,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `B.Sc. (Hons.) Computer Science (with academic support of IBM) equips students with industry-relevant skills in Cloud Computing, Artificial Intelligence, and Software Development, combining strong computer science fundamentals with hands-on, technology-driven learning for future-ready tech careers.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `3 Years (NEP-compliant)`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `10+2 in any stream with Mathematics, Statistics, Computer, or Information Science with at least 50% marks.`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs. 1,35,000`,
         },
@@ -181,17 +181,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `B.Sc. (Hons.) Cyber Security at K.R. Mangalam University is designed to prepare students for the evolving digital threat landscape, with a strong focus on ethical hacking, network security, and cyber law, combining technical expertise with practical training for secure and responsible cyber practices.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `3 Years (NEP-compliant)`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Eligibility",
           desc: `10+2 in any stream with Mathematics, Statistics, Computer, or Information Science with at least 50% marks.`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs. 1,35,000`,
         },
@@ -205,17 +205,17 @@ export const specialisationData: SpecialisationSection = {
 `,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `3 Years (NEP-compliant)`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `10+2 in any stream with Mathematics, Statistics, Computer, or Information Science with at least 50% marks.`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs. 1,35,000`,
         },

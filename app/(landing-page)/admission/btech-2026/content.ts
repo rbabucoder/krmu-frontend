@@ -168,17 +168,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `The B.Tech. Computer Science and Engineering programme at K.R. Mangalam University enables students to develop a strong basic foundation in concepts like programming, algorithms, data structures, and system design. With a future-ready and industry-relevant curriculum, learners gain hands-on experience in artificial intelligence, data science, cybersecurity, cloud computing, and software engineering. Expert faculty, modern laboratories, and industry-aligned projects ensure practical exposure and innovation. Finally, Students benefit from internships, research opportunities, hackathons, and global certifications that enhance employability. `,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `50% marks in 10+2 examination with Physics & Maths as mandatory courses. For the remaining single course, select any course from Chemistry/ Computer Science/ Electronics/ Information Technology/ Biology/ Informatics Practices/Biotechnology/ Technical Vocational subject/ Agriculture/Engineering Graphics/ Business Studies/Entrepreneurship from any recognised Board/ University.`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 2,30,000`,
         },
@@ -191,17 +191,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `The K.R. Mangalam University’s B.Tech. Computer Science and Engineering (Robotics & AI), designed with academic support from IBM and powered by Microsoft Certifications, is an industry-aligned program that blends strong engineering foundations with hands-on learning in AI, robotics, cloud, data, and automation. IBM-led curricula and Microsoft credentials enhance employability, validating real-world skills employers seek.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `Passed 10+2 examination with Physics and Mathematics as mandatory courses. For the remaining single course, select any course from Chemistry/ Computer Science/ Electronics/ Information Technology/ Biology/ Informatics Practices/Biotechnology/ Technical Vocational subject/ Agriculture/Engineering Graphics/ Business Studies/Entrepreneurship from any recognised Board/ University with minimum 50% aggregate marks.`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `2,50,000`,
         },
@@ -214,17 +214,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `The B.Tech. Computer Science and Engineering (AI & ML) program of K.R. Mangalam University is meticulously designed to shape industry-ready innovators. This program blends strong computer science fundamentals with cutting-edge Artificial Intelligence and Machine Learning, enhanced by academic support from IBM and powered by Microsoft Certifications. Graduates are prepared for high-demand roles such as AI engineer, data scientist, and ML developer, equipped with skills that meet evolving industry needs and drive innovation across diverse sectors.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `Passed 10+2 examination with Physics and Mathematics as mandatory courses. For the remaining single course, select any course from Chemistry/ Computer Science/ Electronics/ Information Technology/ Biology/ Informatics Practices/Biotechnology/ Technical Vocational subject/ Agriculture/Engineering Graphics/ Business Studies/Entrepreneurship from any recognised Board/ University with minimum 50% aggregate marks.`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 2,65,000`,
         },
@@ -237,17 +237,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `The K.R. Mangalam University strives to build a secure future for its students with the B.Tech. CSE (Cybersecurity) programme that’s crafted to meet the growing global demand for cyber professionals. This industry-focused course is offered with academic support from EC-Council and IBM, combining strong computer science foundations with advanced cybersecurity expertise. `,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `Passed 10+2 examination with Physics and Mathematics as mandatory courses. For the remaining single course, select any course from Chemistry/ Computer Science/ Electronics/ Information Technology/ Biology/ Informatics Practices/Biotechnology/ Technical Vocational subject/ Agriculture/Engineering Graphics/ Business Studies/Entrepreneurship from any recognised Board/ University with minimum 50% aggregate marks. `,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 2,50,000`,
         },
@@ -260,17 +260,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `The B.Tech. CSE (Data Science) programme of K.R. Mangalam University is intricately designed to create the next generation of data-driven professionals. With academic support from IBM, this industry-aligned course blends strong computer science fundamentals with advanced data science, analytics, and AI skills. `,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `Passed 10+2 examination with Physics and Mathematics as mandatory courses. For the remaining single course, select any course from Chemistry/ Computer Science/ Electronics/ Information Technology/ Biology/ Informatics Practices/Biotechnology/ Technical Vocational subject/ Agriculture/Engineering Graphics/ Business Studies/Entrepreneurship from any recognised Board/ University with minimum 50% aggregate marks. `,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 2,50,000`,
         },
@@ -283,17 +283,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `The students of K.R. Mangalam University enrolled in the B.Tech. CSE (Full Stack Development) programme, master the art of developing robust, scalable, and user-centric applications as well as learn to seamlessly integrate front-end design with powerful back-end infrastructure while working with modern frameworks and cloud technologies.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `Passed 10+2 examination with Physics and Mathematics as mandatory courses. For the remaining single course, select any course from Chemistry/ Computer Science/ Electronics/ Information Technology/ Biology/ Informatics Practices/Biotechnology/ Technical Vocational subject/ Agriculture/Engineering Graphics/ Business Studies/Entrepreneurship from any recognised Board/ University with minimum 50% aggregate marks.`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 2,50,000`,
         },
@@ -306,17 +306,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `The B.Tech. CSE (UX/UI) is a four-year undergraduate programme of K.R. Mangalam University meticulously designed to provide educational excellence in technological design. In this comprehensive programme, students learn computing approaches and technologies to become User Interface (UI) and User Experience (UX) designers. With the academic association with ImaginXP, students learn practical knowledge from industry experts and have access to advanced tools. `,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `Passed 10+2 examination with Physics and Mathematics as mandatory courses. For the remaining single course, select any course from Chemistry/ Computer Science/ Electronics/ Information Technology/ Biology/ Informatics Practices/Biotechnology/ Technical Vocational subject/ Agriculture/Engineering Graphics/ Business Studies/Entrepreneurship from any recognised Board/ University with minimum 50% aggregate marks. `,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 2,50,000`,
         },

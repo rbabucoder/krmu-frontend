@@ -160,17 +160,17 @@ Our pharma programmes & specialisations `,
       desc: `The programme blends theory and practical learning to build strong pharmacy skills. Through classes, lab work, and hands-on training, students gain essential knowledge of chemistry, pharmacology, biochemistry, and toxicology for successful pharmacy careers.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `2 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `    Candidates must have passed 10+2 or an equivalent science qualification with physics, chemistry, and biology or mathematics, as approved by the Pharmacy Council of India. `,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs. 1,20,000`,
         },
@@ -182,17 +182,17 @@ Our pharma programmes & specialisations `,
       desc: `The programme offers in-depth pharmaceutical education with strong scientific foundations. It blends advanced theory, laboratory training, industry exposure, and practical learning to prepare students for professional roles in drug development, research, production, and healthcare sectors.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `    Candidates must have passed 10+2 with physics, chemistry, and biology or maths, securing at least 50% marks from a recognised board. Applicants must be 17 years or older by 31 December of the admission year `,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs. 1,95,000`,
         },
@@ -204,17 +204,17 @@ Our pharma programmes & specialisations `,
       desc: `    The M.Pharm. Pharmaceutics programme focuses on advanced drug development and production. It covers pharmaceutics, drug delivery systems, manufacturing processes, industry advancements, and research-based learning, preparing students with strong scientific and practical expertise across four semesters. `,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `2 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `Candidates must hold a B.Pharmacy degree from a PCI-approved Indian institution with at least 55% aggregate marks and be registered with the State Pharmacy Council or obtain registration within one month of admission.`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs. 1,54,000`,
         },
@@ -226,17 +226,17 @@ Our pharma programmes & specialisations `,
       desc: `       The M.Pharm. in pharmacology programme focuses on drug science, mechanisms, and therapeutic applications. It combines advanced theoretical learning with hands-on laboratory training, research, and projects, preparing graduates for careers in pharmaceutical, healthcare, and biomedical fields. `,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `2 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `    Candidates must hold a B.Pharmacy degree from a PCI-approved Indian institution with at least 55% aggregate marks and be registered with the State Pharmacy Council or obtain registration within one month of admission. `,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs. 1,54,000`,
         },

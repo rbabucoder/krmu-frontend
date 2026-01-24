@@ -21,14 +21,14 @@ export const Hero: HeroContent = {
   title: `
       ADMISSIONS <br />
       OPEN FOR <br />
-      <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
+      <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold">
        Bachelor of Arts
       </span>
       <br />
       PROGRAMMES 2026-27
     `,
   desc: `The Bachelor of Arts programmes are designed to build critical thinking, communication, and analytical skills among students to prepare them for confident, career-ready roles across multiple sectors`,
-  heroBg: "/landingpage/law-2026/law.jpg",
+  heroBg: "/wp-content/landingpage/ba-2026/ba.webp",
   // middleImg: "/landingpage/law-2026/law.webp",
   middleImg: "",
 };

@@ -21,14 +21,14 @@ export const Hero: HeroContent = {
   title: `
       ADMISSIONS <br />
       OPEN FOR <br />
-      <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
+      <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold">
        Journalism & Mass Communication
       </span>
       <br />
       PROGRAMMES 2026-27
     `,
   desc: `The JMC course focuses on developing critical thinking, communication skills, creativity, and social awareness, preparing students for the fast-changing world of media, communication and storytelling`,
-  heroBg: "/landingpage/law-2026/law.jpg",
+  heroBg: "/wp-content/landingpage/sjmc-2026/sjmc.webp",
   // middleImg: "/landingpage/law-2026/law.webp",
   middleImg: "",
 };
@@ -65,33 +65,23 @@ export const Counters: CounterItem[] = [
 // Recruiters list
 export const prominentRecruiters: ProminentRecruit[] = [
   {
-    imgUrl:
-      "https://www.krmangalam.edu.in/admission/law-2025/assets/trilegal.svg",
+    imgUrl: "/landingpage/sjmc-2026/recruiters/dainik-bhasker.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://www.krmangalam.edu.in/admission/btech-2025-b/assets/images/accenture.svg",
+    imgUrl: "/landingpage/sjmc-2026/recruiters/zeenews.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+    imgUrl: "/landingpage/sjmc-2026/recruiters/dd-1.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+    imgUrl: "/landingpage/sjmc-2026/recruiters/outlook.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
-    alt: "Recruiter Logo",
-  },
-  {
-    imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+    imgUrl: "/landingpage/sjmc-2026/recruiters/indian-express.png",
     alt: "Recruiter Logo",
   },
 ];
@@ -168,44 +158,44 @@ export const specialisationData: SpecialisationSection = {
   heading: `KRMU’s Journalism & Mass Communication Courses`,
   specilisationCard: [
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/sjmc-2026/prog/ba-jmc.jpg",
       title: `B.A. (Journalism and Mass Communication)`,
       desc: `This undergraduate programme offered by K.R. Mangalam University perfectly blends conceptual knowledge with practical training in various fields of journalism, media, and communication. This degree aims to promote holistic education by striving to cultivate both analytical and creative thinking, preparing students to enter modern-world media with courage and confidence.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `3 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognised board/university in any stream with minimum 50% aggregate Marks.`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 1,60,000`,
         },
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/sjmc-2026/prog/ba-hons-jmc.jpg",
       title: `B.A. (Hons. / Hons. with Research) Journalism And Mass Communication`,
       desc: `The KRMU’s B.A. (Hons. / Hons. with Research) Journalism and Mass Communication is an innovative programme formulated to cultivate the next generation of media professionals and industry leaders. Students study a curriculum that covers the wide spectrum of mass media, ranging from traditional journalism to emerging digital platforms. Offering industry exposure from internships and workshops, the programme empowers students to gain career-relevant skills to take on diverse media-related roles.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognised board/university in any stream with minimum 50% aggregate Marks.`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 1,60,000`,
         },
@@ -217,17 +207,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `The aim of KRMU's M.A. JMC course is to prepare students for the fast-paced world of media, communication, and narrative. In order to assist students in comprehending how news, information, and messages are produced and disseminated across many platforms, the curriculum aims to integrate theoretical knowledge with hands-on training. Through guest lectures, workshops, and internships with media organisations, the students' understanding of fundamental subjects like journalistic ethics, media regulations, reporting, and editing is further developed.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `2 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `Candidate must have a bachelor's degree or equivalent degree from a recognised university with a minimum 50% aggregate marks`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 1,10,000`,
         },
@@ -256,7 +246,7 @@ export const testimonialsData: TestimonialsSection = {
   heading: `Still in Doubt? <br /> See What Our Students Say About Us!`,
   testimonials: [
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/sjmc-2026/testimonials/1.jpg",
       videoUrl: "#",
       quote: `SJMC equipped me with the skills to excel as a Social Media Coordinator at the Ministry of Jal Shakti. The hands-on experience and expert guidance were invaluable.
 `,
@@ -264,21 +254,21 @@ export const testimonialsData: TestimonialsSection = {
       programme: "Social Media Coordinator, Ministry of Jal Shakti",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/sjmc-2026/testimonials/2.jpg",
       videoUrl: "#",
       quote: `JMC provided the platform to realise my dream of becoming a Producer/Anchor. I'm grateful for the opportunities and mentorship that prepared me for India Ahead Hindi.`,
       name: "Ms Samika Rathore",
       programme: "Producer/Anchor, India Ahead Hindi",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/sjmc-2026/testimonials/3.jpg",
       videoUrl: "#",
       quote: `SJMC equipped me with invaluable industry knowledge and practical skills. The hands-on experience and expert faculty guidance prepared me perfectly for my role at HT Media as a Content Writer.`,
       name: "Ms Mahima Bhardwaj",
       programme: "Content Writer, HT Media",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/sjmc-2026/testimonials/4.jpg",
       videoUrl: "#",
       quote: `The knowledge and expertise gained at SJMC have been instrumental in my role as a Content Writer at Flifo Technologies. It's been a journey of growth and learning`,
       name: "Ms Anjali Sinha",

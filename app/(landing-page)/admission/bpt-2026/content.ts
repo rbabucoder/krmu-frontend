@@ -151,17 +151,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `The KRMU's Bachelor of Physiotherapy (BPT) programme leads to a wide array of rewarding and exciting job possibilities in the health and wellness industry. Graduates of this course are widely sought after in a variety of professional fields because they possess practical skills, ethical insights, and a thorough understanding of physiotherapy principles.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4.5 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent from any recognised board/university in any stream with Physics, Chemistry, Biology with minimum 50% aggregate marks.`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 1,58,000`,
         },

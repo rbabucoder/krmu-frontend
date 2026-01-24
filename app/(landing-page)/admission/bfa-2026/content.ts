@@ -65,19 +65,11 @@ export const Counters: CounterItem[] = [
 // Recruiters list
 export const prominentRecruiters: ProminentRecruit[] = [
   {
-    imgUrl: "/landingpage/bfa-2026/recruiters/amazon.webp",
-    alt: "Recruiter Logo",
-  },
-  {
-    imgUrl: "/landingpage/bfa-2026/recruiters/zara.webp",
+    imgUrl: "/landingpage/bfa-2026/recruiters/persistent.png",
     alt: "Recruiter Logo",
   },
   {
     imgUrl: "/landingpage/bfa-2026/recruiters/zynga.webp",
-    alt: "Recruiter Logo",
-  },
-  {
-    imgUrl: "/landingpage/bfa-2026/recruiters/lifestyle.webp",
     alt: "Recruiter Logo",
   },
   {
@@ -116,27 +108,23 @@ export const industryExperts: IndustryExpertsSection = {
     href: "#",
   },
   cards: [
-       {
-      imgUrl:
-        "/landingpage/bfa-2026/learn-from/item-1.png",
+    {
+      imgUrl: "/landingpage/bfa-2026/learn-from/item-1.png",
       alt: "Logo",
       title: "",
     },
     {
-      imgUrl:
-        "/landingpage/bfa-2026/learn-from/son.png",
+      imgUrl: "/landingpage/bfa-2026/learn-from/son.png",
       alt: "Logo",
       title: "",
     },
     {
-      imgUrl:
-        "/landingpage/bfa-2026/learn-from/rv.png",
+      imgUrl: "/landingpage/bfa-2026/learn-from/rv.png",
       alt: "Logo",
       title: "",
     },
     {
-      imgUrl:
-        "/landingpage/bfa-2026/learn-from/pmca.png",
+      imgUrl: "/landingpage/bfa-2026/learn-from/pmca.png",
       alt: "Logo",
       title: "",
     },
@@ -154,17 +142,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `The Bachelor of Fine Arts (BFA) in Painting & Applied Arts is designed to nurture creative talent while developing strong technical and conceptual skills in visual arts. The programme combines traditional painting techniques with applied art practices, enabling students to explore creative expression alongside practical design applications. Through studio-based learning and expert mentorship, students build artistic proficiency and a professional creative identity.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: ` Passed the 10+2 or comparable exam in any stream with at least 50%.`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs. 1,20,000`,
         },

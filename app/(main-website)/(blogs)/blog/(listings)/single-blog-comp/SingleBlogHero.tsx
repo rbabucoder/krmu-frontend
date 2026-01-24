@@ -22,10 +22,16 @@ const SingleBlogHero = ({
   imgId,
   authorSlug,
 }: SingleBlogProps) => {
+  //   if (imgUrl) {
+  //   imgUrl = imgUrl.replace("/blog/wp-content", "/wp-content");
+  // }
+  //   if (imgUrl) {
+  //   imgUrl = imgUrl.replace("wp.krmangalam.edu.in", "krmangalam.edu.in");
+  // }
 
-    if (imgUrl) {
-    imgUrl = imgUrl.replace("/blog/wp-content", "/wp-content");
-  }
+  const normalizedImgUrl = imgUrl
+    ?.replace("/blog/wp-content", "/wp-content")
+    ?.replace("wp.krmangalam.edu.in", "www.krmangalam.edu.in");
 
   return (
     <section
@@ -53,11 +59,14 @@ const SingleBlogHero = ({
             <SingleBlogDate date={date} />
           </div>
         </div>
-        <div className="lg:w-1/2 flex items-center justify-center" data-test={imgUrl}>
-          {imgUrl && (
+        <div
+          className="lg:w-1/2 flex items-center justify-center"
+          data-test={imgUrl}
+        >
+          {normalizedImgUrl && (
             <Image
               // src={`${STRAPI_URL}${imgUrl}`}
-              src={imgUrl}
+              src={normalizedImgUrl}
               width={768}
               height={432}
               alt="Single Blog Title"

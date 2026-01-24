@@ -178,17 +178,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `This is a four-year undergraduate programme designed for aspiring fashion professionals. The curriculum blends contemporary trends with strong design fundamentals, offering hands-on training in garment construction, textiles, design techniques, and fashion business to prepare students for successful careers in the evolving fashion industry.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `Must have passed 10+2 or equivalent examination from any recognised board/university in any stream with a minimum of 50% aggregate marks.`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 2,10,000`,
         },
@@ -201,17 +201,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `This 4-year programme prepares students for the evolving interior design industry through a blend of creativity, technical skills, and industry-focused learning. Covering spatial planning, materials, lighting, and aesthetics, the programme equips graduates with industry-ready expertise for successful design careers.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `Must have passed 10+2 or equivalent examination from any recognised board/university in any stream with a minimum of 50% aggregate marks.`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 2,10,000`,
         },
@@ -224,17 +224,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `Powered by ImaginXP, this 4-year programme equips students with industry-ready skills in user research, interface design, prototyping, and usability testing. Focusing on human-centred design and creative innovation, it enables students to transform ideas into impactful digital experiences, blending visual creativity with technology to craft seamless user interactions.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `Must have passed 10+2 or equivalent examination from any recognised board/university in any stream with a minimum of 50% aggregate marks.`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 2,40,000`,
         },
@@ -247,17 +247,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `Powered by ImaginXP, this 4-year programme combines expert storytelling and character design with hands-on projects, preparing students to lead in the global gaming and animation market.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `Must have passed 10+2 or equivalent examination from any recognised board/university in any stream with a minimum of 50% aggregate marks.`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 2,40,000`,
         },

@@ -179,17 +179,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `Build strong expertise in finance, accounting, business law, and taxation with B.Com. (Hons.). This specialised degree prepares you for careers in commerce, banking, financial analysis, and entrepreneurship by turning knowledge into practical, career-ready skills. `,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `3 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognised board/university with minimum 50% aggregate marks.`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs. 1,40,000`,
         },
@@ -202,17 +202,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `The programme builds strong foundations in business and commerce, combining theory, practical learning, research exposure, and entrepreneurial skills to prepare students for diverse careers and future business challenges. `,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `2 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognised board/university with minimum 50% aggregate marks.`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs. 1,40,000`,
         },
@@ -225,17 +225,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `The programme, with academic support from Grant Thornton, prepares students for global finance careers by combining strong academic foundations with professional ACCA-aligned learning and international exposure. `,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `3 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognised board/university with minimum 50% aggregate marks.`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs. 1,65,000`,
         },
@@ -248,17 +248,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `The programme supported by Grant Thornton Bharat, builds strong global accounting expertise and practical skills, preparing students for successful international careers in finance and accounting. `,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognised board/university with minimum 50% aggregate marks. `,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs. 1,65,000`,
         },
@@ -270,17 +270,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `The programme builds strong analytical, financial, and managerial skills. It prepares students for careers in marketing, finance, banking, and insurance through a balanced blend of practical learning and theoretical knowledge. `,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `3 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognised board/university with minimum 50% aggregate marks. `,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs. 1,25,000`,
         },

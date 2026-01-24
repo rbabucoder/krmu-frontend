@@ -12,9 +12,13 @@ type Props = {
 const CommonBlogCard = async ({ title, excerpt, slug, imgId }: Props) => {
   let imgUrl = await getBlogImageById(imgId);
 
-  if (imgUrl) {
-    imgUrl = imgUrl.replace("/blog/wp-content", "/wp-content");
-  }
+  // if (imgUrl) {
+  //   imgUrl = imgUrl.replace("/blog/wp-content", "/wp-content");
+  // }
+
+  const normalizedImgUrl = imgUrl
+    ?.replace("/blog/wp-content", "/wp-content")
+    ?.replace("wp.krmangalam.edu.in", "www.krmangalam.edu.in");
 
   if (!imgUrl) return null;
 
@@ -28,14 +32,16 @@ const CommonBlogCard = async ({ title, excerpt, slug, imgId }: Props) => {
       >
         <div className="p-2.5" data-test={imgUrl}>
           <div>
-            <Image
-              src={imgUrl}
-              width={426}
-              height={284}
-              alt=""
-              className="rounded-[24px] h-auto w-full"
-              sizes="(max-width: 768px) 100vw, 426px"
-            />
+            {normalizedImgUrl && (
+              <Image
+                src={normalizedImgUrl}
+                width={426}
+                height={284}
+                alt=""
+                className="rounded-[24px] h-auto w-full"
+                sizes="(max-width: 768px) 100vw, 426px"
+              />
+            )}
           </div>
 
           <div>

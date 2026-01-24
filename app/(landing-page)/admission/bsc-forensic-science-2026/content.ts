@@ -21,14 +21,14 @@ export const Hero: HeroContent = {
   title: `
       ADMISSIONS <br />
       OPEN FOR <br />
-      <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
+      <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold">
        B.Sc. Forensic Science
       </span>
       <br />
       PROGRAMMES 2026-27 
     `,
   desc: `The B.Sc. Forensic Science course strives to prepare the next generation of professional <br /> analysts who pursue truth with the precision of science and integrity`,
-  heroBg: "/landingpage/law-2026/law.jpg",
+  heroBg: "/wp-content/landingpage/bsc-forensic-science-2026/bsc-forensic.webp",
   // middleImg: "/landingpage/law-2026/law.webp",
   middleImg: "",
 };
@@ -65,23 +65,27 @@ export const Counters: CounterItem[] = [
 // Recruiters list
 export const prominentRecruiters: ProminentRecruit[] = [
   {
-    imgUrl: "/landingpage/bsc-forensic-science-2026/recruiters/amazon.webp",
+    imgUrl: "/landingpage/bsc-forensic-science-2026/recruiters/aimil.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/bsc-forensic-science-2026/recruiters/zara.webp",
+    imgUrl: "/landingpage/bsc-forensic-science-2026/recruiters/itc.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/bsc-forensic-science-2026/recruiters/zynga.webp",
+    imgUrl: "/landingpage/bsc-forensic-science-2026/recruiters/ecs.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/bsc-forensic-science-2026/recruiters/lifestyle.webp",
+    imgUrl: "/landingpage/bsc-forensic-science-2026/recruiters/wf.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/bsc-forensic-science-2026/recruiters/splash.webp",
+    imgUrl: "/landingpage/bsc-forensic-science-2026/recruiters/medanta.png",
+    alt: "Recruiter Logo",
+  },
+  {
+    imgUrl: "/landingpage/bsc-forensic-science-2026/recruiters/fortis.png",
     alt: "Recruiter Logo",
   },
 ];
@@ -165,17 +169,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `The Bachelor of Science (B.Sc.) Hons. in Forensic Science offered by KRMU is a multidisciplinary undergraduate program designed to prepare students for careers in crime investigation and forensic analysis. The meticulously drafted course combines principles of science, law, and technology to help students understand how scientific methods are applied to solve crimes. Students study core subjects such as forensic biology, forensic chemistry, toxicology, fingerprint analysis, questioned documents, and criminology.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `3 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `Passed the 10+2 or equivalent examination from any recognised board/ University in Science (Physics/Chemistry/Biology/Mathematics) with minimum 50% aggregate marks.`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 1,30,000`,
         },
@@ -188,17 +192,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `The program at K.R. Mangalam University aims to develop critical thinking, observation, analytical skills, and attention to detail, which are essential for forensic professionals. Graduates of this course can pursue careers as forensic analysts, crime scene investigators, laboratory technicians, or research assistants. They may also opt for higher studies such as M.Sc. in Forensic Science, Criminology, or related fields.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `Passed the 10+2 or equivalent examination from any recognised board/ University in Science (Physics/Chemistry/Biology/Mathematics) with minimum 50% aggregate marks.`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 1,30,000`,
         },
@@ -227,28 +231,28 @@ export const testimonialsData: TestimonialsSection = {
   heading: `Still in Doubt? <br /> See What Our Students Say About Us!`,
   testimonials: [
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bsc-forensic-science-2026/testimonials/1.webp",
       videoUrl: "#",
       quote: `My three years in the Forensic Science Department at K.R. Mangalam University have been a transformative journey filled with learning, growth, and invaluable life lessons. These years have shaped me into a more self-reliant and confident individual, preparing me to carve my own path in life. The memories and experiences I’ve gained here will always be cherished. I am deeply grateful to my amazing faculty, whose guidance has been instrumental in my academic and personal growth. KRMU will always be a part of me!`,
       name: "Prakati Joshi",
       programme: "B.Sc. (Hons) Forensic Science",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bsc-forensic-science-2026/testimonials/2.webp",
       videoUrl: "#",
       quote: `My name is Prayankar Rudra Paul, and I am a final-year student of B.Sc. (Hons.) Forensic Science at K.R. Mangalam University. My journey as an undergraduate student at this esteemed institution has been truly remarkable. As a student of the Department of Forensic Science, I  have had the privilege of gaining extensive hands-on experience through various internships. One of the most significant opportunities was working with the State Crime Records Bureau, Agartala, Tripura, where I analysed over 600+ registered FIR cases under the guidance of the Superintendent of Police.`,
       name: "Prayankar Rudra Paul",
       programme: "B.Sc. (Hons) Forensic Science",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bsc-forensic-science-2026/testimonials/3.webp",
       videoUrl: "#",
       quote: `My three years at K.R. Mangalam University have been transformative and enriching, blending theoretical knowledge with extensive practical exposure. The police station training provided first-hand experience in investigative procedures, law enforcement protocols, and crime scene management, bridging the gap between classroom learning and real-world applications. Additionally, the CBI & CFSL training deepened my understanding of forensic methodologies, modern investigative techniques, and advanced technology in forensic science, boosting my confidence in practical scenarios. The supportive faculty and state-of-the-art facilities fostered critical thinking and hands-on learning, essential for a successful career.`,
       name: "Khushboo",
       programme: "B.Sc. (Hons) Forensic Science",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/bsc-forensic-science-2026/testimonials/4.webp",
       videoUrl: "#",
       quote: `My journey at K.R. Mangalam University has been truly transformative. The supportive faculty, advanced facilities, and hands-on curriculum in the Forensic Science Department have equipped me with practical skills in crime scene investigation and laboratory analysis. Opportunities for research, internships, and collaboration with law enforcement have enriched my learning, preparing me for a successful career in forensic science. Grateful for this experience, I take pride in being a KRMU graduate and highly recommend this program to those passionate about solving crimes through science.`,
       name: "Divya Panwar",

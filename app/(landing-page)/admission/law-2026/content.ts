@@ -169,17 +169,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `With this five-year integrated BA LLB programme that combines the arts and law, learn about the socio-legal aspects of law.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/duration.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `5 Years`,
         },
         {
-          iconUrl: "/landingpage/common/eligibility.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
         {
-          iconUrl: "/landingpage/common/annual-fee.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 1,85,000`,
         },
@@ -191,17 +191,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `With this five-year integrated curriculum that combines business administration and law, you may get ready for corporate legal difficulties. A thorough grasp of legal frameworks and managerial concepts is provided by the course.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/duration.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `5 Years`,
         },
         {
-          iconUrl: "/landingpage/common/eligibility.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
         {
-          iconUrl: "/landingpage/common/annual-fee.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 1,85,000`,
         },
@@ -213,17 +213,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `With this three-year undergraduate programme, graduates from any subject can enter the legal field. The course provides a thorough examination of procedural legislation and legal concepts. `,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/duration.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `5 Years`,
         },
         {
-          iconUrl: "/landingpage/common/eligibility.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
         {
-          iconUrl: "/landingpage/common/annual-fee.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 1,60,000`,
         },

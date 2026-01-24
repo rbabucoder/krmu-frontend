@@ -64,15 +64,27 @@ export const Counters: CounterItem[] = [
 // Recruiters list
 export const prominentRecruiters: ProminentRecruit[] = [
   {
-    imgUrl: "/landingpage/bca-2026/recruiters/persistent.png",
+    imgUrl: "/landingpage/bca-2026/recruiters/mahindra.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/bca-2026/recruiters/splash.webp",
+    imgUrl: "/landingpage/bca-2026/recruiters/accen.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/bca-2026/recruiters/zynga.webp",
+    imgUrl: "/landingpage/bca-2026/recruiters/wipro.png",
+    alt: "Recruiter Logo",
+  },
+  {
+    imgUrl: "/landingpage/bca-2026/recruiters/airtel.png",
+    alt: "Recruiter Logo",
+  },
+  {
+    imgUrl: "/landingpage/bca-2026/recruiters/samsung.svg",
+    alt: "Recruiter Logo",
+  },
+  {
+    imgUrl: "/landingpage/bca-2026/recruiters/tcslogo.png",
     alt: "Recruiter Logo",
   },
 ];
@@ -117,30 +129,30 @@ export const industryExperts: IndustryExpertsSection = {
   cards: [
     {
       imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
-      alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
+        "/landingpage/bca-2026/learn-from/ibm.png",
+      alt: "Logo",
+      title: "",
     },
     {
       imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
-      alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
+        "/landingpage/bca-2026/learn-from/imaginxp.svg",
+      alt: " Logo",
+      title: "",
     },
     {
       imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
-      alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
+        "/landingpage/bca-2026/learn-from/eccoun.jpg",
+      alt: " Logo",
+      title: "",
     },
     {
       imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
-      alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
+        "/landingpage/bca-2026/learn-from/xebia.png",
+      alt: " Logo",
+      title: "",
     },
   ],
-  bannerImg: "/landingpage/common/dummy2.png",
+  bannerImg: "/landingpage/common/indus-exp.webp",
 };
 
 export const specialisationData: SpecialisationSection = {
@@ -155,17 +167,17 @@ export const specialisationData: SpecialisationSection = {
 `,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `3 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `10 + 2 with a minimum of 50% in any stream from any accredited board or university.`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs. 1,65,000`,
         },
@@ -179,17 +191,17 @@ export const specialisationData: SpecialisationSection = {
 `,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `10 + 2 with a minimum of 50% in any stream from any accredited board or university.`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs. 1,65,000`,
         },
@@ -202,17 +214,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `Learn ethical hacking, network security, and cyber defence with the BCA (Cyber Security) programme at K.R. Mangalam University. The course offers hands-on experience with real-world cyber threats, penetration testing, and vulnerability assessment, equipping students with practical skills to protect digital systems and data. Students also gain expertise in industry-standard tools and techniques, preparing them for careers in cyber security, digital forensics, and IT risk management.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `3 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `10 + 2 with a minimum of 50% in any stream from any accredited board or university.`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs. 1,65,000`,
         },
@@ -225,17 +237,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `This programme teaches ethical hacking, network security, and cyber defence. The course gives students practical skills to safeguard digital systems and data by providing them with hands-on experience with real-world cyber threats, penetration testing, and vulnerability assessment. Additionally, students acquire proficiency with industry-standard tools and methods, qualifying them for professions in IT risk management, digital forensics, and cyber security. `,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svgg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svgg",
           title: "Eligibility",
           desc: `10 + 2 with a minimum of 50% in any stream from any accredited board or university.`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svgg",
           title: "Annual Fee",
           desc: `Rs. 1,65,000`,
         },
