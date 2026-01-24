@@ -17,6 +17,7 @@ const TopbarMenu = ({ topbarmenu }: TopbarProps) => {
                 <Link
                   href={item.url}
                   className={`font-semibold text-white text-xs primary ${item.class}`}
+                  target="_blank"
                 >
                   {item.title}
                 </Link>
@@ -36,6 +37,7 @@ const TopbarMenu = ({ topbarmenu }: TopbarProps) => {
                 <Link
                   href={item.url}
                   className={`font-semibold text-white text-xs ${item.menuclass}`}
+                  target="_blank"
                 >
                   {item.title}
                 </Link>
