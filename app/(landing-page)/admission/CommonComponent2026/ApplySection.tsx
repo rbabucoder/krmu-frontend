@@ -26,7 +26,7 @@ const ApplySection = () => {
       <div className="max-w-[1400px] mx-auto w-full text-center">
         {/* Header */}
         <h2 className="text-[#003d7a] text-5xl font-bold mb-4">
-          Apply for K.R. Mangalam <br /> University now
+          Begin Your Journey at K.R. Mangalam<br /> University Now
         </h2>
         <p className="text-gray-600 text-lg mb-10">
           Join 643+ scholars already transforming their research ideas into global impact

@@ -9,7 +9,7 @@ type Props = {
 
 const ApplySection = ({ data }: Props) => {
   return (
-    <section className="py-20 px-4 bg-white">
+    <section className="py-5 sm:py-20 px-4 bg-white">
       <div className="max-w-[1400px] mx-auto w-full text-center">
         {/* Header */}
         <h2
@@ -20,7 +20,7 @@ const ApplySection = ({ data }: Props) => {
         <p className="text-gray-600 text-lg mb-10">{data.description}</p>
 
         {/* CTA Button */}
-        <div className="flex justify-center mb-16">
+        <div className="flex justify-center mb-5">
           {/* <Link
             href={data.cta.href}
             className="inline-flex items-center gap-3 bg-[#0060aa] text-white px-2 py-2 rounded-full hover:bg-[#004d8a] transition-colors group"
@@ -44,11 +44,11 @@ const ApplySection = ({ data }: Props) => {
         </div>
 
         {/* Highlights */}
-        <div className="flex items-center justify-center gap-12 flex-wrap">
+        <div className="flex items-center justify-center gap-1.5 sm:gap-5 flex-wrap">
           {data.highlights.map((highlight) => (
             <div key={highlight.id} className="flex items-center gap-2">
               <Check size={20} className="text-green-600" />
-              <span className="text-gray-800 font-medium">
+              <span className="text-gray-800 font-medium text-[10px] sm:text-base">
                 {highlight.text}
               </span>
             </div>

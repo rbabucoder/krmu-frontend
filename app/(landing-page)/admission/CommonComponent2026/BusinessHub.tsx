@@ -10,7 +10,7 @@ type Props = {
 const BusinessHub = ({ data, formId }: Props) => {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-[#0b63a5] via-[#083d6b] to-[#041b2e]">
-      <div className="max-w-[1400px] mx-auto w-full px-6 py-20">
+      <div className="max-w-[1400px] mx-auto w-full px-6 py-10 sm:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
           {/* LEFT CONTENT */}
           <div className="text-white">

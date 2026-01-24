@@ -150,9 +150,7 @@
     .hero_heading {
       color: #fff;
     }
-    .npf_wgts iframe {
-      width: 400px !important;
-    }
+    
   }
 
   @media (max-width: 768px) {

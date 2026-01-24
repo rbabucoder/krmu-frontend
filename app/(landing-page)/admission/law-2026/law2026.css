@@ -4,6 +4,11 @@
 @custom-variant dark (&:is(.dark *));
 
 @layer utilities {
+  .learnbgstyle {
+    background-color: #003fa1;
+    background: "url(/test-3.png)";
+  }
+
   .flash-border {
     border: 1px solid red;
     border-radius: 15px;
@@ -49,6 +54,20 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
   }
+
+  .whyBgStyle {
+    background-color: #003fa1;
+  }
+
+  @media (max-width: 640px) {
+    .whyBgStyle {
+      background-color: none;
+    }
+    .whyBgStyleImage {
+      margin-bottom: 10px;
+    }
+  }
+
   .landingpagePrevArrow,
   .landingpageNextArrow,
   .scholarPagePrevArrow,
@@ -114,7 +133,9 @@
     background-repeat: no-repeat;
   }
   .embla__slide {
-    transition: transform 0.5s ease, opacity 0.5s ease;
+    transition:
+      transform 0.5s ease,
+      opacity 0.5s ease;
   }
 
   .highlight-section .npf_wgts {
@@ -152,9 +173,7 @@
     .hero_heading {
       color: #fff;
     }
-    /* .npf_wgts iframe {
-      width: 400px !important;
-    } */
+    /*  */
   }
 
   @media (max-width: 768px) {

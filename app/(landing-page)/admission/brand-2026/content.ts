@@ -830,7 +830,7 @@ export const businessHubData: BusinessHubSection = {
 
 export const applySectionData: ApplySectionData = {
   heading: `Begin Your Journey at K.R. Mangalam University Now`,
-  description: "Start Your Adventure Right Now at K.R. Mangalam University",
+  description: "",
   cta: {
     label: "Apply for UG Programme",
     href: "#",

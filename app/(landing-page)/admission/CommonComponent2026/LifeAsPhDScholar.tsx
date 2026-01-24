@@ -9,7 +9,7 @@ type Props = {
 
 const LifeAsPhDScholar = ({ data }: Props) => {
   return (
-    <section className="py-16 md:pt-10 bg-gray-50">
+    <section className="pt-5 sm:py-16 md:pt-10 bg-gray-50">
       <div className="px-4">
         {/* Header */}
         <div className="text-center mb-10 md:mb-12">
