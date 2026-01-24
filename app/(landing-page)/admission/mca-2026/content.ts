@@ -25,8 +25,7 @@ import {
 import { PGTestimonialsBlock, ProgramCardType } from "../PGType";
 
 export const heroContent: HeroContent = {
-  title: `
-            Click, Code & Conquer <br />
+  title: `Click, Code & Conquer <br />
           with  <span class="text-[#e31e24]">MCA </span> Programmes 2026-27<br />
           `,
   description:
@@ -40,11 +39,12 @@ export const heroContent: HeroContent = {
     href: "#",
   },
   image: {
-    src: "/landingpage/mca-2026/image.png",
+    src: "",
     alt: "MBA Program",
     width: 600,
     height: 400,
   },
+  bgImage: "/wp-content/landingpage/mca-2026/mca.webp",
 };
 
 export const placementStatsContent: PlacementStatsContent = {
@@ -80,19 +80,25 @@ export const prominentRecruiterContent: ProminentRecruiterContent = {
 
   logos: [
     {
-      src: "/landingpage/bba-2026/prominent/accenture.png",
+      src: "/landingpage/mca-2026/recruiters/infosys.png",
       alt: "Accenture",
       width: 160,
       height: 40,
     },
     {
-      src: "/landingpage/bba-2026/prominent/accenture.png",
+      src: "/landingpage/mca-2026/recruiters/genpact.png",
       alt: "Accenture",
       width: 160,
       height: 40,
     },
     {
-      src: "/landingpage/bba-2026/prominent/accenture.png",
+      src: "/landingpage/mca-2026/recruiters/accenture.png",
+      alt: "Accenture",
+      width: 160,
+      height: 40,
+    },
+    {
+      src: "/landingpage/mca-2026/recruiters/tcs.png",
       alt: "Accenture",
       width: 160,
       height: 40,
@@ -413,7 +419,8 @@ export const mbaComparisonContent: MbaComparisonContent = {
     {
       icon: BookOpen,
       label: "Curriculum",
-      traditional: "Conventional syllabus with limited industry or contemporary relevance",
+      traditional:
+        "Conventional syllabus with limited industry or contemporary relevance",
       krmu: {
         title:
           "Industry-aligned and interdisciplinary curriculum updated to current academic and professional needs",
@@ -433,8 +440,7 @@ export const mbaComparisonContent: MbaComparisonContent = {
     {
       icon: GraduationCap,
       label: "Faculty",
-      traditional:
-        "Largely academic, with minimal practical or field exposure",
+      traditional: "Largely academic, with minimal practical or field exposure",
       krmu: {
         title:
           "Experienced academicians and practitioners with strong research and domain expertise",
@@ -501,8 +507,7 @@ export const faqSectionData: FAQSectionData = {
     },
     {
       id: "item-2",
-      question:
-        "What skills will a student learn from KRMU’s MCA programme?",
+      question: "What skills will a student learn from KRMU’s MCA programme?",
       answer: `The MCA programmes at K.R. Mangalam University focus on helping students develop technical skills like web development, analytical thinking, data structures, and much more.`,
     },
     {

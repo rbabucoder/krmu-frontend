@@ -24,7 +24,7 @@ const ProminentRecruiter = ({ data }: Props) => {
             {[...data?.logos, ...data?.logos].map((logo, i) => (
               <div
                 key={i}
-                className="flex items-center justify-center min-w-[240px] h-[100px] rounded-xl bg-[#f5fbff] shadow-sm"
+                className="flex items-center justify-center min-w-[240px] h-[100px] rounded-xl bg-white shadow-sm"
               >
                 <Image
                   src={logo.src}

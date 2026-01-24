@@ -93,7 +93,7 @@ export const prominentRecruiters: ProminentRecruit[] = [
 export const whyKRM: WhyKRMSection = {
   heading: "Why Choose Undergraduate Law Programmes at KRMU?",
   subheading: "",
-  content: `Undergraduate Law Programmes at K.R. Mangalam University provides internationally relevant,  industry-aligned programs aimed at producing capable and socially conscious attorneys. Our graduates are prepared to succeed in corporate law, litigation, public policy, and other fields thanks to a curriculum developed by legal professionals which focuses on practical experience and interdisciplinary learning.`,
+  content: `Undergraduate Law Programmes at K.R. Mangalam University provides internationally relevant,  industry-aligned programmes aimed at producing capable and socially conscious attorneys. Our graduates are prepared to succeed in corporate law, litigation, public policy, and other fields thanks to a curriculum developed by legal professionals which focuses on practical experience and interdisciplinary learning.`,
   imgUrl: `/landingpage/common/build.webp`,
   whyKrmCards: [
     {
@@ -166,7 +166,7 @@ export const specialisationData: SpecialisationSection = {
     {
       imgUrl: "/landingpage/law-2026/prog/BA-LL.B-Hons.jpg",
       title: `BA. LL.B. (Hons.)`,
-      desc: `With this five-year integrated BA LLB programme that combines the arts and law, learn about the socio-legal aspects of law.`,
+      desc: `With this five-year integrated BA. LL.B. programme that combines the arts and law, learn about the socio-legal aspects of law.`,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -188,7 +188,7 @@ export const specialisationData: SpecialisationSection = {
     {
       imgUrl: "/landingpage/law-2026/prog/BBA-LLB-Hons.jpg",
       title: `BBA. LL.B. (Hons.)`,
-      desc: `With this five-year integrated curriculum that combines business administration and law, you may get ready for corporate legal difficulties. A thorough grasp of legal frameworks and managerial concepts is provided by the course.`,
+      desc: `With this five-year integrated curriculum that combines business administration and law, you will become career-ready for corporate legal difficulties. A thorough grasp of legal frameworks and managerial concepts is provided by the course.`,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -261,7 +261,7 @@ export const testimonialsData: TestimonialsSection = {
     {
       image: "/landingpage/law-2026/testimonials/1.webp",
       videoUrl: "#",
-      quote: `Completing BBA.LLB (Hons) from K.R. Mangalam University in 2023 enhanced my 
+      quote: `Completing BBA LL.B. (Hons.) from K.R. Mangalam University in 2023 enhanced my 
 legal reasoning and business acumen. Pursuing a Master's in Corporate Law at the 
 University of Edinburgh deepened my understanding of global corporate governance, 
 equipping me with analytical skills for a successful legal career.`,
@@ -461,7 +461,7 @@ export const faqSectionData: FAQSectionData = {
     {
       id: "item-4",
       question: "What distinguishes BBA LLB from BA LLB?",
-      answer: `In every Indian LLB school, an LLB program lasts around three years. However, the course length is often five years if you're studying an integrated LL.B. program, like as a B.A. LL.B. or a BBA LLB in India.`,
+      answer: `While BBA LLB universities concentrate on integrating business studies courses like finance, marketing, HR, and more with legal studies, BA LLB degrees concentrate on combining LLB education with liberal arts subjects like humanities, politics, etc.`,
     },
     {
       id: "item-5",

@@ -44,8 +44,8 @@ export const heroMarqueeData: HeroMarqueeSection = {
 
 export const Counters: CounterItem[] = [
   {
-    title: "7.25 LPA",
-    subtitle: "Average Package",
+    title: "92%",
+    subtitle: "Placement Record",
   },
   {
     title: "800+",
@@ -88,7 +88,7 @@ export const prominentRecruiters: ProminentRecruit[] = [
 export const whyKRM: WhyKRMSection = {
   heading: "Why Opt for BBA Programmes of KRMU?",
   subheading: "Shape Your Future with a Career-Focused Business Education",
-  content: `The BBA programmes at K.R. Mangalam University provide the groundwork for future business executives to succeed in a variety of corporate positions or entrepreneurial endeavours. Our program, which is in line with NEP criteria, guarantees flexibility in length (3 or 4 years), combining academic knowledge with practical experience and real-world insights.`,
+  content: `The BBA programmes at K.R. Mangalam University provide the groundwork for future business executives to succeed in a variety of corporate positions or entrepreneurial endeavours. Our programme, which is in line with NEP criteria, guarantees flexibility in length (3 or 4 years), combining academic knowledge with practical experience and real-world insights.`,
   imgUrl: `/landingpage/common/building.webp`,
   whyKrmCards: [
     {
@@ -115,7 +115,7 @@ export const industryExperts: IndustryExpertsSection = {
   heading: `Learn From <br /> Industry Experts`,
   description: `KRMU partners with major organisations to provide <br /> industry-specific training.`,
   cta: {
-    label: "Apply for BBA 2026",
+    label: "Apply for BBA 2026-2027",
     href: "#",
   },
   cards: [
@@ -360,7 +360,7 @@ export const specialisationData: SpecialisationSection = {
     {
       imgUrl: "/landingpage/bba-2026/programs/bba-hons-international-business.jpg",
       title: `BBA (Hons./ Hons. with Research) International Business`,
-      desc: `Learn about international trade, cross-cultural management, and international marketing tactics to get ready for a worldwide job.`,
+      desc: `Learn about international trade, cross-cultural management, and international marketing tactics to get ready for a worldwide career prospects.`,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -382,7 +382,7 @@ export const specialisationData: SpecialisationSection = {
     {
       imgUrl: "/landingpage/bba-2026/programs/bba-travel-tourism.jpg",
       title: `BBA (Travel & Tourism)`,
-      desc: `Give yourself the abilities and information required to succeed in the fast-paced global tourist sector.`,
+      desc: `Give yourself the abilities and information required to succeed in the fast-paced global tourism sector.`,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -514,7 +514,7 @@ export const specialisationData: SpecialisationSection = {
     {
       imgUrl: "/landingpage/bba-2026/programs/bba-hons-icf-grant-thornton.jpg",
       title: `BBA (Hons. / Hons. with Research) International Accounting and Finance (ACCA – UK) with academic support of Grant Thornton`,
-      desc: `Pursue a globally recognised ACCA-aligned curriculum with an emphasis on financial reporting and global finance standards.`,
+      desc: `Pursue a globally recognised ACCA-aligned curriculum course with an emphasis on financial reporting and global finance standards.`,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",

@@ -39,9 +39,13 @@ const HeroSection = ({
             }}
           />
 
-          <p className="text-[#9ba2ac] text-base sm:text-lg mb-6">
-            {description}
-          </p>
+          {/* <p className="text-[#9ba2ac] text-base sm:text-lg mb-6"> */}
+          <p
+            className="text-white text-base sm:text-lg mb-6"
+            dangerouslySetInnerHTML={{
+              __html: description,
+            }}
+          />
 
           <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8 justify-center lg:justify-start">
             {/* Primary CTA */}
@@ -70,14 +74,16 @@ const HeroSection = ({
 
         {/* Right Image */}
         <div className="w-full lg:w-1/2">
-          <Image
-            src={image.src}
-            width={image.width}
-            height={image.height}
-            alt={image.alt}
-            priority
-            className="w-full h-auto max-w-[500px] lg:max-w-full mx-auto"
-          />
+          {image.src && (
+            <Image
+              src={image.src}
+              width={image.width}
+              height={image.height}
+              alt={image.alt}
+              priority
+              className="w-full h-auto max-w-[500px] lg:max-w-full mx-auto"
+            />
+          )}
         </div>
       </div>
     </section>

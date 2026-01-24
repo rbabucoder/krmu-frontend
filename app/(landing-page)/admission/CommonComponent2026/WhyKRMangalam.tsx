@@ -19,7 +19,7 @@ const WhyKRMangalam = ({
   return (
     <>
       <section
-        className="h-[800px]  py-10 bg-cover bg-no-repeat bg-center px-4"
+        className="h-[800px]  py-10 bg-cover bg-no-repeat bg-center px-4 bg-none sm:bg-[#003fa1] "
         style={{
           backgroundColor: `#003fa1`,
           backgroundImage: `url(/test-3.png)`,
@@ -39,6 +39,7 @@ const WhyKRMangalam = ({
               __html: desc,
             }}
           />
+          <Image src="/test-3.png" width={300} height={300} alt="" className="md:hidden" />
         </div>
       </section>
     </>

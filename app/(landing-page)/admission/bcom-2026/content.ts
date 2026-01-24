@@ -76,19 +76,19 @@ export const prominentRecruiters: ProminentRecruit[] = [
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/bcom-2026/recruiters/hul.svg",
+    imgUrl: "/landingpage/bcom-2026/recruiters/hul.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/bcom-2026/recruiters/decathalon.svg",
+    imgUrl: "/wp-content/landingpage/common/recruiters/decathalon.svg",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/bcom-2026/recruiters/icici.svg",
+    imgUrl: "/wp-content/landingpage/common/recruiters/icici.svg",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/bcom-2026/recruiters/abg.png",
+    imgUrl: "/wp-content/landingpage/common/recruiters/abg.png",
     alt: "Recruiter Logo",
   },
   {

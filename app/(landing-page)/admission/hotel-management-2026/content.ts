@@ -21,13 +21,15 @@ export const Hero: HeroContent = {
   title: `
       ADMISSIONS <br />
       OPEN FOR <br />
-      <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
+      <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold">
       Hotel-Management (UG) 
       </span>
       <br />
 PROGRAMME 2026-2027
     `,
   desc: `Craft a Successful Career in Hospitality & Service Excellence`,
+  heroBg: "/wp-content/landingpage/hotel-2026/hotel.webp",
+  middleImg: "",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {

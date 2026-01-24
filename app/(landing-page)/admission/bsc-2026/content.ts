@@ -27,7 +27,7 @@ export const Hero: HeroContent = {
       <br />
       PROGRAMMES 2026-27
     `,
-  desc: `Begin a focused and future-oriented academic journey with B.Sc. programmes <br /> designed to inculcate scientific thinking, <br /> problem-solving, and practical skills among students for diverse roles across emerging and established industries`,
+  desc: `Begin a focused and future-oriented academic journey with B.Sc. programmes <br /> designed to inculcate scientific thinking, <br /> problem-solving, and practical skills among <br /> students for diverse roles across emerging and established industries`,
   heroBg: "/landingpage/law-2026/law.jpg",
   // middleImg: "/landingpage/law-2026/law.webp",
   middleImg: "",
@@ -65,23 +65,39 @@ export const Counters: CounterItem[] = [
 // Recruiters list
 export const prominentRecruiters: ProminentRecruit[] = [
   {
-    imgUrl: "/landingpage/bsc-2026/recruiters/amazon.webp",
+    imgUrl: "/landingpage/bsc-2026/recruiters/aimil.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/bsc-2026/recruiters/zara.webp",
+    imgUrl: "/landingpage/bsc-2026/recruiters/itc.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/bsc-2026/recruiters/zynga.webp",
+    imgUrl: "/landingpage/bsc-2026/recruiters/ecs.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/bsc-2026/recruiters/lifestyle.webp",
+    imgUrl: "/landingpage/bsc-2026/recruiters/fortis.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/bsc-2026/recruiters/splash.webp",
+    imgUrl: "/landingpage/bsc-2026/recruiters/medanta.png",
+    alt: "Recruiter Logo",
+  },
+  {
+    imgUrl: "/landingpage/bsc-2026/recruiters/isro.svg",
+    alt: "Recruiter Logo",
+  },
+  {
+    imgUrl: "/landingpage/bsc-2026/recruiters/drdo.png",
+    alt: "Recruiter Logo",
+  },
+  {
+    imgUrl: "/landingpage/bsc-2026/recruiters/ibm.png",
+    alt: "Recruiter Logo",
+  },
+  {
+    imgUrl: "/landingpage/bsc-2026/recruiters/tcs.png",
     alt: "Recruiter Logo",
   },
 ];
@@ -122,30 +138,30 @@ export const industryExperts: IndustryExpertsSection = {
   cards: [
     {
       imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
+        "/landingpage/bsc-2026/learn-from/houston.png",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
     {
       imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
+        "/landingpage/bsc-2026/learn-from/hansraj.png",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
     {
       imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
+        "/landingpage/bsc-2026/learn-from/flower.png",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
     {
       imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
+        "/landingpage/bsc-2026/learn-from/enva.png",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
   ],
-  bannerImg: "/landingpage/common/dummy2.png",
+  bannerImg: "/landingpage/common/indus-exp.webp",
 };
 
 export const specialisationData: SpecialisationSection = {
@@ -159,17 +175,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `A programme that builds strong foundations in physics while introducing advanced theories and research-based learning. With modern laboratories and cutting-edge technology, students gain hands-on experience and develop analytical skills for deeper exploration in physics.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `Passed 10+2 or an equivalent examination from a recognised board or university with PCB or PCM and a minimum of 50% aggregate marks.`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs. 90,000`,
         },
@@ -182,17 +198,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `    The programme blends strong theoretical foundations with practical and research-based learning in Chemistry. It builds advanced subject knowledge, research skills, and applied expertise, while offering hands-on training and internship exposure to support higher studies and research-driven careers. `,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `3 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `Passed 10+2 or an equivalent examination from a recognised board or university with PCB or PCM, securing at least 50% aggregate marks. `,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs. 90,000`,
         },
@@ -205,17 +221,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `    The programme prepares students for investigative careers through hands-on training, scientific analysis, and practical exposure. It builds strong foundations in forensic techniques, crime scene investigation, and laboratory skills aligned with modern criminal justice needs. `,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `3 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `Passed 10+2 or an equivalent examination in Science (Physics, Chemistry, Biology, or Mathematics) from a recognised board or university with at least 50% aggregate marks. `,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs. 1,30,000`,
         },
@@ -228,17 +244,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `    The programme blends theory with hands-on training, equipping students with practical skills in crime scene investigation, evidence handling, and forensic analysis through advanced laboratory exposure. `,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `    Passed 10+2 or an equivalent examination from a recognized board or university with Physics, Chemistry, Biology, or Mathematics as subjects, securing a minimum of 50% aggregate marks. `,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs. 1,30,000`,
         },
@@ -251,17 +267,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `    The programme offers strong theoretical and practical training in forensic science, preparing students for crime scene analysis and careers in investigation agencies, legal firms, and forensic laboratories through industry-relevant coursework and field-based learning. `,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `3 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognized board/university in any stream with minimum 50% aggregate Marks.`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs. 1,30,000`,
         },

@@ -65,23 +65,35 @@ export const Counters: CounterItem[] = [
 // Recruiters list
 export const prominentRecruiters: ProminentRecruit[] = [
   {
-    imgUrl: "/landingpage/bachelor-of-arts-2026/recruiters/amazon.webp",
+    imgUrl: "/landingpage/bachelor-of-arts-2026/recruiters/lifestyle.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/bachelor-of-arts-2026/recruiters/splash.webp",
+    imgUrl: "/landingpage/bachelor-of-arts-2026/recruiters/raymond.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/bachelor-of-arts-2026/recruiters/lifestyle.webp",
+    imgUrl: "/landingpage/bachelor-of-arts-2026/recruiters/hdfc.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/bachelor-of-arts-2026/recruiters/zara.webp",
+    imgUrl: "/landingpage/bachelor-of-arts-2026/recruiters/accen.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/bachelor-of-arts-2026/recruiters/zynga.webp",
+    imgUrl: "/landingpage/bachelor-of-arts-2026/recruiters/wow.png",
+    alt: "Recruiter Logo",
+  },
+  {
+    imgUrl: "/landingpage/bachelor-of-arts-2026/recruiters/label.png",
+    alt: "Recruiter Logo",
+  },
+  {
+    imgUrl: "/landingpage/bachelor-of-arts-2026/recruiters/lifestyle.png",
+    alt: "Recruiter Logo",
+  },
+  {
+    imgUrl: "/landingpage/bachelor-of-arts-2026/recruiters/kamalini.png",
     alt: "Recruiter Logo",
   },
 ];
@@ -126,31 +138,27 @@ export const industryExperts: IndustryExpertsSection = {
   },
   cards: [
     {
-      imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
-      alt: "Apple Logo",
+      imgUrl: "/landingpage/bachelor-of-arts-2026/learn-from/pmf.png",
+      alt: "Logo",
       title: "AI and Machine Learning Courses",
     },
     {
-      imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
-      alt: "Apple Logo",
+      imgUrl: "/landingpage/bachelor-of-arts-2026/learn-from/nbgsm.png",
+      alt: "Logo",
       title: "AI and Machine Learning Courses",
     },
     {
-      imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
-      alt: "Apple Logo",
+      imgUrl: "/landingpage/bachelor-of-arts-2026/learn-from/grade.png",
+      alt: "Logo",
       title: "AI and Machine Learning Courses",
     },
     {
-      imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
-      alt: "Apple Logo",
+      imgUrl: "/landingpage/bachelor-of-arts-2026/learn-from/human.png",
+      alt: "Logo",
       title: "AI and Machine Learning Courses",
     },
   ],
-  bannerImg: "/landingpage/common/dummy2.png",
+  bannerImg: "/landingpage/common/indus-exp.webp",
 };
 
 export const specialisationData: SpecialisationSection = {
@@ -164,17 +172,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `The programme offers a strong foundation in literature, language, and critical theory, building analytical, communication, and cultural understanding skills that prepare students for diverse career opportunities across industries. `,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `3 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognized board/university in any stream with minimum 50% aggregate Marks.`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs. 1,20,000`,
         },
@@ -187,17 +195,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `    The programme focuses on English literature, language, and culture, developing critical thinking, writing, and research skills through the study of classic and contemporary texts, preparing students for careers in academia, media, publishing, and related fields. `,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognized board/university in any stream with minimum 50% aggregate Marks. `,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs. 1,20,000`,
         },
@@ -210,17 +218,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `        This programme builds a strong foundation in economics, covering micro and macroeconomics, global trade, and financial systems. It develops critical thinking and analytical skills, preparing graduates for careers in finance, policy, consulting, academia, or advanced studies. `,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `3 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognized board/university in any stream with minimum 50% aggregate Marks.`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs. 1,20,000`,
         },
@@ -233,17 +241,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `Designed for aspiring economists, this programme blends strong academics, practical learning, and research. It builds analytical, mathematical, and policy skills, preparing graduates for careers in government, finance, consulting, academia, or advanced studies in economics and public policy.`,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognized board/university in any stream with minimum 50% aggregate Marks. `,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs. 1,20,000`,
         },
@@ -256,17 +264,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `The programme opens career and academic paths in mental health, education, HR, and social work. Graduates can pursue higher studies or roles in healthcare, corporate wellness, NGOs, and government sectors, where there is a growing need for psychologists. `,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `3 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognized board/university in any stream with minimum 50% aggregate Marks. `,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs. 1,20,000`,
         },
@@ -279,17 +287,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `      The programme explores human psychology and behaviour through advanced subjects such as cognitive, clinical, social, and abnormal psychology. It builds strong foundations while developing critical thinking, research, communication, and data-handling skills for diverse career paths. `,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognized board/university in any stream with minimum 50% aggregate Marks.`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs. 1,20,000`,
         },
@@ -302,17 +310,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `    The programme builds strong research skills through hands-on projects, faculty collaboration, and conference exposure. It offers in-depth understanding of political systems, theories, international relations, and public administration, preparing students for careers in policy, diplomacy, analysis, and academia. `,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `3 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognized board/university in any stream with minimum 50% aggregate Marks.`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs. 1,20,000`,
         },
@@ -325,17 +333,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `    The programme builds a strong understanding of political theory, governance, and global politics while developing research, critical thinking, and communication skills. It prepares students for careers in academia, international organisations, journalism, law, and public service. `,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognized board/university in any stream with minimum 50% aggregate Marks.`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs. 1,20,000`,
         },
