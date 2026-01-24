@@ -37,7 +37,8 @@ const ComeToLife = ({ data }: Props) => {
 
       {/* Slider */}
       <div className="my-10">
-        <CometoLifeSlide slides={data.slides} />
+        {/* <CometoLifeSlide slides={data.slides} /> */}
+        <CometoLifeSlide  />
       </div>
 
       {/* Footer CTA */}

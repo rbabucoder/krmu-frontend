@@ -28,7 +28,7 @@ export const Hero: HeroContent = {
       PROGRAMMES 2026-27
     `,
   desc: `Shape Your Legal Journey with Practical and Career-Focused Learning`,
-  heroBg: "/landingpage/law-2026/law.jpg",
+  heroBg: "/wp-content/landingpage/law-2026/law.webp",
   // middleImg: "/landingpage/law-2026/law.webp",
   middleImg: "",
 };

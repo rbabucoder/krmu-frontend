@@ -29,7 +29,7 @@ export const Hero: HeroContent = {
     `,
   desc: `Discover the foundation of agricultural excellence with K.R. Mangalam University’s <br />
    four-year agriculture programme, designed to build strong agrarian knowledge, <br />practical expertise, and an understanding of modern farming practices.`,
-  heroBg: "/landingpage/bsc-agriculture-2026/hero-image/BscAgriculture.webp",
+  heroBg: "/wp-content/landingpage/bsc-agriculture-2026/bsc-agriculture.webp",
   // middleImg: "/landingpage/law-2026/law.webp",
   middleImg: "",
 };

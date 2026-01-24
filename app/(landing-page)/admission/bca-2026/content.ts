@@ -28,7 +28,7 @@ export const Hero: HeroContent = {
       PROGRAMMES 2026-27
     `,
   desc: `Start Your Journey into the World of IT and Applications`,
-  heroBg: "/landingpage/bca-2026/BCA.webp",
+  heroBg: "/wp-content/landingpage/bca-2026/bca.webp",
   middleImg: "",
 };
 
@@ -64,23 +64,15 @@ export const Counters: CounterItem[] = [
 // Recruiters list
 export const prominentRecruiters: ProminentRecruit[] = [
   {
-    imgUrl: "/landingpage/bca-2026/recruiters/amazon.webp",
-    alt: "Recruiter Logo",
-  },
-  {
-    imgUrl: "/landingpage/bca-2026/recruiters/zara.webp",
-    alt: "Recruiter Logo",
-  },
-  {
-    imgUrl: "/landingpage/bca-2026/recruiters/zynga.webp",
-    alt: "Recruiter Logo",
-  },
-  {
-    imgUrl: "/landingpage/bca-2026/recruiters/lifestyle.webp",
+    imgUrl: "/landingpage/bca-2026/recruiters/persistent.png",
     alt: "Recruiter Logo",
   },
   {
     imgUrl: "/landingpage/bca-2026/recruiters/splash.webp",
+    alt: "Recruiter Logo",
+  },
+  {
+    imgUrl: "/landingpage/bca-2026/recruiters/zynga.webp",
     alt: "Recruiter Logo",
   },
 ];

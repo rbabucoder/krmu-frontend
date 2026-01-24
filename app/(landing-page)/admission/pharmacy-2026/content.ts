@@ -28,7 +28,7 @@ export const Hero: HeroContent = {
       PROGRAMMES 2026-27
     `,
   desc: `Gain industry-focused education, build strong foundations in pharmaceutical<br /> sciences, and benefit  from industry partnerships that prepare you for confident, <br />career-ready roles in the pharmacy sector `,
-  heroBg: "/landingpage/pharmacy-2026/pharmacy.webp",
+  heroBg: "/wp-content/landingpage/pharmacy-2026/pharmacy.webp",
   middleImg: "",
 };
 

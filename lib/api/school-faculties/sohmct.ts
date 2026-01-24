@@ -16,21 +16,21 @@ export const sohmctFaculties: SchoolFacultiesType[] = [
     featured_media_url:
       "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Ms.-Jyotu-Sehrawat.webp",
   },
-  {
-    id: 97582,
-    slug: "dr-amit-kumar",
-    title: {
-      rendered: "Dr. Amit Kumar",
-    },
-    featured_media: 101893,
-    acf: {
-      "staff-qualification": "Ph.D.",
-      staff_designation: "Assistant Professor",
-      schools: [1214],
-    },
-    featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2025/03/Amit_Kumar.webp",
-  },
+  // {
+  //   id: 97582,
+  //   slug: "dr-amit-kumar",
+  //   title: {
+  //     rendered: "Dr. Amit Kumar",
+  //   },
+  //   featured_media: 101893,
+  //   acf: {
+  //     "staff-qualification": "Ph.D.",
+  //     staff_designation: "Assistant Professor",
+  //     schools: [1214],
+  //   },
+  //   featured_media_url:
+  //     "https://www.krmangalam.edu.in/wp-content/uploads/2025/03/Amit_Kumar.webp",
+  // },
   {
     id: 57533,
     slug: "ms-shriya-chauhan",

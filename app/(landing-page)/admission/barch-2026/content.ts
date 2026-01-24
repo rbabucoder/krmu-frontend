@@ -28,7 +28,7 @@ export const Hero: HeroContent = {
       PROGRAMMES 2026-27
     `,
   desc: `From conceptual learning in classrooms to building creative constructions <br /> via immersive projects,  the B.Arch course will enable you to shape the future of architecture`,
-  heroBg: "/landingpage/barch-2026/hero-image/barch-bg.webp",
+  heroBg: "/wp-content/landingpage/barch-2026/barch.webp",
   // middleImg: "/landingpage/law-2026/law.webp",
   middleImg: "",
 };

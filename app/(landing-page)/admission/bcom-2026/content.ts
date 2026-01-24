@@ -28,7 +28,7 @@ export const Hero: HeroContent = {
       PROGRAMMES 2026-27
     `,
   desc: `Choose from specialised, industry-backed B.Com. programmes and <br /> step confidently into the world of business and finance`,
-  heroBg: "/landingpage/bcom-2026/hero-image/BCom.webp",
+  heroBg: "/wp-content/landingpage/bcom-2026/bcom.webp",
   middleImg: "",
 };
 
@@ -309,7 +309,7 @@ export const testimonialsData: TestimonialsSection = {
   heading: `Why do our schoolers love and trust K.R. Mangalam University?`,
   testimonials: [
     {
-      image: "/landingpage/bcom-2026/testimonials/1.webp",
+      image: "/landingpage/bcom-2026/testimonials/1.jpg",
       videoUrl: "#",
       quote: ` The B.Com. (Hons.) journey has been truly enriching. The comprehensive curriculum and industry-oriented projects have strengthened my analytical skills and prepared me for a successful career in commerce and beyond.
 `,
@@ -317,7 +317,7 @@ export const testimonialsData: TestimonialsSection = {
       programme: "B.Com. (Hons.)",
     },
     {
-      image: "/landingpage/bcom-2026/testimonials/2.webp",
+      image: "/landingpage/bcom-2026/testimonials/2.jpg",
       videoUrl: "#",
       quote: `Choosing B.Com. (Hons.) broadened my horizons. The holistic approach to education and strong focus on practical learning enhanced my understanding of commerce and built a solid foundation for my future. 
 `,
@@ -325,14 +325,14 @@ export const testimonialsData: TestimonialsSection = {
       programme: "B.Com. (Hons.)",
     },
     {
-      image: "/landingpage/bcom-2026/testimonials/3.webp",
+      image: "/landingpage/bcom-2026/testimonials/3.jpg",
       videoUrl: "#",
       quote: `It was a great experience to be part of such an esteemed university. Completing my B.Com. (Hons.) degree here helped me acquire the essential skills required of a commerce professional. The state-of-the-art infrastructure makes it one of the best universities in Gurgaon.`,
       name: "Tisha Arora",
       programme: "B.Com. (Hons.) ",
     },
     {
-      image: "/landingpage/bcom-2026/testimonials/4.webp",
+      image: "/landingpage/bcom-2026/testimonials/4.jpg",
       videoUrl: "#",
       quote: ` Campus life at K.R. Mangalam University was exciting and enriching. I gained valuable insights and skills that will benefit me in my future career. I am grateful to the faculty and the placement cell for their constant support and efforts toward student success. `,
       name: "Nikita Sharma,",

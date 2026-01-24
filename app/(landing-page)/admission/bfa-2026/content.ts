@@ -28,7 +28,7 @@ export const Hero: HeroContent = {
       PROGRAMMES 2026-27
     `,
   desc: `A Structured Pathway to Professional Fine Arts Practice`,
-  heroBg: "/landingpage/law-2026/law.jpg",
+  heroBg: "/wp-content/landingpage/bfa-2026/bfa.webp",
   // middleImg: "/landingpage/law-2026/law.webp",
   middleImg: "",
 };
@@ -116,29 +116,29 @@ export const industryExperts: IndustryExpertsSection = {
     href: "#",
   },
   cards: [
-    {
+       {
       imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
-      alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
+        "/landingpage/bfa-2026/learn-from/item-1.png",
+      alt: "Logo",
+      title: "",
     },
     {
       imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
-      alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
+        "/landingpage/bfa-2026/learn-from/son.png",
+      alt: "Logo",
+      title: "",
     },
     {
       imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
-      alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
+        "/landingpage/bfa-2026/learn-from/rv.png",
+      alt: "Logo",
+      title: "",
     },
     {
       imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
-      alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
+        "/landingpage/bfa-2026/learn-from/pmca.png",
+      alt: "Logo",
+      title: "",
     },
   ],
   bannerImg: "/landingpage/common/indus-exp.webp",

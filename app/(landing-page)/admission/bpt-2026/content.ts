@@ -28,8 +28,8 @@ export const Hero: HeroContent = {
       PROGRAMMES 2026-27
     `,
   desc: `Learn to Lead in the realm of healthcare under the expert guidance of our distinguished <br /> faculty while utilising state-of-the-art facilities for hands-on physiotherapy learning`,
-  heroBg: "/landingpage/bdes-2026/bdes-bg.webp",
-  middleImg: "/landingpage/bdes-2026/middle-img.webp",
+  heroBg: "/wp-content/landingpage/bpt-2026/bpt.webp",
+  middleImg: "",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -64,28 +64,19 @@ export const Counters: CounterItem[] = [
 // Recruiters list
 export const prominentRecruiters: ProminentRecruit[] = [
   {
-    imgUrl:
-      "/landingpage/bpt-2026/recruiters/amazon.webp",
+    imgUrl: "/landingpage/bpt-2026/recruiters/asian.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "/landingpage/bpt-2026/recruiters/zara.webp",
+    imgUrl: "/landingpage/bpt-2026/recruiters/sarvodya.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "/landingpage/bpt-2026/recruiters/zynga.webp",
+    imgUrl: "/landingpage/bpt-2026/recruiters/medanta.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "/landingpage/bpt-2026/recruiters/lifestyle.webp",
-    alt: "Recruiter Logo",
-  },
-  {
-    imgUrl:
-      "/landingpage/bpt-2026/recruiters/splash.webp",
+    imgUrl: "/landingpage/bpt-2026/recruiters/max.png",
     alt: "Recruiter Logo",
   },
 ];
@@ -130,30 +121,24 @@ export const industryExperts: IndustryExpertsSection = {
   cards: [
     {
       imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
+        "/landingpage/bpt-2026/learn-from/sarvodya.png",
+      alt: "CK Birla Logo",
+      title: "",
+    },
+    {
+      imgUrl:
+        "/landingpage/bpt-2026/learn-from/ck-birla.png",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
     {
       imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
-      alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
-    },
-    {
-      imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
-      alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
-    },
-    {
-      imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
+        "/landingpage/bpt-2026/learn-from/ekta.jpg",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
   ],
-  bannerImg: "/landingpage/common/dummy2.png",
+  bannerImg: "/landingpage/common/indus-exp.webp",
 };
 
 export const specialisationData: SpecialisationSection = {

@@ -29,8 +29,7 @@ export const heroContent: HeroContent = {
             Deepen Your Legal Expertise that’ll <br /> Define Your Future <br />
           with  <span class="text-[#e31e24]">LL.M.</span> Programmes 2026-27<br />
           `,
-  description:
-    "Advance Your Legal Expertise. Lead with Specialisation.",
+  description: "Advance Your Legal Expertise. Lead with Specialisation.",
   primaryCta: {
     label: "Apply Now",
     href: "#",
@@ -40,11 +39,12 @@ export const heroContent: HeroContent = {
     href: "#",
   },
   image: {
-    src: "/landingpage/mca-2026/image.png",
+    src: "/landingpage/llm-2026/image.png",
     alt: "MBA Program",
     width: 600,
     height: 400,
   },
+  bgImage: "/landingpage/llm-2026/llm.webp",
 };
 
 export const placementStatsContent: PlacementStatsContent = {
@@ -457,8 +457,7 @@ export const mbaComparisonContent: MbaComparisonContent = {
     {
       icon: BookOpen,
       label: "Curriculum",
-      traditional:
-        "Theory-heavy with limited focus on emerging legal areas.",
+      traditional: "Theory-heavy with limited focus on emerging legal areas.",
       krmu: {
         title:
           "Industry-aligned curriculum with specialisations in contemporary and evolving areas of law.",
@@ -478,7 +477,8 @@ export const mbaComparisonContent: MbaComparisonContent = {
     {
       icon: GraduationCap,
       label: "Faculty",
-      traditional: "Predominantly academic faculty with limited industry interaction.",
+      traditional:
+        "Predominantly academic faculty with limited industry interaction.",
       krmu: {
         title:
           "Experienced academicians supported by legal practitioners, jurists, and industry experts.",
@@ -536,13 +536,11 @@ export const businessHubData: BusinessHubSection = {
 export const faqSectionData: FAQSectionData = {
   eyebrow: "(FAQs)",
   heading: "Frequently Asked Questions",
-  description:
-    "",
+  description: "",
   faqs: [
     {
       id: "item-1",
-      question:
-        "How long does the LL.M. program last?",
+      question: "How long does the LL.M. program last?",
       answer: `The program lasts for a full year.`,
     },
     {
@@ -553,8 +551,7 @@ export const faqSectionData: FAQSectionData = {
     },
     {
       id: "item-3",
-      question:
-        "Which specialisations are available in the LL.M. programme?",
+      question: "Which specialisations are available in the LL.M. programme?",
       answer: `Corporate law, human rights and humanitarian law, criminal law, intellectual property rights, alternative dispute resolution, and cyber law are among the specialisations offered by the program.`,
     },
     {

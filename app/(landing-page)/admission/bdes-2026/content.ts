@@ -28,7 +28,7 @@ export const Hero: HeroContent = {
       PROGRAMMES 2026-27
     `,
   desc: `Immerse yourself in an inspiring environment that nurtures creativity,<br /> ignites innovation, and transforms ideas into impactful design solutions`,
-  heroBg: "/landingpage/bdes-2026/bdesbg.webp",
+  heroBg: "/wp-content/landingpage/bdes-2026/bdes.webp",
   middleImg: "",
 };
 

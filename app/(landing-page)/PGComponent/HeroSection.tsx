@@ -9,6 +9,7 @@ type Props = {
   primaryCta: HeroCTA;
   secondaryCta: HeroCTA;
   image: ImageType;
+  bgImage: string;
 };
 
 const HeroSection = ({
@@ -17,9 +18,17 @@ const HeroSection = ({
   primaryCta,
   secondaryCta,
   image,
+  bgImage,
 }: Props) => {
   return (
-    <section className="bg-[#051630] py-12 md:py-16 lg:py-20">
+    <section
+      className="py-12 md:py-16 lg:py-20"
+      style={{
+        background: `url(${bgImage})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       <div className="max-w-[1400px] mx-auto w-full px-4 sm:px-6 lg:px-8 flex flex-col-reverse lg:flex-row items-center gap-10 lg:gap-16">
         {/* Left Content */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">

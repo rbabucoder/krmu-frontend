@@ -28,8 +28,8 @@ export const Hero: HeroContent = {
       PROGRAMMES 2026-27
     `,
   desc: `Start Building Your Future in Business and Management`,
-  heroBg: "/landingpage/bba-2026/bba-bg.webp",
-  middleImg: "/landingpage/bba-2026/middle-img.webp",
+  heroBg: "/wp-content/landingpage/bba-2026/bba.webp",
+  middleImg: "",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {

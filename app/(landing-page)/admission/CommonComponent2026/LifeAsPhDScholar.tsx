@@ -25,9 +25,9 @@ const LifeAsPhDScholar = ({ data }: Props) => {
         {/* Image */}
         <div className="relative w-full h-[260px] sm:h-[360px] md:h-[450px] xl:h-[600px] overflow-hidden mb-12 rounded-xl">
           <Image
-            src={data.image.src}
+            src="/landingpage/common/Collage-img.webp"
             fill
-            alt={data.image.alt}
+            alt="Life @ KRMU"
             className="object-cover"
             priority
           />

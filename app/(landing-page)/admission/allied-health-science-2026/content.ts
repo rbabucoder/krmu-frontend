@@ -28,7 +28,7 @@ export const Hero: HeroContent = {
       PROGRAMMES <br />2026-27
     `,
   desc: `Start your healthcare journey with knowledgeable instructors, <br /> cutting-edge labs, industry-exposure, and career-focused <br />  curriculum`,
-  heroBg: "/landingpage/allied-health-science-2026/hero-image/allied-health-science.webp",
+  heroBg: "/wp-content/landingpage/allied-health-science-2026/allied-health-science.webp",
   // middleImg: "/landingpage/law-2026/law.webp",
   middleImg: "",
 };
@@ -65,19 +65,35 @@ export const Counters: CounterItem[] = [
 // Recruiters list
 export const prominentRecruiters: ProminentRecruit[] = [
   {
-    imgUrl: "/landingpage/allied-health-science-2026/recruiters/zara.webp",
+    imgUrl: "/landingpage/allied-health-science-2026/recruiters/astra.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/allied-health-science-2026/recruiters/amzon.webp",
+    imgUrl: "/landingpage/allied-health-science-2026/recruiters/lupin.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/allied-health-science-2026/recruiters/lifestyle.webp",
+    imgUrl: "/landingpage/allied-health-science-2026/recruiters/sun.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/allied-health-science-2026/recruiters/splash.webp",
+    imgUrl: "/landingpage/allied-health-science-2026/recruiters/glenmark.png",
+    alt: "Recruiter Logo",
+  },
+  {
+    imgUrl: "/landingpage/allied-health-science-2026/recruiters/drreddy.png",
+    alt: "Recruiter Logo",
+  },
+  {
+    imgUrl: "/landingpage/allied-health-science-2026/recruiters/zydus.png",
+    alt: "Recruiter Logo",
+  },
+  {
+    imgUrl: "/landingpage/allied-health-science-2026/recruiters/genzyme.png",
+    alt: "Recruiter Logo",
+  },
+  {
+    imgUrl: "/landingpage/allied-health-science-2026/recruiters/max.png",
     alt: "Recruiter Logo",
   },
 ];
@@ -117,27 +133,27 @@ export const industryExperts: IndustryExpertsSection = {
   },
   cards: [
     {
-      imgUrl: "/landingpage/allied-health-science-2026/recruiters/apple.svg",
-      alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
+      imgUrl: "/landingpage/allied-health-science-2026/learn-from/ibm.png",
+      alt: "IBM Logo",
+      title: "",
     },
     {
-      imgUrl: "/landingpage/allied-health-science-2026/recruiters/apple.svg",
-      alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
+      imgUrl: "/landingpage/allied-health-science-2026/learn-from/imaginxp.svg",
+      alt: "ImaginXP Logo",
+      title: "",
     },
     {
-      imgUrl: "/landingpage/allied-health-science-2026/recruiters/apple.svg",
-      alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
+      imgUrl: "/landingpage/allied-health-science-2026/learn-from/eccoun.jpg",
+      alt: "EC-Councils Logo",
+      title: "",
     },
     {
-      imgUrl: "/landingpage/allied-health-science-2026/recruiters/apple.svg",
-      alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
+      imgUrl: "/landingpage/allied-health-science-2026/learn-from/xebia.png",
+      alt: "Xebia Logo",
+      title: "",
     },
   ],
-  bannerImg: "/landingpage/common/dummy2.png",
+  bannerImg: "/landingpage/common/indus-exp.webp",
 };
 
 export const specialisationData: SpecialisationSection = {

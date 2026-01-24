@@ -9,20 +9,63 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import type { CarouselApi } from "@/components/ui/carousel";
-import { ComeToLifeSlideItem } from "../law-2026/contentype";
 
-type Props = {
-  slides: ComeToLifeSlideItem[];
+type SlideItem = {
+  image: string;
+  alt: string;
 };
 
-const CometoLifeSlide = ({ slides }: Props) => {
+const slides: SlideItem[] = [
+  {
+    image: "/landingpage/common/life/1.webp",
+    alt: "Campus Life 1",
+  },
+  {
+    image: "/landingpage/common/life/2.webp",
+    alt: "Campus Life 1",
+  },
+  {
+    image: "/landingpage/common/life/3.webp",
+    alt: "Campus Life 1",
+  },
+  {
+    image: "/landingpage/common/life/4.webp",
+    alt: "Campus Life 1",
+  },
+  {
+    image: "/landingpage/common/life/5.webp",
+    alt: "Campus Life 1",
+  },
+  {
+    image: "/landingpage/common/life/6.webp",
+    alt: "Campus Life 1",
+  },
+  {
+    image: "/landingpage/common/life/7.webp",
+    alt: "Campus Life 1",
+  },
+  {
+    image: "/landingpage/common/life/8.webp",
+    alt: "Campus Life 1",
+  },
+  {
+    image: "/landingpage/common/life/9.webp",
+    alt: "Campus Life 1",
+  },
+  {
+    image: "/landingpage/common/life/10.webp",
+    alt: "Campus Life 1",
+  },
+];
+
+const CometoLifeSlide = () => {
   const [api, setApi] = useState<CarouselApi | null>(null);
   const [current, setCurrent] = useState(0);
 
   const autoplay = useRef(
     Autoplay({
       delay: 3000,
-    })
+    }),
   );
 
   useEffect(() => {
@@ -58,7 +101,7 @@ const CometoLifeSlide = ({ slides }: Props) => {
                     src={slide.image}
                     width={600}
                     height={500}
-                    alt={slide.alt || ""}
+                    alt={slide.alt}
                     className={`w-full rounded-2xl object-cover transition-all duration-500 ${
                       isActive
                         ? "h-[300px] sm:h-[340px]"

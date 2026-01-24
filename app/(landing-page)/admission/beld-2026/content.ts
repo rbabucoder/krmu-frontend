@@ -22,12 +22,14 @@ export const Hero: HeroContent = {
       ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
-       B.Ed. and B.El.Ed.
+       B.Ed. & <br /> B.El.Ed.
       </span>
       <br />
       PROGRAMMES 2026-27
     `,
   desc: `Your path to pursuing a teaching career begins with K.R. Mangalam University’s <br />Education Programmes, preparing you to inspire the next generation`,
+  heroBg: "/wp-content/landingpage/beld-2026/beld.webp",
+  middleImg: "",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -63,32 +65,37 @@ export const Counters: CounterItem[] = [
 export const prominentRecruiters: ProminentRecruit[] = [
   {
     imgUrl:
-      "https://www.krmangalam.edu.in/admission/law-2025/assets/trilegal.svg",
+      "/landingpage/beld-2026/recruiters/simpilearn.png",
     alt: "Recruiter Logo",
   },
   {
     imgUrl:
-      "https://www.krmangalam.edu.in/admission/btech-2025-b/assets/images/accenture.svg",
+      "/landingpage/beld-2026/recruiters/merit.png",
     alt: "Recruiter Logo",
   },
   {
     imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+      "/landingpage/beld-2026/recruiters/chegg.png",
     alt: "Recruiter Logo",
   },
   {
     imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+      "/landingpage/beld-2026/recruiters/dps.png",
     alt: "Recruiter Logo",
   },
   {
     imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+      "/landingpage/beld-2026/recruiters/whj.png",
     alt: "Recruiter Logo",
   },
   {
     imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+      "/landingpage/beld-2026/recruiters/toppr.png",
+    alt: "Recruiter Logo",
+  },
+  {
+    imgUrl:
+      "/landingpage/beld-2026/recruiters/vedantu.png",
     alt: "Recruiter Logo",
   },
 ];
@@ -165,7 +172,7 @@ export const specialisationData: SpecialisationSection = {
   heading: `KRMU’s Education Programmes `,
   specilisationCard: [
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/beld-2026/specialisations/bed.webp",
       title: `Bachelor of Education (B.Ed.)`,
       desc: `This two-year NCTE-approved programme prepares aspiring educators for successful teaching careers. The B.Ed. programme builds a strong foundation in educational processes, curriculum design, innovative teaching methods, and lesson planning, empowering future teachers to meet the evolving demands of modern education.`,
       extraInfos: [
@@ -187,7 +194,7 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/beld-2026/specialisations/beld.webp",
       title: `Bachelor of Elementary Education (B.El.Ed.)`,
       desc: `This is a four-year undergraduate programme designed to prepare future educators for teaching at the elementary level (Classes I–VIII). Approved by the NCTE and UGC, the programme builds a strong foundation in child development and educational psychology, while integrating theoretical knowledge with practical teaching skills—equipping graduates to confidently address the evolving challenges of elementary education.
 `,
@@ -232,7 +239,7 @@ export const testimonialsData: TestimonialsSection = {
   heading: `Why Do Our Students Trust Us? `,
   testimonials: [
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/beld-2026/testimonials/1.webp",
       videoUrl: "#",
       quote: `Enrolling in the B.El.Ed. programme at K. R. Mangalam University has been one of the most 
 rewarding decisions of my academic career. From day one, I was immersed in an environment 
@@ -425,12 +432,14 @@ export const faqSectionData: FAQSectionData = {
     },
     {
       id: "item-5",
-      question: "Does KRMU provide global exposure in B.Ed. and B.El.Ed. programmes?",
+      question:
+        "Does KRMU provide global exposure in B.Ed. and B.El.Ed. programmes?",
       answer: `Yes, through a multidisciplinary curriculum with global perspectives, innovative learning, and opportunities for international exposure, the K.R. Mangalam University (KRMU) seeks to provide global exposure in its B.Ed. and B.El.Ed. programmes.`,
     },
     {
       id: "item-6",
-      question: "Is there placement and career support for students studying at KRMU?",
+      question:
+        "Is there placement and career support for students studying at KRMU?",
       answer: `Yes. KRMU offers 100% placement assistance with strong industry connections, helping students secure internships and job opportunities upon graduation.`,
     },
     {
