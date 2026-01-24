@@ -80,7 +80,7 @@ export const prominentRecruiters: ProminentRecruit[] = [
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/bca-2026/recruiters/samsung.svg",
+    imgUrl: "/wp-content/landingpage/common/samsung.svg",
     alt: "Recruiter Logo",
   },
   {
@@ -237,17 +237,17 @@ export const specialisationData: SpecialisationSection = {
       desc: `This programme teaches ethical hacking, network security, and cyber defence. The course gives students practical skills to safeguard digital systems and data by providing them with hands-on experience with real-world cyber threats, penetration testing, and vulnerability assessment. Additionally, students acquire proficiency with industry-standard tools and methods, qualifying them for professions in IT risk management, digital forensics, and cyber security. `,
       extraInfos: [
         {
-          iconUrl: "/wp-content/landingpage/common/duration.svgg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/wp-content/landingpage/common/eligibility.svgg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `10 + 2 with a minimum of 50% in any stream from any accredited board or university.`,
         },
         {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svgg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs. 1,65,000`,
         },

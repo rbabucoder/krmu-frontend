@@ -124,11 +124,11 @@ export const whyKRM: WhyKRMSection = {
 };
 
 export const industryExperts: IndustryExpertsSection = {
-  eyebrow: "Why K.R. Mangalam allied sciences courses?",
+  eyebrow: "",
   heading: `Learn From <br /> Industry Expert`,
   description: `K.R. Mangalam University takes pride in collaborating with the industry leaders who offer top-notch hands-on learning experiences to students.`,
   cta: {
-    label: "Apply for Medical Allied Sciences 2026",
+    label: "Apply for Medical Allied Sciences 2026-27",
     href: "#",
   },
   cards: [
@@ -138,7 +138,7 @@ export const industryExperts: IndustryExpertsSection = {
       title: "",
     },
     {
-      imgUrl: "/landingpage/allied-health-science-2026/learn-from/imaginxp.svg",
+      imgUrl: "/wp-content/landingpage/common/imaginxp.svg",
       alt: "ImaginXP Logo",
       title: "",
     },
@@ -239,7 +239,7 @@ export const opportunityData: OpportunitySection = {
   heading: "Learn From Industry Experts",
   highlight: "Opportunity That Transforms",
   cta: {
-    label: "Apply for Medical Allied Sciences 2026",
+    label: "Apply for Medical Allied Sciences 2026-27",
     href: "#",
   },
 };
@@ -342,7 +342,7 @@ export const comeToLifeData: ComeToLifeSection = {
   description: `K.R. Mangalam University offers a modern campus designed to support academic excellence and hands-on learning for B.Sc. students. Smart classrooms with advanced teaching tools and high-speed Wi-Fi create an interactive learning environment. Well-equipped laboratories enable practical training, experimentation, and skill development across disciplines. The central library provides extensive print and digital resources to support learning and research. Dedicated seminar halls, collaborative spaces, and innovation areas encourage teamwork and creative thinking. Beyond academics, the campus features secure hostels, sports and recreational facilities, and round-the-clock connectivity, ensuring a balanced and enriching student life.`,
   footerText: ``,
   cta: {
-    label: "Apply for Medical Allied Sciences 2026",
+    label: "Apply for Medical Allied Sciences 2026-27",
     href: "#",
   },
   slides: [
@@ -476,7 +476,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Begin Your Journey at K.R. Mangalam<br /> University Now`,
   description: "",
   cta: {
-    label: "Apply for Medical Allied Sciences 2026 ",
+    label: "Apply for Medical Allied Sciences 2026-27",
     href: "#",
   },
   highlights: [

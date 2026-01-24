@@ -124,7 +124,7 @@ export const industryExperts: IndustryExpertsSection = {
   heading: `Learn From <br /> Industry Experts`,
   description: `KRMU partners with major organisations to provide <br /> industry-specific training.`,
   cta: {
-    label: "Apply for B.Tech 2026",
+    label: ` 2026-27`,
     href: "#",
   },
   cards: [
@@ -134,7 +134,7 @@ export const industryExperts: IndustryExpertsSection = {
       title: "AI and Machine Learning Courses",
     },
     {
-      imgUrl: "/landingpage/btech-2026/learn-from/imaginxp.svg",
+      imgUrl: "/wp-content/landingpage/common/imaginxp.svg",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
@@ -211,7 +211,7 @@ export const specialisationData: SpecialisationSection = {
       imgUrl:
         "/landingpage/btech-2026/specialisations/B.Tech.-Computer-Science-and-Engineering-(AI-&-ML)-with-academic-support-of-IBM-&-powered-by-Microsoft-Certifications.webp",
       title: `B.Tech. Computer Science and Engineering (AI & ML) with academic support of IBM & powered by Microsoft Certifications`,
-      desc: `The B.Tech. Computer Science and Engineering (AI & ML) program of K.R. Mangalam University is meticulously designed to shape industry-ready innovators. This program blends strong computer science fundamentals with cutting-edge Artificial Intelligence and Machine Learning, enhanced by academic support from IBM and powered by Microsoft Certifications. Graduates are prepared for high-demand roles such as AI engineer, data scientist, and ML developer, equipped with skills that meet evolving industry needs and drive innovation across diverse sectors.`,
+      desc: `The B.Tech. Computer Science and Engineering (AI & ML) program of K.R. Mangalam University is meticulously designed to shape industry-ready innovators. This programme blends strong computer science fundamentals with cutting-edge Artificial Intelligence and Machine Learning, enhanced by academic support from IBM and powered by Microsoft Certifications. Graduates are prepared for high-demand roles such as AI engineer, data scientist, and ML developer, equipped with skills that meet evolving industry needs and drive innovation across diverse sectors.`,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -335,7 +335,7 @@ export const opportunityData: OpportunitySection = {
   heading: "Learn From Industry Experts",
   highlight: "Opportunity That Transforms",
   cta: {
-    label: "Apply for B.Tech 2026-2027",
+    label: "Apply for B.Tech 2026-27",
     href: "#",
   },
 };
@@ -591,7 +591,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Begin Your Journey at K.R. Mangalam<br /> University Now`,
   description: "",
   cta: {
-    label: "Apply for B.Tech 2026",
+    label: "Apply for B.Tech 2026-2027",
     href: "#",
   },
   highlights: [

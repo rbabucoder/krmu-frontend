@@ -92,7 +92,7 @@ export const prominentRecruiters: ProminentRecruit[] = [
 export const whyKRM: WhyKRMSection = {
   heading: "Why Choose Pharmacy Programmes at KRMU? ",
   subheading: "Build a Career That Impacts Lives ",
-  content: `K.R. Mangalam University offers industry-aligned Pharmacy programmes, including D. Pharm., B.Pharm., and master's programmes in pharmacy, developed to meet global healthcare standards. Designed with pharmaceutical and healthcare experts, these programmes build strong scientific foundations, practical lab skills, industry exposure, internships, and placement support for career-ready professionals. `,
+  content: `K.R. Mangalam University offers industry-aligned Pharmacy programmes, including D. Pharm., B.Pharm., and Master's programmes in pharmacy, developed to meet global healthcare standards. Designed with pharmaceutical and healthcare experts, these programmes build strong scientific foundations, practical lab skills, industry exposure, internships, and placement support for career-ready professionals. `,
   imgUrl: `/landingpage/common/whykrmtest.png`,
   whyKrmCards: [
     {
@@ -115,7 +115,7 @@ export const whyKRM: WhyKRMSection = {
 };
 
 export const industryExperts: IndustryExpertsSection = {
-  eyebrow: "Why KR Mangalam PhD?",
+  eyebrow: "",
   heading: `Learn from <br /> Leaders @ KRMU!
 `,
   description: `K.R. Mangalam University takes pride in collaborating with industry leaders and skill professionals who offer unparalleled hands-on learning experiences to students.`,
@@ -130,7 +130,7 @@ export const industryExperts: IndustryExpertsSection = {
       title: "",
     },
     {
-      imgUrl: "/landingpage/pharmacy-2026/learn-from/imaginxp.svg",
+      imgUrl: "/wp-content/landingpage/common/imaginxp.svg",
       alt: "ImaginXP Logo",
       title: "",
     },
@@ -223,7 +223,7 @@ Our pharma programmes & specialisations `,
     {
       imgUrl: "/landingpage/pharmacy-2026/specilisation/m-pharmaco.jpg",
       title: `Master of Pharmacy (M.Pharm.) – Pharmacology `,
-      desc: `       The M.Pharm. in pharmacology programme focuses on drug science, mechanisms, and therapeutic applications. It combines advanced theoretical learning with hands-on laboratory training, research, and projects, preparing graduates for careers in pharmaceutical, healthcare, and biomedical fields. `,
+      desc: `       The M.Pharm. in Pharmacology programme focuses on drug science, mechanisms, and therapeutic applications. It combines advanced theoretical learning with hands-on laboratory training, research, and projects, preparing graduates for careers in pharmaceutical, healthcare, and biomedical fields. `,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",

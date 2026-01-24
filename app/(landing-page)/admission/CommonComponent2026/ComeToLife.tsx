@@ -15,7 +15,9 @@ const ComeToLife = ({ data }: Props) => {
         <div>
           <h3
             className="text-4xl text-[#013fa1] font-semibold text-center mb-5"
-            dangerouslySetInnerHTML={{ __html: data.heading }}
+            dangerouslySetInnerHTML={{
+              __html: "World-Class Facilities & Infrastructure",
+            }}
           />
           {/* <p
             className="text-[#666666] text-center"
@@ -38,7 +40,7 @@ const ComeToLife = ({ data }: Props) => {
       {/* Slider */}
       <div className="my-10">
         {/* <CometoLifeSlide slides={data.slides} /> */}
-        <CometoLifeSlide  />
+        <CometoLifeSlide />
       </div>
 
       {/* Footer CTA */}

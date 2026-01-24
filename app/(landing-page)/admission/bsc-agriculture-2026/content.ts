@@ -146,22 +146,22 @@ export const specialisationData: SpecialisationSection = {
   heading: `KRMU’s B.Sc. (Hons.) Agriculture Programme`,
   specilisationCard: [
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/bsc-agriculture-2026/prog/bsc-agri.jpg",
       title: `B.Sc. (Hons.) Agriculture`,
       desc: `This four-year undergraduate programme equips students with strong agrarian knowledge and practical skills. Structured in line with ICAR guidelines, the curriculum addresses key agricultural challenges and aligns with current industry standards. `,
       extraInfos: [
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
           desc: `4 Years`,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `Must have passed 10+2 or equivalent examination from any recognised board/university in Physics, Chemistry, Maths/Biology/Agriculture with a minimumof  50% aggregate marks. `,
         },
         {
-          iconUrl: "/landingpage/common/move-right.svg",
+          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
           title: "Annual Fee",
           desc: `Rs 1,40,000`,
         },

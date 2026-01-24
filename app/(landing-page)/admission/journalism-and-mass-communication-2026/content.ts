@@ -202,7 +202,7 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl: "/landingpage/common/dummy.png",
+      imgUrl: "/landingpage/sjmc-2026/prog/ma-jmc.jpg",
       title: `M.A. (Journalism And Mass Communication)`,
       desc: `The aim of KRMU's M.A. JMC course is to prepare students for the fast-paced world of media, communication, and narrative. In order to assist students in comprehending how news, information, and messages are produced and disseminated across many platforms, the curriculum aims to integrate theoretical knowledge with hands-on training. Through guest lectures, workshops, and internships with media organisations, the students' understanding of fundamental subjects like journalistic ethics, media regulations, reporting, and editing is further developed.`,
       extraInfos: [

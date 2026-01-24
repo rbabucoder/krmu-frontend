@@ -128,7 +128,7 @@ export const whyKRM: WhyKRMSection = {
 };
 
 export const industryExperts: IndustryExpertsSection = {
-  eyebrow: "Why Choose B.A. Courses at K.R. Mangalam University? ",
+  eyebrow: "",
   heading: `Learn from <br /> Industry Expert 
 `,
   description: `The B.A. programmes at KRMU are enriched by academic and professional inputs from experienced knowledge partners`,
@@ -191,7 +191,7 @@ export const specialisationData: SpecialisationSection = {
     {
       imgUrl:
         "/landingpage/bachelor-of-arts-2026/specialisations/B.A.-(-Hons.-Hons.-with-Research)-English.webp",
-      title: `B.A. ( Hons. / Hons. with Research) English `,
+      title: `B.A. (Hons. / Hons. with Research) English `,
       desc: `    The programme focuses on English literature, language, and culture, developing critical thinking, writing, and research skills through the study of classic and contemporary texts, preparing students for careers in academia, media, publishing, and related fields. `,
       extraInfos: [
         {

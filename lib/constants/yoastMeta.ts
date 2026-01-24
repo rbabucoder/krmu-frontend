@@ -16,32 +16,38 @@ export type YoastHeadJson = {
   title: string;
   description: string;
   robots: BlogRobot;
-  canonical: string;
+  canonical?: string;
   og_image: BlogOgImage[];
 };
 
-const removeTrailingSlash = (url: string) =>
-  url.endsWith("/") ? url.slice(0, -1) : url;
-export function yoastToMetadata(yoast: YoastHeadJson): Metadata {
-  const canonical = removeTrailingSlash(yoast.canonical);
-  return {
-    title: yoast.title,
-    description: yoast.description,
+const removeTrailingSlash = (url?: string): string | undefined => {
+  if (!url) return undefined;
+  return url.endsWith("/") ? url.slice(0, -1) : url;
+};
 
-    alternates: {
-      canonical: canonical,
-    },
+export function yoastToMetadata(yoast: YoastHeadJson): Metadata {
+  const canonical = removeTrailingSlash(yoast?.canonical);
+
+  return {
+    title: yoast?.title,
+    description: yoast?.description,
+
+    alternates: canonical
+      ? {
+          canonical,
+        }
+      : undefined,
 
     robots: {
-      index: yoast.robots.index === "index",
-      follow: yoast.robots.follow === "follow",
+      index: yoast?.robots?.index === "index",
+      follow: yoast?.robots?.follow === "follow",
     },
 
     openGraph: {
-      title: yoast.title,
-      description: yoast.description,
-      url: yoast.canonical,
-      images: yoast.og_image?.map((img) => ({
+      title: yoast?.title,
+      description: yoast?.description,
+      url: canonical,
+      images: yoast?.og_image?.map((img) => ({
         url: img.url,
         width: img.width,
         height: img.height,

@@ -28,7 +28,7 @@ export const Hero: HeroContent = {
       PROGRAMMES 2026-27
     `,
   desc: `Begin a focused and future-oriented academic journey with B.Sc. programmes <br /> designed to inculcate scientific thinking, <br /> problem-solving, and practical skills among <br /> students for diverse roles across emerging and established industries`,
-  heroBg: "/landingpage/law-2026/law.jpg",
+  heroBg: "/wp-content/landingpage/bsc-2026/bsc.webp",
   // middleImg: "/landingpage/law-2026/law.webp",
   middleImg: "",
 };
@@ -85,7 +85,7 @@ export const prominentRecruiters: ProminentRecruit[] = [
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/bsc-2026/recruiters/isro.svg",
+    imgUrl: "/wp-content/landingpage/common/isro.svg",
     alt: "Recruiter Logo",
   },
   {
@@ -127,7 +127,7 @@ export const whyKRM: WhyKRMSection = {
 };
 
 export const industryExperts: IndustryExpertsSection = {
-  eyebrow: "What Makes B.Sc. Programmes at K.R.M.U Stand Out? ",
+  eyebrow: "",
   heading: `Learn from <br /> Industry Expert
 `,
   description: `The B.Sc. programmes at KRMU are enriched by academic and professional inputs from experienced knowledge partners`,
@@ -347,7 +347,7 @@ supported my intellectual growth. `,
       programme: "B. Sc. (Hons.) Mathematics ",
     },
     {
-      image: "/landingpage/bsc-2026/testimonials/3.webp",
+      image: "/landingpage/bsc-2026/testimonials/4.webp",
       videoUrl: "#",
       quote: `KRMU offers one with a myriad range of opportunities. It is a great experience to  
 

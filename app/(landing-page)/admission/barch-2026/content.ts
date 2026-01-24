@@ -93,7 +93,7 @@ export const prominentRecruiters: ProminentRecruit[] = [
 export const whyKRM: WhyKRMSection = {
   heading: "What makes KRMU the Best option for the B.Arch Course?",
   subheading: "From Drawing Design Sketches to Building Skyscrapers",
-  content: `Developed by the expert professionals in the field, K.R. Mangalam University's five-year B.Arch program offers architecture education through practical projects, immersive sessions, insightful workshops, and valuable insights into the intricacies of architectural planning. The university's multidisciplinary strategy aims to ensure that the holistic development of its students, who will be influencing the architectural world in the future, remains a top priority.`,
+  content: `Developed by the expert professionals in the field, K.R. Mangalam University's five-year B.Arch programme offers architecture education through practical projects, immersive sessions, insightful workshops, and valuable insights into the intricacies of architectural planning. The university's multidisciplinary strategy aims to ensure that the holistic development of its students, who will be influencing the architectural world in the future, remains a top priority.`,
   imgUrl: `/landingpage/barch-2026/why-choose/Building.webp`,
   whyKrmCards: [
     {
@@ -125,7 +125,7 @@ export const industryExperts: IndustryExpertsSection = {
 `,
   description: `K.R. Mangalam University takes pride in collaborating with industry leaders and skill professionals who offer unparalleled hands-on learning experiences to students.`,
   cta: {
-    label: "Apply for B.Arch 2026",
+    label: "Apply for B.Arch 2026-27",
     href: "#",
   },
   cards: [

@@ -239,7 +239,7 @@ export const testimonialsData: TestimonialsSection = {
   heading: `Why Do Our Students Trust Us? `,
   testimonials: [
     {
-      image: "/landingpage/beld-2026/testimonials/1.webp",
+      image: "/landingpage/beld-2026/testimonials/1.jpg",
       videoUrl: "#",
       quote: `Enrolling in the B.El.Ed. programme at K. R. Mangalam University has been one of the most 
 rewarding decisions of my academic career. From day one, I was immersed in an environment 
@@ -253,7 +253,7 @@ creatively.
       programme: "(B.El.Ed.) Trainee Counsellor, St. Joseph’s Academy",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/beld-2026/testimonials/2.jpg",
       videoUrl: "#",
       quote: `One of the best aspects of the B.Ed. programme at K. R. Mangalam University is the supportive 
 learning environment created by the faculty and peers. The small class sizes and interactive 
@@ -267,7 +267,7 @@ broader perspective on diverse learning needs.
       programme: "(B.Ed.) Teacher, Hello kids - GJ International School",
     },
     {
-      image: "/landingpage/common/dummy.png",
+      image: "/landingpage/beld-2026/testimonials/3.jpg",
       videoUrl: "#",
       quote: `The B.El.Ed. programme at K. R. Mangalam University seamlessly blends theory with practice, 
 ensuring that aspiring teachers are well-prepared for real-world challenges. The structured lessonplanning exercises, hands-on training in ICT tools, and workshops on classroom management have been instrumental in shaping my teaching skills. The university’s commitment to excellence is evident in its experienced faculty, who constantly push us to innovate and think critically about our roles as educators. The internship experience allowed me to understand the nuances of student behavior, curriculum design, and effective teaching strategies.
@@ -275,17 +275,17 @@ ensuring that aspiring teachers are well-prepared for real-world challenges. The
       name: "Guruksha Bansal",
       programme: "(B.El.Ed.) Pursuing M.Ed.",
     },
-    {
-      image: "/landingpage/common/dummy.png",
-      videoUrl: "#",
-      quote: `I am proud to be an alumnus of K.R. Mangalam University, where I pursued my Ph.D. under the 
-expert guidance of Prof. P.C. Jena. The university provided an enriching academic environment, 
-excellent research facilities, and constant support that helped me grow both personally and 
-professionally. The university provided a vibrant learning environment with exceptional faculty who guided and supported me throughout my research. My experience at K.R. Mangalam University not only broadened my knowledge but also equipped me with the critical thinking and research skills that have been vital to my professional success. I cherish the memories and am proud to be associated with such a prestigious institution. 
-`,
-      name: "Dr. Anupam Bansal",
-      programme: "Ph.D., Associate Professor, KIIT Group of Colleges, Gurugram",
-    },
+//     {
+//       image: "/landingpage/beld-2026/testimonials/4.jpg",
+//       videoUrl: "#",
+//       quote: `I am proud to be an alumnus of K.R. Mangalam University, where I pursued my Ph.D. under the 
+// expert guidance of Prof. P.C. Jena. The university provided an enriching academic environment, 
+// excellent research facilities, and constant support that helped me grow both personally and 
+// professionally. The university provided a vibrant learning environment with exceptional faculty who guided and supported me throughout my research. My experience at K.R. Mangalam University not only broadened my knowledge but also equipped me with the critical thinking and research skills that have been vital to my professional success. I cherish the memories and am proud to be associated with such a prestigious institution. 
+// `,
+//       name: "Dr. Anupam Bansal",
+//       programme: "Ph.D., Associate Professor, KIIT Group of Colleges, Gurugram",
+//     },
   ],
 };
 

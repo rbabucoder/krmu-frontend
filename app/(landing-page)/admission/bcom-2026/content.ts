@@ -80,15 +80,15 @@ export const prominentRecruiters: ProminentRecruit[] = [
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/wp-content/landingpage/common/recruiters/decathalon.svg",
+    imgUrl: "/wp-content/landingpage/common/decathalon.svg",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/wp-content/landingpage/common/recruiters/icici.svg",
+    imgUrl: "/wp-content/landingpage/common/icici.svg",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/wp-content/landingpage/common/recruiters/abg.png",
+    imgUrl: "/wp-content/landingpage/common/abg.png",
     alt: "Recruiter Logo",
   },
   {
@@ -131,7 +131,7 @@ export const whyKRM: WhyKRMSection = {
 };
 
 export const industryExperts: IndustryExpertsSection = {
-  eyebrow: "Why K.R. Mangalam B.Com. courses?",
+  eyebrow: "",
   heading: `Learn from Industry Expert
 `,
   description: `K.R. Mangalam University takes pride in collaborating with industry leaders and skill professionals who offer unparalleled hands-on learning experiences to students.`,

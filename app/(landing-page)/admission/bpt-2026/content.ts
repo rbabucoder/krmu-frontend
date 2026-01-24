@@ -72,7 +72,7 @@ export const prominentRecruiters: ProminentRecruit[] = [
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/bpt-2026/recruiters/medanta.png",
+    imgUrl: "/landingpage/bpt-2026/recruiters/medanta.jpg",
     alt: "Recruiter Logo",
   },
   {
@@ -115,7 +115,7 @@ export const industryExperts: IndustryExpertsSection = {
   heading: `Learn From <br /> Industry Experts`,
   description: `KRMU partners with major organisations to provide <br /> industry-specific training.`,
   cta: {
-    label: "Apply for BPT Programme 2026",
+    label: "Apply for BPT Programme 2026-27",
     href: "#",
   },
   cards: [
@@ -180,7 +180,7 @@ export const opportunityData: OpportunitySection = {
   heading: "Learn From Industry Experts",
   highlight: "Opportunity That Transforms",
   cta: {
-    label: "Apply for BPT Programme 2026",
+    label: "Apply for BPT Programme 2026-27",
     href: "#",
   },
 };
@@ -295,7 +295,7 @@ export const comeToLifeData: ComeToLifeSection = {
   description: `Guided by highly qualified healthcare experts, students utilise the advanced physiotherapy labs equipped with state-of-the-art facilities in order to gain practical exposure to therapeutic techniques and global best practices in healthcare.`,
   footerText: ``,
   cta: {
-    label: "Apply for BPT Programme 2026 ",
+    label: "Apply for BPT Programme 2026-27",
     href: "#",
   },
   slides: [
@@ -426,7 +426,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Begin Your Journey at K.R. Mangalam<br /> University Now`,
   description: "",
   cta: {
-    label: "Apply for BPT Programme 2026",
+    label: "Apply for BPT Programme 2026-27",
     href: "#",
   },
   highlights: [

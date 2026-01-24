@@ -199,7 +199,7 @@ galleries, and cutting-edge technology.
       quote: `I am Yashika Dang, a creative individual with a unique journey from commerce to 
 the arts. After earning my B.Com degree from M.D.U. and completing my schooling 
 at DAV, I realised my passion for creativity during COVID. This newfound interest led 
-me to pursue a BFA at KR Mangalam, where I am now exploring and refining my 
+me to pursue a BFA at K.R. Mangalam, where I am now exploring and refining my 
 artistic skills. My background gives me a diverse perspective, and I am eager to bring 
 innovation and creativity into my work.
 `,

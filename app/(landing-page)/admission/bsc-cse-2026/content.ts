@@ -92,7 +92,7 @@ export const prominentRecruiters: ProminentRecruit[] = [
 export const whyKRM: WhyKRMSection = {
   heading: "Why Choose B.Sc.-CSE Programmes of KRMU? ",
   subheading: "Step Into the Future of Computing",
-  content: `K.R. Mangalam University's B.Sc. Computer Science programs offer cutting-edge curriculum developed in partnership with industry professionals. Our NEP-compliant curricula provide students with practical, hands-on experience and global certifications to help them flourish in a fast changing technology field.`,
+  content: `K.R. Mangalam University's B.Sc. Computer Science programs offer cutting-edge curriculum developed in partnership with industry professionals. Our NEP-compliant curriculum provide students with practical, hands-on experience and global certifications to help them flourish in a fast changing technology field.`,
   imgUrl: `/landingpage/bsc-cse-2026/why-choose/Building.webp`,
   whyKrmCards: [
     {
@@ -119,7 +119,7 @@ export const industryExperts: IndustryExpertsSection = {
   heading: `Learn From <br /> Industry Experts`,
   description: `KRMU collaborates with leading organisations to offer industry-driven training.`,
   cta: {
-    label: "Apply for B.Sc. - CSE 2026",
+    label: "Apply for B.Sc. - CSE 2026-27",
     href: "#",
   },
   cards: [
