@@ -4,6 +4,19 @@
 @custom-variant dark (&:is(.dark *));
 
 @layer utilities {
+
+    .whyBgStyle {
+    background-color: #003fa1;
+  }
+
+  @media (max-width: 640px) {
+    .whyBgStyle {
+      background-color: none;
+    }
+    .whyBgStyleImage {
+      margin-bottom: 10px;
+    }
+  }
   .break-word-custom {
     word-break: break-word;
   }
