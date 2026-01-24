@@ -1,5 +1,5 @@
 import PlacementStats from "../../PGComponent/PlacementStats";
-import HeroSection from "../../PGComponent/HeroSection";
+// import HeroSection from "../../PGComponent/HeroSection";
 import ProminentRecruiter from "../../PGComponent/ProminentRecruiter";
 import AboutUs from "../../PGComponent/AboutUs";
 import IndustryExperts from "../../PGComponent/IndustryExperts";

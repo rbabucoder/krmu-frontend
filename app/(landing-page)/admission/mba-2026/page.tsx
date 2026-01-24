@@ -80,13 +80,13 @@ const page = () => {
 
   return (
     <>
-      <HeroSection
+      {/* <HeroSection
         title={title}
         description={description}
         primaryCta={primaryCta}
         secondaryCta={secondaryCta}
         image={image}
-      />
+      /> */}
       <PlacementStats data={placementData} />
       <ProminentRecruiter data={prominentData} />
       <AboutUs
