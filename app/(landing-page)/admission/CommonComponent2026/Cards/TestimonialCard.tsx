@@ -44,7 +44,7 @@ const TestimonialCard = ({ data }: Props) => {
         <div className="relative px-5 pb-5 pt-5 mb-4 rounded-2xl bg-white opacity-[0.8]">
           {/* Quote */}
           <p
-            className={`text-black text-sm leading-relaxed mb-2 transition-all ${
+            className={`text-black text-sm leading-relaxed mb-2 transition-all italic ${
               expanded ? "" : "line-clamp-3"
             }`}
           >
