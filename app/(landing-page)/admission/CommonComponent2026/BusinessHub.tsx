@@ -13,9 +13,9 @@ const BusinessHub = ({ data, formId }: Props) => {
       <div className="max-w-[1400px] mx-auto w-full px-6 py-10 sm:py-20">
         <div className="flex flex-col lg:flex-row gap-14 items-start">
           {/* LEFT CONTENT */}
-          <div className="text-white w-2/3">
+          <div className="text-white w-full lg:w-2/3">
             <h1
-              className="text-4xl xl:text-5xl font-bold leading-tight mb-6"
+              className="text-2xl md:text-4xl xl:text-5xl font-bold leading-tight mb-6"
               dangerouslySetInnerHTML={{ __html: data.heading }}
             />
 
@@ -43,7 +43,7 @@ const BusinessHub = ({ data, formId }: Props) => {
           </div>
 
           {/* RIGHT FORM IMAGE */}
-          <div className="relative w-1/3">
+          <div className="relative w-full lg:w-1/3">
             <p
               className="text-white text-sm text-right mb-3 italic"
               dangerouslySetInnerHTML={{ __html: data.formNote }}

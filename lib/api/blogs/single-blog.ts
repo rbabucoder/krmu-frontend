@@ -14,7 +14,7 @@ export async function getSingleBlogDataBySlug(
     `${krmBlogURL}/wp-json/wp/v2/posts?slug=${slug}&_embed`,
     {
       next: {
-        revalidate: 3600,
+        revalidate: 180,
       },
     },
   );

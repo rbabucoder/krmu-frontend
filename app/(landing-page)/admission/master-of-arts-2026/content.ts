@@ -396,7 +396,7 @@ export const businessLeaderContent: BusinessLeaderContent = {
 
 export const PGProgrammeCard: ProgramCardType = [
   {
-    image: "/landingpage/common/dummy.png",
+    image: "/wp-content/landingpage/master-of-arts-2026/progs/ma-english.webp",
     title: "M.A. English",
     description:
       "The M.A. English programme offers strong theoretical foundations in literature, language, and critical theory, combined with analytical and research-oriented learning. It equips students with advanced communication, critical thinking, and interpretative skills to pursue careers in academics, media, publishing, content creation, and related fields, while preparing them for higher studies and research.",
@@ -408,7 +408,7 @@ export const PGProgrammeCard: ProgramCardType = [
     annualFee: "Rs 1,10,000",
   },
   {
-    image: "/landingpage/common/dummy.png",
+    image: "/wp-content/landingpage/master-of-arts-2026/progs/ma-economics.webp",
     title: "M.A. Economics",
     description:
       "The M.A. Economics programme provides strong theoretical foundations in economic theory, quantitative analysis, and policy studies, combined with applied and research-oriented learning. It equips students with analytical, problem-solving, and data interpretation skills to pursue careers in policy research, banking, analytics, public services, and higher academic studies.",
@@ -420,7 +420,7 @@ export const PGProgrammeCard: ProgramCardType = [
     annualFee: "Rs 1,10,000",
   },
   {
-    image: "/landingpage/common/dummy.png",
+    image: "/wp-content/landingpage/master-of-arts-2026/progs/ma-political-science.webp",
     title: "M.A. Political Science",
     description:
       "The M.A. Political Science programme offers in-depth understanding of political theory, governance, international relations, and public policy through critical and analytical learning. It develops research, analytical, and policy-evaluation skills, preparing students for careers in civil services, public administration, research organisations, think tanks, and advanced academic pursuits.",
@@ -432,7 +432,7 @@ export const PGProgrammeCard: ProgramCardType = [
     annualFee: "Rs 1,15,000",
   },
   {
-    image: "/landingpage/common/dummy.png",
+    image: "/wp-content/landingpage/master-of-arts-2026/progs/ma-applied-psychology.webp",
     title: "M.A. Applied Psychology",
     description:
       "The M.A. Applied Psychology programme blends strong theoretical foundations with practical training in psychological assessment, methodologies, and mental processes. It equips students with essential analytical, interpersonal, and professional skills to interpret human behaviour, address real-world challenges, and build careers in psychology while promoting mental health awareness.",
@@ -454,7 +454,7 @@ export const prospectusDownloadContent: ProspectusDownloadContent = {
     href: "#", // can be file link or NPF popup later
   },
   image: {
-    src: "/images/prospectus-girls.png",
+    src: "/wp-content/landingpage/master-of-arts-2026/aboutus.webp",
     alt: "MBA Prospectus",
   },
 };

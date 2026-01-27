@@ -59,10 +59,7 @@ const SingleBlogHero = ({
             <SingleBlogDate date={date} />
           </div>
         </div>
-        <div
-          className="lg:w-1/2 flex items-center justify-center"
-          data-test={imgUrl}
-        >
+        <div className="lg:w-1/2 flex items-center justify-center">
           {normalizedImgUrl && (
             <Image
               // src={`${STRAPI_URL}${imgUrl}`}

@@ -65,7 +65,9 @@ export default function ProgramCard({
 
           {/* Eligibility */}
           <li className="flex gap-3">
-            <GraduationCap className="w-5 h-5 text-gray-700 mt-0.5" />
+            <div>
+              <GraduationCap className="w-5 h-5 text-gray-700 mt-0.5" />
+            </div>
             <div>
               <p className="font-medium">Eligibility</p>
               <p className="text-gray-600 leading-relaxed">{eligibility}</p>

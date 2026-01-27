@@ -23,12 +23,12 @@ const LifeAsPhDScholar = ({ data }: Props) => {
         </div>
 
         {/* Image */}
-        <div className="relative w-full h-[260px] sm:h-[360px] md:h-[450px] xl:h-[600px] overflow-hidden mb-12 rounded-xl">
+        <div className="relative w-full h-[100px] sm:h-[360px] md:h-[450px] xl:h-[600px] overflow-hidden mb-12 rounded-xl">
           <Image
             src="/landingpage/common/Collage-img.webp"
             fill
             alt="Life @ KRMU"
-            className="object-cover"
+            className="w-full  object-contain sm:object-cover"
             priority
           />
         </div>

@@ -368,7 +368,7 @@ decision that helped me to pursue my dream.
       programme: "B.Tech. CSE",
     },
     {
-      image: "/wp-content/landingpage/btech-2026/testimonials/3.jpg",
+      image: "/wp-content/landingpage/btech-2026/testimonials/3.webp",
       videoUrl: "#",
       quote: `Choosing K.R. Mangalam University for my B.Tech in CSE was one of the best decisions 
 I've ever made. The university's rigorous curriculum and industry-relevant training 
@@ -381,7 +381,7 @@ advancement.
       programme: "B.Tech. CSE",
     },
     {
-      image: "/wp-content/landingpage/btech-2026/testimonials/4.jpg",
+      image: "/wp-content/landingpage/btech-2026/testimonials/4.webp",
       videoUrl: "#",
       quote: `K.R. Mangalam University was a transformative journey for me. The exceptional 
 education and hands-on experience I received in Computer Science Engineering have 

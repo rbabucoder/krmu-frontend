@@ -9,7 +9,7 @@ type Props = {
 const SpecialisationCard = ({ data }: Props) => {
   return (
     <div
-      className="p-5 rounded-2xl bg-white h-full"
+      className="md:p-5 rounded-2xl bg-white h-full"
       style={{
         boxShadow: "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px",
       }}
@@ -43,7 +43,7 @@ const SpecialisationCard = ({ data }: Props) => {
                   <Image
                     src={info.iconUrl}
                     alt={info.title}
-                    width={25}
+                    width={20}
                     height={25}
                   />
                 </div>
