@@ -14,7 +14,7 @@ type Props = {
 
 const Testimonials = ({ data }: Props) => {
   return (
-    <section className="py-20 sm:pt-20 px-4 md:pl-20 overflow-hidden w-full">
+    <section className="py-20 sm:pt-20 px-4 lg:pl-20 overflow-hidden w-full">
       <div className="w-full">
         {/* Header */}
         <div className="flex flex-col lg:flex-row">
@@ -51,13 +51,13 @@ const Testimonials = ({ data }: Props) => {
 
             {data?.testimonials?.length > 4 && (
               <div className="pt-10 hidden sm:block">
-                <CarouselPrevious className="bottom-0 top-full left-[25%] sm:left-0 md:top-0 md:left-[85%] xl:left-[90%] xlright-0 landingpagePrevArrow" />
+                <CarouselPrevious className="bottom-0 top-full left-[25%] sm:left-0 md:top-0 md:left-[85%] xl:left-[90%] landingpagePrevArrow" />
                 <CarouselNext className="bottom-0 top-full md:top-0 right-[25%] sm:right-0 landingpageNextArrow" />
               </div>
             )}
             <div className="sm:hidden">
-              <CarouselPrevious className="top-[90%] left-[50%] sm:bottom-0 sm:top-full  sm:left-0 md:top-0 md:left-[85%] xl:left-[90%] xlright-0 landingpagePrevArrow" />
-              <CarouselNext className=" top-[90%] right-[6%] sm:bottom-0 sm:top-full md:top-0  sm:right-0 landingpageNextArrow" />
+              <CarouselPrevious className="bottom-0 top-full left-[25%] sm:left-0 md:top-0 md:left-[85%] xl:left-[90%] landingpagePrevArrow" />
+              <CarouselNext className="bottom-0 top-full md:top-0 right-[25%] sm:right-0 landingpageNextArrow" />
             </div>
             {/* <div className="pt-10">
               <CarouselPrevious className="bottom-0 top-full left-[25%] sm:left-0 md:top-0 md:left-[85%] xl:left-[90%] landingpagePrevArrow" />

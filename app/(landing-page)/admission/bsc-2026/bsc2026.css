@@ -134,16 +134,16 @@
     border: 1px solid red;
   }
 
-    .npf_wgts iframe {
+  .npf_wgts iframe {
     box-shadow: none !important;
   }
 
-.heroBannerForm__form {
+  .heroBannerForm__form {
     background: #fff;
-width: 100%;
+    width: 100%;
     border-radius: 10px;
     padding-top: 40px;
-    
+
     height: 583px;
     position: relative;
   }

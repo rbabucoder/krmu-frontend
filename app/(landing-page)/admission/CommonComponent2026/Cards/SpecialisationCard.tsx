@@ -38,8 +38,8 @@ const SpecialisationCard = ({ data }: Props) => {
         <div className="flex flex-col gap-4 my-10">
           {data.extraInfos.map((info, index) => (
             <div key={index} className="flex gap-2.5 items-start">
-              <div className="w-[10%]">
-                <div className="border rounded-full flex justify-center items-center w-[50px] h-[50px]">
+              <div className="w-[20%] sm:w-[10%]">
+                <div className="border rounded-full flex justify-center items-center w-[40px] h-[40px] md:w-[50px] md:h-[50px] ">
                   <Image
                     src={info.iconUrl}
                     alt={info.title}
@@ -48,7 +48,7 @@ const SpecialisationCard = ({ data }: Props) => {
                   />
                 </div>
               </div>
-              <div className="w-[90%]">
+              <div className="w-[80%] sm:w-[90%]">
                 <h5>{info.title}</h5>
                 <p
                   className="text-sm text-[#7f7f7f] break-word-custom"

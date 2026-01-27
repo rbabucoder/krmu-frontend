@@ -78,7 +78,12 @@ const IndustryExperts = ({ data }: Props) => {
           {/* Mobile description + CTA */}
           <div className="mt-10 sm:mt-5">
             <div className="md:hidden text-white">
-              <p className="mb-5 text-center">{data.description}</p>
+              <p
+                className="mb-5 text-center"
+                dangerouslySetInnerHTML={{
+                  __html: data.description,
+                }}
+              />
               <div className="flex justify-center">
                 <Link
                   href={data.cta.href}

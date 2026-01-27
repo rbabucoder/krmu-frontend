@@ -42,7 +42,7 @@ const Specialisation = ({ data }: Props) => {
           >
             <CarouselContent className="mb-10 sm:my-12">
               {data?.specilisationCard.map((card, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                <CarouselItem key={index} className="lg:basis-1/2 xl:basis-1/3">
                   <SpecialisationCard data={card} />
                 </CarouselItem>
               ))}
