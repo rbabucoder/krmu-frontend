@@ -7,7 +7,10 @@ import {
   GraduationCap,
   Lightbulb,
 } from "lucide-react";
+
 import {
+  PGTestimonialsBlock,
+  ProgramCardType,
   AboutUsContent,
   AdmissionProcessContent,
   BusinessHubSection,
@@ -21,8 +24,7 @@ import {
   PlacementStatsContent,
   ProminentRecruiterContent,
   ProspectusDownloadContent,
-} from "./contentType";
-import { PGTestimonialsBlock, ProgramCardType } from "../PGType";
+} from "../PGType";
 
 export const heroContent: HeroContent = {
   title: `
@@ -101,14 +103,32 @@ export const prominentRecruiterContent: ProminentRecruiterContent = {
 
   people: [
     {
-      name: "Abhinav Anand",
-      package: "18 LPA",
+      name: "Rishav Bakshi",
+      package: "56.6 LPA",
       profileImage: {
-        src: "/landingpage/mca-2026/dummy-2.png",
-        alt: "Abhinav Anand",
+        src: "/wp-content/landingpage/mca-2026/highlights/56.6.jpeg",
+        alt: "Rishav Bakshi",
         width: 160,
         height: 40,
       },
+      companyName: "Ferrari Québec",
+      companyLogo: {
+        src: "/landingpage/bba-2026/prominent/accenture.png",
+        alt: "Ferrari Québec",
+        width: 120,
+        height: 50,
+      },
+    },
+    {
+      name: "Daksh Mehta",
+      package: "36 LPA",
+      profileImage: {
+        src: "/wp-content/landingpage/mca-2026/highlights/1.png",
+        alt: "Daksh Mehta",
+        width: 160,
+        height: 160,
+      },
+      companyName: "UNIAS",
       companyLogo: {
         src: "/landingpage/bba-2026/prominent/accenture.png",
         alt: "Accenture",
@@ -118,16 +138,102 @@ export const prominentRecruiterContent: ProminentRecruiterContent = {
     },
     {
       name: "Abhinav Anand",
-      package: "18 LPA",
+      package: "24 LPA",
       profileImage: {
-        src: "/landingpage/mca-2026/dummy-2.png",
+        src: "/wp-content/landingpage/mca-2026/highlights/2.png",
         alt: "Abhinav Anand",
         width: 160,
-        height: 40,
+        height: 160,
       },
+      companyName: "CargoFlash",
       companyLogo: {
         src: "/landingpage/bba-2026/prominent/accenture.png",
         alt: "Accenture",
+        width: 120,
+        height: 50,
+      },
+    },
+    {
+      name: "Abhinav Sinha",
+      package: "20 LPA",
+      profileImage: {
+        src: "/wp-content/landingpage/mca-2026/highlights/4.png",
+        alt: "Abhinav Sinha",
+        width: 160,
+        height: 160,
+      },
+      companyName: "Nirmata Technologies Pvt. Ltd.",
+      companyLogo: {
+        src: "/landingpage/bba-2026/prominent/accenture.png",
+        alt: "Nirmata Technologies Pvt. Ltd.",
+        width: 120,
+        height: 50,
+      },
+    },
+    {
+      name: "Ujjwal Singh",
+      package: "18 LPA",
+      profileImage: {
+        src: "/wp-content/landingpage/mca-2026/highlights/7.png",
+        alt: "Ujjwal Singh",
+        width: 160,
+        height: 160,
+      },
+      companyName: "Anglo-Eastern Ltd.",
+      companyLogo: {
+        src: "/landingpage/bba-2026/prominent/accenture.png",
+        alt: "Nirmata Technologies Pvt. Ltd.",
+        width: 120,
+        height: 50,
+      },
+    },
+    {
+      name: "Shashank Gupta",
+      package: "18 LPA",
+      profileImage: {
+        src: "/wp-content/landingpage/mca-2026/highlights/5.png",
+        alt: "Shashank Gupta",
+        width: 160,
+        height: 160,
+      },
+      companyName: "Anglo-Eastern Ltd.",
+      companyLogo: {
+        src: "/landingpage/bba-2026/prominent/accenture.png",
+        alt: "Nirmata Technologies Pvt. Ltd.",
+        width: 120,
+        height: 50,
+      },
+    },
+    {
+      name: "Darshit Raghav",
+      package: "17.4 LPA",
+      profileImage: {
+        src: "/wp-content/landingpage/mca-2026/highlights/3.png",
+        alt: "Darshit Raghav",
+        width: 160,
+        height: 160,
+      },
+      companyName: "Debcor Engineering",
+      companyLogo: {
+        src: "/landingpage/bba-2026/prominent/accenture.png",
+        alt: "Nirmata Technologies Pvt. Ltd.",
+        width: 120,
+        height: 50,
+      },
+    },
+    {
+      name: "Samarpan Upadhyaya",
+      package: "13 LPA",
+      profileImage: {
+        src: "/wp-content/landingpage/mca-2026/highlights/6.png",
+        alt: "Samarpan Upadhyaya",
+        width: 160,
+        height: 160,
+      },
+      companyName: "Upgrad ",
+      companyLogo: {
+        src: "/landingpage/bba-2026/prominent/accenture.png",
+        alt: "Nirmata Technologies Pvt. Ltd.",
         width: 120,
         height: 50,
       },
