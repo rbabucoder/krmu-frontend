@@ -42,12 +42,14 @@ const page = async ({ params }: Props) => {
           boxShadow: `0 0 1px 0 rgba(0, 0, 0, .08), 0 2px 2px 0 rgba(0, 0, 0, .16)`,
         }}
       >
-        <AuthorHero
-          imgUrl={AuthImgUrl}
-          AuthName={AuthName}
-          AuthDesg={AuthDesg}
-          AuthAbout={AuthAbout}
-        />
+        {AuthImgUrl && (
+          <AuthorHero
+            imgUrl={AuthImgUrl}
+            AuthName={AuthName}
+            AuthDesg={AuthDesg}
+            AuthAbout={AuthAbout}
+          />
+        )}
       </div>
       <div
         className="max-w-[820px] mx-auto w-full mb-5 clear-both relative"
