@@ -35,18 +35,20 @@ const SpecialisationCard = ({ data }: Props) => {
         <p className="text-xs text-[#7f7f7f]">{data.desc}</p>
 
         {/* Extra Infos */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 my-10">
+        <div className="flex flex-col gap-4 my-10">
           {data.extraInfos.map((info, index) => (
-            <div key={index} className="flex gap-2.5 items-baseline">
-              <span className="flex items-center justify-center border p-2 rounded-full">
-                <Image
-                  src={info.iconUrl}
-                  alt={info.title}
-                  width={14}
-                  height={14}
-                />
-              </span>
-              <div>
+            <div key={index} className="flex gap-2.5 items-start">
+              <div className="w-[10%]">
+                <div className="border rounded-full flex justify-center items-center w-[50px] h-[50px]">
+                  <Image
+                    src={info.iconUrl}
+                    alt={info.title}
+                    width={25}
+                    height={25}
+                  />
+                </div>
+              </div>
+              <div className="w-[90%]">
                 <h5>{info.title}</h5>
                 <p
                   className="text-sm text-[#7f7f7f] break-word-custom"

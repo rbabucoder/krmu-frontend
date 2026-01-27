@@ -11,9 +11,9 @@ const BusinessHub = ({ data, formId }: Props) => {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-[#0b63a5] via-[#083d6b] to-[#041b2e]">
       <div className="max-w-[1400px] mx-auto w-full px-6 py-10 sm:py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
+        <div className="flex flex-col lg:flex-row gap-14 items-start">
           {/* LEFT CONTENT */}
-          <div className="text-white">
+          <div className="text-white w-2/3">
             <h1
               className="text-4xl xl:text-5xl font-bold leading-tight mb-6"
               dangerouslySetInnerHTML={{ __html: data.heading }}
@@ -31,7 +31,7 @@ const BusinessHub = ({ data, formId }: Props) => {
             </ul>
 
             {/* MAP IMAGE */}
-            <div className="mt-12 bg-white rounded-xl p-3 shadow-xl">
+            <div className="mt-12 bg-white rounded-xl p-3 shadow-xl max-w-[648px]">
               <Image
                 src={data.mapImage.src}
                 width={data.mapImage.width}
@@ -43,7 +43,7 @@ const BusinessHub = ({ data, formId }: Props) => {
           </div>
 
           {/* RIGHT FORM IMAGE */}
-          <div className="relative">
+          <div className="relative w-1/3">
             <p
               className="text-white text-sm text-right mb-3 italic"
               dangerouslySetInnerHTML={{ __html: data.formNote }}
@@ -59,8 +59,21 @@ const BusinessHub = ({ data, formId }: Props) => {
                 className="rounded-xl"
                 priority
               /> */}
-              {formId && (
+              {/* {formId && (
                 <NoPaperFormsWidget widgetId={formId} height="600px" />
+              )} */}
+              {formId && (
+                <div className="heroBannerForm__form">
+                  <div className="heroBannerForm-header">
+                    <h3 className="mb-0">
+                      <strong>
+                        Apply Today for <span>K.R. Mangalam University</span>
+                      </strong>
+                    </h3>
+                  </div>
+
+                  <NoPaperFormsWidget widgetId={formId} height="550px" />
+                </div>
               )}
             </div>
           </div>

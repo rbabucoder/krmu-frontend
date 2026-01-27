@@ -51,13 +51,25 @@ const HeroSection = ({
                 src={middleImg}
                 width={570}
                 height={735}
-                alt="Hero"
+                alt="Hero"  
                 className="-mb-28"
               />
             )}
           </div> */}
           <div className="w-full xl:w-1/3 mt-5 lg:mt-0" id="apply-section">
-            {formId && <NoPaperFormsWidget widgetId={formId} />}
+            {formId && (
+              <div className="heroBannerForm__form">
+                <div className="heroBannerForm-header">
+                  <h3 className="mb-0">
+                    <strong>
+                      Apply Today for <span>K.R. Mangalam University</span>
+                    </strong>
+                  </h3>
+                </div>
+
+                <NoPaperFormsWidget widgetId={formId} height="550px" />
+              </div>
+            )}
           </div>
         </div>
       </section>

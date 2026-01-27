@@ -83,19 +83,31 @@ export const prominentRecruiterContent: ProminentRecruiterContent = {
 
   logos: [
     {
-      src: "/landingpage/bba-2026/prominent/accenture.png",
+      src: "/wp-content/landingpage/master-of-arts-2026/recruiters/hdfc-logo.png",
       alt: "Accenture",
       width: 160,
       height: 40,
     },
     {
-      src: "/landingpage/bba-2026/prominent/accenture.png",
+      src: "/wp-content/landingpage/master-of-arts-2026/recruiters/vidushi.png",
       alt: "Accenture",
       width: 160,
       height: 40,
     },
     {
-      src: "/landingpage/bba-2026/prominent/accenture.png",
+      src: "/wp-content/landingpage/master-of-arts-2026/recruiters/cryptomize.png",
+      alt: "Accenture",
+      width: 160,
+      height: 40,
+    },
+    {
+      src: "/wp-content/landingpage/master-of-arts-2026/recruiters/medanta.jpg",
+      alt: "Accenture",
+      width: 160,
+      height: 40,
+    },
+    {
+      src: "/wp-content/landingpage/master-of-arts-2026/recruiters/zynga.webp",
       alt: "Accenture",
       width: 160,
       height: 40,
@@ -262,25 +274,25 @@ export const industryExpertsContent: IndustryExpertsContent = {
 
   experts: [
     {
-      src: "/landingpage/mca-2026/ibm.webp",
+      src: "/wp-content/landingpage/master-of-arts-2026/learn-from/ibm.webp",
       alt: "IBM",
       width: 300,
       height: 200,
     },
     {
-      src: "/landingpage/mca-2026/ibm.webp",
+      src: "/wp-content/landingpage/master-of-arts-2026/learn-from/iide.png",
       alt: "IBM",
       width: 300,
       height: 200,
     },
     {
-      src: "/landingpage/mca-2026/ibm.webp",
+      src: "/wp-content/landingpage/master-of-arts-2026/learn-from/grant-thornton.png",
       alt: "IBM",
       width: 300,
       height: 200,
     },
     {
-      src: "/landingpage/mca-2026/ibm.webp",
+      src: "/wp-content/landingpage/master-of-arts-2026/learn-from/eydark.webp",
       alt: "IBM",
       width: 300,
       height: 200,

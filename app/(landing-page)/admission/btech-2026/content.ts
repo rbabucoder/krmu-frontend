@@ -64,27 +64,27 @@ export const Counters: CounterItem[] = [
 // Recruiters list
 export const prominentRecruiters: ProminentRecruit[] = [
   {
-    imgUrl: "/landingpage/btech-2026/recruiters/amazon.webp",
+    imgUrl: "/wp-content/landingpage/btech-2026/recruiters/amazon.webp",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/btech-2026/recruiters/infosys.svg",
+    imgUrl: "/wp-content/landingpage/btech-2026/recruiters/infosys.svg",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/btech-2026/recruiters/apple.svg",
+    imgUrl: "/wp-content/landingpage/btech-2026/recruiters/apple.svg",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/btech-2026/recruiters/deliotte.svg",
+    imgUrl: "/wp-content/landingpage/btech-2026/recruiters/deliotte.svg",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/btech-2026/recruiters/icici.svg",
+    imgUrl: "/wp-content/landingpage/btech-2026/recruiters/icici.svg",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/btech-2026/recruiters/accenture.svg",
+    imgUrl: "/wp-content/landingpage/btech-2026/recruiters/accenture.svg",
     alt: "Recruiter Logo",
   },
 ];
@@ -124,7 +124,7 @@ export const industryExperts: IndustryExpertsSection = {
   heading: `Learn From <br /> Industry Experts`,
   description: `KRMU partners with major organisations to provide <br /> industry-specific training.`,
   cta: {
-    label: ` 2026-27`,
+    label: `Apply for B.Tech 2026-27`,
     href: "#",
   },
   cards: [
@@ -345,7 +345,7 @@ export const testimonialsData: TestimonialsSection = {
   heading: `Students’ Testimonials`,
   testimonials: [
     {
-      image: "/landingpage/btech-2026/testimonials/1.webp",
+      image: "/wp-content/landingpage/btech-2026/testimonials/1.jpg",
       videoUrl: "#",
       quote: `My 4 years at K.R. Mangalam University were full of learning something useful every 
 day that I can carry forward through my life. I highly appreciate the efforts of my 
@@ -356,7 +356,7 @@ proper career guidance. The facilities provided really helped me fully enjoy my 
       programme: "B.Tech. CSE",
     },
     {
-      image: "/landingpage/btech-2026/testimonials/2.webp",
+      image: "/wp-content/landingpage/btech-2026/testimonials/2.jpg",
       videoUrl: "#",
       quote: `I would like to extend my gratitude to the Training and Placement Cell of K.R. 
 Mangalam University for their continued efforts in providing ample amount of 
@@ -368,7 +368,7 @@ decision that helped me to pursue my dream.
       programme: "B.Tech. CSE",
     },
     {
-      image: "/landingpage/btech-2026/testimonials/3.webp",
+      image: "/wp-content/landingpage/btech-2026/testimonials/3.jpg",
       videoUrl: "#",
       quote: `Choosing K.R. Mangalam University for my B.Tech in CSE was one of the best decisions 
 I've ever made. The university's rigorous curriculum and industry-relevant training 
@@ -381,7 +381,7 @@ advancement.
       programme: "B.Tech. CSE",
     },
     {
-      image: "/landingpage/btech-2026/testimonials/4.webp",
+      image: "/wp-content/landingpage/btech-2026/testimonials/4.jpg",
       videoUrl: "#",
       quote: `K.R. Mangalam University was a transformative journey for me. The exceptional 
 education and hands-on experience I received in Computer Science Engineering have 

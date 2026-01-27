@@ -4,8 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @layer utilities {
-
-    .whyBgStyle {
+  .whyBgStyle {
     background-color: #003fa1;
   }
 
@@ -125,12 +124,46 @@
     background-repeat: no-repeat;
   }
   .embla__slide {
-    transition: transform 0.5s ease, opacity 0.5s ease;
+    transition:
+      transform 0.5s ease,
+      opacity 0.5s ease;
   }
 
   .highlight-section .npf_wgts {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border: 1px solid red;
+  }
+
+    .npf_wgts iframe {
+    box-shadow: none !important;
+  }
+
+.heroBannerForm__form {
+    background: #fff;
+width: 100%;
+    border-radius: 10px;
+    padding-top: 40px;
+    
+    height: 583px;
+    position: relative;
+  }
+
+  .heroBannerForm-header {
+    text-align: center;
+    font-family: "Inter", serif !important;
+  }
+
+  .heroBannerForm-header h3 {
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 1;
+  }
+  .heroBannerForm-header h3 span {
+    display: block;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 20px;
+    margin-top: 5px;
   }
 
   .npf_wgts iframe {
@@ -163,7 +196,6 @@
     .hero_heading {
       color: #fff;
     }
-    
   }
 
   @media (max-width: 768px) {
