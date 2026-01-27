@@ -72,12 +72,12 @@ const page = async () => {
   const newsEventsPage = await getNewsEvents();
 
   return (
-    <section className="pt-[12%] pb-[9%] bg-[url(/bg-gradient.webp)] bg-no bg-cover bg-center">
-      <div className="max-w-[1664px] mx-auto w-full flex items-center text-white">
-        <div className="w-3/5 text-white font-semibold leading-[1.2] text-2xl md:text-3xl lg:text-[64px]">
+    <section className="pt-[140px] px-4 lg:pt-[12%] pb-[9%] bg-[url(/bg-gradient.webp)] bg-no bg-cover bg-center">
+      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row items-center text-white">
+        <div className="w-full lg:w-3/5 text-white font-semibold leading-[1.2] text-2xl md:text-3xl lg:text-[64px] mb-5">
           <BlocksRenderer content={newsEventsPage?.main_heading} />
         </div>
-        <div className="w-2/5">
+        <div className="w-full lg:w-2/5">
           <BlocksRenderer content={newsEventsPage?.main_desc} />
         </div>
       </div>

@@ -73,6 +73,7 @@ export type HeroContent = {
   primaryCta: HeroCTA;
   secondaryCta: HeroCTA;
   image: ImageType;
+  bgImage: string;
 };
 // placementStats.types.ts
 
@@ -103,6 +104,7 @@ export type ProminentRecruiterPerson = {
   package: string;
   profileImage: RecruiterLogo;
   companyLogo: RecruiterLogo;
+  companyName: string;
 };
 
 export type ProminentRecruiterContent = {

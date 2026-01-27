@@ -110,21 +110,43 @@ const AdmissionProcessComp = ({
         <div className="grid grid-cols-2 gap-2.5 md:gap-6">
           {admissionCards &&
             admissionCards.map((card) => {
-              return (
-                <div
-                  key={card?.id}
-                  className={`w-full text-center relative  mob_admis_proc_col flex flex-col justify-end h-[150px] md:h-[180px]`}
-                >
-                  <h4 className="text-lg text-[#e61f21] z-10 break-all">
-                    {card?.title}
-                  </h4>
-                  <p className="z-10 leading-[1] text-sm text-[#0d6efd] break-all">
-                    <Link href={card?.link || "#"} target="_blank">
-                      {card?.description}
-                    </Link>
-                  </p>
-                </div>
-              );
+              if (
+                card?.link === "admissions.krmangalam.edu.in" ||
+                card?.description === "admissions.krmangalam.edu.in "
+              ) {
+                return (
+                  <div
+                    key={card?.id}
+                    className={`w-full text-center relative  mob_admis_proc_col flex flex-col justify-end h-[150px] md:h-[180px]`}
+                  >
+                    <h4 className="text-lg text-[#e61f21] z-10 break-all">
+                      {card?.title}
+                    </h4>
+                    <p className="z-10 leading-[1] text-sm text-[#0d6efd] break-all">
+                      <Link
+                        href={`https://${card?.description}`}
+                        target="_blank"
+                      >
+                        {card?.description}
+                      </Link>
+                    </p>
+                  </div>
+                );
+              } else {
+                return (
+                  <div
+                    key={card?.id}
+                    className={`w-full text-center relative  mob_admis_proc_col flex flex-col justify-end h-[150px] md:h-[180px]`}
+                  >
+                    <h4 className="text-lg text-[#e61f21] z-10 break-all">
+                      {card?.title}
+                    </h4>
+                    <p className="z-10 leading-[1] text-sm text-[#0d6efd] break-all">
+                      <span>{card?.description}</span>
+                    </p>
+                  </div>
+                );
+              }
             })}
         </div>
       </div>
@@ -144,7 +166,7 @@ const AdmissionProcessComp = ({
           } text-white bg-[#db2a1a] p-[15px] flex items-center justify-around max-w-3xs w-full rounded-lg font-semibold mt-10 cursor-pointer`}
         >
           <span>{admisbtn.buttontext}</span> <ArrowRight />
-        </button> 
+        </button>
         {/* {admisbtn && (
           <div>
             {admisbtn.buttonclass === "progPopup" ? (

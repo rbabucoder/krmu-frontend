@@ -18,6 +18,7 @@ export type HeroContent = {
     width: number;
     height: number;
   };
+  bgImage: string;
 };
 // placementStats.types.ts
 
@@ -102,9 +103,6 @@ export type Semester = {
   description: string;
   courses: Course[];
 };
-
-
-
 
 export type BusinessLeaderContent = {
   sectionTitle: string;

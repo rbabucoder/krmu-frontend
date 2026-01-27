@@ -29,7 +29,7 @@ const FAQSection = ({ data }: Props) => {
               {data.description}
             </p>
             <Image
-              src="/landingpage/mca-2026/test.png"
+              src="/wp-content/landingpage/mca-2026/faq.webp"
               width={300}
               height={300}
               alt=""

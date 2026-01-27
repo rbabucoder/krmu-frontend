@@ -1,6 +1,7 @@
 import Link from "next/link";
 import HomeYourJourneyForm from "../components/Forms/HomeYourJourneyForm";
 import { Button } from "@/lib/types/home";
+import CommonLeadPopup from "../components/CommonLeadPopup";
 
 interface YourJourneyProps {
   title: string;
@@ -32,15 +33,23 @@ const YourJourney = ({ title, content, buttons }: YourJourneyProps) => {
             <div className="flex items-center justify-center xl:justify-start flex-col lg:flex-row gap-5 lg:gap-16">
               {buttons &&
                 buttons.map((button, i) => (
-                  <Link
+                  // <Link
+                  //   key={i}
+                  //   className={`text-[#e31e24] bg-white px-5 py-1.5 rounded-md font-bold ${
+                  //     button.buttonclass || ""
+                  //   }`}
+                  //   href={button.buttonlink}
+
+                  // >
+                  //   {button.buttontext}
+                  // </Link>
+                  <CommonLeadPopup
                     key={i}
-                    className={`text-[#e31e24] bg-white px-5 py-1.5 rounded-md font-bold ${
-                      button.buttonclass || ""
-                    }`}
-                    href={button.buttonlink}
-                  >
-                    {button.buttontext}
-                  </Link>
+                    buttonText={button.buttontext || "Download Prospectus"}
+                    buttonClassName={`text-[#e31e24] bg-white px-5 py-1.5 rounded-md font-bold ${button.buttonclass || ""}`}
+                    redirectUrl={button.buttonlink || "#"}
+                    form_name="Download Prospectus"
+                  />
                 ))}
             </div>
           </div>

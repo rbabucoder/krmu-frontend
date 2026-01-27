@@ -32,6 +32,7 @@ import LifeAsPhDScholar from "../../PGComponent/LifeAsPhDScholar";
 import ComeToLife from "../../PGComponent/ComeToLife";
 import { SeoData } from "./seo";
 import { Metadata } from "next";
+import HeroSection from "../../PGComponent/HeroSection";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -61,7 +62,8 @@ export async function generateMetadata(): Promise<Metadata> {
 
 const page = () => {
   const llmFormId = llm2026Id;
-  const { title, description, primaryCta, secondaryCta, image } = heroContent;
+  const { title, description, primaryCta, secondaryCta, image, bgImage } =
+    heroContent;
   const businessData = businessHubData;
   const faqData = faqSectionData;
   const lifeData = lifeAsPhDScholarData;
@@ -80,13 +82,14 @@ const page = () => {
 
   return (
     <>
-      {/* <HeroSection
+      <HeroSection
         title={title}
         description={description}
         primaryCta={primaryCta}
         secondaryCta={secondaryCta}
         image={image}
-      /> */}
+        bgImage={bgImage}
+      />
       <PlacementStats data={placementData} />
       <ProminentRecruiter data={prominentData} />
       <AboutUs

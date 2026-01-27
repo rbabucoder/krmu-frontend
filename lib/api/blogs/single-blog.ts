@@ -7,7 +7,7 @@ import {
 } from "@/lib/types/blogs/single-blog";
 
 export async function getSingleBlogDataBySlug(
-  slug: string = ""
+  slug: string = "",
 ): Promise<SingleBlogResponse> {
   const res = await fetch(
     // `${FETCH_STRAPI_URL}/api/single-blogs?filters[blog_slug][$eq]=${slug}&fields[0]=title&fields[1]=blog_slug&populate[featured_image][populate]=*&populate[single_blog][on][blog.single-blog-component][populate][fields][0]=single_blog_content&populate[single_blog][on][blog.single-blog-component][populate][faqs][populate]=*`,
@@ -16,7 +16,7 @@ export async function getSingleBlogDataBySlug(
       next: {
         revalidate: 3600,
       },
-    }
+    },
   );
   if (!res.ok) throw new Error("Failed to fetch Single Blog");
   const json: SingleBlogResponse = await res.json();
@@ -56,30 +56,54 @@ export async function getAllBlogCategories(): Promise<AllBlogCategoriesResponse>
       next: {
         revalidate: 3600,
       },
-    }
+    },
   );
   if (!res.ok) throw new Error("Failed to fetch Single Blog");
   const json: AllBlogCategoriesResponse = await res.json();
   return json;
 }
 
-export async function getBlogImageById(imgId: number): Promise<string> {
-  if (!imgId) throw new Error("Image ID is required");
+// export async function getBlogImageById(imgId: number): Promise<string> {
+//   if (!imgId) throw new Error("Image ID is required");
 
-  const res = await fetch(
-    `${krmBlogURL}/wp-json/wp/v2/media/${imgId}?_fields=guid`,
-    {
-      next: { revalidate: 3600 },
+//   const res = await fetch(
+//     `${krmBlogURL}/wp-json/wp/v2/media/${imgId}?_fields=guid`,
+//     {
+//       next: { revalidate: 3600 },
+//     }
+//   );
+
+//   if (!res.ok) {
+//     throw new Error("Failed to fetch image by ID");
+//   }
+
+//   const json: BlogImageIdResponse = await res.json();
+
+//   return json?.guid?.rendered ?? "";
+// }
+
+export async function getBlogImageById(imgId: number): Promise<string | null> {
+  if (!imgId) return null;
+
+  try {
+    const res = await fetch(
+      `${krmBlogURL}/wp-json/wp/v2/media/${imgId}?_fields=guid`,
+      {
+        next: { revalidate: 3600 },
+      },
+    );
+
+    if (!res.ok) {
+      console.warn("Image not found for ID:", imgId, res.status);
+      return null;
     }
-  );
 
-  if (!res.ok) {
-    throw new Error("Failed to fetch image by ID");
+    const json: BlogImageIdResponse = await res.json();
+    return json?.guid?.rendered ?? null;
+  } catch (error) {
+    console.error("Error fetching image:", imgId, error);
+    return null;
   }
-
-  const json: BlogImageIdResponse = await res.json();
-
-  return json?.guid?.rendered ?? "";
 }
 
 export async function getBlogImageByIdClientComp(id: number) {

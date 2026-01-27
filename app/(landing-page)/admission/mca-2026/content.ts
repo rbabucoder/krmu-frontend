@@ -7,22 +7,24 @@ import {
   GraduationCap,
   Lightbulb,
 } from "lucide-react";
+
 import {
+  HeroContent,
+  PGTestimonialsBlock,
+  ProgramCardType,
   AboutUsContent,
   AdmissionProcessContent,
   BusinessHubSection,
   BusinessLeaderContent,
   ComeToLifeSection,
   FAQSectionData,
-  HeroContent,
   IndustryExpertsContent,
   LifeAsPhDScholarSection,
   MbaComparisonContent,
   PlacementStatsContent,
   ProminentRecruiterContent,
   ProspectusDownloadContent,
-} from "./contentType";
-import { PGTestimonialsBlock, ProgramCardType } from "../PGType";
+} from "../PGType";
 
 export const heroContent: HeroContent = {
   title: `Click, Code & Conquer <br />
@@ -68,7 +70,7 @@ export const placementStatsContent: PlacementStatsContent = {
     },
   ],
   image: {
-    src: "/landingpage/mca-2026/dummy.png",
+    src: "/wp-content/landingpage/mca-2026/uni-stats.webp",
     alt: "Graduate Placement",
     width: 300,
     height: 480,
@@ -80,25 +82,25 @@ export const prominentRecruiterContent: ProminentRecruiterContent = {
 
   logos: [
     {
-      src: "/landingpage/mca-2026/recruiters/infosys.png",
+      src: "/wp-content/landingpage/mca-2026/recruiters/infosys.png",
       alt: "Accenture",
       width: 160,
       height: 40,
     },
     {
-      src: "/landingpage/mca-2026/recruiters/genpact.png",
+      src: "/wp-content/landingpage/mca-2026/recruiters/genpact.png",
       alt: "Accenture",
       width: 160,
       height: 40,
     },
     {
-      src: "/landingpage/mca-2026/recruiters/accenture.png",
+      src: "/wp-content/landingpage/mca-2026/recruiters/accenture.png",
       alt: "Accenture",
       width: 160,
       height: 40,
     },
     {
-      src: "/landingpage/mca-2026/recruiters/tcs.png",
+      src: "/wp-content/landingpage/mca-2026/recruiters/tcs.png",
       alt: "Accenture",
       width: 160,
       height: 40,
@@ -107,14 +109,32 @@ export const prominentRecruiterContent: ProminentRecruiterContent = {
 
   people: [
     {
-      name: "Abhinav Anand",
-      package: "18 LPA",
+      name: "Rishav Bakshi",
+      package: "56.6 LPA",
       profileImage: {
-        src: "/landingpage/mca-2026/dummy-2.png",
-        alt: "Abhinav Anand",
+        src: "/wp-content/landingpage/mca-2026/highlights/56.6.jpeg",
+        alt: "Rishav Bakshi",
         width: 160,
         height: 40,
       },
+      companyName: "Ferrari Québec",
+      companyLogo: {
+        src: "/landingpage/bba-2026/prominent/accenture.png",
+        alt: "Ferrari Québec",
+        width: 120,
+        height: 50,
+      },
+    },
+    {
+      name: "Daksh Mehta",
+      package: "36 LPA",
+      profileImage: {
+        src: "/wp-content/landingpage/mca-2026/highlights/1.png",
+        alt: "Daksh Mehta",
+        width: 160,
+        height: 160,
+      },
+      companyName: "UNIAS",
       companyLogo: {
         src: "/landingpage/bba-2026/prominent/accenture.png",
         alt: "Accenture",
@@ -124,16 +144,102 @@ export const prominentRecruiterContent: ProminentRecruiterContent = {
     },
     {
       name: "Abhinav Anand",
-      package: "18 LPA",
+      package: "24 LPA",
       profileImage: {
-        src: "/landingpage/mca-2026/dummy-2.png",
+        src: "/wp-content/landingpage/mca-2026/highlights/2.png",
         alt: "Abhinav Anand",
         width: 160,
-        height: 40,
+        height: 160,
       },
+      companyName: "CargoFlash",
       companyLogo: {
         src: "/landingpage/bba-2026/prominent/accenture.png",
         alt: "Accenture",
+        width: 120,
+        height: 50,
+      },
+    },
+    {
+      name: "Abhinav Sinha",
+      package: "20 LPA",
+      profileImage: {
+        src: "/wp-content/landingpage/mca-2026/highlights/4.png",
+        alt: "Abhinav Sinha",
+        width: 160,
+        height: 160,
+      },
+      companyName: "Nirmata Technologies Pvt. Ltd.",
+      companyLogo: {
+        src: "/landingpage/bba-2026/prominent/accenture.png",
+        alt: "Nirmata Technologies Pvt. Ltd.",
+        width: 120,
+        height: 50,
+      },
+    },
+    {
+      name: "Ujjwal Singh",
+      package: "18 LPA",
+      profileImage: {
+        src: "/wp-content/landingpage/mca-2026/highlights/7.png",
+        alt: "Ujjwal Singh",
+        width: 160,
+        height: 160,
+      },
+      companyName: "Anglo-Eastern Ltd.",
+      companyLogo: {
+        src: "/landingpage/bba-2026/prominent/accenture.png",
+        alt: "Nirmata Technologies Pvt. Ltd.",
+        width: 120,
+        height: 50,
+      },
+    },
+    {
+      name: "Shashank Gupta",
+      package: "18 LPA",
+      profileImage: {
+        src: "/wp-content/landingpage/mca-2026/highlights/5.png",
+        alt: "Shashank Gupta",
+        width: 160,
+        height: 160,
+      },
+      companyName: "Anglo-Eastern Ltd.",
+      companyLogo: {
+        src: "/landingpage/bba-2026/prominent/accenture.png",
+        alt: "Nirmata Technologies Pvt. Ltd.",
+        width: 120,
+        height: 50,
+      },
+    },
+    {
+      name: "Darshit Raghav",
+      package: "17.4 LPA",
+      profileImage: {
+        src: "/wp-content/landingpage/mca-2026/highlights/3.png",
+        alt: "Darshit Raghav",
+        width: 160,
+        height: 160,
+      },
+      companyName: "Debcor Engineering",
+      companyLogo: {
+        src: "/landingpage/bba-2026/prominent/accenture.png",
+        alt: "Nirmata Technologies Pvt. Ltd.",
+        width: 120,
+        height: 50,
+      },
+    },
+    {
+      name: "Samarpan Upadhyaya",
+      package: "13 LPA",
+      profileImage: {
+        src: "/wp-content/landingpage/mca-2026/highlights/6.png",
+        alt: "Samarpan Upadhyaya",
+        width: 160,
+        height: 160,
+      },
+      companyName: "Upgrad ",
+      companyLogo: {
+        src: "/landingpage/bba-2026/prominent/accenture.png",
+        alt: "Nirmata Technologies Pvt. Ltd.",
         width: 120,
         height: 50,
       },
@@ -147,7 +253,7 @@ export const aboutUsContent: AboutUsContent = {
   The university's NAAC Grade "A" accreditation demonstrates a strong dedication to academic excellence, 
   high-quality instruction, and continuous development.</p> <br /><p>The MCA courses at K.R. Mangalam University offer a vast scope for students aiming to build successful careers in the rapidly evolving realm of technology. The Master of Computer Application programmes strive to equip the students with advanced skills in programming and software development. Moreover, the programme not only opens up diverse career opportunities in the IT and tech sector but also prepares students for entrepreneurship, research, and innovation-driven roles.</p>`,
   image: {
-    src: "/landingpage/mca-2026/univ.png",
+    src: "/wp-content/landingpage/mca-2026/about-us.webp",
     alt: "K.R. Mangalam University Campus",
     width: 600,
     height: 300,
@@ -161,25 +267,25 @@ export const industryExpertsContent: IndustryExpertsContent = {
 
   experts: [
     {
-      src: "/landingpage/mca-2026/ibm.webp",
+      src: "/wp-content/landingpage/mca-2026/learn-from/ibm.webp",
       alt: "IBM",
       width: 300,
       height: 200,
     },
     {
-      src: "/landingpage/mca-2026/ibm.webp",
+      src: "/wp-content/landingpage/mca-2026/learn-from/iide.png",
       alt: "IBM",
       width: 300,
       height: 200,
     },
     {
-      src: "/landingpage/mca-2026/ibm.webp",
+      src: "/wp-content/landingpage/mca-2026/learn-from/grant-thornton.png",
       alt: "IBM",
       width: 300,
       height: 200,
     },
     {
-      src: "/landingpage/mca-2026/ibm.webp",
+      src: "/wp-content/landingpage/mca-2026/learn-from/eydark.webp",
       alt: "IBM",
       width: 300,
       height: 200,
@@ -284,7 +390,7 @@ export const businessLeaderContent: BusinessLeaderContent = {
 
 export const PGProgrammeCard: ProgramCardType = [
   {
-    image: "/landingpage/common/dummy.png",
+    image: "/wp-content/landingpage/mca-2026/progs/mca.webp",
     title: "Master of Computer Applications (MCA)",
     description:
       "K.R. Mangalam University offers cutting-edge equipment, state-of-the-art labs, and industry-focused education to improve hands-on learning. Through projects, internships, and seminars, the curriculum places a strong emphasis on professional abilities, creativity, and problem-solving. Graduates are equipped for a variety of professions in the quickly changing IT sector across international technology-driven organisations, such as software developers, system analysts, data specialists, or entrepreneurs.",
@@ -296,7 +402,7 @@ export const PGProgrammeCard: ProgramCardType = [
     annualFee: "Rs 1,20,000",
   },
   {
-    image: "/landingpage/common/dummy.png",
+    image: "/wp-content/landingpage/mca-2026/progs/mca-ai-ml.webp",
     title:
       "MCA (AI & ML) with academic support of IBM and powered by Microsoft Certifications",
     description:
@@ -319,7 +425,7 @@ export const prospectusDownloadContent: ProspectusDownloadContent = {
     href: "#", // can be file link or NPF popup later
   },
   image: {
-    src: "/images/prospectus-girls.png",
+    src: "/wp-content/landingpage/mca-2026/download.webp",
     alt: "MBA Prospectus",
   },
 };

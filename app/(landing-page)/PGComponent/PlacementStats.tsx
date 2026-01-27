@@ -33,13 +33,13 @@ const PlacementStats = ({ data }: Props) => {
 
         {/* RIGHT IMAGE */}
         <div className="w-full lg:w-2/5 flex justify-center lg:justify-end">
-          <div className="relative w-[260px] sm:w-[320px] md:w-[380px] h-[360px] sm:h-[420px] md:h-[480px] bg-gradient-to-b from-blue-700 to-blue-900 overflow-hidden">
+          <div className="relative w-full bg-gradient-to-b">
             <Image
               src={data?.image.src}
               alt={data?.image.alt}
               width={data?.image.width}
               height={data?.image.height}
-              className="object-cover w-full h-full"
+              className="w-full h-full"
               priority
             />
           </div>

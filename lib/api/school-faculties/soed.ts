@@ -61,36 +61,36 @@ export const soedFaculties: SchoolFacultiesType[] = [
     featured_media_url:
       "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/IMG_5277-1.webp",
   },
-  {
-    id: 9653,
-    slug: "dr-binti-dua-2",
-    title: {
-      rendered: "Dr. Binti Dua",
-    },
-    featured_media: 9343,
-    acf: {
-      "staff-qualification": "Ph.D.",
-      staff_designation: "Assistant  Professor",
-      schools: [1070],
-    },
-    featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Binti-Dua.webp",
-  },
-  {
-    id: 9615,
-    slug: "saket-bihari",
-    title: {
-      rendered: "Mr. Saket Bihari",
-    },
-    featured_media: 9342,
-    acf: {
-      "staff-qualification": "Ph.D. (Pursuing)",
-      staff_designation: "Assistant  Professor",
-      schools: [1266],
-    },
-    featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Mr.-Saket-Bihari.webp",
-  },
+  // {
+  //   id: 9653,
+  //   slug: "dr-binti-dua-2",
+  //   title: {
+  //     rendered: "Dr. Binti Dua",
+  //   },
+  //   featured_media: 9343,
+  //   acf: {
+  //     "staff-qualification": "Ph.D.",
+  //     staff_designation: "Assistant  Professor",
+  //     schools: [1070],
+  //   },
+  //   featured_media_url:
+  //     "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Binti-Dua.webp",
+  // },
+  // {
+  //   id: 9615,
+  //   slug: "saket-bihari",
+  //   title: {
+  //     rendered: "Mr. Saket Bihari",
+  //   },
+  //   featured_media: 9342,
+  //   acf: {
+  //     "staff-qualification": "Ph.D. (Pursuing)",
+  //     staff_designation: "Assistant  Professor",
+  //     schools: [1266],
+  //   },
+  //   featured_media_url:
+  //     "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Mr.-Saket-Bihari.webp",
+  // },
   {
     id: 9380,
     slug: "ms-vidhi-gaur",

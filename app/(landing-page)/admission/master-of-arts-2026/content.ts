@@ -7,7 +7,10 @@ import {
   GraduationCap,
   Lightbulb,
 } from "lucide-react";
+
 import {
+  PGTestimonialsBlock,
+  ProgramCardType,
   AboutUsContent,
   AdmissionProcessContent,
   BusinessHubSection,
@@ -21,8 +24,7 @@ import {
   PlacementStatsContent,
   ProminentRecruiterContent,
   ProspectusDownloadContent,
-} from "./contentType";
-import { PGTestimonialsBlock, ProgramCardType } from "../PGType";
+} from "../PGType";
 
 export const heroContent: HeroContent = {
   title: `
@@ -40,11 +42,12 @@ export const heroContent: HeroContent = {
     href: "#",
   },
   image: {
-    src: "/landingpage/mca-2026/image.png",
+    src: "",
     alt: "MBA Program",
     width: 600,
     height: 400,
   },
+  bgImage: "/wp-content/landingpage/master-of-arts-2026/ma.webp",
 };
 
 export const placementStatsContent: PlacementStatsContent = {
@@ -68,7 +71,7 @@ export const placementStatsContent: PlacementStatsContent = {
     },
   ],
   image: {
-    src: "/landingpage/mca-2026/dummy.png",
+    src: "/wp-content/landingpage/master-of-arts-2026/uni-stats.webp",
     alt: "Graduate Placement",
     width: 300,
     height: 480,
@@ -101,14 +104,32 @@ export const prominentRecruiterContent: ProminentRecruiterContent = {
 
   people: [
     {
-      name: "Abhinav Anand",
-      package: "18 LPA",
+      name: "Rishav Bakshi",
+      package: "56.6 LPA",
       profileImage: {
-        src: "/landingpage/mca-2026/dummy-2.png",
-        alt: "Abhinav Anand",
+        src: "/wp-content/landingpage/mca-2026/highlights/56.6.jpeg",
+        alt: "Rishav Bakshi",
         width: 160,
         height: 40,
       },
+      companyName: "Ferrari Québec",
+      companyLogo: {
+        src: "/landingpage/bba-2026/prominent/accenture.png",
+        alt: "Ferrari Québec",
+        width: 120,
+        height: 50,
+      },
+    },
+    {
+      name: "Daksh Mehta",
+      package: "36 LPA",
+      profileImage: {
+        src: "/wp-content/landingpage/mca-2026/highlights/1.png",
+        alt: "Daksh Mehta",
+        width: 160,
+        height: 160,
+      },
+      companyName: "UNIAS",
       companyLogo: {
         src: "/landingpage/bba-2026/prominent/accenture.png",
         alt: "Accenture",
@@ -118,16 +139,102 @@ export const prominentRecruiterContent: ProminentRecruiterContent = {
     },
     {
       name: "Abhinav Anand",
-      package: "18 LPA",
+      package: "24 LPA",
       profileImage: {
-        src: "/landingpage/mca-2026/dummy-2.png",
+        src: "/wp-content/landingpage/mca-2026/highlights/2.png",
         alt: "Abhinav Anand",
         width: 160,
-        height: 40,
+        height: 160,
       },
+      companyName: "CargoFlash",
       companyLogo: {
         src: "/landingpage/bba-2026/prominent/accenture.png",
         alt: "Accenture",
+        width: 120,
+        height: 50,
+      },
+    },
+    {
+      name: "Abhinav Sinha",
+      package: "20 LPA",
+      profileImage: {
+        src: "/wp-content/landingpage/mca-2026/highlights/4.png",
+        alt: "Abhinav Sinha",
+        width: 160,
+        height: 160,
+      },
+      companyName: "Nirmata Technologies Pvt. Ltd.",
+      companyLogo: {
+        src: "/landingpage/bba-2026/prominent/accenture.png",
+        alt: "Nirmata Technologies Pvt. Ltd.",
+        width: 120,
+        height: 50,
+      },
+    },
+    {
+      name: "Ujjwal Singh",
+      package: "18 LPA",
+      profileImage: {
+        src: "/wp-content/landingpage/mca-2026/highlights/7.png",
+        alt: "Ujjwal Singh",
+        width: 160,
+        height: 160,
+      },
+      companyName: "Anglo-Eastern Ltd.",
+      companyLogo: {
+        src: "/landingpage/bba-2026/prominent/accenture.png",
+        alt: "Nirmata Technologies Pvt. Ltd.",
+        width: 120,
+        height: 50,
+      },
+    },
+    {
+      name: "Shashank Gupta",
+      package: "18 LPA",
+      profileImage: {
+        src: "/wp-content/landingpage/mca-2026/highlights/5.png",
+        alt: "Shashank Gupta",
+        width: 160,
+        height: 160,
+      },
+      companyName: "Anglo-Eastern Ltd.",
+      companyLogo: {
+        src: "/landingpage/bba-2026/prominent/accenture.png",
+        alt: "Nirmata Technologies Pvt. Ltd.",
+        width: 120,
+        height: 50,
+      },
+    },
+    {
+      name: "Darshit Raghav",
+      package: "17.4 LPA",
+      profileImage: {
+        src: "/wp-content/landingpage/mca-2026/highlights/3.png",
+        alt: "Darshit Raghav",
+        width: 160,
+        height: 160,
+      },
+      companyName: "Debcor Engineering",
+      companyLogo: {
+        src: "/landingpage/bba-2026/prominent/accenture.png",
+        alt: "Nirmata Technologies Pvt. Ltd.",
+        width: 120,
+        height: 50,
+      },
+    },
+    {
+      name: "Samarpan Upadhyaya",
+      package: "13 LPA",
+      profileImage: {
+        src: "/wp-content/landingpage/mca-2026/highlights/6.png",
+        alt: "Samarpan Upadhyaya",
+        width: 160,
+        height: 160,
+      },
+      companyName: "Upgrad ",
+      companyLogo: {
+        src: "/landingpage/bba-2026/prominent/accenture.png",
+        alt: "Nirmata Technologies Pvt. Ltd.",
         width: 120,
         height: 50,
       },
@@ -209,8 +316,7 @@ export const businessLeaderContent: BusinessLeaderContent = {
       id: 2,
       title: "",
       duration: "",
-      subtitle:
-        "Mentorship from Experts with Years of Industry Experience",
+      subtitle: "Mentorship from Experts with Years of Industry Experience",
       heading: "",
       description: "",
       courses: [
@@ -291,8 +397,7 @@ export const PGProgrammeCard: ProgramCardType = [
   },
   {
     image: "/landingpage/common/dummy.png",
-    title:
-      "M.A. Economics",
+    title: "M.A. Economics",
     description:
       "The M.A. Economics programme provides strong theoretical foundations in economic theory, quantitative analysis, and policy studies, combined with applied and research-oriented learning. It equips students with analytical, problem-solving, and data interpretation skills to pursue careers in policy research, banking, analytics, public services, and higher academic studies.",
     format: "",
@@ -304,8 +409,7 @@ export const PGProgrammeCard: ProgramCardType = [
   },
   {
     image: "/landingpage/common/dummy.png",
-    title:
-      "M.A. Political Science",
+    title: "M.A. Political Science",
     description:
       "The M.A. Political Science programme offers in-depth understanding of political theory, governance, international relations, and public policy through critical and analytical learning. It develops research, analytical, and policy-evaluation skills, preparing students for careers in civil services, public administration, research organisations, think tanks, and advanced academic pursuits.",
     format: "",
@@ -317,8 +421,7 @@ export const PGProgrammeCard: ProgramCardType = [
   },
   {
     image: "/landingpage/common/dummy.png",
-    title:
-      "M.A. Applied Psychology",
+    title: "M.A. Applied Psychology",
     description:
       "The M.A. Applied Psychology programme blends strong theoretical foundations with practical training in psychological assessment, methodologies, and mental processes. It equips students with essential analytical, interpersonal, and professional skills to interpret human behaviour, address real-world challenges, and build careers in psychology while promoting mental health awareness.",
     format: "",
@@ -439,7 +542,8 @@ export const mbaComparisonContent: MbaComparisonContent = {
     {
       icon: BookOpen,
       label: "Curriculum",
-      traditional: "Conventional syllabus with limited industry or contemporary relevance",
+      traditional:
+        "Conventional syllabus with limited industry or contemporary relevance",
       krmu: {
         title:
           "Industry-aligned and interdisciplinary curriculum updated to current academic and professional needs",
@@ -459,8 +563,7 @@ export const mbaComparisonContent: MbaComparisonContent = {
     {
       icon: GraduationCap,
       label: "Faculty",
-      traditional:
-        "Largely academic, with minimal practical or field exposure",
+      traditional: "Largely academic, with minimal practical or field exposure",
       krmu: {
         title:
           "Experienced academicians and practitioners with strong research and domain expertise",
@@ -522,7 +625,8 @@ export const faqSectionData: FAQSectionData = {
   faqs: [
     {
       id: "item-1",
-      question: "What is the duration of M.A. courses at K.R. Mangalam University?",
+      question:
+        "What is the duration of M.A. courses at K.R. Mangalam University?",
       answer: `Our M.A. programmes have a duration of 2 years covering in-depth concepts, making you a specialist in your domain.`,
     },
     {
@@ -533,7 +637,8 @@ export const faqSectionData: FAQSectionData = {
     },
     {
       id: "item-3",
-      question: "What is the eligibility criteria to get admission to the M.A. Applied Psychology at K.R. Mangalam University?",
+      question:
+        "What is the eligibility criteria to get admission to the M.A. Applied Psychology at K.R. Mangalam University?",
       answer: `The candidate should have passed a Bachelor degree (any discipline) or equivalent degree from a recognised university with a minimum of 50% marks in aggregate.`,
     },
     {

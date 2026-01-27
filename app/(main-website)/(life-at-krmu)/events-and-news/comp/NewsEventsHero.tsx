@@ -9,11 +9,11 @@ type Props = {
 const NewsEventsHero = ({ title }: Props) => {
   return (
     <section
-      className="py-[10%] bg-[url(/newseventsbg.webp)] bg-cover bg-no-repeat"
+      className="pt-[140px] pb-[10%] lg:py-[10%] bg-[url(/newseventsbg.webp)] bg-cover bg-no-repeat px-4"
       
     >
       <div className="max-w-[1664px] mx-auto w-full">
-        <h1 className="text-[64px] text-white font-semibold">{title}</h1>
+        <h1 className="text-4xl lg:text-[64px] text-white font-semibold">{title}</h1>
       </div>
     </section>
   );

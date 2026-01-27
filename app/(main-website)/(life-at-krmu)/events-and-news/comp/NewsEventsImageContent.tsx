@@ -12,17 +12,17 @@ const NewsEventsImageContent = async ({ bgSlideImageIds, content }: Props) => {
   );
 
   return (
-    <section className="py-12">
-      <div className="max-w-[1664px] mx-auto w-full flex">
-        <div className="w-1/2">
+    <section className="py-12 px-4">
+      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row">
+        <div className="w-full lg:w-1/2">
           <div
-            className="bg-[#051630] text-white p-5 mx-8 text-sm"
+            className="bg-[#051630] text-white p-5 text-sm"
             dangerouslySetInnerHTML={{ __html: content }}
           />
         </div>
 
-        <div className="w-1/2">
-          <div className="grid grid-cols-2 gap-1.5">
+        <div className="w-full lg:w-1/2">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1.5">
             {imageUrls.map((imgUrl, i) => (
               <Image
                 key={i}

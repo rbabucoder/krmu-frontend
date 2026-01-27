@@ -47,7 +47,12 @@ const Ranking: React.FC<RankingProps> = ({ rankingData }) => {
                         alt={rank.cardimg.alternativeText || "Rank"}
                       />
                     </div>
-                    <p className="font-bold">{rank?.title}</p>
+                    <p
+                      className="font-bold"
+                      dangerouslySetInnerHTML={{
+                        __html: rank?.title,
+                      }}
+                    />
                   </div>
                 </CarouselItem>
               );
