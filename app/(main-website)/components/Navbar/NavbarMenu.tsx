@@ -55,7 +55,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
           {academicMenu && (
             <li className="relative krm-sub-menu-has-children">
               <Link
-                className="font-semibold text-xs xl:text-[15px] text-white flex items-center gap-2.5 min-h-[64px]"
+                className="font-medium text-xs xl:text-sm text-white flex items-center gap-2.5 min-h-[64px]"
                 href="/"
               >
                 <span>{academicMenu?.title}</span>
@@ -123,7 +123,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                       return (
                         <span
                           key={counter?.id}
-                          className="text-center p-5 inline-flex gap-2.5 items-center justify-center font-semibold leading-[1] z-40"
+                          className="text-center p-5 inline-flex gap-2.5 items-center justify-center font-medium leading-[1] z-40"
                         >
                           <span className="text-[40px]">
                             {counter?.countertext}
@@ -144,7 +144,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
             programmesLinks.__component === "menu.menu-links" && (
               <li className="relative">
                 <Link
-                  className={`font-semibold text-xs xl:text-[15px] text-white flex items-center gap-2.5 min-h-[64px] ${
+                  className={`font-medium text-xs xl:text-sm text-white flex items-center gap-2.5 min-h-[64px] ${
                     programmesLinks?.menuclass || ""
                   }`}
                   href={programmesLinks.url}
@@ -154,24 +154,10 @@ const NavbarMenu = ({ mainMenu }: Props) => {
               </li>
             )}
 
-          {zenithLinks && zenithLinks.__component === "menu.menu-links" && (
-            <li className="relative">
-              <Link
-                className={`font-semibold text-xs xl:text-[15px] text-white flex items-center gap-2.5 min-h-[64px] ${
-                  zenithLinks?.menuclass || ""
-                }`}
-                href={zenithLinks.url}
-                target="_blank"
-              >
-                <span>{zenithLinks.title}</span>
-              </Link>
-            </li>
-          )}
-
           {admissionMenu && (
             <li className="relative krm-sub-menu-has-children">
               <Link
-                className="font-semibold text-xs xl:text-[15px] text-white flex items-center gap-2.5 min-h-[64px]"
+                className="font-medium text-xs xl:text-sm text-white flex items-center gap-2.5 min-h-[64px]"
                 href={admissionMenu?.backgroundimage?.url}
               >
                 <span>{admissionMenu?.title}</span>
@@ -242,17 +228,30 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                     backgroundImage: `url(${STRAPI_URL}${admissionMenu?.backgroundimage?.url})`,
                   }}
                 >
-                  <div className="text-center text-white z-50 font-semibold text-lg my-8">
+                  <div className="text-center text-white z-50 font-medium text-lg my-8">
                     <p>{admissionMenu?.backgroundimagetext}</p>
                   </div>
                 </div>
               </div>
             </li>
           )}
+          {zenithLinks && zenithLinks.__component === "menu.menu-links" && (
+            <li className="relative">
+              <Link
+                className={`font-medium text-xs xl:text-sm text-[#ff0010] flex items-center gap-2.5 min-h-[64px] ${
+                  zenithLinks?.menuclass || ""
+                }`}
+                href={zenithLinks.url}
+                target="_blank"
+              >
+                <span>{zenithLinks.title}</span>
+              </Link>
+            </li>
+          )}
           {placementMenu && (
             <li className="relative krm-sub-menu-has-children">
               <Link
-                className="font-semibold text-xs xl:text-[15px] text-white flex items-center gap-2.5 min-h-[64px]"
+                className="font-medium text-xs xl:text-sm text-white flex items-center gap-2.5 min-h-[64px]"
                 href="/"
               >
                 <span>{placementMenu?.title}</span>
@@ -312,7 +311,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
           {researchMenu && (
             <li className="relative krm-sub-menu-has-children">
               <Link
-                className="font-semibold text-xs xl:text-[15px] text-white flex items-center gap-2.5 min-h-[64px]"
+                className="font-medium text-xs xl:text-sm text-white flex items-center gap-2.5 min-h-[64px]"
                 href="/"
               >
                 <span>{researchMenu?.title}</span>
@@ -390,7 +389,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
             sustainabilityLinks.__component === "menu.menu-links" && (
               <li className="relative">
                 <Link
-                  className={`font-semibold text-xs xl:text-[15px] text-white flex items-center gap-2.5 min-h-[64px] ${
+                  className={`font-medium text-xs xl:text-sm text-white flex items-center gap-2.5 min-h-[64px] ${
                     sustainabilityLinks?.menuclass || ""
                   }`}
                   href={sustainabilityLinks.url}
@@ -404,7 +403,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
           {lifeatkrmuMenu && (
             <li className="relative krm-sub-menu-has-children">
               <Link
-                className="font-semibold text-xs xl:text-[15px] text-white flex items-center gap-2.5 min-h-[64px]"
+                className="font-medium text-xs xl:text-sm text-white flex items-center gap-2.5 min-h-[64px]"
                 href="/"
               >
                 <span>{lifeatkrmuMenu?.title}</span>
@@ -423,7 +422,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                     backgroundImage: `url(${STRAPI_URL}${lifeatkrmuMenu?.backgroundimage?.url})`,
                   }}
                 >
-                  <div className="text-center text-white font-semibold text-lg my-[30px] z-50">
+                  <div className="text-center text-white font-medium text-lg my-[30px] z-50">
                     <p>{lifeatkrmuMenu?.backgroundimagetext}</p>
                   </div>
                 </div>
@@ -476,7 +475,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
           {aboutusMenu && (
             <li className="relative krm-sub-menu-has-children">
               <Link
-                className="font-semibold text-xs xl:text-[15px] text-white flex items-center gap-2.5 min-h-[64px]"
+                className="font-medium text-xs xl:text-sm text-white flex items-center gap-2.5 min-h-[64px]"
                 href="/"
               >
                 <span>{aboutusMenu?.title}</span>
@@ -500,7 +499,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                       return (
                         <span
                           key={counter?.id}
-                          className="inline-flex gap-2.5 items-center justify-center font-semibold relative py-5 text-center"
+                          className="inline-flex gap-2.5 items-center justify-center font-medium relative py-5 text-center"
                         >
                           <span className="text-[40px]">
                             {counter?.countertext}
@@ -560,7 +559,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
           {careersLinks && careersLinks.__component === "menu.menu-links" && (
             <li className="relative">
               <Link
-                className={`font-semibold text-xs xl:text-[15px] text-white flex items-center gap-2.5 min-h-[64px] ${
+                className={`font-medium text-xs xl:text-sm text-white flex items-center gap-2.5 min-h-[64px] ${
                   careersLinks?.menuclass || ""
                 }`}
                 href={careersLinks.url}
@@ -575,7 +574,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
               <li>
                 <Link
                   href={applyNowButton?.url || "#"}
-                  className={`bg-[#cb000d] py-2 px-[22px]  text-xs font-semibold text-white rounded-[5px] ${
+                  className={`bg-[#cb000d] py-2 px-[22px]  text-xs font-medium text-white rounded-[5px] ${
                     applyNowButton?.class || ""
                   }`}
                 >
@@ -588,7 +587,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
       {applyNowButton && applyNowButton.__component === "menu.menu-button" && (
         <Link
           href={applyNowButton?.url || "#"}
-          className={`bg-[#cb000d] py-2 px-[22px] inline-block text-xs font-semibold text-white rounded-[5px] xl:hidden ${
+          className={`bg-[#cb000d] py-2 px-[22px] inline-block text-xs font-medium text-white rounded-[5px] xl:hidden ${
             applyNowButton?.class || ""
           }`}
         >
