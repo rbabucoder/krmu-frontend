@@ -177,7 +177,7 @@ export const solsFaculties: SchoolFacultiesType[] = [
     featured_media: 10290,
     acf: {
       "staff-qualification": "Ph.D.",
-      staff_designation: "Assistant  Professor",
+      staff_designation: "Associate  Professor",
       schools: [1043],
     },
     featured_media_url:

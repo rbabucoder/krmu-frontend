@@ -319,21 +319,21 @@ export const soetFaculties: SchoolFacultiesType[] = [
     featured_media_url:
       "https://www.krmangalam.edu.in/wp-content/uploads/2024/08/Dr-Rakhi-Dua-1.jpg",
   },
-  {
-    id: 59997,
-    slug: "dr-appurva-jain",
-    title: {
-      rendered: "Dr. Appurva Jain",
-    },
-    featured_media: 101941,
-    acf: {
-      "staff-qualification": "Ph.D.",
-      staff_designation: "Assistant  Professor",
-      schools: [1126, 1266],
-    },
-    featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/08/Appurv_Jain.webp",
-  },
+  // {
+  //   id: 59997,
+  //   slug: "dr-appurva-jain",
+  //   title: {
+  //     rendered: "Dr. Appurva Jain",
+  //   },
+  //   featured_media: 101941,
+  //   acf: {
+  //     "staff-qualification": "Ph.D.",
+  //     staff_designation: "Assistant  Professor",
+  //     schools: [1126, 1266],
+  //   },
+  //   featured_media_url:
+  //     "https://www.krmangalam.edu.in/wp-content/uploads/2024/08/Appurv_Jain.webp",
+  // },
   {
     id: 58540,
     slug: "ms-rishika-mehta",
@@ -424,21 +424,21 @@ export const soetFaculties: SchoolFacultiesType[] = [
     featured_media_url:
       "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Prabhakar-Bhandari.webp",
   },
-  {
-    id: 10860,
-    slug: "ms-asha-sohal-2",
-    title: {
-      rendered: "Ms. Asha Sohal",
-    },
-    featured_media: 10846,
-    acf: {
-      "staff-qualification": "Ph.D. (Computer Science) Pursuing",
-      staff_designation: "Assistant Professor",
-      schools: [1266],
-    },
-    featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Ms.-Asha-Sohal.webp",
-  },
+  // {
+  //   id: 10860,
+  //   slug: "ms-asha-sohal-2",
+  //   title: {
+  //     rendered: "Ms. Asha Sohal",
+  //   },
+  //   featured_media: 10846,
+  //   acf: {
+  //     "staff-qualification": "Ph.D. (Computer Science) Pursuing",
+  //     staff_designation: "Assistant Professor",
+  //     schools: [1266],
+  //   },
+  //   featured_media_url:
+  //     "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Ms.-Asha-Sohal.webp",
+  // },
   {
     id: 10859,
     slug: "dr-swati-2",
@@ -486,21 +486,21 @@ export const soetFaculties: SchoolFacultiesType[] = [
       "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Kaushal-Kumar.webp",
   },
 
-  {
-    id: 10821,
-    slug: "prof-sushil-kumar-azad-2",
-    title: {
-      rendered: "Prof. Sushil Kumar Azad",
-    },
-    featured_media: 10820,
-    acf: {
-      "staff-qualification": "Ph.D. (Computer Science)",
-      staff_designation: "Professor",
-      schools: [1266],
-    },
-    featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Prof.-Sushil-Kumar-Azad.webp",
-  },
+  // {
+  //   id: 10821,
+  //   slug: "prof-sushil-kumar-azad-2",
+  //   title: {
+  //     rendered: "Prof. Sushil Kumar Azad",
+  //   },
+  //   featured_media: 10820,
+  //   acf: {
+  //     "staff-qualification": "Ph.D. (Computer Science)",
+  //     staff_designation: "Professor",
+  //     schools: [1266],
+  //   },
+  //   featured_media_url:
+  //     "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Prof.-Sushil-Kumar-Azad.webp",
+  // },
 
   {
     id: 10813,
@@ -532,21 +532,21 @@ export const soetFaculties: SchoolFacultiesType[] = [
     featured_media_url:
       "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Vandna.webp",
   },
-  {
-    id: 10693,
-    slug: "mr-ashwani-kumar",
-    title: {
-      rendered: "Mr. Ashwani Kumar",
-    },
-    featured_media: 10692,
-    acf: {
-      "staff-qualification": "M.Tech (Computer Science & Engineering)",
-      staff_designation: "Assistant  Professor",
-      schools: [1266],
-    },
-    featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Ashwani-Kumar.webp",
-  },
+  // {
+  //   id: 10693,
+  //   slug: "mr-ashwani-kumar",
+  //   title: {
+  //     rendered: "Mr. Ashwani Kumar",
+  //   },
+  //   featured_media: 10692,
+  //   acf: {
+  //     "staff-qualification": "M.Tech (Computer Science & Engineering)",
+  //     staff_designation: "Assistant  Professor",
+  //     schools: [1266],
+  //   },
+  //   featured_media_url:
+  //     "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Ashwani-Kumar.webp",
+  // },
   {
     id: 10285,
     slug: "dr-amar-saraswat",
@@ -607,19 +607,19 @@ export const soetFaculties: SchoolFacultiesType[] = [
     featured_media_url:
       "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Ms.-Ruchika-Bhakhar.webp",
   },
-  {
-    id: 1226,
-    slug: "dr-pallavi-pandey",
-    title: {
-      rendered: "Dr. Pallavi Pandey",
-    },
-    featured_media: 9226,
-    acf: {
-      "staff-qualification": "Ph.D. ",
-      staff_designation: "Assistant Professor",
-      schools: [1266],
-    },
-    featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Pallavi-Pandey.webp",
-  },
+  // {
+  //   id: 1226,
+  //   slug: "dr-pallavi-pandey",
+  //   title: {
+  //     rendered: "Dr. Pallavi Pandey",
+  //   },
+  //   featured_media: 9226,
+  //   acf: {
+  //     "staff-qualification": "Ph.D. ",
+  //     staff_designation: "Assistant Professor",
+  //     schools: [1266],
+  //   },
+  //   featured_media_url:
+  //     "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Pallavi-Pandey.webp",
+  // },
 ];
