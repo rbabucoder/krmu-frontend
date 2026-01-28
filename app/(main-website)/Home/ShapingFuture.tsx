@@ -78,6 +78,7 @@ const ShapingFuture = ({
                   className="hidden lg:block"
                   alt="Shaping Future"
                 />
+
                 <div className="homebg-grad lg:hidden">
                   <Image
                     src={`${STRAPI_URL}${mobShapimage?.url}`}

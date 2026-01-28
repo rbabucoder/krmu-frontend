@@ -8,7 +8,6 @@ type Props = {
 };
 
 const NavbarMenu = ({ mainMenu }: Props) => {
-  console.log('mainMenu', mainMenu);
   const academicMenu = mainMenu.find(
     (component) => component.__component === "temp-menus.academic-menu",
   );
@@ -155,8 +154,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
               </li>
             )}
 
-
-             {zenithLinks && zenithLinks.__component === "menu.menu-links" && (
+          {zenithLinks && zenithLinks.__component === "menu.menu-links" && (
             <li className="relative">
               <Link
                 className={`font-semibold text-xs xl:text-[15px] text-white flex items-center gap-2.5 min-h-[64px] ${

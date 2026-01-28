@@ -250,13 +250,13 @@ export default async function Page({ params }: Props) {
           eventsexp={schoolEventsAndExperience}
         />
       )}
-      {school?.studentachievementtitle && (
+      {/* {school?.studentachievementtitle && (
         <SchoolStudentAchievements
           title={school?.studentachievementtitle}
           btn={school?.studentachievementsbtn}
           schoolCat={schoolCat}
         />
-      )}
+      )} */}
       {school?.facility_slide && (
         <SchoolFacilities fac_slides={school?.facility_slide} />
       )}
