@@ -29,6 +29,9 @@ const MobileHeader = ({ topbarmenu, navbarData, onClose }: Props) => {
   const careersLinks = navbarData.find(
     (component) => component.title === "Careers",
   );
+  const zenithLinks = navbarData.find(
+    (component) => component.title === "Zenith",
+  );
 
   const sustainabilityLinks = navbarData.find(
     (component) => component.title === "Sustainability",
@@ -192,6 +195,13 @@ const MobileHeader = ({ topbarmenu, navbarData, onClose }: Props) => {
                 </div>
               </div>
             </li>
+            {zenithLinks && zenithLinks.__component === "menu.menu-links" && (
+              <li className="pt-2.5 pb-4  font-semibold text-[#ff0010]">
+                <Link href={zenithLinks?.url || "#"} onClick={onClose} target="_blank">
+                  {zenithLinks?.title}
+                </Link>
+              </li>
+            )}
             <li className="pt-2.5 pb-4 text-white font-semibold">
               <button
                 onClick={() => toggleMenu("placement")}
