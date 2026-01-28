@@ -37,7 +37,7 @@ export function strapiSeoToMetadata(seo: BlogSEO): Metadata {
     },
 
     robots: {
-      index: !seo.noIndex,
+      index: true,
       follow: true,
     },
 

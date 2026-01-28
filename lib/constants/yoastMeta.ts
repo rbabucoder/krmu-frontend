@@ -39,8 +39,8 @@ export function yoastToMetadata(yoast: YoastHeadJson): Metadata {
       : undefined,
 
     robots: {
-      index: yoast?.robots?.index === "index",
-      follow: yoast?.robots?.follow === "follow",
+      index: true,
+      follow: true,
     },
 
     openGraph: {
