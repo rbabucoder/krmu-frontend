@@ -8,6 +8,7 @@ type Props = {
 };
 
 const NavbarMenu = ({ mainMenu }: Props) => {
+  console.log('mainMenu', mainMenu);
   const academicMenu = mainMenu.find(
     (component) => component.__component === "temp-menus.academic-menu",
   );
@@ -17,6 +18,9 @@ const NavbarMenu = ({ mainMenu }: Props) => {
   );
   const careersLinks = mainMenu.find(
     (component) => component.title === "Careers",
+  );
+  const zenithLinks = mainMenu.find(
+    (component) => component.title === "Zenith",
   );
   const sustainabilityLinks = mainMenu.find(
     (component) => component.title === "Sustainability",
@@ -150,6 +154,21 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                 </Link>
               </li>
             )}
+
+
+             {zenithLinks && zenithLinks.__component === "menu.menu-links" && (
+            <li className="relative">
+              <Link
+                className={`font-semibold text-xs xl:text-[15px] text-white flex items-center gap-2.5 min-h-[64px] ${
+                  zenithLinks?.menuclass || ""
+                }`}
+                href={zenithLinks.url}
+                target="_blank"
+              >
+                <span>{zenithLinks.title}</span>
+              </Link>
+            </li>
+          )}
 
           {admissionMenu && (
             <li className="relative krm-sub-menu-has-children">

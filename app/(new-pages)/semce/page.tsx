@@ -1,9 +1,17 @@
-import React from 'react'
+import Stats from "./comp/Stats";
+import FutureReady from "./comp/FutureReady";
+import LearnByCreating from "./comp/LearnByCreating";
 
 const page = () => {
   return (
-    <div>page</div>
-  )
-}
+    <>
+      <main className="semce_main_container">
+        <Stats />
+        <FutureReady />
+        <LearnByCreating />
+      </main>
+    </>
+  );
+};
 
-export default page
+export default page;
