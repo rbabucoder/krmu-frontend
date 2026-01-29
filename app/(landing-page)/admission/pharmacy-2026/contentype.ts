@@ -4,6 +4,8 @@ export type HeroContent = {
   desc: string;
   heroBg: string;
   middleImg: string;
+  mobileImg: string;
+  lpclName: string;
 };
 
 // Counter card type

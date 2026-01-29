@@ -5,6 +5,8 @@ export type HeroContent = {
   heroBg: string;
   // middleImg: "/landingpage/law-2026/law.webp",
   middleImg: string;
+  mobileImg: string;
+  lpclName: string;
 };
 
 // Counter card type

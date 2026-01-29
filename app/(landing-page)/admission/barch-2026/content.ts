@@ -19,18 +19,23 @@ import {
 // Usage types
 export const Hero: HeroContent = {
   title: `
-      ADMISSIONS <br />
+  <span class="sm:hidden"><span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
+        B.Sc.-CSE
+      </span> Admissions Open 2026–27</span>
+      <span class="hidden sm:block">ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
        Bachelor of <br /> Architecture
       </span>
       <br />
-      PROGRAMMES 2026-27
+      PROGRAMMES 2026-27 </span>
     `,
   desc: `From conceptual learning in classrooms to building creative constructions <br /> via immersive projects,  the B.Arch course will enable you to shape the future of architecture`,
   heroBg: "/wp-content/landingpage/barch-2026/barch.webp",
   // middleImg: "/landingpage/law-2026/law.webp",
   middleImg: "",
+  mobileImg: "",
+  lpclName: "MainSection",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -130,26 +135,22 @@ export const industryExperts: IndustryExpertsSection = {
   },
   cards: [
     {
-      imgUrl:
-        "/landingpage/barch-2026/learn-from/ibm.png",
+      imgUrl: "/landingpage/barch-2026/learn-from/ibm.png",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
     {
-      imgUrl:
-        "/landingpage/barch-2026/learn-from/imaginxp.svg",
+      imgUrl: "/landingpage/barch-2026/learn-from/imaginxp.svg",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
     {
-      imgUrl:
-        "/landingpage/barch-2026/learn-from/eccoun.jpg",
+      imgUrl: "/landingpage/barch-2026/learn-from/eccoun.jpg",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
     {
-      imgUrl:
-        "/landingpage/barch-2026/learn-from/xebia.png",
+      imgUrl: "/landingpage/barch-2026/learn-from/xebia.png",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
@@ -366,8 +367,7 @@ export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
 export const faqSectionData: FAQSectionData = {
   eyebrow: "(FAQs)",
   heading: "Frequently Asked Questions",
-  description:
-    "",
+  description: "",
   faqs: [
     {
       id: "item-1",

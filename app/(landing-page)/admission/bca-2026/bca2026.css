@@ -4,6 +4,33 @@
 @custom-variant dark (&:is(.dark *));
 
 @layer utilities {
+  .flash-border .heroBannerForm__form {
+    border: 1px solid red;
+    border-radius: 15px;
+  }
+
+  .MainSection {
+    background-image: url("/wp-content/landingpage/bca-2026/bca.webp") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (max-width: 640px) {
+    .MainSection {
+      background-image: none !important;
+      background-color: #1f0b07;
+    }
+    .MainSection .container-1 {
+      background-image: url("/wp-content/landingpage/bca-2026/bca-mob.webp") !important;
+      background-size: cover;
+      background-position: center;
+      height: 324px;
+      display: flex;
+      align-items: end;
+      justify-content: center;
+    }
+  }
   .whyBgStyle {
     background-color: #003fa1;
   }

@@ -19,17 +19,23 @@ import {
 // Usage types
 export const Hero: HeroContent = {
   title: `
+  <span class="sm:hidden"><span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
+        Pharmacy
+      </span> Admissions Open 2026–27</span>
+      <span class="hidden sm:block">
       ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
       Pharmacy 
       </span>
       <br />
-      PROGRAMMES 2026-27
+      PROGRAMMES 2026-27</span>
     `,
   desc: `Gain industry-focused education, build strong foundations in pharmaceutical<br /> sciences, and benefit  from industry partnerships that prepare you for confident, <br />career-ready roles in the pharmacy sector `,
   heroBg: "/wp-content/landingpage/pharmacy-2026/pharmacy.webp",
   middleImg: "",
+  mobileImg: "",
+  lpclName: "MainSection",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {

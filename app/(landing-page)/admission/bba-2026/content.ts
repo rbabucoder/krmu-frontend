@@ -19,6 +19,10 @@ import {
 // Usage types
 export const Hero: HeroContent = {
   title: `
+   <span class="sm:hidden"><span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
+        BBA
+      </span> Admissions Open 2026–27</span>
+       <span class="hidden sm:block">
       ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
@@ -26,6 +30,7 @@ export const Hero: HeroContent = {
       </span>
       <br />
       PROGRAMMES 2026-27
+      </span>
     `,
   desc: `Start Building Your Future in Business and Management`,
   heroBg: "/wp-content/landingpage/bba-2026/bba.webp",
@@ -170,11 +175,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 1,85,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 1,85,000`,
+        // },
       ],
     },
     {
@@ -192,11 +197,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 1,85,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 1,85,000`,
+        // },
       ],
     },
     {
@@ -214,11 +219,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 1,85,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 1,85,000`,
+        // },
       ],
     },
     {
@@ -236,11 +241,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 1,85,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 1,85,000`,
+        // },
       ],
     },
     {
@@ -258,11 +263,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 1,85,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 1,85,000`,
+        // },
       ],
     },
     {
@@ -280,11 +285,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 1,70,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 1,70,000`,
+        // },
       ],
     },
     {
@@ -303,11 +308,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,05,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 2,05,000`,
+        // },
       ],
     },
     {
@@ -326,11 +331,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,05,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 2,05,000`,
+        // },
       ],
     },
     {
@@ -348,11 +353,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 1,85,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 1,85,000`,
+        // },
       ],
     },
     {
@@ -371,11 +376,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 1,85,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 1,85,000`,
+        // },
       ],
     },
     {
@@ -393,11 +398,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 1,85,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 1,85,000`,
+        // },
       ],
     },
     {
@@ -415,11 +420,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 1,85,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 1,85,000`,
+        // },
       ],
     },
     {
@@ -437,11 +442,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,10,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 2,10,000`,
+        // },
       ],
     },
     {
@@ -459,11 +464,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,10,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 2,10,000`,
+        // },
       ],
     },
     {
@@ -481,11 +486,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,05,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 2,05,000`,
+        // },
       ],
     },
     {
@@ -503,11 +508,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,05,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 2,05,000`,
+        // },
       ],
     },
     {
@@ -525,11 +530,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,05,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 2,05,000`,
+        // },
       ],
     },
     {
@@ -547,11 +552,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,05,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 2,05,000`,
+        // },
       ],
     },
     {
@@ -569,11 +574,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,05,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 2,05,000`,
+        // },
       ],
     },
     {
@@ -592,11 +597,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `10+2 with a minimum of 50% marks`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,05,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 2,05,000`,
+        // },
       ],
     },
   ],

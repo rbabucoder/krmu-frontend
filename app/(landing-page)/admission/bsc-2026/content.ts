@@ -19,6 +19,10 @@ import {
 // Usage types
 export const Hero: HeroContent = {
   title: `
+    <span class="sm:hidden"><span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
+         B.Sc.
+      </span> Admissions Open 2026–27</span>
+      <span class="hidden sm:block">
       ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
@@ -26,11 +30,14 @@ export const Hero: HeroContent = {
       </span>
       <br />
       PROGRAMMES 2026-27
+      </span>
     `,
   desc: `Begin a focused and future-oriented academic journey with B.Sc. programmes <br /> designed to inculcate scientific thinking, <br /> problem-solving, and practical skills among <br /> students for diverse roles across emerging and established industries`,
   heroBg: "/wp-content/landingpage/bsc-2026/bsc.webp",
   // middleImg: "/landingpage/law-2026/law.webp",
   middleImg: "",
+  mobileImg: "",
+  lpclName: "MainSection",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -137,26 +144,22 @@ export const industryExperts: IndustryExpertsSection = {
   },
   cards: [
     {
-      imgUrl:
-        "/landingpage/bsc-2026/learn-from/houston.png",
+      imgUrl: "/landingpage/bsc-2026/learn-from/houston.png",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
     {
-      imgUrl:
-        "/landingpage/bsc-2026/learn-from/hansraj.png",
+      imgUrl: "/landingpage/bsc-2026/learn-from/hansraj.png",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
     {
-      imgUrl:
-        "/landingpage/bsc-2026/learn-from/flower.png",
+      imgUrl: "/landingpage/bsc-2026/learn-from/flower.png",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
     {
-      imgUrl:
-        "/landingpage/bsc-2026/learn-from/enva.png",
+      imgUrl: "/landingpage/bsc-2026/learn-from/enva.png",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
@@ -493,8 +496,7 @@ export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
 export const faqSectionData: FAQSectionData = {
   eyebrow: "(FAQs)",
   heading: "Got Questions? We've Got Answers ",
-  description:
-    "",
+  description: "",
   faqs: [
     {
       id: "item-1",

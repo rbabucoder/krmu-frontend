@@ -19,6 +19,10 @@ import {
 // Usage types
 export const Hero: HeroContent = {
   title: `
+   <span class="sm:hidden"><span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
+        Bachelor of Arts
+      </span> Admissions Open 2026–27</span>
+       <span class="hidden sm:block">
       ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold">
@@ -26,11 +30,14 @@ export const Hero: HeroContent = {
       </span>
       <br />
       PROGRAMMES 2026-27
+      </span>
     `,
   desc: `The Bachelor of Arts programmes are designed to build critical thinking, communication, and analytical skills among students to prepare them for confident, career-ready roles across multiple sectors`,
   heroBg: "/wp-content/landingpage/ba-2026/ba.webp",
   // middleImg: "/landingpage/law-2026/law.webp",
   middleImg: "",
+  mobileImg: "",
+  lpclName: "MainSection",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {

@@ -19,17 +19,23 @@ import {
 // Usage types
 export const Hero: HeroContent = {
   title: `
-      ADMISSIONS <br />
+      <span class="sm:hidden"><span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
+        B.Des.
+      </span> Admissions Open 2026–27</span>
+       <span class="hidden sm:block">ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
        B.Des.
       </span>
       <br />
       PROGRAMMES 2026-27
+      </span>
     `,
   desc: `Immerse yourself in an inspiring environment that nurtures creativity,<br /> ignites innovation, and transforms ideas into impactful design solutions`,
   heroBg: "/wp-content/landingpage/bdes-2026/bdes.webp",
   middleImg: "",
+  mobileImg: "",
+  lpclName: "MainSection",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {

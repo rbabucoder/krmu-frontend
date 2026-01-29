@@ -19,6 +19,10 @@ import {
 // Usage types
 export const Hero: HeroContent = {
   title: `
+   <span class="sm:hidden"><span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
+       Journalism & Mass Communication
+      </span> Admissions Open 2026–27</span>
+      <span class="hidden sm:block">
       ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold">
@@ -26,11 +30,14 @@ export const Hero: HeroContent = {
       </span>
       <br />
       PROGRAMMES 2026-27
+      </span>
     `,
   desc: `The JMC course focuses on developing critical thinking, communication skills, creativity, and social awareness, preparing students for the fast-changing world of media, communication and storytelling`,
   heroBg: "/wp-content/landingpage/sjmc-2026/sjmc.webp",
   // middleImg: "/landingpage/law-2026/law.webp",
   middleImg: "",
+  mobileImg: "",
+  lpclName: "MainSection",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {

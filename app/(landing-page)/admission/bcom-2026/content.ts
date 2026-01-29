@@ -19,6 +19,10 @@ import {
 // Usage types
 export const Hero: HeroContent = {
   title: `
+  <span class="sm:hidden"><span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
+       B.Com.
+      </span> Admissions Open 2026–27</span>
+      <span class="hidden sm:block">
       ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
@@ -26,6 +30,7 @@ export const Hero: HeroContent = {
       </span>
       <br />
       PROGRAMMES 2026-27
+     </span>
     `,
   desc: `Choose from specialised, industry-backed B.Com. programmes and <br /> step confidently into the world of business and finance`,
   heroBg: "/wp-content/landingpage/bcom-2026/bcom.webp",

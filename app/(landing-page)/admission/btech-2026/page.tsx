@@ -94,6 +94,8 @@ const page = () => {
         marqueeData={heroMarqData}
         heroBg={heroContent?.heroBg}
         middleImg={heroContent?.middleImg}
+        mobileImg={heroContent?.mobileImg}
+        lpclName={heroContent?.lpclName}
       />
       <Counter counters={counters} />
       <ProminentRecruiter recruiters={recruiters} />
@@ -107,7 +109,7 @@ const page = () => {
       <IndustryExperts data={industryexpert} />
       <Specialisation data={specialise} />
       <Opportunity data={opport} />
-      <FeeStructureTable />
+      {/* <FeeStructureTable /> */}
       <Testimonials data={testiomonial} />
       {/* <ScholarResearchImpact data={scholarData} /> */}
       <ComeToLife data={worldLifeData} />

@@ -86,8 +86,10 @@ const page = () => {
         formId={bbaIdForm}
         desc={heroContent?.desc}
         marqueeData={heroMarqData}
-                heroBg={heroContent?.heroBg}
+        heroBg={heroContent?.heroBg}
         middleImg={heroContent?.middleImg}
+        mobileImg={heroContent?.mobileImg}
+        lpclName={heroContent?.lpclName}
       />
       <Counter counters={counters} />
       <ProminentRecruiter recruiters={recruiters} />

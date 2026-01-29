@@ -19,6 +19,10 @@ import {
 // Usage types
 export const Hero: HeroContent = {
   title: `
+  <span class="sm:hidden"><span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
+         B.Ed. & B.El.Ed.
+      </span> Admissions Open 2026–27</span>
+      <span class="hidden sm:block">
       ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
@@ -26,10 +30,13 @@ export const Hero: HeroContent = {
       </span>
       <br />
       PROGRAMMES 2026-27
+      </span>
     `,
   desc: `Your path to pursuing a teaching career begins with K.R. Mangalam University’s <br />Education Programmes, preparing you to inspire the next generation`,
   heroBg: "/wp-content/landingpage/beld-2026/beld.webp",
   middleImg: "",
+  mobileImg: "",
+  lpclName: "MainSection",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -64,38 +71,31 @@ export const Counters: CounterItem[] = [
 // Recruiters list
 export const prominentRecruiters: ProminentRecruit[] = [
   {
-    imgUrl:
-      "/landingpage/beld-2026/recruiters/simpilearn.png",
+    imgUrl: "/landingpage/beld-2026/recruiters/simpilearn.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "/landingpage/beld-2026/recruiters/merit.png",
+    imgUrl: "/landingpage/beld-2026/recruiters/merit.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "/landingpage/beld-2026/recruiters/chegg.png",
+    imgUrl: "/landingpage/beld-2026/recruiters/chegg.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "/landingpage/beld-2026/recruiters/dps.png",
+    imgUrl: "/landingpage/beld-2026/recruiters/dps.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "/landingpage/beld-2026/recruiters/whj.png",
+    imgUrl: "/landingpage/beld-2026/recruiters/whj.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "/landingpage/beld-2026/recruiters/toppr.png",
+    imgUrl: "/landingpage/beld-2026/recruiters/toppr.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "/landingpage/beld-2026/recruiters/vedantu.png",
+    imgUrl: "/landingpage/beld-2026/recruiters/vedantu.png",
     alt: "Recruiter Logo",
   },
 ];
@@ -275,17 +275,17 @@ ensuring that aspiring teachers are well-prepared for real-world challenges. The
       name: "Guruksha Bansal",
       programme: "(B.El.Ed.) Pursuing M.Ed.",
     },
-//     {
-//       image: "/landingpage/beld-2026/testimonials/4.jpg",
-//       videoUrl: "#",
-//       quote: `I am proud to be an alumnus of K.R. Mangalam University, where I pursued my Ph.D. under the 
-// expert guidance of Prof. P.C. Jena. The university provided an enriching academic environment, 
-// excellent research facilities, and constant support that helped me grow both personally and 
-// professionally. The university provided a vibrant learning environment with exceptional faculty who guided and supported me throughout my research. My experience at K.R. Mangalam University not only broadened my knowledge but also equipped me with the critical thinking and research skills that have been vital to my professional success. I cherish the memories and am proud to be associated with such a prestigious institution. 
-// `,
-//       name: "Dr. Anupam Bansal",
-//       programme: "Ph.D., Associate Professor, KIIT Group of Colleges, Gurugram",
-//     },
+    //     {
+    //       image: "/landingpage/beld-2026/testimonials/4.jpg",
+    //       videoUrl: "#",
+    //       quote: `I am proud to be an alumnus of K.R. Mangalam University, where I pursued my Ph.D. under the
+    // expert guidance of Prof. P.C. Jena. The university provided an enriching academic environment,
+    // excellent research facilities, and constant support that helped me grow both personally and
+    // professionally. The university provided a vibrant learning environment with exceptional faculty who guided and supported me throughout my research. My experience at K.R. Mangalam University not only broadened my knowledge but also equipped me with the critical thinking and research skills that have been vital to my professional success. I cherish the memories and am proud to be associated with such a prestigious institution.
+    // `,
+    //       name: "Dr. Anupam Bansal",
+    //       programme: "Ph.D., Associate Professor, KIIT Group of Colleges, Gurugram",
+    //     },
   ],
 };
 

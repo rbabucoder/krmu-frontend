@@ -19,6 +19,10 @@ import {
 // Usage types
 export const Hero: HeroContent = {
   title: `
+  <span class="sm:hidden"><span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
+      B.Sc. Forensic Science
+      </span> Admissions Open 2026–27</span>
+       <span class="hidden sm:block">
       ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold">
@@ -26,11 +30,14 @@ export const Hero: HeroContent = {
       </span>
       <br />
       PROGRAMMES 2026-27 
+      </span>
     `,
   desc: `The B.Sc. Forensic Science course strives to prepare the next generation of professional <br /> analysts who pursue truth with the precision of science and integrity`,
   heroBg: "/wp-content/landingpage/bsc-forensic-science-2026/bsc-forensic.webp",
   // middleImg: "/landingpage/law-2026/law.webp",
   middleImg: "",
+  mobileImg: "",
+  lpclName: "MainSection",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -402,7 +409,8 @@ export const faqSectionData: FAQSectionData = {
     },
     {
       id: "item-2",
-      question: "What career options does a student have after completing a B.Sc. Forensic Science?",
+      question:
+        "What career options does a student have after completing a B.Sc. Forensic Science?",
       answer: `Graduates can work as Forensic Scientists, Crime Scene Investigators, Digital Forensic Analysts, Toxicologists, and Consultants in law enforcement, forensic labs, and private agencies.
 `,
     },

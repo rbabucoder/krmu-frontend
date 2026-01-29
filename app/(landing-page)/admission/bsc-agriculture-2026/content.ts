@@ -32,6 +32,8 @@ export const Hero: HeroContent = {
   heroBg: "/wp-content/landingpage/bsc-agriculture-2026/bsc-agriculture.webp",
   // middleImg: "/landingpage/law-2026/law.webp",
   middleImg: "",
+  mobileImg: "",
+  lpclName: "MainSection",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -66,33 +68,27 @@ export const Counters: CounterItem[] = [
 // Recruiters list
 export const prominentRecruiters: ProminentRecruit[] = [
   {
-    imgUrl:
-      "/landingpage/bsc-agriculture-2026/recruiters/cargill.png",
+    imgUrl: "/landingpage/bsc-agriculture-2026/recruiters/cargill.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "/landingpage/bsc-agriculture-2026/recruiters/cnh.png",
+    imgUrl: "/landingpage/bsc-agriculture-2026/recruiters/cnh.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "/landingpage/bsc-agriculture-2026/recruiters/john.png",
+    imgUrl: "/landingpage/bsc-agriculture-2026/recruiters/john.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "/landingpage/bsc-agriculture-2026/recruiters/zyndex.png",
+    imgUrl: "/landingpage/bsc-agriculture-2026/recruiters/zyndex.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "/landingpage/bsc-agriculture-2026/recruiters/syngeta.png",
+    imgUrl: "/landingpage/bsc-agriculture-2026/recruiters/syngeta.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "/landingpage/bsc-agriculture-2026/recruiters/mahyco.png",
+    imgUrl: "/landingpage/bsc-agriculture-2026/recruiters/mahyco.png",
     alt: "Recruiter Logo",
   },
 ];
@@ -132,8 +128,7 @@ export const industryExperts: IndustryExpertsSection = {
   },
   cards: [
     {
-      imgUrl:
-        "",
+      imgUrl: "",
       alt: "",
       title: "",
     },

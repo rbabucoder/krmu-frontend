@@ -19,18 +19,24 @@ import {
 // Usage types
 export const Hero: HeroContent = {
   title: `
-      ADMISSIONS <br />
+       <span class="sm:hidden"><span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
+        Medical & Allied
+      </span> Admissions Open 2026–27</span>
+      <span class="hidden sm:block">ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold">
        Medical & Allied <br />Sciences
       </span>
       <br />
-      PROGRAMMES <br />2026-27
+      PROGRAMMES <br />2026-27 </span>
     `,
   desc: `Start your healthcare journey with knowledgeable instructors, <br /> cutting-edge labs, industry-exposure, and career-focused <br />  curriculum`,
-  heroBg: "/wp-content/landingpage/allied-health-science-2026/allied-health-science.webp",
+  heroBg:
+    "/wp-content/landingpage/allied-health-science-2026/allied-health-science.webp",
   // middleImg: "/landingpage/law-2026/law.webp",
   middleImg: "",
+  mobileImg: "",
+  lpclName: "MainSection",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -414,8 +420,7 @@ export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
 export const faqSectionData: FAQSectionData = {
   eyebrow: "(FAQs)",
   heading: "Frequently Asked Questions",
-  description:
-    "",
+  description: "",
   faqs: [
     {
       id: "item-1",

@@ -14,7 +14,7 @@ import {
   SpecialisationSection,
   TestimonialsSection,
   WhyKRMSection,
-} from "./contentype";
+} from "./contentype"; 
 
 // Usage types
 export const Hero: HeroContent = {

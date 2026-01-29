@@ -19,6 +19,10 @@ import {
 // Usage types
 export const Hero: HeroContent = {
   title: `
+  <span class="sm:hidden"><span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
+         B.Ed. & B.El.Ed.
+      </span> Admissions Open 2026–27</span>
+      <span class="hidden sm:block">
       ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
@@ -26,10 +30,13 @@ export const Hero: HeroContent = {
       </span>
       <br />
       PROGRAMMES 2026-27
+      </span>
     `,
   desc: `Learn to Lead in the realm of healthcare under the expert guidance of our distinguished <br /> faculty while utilising state-of-the-art facilities for hands-on physiotherapy learning`,
   heroBg: "/wp-content/landingpage/bpt-2026/bpt.webp",
   middleImg: "",
+  mobileImg: "",
+  lpclName: "MainSection",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -120,20 +127,17 @@ export const industryExperts: IndustryExpertsSection = {
   },
   cards: [
     {
-      imgUrl:
-        "/landingpage/bpt-2026/learn-from/sarvodya.png",
+      imgUrl: "/landingpage/bpt-2026/learn-from/sarvodya.png",
       alt: "CK Birla Logo",
       title: "",
     },
     {
-      imgUrl:
-        "/landingpage/bpt-2026/learn-from/ck-birla.png",
+      imgUrl: "/landingpage/bpt-2026/learn-from/ck-birla.png",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
     {
-      imgUrl:
-        "/landingpage/bpt-2026/learn-from/ekta.jpg",
+      imgUrl: "/landingpage/bpt-2026/learn-from/ekta.jpg",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },

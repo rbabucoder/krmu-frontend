@@ -62,7 +62,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 const page = () => {
-  const btechIdForm = btechId;
+  const bbaIdForm = bbaFormId;
   const heroContent = Hero;
   const counters = Counters;
   const recruiters = prominentRecruiters;
@@ -83,7 +83,7 @@ const page = () => {
     <>
       <HeroSection
         content={heroContent?.title}
-        formId={btechIdForm}
+        formId={bbaIdForm}
         desc={heroContent?.desc}
         marqueeData={heroMarqData}
         heroBg={heroContent?.heroBg}
@@ -103,13 +103,13 @@ const page = () => {
       <IndustryExperts data={industryexpert} />
       <Specialisation data={specialise} />
       <Opportunity data={opport} />
-      <FeeStructureTable />
+      {/* <FeeStructureTable /> */}
       <Testimonials data={testiomonial} />
       {/* <ScholarResearchImpact data={scholarData} /> */}
       <ComeToLife data={worldLifeData} />
       <LifeAsPhDScholar data={lifeData} />
       <FAQ data={faqData} />
-      <BusinessHub data={businessData} formId={btechIdForm} />
+      <BusinessHub data={businessData} formId={bbaIdForm} />
       <ApplySection data={applyData} />
     </>
   );

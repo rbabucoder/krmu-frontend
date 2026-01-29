@@ -32,7 +32,7 @@
     background: "url(/test-3.png)";
   }
 
-  .flash-border {
+  .flash-border .heroBannerForm__form {
     border: 1px solid red;
     border-radius: 15px;
   }
