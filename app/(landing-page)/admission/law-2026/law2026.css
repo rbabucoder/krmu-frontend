@@ -8,6 +8,7 @@
     background-image: url("/wp-content/landingpage/law-2026/law.webp") !important;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
   }
 
   @media (max-width: 640px) {
