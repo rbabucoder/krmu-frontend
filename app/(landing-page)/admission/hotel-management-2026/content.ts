@@ -34,9 +34,15 @@ PROGRAMME 2026-2027
 
 export const heroMarqueeData: HeroMarqueeSection = {
   messages: [
-    "Priority Application Deadline: January 15, 2026 | Only 45 Fellowship Positions Available | Early Application",
-    "Priority Application Deadline: January 15, 2026 | Only 45 Fellowship Positions Available | Early Application",
-    "Priority Application Deadline: January 15, 2026 | Only 45 Fellowship Positions Available | Early Application",
+    "₹56.6 LPA Highest Package",
+    "₹27 Cr Scholarships",
+    "800+ Recruiters",
+    "18K+ Alumni",
+    "92% Placement Record",
+    "100% Sponsored* International Study Tour",
+    "₹56.6 LPA Highest Package",
+    "₹27 Cr Scholarships",
+    "800+ Recruiters",
   ],
   bgColor: "#e31e24",
   speedClass: "animate-marquee",
@@ -213,8 +219,6 @@ export const opportunityData: OpportunitySection = {
   },
 };
 
-
-
 export const testimonialsData: TestimonialsSection = {
   subheading: "Our Testimonials ",
   heading: `Why do Aspirants Prefer KRMU? `,
@@ -364,12 +368,10 @@ export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
   ],
 };
 
-
 export const faqSectionData: FAQSectionData = {
   eyebrow: "(FAQs)",
   heading: "Frequently Asked Questions",
-  description:
-    "",
+  description: "",
   faqs: [
     {
       id: "item-1",
@@ -378,13 +380,13 @@ export const faqSectionData: FAQSectionData = {
     },
     {
       id: "item-2",
-      question: "Do students learn about the standards of international cuisine and hospitality?",
+      question:
+        "Do students learn about the standards of international cuisine and hospitality?",
       answer: `Indeed! Through a two-week sponsored study trip to a prominent European institution, students gain exposure to the world while learning about international hospitality and culinary trends.`,
     },
     {
       id: "item-3",
-      question:
-        "Which specialism is offered in the B.HMCT programme?",
+      question: "Which specialism is offered in the B.HMCT programme?",
       answer: `B.HMCT. provides expertise in:
 <ul><li>Food Production</li>
 <li>Food & Beverage Service</li>
@@ -393,7 +395,8 @@ export const faqSectionData: FAQSectionData = {
     },
     {
       id: "item-4",
-      question: "Does KRMU assist students studying hospitality and culinary arts with placement?",
+      question:
+        "Does KRMU assist students studying hospitality and culinary arts with placement?",
       answer: `Indeed! For internships and full-time employment possibilities, KRMU has solid industry partnerships and offers 100% placement help.`,
     },
   ],
