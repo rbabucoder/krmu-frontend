@@ -16,7 +16,7 @@
     list-style: inside;
   }
 
-    .whyBgStyle {
+  .whyBgStyle {
     background-color: #003fa1;
   }
 
@@ -125,7 +125,9 @@
     background-repeat: no-repeat;
   }
   .embla__slide {
-    transition: transform 0.5s ease, opacity 0.5s ease;
+    transition:
+      transform 0.5s ease,
+      opacity 0.5s ease;
   }
 
   .highlight-section .npf_wgts {
@@ -133,23 +135,23 @@
     border: 1px solid red;
   }
 
-      .npf_wgts iframe {
+  .npf_wgts iframe {
     box-shadow: none !important;
   }
 
-.heroBannerForm__form {
+  .heroBannerForm__form {
     background: #fff;
-width: 100%;
+    width: 100%;
     border-radius: 10px;
     padding-top: 40px;
-    
+
     height: 583px;
     position: relative;
   }
 
-  .heroBannerForm-header{
+  .heroBannerForm-header {
     text-align: center;
-    font-family: "Inter", serif !important;
+    font-family: "Poppins", sans-serif !important;
   }
 
   .heroBannerForm-header h3 {
@@ -161,13 +163,13 @@ width: 100%;
     display: block;
     font-weight: bold;
     font-size: 24px;
-    line-height: 20px;
+    line-height: 1.1;
     margin-top: 5px;
   }
 
-.npf_wgts iframe {
+  .npf_wgts iframe {
     border-radius: 14px;
-    width: 500px !important;
+    width: 100% !important;
     float: right;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
@@ -195,7 +197,6 @@ width: 100%;
     .hero_heading {
       color: #fff;
     }
-    
   }
 
   @media (max-width: 768px) {

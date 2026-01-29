@@ -2,7 +2,6 @@
 
 import { HeroMarqueeSection } from "../law-2026/contentype";
 
-
 type Props = {
   data: HeroMarqueeSection;
 };
@@ -21,7 +20,19 @@ const HeroMarquee = ({ data }: Props) => {
         }`}
       >
         {repeatedMessages.map((msg, index) => (
-          <p key={index} className="whitespace-nowrap">
+          <p
+            key={index}
+            className="whitespace-nowrap relative after:content-[''] 
+after:absolute 
+after:w-2 
+after:h-2 
+after:bg-white 
+after:top-1/2 
+after:-translate-y-1/2 
+after:right-[-22px] 
+after:rounded-full
+"
+          >
             {msg}
           </p>
         ))}

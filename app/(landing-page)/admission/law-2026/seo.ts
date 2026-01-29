@@ -1,6 +1,6 @@
 export const SeoData = {
-  title: "Law 2026 | K.R. Mangalam University",
+  title: "LAW Admissions 2026-27 in Delhi NCR, Gurgaon",
   description:
-    "Apply for LLB Admissions 2026 at K.R. Mangalam University.",
+    "",
   shareImage: "https://krmangalam.edu.in/og/law.jpg",
 };

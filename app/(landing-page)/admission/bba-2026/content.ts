@@ -29,7 +29,10 @@ export const Hero: HeroContent = {
     `,
   desc: `Start Building Your Future in Business and Management`,
   heroBg: "/wp-content/landingpage/bba-2026/bba.webp",
+
   middleImg: "",
+  mobileImg: "",
+  lpclName: "MainSection",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -120,32 +123,27 @@ export const industryExperts: IndustryExpertsSection = {
   },
   cards: [
     {
-      imgUrl:
-        "/landingpage/bba-2026/experts/iide.webp",
+      imgUrl: "/landingpage/bba-2026/experts/iide.webp",
       alt: "IIDE",
       title: "",
     },
     {
-      imgUrl:
-        "/landingpage/bba-2026/experts/ey-logo.webp",
+      imgUrl: "/landingpage/bba-2026/experts/ey-logo.webp",
       alt: "EY Logo",
       title: "",
     },
     {
-      imgUrl:
-        "/landingpage/bba-2026/experts/samatrix.webp",
+      imgUrl: "/landingpage/bba-2026/experts/samatrix.webp",
       alt: "Samatrix Logo",
       title: "",
     },
     {
-      imgUrl:
-        "/landingpage/bba-2026/experts/grant.webp",
+      imgUrl: "/landingpage/bba-2026/experts/grant.webp",
       alt: "Grant Logo",
       title: "",
     },
     {
-      imgUrl:
-        "/landingpage/bba-2026/experts/gcec.webp",
+      imgUrl: "/landingpage/bba-2026/experts/gcec.webp",
       alt: "GCEC Logo",
       title: "",
     },
@@ -358,7 +356,8 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl: "/landingpage/bba-2026/programs/bba-hons-international-business.jpg",
+      imgUrl:
+        "/landingpage/bba-2026/programs/bba-hons-international-business.jpg",
       title: `BBA (Hons./ Hons. with Research) International Business`,
       desc: `Learn about international trade, cross-cultural management, and international marketing tactics to get ready for a worldwide career prospects.`,
       extraInfos: [
@@ -578,7 +577,8 @@ export const specialisationData: SpecialisationSection = {
       ],
     },
     {
-      imgUrl: "/landingpage/bba-2026/programs/bba-hons-logistics-safexpress.jpg",
+      imgUrl:
+        "/landingpage/bba-2026/programs/bba-hons-logistics-safexpress.jpg",
       title: `BBA (Entrepreneurship) with Academic Support of GCEC Global Foundation`,
       desc: `With a BBA in Entrepreneurship, you can turn creative concepts into profitable businesses through startup ideation, venture capital, and learn management techniques.`,
       extraInfos: [
@@ -791,8 +791,7 @@ export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
 export const faqSectionData: FAQSectionData = {
   eyebrow: "(FAQs)",
   heading: "Frequently Asked Questions",
-  description:
-    "",
+  description: "",
   faqs: [
     {
       id: "item-1",

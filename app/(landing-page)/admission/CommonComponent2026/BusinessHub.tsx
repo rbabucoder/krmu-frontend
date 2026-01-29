@@ -72,7 +72,7 @@ const BusinessHub = ({ data, formId }: Props) => {
                     </h3>
                   </div>
 
-                  <NoPaperFormsWidget widgetId={formId} height="550px" />
+                  <NoPaperFormsWidget widgetId={formId} height="480px" />
                 </div>
               )}
             </div>

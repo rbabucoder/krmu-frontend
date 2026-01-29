@@ -19,3 +19,4 @@ export const bsc2026Id = "38eabdaacb7f536abf52165ec547e79c";
 export const hotelMangament2026Id = "2067c6e774b3273009b0e9d2463b0c3e";
 export const mca2026Id = "836b6b05a201f0069dbcdafd89ecc2c3";
 export const llm2026Id = "c0114ca224eb934f081f37dbc9fde07f";
+export const bscForensic2026Id = "c1c75a1b86620168ef8c99a5147eb572";
