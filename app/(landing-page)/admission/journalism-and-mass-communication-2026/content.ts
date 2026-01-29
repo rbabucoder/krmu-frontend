@@ -185,11 +185,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognised board/university in any stream with minimum 50% aggregate Marks.`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 1,60,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 1,60,000`,
+        // },
       ],
     },
     {
@@ -207,11 +207,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognised board/university in any stream with minimum 50% aggregate Marks.`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 1,60,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 1,60,000`,
+        // },
       ],
     },
     {
@@ -229,11 +229,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Candidate must have a bachelor's degree or equivalent degree from a recognised university with a minimum 50% aggregate marks`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 1,10,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 1,10,000`,
+        // },
       ],
     },
   ],

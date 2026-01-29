@@ -16,7 +16,7 @@ const PhdSuperComputer = () => {
           <div className="mt-5">
 
             <Image
-            src="/landingpage/phd/steps.svg"
+            src="/wp-content/landingpage/phd-2026/steps.svg"
             width={400}
             height={580}
             alt=""

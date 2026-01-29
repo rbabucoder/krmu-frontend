@@ -2,9 +2,19 @@ import Image from "next/image";
 
 const PhdAwardsAchievements = () => {
   return (
-    <section className="bg-[url(/landingpage/phd/trophy-background.webp)] bg-cover bg-center bg-no-repeat pt-10 pb-20 px-4 bg-fixed relative phd-bg-overlay">
+    <section
+      className="pt-10 pb-20 px-4 bg-fixed relative phd-bg-overlay"
+      style={{
+        background: `url(/wp-content/landingpage/phd-2026/trophy-background.webp)`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: 'center'
+      }}
+    >
       <div className="max-w-[1300px] mx-auto w-full z-10 relative">
-        <h3 className="text-white text-center font-semibold text-5xl mb-10">Accreditation and Awards</h3>
+        <h3 className="text-white text-center font-semibold text-5xl mb-10">
+          Accreditation and Awards
+        </h3>
         {/* <div className="w-full md:w-2/5">
         
           <div className="achive-trans-bg flex flex-col justify-center items-center p-10 h-full">

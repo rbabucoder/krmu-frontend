@@ -179,11 +179,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `10+2 in any stream with Mathematics, Statistics, Computer, or Information Science with at least 50% marks.`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs. 1,35,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs. 1,35,000`,
+        // },
       ],
     },
     {
@@ -202,11 +202,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `10+2 in any stream with Mathematics, Statistics, Computer, or Information Science with at least 50% marks.`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs. 1,35,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs. 1,35,000`,
+        // },
       ],
     },
     {
@@ -226,11 +226,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `10+2 in any stream with Mathematics, Statistics, Computer, or Information Science with at least 50% marks.`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs. 1,35,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs. 1,35,000`,
+        // },
       ],
     },
   ],

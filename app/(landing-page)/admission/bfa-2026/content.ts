@@ -164,11 +164,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: ` Passed the 10+2 or comparable exam in any stream with at least 50% marks.`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs. 1,20,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs. 1,20,000`,
+        // },
       ],
     },
   ],

@@ -18,7 +18,7 @@ const page = () => {
       <InterRelationRoles />
       <InterRelationActivities />
       <InterRelationWorkshop />
-      <InterRelationCertified />
+      {/* <InterRelationCertified /> */}
       <InterRelationForeign />
       <InterRelationGlobal />
       <InterRelaionForAdmission />

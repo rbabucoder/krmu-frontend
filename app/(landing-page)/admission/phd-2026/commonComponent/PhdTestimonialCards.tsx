@@ -26,7 +26,7 @@ const PhdTestimonialCards = () => {
               }}
             >
               <Image
-                src="/landingpage/phd/star.svg"
+                src="/wp-content/landingpage/phd-2026/star.svg"
                 width={180}
                 height={32}
                 alt=""
@@ -69,7 +69,7 @@ const PhdTestimonialCards = () => {
               }}
             >
               <Image
-                src="/landingpage/phd/star.svg"
+                src="/wp-content/landingpage/phd-2026/star.svg"
                 width={180}
                 height={32}
                 alt=""
@@ -113,7 +113,7 @@ const PhdTestimonialCards = () => {
               }}
             >
               <Image
-                src="/landingpage/phd/star.svg"
+                src="/wp-content/landingpage/phd-2026/star.svg"
                 width={180}
                 height={32}
                 alt=""

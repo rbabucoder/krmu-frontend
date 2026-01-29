@@ -192,11 +192,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Must possess a UG/PG degree from a recognised university with a minimum of 50% aggregate marks.`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 1,25,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 1,25,000`,
+        // },
       ],
     },
     {
@@ -215,11 +215,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Must have passed 10+2 or equivalent examination from any recognised board/university in any stream with a minimum of 50% aggregate marks.`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 1,25,000 `,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 1,25,000 `,
+        // },
       ],
     },
   ],

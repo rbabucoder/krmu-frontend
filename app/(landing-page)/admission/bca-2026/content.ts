@@ -185,11 +185,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `10 + 2 with a minimum of 50% in any stream from any accredited board or university.`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs. 1,65,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs. 1,65,000`,
+        // },
       ],
     },
     {
@@ -209,11 +209,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `10 + 2 with a minimum of 50% in any stream from any accredited board or university.`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs. 1,65,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs. 1,65,000`,
+        // },
       ],
     },
     {
@@ -232,11 +232,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `10 + 2 with a minimum of 50% in any stream from any accredited board or university.`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs. 1,65,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs. 1,65,000`,
+        // },
       ],
     },
     {
@@ -255,11 +255,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `10 + 2 with a minimum of 50% in any stream from any accredited board or university.`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs. 1,65,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs. 1,65,000`,
+        // },
       ],
     },
   ],

@@ -13,7 +13,7 @@ const PhdCounter = () => {
           <div className="flex flex-col sm:flex-row text-center sm:text-left gap-3.5 items-center">
             <div className="bg-[#00BFE7] rounded-full flex items-center justify-center w-[50px] h-[50px]">
               <Image
-                src="/landingpage/phd/icons/patent.svg"
+                src="/wp-content/landingpage/phd-2026/icons/patent.svg"
                 width={27}
                 height={24}
                 alt="Patents"
@@ -29,7 +29,7 @@ const PhdCounter = () => {
           <div className="flex flex-col sm:flex-row text-center sm:text-left gap-3.5 items-center">
             <div className="bg-[#00C1A1] rounded-full flex items-center justify-center w-[50px] h-[50px]">
               <Image
-                src="/landingpage/phd/icons/scholar.svg"
+                src="/wp-content/landingpage/phd-2026/icons/scholar.svg"
                 width={27}
                 height={24}
                 alt="Patents"
@@ -45,7 +45,7 @@ const PhdCounter = () => {
           <div className="flex flex-col sm:flex-row text-center sm:text-left gap-3.5 items-center">
             <div className="bg-[#FC654C] rounded-full flex items-center justify-center w-[50px] h-[50px]">
               <Image
-                src="/landingpage/phd/icons/research.svg"
+                src="/wp-content/landingpage/phd-2026/icons/research.svg"
                 width={27}
                 height={24}
                 alt="Patents"
@@ -61,7 +61,7 @@ const PhdCounter = () => {
           <div className="flex flex-col sm:flex-row text-center sm:text-left gap-3.5 items-center">
             <div className="bg-[#FF9C00] rounded-full flex items-center justify-center w-[50px] h-[50px]">
               <Image
-                src="/landingpage/phd/icons/play.svg"
+                src="/wp-content/landingpage/phd-2026/icons/play.svg"
                 width={27}
                 height={24}
                 alt="Patents"

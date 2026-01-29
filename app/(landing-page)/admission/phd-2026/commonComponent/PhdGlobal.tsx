@@ -2,7 +2,15 @@ import Image from "next/image";
 
 const PhdGlobal = () => {
   return (
-    <section className="py-20 bg-[url(/landingpage/phd/global.webp)] bg-cover bg-no-repeat px-4">
+    <section
+      className="py-20 px-4"
+      style={{
+        background: `url(/wp-content/landingpage/phd-2026/global.webp)`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+      }}
+    >
       <div className="max-w-[1300px] mx-auto w-full flex flex-col lg:flex-row gap-10">
         <div className="w-full lg:w-2/5 text-center md:text-left">
           <h3 className="text-4xl md:text-[50px] text-white font-semibold leading-[1.2] mb-5">
@@ -90,7 +98,6 @@ const PhdGlobal = () => {
               alt=""
             />
           </div>
-          
         </div>
       </div>
     </section>

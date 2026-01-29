@@ -193,11 +193,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Passed 10+2 or an equivalent examination from a recognised board or university with PCB or PCM and a minimum of 50% aggregate marks.`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs. 90,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs. 90,000`,
+        // },
       ],
     },
     {
@@ -216,11 +216,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Passed 10+2 or an equivalent examination from a recognised board or university with PCB or PCM, securing at least 50% aggregate marks. `,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs. 90,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs. 90,000`,
+        // },
       ],
     },
     {
@@ -239,11 +239,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Passed 10+2 or an equivalent examination in Science (Physics, Chemistry, Biology, or Mathematics) from a recognised board or university with at least 50% aggregate marks. `,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs. 1,30,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs. 1,30,000`,
+        // },
       ],
     },
     {
@@ -262,11 +262,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `    Passed 10+2 or an equivalent examination from a recognized board or university with Physics, Chemistry, Biology, or Mathematics as subjects, securing a minimum of 50% aggregate marks. `,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs. 1,30,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs. 1,30,000`,
+        // },
       ],
     },
     {
@@ -285,11 +285,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognized board/university in any stream with minimum 50% aggregate Marks.`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs. 1,30,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs. 1,30,000`,
+        // },
       ],
     },
   ],

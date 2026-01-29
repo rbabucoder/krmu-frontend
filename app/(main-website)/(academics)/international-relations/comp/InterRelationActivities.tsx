@@ -34,11 +34,11 @@ const InterRelationActivities = () => {
           </div>
           <div className="p-2.5 border border-[#f2f3f5] rounded-[30px]">
             <Image
-              src="/inter-relation/activities/image-2.png"
+              src="https://truthful-cabbage-82fd27e8f6.media.strapiapp.com/gemini_1_9de2dc72c2.webp"
               width={408}
               height={275}
               alt=""
-              className="w-full"
+              className="w-full rounded-[30px]"
             />
             <p className="text-[11px] my-2.5">
               Students Visited Madame Tussauds and the London Eye, offering
@@ -47,11 +47,11 @@ const InterRelationActivities = () => {
           </div>
           <div className="p-2.5 border border-[#f2f3f5] rounded-[30px]">
             <Image
-              src="/inter-relation/activities/image-3.png"
+              src="https://truthful-cabbage-82fd27e8f6.media.strapiapp.com/Gemini_Generated_Image_sdpyagsdpyagsdpy_189da9ee35.png"
               width={408}
               height={275}
-              alt=""
-              className="w-full"
+              alt="" 
+              className="w-full rounded-[30px] h-[342px] object-cover"
             />
             <p className="text-[11px] my-2.5">
               Students explored charming Bath with its Georgian architecture and
@@ -73,11 +73,11 @@ const InterRelationActivities = () => {
           </div>
           <div className="p-2.5 border border-[#f2f3f5] rounded-[30px]">
             <Image
-              src="/inter-relation/activities/image-5.png"
+              src="https://truthful-cabbage-82fd27e8f6.media.strapiapp.com/gemini_2_88272e6ebd.webp"
               width={408}
               height={275}
               alt=""
-              className="w-full"
+              className="w-full rounded-[30px]"
             />
             <p className="text-[11px] my-2.5">
               Students of Summer School programmes, received certificates on

@@ -183,11 +183,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Candidates must have passed the 10+2 or equivalent examination with Physics and Mathematics as compulsory subjects, along with one of the following: Chemistry, Biology, a Technical Vocational subject, Computer Science, Information Technology, Informatics Practices, Engineering Graphics, or Business Studies, with at least 45% aggregate marks. Alternatively, candidates may have passed the 10+3 Diploma Examination with Mathematics as a compulsory subject and at least 45% aggregate marks.`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 1,90,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 1,90,000`,
+        // },
       ],
     },
   ],

@@ -170,11 +170,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent from any recognised board/university in any stream with Physics, Chemistry, Biology with minimum 50% aggregate marks.`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 1,58,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 1,58,000`,
+        // },
       ],
     },
   ],

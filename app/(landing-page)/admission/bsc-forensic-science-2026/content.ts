@@ -191,11 +191,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Passed the 10+2 or equivalent examination from any recognised board/ University in Science (Physics/Chemistry/Biology/Mathematics) with minimum 50% aggregate marks.`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 1,30,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 1,30,000`,
+        // },
       ],
     },
     {
@@ -214,11 +214,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Passed the 10+2 or equivalent examination from any recognised board/ University in Science (Physics/Chemistry/Biology/Mathematics) with minimum 50% aggregate marks.`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 1,30,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 1,30,000`,
+        // },
       ],
     },
   ],

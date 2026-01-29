@@ -96,7 +96,7 @@ const PhdImportantNotification = () => {
                   className="flex items-center gap-2.5 font-semibold"
                 >
                   <Image
-                    src="/landingpage/phd/envelope.svg"
+                    src="/wp-content/landingpage/phd-2026/envelope.svg"
                     width={12}
                     height={12}
                     alt="Mail"
@@ -108,7 +108,7 @@ const PhdImportantNotification = () => {
                   className="flex items-center gap-2.5 font-semibold"
                 >
                   <Image
-                    src="/landingpage/phd/phone.svg"
+                    src="/wp-content/landingpage/phd-2026/phone.svg"
                     width={12}
                     height={12}
                     alt="Mail"

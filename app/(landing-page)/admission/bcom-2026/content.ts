@@ -199,11 +199,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognised board/university with minimum 50% aggregate marks.`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs. 1,40,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs. 1,40,000`,
+        // },
       ],
     },
     {
@@ -222,11 +222,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognised board/university with minimum 50% aggregate marks.`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs. 1,40,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs. 1,40,000`,
+        // },
       ],
     },
     {
@@ -245,11 +245,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognised board/university with minimum 50% aggregate marks.`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs. 1,65,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs. 1,65,000`,
+        // },
       ],
     },
     {
@@ -268,11 +268,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognised board/university with minimum 50% aggregate marks. `,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs. 1,65,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs. 1,65,000`,
+        // },
       ],
     },
     {
@@ -290,11 +290,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Passed 10+2 or equivalent examination from any recognised board/university with minimum 50% aggregate marks. `,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs. 1,25,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs. 1,25,000`,
+        // },
       ],
     },
   ],

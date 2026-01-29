@@ -187,11 +187,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Candidates must have passed 10+2 or an equivalent recognised examination with at least 50% aggregate in PCM, PCB, or PCMB.`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,40,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 2,40,000`,
+        // },
       ],
     },
     {
@@ -209,11 +209,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Candidates must have passed 10+2 or an equivalent recognised examination with at least 50% aggregate in PCM, PCB, or PCMB.`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,40,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 2,40,000`,
+        // },
       ],
     },
     {
@@ -231,11 +231,11 @@ export const specialisationData: SpecialisationSection = {
           title: "Eligibility",
           desc: `Candidates must have passed 10+2 or an equivalent recognised examination with at least 50% aggregate in PCM, PCB, or PCMB.`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,40,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 2,40,000`,
+        // },
       ],
     },
   ],

@@ -526,7 +526,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                               menu.menuclass || ""
                             }`}
                           >
-                            <Link href={menu?.url}>{menu?.title}</Link>
+                            <Link href={menu?.url} target="_blank">{menu?.title}</Link>
                           </li>
                         );
                       })}
