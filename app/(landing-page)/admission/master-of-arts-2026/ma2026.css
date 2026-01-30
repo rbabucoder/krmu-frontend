@@ -4,6 +4,43 @@
 @custom-variant dark (&:is(.dark *));
 
 @layer utilities {
+  .flash-border .heroBannerForm__form {
+    border: 1px solid red;
+    border-radius: 15px;
+  }
+
+  .MainSection {
+    background-image: url("/wp-content/landingpage/master-of-arts-2026/ma.webp") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (max-width: 640px) {
+    .MainSection {
+      background-image: none !important;
+      background-color: #1f0b07;
+    }
+    .MainSection .container-1 {
+      background-image: url("/wp-content/landingpage/master-of-arts-2026/ma-mob.webp") !important;
+      background-size: cover;
+      background-position: center;
+      height: 324px;
+      display: flex;
+      align-items: end;
+      justify-content: center;
+    }
+  }
+  @media (max-width: 640px) {
+    .testislideNext {
+      top: 110% !important;
+      right: 20%;
+    }
+    .testislidePrev {
+      top: 110% !important;
+      left: 20%;
+    }
+  }
   .npf_wgts iframe {
     box-shadow: none !important;
   }
@@ -31,9 +68,10 @@
   .heroBannerForm-header h3 span {
     display: block;
     font-weight: 900;
-    font-size: 24px;
+    font-size: 21px;
     line-height: 1.1;
-    margin-top: 5px;
+    margin-top: 14px;
+    margin-bottom: 8px;
   }
   .prominentrecruitShadow {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;

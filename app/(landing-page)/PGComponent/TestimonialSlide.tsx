@@ -47,7 +47,7 @@ const TestimonialSlide = ({ data }: Props) => {
 
                   {/* Author */}
                   <div className="flex items-center gap-3">
-                    <div className="w-9 h-9 rounded-full bg-gray-300 shrink-0" />
+                    {/* <div className="w-9 h-9 rounded-full bg-gray-300 shrink-0" /> */}
                     <span
                       className={`text-sm ${
                         item.featured ? "text-white" : "text-gray-600"
@@ -61,8 +61,8 @@ const TestimonialSlide = ({ data }: Props) => {
             ))}
         </CarouselContent>
 
-        <CarouselPrevious className="cursor-pointer top-[110%] left-[20%] md:left-0" />
-        <CarouselNext className="cursor-pointer top-[110%] right-[20%] md:right-0" />
+        <CarouselPrevious className="cursor-pointer testislidePrev" />
+        <CarouselNext className="cursor-pointer testislideNext" />
       </Carousel>
     </>
   );

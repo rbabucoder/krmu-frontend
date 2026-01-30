@@ -28,8 +28,14 @@ import {
 
 export const heroContent: HeroContent = {
   title: `
-            Deepen Your Legal Expertise that’ll <br /> Define Your Future <br />
-          with  <span class="text-[#e31e24]">LL.M.</span> Programmes 2026-27<br />
+            <span class="sm:hidden"><span class="text-[#fcd404] text-3xl md:text-5xl lg:text-8xl font-bold">
+        LLM
+      </span> Admissions Open 2026–27</span>
+      <span class="hidden sm:block">
+             ADMISSIONS <br>
+OPEN FOR<br><span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">LLM </span> <br>
+
+ Programmes 2026-27</span>
           `,
   description: "Advance Your Legal Expertise. Lead with Specialisation.",
   primaryCta: {
@@ -47,6 +53,7 @@ export const heroContent: HeroContent = {
     height: 400,
   },
   bgImage: "/landingpage/llm-2026/llm.webp",
+  ugHeroClsName: "MainSection",
 };
 
 export const placementStatsContent: PlacementStatsContent = {
@@ -70,7 +77,7 @@ export const placementStatsContent: PlacementStatsContent = {
     },
   ],
   image: {
-    src: "/landingpage/mca-2026/dummy.png",
+    src: "/wp-content/landingpage/mba-2026/statsimg.webp",
     alt: "Graduate Placement",
     width: 300,
     height: 480,
@@ -82,19 +89,43 @@ export const prominentRecruiterContent: ProminentRecruiterContent = {
 
   logos: [
     {
-      src: "/landingpage/bba-2026/prominent/accenture.png",
+      src: "https://krmangalam.edu.in/landingpage/llm-2025/assets/cheil.svg",
       alt: "Accenture",
       width: 160,
       height: 40,
     },
     {
-      src: "/landingpage/bba-2026/prominent/accenture.png",
+      src: "https://krmangalam.edu.in/landingpage/llm-2025/assets/provident.svg",
       alt: "Accenture",
       width: 160,
       height: 40,
     },
     {
-      src: "/landingpage/bba-2026/prominent/accenture.png",
+      src: "https://krmangalam.edu.in/landingpage/llm-2025/assets/trinty.svg",
+      alt: "Accenture",
+      width: 160,
+      height: 40,
+    },
+    {
+      src: "https://krmangalam.edu.in/landingpage/llm-2025/assets/trilegal.svg",
+      alt: "Accenture",
+      width: 160,
+      height: 40,
+    },
+    {
+      src: "https://krmangalam.edu.in/landingpage/llm-2025/assets/centrik.svg",
+      alt: "Accenture",
+      width: 160,
+      height: 40,
+    },
+    {
+      src: "https://krmangalam.edu.in/landingpage/llm-2025/assets/khaitan.svg",
+      alt: "Accenture",
+      width: 160,
+      height: 40,
+    },
+    {
+      src: "https://krmangalam.edu.in/landingpage/llm-2025/assets/lawrato.svg",
       alt: "Accenture",
       width: 160,
       height: 40,
@@ -253,33 +284,33 @@ export const aboutUsContent: AboutUsContent = {
 };
 
 export const industryExpertsContent: IndustryExpertsContent = {
-  title: "Learn from Industry Leaders @ KRMU!",
+  title: "Learn from Industry Leaders",
   description:
     "K.R. Mangalam University takes pride in collaborating with the industry leaders who offer top-notch hands-on learning experiences to students.",
 
   experts: [
     {
-      src: "/landingpage/mca-2026/ibm.webp",
+      src: "https://wp.krmangalam.edu.in/wp-content/uploads/2023/11/Group-488.webp",
       alt: "IBM",
-      width: 300,
+      width: 200,
       height: 200,
     },
     {
-      src: "/landingpage/mca-2026/ibm.webp",
+      src: "https://wp.krmangalam.edu.in/wp-content/uploads/2023/11/Group-489.webp",
       alt: "IBM",
-      width: 300,
+      width: 200,
       height: 200,
     },
     {
-      src: "/landingpage/mca-2026/ibm.webp",
+      src: "https://wp.krmangalam.edu.in/wp-content/uploads/2023/11/Group-490.webp",
       alt: "IBM",
-      width: 300,
+      width: 120,
       height: 200,
     },
     {
-      src: "/landingpage/mca-2026/ibm.webp",
+      src: "https://wp.krmangalam.edu.in/wp-content/uploads/2023/11/Group-491.webp",
       alt: "IBM",
-      width: 300,
+      width: 100,
       height: 200,
     },
   ],

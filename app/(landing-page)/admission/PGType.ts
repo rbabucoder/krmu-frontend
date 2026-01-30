@@ -74,6 +74,7 @@ export type HeroContent = {
   secondaryCta: HeroCTA;
   image: ImageType;
   bgImage: string;
+  ugHeroClsName: string;
 };
 // placementStats.types.ts
 

@@ -28,8 +28,14 @@ import {
 
 export const heroContent: HeroContent = {
   title: `
-            Expand Your Career Horizons with a <br />
-          <span class="text-[#e31e24]">Master’s </span> Programmes 2026-27<br />
+           <span class="sm:hidden"><span class="text-[#fcd404] text-3xl md:text-5xl lg:text-8xl font-bold">
+        M.A.
+      </span> Admissions Open 2026–27</span>
+      <span class="hidden sm:block">
+             ADMISSIONS <br>
+OPEN FOR<br><span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">M.A. </span> <br>
+
+ Programmes 2026-27</span>
           `,
   description:
     "The M.A. programmes at KRMU focus on subject expertise, practical application, and skill development, enabling graduates to excel across multiple career options or pursue further research.",
@@ -48,6 +54,7 @@ export const heroContent: HeroContent = {
     height: 400,
   },
   bgImage: "/wp-content/landingpage/master-of-arts-2026/ma.webp",
+  ugHeroClsName: "MainSection",
 };
 
 export const placementStatsContent: PlacementStatsContent = {
@@ -268,7 +275,7 @@ export const aboutUsContent: AboutUsContent = {
 };
 
 export const industryExpertsContent: IndustryExpertsContent = {
-  title: "Learn from Industry Leaders @ KRMU!",
+  title: "Learn from Industry Leaders",
   description:
     "K.R. Mangalam University takes pride in collaborating with the industry leaders who offer top-notch hands-on learning experiences to students.",
 
@@ -408,7 +415,8 @@ export const PGProgrammeCard: ProgramCardType = [
     annualFee: "Rs 1,10,000",
   },
   {
-    image: "/wp-content/landingpage/master-of-arts-2026/progs/ma-economics.webp",
+    image:
+      "/wp-content/landingpage/master-of-arts-2026/progs/ma-economics.webp",
     title: "M.A. Economics",
     description:
       "The M.A. Economics programme provides strong theoretical foundations in economic theory, quantitative analysis, and policy studies, combined with applied and research-oriented learning. It equips students with analytical, problem-solving, and data interpretation skills to pursue careers in policy research, banking, analytics, public services, and higher academic studies.",
@@ -420,7 +428,8 @@ export const PGProgrammeCard: ProgramCardType = [
     annualFee: "Rs 1,10,000",
   },
   {
-    image: "/wp-content/landingpage/master-of-arts-2026/progs/ma-political-science.webp",
+    image:
+      "/wp-content/landingpage/master-of-arts-2026/progs/ma-political-science.webp",
     title: "M.A. Political Science",
     description:
       "The M.A. Political Science programme offers in-depth understanding of political theory, governance, international relations, and public policy through critical and analytical learning. It develops research, analytical, and policy-evaluation skills, preparing students for careers in civil services, public administration, research organisations, think tanks, and advanced academic pursuits.",
@@ -432,7 +441,8 @@ export const PGProgrammeCard: ProgramCardType = [
     annualFee: "Rs 1,15,000",
   },
   {
-    image: "/wp-content/landingpage/master-of-arts-2026/progs/ma-applied-psychology.webp",
+    image:
+      "/wp-content/landingpage/master-of-arts-2026/progs/ma-applied-psychology.webp",
     title: "M.A. Applied Psychology",
     description:
       "The M.A. Applied Psychology programme blends strong theoretical foundations with practical training in psychological assessment, methodologies, and mental processes. It equips students with essential analytical, interpersonal, and professional skills to interpret human behaviour, address real-world challenges, and build careers in psychology while promoting mental health awareness.",

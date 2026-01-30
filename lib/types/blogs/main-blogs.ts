@@ -18,6 +18,7 @@ export interface MainBlogs {
   excerpt: {
     rendered: string;
   };
+  modified_gmt: string
 }
 
 export type BlogSEOShareImage = {

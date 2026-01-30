@@ -27,12 +27,16 @@ import {
 } from "../PGType";
 
 export const heroContent: HeroContent = {
-  title: `
-            Learn Today To Make A Mark On Tomorrow <br />
-          with  <span class="text-[#e31e24]">MBA </span> Programmes 2026-27<br />
+  title: `<span class="sm:hidden"><span class="text-[#fcd404] text-3xl md:text-5xl lg:text-8xl font-bold">
+        MBA
+      </span> Admissions Open 2026–27</span>
+      <span class="hidden sm:block">
+             ADMISSIONS <br>
+OPEN FOR<br><span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">MBA </span> <br>
+
+ Programmes 2026-27</span>
           `,
-  description:
-    "The MBA courses are structured not just for comprehending management principles but to develop the vision and resilience required to lead an era of constant change.",
+  description: `Learn from the Top 1% of industry experts from EY, IIDE,<br /> and IBM with our MBA programme`,
   primaryCta: {
     label: "Apply Now",
     href: "#",
@@ -48,6 +52,7 @@ export const heroContent: HeroContent = {
     height: 400,
   },
   bgImage: "/wp-content/landingpage/mba-2026/mba.webp",
+  ugHeroClsName: "MainSection",
 };
 
 export const placementStatsContent: PlacementStatsContent = {
@@ -274,7 +279,7 @@ export const aboutUsContent: AboutUsContent = {
 };
 
 export const industryExpertsContent: IndustryExpertsContent = {
-  title: "Learn from Industry Leaders @ KRMU!",
+  title: "Learn from Industry Leaders",
   description:
     "K.R. Mangalam University takes pride in collaborating with the industry leaders who offer top-notch hands-on learning experiences to students.",
 

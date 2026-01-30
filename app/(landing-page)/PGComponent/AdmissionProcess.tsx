@@ -45,7 +45,7 @@ export default function AdmissionProcess({
         </div>
 
         {/* Steps */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-5 sm:gap-10">
           {steps.map((item) => (
             <div key={item.step}>
               <span className="text-6xl sm:text-7xl font-bold text-[#7AA7D6] block mb-4">

@@ -10,10 +10,10 @@ type Props = {
 
 const PlacementStats = ({ data }: Props) => {
   return (
-    <section className="w-full py-12 md:py-16 lg:py-20 px-4 bg-[#fafafa]">
+    <section className="w-full py-12 md:py-16 lg:py-20 px-4 bg-[#fafafa] hidden sm:block">
       <div className="max-w-[1400px] mx-auto flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
         {/* LEFT CONTENT */}
-        <div className="w-full lg:w-3/5 grid grid-cols-1 sm:grid-cols-2 gap-y-12 sm:gap-y-16 gap-x-8 sm:gap-x-12 relative">
+        <div className="w-full lg:w-3/5 grid grid-cols-2 gap-y-12 sm:gap-y-16 gap-x-8 sm:gap-x-12 relative">
           {data?.stats &&
             data?.stats.map((item, index) => (
               <div key={index} className="relative text-center sm:text-left">

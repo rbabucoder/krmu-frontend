@@ -8,7 +8,7 @@ type Props = {
 
 const IndustryExpertCard = ({ data }: Props) => {
   return (
-    <div className="bg-white hover:bg-[#0060aa] transition-all duration-200 h-[320px] md:h-[350px] flex items-center justify-center relative rounded-[10px] group">
+    <div className="bg-white  sm:h-[320px] md:min-h-[250px] h-full flex items-center justify-center relative rounded-[10px] group p-2.5 sm:p-0">
       
       <Image
         src={data.src}
@@ -23,7 +23,7 @@ const IndustryExpertCard = ({ data }: Props) => {
         (pos, i) => (
           <span
             key={i}
-            className={`absolute ${pos} p-2 text-xl text-black group-hover:text-white transition-all duration-200`}
+            className={`absolute ${pos} p-2 text-xl text-black group-hover:text-white transition-all duration-200 hidden sm:block`}
           >
             +
           </span>

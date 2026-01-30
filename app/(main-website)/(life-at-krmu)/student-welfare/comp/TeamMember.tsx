@@ -66,7 +66,7 @@ const TeamMember = () => {
             <span className="font-semibold">Ms. Ankita</span>
             <span className="text-sm">Student Success Manager</span>
           </div>
-          <div className="w-full flex flex-col justify-center items-center">
+          {/* <div className="w-full flex flex-col justify-center items-center">
             <Image
               src="/student-welfare/team-member/isha.webp"
               width={150}
@@ -76,6 +76,17 @@ const TeamMember = () => {
             />
             <span className="font-semibold">Ms. Isha Sharma</span>
             <span className="text-sm">Event Manager</span>
+          </div> */}
+            <div className="w-full flex flex-col justify-center items-center">
+            <Image
+              src="/student-welfare/team-member/prav.jpeg"
+              width={150}
+              height={150}
+              className="mb-2.5 rounded-full"
+              alt="Puneet"
+            />
+            <span className="font-semibold">Ms. Pravanya Batra</span>
+            <span className="text-sm">DSW Coordinator</span>
           </div>
           {/* <div className="w-full flex flex-col justify-center items-center">
             <Image

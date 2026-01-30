@@ -27,8 +27,8 @@ import {
 } from "../PGType";
 
 export const heroContent: HeroContent = {
-  title: `Click, Code & Conquer <br />
-          with  <span class="text-[#e31e24]">MCA </span> Programmes 2026-27<br />
+  title: `<span>Click, Code & Conquer <br />
+          with  <span class="text-[#e31e24]">MCA </span> Programmes 2026-27</span>
           `,
   description:
     "The MCA courses are meticulously prepared to enable students to comprehend complex coding processes that, in turn, lead to a successful career path. ",
@@ -47,6 +47,7 @@ export const heroContent: HeroContent = {
     height: 400,
   },
   bgImage: "/wp-content/landingpage/mca-2026/mca.webp",
+  ugHeroClsName: "MainSection"
 };
 
 export const placementStatsContent: PlacementStatsContent = {
@@ -70,7 +71,7 @@ export const placementStatsContent: PlacementStatsContent = {
     },
   ],
   image: {
-    src: "/wp-content/landingpage/mca-2026/uni-stats.webp",
+    src: "/wp-content/landingpage/mba-2026/statsimg.webp",
     alt: "Graduate Placement",
     width: 300,
     height: 480,
@@ -261,7 +262,7 @@ export const aboutUsContent: AboutUsContent = {
 };
 
 export const industryExpertsContent: IndustryExpertsContent = {
-  title: "Learn from Industry Leaders @ KRMU!",
+  title: "Learn from Industry Leaders",
   description:
     "K.R. Mangalam University takes pride in collaborating with the industry leaders who offer top-notch hands-on learning experiences to students.",
 

@@ -62,6 +62,8 @@ const CommonBlogLayout = async ({
 
   const pageNumbers = getPageNumbers(totalPages, currentPage);
 
+
+
   return (
     <>
       <div className={mainBlogClass || ""}>
@@ -72,6 +74,7 @@ const CommonBlogLayout = async ({
             excerpt={blog?.excerpt?.rendered}
             slug={blog?.slug}
             imgId={blog?.featured_media}
+            date={blog?.modified_gmt}
           />
         ))}
       </div>

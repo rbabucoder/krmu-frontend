@@ -14,7 +14,7 @@ export async function getAllBlogsByPerPageOrCategorySlug(
     const params = new URLSearchParams({
       per_page: String(num_of_blogs),
       page: String(page),
-      _fields: "id,slug,title,featured_media,content,excerpt",
+      _fields: "id,slug,title,featured_media,content,excerpt,modified_gmt",
     });
 
     let categoryId: number | null = null;

@@ -7,9 +7,10 @@ type Props = {
   excerpt: string;
   slug: string;
   imgId: number;
+  date: string;
 };
 
-const CommonBlogCard = async ({ title, excerpt, slug, imgId }: Props) => {
+const CommonBlogCard = async ({ title, excerpt, slug, imgId, date }: Props) => {
   let imgUrl = await getBlogImageById(imgId);
 
   // if (imgUrl) {
@@ -22,6 +23,13 @@ const CommonBlogCard = async ({ title, excerpt, slug, imgId }: Props) => {
 
   if (!imgUrl) return null;
 
+  const postDate = new Date(date).toLocaleDateString("en-IN", {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+  });
+  console.log("postDate", postDate);
+
   return (
     <div className="w-full">
       <Link
@@ -31,7 +39,8 @@ const CommonBlogCard = async ({ title, excerpt, slug, imgId }: Props) => {
         target="_blank"
       >
         <div className="p-2.5" data-test={imgUrl}>
-          <div>
+          <div className="relative">
+            <span className="absolute top-0 right-0 bg-red-600 text-white p-2.5 rounded-tr-[24px] rounded-bl-[24px]">{postDate}</span>
             {normalizedImgUrl && (
               <Image
                 src={normalizedImgUrl}

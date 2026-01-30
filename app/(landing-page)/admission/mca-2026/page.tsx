@@ -61,8 +61,15 @@ export async function generateMetadata(): Promise<Metadata> {
 
 const page = () => {
   const mcaFormId = mca2026Id;
-  const { title, description, primaryCta, secondaryCta, image, bgImage } =
-    heroContent;
+  const {
+    title,
+    description,
+    primaryCta,
+    secondaryCta,
+    image,
+    bgImage,
+    ugHeroClsName,
+  } = heroContent;
   const businessData = businessHubData;
   const faqData = faqSectionData;
   const lifeData = lifeAsPhDScholarData;
@@ -89,6 +96,7 @@ const page = () => {
         image={image}
         bgImage={bgImage}
         formId={mcaFormId}
+        ugHeroClsName={ugHeroClsName}
       />
       <PlacementStats data={placementData} />
       <ProminentRecruiter data={prominentData} />

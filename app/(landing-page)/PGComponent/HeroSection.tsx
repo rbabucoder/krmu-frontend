@@ -12,8 +12,9 @@ type Props = {
   image: ImageType;
   bgImage: string;
   formId: string;
+  ugHeroClsName: string;
 };
-
+ 
 const HeroSection = ({
   title,
   description,
@@ -22,20 +23,21 @@ const HeroSection = ({
   image,
   bgImage,
   formId,
+  ugHeroClsName,
 }: Props) => {
   return (
     <section
-      className="py-12 md:py-16 lg:py-20"
-      style={{
-        background: `url(${bgImage})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-      }}
+      className={`pb-10 sm:py-20 md:pt-14 md:pb-14 ${ugHeroClsName || ""}`}
+      // style={{
+      //   background: `url(${bgImage})`,
+      //   backgroundSize: "cover",
+      //   backgroundRepeat: "no-repeat",
+      //   backgroundPosition: "center",
+      // }}
     >
-      <div className="max-w-[1400px] mx-auto w-full px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+      <div className="max-w-[1400px] mx-auto w-full flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
         {/* Left Content */}
-        <div className="w-full lg:w-2/3 text-center lg:text-left">
+        <div className="w-full lg:w-2/3 text-center lg:text-left px-4 container-1 md:px-0">
           <div className="max-w-[600px] w-full">
             <h1
               className="text-3xl sm:text-4xl lg:text-5xl text-white font-semibold leading-tight lg:leading-[1.3] mb-4"
@@ -46,14 +48,15 @@ const HeroSection = ({
 
             {/* <p className="text-[#9ba2ac] text-base sm:text-lg mb-6"> */}
             <p
-              className="text-white text-base sm:text-lg mb-6"
+              className="text-white text-base sm:text-lg mb-6 hidden sm:block"
               dangerouslySetInnerHTML={{
                 __html: description,
               }}
+              
             />
           </div>
 
-          <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8 justify-center lg:justify-start">
+          <div className="hidden sm:flex flex-col sm:flex-row items-center gap-4 sm:gap-8 justify-center lg:justify-start">
             {/* Primary CTA */}
             <Link
               href={primaryCta.href}
@@ -78,8 +81,51 @@ const HeroSection = ({
           </div>
         </div>
 
+        <div className="grid grid-cols-2 sm:hidden text-center text-white">
+          <div className="border-r border-white p-2.5">
+            <h3 className="text-xl font-semibold ">56.6 LPA</h3>
+            <p className="text-xs">Highest Package </p>
+          </div>
+          <div className="p-2.5">
+            <h3 className="text-xl font-semibold">Upto 27Cr</h3>
+            <p className="text-xs">Scholarship </p>
+          </div>
+          <div className="border-t border-r border-white p-2.5">
+            <h3 className="text-xl font-semibold">92%</h3>
+            <p className="text-xs">Placement Record</p>
+          </div>
+          <div className="p-2.5 border-t border-white">
+            <h3 className="text-xl font-semibold">800+</h3>
+            <p className="text-xs">Recruiters </p>
+          </div>
+        </div>
+
+        <div className="flex sm:hidden flex-col items-center gap-4 sm:gap-8 justify-center lg:justify-start container-2">
+          {/* Primary CTA */}
+          <Link
+            href={primaryCta.href}
+            className="flex items-center justify-between w-full sm:max-w-[280px] py-1 px-2 gap-2 border border-white rounded-full"
+          >
+            <span className="w-4/5 text-center text-white text-sm sm:text-base">
+              {primaryCta.label}
+            </span>
+            <div className="bg-white p-2 sm:p-3 rounded-full">
+              <MoveUpRight className="text-[#0060aa]" size={24} />
+            </div>
+          </Link>
+
+          {/* Secondary CTA */}
+          <Link
+            href={secondaryCta.href}
+            className="text-white text-sm sm:text-base flex items-center gap-2 sm:gap-4"
+          >
+            {secondaryCta.label}
+            <ChevronRight size={18} />
+          </Link>
+        </div>
+
         {/* Right Image */}
-        <div className="w-full lg:w-1/3">
+        <div className="w-full lg:w-1/3 px-4 md:px-0">
           {/* {image.src && (
             <Image
               src={image.src}
@@ -95,7 +141,8 @@ const HeroSection = ({
               <div className="heroBannerForm-header">
                 <h3 className="mb-0">
                   <strong>
-                    Apply Today for <span className="uppercase">K.R. Mangalam University</span>
+                    Apply Today for{" "}
+                    <span className="uppercase">K.R. Mangalam University</span>
                   </strong>
                 </h3>
               </div>
