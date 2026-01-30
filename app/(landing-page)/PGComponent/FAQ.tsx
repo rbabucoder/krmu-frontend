@@ -15,9 +15,9 @@ type Props = {
 const FAQSection = ({ data }: Props) => {
   return (
     <section className="py-20 px-4 bg-white">
-      <div className="max-w-[1400px] mx-auto w-full flex gap-10">
+      <div className="max-w-[1400px] mx-auto w-full flex flex-col lg:flex-row gap-10">
         {/* Header */}
-        <div className="w-2/5">
+        <div className="w-full lg:w-2/5">
           <div className="mb-12">
             <p className="text-[#003d7a] text-sm font-medium mb-2">
               {data.eyebrow}
@@ -37,7 +37,7 @@ const FAQSection = ({ data }: Props) => {
             />
           </div>
         </div>
-        <div className="w-3/5">
+        <div className="w-full lg:w-3/5">
           {/* FAQ Accordion */}
           <Accordion
             type="single"

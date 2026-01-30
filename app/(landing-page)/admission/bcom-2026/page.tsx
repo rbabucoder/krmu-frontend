@@ -89,6 +89,8 @@ const page = () => {
         marqueeData={heroMarqData}
         heroBg={heroContent?.heroBg}
         middleImg={heroContent?.middleImg}
+        mobileImg={heroContent?.mobileImg}
+        lpclName={heroContent?.lpclName}
       />
       <Counter counters={counters} />
       <ProminentRecruiter recruiters={recruiters} />

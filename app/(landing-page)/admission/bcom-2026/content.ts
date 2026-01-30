@@ -35,11 +35,13 @@ export const Hero: HeroContent = {
   desc: `Choose from specialised, industry-backed B.Com. programmes and <br /> step confidently into the world of business and finance`,
   heroBg: "/wp-content/landingpage/bcom-2026/bcom.webp",
   middleImg: "",
+  mobileImg: "",
+  lpclName: "MainSection",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
   messages: [
-       "₹56.6 LPA Highest Package",
+    "₹56.6 LPA Highest Package",
     "₹27 Cr Scholarships",
     "800+ Recruiters",
     "18K+ Alumni",

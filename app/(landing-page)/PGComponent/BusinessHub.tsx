@@ -52,7 +52,17 @@ const BusinessHub = ({ data, formId }: Props) => {
 
             <div>
               {formId && (
-                <NoPaperFormsWidget widgetId={formId} height="640px" />
+                <div className="heroBannerForm__form">
+                  <div className="heroBannerForm-header">
+                    <h3 className="mb-0">
+                      <strong>
+                        Apply Today for <span>K.R. Mangalam University</span>
+                      </strong>
+                    </h3>
+                  </div>
+
+                  <NoPaperFormsWidget widgetId={formId} height="480px" />
+                </div>
               )}
             </div>
           </div>
