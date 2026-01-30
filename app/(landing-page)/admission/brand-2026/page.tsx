@@ -101,7 +101,7 @@ const page = () => {
       <Specialisation data={specialise} />
       <Opportunity data={opport} />
       <FeeStructureTable />
-      <Testimonials data={testiomonial} />
+      {/* <Testimonials data={testiomonial} /> */}
       {/* <ScholarResearchImpact data={scholarData} /> */}
       <ComeToLife data={worldLifeData} />
       <LifeAsPhDScholar data={lifeData} />
