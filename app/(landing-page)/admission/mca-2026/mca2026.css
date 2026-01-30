@@ -4,6 +4,34 @@
 @custom-variant dark (&:is(.dark *));
 
 @layer utilities {
+  .heroBannerForm__form {
+    background: #fff;
+    width: 100%;
+    border-radius: 10px;
+    padding-top: 40px;
+
+    height: 583px;
+    position: relative;
+  }
+
+  .heroBannerForm-header {
+    text-align: center;
+    font-family: "Poppins", sans-serif !important;
+  }
+
+  .heroBannerForm-header h3 {
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 1;
+  }
+  .heroBannerForm-header h3 span {
+    display: block;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 1.1;
+    margin-top: 5px;
+  }
+
   .prominentrecruitShadow {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     padding: 20px;
@@ -39,11 +67,10 @@
     animation: marquee 18s linear infinite;
   }
 
-  .prominent_card:nth-child(even) .prom_img_container{
+  .prominent_card:nth-child(even) .prom_img_container {
     background-color: #fef7ec;
   }
-  .prominent_card:nth-child(odd) .prom_img_container{
+  .prominent_card:nth-child(odd) .prom_img_container {
     background-color: #f4f2fc;
   }
-
 }

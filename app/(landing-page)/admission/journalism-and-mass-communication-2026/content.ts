@@ -32,7 +32,7 @@ export const Hero: HeroContent = {
       PROGRAMMES 2026-27
       </span>
     `,
-  desc: `The JMC course focuses on developing critical thinking, communication skills, creativity, and social awareness, preparing students for the fast-changing world of media, communication and storytelling`,
+  desc: `The JMC course focuses on developing critical thinking, communication skills, <br />creativity, and social awareness, preparing students for the fast-changing world of media, communication and storytelling`,
   heroBg: "/wp-content/landingpage/sjmc-2026/sjmc.webp",
   // middleImg: "/landingpage/law-2026/law.webp",
   middleImg: "",
@@ -100,7 +100,7 @@ export const prominentRecruiters: ProminentRecruit[] = [
 ];
 
 export const whyKRM: WhyKRMSection = {
-  heading: "Why Choose KRMU for the Journalism & Mass Communication Courses?",
+  heading: "Why Choose KRMU for the JMC Courses?",
   subheading: "Sophisticated Story-telling for Smart Citizenry",
   content: `The K.R. Mangalam University’s Journalism & Mass Communication programmes are designed for students passionate about news, storytelling, and media innovation. These NEP-compliant programmes equip students with skills in journalism, broadcasting, digital media, and public relations, ensuring they are industry-ready from day one. Additionally, students gain valuable practical experience by participating in intensive live projects, expert guest lectures, networking sessions, and internship programmes.`,
   imgUrl: `/landingpage/common/whykrmtest.png`,

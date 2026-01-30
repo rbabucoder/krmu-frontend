@@ -9,7 +9,7 @@ const ProminentRecruiterCard = ({ data }: Props) => {
   return (
     <div className="w-[260px] bg-white border border-gray-200 rounded-sm overflow-hidden text-center">
       {/* Profile Image */}
-      <div className="pt-6 px-6">
+      <div className="pt-6 px-6 prominentCard">
         <Image
           src={data.profileImage.src}
           width={data.profileImage.width}

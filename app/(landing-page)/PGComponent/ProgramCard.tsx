@@ -25,7 +25,7 @@ export default function ProgramCard({
   return (
     <div className="w-full bg-white rounded-2xl shadow-sm overflow-hidden border">
       {/* Image */}
-      <div className="relative h-64 w-full">
+      <div className="relative h-72 w-full">
         <Image src={image} alt={title} fill className="object-cover" />
       </div>
 

@@ -2,13 +2,14 @@
 
 import { ArrowUpRight } from "lucide-react";
 import { PGTestimonialsBlock } from "../admission/PGType";
+import TestimonialSlide from "./TestimonialSlide";
 
 type Props = {
   data: PGTestimonialsBlock;
 };
 
 export default function Testimonials({ data }: Props) {
-  const { header, items } = data;
+  const { header } = data;
 
   return (
     <section className="bg-gradient-to-b from-[#04162E] to-[#020B18] py-20 px-4 text-white">
@@ -38,7 +39,10 @@ export default function Testimonials({ data }: Props) {
         </div>
 
         {/* Masonry Grid */}
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+        <div>
+          <TestimonialSlide data={data} />
+        </div>
+        {/* <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
           {items.map((item, i) => (
             <div
               key={i}
@@ -46,7 +50,7 @@ export default function Testimonials({ data }: Props) {
                 item.featured ? "text-white" : "text-black"
               } ${item.color}`}
             >
-              {/* Brand */}
+          
               {item.brand && (
                 <p
                   className={`font-semibold mb-4 ${
@@ -57,7 +61,7 @@ export default function Testimonials({ data }: Props) {
                 </p>
               )}
 
-              {/* Text */}
+            
               <p
                 className={`text-sm leading-relaxed mb-6 ${
                   item.featured ? "text-white/90" : "text-gray-700"
@@ -66,7 +70,7 @@ export default function Testimonials({ data }: Props) {
                 “{item.text}”
               </p>
 
-              {/* Author */}
+             
               <div className="flex items-center gap-3">
                 <div className="w-9 h-9 rounded-full bg-gray-300 shrink-0" />
                 <span
@@ -79,7 +83,7 @@ export default function Testimonials({ data }: Props) {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

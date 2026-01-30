@@ -85,7 +85,7 @@ const IndustryExperts = ({ data }: Props) => {
                 }}
               />
               <div className="flex justify-center">
-                <Link
+                {/* <Link
                   href={data.cta.href}
                   className="flex items-center justify-between max-w-2xs w-full py-0.5 px-2 gap-2 border border-white rounded-full"
                 >
@@ -98,7 +98,23 @@ const IndustryExperts = ({ data }: Props) => {
                   <span className="bg-white p-3 rounded-full w-1/5">
                     <MoveUpRight className="text-[#0060aa]" size={30} />
                   </span>
-                </Link>
+                </Link> */}
+
+                     <ScrollButton
+                  targetId="apply-section"
+                  highlightClass="flash-border"
+                  btnClass="flex items-center justify-between max-w-2xs w-full py-0.5 px-2 gap-2 border border-white rounded-full"
+                >
+                   <span
+                    className="w-4/5 text-center"
+                    dangerouslySetInnerHTML={{
+                      __html: data.cta.label,
+                    }}
+                  />
+                  <span className="bg-white p-3 rounded-full w-1/5">
+                    <MoveUpRight className="text-[#0060aa]" size={30} />
+                  </span>
+                </ScrollButton>
               </div>
             </div>
 

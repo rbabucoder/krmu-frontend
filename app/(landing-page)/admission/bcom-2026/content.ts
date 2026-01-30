@@ -184,7 +184,7 @@ export const industryExperts: IndustryExpertsSection = {
 
 export const specialisationData: SpecialisationSection = {
   subheading: `Choose your specialisation based on your interests and career goals.`,
-  heading: `Our B.Com. programmes & specialisations`,
+  heading: `Our B.Com. Programmes & Specialisations`,
   specilisationCard: [
     {
       imgUrl: "/landingpage/bcom-2026/specialisations/B.Com.-(Hons.).webp",
@@ -501,28 +501,28 @@ export const faqSectionData: FAQSectionData = {
     },
     {
       id: "item-3",
-      question: "Are internships compulsory in the B.Com programme?",
+      question: "Are internships compulsory in the B.Com. programme?",
       answer: ` Yes, internships are an integral part of the programme to ensure practical exposure and industry readiness. `,
     },
     {
       id: "item-4",
-      question: "Do the B.Com programmes offer ACCA exemptions? ",
+      question: "Do the B.Com. programmes offer ACCA exemptions? ",
       answer: `Yes, the programme is aligned to provide ACCA exemptions, subject to meeting the required academic criteria. `,
     },
     {
       id: "item-5",
-      question: "Is hostel accommodation available for B.Com students? ",
+      question: "Is hostel accommodation available for B.Com. students? ",
       answer: `Yes, K.R. Mangalam University offers secure on-campus hostel facilities for both male and female students. `,
     },
     {
       id: "item-6",
-      question: "How can I find the best B.Com colleges in Delhi? ",
+      question: "How can I find the best B.Com. colleges in Delhi? ",
       answer: `You can compare colleges based on curriculum, industry tie-ups, faculty expertise, placement records, and campus facilities. `,
     },
     {
       id: "item-7",
-      question: "Where can I pursue a B.Com in Gurgaon?",
-      answer: `You can pursue a B.Com programme at K.R. Mangalam University, Gurgaon, which offers industry-aligned curriculum and strong academic support. `,
+      question: "Where can I pursue a B.Com. in Gurgaon?",
+      answer: `You can pursue a B.Com. programme at K.R. Mangalam University, Gurgaon, which offers industry-aligned curriculum and strong academic support. `,
     },
   ],
 };

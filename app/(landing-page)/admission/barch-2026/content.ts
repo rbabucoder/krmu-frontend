@@ -30,7 +30,7 @@ export const Hero: HeroContent = {
       <br />
       PROGRAMMES 2026-27 </span>
     `,
-  desc: `From conceptual learning in classrooms to building creative constructions <br /> via immersive projects,  the B.Arch course will enable you to shape the future of architecture`,
+  desc: `From conceptual learning in classrooms to building creative constructions <br /> via immersive projects,  the B.Arch. course will enable you to shape the future of architecture`,
   heroBg: "/wp-content/landingpage/barch-2026/barch.webp",
   // middleImg: "/landingpage/law-2026/law.webp",
   middleImg: "",
@@ -102,9 +102,9 @@ export const prominentRecruiters: ProminentRecruit[] = [
 ];
 
 export const whyKRM: WhyKRMSection = {
-  heading: "What makes KRMU the Best option for the B.Arch Course?",
+  heading: "What makes KRMU the Best option for the B.Arch. Course?",
   subheading: "From Drawing Design Sketches to Building Skyscrapers",
-  content: `Developed by the expert professionals in the field, K.R. Mangalam University's five-year B.Arch programme offers architecture education through practical projects, immersive sessions, insightful workshops, and valuable insights into the intricacies of architectural planning. The university's multidisciplinary strategy aims to ensure that the holistic development of its students, who will be influencing the architectural world in the future, remains a top priority.`,
+  content: `Developed by the expert professionals in the field, K.R. Mangalam University's five-year B.Arch. programme offers architecture education through practical projects, immersive sessions, insightful workshops, and valuable insights into the intricacies of architectural planning. The university's multidisciplinary strategy aims to ensure that the holistic development of its students, who will be influencing the architectural world in the future, remains a top priority.`,
   imgUrl: `/landingpage/barch-2026/why-choose/Building.webp`,
   whyKrmCards: [
     {
@@ -136,7 +136,7 @@ export const industryExperts: IndustryExpertsSection = {
 `,
   description: `K.R. Mangalam University takes pride in collaborating with industry leaders and skill professionals who offer unparalleled hands-on learning experiences to students.`,
   cta: {
-    label: "Apply for B.Arch 2026-27",
+    label: "Apply for B.Arch. 2026-27",
     href: "#",
   },
   cards: [
@@ -166,12 +166,12 @@ export const industryExperts: IndustryExpertsSection = {
 
 export const specialisationData: SpecialisationSection = {
   subheading: ``,
-  heading: `KRMU’s B.Arch Programme`,
+  heading: `KRMU’s B.Arch. Programme`,
   specilisationCard: [
     {
       imgUrl: "/landingpage/barch-2026/specialisations/1.webp",
       title: `Bachelor of Architecture`,
-      desc: `The KRMU's Bachelor of Architecture (B.Arch) equips the students with all the necessary skills and theoretical knowledge they require to plan, design and construct structures, buildings and various functional spaces by integrating artistic aesthetics and technology in a seamless manner. This degree aims to cultivate both analytical and creative thinking, equipping students to navigate modern-world challenges while building successful careers.`,
+      desc: `The KRMU's Bachelor of Architecture (B.Arch.) equips the students with all the necessary skills and theoretical knowledge they require to plan, design and construct structures, buildings and various functional spaces by integrating artistic aesthetics and technology in a seamless manner. This degree aims to cultivate both analytical and creative thinking, equipping students to navigate modern-world challenges while building successful careers.`,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -203,7 +203,7 @@ export const opportunityData: OpportunitySection = {
   heading: "Learn From Industry Experts",
   highlight: "Opportunity That Transforms",
   cta: {
-    label: "Apply for B.Arch Programme",
+    label: "Apply for B.Arch. 2026-27",
     href: "#",
   },
 };
@@ -215,21 +215,21 @@ export const testimonialsData: TestimonialsSection = {
     {
       image: "/landingpage/barch-2026/testimonials/1.webp",
       videoUrl: "#",
-      quote: `SOAD's B.Arch program at K.R. Mangalam University is an incubator of creativity and 
+      quote: `SOAD's B.Arch. program at K.R. Mangalam University is an incubator of creativity and 
 excellence. It provided me with the platform and guidance to thrive as an aspiring 
 Architect.
 `,
       name: "Ar. Divya Kharbanda",
-      programme: "B.Arch- Design Cell, New Delhi",
+      programme: "B.Arch.- Design Cell, New Delhi",
     },
     {
       image: "/landingpage/barch-2026/testimonials/2.webp",
       videoUrl: "#",
-      quote: `As a B.Arch student, I'm inspired daily by the dynamic environment of classes, empowering 
+      quote: `As a B.Arch. student, I'm inspired daily by the dynamic environment of classes, empowering 
 me to push boundaries and innovate in architecture.
 `,
       name: "Keerti Diwedi",
-      programme: "B.Arch- Gold Medalist, Arcop Associates, New Delhi",
+      programme: "B.Arch.- Gold Medalist, Arcop Associates, New Delhi",
     },
     {
       image: "/landingpage/barch-2026/testimonials/3.webp",
@@ -301,7 +301,7 @@ export const comeToLifeData: ComeToLifeSection = {
   description: `The conceptual knowledge is imparted to students in modern smart classrooms that are equipped with interactive whiteboards and seamless tech integration. The availability of the latest software systems and powerful PCs enables students to develop skills necessary for advanced modelling and construction preparation`,
   footerText: ``,
   cta: {
-    label: "Apply for B.Arch. Programme ",
+    label: "Apply for B.Arch. 2026-27",
     href: "#",
   },
   slides: [
@@ -349,7 +349,7 @@ export const comeToLifeData: ComeToLifeSection = {
 };
 
 export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
-  heading: "Life as a B.Arch Student at KRMU",
+  heading: "Life as a B.Arch. Student at KRMU",
   description: "",
   image: {
     src: "/landingpage/common/test44.jpeg",
@@ -433,7 +433,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Begin Your Journey at K.R. Mangalam<br /> University Now`,
   description: "",
   cta: {
-    label: "Apply for B.Arch Programme",
+    label: "Apply for B.Arch. 2026-27",
     href: "#",
   },
   highlights: [

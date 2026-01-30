@@ -104,7 +104,7 @@ export const prominentRecruiters: ProminentRecruit[] = [
 export const whyKRM: WhyKRMSection = {
   heading: "Why Choose B.Sc.-CSE Programmes of KRMU? ",
   subheading: "Step Into the Future of Computing",
-  content: `K.R. Mangalam University's B.Sc. Computer Science programs offer cutting-edge curriculum developed in partnership with industry professionals. Our NEP-compliant curriculum provide students with practical, hands-on experience and global certifications to help them flourish in a fast changing technology field.`,
+  content: `K.R. Mangalam University's B.Sc. Computer Science programmes offer cutting-edge curriculum developed in partnership with industry professionals. Our NEP-compliant curriculum provide students with practical, hands-on experience and global certifications to help them flourish in a fast changing technology field.`,
   imgUrl: `/landingpage/bsc-cse-2026/why-choose/Building.webp`,
   whyKrmCards: [
     {
@@ -146,7 +146,7 @@ export const industryExperts: IndustryExpertsSection = {
       title: "AI and Machine Learning Courses",
     },
     {
-      imgUrl: "/landingpage/bsc-cse-2026/learn-from/imaginxp.svg",
+      imgUrl: "/wp-content/landingpage/bsc-cse-2026/learn-from/imaginxp.svg",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
@@ -198,7 +198,7 @@ export const specialisationData: SpecialisationSection = {
           desc: `3 Years (NEP-compliant)`,
         },
         {
-          iconUrl: "/wp-content/landingpage/common/duration.svg",
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
           desc: `10+2 in any stream with Mathematics, Statistics, Computer, or Information Science with at least 50% marks.`,
         },
@@ -441,8 +441,8 @@ export const faqSectionData: FAQSectionData = {
     {
       id: "item-1",
       question:
-        "What are the benefits of enrolling in a B.Sc. Computer Science program that complies with NEP?",
-      answer: `NEP-compliant programs provide a customised educational experience by providing different departure alternatives, transdisciplinary learning, and flexibility in duration.
+        "What are the benefits of enrolling in a B.Sc. Computer Science programme that complies with NEP?",
+      answer: `NEP-compliant programmes provide a customised educational experience by providing different departure alternatives, transdisciplinary learning, and flexibility in duration.
 `,
     },
     {

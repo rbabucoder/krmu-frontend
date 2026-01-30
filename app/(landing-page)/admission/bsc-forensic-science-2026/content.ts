@@ -179,7 +179,7 @@ export const specialisationData: SpecialisationSection = {
       imgUrl:
         "/landingpage/bsc-forensic-science-2026/specialisations/B.Sc.-(Hons.)-Forensic-Science.webp",
       title: `B.Sc. (Hons.) Forensic Science`,
-      desc: `The Bachelor of Science (B.Sc.) Hons. in Forensic Science offered by KRMU is a multidisciplinary undergraduate programme designed to prepare students for careers in crime investigation and forensic analysis. The meticulously drafted course combines principles of science, law, and technology to help students understand how scientific methods are applied to solve crimes. Students study core subjects such as forensic biology, forensic chemistry, toxicology, fingerprint analysis, questioned documents, and criminology.`,
+      desc: `The Bachelor of Science (B.Sc.) Hons. in Forensic Science offered by KRMU is a multidisciplinary undergraduate programme designed to prepare students for careers in crime investigation and forensic analysis. The meticulously crafted course combines principles of science, law, and technology to help students understand how scientific methods are applied to solve crimes. Students study core subjects such as forensic biology, forensic chemistry, toxicology, fingerprint analysis, questioned documents, and criminology.`,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",

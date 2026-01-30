@@ -28,7 +28,7 @@ export const Hero: HeroContent = {
       PROGRAMMES 2026-27 
     `,
   desc: `Discover the foundation of agricultural excellence with K.R. Mangalam University’s <br />
-   four-year agriculture programme, designed to build strong agrarian knowledge, <br />practical expertise, and an understanding of modern farming practices.`,
+   four-year agriculture programme, designed to build strong agrarian knowledge, <br />practical expertise, and an understanding of modern farming practices`,
   heroBg: "/wp-content/landingpage/bsc-agriculture-2026/bsc-agriculture.webp",
   // middleImg: "/landingpage/law-2026/law.webp",
   middleImg: "",
@@ -210,20 +210,17 @@ particularly in hostel life. Now a farm supervisor, I pursue my passion for natu
     {
       image: "/landingpage/bsc-agriculture-2026/testimonials/3.webp",
       videoUrl: "#",
-      quote: `At SOAS, BSc (H) Agriculture student Aayushi thrives on professor-led activities and 
-competitions. Field trips offer real-world insights into agriculture.
-`,
+      quote: `At SOAS, as a B.Sc. (Hons.) Agriculture student, I thrive on professor-led activities and 
+competitions. Field trips offered me real-world insights into agriculture.`,
       name: "Aayushi",
       programme: "",
     },
     {
       image: "/landingpage/bsc-agriculture-2026/testimonials/4.webp",
       videoUrl: "#",
-      quote: `K.R. Mangalam University provides us with the facilities to build live projects from lab to field 
-and field to lab to increase students' knowledge and skills with the latest technologies and 
-models.
-`,
-      name: "Sagar  ",
+      quote: `K.R. Mangalam University provides us with the facilities to build live projects from the lab to the field and field to lab 
+      to increase students' knowledge and skills with the latest technologies and models.`,
+      name: "Sagar ",
       programme: "",
     },
   ],

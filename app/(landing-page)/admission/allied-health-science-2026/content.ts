@@ -170,12 +170,12 @@ export const industryExperts: IndustryExpertsSection = {
 
 export const specialisationData: SpecialisationSection = {
   subheading: `Choose your specialisation based on your interests and career goals.`,
-  heading: `Our medical & allied sciences programmes & specialisations`,
+  heading: `Our Medical & Allied Sciences Programmes & Specialisations`,
   specilisationCard: [
     {
       imgUrl: "/landingpage/allied-health-science-2026/specialisations/s1.webp",
       title: `B.Sc. (Hons.) Emergency Medical Technology with Academic & Industry support of Emversity`,
-      desc: `•	Acquire vital skills in emergency medical care, life-saving techniques, and trauma management to excel in the fast-paced world of emergency healthcare.`,
+      desc: `Acquire vital skills in emergency medical care, life-saving techniques, and trauma management to excel in the fast-paced world of emergency healthcare.`,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -280,7 +280,7 @@ enriching. The university offers a supportive learning environment, experienced 
     {
       image: "/landingpage/allied-health-science-2026/testimonials/3.webp",
       videoUrl: "#",
-      quote: `K.R. Mangalam University offers state-of-the-art laboratories, modern classrooms, a well-stocked library, sports facilities, hostels, and innovation hubs that greatly enhance the student learning experience. The Emergency Medical Technology program prepared me to become skilled healthcare professionals capable of delivering pre-hospital emergency care and basic life support. 
+      quote: `K.R. Mangalam University offers state-of-the-art laboratories, modern classrooms, a well-stocked library, sports facilities, hostels, and innovation hubs that greatly enhance the student learning experience. The Emergency Medical Technology programme prepared me to become skilled healthcare professionals capable of delivering pre-hospital emergency care and basic life support.  
 `,
       name: "Anshu",
       programme: "B.Sc. (Hons.) EMT ",

@@ -191,7 +191,7 @@ export const specialisationData: SpecialisationSection = {
     {
       imgUrl: "/landingpage/bba-2026/programs/bba-hons-hr.jpg",
       title: `BBA (Hons. / Hons. with Research) Human Resource`,
-      desc: `You may become an authority in talent management and organisational performance by focussing on human capital, strategic HR approaches, and people-oriented leadership.`,
+      desc: `You may become an authority in talent management and organisational performance by focusing on human capital, strategic HR approaches, and people-oriented leadership.`,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -235,7 +235,7 @@ export const specialisationData: SpecialisationSection = {
     {
       imgUrl: "/landingpage/bba-2026/programs/bba-hons-marketing.jpg",
       title: `BBA (Hons. / Hons. with Research) Marketing`,
-      desc: `Investigate branding, consumer behaviour, and marketing strategies with a BBA in marketing to create effective marketing campaigns and promote business growth.`,
+      desc: `Understand branding, consumer behaviour, and marketing strategies with a BBA in marketing to create effective marketing campaigns and promote business growth.`,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -347,7 +347,7 @@ export const specialisationData: SpecialisationSection = {
     {
       imgUrl: "/landingpage/bba-2026/programs/bba-International-business.jpg",
       title: `BBA International Business`,
-      desc: `Gain knowledge of international trade, cross-cultural management, and international marketing techniques to get ready for a worldwide career.`,
+      desc: `Gain knowledge of international trade, cross-cultural management, and international marketing techniques to get ready for global career opportunities.`,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -458,7 +458,7 @@ export const specialisationData: SpecialisationSection = {
     {
       imgUrl: "/landingpage/bba-2026/programs/bba-hons-ey.jpg",
       title: `BBA Hons. / Hons. with Research) (Business Analytics) with academic support of Ernst & Young (EY)`,
-      desc: `Discover how to use decision-making tools, predictive analytics, and data visualisation to solve business problems.`,
+      desc: `It is a 4-year programme focused on integrating data analytics with strategic decision-making, providing strong technical skills for data-driven roles & preparing students for leadership in the data economy.`,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -546,7 +546,7 @@ export const specialisationData: SpecialisationSection = {
     {
       imgUrl: "/landingpage/bba-2026/programs/bba-logistics-safexpress.jpg",
       title: `BBA (Logistics and Supply Chain Management) with academic support of Safexpress)`,
-      desc: `With knowledge of procurement, warehousing, and logistics technology, focus on supply chain and logistics strategy.`,
+      desc: `This course has been meticulously designed to provide students with knowledge of procurement, warehousing, and logistics technology, focusing on supply chain and logistics strategy.`,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -568,7 +568,7 @@ export const specialisationData: SpecialisationSection = {
     {
       imgUrl: "/landingpage/bba-2026/programs/bba-logistics-safexpress.jpg",
       title: `BBA (Hons. / Hons. with Research) Logistics and Supply Chain Management with Academic Support of Safexpress`,
-      desc: `Focus on supply chain and logistics strategy and have knowledge of procurement, warehousing, and logistics technology.`,
+      desc: `The course curriculum strives to provide students with a thorough grasp of how global supply chains function and how crucial they are to the success of contemporary firms.`,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",

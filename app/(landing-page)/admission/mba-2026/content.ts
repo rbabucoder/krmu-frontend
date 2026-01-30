@@ -71,10 +71,10 @@ export const placementStatsContent: PlacementStatsContent = {
     },
   ],
   image: {
-    src: "/wp-content/landingpage/mba-2026/uni-stats.webp",
+    src: "/wp-content/landingpage/mba-2026/statsimg.webp",
     alt: "Graduate Placement",
-    width: 300,
-    height: 480,
+    width: 400,
+    height: 700,
   },
 };
 

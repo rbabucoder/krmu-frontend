@@ -17,14 +17,14 @@ const ProminentRecruiter = ({ data }: Props) => {
 
         {/* LOGO MARQUEE */}
         <div className="relative overflow-hidden">
-          <div className="pointer-events-none absolute left-0 top-0 h-full w-32 bg-gradient-to-r from-white to-transparent z-10" />
-          <div className="pointer-events-none absolute right-0 top-0 h-full w-32 bg-gradient-to-l from-white to-transparent z-10" />
+          {/* <div className="pointer-events-none absolute left-0 top-0 h-full w-32 bg-gradient-to-r from-white to-transparent z-10" />
+          <div className="pointer-events-none absolute right-0 top-0 h-full w-32 bg-gradient-to-l from-white to-transparent z-10" /> */}
 
           <div className="flex w-max animate-marquee gap-8">
             {[...data?.logos, ...data?.logos].map((logo, i) => (
               <div
                 key={i}
-                className="flex items-center justify-center min-w-[240px] h-[100px] rounded-xl bg-white shadow-sm"
+                className="flex items-center justify-center min-w-[240px] h-[100px] rounded-xl bg-[#f2f7fa] shadow-sm"
               >
                 <Image
                   src={logo.src}
@@ -42,8 +42,8 @@ const ProminentRecruiter = ({ data }: Props) => {
       {/* PEOPLE MARQUEE */}
       <div className="max-w-[1400px] mx-auto w-full">
         <div className="relative overflow-hidden mt-20">
-          <div className="pointer-events-none absolute left-0 top-0 h-full w-32 bg-gradient-to-r from-white to-transparent z-10" />
-          <div className="pointer-events-none absolute right-0 top-0 h-full w-32 bg-gradient-to-l from-white to-transparent z-10" />
+          {/* <div className="pointer-events-none absolute left-0 top-0 h-full w-32 bg-gradient-to-r from-white to-transparent z-10" />
+          <div className="pointer-events-none absolute right-0 top-0 h-full w-32 bg-gradient-to-l from-white to-transparent z-10" /> */}
 
           <div className="flex w-max animate-marquee gap-8">
             {[...data?.people, ...data?.people].map((person, i) => (

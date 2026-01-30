@@ -302,34 +302,42 @@ export const testimonialsData: TestimonialsSection = {
       videoUrl: "#",
       quote: `My journey at K.R. Mangalam University has been truly transformative. The faculty’s continuous  guidance played a key role in my academic and personal growth. Their mentorship extended  beyond the classroom, encouraging confidence and creativity. The opportunity for early placement gave me valuable industry exposure. The Training and Placement Cell provided 
 consistent and personalised support. Today, I feel confident, prepared, and ready to take the 
-next step in my professional journey. `,
+next step in my professional journey.`,
       name: "Jigyasa Batra",
       programme: "B.Des. (Hons.) Interior Design",
     },
     {
       image: "/landingpage/bdes-2026/testimonials/2.jpg",
       videoUrl: "#",
-      quote: `Hey, I'm Sumit Kushwaha from SOAD at K.R. Mangalam University, currently pursuing a B.Des 
+      quote: `Hey, I'm Sumit Kushwaha from SOAD at K.R. Mangalam University, currently pursuing a B.Des. 
 in Game Design and Animation. I aspire to become a VFX Artist/Compositor, and my journey 
 here has been incredibly enriching. The faculty, with their hands-on industry experience, have 
 been instrumental in shaping my skills. Their guidance and mentorship help make our dreams 
 come to reality.`,
       name: "Sumit Kushwaha",
-      programme: "B.Des (Hons.) Game Design & Animation",
+      programme: "B.Des. (Hons.) Game Design & Animation",
     },
     {
       image: "/landingpage/bdes-2026/testimonials/3.jpg",
       videoUrl: "#",
-      quote: `My journey as a fashion design student at K.R. Mangalam University has been truly transformative.  The Fashion Design programme strengthened my creative foundation while building the  confidence, discipline, and professional ethics that guide me today as Head Designer at Esha Koul, New Delhi. I am deeply grateful to the faculty for their constant support, insightful teaching, and encouragement, which helped me grow from a learner into a confident design professional.`,
+      quote: `My journey as a fashion design student at K.R. Mangalam University has been truly transformative.  
+      The Fashion Design programme strengthened my creative foundation while building the  
+      confidence, discipline, and professional ethics that guide me today as Head Designer at Esha Koul,
+       New Delhi. I am deeply grateful to the faculty for their constant support, insightful teaching, and 
+       encouragement, which helped me grow from a learner into a confident design professional.`,
       name: "Mansi Bansal",
       programme: "B.Des. (Hons.) Fashion Design",
     },
     {
       image: "/landingpage/bdes-2026/testimonials/4.jpg",
       videoUrl: "#",
-      quote: `I am Harsh Kumar, a second semester B.Des UI/UX Design student. With a strong vision to build a career in UX design, this course has fuelled my skills and passion. K.R. Mangalam University has provided me with a solid foundation, enriching my knowledge and strengthening my background in design. My mentors and faculty have been my backbone, guiding and supporting me throughout my journey.`,
+      quote: `I am Harsh Kumar, a second semester B.Des. UI/UX Design student. With a strong vision to
+       build a career in UX design, this course has fuelled my skills and passion. K.R. Mangalam 
+       University has provided me with a solid foundation, enriching my knowledge and strengthening
+        my background in design. My mentors and faculty have been my backbone, guiding and supporting
+         me throughout my journey.`,
       name: "Harsh Kumar",
-      programme: "B.Des (Hons.) Game Design & Animation",
+      programme: "B.Des. (Hons.) Game Design & Animation",
     },
   ],
 };

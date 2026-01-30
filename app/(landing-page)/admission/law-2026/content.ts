@@ -470,13 +470,13 @@ export const faqSectionData: FAQSectionData = {
     },
     {
       id: "item-4",
-      question: "What distinguishes BBA LLB from BA LLB?",
-      answer: `While BBA LLB universities concentrate on integrating business studies courses like finance, marketing, HR, and more with legal studies, BA LLB degrees concentrate on combining LLB education with liberal arts subjects like humanities, politics, etc.`,
+      question: "What distinguishes BBA LL.B. from B.A. LL.B.?",
+      answer: `While BBA LL.B. universities concentrate on integrating business studies courses like finance, marketing, HR, and more with legal studies, B.A. LL.B. degrees concentrate on combining LL.B. education with liberal arts subjects like humanities, politics, etc.`,
     },
     {
       id: "item-5",
-      question: "How long does an LLB law programme in India last?",
-      answer: `In every Indian LLB school, an LLB program lasts around three years. However, the course length is often five years if you're studying an integrated LL.B. program, like as a B.A. LL.B. or a BBA LLB in India.`,
+      question: "How long does an LL.B. law programme in India last?",
+      answer: `In every Indian LL.B. school, an LL.B. programme lasts around three years. However, the course length is often five years if you're studying an integrated LL.B. program, like as a B.A. LL.B. or a BBA LL.B. in India.`,
     },
   ],
 };

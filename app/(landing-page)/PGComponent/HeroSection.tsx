@@ -95,7 +95,7 @@ const HeroSection = ({
               <div className="heroBannerForm-header">
                 <h3 className="mb-0">
                   <strong>
-                    Apply Today for <span>K.R. Mangalam University</span>
+                    Apply Today for <span className="uppercase">K.R. Mangalam University</span>
                   </strong>
                 </h3>
               </div>

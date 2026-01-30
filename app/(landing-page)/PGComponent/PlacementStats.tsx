@@ -39,7 +39,7 @@ const PlacementStats = ({ data }: Props) => {
               alt={data?.image.alt}
               width={data?.image.width}
               height={data?.image.height}
-              className="w-full h-full"
+              className=""
               priority
             />
           </div>

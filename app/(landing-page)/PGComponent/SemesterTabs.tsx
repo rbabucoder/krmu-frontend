@@ -1,20 +1,21 @@
 import { ProgramCardType, Semester } from "../admission/PGType";
 import ProgramCard from "./ProgramCard";
+import ProgramCardSlide from "./ProgramCardSlide";
 
 type Props = {
-  semesters: Semester[];
+  semesters?: Semester[];
   progData: ProgramCardType;
 };
 
-const SemesterTabs = ({ semesters, progData }: Props) => {
+const SemesterTabs = ({ progData }: Props) => {
   // const [active, setActive] = useState(semesters[0].id);
   // const current = semesters.find((s) => s.id === active)!;
 
   return (
     <section className="py-10">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[320px_1fr] gap-8">
+      <div className="w-full">
         {/* Left Tabs */}
-        <div className="space-y-4">
+        {/* <div className="space-y-4 ">
           {semesters.map((sem) => (
             <button
               key={sem.id}
@@ -34,24 +35,30 @@ const SemesterTabs = ({ semesters, progData }: Props) => {
               <h4 className="mt-2 font-semibold">{sem.subtitle}</h4>
             </button>
           ))}
-        </div>
+        </div> */}
 
         {/* Right Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-          {progData.map((program, index) => (
-            <ProgramCard
-              key={index}
-              image={program.image}
-              title={program.title}
-              description={program.description}
-              format={program.format}
-              duration={program.duration}
-              eligibility={program.eligibility}
-              focus={program.focus}
-              annualFee={program.annualFee}
-            />
-          ))}
-        </div>
+
+        {progData?.length > 3 ? (
+          <ProgramCardSlide data={progData} />
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-[repeat(auto-fit,minmax(400px,1fr))] gap-5">
+            {progData &&
+              progData.map((program, index) => (
+                <ProgramCard
+                  key={index}
+                  image={program.image}
+                  title={program.title}
+                  description={program.description}
+                  format={program.format}
+                  duration={program.duration}
+                  eligibility={program.eligibility}
+                  focus={program.focus}
+                  annualFee={program.annualFee}
+                />
+              ))}
+          </div>
+        )}
       </div>
     </section>
   );
