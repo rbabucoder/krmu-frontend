@@ -13,7 +13,7 @@ type Props = {
 
 const InternationalCollabHero = ({ title, desc, heroBtn, heroGrid }: Props) => {
   return (
-    <section className="pt-36 md:pt-[9%] pb-[5%] bg-[url(/intcollab/mobilebanner.webp)] md:bg-[url(/intcollab/InternationalCollaborationsBannerBackground1.webp)] bg-cover bg-no-repeat bg-right-bottom px-4">
+    <section className="pt-36 md:pt-[9%] pb-[5%] bg-[url(/intcollab/mobilebanner.webp)] md:bg-[url(/intcollab/rankbg.webp)] bg-cover bg-no-repeat bg-center px-4">
       <div className="max-w-[1664px] mx-auto w-full text-white">
         <div className="lg:mx-[1.92%]">
           <div className="text-4xl md:text-6xl lg:text-[80px] font-semibold leading-[1] mb-5">

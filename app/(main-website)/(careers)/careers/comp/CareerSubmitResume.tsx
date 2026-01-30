@@ -29,8 +29,8 @@ const CareerSubmitResume = ({ openings }: Props) => {
           )}
         </div>
         <div className="md:w-1/2 h-full relative">
-          <div className="md:absolute bottom-0 right-0">
-            <Image src="/careers/20.png" width={488} height={562} alt="" />
+          <div className="md:absolute bottom-2.5 right-0">
+            <Image src="/careers/career.webp" width={488} height={562} alt="" />
           </div>
         </div>
       </div>

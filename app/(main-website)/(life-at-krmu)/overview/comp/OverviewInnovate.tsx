@@ -68,7 +68,7 @@ const OverviewInnovate = async () => {
               <OverviewUpdatedSlide data={data} />
               <div className="flex  justify-center lg:justify-end">
                 <Link
-                  href="/happenings/news-events/"
+                  href="/happenings/news-and-events"
                   className="text-white bg-[#e31e24] py-[11px] px-[23px] rounded-[4px]"
                   target="_blank"
                 >
