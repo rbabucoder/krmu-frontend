@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { HeroCTA, ImageType } from "../admission/PGType";
 import NoPaperFormsWidget from "../admission/CommonComponent2026/NoPaperFormsWidget";
+import ScrollButton from "../admission/CommonComponent2026/ScrollButton";
 
 type Props = {
   title: string;
@@ -14,7 +15,7 @@ type Props = {
   formId: string;
   ugHeroClsName: string;
 };
- 
+
 const HeroSection = ({
   title,
   description,
@@ -52,13 +53,12 @@ const HeroSection = ({
               dangerouslySetInnerHTML={{
                 __html: description,
               }}
-              
             />
           </div>
 
           <div className="hidden sm:flex flex-col sm:flex-row items-center gap-4 sm:gap-8 justify-center lg:justify-start">
             {/* Primary CTA */}
-            <Link
+            {/* <Link
               href={primaryCta.href}
               className="flex items-center justify-between w-full sm:max-w-[280px] py-1 px-2 gap-2 border border-white rounded-full"
             >
@@ -68,16 +68,16 @@ const HeroSection = ({
               <div className="bg-white p-2 sm:p-3 rounded-full">
                 <MoveUpRight className="text-[#0060aa]" size={24} />
               </div>
-            </Link>
+            </Link> */}
 
             {/* Secondary CTA */}
-            <Link
+            {/* <Link
               href={secondaryCta.href}
               className="text-white text-sm sm:text-base flex items-center gap-2 sm:gap-4"
             >
               {secondaryCta.label}
               <ChevronRight size={18} />
-            </Link>
+            </Link> */}
           </div>
         </div>
 
@@ -102,7 +102,8 @@ const HeroSection = ({
 
         <div className="flex sm:hidden flex-col items-center gap-4 sm:gap-8 justify-center lg:justify-start container-2">
           {/* Primary CTA */}
-          <Link
+
+          {/* <Link
             href={primaryCta.href}
             className="flex items-center justify-between w-full sm:max-w-[280px] py-1 px-2 gap-2 border border-white rounded-full"
           >
@@ -112,16 +113,37 @@ const HeroSection = ({
             <div className="bg-white p-2 sm:p-3 rounded-full">
               <MoveUpRight className="text-[#0060aa]" size={24} />
             </div>
-          </Link>
+          </Link> */}
+          {/* <ScrollButton
+            targetId="apply-section"
+            highlightClass="flash-border"
+            btnClass="flex items-center justify-between w-full sm:max-w-[280px] py-1 px-2 gap-2 border border-white rounded-full"
+          >
+            <span className="w-4/5 text-center text-white text-sm sm:text-base">
+              {primaryCta.label}
+            </span>
+            <div className="bg-white p-2 sm:p-3 rounded-full">
+              <MoveUpRight className="text-[#0060aa]" size={24} />
+            </div>
+          </ScrollButton> */}
 
           {/* Secondary CTA */}
-          <Link
+          {/* <Link
             href={secondaryCta.href}
             className="text-white text-sm sm:text-base flex items-center gap-2 sm:gap-4"
           >
             {secondaryCta.label}
             <ChevronRight size={18} />
-          </Link>
+          </Link> */}
+
+          <ScrollButton
+            targetId="apply-section"
+            highlightClass="flash-border"
+            btnClass="text-white text-sm sm:text-base flex items-center gap-2 sm:gap-4"
+          >
+            {secondaryCta.label}
+            <ChevronRight size={18} />
+          </ScrollButton>
         </div>
 
         {/* Right Image */}
@@ -137,7 +159,7 @@ const HeroSection = ({
             />
           )} */}
           {formId && (
-            <div className="heroBannerForm__form">
+            <div className="heroBannerForm__form" id="apply-section">
               <div className="heroBannerForm-header">
                 <h3 className="mb-0">
                   <strong>

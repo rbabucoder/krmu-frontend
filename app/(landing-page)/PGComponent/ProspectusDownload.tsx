@@ -20,12 +20,12 @@ export default function ProspectusDownload({ data }: Props) {
             {data?.description}
           </p>
 
-          <button className="mx-auto lg:mx-0 flex items-center gap-4 border-2 border-blue-500 rounded-full px-6 sm:px-7 py-3 text-white font-medium hover:bg-blue-600 transition">
+          {/* <button className="mx-auto lg:mx-0 flex items-center gap-4 border-2 border-blue-500 rounded-full px-6 sm:px-7 py-3 text-white font-medium hover:bg-blue-600 transition">
             {data?.button.label}
             <span className="w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-gradient-to-r from-red-500 to-blue-600 text-white">
               ↗
             </span>
-          </button>
+          </button> */}
         </div>
 
         {/* RIGHT IMAGE */}

@@ -52,7 +52,7 @@ const BusinessHub = ({ data, formId }: Props) => {
 
             <div>
               {formId && (
-                <div className="heroBannerForm__form">
+                <div className="heroBannerForm__form" id="apply-section">
                   <div className="heroBannerForm-header">
                     <h3 className="mb-0">
                       <strong>

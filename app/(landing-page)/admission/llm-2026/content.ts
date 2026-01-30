@@ -412,7 +412,7 @@ export const businessLeaderContent: BusinessLeaderContent = {
 
 export const PGProgrammeCard: ProgramCardType = [
   {
-    image: "/landingpage/common/dummy.png",
+    image: "/wp-content/landingpage/llm-2026/progs/llm-corp.png",
     title: "LL.M. in Corporate Law",
     description:
       "The LL.M. in Corporate Law is designed to develop advanced expertise in corporate governance, mergers and acquisitions, compliance, and commercial regulations. The programme equips law graduates with in-depth legal insight, strategic thinking, and practical exposure to address complex corporate and business legal challenges in a globalised economy.",
@@ -424,7 +424,7 @@ export const PGProgrammeCard: ProgramCardType = [
     annualFee: "Rs 1,50,000",
   },
   {
-    image: "/landingpage/common/dummy.png",
+    image: "/wp-content/landingpage/llm-2026/progs/llm-human.png",
     title: "LL.M. in Human Rights and Humanitarian Law",
     description:
       "The LL.M. in Human Rights and Humanitarian Law focuses on the protection and promotion of human dignity through advanced study of international human rights frameworks, humanitarian principles, and global justice systems. The programme prepares legal professionals to address contemporary human rights challenges through critical analysis, research, and policy-oriented legal practice.",
@@ -436,7 +436,7 @@ export const PGProgrammeCard: ProgramCardType = [
     annualFee: "Rs 1,50,000",
   },
   {
-    image: "/landingpage/common/dummy.png",
+    image: "/wp-content/landingpage/llm-2026/progs/llm-criminal.png",
     title: "LL.M. in Criminal Law",
     description:
       "The LL.M. in Criminal Law offers advanced study of criminal justice systems, penal laws, and procedural frameworks. The programme develops strong analytical, research, and advocacy skills, preparing legal professionals to address complex criminal cases, policy reforms, and evolving challenges in the justice system.",
@@ -448,7 +448,7 @@ export const PGProgrammeCard: ProgramCardType = [
     annualFee: "Rs 1,50,000",
   },
   {
-    image: "/landingpage/common/dummy.png",
+    image: "/wp-content/landingpage/llm-2026/progs/llm-intellect.png",
     title: "LL.M. in Intellectual Property Rights",
     description:
       "The LL.M. in Intellectual Property Rights equips legal professionals with advanced knowledge of patents, trademarks, copyrights, and emerging IP laws in the digital and innovation-driven economy. The programme develops expertise in IP protection, enforcement, and policy, preparing graduates for specialised legal practice, corporate advisory roles, and research in intellectual property law.",
@@ -460,7 +460,7 @@ export const PGProgrammeCard: ProgramCardType = [
     annualFee: "Rs 1,50,000",
   },
   {
-    image: "/landingpage/common/dummy.png",
+    image: "/wp-content/landingpage/llm-2026/progs/llm-human.png",
     title: "LL.M. in Cyber Law",
     description:
       "The LL.M. in Cyber Law focuses on the legal and regulatory frameworks governing cyberspace, data protection, and digital transactions. The programme equips legal professionals with specialised knowledge to address cyber crimes, privacy issues, and emerging challenges in technology-driven legal environments.",
@@ -472,7 +472,7 @@ export const PGProgrammeCard: ProgramCardType = [
     annualFee: "Rs 1,50,000",
   },
   {
-    image: "/landingpage/common/dummy.png",
+    image: "/wp-content/landingpage/llm-2026/progs/llm-adr.png",
     title: "LL.M. in Alternative Dispute Resolution",
     description:
       "The LL.M. in Alternative Dispute Resolution focuses on modern dispute resolution mechanisms, including arbitration, mediation, and negotiation. The programme develops advanced legal, analytical, and advocacy skills, preparing professionals to resolve complex disputes efficiently across commercial, corporate, and international legal settings.",
@@ -494,7 +494,7 @@ export const prospectusDownloadContent: ProspectusDownloadContent = {
     href: "#", // can be file link or NPF popup later
   },
   image: {
-    src: "/images/prospectus-girls.png",
+    src: "/wp-content/landingpage/mba-2026/download.webp",
     alt: "MBA Prospectus",
   },
 };

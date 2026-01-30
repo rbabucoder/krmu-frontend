@@ -45,7 +45,7 @@ const ComeToLife = ({ data }: Props) => {
         />
 
         <div className="flex justify-center my-10">
-          <Link
+          {/* <Link
             href={data.cta.href}
             className="group self-start lg:self-center flex items-center gap-3 border border-white/30 rounded-full px-6 py-2 text-sm hover:bg-white text-white hover:text-black transition"
           >
@@ -53,7 +53,7 @@ const ComeToLife = ({ data }: Props) => {
             <span className="w-8 h-8 flex items-center justify-center rounded-full bg-gradient-to-tr from-blue-500 to-red-500 text-white group-hover:rotate-45 transition">
               <ArrowUpRight size={16} />
             </span>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </section>

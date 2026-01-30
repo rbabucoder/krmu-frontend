@@ -35,12 +35,12 @@ export default function AdmissionProcess({
               {description}
             </p>
 
-            <button className="group flex items-center gap-3 border border-[#003DA5] rounded-full px-6 py-2 text-sm font-medium text-black hover:bg-[#003DA5] hover:text-white transition">
+            {/* <button className="group flex items-center gap-3 border border-[#003DA5] rounded-full px-6 py-2 text-sm font-medium text-black hover:bg-[#003DA5] hover:text-white transition">
               {cta.label}
               <span className="w-8 h-8 flex items-center justify-center rounded-full bg-gradient-to-tr from-blue-600 to-red-500 text-white group-hover:rotate-45 transition">
                 <ArrowUpRight size={16} />
               </span>
-            </button>
+            </button> */}
           </div>
         </div>
 
