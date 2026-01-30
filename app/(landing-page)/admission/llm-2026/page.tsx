@@ -88,6 +88,7 @@ const page = () => {
         secondaryCta={secondaryCta}
         image={image}
         bgImage={bgImage}
+        formId={llmFormId}
       />
       <PlacementStats data={placementData} />
       <ProminentRecruiter data={prominentData} />

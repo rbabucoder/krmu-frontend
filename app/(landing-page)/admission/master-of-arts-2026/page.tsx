@@ -9,7 +9,7 @@ import BusinessHub from "../../PGComponent/BusinessHub";
 import MbaComparison from "../../PGComponent/MBAComparison";
 import Testimonials from "../../PGComponent/Testimonials";
 import ProspectusDownload from "../../PGComponent/ProspectusDownload";
-import { llm2026Id } from "../constant/lpnpf";
+import { llm2026Id, ma2026Id } from "../constant/lpnpf";
 import {
   aboutUsContent,
   admissionProcessContent,
@@ -61,7 +61,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 const page = () => {
-  const llmFormId = llm2026Id;
+  const maFormId = ma2026Id;
   const { title, description, primaryCta, secondaryCta, image, bgImage } =
     heroContent;
   const businessData = businessHubData;
@@ -89,6 +89,7 @@ const page = () => {
         secondaryCta={secondaryCta}
         image={image}
         bgImage={bgImage}
+        formId={maFormId}
       />
       <PlacementStats data={placementData} />
       <ProminentRecruiter data={prominentData} />
@@ -111,7 +112,7 @@ const page = () => {
       <Testimonials data={testiData} />
       <ComeToLife data={worldLifeData} />
       <LifeAsPhDScholar data={lifeData} />
-      <BusinessHub data={businessData} formId={llmFormId} />
+      <BusinessHub data={businessData} formId={maFormId} />
       <FAQSection data={faqData} />
     </>
   );
