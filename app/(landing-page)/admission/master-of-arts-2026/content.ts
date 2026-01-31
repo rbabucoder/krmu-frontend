@@ -38,7 +38,7 @@ OPEN FOR<br><span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text
  Programmes 2026-27</span>
           `,
   description:
-    "The M.A. programmes at KRMU focus on subject expertise, practical application, and skill development, enabling graduates to excel across multiple career options or pursue further research.",
+    "The M.A. programmes at KRMU focus on subject expertise, practical application, and skill development, enabling graduates to excel across multiple career options or pursue further research",
   primaryCta: {
     label: "Apply Now",
     href: "#",
@@ -552,10 +552,10 @@ export const admissionProcessContent: AdmissionProcessContent = {
 };
 
 export const mbaComparisonContent: MbaComparisonContent = {
-  title: "vs M.A. at KRMU",
+  title: "vs KRMU",
   highlight: "M.A. at a Traditional University",
   description:
-    "The program at KRMU emphasizes real-world learning through internships, business simulations, and industry-driven projects.",
+    "The programme at KRMU emphasizes real-world learning through internships, business simulations, and industry-driven projects.",
 
   traditionalHeader: "Traditional University",
   krmuHeader: "K.R. Mangalam University",
@@ -712,7 +712,7 @@ export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
 
 export const comeToLifeData: ComeToLifeSection = {
   heading: `World-Class Facilities & Infrastructure`,
-  description: `The modern facilities of K.R. Mangalam University intend to provide strong support to students. The institution has cutting-edge computer labs with the latest equipment, sophisticated tools, and industry-standard software for practical projects, research, and simulations. To promote an immersive learning environment, classrooms are equipped with smart technology, such as interactive whiteboards, projectors, high-speed Wi-Fi, and comfortable, ergonomic seating. They also have central air conditioning. For in-depth study and research, students have access to a well-stocked central library with a comprehensive selection of books, periodicals, research materials, and e-resources.`,
+  description: `Within a lush, green campus designed for interactive learning, research, and holistic development, K.R. Mangalam University offers state-of-the-art infrastructure, including smart, air-conditioned classrooms, high-speed Wi-Fi, sophisticated computer labs, a well-stocked library with digital access, sports facilities, incubation centres, and career development facilities.`,
   footerText: ``,
   cta: {
     label: "Apply for M.A. 2026-2027",

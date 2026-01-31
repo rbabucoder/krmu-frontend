@@ -274,7 +274,8 @@ export const prominentRecruiterContent: ProminentRecruiterContent = {
 
 export const aboutUsContent: AboutUsContent = {
   title: "About Us",
-  description: `<p>K.R. Mangalam University is a prominent university in Gurugram that was founded in 2013 under the Haryana Private University Act. The university's NAAC Grade "A" accreditation demonstrates a strong dedication to academic excellence, high-quality instruction, and continuous development.</p> <br /><p>The Master of Laws (LL.M.) is a postgraduate programme intended to offer in-depth expertise in a particular field of law. By providing advanced insights into areas including international law, corporate law, intellectual property law, criminal law, and commercial law, earning an LL.M. improves legal knowledge and professional prospects. The curriculum strengthens professionals' practice and skills by giving them a better awareness of changing laws and regulations, building on their core legal knowledge. Graduates can explore employment opportunities in various fields, including corporate law, real estate, consulting, legal process outsourcing, and more.</p>`,
+  description: `<p>K.R. Mangalam University is a prominent university in Gurugram that was founded in 2013 under the Haryana Private University Act. 
+  The university's NAAC Grade "A" accreditation demonstrates a strong dedication to academic excellence, high-quality instruction, and continuous development.</p> <br /><p>The Master of Laws (LL.M.) is a postgraduate programme that intends to offer in-depth expertise in a particular field of law. By providing advanced insights into areas including international law, corporate law, intellectual property law, criminal law, and commercial law, earning an LL.M. improves legal knowledge and professional prospects. The curriculum strengthens a legal professional's practice and skills by giving them a better awareness of changing laws and regulations, building on their core legal knowledge. Graduates can explore employment opportunities in various fields, including corporate law, real estate, consulting, legal process outsourcing, and more.</p>`,
   image: {
     src: "/landingpage/mca-2026/univ.png",
     alt: "K.R. Mangalam University Campus",
@@ -317,7 +318,7 @@ export const industryExpertsContent: IndustryExpertsContent = {
 };
 
 export const businessLeaderContent: BusinessLeaderContent = {
-  sectionTitle: "Preparing the Next Generation of Legal Thought Leaders",
+  sectionTitle: "Preparing the Next Generation of <br /> Legal Leaders",
 
   sectionDescription:
     "The LL.M. programme at K.R. Mangalam University is designed for law graduates who seek advanced legal knowledge, research expertise, and specialisation in emerging and core areas of law.",
@@ -417,7 +418,7 @@ export const PGProgrammeCard: ProgramCardType = [
     description:
       "The LL.M. in Corporate Law is designed to develop advanced expertise in corporate governance, mergers and acquisitions, compliance, and commercial regulations. The programme equips law graduates with in-depth legal insight, strategic thinking, and practical exposure to address complex corporate and business legal challenges in a globalised economy.",
     format: "",
-    duration: "1 Years",
+    duration: "1 Year",
     eligibility:
       "The candidate must hold an LL.B. degree with at least 50% of the possible points from an accredited university.",
     focus: "",
@@ -429,7 +430,7 @@ export const PGProgrammeCard: ProgramCardType = [
     description:
       "The LL.M. in Human Rights and Humanitarian Law focuses on the protection and promotion of human dignity through advanced study of international human rights frameworks, humanitarian principles, and global justice systems. The programme prepares legal professionals to address contemporary human rights challenges through critical analysis, research, and policy-oriented legal practice.",
     format: "",
-    duration: "1 Years",
+    duration: "1 Year",
     eligibility:
       "The candidate must hold an LL.B. degree with at least 50% of the possible points from an accredited university.",
     focus: "",
@@ -441,7 +442,7 @@ export const PGProgrammeCard: ProgramCardType = [
     description:
       "The LL.M. in Criminal Law offers advanced study of criminal justice systems, penal laws, and procedural frameworks. The programme develops strong analytical, research, and advocacy skills, preparing legal professionals to address complex criminal cases, policy reforms, and evolving challenges in the justice system.",
     format: "",
-    duration: "1 Years",
+    duration: "1 Year",
     eligibility:
       "The candidate must hold an LL.B. degree with at least 50% of the possible points from an accredited university.",
     focus: "",
@@ -453,7 +454,7 @@ export const PGProgrammeCard: ProgramCardType = [
     description:
       "The LL.M. in Intellectual Property Rights equips legal professionals with advanced knowledge of patents, trademarks, copyrights, and emerging IP laws in the digital and innovation-driven economy. The programme develops expertise in IP protection, enforcement, and policy, preparing graduates for specialised legal practice, corporate advisory roles, and research in intellectual property law.",
     format: "",
-    duration: "1 Years",
+    duration: "1 Year",
     eligibility:
       "The candidate must hold an LL.B. degree with at least 50% of the possible points from an accredited university.",
     focus: "",
@@ -465,7 +466,7 @@ export const PGProgrammeCard: ProgramCardType = [
     description:
       "The LL.M. in Cyber Law focuses on the legal and regulatory frameworks governing cyberspace, data protection, and digital transactions. The programme equips legal professionals with specialised knowledge to address cyber crimes, privacy issues, and emerging challenges in technology-driven legal environments.",
     format: "",
-    duration: "1 Years",
+    duration: "1 Year",
     eligibility:
       "The candidate must hold an LL.B. degree with at least 50% of the possible points from an accredited university.",
     focus: "",
@@ -477,7 +478,7 @@ export const PGProgrammeCard: ProgramCardType = [
     description:
       "The LL.M. in Alternative Dispute Resolution focuses on modern dispute resolution mechanisms, including arbitration, mediation, and negotiation. The programme develops advanced legal, analytical, and advocacy skills, preparing professionals to resolve complex disputes efficiently across commercial, corporate, and international legal settings.",
     format: "",
-    duration: "1 Years",
+    duration: "1 Year",
     eligibility:
       "The candidate must hold an LL.B. degree with at least 50% of the possible points from an accredited university.",
     focus: "",
@@ -506,13 +507,13 @@ export const PGTestimonialsData: PGTestimonialsBlock = {
   },
 
   items: [
-    {
-      brand: "",
-      text: "Pursuing a LLM  at the  University of Edinburgh deepened my understanding of global corporate governance, equipping me with analytical skills for a successful legal career.",
-      author: "TANMAYA JHA",
-      color: "bg-[#EAF6FF]",
-      featured: false,
-    },
+    // {
+    //   brand: "",
+    //   text: "Pursuing a LLM  at the  University of Edinburgh deepened my understanding of global corporate governance, equipping me with analytical skills for a successful legal career.",
+    //   author: "TANMAYA JHA",
+    //   color: "bg-[#EAF6FF]",
+    //   featured: false,
+    // },
     {
       brand: "",
       text: "Proud K.R. Mangalam University alumni, my journey from student to professional  was enriched by diverse cultural and academic engagements, shaping my future personally and professionally. Immersed in a vibrant academic environment, guided by distinguished professors, I gained confidence and insight into the leg",
@@ -582,10 +583,10 @@ export const admissionProcessContent: AdmissionProcessContent = {
 };
 
 export const mbaComparisonContent: MbaComparisonContent = {
-  title: "vs LL.M. at KRMU",
+  title: "vs KRMU",
   highlight: "LL.M. at a Traditional University",
   description:
-    "The program at KRMU emphasizes real-world learning through internships, business simulations, and industry-driven projects.",
+    "The programme at KRMU emphasizes real-world learning through internships, business simulations, and industry-driven projects.",
 
   traditionalHeader: "Traditional University",
   krmuHeader: "K.R. Mangalam University",
@@ -677,19 +678,19 @@ export const faqSectionData: FAQSectionData = {
   faqs: [
     {
       id: "item-1",
-      question: "How long does the LL.M. program last?",
-      answer: `The program lasts for a full year.`,
+      question: "How long does the LL.M. programme last?",
+      answer: `The programme lasts for a full year.`,
     },
     {
       id: "item-2",
       question:
-        "What are the requirements to be eligible for the LL.M. program?",
+        "What are the requirements to be eligible for the LL.M. programme?",
       answer: `Candidates must hold an LL.B. degree with at least 50% of the possible points from an accredited university.`,
     },
     {
       id: "item-3",
       question: "Which specialisations are available in the LL.M. programme?",
-      answer: `Corporate law, human rights and humanitarian law, criminal law, intellectual property rights, alternative dispute resolution, and cyber law are among the specialisations offered by the program.`,
+      answer: `Corporate law, human rights and humanitarian law, criminal law, intellectual property rights, alternative dispute resolution, and cyber law are among the specialisations offered by the programme.`,
     },
     {
       id: "item-4",
@@ -723,7 +724,7 @@ export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
 
 export const comeToLifeData: ComeToLifeSection = {
   heading: `World-Class Facilities & Infrastructure`,
-  description: `The modern facilities of K.R. Mangalam University intend to provide strong support to students. The institution has cutting-edge computer labs with the latest equipment, sophisticated tools, and industry-standard software for practical projects, research, and simulations. To promote an immersive learning environment, classrooms are equipped with smart technology, such as interactive whiteboards, projectors, high-speed Wi-Fi, and comfortable, ergonomic seating. They also have central air conditioning. For in-depth study and research, students have access to a well-stocked central library with a comprehensive selection of books, periodicals, research materials, and e-resources.`,
+  description: `Within a lush, green campus designed for interactive learning, research, and holistic development, K.R. Mangalam University offers state-of-the-art infrastructure, including smart, air-conditioned classrooms, high-speed Wi-Fi, sophisticated computer labs, a well-stocked library with digital access, sports facilities, incubation centres, and career development facilities. `,
   footerText: ``,
   cta: {
     label: "Apply for LL.M. 2026-2027",

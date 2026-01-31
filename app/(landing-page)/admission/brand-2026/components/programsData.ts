@@ -20,7 +20,7 @@ export const schools = [
   { label: "School of Basic and Applied Sciences", value: "basic-applied-sciences" },
   { label: "School of Architecture and Design", value: "architecture-design" },
   { label: "School of Journalism & Mass Comm", value: "journalism-masscomm" },
-  { label: "School of Hotel Management and Catering Technology", value: "hotel-management" },
+  // { label: "School of Hotel Management and Catering Technology", value: "hotel-management" },
   { label: "School of Education", value: "education" },
   { label: "School of Agricultural Sciences", value: "agricultural-sciences" },
 ];

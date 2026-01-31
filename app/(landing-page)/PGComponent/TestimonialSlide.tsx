@@ -60,9 +60,12 @@ const TestimonialSlide = ({ data }: Props) => {
               </CarouselItem>
             ))}
         </CarouselContent>
-
-        <CarouselPrevious className="cursor-pointer testislidePrev" />
-        <CarouselNext className="cursor-pointer testislideNext" />
+        {items?.length > 3 && (
+          <>
+            <CarouselPrevious className="cursor-pointer testislidePrev" />
+            <CarouselNext className="cursor-pointer testislideNext" />
+          </>
+        )}
       </Carousel>
     </>
   );

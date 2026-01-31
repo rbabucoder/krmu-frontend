@@ -40,6 +40,7 @@ export const Hero: HeroContent = {
 
 export const heroMarqueeData: HeroMarqueeSection = {
   messages: [
+    "50+ Industry Collaborations",
     "₹56.6 LPA Highest Package",
     "₹27 Cr Scholarships",
     "800+ Recruiters",
@@ -136,7 +137,7 @@ export const industryExperts: IndustryExpertsSection = {
   heading: `Learn from<br />Leaders @ KRMU!`,
   description: `K.R. Mangalam University takes pride in collaborating with industry leaders and skill professionals who offer unparalleled hands-on learning experiences to students.`,
   cta: {
-    label: "Apply for UG 2026",
+    label: "Apply for UG/PG 2026-27",
     href: "#",
   },
   cards: [
@@ -621,7 +622,7 @@ export const opportunityData: OpportunitySection = {
   heading: "Learn From Industry Experts",
   highlight: "Opportunity That Transforms",
   cta: {
-    label: "Apply for BBA (UG) 2026-2027",
+    label: "Apply for UG/PG 2026-27",
     href: "#",
   },
 };
@@ -728,7 +729,7 @@ export const comeToLifeData: ComeToLifeSection = {
   description: `At K.R. Mangalam University, the conceptual knowledge is imparted to students in modern smart classrooms that are equipped with interactive whiteboards and seamless tech integration. The availability of the industry-aligned labs, collaborative spaces, and round-the-clock student support facilities fosters innovation as well as leads to the holistic development of students, thereby making them ready to take on their future goals.`,
   footerText: ``,
   cta: {
-    label: "Apply for BBA (UG) 2026-2027 ",
+    label: "Apply for UG/PG 2026-27",
     href: "#",
   },
   slides: [
@@ -781,7 +782,7 @@ export const faqSectionData: FAQSectionData = {
   eyebrow: "(FAQs)",
   heading: "Frequently Asked Questions",
   description:
-    "K.R. Mangalam University offers Ph.D. programmes in a wide array of fields, encouraging cross-disciplinary exploration and innovation.",
+    "",
   faqs: [
     {
       id: "item-1",
@@ -842,7 +843,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Begin Your Journey at K.R. Mangalam University Now`,
   description: "",
   cta: {
-    label: "Apply for UG Programme",
+    label: "Apply for UG/PG 2026-27",
     href: "#",
   },
   highlights: [

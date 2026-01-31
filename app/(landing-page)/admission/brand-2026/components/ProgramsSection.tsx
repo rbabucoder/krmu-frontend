@@ -86,9 +86,9 @@ export default function ProgramsSection() {
                   <strong>Duration:</strong> {prog.duration}
                 </p>
 
-                <p className="text-sm">
+                {/* <p className="text-sm">
                   <strong>Fees:</strong> {prog.fees}
-                </p>
+                </p> */}
               </div>
 
               {/* Decorative dots */}
@@ -113,9 +113,9 @@ export default function ProgramsSection() {
           </p>
         )}
 
-        <p className="text-right text-sm mt-6 text-gray-500">
+        {/* <p className="text-right text-sm mt-6 text-gray-500">
           ** Subject to Approval
-        </p>
+        </p> */}
       </div>
     </section>
   );

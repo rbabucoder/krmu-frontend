@@ -447,7 +447,7 @@ export const PGTestimonialsData: PGTestimonialsBlock = {
   items: [
     {
       brand: "",
-      text: "K.R. Mangalam University has truly transformed my career. The program not only provided me with technical expertise but also honed my problem-solving and analytical skills. The university encouraged us to participate in hackathons, industry projects, and internships, which gave me hands-on experience in real-world AI applications. Today, I am working as a Sales manager at Rally Motors, and I owe my success to the incredible faculty and supportive environment at KRMU. ",
+      text: "K.R. Mangalam University has truly transformed my career. The programme not only provided me with technical expertise but also honed my problem-solving and analytical skills. The university encouraged us to participate in hackathons, industry projects, and internships, which gave me hands-on experience in real-world AI applications. Today, I am working as a Sales manager at Rally Motors, and I owe my success to the incredible faculty and supportive environment at KRMU.",
       author: "Rishav Bakshi",
       color: "bg-[#EAF6FF]",
       featured: false,
@@ -521,10 +521,10 @@ export const admissionProcessContent: AdmissionProcessContent = {
 };
 
 export const mbaComparisonContent: MbaComparisonContent = {
-  title: "vs M.C.A. at KRMU",
+  title: "vs KRMU",
   highlight: "M.C.A. at a Traditional University",
   description:
-    "The program at KRMU emphasizes real-world learning through internships, business simulations, and industry-driven projects.",
+    "The programme at KRMU emphasizes real-world learning through internships, business simulations, and industry-driven projects.",
 
   traditionalHeader: "Traditional University",
   krmuHeader: "K.R. Mangalam University",
@@ -637,7 +637,7 @@ export const faqSectionData: FAQSectionData = {
     {
       id: "item-5",
       question: "Does KRMU provide placement support?",
-      answer: `Yes, the K.R. Mangalam University offers 100% placement assistance with over 700+ recruiters visiting the campus for placement drives.`,
+      answer: `Yes, the K.R. Mangalam University offers 100% placement assistance with over 800+ recruiters visiting the campus for placement drives.`,
     },
   ],
 };
@@ -666,7 +666,7 @@ export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
 
 export const comeToLifeData: ComeToLifeSection = {
   heading: `World-Class Facilities & Infrastructure`,
-  description: `The modern facilities of K.R. Mangalam University intend to provide strong support to students. The institution has cutting-edge computer labs with the latest equipment, sophisticated tools, and industry-standard software for practical projects, research, and simulations. To promote an immersive learning environment, classrooms are equipped with smart technology, such as interactive whiteboards, projectors, high-speed Wi-Fi, and comfortable, ergonomic seating. They also have central air conditioning. For in-depth study and research, students have access to a well-stocked central library with a comprehensive selection of books, periodicals, research materials, and e-resources.`,
+  description: `Within a lush, green campus designed for interactive learning, research, and holistic development, K.R. Mangalam University offers state-of-the-art infrastructure, including smart, air-conditioned classrooms, high-speed Wi-Fi, sophisticated computer labs, a well-stocked library with digital access, sports facilities, incubation centres, and career development facilities.`,
   footerText: ``,
   cta: {
     label: "Apply for MCA 2026-2027",
