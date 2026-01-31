@@ -35,6 +35,7 @@ import {
 
 import { SeoData } from "./seo";
 import { brand2026Id } from "../constant/lpnpf";
+import ProgramsSection from "./components/ProgramsSection";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -87,6 +88,9 @@ const page = () => {
         formId={brand2026IdForm}
         desc={heroContent?.desc}
         marqueeData={heroMarqData}
+        middleImg={heroContent?.middleImg}
+        mobileImg={heroContent?.mobileImg}
+        lpclName={heroContent?.lpclName}
       />
       <Counter counters={counters} />
       <ProminentRecruiter recruiters={recruiters} />
@@ -98,9 +102,10 @@ const page = () => {
         whykrmCards={whykrm?.whyKrmCards}
       />
       <IndustryExperts data={industryexpert} />
-      <Specialisation data={specialise} />
+      {/* <Specialisation data={specialise} /> */}
+      <ProgramsSection />
       <Opportunity data={opport} />
-      <FeeStructureTable />
+      {/* <FeeStructureTable /> */}
       {/* <Testimonials data={testiomonial} /> */}
       {/* <ScholarResearchImpact data={scholarData} /> */}
       <ComeToLife data={worldLifeData} />

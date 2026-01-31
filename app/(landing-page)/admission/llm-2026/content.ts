@@ -290,7 +290,7 @@ export const industryExpertsContent: IndustryExpertsContent = {
 
   experts: [
     {
-      src: "https://wp.krmangalam.edu.in/wp-content/uploads/2023/11/Group-488.webp",
+      src: "/wp-content/landingpage/common/ibm.png",
       alt: "IBM",
       width: 200,
       height: 200,

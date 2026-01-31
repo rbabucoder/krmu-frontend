@@ -2,9 +2,6 @@ import Image from "next/image";
 import { Home } from "lucide-react";
 import { LifeAsPhDScholarSection } from "../admission/PGType";
 
-
-
-
 type Props = {
   data: LifeAsPhDScholarSection;
 };
@@ -25,11 +22,18 @@ const LifeAsPhDScholar = ({ data }: Props) => {
 
         {/* Image */}
         <div className="relative w-full h-[260px] sm:h-[360px] md:h-[450px] xl:h-[600px] overflow-hidden mb-12 rounded-xl">
-          <Image
+          {/* <Image
             src={data.image.src}
             fill
             alt={data.image.alt}
             className="object-cover"
+            priority
+          /> */}
+          <Image
+            src="/wp-content/landingpage/common/Collage-img.webp"
+            fill
+            alt="Life @ KRMU"
+            className="w-full  object-contain sm:object-cover"
             priority
           />
         </div>

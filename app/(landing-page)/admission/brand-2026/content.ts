@@ -19,20 +19,28 @@ import {
 // Usage types
 export const Hero: HeroContent = {
   title: `
+   <span class="sm:hidden"><span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
+         Undergraduate
+      </span> Admissions Open 2026–27</span>
+      <span class="hidden sm:block">
       ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
        Undergraduate
       </span>
       <br />
-      PROGRAMMES 2026-27
+      PROGRAMMES 2026-27</span>
     `,
   desc: `The K.R. Mangalam University strives to set new benchmarks for a holistic, value-driven education, with interdisciplinary learning, modern infrastructure, and the assimilation of the best global practices to match international standards.`,
+  heroBg: "/wp-content/landingpage/bpt-2026/bpt.webp",
+  middleImg: "",
+  mobileImg: "",
+  lpclName: "MainSection",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
   messages: [
-       "₹56.6 LPA Highest Package",
+    "₹56.6 LPA Highest Package",
     "₹27 Cr Scholarships",
     "800+ Recruiters",
     "18K+ Alumni",
@@ -69,32 +77,62 @@ export const Counters: CounterItem[] = [
 export const prominentRecruiters: ProminentRecruit[] = [
   {
     imgUrl:
-      "https://www.krmangalam.edu.in/admission/law-2025/assets/trilegal.svg",
+      "https://krmangalam.edu.in/landingpage/brand-2025/assets/images/companies/Grandthornton.png",
     alt: "Recruiter Logo",
   },
   {
     imgUrl:
-      "https://www.krmangalam.edu.in/admission/btech-2025-b/assets/images/accenture.svg",
+      "https://krmangalam.edu.in/landingpage/brand-2025/assets/images/companies/ibm.png",
     alt: "Recruiter Logo",
   },
   {
     imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+      "https://krmangalam.edu.in/landingpage/brand-2025/assets/images/ey-logo.jpg",
     alt: "Recruiter Logo",
   },
   {
     imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+      "https://krmangalam.edu.in/landingpage/brand-2025/assets/images/companies/safeexpress.png",
     alt: "Recruiter Logo",
   },
   {
     imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+      "https://krmangalam.edu.in/landingpage/brand-2025/assets/images/iide-bg.webp",
     alt: "Recruiter Logo",
   },
   {
     imgUrl:
-      "https://krmangalam.edu.in/admission/mba-2025/assets/images/deliotte.svg",
+      "https://krmangalam.edu.in/landingpage/brand-2025/assets/images/companies/imarticus.png",
+    alt: "Recruiter Logo",
+  },
+  {
+    imgUrl:
+      "https://krmangalam.edu.in/landingpage/brand-2025/assets/images/our-campus-partner/accenture.svg",
+    alt: "Recruiter Logo",
+  },
+  {
+    imgUrl:
+      "https://krmangalam.edu.in/landingpage/brand-2025/assets/images/our-campus-partner/apple.svg",
+    alt: "Recruiter Logo",
+  },
+  {
+    imgUrl:
+      "https://krmangalam.edu.in/landingpage/brand-2025/assets/images/our-campus-partner/amazon.svg",
+    alt: "Recruiter Logo",
+  },
+  {
+    imgUrl:
+      "https://krmangalam.edu.in/landingpage/brand-2025/assets/images/our-campus-partner/deliotte.svg",
+    alt: "Recruiter Logo",
+  },
+  {
+    imgUrl:
+      "https://krmangalam.edu.in/landingpage/brand-2025/assets/images/our-campus-partner/icici.svg",
+    alt: "Recruiter Logo",
+  },
+  {
+    imgUrl:
+      "https://krmangalam.edu.in/landingpage/brand-2025/assets/images/our-campus-partner/infosys.svg",
     alt: "Recruiter Logo",
   },
 ];
@@ -129,33 +167,29 @@ export const industryExperts: IndustryExpertsSection = {
   heading: `Learn from<br />Leaders @ KRMU!`,
   description: `K.R. Mangalam University takes pride in collaborating with industry leaders and skill professionals who offer unparalleled hands-on learning experiences to students.`,
   cta: {
-    label: "Apply for B.Tech 2026",
+    label: "Apply for UG 2026",
     href: "#",
   },
   cards: [
     {
-      imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
-      alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
+      imgUrl: "/wp-content/landingpage/brand-2026/learn-from/ibm.png",
+      alt: "Logo",
+      title: "",
     },
     {
-      imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
-      alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
+      imgUrl: "/wp-content/landingpage/brand-2026/learn-from/imaginxp.svg",
+      alt: "Logo",
+      title: "",
     },
     {
-      imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
-      alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
+      imgUrl: "/wp-content/landingpage/brand-2026/learn-from/eccoun.jpg",
+      alt: "Logo",
+      title: "",
     },
     {
-      imgUrl:
-        "https://krmangalam.edu.in/admission/mba-2025/assets/images/apple.svg",
-      alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
+      imgUrl: "/wp-content/landingpage/brand-2026/learn-from/xebia.png",
+      alt: "Logo",
+      title: "",
     },
   ],
   bannerImg: "/landingpage/common/dummy2.png",
@@ -792,18 +826,19 @@ export const faqSectionData: FAQSectionData = {
     },
     {
       id: "item-3",
-      question:
-        "Does KRMU provide hostel accommodation?",
+      question: "Does KRMU provide hostel accommodation?",
       answer: `Yes, KRMU provides separate hostels for boys and girls with modern amenities and 24/7 security.`,
     },
     {
       id: "item-4",
-      question: "Does the university offer scholarships or financial aid to students?",
+      question:
+        "Does the university offer scholarships or financial aid to students?",
       answer: `Yes, the KRMU offers various scholarships and financial aid programmes based on academic merit, sports achievements, and economic requirements. Detailed information about it can be found in the scholarships section of the website.`,
     },
     {
       id: "item-5",
-      question: "Why is K.R. Mangalam University said to be one of the best colleges in Gurgaon?",
+      question:
+        "Why is K.R. Mangalam University said to be one of the best colleges in Gurgaon?",
       answer: `The unparalleled quality of learning, expert and experienced faculty, international collaborations, and an excellent placement record have placed KRMU among the top colleges in Gurgaon.`,
     },
   ],

@@ -33,6 +33,11 @@ const nextConfig: NextConfig = {
         hostname: "wp.krmangalam.edu.in",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "krmangalam.edu.in",
+        pathname: "/**",
+      },
     ],
   },
 };

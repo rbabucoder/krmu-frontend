@@ -8,7 +8,7 @@ type Props = {
 };
 
 const LifeAsPhDScholar = ({ data }: Props) => {
-  return (
+  return ( 
     <section className="pt-5 sm:py-16 md:pt-10 bg-gray-50">
       <div className="px-4">
         {/* Header */}
@@ -25,7 +25,7 @@ const LifeAsPhDScholar = ({ data }: Props) => {
         {/* Image */}
         <div className="relative w-full h-[100px] sm:h-[360px] md:h-[450px] xl:h-[600px] overflow-hidden mb-12 rounded-xl">
           <Image
-            src="/landingpage/common/Collage-img.webp"
+            src="/wp-content/landingpage/common/Collage-img.webp"
             fill
             alt="Life @ KRMU"
             className="w-full  object-contain sm:object-cover"

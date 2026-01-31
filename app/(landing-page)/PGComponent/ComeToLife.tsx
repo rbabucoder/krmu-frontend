@@ -1,8 +1,10 @@
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
-import CometoLifeSlide from "./CometoLifeSlide";
+
 import { ComeToLifeSection } from "../admission/PGType";
+import CometoLifeSlide from "../admission/CommonComponent2026/CometoLifeSlide";
+import ScrollButton from "../admission/CommonComponent2026/ScrollButton";
 
 type Props = {
   data: ComeToLifeSection;
@@ -34,7 +36,8 @@ const ComeToLife = ({ data }: Props) => {
 
       {/* Slider */}
       <div className="my-10">
-        <CometoLifeSlide slides={data.slides} />
+        {/* <CometoLifeSlide slides={data.slides} /> */}
+        <CometoLifeSlide />
       </div>
 
       {/* Footer CTA */}
@@ -54,6 +57,17 @@ const ComeToLife = ({ data }: Props) => {
               <ArrowUpRight size={16} />
             </span>
           </Link> */}
+
+           <ScrollButton
+              targetId="apply-section"
+              highlightClass="flash-border"
+              btnClass="group self-start lg:self-center flex items-center gap-3 border border-white/30 rounded-full px-6 py-2 text-sm hover:bg-white text-white hover:text-black transition"
+            >
+              {data.cta.label}
+            <span className="w-8 h-8 flex items-center justify-center rounded-full bg-gradient-to-tr from-blue-500 to-red-500 text-white group-hover:rotate-45 transition">
+              <ArrowUpRight size={16} />
+            </span>
+            </ScrollButton>
         </div>
       </div>
     </section>

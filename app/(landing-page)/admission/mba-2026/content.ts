@@ -285,7 +285,7 @@ export const industryExpertsContent: IndustryExpertsContent = {
 
   experts: [
     {
-      src: "/wp-content/landingpage/mba-2026/learn-from/ibm.webp",
+      src: "/wp-content/landingpage/common/ibm.png",
       alt: "IBM",
       width: 300,
       height: 200,

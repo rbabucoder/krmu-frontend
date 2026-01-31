@@ -22,7 +22,7 @@ const ProgramCardSlide = ({ data }: Props) => {
               image={program.image}
               title={program.title}
               description={program.description}
-              format={program.format}
+              format={program.format} 
               duration={program.duration}
               eligibility={program.eligibility}
               focus={program.focus}
@@ -32,8 +32,8 @@ const ProgramCardSlide = ({ data }: Props) => {
         ))}
       </CarouselContent>
 
-      <CarouselPrevious className="cursor-pointer" />
-      <CarouselNext className="cursor-pointer" />
+      <CarouselPrevious className="cursor-pointer testislidePrev" />
+      <CarouselNext className="cursor-pointer testislideNext" />
     </Carousel>
   );
 };

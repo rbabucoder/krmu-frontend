@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @layer utilities {
-  .flash-border .heroBannerForm__form {
+  .flash-border {
     border: 1px solid red;
     border-radius: 15px;
   }

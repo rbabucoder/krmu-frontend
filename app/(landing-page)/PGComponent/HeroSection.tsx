@@ -58,6 +58,18 @@ const HeroSection = ({
 
           <div className="hidden sm:flex flex-col sm:flex-row items-center gap-4 sm:gap-8 justify-center lg:justify-start">
             {/* Primary CTA */}
+            <ScrollButton
+              targetId="apply-section"
+              highlightClass="flash-border"
+              btnClass="flex items-center justify-between w-full sm:max-w-[280px] py-1 px-2 gap-2 border border-white rounded-full"
+            >
+              <span className="w-4/5 text-center text-white text-sm sm:text-base">
+                {primaryCta.label}
+              </span>
+              <div className="bg-white p-2 sm:p-3 rounded-full">
+                <MoveUpRight className="text-[#0060aa]" size={24} />
+              </div>
+            </ScrollButton>
             {/* <Link
               href={primaryCta.href}
               className="flex items-center justify-between w-full sm:max-w-[280px] py-1 px-2 gap-2 border border-white rounded-full"
@@ -70,6 +82,14 @@ const HeroSection = ({
               </div>
             </Link> */}
 
+            <ScrollButton
+              targetId="apply-section"
+              highlightClass="flash-border"
+              btnClass="text-white text-sm sm:text-base flex items-center gap-2 sm:gap-4"
+            >
+              {secondaryCta.label}
+              <ChevronRight size={18} />
+            </ScrollButton>
             {/* Secondary CTA */}
             {/* <Link
               href={secondaryCta.href}
