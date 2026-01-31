@@ -163,8 +163,8 @@ export const industryExperts: IndustryExpertsSection = {
 export const specialisationData: SpecialisationSection = {
   subheading: `Choose your specialisations based on your interests and career goals. 
 
-Our pharma programmes & specialisations `,
-  heading: `Our pharma programmes & specialisations   `,
+Our Pharma Programmes & Specialisations `,
+  heading: `Our Pharma Programmes & Specialisations   `,
   specilisationCard: [
     {
       imgUrl: "/landingpage/pharmacy-2026/specilisation/d-pharm.jpg",
@@ -181,11 +181,11 @@ Our pharma programmes & specialisations `,
           title: "Eligibility",
           desc: `    Candidates must have passed 10+2 or an equivalent science qualification with physics, chemistry, and biology or mathematics, as approved by the Pharmacy Council of India. `,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs. 1,20,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs. 1,20,000`,
+        // },
       ],
     },
     {
@@ -203,11 +203,11 @@ Our pharma programmes & specialisations `,
           title: "Eligibility",
           desc: `    Candidates must have passed 10+2 with physics, chemistry, and biology or maths, securing at least 50% marks from a recognised board. Applicants must be 17 years or older by 31 December of the admission year `,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs. 1,95,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs. 1,95,000`,
+        // },
       ],
     },
     {
@@ -225,11 +225,11 @@ Our pharma programmes & specialisations `,
           title: "Eligibility",
           desc: `Candidates must hold a B.Pharmacy degree from a PCI-approved Indian institution with at least 55% aggregate marks and be registered with the State Pharmacy Council or obtain registration within one month of admission.`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs. 1,54,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs. 1,54,000`,
+        // },
       ],
     },
     {
@@ -247,11 +247,11 @@ Our pharma programmes & specialisations `,
           title: "Eligibility",
           desc: `    Candidates must hold a B.Pharmacy degree from a PCI-approved Indian institution with at least 55% aggregate marks and be registered with the State Pharmacy Council or obtain registration within one month of admission. `,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs. 1,54,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs. 1,54,000`,
+        // },
       ],
     },
   ],
