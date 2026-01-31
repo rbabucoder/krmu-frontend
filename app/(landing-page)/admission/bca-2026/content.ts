@@ -155,11 +155,11 @@ export const industryExperts: IndustryExpertsSection = {
       alt: " Logo",
       title: "",
     },
-    {
-      imgUrl: "/landingpage/bca-2026/learn-from/xebia.png",
-      alt: " Logo",
-      title: "",
-    },
+    // {
+    //   imgUrl: "/landingpage/bca-2026/learn-from/xebia.png",
+    //   alt: " Logo",
+    //   title: "",
+    // },
   ],
   bannerImg: "/wp-content/landingpage/common/indus-exp.webp",
 };

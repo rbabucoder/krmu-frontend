@@ -517,6 +517,27 @@ const ScholarUGPG = () => {
                       </tbody>
                     </table>
                   </div>
+                  <p className="font-semibold text-center my-5">NATA</p>
+                  <div className="overflow-x-auto">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Eligibility Criteria</th> <th>Scholarship</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>130.01 & above</td> <td>100%</td>
+                        </tr>
+                        <tr>
+                          <td>110.01 to 130</td> <td>35%</td>
+                        </tr>
+                        <tr>
+                          <td>90 to 110</td> <td>25%</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                   <div className="overflow-x-auto">
                     <table className="mt-5">
                       <thead>
@@ -535,7 +556,7 @@ const ScholarUGPG = () => {
                             and 3rd instalment (25%) will be paid by cheque in
                             2nd Semester and 3rd Semester respectively, if the
                             student fulfills all the criteria listed under Note
-                            : 7) given below the table.
+                            : 7 given below the table.
                           </td>
                         </tr>
                         <tr>

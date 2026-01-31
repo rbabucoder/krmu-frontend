@@ -281,23 +281,23 @@ export const industryExpertsContent: IndustryExpertsContent = {
       height: 200,
     },
     {
-      src: "/wp-content/landingpage/mca-2026/learn-from/iide.png",
+      src: "/landingpage/bca-2026/learn-from/imaginxp.svg",
       alt: "IBM",
       width: 300,
       height: 200,
     },
     {
-      src: "/wp-content/landingpage/mca-2026/learn-from/grant-thornton.png",
+      src: "/wp-content/landingpage/mca-2026/learn-from/mca_ec.png",
       alt: "IBM",
       width: 300,
       height: 200,
     },
-    {
-      src: "/wp-content/landingpage/mca-2026/learn-from/eydark.webp",
-      alt: "IBM",
-      width: 300,
-      height: 200,
-    },
+    // {
+    //   src: "/wp-content/landingpage/mca-2026/learn-from/eydark.webp",
+    //   alt: "IBM",
+    //   width: 300,
+    //   height: 200,
+    // },
   ],
 };
 
