@@ -83,7 +83,7 @@ export const Leaderships = ({ data }: Props) => {
               height={430}
               alt={selectedLeader.name}
               unoptimized
-              className="object-contain"
+              className="object-contain hidden sm:block"
             />
           </div>
         </div>
@@ -129,8 +129,8 @@ export const Leaderships = ({ data }: Props) => {
               })}
             </CarouselContent>
 
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className="left-0" />
+            <CarouselNext className="right-0" />
           </Carousel>
         </div>
       </div>

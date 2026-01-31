@@ -6,37 +6,35 @@ const CommunityConnectHero = () => {
       <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row items-center text-white gap-10">
         <div className="lg:w-2/3">
           <h1 className="text-3xl md:text-[40px] font-bold mb-5 leading-[1.2]">
-            Youth Red Cross Committee- YRC (KRMU) <br />
-            <em>“Promoting Health, Serving Humanity.”</em>
+            National Service Scheme (NSS)-KRMU <br />
+            <em>‘NOT ME BUT YOU’</em>
           </h1>
           <p>
-            The <strong>Red Cross Society</strong>, founded on the principles of
-            humanity, impartiality, neutrality, independence, voluntary service,
-            unity, and universality, shares a mission in fostering selfless
-            service and community welfare. The{" "}
-            <strong>Red Cross Society</strong> encourages the spirit of empathy
-            and service among volunteers, particularly students and young
-            individuals, by engaging them in activities that promote the welfare
-            of the entire community.
+            The National Service Scheme (NSS) launched on{" "}
+            <strong>24th September 1969</strong> on the birth century of{" "}
+            <strong>Mahatma Gandhi</strong> by Union Education Minister Dr.
+            V.K.R.V. Rao in 37 universities covering all States and
+            simultaneously requested the Chief Ministers of States for their
+            cooperation and help. The motto of the National Service Scheme is
+            aimed to involve the students at colleges and universities by
+            inculcating the feeling of empathy and self-extension. The motto of
+            the National Service Scheme is “”Not Me, But You”. It emphasizes on
+            the welfare of whole society. It is one of the best platforms for
+            the students where they can execute their selfless service for not
+            only the community people but for whole country. National Service
+            Scheme provide the opportunities to the students to develop their
+            personality by involving them in community service. Therefore, this
+            is very crucial to design the activities like socio-physical
+            activities, cultural activities which uphold and promote the values
+            of patriotism, communal harmony, and national integration among
+            student volunteers.
           </p>
           <br />
           <p>
-            The Red Cross Society’s motto, “Promoting Health, Serving Humanity
-            ,” emphasizes humanitarian values, encouraging individuals to
-            prioritize the well-being of others above personal interests. The
-            society provides students with opportunities to enhance their
-            personalities and develop leadership and organizational skills while
-            serving society. The Red Cross Society aims to nurture compassion
-            and social responsibility through initiatives such as healthcare
-            camps, blood donation drives, and awareness campaigns.
-          </p>
-          <br />
-          <p>
-            The Red Cross Society’s symbol, the Red Cross, on a white
-            background, is a globally recognized emblem of protection and aid.
-            It represents hope, care, and support in times of crisis, much like
-            the Roth wheel of the Konark Sun Temple, which symbolizes the
-            continuous cycle of life and the unending spirit of service.
+            The symbol of the National Service Scheme is based on the ‘Rath’
+            wheel of the Konark Sun Temple situated in Orissa. These giant
+            wheels of the Sun Temple portray the cycle of creation, preservation
+            and release signifying the movement in life across time and space.
           </p>
         </div>
         <div className="lg:w-1/3 flex justify-center">

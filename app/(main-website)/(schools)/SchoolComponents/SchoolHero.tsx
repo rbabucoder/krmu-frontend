@@ -106,7 +106,7 @@ const SchoolHero = ({
           <div className="w-full lg:w-1/2 lg:ml-20 lg:pl-20 flex justify-center lg:justify-end">
             {videoFmt === "Iframe" ? (
               <div
-                className="w-full"
+                className="w-full customIframeStyle"
                 dangerouslySetInnerHTML={{ __html: iframeContent }}
               />
             ) : videoFmt === "videourl" ? (

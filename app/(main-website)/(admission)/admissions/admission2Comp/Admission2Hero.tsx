@@ -50,7 +50,8 @@ const Admission2Hero = () => {
             successful journey
           </p>
           <Link
-            href="#"
+            href="https://admissions.krmangalam.edu.in/"
+            target="_blank"
             className="bg-[#e61f21] mt-12 rounded-r-[10px] border border-[#0a41a1] py-[15px] px-[30px] flex items-center w-fit text-white leading-0 gap-5"
           >
             Apply Now <ArrowRight color="#ffffff" />

@@ -24,7 +24,7 @@ const PHDAdmissionHero = ({
       <section className="px-4 pt-[140px]">
         <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2">
-            <h1 className="text-2xl sm:text-4xl md:text-[86px] font-semibold mb-2.5">
+            <h1 className="text-4xl md:text-[86px] font-semibold mb-2.5">
               {heading}
             </h1>
             <p className="text-xl md:text-[22px] mb-5">

@@ -13,6 +13,7 @@ const VideoGalleryCard = ({ title, videoframe }: Props) => {
           dangerouslySetInnerHTML={{
             __html: videoframe,
           }}
+          className="customIframeStyle"
         />
       </div>
       <div className="mt-5">

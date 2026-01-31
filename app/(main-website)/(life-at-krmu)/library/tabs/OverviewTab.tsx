@@ -18,7 +18,7 @@ const OverviewTab = () => {
           webpage.
         </p>
         <div className="flex flex-col lg:flex-row gap-5">
-          <div className="p-5 bg-[#051630] text-white w-1/2 rounded-[10px]">
+          <div className="p-5 bg-[#051630] text-white w-full lg:w-1/2 rounded-[10px]">
             <h4 className="my-2.5">Book Renewal 1:</h4>
             <p className="mb-5">Use your Roll No or Employee ID to Login</p>
             <Link
@@ -29,7 +29,7 @@ const OverviewTab = () => {
               Click Here
             </Link>
           </div>
-          <div className="p-5 bg-[#051630] text-white w-1/2 rounded-[10px]">
+          <div className="p-5 bg-[#051630] text-white w-full lg:w-1/2 rounded-[10px]">
             <h4 className="my-2.5">Book Renewal 2:</h4>
             <p className="mb-5">Use your Roll No or Employee ID to Login</p>
             <Link

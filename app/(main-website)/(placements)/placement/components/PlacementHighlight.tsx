@@ -1,16 +1,8 @@
-import Image from "next/image";
-import Link from "next/link";
 import ProgramHighlightSlider from "../global-comp/ProgramHighlightSlider";
 import { StrapiMedia } from "@/lib/types/common";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import { STRAPI_URL } from "@/app/constant";
+
 import { Button } from "@/lib/types/home";
+import Link from "next/link";
 
 type Props = {
   heading: string;
@@ -26,7 +18,7 @@ const PlacementHighlight = ({ heading, slideImages, btn }: Props) => {
           <h2 className="text-[26px] md:text-5xl text-center font-semibold md:leading-[1.5] mb-5">
             {heading}
           </h2>
-          <Carousel
+          {/* <Carousel
             opts={{
               align: "start",
               loop: true,
@@ -50,8 +42,8 @@ const PlacementHighlight = ({ heading, slideImages, btn }: Props) => {
             </CarouselContent>
             <CarouselPrevious className="left-0 bg-[#000000b2] text-white rounded-none" />
             <CarouselNext className="right-0 bg-[#000000b2] text-white rounded-none" />
-          </Carousel>
-          <div className="lg:hidden">
+          </Carousel> */}
+          <div className="">
             <ProgramHighlightSlider slideImages={slideImages} />
           </div>
           <div className="text-center mt-5">

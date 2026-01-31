@@ -20,7 +20,7 @@ const OverviewTreasure = () => {
             thinkers, creators, and dreamers.
           </p>
           <Link
-            href="#"
+            href="/library"
             className="bg-[#e31e24] text-white py-[11px] px-[23px] hover:bg-[#051630] text-base font-semibold rounded-[4px] inline-block"
           >
             Know More

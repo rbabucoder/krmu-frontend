@@ -12,7 +12,7 @@ const SportsIntro = () => {
             creates an environment conducive to holistic development.
           </p>
         </div>
-        <div className="lg:w-1/2">
+        <div className="lg:w-1/2 customIframeStyle">
           <iframe
             width="100%"
             height="450"

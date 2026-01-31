@@ -15,6 +15,11 @@
 
 /* Custom utility class */
 @layer utilities {
+  @media (max-width: 640px) {
+    .customIframeStyle iframe {
+      height: 220px !important;
+    }
+  }
   .rekhi-program-box {
     background: linear-gradient(
       135deg,
