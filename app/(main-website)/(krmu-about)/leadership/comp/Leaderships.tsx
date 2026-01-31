@@ -114,7 +114,7 @@ export const Leaderships = ({ data }: Props) => {
                         height={300}
                         alt={leader.name}
                         unoptimized
-                        className={`w-full h-[295px] object-cover transition-all duration-300 ${
+                        className={`w-full h-[295px] object-contain sm:object-cover transition-all duration-300 ${
                           isActive ? "grayscale-0" : "grayscale"
                         }`}
                       />
