@@ -27,8 +27,15 @@ import {
 } from "../PGType";
 
 export const heroContent: HeroContent = {
-  title: `<span>Click, Code & Conquer <br />
-          with  <span class="text-[#e31e24]">MCA </span> Programmes 2026-27</span>
+  title: `
+          <span class="sm:hidden"><span class="text-[#fcd404] text-3xl md:text-5xl lg:text-8xl font-bold">
+        MCA
+      </span> Admissions Open 2026–27</span>
+      <span class="hidden sm:block">
+             ADMISSIONS <br>
+OPEN FOR<br><span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">MCA </span> <br>
+
+ Programmes 2026-27</span>
           `,
   description:
     "The MCA courses are meticulously prepared to enable students to comprehend complex coding processes that, in turn, lead to a successful career path. ",
