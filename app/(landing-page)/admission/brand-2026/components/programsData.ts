@@ -52,11 +52,11 @@ export const programs: Program[] = [
   { id: 16, title: "MCA (AI & ML)", duration: "2 Years", fees: "₹ 1,50,000 /-", category: "engineering-tech", level: "postgraduate", link: "https://www.krmangalam.edu.in/programs/mca-ai-ml/" },
   { id: 17, title: "MCA", duration: "2 Years", fees: "₹ 1,20,000 /-", category: "engineering-tech", level: "postgraduate", link: "https://www.krmangalam.edu.in/programs/master-computer-application-mca/" },
 
-  { id: 18, title: "BBA Human Resource", duration: "3 Years", fees: "₹ 1,85,000 /-", category: "management-commerce", level: "undergraduate", link: "https://www.krmangalam.edu.in/programs/bba-hr/" },
-  { id: 19, title: "BBA Marketing", duration: "3 Years", fees: "₹ 1,85,000 /-", category: "management-commerce", level: "undergraduate", link: "https://www.krmangalam.edu.in/programs/bba-marketing/" },
-  { id: 20, title: "BBA Finance", duration: "3 Years", fees: "₹ 1,85,000 /-", category: "management-commerce", level: "undergraduate", link: "https://www.krmangalam.edu.in/programs/bba-finance/" },
-  { id: 21, title: "BBA International Business", duration: "3 Years", fees: "₹ 1,85,000 /-", category: "management-commerce", level: "undergraduate", link: "https://www.krmangalam.edu.in/programs/bba-international-business/" },
-  { id: 22, title: "BBA Travel & Tourism", duration: "3 Years", fees: "₹ 1,85,000 /-", category: "management-commerce", level: "undergraduate", link: "https://www.krmangalam.edu.in/programs/bba-travel-tourism-management/" },
+  // { id: 18, title: "BBA Human Resource", duration: "3 Years", fees: "₹ 1,85,000 /-", category: "management-commerce", level: "undergraduate", link: "https://www.krmangalam.edu.in/programs/bba-hr/" },
+  // { id: 19, title: "BBA Marketing", duration: "3 Years", fees: "₹ 1,85,000 /-", category: "management-commerce", level: "undergraduate", link: "https://www.krmangalam.edu.in/programs/bba-marketing/" },
+  // { id: 20, title: "BBA Finance", duration: "3 Years", fees: "₹ 1,85,000 /-", category: "management-commerce", level: "undergraduate", link: "https://www.krmangalam.edu.in/programs/bba-finance/" },
+  // { id: 21, title: "BBA International Business", duration: "3 Years", fees: "₹ 1,85,000 /-", category: "management-commerce", level: "undergraduate", link: "https://www.krmangalam.edu.in/programs/bba-international-business/" },
+  // { id: 22, title: "BBA Travel & Tourism", duration: "3 Years", fees: "₹ 1,85,000 /-", category: "management-commerce", level: "undergraduate", link: "https://www.krmangalam.edu.in/programs/bba-travel-tourism-management/" },
 
   { id: 23, title: "MBA with academic support of IBM", duration: "2 Years", fees: "₹ 3,00,000 /-", category: "management-commerce", level: "postgraduate", link: "https://www.krmangalam.edu.in/programs/mba/" },
   { id: 24, title: "MBA Digital Marketing", duration: "2 Years", fees: "₹ 3,50,000 /-", category: "management-commerce", level: "postgraduate", link: "https://www.krmangalam.edu.in/programs/mba-digital-marketing/" },
@@ -69,8 +69,8 @@ export const programs: Program[] = [
 
   { id: 30, title: "Bachelor of Physiotherapy (BPT)", duration: "4.5 Years", fees: "₹ 1,58,000 /-", category: "physiotherapy-rehabilitation", level: "undergraduate", link: "https://www.krmangalam.edu.in/programs/bachelor-of-physiotherapy-bpt/" },
 
-  { id: 31, title: "B.A. (Hons.) English", duration: "3 Years", fees: "₹ 1,20,000 /-", category: "liberal-arts", level: "undergraduate", link: "https://www.krmangalam.edu.in/programs/ba-hon-english/" },
-  { id: 32, title: "B.A. (Hons.) Psychology", duration: "3 Years", fees: "₹ 1,30,000 /-", category: "liberal-arts", level: "undergraduate", link: "https://www.krmangalam.edu.in/programs/ba-hons-psychology/" },
+  // { id: 31, title: "B.A. (Hons.) English", duration: "3 Years", fees: "₹ 1,20,000 /-", category: "liberal-arts", level: "undergraduate", link: "https://www.krmangalam.edu.in/programs/ba-hon-english/" },
+  // { id: 32, title: "B.A. (Hons.) Psychology", duration: "3 Years", fees: "₹ 1,30,000 /-", category: "liberal-arts", level: "undergraduate", link: "https://www.krmangalam.edu.in/programs/ba-hons-psychology/" },
 
   { id: 33, title: "D.Pharm", duration: "2 Years", fees: "₹ 1,20,000 /-", category: "medical-allied", level: "diploma", link: "https://www.krmangalam.edu.in/programs/dpharm/" },
   { id: 34, title: "B.Pharm", duration: "4 Years", fees: "₹ 1,95,000 /-", category: "medical-allied", level: "undergraduate", link: "https://www.krmangalam.edu.in/programs/bpharma/" },
@@ -138,4 +138,49 @@ export const programs: Program[] = [
   { id: 77, title: "Ph.D. in Chemistry", duration: "Min. 3 Years", fees: "₹ 1,20,000 /-", category: "basic-applied-sciences", level: "doctorate", link: "https://www.krmangalam.edu.in/programs/phd-chemistry/" },
   { id: 78, title: "Ph.D. in Mathematics", duration: "Min. 3 Years", fees: "₹ 1,20,000 /-", category: "basic-applied-sciences", level: "doctorate", link: "https://www.krmangalam.edu.in/programs/phd-mathematics/" },
   { id: 79, title: "Ph.D. in Forensic Science", duration: "Min. 3 Years", fees: "₹ 1,20,000 /-", category: "basic-applied-sciences", level: "doctorate", link: "https://www.krmangalam.edu.in/programs/phd-forensic-science/" },
+  { id: 105, title: "B.A. (Hons.) English", duration: "3 Years", fees: "₹ 1,85,000 /-", category: "liberal-arts", level: "undergraduate", link: "" },
+{ id: 106, title: "B.A. (Hons. / Hons. with Research) English", duration: "4 Years", fees: "₹ 1,85,000 /-", category: "liberal-arts", level: "undergraduate", link: "" },
+
+{ id: 107, title: "B.A. (Hons.) Economics", duration: "3 Years", fees: "₹ 1,85,000 /-", category: "liberal-arts", level: "undergraduate", link: "" },
+{ id: 108, title: "B.A. (Hons. / Hons. with Research) Economics", duration: "4 Years", fees: "₹ 1,85,000 /-", category: "liberal-arts", level: "undergraduate", link: "" },
+
+{ id: 109, title: "B.A. (Hons.) Psychology", duration: "3 Years", fees: "₹ 1,85,000 /-", category: "liberal-arts", level: "undergraduate", link: "" },
+{ id: 110, title: "B.A. (Hons. / Hons. with Research) Psychology", duration: "4 Years", fees: "₹ 1,85,000 /-", category: "liberal-arts", level: "undergraduate", link: "" },
+
+{ id: 111, title: "B.A. (Hons.) Political Science", duration: "3 Years", fees: "₹ 1,85,000 /-", category: "liberal-arts", level: "undergraduate", link: "" },
+{ id: 112, title: "B.A. (Hons. / Hons. with Research) Political Science", duration: "4 Years", fees: "₹ 1,85,000 /-", category: "liberal-arts", level: "undergraduate", link: "" },
+{ id: 80, title: "BBA Human Resource", duration: "3 Years", fees: "₹ 1,85,000 /-", category: "management-commerce", level: "undergraduate", link: "" },
+{ id: 81, title: "BBA Marketing", duration: "3 Years", fees: "₹ 1,85,000 /-", category: "management-commerce", level: "undergraduate", link: "" },
+{ id: 82, title: "BBA Finance", duration: "3 Years", fees: "₹ 1,85,000 /-", category: "management-commerce", level: "undergraduate", link: "" },
+{ id: 83, title: "BBA International Business", duration: "3 Years", fees: "₹ 1,85,000 /-", category: "management-commerce", level: "undergraduate", link: "" },
+{ id: 84, title: "BBA Travel & Tourism", duration: "3 Years", fees: "₹ 1,85,000 /-", category: "management-commerce", level: "undergraduate", link: "" },
+
+{ id: 85, title: "BBA (Hons. / Hons. with Research) Human Resource", duration: "4 Years", fees: "₹ 1,85,000 /-", category: "management-commerce", level: "undergraduate", link: "" },
+{ id: 86, title: "BBA (Hons. / Hons. with Research) Marketing", duration: "4 Years", fees: "₹ 1,85,000 /-", category: "management-commerce", level: "undergraduate", link: "" },
+{ id: 87, title: "BBA (Hons. / Hons. with Research) Finance", duration: "4 Years", fees: "₹ 1,85,000 /-", category: "management-commerce", level: "undergraduate", link: "" },
+{ id: 88, title: "BBA (Hons. / Hons. with Research) International Business", duration: "4 Years", fees: "₹ 1,85,000 /-", category: "management-commerce", level: "undergraduate", link: "" },
+{ id: 89, title: "BBA (Hons. / Hons. with Research) Travel & Tourism", duration: "4 Years", fees: "₹ 1,85,000 /-", category: "management-commerce", level: "undergraduate", link: "" },
+
+{ id: 90, title: "BBA (Business Analytics) with academic support of Ernst & Young (EY)", duration: "3 Years", fees: "₹ 1,85,000 /-", category: "management-commerce", level: "undergraduate", link: "" },
+{ id: 91, title: "BBA (Hons. / Hons. with Research) (Business Analytics) with academic support of Ernst & Young (EY)", duration: "4 Years", fees: "₹ 1,85,000 /-", category: "management-commerce", level: "undergraduate", link: "" },
+
+{ id: 92, title: "BBA (Entrepreneurship) with academic support of GCEC Global Foundation", duration: "3 Years", fees: "₹ 1,85,000 /-", category: "management-commerce", level: "undergraduate", link: "" },
+{ id: 93, title: "BBA (Hons. / Hons. with Research) (Entrepreneurship) with academic support of GCEC Global Foundation", duration: "4 Years", fees: "₹ 1,85,000 /-", category: "management-commerce", level: "undergraduate", link: "" },
+
+{ id: 94, title: "BBA (International Accounting and Finance) (ACCA – UK) with academic support of Grant Thornton", duration: "3 Years", fees: "₹ 1,85,000 /-", category: "management-commerce", level: "undergraduate", link: "" },
+{ id: 95, title: "BBA (Hons. / Hons. with Research) (International Accounting and Finance) (ACCA – UK) with academic support of Grant Thornton", duration: "4 Years", fees: "₹ 1,85,000 /-", category: "management-commerce", level: "undergraduate", link: "" },
+
+{ id: 96, title: "BBA (Digital Marketing) with academic support of IIDE", duration: "3 Years", fees: "₹ 1,85,000 /-", category: "management-commerce", level: "undergraduate", link: "" },
+{ id: 97, title: "BBA (Hons. / Hons. with Research) (Digital Marketing) with academic support of IIDE", duration: "4 Years", fees: "₹ 1,85,000 /-", category: "management-commerce", level: "undergraduate", link: "" },
+
+{ id: 98, title: "BBA (Logistics and Supply Chain Management) with academic support of Safexpress", duration: "3 Years", fees: "₹ 1,85,000 /-", category: "management-commerce", level: "undergraduate", link: "" },
+{ id: 99, title: "BBA (Hons. / Hons. with Research) (Logistics and Supply Chain Management) with academic support of Safexpress", duration: "4 Years", fees: "₹ 1,85,000 /-", category: "management-commerce", level: "undergraduate", link: "" },
+
+{ id: 100, title: "B.Com. (Hons.)", duration: "3 Years", fees: "₹ 1,85,000 /-", category: "commerce", level: "undergraduate", link: "" },
+{ id: 101, title: "B.Com. (Hons. / Hons. with Research)", duration: "4 Years", fees: "₹ 1,85,000 /-", category: "commerce", level: "undergraduate", link: "" },
+
+{ id: 102, title: "B.Com. (Hons.) (International Accounting and Finance) (ACCA – UK) with academic support of Grant Thornton", duration: "3 Years", fees: "₹ 1,85,000 /-", category: "commerce", level: "undergraduate", link: "" },
+{ id: 103, title: "B.Com. (Hons. / Hons. with Research) (International Accounting and Finance) (ACCA – UK) with academic support of Grant Thornton", duration: "4 Years", fees: "₹ 1,85,000 /-", category: "commerce", level: "undergraduate", link: "" },
+
+{ id: 104, title: "B.Com. Programme", duration: "3 Years", fees: "₹ 1,85,000 /-", category: "commerce", level: "undergraduate", link: "" }
 ];
