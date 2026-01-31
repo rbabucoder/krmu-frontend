@@ -46,13 +46,13 @@ export default function ProgramCard({
               </div>
             </li>
           )}
-          <li className="flex gap-3">
+          {/* <li className="flex gap-3">
             <Pencil className="w-5 h-5 text-gray-700 mt-0.5" />
             <div>
               <p className="font-medium">Annual Fee</p>
               <p className="text-gray-600">{annualFee}</p>
             </div>
-          </li>
+          </li> */}
 
           {/* Duration */}
           <li className="flex gap-3">

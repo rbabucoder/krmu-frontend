@@ -12,7 +12,7 @@ export const CommonHeader = () => {
       <div className="px-3 flex justify-between items-center gap-3">
         <div className="w-full sm:w-1/2 flex justify-center sm:justify-start">
           <Image
-            src="/landingpage/common/white-krm-logo.webp"
+            src="/wp-content/landingpage/common/krmlogo.webp"
             width={350}
             height={65}
             alt="MBA Landing Page Logo"

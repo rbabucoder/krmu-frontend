@@ -26,12 +26,12 @@ export const Hero: HeroContent = {
       ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
-       Undergraduate
+       UG & PG
       </span>
       <br />
       PROGRAMMES 2026-27</span>
     `,
-  desc: `The K.R. Mangalam University strives to set new benchmarks for a holistic, value-driven education, with interdisciplinary learning, modern infrastructure, and the assimilation of the best global practices to match international standards.`,
+  desc: `<span class="text-xs font-semibold p-2.5 bg-[#fcd404] text-black mt-2.5 block w-fit">Powered by Partnerships. Proven by Placements.</span>`,
   heroBg: "/wp-content/landingpage/bpt-2026/bpt.webp",
   middleImg: "",
   mobileImg: "",

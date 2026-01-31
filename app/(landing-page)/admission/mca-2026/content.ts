@@ -305,7 +305,7 @@ export const businessLeaderContent: BusinessLeaderContent = {
   sectionTitle: "Why Choose a MCA Programme at KRMU?",
 
   sectionDescription:
-    "Master of Computer Applications is a postgraduate program designed to build strong foundations in computer science, software development, and emerging technologies. The MCA program offered by K.R. Mangalam University combines academic rigour with industry-oriented learning as modern laboratories, experienced faculty, and industry collaborations enhance practical exposure.",
+    "Master of Computer Applications is a postgraduate programme designed to build strong foundations in computer science, software development, and emerging technologies. The MCA programme offered by K.R. Mangalam University combines academic rigour with industry-oriented learning as modern laboratories, experienced faculty, and industry collaborations enhance practical exposure.",
 
   semesters: [
     {
