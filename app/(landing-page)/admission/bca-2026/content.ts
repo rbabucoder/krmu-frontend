@@ -146,7 +146,7 @@ export const industryExperts: IndustryExpertsSection = {
       title: "",
     },
     {
-      imgUrl: "/landingpage/bca-2026/learn-from/imaginxp.svg",
+      imgUrl: "/wp-content/landingpage/brand-2026/learn-from/imaginxp.svg",
       alt: " Logo",
       title: "",
     },

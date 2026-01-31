@@ -281,7 +281,7 @@ export const industryExpertsContent: IndustryExpertsContent = {
       height: 200,
     },
     {
-      src: "/landingpage/bca-2026/learn-from/imaginxp.svg",
+      src: "/wp-content/landingpage/brand-2026/learn-from/imaginxp.svg",
       alt: "IBM",
       width: 300,
       height: 200,
