@@ -142,7 +142,7 @@ export const industryExperts: IndustryExpertsSection = {
       title: "",
     },
   ],
-  bannerImg: "/landingpage/common/indus-exp.webp",
+  bannerImg: "/wp-content/landingpage/common/indus-exp.webp",
 };
 
 export const specialisationData: SpecialisationSection = {

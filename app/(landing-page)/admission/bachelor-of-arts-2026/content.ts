@@ -171,7 +171,7 @@ export const industryExperts: IndustryExpertsSection = {
       title: "AI and Machine Learning Courses",
     },
   ],
-  bannerImg: "/landingpage/common/indus-exp.webp",
+  bannerImg: "/wp-content/landingpage/common/indus-exp.webp",
 };
 
 export const specialisationData: SpecialisationSection = {

@@ -76,63 +76,32 @@ export const Counters: CounterItem[] = [
 // Recruiters list
 export const prominentRecruiters: ProminentRecruit[] = [
   {
-    imgUrl:
-      "https://krmangalam.edu.in/landingpage/brand-2025/assets/images/companies/Grandthornton.png",
+    imgUrl: "/wp-content/landingpage/common/ibm.png",
+    alt: "Recruiter Logo",
+  },
+
+  {
+    imgUrl: "/wp-content/landingpage/brand-2026/recruiters/accenture.png",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/landingpage/brand-2025/assets/images/companies/ibm.png",
+    imgUrl: "/wp-content/landingpage/brand-2026/recruiters/apple.svg",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/landingpage/brand-2025/assets/images/ey-logo.jpg",
+    imgUrl: "/wp-content/landingpage/brand-2026/recruiters/amazon.webp",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/landingpage/brand-2025/assets/images/companies/safeexpress.png",
+    imgUrl: "/wp-content/landingpage/brand-2026/recruiters/deliotte.svg",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/landingpage/brand-2025/assets/images/iide-bg.webp",
+    imgUrl: "/wp-content/landingpage/brand-2026/recruiters/icici.svg",
     alt: "Recruiter Logo",
   },
   {
-    imgUrl:
-      "https://krmangalam.edu.in/landingpage/brand-2025/assets/images/companies/imarticus.png",
-    alt: "Recruiter Logo",
-  },
-  {
-    imgUrl:
-      "https://krmangalam.edu.in/landingpage/brand-2025/assets/images/our-campus-partner/accenture.svg",
-    alt: "Recruiter Logo",
-  },
-  {
-    imgUrl:
-      "https://krmangalam.edu.in/landingpage/brand-2025/assets/images/our-campus-partner/apple.svg",
-    alt: "Recruiter Logo",
-  },
-  {
-    imgUrl:
-      "https://krmangalam.edu.in/landingpage/brand-2025/assets/images/our-campus-partner/amazon.svg",
-    alt: "Recruiter Logo",
-  },
-  {
-    imgUrl:
-      "https://krmangalam.edu.in/landingpage/brand-2025/assets/images/our-campus-partner/deliotte.svg",
-    alt: "Recruiter Logo",
-  },
-  {
-    imgUrl:
-      "https://krmangalam.edu.in/landingpage/brand-2025/assets/images/our-campus-partner/icici.svg",
-    alt: "Recruiter Logo",
-  },
-  {
-    imgUrl:
-      "https://krmangalam.edu.in/landingpage/brand-2025/assets/images/our-campus-partner/infosys.svg",
+    imgUrl: "/wp-content/landingpage/brand-2026/recruiters/infosys.png",
     alt: "Recruiter Logo",
   },
 ];
@@ -192,7 +161,7 @@ export const industryExperts: IndustryExpertsSection = {
       title: "",
     },
   ],
-  bannerImg: "/landingpage/common/dummy2.png",
+  bannerImg: "/wp-content/landingpage/common/indus-exp.webp",
 };
 
 export const specialisationData: SpecialisationSection = {
