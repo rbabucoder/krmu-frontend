@@ -4,6 +4,36 @@
 @custom-variant dark (&:is(.dark *));
 
 @layer utilities {
+  .npf_wgts iframe {
+    box-shadow: none !important;
+  }
+
+  .heroBannerForm__form {
+    background: #fff;
+    width: 100%;
+    border-radius: 10px;
+    padding-top: 40px;
+    height: 583px;
+    position: relative;
+  }
+
+  .heroBannerForm-header {
+    text-align: center;
+    font-family: "Poppins", sans-serif !important;
+  }
+
+  .heroBannerForm-header h3 {
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 1;
+  }
+  .heroBannerForm-header h3 span {
+    display: block;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 1.1;
+    margin-top: 5px;
+  }
   .phdForm {
     width: 100% !important;
   }
@@ -22,11 +52,11 @@
     background: rgba(0, 0, 0, 0.5);
   }
 
-  .phdtestcard:nth-child(even){
+  .phdtestcard:nth-child(even) {
     border-color: #e30016;
   }
-  .phdtestcard:nth-child(odd){
-    border-color: #005DA9;
+  .phdtestcard:nth-child(odd) {
+    border-color: #005da9;
   }
 
   .custom-border {

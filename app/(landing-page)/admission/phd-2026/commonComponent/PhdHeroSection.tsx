@@ -23,7 +23,9 @@ const PhdHeroSection = ({ formId }: Props) => {
               Ph.D.
             </span>{" "}
             <br />
-            <span>Enroll in a Ph.D. Programme Today</span>
+            <span className="hidden sm:block">
+              Enroll in a Ph.D. Programme Today
+            </span>
           </h1>
           <h3 className="text-xl mx-auto sm:mx-0 sm:text-2xl md:text-3xl font-semibold bg-white p-5 w-fit my-5 text-center sm:text-left">
             Full Time | Part Time
@@ -42,12 +44,27 @@ const PhdHeroSection = ({ formId }: Props) => {
           />
         </div>
         <div className="w-full md:w-2/3 xl:w-1/3 flex justify-end">
-          {formId && (
+          {/* {formId && (
             <NoPaperFormsWidget
               widgetId={formId}
               height="550px"
               formClass="phdForm"
             />
+          )} */}
+
+          {formId && (
+            <div className="heroBannerForm__form">
+              <div className="heroBannerForm-header">
+                <h3 className="mb-0">
+                  <strong>
+                    Apply Today for{" "}
+                    <span className="uppercase">K.R. Mangalam University</span>
+                  </strong>
+                </h3>
+              </div>
+
+              <NoPaperFormsWidget widgetId={formId} height="480px" />
+            </div>
           )}
         </div>
       </div>

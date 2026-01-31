@@ -20,7 +20,7 @@ import {
 export const Hero: HeroContent = {
   title: `
    <span class="sm:hidden"><span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
-         Undergraduate
+         UG & PG
       </span> Admissions Open 2026–27</span>
       <span class="hidden sm:block">
       ADMISSIONS <br />
