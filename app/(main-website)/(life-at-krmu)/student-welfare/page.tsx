@@ -13,6 +13,7 @@ import TabScroll from "./comp/TabScroll";
 import { Metadata } from "next";
 import { folderRouteSEO } from "@/lib/api/siteseo";
 import { STRAPI_URL } from "@/app/constant";
+import StudentCouncil from "./comp/StudentCouncil";
 
 
 
@@ -91,6 +92,7 @@ const page = async () => {
       <AssistantDSWMessage />
       <VisionMission />
       <TeamMember />
+      <StudentCouncil />
       {/* <WelfareImage /> */}
       <TabScroll />
       {photoGallery && <PhotoGallery photoGallery={photoGallery} />}
