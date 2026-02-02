@@ -22,14 +22,14 @@ const BusinessHub = ({ data, formId }: Props) => {
 
             <p className="text-white/80 max-w-xl mb-8">{data.description}</p>
 
-            <ul className="space-y-3 text-sm">
+            {/* <ul className="space-y-3 text-sm">
               {data.highlights.map((item, index) => (
                 <li key={index} className="flex items-center gap-3">
                   <span className="text-green-400">✔</span>
                   {item.text}
                 </li>
               ))}
-            </ul>
+            </ul> */}
 
             {/* MAP IMAGE */}
             <div className="mt-12 bg-white rounded-xl p-3 shadow-xl max-w-[648px]">
@@ -56,7 +56,10 @@ const BusinessHub = ({ data, formId }: Props) => {
                   <div className="heroBannerForm-header">
                     <h3 className="mb-0">
                       <strong>
-                        Apply Today for <span className="uppercase">K.R. Mangalam University</span>
+                        Apply Today for{" "}
+                        <span className="uppercase">
+                          K.R. Mangalam University
+                        </span>
                       </strong>
                     </h3>
                   </div>
