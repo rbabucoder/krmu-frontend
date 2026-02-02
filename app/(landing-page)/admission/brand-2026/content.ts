@@ -808,14 +808,14 @@ export const faqSectionData: FAQSectionData = {
     {
       id: "item-5",
       question:
-        "Why is K.R. Mangalam University said to be one of the best colleges in Gurgaon?",
-      answer: `The unparalleled quality of learning, expert and experienced faculty, international collaborations, and an excellent placement record have placed KRMU among the top colleges in Gurgaon.`,
+        "Why is K.R. Mangalam University said to be one of the best colleges in Gurugram?",
+      answer: `The unparalleled quality of learning, expert and experienced faculty, international collaborations, and an excellent placement record have placed KRMU among the top colleges in Gurugram.`,
     },
   ],
 };
 
 export const businessHubData: BusinessHubSection = {
-  heading: `Learn at One of India’s Biggest <br /> Business Hubs, Gurgaon`,
+  heading: `Learn at One of India’s Biggest <br /> Business Hubs, Gurugram`,
   description:
     "Launch your career with future-ready specialisations, industry-aligned curriculum, and hands-on project learning at our modern Gurugram campus.",
   highlights: [

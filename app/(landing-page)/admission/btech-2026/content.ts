@@ -20,18 +20,18 @@ import {
 export const Hero: HeroContent = {
   title: `
   <span class="sm:hidden"><span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
-        B.Tech
+        B.Tech.
       </span> Admissions Open 2026–27</span>
        <span class="hidden sm:block">ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
-       B.Tech
+       B.Tech.
       </span>
       <br />
       PROGRAMMES 2026-27
       </span>
     `,
-  desc: `Ideate, Innovate and Influence the Turf of Technology with our B.Tech Programmes <br /> comprising an industry-driven curriculum to shape tomorrow’s tech leaders`,
+  desc: `Ideate, Innovate and Influence the Turf of Technology with our B.Tech. Programmes <br /> comprising an industry-driven curriculum to shape tomorrow’s tech leaders`,
   heroBg: "/wp-content/landingpage/btech-2026/btech.webp",
   middleImg: "",
   mobileImg: "",
@@ -102,10 +102,10 @@ export const prominentRecruiters: ProminentRecruit[] = [
 ];
 
 export const whyKRM: WhyKRMSection = {
-  heading: "What makes KRMU the Best option for the B.Tech Course?",
+  heading: "What Makes KRMU the Best Option for the B.Tech. Courses?",
   subheading:
     "Securing The Future of Technology with Intelligence and Integrity",
-  content: `With an emphasis on cutting-edge technologies like Artificial Intelligence (AI), Machine Learning (ML), Data Science, the Internet of Things (IoT), Cyber Security, Robotics, and UI/UX Design, etc., K.R. Mangalam University's B.Tech. programme aims to give students a solid foundation in technology. Students become industry-ready by getting real-world experience through a one-year industry internship. Additionally, owing to a well-crafted industry-academia linkage, students get a plethora of opportunities for advancing their professional career and creating their own network.`,
+  content: `With an emphasis on cutting-edge technologies like Artificial Intelligence (AI), Machine Learning (ML), Data Science, the Internet of Things (IoT), Cyber Security, Robotics, and UI/UX Design, etc., K.R. Mangalam University's B.Tech. programmes aim to give students a solid foundation in technology. Students become industry-ready by getting real-world experience through a one-year industry internship. Additionally, owing to a well-crafted industry-academia linkage, students get a plethora of opportunities for advancing their professional career and creating their own network.`,
   imgUrl: `/landingpage/btech-2026/why-choose/Building.webp`,
   whyKrmCards: [
     {
@@ -136,7 +136,7 @@ export const industryExperts: IndustryExpertsSection = {
   heading: `Learn From <br /> Industry Experts`,
   description: `KRMU partners with major organisations to provide <br /> industry-specific training.`,
   cta: {
-    label: `Apply for B.Tech 2026-27`,
+    label: `Apply for B.Tech. 2026-27`,
     href: "#",
   },
   cards: [
@@ -199,7 +199,7 @@ export const specialisationData: SpecialisationSection = {
     {
       imgUrl:
         "/landingpage/btech-2026/specialisations/B.Tech.-Computer-Science-and-Engineering-(Robotics-&-AI)-with-Academic-Support-of-IBM-&-powered-by-Microsoft-Certifications.webp",
-      title: `B.Tech. Computer Science and Engineering (Robotics & AI) with Academic Support of IBM & powered by Microsoft Certifications`,
+      title: `B.Tech. Computer Science and Engineering (Robotics & AI) with academic support of IBM & powered by Microsoft Certifications`,
       desc: `The K.R. Mangalam University’s B.Tech. Computer Science and Engineering (Robotics & AI), designed with academic support from IBM and powered by Microsoft Certifications, is an industry-aligned program that blends strong engineering foundations with hands-on learning in AI, robotics, cloud, data, and automation. IBM-led curricula and Microsoft credentials enhance employability, validating real-world skills employers seek.`,
       extraInfos: [
         {
@@ -347,7 +347,7 @@ export const opportunityData: OpportunitySection = {
   heading: "Learn From Industry Experts",
   highlight: "Opportunity That Transforms",
   cta: {
-    label: "Apply for B.Tech 2026-27",
+    label: "Apply for B.Tech. 2026-27",
     href: "#",
   },
 };
@@ -382,7 +382,7 @@ decision that helped me to pursue my dream.
     {
       image: "/wp-content/landingpage/btech-2026/testimonials/3.webp",
       videoUrl: "#",
-      quote: `Choosing K.R. Mangalam University for my B.Tech in CSE was one of the best decisions 
+      quote: `Choosing K.R. Mangalam University for my B.Tech. in CSE was one of the best decisions 
 I've ever made. The university's rigorous curriculum and industry-relevant training 
 have equipped me with the tools necessary to excel in the tech world. I am proud 
 to share that I am working with Debcor Engineering Pvt Ltd, earning a competitive 
@@ -467,7 +467,7 @@ export const comeToLifeData: ComeToLifeSection = {
   description: `Students at K.R. Mangalam University have access to modern computer labs equipped with the latest software and hardware, high-performance computing resources, and dedicated project spaces. This enables hands-on learning and experimentation with real-world technologies.`,
   footerText: ``,
   cta: {
-    label: "Apply for B.Tech 2026-2027 ",
+    label: "Apply for B.Tech. 2026-27 ",
     href: "#",
   },
   slides: [
@@ -515,7 +515,7 @@ export const comeToLifeData: ComeToLifeSection = {
 };
 
 export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
-  heading: "Life as a B.Tech Student at KRMU",
+  heading: "Life as a B.Tech. Student at KRMU",
   description: "",
   image: {
     src: "/landingpage/btech-2026/student-at-krmu/Collage.webp",
@@ -544,7 +544,7 @@ export const faqSectionData: FAQSectionData = {
     {
       id: "item-1",
       question: "What is the placement record of the university?",
-      answer: `The K.R. Mangalam University has a strong placement record with students placed in reputed organisations across various industries. Our dedicated placement cell provides career guidance and support to students. The highest package offered was 56.6 LPA.`,
+      answer: `KRMU has 92% placement record with students placed in reputed organisations across various industries. Our dedicated placement cell provides career guidance and support to students. The highest package offered was 56.6 LPA.`,
     },
     {
       id: "item-2",
@@ -575,7 +575,7 @@ export const faqSectionData: FAQSectionData = {
 };
 
 export const businessHubData: BusinessHubSection = {
-  heading: `Learn at One of India’s Biggest <br /> Business Hubs, Gurgaon`,
+  heading: `Learn at One of India’s Biggest <br /> Business Hubs, Gurugram`,
   description:
     "Launch your career with future-ready specialisations, industry-aligned curriculum, and hands-on project learning at our modern Gurugram campus.",
   highlights: [
@@ -603,7 +603,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Begin Your Journey at K.R. Mangalam<br /> University Now`,
   description: "",
   cta: {
-    label: "Apply for B.Tech 2026-2027",
+    label: "Apply for B.Tech. 2026-27",
     href: "#",
   },
   highlights: [

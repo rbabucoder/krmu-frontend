@@ -55,6 +55,8 @@ const MobileHeader = ({ topbarmenu, navbarData, onClose }: Props) => {
     (component) => component.__component === "temp-menus.about-us-menu",
   );
 
+  console.log('aboutusMenu', aboutusMenu);
+
   return (
     <>
       <div className="pt-[50px] px-5 overflow-y-auto h-screen z-50 bg-[#051630] xl:hidden">
@@ -379,7 +381,10 @@ const MobileHeader = ({ topbarmenu, navbarData, onClose }: Props) => {
                 }`}
               >
                 <div className="bg-white p-5 mt-5  rounded-[10px]">
-                  <h5 className="mt-2.5 mb-[15px] leading-[1.2] text-[#051630] text-lg">
+                  
+                    <h5 className="mt-2.5 mb-[15px] leading-[1.2] text-[#051630] text-lg">
+                    {aboutusMenu?.overview?.heading}
+                  </h5>
                     <ul className="mb-5">
                       {aboutusMenu?.overview?.menulinks.map((menu) => {
                         return (
@@ -396,7 +401,25 @@ const MobileHeader = ({ topbarmenu, navbarData, onClose }: Props) => {
                         );
                       })}
                     </ul>
+                   <h5 className="mt-2.5 mb-[15px] leading-[1.2] text-[#051630] text-lg">
+                    {aboutusMenu?.administration?.heading}
                   </h5>
+                     <ul className="mb-5">
+                      {aboutusMenu?.administration?.menulinks.map((menu) => {
+                        return (
+                          <li key={menu?.id}>
+                            <Link
+                              href={menu?.url || "#"}
+                              className="text-black text-[13px] font-normal"
+                              onClick={onClose}
+                              target="_blank"
+                            >
+                              {menu?.title}
+                            </Link>
+                          </li>
+                        );
+                      })}
+                    </ul>
                 </div>
               </div>
             </li>

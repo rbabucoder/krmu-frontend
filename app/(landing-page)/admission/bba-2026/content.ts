@@ -90,7 +90,7 @@ export const prominentRecruiters: ProminentRecruit[] = [
     alt: "deloitte Logo",
   },
   {
-    imgUrl: "/landingpage/bba-2026/prominent/kpmg.png",
+    imgUrl: "/wp-content/landingpage/bba-2026/recruiters/KPMG_blue_logo.png",
     alt: "kpmg Logo",
   },
   {
@@ -100,7 +100,7 @@ export const prominentRecruiters: ProminentRecruit[] = [
 ];
 
 export const whyKRM: WhyKRMSection = {
-  heading: "Why Opt for BBA Programmes of KRMU?",
+  heading: "Why Opt for BBA Programmes at KRMU?",
   subheading: "Shape Your Future with a Career-Focused Business Education",
   content: `The BBA programmes at K.R. Mangalam University provide the groundwork for future business executives to succeed in a variety of corporate positions or entrepreneurial endeavours. Our programme, which is in line with NEP criteria, guarantees flexibility in length (3 or 4 years), combining academic knowledge with practical experience and real-world insights.`,
   imgUrl: `/landingpage/common/building.webp`,
@@ -129,7 +129,7 @@ export const industryExperts: IndustryExpertsSection = {
   heading: `Learn From <br /> Industry Experts`,
   description: `KRMU partners with major organisations to provide <br /> industry-specific training.`,
   cta: {
-    label: "Apply for BBA 2026-2027",
+    label: "Apply for BBA 2026-27",
     href: "#",
   },
   cards: [
@@ -301,7 +301,7 @@ export const specialisationData: SpecialisationSection = {
     {
       imgUrl:
         "/landingpage/bba-2026/programs/bba-digital-marketing-with-academic-support-of-iide.jpg",
-      title: `BBA (Digital Marketing) with Academic Support of IIDE`,
+      title: `BBA (Digital Marketing) with academic support of IIDE`,
       desc: `Proficiency in online branding, performance marketing, and social media analytics can help you succeed in the digital economy. `,
       extraInfos: [
         {
@@ -324,7 +324,7 @@ export const specialisationData: SpecialisationSection = {
     {
       imgUrl:
         "/landingpage/bba-2026/programs/bba-hons-digital-marketing-with-academic-support-of-iide.jpg",
-      title: `BBA (Hons./ Hons. with Research) in Digital Marketing with Academic Support of IIDE`,
+      title: `BBA (Hons./ Hons. with Research) in Digital Marketing with academic support of IIDE`,
       desc: `You can succeed in the digital economy if you are proficient in social media analytics, performance marketing, and online branding.`,
       extraInfos: [
         {
@@ -435,7 +435,7 @@ export const specialisationData: SpecialisationSection = {
     },
     {
       imgUrl: "/landingpage/bba-2026/programs/bba-ey.jpg",
-      title: `BBA  (Business Analytics) with Academic Support of Ernst & Young (EY)`,
+      title: `BBA  (Business Analytics) with academic support of Ernst & Young (EY)`,
       desc: `Discover how to use decision-making tools, predictive analytics, and data visualisation to solve business problems.`,
       extraInfos: [
         {
@@ -457,7 +457,7 @@ export const specialisationData: SpecialisationSection = {
     },
     {
       imgUrl: "/landingpage/bba-2026/programs/bba-hons-ey.jpg",
-      title: `BBA Hons. / Hons. with Research) (Business Analytics) with academic support of Ernst & Young (EY)`,
+      title: `BBA (Hons. / Hons. with Research) (Business Analytics) with academic support of Ernst & Young (EY)`,
       desc: `It is a 4-year programme focused on integrating data analytics with strategic decision-making, providing strong technical skills for data-driven roles & preparing students for leadership in the data economy.`,
       extraInfos: [
         {
@@ -479,7 +479,7 @@ export const specialisationData: SpecialisationSection = {
     },
     {
       imgUrl: "/landingpage/bba-2026/programs/bba-hons-gcec.jpg",
-      title: `BBA (Hons. / Hons. with Research) Entrepreneurship with Academic Support of GCEC Global Foundation`,
+      title: `BBA (Hons. / Hons. with Research) Entrepreneurship with academic support of GCEC Global Foundation`,
       desc: `You may use startup ideation, venture financing, and lean management strategies to transform innovative ideas into successful enterprises with a BBA in Entrepreneurship. `,
       extraInfos: [
         {
@@ -501,7 +501,7 @@ export const specialisationData: SpecialisationSection = {
     },
     {
       imgUrl: "/landingpage/bba-2026/programs/bba-icf-grant-thornton.jpg",
-      title: `BBA (International Accounting and Finance) (ACCA – UK) with Academic Support of Grant Thornton`,
+      title: `BBA (International Accounting and Finance) (ACCA – UK) with academic support of Grant Thornton`,
       desc: `To focus on financial reporting and worldwide finance standards, pursue an internationally acknowledged ACCA-aligned programme.`,
       extraInfos: [
         {
@@ -567,7 +567,7 @@ export const specialisationData: SpecialisationSection = {
     },
     {
       imgUrl: "/landingpage/bba-2026/programs/bba-logistics-safexpress.jpg",
-      title: `BBA (Hons. / Hons. with Research) Logistics and Supply Chain Management with Academic Support of Safexpress`,
+      title: `BBA (Hons. / Hons. with Research) Logistics and Supply Chain Management with academic support of Safexpress`,
       desc: `The course curriculum strives to provide students with a thorough grasp of how global supply chains function and how crucial they are to the success of contemporary firms.`,
       extraInfos: [
         {
@@ -590,7 +590,7 @@ export const specialisationData: SpecialisationSection = {
     {
       imgUrl:
         "/landingpage/bba-2026/programs/bba-hons-logistics-safexpress.jpg",
-      title: `BBA (Entrepreneurship) with Academic Support of GCEC Global Foundation`,
+      title: `BBA (Entrepreneurship) with academic support of GCEC Global Foundation`,
       desc: `With a BBA in Entrepreneurship, you can turn creative concepts into profitable businesses through startup ideation, venture capital, and learn management techniques.`,
       extraInfos: [
         {
@@ -623,7 +623,7 @@ export const opportunityData: OpportunitySection = {
   heading: "Learn From Industry Experts",
   highlight: "Opportunity That Transforms",
   cta: {
-    label: "Apply for BBA  2026-2027",
+    label: "Apply for BBA  2026-27",
     href: "#",
   },
 };
@@ -730,7 +730,7 @@ export const comeToLifeData: ComeToLifeSection = {
   description: `K.R. Mangalam University offers a modern and student-centric campus designed to support effective learning and holistic development for BBA undergraduates. The university provides smart classrooms, a well-equipped central library with digital resources, computer and analytics labs, and seminar halls to enhance academic engagement. Dedicated spaces for innovation, entrepreneurship, and skill development create an environment that encourages practical learning, collaboration, and professional growth.`,
   footerText: ``,
   cta: {
-    label: "Apply for BBA  2026-2027 ",
+    label: "Apply for BBA  2026-27 ",
     href: "#",
   },
   slides: [
@@ -807,12 +807,12 @@ export const faqSectionData: FAQSectionData = {
     {
       id: "item-1",
       question: "What teaching methods are used in the BBA programmes?",
-      answer: `The BBA curriculum emphasizes: <br /> <br /><ul> <li>Case studies</li><li>Live projects</li><li> Internships</li><li>Industry interaction </li> <li>Presentations, simulations, and experiential learning</li></ul>`,
+      answer: `The BBA curriculum emphasises: <br /> <br /><ul> <li>Case studies</li><li>Live projects</li><li> Internships</li><li>Industry interaction </li> <li>Presentations, simulations, and experiential learning</li></ul>`,
     },
     {
       id: "item-2",
       question: "Are internships mandatory in the BBA programme?",
-      answer: `Yes. Internships and live projects are an integral part of the BBA curriculum to provide real-world business exposure and practical learning.`,
+      answer: `Yes! Internships and live projects are an integral part of the BBA curriculum to provide real-world business exposure and practical learning.`,
     },
     {
       id: "item-3",
@@ -833,7 +833,7 @@ export const faqSectionData: FAQSectionData = {
     {
       id: "item-4",
       question: "Does the university provide placement support?",
-      answer: `Yes. KRMU has a dedicated Career Development & Placement Cell that supports students through:
+      answer: `Yes, KRMU provides 100% placement support. We have a dedicated Career Development & Placement Cell that supports students through:
  <br /><br /> 
        <ul>
         <li>Career counselling</li>
@@ -845,13 +845,13 @@ export const faqSectionData: FAQSectionData = {
     {
       id: "item-5",
       question: "Are scholarships available for BBA students?",
-      answer: `Yes. KRMU offers merit-based and need-based scholarships as per university norms and applicable guidelines.`,
+      answer: `Yes! KRMU offers merit-based and need-based scholarships as per university norms and applicable guidelines.`,
     },
   ],
 };
 
 export const businessHubData: BusinessHubSection = {
-  heading: `Learn at One of India’s Biggest <br /> Business Hubs, Gurgaon`,
+  heading: `Learn at One of India’s Biggest <br /> Business Hubs, Gurugram`,
   description:
     "Launch your career with future-ready specialisations, industry-aligned curriculum, and hands-on project learning at our modern Gurugram campus.",
   highlights: [
@@ -879,7 +879,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Begin Your Journey at K.R. Mangalam<br /> University Now`,
   description: "",
   cta: {
-    label: "Apply for BBA  2026-2027",
+    label: "Apply for BBA  2026-27",
     href: "#",
   },
   highlights: [

@@ -340,7 +340,7 @@ export const testimonialsData: TestimonialsSection = {
     {
       image: "/landingpage/bcom-2026/testimonials/3.jpg",
       videoUrl: "#",
-      quote: `It was a great experience to be part of such an esteemed university. Completing my B.Com. (Hons.) degree here helped me acquire the essential skills required of a commerce professional. The state-of-the-art infrastructure makes it one of the best universities in Gurgaon.`,
+      quote: `It was a great experience to be part of such an esteemed university. Completing my B.Com. (Hons.) degree here helped me acquire the essential skills required of a commerce professional. The state-of-the-art infrastructure makes it one of the best universities in Gurugram.`,
       name: "Tisha Arora",
       programme: "B.Com. (Hons.) ",
     },
@@ -521,14 +521,14 @@ export const faqSectionData: FAQSectionData = {
     },
     {
       id: "item-7",
-      question: "Where can I pursue a B.Com. in Gurgaon?",
-      answer: `You can pursue a B.Com. programme at K.R. Mangalam University, Gurgaon, which offers industry-aligned curriculum and strong academic support. `,
+      question: "Where can I pursue a B.Com. in Gurugram?",
+      answer: `You can pursue a B.Com. programme at K.R. Mangalam University, Gurugram, which offers industry-aligned curriculum and strong academic support. `,
     },
   ],
 };
 
 export const businessHubData: BusinessHubSection = {
-  heading: `Learn at One of India’s Biggest <br /> Business Hubs, Gurgaon`,
+  heading: `Learn at One of India’s Biggest <br /> Business Hubs, Gurugram`,
   description:
     "Launch your career with future-ready specialisations, industry-aligned curriculum, and hands-on project learning at our modern Gurugram campus.",
   highlights: [

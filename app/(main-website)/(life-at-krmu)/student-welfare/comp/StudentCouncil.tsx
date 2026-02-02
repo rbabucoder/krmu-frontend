@@ -73,12 +73,12 @@ const StudentCouncil = () => {
       role: "Sports Fitness Coordinator",
       image: "/wp-content/coordinator/sahil.png",
     },
-    {
-      id: 11,
-      name: "Aditya Raman Tiwari",
-      role: "Sports fitness Sub Coordinator",
-      image: "/wp-content/coordinator/aditya.png",
-    },
+    // {
+    //   id: 11,
+    //   name: "Aditya Raman Tiwari",
+    //   role: "Sports fitness Sub Coordinator",
+    //   image: "/wp-content/coordinator/aditya.png",
+    // },
     {
       id: 12,
       name: "Devraj Singh",
@@ -91,12 +91,12 @@ const StudentCouncil = () => {
       role: "Social media Posting Coordinator",
       image: "/wp-content/coordinator/kanishk.png",
     },
-    {
-      id: 14,
-      name: "Vedant srivastav",
-      role: "Social media Design & Promotions Coordinator",
-      image: "/wp-content/coordinator/vedant.png",
-    },
+    // {
+    //   id: 14,
+    //   name: "Vedant srivastav",
+    //   role: "Social media Design & Promotions Coordinator",
+    //   image: "/wp-content/coordinator/vedant.png",
+    // },
     {
       id: 15,
       name: "Harshit Malik",

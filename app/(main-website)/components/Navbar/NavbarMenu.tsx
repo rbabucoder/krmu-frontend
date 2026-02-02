@@ -66,7 +66,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                   src="/white-down-chevron.svg"
                 />
               </Link>
-              <div className="absolute flex right-0 translate-x-[50%] min-w-[1000px] w-full krmsubmenu-container krmsubmenu-1">
+              <div className="absolute flex right-0 translate-x-[80%] 2xl:translate-x-[50%] min-w-[1000px] w-full krmsubmenu-container krmsubmenu-1">
                 <div className="rounded-l-sm bg-white w-3/5 pt-[30px] px-[30px] pb-[15px] flex">
                   <div className="pr-[30px] border-r border-[#d9dada]">
                     <h5 className="text-lg text-[#051630] my-2.5 font-semibold">

@@ -8,6 +8,9 @@ import EventsExperienceSection from "./comp/EventsExperienceSection";
 import ExploreProgrammes from "./comp/ExploreProgrammes";
 import GetStartedSteps from "./comp/GetStartedSteps";
 import ExploreProgrammsTab from "./comp/ExploreProgrammsTab";
+import LifeAtSEMCE from "./comp/LifeAtSEMCE";
+import YourStory from "./comp/YourStory";
+import SEMCETestimonials from "./comp/SEMCETestimonials";
 
 const page = () => {
   return (
@@ -16,9 +19,12 @@ const page = () => {
         <Stats />
         <FutureReady />
         <LearnByCreating />
+        <SEMCETestimonials />
         <NewsletterSection />
         <ExploreProgrammes />
         <GetStartedSteps />
+        <LifeAtSEMCE />
+        <YourStory />
       </main>
     </>
   );

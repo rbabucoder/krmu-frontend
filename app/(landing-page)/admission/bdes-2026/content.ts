@@ -114,9 +114,9 @@ export const prominentRecruiters: ProminentRecruit[] = [
 ];
 
 export const whyKRM: WhyKRMSection = {
-  heading: "Why Choose B.Des. Course at KRMU?",
+  heading: "Why Choose B.Des. Courses at KRMU?",
   subheading: "Preparing Creative Minds for Professional Design Careers",
-  content: `The B.Des. programme at K.R. Mangalam University is designed to nurture creative thinkers who are ready for the evolving design industry. With specialised pathways in Fashion Design, Game Design & Animation, Interior Design, and UX/UI & Interaction Design, the curriculum blends strong design fundamentals with hands-on learning, industry exposure, and advanced tools. Guided by experienced faculty and supported by a vibrant creative ecosystem, students develop practical skills, innovative thinking, and professional confidence to succeed across diverse design careers.`,
+  content: `The B.Des. programmes at K.R. Mangalam University are designed to nurture creative thinkers who are ready for the evolving design industry. With specialised pathways in Fashion Design, Game Design & Animation, Interior Design, and UX/UI & Interaction Design, the curriculum blends strong design fundamentals with hands-on learning, industry exposure, and advanced tools. Guided by experienced faculty and supported by a vibrant creative ecosystem, students develop practical skills, innovative thinking, and professional confidence to succeed across diverse design careers.`,
   imgUrl: `/landingpage/common/building.webp`,
   whyKrmCards: [
     {
@@ -401,7 +401,7 @@ export const comeToLifeData: ComeToLifeSection = {
   description: `K.R. Mangalam University offers top-notch, industry-standard facilities and specialized design labs, creating a sophisticated ecosystem of high-end studios and cutting-edge technology that empowers B.Des. students to bring their creative visions to life.`,
   footerText: ``,
   cta: {
-    label: "Apply for B.Des. 2026-2027 ",
+    label: "Apply for B.Des. 2026-27 ",
     href: "#",
   },
   slides: [
@@ -495,7 +495,7 @@ export const faqSectionData: FAQSectionData = {
       id: "item-4",
       question:
         "Does the Fashion Design course include practical and studio-based learning?",
-      answer: `Yes. The programme emphasises hands-on studio work, workshops, and live projects, allowing students to translate creative concepts into finished designs and collections.
+      answer: `Yes, the programme emphasises hands-on studio work, workshops, and live projects, allowing students to translate creative concepts into finished designs and collections.
 `,
     },
     {
@@ -517,7 +517,7 @@ export const faqSectionData: FAQSectionData = {
     {
       id: "item-8",
       question: "Is there placement and career support for design students?",
-      answer: `Yes. KRMU offers 100% placement assistance with strong industry connections, helping students secure internships and job opportunities upon graduation.`,
+      answer: `Yes! KRMU offers 100% placement assistance with strong industry connections, helping students secure internships and job opportunities upon graduation.`,
     },
     {
       id: "item-9",
@@ -528,7 +528,7 @@ export const faqSectionData: FAQSectionData = {
 };
 
 export const businessHubData: BusinessHubSection = {
-  heading: `Learn at One of India’s Biggest <br /> Business Hubs, Gurgaon`,
+  heading: `Learn at One of India’s Biggest <br /> Business Hubs, Gurugram`,
   description:
     "Launch your career with future-ready specialisations, industry-aligned curriculum, and hands-on project learning at our modern Gurugram campus.",
   highlights: [
@@ -556,7 +556,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Begin Your Journey at K.R. Mangalam<br /> University Now`,
   description: "",
   cta: {
-    label: "Apply for B.Des Programme",
+    label: "Apply for B.Des. 2026-27",
     href: "#",
   },
   highlights: [

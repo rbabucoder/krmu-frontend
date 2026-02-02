@@ -14,7 +14,7 @@ import {
   SpecialisationSection,
   TestimonialsSection,
   WhyKRMSection,
-} from "./contentype"; 
+} from "./contentype";
 
 // Usage types
 export const Hero: HeroContent = {
@@ -49,6 +49,9 @@ export const heroMarqueeData: HeroMarqueeSection = {
     "₹56.6 LPA Highest Package",
     "₹27 Cr Scholarships",
     "800+ Recruiters",
+    "18K+ Alumni",
+    "92% Placement Record",
+    "100% Sponsored* International Study Tour",
   ],
   bgColor: "#e31e24",
   speedClass: "animate-marquee",
@@ -104,7 +107,7 @@ export const prominentRecruiters: ProminentRecruit[] = [
 export const whyKRM: WhyKRMSection = {
   heading: "Why Choose Undergraduate Law Programmes at KRMU?",
   subheading: "",
-  content: `Undergraduate Law Programmes at K.R. Mangalam University provides internationally relevant,  industry-aligned programmes aimed at producing capable and socially conscious attorneys. Our graduates are prepared to succeed in corporate law, litigation, public policy, and other fields thanks to a curriculum developed by legal professionals which focuses on practical experience and interdisciplinary learning.`,
+  content: `The undergraduate law programmes at K.R. Mangalam University offer internationally relevant, industry-aligned education designed to develop capable and socially conscious legal professionals. With a curriculum crafted by legal experts, the programmes emphasise practical exposure and interdisciplinary learning, preparing graduates for careers in corporate law, litigation, public policy, and allied fields.`,
   imgUrl: `/landingpage/common/build.webp`,
   whyKrmCards: [
     {
@@ -455,8 +458,8 @@ export const faqSectionData: FAQSectionData = {
     {
       id: "item-1",
       question: "What are the eligibility criteria for law admission at KRMU?",
-      answer: `10+2 with a minimum of 50% aggregate marks is required for Integrated LL.B. Programs (BBA LL.B. / B.A. LL.B.). <br />
-        A bachelor's degree in any field with at least 50% of the possible points is required for LL.B. (Hons.).`,
+      answer: `10+2 with a minimum of 50% aggregate marks is required for Integrated LL.B. Programmes (BBA LL.B. / B.A. LL.B.). <br />
+        A bachelor's degree in any field with at least 50% marks is required for LL.B. (Hons.).`,
     },
     {
       id: "item-2",
@@ -466,23 +469,23 @@ export const faqSectionData: FAQSectionData = {
     {
       id: "item-3",
       question: "What kind of placement assistance does the institution offer?",
-      answer: `We offer committed placement support, including industry partnerships, simulated interviews, and placement drives with leading corporate and legal recruiters.`,
+      answer: `We offer 100% placement assistance, backed by industry partnerships, simulated interviews, and placement drives with leading corporate and legal recruiters.`,
     },
     {
       id: "item-4",
       question: "What distinguishes BBA LL.B. from B.A. LL.B.?",
-      answer: `While BBA LL.B. universities concentrate on integrating business studies courses like finance, marketing, HR, and more with legal studies, B.A. LL.B. degrees concentrate on combining LL.B. education with liberal arts subjects like humanities, politics, etc.`,
+      answer: `BBA LL.B. focuses on combining law with business subjects such as Finance, Marketing, and HR, while B.A. LL.B. integrates legal studies with liberal arts subjects like Humanities and Political Science.`,
     },
     {
       id: "item-5",
       question: "How long does an LL.B. law programme in India last?",
-      answer: `In every Indian LL.B. school, an LL.B. programme lasts around three years. However, the course length is often five years if you're studying an integrated LL.B. program, like as a B.A. LL.B. or a BBA LL.B. in India.`,
+      answer: `In India, an LL.B. programme typically lasts three years. However, integrated programmes such as B.A. LL.B. or BBA LL.B. have a duration of five years.`,
     },
   ],
 };
 
 export const businessHubData: BusinessHubSection = {
-  heading: `Learn at One of India’s Biggest <br /> Business Hubs, Gurgaon`,
+  heading: `Learn at One of India’s Biggest <br /> Business Hubs, Gurugram`,
   description:
     "Launch your career with future-ready specialisations, industry-aligned curriculum, and hands-on project learning at our modern Gurugram campus.",
   highlights: [

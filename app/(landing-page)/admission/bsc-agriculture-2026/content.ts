@@ -25,7 +25,7 @@ export const Hero: HeroContent = {
        B.Sc. (Hons.) Agriculture
       </span>
       <br />
-      PROGRAMMES 2026-27 
+      PROGRAMME 2026-27 
     `,
   desc: `Discover the foundation of agricultural excellence with K.R. Mangalam University’s <br />
    four-year agriculture programme, designed to build strong agrarian knowledge, <br />practical expertise, and an understanding of modern farming practices`,
@@ -102,7 +102,7 @@ export const prominentRecruiters: ProminentRecruit[] = [
 export const whyKRM: WhyKRMSection = {
   heading: "Why Choose B.Sc. (Hons.) Agriculture Course at KRMU?",
   subheading: "Shape Your Future with a Career-Focused Business Education",
-  content: `K.R. Mangalam University’s Agriculture Programmes blend strong theoretical knowledge with hands-on training to prepare students for real-world agricultural challenges. Through field visits, workshops, expert lectures, and practical exposure, students gain insight into modern farming practices. Supported by experienced faculty, advanced laboratories, and research facilities, the programme encourages learning in areas such as agronomy, soil science, and sustainable agriculture, shaping skilled and industry-ready professionals.`,
+  content: `K.R. Mangalam University’s Agriculture programme blends strong theoretical knowledge with hands-on training to prepare students for real-world agricultural challenges. Through field visits, workshops, expert lectures, and practical exposure, students gain insight into modern farming practices. Supported by experienced faculty, advanced laboratories, and research facilities, the programme encourages learning in areas such as agronomy, soil science, and sustainable agriculture, shaping skilled and industry-ready professionals.`,
   imgUrl: `/landingpage/bsc-agriculture-2026/why-choose/Building.webp`,
   whyKrmCards: [
     {
@@ -181,7 +181,7 @@ export const opportunityData: OpportunitySection = {
   heading: "Learn From Industry Experts",
   highlight: "Opportunity That Transforms",
   cta: {
-    label: "Apply for BBA (UG) 2026-2027",
+    label: "Apply for BBA (UG) 2026-27",
     href: "#",
   },
 };
@@ -285,7 +285,7 @@ export const comeToLifeData: ComeToLifeSection = {
   description: `K.R. Mangalam University offers world-class facilities that support both academic learning and practical training across disciplines. Students benefit from modern classrooms, well-equipped laboratories, a comprehensive resource library, and advanced teaching aids that encourage innovative learning approaches. In addition, discipline-specific facilities such as specialised labs, field-based learning spaces, and research support for agriculture-related studies further enhance hands-on exposure. Together, these facilities ensure students are well-prepared to excel in diverse professional and academic environments.`,
   footerText: ``,
   cta: {
-    label: "Apply for B.Sc. 2026–2027",
+    label: "Apply for B.Sc. 2026–27",
     href: "#",
   },
   slides: [
@@ -397,7 +397,7 @@ export const faqSectionData: FAQSectionData = {
 };
 
 export const businessHubData: BusinessHubSection = {
-  heading: `Learn at One of India’s Biggest <br /> Business Hubs, Gurgaon`,
+  heading: `Learn at One of India’s Biggest <br /> Business Hubs, Gurugram`,
   description:
     "Launch your career with future-ready specialisations, industry-aligned curriculum, and hands-on project learning at our modern Gurugram campus.",
   highlights: [
@@ -425,7 +425,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Begin Your Journey at K.R. Mangalam<br /> University now`,
   description: "",
   cta: {
-    label: "Apply for UG Programme  ",
+    label: "Apply for B.Sc. 2026–27",
     href: "#",
   },
   highlights: [

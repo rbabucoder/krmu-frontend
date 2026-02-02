@@ -1,6 +1,7 @@
 import { STRAPI_URL } from "@/app/constant";
 import { PhotoGallerySection } from "@/lib/api/student-welfare";
 import Image from "next/image";
+import Link from "next/link";
 
 type Props = {
   photoGallery: PhotoGallerySection;
@@ -24,6 +25,15 @@ export const PhotoGallery = ({ photoGallery }: Props) => {
                 />
               );
             })}
+        </div>
+        <div className="py-10 flex justify-center">
+          <Link
+            href="/happenings/gallery-image"
+            className="px-6 py-2 rounded-md bg-[#051630] text-white hover:bg-gray-800 transition"
+            target="_blank"
+          >
+            View More
+          </Link>
         </div>
       </div>
     </section>
