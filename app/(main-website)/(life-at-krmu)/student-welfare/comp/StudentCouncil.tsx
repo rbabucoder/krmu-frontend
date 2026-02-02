@@ -73,12 +73,12 @@ const StudentCouncil = () => {
       role: "Sports Fitness Coordinator",
       image: "/wp-content/coordinator/sahil.png",
     },
-    // {
-    //   id: 11,
-    //   name: "Aditya Raman Tiwari",
-    //   role: "Sports fitness Sub Coordinator",
-    //   image: "/wp-content/coordinator/aditya.png",
-    // },
+    {
+      id: 11,
+      name: "Aditya Raman Tiwari",
+      role: "Sports fitness Sub Coordinator",
+      image: "/wp-content/coordinator/aditya.png",
+    },
     {
       id: 12,
       name: "Devraj Singh",
@@ -91,17 +91,17 @@ const StudentCouncil = () => {
       role: "Social media Posting Coordinator",
       image: "/wp-content/coordinator/kanishk.png",
     },
-    // {
-    //   id: 14,
-    //   name: "Vedant srivastav",
-    //   role: "Social media Design & Promotions Coordinator",
-    //   image: "/wp-content/coordinator/vedant.png",
-    // },
+    {
+      id: 14,
+      name: "Vedant srivastav",
+      role: "Social media Design & Promotions Coordinator",
+      image: "/wp-content/coordinator/vedant.png",
+    },
     {
       id: 15,
       name: "Harshit Malik",
-      role: "Social mediæ ORM & Promotions Coordinator",
-      image: "/wp-content/coordinator/harshit-malik.png",
+      role: "Social Media ORM & Promotions Coordinator",
+      image: "/wp-content/coordinator/harshit.png",
     },
     {
       id: 16,
@@ -129,10 +129,16 @@ const StudentCouncil = () => {
     },
     {
       id: 20,
-      name: "Vidhi Kumari",
-      role: "Support Team",
-      image: "/wp-content/coordinator/vidhi.png",
+      name: "Amandeep Pradhan",
+      role: "Social Media Video Editing Coordinator",
+      image: "/wp-content/coordinator/amandeep.png",
     },
+    // {
+    //   id: 20,
+    //   name: "Vidhi Kumari",
+    //   role: "Support Team",
+    //   image: "/wp-content/coordinator/vidhi.png",
+    // },
    
   ];
 
@@ -154,8 +160,8 @@ const StudentCouncil = () => {
             >
               <Image
                 src={member.image}
-                width={300}
-                height={300}
+                width={270}
+                height={270}
                 className="mb-2.5 object-cover"
                 alt={member.name}
               />
