@@ -32,7 +32,7 @@ const WardenHostel = () => {
           </div>
         </div>
 
-        {/* RIGHT HOSTEL FEES */}w
+        {/* RIGHT HOSTEL FEES */}
         <div className="w-full lg:w-1/2">
           <h3 className="text-[22px] font-semibold mb-6 px-4 sm:px-0">Hostel Fees</h3>
 

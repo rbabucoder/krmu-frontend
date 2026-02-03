@@ -11,6 +11,10 @@ import ExploreProgrammsTab from "./comp/ExploreProgrammsTab";
 import LifeAtSEMCE from "./comp/LifeAtSEMCE";
 import YourStory from "./comp/YourStory";
 import SEMCETestimonials from "./comp/SEMCETestimonials";
+import Teachyou from "./comp/Teachyou";
+import MacLaptop from "./comp/MacLaptop";
+import BiggestBrand from "./comp/BiggestBrand";
+import SEMCESlideSection from "./comp/SEMCESlideSection";
 
 const page = () => {
   return (
@@ -18,13 +22,20 @@ const page = () => {
       <main className="semce_main_container">
         <Stats />
         <FutureReady />
-        <LearnByCreating />
-        <SEMCETestimonials />
-        <NewsletterSection />
+        <MacLaptop />
+        <BiggestBrand />
         <ExploreProgrammes />
-        <GetStartedSteps />
+        <LearnByCreating />
+        <NewsletterSection />
         <LifeAtSEMCE />
-        <YourStory />
+        <SEMCESlideSection />
+        <Teachyou />
+        <YourStory /> 
+
+        {/* 
+        <SEMCETestimonials />
+        <GetStartedSteps />
+         */}
       </main>
     </>
   );

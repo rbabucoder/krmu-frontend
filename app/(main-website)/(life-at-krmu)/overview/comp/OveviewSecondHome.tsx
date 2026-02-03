@@ -20,7 +20,7 @@ const OveviewSecondHome = () => {
             home.
           </p>
           <Link
-            href="/campus-life/campus-facilities"
+            href="/hostel"
             className="py-[11px] px-[23px] text-white bg-[#0060aa] font-semibold text-base rounded-[4px] inline-block"
             target="_blank"
           >

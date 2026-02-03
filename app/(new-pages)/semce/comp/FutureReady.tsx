@@ -18,7 +18,7 @@ const FutureReady = () => {
               professionals.
             </p>
             <p>
-              Journalism remains a core foundation, taught alongside digital 
+              Journalism remains a core foundation, taught alongside digital
               media, content creation,and creator-led platforms.
             </p>
             <p>
@@ -38,6 +38,7 @@ const FutureReady = () => {
             />
           </div>
         </div>
+       
       </div>
     </section>
   );

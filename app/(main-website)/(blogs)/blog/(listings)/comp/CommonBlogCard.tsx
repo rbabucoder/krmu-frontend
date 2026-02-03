@@ -40,7 +40,7 @@ const CommonBlogCard = async ({ title, excerpt, slug, imgId, date }: Props) => {
       >
         <div className="p-2.5" data-test={imgUrl}>
           <div className="relative">
-            <span className="absolute top-0 right-0 bg-red-600 text-white p-2.5 rounded-tr-[24px] rounded-bl-[24px]">{postDate}</span>
+            <span className="absolute bottom-0 left-0 text-xs bg-red-600 text-white py-2.5 px-5 rounded-tr-[24px] rounded-bl-[24px]">{postDate}</span>
             {normalizedImgUrl && (
               <Image
                 src={normalizedImgUrl}
