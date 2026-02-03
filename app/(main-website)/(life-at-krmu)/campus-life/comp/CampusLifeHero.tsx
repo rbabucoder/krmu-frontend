@@ -2,7 +2,7 @@ const CampusLifeHero = () => {
   return (
     <section className="pt-[120px] pb-[100px] px-4">
       <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row items-center gap-10">
-        <div className="lg:w-1/2">
+        <div className="lg:w-1/2"> 
           <h1 className="text-3xl md:text-6xl lg:text-[80px] leading-[1.2] blue-gradient font-semibold">
             Discover You <br /> Second Home
           </h1>
@@ -16,10 +16,10 @@ const CampusLifeHero = () => {
             unforgettable experiences.
           </p>
         </div>
-        <div className="lg:w-1/2">
+        <div className="lg:w-1/2 customIframeStyle">
           <iframe
             width="100%"
-            height="450"
+            height="420px"
             src="https://www.youtube.com/embed/0FECW-Go_oc?si=ZbWaooI79dxAfE1M"
             title="YouTube video player"
             frameBorder="0"

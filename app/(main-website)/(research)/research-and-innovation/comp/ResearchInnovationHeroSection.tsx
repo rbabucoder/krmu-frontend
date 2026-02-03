@@ -45,7 +45,7 @@ const ResearchInnovationHeroSection = () => {
               Publications
             </Link>
             <Link
-              href="/PDF/publications"
+              href="/PDF/conferences"
               className="bg-[#e31e24] leading-[1.5] py-2.5 px-5 inline-block rounded-[4px] text-xl text-white md:leading-2.5 blink-effect"
               target="_blank"
             >

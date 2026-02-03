@@ -412,7 +412,7 @@ const Hero = () => {
       </section>
       <section>
         <div className="max-w-[1664px] mx-auto w-full p-5 rounded-[20px] mt-10 flex gap-5 flex-col lg:flex-row">
-          <div className="w-[38%]">
+          <div className="w-full lg:w-[38%]">
             <div className="committeebox p-5 mb-5">
               <h5 className="text-2xl font-semibold leading-[1.3] mb-5">
                 Anti-Ragging Committee
@@ -468,7 +468,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="lg:w-[58%] committeebox p-5">
+          <div className="w-full lg:w-[58%] committeebox p-5">
             <h3 className="mb-5 text-2xl">
               Anti-Ragging Committee against consist of the following members:
             </h3>
