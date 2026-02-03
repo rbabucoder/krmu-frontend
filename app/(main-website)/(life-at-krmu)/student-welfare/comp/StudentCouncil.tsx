@@ -156,7 +156,7 @@ const StudentCouncil = () => {
           {data.slice(0, visibleCount).map((member) => (
             <div
               key={member.id}
-              className="w-full flex flex-col justify-center items-center"
+              className="w-full flex flex-col justify-center items-center stu_coun"
             >
               <Image
                 src={member.image}
