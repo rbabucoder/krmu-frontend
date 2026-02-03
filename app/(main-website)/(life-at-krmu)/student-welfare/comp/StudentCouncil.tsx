@@ -18,12 +18,12 @@ const StudentCouncil = () => {
       role: "Event Coordinator",
       image: "/wp-content/coordinator/ishan.png",
     },
-   
+
     {
       id: 2,
       name: "Somya Sharma",
       role: "Event Sub Coordinator",
-      image: "/wp-content/coordinator/somya.png",
+      image: "/wp-content/coordinator/somya-sharma.png",
     },
     {
       id: 3,
@@ -41,7 +41,7 @@ const StudentCouncil = () => {
       id: 5,
       name: "Raghav Sharma",
       role: "Club Coordinator",
-      image: "/wp-content/coordinator/raghav.png",
+      image: "/wp-content/coordinator/raghav-s.png",
     },
     {
       id: 6,
@@ -71,11 +71,11 @@ const StudentCouncil = () => {
       id: 10,
       name: "Sahil Chauhan",
       role: "Sports Fitness Coordinator",
-      image: "/wp-content/coordinator/sahil.png",
+      image: "/wp-content/coordinator/sahil-chauhan.png",
     },
     {
       id: 11,
-      name: "Aditya Raman Tiwari",
+      name: "Aditya Ranjan Tiwari",
       role: "Sports fitness Sub Coordinator",
       image: "/wp-content/coordinator/aditya.png",
     },
@@ -139,7 +139,6 @@ const StudentCouncil = () => {
     //   role: "Support Team",
     //   image: "/wp-content/coordinator/vidhi.png",
     // },
-   
   ];
 
   const INITIAL_COUNT = 4;
@@ -152,21 +151,21 @@ const StudentCouncil = () => {
           Student Council
         </h3>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-10">
           {data.slice(0, visibleCount).map((member) => (
             <div
               key={member.id}
-              className="w-full flex flex-col justify-center items-center stu_coun"
+              className="w-full flex flex-col justify-center items-center stu_coun text-center"
             >
               <Image
                 src={member.image}
-                width={270}
-                height={270}
+                width={150}
+                height={150}
                 className="mb-2.5 object-cover"
                 alt={member.name}
               />
-              <span className="font-semibold text-xl">{member.name}</span>
-              <span className="text-sm">{member.role}</span>
+              <span className="font-semibold text-sm sm:text-xl">{member.name}</span>
+              <span className="text-xs sm:text-sm">{member.role}</span>
             </div>
           ))}
         </div>
@@ -175,7 +174,7 @@ const StudentCouncil = () => {
           <div className="mt-10 flex justify-center">
             <button
               onClick={() => setVisibleCount(data.length)}
-              className="px-6 py-2 rounded-md bg-black text-white hover:bg-gray-800 transition"
+              className="px-6 py-2 rounded-md bg-[#051730] text-white hover:bg-gray-800 transition cursor-pointer"
             >
               Load More
             </button>

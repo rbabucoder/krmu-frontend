@@ -11,18 +11,18 @@ const TeamMember = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
           <div className="w-full flex flex-col justify-center items-center">
             <Image
-              src="/student-welfare/team-member/puneet.webp"
+              src="https://truthful-cabbage-82fd27e8f6.media.strapiapp.com/1_749040d4e6.png"
               width={150}
               height={150}
               className="mb-2.5 rounded-full"
               alt="Puneet"
             />
-            <span className="font-semibold">Mr. Puneet Kumar</span>
-            <span className="text-sm">Director of Sports</span>
+            <span className="font-semibold">RAJBAHADUR ( RAJ TANWAR)</span>
+            <span className="text-sm">THEATRE & DANCE TEACHER</span>
           </div>
           <div className="w-full flex flex-col justify-center items-center">
             <Image
-              src="/student-welfare/team-member/rahul-kumar-jha.webp"
+              src="https://truthful-cabbage-82fd27e8f6.media.strapiapp.com/3_792520e219.png"
               width={150}
               height={150}
               className="mb-2.5 rounded-full"
@@ -33,7 +33,7 @@ const TeamMember = () => {
           </div>
           <div className="w-full flex flex-col justify-center items-center">
             <Image
-              src="/student-welfare/team-member/jagjeet.webp"
+              src="https://truthful-cabbage-82fd27e8f6.media.strapiapp.com/2_cde5012ecc.png"
               width={150}
               height={150}
               className="mb-2.5 rounded-full"
@@ -45,7 +45,7 @@ const TeamMember = () => {
 
           <div className="w-full flex flex-col justify-center items-center">
             <Image
-              src="/student-welfare/team-member/sunil.webp"
+              src="https://truthful-cabbage-82fd27e8f6.media.strapiapp.com/5_e217193374.png"
               width={150}
               height={150}
               className="mb-2.5 rounded-full"
@@ -79,7 +79,7 @@ const TeamMember = () => {
           </div> */}
             <div className="w-full flex flex-col justify-center items-center">
             <Image
-              src="/student-welfare/team-member/prav.jpeg"
+              src="https://truthful-cabbage-82fd27e8f6.media.strapiapp.com/4_a85ee74b08.png"
               width={150}
               height={150}
               className="mb-2.5 rounded-full"

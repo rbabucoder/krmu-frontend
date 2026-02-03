@@ -15,10 +15,11 @@ const DSWMessage = () => {
         <div className="flex flex-col lg:flex-row gap-5">
           <div className="lg:w-1/5">
             <Image
-              src="/life-at-krmu/shwetamam.jpg"
+              src="/life-at-krmu/shweta-mam.jpg"
               width={304}
               height={234}
               alt="Anjana Singh DSW"
+              
             />
             <h4 className="text-white text-[15px] mt-2.5">
               Dr. Shweta Bansal, Dean DSW

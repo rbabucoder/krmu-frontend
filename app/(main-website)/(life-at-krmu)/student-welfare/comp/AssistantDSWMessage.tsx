@@ -15,10 +15,11 @@ const AssistantDSWMessage = () => {
         <div className="flex flex-col lg:flex-row gap-5">
           <div className="lg:w-1/5">
             <Image
-              src="/life-at-krmu/shivani.jpg"
+              src="/life-at-krmu/shivani-seh.jpg"
               width={304}
               height={234}
               alt="Assistant DSW"
+              className="h-[330px] object-contain"
             />
             <h4 className="text-white text-[15px] mt-2.5">
               Dr. Shivani Sehgal, Assistant Dean DSW

@@ -23,12 +23,35 @@ const ResearchInnovationHeroSection = () => {
             fosters a global perspective in addressing the challenges of our
             times.
           </p>
-          <Link
+          {/* <Link
             href="/PDF"
             className="bg-[#e31e24] leading-[1.5] py-2.5 px-5 inline-block rounded-[4px] text-xl text-white md:leading-2.5 blink-effect"
           >
             Policies and Publications
-          </Link>
+          </Link> */}
+          <div className="flex flex-wrap gap-5">
+            <Link
+              href="/PDF"
+              className="bg-[#e31e24] leading-[1.5] py-2.5 px-5 inline-block rounded-[4px] text-xl text-white md:leading-2.5 blink-effect"
+              target="_blank"
+            >
+              Policies
+            </Link>
+            <Link
+              href="/PDF/publications"
+              className="bg-[#e31e24] leading-[1.5] py-2.5 px-5 inline-block rounded-[4px] text-xl text-white md:leading-2.5 blink-effect"
+              target="_blank"
+            >
+              Publications
+            </Link>
+            <Link
+              href="/PDF/publications"
+              className="bg-[#e31e24] leading-[1.5] py-2.5 px-5 inline-block rounded-[4px] text-xl text-white md:leading-2.5 blink-effect"
+              target="_blank"
+            >
+              Conferences
+            </Link>
+          </div>
         </div>
         <div className="lg:w-1/2">
           <Image

@@ -15,7 +15,7 @@ const page = async ({ params }: Props) => {
   const pdfCards = currentPdfPage?.pdf_content_card;
 
   return (
-    <section className="pt-32 pb-20 bg-[url(/pdfbg.webp)] bg-cover bg-center bg-no-repeat px-4">
+    <section className="pt-32 pb-20 bg-[#d7e2fe] bg-cover bg-center bg-no-repeat px-4">
       <div className="max-w-[1664px] mx-auto w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-16">
           {pdfCards &&
