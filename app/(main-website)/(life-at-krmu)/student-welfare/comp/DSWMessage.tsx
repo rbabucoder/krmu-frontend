@@ -10,7 +10,7 @@ const DSWMessage = () => {
         }}
       >
         <h2 className="text-3xl md:text-5xl font-semibold leading-[1.5] mb-5">
-          DSW Message
+          Dean Message
         </h2>
         <div className="flex flex-col lg:flex-row gap-5">
           <div className="lg:w-1/5">
@@ -19,7 +19,6 @@ const DSWMessage = () => {
               width={304}
               height={234}
               alt="Anjana Singh DSW"
-              
             />
             <h4 className="text-white text-[15px] mt-2.5">
               Dr. Shweta Bansal, Dean DSW

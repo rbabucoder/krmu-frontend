@@ -10,7 +10,7 @@ const AssistantDSWMessage = () => {
         }}
       >
         <h2 className="text-3xl md:text-5xl font-semibold leading-[1.5] mb-5">
-          Assistant DSW Message
+          Assistant Dean Message
         </h2>
         <div className="flex flex-col lg:flex-row gap-5">
           <div className="lg:w-1/5">

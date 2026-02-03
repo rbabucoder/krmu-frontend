@@ -66,7 +66,7 @@ const TabScroll = () => {
                 <div className="student_welfare-tab-content__image-wrapper">
                   <Image
                     className="student_welfare-tab-content__image w-full"
-                    src="https://truthful-cabbage-82fd27e8f6.media.strapiapp.com/extra_curricular_3d02528472.jpg"
+                    src="https://truthful-cabbage-82fd27e8f6.media.strapiapp.com/clubsoci_bdf21197ac.jpg"
                     width={1040}
                     height={300}
                     alt=""
@@ -106,14 +106,14 @@ const TabScroll = () => {
                 <div className="student_welfare-tab-content__image-wrapper">
                   <Image
                     className="student_welfare-tab-content__image"
-                    src="https://truthful-cabbage-82fd27e8f6.media.strapiapp.com/47_8978d96877.jpg"
+                    src="https://truthful-cabbage-82fd27e8f6.media.strapiapp.com/griev_7f117c02ca.webp"
                     width={1040}
                     height={300}
                     alt=""
                   />
                 </div>
 
-                <div className="student_welfare-tab-content__text-wrapper">
+                <div className="student_welfare-tab-content__text-wrapper mt-5">
                   <p className="student_welfare-tab-content__text">
                     K.R. Mangalam University has created a mechanism for the
                     redressal of grievances of students, faculty, and staff by

@@ -149,7 +149,7 @@ const fetchProg = useCallback(
   return (
     <div className="flex mb-10">
       {/* LEFT SIDE */}
-      <div className="w-full xl:w-1/2 bg-[url(/schools/prog-bg.webp)] bg-cover bg-no-repeat p-2.5 sm:p-5 z-10 rounded-3xl">
+      <div className="w-full xl:w-1/2 bg-[url(/schools/prog-bg.webp)] bg-center bg-cover bg-no-repeat p-2.5 sm:p-5 z-10 rounded-3xl">
         <Tabs
           defaultValue="ug"
           value={degreeTabs.find((d) => d.value === activeDegree)?.tabValue}

@@ -14,8 +14,6 @@ type Props = {
 };
 
 const AccordionSlide = ({ slides }: Props) => {
-
-
   return (
     <Carousel
       opts={{
@@ -34,14 +32,21 @@ const AccordionSlide = ({ slides }: Props) => {
                   width={390}
                   height={390}
                   alt={image?.alternativeText || "programme highlight"}
-                  className=""
+                  className="h-[300px] object-cover"
                 />
               </div>
             </CarouselItem>
           ))}
       </CarouselContent>
-      <CarouselPrevious className="left-0 bg-[#000000b2] text-white rounded-none" />
-      <CarouselNext className="right-0 bg-[#000000b2] text-white rounded-none" />
+      {slides?.length > 0 ? (
+        <>
+          {" "}
+          <CarouselPrevious className="left-0 bg-[#000000b2] text-white rounded-none" />
+          <CarouselNext className="right-0 bg-[#000000b2] text-white rounded-none" />
+        </>
+      ) : (
+        ""
+      )}
     </Carousel>
   );
 };

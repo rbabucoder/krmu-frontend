@@ -781,7 +781,7 @@ const Hero = () => {
               </p>
             </div>
           </div>
-          <div className="w-[58%] committeebox p-5">
+          <div className="w-full lg:w-[58%] committeebox p-5">
             <h3 className="mb-5 text-2xl">
               The Student Discipline Committee against consist of the following
               members:

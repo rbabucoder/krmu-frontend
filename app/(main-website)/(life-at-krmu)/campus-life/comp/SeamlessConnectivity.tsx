@@ -22,7 +22,7 @@ const SeamlessConnectivity = () => {
             width={860}
             height={308}
             alt=""
-            className="h-[308px] w-full object-cover"
+            className="h-full sm:h-[308px] w-full object-cover"
           />
         </div>
       </div>
