@@ -158,16 +158,16 @@ const page = async () => {
           </div>
         </div>
       </section>
-      <section className="py-10 md:py-20 px-4 md:px-[30px]">
+      <section className="py-10 sm:py-20 px-4 md:px-[30px]">
         <div className="max-w-[1600px] mx-auto w-full">
           <div className="flex flex-wrap xl:flex-nowrap  gap-5 w-full">
             <div className="w-full xl:w-1/3 flex flex-col gap-5">
-              <div className="bg-[url(/industry.webp)] bg-cover bg-center pt-[272px] pb-2.5 px-2.5 text-white font-semibold">
-                <h3 className="text-3xl md:text-4xl mb-5">
+              <div className="bg-[url(/industry.webp)] flex flex-col justify-end bg-cover h-[250px] sm:h-[300px] bg-top xl:bg-center pt-12 md:pt-[272px] pb-2.5 px-2.5 text-white font-semibold">
+                <h3 className="text-xl sm:text-3xl md:text-4xl sm:mb-5">
                   Industry <br />
                   Collaborated
                 </h3>
-                <h5 className="text-2xl mb-5">Academic Curriculum</h5>
+                <h5 className="text-2xl sm:mb-5">Academic Curriculum</h5>
               </div>
               <div className="bg-[url(/nep.webp)] bg-no-repeat bg-bottom-right p-2.5 min-h-0.5 h-80 text-black bg-[#e1e7e9]">
                 <h3 className="text-3xl md:text-4xl font-semibold leading-[1.3]">

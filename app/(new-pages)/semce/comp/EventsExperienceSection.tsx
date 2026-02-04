@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function EventsExperienceSection() {
   return (
-    <section className="container mx-auto p-5 md:py-20">
+    <section className="container mx-auto p-5 md:py-10">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* LEFT CONTENT */}
         <div>

@@ -70,8 +70,8 @@ const SchoolHero = ({
         </div>
       ) : (
         // Non–full-width layout
-        <div className="max-w-[1850px] mx-auto w-full lg:flex items-center justify-between">
-          <div className="text-center text-white w-full lg:w-1/2 xl:pr-52">
+        <div className="max-w-[1850px] mx-auto w-full xl:flex items-center justify-between">
+          <div className="text-center text-white w-full xl:w-1/2 xl:pr-52">
             <h2 className="text-sm md:text-[28px] lg:mb-5 font-medium">
               {subheading}
             </h2>
@@ -103,10 +103,10 @@ const SchoolHero = ({
               )}
             </div>
           </div>
-          <div className="w-full lg:w-1/2 lg:ml-20 lg:pl-20 flex justify-center lg:justify-end">
+          <div className="w-full xl:w-1/2 xl:ml-20 xl:pl-20 flex justify-center xl:justify-end">
             {videoFmt === "Iframe" ? (
               <div
-                className="w-full customIframeStyle"
+                className="w-full customSchoolIframeStyle"
                 dangerouslySetInnerHTML={{ __html: iframeContent }}
               />
             ) : videoFmt === "videourl" ? (

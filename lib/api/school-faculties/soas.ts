@@ -14,7 +14,7 @@ export const soasFaculties: SchoolFacultiesType[] = [
       schools: [1178],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/joginder.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Prof-Dr.-J.S.Yadav-SOAS.png",
   },
   {
     id: 65251,

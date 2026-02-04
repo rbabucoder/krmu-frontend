@@ -16,8 +16,9 @@ export default function NewsletterSection() {
       <div className="grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-2 gap-6">
         {/* LARGE LEFT CARD */}
         <Link
-          href="#"
+          href="https://truthful-cabbage-82fd27e8f6.media.strapiapp.com/SJMC_2025_7c1b2a8b5b.pdf"
           className="lg:col-span-2 lg:row-span-2 border rounded-2xl p-6 relative group"
+          target="_blank"
         >
           <div className="flex justify-between items-start mb-4">
             <h3 className="text-2xl font-serif">
@@ -40,8 +41,9 @@ export default function NewsletterSection() {
 
         {/* RIGHT TOP CARD */}
         <Link
-          href="#"
+          href="https://truthful-cabbage-82fd27e8f6.media.strapiapp.com/sjmc_2024_4_7aae00cbef.pdf"
           className="relative rounded-2xl overflow-hidden group h-[220px] sm:h-[260px] lg:h-full"
+          target="_blank"
         >
           <Image
             src="/semce/newsletter/img-2.jpg"
@@ -62,8 +64,9 @@ export default function NewsletterSection() {
 
         {/* BOTTOM LEFT CARD */}
         <Link
-          href="#"
+          href="https://krmangalam.edu.in/pdfs/newsletters/sjmc-2025-apr-june.pdf"
           className="relative rounded-2xl overflow-hidden group lg:col-span-1 h-[220px] sm:h-[260px] lg:h-full"
+          target="_blank"
         >
           <Image
             src="/semce/newsletter/img-3.jpg"

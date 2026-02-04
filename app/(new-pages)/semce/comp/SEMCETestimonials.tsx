@@ -2,6 +2,9 @@ import Image from "next/image";
 import SEMCETestimonialSlide from "./SEMCETestimonialSlide";
 
 const SEMCETestimonials = () => {
+
+
+
   return (
     <>
       <section className="px-5 sm:px-0 py-10">

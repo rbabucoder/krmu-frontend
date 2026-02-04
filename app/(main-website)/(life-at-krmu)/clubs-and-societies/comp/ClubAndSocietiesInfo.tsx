@@ -9,7 +9,7 @@ const ClubAndSocietiesInfo = ({ content }: Props) => {
   return (
     <>
       <section className="py-[50px]">
-        <div className="max-w-[1664px] mx-auto w-full">
+        <div className="max-w-[1664px] mx-auto w-full px-4">
           <BlocksRenderer content={content} />
         </div>
       </section>

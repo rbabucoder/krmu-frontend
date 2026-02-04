@@ -14,7 +14,7 @@ export const smasFaculties: SchoolFacultiesType[] = [
       schools: [1098],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2023/11/Mask-group-27.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Hema-Chaudhary.jpg",
   },
   {
     id: 9070,
@@ -29,7 +29,7 @@ export const smasFaculties: SchoolFacultiesType[] = [
       schools: [1098],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Rishi-Pal.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Rishi-Pal.png",
   },
   {
     id: 1111,
@@ -44,7 +44,7 @@ export const smasFaculties: SchoolFacultiesType[] = [
       schools: [],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2023/11/Mask-group-30.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Sucheta.jpg",
   },
 
   {
@@ -60,7 +60,7 @@ export const smasFaculties: SchoolFacultiesType[] = [
       schools: [1098],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Saroj-Verma.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Saroj-Verma.jpg",
   },
   {
     id: 107911,
@@ -75,7 +75,7 @@ export const smasFaculties: SchoolFacultiesType[] = [
       schools: [],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2025/07/New-Project.png",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Sunil-Kumar.png",
   },
   {
     id: 66796,
@@ -90,7 +90,7 @@ export const smasFaculties: SchoolFacultiesType[] = [
       schools: [],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/09/sneh-anand.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Ms.-Sneha-Anand.jpg",
   },
   {
     id: 65254,
@@ -105,7 +105,7 @@ export const smasFaculties: SchoolFacultiesType[] = [
       schools: [],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/09/garima-goyal.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Ms.-Garima-Goyal.jpg",
   },
   {
     id: 50927,
@@ -120,7 +120,7 @@ export const smasFaculties: SchoolFacultiesType[] = [
       schools: [1098],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/06/Group-6345986.jpg",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Narender-Yadav.png",
   },
 
   {
@@ -181,7 +181,7 @@ export const smasFaculties: SchoolFacultiesType[] = [
       schools: [1098],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Ms.-Farheen.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Farheen.jpg",
   },
 
   {
@@ -197,7 +197,7 @@ export const smasFaculties: SchoolFacultiesType[] = [
       schools: [],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Ms.-Priya-Meher-Sharma.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Ms.-Meher-Priya-Sharma.jpg",
   },
   {
     id: 8985,
@@ -212,7 +212,7 @@ export const smasFaculties: SchoolFacultiesType[] = [
       schools: [1098],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Mohd.-Mazhar.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Mohd.-Mazhar.png",
   },
   {
     id: 8983,
@@ -227,7 +227,7 @@ export const smasFaculties: SchoolFacultiesType[] = [
       schools: [1098],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Manisha-Singh.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Ms.-Manisha-Singh.jpg",
   },
   {
     id: 8968,
@@ -257,7 +257,7 @@ export const smasFaculties: SchoolFacultiesType[] = [
       schools: [1098],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Swati-Kaushik.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Swati-Kaushik.jpg",
   },
   {
     id: 8960,
@@ -272,7 +272,7 @@ export const smasFaculties: SchoolFacultiesType[] = [
       schools: [1098],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Mr.-Debashish-Paramanick.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Mr.-Debashish-Paramanick.png",
   },
   {
     id: 8947,
@@ -287,7 +287,7 @@ export const smasFaculties: SchoolFacultiesType[] = [
       schools: [1098],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Ms.-Renu-Yadav.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Ms.-Renu-Yadav.jpg",
   },
   {
     id: 8942,
@@ -302,7 +302,7 @@ export const smasFaculties: SchoolFacultiesType[] = [
       schools: [1098],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Mr.-Mohit-Agrawal.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Mr.-Mohit-Agrawal.png",
   },
   {
     id: 8848,
@@ -317,7 +317,7 @@ export const smasFaculties: SchoolFacultiesType[] = [
       schools: [1098],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Saroj-Yadav.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Saroj-Yadav.jpg",
   },
   {
     id: 8670,
@@ -332,7 +332,7 @@ export const smasFaculties: SchoolFacultiesType[] = [
       schools: [1098],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Khalid-Bashir-Mir.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Khalid-Bashir-Mir.png",
   },
 
   {
@@ -348,6 +348,6 @@ export const smasFaculties: SchoolFacultiesType[] = [
       schools: [],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2023/10/yash.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Mr.-Yash-Jasoria.png",
   },
 ];

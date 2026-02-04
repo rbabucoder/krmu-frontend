@@ -14,7 +14,7 @@ export const sohmctFaculties: SchoolFacultiesType[] = [
       schools: [1214],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Ms.-Jyotu-Sehrawat.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Ms.-Jyoti-Sehrawat-SOHMCT.jpg",
   },
   // {
   //   id: 97582,
@@ -74,6 +74,6 @@ export const sohmctFaculties: SchoolFacultiesType[] = [
       schools: [1214],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Mr.-Virendra-Singh.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Mr.-Virendra-Singh-SOHMCT.png",
   },
 ];

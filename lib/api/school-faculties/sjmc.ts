@@ -14,7 +14,7 @@ export const sjmcFaculties: SchoolFacultiesType[] = [
       schools: [1009],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/09/Dr.-Amit-Chawla.png",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2025/04/Dr.-Amit-Chawla-SEMCE.png",
   },
   {
     id: 1028,
@@ -29,7 +29,7 @@ export const sjmcFaculties: SchoolFacultiesType[] = [
       schools: [1009],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2023/11/Mask-group-2.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2025/04/Dr.-Ritwik-Ghosh-SEMCE.png",
   },
   {
     id: 1029,
@@ -44,7 +44,7 @@ export const sjmcFaculties: SchoolFacultiesType[] = [
       schools: [1009],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2023/11/Mask-group-3.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2025/04/Dr.-Sarina-SEMCE.jpg",
   },
   {
     id: 10769,
@@ -59,7 +59,7 @@ export const sjmcFaculties: SchoolFacultiesType[] = [
       schools: [1009],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Mr.-Karan-Singh.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2025/04/Dr.-Karan-Singh-SEMCE.png",
   },
   {
     id: 66802,
@@ -74,7 +74,7 @@ export const sjmcFaculties: SchoolFacultiesType[] = [
       schools: [1009],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/09/Profile-Photo-for-KRMU-Website-1.jpg",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/09/Mr.-Trilok-Singh-SEMCE.png",
   },
 
   {
@@ -90,7 +90,7 @@ export const sjmcFaculties: SchoolFacultiesType[] = [
       schools: [1009],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Ms.-Ritika-Choudhary.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2025/04/Dr.-Ritika-Choudhary-SEMCE.jpg",
   },
 
   {
@@ -106,6 +106,6 @@ export const sjmcFaculties: SchoolFacultiesType[] = [
       schools: [1009],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Ms.-Aditi-Agarwal.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Ms.-Aditi-Agarwal.webp",
   },
 ];

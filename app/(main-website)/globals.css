@@ -20,11 +20,30 @@
     border: 1px solid #000;
   }
 
+  @media(max-width: 1280px){
+    .customSchoolIframeStyle iframe{
+      height: 600px !important;
+    }
+  }
+
   @media (max-width: 640px) {
     .customIframeStyle iframe {
       height: 220px !important;
     }
+        .customSchoolIframeStyle iframe{
+      height: 400px !important;
+    }
   }
+
+  @media(max-width: 468px){
+        .customSchoolIframeStyle iframe{
+      height: 200px !important;
+    }
+  }
+
+
+
+
   .rekhi-program-box {
     background: linear-gradient(
       135deg,

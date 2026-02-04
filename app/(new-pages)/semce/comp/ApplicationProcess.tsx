@@ -40,11 +40,11 @@ const ApplicationProcess = () => {
           {[
             {
               title: "Complete Application & Fee Payment",
-              desc: "Fill in your details and submit the application fee",
+              desc: "Fill in your details and submit the application fee.",
             },
             {
               title: "Entrance Test",
-              desc: "Appear for K.R. Mangalam University Entrance Examination (KREE)",
+              desc: "Appear for K.R. Mangalam University Entrance Examination (KREE) (For UG / PG as applicable)",
             },
           ].map((item) => (
             <div
@@ -97,7 +97,7 @@ const ApplicationProcess = () => {
             </h2>
 
             <span className="text-base sm:text-lg opacity-90 max-w-xl">
-              Attend a faculty-led interaction to understand your interests and goals
+              Attend a faculty-led interaction to understand your interests and goals.
             </span>
           </div>
         </div>
@@ -108,11 +108,11 @@ const ApplicationProcess = () => {
           {[
             {
               title: "Admission Offer",
-              desc: "Receive your official offer letter after successful evaluation",
+              desc: "Receive your official offer letter after successful evaluation.",
             },
             {
               title: "Get Enrolled",
-              desc: "Confirm your seat and begin your journey at SEMCE",
+              desc: "Confirm your seat and begin your journey at SEMCE.",
             },
           ].map((item) => (
             <div

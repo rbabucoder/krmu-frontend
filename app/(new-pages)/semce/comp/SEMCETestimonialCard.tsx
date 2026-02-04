@@ -1,21 +1,38 @@
-const SEMCETestimonialCard = () => {
+import Image from "next/image";
+import { SEMCEMemberType } from "./SEMCETestimonialSlide";
+
+const SEMCETestimonialCard = ({
+  url,
+  stu_name,
+  stu_content,
+}: SEMCEMemberType) => {
   return (
     <div className="w-full flex justify-center">
       <div className="relative w-full max-w-sm sm:max-w-md md:max-w-3xl lg:max-w-5xl">
-
+        
         {/* Blue Card */}
-        <div className="
+        <div
+          className="
           bg-[#00579B]
           h-[220px] sm:h-[260px] md:h-[340px] lg:h-[380px]
           rounded-2xl md:rounded-[32px]
           relative
-        ">
+        "
+        >
+          {/* ✅ Student Image */}
+          <Image
+            src={url}
+            alt={stu_name}
+            fill
+            className="object-cover"
+          />
+
           {/* Name Tag */}
           <span
             className="
               absolute
               top-6 sm:top-8 md:top-10
-              left-4 sm:left-6 md:-left-10
+              left-4 sm:left-6 md:-left-16
               bg-[#CA1B1F] text-white
               px-4 sm:px-5 md:px-6
               py-1.5 sm:py-2
@@ -25,18 +42,18 @@ const SEMCETestimonialCard = () => {
               whitespace-nowrap
             "
           >
-            Soumitra Halder
+            {stu_name}
           </span>
         </div>
 
         {/* Testimonial Box */}
         <div
           className="
-            mt-4                     /* ✅ mobile: normal flow */
+            mt-4
             md:mt-0
-            md:absolute              /* ✅ overlap only from md */
+            md:absolute
             md:left-1/2
-            md:-bottom-20
+            md:-bottom-40
             md:-translate-x-1/2
             w-full sm:w-[95%] md:w-[85%]
             bg-[#CA1B1F] text-white
@@ -46,14 +63,9 @@ const SEMCETestimonialCard = () => {
           "
         >
           <p className="text-sm sm:text-base leading-relaxed">
-            At SEMCE, I didn’t just study journalism. I practiced it.
-            From podcasts and ground reporting to real studio work and
-            industry visits, every experience pushed me closer to the
-            media world. Faculty mentorship gave me the confidence to
-            step into the industry ready.
+            {stu_content}
           </p>
         </div>
-
       </div>
     </div>
   );

@@ -29,7 +29,7 @@ export const soedFaculties: SchoolFacultiesType[] = [
       schools: [1070],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Anshul-Saluja.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2023/11/Dr.-Anshul-Saluja-SOED.jpg",
   },
   {
     id: 9709,
@@ -59,7 +59,7 @@ export const soedFaculties: SchoolFacultiesType[] = [
       schools: [1070],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/IMG_5277-1.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2023/11/Dr.-Shikha-SOED.jpg",
   },
   // {
   //   id: 9653,
@@ -135,6 +135,6 @@ export const soedFaculties: SchoolFacultiesType[] = [
       schools: [1070],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Kanchan-Khatreja.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2023/11/Dr.-Kanchan-Khatreja-SOED.jpg",
   },
 ];

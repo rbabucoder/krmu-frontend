@@ -14,7 +14,7 @@ export const soadFaculties: SchoolFacultiesType[] = [
       schools: [787],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/09/Group-6346027.jpg",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2025/12/Dr.-Tanaya-Verma-SOAD.jpg",
   },
   {
     id: 1254,
@@ -29,7 +29,7 @@ export const soadFaculties: SchoolFacultiesType[] = [
       schools: [],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2023/11/disha-shah.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2025/12/Ar.-Disha-Shah-SOAD.jpg",
   },
 
   {
@@ -45,7 +45,7 @@ export const soadFaculties: SchoolFacultiesType[] = [
       schools: [],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2023/11/manshaa.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2023/11/manshaa.webp",
   },
   {
     id: 1251,
@@ -60,7 +60,7 @@ export const soadFaculties: SchoolFacultiesType[] = [
       schools: [],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2023/11/praveen-gupta.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2025/12/Ar.-Praveen-Gupta-SOAD.png",
   },
   {
     id: 108925,
@@ -75,7 +75,7 @@ export const soadFaculties: SchoolFacultiesType[] = [
       schools: [787],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2025/09/ankita-1.jpg",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2025/12/Dr.-Ankita-Majumdar-SOAD.jpg",
   },
   {
     id: 108166,
@@ -105,7 +105,7 @@ export const soadFaculties: SchoolFacultiesType[] = [
       schools: [787],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2025/06/Akshita-Joshi.jpg",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2025/06/Ar.-Akshita-Joshi-SOAD.jpg",
   },
   {
     id: 106907,
@@ -226,7 +226,7 @@ export const soadFaculties: SchoolFacultiesType[] = [
       schools: [787],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/06/Ritika_Mittal.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2025/12/Ms.-Ritika-Mittal-SOAD.jpg",
   },
   {
     id: 46267,

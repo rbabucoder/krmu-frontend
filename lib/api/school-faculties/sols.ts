@@ -151,7 +151,7 @@ export const solsFaculties: SchoolFacultiesType[] = [
       schools: [],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Ms.-Sadhana-Nirban.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Ms.-Sadhana-Nirban.webp",
   },
   {
     id: 10297,
@@ -166,7 +166,7 @@ export const solsFaculties: SchoolFacultiesType[] = [
       schools: [1043],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Mr.-Prashant-Panwar.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Prashant-PanwarSOLS.png",
   },
   {
     id: 10294,
