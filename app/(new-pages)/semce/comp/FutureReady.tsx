@@ -6,7 +6,7 @@ const FutureReady = () => {
       <div className="max-w-[1664px] mx-auto w-full p-2.5 sm:p-5 border border-[#3e3e40] rounded-2xl">
         <div className="bg-[url(/semce/pattern-1.svg)] bg-cover bg-no-repeat bg-center p-5 rounded-2xl border border-[#3e3e40] flex flex-col-reverse lg:flex-row items-center gap-5 sm:gap-10 2xl:gap-40">
           <div className="w-full lg:w-7/12 2xl:w-9/12 text-white">
-            <h3 className="text-xl sm:text-3xl xl:text-4xl font-normal mb-10">
+            <h3 className="text-3xl xl:text-4xl font-normal mb-10">
               A Future-Ready Media School for Journalists,
               <br />
               Creators & Storytellers of Tomorrow

@@ -29,14 +29,14 @@ const SOLAPanel = () => {
           />
         </div>
       </div>
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10 my-10">
+      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10 my-10 items-center">
         <div className="w-full lg:w-1/2">
           <Image
-            src="https://www.krmangalam.edu.in/wp-content/uploads/2025/02/image1-800x1200.jpg"
-            width={600}
-            height={300}
+            src="/wp-content/uploads/2026/02/openhouse.jpg"
+            width={1066}
+            height={1599}
             alt=""
-            className="border w-full h-[400px] object-cover"
+            className="border w-full  object-cover"
           />
         </div>
         <div className="w-full lg:w-1/2">
@@ -48,7 +48,7 @@ const SOLAPanel = () => {
             comprehensive overview of the UPSC journey, including its challenges
             and rewards. He shared his personal experiences, providing strategic
             advice on preparation, perseverance, and the realities of
-            bureaucratic life.
+            bureaucratic life. 
           </p>
           <p className="text-lg">
             A highly engaging Q&A session followed, allowing students to seek
@@ -59,7 +59,7 @@ const SOLAPanel = () => {
           </p>
         </div>
       </div>
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10">
+      {/* <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10">
         <div className="w-full lg:w-1/2">
           <h3 className="text-3xl lg:text-[38px] font-bold mb-5">
             Session on Mastering Emotions and Communication
@@ -92,7 +92,7 @@ const SOLAPanel = () => {
             className="border w-full h-[400px] object-cover"
           />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

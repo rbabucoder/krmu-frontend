@@ -1,0 +1,52 @@
+import Image from "next/image";
+
+const SEMCEConversationSection = () => {
+  return (
+    <section className="w-full  bg-white">
+      <div className="">
+        
+        {/* Wrapper */}
+        <div className="relative  overflow-hidden">
+          
+          {/* Background Image */}
+          <Image
+            src="/wp-content/semce/semce-video-thumbnail.webp" // <-- change path
+            alt="SEMCE Conversations"
+            width={1400}
+            height={700}
+            className="w-full h-[500px] md:h-[800px] object-cover object-center"
+            priority
+          />
+
+          {/* Red Overlay */}
+          <div className="absolute inset-0 bg-red-700/75"></div>
+
+          {/* Border Frame */}
+          <div className="absolute inset-6 rounded-2xl border border-white/70 pointer-events-none"></div>
+
+          {/* Play Button */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <button className="w-16 h-16 flex items-center justify-center rounded-full border-2 border-white text-white hover:scale-110 transition">
+              
+              {/* Triangle */}
+              <div className="ml-1 w-0 h-0 border-l-[14px] border-l-white border-y-[10px] border-y-transparent"></div>
+            </button>
+          </div>
+
+          {/* Bottom Left Text */}
+          <div className="absolute bottom-12 left-12 text-white">
+            <h3 className="text-3xl md:text-4xl font-serif">
+              The SEMCE
+            </h3>
+            <p className="text-3xl md:text-4xl italic font-light">
+              Conversations
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default SEMCEConversationSection;

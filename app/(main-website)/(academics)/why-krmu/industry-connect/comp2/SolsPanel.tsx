@@ -67,7 +67,7 @@ const SolsPanel = () => {
           </p>
         </div>
       </div>
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10 my-10">
+      {/* <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10 my-10">
         <div className="w-full lg:w-1/2">
           <h3 className="text-3xl lg:text-[38px] font-bold mb-5">
             Expert Lecture on Right to Privacy and Data Protection Law
@@ -98,7 +98,7 @@ const SolsPanel = () => {
             className="border w-full h-[400px] object-cover"
           />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

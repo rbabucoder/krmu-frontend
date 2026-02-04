@@ -3,7 +3,7 @@ import Image from "next/image";
 const SOHMCTPanel = () => {
   return (
     <section className="py-[50px] px-4">
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10">
+      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10 mb-5 md:mb-10">
         <div className="w-full lg:w-1/2">
           <Image
             src="https://www.krmangalam.edu.in/wp-content/uploads/2024/05/Workshop-on-Japanese-Cuisine-1-768x1024.webp"
@@ -27,7 +27,7 @@ const SOHMCTPanel = () => {
           </p>
         </div>
       </div>
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10">
+      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10 mb-5 md:mb-10 my-10">
         <div className="w-full lg:w-1/2">
           <h3 className="text-3xl lg:text-[38px] font-bold mb-5">
             Indian Seafood Delicacies Workshop
@@ -48,15 +48,15 @@ const SOHMCTPanel = () => {
         </div>
         <div className="w-full lg:w-1/2">
           <Image
-            src="https://www.krmangalam.edu.in/wp-content/uploads/2024/05/Workshop-on-Japanese-Cuisine-1-768x1024.webp"
+            src="/wp-content/images/sea.webp"
             width={600}
             height={300}
             alt=""
-            className="border w-full h-[400px] object-cover"
+            className="border w-full  object-cover"
           />
         </div>
       </div>
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10">
+      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10 mb-5 md:mb-10">
         <div className="w-full lg:w-1/2">
           <Image
             src="https://www.krmangalam.edu.in/wp-content/uploads/2026/01/room-clean.jpg"
@@ -88,7 +88,7 @@ const SOHMCTPanel = () => {
           </p>
         </div>
       </div>
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10">
+      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10 mb-5 md:mb-10">
         <div className="w-full lg:w-1/2">
           <h3 className="text-3xl lg:text-[38px] font-bold mb-5">Visit to Roseate Hotel</h3>
           <p className="mb-5 text-lg">
@@ -115,7 +115,7 @@ const SOHMCTPanel = () => {
           />
         </div>
       </div>
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10">
+      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10 mb-5 md:mb-10 mt-10">
         <div className="w-full lg:w-1/2">
           <Image
             src="https://www.krmangalam.edu.in/wp-content/uploads/2026/01/bhavna.jpg"

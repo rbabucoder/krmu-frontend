@@ -43,7 +43,7 @@ const Seminar = () => {
           />
         </div>
       </div>
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10 my-10">
+      {/* <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10 my-10">
         <div className="w-full lg:w-1/2">
           <Image
             src="https://www.krmangalam.edu.in/wp-content/uploads/2026/01/network.jpg"
@@ -72,8 +72,17 @@ const Seminar = () => {
             in the future.
           </p>
         </div>
-      </div>
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10">
+      </div> */}
+      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10 mt-10">
+             <div className="w-full lg:w-1/2">
+          <Image
+            src="https://www.krmangalam.edu.in/wp-content/uploads/2026/01/engineering-youth-800x600.jpg"
+            width={600}
+            height={300}
+            alt=""
+            className="border w-full h-[400px] object-cover"
+          />
+        </div>
         <div className="w-full lg:w-1/2">
           <h3 className="text-3xl lg:text-[38px] font-bold mb-5">
             Expert Talk on Engineering Your Path
@@ -94,15 +103,7 @@ const Seminar = () => {
             their academic and professional journeys.
           </p>
         </div>
-        <div className="w-full lg:w-1/2">
-          <Image
-            src="https://www.krmangalam.edu.in/wp-content/uploads/2026/01/engineering-youth-800x600.jpg"
-            width={600}
-            height={300}
-            alt=""
-            className="border w-full h-[400px] object-cover"
-          />
-        </div>
+   
       </div>
       {/* <div className="max-w-[1664px] mx-auto w-full">
         <h3 className="text-2xl md:text-[38px] text-center font-bold mb-5">

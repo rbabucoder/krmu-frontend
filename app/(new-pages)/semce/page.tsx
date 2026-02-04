@@ -3,11 +3,7 @@ import FutureReady from "./comp/FutureReady";
 import LearnByCreating from "./comp/LearnByCreating";
 import NewsletterSection from "./comp/NewsletterSection";
 import EventsExperience from "./comp/EventsExperienceSection";
-import InstructorsSection from "./comp/InstructorsSection";
-import EventsExperienceSection from "./comp/EventsExperienceSection";
 import ExploreProgrammes from "./comp/ExploreProgrammes";
-import GetStartedSteps from "./comp/GetStartedSteps";
-import ExploreProgrammsTab from "./comp/ExploreProgrammsTab";
 import LifeAtSEMCE from "./comp/LifeAtSEMCE";
 import YourStory from "./comp/YourStory";
 import SEMCETestimonials from "./comp/SEMCETestimonials";
@@ -15,10 +11,14 @@ import Teachyou from "./comp/Teachyou";
 import MacLaptop from "./comp/MacLaptop";
 import BiggestBrand from "./comp/BiggestBrand";
 import SEMCESlideSection from "./comp/SEMCESlideSection";
+import ApplicationProcess from "./comp/ApplicationProcess";
+import HeroSection from "./comp/HeroSection";
+import SEMCEConversationSection from "./comp/SEMCEConversationSection";
 
 const page = () => {
   return (
     <>
+      <HeroSection />
       <main className="semce_main_container">
         <Stats />
         <FutureReady />
@@ -30,12 +30,11 @@ const page = () => {
         <LifeAtSEMCE />
         <SEMCESlideSection />
         <Teachyou />
-        <YourStory /> 
-
-        {/* 
         <SEMCETestimonials />
-        <GetStartedSteps />
-         */}
+        <SEMCEConversationSection />
+        <EventsExperience />
+        <ApplicationProcess />
+        <YourStory />
       </main>
     </>
   );

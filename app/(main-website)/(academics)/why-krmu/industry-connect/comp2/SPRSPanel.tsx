@@ -23,7 +23,7 @@ const SPRSPanel = () => {
         </div>
         <div className="w-full lg:w-1/2">
           <Image
-            src="https://www.krmangalam.edu.in/wp-content/uploads/2026/01/health-800x743.jpg"
+            src="/wp-content/images/health.webp"
             width={600}
             height={300}
             alt=""

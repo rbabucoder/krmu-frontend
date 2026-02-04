@@ -34,7 +34,7 @@ const SBASPanel = () => {
           />
         </div>
       </div>
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10 my-10">
+      {/* <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10 my-10">
         <div className="w-full lg:w-1/2">
           <Image
             src="https://www.krmangalam.edu.in/wp-content/uploads/2026/01/cyber-800x615.jpg"
@@ -64,7 +64,7 @@ const SBASPanel = () => {
             cybersecurity professionals.
           </p>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

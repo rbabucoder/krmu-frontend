@@ -33,7 +33,7 @@ const Workshop = () => {
       <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10 my-10">
         <div className="w-full lg:w-1/2">
           <Image
-            src="https://www.krmangalam.edu.in/wp-content/uploads/2025/05/ssd.webp"
+            src="/wp-content/images/leadership.webp"
             width={600}
             height={300}
             alt=""
