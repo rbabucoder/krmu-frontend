@@ -54,7 +54,7 @@ const Admission2WhatMakes = () => {
           </div>
           <div className="custom-card mb-3">
             <Image
-              src="https://www.krmangalam.edu.in/admission/ab-testing/images/pcs.png"
+              src="/wp-content/images/pc-support.png"
               width={90}
               height={120}
               alt="Image"

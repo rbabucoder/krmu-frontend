@@ -77,7 +77,7 @@ const StudentCouncil = () => {
       id: 11,
       name: "Aditya Ranjan Tiwari",
       role: "Sports fitness Sub Coordinator",
-      image: "/wp-content/coordinator/aditya.png",
+      image: "/wp-content/coordinator/Adityaranjan.png",
     },
     {
       id: 12,

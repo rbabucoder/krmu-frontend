@@ -3,7 +3,7 @@ import Link from "next/link";
 const OverviewTreasure = () => {
   return (
     <>
-      <div className="bg-[url(/life-at-krmu/A-Treasure-Trove-of.webp)] bg-cover bg-center bg-no-repeat gap-8 flex flex-col lg:flex-row">
+      <div className="bg-[url(/wp-content/images/treasure.jpeg)] bg-cover bg-top bg-no-repeat gap-8 flex flex-col lg:flex-row">
         <div
           className="lg:w-1/3 mx-4 md:mx-8 px-[30px] pt-[55px] pb-[222px] text-white"
           style={{

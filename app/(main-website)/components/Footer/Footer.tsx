@@ -33,7 +33,7 @@ const Footer = async () => {
         360° Virtual Tour
       </Link>
       <section className="px-5 py-12 xl:p-[50px] bg-[#051630]">
-        <div className="grid grid-cols-1 md:grid-cols-2  xl:flex">
+        <div className="grid grid-cols-1 md:grid-cols-2  xl:flex gap-5">
           <div className="w-full  xl:w-1/4 xl:mx-7">
             {footerComp1 && (
               <div>

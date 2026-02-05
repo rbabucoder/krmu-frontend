@@ -21,7 +21,7 @@ export const soetFaculties: SchoolFacultiesType[] = [
   },
   {
     id: 10848,
-    slug: "dr-shweta-a-bansal-2",
+    slug: "prof-dr-shweta-a-bansal",
     title: {
       rendered: "Prof (Dr.) Shweta A. Bansal",
     },

@@ -10,7 +10,7 @@ const rdcTeamData = [
   {
     name: "Dr. Shweta Bansal (Associate Prof.-SOET)",
     desg: "Member",
-    facultyUrl: "/faculty/dr-shweta-a-bansal",
+    facultyUrl: "/faculty/prof-dr-shweta-a-bansal",
     facImgUrl: "/ipr/teamipr/image-2.png",
   },
   {

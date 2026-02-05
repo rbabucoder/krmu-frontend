@@ -30,12 +30,24 @@
     }
   }
 
+    @media(max-width: 991px){
+    .customSchoolIframeStyle iframe{
+      height: 500px !important;
+    }
+  }
+
+      @media(max-width: 768px){
+    .customSchoolIframeStyle iframe{
+      height: 400px !important;
+    }
+  }
+
   @media (max-width: 640px) {
     .customIframeStyle iframe {
       height: 220px !important;
     }
         .customSchoolIframeStyle iframe{
-      height: 400px !important;
+      height: 300px !important;
     }
   }
 
