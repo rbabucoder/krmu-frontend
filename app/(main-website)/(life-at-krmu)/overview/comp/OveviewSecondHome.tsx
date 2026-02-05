@@ -30,25 +30,25 @@ const OveviewSecondHome = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-2.5 gap-5">
         <Image
-          src="/life-at-krmu/secondhome/item-1.webp"
+          src="/life-at-krmu/secondhome/item1.webp"
           width={400}
           height={265}
           alt=""
         />
         <Image
-          src="/life-at-krmu/secondhome/item-2.webp"
+          src="/life-at-krmu/secondhome/item2.webp"
           width={400}
           height={265}
           alt=""
         />
         <Image
-          src="/life-at-krmu/secondhome/item-3.webp"
+          src="/life-at-krmu/secondhome/item3.webp"
           width={400}
           height={265}
           alt=""
         />
         <Image
-          src="/life-at-krmu/secondhome/item-4.webp"
+          src="/life-at-krmu/secondhome/item4.webp"
           width={400}
           height={265}
           alt=""

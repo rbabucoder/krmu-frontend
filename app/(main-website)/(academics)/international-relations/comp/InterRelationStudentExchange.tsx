@@ -31,7 +31,7 @@ const InterRelationStudentExchange = () => {
         </div>
         <div className="w-full lg:w-2/5">
           <Image
-            src="/inter-relation/student-exchange.png"
+            src="/wp-content/images/student-exchange.webp"
             width={665}
             height={665}
             alt=""

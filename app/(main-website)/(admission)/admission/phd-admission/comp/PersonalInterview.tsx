@@ -17,7 +17,7 @@ const PersonalInterview = ({
 }: Props) => {
   return (
     <>
-      <section className="py-[48px] bg-[#051630] mt-24 px-4">
+      <section className="pt-[48px] bg-[#051630] mt-24 px-4">
         <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row items-start">
           <div className="lg:w-1/2 text-white">
             <h4 className="text-3xl md:text-[64px] font-semibold mb-2.5">

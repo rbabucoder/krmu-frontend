@@ -25,8 +25,10 @@ const removeTrailingSlash = (url?: string): string | undefined => {
   return url.endsWith("/") ? url.slice(0, -1) : url;
 };
 
-export function yoastToMetadata(yoast: YoastHeadJson): Metadata {
-  const canonical = removeTrailingSlash(yoast?.canonical);
+export function yoastToMetadata(yoast: YoastHeadJson, slug: string): Metadata {
+  // const canonical = removeTrailingSlash(yoast?.canonical);
+
+  const canonical = `https://krmangalam.edu.in/blog/${slug}`;
 
   return {
     title: yoast?.title,

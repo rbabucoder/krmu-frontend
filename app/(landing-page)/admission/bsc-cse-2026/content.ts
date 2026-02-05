@@ -93,7 +93,7 @@ export const prominentRecruiters: ProminentRecruit[] = [
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/bsc-cse-2026/recruiters/samsung.svg",
+    imgUrl: "/wp-content/landingpage/common/samsung.svg",
     alt: "Recruiter Logo",
   },
   {
@@ -140,11 +140,11 @@ export const industryExperts: IndustryExpertsSection = {
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
-    {
-      imgUrl: "/landingpage/bsc-cse-2026/learn-from/ibm.png",
-      alt: "Apple Logo",
-      title: "AI and Machine Learning Courses",
-    },
+    // {
+    //   imgUrl: "/landingpage/bsc-cse-2026/learn-from/ibm.png",
+    //   alt: "Apple Logo",
+    //   title: "AI and Machine Learning Courses",
+    // },
     {
       imgUrl: "/wp-content/landingpage/bsc-cse-2026/learn-from/imaginxp.svg",
       alt: "Apple Logo",

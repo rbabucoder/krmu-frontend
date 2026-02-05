@@ -62,7 +62,7 @@ export const soetFaculties: SchoolFacultiesType[] = [
       schools: [1266],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2025/09/New-Project-1.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/08/Mr.-Aryan-Sharma-SOET.png",
   },
   {
     id: 107299,

@@ -14,7 +14,7 @@ export const soedFaculties: SchoolFacultiesType[] = [
       schools: [1070, 1152],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Tania-Gupta.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2023/11/Prof.-Tania-Gupta-SOED.jpg",
   },
   {
     id: 1083,
@@ -44,7 +44,7 @@ export const soedFaculties: SchoolFacultiesType[] = [
       schools: [1070],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Pooja-Verma.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2023/11/Dr.-Pooja-Verma-SOED.jpg",
   },
   {
     id: 9667,

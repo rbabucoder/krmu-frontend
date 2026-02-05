@@ -11,7 +11,7 @@ import { STRAPI_URL } from "@/app/constant";
 
 
 
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata(): Promise<Metadata> { 
   const seoData = await folderRouteSEO("phd-admission");
   const seo = seoData[0];
 

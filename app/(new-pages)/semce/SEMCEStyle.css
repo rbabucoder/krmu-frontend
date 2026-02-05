@@ -4,6 +4,26 @@
 @custom-variant dark (&:is(.dark *));
 
 @layer utilities {
+  .marquee {
+    display: flex;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+  }
+
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Optional but VERY nice UX */
+  .marquee:hover {
+    animation-play-state: paused;
+  }
+
   .redGradient {
     background: linear-gradient(81.97deg, #ff0000 -49.37%, #ff7f7f 143.54%);
   }

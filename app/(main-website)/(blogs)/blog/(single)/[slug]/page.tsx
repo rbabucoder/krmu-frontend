@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: Props) {
 
   if (!blog || !blog[0]?.yoast_head_json) return {};
 
-  return yoastToMetadata(blog[0].yoast_head_json);
+  return yoastToMetadata(blog[0].yoast_head_json, slug);
 }
 const page = async ({ params }: Props) => {
   const { slug } = await params;

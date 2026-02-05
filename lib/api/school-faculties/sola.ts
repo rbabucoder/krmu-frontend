@@ -150,7 +150,7 @@ export const solaFaculties: SchoolFacultiesType[] = [
       schools: [1152],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2025/02/priya.jpg",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2025/03/Dr.-Priya-Sharma.jpg",
   },
   {
     id: 88904,
@@ -484,6 +484,6 @@ export const solaFaculties: SchoolFacultiesType[] = [
       schools: [1009, 1152],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2023/11/Mask-group-4.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2025/03/Dr.-Swati-Chauhan.jpg",
   },
 ];

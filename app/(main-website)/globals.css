@@ -13,8 +13,12 @@
   --color-university-blue: var(--university-blue);
 }
 
+
+
 /* Custom utility class */
 @layer utilities {
+
+
 
   .campus_fac_table, .campus_fac_table th, .campus_fac_table td{
     border: 1px solid #000;
@@ -103,7 +107,7 @@
   }
 
   .schIndCollbaheadingPara p {
-    /* font-size: 16px; */
+    font-size: 16px;
     font-weight: 400;
     margin: 20px 0px;
   }

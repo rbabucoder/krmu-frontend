@@ -96,6 +96,7 @@ const ScholarUGPG = () => {
                         </tr>
                         <tr>
                           <td>80% to less than 85%</td> <td>25%</td>
+                          <td>To be paid in 2 equal instalments-1st instalment will be paid upfront post documents verification and the amount of scholarship will be deducted from the semester fee at the time of registration. 2nd instalment will be paid by cheque in 2nd Semester, if the student fulfils all the criteria listed under Note: 7 given below the table.</td>
                         </tr>
                       </tbody>
                     </table>
