@@ -44,7 +44,7 @@ export const sohmctFaculties: SchoolFacultiesType[] = [
       schools: [1214],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/08/shriya.jpg",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/08/Ms.-Shriya-Chauhan.jpg",
   },
   {
     id: 54733,

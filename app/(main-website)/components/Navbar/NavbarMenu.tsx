@@ -116,6 +116,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                overflow-hidden"
                   style={{
                     backgroundImage: `url(${STRAPI_URL}${academicMenu?.backgroundimage?.url})`,
+                    backgroundColor: '#fff'
                   }}
                 >
                   <div className="flex flex-col z-10 text-white w-full">

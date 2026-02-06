@@ -210,7 +210,7 @@ export const solaFaculties: SchoolFacultiesType[] = [
       schools: [1152],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/08/Dr.-Kartika-Saharan1.jpg",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/08/Dr.-Kartika-Saharan.jpg",
   },
   {
     id: 60575,
