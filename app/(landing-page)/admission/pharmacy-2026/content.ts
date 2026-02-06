@@ -40,15 +40,16 @@ export const Hero: HeroContent = {
 
 export const heroMarqueeData: HeroMarqueeSection = {
   messages: [
-       "₹56.6 LPA Highest Package",
+         "₹56.6 LPA Highest Package",
     "₹27 Cr Scholarships",
     "800+ Recruiters",
     "18K+ Alumni",
     "92% Placement Record",
-    "100% Sponsored* International Study Tour",
-    "₹56.6 LPA Highest Package",
-    "₹27 Cr Scholarships",
-    "800+ Recruiters",
+    "100% Sponsored International Study Tour",
+    "700+ Educators",
+    "100+ UG & PG Programmes",
+    "12K+ Students",
+    "28+ Acres Campus",
   ],
   bgColor: "#e31e24",
   speedClass: "animate-marquee",

@@ -45,13 +45,11 @@ export const heroMarqueeData: HeroMarqueeSection = {
     "800+ Recruiters",
     "18K+ Alumni",
     "92% Placement Record",
-    "100% Sponsored* International Study Tour",
-    "₹56.6 LPA Highest Package",
-    "₹27 Cr Scholarships",
-    "800+ Recruiters",
-    "18K+ Alumni",
-    "92% Placement Record",
-    "100% Sponsored* International Study Tour",
+    "100% Sponsored International Study Tour",
+    "700+ Educators",
+    "100+ UG & PG Programmes",
+    "12K+ Students",
+    "28+ Acres Campus",
   ],
   bgColor: "#e31e24",
   speedClass: "animate-marquee",
@@ -101,6 +99,26 @@ export const prominentRecruiters: ProminentRecruit[] = [
   {
     imgUrl: "/landingpage/law-2026/prominent-recruiter/6.png",
     alt: "Recruiter Logo",
+  },
+  {
+    imgUrl: "/wp-content/landingpage/law-2026/logos/1.jpg",
+    alt: "Apple Logo",
+  },
+  {
+    imgUrl: "/wp-content/landingpage/law-2026/logos/2.png",
+    alt: "Apple Logo",
+  },
+  {
+    imgUrl: "/wp-content/landingpage/law-2026/logos/3.webp",
+    alt: "Apple Logo",
+  },
+  {
+    imgUrl: "/wp-content/landingpage/law-2026/logos/4.jpg",
+    alt: "Apple Logo",
+  },
+  {
+    imgUrl: "/wp-content/landingpage/law-2026/logos/5.png",
+    alt: "Apple Logo",
   },
 ];
 
@@ -179,12 +197,12 @@ export const specialisationData: SpecialisationSection = {
   specilisationCard: [
     {
       imgUrl: "/landingpage/law-2026/prog/BA-LL.B-Hons.jpg",
-      title: `BA. LL.B. (Hons.)`,
-      desc: `With this five-year integrated BA. LL.B. programme that combines the arts and law, learn about the socio-legal aspects of law.`,
+      title: `B.A. LL.B. (Hons.)`,
+      desc: `With this five-year integrated B.A. LL.B. programme that combines arts and law, learn about the socio-legal aspects of law.`,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
-          title: "Duration:",
+          title: "Duration",
           desc: `5 Years`,
         },
         {
@@ -206,7 +224,7 @@ export const specialisationData: SpecialisationSection = {
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
-          title: "Duration:",
+          title: "Duration",
           desc: `5 Years`,
         },
         {
@@ -228,13 +246,13 @@ export const specialisationData: SpecialisationSection = {
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
-          title: "Duration:",
-          desc: `5 Years`,
+          title: "Duration",
+          desc: `3 Years`,
         },
         {
           iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
-          desc: `10+2 with a minimum of 50% marks`,
+          desc: `Bachelor's Degree with a minimum of 50% marks`,
         },
         // {
         //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",

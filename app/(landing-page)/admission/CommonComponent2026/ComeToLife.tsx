@@ -31,7 +31,7 @@ const ComeToLife = ({ data }: Props) => {
             well-equipped central library with digital resources, computer and
             analytics labs, and seminar halls to enhance academic engagement.
             Additionally, the availability of dedicated spaces for innovation,
-            entrepreneurship, and skill development create an environment that
+            entrepreneurship, and skill development creates an environment that
             encourages practical learning, collaboration, and professional
             growth.
           </p>

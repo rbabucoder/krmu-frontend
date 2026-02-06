@@ -62,7 +62,7 @@ const IndustryExperts = ({ data }: Props) => {
             {data.cards.map((item, index) => (
               <div
                 key={index}
-                className="bg-white p-2.5 rounded-xl text-center flex  items-center justify-center"
+                className="bg-white p-5 rounded-xl text-center flex  items-center justify-center"
               >
                 <Image
                   src={item.imgUrl}

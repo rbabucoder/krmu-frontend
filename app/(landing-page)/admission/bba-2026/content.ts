@@ -42,15 +42,16 @@ export const Hero: HeroContent = {
 
 export const heroMarqueeData: HeroMarqueeSection = {
   messages: [
-       "₹56.6 LPA Highest Package",
+    "₹56.6 LPA Highest Package",
     "₹27 Cr Scholarships",
     "800+ Recruiters",
     "18K+ Alumni",
     "92% Placement Record",
-    "100% Sponsored* International Study Tour",
-    "₹56.6 LPA Highest Package",
-    "₹27 Cr Scholarships",
-    "800+ Recruiters",
+    "100% Sponsored International Study Tour",
+    "700+ Educators",
+    "100+ UG & PG Programmes",
+    "12K+ Students",
+    "28+ Acres Campus",
   ],
   bgColor: "#e31e24",
   speedClass: "animate-marquee",
@@ -102,7 +103,7 @@ export const prominentRecruiters: ProminentRecruit[] = [
 export const whyKRM: WhyKRMSection = {
   heading: "Why Opt for BBA Programmes at KRMU?",
   subheading: "Shape Your Future with a Career-Focused Business Education",
-  content: `The BBA programmes at K.R. Mangalam University provide the groundwork for future business executives to succeed in a variety of corporate positions or entrepreneurial endeavours. Our programme, which is in line with NEP criteria, guarantees flexibility in length (3 or 4 years), combining academic knowledge with practical experience and real-world insights.`,
+  content: `The BBA programmes at K.R. Mangalam University provide the groundwork for future business executives to succeed in a variety of corporate positions or entrepreneurial endeavours. Our programmes, which is in line with NEP criteria, guarantee flexibility in length (3 or 4 years), combining academic knowledge with practical experience and real-world insights.`,
   imgUrl: `/landingpage/common/building.webp`,
   whyKrmCards: [
     {
@@ -135,27 +136,27 @@ export const industryExperts: IndustryExpertsSection = {
   cards: [
     {
       imgUrl: "/landingpage/bba-2026/experts/iide.webp",
-      alt: "IIDE",
+      alt: "",
       title: "",
     },
     {
       imgUrl: "/landingpage/bba-2026/experts/ey-logo.webp",
-      alt: "EY Logo",
+      alt: "",
       title: "",
     },
     {
-      imgUrl: "/landingpage/bba-2026/experts/samatrix.webp",
-      alt: "Samatrix Logo",
+      imgUrl: "/wp-content/landingpage/bba-2026/logos/safexpress.jpg",
+      alt: "",
       title: "",
     },
     {
       imgUrl: "/landingpage/bba-2026/experts/grant.webp",
-      alt: "Grant Logo",
+      alt: "",
       title: "",
     },
     {
       imgUrl: "/landingpage/bba-2026/experts/gcec.webp",
-      alt: "GCEC Logo",
+      alt: "",
       title: "",
     },
   ],
@@ -173,7 +174,7 @@ export const specialisationData: SpecialisationSection = {
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
-          title: "Duration:",
+          title: "Duration",
           desc: `3 Years`,
         },
         {
@@ -195,7 +196,7 @@ export const specialisationData: SpecialisationSection = {
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
-          title: "Duration:",
+          title: "Duration",
           desc: `4 Years`,
         },
         {
@@ -217,7 +218,7 @@ export const specialisationData: SpecialisationSection = {
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
-          title: "Duration:",
+          title: "Duration",
           desc: `3 Years`,
         },
         {
@@ -239,7 +240,7 @@ export const specialisationData: SpecialisationSection = {
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
-          title: "Duration:",
+          title: "Duration",
           desc: `4 Years`,
         },
         {
@@ -261,7 +262,7 @@ export const specialisationData: SpecialisationSection = {
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
-          title: "Duration:",
+          title: "Duration",
           desc: `3 Years`,
         },
         {
@@ -278,12 +279,12 @@ export const specialisationData: SpecialisationSection = {
     },
     {
       imgUrl: "/landingpage/bba-2026/programs/bba-hons-finance.jpg",
-      title: `BBA (Hons. /Hons. with Research) Finance`,
+      title: `BBA (Hons. / Hons. with Research) Finance`,
       desc: `Develop your corporate finance, investment, and risk management abilities to position yourself for leadership in the financial industry.`,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
-          title: "Duration:",
+          title: "Duration",
           desc: `4 Years`,
         },
         {
@@ -306,7 +307,7 @@ export const specialisationData: SpecialisationSection = {
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
-          title: "Duration:",
+          title: "Duration",
           desc: `3 Years`,
         },
         {
@@ -324,12 +325,12 @@ export const specialisationData: SpecialisationSection = {
     {
       imgUrl:
         "/landingpage/bba-2026/programs/bba-hons-digital-marketing-with-academic-support-of-iide.jpg",
-      title: `BBA (Hons./ Hons. with Research) in Digital Marketing with academic support of IIDE`,
+      title: `BBA (Hons. / Hons. with Research) in Digital Marketing with academic support of IIDE`,
       desc: `You can succeed in the digital economy if you are proficient in social media analytics, performance marketing, and online branding.`,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
-          title: "Duration:",
+          title: "Duration",
           desc: `4 Years`,
         },
         {
@@ -351,7 +352,7 @@ export const specialisationData: SpecialisationSection = {
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
-          title: "Duration:",
+          title: "Duration",
           desc: `3 Years`,
         },
         {
@@ -369,12 +370,12 @@ export const specialisationData: SpecialisationSection = {
     {
       imgUrl:
         "/landingpage/bba-2026/programs/bba-hons-international-business.jpg",
-      title: `BBA (Hons./ Hons. with Research) International Business`,
+      title: `BBA (Hons. / Hons. with Research) International Business`,
       desc: `Learn about international trade, cross-cultural management, and international marketing tactics to get ready for a worldwide career prospects.`,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
-          title: "Duration:",
+          title: "Duration",
           desc: `4 Years`,
         },
         {
@@ -396,7 +397,7 @@ export const specialisationData: SpecialisationSection = {
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
-          title: "Duration:",
+          title: "Duration",
           desc: `3 Years`,
         },
         {
@@ -418,7 +419,7 @@ export const specialisationData: SpecialisationSection = {
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
-          title: "Duration:",
+          title: "Duration",
           desc: `4 Years`,
         },
         {
@@ -440,7 +441,7 @@ export const specialisationData: SpecialisationSection = {
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
-          title: "Duration:",
+          title: "Duration",
           desc: `3 Years`,
         },
         {
@@ -462,7 +463,7 @@ export const specialisationData: SpecialisationSection = {
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
-          title: "Duration:",
+          title: "Duration",
           desc: `4 Years`,
         },
         {
@@ -477,6 +478,29 @@ export const specialisationData: SpecialisationSection = {
         // },
       ],
     },
+     {
+      imgUrl:
+        "/landingpage/bba-2026/programs/bba-hons-logistics-safexpress.jpg",
+      title: `BBA (Entrepreneurship) with academic support of GCEC Global Foundation`,
+      desc: `With a BBA in Entrepreneurship, you can turn creative concepts into profitable businesses through startup ideation, venture capital, and learn management techniques.`,
+      extraInfos: [
+        {
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
+          title: "Duration",
+          desc: `3 Years`,
+        },
+        {
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
+          title: "Eligibility",
+          desc: `10+2 with a minimum of 50% marks`,
+        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 2,05,000`,
+        // },
+      ],
+    },
     {
       imgUrl: "/landingpage/bba-2026/programs/bba-hons-gcec.jpg",
       title: `BBA (Hons. / Hons. with Research) Entrepreneurship with academic support of GCEC Global Foundation`,
@@ -484,7 +508,7 @@ export const specialisationData: SpecialisationSection = {
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
-          title: "Duration:",
+          title: "Duration",
           desc: `4 Years`,
         },
         {
@@ -506,7 +530,7 @@ export const specialisationData: SpecialisationSection = {
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
-          title: "Duration:",
+          title: "Duration",
           desc: `3 Years`,
         },
         {
@@ -523,12 +547,12 @@ export const specialisationData: SpecialisationSection = {
     },
     {
       imgUrl: "/landingpage/bba-2026/programs/bba-hons-icf-grant-thornton.jpg",
-      title: `BBA (Hons. / Hons. with Research) International Accounting and Finance (ACCA – UK) with academic support of Grant Thornton`,
+      title: `BBA (Hons. / Hons. with Research) (International Accounting and Finance) (ACCA – UK) with academic support of Grant Thornton`,
       desc: `Pursue a globally recognised ACCA-aligned curriculum course with an emphasis on financial reporting and global finance standards.`,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
-          title: "Duration:",
+          title: "Duration",
           desc: `4 Years`,
         },
         {
@@ -545,12 +569,12 @@ export const specialisationData: SpecialisationSection = {
     },
     {
       imgUrl: "/landingpage/bba-2026/programs/bba-logistics-safexpress.jpg",
-      title: `BBA (Logistics and Supply Chain Management) with academic support of Safexpress)`,
+      title: `BBA (Logistics and Supply Chain Management) with academic support of Safexpress`,
       desc: `This course has been meticulously designed to provide students with knowledge of procurement, warehousing, and logistics technology, focusing on supply chain and logistics strategy.`,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
-          title: "Duration:",
+          title: "Duration",
           desc: `3 Years`,
         },
         {
@@ -567,12 +591,12 @@ export const specialisationData: SpecialisationSection = {
     },
     {
       imgUrl: "/landingpage/bba-2026/programs/bba-logistics-safexpress.jpg",
-      title: `BBA (Hons. / Hons. with Research) Logistics and Supply Chain Management with academic support of Safexpress`,
+      title: `BBA (Hons. / Hons. with Research) (Logistics and Supply Chain Management) with academic support of Safexpress`,
       desc: `The course curriculum strives to provide students with a thorough grasp of how global supply chains function and how crucial they are to the success of contemporary firms.`,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
-          title: "Duration:",
+          title: "Duration",
           desc: `4 Years`,
         },
         {
@@ -587,29 +611,7 @@ export const specialisationData: SpecialisationSection = {
         // },
       ],
     },
-    {
-      imgUrl:
-        "/landingpage/bba-2026/programs/bba-hons-logistics-safexpress.jpg",
-      title: `BBA (Entrepreneurship) with academic support of GCEC Global Foundation`,
-      desc: `With a BBA in Entrepreneurship, you can turn creative concepts into profitable businesses through startup ideation, venture capital, and learn management techniques.`,
-      extraInfos: [
-        {
-          iconUrl: "/wp-content/landingpage/common/duration.svg",
-          title: "Duration:",
-          desc: `3 Years`,
-        },
-        {
-          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
-          title: "Eligibility",
-          desc: `10+2 with a minimum of 50% marks`,
-        },
-        // {
-        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-        //   title: "Annual Fee",
-        //   desc: `Rs 2,05,000`,
-        // },
-      ],
-    },
+   
   ],
 };
 
@@ -727,7 +729,9 @@ export const scholarResearchImpactData: ScholarResearchImpactSection = {
 
 export const comeToLifeData: ComeToLifeSection = {
   heading: `World-Class Infrastructure`,
-  description: `K.R. Mangalam University offers a modern and student-centric campus designed to support effective learning and holistic development for BBA undergraduates. The university provides smart classrooms, a well-equipped central library with digital resources, computer and analytics labs, and seminar halls to enhance academic engagement. Dedicated spaces for innovation, entrepreneurship, and skill development create an environment that encourages practical learning, collaboration, and professional growth.`,
+  description: `K.R. Mangalam University provides a world-class academic environment that supports effective teaching, learning, and research in legal education.
+   The university is equipped with modern infrastructure and advanced learning resources designed to meet the academic and professional 
+   requirements of undergraduate law programmes.`,
   footerText: ``,
   cta: {
     label: "Apply for BBA  2026-27 ",
