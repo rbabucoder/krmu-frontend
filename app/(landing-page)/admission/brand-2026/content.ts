@@ -109,9 +109,9 @@ export const prominentRecruiters: ProminentRecruit[] = [
 ];
 
 export const whyKRM: WhyKRMSection = {
-  heading: "What makes KRMU the Best option for the Undergraduate Course?",
+  heading: "What Makes KRMU the Right Choice for UG & PG Programmes?",
   subheading: "Preaching, Preparing & Perfectioning Tomorrow’s Pioneers",
-  content: `K.R. Mangalam University remains on the priority list of individuals seeking admission into undergraduate courses due to its innovative, interdisciplinary curriculum, strong industry-academia linkages, world-class infrastructure (smart classrooms, labs), experienced faculty, and focus on holistic development of students by equipping them with practical industry-required skills, critical thinking, and global exposure, thereby ensuring success in diverse fields.`,
+  content: `K.R. Mangalam University stands out as a preferred destination for both undergraduate and postgraduate education, offering an innovative, interdisciplinary curriculum supported by strong industry–academia partnerships. With world-class infrastructure, including smart classrooms and advanced laboratories, accomplished faculty, and a strong focus on holistic development, the University equips students with industry-ready skills, critical thinking, research orientation, and global exposure—enabling success across diverse academic and professional pathways.`,
   imgUrl: `/landingpage/common/whykrmtest.png`,
   whyKrmCards: [
     {
@@ -134,7 +134,7 @@ export const whyKRM: WhyKRMSection = {
 };
 
 export const industryExperts: IndustryExpertsSection = {
-  eyebrow: "Why KR Mangalam PhD?",
+  eyebrow: "",
   heading: `Learn from<br />Leaders @ KRMU!`,
   description: `K.R. Mangalam University takes pride in collaborating with industry leaders and skill professionals who offer unparalleled hands-on learning experiences to students.`,
   cta: {
@@ -788,11 +788,11 @@ export const faqSectionData: FAQSectionData = {
     {
       id: "item-1",
       question: "What programmes does K.R. Mangalam University offer?",
-      answer: `The K.R. Mangalam University offers various undergraduate programmes in diverse fields, including engineering, management, law, applied sciences, architecture, health sciences, and humanities.`,
+      answer: `The K.R. Mangalam University offers various undergraduate and postgraduate programmes in diverse fields, including engineering, management, law, applied sciences, architecture, health sciences, humanities and more.`,
     },
     {
       id: "item-2",
-      question: "What is the K.R. Mangalam University Admission Process?",
+      question: "What is the K.R. Mangalam University admission process?",
       answer: `An individual can begin with his/her admission process at K.R. Mangalam University via the University’s online application portal available on the website. The KRMU also offers assistance through its admission office for any queries or guidance required during the application process.`,
     },
     {

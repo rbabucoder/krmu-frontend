@@ -19,16 +19,16 @@ import {
 // Usage types
 export const Hero: HeroContent = {
   title: ` <span class="sm:hidden"><span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
-        B.Sc.-CSE
+        B.Sc. CSE
       </span> Admissions Open 2026–27</span>
       <span class="hidden sm:block">
       ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
-      B.Sc.-CSE 
+      B.Sc. CSE 
       </span>
       <br />
-      PROGRAMMES 2026-2027
+      PROGRAMMES 2026-27
       </span>
     `,
   desc: `Begin Your Journey into the World of Technology`,
@@ -103,9 +103,9 @@ export const prominentRecruiters: ProminentRecruit[] = [
   },
 ];
 export const whyKRM: WhyKRMSection = {
-  heading: "Why Choose B.Sc.-CSE Programmes of KRMU? ",
+  heading: "Why Choose B.Sc. CSE Programmes at KRMU? ",
   subheading: "Step Into the Future of Computing",
-  content: `K.R. Mangalam University's B.Sc. Computer Science programmes offer cutting-edge curriculum developed in partnership with industry professionals. Our NEP-compliant curriculum provide students with practical, hands-on experience and global certifications to help them flourish in a fast changing technology field.`,
+  content: `K.R. Mangalam University's B.Sc. Computer Science programmes offer cutting-edge curriculum developed in partnership with industry professionals. Our NEP-compliant curriculum provides students with practical, hands-on experience and global certifications to help them flourish in a fast changing technology field.`,
   imgUrl: `/landingpage/bsc-cse-2026/why-choose/Building.webp`,
   whyKrmCards: [
     {
@@ -132,7 +132,7 @@ export const industryExperts: IndustryExpertsSection = {
   heading: `Learn From <br /> Industry Experts`,
   description: `KRMU collaborates with leading organisations to offer industry-driven training.`,
   cta: {
-    label: "Apply for B.Sc. - CSE 2026-27",
+    label: `Apply for B.Sc. CSE <br /> 2026-27`,
     href: "#",
   },
   cards: [
@@ -162,13 +162,13 @@ export const industryExperts: IndustryExpertsSection = {
 
 export const specialisationData: SpecialisationSection = {
   subheading: `Choose from KRMU's B.Sc. (UG) programmes to begin creating your career in the information technology sector.`,
-  heading: `Our B.Sc. - CSE  Programmes`,
+  heading: `Our B.Sc. CSE  Programmes`,
   specilisationCard: [
     {
       imgUrl:
         "/landingpage/bsc-cse-2026/specialisations/B.Sc.-(Hons.)-Computer-Science-(with-Academic-Support-of-IBM).webp",
-      title: `B.Sc. (Hons.) Computer Science (with Academic Support of IBM)`,
-      desc: `B.Sc. (Hons.) Computer Science (with academic support of IBM) equips students with industry-relevant skills in Cloud Computing, Artificial Intelligence, and Software Development, combining strong computer science fundamentals with hands-on, technology-driven learning for future-ready tech careers.`,
+      title: `B.Sc. (Hons.) Computer Science with Academic Support of IBM`,
+      desc: `B.Sc. (Hons.) Computer Science with academic support of IBM equips students with industry-relevant skills in Cloud Computing, Artificial Intelligence, and Software Development, combining strong computer science fundamentals with hands-on, technology-driven learning for future-ready tech careers.`,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -247,7 +247,7 @@ export const opportunityData: OpportunitySection = {
   heading: "Learn From Industry Experts",
   highlight: "Opportunity That Transforms",
   cta: {
-    label: "Apply for B.Sc. - CSE 2026-2027",
+    label: "Apply for B.Sc. CSE 2026-27",
     href: "#",
   },
 };
@@ -365,7 +365,7 @@ export const comeToLifeData: ComeToLifeSection = {
   description: `K.R. Mangalam University provides a state-of-the-art campus environment that supports academic excellence and practical learning for B.Sc. - CSE students. The university features modern classrooms equipped with smart technology and high-speed Wi-Fi, creating an engaging and interactive learning atmosphere. Students have access to well-equipped computer and programming labs with advanced systems and software tools essential for hands-on coding, development, and experimentation. The central library offers a rich collection of books, journals, and digital resources to support research and study. Additionally, the campus includes dedicated seminar halls, collaboration spaces, and innovation hubs that foster creativity and peer learning. Beyond academics, KRMU provides secure hostels, recreational facilities, sports infrastructure, and 24×7 connectivity, ensuring a balanced and enriching student experience.`,
   footerText: ``,
   cta: {
-    label: "Apply for B.Sc. - CSE 2026-2027 ",
+    label: "Apply for B.Sc.  CSE 2026-27 ",
     href: "#",
   },
   slides: [
@@ -443,7 +443,7 @@ export const faqSectionData: FAQSectionData = {
       id: "item-1",
       question:
         "What are the benefits of enrolling in a B.Sc. Computer Science programme that complies with NEP?",
-      answer: `NEP-compliant programmes provide a customised educational experience by providing different departure alternatives, transdisciplinary learning, and flexibility in duration.
+      answer: `NEP-compliant programmes provide a customised educational experience by providing multiple exit options, transdisciplinary learning, and flexibility in duration.
 `,
     },
     {
@@ -489,7 +489,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Begin Your Journey at K.R. Mangalam<br /> University Now`,
   description: "",
   cta: {
-    label: "Apply for B.Sc. - CSE 2026-2027",
+    label: "Apply for B.Sc. CSE 2026-27",
     href: "#",
   },
   highlights: [

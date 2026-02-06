@@ -40,7 +40,9 @@ const Specialisation = ({ data }: Props) => {
             }}
             className="w-full"
           >
-            <CarouselContent className="mb-10 sm:my-12">
+            <CarouselContent
+              className={`mb-10 sm:my-12 ${data?.specilisationCard?.length === 1 ? "justify-center" : ""}`}
+            >
               {data?.specilisationCard.map((card, index) => (
                 <CarouselItem key={index} className="lg:basis-1/2 xl:basis-1/3">
                   <SpecialisationCard data={card} />

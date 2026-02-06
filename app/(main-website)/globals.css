@@ -15,6 +15,57 @@
 
 /* Custom utility class */
 @layer utilities {
+  .advSchoolImg {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .advSchoolImg img {
+    height: 683px;
+    width: 600px;
+  }
+  /* xl:ml-[32%] 2xl:ml-0 */
+
+  @media (max-width: 1401px) {
+    .advSchoolImg img {
+      width: 494px;
+      height: 673px;
+      object-fit: cover;
+    }
+  }
+
+  @media (max-width: 1380px) {
+    .advSchoolImg img {
+      width: 434px;
+      height: 800px;
+      object-fit: cover;
+    }
+  }
+
+  @media (max-width: 1280px) {
+    .advSchoolImg img {
+      width: 434px;
+      height: 400px;
+      object-fit: contain;
+    }
+  }
+
+
+    @media (max-width: 1145px) {
+    .advSchoolImg img {
+      width: 434px;
+      height: 250px;
+      object-fit: contain;
+    }
+  }
+
+      @media (max-width: 1145px) {
+    .advSchoolImg {
+      left: 42%
+    }
+  }
+
   /* .interRelYTIframe iframe{
     height: 200px;
   } */

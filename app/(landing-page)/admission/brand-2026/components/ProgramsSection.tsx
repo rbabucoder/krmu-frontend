@@ -28,7 +28,7 @@ export default function ProgramsSection() {
       <div className="max-w-7xl mx-auto px-4">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10">
-          Transform your Life{" "}
+          Transform Your Life{" "}
           <span className="text-red-500">with the Right Programme</span>
         </h2>
 
