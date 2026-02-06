@@ -247,7 +247,7 @@ const JobForm = ({ jobId }: Props) => {
         <div className="mb-5" key={field.name}>
           <label className="block font-medium mb-2">
             {field.label}{" "}
-            {field.name ? "" : <span className="text-red-500">*</span>}
+            {field.name === 'awsm_text_7' ? "" : <span className="text-red-500">*</span>}
           </label>
 
           <input
