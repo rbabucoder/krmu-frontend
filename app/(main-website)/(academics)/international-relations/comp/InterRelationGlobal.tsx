@@ -5,10 +5,10 @@ const InterRelationGlobal = () => {
         <h4 className="text-[28px] text-center font-semibold mb-10">
           Global Learning Experiences at KRMU
         </h4>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div className="w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10">
+          <div className="w-full interRelGlobalYTIframe">
             <iframe
-              width="100%"
+              width="100%" 
               height="315"
               src="https://www.youtube.com/embed/uEQ6iDhLv_Q?si=8FYi9R84RL8H1n3N"
               title="YouTube video player"
@@ -18,7 +18,7 @@ const InterRelationGlobal = () => {
               allowFullScreen
             ></iframe>
           </div>
-          <div className="w-full">
+          <div className="w-full interRelGlobalYTIframe">
             <iframe
               width="100%"
               height="315"
@@ -30,9 +30,9 @@ const InterRelationGlobal = () => {
               allowFullScreen
             ></iframe>
           </div>
-          <div className="w-full">
+          <div className="w-full interRelGlobalYTIframe">
             <iframe
-              width="560"
+              width="100%"
               height="315"
               src="https://www.youtube.com/embed/Q0OyZv7Rybw?si=Q8t8T6vXJXRYOY97"
               title="YouTube video player"
@@ -42,9 +42,9 @@ const InterRelationGlobal = () => {
               allowFullScreen
             ></iframe>
           </div>
-          <div className="w-full">
+          <div className="w-full interRelGlobalYTIframe">
             <iframe
-              width="560"
+              width="100%"
               height="315"
               src="https://www.youtube.com/embed/N5wD_F5O4-M?si=o3aBKaDVKiRQQFDQ"
               title="YouTube video player"

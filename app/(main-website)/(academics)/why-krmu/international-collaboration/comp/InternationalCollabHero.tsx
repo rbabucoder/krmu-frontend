@@ -32,14 +32,14 @@ const InternationalCollabHero = ({ title, desc, heroBtn, heroGrid }: Props) => {
             ""
           )}
 
-          <div className="grid gap-5 sm:gap-10 grid-cols-1 lg:gap-0 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            <div className="p-[30px] text-white min-h-[380px] rounded-[30px] h-full bg-[#051630] lg:mr-[7.68%]">
+          <div className="grid gap-5 md:gap-10 grid-cols-1 lg:gap-0 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <div className="p-[30px] text-white md:min-h-[380px] rounded-[30px] h-full bg-[#051630] lg:mr-[7.68%]">
               <p className="leading-[2]">{heroGrid[0]?.content}</p>
             </div>
-            <div className="p-[30px] text-white min-h-[380px] rounded-[30px] h-full bg-[#051630] lg:mx-[7.68%]">
+            <div className="p-[30px] text-white md:min-h-[380px] rounded-[30px] h-full bg-[#051630] lg:mx-[7.68%]">
               <p className="leading-[2]">{heroGrid[1]?.content}</p>
             </div>
-            <div className="p-[30px] text-white min-h-[380px] rounded-[30px] h-full bg-[#051630] lg:ml-[7.68%]">
+            <div className="p-[30px] text-white md:min-h-[380px] rounded-[30px] h-full bg-[#051630] lg:ml-[7.68%]">
               <p className="leading-[2]">{heroGrid[2]?.content}</p>
             </div>
             <div className="w-1/4"></div>

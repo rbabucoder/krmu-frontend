@@ -7,7 +7,7 @@ const InterRelationHero = () => {
             International Relations
           </h1>
         </div>
-        <div className="w-full lg:w-1/2">
+        <div className="w-full lg:w-1/2 interRelYTIframe">
           <iframe
             width="100%"
             height="422"

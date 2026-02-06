@@ -2,8 +2,8 @@ import PHDRegulationSlide from "./PHDRegulationSlide";
 
 const PHDRegulationHero = () => {
   return (
-    <div className="flex flex-col lg:flex-row gap-20">
-      <div className="lg:w-3/5 text-white">
+    <div className="flex flex-col xl:flex-row gap-20">
+      <div className="w-full xl:w-3/5 text-white">
         <h1 className="text-3xl md:text-[43px] font-semibold mb-5">Ph.D. Programmes</h1>
         <p className="text-justify leading-[2]">
           {`   The Ph.D. Cell at K.R. Mangalam University is dedicated to fostering a
@@ -20,7 +20,7 @@ const PHDRegulationHero = () => {
           meaningfully to nation-building.`}
         </p>
       </div>
-      <div className="lg:w-2/5">
+      <div className="w-full xl:w-2/5">
         <PHDRegulationSlide />
       </div>
     </div>

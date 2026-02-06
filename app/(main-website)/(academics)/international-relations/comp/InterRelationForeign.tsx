@@ -11,7 +11,7 @@ const InterRelationForeign = () => {
           <strong>
             KRMU doesn’t limit itself to the campus, it offers students the
             opportunities to visit foreign universities campus to attend guest
-            lectures and interact with new people.
+            lectures and interact with new people. 
           </strong>
         </p>
 

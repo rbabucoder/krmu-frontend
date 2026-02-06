@@ -86,7 +86,7 @@ export default function InternationalRelationsForm() {
 
       entryData.append(
         "data[declaration_accepted]",
-        raw.get("declaration_accepted") ? "true" : "false"
+        raw.get("declaration_accepted") ? "true" : "false",
       );
 
       entryData.append("data[documents_pdf]", String(uploadedFileId));
@@ -96,7 +96,7 @@ export default function InternationalRelationsForm() {
         {
           method: "POST",
           body: entryData,
-        }
+        },
       );
 
       if (!entryRes.ok) {
@@ -116,9 +116,9 @@ export default function InternationalRelationsForm() {
   };
 
   return (
-    <section className="w-full bg-white py-12">
-      <div className="max-w-[1200px] mx-auto border border-gray-300 p-10">
-        <form
+    <section className="w-full bg-white py-12 px-4">
+      <div className="max-w-[1200px] mx-auto border border-gray-300 p-5 md:p-10">
+        {/* <form
           onSubmit={handleSubmit}
           encType="multipart/form-data"
           className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 text-[14px]"
@@ -206,7 +206,7 @@ export default function InternationalRelationsForm() {
             />
           </div>
 
-          {/* RIGHT COLUMN */}
+        
           <div className="space-y-6">
             <input
               name="academic_background"
@@ -337,18 +337,275 @@ export default function InternationalRelationsForm() {
               information is correct
             </label>
 
-            {/* ================= SUBMIT BUTTON ================= */}
+          
             <div className="relative">
               <button
                 disabled={loading}
                 className={`w-full bg-red-600 text-white px-10 py-3 rounded-md flex items-center justify-center gap-2
                   ${loading ? "opacity-70 cursor-not-allowed" : ""}`}
               >
-                {loading && <span className="loader" />} {/* ⭐ PRELOADER */}
+                {loading && <span className="loader" />} 
                 {loading ? "Submitting..." : "Submit"}
               </button>
 
-              {/* ================= MESSAGE ================= */}
+              
+              {message && (
+                <p
+                  className={`mt-3 text-sm font-medium ${
+                    status === "success" ? "text-green-600" : "text-red-600"
+                  }`}
+                >
+                  {message}
+                </p>
+              )}
+            </div>
+          </div>
+        </form> */}
+        <form
+          onSubmit={handleSubmit}
+          encType="multipart/form-data"
+          className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-10 text-[14px]"
+        >
+          {/* LEFT COLUMN */}
+          <div className="space-y-6">
+            {/* Name */}
+            <div>
+              <label className="font-medium mb-1 block">Full Name</label>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <input
+                  name="first_name"
+                  className="input w-full"
+                  placeholder="First Name"
+                  required
+                />
+                <input
+                  name="last_name"
+                  className="input w-full"
+                  placeholder="Last Name"
+                  required
+                />
+              </div>
+            </div>
+
+            {/* DOB + Gender */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label className="font-medium mb-1 block">Date Of Birth</label>
+                <input
+                  type="date"
+                  name="date_of_birth"
+                  className="input w-full"
+                />
+              </div>
+
+              <div>
+                <label className="font-medium mb-1 block">Gender</label>
+                <select name="gender" className="input w-full">
+                  <option value="">Select</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+
+            {/* Address */}
+            <div>
+              <label className="font-medium mb-1 block">
+                Permanent Address
+              </label>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <input
+                  name="address_line_1"
+                  className="input w-full"
+                  placeholder="Address 1"
+                />
+                <input
+                  name="address_line_2"
+                  className="input w-full"
+                  placeholder="Address 2"
+                />
+              </div>
+            </div>
+
+            {/* Contact */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <input
+                name="email"
+                className="input w-full"
+                placeholder="Email"
+              />
+              <input
+                name="phone"
+                className="input w-full"
+                placeholder="Phone"
+              />
+            </div>
+
+            {/* Emergency */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <input
+                name="emergency_phone"
+                className="input w-full"
+                placeholder="Emergency Phone"
+              />
+              <input
+                name="emergency_relationship"
+                className="input w-full"
+                placeholder="Relationship"
+              />
+            </div>
+
+            <input
+              name="emergency_email"
+              className="input w-full"
+              placeholder="Emergency Email"
+            />
+
+            <textarea
+              name="statement_of_purpose"
+              rows={5}
+              className="input w-full"
+              placeholder="Statement of Purpose"
+            />
+          </div>
+
+          {/* RIGHT COLUMN */}
+          <div className="space-y-6">
+            <input
+              name="academic_background"
+              className="input w-full"
+              placeholder="Academic Background"
+            />
+
+            {/* Education */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <input
+                name="previous_education"
+                className="input w-full"
+                placeholder="Previous Education"
+              />
+              <input
+                name="institution_name"
+                className="input w-full"
+                placeholder="Institution Name"
+              />
+              <input
+                name="study_country"
+                className="input w-full"
+                placeholder="Country"
+              />
+              <input
+                name="study_duration"
+                className="input w-full"
+                placeholder="Duration"
+              />
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <input
+                name="degree_obtained"
+                className="input w-full"
+                placeholder="Degree Obtained"
+              />
+              <input
+                name="major_field"
+                className="input w-full"
+                placeholder="Major Field"
+              />
+              <input
+                name="language_proficiency"
+                className="input w-full"
+                placeholder="Language Proficiency"
+              />
+              <input
+                name="english_test"
+                className="input w-full"
+                placeholder="English Test"
+              />
+            </div>
+
+            <input
+              name="other_language"
+              className="input w-full"
+              placeholder="Other Language"
+            />
+
+            {/* Programme */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <input
+                name="intended_programme"
+                className="input w-full"
+                placeholder="Intended Programme"
+              />
+              <input
+                name="degree_programme"
+                className="input w-full"
+                placeholder="Degree Programme"
+              />
+              <input
+                name="programme_major"
+                className="input w-full"
+                placeholder="Programme Major"
+              />
+              <input
+                name="entry_term"
+                className="input w-full"
+                placeholder="Entry Term"
+              />
+            </div>
+
+            {/* Selects */}
+            <select name="applied_before" className="input w-full">
+              <option value="">Applied Before?</option>
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+
+            <select name="referral_source" className="input w-full">
+              <option value="">—Please choose an option—</option>
+              <option>Online sources</option>
+              <option>Offline sources</option>
+              <option>Educational events</option>
+              <option>Word of mouth</option>
+              <option>Search engines</option>
+              <option>Recruitment agency</option>
+              <option>Government programs</option>
+              <option>Other</option>
+            </select>
+
+            {/* Instructions */}
+            <p className="text-gray-600 text-sm">
+              Attach all the required documents in <b>one PDF</b>: Passport
+              Copy, Academic Transcripts, English Test Score, SOP,
+              Recommendation Letters, etc.
+            </p>
+
+            {/* File Upload */}
+            <input
+              type="file"
+              name="documents_pdf"
+              accept="application/pdf"
+              required
+              className="input w-full file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:bg-gray-100 file:text-sm"
+            />
+
+            {/* Checkbox */}
+            <label className="flex items-start gap-2 text-sm">
+              <input type="checkbox" name="declaration_accepted" />I declare the
+              information is correct
+            </label>
+
+            {/* Button */}
+            <div>
+              <button
+                disabled={loading}
+                className={`w-full sm:w-auto sm:min-w-[220px] bg-red-600 text-white px-10 py-3 rounded-md flex items-center justify-center gap-2 transition
+              ${loading ? "opacity-70 cursor-not-allowed" : "hover:bg-red-700"}`}
+              >
+                {loading ? "Submitting..." : "Submit"}
+              </button>
+
               {message && (
                 <p
                   className={`mt-3 text-sm font-medium ${

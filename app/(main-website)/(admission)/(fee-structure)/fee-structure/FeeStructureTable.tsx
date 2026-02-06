@@ -26,7 +26,7 @@ const FeeStructureTable = ({ feeStructTab }: Props) => {
             <TabsTrigger
               key={tab.id}
               value={tab.id.toString()}
-              className="bg-[#898989] leading-[1] sm:leading-[3] text-sm sm:text-2xl p-5 sm:py-3.5 sm:px-[55px] rounded-none 
+              className="bg-[#898989] leading-[1] sm:leading-[3] text-sm sm:text-2xl p-5 sm:py-3.5 xl:px-[55px] rounded-none 
                          data-[state=active]:bg-[#051630] data-[state=active]:text-white 
                          font-semibold mx-1 w-full"
             >

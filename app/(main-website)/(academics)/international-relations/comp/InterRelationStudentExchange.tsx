@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const InterRelationStudentExchange = () => {
   return (
-    <section className="pt-[30px]">
-      <div className="max-w-[1664px] mx-auto w-full flex">
+    <section className="pt-[30px] px-4">
+      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row">
         <div className="w-full lg:w-3/5 lg:pr-20">
           <h4 className="text-5xl font-semibold mb-5">
             Student Exchange Program
@@ -35,7 +35,7 @@ const InterRelationStudentExchange = () => {
             width={665}
             height={665}
             alt=""
-            className="h-[665px] object-contain"
+            className="md:h-[665px] object-contain"
           />
         </div>
       </div>

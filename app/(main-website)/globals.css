@@ -13,31 +13,123 @@
   --color-university-blue: var(--university-blue);
 }
 
-
-
 /* Custom utility class */
 @layer utilities {
+  /* .interRelYTIframe iframe{
+    height: 200px;
+  } */
 
+  @media (max-width: 1280px) {
+    .interRelYTIframe iframe {
+      height: 400px;
+    }
+  }
+  @media (max-width: 1160px) {
+    .interRelYTIframe iframe {
+      height: 300px;
+    }
+  }
 
+  @media (max-width: 1024px) {
+    .interRelGlobalYTIframe iframe {
+      height: 260px;
+    }
+  }
+  @media (max-width: 1023px) {
+    .interRelYTIframe iframe {
+      height: 600px;
+    }
+    .interRelGlobalYTIframe iframe {
+      height: 600px;
+    }
+  }
 
-  .campus_fac_table, .campus_fac_table th, .campus_fac_table td{
+  @media (max-width: 830px) {
+    .interRelGlobalYTIframe iframe {
+      height: 500px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .interRelGlobalYTIframe iframe {
+      height: 400px;
+    }
+  }
+
+  @media (max-width: 572px) {
+    .interRelGlobalYTIframe iframe {
+      height: 350px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .interRelGlobalYTIframe iframe {
+      height: 300px;
+    }
+  }
+
+  @media (max-width: 430px) {
+    .interRelGlobalYTIframe iframe {
+      height: 250px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .interRelGlobalYTIframe iframe {
+      height: 200px;
+    }
+  }
+
+  @media (max-width: 816px) {
+    .interRelYTIframe iframe {
+      height: 400px;
+    }
+  }
+
+  @media (max-width: 568px) {
+    .interRelYTIframe iframe {
+      height: 300px;
+    }
+  }
+
+  @media (max-width: 436px) {
+    .interRelYTIframe iframe {
+      height: 250px;
+    }
+  }
+
+  @media (max-width: 370px) {
+    .interRelYTIframe iframe {
+      height: 200px;
+    }
+  }
+
+  @media (max-width: 296px) {
+    .interRelYTIframe iframe {
+      height: 150px;
+    }
+  }
+
+  .campus_fac_table,
+  .campus_fac_table th,
+  .campus_fac_table td {
     border: 1px solid #000;
   }
 
-  @media(max-width: 1280px){
-    .customSchoolIframeStyle iframe{
+  @media (max-width: 1280px) {
+    .customSchoolIframeStyle iframe {
       height: 600px !important;
     }
   }
 
-    @media(max-width: 991px){
-    .customSchoolIframeStyle iframe{
+  @media (max-width: 991px) {
+    .customSchoolIframeStyle iframe {
       height: 500px !important;
     }
   }
 
-      @media(max-width: 768px){
-    .customSchoolIframeStyle iframe{
+  @media (max-width: 768px) {
+    .customSchoolIframeStyle iframe {
       height: 400px !important;
     }
   }
@@ -46,19 +138,16 @@
     .customIframeStyle iframe {
       height: 220px !important;
     }
-        .customSchoolIframeStyle iframe{
+    .customSchoolIframeStyle iframe {
       height: 300px !important;
     }
   }
 
-  @media(max-width: 468px){
-        .customSchoolIframeStyle iframe{
+  @media (max-width: 468px) {
+    .customSchoolIframeStyle iframe {
       height: 200px !important;
     }
   }
-
-
-
 
   .rekhi-program-box {
     background: linear-gradient(
@@ -404,7 +493,7 @@
     height: 300px;
     object-fit: cover;
   }
-  .student_welfare-tab-content__text-wrapper{
+  .student_welfare-tab-content__text-wrapper {
     margin-top: 20px;
   }
   .student_welfare-tab-content__text-wrapper ul {
@@ -831,11 +920,11 @@
 
   /* Fee Structure table */
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     .fee_struct_tab_container {
       flex: none;
       flex-direction: column;
-      margin: 0 auto 50px;
+      margin: 20px auto 50px;
     }
   }
 
@@ -983,6 +1072,18 @@
     list-style: disc;
     padding-left: 40px;
     margin: 10px 0px;
+  }
+
+  @media (max-width: 640px) {
+    .ugpgacctab {
+      padding-right: 80px;
+    }
+  }
+  @media (max-width: 480px) {
+    .ugpgacctab {
+      font-size: 12px;
+      /* padding-right: 50px; */
+    }
   }
 
   /* Scholarships */

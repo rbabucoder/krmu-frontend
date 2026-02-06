@@ -30,7 +30,7 @@ const OnlineFee = () => {
             <div className="flex flex-col md:flex-row gap-2.5 my-10">
               <div className="md:w-1/2 z-10">
                 <div
-                  className="text-[18px] md:text-[28px] flex items-center justify-center font-bold py-16 text-white rounded-t-[22px]"
+                  className="text-[18px] md:text-2xl  xl:text-[28px] flex items-center justify-center font-bold py-16 text-white rounded-t-[22px]"
                   style={{
                     background: "linear-gradient(45deg,#051630,#014d8b)",
                   }}
@@ -52,7 +52,7 @@ const OnlineFee = () => {
               </div>
               <div className="md:w-1/2 z-10">
                 <div
-                  className="text-[18px] md:text-[28px] flex items-center justify-center font-bold py-16 text-white rounded-t-[22px]"
+                  className="text-[18px] md:text-2xl  xl:text-[28px] flex items-center justify-center font-bold py-16 text-white rounded-t-[22px]"
                   style={{
                     background: "linear-gradient(45deg,#051630,#014d8b)",
                   }}

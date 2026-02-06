@@ -18,13 +18,13 @@ const ScholarUGPG = () => {
           >
             <TabsTrigger
               value="undergraduate"
-              className="text-base sm:text-xl md:text-2xl md:leading-[3] p-4  md:px-[100px] hover:bg-[#cb000d] hover:text-white data-[state=active]:bg-[#cb000d] data-[state=active]:text-white rounded-full cursor-pointer font-semibold"
+              className="text-base sm:text-xl md:text-2xl md:leading-[3] p-4  lg:px-[100px] hover:bg-[#cb000d] hover:text-white data-[state=active]:bg-[#cb000d] data-[state=active]:text-white rounded-full cursor-pointer font-semibold"
             >
               UG <br className="md:hidden" /> Programmes
             </TabsTrigger>
             <TabsTrigger
               value="postgraduate"
-              className="text-base sm:text-xl md:text-2xl md:leading-[3] p-4  md:px-[100px] hover:bg-[#cb000d] hover:text-white data-[state=active]:bg-[#cb000d] data-[state=active]:text-white rounded-full cursor-pointer font-semibold"
+              className="text-base sm:text-xl md:text-2xl md:leading-[3] p-4  lg:px-[100px] hover:bg-[#cb000d] hover:text-white data-[state=active]:bg-[#cb000d] data-[state=active]:text-white rounded-full cursor-pointer font-semibold"
             >
               PG <br className="md:hidden" /> Programmes
             </TabsTrigger>
