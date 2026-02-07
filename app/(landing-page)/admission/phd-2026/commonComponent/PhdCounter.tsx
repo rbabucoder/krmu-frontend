@@ -61,7 +61,7 @@ const PhdCounter = () => {
           <div className="flex flex-col sm:flex-row text-center sm:text-left gap-3.5 items-center">
             <div className="bg-[#FF9C00] rounded-full flex items-center justify-center w-[50px] h-[50px]">
               <Image
-                src="/wp-content/landingpage/phd-2026/icons/play.svg"
+                src="/wp-content/images/book-search.svg"
                 width={27}
                 height={24}
                 alt="Patents"
