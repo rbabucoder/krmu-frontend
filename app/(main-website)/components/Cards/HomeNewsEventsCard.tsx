@@ -33,7 +33,11 @@ const HomeNewsEventsCard: React.FC<HomeNewsEventsCardProps> = async ({
     month: "short",
     year: "numeric",
   });
+  
+
+  
   const getImgUrl = await getWordImageById(data?.featured_media);
+  
 
   return (
     <div>
@@ -45,7 +49,7 @@ const HomeNewsEventsCard: React.FC<HomeNewsEventsCardProps> = async ({
               alt={data.title?.rendered || ""}
               width={466}
               height={312}
-              className="w-full h-[420px] rounded-t-3xl object-cover"
+              className="w-full h-[420px] rounded-t-3xl object-fill"
             />
           )}
         </Link>

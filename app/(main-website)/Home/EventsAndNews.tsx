@@ -23,7 +23,7 @@ const EventsAndNews = async ({
           <h4 className="text-4xl lg:text-5xl leading-[1.17] font-light text-center text-white lg:pt-2.5 lg:pb-16 lg:text-left">
             {title}
           </h4>
-          <div className="grid gap-5 lg:gap-20 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 lg:px-0 mt-5 lg:mt-0">
+          <div className="grid gap-5 lg:gap-10 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 lg:px-0 mt-5 lg:mt-0">
             {newsandeventsdata?.data?.map((item: NewsEventItem, i: number) => (
               <HomeNewsEventsCard key={i} data={item} />
             ))}
