@@ -20,8 +20,8 @@ const SchoolAdvantages = ({
 }: Props) => {
   return (
     <section className="py-8 bg-[url(/schools/advantages-bg.webp)] bg-no-repeat bg-center bg-cover relative px-4">
-      {/* <div className="absolute left-[32%] bottom-0 hidden lg:block"> */}
-      <div className="advSchoolImg hidden lg:block">
+      <div className="absolute left-[32%] bottom-0 hidden lg:block">
+      {/* <div className="advSchoolImg hidden lg:block"> */}
         {advimg?.url && (
           <Image
             src={`${STRAPI_URL}${advimg?.url}`}
