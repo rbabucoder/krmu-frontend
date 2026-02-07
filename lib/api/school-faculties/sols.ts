@@ -123,21 +123,21 @@ export const solsFaculties: SchoolFacultiesType[] = [
     featured_media_url:
       "https://wp.krmangalam.edu.in/wp-content/uploads/2024/05/Dr-Aarti-Lamba_SOLS.jpg",
   },
-  {
-    id: 10406,
-    slug: "ms-gargi-singh",
-    title: {
-      rendered: "Dr. Gargi Singh",
-    },
-    featured_media: 10338,
-    acf: {
-      "staff-qualification": "Ph.D.",
-      staff_designation: "Assistant  Professor",
-      schools: [1043],
-    },
-    featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Ms.-Gargi-Singh.webp",
-  },
+  // {
+  //   id: 10406,
+  //   slug: "ms-gargi-singh",
+  //   title: {
+  //     rendered: "Dr. Gargi Singh",
+  //   },
+  //   featured_media: 10338,
+  //   acf: {
+  //     "staff-qualification": "Ph.D.",
+  //     staff_designation: "Assistant  Professor",
+  //     schools: [1043],
+  //   },
+  //   featured_media_url:
+  //     "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Ms.-Gargi-Singh.webp",
+  // },
   {
     id: 10334,
     slug: "ms-sadhana-nirban",

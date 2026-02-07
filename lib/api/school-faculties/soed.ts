@@ -119,7 +119,7 @@ export const soedFaculties: SchoolFacultiesType[] = [
       schools: [1070],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2023/11/mudasir-Photoroom.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2023/11/Dr.-Mudasir-Hamid-SOED.png",
   },
 
   {
