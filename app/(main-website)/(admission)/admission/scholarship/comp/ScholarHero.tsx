@@ -8,7 +8,7 @@ const ScholarHero = () => {
           <h1 className="text-2xl lg:text-9xl font-semibold my-5">
             Scholarship <br className="lg:hidden" /> 2025 Intake
           </h1>
-          <p>On First Come First Served Basis</p>
+          <p>Only For First 100 students, First Come First Served</p>
         </div>
         <div className="w-1/2 hidden lg:block"></div>
       </div>
