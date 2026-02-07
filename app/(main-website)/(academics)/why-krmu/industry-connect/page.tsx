@@ -149,7 +149,7 @@ const page = async () => {
         />
 
         <div className="py-10">
-          <IndusAcadCollab />
+          <IndusAcadCollab /> 
         </div>
         <div className="py-10">
           <IndustryConnectAccordion />

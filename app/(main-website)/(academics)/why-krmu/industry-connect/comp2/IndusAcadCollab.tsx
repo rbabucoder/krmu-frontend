@@ -41,21 +41,7 @@ and project-based learning:`,
 domains.`,
     ],
   },
-  {
-    imgUrl:
-      "https://truthful-cabbage-82fd27e8f6.media.strapiapp.com/fair_law_1_b3eb09d16e.png",
-    heading: "Fair Law Practitioner",
-    pointer: [
-      `The MoU establishes collaboration between K.R. Mangalam University and Fair Law
-Practitioners to provide internships and hands-on exposure for law students, particularly
-in procedural and substantive legal practice,`,
-      `Provide students with hands-on exposure to real-world technologies, platforms, labs, and
-case studies:`,
-      `Internships include training on court procedures, drafting and pleadings, hierarchy of
-courts, civil and criminal law fundamentals, case handling, and interaction with legal
-experts via tutorials, Google Meet sessions, and shared learning materials.`,
-    ],
-  },
+
   {
     imgUrl:
       "https://truthful-cabbage-82fd27e8f6.media.strapiapp.com/Whats_App_Image_2026_01_05_at_11_27_36_AM_81b54c957e.jpeg",
@@ -103,6 +89,21 @@ industry projects.`,
       `To engage with KR Managalam University to bridge the industry-academia gap.`,
       `To make students are exposed to the latest software and products, will invite top
 faculties/industry experts for guest leactures.`,
+    ],
+  },
+  {
+    imgUrl:
+      "https://truthful-cabbage-82fd27e8f6.media.strapiapp.com/fair_law_1_b3eb09d16e.png",
+    heading: "Fair Law Practitioner",
+    pointer: [
+      `The MoU establishes collaboration between K.R. Mangalam University and Fair Law
+Practitioners to provide internships and hands-on exposure for law students, particularly
+in procedural and substantive legal practice,`,
+      `Provide students with hands-on exposure to real-world technologies, platforms, labs, and
+case studies:`,
+      `Internships include training on court procedures, drafting and pleadings, hierarchy of
+courts, civil and criminal law fundamentals, case handling, and interaction with legal
+experts via tutorials, Google Meet sessions, and shared learning materials.`,
     ],
   },
 ];
