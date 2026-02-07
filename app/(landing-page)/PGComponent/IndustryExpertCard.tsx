@@ -8,7 +8,7 @@ type Props = {
 
 const IndustryExpertCard = ({ data }: Props) => {
   return (
-    <div className="bg-white  sm:h-[320px] md:min-h-[250px] h-full flex items-center justify-center relative rounded-[10px] group p-2.5 sm:p-0">
+    <div className="bg-white  sm:h-[320px] md:min-h-[250px] h-full flex items-center justify-center relative rounded-[10px] group p-2.5">
       
       <Image
         src={data.src}

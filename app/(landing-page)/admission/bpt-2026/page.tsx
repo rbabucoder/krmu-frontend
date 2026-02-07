@@ -101,7 +101,7 @@ const page = () => {
         imgUrl={whykrm?.imgUrl}
         whykrmCards={whykrm?.whyKrmCards}
       />
-      <IndustryExperts data={industryexpert} />
+      {/* <IndustryExperts data={industryexpert} /> */}
       <Specialisation data={specialise} />
       <Opportunity data={opport} />
       {/* <FeeStructureTable /> */}

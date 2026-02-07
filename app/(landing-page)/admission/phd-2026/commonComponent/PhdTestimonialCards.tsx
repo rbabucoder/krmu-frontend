@@ -149,8 +149,8 @@ const PhdTestimonialCards = () => {
           </div>
         </CarouselItem>
       </CarouselContent>
-      <CarouselPrevious className="bottom-0 top-[111%] left-[40%]  rounded-full bg-[#D9D9D9] hover:bg-[#FF5757] text-white phdwhatbtn" />
-      <CarouselNext className="bottom-0 top-[111%] right-[40%] rounded-full bg-[#D9D9D9] hover:bg-[#FF5757] text-white phdwhatbtn" />
+      <CarouselPrevious className="bottom-0 top-[111%] left-0 md:left-[40%]  rounded-full bg-[#D9D9D9] hover:bg-[#FF5757] text-white phdwhatbtn" />
+      <CarouselNext className="bottom-0 top-[111%] right-0 md:right-[40%] rounded-full bg-[#D9D9D9] hover:bg-[#FF5757] text-white phdwhatbtn" />
     </Carousel>
   );
 };

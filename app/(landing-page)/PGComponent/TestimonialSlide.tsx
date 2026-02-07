@@ -38,7 +38,7 @@ const TestimonialSlide = ({ data }: Props) => {
 
                   {/* Text */}
                   <p
-                    className={`text-sm leading-relaxed mb-6 ${
+                    className={`text-sm leading-relaxed mb-6 italic ${
                       item.featured ? "text-white/90" : "text-gray-700"
                     }`}
                   >

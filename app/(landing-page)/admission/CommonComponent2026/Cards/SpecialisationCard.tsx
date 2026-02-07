@@ -21,7 +21,7 @@ const SpecialisationCard = ({ data }: Props) => {
           width={400}
           height={250}
           alt=""
-          className="w-full rounded-2xl"
+          className="w-full rounded-2xl h-[331px] object-cover"
         />
       </div>
 

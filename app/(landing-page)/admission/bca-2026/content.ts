@@ -106,7 +106,7 @@ export const prominentRecruiters: ProminentRecruit[] = [
 export const whyKRM: WhyKRMSection = {
   heading: "Why Select KRMU's BCA Programmes?",
   subheading: "Future-Ready Learning in Computer Applications",
-  content: `The BCA programmes of K.R. Mangalam University (KRMU), created in partnership with international IT giants, provides a dynamic fusion of theory and hands-on learning. Our programmes train you for a successful career in technology by emphasising innovation, exposure to the industry, and practical skills.`,
+  content: `The BCA programmes of K.R. Mangalam University (KRMU), created in partnership with international IT giants, provide a dynamic fusion of theory and hands-on learning. Our programmes train you for a successful career in technology by emphasising innovation, exposure to the industry, and practical skills.`,
   imgUrl: `/landingpage/bca-2026/why-choose/Building.webp`,
   whyKrmCards: [
     {
@@ -137,7 +137,7 @@ export const industryExperts: IndustryExpertsSection = {
   heading: `Learn From <br /> Industry Experts`,
   description: `KRMU partners with major organisations to provide <br /> industry-specific training.`,
   cta: {
-    label: "Apply for BCA Programme 2026-2027",
+    label: "Apply for BCA Programme 2026-27",
     href: "#",
   },
   cards: [
@@ -146,11 +146,11 @@ export const industryExperts: IndustryExpertsSection = {
       alt: "Logo",
       title: "",
     },
-    {
-      imgUrl: "/wp-content/landingpage/brand-2026/learn-from/imaginxp.svg",
-      alt: " Logo",
-      title: "",
-    },
+    // {
+    //   imgUrl: "/wp-content/landingpage/brand-2026/learn-from/imaginxp.svg",
+    //   alt: " Logo",
+    //   title: "",
+    // },
     {
       imgUrl: "/landingpage/bca-2026/learn-from/eccoun.jpg",
       alt: " Logo",
@@ -172,9 +172,9 @@ export const specialisationData: SpecialisationSection = {
     {
       imgUrl:
         "/landingpage/bca-2026/specialisations/BCA-(AI-&-Data-Science)-with-Academic-Support-of-IBM-&-Powered-by-Microsoft-Certifications.webp",
-      title: `BCA (AI & Data Science) with Academic Support of IBM & Powered by Microsoft Certifications`,
-      desc: `Gain hands-on expertise in Artificial Intelligence, Data Science, and Machine Learning through industry-aligned learning. Build practical skills with real-world datasets, intelligent systems, and advanced analytics tools. Prepare for high-growth careers by mastering technologies that drive digital transformation across industries.
-`,
+      title: `BCA (AI & Data Science) with academic support of IBM & Powered by Microsoft Certifications`,
+      // desc: `Gain hands-on expertise in Artificial Intelligence, Data Science, and Machine Learning through industry-aligned learning. Build practical skills with real-world datasets, intelligent systems, and advanced analytics tools. Prepare for high-growth careers by mastering technologies that drive digital transformation across industries.`,
+      desc: ``,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -196,9 +196,9 @@ export const specialisationData: SpecialisationSection = {
     {
       imgUrl:
         "/landingpage/bca-2026/specialisations/BCA-(Hons.Hons.-with-Research)-AI-&-Data-Science-with-Academic-Support-of-IBM-&-Powered-by-Microsoft-Certifications.webp",
-      title: `BCA (Hons. / Hons. with Research) AI & Data Science with Academic Support of IBM & Powered by Microsoft Certifications`,
-      desc: `Through industry-aligned learning, develop practical competence in machine learning, data science, and artificial intelligence. Develop useful skills using intelligent systems, real-world information, and sophisticated analytics tools. Learn the technologies that propel digital change across sectors to get ready for high-growth employment.
-`,
+      title: `BCA (Hons. / Hons. with Research) AI & Data Science with academic support of IBM & Powered by Microsoft Certifications`,
+      // desc: `Through industry-aligned learning, develop practical competence in machine learning, data science, and artificial intelligence. Develop useful skills using intelligent systems, real-world information, and sophisticated analytics tools. Learn the technologies that propel digital change across sectors to get ready for high-growth employment.`,
+      desc: ``,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -220,8 +220,9 @@ export const specialisationData: SpecialisationSection = {
     {
       imgUrl:
         "/landingpage/bca-2026/specialisations/BCA-(Cyber-Security)-with-Academic-Support-of-EC-Council.webp",
-      title: `BCA (Cyber Security) with Academic Support of EC-Council`,
-      desc: `Learn ethical hacking, network security, and cyber defence with the BCA (Cyber Security) programme at K.R. Mangalam University. The course offers hands-on experience with real-world cyber threats, penetration testing, and vulnerability assessment, equipping students with practical skills to protect digital systems and data. Students also gain expertise in industry-standard tools and techniques, preparing them for careers in cyber security, digital forensics, and IT risk management.`,
+      title: `BCA (Cyber Security) with academic support of EC-Council`,
+      // desc: `Learn ethical hacking, network security, and cyber defence with the BCA (Cyber Security) programme at K.R. Mangalam University. The course offers hands-on experience with real-world cyber threats, penetration testing, and vulnerability assessment, equipping students with practical skills to protect digital systems and data. Students also gain expertise in industry-standard tools and techniques, preparing them for careers in cyber security, digital forensics, and IT risk management.`,
+      desc: ``,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -243,8 +244,9 @@ export const specialisationData: SpecialisationSection = {
     {
       imgUrl:
         "/landingpage/bca-2026/specialisations/BCA-(Hons.-Hons.-with-Research)-Cyber-Security-with-Academic-Support-of-EC-Council.webp",
-      title: `BCA (Hons. / Hons. with Research) Cyber Security with Academic Support of EC-Council`,
-      desc: `This programme teaches ethical hacking, network security, and cyber defence. The course gives students practical skills to safeguard digital systems and data by providing them with hands-on experience with real-world cyber threats, penetration testing, and vulnerability assessment. Additionally, students acquire proficiency with industry-standard tools and methods, qualifying them for professions in IT risk management, digital forensics, and cyber security. `,
+      title: `BCA (Hons. / Hons. with Research) Cyber Security with academic support of EC-Council`,
+      // desc: `This programme teaches ethical hacking, network security, and cyber defence. The course gives students practical skills to safeguard digital systems and data by providing them with hands-on experience with real-world cyber threats, penetration testing, and vulnerability assessment. Additionally, students acquire proficiency with industry-standard tools and methods, qualifying them for professions in IT risk management, digital forensics, and cyber security. `,
+      desc: ``,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -276,7 +278,7 @@ export const opportunityData: OpportunitySection = {
   heading: "Learn From Industry Experts",
   highlight: "Opportunity That Transforms",
   cta: {
-    label: "Apply for BCA Programme 2026-2027",
+    label: "Apply for BCA Programme 2026-27",
     href: "#",
   },
 };
@@ -385,7 +387,7 @@ export const comeToLifeData: ComeToLifeSection = {
   description: `K.R. Mangalam University offers state-of-the-art infrastructure to support hands-on and technology-driven learning for BCA students. The campus features advanced computer laboratories equipped with the latest hardware and software, high-speed internet connectivity, and modern classrooms designed for interactive learning. Students benefit from dedicated innovation labs, cyber security and analytics-enabled environments, and access to industry-relevant tools and platforms. Well-stocked digital libraries, collaborative learning spaces, and expert academic support together create an ecosystem that nurtures technical expertise, innovation, and career readiness.`,
   footerText: ``,
   cta: {
-    label: "Apply for BCA 2026-2027 ",
+    label: "Apply for BCA 2026-27 ",
     href: "#",
   },
   slides: [
@@ -461,7 +463,7 @@ export const faqSectionData: FAQSectionData = {
   faqs: [
     {
       id: "item-1",
-      question: "Does the programme involve internships?",
+      question: "Does the BCA programme involve internships?",
       answer: `Yes, via collaborations with leading IT businesses, students get access to internships and real-world projects.`,
     },
     {
@@ -478,8 +480,7 @@ export const faqSectionData: FAQSectionData = {
     {
       id: "item-4",
       question: "Are there any hostels available?",
-      answer: `Indeed, KRMU offers state-of-the-art dorms with fast internet and round-the-clock security.
-`,
+      answer: `Yes, KRMU offers modern, secure on-campus housing with all amenities.`,
     },
   ],
 };
@@ -513,7 +514,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Begin Your Journey at K.R. Mangalam<br /> University Now`,
   description: "",
   cta: {
-    label: "Apply for BCA Programme 2026-2027",
+    label: "Apply for BCA Programme 2026-27",
     href: "#",
   },
   highlights: [

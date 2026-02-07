@@ -36,7 +36,7 @@ OPEN FOR<br><span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text
 
  Programmes 2026-27</span>
           `,
-  description: `Learn from the Top 1% of industry experts from EY, IIDE,<br /> and IBM with our MBA programme`,
+  description: `Learn from the top 1% of industry experts from EY, IIDE,<br /> and IBM`,
   primaryCta: {
     label: "Apply Now",
     href: "#",
@@ -106,19 +106,19 @@ export const prominentRecruiterContent: ProminentRecruiterContent = {
       height: 40,
     },
     {
-      src: "/wp-content/landingpage/mba-2026/recruiters/tcs.png",
+      src: "/wp-content/images/tcslogo.png",
       alt: "tcs",
       width: 160,
       height: 40,
     },
     {
-      src: "/wp-content/landingpage/mba-2026/recruiters/accenture.png",
+      src: "/wp-content/images/accen.png",
       alt: "accenture",
       width: 160,
       height: 40,
     },
     {
-      src: "/wp-content/landingpage/mba-2026/recruiters/infosys.png",
+      src: "/wp-content/images/infosys.svg",
       alt: "infosys",
       width: 160,
       height: 40,
@@ -269,7 +269,7 @@ export const aboutUsContent: AboutUsContent = {
   title: "About Us",
   description: `<p>K.R. Mangalam University is a prominent university in Gurugram that was founded in 2013 under the Haryana Private University Act. 
   The university's NAAC Grade "A" accreditation demonstrates a strong dedication to academic excellence, 
-  high-quality instruction, and continuous development.</p> <br /><p>The MBA programmes provided by K.R. Mangalam University, via their curriculum, offer strong professional growth and excellent earning potential by combining fundamental business concepts with dedicated hands-on learning experience. It's a very popular course among individuals who desire jobs with a global perspective.</p>`,
+  high-quality instruction, and continuous development.</p> <br /><p>The MBA programmes provided by K.R. Mangalam University, via their curriculum, offer strong professional growth and excellent earning potential by combining fundamental business concepts with dedicated hands-on learning experience. The university's MBA programmes are very popular among individuals who desire jobs with a global perspective.</p>`,
   image: {
     src: "/wp-content/landingpage/mba-2026/aboutus.webp",
     alt: "K.R. Mangalam University Campus",
@@ -296,12 +296,12 @@ export const industryExpertsContent: IndustryExpertsContent = {
       width: 300,
       height: 200,
     },
-    {
-      src: "/wp-content/landingpage/mba-2026/learn-from/grant-thornton.png",
-      alt: "IBM",
-      width: 300,
-      height: 200,
-    },
+    // {
+    //   src: "/wp-content/landingpage/mba-2026/learn-from/grant-thornton.png",
+    //   alt: "IBM",
+    //   width: 300,
+    //   height: 200,
+    // },
     {
       src: "/wp-content/landingpage/mba-2026/learn-from/eydark.webp",
       alt: "IBM",
@@ -312,10 +312,10 @@ export const industryExpertsContent: IndustryExpertsContent = {
 };
 
 export const businessLeaderContent: BusinessLeaderContent = {
-  sectionTitle: "Why Choose KRMU for the MBA Courses?",
+  sectionTitle: "Why Choose KRMU for MBA Courses?",
 
   sectionDescription:
-    "The K.R. Mangalam University (KRMU) offers MBA programme that comprises of an industry-aligned curriculum, strong practical exposure (live projects, case studies, internships with top firms like EY), specialisation options, and focus on modern tech (AI, Tableau, R), plus unique perks like fully sponsored European summer schools to selected students, preparing students for dynamic corporate roles.",
+    "K.R. Mangalam University (KRMU) offers MBA programmes built on an industry-aligned curriculum with strong practical exposure through live projects, case studies, and internships with leading organisations such as EY and IBM. With diverse specialisation options, a strong focus on modern technologies including AI, Tableau, and R, and distinctive opportunities like fully sponsored European summer schools for selected students, KRMU prepares graduates to excel in dynamic and competitive corporate roles.",
 
   semesters: [
     {
@@ -409,37 +409,43 @@ export const businessLeaderContent: BusinessLeaderContent = {
 export const PGProgrammeCard: ProgramCardType = [
   {
     image: "/wp-content/landingpage/mba-2026/progs/mba-ibm.webp",
-    title: "MBA with Academic Support from IBM",
+    title: "MBA with academic support from IBM",
+    // description:
+    //   "The MBA with Academic Support from IBM is a specialised business degree course integrating IBM's state-of-the-art tools, an industry-aligned curriculum, expert sessions, and certifications to provide students with practical skills and enhanced career readiness for tech-driven roles.",
     description:
-      "The MBA with Academic Support from IBM is a specialised business degree course integrating IBM's state-of-the-art tools, an industry-aligned curriculum, expert sessions, and certifications to provide students with practical skills and enhanced career readiness for tech-driven roles.",
+      "",
     format: "",
     duration: "2 Years",
     eligibility:
-      "Candidate must have a bachelor's degree or equivalent degree from a recognised university with a minimum 50% aggregate marks.",
+      "Candidate must have a bachelor's degree or equivalent degree from a recognised university with a minimum of 50% aggregate marks.",
     focus: "",
     annualFee: "Rs 3,00,000",
   },
   {
     image: "/wp-content/landingpage/mba-2026/progs/mba-fintech.webp",
     title: "MBA (Fintech) with academic support of Ernst & Young (EY)",
+    // description:
+    //   "This course prepares students for a career in the rapidly expanding and changing industry of technology-enabled finance. For this, the programme seeks to equip students with the fundamental skills necessary to comprehend and develop AI-driven financial products and services.",
     description:
-      "This course prepares students for a career in the rapidly expanding and changing industry of technology-enabled finance. For this, the programme seeks to equip students with the fundamental skills necessary to comprehend and develop AI-driven financial products and services.",
+      "",
     format: "",
     duration: "2 Years",
     eligibility:
-      "Candidate must have a bachelor's degree or equivalent degree from a recognised university with a minimum 50% aggregate marks.",
+      "Candidate must have a bachelor's degree or equivalent degree from a recognised university with a minimum of 50% aggregate marks.",
     focus: "",
     annualFee: "Rs 3,50,000",
   },
   {
     image: "/wp-content/landingpage/mba-2026/progs/mba-dg.webp",
     title: "MBA (Digital Marketing) with academic support of IIDE",
+    // description:
+      // "Developed in partnership with IIDE, the course’s curriculum seeks to address the changing needs of the digital marketing industry. It enables students to make strategies that help in navigating entrepreneurial marketing difficulties in today’s digital world.",
     description:
-      "Developed in partnership with IIDE, the course’s curriculum seeks to address the changing needs of the digital marketing industry. It enables students to make strategies that help in navigating entrepreneurial marketing difficulties in today’s digital world.",
+      "",
     format: "",
     duration: "2 Years",
     eligibility:
-      "Candidate must have a bachelor's degree or equivalent degree from a recognised university with a minimum 50% aggregate marks.",
+      "Candidate must have a bachelor's degree or equivalent degree from a recognised university with a minimum of 50% aggregate marks.",
     focus: "",
     annualFee: "Rs 3,50,000",
   },
@@ -503,7 +509,7 @@ export const admissionProcessContent: AdmissionProcessContent = {
   title: "Take The First Step Towards Your Future",
 
   description:
-    "K.R. Mangalam University has collaborated with leading organisations to offer hands-on training, expert-led guest lectures.",
+    "K.R. Mangalam University has collaborated with leading organisations to offer hands-on training and expert-led guest lectures.",
 
   cta: {
     label: "Apply Now",
@@ -545,7 +551,7 @@ export const mbaComparisonContent: MbaComparisonContent = {
   title: "vs KRMU",
   highlight: "MBA at a Traditional University",
   description:
-    "The programme at KRMU emphasizes real-world learning through internships, business simulations, and industry-driven projects.",
+    "The programmes at KRMU emphasise real-world learning through internships, business simulations, and industry-driven projects.",
 
   traditionalHeader: "Traditional University",
   krmuHeader: "K.R. Mangalam University",
@@ -638,7 +644,7 @@ export const faqSectionData: FAQSectionData = {
     {
       id: "item-1",
       question: "What are the eligibility criteria for the MBA programme?",
-      answer: `Candidates must have completed a Bachelor’s degree from a recognised institution and meet the university’s admission standards.`,
+      answer: `Candidate must have a bachelor's degree or equivalent degree from a recognised university with a minimum of 50% aggregate marks.`,
     },
     {
       id: "item-2",
@@ -653,7 +659,7 @@ export const faqSectionData: FAQSectionData = {
     {
       id: "item-4",
       question: "What placement support does the university provide?",
-      answer: `The K.R. Mangalam University provides dedicated placement assistance, including industry collaborations, mock interviews, and placement drives with top recruiters.`,
+      answer: `KRMU provides 100% placement assistance, including industry collaborations, mock interviews, and placement drives with top recruiters.`,
     },
     {
       id: "item-5",
@@ -687,10 +693,10 @@ export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
 
 export const comeToLifeData: ComeToLifeSection = {
   heading: `World-Class Facilities & Infrastructure`,
-  description: `Within a lush, green campus designed for interactive learning, research, and holistic development, K.R. Mangalam University offers state-of-the-art infrastructure, including smart, air-conditioned classrooms, high-speed Wi-Fi, sophisticated computer labs, a well-stocked library with digital access, sports facilities, incubation centres, and career development facilities.`,
+  description: `Spread across a lush green campus, K.R. Mangalam University offers world-class infrastructure, including smart air-conditioned classrooms, high-speed Wi-Fi, advanced labs, a digitally equipped library, sports facilities, incubation centres, and dedicated career development support—creating an ecosystem for holistic growth.`,
   footerText: ``,
   cta: {
-    label: "Apply for MBA 2026-2027",
+    label: "Apply for MBA 2026-27",
     href: "#",
   },
   slides: [

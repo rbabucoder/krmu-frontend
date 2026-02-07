@@ -29,7 +29,7 @@ export const Hero: HeroContent = {
        Bachelor of Physiotherapy
       </span>
       <br />
-      PROGRAMMES 2026-27
+      PROGRAMME 2026-27
       </span>
     `,
   desc: `Learn to Lead in the realm of healthcare under the expert guidance of our distinguished <br /> faculty while utilising state-of-the-art facilities for hands-on physiotherapy learning`,
@@ -96,7 +96,7 @@ export const prominentRecruiters: ProminentRecruit[] = [
 ];
 
 export const whyKRM: WhyKRMSection = {
-  heading: "What makes KRMU the Best option for the BPT Course?",
+  heading: "What Makes KRMU the Best Option for a BPT Course?",
   subheading: "Turning Passionate Helpers into Professional Healers",
   content: `The Bachelor of Physiotherapy programme at K.R. Mangalam University is structured in a way that it combines in-depth theoretical knowledge with hands-on clinical experience. The students are trained to utilise their conceptual learning in real-time healthcare settings under the expert supervision of our proficient physiotherapists and healthcare experts, who bring years of clinical and teaching experience, thereby ensuring personalised mentorship throughout the academic journey. Additionally, the state-of-the-art physiotherapy labs equipped with advanced modalities provide students with the much-needed exposure to therapeutic techniques used in the realm of rehabilitation. By actively taking part in rural health camps and awareness campaigns, students learn about public health issues while providing physiotherapy help to marginalised areas.`,
   imgUrl: `/landingpage/bpt-2026/why-choose/Building.webp`,
@@ -159,7 +159,8 @@ export const specialisationData: SpecialisationSection = {
     {
       imgUrl: "/landingpage/bpt-2026/specialisations/1.webp",
       title: `Bachelor of Physiotherapy`,
-      desc: `The KRMU's Bachelor of Physiotherapy (BPT) programme leads to a wide array of rewarding and exciting job possibilities in the health and wellness industry. Graduates of this course are widely sought after in a variety of professional fields because they possess practical skills, ethical insights, and a thorough understanding of physiotherapy principles.`,
+      // desc: `The KRMU's Bachelor of Physiotherapy (BPT) programme leads to a wide array of rewarding and exciting job possibilities in the health and wellness industry. Graduates of this course are widely sought after in a variety of professional fields because they possess practical skills, ethical insights, and a thorough understanding of physiotherapy principles.`,
+      desc: ``,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -169,7 +170,7 @@ export const specialisationData: SpecialisationSection = {
         {
           iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
-          desc: `Passed 10+2 or equivalent from any recognised board/university in any stream with Physics, Chemistry, Biology with minimum 50% aggregate marks.`,
+          desc: `Passed 10+2 or equivalent from any recognised board/university in any stream with Physics, Chemistry, Biology with minimum of 50% aggregate marks.`,
         },
         // {
         //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",

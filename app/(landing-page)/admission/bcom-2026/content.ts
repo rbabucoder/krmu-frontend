@@ -116,9 +116,9 @@ export const prominentRecruiters: ProminentRecruit[] = [
 ];
 
 export const whyKRM: WhyKRMSection = {
-  heading: "Why Choose B.Com. Programme at KRMU? ",
+  heading: "What Makes KRMU the Best Choice for B.Com. Programmes? ",
   subheading: "Build a Career with Strong Business Foundations ",
-  content: `K.R. Mangalam University offers future-ready B.Com. programmes designed to build strong foundations in commerce, accounting, finance, and management. The curriculum combines academic depth with practical exposure, helping students understand how businesses function in the real world. With experienced faculty, industry-oriented learning, skill-based training, internships, and career guidance, the programme prepares students for diverse careers in corporate roles, finance, entrepreneurship, and higher studies. `,
+  content: `K.R. Mangalam University offers future-ready B.Com. programmes designed to build strong foundations in commerce, accounting, finance, and management. The curriculum combines academic depth with practical exposure, helping students understand how businesses function in the real world. With experienced faculty, industry-oriented learning, skill-based training, internships, and career guidance, the programmes prepare students for diverse careers in corporate roles, finance, entrepreneurship, and higher studies. `,
   imgUrl: `/landingpage/bcom-2026/why-choose/Building.webp`,
   whyKrmCards: [
     {
@@ -190,7 +190,8 @@ export const specialisationData: SpecialisationSection = {
     {
       imgUrl: "/landingpage/bcom-2026/specialisations/B.Com.-(Hons.).webp",
       title: `B.Com. (Hons.) `,
-      desc: `Build strong expertise in finance, accounting, business law, and taxation with B.Com. (Hons.). This specialised degree prepares you for careers in commerce, banking, financial analysis, and entrepreneurship by turning knowledge into practical, career-ready skills. `,
+      // desc: `Build strong expertise in finance, accounting, business law, and taxation with B.Com. (Hons.). This specialised degree prepares you for careers in commerce, banking, financial analysis, and entrepreneurship by turning knowledge into practical, career-ready skills. `,
+      desc: ``,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -200,7 +201,7 @@ export const specialisationData: SpecialisationSection = {
         {
           iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
-          desc: `Passed 10+2 or equivalent examination from any recognised board/university with minimum 50% aggregate marks.`,
+          desc: `Passed 10+2 or equivalent examination from any recognised board/university with a minimum of 50% aggregate marks.`,
         },
         // {
         //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
@@ -212,18 +213,19 @@ export const specialisationData: SpecialisationSection = {
     {
       imgUrl:
         "/landingpage/bcom-2026/specialisations/B.Com.-(Hons.--Hons.-With-Research).webp",
-      title: `B.Com. (Hons. / Hons. With Research)`,
-      desc: `The programme builds strong foundations in business and commerce, combining theory, practical learning, research exposure, and entrepreneurial skills to prepare students for diverse careers and future business challenges. `,
+      title: `B.Com. (Hons. / Hons. with Research)`,
+      // desc: `The programme builds strong foundations in business and commerce, combining theory, practical learning, research exposure, and entrepreneurial skills to prepare students for diverse careers and future business challenges. `,
+      desc: ``,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
           title: "Duration:",
-          desc: `2 Years`,
+          desc: `4 Years`,
         },
         {
           iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
-          desc: `Passed 10+2 or equivalent examination from any recognised board/university with minimum 50% aggregate marks.`,
+          desc: `Passed 10+2 or equivalent examination from any recognised board/university with a minimum of 50% aggregate marks.`,
         },
         // {
         //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
@@ -235,8 +237,9 @@ export const specialisationData: SpecialisationSection = {
     {
       imgUrl:
         "/landingpage/bcom-2026/specialisations/B.Com.-(Hons.)-(International-Accounting-and-Finance)-(ACCA---UK)-With-academic-support-of-Grant-Thornton.webp",
-      title: `B.Com. (Hons.) (International Accounting and Finance) (ACCA - UK) With academic support of Grant Thornton `,
-      desc: `The programme, with academic support from Grant Thornton, prepares students for global finance careers by combining strong academic foundations with professional ACCA-aligned learning and international exposure. `,
+      title: `B.Com. (Hons.) (International Accounting and Finance) (ACCA - UK) with academic support of Grant Thornton `,
+      // desc: `The programme, with academic support from Grant Thornton, prepares students for global finance careers by combining strong academic foundations with professional ACCA-aligned learning and international exposure. `,
+      desc: ``,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -246,7 +249,7 @@ export const specialisationData: SpecialisationSection = {
         {
           iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
-          desc: `Passed 10+2 or equivalent examination from any recognised board/university with minimum 50% aggregate marks.`,
+          desc: `Passed 10+2 or equivalent examination from any recognised board/university with a minimum of 50% aggregate marks.`,
         },
         // {
         //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
@@ -258,8 +261,9 @@ export const specialisationData: SpecialisationSection = {
     {
       imgUrl:
         "/landingpage/bcom-2026/specialisations/B.Com.-(Hons.-Hons.-with-Research)-(International-Accounting-and-Finance)-(ACCA---UK)-With-academic-support-of-Grant-Thornton.webp",
-      title: `B.Com. (Hons. / Hons. with Research) (International Accounting and Finance) (ACCA - UK) With academic support of Grant Thornton `,
-      desc: `The programme supported by Grant Thornton Bharat, builds strong global accounting expertise and practical skills, preparing students for successful international careers in finance and accounting. `,
+      title: `B.Com. (Hons. / Hons. with Research) (International Accounting and Finance) (ACCA - UK) with academic support of Grant Thornton `,
+      // desc: `The programme supported by Grant Thornton Bharat, builds strong global accounting expertise and practical skills, preparing students for successful international careers in finance and accounting. `,
+      desc: ``,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -269,7 +273,7 @@ export const specialisationData: SpecialisationSection = {
         {
           iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
-          desc: `Passed 10+2 or equivalent examination from any recognised board/university with minimum 50% aggregate marks. `,
+          desc: `Passed 10+2 or equivalent examination from any recognised board/university with a minimum of 50% aggregate marks. `,
         },
         // {
         //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
@@ -281,7 +285,8 @@ export const specialisationData: SpecialisationSection = {
     {
       imgUrl: "/landingpage/bcom-2026/specialisations/B.Com.-Programme.webp",
       title: `B.Com. Programme`,
-      desc: `The programme builds strong analytical, financial, and managerial skills. It prepares students for careers in marketing, finance, banking, and insurance through a balanced blend of practical learning and theoretical knowledge. `,
+      // desc: `The programme builds strong analytical, financial, and managerial skills. It prepares students for careers in marketing, finance, banking, and insurance through a balanced blend of practical learning and theoretical knowledge. `,
+      desc: ``,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -291,7 +296,7 @@ export const specialisationData: SpecialisationSection = {
         {
           iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
-          desc: `Passed 10+2 or equivalent examination from any recognised board/university with minimum 50% aggregate marks. `,
+          desc: `Passed 10+2 or equivalent examination from any recognised board/university with a minimum of 50% aggregate marks. `,
         },
         // {
         //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
@@ -515,11 +520,11 @@ export const faqSectionData: FAQSectionData = {
       question: "Is hostel accommodation available for B.Com. students? ",
       answer: `Yes, K.R. Mangalam University offers secure on-campus hostel facilities for both male and female students. `,
     },
-    {
-      id: "item-6",
-      question: "How can I find the best B.Com. colleges in Delhi? ",
-      answer: `You can compare colleges based on curriculum, industry tie-ups, faculty expertise, placement records, and campus facilities. `,
-    },
+    // {
+    //   id: "item-6",
+    //   question: "How can I find the best B.Com. colleges in Delhi? ",
+    //   answer: `You can compare colleges based on curriculum, industry tie-ups, faculty expertise, placement records, and campus facilities. `,
+    // },
     {
       id: "item-7",
       question: "Where can I pursue a B.Com. in Gurugram?",

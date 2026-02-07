@@ -31,7 +31,7 @@ export const Hero: HeroContent = {
       <br />
       PROGRAMMES 2026-27</span>
     `,
-  desc: `Gain industry-focused education, build strong foundations in pharmaceutical<br /> sciences, and benefit  from industry partnerships that prepare you for confident, <br />career-ready roles in the pharmacy sector `,
+  desc: `Gain industry-focused education and build strong foundations in <br /> pharmaceutical sciences that prepare you for career-ready roles in the <br /> pharmacy sector `,
   heroBg: "/wp-content/landingpage/pharmacy-2026/pharmacy.webp",
   middleImg: "",
   mobileImg: "",
@@ -170,7 +170,8 @@ Our Pharma Programmes & Specialisations `,
     {
       imgUrl: "/landingpage/pharmacy-2026/specilisation/d-pharm.jpg",
       title: `D.Pharm. `,
-      desc: `The programme blends theory and practical learning to build strong pharmacy skills. Through classes, lab work, and hands-on training, students gain essential knowledge of chemistry, pharmacology, biochemistry, and toxicology for successful pharmacy careers.`,
+      // desc: `The programme blends theory and practical learning to build strong pharmacy skills. Through classes, lab work, and hands-on training, students gain essential knowledge of chemistry, pharmacology, biochemistry, and toxicology for successful pharmacy careers.`,
+      desc: ``,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -192,7 +193,8 @@ Our Pharma Programmes & Specialisations `,
     {
       imgUrl: "/landingpage/pharmacy-2026/specilisation/b-pharm.jpg",
       title: `B.Pharm. `,
-      desc: `The programme offers in-depth pharmaceutical education with strong scientific foundations. It blends advanced theory, laboratory training, industry exposure, and practical learning to prepare students for professional roles in drug development, research, production, and healthcare sectors.`,
+      // desc: `The programme offers in-depth pharmaceutical education with strong scientific foundations. It blends advanced theory, laboratory training, industry exposure, and practical learning to prepare students for professional roles in drug development, research, production, and healthcare sectors.`,
+      desc: ``,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -202,7 +204,7 @@ Our Pharma Programmes & Specialisations `,
         {
           iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
-          desc: `    Candidates must have passed 10+2 with physics, chemistry, and biology or maths, securing at least 50% marks from a recognised board. Applicants must be 17 years or older by 31 December of the admission year `,
+          desc: `    Candidates must have passed 10+2 with physics, chemistry, and biology or maths, securing at least 50% marks from a recognised board. Applicants must be 17 years or older by 31 December of the admission year.`,
         },
         // {
         //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
@@ -214,7 +216,8 @@ Our Pharma Programmes & Specialisations `,
     {
       imgUrl: "/landingpage/pharmacy-2026/specilisation/m-pharm.jpg",
       title: `Master of Pharmacy (M.Pharm.) – Pharmaceutics `,
-      desc: `    The M.Pharm. Pharmaceutics programme focuses on advanced drug development and production. It covers pharmaceutics, drug delivery systems, manufacturing processes, industry advancements, and research-based learning, preparing students with strong scientific and practical expertise across four semesters. `,
+      // desc: `    The M.Pharm. Pharmaceutics programme focuses on advanced drug development and production. It covers pharmaceutics, drug delivery systems, manufacturing processes, industry advancements, and research-based learning, preparing students with strong scientific and practical expertise across four semesters. `,
+      desc: ``,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -236,7 +239,8 @@ Our Pharma Programmes & Specialisations `,
     {
       imgUrl: "/landingpage/pharmacy-2026/specilisation/m-pharmaco.jpg",
       title: `Master of Pharmacy (M.Pharm.) – Pharmacology `,
-      desc: `       The M.Pharm. in Pharmacology programme focuses on drug science, mechanisms, and therapeutic applications. It combines advanced theoretical learning with hands-on laboratory training, research, and projects, preparing graduates for careers in pharmaceutical, healthcare, and biomedical fields. `,
+      // desc: `       The M.Pharm. in Pharmacology programme focuses on drug science, mechanisms, and therapeutic applications. It combines advanced theoretical learning with hands-on laboratory training, research, and projects, preparing graduates for careers in pharmaceutical, healthcare, and biomedical fields. `,
+      desc: ``,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -426,7 +430,7 @@ export const faqSectionData: FAQSectionData = {
     {
       id: "item-1",
       question: "What are the eligibility criteria for Pharmacy programmes? ",
-      answer: `For D.Pharm., candidates must complete 10+2 with Physics, Chemistry, and Mathematics or Biology. For B.Pharm., candidates must complete 10+2 with physics, chemistry, mathematics or biology and meet the university’s admission criteria. For M.Pharm., candidates must hold a B.Pharm. degree from a recognised institution with at least 55% aggregate marks. `,
+      answer: `For D.Pharm., candidates must complete 10+2 with Physics, Chemistry, and Mathematics or Biology. For B.Pharm., candidates must complete 10+2 with Physics, Chemistry, Mathematics or Biology and meet the university’s admission criteria. For M.Pharm., candidates must hold a B.Pharm. degree from a recognised institution with at least 55% aggregate marks. `,
     },
     {
       id: "item-2",
@@ -453,11 +457,11 @@ export const faqSectionData: FAQSectionData = {
       question: "Can students pursue research projects during the course?",
       answer: `Yes, the programmes encourage research through advanced laboratory facilities and faculty mentorship to support academic and industry-focused projects. `,
     },
-    {
-      id: "item-7",
-      question: "Which are the best M.Pharm. colleges in Delhi NCR? ",
-      answer: `For students exploring M.Pharm. colleges in Gurugram and Delhi NCR, K.R. Mangalam University offers a well-structured M.Pharm. programme. Admissions for M.Pharm. 2025 are currently open. `,
-    },
+    // {
+    //   id: "item-7",
+    //   question: "Which are the best M.Pharm. colleges in Delhi NCR? ",
+    //   answer: `For students exploring M.Pharm. colleges in Gurugram and Delhi NCR, K.R. Mangalam University offers a well-structured M.Pharm. programme. Admissions for M.Pharm. 2025 are currently open. `,
+    // },
     {
       id: "item-8",
       question: "Is there an entrance exam for B.Pharm. admission?",

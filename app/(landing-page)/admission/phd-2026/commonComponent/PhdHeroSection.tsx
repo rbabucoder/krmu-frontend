@@ -13,22 +13,22 @@ const PhdHeroSection = ({ formId }: Props) => {
         background: `url(/wp-content/landingpage/phd-2026/phd-hero-bg.webp)`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
-      }}
+      }} 
     >
       <div className="max-w-[1300px] mx-auto w-full flex items-center flex-col md:flex-row gap-5 xl:gap-0">
         <div className="w-full md:w-1/3">
-          <h1 className="text-2xl text-center sm:text-left sm:not-first:text-[40px] text-white leading-[1] font-semibold">
-            Ready to Add ‘Dr.’ to Your Name? <br />
+          <h1 className="text-2xl text-center sm:text-left sm:not-first:text-[40px] text-white leading-[1.3] font-semibold">
+            Ready to Add ‘Dr.’ to Your Name? <br /> Enroll in a <br />
             <span className="text-4xl sm:text-8xl xl:text-[190px] font-bold">
               Ph.D.
             </span>{" "}
             <br />
             <span className="hidden sm:block">
-              Enroll in a Ph.D. Programme Today
+              Programme Today
             </span>
           </h1>
           <h3 className="text-xl mx-auto sm:mx-0 sm:text-2xl md:text-3xl font-semibold bg-white p-5 w-fit my-5 text-center sm:text-left">
-            Full Time | Part Time
+            Full-Time | Part-Time
           </h3>
           <h4 className="text-white text-sm sm:text-2xl text-center sm:text-left">
             14 Disciplines | Attractive Fellowship

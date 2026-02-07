@@ -107,7 +107,7 @@ const page = () => {
       />
       <IndustryExperts data={indusExpData} />
       <BusinessLeader data={whyChooseData} progData={whyChooseProgCardData} />
-      <ProspectusDownload data={prospectusData} />
+      {/* <ProspectusDownload data={prospectusData} /> */}
       <AdmissionProcess
         eyebrow={admissionProcessData?.eyebrow}
         title={admissionProcessData?.title}

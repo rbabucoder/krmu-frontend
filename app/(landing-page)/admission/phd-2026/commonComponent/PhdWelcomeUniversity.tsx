@@ -10,7 +10,7 @@ const PhdWelcomeUniversity = () => {
           </h3>
           <div className="custom-border"></div>
           <p className="my-5">
-            K.R Mangalam University has steadily emerged as a leading hub of education, research, and innovation in the Delhi NCR region. Established under the Haryana Private Universities Act, the University is NAAC ‘A’ accredited, reflecting its commitment to high standards of academic excellence, governance, and institutional quality.
+            K.R. Mangalam University has steadily emerged as a leading hub of education, research, and innovation in the Delhi NCR region. Established under the Haryana Private Universities Act, the University is NAAC ‘A’ accredited, reflecting its commitment to high standards of academic excellence, governance, and institutional quality.
           </p>
           <p className="mb-5">
            The University offers over 100 undergraduate, postgraduate, and doctoral programmes across diverse disciplines. Backed by the legacy of the prestigious KR Mangalam Group, KRMU emphasises research-led learning, industry relevance, and global exposure.

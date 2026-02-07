@@ -20,19 +20,19 @@ import {
 export const Hero: HeroContent = {
   title: `
   <span class="sm:hidden"><span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
-      B.Sc. Forensic Science
+      Forensic Science
       </span> Admissions Open 2026–27</span>
        <span class="hidden sm:block">
       ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold">
-       B.Sc. Forensic Science
+      Forensic Science
       </span>
       <br />
       PROGRAMMES 2026-27 
       </span>
     `,
-  desc: `The B.Sc. Forensic Science course strives to prepare the next generation of professional <br /> analysts who pursue truth with the precision of science and integrity`,
+  desc: `The Forensic Science courses strive to prepare the next generation of professional <br /> analysts who pursue truth with the precision of science and integrity`,
   heroBg: "/wp-content/landingpage/bsc-forensic-science-2026/bsc-forensic.webp",
   // middleImg: "/landingpage/law-2026/law.webp",
   middleImg: "",
@@ -105,9 +105,9 @@ export const prominentRecruiters: ProminentRecruit[] = [
 ];
 
 export const whyKRM: WhyKRMSection = {
-  heading: "Why Choose KRMU for the B.Sc. Forensic Science Courses?",
+  heading: "Why Choose KRMU for Forensic Science Courses?",
   subheading: "Accurate Analysis of Evidences For Concrete Conclusions",
-  content: `The B.Sc. Forensic Science programmes intend to offer KRMU students an opportunity to apply science in the pursuit of justice. This multidisciplinary course strives to equip the learners with in-depth knowledge of forensic biology, toxicology, chemistry, ballistics, cyber forensics, and crime scene investigation. The curriculum is designed to meet the increasing reliance on scientific evidence in legal and criminal proceedings, thereby meeting the growing demand for trained forensic experts across government agencies, law enforcement departments, private labs, and legal consultancy firms.
+  content: `The Forensic Science programmes intend to offer KRMU students an opportunity to apply science in the pursuit of justice. This multidisciplinary course strives to equip the learners with in-depth knowledge of forensic biology, toxicology, chemistry, ballistics, cyber forensics, and crime scene investigation. The curriculum is designed to meet the increasing reliance on scientific evidence in legal and criminal proceedings, thereby meeting the growing demand for trained forensic experts across government agencies, law enforcement departments, private labs, and legal consultancy firms.
 `,
   imgUrl: `/landingpage/bsc-forensic-science-2026/why-choose/Building.webp`,
   whyKrmCards: [
@@ -140,7 +140,7 @@ export const industryExperts: IndustryExpertsSection = {
 `,
   description: `K.R. Mangalam University takes pride in collaborating with industry leaders and skill professionals who offer unparalleled hands-on learning experiences to students.`,
   cta: {
-    label: "Apply for B.Tech 2026",
+    label: "Apply for Forensic Science Programmes 2026-27",
     href: "#",
   },
   cards: [
@@ -174,13 +174,14 @@ export const industryExperts: IndustryExpertsSection = {
 
 export const specialisationData: SpecialisationSection = {
   subheading: ``,
-  heading: `KRMU’s B.Sc. Forensic Science Courses`,
+  heading: `KRMU’s Forensic Science Courses`,
   specilisationCard: [
     {
       imgUrl:
         "/landingpage/bsc-forensic-science-2026/specialisations/B.Sc.-(Hons.)-Forensic-Science.webp",
       title: `B.Sc. (Hons.) Forensic Science`,
-      desc: `The Bachelor of Science (B.Sc.) Hons. in Forensic Science offered by KRMU is a multidisciplinary undergraduate programme designed to prepare students for careers in crime investigation and forensic analysis. The meticulously crafted course combines principles of science, law, and technology to help students understand how scientific methods are applied to solve crimes. Students study core subjects such as forensic biology, forensic chemistry, toxicology, fingerprint analysis, questioned documents, and criminology.`,
+      // desc: `The Bachelor of Science (B.Sc.) Hons. in Forensic Science offered by KRMU is a multidisciplinary undergraduate programme designed to prepare students for careers in crime investigation and forensic analysis. The meticulously crafted course combines principles of science, law, and technology to help students understand how scientific methods are applied to solve crimes. Students study core subjects such as forensic biology, forensic chemistry, toxicology, fingerprint analysis, questioned documents, and criminology.`,
+      desc: ``,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -190,7 +191,7 @@ export const specialisationData: SpecialisationSection = {
         {
           iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
-          desc: `Passed the 10+2 or equivalent examination from any recognised board/ University in Science (Physics/Chemistry/Biology/Mathematics) with minimum 50% aggregate marks.`,
+          desc: `Passed the 10+2 or equivalent examination from any recognised board/ University in Science (Physics/ Chemistry/ Biology/ Mathematics) with minimum 50% aggregate marks.`,
         },
         // {
         //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
@@ -203,7 +204,8 @@ export const specialisationData: SpecialisationSection = {
       imgUrl:
         "/landingpage/bsc-forensic-science-2026/specialisations/B.Sc.-(Hons.-Hons.-with-Research)-Forensic-Science.webp",
       title: `B.Sc. (Hons. / Hons. with Research) Forensic Science`,
-      desc: `The programme at K.R. Mangalam University aims to develop critical thinking, observation, analytical skills, and attention to detail, which are essential for forensic professionals. Graduates of this course can pursue careers as forensic analysts, crime scene investigators, laboratory technicians, or research assistants. They may also opt for higher studies such as M.Sc. in Forensic Science, Criminology, or related fields.`,
+      // desc: `The programme at K.R. Mangalam University aims to develop critical thinking, observation, analytical skills, and attention to detail, which are essential for forensic professionals. Graduates of this course can pursue careers as forensic analysts, crime scene investigators, laboratory technicians, or research assistants. They may also opt for higher studies such as M.Sc. in Forensic Science, Criminology, or related fields.`,
+      desc: ``,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -213,7 +215,55 @@ export const specialisationData: SpecialisationSection = {
         {
           iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
-          desc: `Passed the 10+2 or equivalent examination from any recognised board/ University in Science (Physics/Chemistry/Biology/Mathematics) with minimum 50% aggregate marks.`,
+          desc: `Passed the 10+2 or equivalent examination from any recognised board/ University in Science (Physics/ Chemistry/ Biology/ Mathematics) with minimum 50% aggregate marks.`,
+        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 1,30,000`,
+        // },
+      ],
+    },
+    {
+      imgUrl:
+        "/wp-content/images/fs-prog-1.webp",
+      title: `Integrated / Dual Degree B.Sc.– M.Sc. (Forensic Science)`,
+      // desc: `The programme at K.R. Mangalam University aims to develop critical thinking, observation, analytical skills, and attention to detail, which are essential for forensic professionals. Graduates of this course can pursue careers as forensic analysts, crime scene investigators, laboratory technicians, or research assistants. They may also opt for higher studies such as M.Sc. in Forensic Science, Criminology, or related fields.`,
+      desc: ``,
+      extraInfos: [
+        {
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
+          title: "Duration:",
+          desc: `5 Years`,
+        },
+        {
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
+          title: "Eligibility",
+          desc: `Passed the 10+2 or equivalent examination from any recognised board/ University in Science (Physics/ Chemistry/ Biology/ Mathematics) with minimum 50% aggregate marks.`,
+        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 1,30,000`,
+        // },
+      ],
+    },
+        {
+      imgUrl:
+        "/wp-content/images/master_in_forensic_science.webp",
+      title: `M.Sc. Forensic Science`,
+      // desc: `The programme at K.R. Mangalam University aims to develop critical thinking, observation, analytical skills, and attention to detail, which are essential for forensic professionals. Graduates of this course can pursue careers as forensic analysts, crime scene investigators, laboratory technicians, or research assistants. They may also opt for higher studies such as M.Sc. in Forensic Science, Criminology, or related fields.`,
+      desc: ``,
+      extraInfos: [
+        {
+          iconUrl: "/wp-content/landingpage/common/duration.svg",
+          title: "Duration:",
+          desc: `2 Years`,
+        },
+        {
+          iconUrl: "/wp-content/landingpage/common/eligibility.svg",
+          title: "Eligibility",
+          desc: `Candidates who have completed B.Sc. (Any Science Stream) from a recognised university with minimum aggregate 50% marks.`,
         },
         // {
         //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
@@ -235,7 +285,7 @@ export const opportunityData: OpportunitySection = {
   heading: "Learn From Industry Experts",
   highlight: "Opportunity That Transforms",
   cta: {
-    label: "Apply for B.Sc. Programme 2026-2027",
+    label: "Apply for Forensic Science Programmes 2026-27",
     href: "#",
   },
 };
@@ -334,7 +384,7 @@ export const comeToLifeData: ComeToLifeSection = {
   description: `The K.R. Mangalam University offers strong support for the B.Sc. Forensic Science students in the form of an Advanced Forensic Lab with the latest tools for practical learning in physics, chemistry, and instrumentation. Expert faculty in the form of experienced professors with real-world and academic forensic experience, regular sessions with forensic experts and webinars are all designed for practical skill-building and career readiness.`,
   footerText: ``,
   cta: {
-    label: `Apply for B.Sc. Programme <br />2026-2027 `,
+    label: `Apply for Forensic Science Programmes <br /> 2026-27 `,
     href: "#",
   },
   slides: [
@@ -434,7 +484,14 @@ export const faqSectionData: FAQSectionData = {
     {
       id: "item-5",
       question: "Does KRMU provide placement support?",
-      answer: `Yes, the strong industry collaborations of K.R. Mangalam University ensure robust internship and placement opportunities with reputed architectural firms and design studios.`,
+      answer: `Yes, KRMU provides 100% placement support. We have a dedicated Career Development & Placement Cell that supports students through:
+ <br /><br /> 
+       <ul>
+        <li>Career counselling</li>
+        <li>Skill development workshops</li>
+        <li>Internships</li>
+        <li>Campus placements with reputed organisations</li>
+       </ul>`,
     },
   ],
 };
@@ -468,7 +525,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Begin Your Journey at K.R. Mangalam<br /> University Now`,
   description: "",
   cta: {
-    label: "Apply for B.Sc. Programme 2026-2027",
+    label: "Apply for Forensic Science Programmes 2026-27",
     href: "#",
   },
   highlights: [
