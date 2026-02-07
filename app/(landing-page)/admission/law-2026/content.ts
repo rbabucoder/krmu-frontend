@@ -89,7 +89,7 @@ export const prominentRecruiters: ProminentRecruit[] = [
     alt: "Recruiter Logo",
   },
   {
-    imgUrl: "/landingpage/law-2026/prominent-recruiter/4.png",
+    imgUrl: "/wp-content/images/kpmg-logo.png",
     alt: "Recruiter Logo",
   },
   {

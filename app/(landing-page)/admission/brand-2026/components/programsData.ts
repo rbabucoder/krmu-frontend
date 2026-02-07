@@ -59,8 +59,8 @@ export const programs: Program[] = [
   // { id: 22, title: "BBA Travel & Tourism", duration: "3 Years", fees: "₹ 1,85,000 /-", category: "management-commerce", level: "undergraduate", link: "https://www.krmangalam.edu.in/programs/bba-travel-tourism-management/" },
 
   { id: 23, title: "MBA with academic support of IBM", duration: "2 Years", fees: "₹ 3,00,000 /-", category: "management-commerce", level: "postgraduate", link: "https://www.krmangalam.edu.in/programs/mba/" },
-  { id: 24, title: "MBA Digital Marketing", duration: "2 Years", fees: "₹ 3,50,000 /-", category: "management-commerce", level: "postgraduate", link: "https://www.krmangalam.edu.in/programs/mba-digital-marketing/" },
-  { id: 25, title: "MBA Fintech", duration: "2 Years", fees: "₹ 3,50,000 /-", category: "management-commerce", level: "postgraduate", link: "https://www.krmangalam.edu.in/programs/mba-fintech/" },
+  { id: 24, title: "MBA (Digital Marketing) with academic support of IIDE", duration: "2 Years", fees: "₹ 3,50,000 /-", category: "management-commerce", level: "postgraduate", link: "https://www.krmangalam.edu.in/programs/mba-digital-marketing/" },
+  { id: 25, title: "MBA (Fintech) with academic support of Ernst & Young (EY)", duration: "2 Years", fees: "₹ 3,50,000 /-", category: "management-commerce", level: "postgraduate", link: "https://www.krmangalam.edu.in/programs/mba-fintech/" },
 
   { id: 26, title: "BBA LL.B. (Hons.)", duration: "5 Years", fees: "₹ 1,85,000 /-", category: "legal-studies", level: "undergraduate", link: "https://www.krmangalam.edu.in/program/bba-llb-hons/" },
   { id: 27, title: "B.A. LL.B. (Hons.)", duration: "5 Years", fees: "₹ 1,85,000 /-", category: "legal-studies", level: "undergraduate", link: "https://www.krmangalam.edu.in/programs/ba-llb-hons/" },
@@ -79,7 +79,7 @@ export const programs: Program[] = [
 
   { id: 36, title: "B.A. Journalism & Mass Communication", duration: "3 Years", fees: "₹ 1,60,000 /-", category: "journalism-masscomm", level: "undergraduate", link: "https://www.krmangalam.edu.in/programs/bjmc/" },
   
-  { id: 132, title: "B.A. (Hons. / Hons. with Research) (Journalism And Mass Communication)", duration: "3 Years", fees: "₹ 1,60,000 /-", category: "journalism-masscomm", level: "undergraduate", link: "https://www.krmangalam.edu.in/programs/bjmc/" },
+  // { id: 132, title: "B.A. (Hons. / Hons. with Research) (Journalism And Mass Communication)", duration: "3 Years", fees: "₹ 1,60,000 /-", category: "journalism-masscomm", level: "undergraduate", link: "https://www.krmangalam.edu.in/programs/bjmc/" },
 
   
   { id: 37, title: "M.A. Journalism & Mass Communication", duration: "2 Years", fees: "₹ 1,10,000 /-", category: "journalism-masscomm", level: "postgraduate", link: "https://www.krmangalam.edu.in/programs/mjmc-masters-journalism-mass-communication/" },
@@ -174,7 +174,7 @@ export const programs: Program[] = [
 
 
 { id: 120, title: "B.A. Programme", duration: "3 Years", fees: "₹ 1,85,000 /-", category: "liberal-arts", level: "undergraduate", link: "" },
-{ id: 121, title: "B.A. (Hons. / Hons. with Research) (Liberal Arts)", duration: "3 Years", fees: "₹ 1,85,000 /-", category: "liberal-arts", level: "undergraduate", link: "" },
+{ id: 121, title: "B.A. (Hons. / Hons. with Research) (Liberal Arts)", duration: "4 Years", fees: "₹ 1,85,000 /-", category: "liberal-arts", level: "undergraduate", link: "" },
 
 
 { id: 111, title: "B.A. (Hons.) Political Science", duration: "3 Years", fees: "₹ 1,85,000 /-", category: "liberal-arts", level: "undergraduate", link: "" },

@@ -31,20 +31,35 @@ export const somcFaculties: SchoolFacultiesType[] = [
     featured_media_url:
       "https://wp.krmangalam.edu.in/wp-content/uploads/2025/07/Dr.-Manmohan-Chaudhary-SOMC.jpg",
   },
-  {
-    id: 10685,
-    slug: "dr-meenakshi-gujral",
+{
+    id: 107649,
+    slug: "dr-mohammed-mustehsan",
     title: {
-      rendered: "Dr. Meenakshi Gujral",
+      rendered: "Dr. Mohammed Mustehsan",
     },
-    featured_media: 10686,
+    featured_media: 107650,
     acf: {
       "staff-qualification": "Ph.D.",
-      staff_designation: "Associate Professor",
+      staff_designation: "Assistant  Professor",
       schools: [1126],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Meenakshi-Gujral.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2025/07/Dr.-Mohammed-Mustehasan-SOMC.png",
+  },
+    {
+    id: 107964,
+    slug: "ms-prerna-sharma",
+    title: {
+      rendered: "Ms. Prerna Sharma",
+    },
+    featured_media: 107965,
+    acf: {
+      "staff-qualification": "Ph.D.",
+      staff_designation: "Assistant  Professor",
+      schools: [1126],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2025/07/Ms.-Prerna-Sharma-SOMC.jpg",
   },
   {
     id: 108935,
@@ -61,21 +76,7 @@ export const somcFaculties: SchoolFacultiesType[] = [
     featured_media_url:
       "https://www.krmangalam.edu.in/wp-content/uploads/2025/09/indu.webp",
   },
-  {
-    id: 107964,
-    slug: "ms-prerna-sharma",
-    title: {
-      rendered: "Ms. Prerna Sharma",
-    },
-    featured_media: 107965,
-    acf: {
-      "staff-qualification": "Ph.D.",
-      staff_designation: "Assistant  Professor",
-      schools: [1126],
-    },
-    featured_media_url:
-      "https://wp.krmangalam.edu.in/wp-content/uploads/2025/07/Ms.-Prerna-Sharma-SOMC.jpg",
-  },
+
   {
     id: 107818,
     slug: "dr-hamza-naim",
@@ -91,20 +92,21 @@ export const somcFaculties: SchoolFacultiesType[] = [
     featured_media_url:
       "https://www.krmangalam.edu.in/wp-content/uploads/2025/07/Hamza-2.jpg",
   },
-  {
-    id: 107649,
-    slug: "dr-mohammed-mustehsan",
+  
+    {
+    id: 10685,
+    slug: "dr-meenakshi-gujral",
     title: {
-      rendered: "Dr. Mohammed Mustehsan",
+      rendered: "Dr. Meenakshi Gujral",
     },
-    featured_media: 107650,
+    featured_media: 10686,
     acf: {
       "staff-qualification": "Ph.D.",
-      staff_designation: "Assistant  Professor",
+      staff_designation: "Associate Professor",
       schools: [1126],
     },
     featured_media_url:
-      "https://wp.krmangalam.edu.in/wp-content/uploads/2025/07/Dr.-Mohammed-Mustehasan-SOMC.png",
+      "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Meenakshi-Gujral.webp",
   },
   {
     id: 105156,

@@ -138,21 +138,21 @@ export const sprsFaculties: SchoolFacultiesType[] = [
     featured_media_url:
       "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.Pious-Divya-P.T.-SPRS.jpg",
   },
-  {
-    id: 68849,
-    slug: "dr-epshita-kakati-pt",
-    title: {
-      rendered: "Epshita Kakati (PT)",
-    },
-    featured_media: 68850,
-    acf: {
-      "staff-qualification": "MPT",
-      staff_designation: "Demonstrator",
-      schools: [],
-    },
-    featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/09/epshita.jpg",
-  },
+  // {
+  //   id: 68849,
+  //   slug: "dr-epshita-kakati-pt",
+  //   title: {
+  //     rendered: "Epshita Kakati (PT)",
+  //   },
+  //   featured_media: 68850,
+  //   acf: {
+  //     "staff-qualification": "MPT",
+  //     staff_designation: "Demonstrator",
+  //     schools: [],
+  //   },
+  //   featured_media_url:
+  //     "https://www.krmangalam.edu.in/wp-content/uploads/2024/09/epshita.jpg",
+  // },
   {
     id: 68207,
     slug: "dr-aatika-waheed",
@@ -183,21 +183,21 @@ export const sprsFaculties: SchoolFacultiesType[] = [
     featured_media_url:
       "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.Kangana-Juneja-Kansal-P.T.-SPRS.jpg",
   },
-  {
-    id: 9172,
-    slug: "dr-sneha-chakraverty",
-    title: {
-      rendered: "Sneha Chakraverty",
-    },
-    featured_media: 9173,
-    acf: {
-      "staff-qualification": "MPT",
-      staff_designation: "Assistant  Professor",
-      schools: [1098],
-    },
-    featured_media_url:
-      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Sneha-Chakraverty.webp",
-  },
+  // {
+  //   id: 9172,
+  //   slug: "dr-sneha-chakraverty",
+  //   title: {
+  //     rendered: "Sneha Chakraverty",
+  //   },
+  //   featured_media: 9173,
+  //   acf: {
+  //     "staff-qualification": "MPT",
+  //     staff_designation: "Assistant  Professor",
+  //     schools: [1098],
+  //   },
+  //   featured_media_url:
+  //     "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Sneha-Chakraverty.webp",
+  // },
 
   {
     id: 9097,

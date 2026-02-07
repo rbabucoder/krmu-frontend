@@ -258,34 +258,34 @@ export const soadFaculties: SchoolFacultiesType[] = [
     featured_media_url:
       "https://www.krmangalam.edu.in/wp-content/uploads/2024/05/Tulika_Pahwa.webp",
   },
-  {
-    id: 43169,
-    slug: "mr-koustav-nag",
-    title: {
-      rendered: "Mr. Koustav Nag",
-    },
-    featured_media: 43170,
-    acf: {
-      "staff-qualification": "Ph.D.",
-      staff_designation: "Assistant Professor",
-      schools: [787],
-    },
-    featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/05/koustav.jpg",
-  },
-  {
-    id: 43147,
-    slug: "mr-ayan-chatterjee",
-    title: {
-      rendered: "Mr. AYAN CHATTERJEE",
-    },
-    featured_media: 55292,
-    acf: {
-      "staff-qualification": "Master of Visual Art",
-      staff_designation: "Assistant Professor",
-      schools: [787],
-    },
-    featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/05/ayan.webp",
-  },
+  // {
+  //   id: 43169,
+  //   slug: "mr-koustav-nag",
+  //   title: {
+  //     rendered: "Mr. Koustav Nag",
+  //   },
+  //   featured_media: 43170,
+  //   acf: {
+  //     "staff-qualification": "Ph.D.",
+  //     staff_designation: "Assistant Professor",
+  //     schools: [787],
+  //   },
+  //   featured_media_url:
+  //     "https://www.krmangalam.edu.in/wp-content/uploads/2024/05/koustav.jpg",
+  // },
+  // {
+  //   id: 43147,
+  //   slug: "mr-ayan-chatterjee",
+  //   title: {
+  //     rendered: "Mr. AYAN CHATTERJEE",
+  //   },
+  //   featured_media: 55292,
+  //   acf: {
+  //     "staff-qualification": "Master of Visual Art",
+  //     staff_designation: "Assistant Professor",
+  //     schools: [787],
+  //   },
+  //   featured_media_url:
+  //     "https://www.krmangalam.edu.in/wp-content/uploads/2024/05/ayan.webp",
+  // },
 ];
