@@ -28,7 +28,7 @@ export const Hero: HeroContent = {
        Bachelor of <br /> Architecture
       </span>
       <br />
-      PROGRAMMES 2026-27 </span>
+      PROGRAMME 2026-27 </span>
     `,
   desc: `From conceptual learning in classrooms to building creative constructions <br /> via immersive projects,  the B.Arch. course will enable you to shape the future of architecture`,
   heroBg: "/wp-content/landingpage/barch-2026/barch.webp",
@@ -103,7 +103,7 @@ export const prominentRecruiters: ProminentRecruit[] = [
 ];
 
 export const whyKRM: WhyKRMSection = {
-  heading: "What makes KRMU the Best option for the B.Arch. Course?",
+  heading: "What Makes KRMU the Best Choice for a B.Arch. Course?",
   subheading: "From Drawing Design Sketches to Building Skyscrapers",
   content: `Developed by the expert professionals in the field, K.R. Mangalam University's five-year B.Arch. programme offers architecture education through practical projects, immersive sessions, insightful workshops, and valuable insights into the intricacies of architectural planning. The university's multidisciplinary strategy aims to ensure that the holistic development of its students, who will be influencing the architectural world in the future, remains a top priority.`,
   imgUrl: `/landingpage/barch-2026/why-choose/Building.webp`,
@@ -172,7 +172,8 @@ export const specialisationData: SpecialisationSection = {
     {
       imgUrl: "/landingpage/barch-2026/specialisations/1.webp",
       title: `Bachelor of Architecture`,
-      desc: `The KRMU's Bachelor of Architecture (B.Arch.) equips the students with all the necessary skills and theoretical knowledge they require to plan, design and construct structures, buildings and various functional spaces by integrating artistic aesthetics and technology in a seamless manner. This degree aims to cultivate both analytical and creative thinking, equipping students to navigate modern-world challenges while building successful careers.`,
+      // desc: `The KRMU's Bachelor of Architecture (B.Arch.) equips the students with all the necessary skills and theoretical knowledge they require to plan, design and construct structures, buildings and various functional spaces by integrating artistic aesthetics and technology in a seamless manner. This degree aims to cultivate both analytical and creative thinking, equipping students to navigate modern-world challenges while building successful careers.`,
+      desc: ``,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -384,7 +385,7 @@ export const faqSectionData: FAQSectionData = {
     },
     {
       id: "item-2",
-      question: "What skills will one develop in a B.Arch. programme?",
+      question: "What skills will I develop in a B.Arch. programme?",
       answer: `You will cultivate creative design solutions, technical competence in construction and modelling, and effective communication of your ideas through visual, oral, and written means.`,
     },
     {
