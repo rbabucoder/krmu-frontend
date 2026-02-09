@@ -3,6 +3,7 @@ import {
   getAllFaculties,
   getAllNewsEvents,
   getAllPhotoGalleries,
+  getAllSchoolPhdProgrammes,
   getAllSchoolProgrammes,
   getAllSchools,
 } from "@/lib/api/siteseo";
@@ -17,6 +18,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const faculties = await getAllFaculties();
   const schools = await getAllSchools();
   const programmes = await getAllSchoolProgrammes();
+  const phdProgrammes = await getAllSchoolPhdProgrammes();
   const photoGalleries = await getAllPhotoGalleries();
 
   const blogUrls: MetadataRoute.Sitemap = blogs.map((blog) => ({
@@ -46,6 +48,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const programmeUrls: MetadataRoute.Sitemap = programmes.map((p) => ({
     url: `${baseUrl}/programs/${p.programmeslug}`,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+  const phdProgrammeUrls: MetadataRoute.Sitemap = phdProgrammes.map((p) => ({
+    url: `${baseUrl}/programs/${p.phdslug}`,
     changeFrequency: "monthly",
     priority: 0.7,
   }));
@@ -417,5 +424,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...photoGalleriesUrls,
     ...newsEventsUrls,
     ...facultiesUrls,
+    ...phdProgrammeUrls,
   ];
 }

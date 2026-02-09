@@ -7,7 +7,7 @@ export async function getAllBlogs() {
 
   while (true) {
     const res = await fetch(
-      `https://krmangalam.edu.in/wp-json/wp/v2/posts?_fields=slug,modified&per_page=${perPage}&page=${page}`,
+      `${KRMUWordUrl}/blog/wp-json/wp/v2/posts?_fields=slug,modified&per_page=${perPage}&page=${page}`,
       { next: { revalidate: 3600 } }
     );
 
@@ -164,6 +164,37 @@ export async function getAllSchoolProgrammes() {
     programmeslug: string;
   }[];
 }
+
+
+export async function getAllSchoolPhdProgrammes() {
+  let allProgrammes: any[] = [];
+  let page = 1;
+  let pageCount = 1;
+
+  while (page <= pageCount) {
+    const res = await fetch(
+      `${FETCH_STRAPI_URL}/api/phd-single-programmes?fields[0]=phdslug&pagination[pageSize]=50&pagination[page]=${page}`,
+      { cache: "no-store" }
+    );
+
+    if (!res.ok) throw new Error("Failed to fetch PhD programmes");
+
+    const json = await res.json();
+    allProgrammes = allProgrammes.concat(json.data);
+    pageCount = json.meta.pagination.pageCount;
+    page++;
+  }
+
+  return allProgrammes as {
+    id: number;
+    documentId: string;
+    phdslug: string;
+  }[];
+}
+
+
+
+
 export async function getAllPhotoGalleries() {
   let allGalleries: {
     id: number;
