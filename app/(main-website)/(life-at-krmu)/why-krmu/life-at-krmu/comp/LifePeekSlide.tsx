@@ -27,6 +27,7 @@ const LifePeekSlide = () => {
                 width={500}
                 height={500}
                 alt=""
+                className="object-cover w-full h-full"
               />
             </CarouselItem>
           ))}

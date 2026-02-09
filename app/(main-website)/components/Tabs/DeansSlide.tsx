@@ -11,10 +11,10 @@ const deans = [
   { name: "Dr. Pankaj Agarwal", role: "Professor & Dean, SOET", img: "https://truthful-cabbage-82fd27e8f6.media.strapiapp.com/Dr_Pankaj_Agarwal_DEAN_SOET_2e63c16f24.png" },
   { name: "Dr. Hema Chaudhary", role: "Professor & Dean, SMAS", img: "https://truthful-cabbage-82fd27e8f6.media.strapiapp.com/Dr_Hema_Chaudhary_f8b6ce6363.jpg" },
   { name: "Dr. Meena Bhandari", role: "Associate Professor & Dean, SBAS", img: "https://truthful-cabbage-82fd27e8f6.media.strapiapp.com/Dr_Meena_Bhandari_SBAS_81ba776ac8.jpg" },
-  { name: "Dr. Amit Chawla", role: "Professor & Dean, SJMC", img: "https://truthful-cabbage-82fd27e8f6.media.strapiapp.com/Dr_Amit_Chawla_SEMCE_54fb0f6497.png" },
+  { name: "Dr. Amit Chawla", role: "Professor & Dean, SEMCE", img: "https://truthful-cabbage-82fd27e8f6.media.strapiapp.com/Dr_Amit_Chawla_SEMCE_54fb0f6497.png" },
   { name: "Prof (Dr.) Kaveri Sharma", role: "Professor & Dean, SOLS", img: "https://truthful-cabbage-82fd27e8f6.media.strapiapp.com/16_5ba7e2ac00.jpg" },
   { name: "Mamta Shankar", role: "School Coordinator, SPRS", img: "https://truthful-cabbage-82fd27e8f6.media.strapiapp.com/Dr_Mamta_Shankar_P_T_SPRS_7350075f69.jpg" },
-  { name: "Prof. Shravan Kumar", role: "Professor and Dean", img: "https://truthful-cabbage-82fd27e8f6.media.strapiapp.com/Dr_Shravan_Kumar_095984b81a.png" },
+  { name: "Prof. Shravan Kumar", role: "Professor and Dean, SOLA", img: "https://truthful-cabbage-82fd27e8f6.media.strapiapp.com/Dr_Shravan_Kumar_095984b81a.png" },
 ];
 
 const ITEMS_PER_LOAD = 5;
