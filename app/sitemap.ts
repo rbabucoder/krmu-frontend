@@ -7,10 +7,10 @@ import {
   getAllSchools,
 } from "@/lib/api/siteseo";
 import type { MetadataRoute } from "next";
-import { KRMUWordUrl } from "./constant";
+import { origUrl } from "./constant";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = KRMUWordUrl;
+  const baseUrl = origUrl;
 
   const blogs = await getAllBlogs();
   const newsevents = await getAllNewsEvents();

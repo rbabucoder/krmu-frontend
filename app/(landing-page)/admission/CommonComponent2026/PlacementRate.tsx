@@ -20,19 +20,19 @@ const PlacementRate = () => {
         </div>
         <div className="grid gap-6">
                 <div className="flex lg:flex-row overflow-hidden bg-white shadow-[0_10px_15px_-3px_rgb(0_0_0/0.1),0_4px_6px_-4px_rgb(0_0_0/_0.1)] rounded-2xl transition-all 
-            duration-[250ms] ease-out">
-                        <div className="why-image">
-                            <Image src="images/life/3.webp"
+            duration-[250ms] ease-out sm:col-span-2 md:col-span-3">
+                        <div className="flex-[0_0_45%] aspect-auto">
+                            <Image src="/wp-content/images/placement-route.webp"
                                  alt="KRMU moot court in session"
                                  width="600"
                                  height="400"
                                  className="w-full h-full aspect-video overflow-hidden flex-[0_0_45%] object-cover" />
                         </div>
-                        <div className="why-content">
+                        <div className="p-6 flex-1 flex flex-col justify-center">
                             <div className="why-icon">
                                 <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9h-4v4h-2v-4H9V9h4V5h2v4h4v2z"/></svg>
                             </div>
-                            <h3>Learn by Doing, Not Just Reading</h3>
+                            <h3 className="text-2xl font-semibold">Learn by Doing, Not Just Reading</h3>
                             <p>Our moot court isn't a once-a-semester event—it's woven into your curriculum. Draft real petitions, argue real cases, and build the confidence that sets you apart in interviews.</p>
                             <ul className="why-list">
                                 <li>Mandatory moot court participation every semester</li>
