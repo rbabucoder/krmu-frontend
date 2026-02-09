@@ -1909,6 +1909,10 @@
     font-size: 30px;
     font-weight: bold;
     line-height: 1.2;
+    margin-bottom: 10px;
+  }
+  .dean_heading_h3 p{
+    margin-bottom: 10px;
   }
   .single_blog_author_container {
     display: flex;

@@ -19,17 +19,23 @@ import {
 // Usage types
 export const Hero: HeroContent = {
   title: `
-      ADMISSIONS <br />
+  <span class="sm:hidden"><span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
+        B.Tech.
+      </span> Admissions Open 2026–27</span>
+       <span class="hidden sm:block">ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
-       B.Tech
+       B.Tech.
       </span>
       <br />
       PROGRAMMES 2026-27
+      </span>
     `,
-  desc: `Ideate, Innovate and Influence the Turf of Technology with our B.Tech Programmes <br /> comprising an industry-driven curriculum to shape tomorrow’s tech leaders`,
+  desc: `Ideate, Innovate and Influence the Turf of Technology with our B.Tech. Programmes <br /> comprising an industry-driven curriculum to shape tomorrow’s tech leaders`,
   heroBg: "/wp-content/landingpage/btech-2026/btech.webp",
   middleImg: "",
+  mobileImg: "",
+  lpclName: "MainSection",
 };
 
 export const heroMarqueeData: HeroMarqueeSection = {
@@ -97,10 +103,10 @@ export const prominentRecruiters: ProminentRecruit[] = [
 ];
 
 export const whyKRM: WhyKRMSection = {
-  heading: "What makes KRMU the Best option for the B.Tech Course?",
+  heading: "What Makes KRMU a Preferred Destination for B.Tech. Courses?",
   subheading:
     "Securing The Future of Technology with Intelligence and Integrity",
-  content: `With an emphasis on cutting-edge technologies like Artificial Intelligence (AI), Machine Learning (ML), Data Science, the Internet of Things (IoT), Cyber Security, Robotics, and UI/UX Design, etc., K.R. Mangalam University's B.Tech. programme aims to give students a solid foundation in technology. Students become industry-ready by getting real-world experience through a one-year industry internship. Additionally, owing to a well-crafted industry-academia linkage, students get a plethora of opportunities for advancing their professional career and creating their own network.`,
+  content: `With an emphasis on cutting-edge technologies like Artificial Intelligence (AI), Machine Learning (ML), Data Science, the Internet of Things (IoT), Cyber Security, Robotics, and UI/UX Design, etc., K.R. Mangalam University's B.Tech. programmes aim to give students a solid foundation in technology. Students become industry-ready by getting real-world experience through a one-year industry internship. Additionally, owing to a well-crafted industry-academia linkage, students get a plethora of opportunities for advancing their professional careers and creating their own networks.`,
   imgUrl: `/landingpage/btech-2026/why-choose/Building.webp`,
   whyKrmCards: [
     {
@@ -131,7 +137,7 @@ export const industryExperts: IndustryExpertsSection = {
   heading: `Learn From <br /> Industry Experts`,
   description: `KRMU partners with major organisations to provide <br /> industry-specific training.`,
   cta: {
-    label: `Apply for B.Tech 2026-27`,
+    label: `Apply for B.Tech. 2026-27`,
     href: "#",
   },
   cards: [
@@ -151,7 +157,7 @@ export const industryExperts: IndustryExpertsSection = {
       title: "AI and Machine Learning Courses",
     },
     {
-      imgUrl: "/landingpage/btech-2026/learn-from/eydark.webp",
+      imgUrl: "/wp-content/landingpage/common/samatrix.webp",
       alt: "Apple Logo",
       title: "AI and Machine Learning Courses",
     },
@@ -172,7 +178,8 @@ export const specialisationData: SpecialisationSection = {
       imgUrl:
         "/landingpage/btech-2026/specialisations/B.Tech.-Computer-Science-and-Engineering-(CSE).webp",
       title: `B.Tech. Computer Science and Engineering (CSE)`,
-      desc: `The B.Tech. Computer Science and Engineering programme at K.R. Mangalam University enables students to develop a strong basic foundation in concepts like programming, algorithms, data structures, and system design. With a future-ready and industry-relevant curriculum, learners gain hands-on experience in artificial intelligence, data science, cybersecurity, cloud computing, and software engineering. Expert faculty, modern laboratories, and industry-aligned projects ensure practical exposure and innovation. Finally, Students benefit from internships, research opportunities, hackathons, and global certifications that enhance employability. `,
+      // desc: `The B.Tech. Computer Science and Engineering programme at K.R. Mangalam University enables students to develop a strong basic foundation in concepts like programming, algorithms, data structures, and system design. With a future-ready and industry-relevant curriculum, learners gain hands-on experience in artificial intelligence, data science, cybersecurity, cloud computing, and software engineering. Expert faculty, modern laboratories, and industry-aligned projects ensure practical exposure and innovation. Finally, Students benefit from internships, research opportunities, hackathons, and global certifications that enhance employability. `,
+      desc: ``,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -182,20 +189,21 @@ export const specialisationData: SpecialisationSection = {
         {
           iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
-          desc: `50% marks in 10+2 examination with Physics & Maths as mandatory courses. For the remaining single course, select any course from Chemistry/ Computer Science/ Electronics/ Information Technology/ Biology/ Informatics Practices/Biotechnology/ Technical Vocational subject/ Agriculture/Engineering Graphics/ Business Studies/Entrepreneurship from any recognised Board/ University.`,
+          desc: `Passed 10+2 examination with Physics and Mathematics as mandatory courses. For the remaining single course, select any course from Chemistry/ Computer Science/ Electronics/ Information Technology/ Biology/ Informatics Practices/ Biotechnology/ Technical Vocational subject/ Agriculture/ Engineering Graphics/ Business Studies/ Entrepreneurship from any recognised Board/ University with minimum 50% aggregate marks.`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,30,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 2,30,000`,
+        // },
       ],
     },
     {
       imgUrl:
         "/landingpage/btech-2026/specialisations/B.Tech.-Computer-Science-and-Engineering-(Robotics-&-AI)-with-Academic-Support-of-IBM-&-powered-by-Microsoft-Certifications.webp",
-      title: `B.Tech. Computer Science and Engineering (Robotics & AI) with Academic Support of IBM & powered by Microsoft Certifications`,
-      desc: `The K.R. Mangalam University’s B.Tech. Computer Science and Engineering (Robotics & AI), designed with academic support from IBM and powered by Microsoft Certifications, is an industry-aligned program that blends strong engineering foundations with hands-on learning in AI, robotics, cloud, data, and automation. IBM-led curricula and Microsoft credentials enhance employability, validating real-world skills employers seek.`,
+      title: `B.Tech. Computer Science and Engineering (Robotics & AI) with academic support of IBM & powered by Microsoft Certifications`,
+      // desc: `The K.R. Mangalam University’s B.Tech. Computer Science and Engineering (Robotics & AI), designed with academic support from IBM and powered by Microsoft Certifications, is an industry-aligned program that blends strong engineering foundations with hands-on learning in AI, robotics, cloud, data, and automation. IBM-led curricula and Microsoft credentials enhance employability, validating real-world skills employers seek.`,
+      desc: ``,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -205,20 +213,21 @@ export const specialisationData: SpecialisationSection = {
         {
           iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
-          desc: `Passed 10+2 examination with Physics and Mathematics as mandatory courses. For the remaining single course, select any course from Chemistry/ Computer Science/ Electronics/ Information Technology/ Biology/ Informatics Practices/Biotechnology/ Technical Vocational subject/ Agriculture/Engineering Graphics/ Business Studies/Entrepreneurship from any recognised Board/ University with minimum 50% aggregate marks.`,
+          desc: `Passed 10+2 examination with Physics and Mathematics as mandatory courses. For the remaining single course, select any course from Chemistry/ Computer Science/ Electronics/ Information Technology/ Biology/ Informatics Practices/ Biotechnology/ Technical Vocational subject/ Agriculture/ Engineering Graphics/ Business Studies/ Entrepreneurship from any recognised Board/ University with minimum 50% aggregate marks.`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `2,50,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `2,50,000`,
+        // },
       ],
     },
     {
       imgUrl:
         "/landingpage/btech-2026/specialisations/B.Tech.-Computer-Science-and-Engineering-(AI-&-ML)-with-academic-support-of-IBM-&-powered-by-Microsoft-Certifications.webp",
       title: `B.Tech. Computer Science and Engineering (AI & ML) with academic support of IBM & powered by Microsoft Certifications`,
-      desc: `The B.Tech. Computer Science and Engineering (AI & ML) program of K.R. Mangalam University is meticulously designed to shape industry-ready innovators. This programme blends strong computer science fundamentals with cutting-edge Artificial Intelligence and Machine Learning, enhanced by academic support from IBM and powered by Microsoft Certifications. Graduates are prepared for high-demand roles such as AI engineer, data scientist, and ML developer, equipped with skills that meet evolving industry needs and drive innovation across diverse sectors.`,
+      // desc: `The B.Tech. Computer Science and Engineering (AI & ML) program of K.R. Mangalam University is meticulously designed to shape industry-ready innovators. This programme blends strong computer science fundamentals with cutting-edge Artificial Intelligence and Machine Learning, enhanced by academic support from IBM and powered by Microsoft Certifications. Graduates are prepared for high-demand roles such as AI engineer, data scientist, and ML developer, equipped with skills that meet evolving industry needs and drive innovation across diverse sectors.`,
+      desc: ``,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -228,20 +237,21 @@ export const specialisationData: SpecialisationSection = {
         {
           iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
-          desc: `Passed 10+2 examination with Physics and Mathematics as mandatory courses. For the remaining single course, select any course from Chemistry/ Computer Science/ Electronics/ Information Technology/ Biology/ Informatics Practices/Biotechnology/ Technical Vocational subject/ Agriculture/Engineering Graphics/ Business Studies/Entrepreneurship from any recognised Board/ University with minimum 50% aggregate marks.`,
+          desc: `Passed 10+2 examination with Physics and Mathematics as mandatory courses. For the remaining single course, select any course from Chemistry/ Computer Science/ Electronics/ Information Technology/ Biology/ Informatics Practices/ Biotechnology/ Technical Vocational subject/ Agriculture/ Engineering Graphics/ Business Studies/ Entrepreneurship from any recognised Board/ University with minimum 50% aggregate marks.`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,65,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 2,65,000`,
+        // },
       ],
     },
     {
       imgUrl:
         "/landingpage/btech-2026/specialisations/B.Tech.-CSE-(Cybersecurity)-with-academic-support-of-EC-Council-&-IBM.webp",
       title: `B.Tech. CSE (Cybersecurity) with academic support of EC-Council & IBM`,
-      desc: `The K.R. Mangalam University strives to build a secure future for its students with the B.Tech. CSE (Cybersecurity) programme that’s crafted to meet the growing global demand for cyber professionals. This industry-focused course is offered with academic support from EC-Council and IBM, combining strong computer science foundations with advanced cybersecurity expertise. `,
+      // desc: `The K.R. Mangalam University strives to build a secure future for its students with the B.Tech. CSE (Cybersecurity) programme that’s crafted to meet the growing global demand for cyber professionals. This industry-focused course is offered with academic support from EC-Council and IBM, combining strong computer science foundations with advanced cybersecurity expertise. `,
+      desc: ``,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -251,20 +261,21 @@ export const specialisationData: SpecialisationSection = {
         {
           iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
-          desc: `Passed 10+2 examination with Physics and Mathematics as mandatory courses. For the remaining single course, select any course from Chemistry/ Computer Science/ Electronics/ Information Technology/ Biology/ Informatics Practices/Biotechnology/ Technical Vocational subject/ Agriculture/Engineering Graphics/ Business Studies/Entrepreneurship from any recognised Board/ University with minimum 50% aggregate marks. `,
+          desc: `Passed 10+2 examination with Physics and Mathematics as mandatory courses. For the remaining single course, select any course from Chemistry/ Computer Science/ Electronics/ Information Technology/ Biology/ Informatics Practices/ Biotechnology/ Technical Vocational subject/ Agriculture/ Engineering Graphics/ Business Studies/ Entrepreneurship from any recognised Board/ University with minimum 50% aggregate marks. `,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,50,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 2,50,000`,
+        // },
       ],
     },
     {
       imgUrl:
         "/landingpage/btech-2026/specialisations/B.Tech.-CSE-(Data-Science)-with-the-academic-support-of-IBM.webp",
       title: `B.Tech. CSE (Data Science) with the academic support of IBM`,
-      desc: `The B.Tech. CSE (Data Science) programme of K.R. Mangalam University is intricately designed to create the next generation of data-driven professionals. With academic support from IBM, this industry-aligned course blends strong computer science fundamentals with advanced data science, analytics, and AI skills. `,
+      // desc: `The B.Tech. CSE (Data Science) programme of K.R. Mangalam University is intricately designed to create the next generation of data-driven professionals. With academic support from IBM, this industry-aligned course blends strong computer science fundamentals with advanced data science, analytics, and AI skills. `,
+      desc: ``,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -274,20 +285,21 @@ export const specialisationData: SpecialisationSection = {
         {
           iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
-          desc: `Passed 10+2 examination with Physics and Mathematics as mandatory courses. For the remaining single course, select any course from Chemistry/ Computer Science/ Electronics/ Information Technology/ Biology/ Informatics Practices/Biotechnology/ Technical Vocational subject/ Agriculture/Engineering Graphics/ Business Studies/Entrepreneurship from any recognised Board/ University with minimum 50% aggregate marks. `,
+          desc: `Passed 10+2 examination with Physics and Mathematics as mandatory courses. For the remaining single course, select any course from Chemistry/ Computer Science/ Electronics/ Information Technology/ Biology/ Informatics Practices/ Biotechnology/ Technical Vocational subject/ Agriculture/ Engineering Graphics/ Business Studies/ Entrepreneurship from any recognised Board/ University with minimum 50% aggregate marks. `,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,50,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 2,50,000`,
+        // },
       ],
     },
     {
       imgUrl:
         "/landingpage/btech-2026/specialisations/B.Tech.-CSE-(Full-Stack-Development)-with-academic-support-of-ImaginXP.webp",
       title: `B.Tech. CSE (Full Stack Development) with academic support of ImaginXP`,
-      desc: `The students of K.R. Mangalam University enrolled in the B.Tech. CSE (Full Stack Development) programme, master the art of developing robust, scalable, and user-centric applications as well as learn to seamlessly integrate front-end design with powerful back-end infrastructure while working with modern frameworks and cloud technologies.`,
+      // desc: `The students of K.R. Mangalam University enrolled in the B.Tech. CSE (Full Stack Development) programme, master the art of developing robust, scalable, and user-centric applications as well as learn to seamlessly integrate front-end design with powerful back-end infrastructure while working with modern frameworks and cloud technologies.`,
+      desc: ``,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -297,20 +309,21 @@ export const specialisationData: SpecialisationSection = {
         {
           iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
-          desc: `Passed 10+2 examination with Physics and Mathematics as mandatory courses. For the remaining single course, select any course from Chemistry/ Computer Science/ Electronics/ Information Technology/ Biology/ Informatics Practices/Biotechnology/ Technical Vocational subject/ Agriculture/Engineering Graphics/ Business Studies/Entrepreneurship from any recognised Board/ University with minimum 50% aggregate marks.`,
+          desc: `Passed 10+2 examination with Physics and Mathematics as mandatory courses. For the remaining single course, select any course from Chemistry/ Computer Science/ Electronics/ Information Technology/ Biology/ Informatics Practices/ Biotechnology/ Technical Vocational subject/ Agriculture/ Engineering Graphics/ Business Studies/ Entrepreneurship from any recognised Board/ University with minimum 50% aggregate marks.`,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,50,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 2,50,000`,
+        // },
       ],
     },
     {
       imgUrl:
         "/landingpage/btech-2026/specialisations/B.Tech.-CSE-(UX-UI)-with-academic-support-of-ImaginXP.webp",
       title: `B.Tech. CSE (UX/UI) with academic support of ImaginXP`,
-      desc: `The B.Tech. CSE (UX/UI) is a four-year undergraduate programme of K.R. Mangalam University meticulously designed to provide educational excellence in technological design. In this comprehensive programme, students learn computing approaches and technologies to become User Interface (UI) and User Experience (UX) designers. With the academic association with ImaginXP, students learn practical knowledge from industry experts and have access to advanced tools. `,
+      // desc: `The B.Tech. CSE (UX/UI) is a four-year undergraduate programme of K.R. Mangalam University meticulously designed to provide educational excellence in technological design. In this comprehensive programme, students learn computing approaches and technologies to become User Interface (UI) and User Experience (UX) designers. With the academic association with ImaginXP, students learn practical knowledge from industry experts and have access to advanced tools. `,
+      desc: ``,
       extraInfos: [
         {
           iconUrl: "/wp-content/landingpage/common/duration.svg",
@@ -320,13 +333,13 @@ export const specialisationData: SpecialisationSection = {
         {
           iconUrl: "/wp-content/landingpage/common/eligibility.svg",
           title: "Eligibility",
-          desc: `Passed 10+2 examination with Physics and Mathematics as mandatory courses. For the remaining single course, select any course from Chemistry/ Computer Science/ Electronics/ Information Technology/ Biology/ Informatics Practices/Biotechnology/ Technical Vocational subject/ Agriculture/Engineering Graphics/ Business Studies/Entrepreneurship from any recognised Board/ University with minimum 50% aggregate marks. `,
+          desc: `Passed 10+2 examination with Physics and Mathematics as mandatory courses. For the remaining single course, select any course from Chemistry/ Computer Science/ Electronics/ Information Technology/ Biology/ Informatics Practices/ Biotechnology/ Technical Vocational subject/ Agriculture/ Engineering Graphics/ Business Studies/ Entrepreneurship from any recognised Board/ University with minimum 50% aggregate marks. `,
         },
-        {
-          iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
-          title: "Annual Fee",
-          desc: `Rs 2,50,000`,
-        },
+        // {
+        //   iconUrl: "/wp-content/landingpage/common/annual-fee.svg",
+        //   title: "Annual Fee",
+        //   desc: `Rs 2,50,000`,
+        // },
       ],
     },
   ],
@@ -342,7 +355,7 @@ export const opportunityData: OpportunitySection = {
   heading: "Learn From Industry Experts",
   highlight: "Opportunity That Transforms",
   cta: {
-    label: "Apply for B.Tech 2026-27",
+    label: "Apply for B.Tech. 2026-27",
     href: "#",
   },
 };
@@ -377,7 +390,7 @@ decision that helped me to pursue my dream.
     {
       image: "/wp-content/landingpage/btech-2026/testimonials/3.webp",
       videoUrl: "#",
-      quote: `Choosing K.R. Mangalam University for my B.Tech in CSE was one of the best decisions 
+      quote: `Choosing K.R. Mangalam University for my B.Tech. in CSE was one of the best decisions 
 I've ever made. The university's rigorous curriculum and industry-relevant training 
 have equipped me with the tools necessary to excel in the tech world. I am proud 
 to share that I am working with Debcor Engineering Pvt Ltd, earning a competitive 
@@ -462,7 +475,7 @@ export const comeToLifeData: ComeToLifeSection = {
   description: `Students at K.R. Mangalam University have access to modern computer labs equipped with the latest software and hardware, high-performance computing resources, and dedicated project spaces. This enables hands-on learning and experimentation with real-world technologies.`,
   footerText: ``,
   cta: {
-    label: "Apply for B.Tech 2026-2027 ",
+    label: "Apply for B.Tech. 2026-27 ",
     href: "#",
   },
   slides: [
@@ -510,7 +523,7 @@ export const comeToLifeData: ComeToLifeSection = {
 };
 
 export const lifeAsPhDScholarData: LifeAsPhDScholarSection = {
-  heading: "Life as a B.Tech Student at KRMU",
+  heading: "Life as a B.Tech. Student at KRMU",
   description: "",
   image: {
     src: "/landingpage/btech-2026/student-at-krmu/Collage.webp",
@@ -539,7 +552,7 @@ export const faqSectionData: FAQSectionData = {
     {
       id: "item-1",
       question: "What is the placement record of the university?",
-      answer: `The K.R. Mangalam University has a strong placement record with students placed in reputed organisations across various industries. Our dedicated placement cell provides career guidance and support to students. The highest package offered was 56.6 LPA.`,
+      answer: `KRMU has 92% placement record with students placed in reputed organisations across various industries. Our dedicated placement cell provides career guidance and support to students. The highest package offered was 56.6 LPA.`,
     },
     {
       id: "item-2",
@@ -598,7 +611,7 @@ export const applySectionData: ApplySectionData = {
   heading: `Begin Your Journey at K.R. Mangalam<br /> University Now`,
   description: "",
   cta: {
-    label: "Apply for B.Tech 2026-2027",
+    label: "Apply for B.Tech. 2026-27",
     href: "#",
   },
   highlights: [

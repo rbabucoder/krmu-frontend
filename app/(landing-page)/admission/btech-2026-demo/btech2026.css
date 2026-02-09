@@ -4,18 +4,41 @@
 @custom-variant dark (&:is(.dark *));
 
 @layer utilities {
-  .flash-border {
+  .flash-border .heroBannerForm__form {
     border: 1px solid red;
     border-radius: 15px;
   }
 
-    .npf_wgts iframe {
+  .MainSection {
+    background-image: url("/wp-content/landingpage/btech-2026/btech.webp") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (max-width: 640px) {
+    .MainSection {
+      background-image: none !important;
+      background-color: #1f0b07;
+    }
+    .MainSection .container-1 {
+      background-image: url("/wp-content/landingpage/btech-2026/btech-mob.webp") !important;
+      background-size: cover;
+      background-position: center;
+      height: 324px;
+      display: flex;
+      align-items: end;
+      justify-content: center;
+    }
+  }
+
+  .npf_wgts iframe {
     box-shadow: none !important;
   }
 
-.heroBannerForm__form {
+  .heroBannerForm__form {
     background: #fff;
-width: 100%;
+    width: 100%;
     border-radius: 10px;
     padding-top: 40px;
     width: 100%;
@@ -23,9 +46,9 @@ width: 100%;
     position: relative;
   }
 
-  .heroBannerForm-header{
+  .heroBannerForm-header {
     text-align: center;
-    font-family: "Inter", serif !important;
+    font-family: "Poppins", sans-serif !important;
   }
 
   .heroBannerForm-header h3 {
@@ -37,7 +60,7 @@ width: 100%;
     display: block;
     font-weight: 900;
     font-size: 24px;
-    line-height: 20px;
+    line-height: 1.1;
     margin-top: 5px;
   }
 
