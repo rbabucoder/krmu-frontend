@@ -30,7 +30,7 @@ export const solsFaculties: SchoolFacultiesType[] = [
       schools: [1043],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/09/Dr.-Inderpreet-Kaur-removebg-preview.png",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2023/11/13.jpg",
   },
   {
     id: 10206,
@@ -76,7 +76,7 @@ export const solsFaculties: SchoolFacultiesType[] = [
       schools: [],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/08/A6A3280-2-Photoroom.png",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2023/11/17.jpg",
   },
   {
     id: 53020,
