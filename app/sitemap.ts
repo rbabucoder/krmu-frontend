@@ -39,13 +39,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }));
 
   const schoolUrls: MetadataRoute.Sitemap = schools.map((school) => ({
-    url: `${baseUrl}/schools/${school.urlslug}`,
+    url: `${baseUrl}/${school.urlslug}`,
     changeFrequency: "monthly",
     priority: 0.7,
   }));
 
   const programmeUrls: MetadataRoute.Sitemap = programmes.map((p) => ({
-    url: `${baseUrl}/programmes/${p.programmeslug}`,
+    url: `${baseUrl}/programs/${p.programmeslug}`,
     changeFrequency: "monthly",
     priority: 0.7,
   }));

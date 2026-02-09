@@ -33,11 +33,11 @@ const PlacementRate = () => {
                                 <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9h-4v4h-2v-4H9V9h4V5h2v4h4v2z"/></svg>
                             </div>
                             <h3 className="text-2xl font-semibold">Learn by Doing, Not Just Reading</h3>
-                            <p>Our moot court isn't a once-a-semester event—it's woven into your curriculum. Draft real petitions, argue real cases, and build the confidence that sets you apart in interviews.</p>
-                            <ul className="why-list">
-                                <li>Mandatory moot court participation every semester</li>
-                                <li>Legal aid clinic serving 500+ community members yearly</li>
-                                <li>Mock trial competitions with practicing judges</li>
+                            <p className="text-[#4b5563] leading-[1.7]">Our moot court isn't a once-a-semester event—it's woven into your curriculum. Draft real petitions, argue real cases, and build the confidence that sets you apart in interviews.</p>
+                            <ul className="flex flex-col gap-2 mt-4">
+                                <li className="relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-[#002d73] before:rounded-full pl-5 text-[#374]">Mandatory moot court participation every semester</li>
+                                <li className="relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-[#002d73] before:rounded-full pl-5 text-[#374]">Legal aid clinic serving 500+ community members yearly</li>
+                                <li className="relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-[#002d73] before:rounded-full pl-5 text-[#374]">Mock trial competitions with practicing judges</li>
                             </ul>
                         </div>
                     </div>
