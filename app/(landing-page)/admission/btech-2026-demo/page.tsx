@@ -35,6 +35,7 @@ import {
 
 import { SeoData } from "./seo";
 import Specilisation2 from "../CommonComponent2026/Specilisation2";
+import PlacementRate from "../CommonComponent2026/PlacementRate";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -100,14 +101,15 @@ const page = () => {
       />
       <Counter counters={counters} />
       <ProminentRecruiter recruiters={recruiters} />
-      <WhyKRMangalam
+      <PlacementRate />
+      {/* <WhyKRMangalam
         heading={whykrm?.heading}
         subheading={whykrm?.subheading}
         desc={whykrm?.content}
         imgUrl={whykrm?.imgUrl}
         whykrmCards={whykrm?.whyKrmCards}
-      />
-      <IndustryExperts data={industryexpert} />
+      /> */}
+      {/* <IndustryExperts data={industryexpert} /> */}
       {/* <Specialisation data={specialise} /> */}
       <Specilisation2 />
       <Opportunity data={opport} />
