@@ -36,6 +36,8 @@ import {
 import { SeoData } from "./seo";
 import Specilisation2 from "../CommonComponent2026/Specilisation2";
 import PlacementRate from "../CommonComponent2026/PlacementRate";
+import FAQSection2 from "../CommonComponent2026/FAQSection2";
+import BusinessHub2 from "../CommonComponent2026/BusinessHub2";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -118,9 +120,9 @@ const page = () => {
       {/* <ScholarResearchImpact data={scholarData} /> */}
       <ComeToLife data={worldLifeData} />
       <LifeAsPhDScholar data={lifeData} />
-      <FAQ data={faqData} />
-      <BusinessHub data={businessData} formId={btechIdForm} />
-      <ApplySection data={applyData} />
+      <FAQSection2 data={faqData} />
+      <BusinessHub2 data={businessData} formId={btechIdForm} />
+      {/* <ApplySection data={applyData} /> */}
     </>
   );
 };

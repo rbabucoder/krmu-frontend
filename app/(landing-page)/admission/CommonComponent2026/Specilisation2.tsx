@@ -8,7 +8,7 @@ const Specilisation2 = () => {
           <span className="inline-block py-1 px-3 bg-[#2c7da01a] text-[#2c7da0] text-sm font-bold uppercase rounded-full mb-4">
             7 Specializations
           </span>
-          <h2 className="text-[40px] mb-4 font-bold">Choose Your Focus</h2>
+          <h2 className="text-2xl md:text-[40px] mb-4 font-bold">Choose Your Focus</h2>
           <p className="text-[#4b5563] text-lg">
             All programs are 4-year B.Tech degrees with industry-integrated
             curriculum and certifications.

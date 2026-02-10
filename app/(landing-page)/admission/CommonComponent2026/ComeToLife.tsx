@@ -15,7 +15,7 @@ const ComeToLife = ({ data }: Props) => {
         {/* Header */}
         <div>
           <h3
-            className="text-4xl text-[#013fa1] font-semibold text-center mb-5"
+            className="text-2xl md:text-[40px] font-bold text-center mb-5"
             dangerouslySetInnerHTML={{
               __html: "World-Class Facilities & Infrastructure",
             }}

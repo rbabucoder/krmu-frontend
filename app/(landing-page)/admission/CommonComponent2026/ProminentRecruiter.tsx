@@ -9,7 +9,8 @@ const ProminentRecruiter = ({ recruiters }: Props) => {
   return (
     <section className="py-5 sm:py-10 px-4 overflow-hidden">
       <div className="max-w-[1400px] mx-auto w-full">
-        <h3 className="text-4xl text-center text-[#003fa1] font-semibold">Our Prominent Recruiters</h3>
+        {/* <h3 className="text-4xl text-center text-[#003fa1] font-semibold">Our Prominent Recruiters</h3> */}
+        <h3 className="text-2xl md:text-[40px] mb-4 font-bold text-center">Our Prominent Recruiters</h3>
 
         {/* Infinite Scroll Wrapper */}
         <div className="relative w-full overflow-hidden">

@@ -13,7 +13,7 @@ const LifeAsPhDScholar = ({ data }: Props) => {
       <div className="px-4">
         {/* Header */}
         <div className="text-center mb-10 md:mb-12">
-          <h2 className="text-[#013fa1] font-semibold text-3xl md:text-4xl  mb-4">
+          <h2 className="text-2xl md:text-[40px] font-bold text-center mb-5">
             {/* {data.heading} */}
             Life @ KRMU
           </h2>

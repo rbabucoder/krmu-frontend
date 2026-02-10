@@ -31,7 +31,7 @@ const Assist = () => {
           </ul>
         </div>
         <div className="lg:w-1/2">
-          <Image src="/academics/assist.webp" width={768} height={513} alt="" />
+          <Image src="/wp-content/images/assist.png" width={768} height={513} alt="" />
         </div>
       </div>
     </section>
