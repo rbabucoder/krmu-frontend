@@ -486,4 +486,49 @@ export const solaFaculties: SchoolFacultiesType[] = [
     featured_media_url:
       "https://wp.krmangalam.edu.in/wp-content/uploads/2025/03/Dr.-Swati-Chauhan.jpg",
   },
+  {
+    id: 113702,
+    slug: "dr-jyotshna-tyagi",
+    title: {
+      rendered: "Dr. Jyotshna Tyagi",
+    },
+    featured_media: 1022,
+    acf: {
+      "staff-qualification": "Ph.D",
+      staff_designation: "Assistant Professor",
+      schools: [1009, 1152],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Dr-Jyotshna-Tyagi.jpg",
+  },
+  {
+    id: 113705,
+    slug: "dr-kalyani-seth",
+    title: {
+      rendered: "Dr. Kalyani Seth",
+    },
+    featured_media: 1022,
+    acf: {
+      "staff-qualification": "Ph.D",
+      staff_designation: "Assistant Professor",
+      schools: [1009, 1152],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Dr.-Kalyani-Seth.jpg",
+  },
+  {
+    id: 113707,
+    slug: "dr-vaidik-chakraborty",
+    title: {
+      rendered: "Dr. Vaidik Chakraborty",
+    },
+    featured_media: 1022,
+    acf: {
+      "staff-qualification": "Ph.D",
+      staff_designation: "Assistant Professor",
+      schools: [1009, 1152],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Dr.-Vaidik-Chakraborty.png",
+  },
 ];

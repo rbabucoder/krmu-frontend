@@ -14,7 +14,7 @@ export const solsFaculties: SchoolFacultiesType[] = [
       schools: [1043],
     },
     featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/11/Kaveri_Sharma.webp",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/11/kaveri.png",
   },
   {
     id: 10185,
