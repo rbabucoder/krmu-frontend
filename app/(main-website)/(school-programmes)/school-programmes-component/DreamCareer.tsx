@@ -39,8 +39,8 @@ const DreamCareer = ({
               >
                 <Image
                   src={`${STRAPI_URL}${logo?.url}`}
-                  width={88}
-                  height={92}
+                  width={200}
+                  height={140}
                   alt={logo?.alternativeText || "Career Logo"}
                 />
               </div>
