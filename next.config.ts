@@ -40,6 +40,15 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+
+  //  async rewrites() {
+  //   return [
+  //     {
+  //       source: "/KRMU_QS/:path*",
+  //       destination: "/api/r2/:path*",
+  //     },
+  //   ];
+  // },
 };
 
 export default nextConfig;

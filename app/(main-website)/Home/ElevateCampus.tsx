@@ -25,8 +25,8 @@ const ElevateCampus = ({
     <>
       <section className="xl:-mt-[70px]">
         <div className="flex flex-col xl:flex-row">
-          <div className="xl:mt-[120px] xl:mb-5 w-full xl:w-1/2 ">
-            <div className="p-5 2xl:mb-5 xl:py-[30px] xl:pr-20 xl:pl-[200px] bg-[#e5e6f3] xl:min-h-[503px] h-full">
+          <div className="xl:mt-[120px] xl:mb-5 w-full xl:w-1/3 2xl:w-1/2">
+            <div className="p-5 2xl:mb-5 xl:py-[30px] xl:pr-20 2xl:pl-[200px] bg-[#e5e6f3] xl:min-h-[503px] h-full">
               <h4 className="text-lg font-semibold mb-3">
                 {elevateCampus?.subtitle}
               </h4>
@@ -46,7 +46,7 @@ const ElevateCampus = ({
               )}
             </div>
           </div>
-          <div className="w-full xl:w-1/2">
+          <div className="w-full xl:w-2/3 2xl:w-2/3">
             <Image
               src={`${STRAPI_URL}${elevateImage1.url}`}
               alt="Elevate"
@@ -57,8 +57,8 @@ const ElevateCampus = ({
           </div>
         </div>
         <div className="flex flex-col xl:flex-row">
-          <div className="xl:mt-8 xl:mb-5 w-full xl:w-1/2">
-            <div className="2xl:mb-8 p-5 xl:py-[30px] xl:pr-20 lg:pl-[200px] bg-[#fce8e9] xl:min-h-[503px] h-full">
+          <div className="xl:mt-8 xl:mb-5 w-full  xl:w-1/2">
+            <div className="p-5 2xl:mb-5 xl:py-[30px] xl:pr-20 2xl:pl-[200px] bg-[#fce8e9] xl:min-h-[503px] h-full">
               <h4 className="text-lg font-semibold mb-3">
                 {elevateCampus2?.subtitle}
               </h4> 
@@ -80,7 +80,7 @@ const ElevateCampus = ({
               )}
             </div>
           </div>
-          <div className="w-full xl:w-1/2 xl:min-h-[575px]">
+          <div className="w-full 2xl:w-2/3 xl:min-h-[575px]">
             <Image
               src={`${STRAPI_URL}${elevateImage2?.url}`}
               alt="Elevate"
@@ -91,8 +91,8 @@ const ElevateCampus = ({
           </div>
         </div>
         <div className="flex flex-col xl:flex-row">
-          <div className="2xl:mt-8 w-full xl:w-1/2">
-            <div className="p-5 xl:mb-5  xl:py-[30px] xl:pr-20 xl:pl-[200px] bg-[#e5eff6] xl:min-h-[503px] h-full">
+          <div className="2xl:mt-8 w-full xl:w-1/3 2xl:w-1/2">
+            <div className="p-5 2xl:mb-5 xl:py-[30px] xl:pr-20 2xl:pl-[200px] bg-[#e5eff6] xl:min-h-[503px] h-full">
               <h4 className="text-lg font-semibold mb-3">
                 {elevateCampus3?.subtitle}
               </h4>
@@ -114,7 +114,7 @@ const ElevateCampus = ({
               )}
             </div>
           </div>
-          <div className="w-full xl:w-1/2 2xl:min-h-[575px] h-full">
+          <div className="w-full xl:w-2/3 2xl:w-2/3 2xl:min-h-[575px] h-full">
             <Image
               src={`${STRAPI_URL}${elevateImage3.url}`}
               alt="Elevate"
