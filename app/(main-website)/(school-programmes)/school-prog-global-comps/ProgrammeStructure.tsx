@@ -52,7 +52,15 @@ const ProgrammeStructure = ({
             </Link>
           )} */}
 
-          {enable_disable_handbook === true ? (
+          {currbtn?.buttonlink && (
+            <CommonLeadPopup
+              buttonText={currbtn?.buttontext}
+              buttonClassName={`p-2 sm:py-[15px] sm:px-[25px] inline-block font-normal rounded-[15px] text-xs sm:text-2xl w-full text-white bg-[#db2a1a] text-center mb-6`}
+              redirectUrl={currbtn?.buttonlink || "#"}
+              form_name="Programme Handbook"
+            />
+          )}
+          {/* {enable_disable_handbook === true ? (
             <CommonLeadPopup
               buttonText={currbtn?.buttontext}
               buttonClassName={`p-2 sm:py-[15px] sm:px-[25px] inline-block font-normal rounded-[15px] text-xs sm:text-2xl w-full text-white bg-[#db2a1a] text-center mb-6`}
@@ -67,7 +75,7 @@ const ProgrammeStructure = ({
             >
               {currbtn?.buttontext}
             </Link>
-          )}
+          )} */}
 
           {/* {enable_disable_handbook === true ? (
             <PopupForm
@@ -280,10 +288,10 @@ const ProgrammeStructure = ({
                                 // Check if text includes any keyword from each group
                                 const hasOpenElectiveKeyword =
                                   openElectiveKeywords.some((word) =>
-                                    text.includes(word)
+                                    text.includes(word),
                                   );
                                 const hasMinorKeyword = minorKeywords.some(
-                                  (word) => text.includes(word)
+                                  (word) => text.includes(word),
                                 );
 
                                 // Decide if popup should show
