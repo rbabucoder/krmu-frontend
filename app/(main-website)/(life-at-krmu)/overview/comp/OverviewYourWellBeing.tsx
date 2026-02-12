@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const OverviewYourWellBeing = () => {
   return (
-    <section className="py-[60px] bg-[#0060aa] px-4">
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row items-center">
+    <section className="py-section-lg bg-krmu-blue px-4">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row items-center">
         <div className="lg:w-2/5">
           <h3 className="text-5xl font-semibold text-white">
             Your <br /> Well-Being <br /> Our Priority
@@ -11,7 +11,7 @@ const OverviewYourWellBeing = () => {
           <Link
             href="/student-welfare"
             target="_blank"
-            className="text-black text-base hover:bg-[#034272] hover:text-white bg-white py-[11px] px-[23px] rounded-[4px] font-semibold inline-block mt-5"
+            className="text-black text-base hover:bg-krmu-navy-light hover:text-white bg-white py-[11px] px-[23px] rounded-badge font-semibold inline-block mt-5"
           >
             Know more about Student Welfare
           </Link>

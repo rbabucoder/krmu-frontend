@@ -1,8 +1,8 @@
 const PlacementSupport = () => {
   return (
-    <section className="pb-[60px] px-4">
-      <div className="max-w-[1664px] mx-auto w-full lg:flex gap-[60px]">
-        <div className="lg:w-1/2 p-10 md:p-[60px] bg-[#051630] rounded-[60px] text-white mb-5 lg:mb-0">
+    <section className="pb-section-lg px-4">
+      <div className="max-w-main mx-auto w-full lg:flex gap-[60px]">
+        <div className="lg:w-1/2 p-10 md:p-[60px] bg-krmu-navy rounded-[60px] text-white mb-5 lg:mb-0">
           <h4 className="text-2xl lg:leading-[3]">Placement Support by CDC</h4>
           <h4 className="my-2.5 font-semibold text-xl">
             Company Specific Placement
@@ -19,7 +19,7 @@ const PlacementSupport = () => {
             with suitable companies.
           </p>
         </div>
-        <div className="lg:w-1/2 p-10 md:p-[60px] bg-[#051630] rounded-[60px] text-white placementulli">
+        <div className="lg:w-1/2 p-10 md:p-[60px] bg-krmu-navy rounded-[60px] text-white placementulli">
           <h4 className="my-2.5 text-2xl">
             Points to remember on the day of the visit of recruiters
           </h4>

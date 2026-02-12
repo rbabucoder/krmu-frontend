@@ -26,7 +26,7 @@ const Curriculum = ({
   return (
     <>
       <section className="prog-global-padding">
-        <div className="max-w-[1320px] mx-auto w-full">
+        <div className="max-w-content mx-auto w-full">
           <div className="common-prog-container">
             <h2 className="heading">
               {heading} <span className="prog-highlight-text">{highlight}</span>

@@ -7,8 +7,8 @@ type Props = {
 
 const IndustryExperts = ({ data }: Props) => {
   return (
-    <section className="py-12 md:py-16 lg:py-20 bg-[#051630] px-4">
-      <div className="max-w-[1400px] mx-auto w-full">
+    <section className="py-12 md:py-16 lg:py-20 bg-krmu-navy px-4">
+      <div className="max-w-narrow mx-auto w-full">
         {/* Header */}
         <div className="max-w-2xl mb-10">
           <h4 className="text-3xl sm:text-4xl lg:text-5xl mb-5 text-white">

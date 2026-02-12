@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Missing = () => {
   return (
-    <div className="max-w-[1664px] mx-auto w-full libtabcontent ">
+    <div className="max-w-main mx-auto w-full libtabcontent ">
       <p>Responsibility and Replacement</p>
       <h2>Handling Lost Books</h2>
       <p>

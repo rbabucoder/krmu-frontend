@@ -1,3 +1,4 @@
+import "./student-welfare.css";
 import { getStudentWelfareData } from "@/lib/api/student-welfare";
 import AssistantDSWMessage from "./comp/AssistantDSWMessage";
 import DSWMessage from "./comp/DSWMessage";

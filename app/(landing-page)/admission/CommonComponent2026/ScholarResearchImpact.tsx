@@ -9,8 +9,8 @@ type Props = {
 
 const ScholarResearchImpact = ({ data }: Props) => {
   return (
-    <section className="py-20 px-4 bg-[#0060aa]">
-      <div className="max-w-[1400px] mx-auto w-full">
+    <section className="py-20 px-4 bg-krmu-blue">
+      <div className="max-w-narrow mx-auto w-full">
         {/* Header */}
         <div className="text-center text-white mb-16">
           <h2 className="text-5xl font-bold mb-4">{data.heading}</h2>

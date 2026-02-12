@@ -7,11 +7,11 @@ type Props = {
 
 const OverviewHearit = ({ testimonials }: Props) => {
   return (
-    <section className="pt-12 pb-44 lg:py-40 px-5 lg:px-8 bg-[#051630]">
+    <section className="pt-12 pb-44 lg:py-40 px-5 lg:px-8 bg-krmu-navy">
       <div className="lg:mx-9 2xl:pl-52 ">
         <div className="xl:flex items-center text-white">
           <div className="xl:w-[40%] xl:pr-10 text-center lg:text-left">
-            <h4 className="text-4xl lg:text-5xl xl:text-[64px] leading-[1.2] font-semibold mb-5">
+            <h4 className="text-4xl lg:text-5xl xl:text-display leading-[1.2] font-semibold mb-5">
               Hear it from the students themselves
             </h4>
             <p>

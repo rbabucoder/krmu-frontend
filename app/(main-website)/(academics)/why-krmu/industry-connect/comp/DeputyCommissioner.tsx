@@ -9,13 +9,13 @@ type Props = {
 
 const DeputyCommissioner = ({ deput }: Props) => {
   return (
-    <section className="pb-[50px] px-4">
-      <div className="max-w-[1664px] mx-auto w-full">
+    <section className="pb-section px-4">
+      <div className="max-w-main mx-auto w-full">
         <h3 className="text-2xl text-center font-bold mx-[1.92%]">
           {deput?.big_para}
         </h3>
       </div>
-      <div className="max-w-[1664px] mx-auto w-full lg:flex items-center gap-20 mt-10">
+      <div className="max-w-main mx-auto w-full lg:flex items-center gap-20 mt-10">
         <div className="lg:w-1/2">{deput?.desc}</div>
         <div className="lg:w-1/2 mt-5 lg:mt-0">
           <Image

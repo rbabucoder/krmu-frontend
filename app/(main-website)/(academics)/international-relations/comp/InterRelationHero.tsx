@@ -1,9 +1,9 @@
 const InterRelationHero = () => {
   return (
-    <section className="pt-[140px] lg:pt-56 pb-[9%] bg-[url(/inter-relation/bg.webp)] bg-cover bg-no-repeat bg-center px-4">
-      <div className="max-w-[1664px] mx-auto w-full flex items-center flex-col lg:flex-row gap-10">
+    <section className="pt-hero-top lg:pt-56 pb-[9%] bg-[url(/inter-relation/bg.webp)] bg-cover bg-no-repeat bg-center px-4">
+      <div className="max-w-main mx-auto w-full flex items-center flex-col lg:flex-row gap-10">
         <div className="w-full lg:w-1/2">
-          <h1 className="text-3xl text-center md:text-left md:text-[64px] font-semibold text-white">
+          <h1 className="text-3xl text-center md:text-left md:text-display font-semibold text-white">
             International Relations
           </h1>
         </div>

@@ -473,7 +473,7 @@ const PhdProgrammeOfferedAccordionTab = () => {
     <section className="bg-[#F8F9FA] py-10">
       <div className="max-w-[1300px] mx-auto px-4">
         {/* ---------------- SELECT PROGRAMME ---------------- */}
-        <div className="bg-white p-8 rounded-[10px] mb-10">
+        <div className="bg-white p-8 rounded-button mb-10">
           <h4 className="text-3xl font-semibold mb-6">
             Select Your Ph.D. Programme
           </h4>
@@ -529,7 +529,7 @@ const PhdProgrammeOfferedAccordionTab = () => {
 
           {/* ---------------- TAB CONTENT ---------------- */}
           <div
-            className="mt-6 bg-white rounded-[4px] p-6"
+            className="mt-6 bg-white rounded-badge p-6"
             style={{
               boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
             }}

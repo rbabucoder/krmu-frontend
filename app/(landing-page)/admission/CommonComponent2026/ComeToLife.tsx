@@ -11,11 +11,11 @@ type Props = {
 const ComeToLife = ({ data }: Props) => {
   return (
     <section className="mt-10 px-4">
-      <div className="max-w-[1400px] mx-auto w-full">
+      <div className="max-w-narrow mx-auto w-full">
         {/* Header */}
         <div>
           <h3
-            className="text-2xl md:text-[40px] font-bold text-center mb-5"
+            className="text-2xl md:text-h1 font-bold text-center mb-5"
             dangerouslySetInnerHTML={{
               __html: "World-Class Facilities & Infrastructure",
             }}
@@ -54,7 +54,7 @@ const ComeToLife = ({ data }: Props) => {
         <div className="flex justify-center my-10">
           {/* <Link
             href={data.cta.href}
-            className="flex items-center bg-[#0060aa] text-white justify-between max-w-[320px] w-full py-0.5 pl-3 pr-2 text-sm gap-2 border border-white rounded-full"
+            className="flex items-center bg-krmu-blue text-white justify-between max-w-[320px] w-full py-0.5 pl-3 pr-2 text-sm gap-2 border border-white rounded-full"
           >
             <span
               className="w-4/5 text-center"
@@ -63,14 +63,14 @@ const ComeToLife = ({ data }: Props) => {
               }}
             />
             <span className="bg-white p-3 rounded-full w-1/5">
-              <MoveUpRight className="text-[#0060aa]" size={30} />
+              <MoveUpRight className="text-krmu-blue" size={30} />
             </span>
           </Link> */}
 
           <ScrollButton
             targetId="apply-section"
             highlightClass="flash-border"
-            btnClass="flex items-center bg-[#0060aa] cursor-pointer text-white justify-between max-w-[320px] w-full py-0.5 pl-3 pr-2 text-sm gap-2 border border-white rounded-full"
+            btnClass="flex items-center bg-krmu-blue cursor-pointer text-white justify-between max-w-[320px] w-full py-0.5 pl-3 pr-2 text-sm gap-2 border border-white rounded-full"
           >
             <span
               className="w-4/5 text-center"
@@ -79,7 +79,7 @@ const ComeToLife = ({ data }: Props) => {
               }}
             />
             <span className="bg-white p-3 rounded-full w-1/5">
-              <MoveUpRight className="text-[#0060aa]" size={30} />
+              <MoveUpRight className="text-krmu-blue" size={30} />
             </span>
           </ScrollButton>
         </div>

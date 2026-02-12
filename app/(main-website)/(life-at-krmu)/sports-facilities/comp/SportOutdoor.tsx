@@ -2,10 +2,10 @@ import Image from "next/image";
 
 const SportOutdoor = () => {
   return (
-    <section className="py-[30px]">
-      <div className="max-w-[1664px] mx-auto w-full">
+    <section className="py-section-sm">
+      <div className="max-w-main mx-auto w-full">
         <div className="text-center">
-          <h3 className="text-[38px] mb-10 font-bold">
+          <h3 className="text-h2 mb-10 font-bold">
             Outdoor Sports Facilities
           </h3>
         </div>

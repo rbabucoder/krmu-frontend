@@ -3,7 +3,7 @@ import { Check } from "lucide-react";
 const InnovativeTeaching = () => {
   return (
     <section className="py-10 bg-[url(/academics/bg-gradient-1.webp)] bg-cover bg-no-repeat bg-center px-4">
-      <div className="max-w-[1664px] mx-auto w-full text-white">
+      <div className="max-w-main mx-auto w-full text-white">
         <h3 className="text-2xl md:text-[35px] font-semibold mb-5">
           Innovative Teaching and Curriculum Design
         </h3>

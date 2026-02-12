@@ -2,8 +2,8 @@ import CifSlides from "./CifSlides";
 
 export const CIFIntegral = () => {
   return (
-    <section className="py-[50px] bg-[url(/research/ciintegralbg.webp)] bg-cover bg-no-repeat bg-center px-4">
-      <div className="max-w-[1664px] mx-auto w-full text-white ciful md:flex gap-10">
+    <section className="py-section bg-[url(/research/ciintegralbg.webp)] bg-cover bg-no-repeat bg-center px-4">
+      <div className="max-w-main mx-auto w-full text-white ciful md:flex gap-10">
         <div className="md:w-3/5">
           <p>
             Central Instrumentation Facility (CIF) is an Integral part of K.R

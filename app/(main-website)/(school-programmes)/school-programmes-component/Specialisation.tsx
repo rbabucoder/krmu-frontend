@@ -14,7 +14,7 @@ const Specialisation = ({
 }: Props) => {
   return (
     <section className="prog-global-padding">
-      <div className="max-w-[1320px] mx-auto w-full px-2.5 md:px-4">
+      <div className="max-w-content mx-auto w-full px-2.5 md:px-4">
         <div className="common-prog-container">
           <h2 className="heading">
             {heading}
@@ -32,7 +32,7 @@ const Specialisation = ({
             />
           </div>
           <div className="w-full lg:w-1/2 lg:pl-[30px] mt-8 lg:mt-0 ">
-            <div className="lg:pl-[50px] flex flex-col justify-between gap-[30px] h-full relative before:hidden lg:before:block before:absolute before:content-[''] before:top-0 before:left-0 before:w-[5px] before:h-full before:bg-[#db2a1a] before:rounded-[50px]">
+            <div className="lg:pl-[50px] flex flex-col justify-between gap-section-sm h-full relative before:hidden lg:before:block before:absolute before:content-[''] before:top-0 before:left-0 before:w-[5px] before:h-full before:bg-krmu-red-dark before:rounded-[50px]">
               {specialisations &&
                 specialisations.map((specialisation) => {
                   return (

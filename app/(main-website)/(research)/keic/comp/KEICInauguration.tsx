@@ -3,11 +3,11 @@ import React from "react";
 
 const KEICInauguration = () => {
   return (
-    <section className="py-[50px] bg-[#051630] px-4">
-      <div className="max-w-[1664px] mx-auto w-full">
+    <section className="py-section bg-krmu-navy px-4">
+      <div className="max-w-main mx-auto w-full">
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-1/3 text-white">
-            <h4 className="text-[32px] font-semibold mb-2.5">
+            <h4 className="text-h3 font-semibold mb-2.5">
               Inauguration Highlight
             </h4>
             <p className="leading-[2] mb-5">

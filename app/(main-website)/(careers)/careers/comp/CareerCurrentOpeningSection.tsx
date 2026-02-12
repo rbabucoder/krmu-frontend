@@ -1,7 +1,7 @@
 const CareerCurrentOpeningSection = () => {
   return (
-    <section className="pt-[60px] pb-[15px] px-4">
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col md:flex-row">
+    <section className="pt-section-lg pb-[15px] px-4">
+      <div className="max-w-main mx-auto w-full flex flex-col md:flex-row">
         <div className="md:w-1/2">
           <h3 className="text-5xl font-semibold mb-5 md:mb-0">Current Openings</h3>
         </div>

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const WelfareImage = () => {
   return (
-    <section className="py-[50px]">
+    <section className="py-section">
       <div className="flex justify-center">
         <Image
           src="/student-welfare/welfare.webp"

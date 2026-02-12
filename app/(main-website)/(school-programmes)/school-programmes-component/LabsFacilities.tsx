@@ -27,7 +27,7 @@ const LabsFacilities = ({
   return (
     <>
       <section className="prog-global-padding">
-        <div className="max-w-[1320px] mx-auto w-full flex gap-6 items-center px-2.5 md:px-4">
+        <div className="max-w-content mx-auto w-full flex gap-6 items-center px-2.5 md:px-4">
           <div className="w-1/2 hidden md:block">
             {labimg?.url && (
               <Image
@@ -40,8 +40,8 @@ const LabsFacilities = ({
             )}
           </div>
           <div className="w-full md:w-1/2">
-            <h3 className="text-[50px] text-[#0a41a1] font-medium">
-              {heading} <span className="text-[#db2a1a]">{highlight}</span>
+            <h3 className="text-[50px] text-krmu-blue-dark font-medium">
+              {heading} <span className="text-krmu-red-dark">{highlight}</span>
             </h3>
             <div className="mb-4">
               <BlocksRenderer content={labcontent} />
@@ -59,7 +59,7 @@ const LabsFacilities = ({
               {(btn?.buttonclass || btn?.buttonlink) && (
                 <Link
                   href={btn?.buttonlink}
-                  className={`flex items-center justify-center max-w-[180px] w-full rounded-lg p-[15px] bg-[#0a41a1] text-white mt-12 ${btn?.buttonclass}`}
+                  className={`flex items-center justify-center max-w-[180px] w-full rounded-lg p-[15px] bg-krmu-blue-dark text-white mt-12 ${btn?.buttonclass}`}
                 >
                   {btn?.buttontext}
                 </Link>

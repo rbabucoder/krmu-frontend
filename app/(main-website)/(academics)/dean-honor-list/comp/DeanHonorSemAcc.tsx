@@ -15,7 +15,7 @@ const DeanHonorSemAcc = ({ deanAccData }: Props) => {
     <section>
       {deanAccData?.map((item) => (
         <div key={item.id} className="max-w-[1200px] mx-auto w-full px-4">
-          <div className="py-[50px]">
+          <div className="py-section">
             <h3 className="text-2xl md:text-4xl font-bold text-center mb-5">
               {item.title}
             </h3>

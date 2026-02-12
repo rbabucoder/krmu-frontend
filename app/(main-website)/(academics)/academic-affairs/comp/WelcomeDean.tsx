@@ -8,7 +8,7 @@ const WelcomeDean = () => {
 
   return (
     <section className="py-5 md:pt-10 md:pb-20 bg-[url(/academics/bg-1.webp)] bg-no-repeat bg-cover bg-center px-4">
-      <div className="max-w-[1664px] mx-auto w-full flex gap-5 flex-col md:flex-row">
+      <div className="max-w-main mx-auto w-full flex gap-5 flex-col md:flex-row">
         {/* LEFT CONTENT */}
         <div className="w-full md:w-9/12 text-justify md:text-left">
           <h2 className="text-2xl md:text-4xl font-bold mb-5">

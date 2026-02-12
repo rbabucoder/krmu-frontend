@@ -15,13 +15,13 @@ const PHDScholar = ({ scholarShipsData }: Props) => {
       }}
       className="overflow-hidden px-4"
     >
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row">
-        <div className="w-full lg:w-1/3 pt-[50px] lg:pr-[50px]">
-          <h2 className="text-white text-[40px]">{scholarShipsData?.title1}</h2>
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row">
+        <div className="w-full lg:w-1/3 pt-section lg:pr-[50px]">
+          <h2 className="text-white text-h1">{scholarShipsData?.title1}</h2>
           <p className="text-[#b2b2b2] mb-5">{scholarShipsData?.desc1}</p>
-          <h2 className="text-white text-[40px]">{scholarShipsData?.title2}</h2>
+          <h2 className="text-white text-h1">{scholarShipsData?.title2}</h2>
           <p className="text-[#b2b2b2] mb-5">{scholarShipsData?.desc2}</p>
-          <h2 className="text-white text-[40px]">{scholarShipsData?.title3}</h2>
+          <h2 className="text-white text-h1">{scholarShipsData?.title3}</h2>
           <p className="text-[#b2b2b2] mb-5">{scholarShipsData?.desc3}</p>
         </div>
         <div className="w-full lg:w-2/3 relative">

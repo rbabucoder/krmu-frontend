@@ -20,10 +20,10 @@ import SOASPanel from "../comp2/SOASPanel";
 const IndustryConnectAccordion = () => {
   return (
     <section className="px-4">
-      <div className="max-w-[1664px] mx-auto w-full">
+      <div className="max-w-main mx-auto w-full">
         <Accordion type="single" collapsible defaultValue="soet" className="">
           <AccordionItem value="soet">
-            <AccordionTrigger className="bg-[#051630] border border-[#e8e8e8] w-full text-white font-semibold  px-5 text-xl rounded-none hover:no-underline cursor-pointer">
+            <AccordionTrigger className="bg-krmu-navy border border-krmu-gray-200 w-full text-white font-semibold  px-5 text-xl rounded-none hover:no-underline cursor-pointer">
               School of Engineering & Technology
             </AccordionTrigger>
             <AccordionContent>
@@ -31,7 +31,7 @@ const IndustryConnectAccordion = () => {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="somc">
-            <AccordionTrigger className="bg-[#051630] border border-[#e8e8e8] w-full text-white font-semibold  px-5 text-xl rounded-none hover:no-underline cursor-pointer">
+            <AccordionTrigger className="bg-krmu-navy border border-krmu-gray-200 w-full text-white font-semibold  px-5 text-xl rounded-none hover:no-underline cursor-pointer">
               School of Management & Commerce
             </AccordionTrigger>
             <AccordionContent>
@@ -39,7 +39,7 @@ const IndustryConnectAccordion = () => {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="sols">
-            <AccordionTrigger className="bg-[#051630] border border-[#e8e8e8] w-full text-white font-semibold  px-5 text-xl rounded-none hover:no-underline cursor-pointer">
+            <AccordionTrigger className="bg-krmu-navy border border-krmu-gray-200 w-full text-white font-semibold  px-5 text-xl rounded-none hover:no-underline cursor-pointer">
               School of Legal Studies
             </AccordionTrigger>
             <AccordionContent>
@@ -47,7 +47,7 @@ const IndustryConnectAccordion = () => {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="smas">
-            <AccordionTrigger className="bg-[#051630] border border-[#e8e8e8] w-full text-white font-semibold  px-5 text-xl rounded-none hover:no-underline cursor-pointer">
+            <AccordionTrigger className="bg-krmu-navy border border-krmu-gray-200 w-full text-white font-semibold  px-5 text-xl rounded-none hover:no-underline cursor-pointer">
               School of Medical and Allied Sciences
             </AccordionTrigger>
             <AccordionContent>
@@ -55,7 +55,7 @@ const IndustryConnectAccordion = () => {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="sprs">
-            <AccordionTrigger className="bg-[#051630] border border-[#e8e8e8] w-full text-white font-semibold  px-5 text-xl rounded-none hover:no-underline cursor-pointer">
+            <AccordionTrigger className="bg-krmu-navy border border-krmu-gray-200 w-full text-white font-semibold  px-5 text-xl rounded-none hover:no-underline cursor-pointer">
               School of Physiotherapy and Rehabilitation Sciences
             </AccordionTrigger>
             <AccordionContent>
@@ -63,7 +63,7 @@ const IndustryConnectAccordion = () => {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="sola">
-            <AccordionTrigger className="bg-[#051630] border border-[#e8e8e8] w-full text-white font-semibold  px-5 text-xl rounded-none hover:no-underline cursor-pointer">
+            <AccordionTrigger className="bg-krmu-navy border border-krmu-gray-200 w-full text-white font-semibold  px-5 text-xl rounded-none hover:no-underline cursor-pointer">
               School of Liberal Arts
             </AccordionTrigger>
             <AccordionContent>
@@ -71,7 +71,7 @@ const IndustryConnectAccordion = () => {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="soad">
-            <AccordionTrigger className="bg-[#051630] border border-[#e8e8e8] w-full text-white font-semibold  px-5 text-xl rounded-none hover:no-underline cursor-pointer">
+            <AccordionTrigger className="bg-krmu-navy border border-krmu-gray-200 w-full text-white font-semibold  px-5 text-xl rounded-none hover:no-underline cursor-pointer">
               School of Architecture & Design
             </AccordionTrigger>
             <AccordionContent>
@@ -79,7 +79,7 @@ const IndustryConnectAccordion = () => {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="sbas">
-            <AccordionTrigger className="bg-[#051630] border border-[#e8e8e8] w-full text-white font-semibold  px-5 text-xl rounded-none hover:no-underline cursor-pointer">
+            <AccordionTrigger className="bg-krmu-navy border border-krmu-gray-200 w-full text-white font-semibold  px-5 text-xl rounded-none hover:no-underline cursor-pointer">
               School of Basic and Applied Sciences
             </AccordionTrigger>
             <AccordionContent>
@@ -87,7 +87,7 @@ const IndustryConnectAccordion = () => {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="sohmct">
-            <AccordionTrigger className="bg-[#051630] border border-[#e8e8e8] w-full text-white font-semibold  px-5 text-xl rounded-none hover:no-underline cursor-pointer">
+            <AccordionTrigger className="bg-krmu-navy border border-krmu-gray-200 w-full text-white font-semibold  px-5 text-xl rounded-none hover:no-underline cursor-pointer">
               School of Hotel Management & Catering Technology
             </AccordionTrigger>
             <AccordionContent>
@@ -95,7 +95,7 @@ const IndustryConnectAccordion = () => {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="sjmc">
-            <AccordionTrigger className="bg-[#051630] border border-[#e8e8e8] w-full text-white font-semibold  px-5 text-xl rounded-none hover:no-underline cursor-pointer">
+            <AccordionTrigger className="bg-krmu-navy border border-krmu-gray-200 w-full text-white font-semibold  px-5 text-xl rounded-none hover:no-underline cursor-pointer">
               School of Emerging Media & Creator Economy
             </AccordionTrigger>
             <AccordionContent>
@@ -103,7 +103,7 @@ const IndustryConnectAccordion = () => {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="soas">
-            <AccordionTrigger className="bg-[#051630] border border-[#e8e8e8] w-full text-white font-semibold  px-5 text-xl rounded-none hover:no-underline cursor-pointer">
+            <AccordionTrigger className="bg-krmu-navy border border-krmu-gray-200 w-full text-white font-semibold  px-5 text-xl rounded-none hover:no-underline cursor-pointer">
               School of Agriculture Sciences
             </AccordionTrigger>
             <AccordionContent>

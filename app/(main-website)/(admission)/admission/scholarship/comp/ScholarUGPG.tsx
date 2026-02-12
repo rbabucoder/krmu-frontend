@@ -7,8 +7,8 @@ import {
 } from "@/components/ui/accordion";
 const ScholarUGPG = () => {
   return (
-    <section className="py-[60px] px-4">
-      <div className="max-w-[1664px] mx-auto w-full">
+    <section className="py-section-lg px-4">
+      <div className="max-w-main mx-auto w-full">
         <Tabs defaultValue="undergraduate">
           <TabsList
             className="mx-auto bg-[#ebecec] rounded-full text-white h-[75px]"
@@ -18,19 +18,19 @@ const ScholarUGPG = () => {
           >
             <TabsTrigger
               value="undergraduate"
-              className="text-base sm:text-xl md:text-2xl md:leading-[3] p-4  lg:px-[100px] hover:bg-[#cb000d] hover:text-white data-[state=active]:bg-[#cb000d] data-[state=active]:text-white rounded-full cursor-pointer font-semibold"
+              className="text-base sm:text-xl md:text-2xl md:leading-[3] p-4  lg:px-[100px] hover:bg-krmu-red-dark hover:text-white data-[state=active]:bg-krmu-red-dark data-[state=active]:text-white rounded-full cursor-pointer font-semibold"
             >
               UG <br className="md:hidden" /> Programmes
             </TabsTrigger>
             <TabsTrigger
               value="postgraduate"
-              className="text-base sm:text-xl md:text-2xl md:leading-[3] p-4  lg:px-[100px] hover:bg-[#cb000d] hover:text-white data-[state=active]:bg-[#cb000d] data-[state=active]:text-white rounded-full cursor-pointer font-semibold"
+              className="text-base sm:text-xl md:text-2xl md:leading-[3] p-4  lg:px-[100px] hover:bg-krmu-red-dark hover:text-white data-[state=active]:bg-krmu-red-dark data-[state=active]:text-white rounded-full cursor-pointer font-semibold"
             >
               PG <br className="md:hidden" /> Programmes
             </TabsTrigger>
           </TabsList>
           <TabsContent value="undergraduate">
-            <h3 className="text-2xl sm:text-5xl lg:text-[64px] font-medium text-center mt-[50px] mb-[30px]">
+            <h3 className="text-2xl sm:text-5xl lg:text-display font-medium text-center mt-[50px] mb-[30px]">
               Under Graduate (UG) Programme
             </h3>
 
@@ -42,7 +42,7 @@ const ScholarUGPG = () => {
             >
               <AccordionItem value="item-1" className="mb-[30px]">
                 <AccordionTrigger
-                  className="rounded-[12px] data-[state=open]:rounded-b-none py-2.5 px-[30px] text-base md:text-2xl md:leading-[1.83] text-white hover:no-underline cursor-pointer ugpgacctab"
+                  className="rounded-[12px] data-[state=open]:rounded-b-none py-2.5 px-container-px text-base md:text-2xl md:leading-[1.83] text-white hover:no-underline cursor-pointer ugpgacctab"
                   style={{
                     background: `linear-gradient(18deg,#0060aa 14.28%,#051630 118.99%)`,
                   }}
@@ -50,7 +50,7 @@ const ScholarUGPG = () => {
                   Part A - On The Basis of Marks Scored in Class XII Examination
                 </AccordionTrigger>
                 <AccordionContent
-                  className="pt-[30px] px-5 pb-[15px] ugpgtable"
+                  className="pt-section-sm px-5 pb-[15px] ugpgtable"
                   style={{
                     background: `linear-gradient(180deg,rgba(255,255,255,.09) 0%,rgba(255,255,255,.05) 100%)`,
                     boxShadow: `0px 0px 20px 0px rgba(0,0,0,.25)`,
@@ -106,7 +106,7 @@ const ScholarUGPG = () => {
 
               <AccordionItem value="item-2" className="mb-[30px]">
                 <AccordionTrigger
-                  className="rounded-[12px] data-[state=open]:rounded-b-none py-2.5 px-[30px] text-base md:text-2xl md:leading-[1.83] text-white hover:no-underline cursor-pointer ugpgacctab"
+                  className="rounded-[12px] data-[state=open]:rounded-b-none py-2.5 px-container-px text-base md:text-2xl md:leading-[1.83] text-white hover:no-underline cursor-pointer ugpgacctab"
                   style={{
                     background: `linear-gradient(18deg,#0060aa 14.28%,#051630 118.99%)`,
                   }}
@@ -114,7 +114,7 @@ const ScholarUGPG = () => {
                   Part B - On The Basis of Other Category
                 </AccordionTrigger>
                 <AccordionContent
-                  className="pt-[30px] px-5 pb-[15px] ugpgtable"
+                  className="pt-section-sm px-5 pb-[15px] ugpgtable"
                   style={{
                     background: `linear-gradient(180deg,rgba(255,255,255,.09) 0%,rgba(255,255,255,.05) 100%)`,
                     boxShadow: `0px 0px 20px 0px rgba(0,0,0,.25)`,
@@ -373,7 +373,7 @@ const ScholarUGPG = () => {
 
               <AccordionItem value="item-3">
                 <AccordionTrigger
-                  className="rounded-[12px] data-[state=open]:rounded-b-none py-2.5 px-[30px] text-base md:text-2xl md:leading-[1.83] text-white hover:no-underline cursor-pointer ugpgacctab"
+                  className="rounded-[12px] data-[state=open]:rounded-b-none py-2.5 px-container-px text-base md:text-2xl md:leading-[1.83] text-white hover:no-underline cursor-pointer ugpgacctab"
                   style={{
                     background: `linear-gradient(18deg,#0060aa 14.28%,#051630 118.99%)`,
                   }}
@@ -381,7 +381,7 @@ const ScholarUGPG = () => {
                   Part C - On the Basis of Entrance Examination
                 </AccordionTrigger>
                 <AccordionContent
-                  className="pt-[30px] px-5 pb-[15px] ugpgtable"
+                  className="pt-section-sm px-5 pb-[15px] ugpgtable"
                   style={{
                     background: `linear-gradient(180deg,rgba(255,255,255,.09) 0%,rgba(255,255,255,.05) 100%)`,
                     boxShadow: `0px 0px 20px 0px rgba(0,0,0,.25)`,
@@ -580,7 +580,7 @@ const ScholarUGPG = () => {
             </Accordion>
           </TabsContent>
           <TabsContent value="postgraduate">
-            <h3 className="text-2xl sm:text-5xl lg:text-[64px] font-medium text-center mt-[50px] mb-[30px]">
+            <h3 className="text-2xl sm:text-5xl lg:text-display font-medium text-center mt-[50px] mb-[30px]">
               Post Graduate (PG) Programmes
             </h3>
             <Accordion
@@ -591,7 +591,7 @@ const ScholarUGPG = () => {
             >
               <AccordionItem value="item-1" className="mb-[30px]">
                 <AccordionTrigger
-                  className="rounded-[12px] data-[state=open]:rounded-b-none py-2.5 px-[30px] text-base md:text-2xl md:leading-[1.83] text-white hover:no-underline cursor-pointer ugpgacctab"
+                  className="rounded-[12px] data-[state=open]:rounded-b-none py-2.5 px-container-px text-base md:text-2xl md:leading-[1.83] text-white hover:no-underline cursor-pointer ugpgacctab"
                   style={{
                     background: `linear-gradient(18deg,#0060aa 14.28%,#051630 118.99%)`,
                   }}
@@ -599,7 +599,7 @@ const ScholarUGPG = () => {
                   PG (MBA) on basis of Graduations Score
                 </AccordionTrigger>
                 <AccordionContent
-                  className="pt-[30px] px-5 pb-[15px] ugpgtable"
+                  className="pt-section-sm px-5 pb-[15px] ugpgtable"
                   style={{
                     background: `linear-gradient(180deg,rgba(255,255,255,.09) 0%,rgba(255,255,255,.05) 100%)`,
                     boxShadow: `0px 0px 20px 0px rgba(0,0,0,.25)`,
@@ -657,7 +657,7 @@ const ScholarUGPG = () => {
 
               <AccordionItem value="item-2" className="mb-[30px]">
                 <AccordionTrigger
-                  className="rounded-[12px] data-[state=open]:rounded-b-none py-2.5 px-[30px] text-base md:text-2xl md:leading-[1.83] text-white hover:no-underline cursor-pointer ugpgacctab"
+                  className="rounded-[12px] data-[state=open]:rounded-b-none py-2.5 px-container-px text-base md:text-2xl md:leading-[1.83] text-white hover:no-underline cursor-pointer ugpgacctab"
                   style={{
                     background: `linear-gradient(18deg,#0060aa 14.28%,#051630 118.99%)`,
                   }}
@@ -665,7 +665,7 @@ const ScholarUGPG = () => {
                   PG (Non-MBA) on basis of Graduations Score
                 </AccordionTrigger>
                 <AccordionContent
-                  className="pt-[30px] px-5 pb-[15px] ugpgtable"
+                  className="pt-section-sm px-5 pb-[15px] ugpgtable"
                   style={{
                     background: `linear-gradient(180deg,rgba(255,255,255,.09) 0%,rgba(255,255,255,.05) 100%)`,
                     boxShadow: `0px 0px 20px 0px rgba(0,0,0,.25)`,
@@ -712,7 +712,7 @@ const ScholarUGPG = () => {
               </AccordionItem>
               <AccordionItem value="item-3" className="mb-[30px]">
                 <AccordionTrigger
-                  className="rounded-[12px] data-[state=open]:rounded-b-none py-2.5 px-[30px] text-base md:text-2xl md:leading-[1.83] text-white hover:no-underline cursor-pointer ugpgacctab"
+                  className="rounded-[12px] data-[state=open]:rounded-b-none py-2.5 px-container-px text-base md:text-2xl md:leading-[1.83] text-white hover:no-underline cursor-pointer ugpgacctab"
                   style={{
                     background: `linear-gradient(18deg,#0060aa 14.28%,#051630 118.99%)`,
                   }}
@@ -720,7 +720,7 @@ const ScholarUGPG = () => {
                   On the basis of Entrance Examination
                 </AccordionTrigger>
                 <AccordionContent
-                  className="pt-[30px] px-5 pb-[15px] ugpgtable"
+                  className="pt-section-sm px-5 pb-[15px] ugpgtable"
                   style={{
                     background: `linear-gradient(180deg,rgba(255,255,255,.09) 0%,rgba(255,255,255,.05) 100%)`,
                     boxShadow: `0px 0px 20px 0px rgba(0,0,0,.25)`,
@@ -809,7 +809,7 @@ const ScholarUGPG = () => {
 
               <AccordionItem value="item-4" className="mb-[30px]">
                 <AccordionTrigger
-                  className="rounded-[12px] data-[state=open]:rounded-b-none py-2.5 px-[30px] text-base md:text-2xl md:leading-[1.83] text-white hover:no-underline cursor-pointer ugpgacctab"
+                  className="rounded-[12px] data-[state=open]:rounded-b-none py-2.5 px-container-px text-base md:text-2xl md:leading-[1.83] text-white hover:no-underline cursor-pointer ugpgacctab"
                   style={{
                     background: `linear-gradient(18deg,#0060aa 14.28%,#051630 118.99%)`,
                   }}
@@ -817,7 +817,7 @@ const ScholarUGPG = () => {
                   Alumni Scholarships
                 </AccordionTrigger>
                 <AccordionContent
-                  className="pt-[30px] px-5 pb-[15px] ugpgtable"
+                  className="pt-section-sm px-5 pb-[15px] ugpgtable"
                   style={{
                     background: `linear-gradient(180deg,rgba(255,255,255,.09) 0%,rgba(255,255,255,.05) 100%)`,
                     boxShadow: `0px 0px 20px 0px rgba(0,0,0,.25)`,

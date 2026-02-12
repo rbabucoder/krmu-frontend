@@ -17,10 +17,10 @@ const SchoolInfoStatistics = ({
 }: Props) => {
   return (
     <section className="bg-[#fefefe00] px-4 pb-10">
-      <div className="max-w-[1664px] mx-auto w-full flex items-center flex-col xl:flex-row">
+      <div className="max-w-main mx-auto w-full flex items-center flex-col xl:flex-row">
         <div className="w-full xl:w-3/5 text-black">
           <p className="text-2xl font-medium mb-5">{subheading}</p>
-          <h3 className="text-4xl md:text-5xl lg:text-[64px] font-semibold leading-[1.23] mb-5">
+          <h3 className="text-4xl md:text-5xl lg:text-display font-semibold leading-[1.23] mb-5">
             {heading}
           </h3>
           {/* <BlocksRenderer content={desc} /> */}

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const CulinaryDelight = () => {
   return (
-    <section className="bg-[#051630]">
+    <section className="bg-krmu-navy">
       <div className="flex flex-col-reverse lg:flex-row items-center gap-5 lg:gap-[60px]">
         <div className="lg:w-1/2 text-white lg:pl-[100px] p-4 lg:py-0 lg:pr-0">
           <h3 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-[1.3] mb-5">

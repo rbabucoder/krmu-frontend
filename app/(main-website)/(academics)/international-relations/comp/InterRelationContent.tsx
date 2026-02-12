@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const InterRelationContent = () => {
   return (
-    <section className="py-[50px] px-4">
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row">
+    <section className="py-section px-4">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row">
         <div className="w-full lg:w-1/2">
           <p>
             The International Relations (IR) at K.R. Mangalam University serves

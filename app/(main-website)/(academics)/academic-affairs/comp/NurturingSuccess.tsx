@@ -3,7 +3,7 @@ import { Check } from "lucide-react";
 const NurturingSuccess = () => {
   return (
     <section className="py-10 bg-[url(/academics/bg-gradient-7.webp)] bg-cover bg-center px-4">
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row">
         <div className="text-white lg:w-4/5">
           <h3 className="text-2xl md:text-[35px] font-semibold mb-5 leading-[1]">
             Nurturing Success Beyond the Classroom

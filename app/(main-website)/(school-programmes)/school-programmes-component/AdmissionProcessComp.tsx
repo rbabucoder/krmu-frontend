@@ -24,14 +24,14 @@ const AdmissionProcessComp = ({
   admisbtn,
 }: Props) => {
   return (
-    <section className="prog-global-padding bg-[#f9f9f9]">
+    <section className="prog-global-padding bg-krmu-gray-50">
       <div className="common-prog-container">
         <h2 className="heading">
           {heading} <span className="prog-highlight-text">{highlight}</span>
         </h2>
         <p className="sub-heading">{desc}</p>
       </div>
-      <div className="max-w-[1320px] mx-auto w-full mt-2.5 hidden lg:block px-4">
+      <div className="max-w-content mx-auto w-full mt-2.5 hidden lg:block px-4">
         <Image
           src={`${STRAPI_URL}${deskimg?.url}`}
           width={1296}
@@ -119,7 +119,7 @@ const AdmissionProcessComp = ({
                     key={card?.id}
                     className={`w-full text-center relative  mob_admis_proc_col flex flex-col justify-end h-[150px] md:h-[180px]`}
                   >
-                    <h4 className="text-lg text-[#e61f21] z-10 break-all">
+                    <h4 className="text-lg text-krmu-red z-10 break-all">
                       {card?.title}
                     </h4>
                     <p className="z-10 leading-[1] text-sm text-[#0d6efd] break-all">
@@ -138,7 +138,7 @@ const AdmissionProcessComp = ({
                     key={card?.id}
                     className={`w-full text-center relative  mob_admis_proc_col flex flex-col justify-end h-[150px] md:h-[180px]`}
                   >
-                    <h4 className="text-lg text-[#e61f21] z-10 break-all">
+                    <h4 className="text-lg text-krmu-red z-10 break-all">
                       {card?.title}
                     </h4>
                     <p className="z-10 leading-[1] text-sm text-[#0d6efd] break-all">
@@ -154,7 +154,7 @@ const AdmissionProcessComp = ({
         {/* {(admisbtn?.buttonclass || admisbtn?.buttonlink) && (
           <Link
             href={admisbtn?.buttonlink}
-            className={`${admisbtn?.buttonclass} text-white bg-[#db2a1a] p-[15px] flex items-center justify-around max-w-3xs w-full rounded-lg font-semibold mt-10`}
+            className={`${admisbtn?.buttonclass} text-white bg-krmu-red-dark p-[15px] flex items-center justify-around max-w-3xs w-full rounded-lg font-semibold mt-10`}
           >
             <span>{admisbtn?.buttontext}</span> <ArrowRight />
           </Link>
@@ -163,7 +163,7 @@ const AdmissionProcessComp = ({
           // href={admisbtn.buttonlink}
           className={`${
             admisbtn.buttonclass || ""
-          } text-white bg-[#db2a1a] p-[15px] flex items-center justify-around max-w-3xs w-full rounded-lg font-semibold mt-10 cursor-pointer`}
+          } text-white bg-krmu-red-dark p-[15px] flex items-center justify-around max-w-3xs w-full rounded-lg font-semibold mt-10 cursor-pointer`}
         >
           <span>{admisbtn.buttontext}</span> <ArrowRight />
         </button>
@@ -172,7 +172,7 @@ const AdmissionProcessComp = ({
             {admisbtn.buttonclass === "progPopup" ? (
               <Popup
                 buttonText={admisbtn.buttontext || "Apply Now"}
-                buttonClass={`${admisbtn?.buttonclass} text-white bg-[#db2a1a] p-[15px] flex items-center justify-around w-3xs flex text-center rounded-lg font-semibold mt-10`}
+                buttonClass={`${admisbtn?.buttonclass} text-white bg-krmu-red-dark p-[15px] flex items-center justify-around w-3xs flex text-center rounded-lg font-semibold mt-10`}
                 buttonIcon={<ArrowRight />}
               >
                 <p>This is the content inside the popup.</p>
@@ -182,7 +182,7 @@ const AdmissionProcessComp = ({
                 href={admisbtn.buttonlink}
                 className={`${
                   admisbtn.buttonclass || ""
-                } text-white bg-[#db2a1a] p-[15px] flex items-center justify-around max-w-3xs w-full rounded-lg font-semibold mt-10`}
+                } text-white bg-krmu-red-dark p-[15px] flex items-center justify-around max-w-3xs w-full rounded-lg font-semibold mt-10`}
               >
                 <span>{admisbtn.buttontext}</span> <ArrowRight />
               </Link>

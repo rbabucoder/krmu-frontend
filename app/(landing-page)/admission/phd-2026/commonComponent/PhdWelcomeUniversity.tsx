@@ -5,7 +5,7 @@ const PhdWelcomeUniversity = () => {
     <section className="py-10 bg-[#F8F9FA] px-4">
       <div className="max-w-[1300px] mx-auto w-full flex flex-col xl:flex-row gap-10">
         <div className="w-full xl:w-1/3">
-          <h3 className="text-[32px] font-semibold mb-5">
+          <h3 className="text-h3 font-semibold mb-5">
            Welcome to K.R. Mangalam University
           </h3>
           <div className="custom-border"></div>

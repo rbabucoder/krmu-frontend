@@ -70,7 +70,7 @@ export default function DisclosureBrowser() {
   };
 
   return (
-    <div className="pt-[140px] max-w-5xl mx-auto p-4">
+    <div className="pt-hero-top max-w-5xl mx-auto p-4">
       {/* HEADER */}
       <section className="w-full bg-white py-10 px-4">
         <div className="max-w-6xl mx-auto">

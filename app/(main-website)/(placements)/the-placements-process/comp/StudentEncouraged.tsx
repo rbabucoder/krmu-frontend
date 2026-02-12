@@ -3,8 +3,8 @@ import Image from "next/image";
 const StudentEncouraged = () => {
   return (
     <>
-      <section className="py-[60px] pb-10 px-[30px]">
-        <div className="max-w-[1664px] mx-auto w-full flex">
+      <section className="py-section-lg pb-10 px-container-px">
+        <div className="max-w-main mx-auto w-full flex">
           <div className="lg:w-1/2">
             <p className="text-lg">
               Students are encouraged to research the company profile online
@@ -29,7 +29,7 @@ const StudentEncouraged = () => {
           </div>
           <div className="lg:w-1/2"></div>
         </div>
-        <div className="max-w-[1664px] mx-auto w-full -mt-[15%] hidden lg:block">
+        <div className="max-w-main mx-auto w-full -mt-[15%] hidden lg:block">
           <Image
             src="/programmes/placementprocessbannermidpic.webp"
             width={1554}

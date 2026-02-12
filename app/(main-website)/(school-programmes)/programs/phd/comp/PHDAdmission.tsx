@@ -11,13 +11,13 @@ type Props = {
 const PHDAdmission = ({ title1, title2, desc1, desc2 }: Props) => {
   return (
     <section
-      className="py-[50px] px-4"
+      className="py-section px-4"
       style={{
         background:
           "linear-gradient(245.65deg,#0161ab -18.61%,#061731 46.18%,#ab192d 112.29%)",
       }}
     >
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row items-center">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row items-center">
         <div className="lg:w-1/2 md:px-[100px] text-white">
           <div className="text-5xl text-white font-semibold mb-10">
             <BlocksRenderer content={title1} />

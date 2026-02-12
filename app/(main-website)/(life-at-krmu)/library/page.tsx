@@ -100,9 +100,9 @@ const Page = () => {
 
   return (
     <section className="px-4">
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col md:flex-row">
+      <div className="max-w-main mx-auto w-full flex flex-col md:flex-row">
         {/* SIDEBAR */}
-        <div className="md:w-1/4 md:mx-8 pt-[116px] px-4 pb-[60px] bg-[url(/library/gradient.webp)] bg-cover bg-no-repeat bg-center">
+        <div className="md:w-1/4 md:mx-8 pt-[116px] px-4 pb-section-lg bg-[url(/library/gradient.webp)] bg-cover bg-no-repeat bg-center">
           <div className="hover:border-b border-white ">
             {/* DROPDOWN HEADER */}
             <div

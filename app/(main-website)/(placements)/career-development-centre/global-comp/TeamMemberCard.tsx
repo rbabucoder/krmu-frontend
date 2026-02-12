@@ -27,7 +27,7 @@ const TeamMemberCard = ({ data }: Props) => {
           />
         )}
       </div>
-      <CardContent className="bg-[#051630] px-2.5 pt-2.5 pb-4 text-white flex items-center justify-center flex-col f-full">
+      <CardContent className="bg-krmu-navy px-2.5 pt-2.5 pb-4 text-white flex items-center justify-center flex-col f-full">
         <CardTitle className="text-xl leading-[1.6] font-semibold">
           {data?.cdc_name}
         </CardTitle>

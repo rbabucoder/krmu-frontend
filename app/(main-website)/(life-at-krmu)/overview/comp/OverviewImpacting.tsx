@@ -1,8 +1,8 @@
 const OverviewImpacting = () => {
   return (
-    <div className="bg-[url(/gradient-3.webp)] bg-cover bg-center bg-no-repeat flex-col lg:flex-row pt-[60px] px-[30px] flex gap-10 items-center">
+    <div className="bg-[url(/gradient-3.webp)] bg-cover bg-center bg-no-repeat flex-col lg:flex-row pt-section-lg px-container-px flex gap-10 items-center">
       <div className="lg:lg:w-1/3 text-white">
-        <h4 className="text-3xl md:text-[32px]">Making a Difference Together</h4>
+        <h4 className="text-3xl md:text-h3">Making a Difference Together</h4>
         <h3 className="text-3xl md:text-5xl 2xl:text-8xl font-bold my-2.5">Impacting Lives</h3>
         <p>
           <strong>
@@ -30,7 +30,7 @@ const OverviewImpacting = () => {
               background: `linear-gradient(180deg, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.12) 100%)`,
             }}
           >
-            <h5 className="text-[26px] font-semibold leading-[1.12]">
+            <h5 className="text-h4 font-semibold leading-[1.12]">
               Community Engagement and Understanding
             </h5>
             <ul>
@@ -50,7 +50,7 @@ const OverviewImpacting = () => {
               background: `linear-gradient(180deg, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.12) 100%)`,
             }}
           >
-            <h5 className="text-[26px] font-semibold leading-[1.12]">
+            <h5 className="text-h4 font-semibold leading-[1.12]">
               Personal Growth and Responsibility
             </h5>
             <ul>
@@ -71,7 +71,7 @@ const OverviewImpacting = () => {
               background: `linear-gradient(180deg, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.12) 100%)`,
             }}
           >
-            <h5 className="text-[26px] font-semibold leading-[1.12]">
+            <h5 className="text-h4 font-semibold leading-[1.12]">
               Crisis Management and Preparedness
             </h5>
             <ul>

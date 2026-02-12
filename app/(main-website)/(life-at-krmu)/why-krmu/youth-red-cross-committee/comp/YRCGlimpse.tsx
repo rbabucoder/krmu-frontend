@@ -3,8 +3,8 @@ import Image from "next/image";
 const YRCGlimpse = () => {
   return (
     <>
-      <section className="pb-[50px] px-4">
-        <div className="max-w-[1664px] mx-auto w-full">
+      <section className="pb-section px-4">
+        <div className="max-w-main mx-auto w-full">
           <h4 className="text-2xl font-semibold">Glimpses of YRC @ KRMU</h4>
           <div className="mb-5">
             <h5 className="font-semibold my-3">Blood donation camps.</h5>

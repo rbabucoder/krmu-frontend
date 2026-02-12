@@ -3,10 +3,10 @@ import { BlogCardSkeleton } from "@/app/(main-website)/components/Skeleton/BlogC
 export default function Loading() {
   return (
     <>
-      {/* <Skeleton className="w-full pt-[140px] pb-[10%] md:py-[14%]" /> */}
+      {/* <Skeleton className="w-full pt-hero-top pb-[10%] md:py-[14%]" /> */}
 
-      <section className="py-[60px]">
-        <div className="max-w-[1664px] mx-auto w-full">
+      <section className="py-section-lg">
+        <div className="max-w-main mx-auto w-full">
           {/* <div className="w-1/5">
             <Skeleton className="w-full min-h-80" />
           </div> */}

@@ -1,6 +1,6 @@
 const KEICMembers = () => {
   return (
-    <section className="py-[50px] px-4">
+    <section className="py-section px-4">
       <div className="max-w-[768px] mx-auto w-full">
         <h4 className="text-4xl font-semibold mb-10 text-center">KEIC Members</h4>
         <div className="overflow-x-auto w-full keic-member-table scroll-style-1">

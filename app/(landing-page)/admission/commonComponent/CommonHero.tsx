@@ -3,7 +3,7 @@ const CommonHero = () => {
     <section className="pt-[130px] pb-[20px] mt-[15px] bg-[url(/landingpage/mba-2025/mbabg.png)] bg-cover bg-no-repeat">
       <div className="max-w-[1240px] mx-auto w-full flex">
         <div className="w-7/12">
-          <h1 className="text-[38px] leading-[58px] font-medium">
+          <h1 className="text-h2 leading-[58px] font-medium">
             Learn from the <strong> Top 1% </strong> of <br /> industry experts
             from <br />
             <strong>

@@ -3,11 +3,11 @@ import Link from "next/link";
 
 const Admission2Process = () => {
   return (
-    <section className="pb-[200px] lg:py-[50px] bg-[#f9f9f9] px-4">
-      <div className="max-w-[1320px] mx-auto w-full hidden lg:block">
-        <h3 className="text-[40px] text-[#0a41a1] font-semibold text-center mb-5">
+    <section className="pb-[200px] lg:py-section bg-krmu-gray-50 px-4">
+      <div className="max-w-content mx-auto w-full hidden lg:block">
+        <h3 className="text-h1 text-krmu-blue-dark font-semibold text-center mb-5">
           Admission{" "}
-          <span className="text-[#e61f21] font-semibold">Process</span>
+          <span className="text-krmu-red font-semibold">Process</span>
         </h3>
         <p className="text-center text-[#544d5d] font-semibold">
           Step by step Guide
@@ -52,7 +52,7 @@ const Admission2Process = () => {
           <div
             className={`w-full text-center relative  mob_admis_proc_col flex flex-col justify-end h-[150px] md:h-[180px]`}
           >
-            <h4 className="text-lg text-[#e61f21] z-10 break-all font-semibold">
+            <h4 className="text-lg text-krmu-red z-10 break-all font-semibold">
               Registration
             </h4>
             <p className="z-10 leading-[1] text-sm">
@@ -63,7 +63,7 @@ const Admission2Process = () => {
             className={`w-full text-center relative  mob_admis_proc_col flex flex-col justify-end h-[150px] md:h-[180px]`}
           >
             <div className="z-10 relative -mt-[50px]">
-              <h4 className="text-lg text-[#e61f21] z-10 font-semibold">
+              <h4 className="text-lg text-krmu-red z-10 font-semibold">
                 Application Form
               </h4>
               <p className="z-10 leading-[1] text-sm">
@@ -75,7 +75,7 @@ const Admission2Process = () => {
             className={`w-full text-center relative  mob_admis_proc_col flex flex-col justify-end h-[150px] md:h-[180px] mt-10`}
           >
             <div className="z-10 relative -mb-[50px]">
-              <h4 className="text-lg text-[#e61f21] z-10 font-semibold">
+              <h4 className="text-lg text-krmu-red z-10 font-semibold">
                 Admission Offer
               </h4>
               <p className="z-10 leading-[1] text-sm">
@@ -87,7 +87,7 @@ const Admission2Process = () => {
             className={`w-full text-center relative  mob_admis_proc_col flex flex-col justify-end h-[150px] md:h-[180px] mt-10`}
           >
             <div className="z-10 relative -mb-[50px]">
-              <h4 className="text-lg text-[#e61f21] z-10 font-semibold">
+              <h4 className="text-lg text-krmu-red z-10 font-semibold">
                 Entrance Exam
               </h4>
               <p className="z-10 leading-[1] text-sm">

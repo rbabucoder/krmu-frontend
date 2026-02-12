@@ -11,9 +11,9 @@ type Props = {
 const SchoolStudentAchievements = ({ title, btn, schoolCat }: Props) => {
   return (
     <section className="py-5 md:py-10 px-4">
-      <div className="max-w-[1664px] mx-auto w-full">
+      <div className="max-w-main mx-auto w-full">
         <div className="text-center mb-10">
-          <h3 className="text-2xl sm:text-5xl xl:text-[80px] font-medium">
+          <h3 className="text-2xl sm:text-5xl xl:text-hero font-medium">
             {title}
           </h3>
         </div>
@@ -24,7 +24,7 @@ const SchoolStudentAchievements = ({ title, btn, schoolCat }: Props) => {
           {(btn?.buttonclass || btn?.buttonlink) && (
             <Link
               href={btn?.buttonlink}
-              className={`py-3.5 px-8 bg-[#cb000d] font-bold rounded-sm inline-block text-white ${btn?.buttonclass}`}
+              className={`py-3.5 px-8 bg-krmu-red-dark font-bold rounded-sm inline-block text-white ${btn?.buttonclass}`}
               target="_blank"
             >
               {btn?.buttontext}

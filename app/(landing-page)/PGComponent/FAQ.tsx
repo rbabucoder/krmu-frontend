@@ -15,7 +15,7 @@ type Props = {
 const FAQSection = ({ data }: Props) => {
   return (
     <section className="py-20 px-4 bg-white">
-      <div className="max-w-[1400px] mx-auto w-full flex flex-col lg:flex-row gap-10">
+      <div className="max-w-narrow mx-auto w-full flex flex-col lg:flex-row gap-10">
         {/* Header */}
         <div className="w-full lg:w-2/5">
           <div className="mb-12">

@@ -38,7 +38,7 @@ const TeachYouSlide = () => {
 
   return (
     <section className="w-full py-5 md:py-16">
-      <div className="max-w-[1400px] mx-auto">
+      <div className="max-w-narrow mx-auto">
         <Carousel
           // plugins={[plugin.current]}
           opts={{

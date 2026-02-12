@@ -1,7 +1,7 @@
 const IPRGoal = () => {
   return (
-    <section className="py-[50px] bg-[#2c172f] px-4">
-      <div className="max-w-[1600px] mx-auto w-full text-white">
+    <section className="py-section bg-[#2c172f] px-4">
+      <div className="max-w-wide mx-auto w-full text-white">
         <h4 className="text-3xl md:text-5xl font-semibold mb-10">Goals</h4>
         <p className="mb-5">
           The main goals of IPR, Legal & Ethical Matters Cell :

@@ -41,14 +41,14 @@ const HeroBanner = ({ title, highlightitle, heroSection, formId }: Props) => {
   // }, [formId, heroSection?.herobtn?.buttontext]);
 
   return (
-    <section className="pt-24 sm:pt-40 sm:pb-[50px] px-2.5 sm:px-4">
+    <section className="pt-24 sm:pt-40 sm:pb-section px-2.5 sm:px-4">
       <div className="school-programme-max-width md:flex items-center justify-between">
         <div className="w-full md:w-7/12">
           <h4 className="text-xs sm:text-2xl font-medium leading-[1.2] mb-2">
             {heroSection?.subtitle}
           </h4>
-          <h1 className="text-4xl sm:text-[50px] font-semibold text-[#0060aa] leading-[1.2] mb-2">
-            {title} <span className="text-[#e61f21]">{highlightitle}</span>
+          <h1 className="text-4xl sm:text-[50px] font-semibold text-krmu-blue leading-[1.2] mb-2">
+            {title} <span className="text-krmu-red">{highlightitle}</span>
           </h1>
           <p className="text-xs sm:text-[15px] font-medium mt-6 mb-4">
             {heroSection?.description}
@@ -120,14 +120,14 @@ export default HeroBanner;
 // const HeroBanner = ({ title, highlightitle, heroSection, formId }: Props) => {
 //   console.log("formId", formId);
 //   return (
-//     <section className="pt-24 sm:pt-40 sm:pb-[50px] px-2.5 sm:px-4">
+//     <section className="pt-24 sm:pt-40 sm:pb-section px-2.5 sm:px-4">
 //       <div className="school-programme-max-width md:flex items-center justify-between">
 //         <div className="w-full md:w-7/12">
 //           <h4 className="text-xs sm:text-2xl font-medium leading-[1.2] mb-2">
 //             {heroSection?.subtitle}
 //           </h4>
-//           <h1 className="text-4xl sm:text-[50px] font-semibold text-[#0060aa] leading-[1.2] mb-2">
-//             {title} <span className="text-[#e61f21]">{highlightitle}</span>
+//           <h1 className="text-4xl sm:text-[50px] font-semibold text-krmu-blue leading-[1.2] mb-2">
+//             {title} <span className="text-krmu-red">{highlightitle}</span>
 //           </h1>
 //           <p className="text-xs sm:text-[15px] font-medium mt-6 mb-4">
 //             {heroSection?.description}

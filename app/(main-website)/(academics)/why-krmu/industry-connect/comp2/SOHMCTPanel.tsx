@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const SOHMCTPanel = () => {
   return (
-    <section className="py-[50px] px-4">
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10 mb-5 md:mb-10">
+    <section className="py-section px-4">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row gap-10 mb-5 md:mb-10">
         <div className="w-full lg:w-1/2">
           <Image
             src="https://www.krmangalam.edu.in/wp-content/uploads/2024/05/Workshop-on-Japanese-Cuisine-1-768x1024.webp"
@@ -14,7 +14,7 @@ const SOHMCTPanel = () => {
           />
         </div>
         <div className="w-full lg:w-1/2">
-          <h3 className="text-3xl lg:text-[38px] font-bold mb-5">
+          <h3 className="text-3xl lg:text-h2 font-bold mb-5">
             Workshop on Japanese Cuisine
           </h3>
           <p className="mb-5 text-lg">
@@ -27,9 +27,9 @@ const SOHMCTPanel = () => {
           </p>
         </div>
       </div>
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10 mb-5 md:mb-10 my-10">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row gap-10 mb-5 md:mb-10 my-10">
         <div className="w-full lg:w-1/2">
-          <h3 className="text-3xl lg:text-[38px] font-bold mb-5">
+          <h3 className="text-3xl lg:text-h2 font-bold mb-5">
             Indian Seafood Delicacies Workshop
           </h3>
           <p className="mb-5 text-lg">
@@ -56,7 +56,7 @@ const SOHMCTPanel = () => {
           />
         </div>
       </div>
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10 mb-5 md:mb-10">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row gap-10 mb-5 md:mb-10">
         <div className="w-full lg:w-1/2">
           <Image
             src="https://www.krmangalam.edu.in/wp-content/uploads/2026/01/room-clean.jpg"
@@ -67,7 +67,7 @@ const SOHMCTPanel = () => {
           />
         </div>
         <div className="w-full lg:w-1/2">
-          <h3 className="text-3xl lg:text-[38px] font-bold mb-5">
+          <h3 className="text-3xl lg:text-h2 font-bold mb-5">
             Room Cleaning and Towel Art Competition
           </h3>
           <p className="mb-5 text-lg">
@@ -88,9 +88,9 @@ const SOHMCTPanel = () => {
           </p>
         </div>
       </div>
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10 mb-5 md:mb-10">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row gap-10 mb-5 md:mb-10">
         <div className="w-full lg:w-1/2">
-          <h3 className="text-3xl lg:text-[38px] font-bold mb-5">Visit to Roseate Hotel</h3>
+          <h3 className="text-3xl lg:text-h2 font-bold mb-5">Visit to Roseate Hotel</h3>
           <p className="mb-5 text-lg">
             SOHMCT students enjoyed an incredible visit to the luxurious Roseate
             Hotel in New Delhi. The day kicked off with Executive Housekeeper
@@ -115,7 +115,7 @@ const SOHMCTPanel = () => {
           />
         </div>
       </div>
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10 mb-5 md:mb-10 mt-10">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row gap-10 mb-5 md:mb-10 mt-10">
         <div className="w-full lg:w-1/2">
           <Image
             src="https://www.krmangalam.edu.in/wp-content/uploads/2026/01/bhavna.jpg"
@@ -126,7 +126,7 @@ const SOHMCTPanel = () => {
           />
         </div>
         <div className="w-full lg:w-1/2">
-          <h3 className="text-3xl lg:text-[38px] font-bold mb-5">
+          <h3 className="text-3xl lg:text-h2 font-bold mb-5">
             Expert Session on Evolving Strategies in Marketing & PR
           </h3>
           <p className="mb-5 text-lg">

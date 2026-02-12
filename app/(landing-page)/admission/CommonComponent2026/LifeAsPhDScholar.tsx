@@ -13,7 +13,7 @@ const LifeAsPhDScholar = ({ data }: Props) => {
       <div className="px-4">
         {/* Header */}
         <div className="text-center mb-10 md:mb-12">
-          <h2 className="text-2xl md:text-[40px] font-bold text-center mb-5">
+          <h2 className="text-2xl md:text-h1 font-bold text-center mb-5">
             {/* {data.heading} */}
             Life @ KRMU
           </h2>
@@ -34,7 +34,7 @@ const LifeAsPhDScholar = ({ data }: Props) => {
         </div>
 
         {/* Facilities – Row 1 */}
-        <div className="max-w-[1400px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-6 mb-6">
+        <div className="max-w-narrow mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-6 mb-6">
           {data.facilities.map((facility) => (
             <div
               key={facility.id}
@@ -49,7 +49,7 @@ const LifeAsPhDScholar = ({ data }: Props) => {
         </div>
 
         {/* Facilities – Row 2 */}
-        <div className="max-w-[1400px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="max-w-narrow mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
           {data.additionalFacilities.map((facility) => (
             <div
               key={facility.id}

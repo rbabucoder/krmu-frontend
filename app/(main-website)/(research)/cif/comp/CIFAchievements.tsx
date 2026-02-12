@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const CIFAchievements = () => {
   return (
-    <section className="bg-[#2c172f] py-[50px] px-4">
-      <div className="max-w-[1664px] mx-auto w-full">
+    <section className="bg-[#2c172f] py-section px-4">
+      <div className="max-w-main mx-auto w-full">
         <h4 className="text-3xl md:text-5xl font-bold text-white mb-10">Achievements</h4>
         <div className="lg:flex gap-10">
           <div className="mb-5 lg:w-1/3">

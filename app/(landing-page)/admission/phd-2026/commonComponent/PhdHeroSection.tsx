@@ -17,7 +17,7 @@ const PhdHeroSection = ({ formId }: Props) => {
     >
       <div className="max-w-[1300px] mx-auto w-full flex items-center flex-col md:flex-row gap-5 xl:gap-0">
         <div className="w-full md:w-1/3">
-          <h1 className="text-2xl text-center sm:text-left sm:not-first:text-[40px] text-white leading-[1.3] font-semibold">
+          <h1 className="text-2xl text-center sm:text-left sm:not-first:text-h1 text-white leading-[1.3] font-semibold">
             Ready to Add ‘Dr.’ to Your Name? <br /> Enroll in a <br />
             <span className="text-4xl sm:text-8xl xl:text-[190px] font-bold">
               Ph.D.

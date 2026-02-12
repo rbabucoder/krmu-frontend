@@ -10,7 +10,7 @@ const ProgCard2 = () => {
     hover:-translate-y-2
     hover:shadow-[0_20px_25px_-5px_rgb(0_0_0/0.1),0_8px_10px_-6px_rgb(0_0_0/0.1)] w-full"
     >
-      <div className="absolute top-4 left-4 py-1 px-3 text-xs font-bold bg-[#e31e24] text-white uppercase rounded-full z-10">Core</div>
+      <div className="absolute top-4 left-4 py-1 px-3 text-xs font-bold bg-krmu-red text-white uppercase rounded-full z-10">Core</div>
       <div className="pt-12 px-6 pb-6">
         <h4 className="text-base mb-1 text-[#002d73] font-bold">B.Tech CSE</h4>
         <p className="text-[#6b7280] text-sm mb-3 font-semibold">Foundational Computer Science</p>
@@ -19,7 +19,7 @@ const ProgCard2 = () => {
           engineering, and systems design. Prepares you for any tech career
           path.
         </p>
-        <div className="flex flex-col mb-5 gap-2 p-4 bg-[#f9fafb] rounded-xl">
+        <div className="flex flex-col mb-5 gap-2 p-4 bg-krmu-gray-50 rounded-xl">
           <div className="flex justify-between text-sm">
             <span className="text-[#6b7280]">Duration</span>
             <span className="text-[#1f2937] font-semibold">4 Years</span>

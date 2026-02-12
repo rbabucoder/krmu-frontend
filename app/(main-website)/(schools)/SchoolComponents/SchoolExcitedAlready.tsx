@@ -30,12 +30,12 @@ const SchoolExcitedAlready = async ({
         backgroundSize: "cover",
       }}
     >
-      <div className="max-w-[1664px] mx-auto w-full xl:flex">
+      <div className="max-w-main mx-auto w-full xl:flex">
         <div className="w-full xl:w-2/3  text-center">
           <h4 className="text-3xl sm:text-6xl lg:text-8xl font-medium mb-5 lg:mb-0 text-white">
             {heading}
           </h4>
-          <p className="text-sm sm:text-2xl lg:text-[32px] font-normal mb-5 text-white">
+          <p className="text-sm sm:text-2xl lg:text-h3 font-normal mb-5 text-white">
             {desc}
           </p>
           {excbtns &&
@@ -45,7 +45,7 @@ const SchoolExcitedAlready = async ({
                   <CommonLeadPopup
                     key={btn?.id}
                     buttonText={btn?.buttontext || "Download Prospectus"}
-                    buttonClassName={`py-3.5 px-8 bg-[#cb000d] font-bold text-sm sm:text-base rounded-sm inline-block cursor-pointer text-white`}
+                    buttonClassName={`py-3.5 px-8 bg-krmu-red-dark font-bold text-sm sm:text-base rounded-sm inline-block cursor-pointer text-white`}
                     redirectUrl={btn?.buttonlink || "#"}
                     form_name="Download Prospectus"
                   />
@@ -53,7 +53,7 @@ const SchoolExcitedAlready = async ({
                   //   key={btn?.id}
                   //   formId={btn?.popupFormId}
                   //   containerId={btn?.containerPopupFormId}
-                  //   buttonClass="py-3.5 px-8 bg-[#cb000d] font-bold text-sm sm:text-base rounded-sm inline-block cursor-pointer text-white"
+                  //   buttonClass="py-3.5 px-8 bg-krmu-red-dark font-bold text-sm sm:text-base rounded-sm inline-block cursor-pointer text-white"
                   //   buttonText={btn?.buttontext}
                   // />
                 );
@@ -62,7 +62,7 @@ const SchoolExcitedAlready = async ({
                   <Link
                     key={btn?.id}
                     href={btn?.buttonlink || "#"}
-                    className="py-3.5 px-8 bg-[#cb000d] font-bold text-sm sm:text-base rounded-sm inline-block cursor-pointer text-white"
+                    className="py-3.5 px-8 bg-krmu-red-dark font-bold text-sm sm:text-base rounded-sm inline-block cursor-pointer text-white"
                     target="_blank"
                   >
                     {btn.buttontext}
@@ -78,7 +78,7 @@ const SchoolExcitedAlready = async ({
                   <Popup
                     key={btn?.id}
                     buttonText={btn.buttontext || "Apply Now"}
-                    buttonClass={`py-3.5 px-8 bg-[#cb000d] font-bold text-sm sm:text-base rounded-sm inline-block cursor-pointer ${btn.buttonclass}`}
+                    buttonClass={`py-3.5 px-8 bg-krmu-red-dark font-bold text-sm sm:text-base rounded-sm inline-block cursor-pointer ${btn.buttonclass}`}
                     buttonIcon=""
                   >
                     <p>This is the content inside the popup.</p>
@@ -89,7 +89,7 @@ const SchoolExcitedAlready = async ({
                   <Link
                     key={btn?.id}
                     href={btn?.buttonlink || "#"}
-                    className={`py-3.5 px-8 bg-[#cb000d] font-bold text-sm sm:text-base rounded-sm inline-block cursor-pointer ${btn.buttonclass}`}
+                    className={`py-3.5 px-8 bg-krmu-red-dark font-bold text-sm sm:text-base rounded-sm inline-block cursor-pointer ${btn.buttonclass}`}
                   >
                     {btn.buttontext}
                   </Link>

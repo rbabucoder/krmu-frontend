@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Engage = () => {
   return (
-    <section className="bg-[#0060aa]">
+    <section className="bg-krmu-blue">
       <div className="flex flex-col lg:flex-row items-center gap-5 lg:gap-[60px]">
         <div className="lg:w-1/2">
           <Image

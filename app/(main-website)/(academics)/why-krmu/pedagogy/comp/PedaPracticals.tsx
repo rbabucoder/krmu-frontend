@@ -8,8 +8,8 @@ type Props = {
 };
 const PedaPracticals = ({ title, content, imgUrl }: Props) => {
   return (
-    <section className="bg-[#0060aa] px-4">
-      <div className="max-w-[1664px] mx-auto w-full lg:flex items-center gap-14">
+    <section className="bg-krmu-blue px-4">
+      <div className="max-w-main mx-auto w-full lg:flex items-center gap-14">
         <div className="lg:w-1/2">
           {imgUrl && (
             <Image

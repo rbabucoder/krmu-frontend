@@ -7,8 +7,8 @@ type Props = {
 
 const LabsWorkshops = ({ labsWorkshop }: Props) => {
   return (
-    <section className="py-10 bg-[#051630]">
-      <div className="max-w-[1664px] mx-auto w-full text-white">
+    <section className="py-10 bg-krmu-navy">
+      <div className="max-w-main mx-auto w-full text-white">
         <h3 className="text-3xl md:text-5xl font-semibold text-center mb-5">
           {labsWorkshop?.heading}
         </h3>

@@ -46,7 +46,7 @@ export default function Location({
           {/* Contact Information */}
           <div className="space-y-8">
             <Card className="border-0 shadow-xl">
-              <CardContent className="p-3.5 xl:pt-[32px] xl:pr-[32px] xl:pb-[50px] xl:pl-[32px]">
+              <CardContent className="p-3.5 xl:pt-[32px] xl:pr-[32px] xl:pb-section xl:pl-[32px]">
                 <h3 className="text-2xl mb-6 text-gray-800">
                   Contact Information
                 </h3>
@@ -121,7 +121,7 @@ export default function Location({
 
             {/* Transportation */}
             <Card className="border-0 shadow-xl">
-              <CardContent className="p-3.5 xl:pt-[32px] xl:pr-[32px] xl:pb-[50px] xl:pl-[32px]">
+              <CardContent className="p-3.5 xl:pt-[32px] xl:pr-[32px] xl:pb-section xl:pl-[32px]">
                 <h3 className="text-2xl mb-6 text-gray-800">How to Reach</h3>
 
                 <div className="space-y-4">

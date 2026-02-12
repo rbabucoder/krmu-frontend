@@ -22,7 +22,7 @@ const CommonBlogSidebar = async () => {
 
   return (
     <aside className="bg-[url(/blogs/sidebarBanner.webp)] bg-cover bg-center bg-no-repeat p-5 overflow-hidden rounded-xl">
-      <h4 className="mb-5 text-white text-[32px]">Blog Categories</h4>
+      <h4 className="mb-5 text-white text-h3">Blog Categories</h4>
 
       <ul>
         {allCategories

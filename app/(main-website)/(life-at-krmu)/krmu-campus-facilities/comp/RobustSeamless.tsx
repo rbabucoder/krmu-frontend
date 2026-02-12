@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const RobustSeamless = () => {
   return (
-    <section className="py-[30px] px-4 bg-[#051630]">
-      <div className="max-w-[1664px] mx-auto w-full flex gap-10">
+    <section className="py-section-sm px-4 bg-krmu-navy">
+      <div className="max-w-main mx-auto w-full flex gap-10">
         <div className="w-1/2 text-white text-center">
           <h4 className="text-5xl font-semibold mb-5">
             Robust Security System

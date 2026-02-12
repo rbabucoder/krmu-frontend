@@ -22,7 +22,7 @@ const BusinessLeader = ({ data, progData }: Props) => {
         </p>
       </div>
 
-      <div className="max-w-[1400px] mx-auto w-full">
+      <div className="max-w-narrow mx-auto w-full">
         <SemesterTabs semesters={data?.semesters} progData={progData} />
       </div>
     </section>

@@ -39,7 +39,7 @@ const PhdAwardsAchievements = () => {
         </div> */}
         <div className="w-full">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            <div className="flex flex-col justify-center items-center text-center bg-white py-5 px-10 rounded-[10px]">
+            <div className="flex flex-col justify-center items-center text-center bg-white py-5 px-10 rounded-button">
               <Image
                 src="/landingpage/phd/naac-logo.png"
                 width={250}
@@ -53,7 +53,7 @@ const PhdAwardsAchievements = () => {
                 </span>
               </div> */}
             </div>
-            <div className="flex flex-col justify-center items-center text-center bg-white py-5 px-10 rounded-[10px]">
+            <div className="flex flex-col justify-center items-center text-center bg-white py-5 px-10 rounded-button">
               <Image
                 src="/landingpage/phd/awards/ioh.png"
                 width={250}
@@ -67,7 +67,7 @@ const PhdAwardsAchievements = () => {
                 </span>
               </div> */}
             </div>
-            <div className="flex flex-col justify-center items-center text-center bg-white py-5 px-10 rounded-[10px]">
+            <div className="flex flex-col justify-center items-center text-center bg-white py-5 px-10 rounded-button">
               <Image
                 src="/landingpage/phd/awards/gu.png"
                 width={250}
@@ -81,7 +81,7 @@ const PhdAwardsAchievements = () => {
                 </span>
               </div> */}
             </div>
-            <div className="flex flex-col justify-center items-center text-center bg-white py-5 px-10 rounded-[10px]">
+            <div className="flex flex-col justify-center items-center text-center bg-white py-5 px-10 rounded-button">
               <Image
                 src="/landingpage/phd/awards/coe.png"
                 width={800}
@@ -95,7 +95,7 @@ const PhdAwardsAchievements = () => {
                 </span>
               </div> */}
             </div>
-            <div className="flex flex-col justify-center items-center text-center bg-white py-5 px-10 rounded-[10px]">
+            <div className="flex flex-col justify-center items-center text-center bg-white py-5 px-10 rounded-button">
               <Image
                 src="/landingpage/phd/awards/irsd.webp"
                 width={800}
@@ -109,7 +109,7 @@ const PhdAwardsAchievements = () => {
                 </span>
               </div> */}
             </div>
-            <div className="flex flex-col justify-center items-center text-center bg-white py-5 px-10 rounded-[10px]">
+            <div className="flex flex-col justify-center items-center text-center bg-white py-5 px-10 rounded-button">
               <Image
                 src="/landingpage/phd/awards/obe.png"
                 width={800}

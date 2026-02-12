@@ -8,7 +8,7 @@ type Props = {
 const GalleryPageHero = ({ title, bgimage }: Props) => {
   return (
     <section
-      className="pt-[150px] pb-[50px] md:py-[150px] text-center lg:py-0 lg:h-[800px] bg-cover bg-no-repeat px-4"
+      className="pt-[150px] pb-section md:py-[150px] text-center lg:py-0 lg:h-[800px] bg-cover bg-no-repeat px-4"
       style={{
         background: `url(${STRAPI_URL}${bgimage?.url})`,
       }}

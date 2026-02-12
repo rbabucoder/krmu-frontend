@@ -11,8 +11,8 @@ const layout = ({ children }: Props) => {
   return (
     <>
       <CommonBlogHeroSection />
-      <section className="py-[60px] px-4">
-        <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-8">
+      <section className="py-section-lg px-4">
+        <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row gap-8">
           {/* LEFT SIDEBAR */}
           <aside className="w-full lg:w-1/5 order-2 lg:order-1">
             <CommonBlogSidebar />

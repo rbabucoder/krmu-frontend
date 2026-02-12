@@ -32,16 +32,16 @@ const Admission2Hero = () => {
 
   return (
     <section
-      className="pt-[140px] pb-[50px] px-4  bg-[url(/mobadm.png)] bg-cover bg-no-repeat bg-center sm:bg-none relative sm:before:hidden before:content-['']
+      className="pt-hero-top pb-section px-4  bg-[url(/mobadm.png)] bg-cover bg-no-repeat bg-center sm:bg-none relative sm:before:hidden before:content-['']
     before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-[#00000080]"
     >
-      <div className="max-w-[1320px] mx-auto w-full flex flex-col lg:flex-row items-center gap-6 ">
+      <div className="max-w-content mx-auto w-full flex flex-col lg:flex-row items-center gap-6 ">
         <div className="sm:hidden w-full z-10">
-          <h1 className="text-white leading-[1.2] font-semibold text-[26px] mb-2">
+          <h1 className="text-white leading-[1.2] font-semibold text-h4 mb-2">
             Unlock Your <br />
             Future at
           </h1>
-          <h2 className="text-white bg-[#0a41a1] py-5 pl-5 pr-10 rounded-r-[20px] w-fit text-2xl font-semibold mb-2">
+          <h2 className="text-white bg-krmu-blue-dark py-5 pl-5 pr-10 rounded-r-[20px] w-fit text-2xl font-semibold mb-2">
             K.R.Mangalam <br />
             University
           </h2>
@@ -52,15 +52,15 @@ const Admission2Hero = () => {
           <Link
             href="https://admissions.krmangalam.edu.in/"
             target="_blank"
-            className="bg-[#e61f21] mt-12 rounded-r-[10px] border border-[#0a41a1] py-[15px] px-[30px] flex items-center w-fit text-white leading-0 gap-5"
+            className="bg-krmu-red mt-12 rounded-r-[10px] border border-krmu-blue-dark py-compact px-container-px flex items-center w-fit text-white leading-0 gap-5"
           >
             Apply Now <ArrowRight color="#ffffff" />
           </Link>
         </div>
         <div className="hidden sm:block lg:w-1/2">
-          <h1 className="text-[#0060aa] text-3xl md:text-5xl lg:text-[60px] leading-[1.2] font-semibold">
+          <h1 className="text-krmu-blue text-3xl md:text-5xl lg:text-[60px] leading-[1.2] font-semibold">
             Step Into A Successful Future{" "}
-            <span className="text-[#e61f21]">
+            <span className="text-krmu-red">
               With K.R. Mangalam University
             </span>
           </h1>
@@ -95,7 +95,7 @@ const Admission2Hero = () => {
           <Image src="/admission2/hero.png" width={636} height={523} alt="" />
         </div>
       </div>
-      {/* <div className="max-w-[1320px] mx-auto w-full">
+      {/* <div className="max-w-content mx-auto w-full">
 
       </div> */}
     </section>

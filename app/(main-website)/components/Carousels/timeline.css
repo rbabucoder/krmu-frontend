@@ -1,0 +1,181 @@
+@layer utilities {
+  /* Timeline Carousel */
+
+  .timeline-nav__item::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #fff;
+    transition: 0.2s;
+  }
+  /* .timeline .slick-active .timeline-nav__item::before {
+    background-color: #fff;
+    content: url("/circle-ring.svg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+
+  .timeline-slider .slick-slide > div {
+    max-width: 950px;
+    margin: 0 auto;
+  }
+  .timeline-nav__item {
+    width: auto;
+    height: auto;
+    text-align: center;
+    opacity: 0.5;
+    background: transparent;
+    color: #fff;
+    margin: 15px 25px !important;
+    position: relative;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    outline: none;
+    cursor: pointer;
+  }
+  .timeline .slick-list {
+    padding-top: 200px !important;
+    padding-bottom: 120px !important;
+  }
+  .timeline-slider .slick-prev {
+    left: 11% !important;
+    z-index: 99999999999999999999999;
+  }
+  .timeline-slider .slick-prev:before {
+    content: url("/prev-chevron.svg") !important;
+  }
+
+  .timeline-slider .slick-next {
+    right: 11% !important;
+    z-index: 99999999999999999999999;
+  }
+  .timeline-slider .slick-next:before {
+    content: url("/next-chevron.svg") !important;
+  }
+
+  .timelinetext-bg {
+    border-radius: 0px 25px 25px 0px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.09) 0%,
+      rgba(255, 255, 255, 0.0549) 100%
+    );
+    backdrop-filter: blur(10px);
+    opacity: 1;
+    transition: opacity 1s;
+  }
+  .timeline .slick-track .slick-current .timeline-nav__item::before {
+    background-color: #fff;
+    content: url(/circle-ring.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .timeline .slick-track .slick-current .timeline-nav__item {
+    color: #fff;
+    opacity: 1;
+  }
+
+  .timeline .slick-list {
+    top: 156px !important;
+  }
+
+  @media (max-width: 1440px) {
+    .timeline .slick-list {
+      top: 106px !important;
+    }
+  }
+  .timeline-content-container .timeline-content {
+    margin-left: -20px;
+  }
+  .timeline-content-container .timeline-image img {
+    width: 100%;
+  }
+  @media (max-width: 768px) {
+    .timeline .slick-list {
+      top: 0px !important;
+    }
+  }
+  @media (max-width: 440px) {
+    .timeline-content-container .timeline-content {
+      margin-left: 0px;
+      margin-top: -20px;
+    }
+  }
+  /* @media(max-width: ) */
+
+  @media (max-width: 1280) {
+    .timeline-slider .slick-prev {
+      left: 5% !important;
+    }
+    .timeline-slider .slick-next {
+      right: 5%;
+    }
+  }
+  @media (max-width: 1100px) {
+    .timeline-slider .slick-prev {
+      top: 100% !important;
+      left: 20% !important;
+    }
+    .timeline-slider .slick-next {
+      top: 100% !important;
+      right: 20% !important;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .timeline-slider .slick-prev {
+      top: 100% !important;
+    }
+    .timeline-slider .slick-next {
+      top: 100% !important;
+    }
+  }
+  /* @media (max-width: 640px) {
+    .timelinetext-bg {
+      border-radius: 0px 0px 25px 25px;
+    }
+  } */
+  @media (max-width: 576px) {
+    .timeline-image {
+      width: 55%;
+    }
+    .timeline-content {
+      width: 45%;
+    }
+    .timeline-slider .slick-prev,
+    .timeline-slider .slick-next {
+      top: 114% !important;
+    }
+  }
+  @media (max-width: 440px) {
+    .timeline-content-container {
+      flex-direction: column;
+    }
+    .timeline-content-container .timeline-image {
+      width: 100% !important;
+    }
+    .timeline-content-container .timeline-content {
+      width: 100% !important;
+      border-radius: 0;
+      /* margin-top: -25px; */
+      border-radius: 0px 0px 25px 25px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .timeline .slick-list {
+      padding-top: 150px !important;
+      padding-bottom: 50px !important;
+    }
+  }
+
+  /* Timeline Carousel */
+}

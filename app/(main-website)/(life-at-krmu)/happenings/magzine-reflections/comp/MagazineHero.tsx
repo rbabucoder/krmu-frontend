@@ -11,12 +11,12 @@ const MagazineHero = ({ title, bgImage }: Props) => {
     <>
       <section
         id="magazine_reflection_hero"
-        className="pt-[140px] pb-20 px-4 md:py-[20%]"
+        className="pt-hero-top pb-20 px-4 md:py-[20%]"
         style={{
           background: `url(${STRAPI_URL}${bgImage?.url})`,
         }}
       >
-        <div className="max-w-[1664px] mx-auto w-full">
+        <div className="max-w-main mx-auto w-full">
           <h1 className="text-3xl md:text-5xl lg:text-[108px] text-white font-extrabold">{title}</h1>
         </div>
       </section>

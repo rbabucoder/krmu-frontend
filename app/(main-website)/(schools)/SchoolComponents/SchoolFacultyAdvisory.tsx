@@ -13,7 +13,7 @@ type Props = {
 const SchoolFacultyAdvisory = ({ schoolCat, fac_adv }: Props) => {
   return (
     <>
-      <div className="max-w-[1664px] mx-auto w-full py-4 md:p-8">
+      <div className="max-w-main mx-auto w-full py-4 md:p-8">
         {fac_adv?.fac_adv === "Single" ? (
           <>
             <div
@@ -41,13 +41,13 @@ const SchoolFacultyAdvisory = ({ schoolCat, fac_adv }: Props) => {
               >
                 <TabsTrigger
                   value="tab1"
-                  className="flex-none cursor-pointer mb-5 md:mb-0 data-[state=active]:bg-[#051630] data-[state=active]:text-white data-[state=active]:rounded-full text-2xl w-full lg:w-fit sm:px-[100px] bg-white rounded-full font-semibold"
+                  className="flex-none cursor-pointer mb-5 md:mb-0 data-[state=active]:bg-krmu-navy data-[state=active]:text-white data-[state=active]:rounded-full text-2xl w-full lg:w-fit sm:px-[100px] bg-white rounded-full font-semibold"
                 >
                   Faculty At {schoolCat.toUpperCase()}
                 </TabsTrigger>
                 <TabsTrigger
                   value="tab2"
-                  className="flex-none cursor-pointer data-[state=active]:bg-[#051630] data-[state=active]:text-white data-[state=active]:rounded-full text-2xl w-full lg:w-fit sm:px-[100px] bg-white rounded-full font-semibold"
+                  className="flex-none cursor-pointer data-[state=active]:bg-krmu-navy data-[state=active]:text-white data-[state=active]:rounded-full text-2xl w-full lg:w-fit sm:px-[100px] bg-white rounded-full font-semibold"
                 >
                   Advisory Board
                 </TabsTrigger>

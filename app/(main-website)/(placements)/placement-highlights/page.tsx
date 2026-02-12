@@ -83,14 +83,14 @@ const page = async () => {
   return (
     <>
       <section className="pt-20 md:pt-[15%] pb-[10%] bg-[url(/placements/placement_banner.webp)] common-overlay">
-        <div className="max-w-[1664px] mx-auto w-full">
+        <div className="max-w-main mx-auto w-full">
           <h1 className="text-3xl md:text-5xl text-white text-center font-bold z-10 relative">
             {heading}
           </h1>
         </div>
       </section>
-      <section className="py-[50px] px-4">
-        <div className="max-w-[1664px] mx-auto w-full">
+      <section className="py-section px-4">
+        <div className="max-w-main mx-auto w-full">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-col-3 lg:grid-cols-4 gap-8">
             {placementImgs.map((img, i) => {
               return (

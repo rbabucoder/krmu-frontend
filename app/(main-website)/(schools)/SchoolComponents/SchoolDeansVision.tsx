@@ -26,14 +26,14 @@ const SchoolDeansVision = ({
 }: Props) => {
   return (
     <section
-      className="py-[50px] px-4"
+      className="py-section px-4"
       style={{
         background:
           "linear-gradient(95deg,#051630 2.69%,#0060aa 65.94%,#e31e24 97.54%)",
       }}
     >
-      <div className="max-w-[1664px] mx-auto w-full">
-        <div className="text-center text-white text-3xl sm:text-5xl mb-5  lg:text-[64px]">
+      <div className="max-w-main mx-auto w-full">
+        <div className="text-center text-white text-3xl sm:text-5xl mb-5  lg:text-display">
           <h4 className="leading-[1]">{title}</h4>
           <h5 className="leading-[1.2] font-bold">{subtitle}</h5>
         </div>
@@ -57,7 +57,7 @@ const SchoolDeansVision = ({
           <div className="xl:w-4/6 p-5 sm:px-10 sm:pb-10 xl:p-[50px] text-sm sm:text-base text-white dean_heading_h3">
             {desc && <BlocksRenderer content={desc} />}
             <br />
-            <p className="text-2xl md:text-[32px] mb-2.5 sm:mb-3.5">
+            <p className="text-2xl md:text-h3 mb-2.5 sm:mb-3.5">
               <strong>{deanName}</strong>
             </p>
             <Link

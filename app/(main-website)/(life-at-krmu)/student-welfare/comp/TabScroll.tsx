@@ -10,8 +10,8 @@ const TabScroll = () => {
 
   return (
     <>
-      <section className="py-[50px] px-4">
-        <div className="max-w-[1664px] mx-auto w-full">
+      <section className="py-section px-4">
+        <div className="max-w-main mx-auto w-full">
           <div className="student_welfare-tab-scroll">
             <div className="student_welfare-sidebar">
               <div className="student_welfare-sidebar_menu">

@@ -28,7 +28,7 @@ const HeroSection = ({
       <section
         className={`pb-10 sm:py-20 md:pt-14 md:pb-14 ${lpclName || ""}`}
       >
-        <div className="max-w-[1400px] mx-auto w-full flex flex-col lg:flex-row items-center gap-5 sm:gap-10">
+        <div className="max-w-narrow mx-auto w-full flex flex-col lg:flex-row items-center gap-5 sm:gap-10">
           <div className="w-full xl:w-2/3 text-white text-center md:text-left container-1 sm:py-0 sm:px-5">
             <div className="p-5 sm:p-0">
               <h1

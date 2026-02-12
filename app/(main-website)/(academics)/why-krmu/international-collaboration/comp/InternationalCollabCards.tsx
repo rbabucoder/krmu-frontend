@@ -16,15 +16,15 @@ const InternationalCollabCards = ({
   intCollabFullWidthCard,
 }: Props) => {
   return (
-    <section className="py-[60px] px-4">
-      <div className="max-w-[1664px] mx-auto w-full">
+    <section className="py-section-lg px-4">
+      <div className="max-w-main mx-auto w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:gap-x-20 gap-10 lg:gap-y-[90px]">
           {intCollabCard &&
             intCollabCard?.map((item) => {
               return (
                 <div
                   key={item?.id}
-                  className="p-[30px] bg-white rounded-[30px] min-h-[560px] h-full w-full"
+                  className="p-[30px] bg-white rounded-card min-h-[560px] h-full w-full"
                   style={{
                     boxShadow: `rgba(0, 0, 0, 0.35) 0px 5px 15px`,
                   }}
@@ -46,14 +46,14 @@ const InternationalCollabCards = ({
             })}
         </div>
       </div>
-      <div className="max-w-[1664px] mx-auto w-full mt-10 md:mt-20">
+      <div className="max-w-main mx-auto w-full mt-10 md:mt-20">
         <div>
           {intCollabFullWidthCard &&
             intCollabFullWidthCard?.map((item) => {
               return (
                 <div
                   key={item?.id}
-                  className="p-[30px] bg-white rounded-[30px] min-h-[560px] h-full w-full"
+                  className="p-[30px] bg-white rounded-card min-h-[560px] h-full w-full"
                   style={{
                     boxShadow: `rgba(0, 0, 0, 0.35) 0px 5px 15px`,
                   }}

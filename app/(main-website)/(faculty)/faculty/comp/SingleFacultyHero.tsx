@@ -20,7 +20,7 @@ const SingleFacultyHero = ({
   return (
     <section>
       <div
-        className="max-w-[1600px] mx-auto w-full p-5 flex flex-col-reverse md:flex-row rounded-[30px]"
+        className="max-w-wide mx-auto w-full p-5 flex flex-col-reverse md:flex-row rounded-card"
         style={{
           background: `linear-gradient(180deg,rgba(255,255,255,.2) 0%,rgba(255,255,255,.12) 100%)`,
         }}
@@ -31,20 +31,20 @@ const SingleFacultyHero = ({
               src={`${STRAPI_URL}${facultyImgURL}`}
               width={272}
               height={292}
-              className="h-[292px] rounded-[20px] inline-block"
+              className="h-[292px] rounded-panel inline-block"
               alt={facName || ""}
             />
           </div>
         </div>
         <div className="md:w-2/3 text-white flex flex-col sm:flex-row">
           <div className="sm:w-1/2">
-            <div className="mx:mx-8 py-[15px] border-b border-white">
+            <div className="mx:mx-8 py-compact border-b border-white">
               <h1 className="text-2xl lg:text-[35px] font-semibold">
                 {facName}
               </h1>
               <p className="text-[18px]">{desg}</p>
             </div>
-            <div className="mx:mx-8 py-[15px]">
+            <div className="mx:mx-8 py-compact">
               {intarea && (
                 <>
                   <h3 className="leading-[3] text-2xl font-semibold">
@@ -61,13 +61,13 @@ const SingleFacultyHero = ({
             </div>
           </div>
           <div className="sm:w-1/2">
-            <div className="sm:mx-8 py-[15px] border-b border-white">
+            <div className="sm:mx-8 py-compact border-b border-white">
               <ul className="break-all">
                 {socialLinks &&
                   socialLinks?.map((link) => {
                     return (
                       <li key={link?.id} className="flex items-center gap-1">
-                        <div className="p-1 bg-[#cb000d] flex items-center justify-center w-fit rounded-full">
+                        <div className="p-1 bg-krmu-red-dark flex items-center justify-center w-fit rounded-full">
                           <Image
                             src={`${STRAPI_URL}${link?.listicon?.url}`}
                             width={14}

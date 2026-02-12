@@ -7,10 +7,10 @@ type Props = {
 
 const IdeaForge = ({ forgeData }: Props) => {
   return (
-    <section className="py-[50px] bg-[#051630] px-4">
-      <div className="max-w-[1664px] mx-auto w-full lg:flex items-center gap-14">
+    <section className="py-section bg-krmu-navy px-4">
+      <div className="max-w-main mx-auto w-full lg:flex items-center gap-14">
         <div className="lg:w-1/2 text-white">
-          <h3 className="text-2xl md:text-[38px] font-bold mb-5 leading-[1.2]">
+          <h3 className="text-2xl md:text-h2 font-bold mb-5 leading-[1.2]">
             {forgeData?.heading ? (
               forgeData?.heading
             ) : (

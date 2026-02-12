@@ -4,7 +4,7 @@ const PhdCounter = () => {
   return (
     <section className="px-4">
       <div
-        className="max-w-[1300px] mx-auto w-full rounded-[10px] z-10 relative -mt-24 bg-white"
+        className="max-w-[1300px] mx-auto w-full rounded-button z-10 relative -mt-24 bg-white"
         style={{
           boxShadow: `rgba(149, 157, 165, 0.2) 0px 8px 24px`,
         }}
@@ -20,8 +20,8 @@ const PhdCounter = () => {
               />
             </div>
             <span className="flex flex-col justify-center">
-              <span className="text-[22px] font-semibold">4,000</span>
-              <span className="text-xs text-[#7F7F7F]">
+              <span className="text-h5 font-semibold">4,000</span>
+              <span className="text-xs text-krmu-gray-400">
                 Publications
               </span>
             </span>
@@ -36,8 +36,8 @@ const PhdCounter = () => {
               />
             </div>
             <span className="flex flex-col justify-center">
-              <span className="text-[22px] font-semibold">16 Cr</span>
-              <span className="text-xs text-[#7F7F7F]">
+              <span className="text-h5 font-semibold">16 Cr</span>
+              <span className="text-xs text-krmu-gray-400">
                 Research Grants  
               </span>
             </span>
@@ -52,8 +52,8 @@ const PhdCounter = () => {
               />
             </div>
             <span className="flex flex-col justify-center">
-              <span className="text-[22px] font-semibold">250+</span>
-              <span className="text-xs text-[#7F7F7F]">
+              <span className="text-h5 font-semibold">250+</span>
+              <span className="text-xs text-krmu-gray-400">
                 Patents 
               </span>
             </span>
@@ -68,8 +68,8 @@ const PhdCounter = () => {
               />
             </div>
             <span className="flex flex-col justify-center">
-              <span className="text-[22px] font-semibold">7.9</span>
-              <span className="text-xs text-[#7F7F7F]">
+              <span className="text-h5 font-semibold">7.9</span>
+              <span className="text-xs text-krmu-gray-400">
                 Citation Index 
               </span>
             </span>

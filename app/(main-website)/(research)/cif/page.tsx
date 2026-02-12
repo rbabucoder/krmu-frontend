@@ -77,7 +77,7 @@ const page = () => {
     <>
       <CIFHeroSection />
       <CIFIntegral />
-      <section className="bg-[url(/research/bg-gradient.webp)] bg-no-repeat bg-cover py-[30px] px-4">
+      <section className="bg-[url(/research/bg-gradient.webp)] bg-no-repeat bg-cover py-section-sm px-4">
         <MessageDirector />
         <TeamCIF />
       </section>

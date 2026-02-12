@@ -27,7 +27,7 @@ export const AdvisoryEmployeeCard = ({ name, imgUrl, qual, desg }: Props) => {
         </div>
         {/* <Link
           href={`/faculty/${slug}`}
-          className="hover:text-[#0060aa] cursor-pointer flex flex-col gap-1.5 text-base"
+          className="hover:text-krmu-blue cursor-pointer flex flex-col gap-1.5 text-base"
           target="_blank"
         > */}
         <span className="flex flex-col gap-1.5 text-base">

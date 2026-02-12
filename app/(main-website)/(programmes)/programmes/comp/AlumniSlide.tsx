@@ -18,7 +18,7 @@ const AlumniSlide = ({ item }: Props) => {
             width={325}
             height={300}
             alt=""
-            className="h-[200px] object-contain rounded-[20px] sm:rounded-none w-full"
+            className="h-[200px] object-contain rounded-panel sm:rounded-none w-full"
           />
         </div>
         <div className="text-center mt-5 sm:hidden">

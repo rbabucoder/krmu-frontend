@@ -27,7 +27,7 @@ const PDFCard = ({ magazineimg, magazinePDF }: Props) => {
       <div className="mt-[30px] flex justify-center">
         <Link
           href={`${STRAPI_URL}${magazinePDF?.url}`}
-          className="flex items-center gap-3 p-5 sm:x-2.5 border-2 border-black rounded-full w-fit font-semibold hover:bg-[#034272] hover:text-white
+          className="flex items-center gap-3 p-5 sm:x-2.5 border-2 border-black rounded-full w-fit font-semibold hover:bg-krmu-navy-light hover:text-white
          duration-300 ease-in-out"
          target="_blank"
           download

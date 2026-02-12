@@ -8,7 +8,7 @@ const SEMCETestimonials = () => {
   return (
     <>
       <section className="px-5 sm:px-0 py-10">
-        <div className="max-w-[1664px] mx-auto w-full">
+        <div className="max-w-main mx-auto w-full">
           <h3 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-center mb-10">
             Testimonials of Students
           </h3>

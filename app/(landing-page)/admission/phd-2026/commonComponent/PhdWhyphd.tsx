@@ -6,7 +6,7 @@ const PhdWhyphd = () => {
     <section className="bg-[#F8F9FA] py-[140px] px-4">
       <div className="max-w-[1300px] mx-auto w-full">
         <div className="whyphdHeading relative">
-          <h2 className="text-[32px] font-semibold mb-2.5 text-center">
+          <h2 className="text-h3 font-semibold mb-2.5 text-center">
             Why Choose a Ph.D. at KRMU?
           </h2>
           <div

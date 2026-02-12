@@ -3,9 +3,9 @@ import React from "react";
 
 const SportEventsAndTournament = () => {
   return (
-    <section className="pb-[50px] px-4">
-      <div className="max-w-[1664px] mx-auto w-full">
-        <h4 className="text-3xl md:text-[38px] mb-5 font-bold">Events and Tournaments</h4>
+    <section className="pb-section px-4">
+      <div className="max-w-main mx-auto w-full">
+        <h4 className="text-3xl md:text-h2 mb-5 font-bold">Events and Tournaments</h4>
         <p>
           The success of KRMU students extends far beyond the confines of their
           own campus. They have made their mark in various National, State, and

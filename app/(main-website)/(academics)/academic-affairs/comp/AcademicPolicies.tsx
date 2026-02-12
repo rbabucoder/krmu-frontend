@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const AcademicPolicies = () => {
   return (
-    <section className="py-10 bg-[#051630] px-4">
-      <div className="max-w-[1664px] mx-auto w-full">
+    <section className="py-10 bg-krmu-navy px-4">
+      <div className="max-w-main mx-auto w-full">
         <div className="text-white text-center">
           <h3 className="text-2xl md:text-[35px] font-semibold mb-5 leading-[1]">
             Academic Policies and Procedures
@@ -15,7 +15,7 @@ const AcademicPolicies = () => {
           </p>
         </div>
         <div className="flex flex-col gap-5 lg:grid grid-cols-4 grid-rows-2 gap-x-16 gap-y-5">
-          <div className="p-5 bg-[url(/academics/card-bg-1.webp)] bg-no-repeat bg-cover bg-center rounded-[20px]">
+          <div className="p-5 bg-[url(/academics/card-bg-1.webp)] bg-no-repeat bg-cover bg-center rounded-panel">
             <div className="flex items-center justify-center">
               <Image
                 src="/academics/card-1.webp"
@@ -25,7 +25,7 @@ const AcademicPolicies = () => {
               />
             </div>
             <div className="text-white text-center">
-              <p className="text-[13px] my-2.5">
+              <p className="text-body-sm my-2.5">
                 <strong>Code of Academic Integrity</strong>
               </p>
               <p>
@@ -34,7 +34,7 @@ const AcademicPolicies = () => {
               </p>
             </div>
           </div>
-          <div className="p-5 bg-[url(/academics/card-bg-1.webp)] bg-no-repeat bg-cover bg-center rounded-[20px]">
+          <div className="p-5 bg-[url(/academics/card-bg-1.webp)] bg-no-repeat bg-cover bg-center rounded-panel">
             <div className="flex items-center justify-center">
               <Image
                 src="/academics/card-2.webp"
@@ -44,7 +44,7 @@ const AcademicPolicies = () => {
               />
             </div>
             <div className="text-white text-center">
-              <p className="text-[13px] my-2.5">
+              <p className="text-body-sm my-2.5">
                 <strong>Grading System</strong>
               </p>
               <p>
@@ -53,7 +53,7 @@ const AcademicPolicies = () => {
               </p>
             </div>
           </div>
-          <div className="p-5 bg-[url(/academics/card-bg-1.webp)] bg-no-repeat bg-cover bg-center rounded-[20px]">
+          <div className="p-5 bg-[url(/academics/card-bg-1.webp)] bg-no-repeat bg-cover bg-center rounded-panel">
             <div className="flex items-center justify-center">
               <Image
                 src="/academics/card-3.webp"
@@ -63,7 +63,7 @@ const AcademicPolicies = () => {
               />
             </div>
             <div className="text-white text-center">
-              <p className="text-[13px] my-2.5">
+              <p className="text-body-sm my-2.5">
                 <strong>Attendance and Participation</strong>
               </p>
               <p>
@@ -72,7 +72,7 @@ const AcademicPolicies = () => {
               </p>
             </div>
           </div>
-          <div className="p-5 bg-[url(/academics/card-bg-1.webp)] bg-no-repeat bg-cover bg-center rounded-[20px]">
+          <div className="p-5 bg-[url(/academics/card-bg-1.webp)] bg-no-repeat bg-cover bg-center rounded-panel">
             <div className="flex items-center justify-center">
               <Image
                 src="/academics/card-4.webp"
@@ -82,7 +82,7 @@ const AcademicPolicies = () => {
               />
             </div>
             <div className="text-white text-center">
-              <p className="text-[13px] my-2.5">
+              <p className="text-body-sm my-2.5">
                 <strong>Course Enrolment and Withdrawal</strong>
               </p>
               <p>
@@ -93,7 +93,7 @@ const AcademicPolicies = () => {
             </div>
           </div>
           <div></div>
-          <div className="p-5 bg-[url(/academics/card-bg-1.webp)] bg-no-repeat bg-cover bg-center rounded-[20px]">
+          <div className="p-5 bg-[url(/academics/card-bg-1.webp)] bg-no-repeat bg-cover bg-center rounded-panel">
             <div className="flex items-center justify-center">
               <Image
                 src="/academics/card-5.webp"
@@ -103,7 +103,7 @@ const AcademicPolicies = () => {
               />
             </div>
             <div className="text-white text-center">
-              <p className="text-[13px] my-2.5">
+              <p className="text-body-sm my-2.5">
                 <strong>Grievance Redressal</strong>
               </p>
               <p>
@@ -112,7 +112,7 @@ const AcademicPolicies = () => {
               </p>
             </div>
           </div>
-          <div className="p-5 bg-[url(/academics/card-bg-1.webp)] bg-no-repeat bg-cover bg-center rounded-[20px]">
+          <div className="p-5 bg-[url(/academics/card-bg-1.webp)] bg-no-repeat bg-cover bg-center rounded-panel">
             <div className="flex items-center justify-center">
               <Image
                 src="/academics/card-6.webp"
@@ -122,7 +122,7 @@ const AcademicPolicies = () => {
               />
             </div>
             <div className="text-white text-center">
-              <p className="text-[13px] my-2.5">
+              <p className="text-body-sm my-2.5">
                 <strong>Academic Advising</strong>
               </p>
               <p>

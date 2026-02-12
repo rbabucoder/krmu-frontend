@@ -3,8 +3,8 @@ import IPRSlide from "./IPRSlide";
 
 const IPR = () => {
   return (
-    <section className="py-10 px-4 bg-[#051630]">
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row items-center gap-10">
+    <section className="py-10 px-4 bg-krmu-navy">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row items-center gap-10">
         <div className="lg:w-1/2 text-white">
           <h2 className="text-3xl md:text-5xl font-semibold">
             IPR, Legal & Ethical Matters Cell

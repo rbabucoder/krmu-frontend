@@ -30,12 +30,12 @@ const PHDprogramHero = ({
   return (
     <>
       <section
-        className="pt-[140px] pb-32 lg:py-[8%]"
+        className="pt-hero-top pb-32 lg:py-[8%]"
         style={{
           background: `url(${STRAPI_URL}${bgimg}) center/cover no-repeat`,
         }}
       >
-        <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row items-center">
+        <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row items-center">
           <div className="lg:w-3/5 text-white text-3xl md:text-5xl font-semibold p-5">
             <h1
               dangerouslySetInnerHTML={{
@@ -54,10 +54,10 @@ const PHDprogramHero = ({
       </section>
 
       {/* Info Counters Section */}
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-1.5 relative z-10 -mt-[33px] px-4 md:px-0">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row gap-1.5 relative z-10 -mt-[33px] px-4 md:px-0">
         {/* Duration */}
         <div
-          className="w-full md:w-1/2 lg:w-[20%] flex items-center justify-center text-2xl font-semibold h-[130px] bg-white rounded-[30px]"
+          className="w-full md:w-1/2 lg:w-[20%] flex items-center justify-center text-2xl font-semibold h-[130px] bg-white rounded-card"
           style={{
             boxShadow:
               "0px 1.96475px 2.21381px rgba(0,0,0,.02),0px 4.72157px 5.32008px rgba(0,0,0,.03),0px 8.8903px 10.01724px rgba(0,0,0,.04),0px 15.85878px 17.86905px rgba(0,0,0,.04),0px 29.6621px 33.42209px rgba(0,0,0,.05),0px 71px 80px rgba(0,0,0,.07)",
@@ -68,7 +68,7 @@ const PHDprogramHero = ({
 
         {/* Fee per Year */}
         <div
-          className="w-full md:w-1/2 lg:w-[20%] flex flex-col lg:flex-row items-center justify-center text-2xl font-semibold h-[130px] p-5 bg-white rounded-[30px]"
+          className="w-full md:w-1/2 lg:w-[20%] flex flex-col lg:flex-row items-center justify-center text-2xl font-semibold h-[130px] p-5 bg-white rounded-card"
           style={{
             boxShadow:
               "0px 1.96475px 2.21381px rgba(0,0,0,.02),0px 4.72157px 5.32008px rgba(0,0,0,.03),0px 8.8903px 10.01724px rgba(0,0,0,.04),0px 15.85878px 17.86905px rgba(0,0,0,.04),0px 29.6621px 33.42209px rgba(0,0,0,.05),0px 71px 80px rgba(0,0,0,.07)",
@@ -80,7 +80,7 @@ const PHDprogramHero = ({
 
         {/* Eligibility Criteria with Read More */}
         <div
-          className="w-full lg:w-[50%] flex flex-col lg:flex-row gap-5 items-center justify-center h-auto p-5 bg-white rounded-[30px]"
+          className="w-full lg:w-[50%] flex flex-col lg:flex-row gap-5 items-center justify-center h-auto p-5 bg-white rounded-card"
           style={{
             boxShadow:
               "0px 1.96475px 2.21381px rgba(0,0,0,.02),0px 4.72157px 5.32008px rgba(0,0,0,.03),0px 8.8903px 10.01724px rgba(0,0,0,.04),0px 15.85878px 17.86905px rgba(0,0,0,.04),0px 29.6621px 33.42209px rgba(0,0,0,.05),0px 71px 80px rgba(0,0,0,.07)",

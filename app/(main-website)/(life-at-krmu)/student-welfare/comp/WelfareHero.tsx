@@ -1,13 +1,13 @@
 const WelfareHero = () => {
   return (
     <section
-      className="pt-[140px] md:pt-[24%] pb-[3%] px-4 bg-[url(/student-welfare/bg.webp)] bg-cover bg-center bg-no-repeat relative after:content-[''] after:absolute after:top-0
+      className="pt-hero-top md:pt-[24%] pb-[3%] px-4 bg-[url(/student-welfare/bg.webp)] bg-cover bg-center bg-no-repeat relative after:content-[''] after:absolute after:top-0
      after:left-0 after:w-full after:h-full after:bg-[#0009]
     "
     >
-      <div className="max-w-[1664px] mx-auto w-full text-white">
+      <div className="max-w-main mx-auto w-full text-white">
         <div className=" w-full lg:w-2/3 z-10 relative">
-          <h3 className="text-[26px] font-medium leading-[1.3]">
+          <h3 className="text-h4 font-medium leading-[1.3]">
             Student Welfare at K.R. Mangalam University
           </h3>
           <h1 className="text-3xl md:text-5xl font-semibold leading-[1.5] mb-5">

@@ -44,7 +44,7 @@ const DeansSlide = () => {
               />
             </div>
 
-            <div className="p-5 md:p-10 h-[200px] text-white bg-[#051630] -mt-5 flex items-center justify-center flex-col">
+            <div className="p-5 md:p-10 h-[200px] text-white bg-krmu-navy -mt-5 flex items-center justify-center flex-col">
               <h5 className="text-2xl font-semibold">{dean.name}</h5>
               <p className="text-sm font-semibold text-center">{dean.role}</p>
             </div>
@@ -56,7 +56,7 @@ const DeansSlide = () => {
         <div className="flex justify-center">
           <Button
             onClick={handleLoadMore}
-            className="text-[#051630] bg-[#f2f3f5] h-[50px] border border-[#051630] font-semibold text-base hover:bg-[#cb000d] hover:text-white mt-10"
+            className="text-krmu-navy bg-krmu-gray-100 h-[50px] border border-krmu-navy font-semibold text-base hover:bg-krmu-red-dark hover:text-white mt-10"
           >
             Load More
           </Button>

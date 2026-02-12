@@ -85,8 +85,8 @@ const page = async () => {
         title={videoGalleryPageData?.Title}
         bgurl={videoGalleryPageData?.bgimage}
       />
-      <section className="py-10 md:pt-20 md:pb-[60px] px-4">
-        <div className="max-w-[1664px] mx-auto w-full">
+      <section className="py-10 md:pt-20 md:pb-section-lg px-4">
+        <div className="max-w-main mx-auto w-full">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
             {videosData &&
               videosData.map((video) => {

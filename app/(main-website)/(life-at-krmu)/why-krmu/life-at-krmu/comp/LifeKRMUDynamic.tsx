@@ -1,7 +1,7 @@
 const LifeKRMUDynamic = () => {
   return (
     <section className="py-10 lg:py-20 px-4">
-      <div className="flex flex-col lg:flex-row max-w-[1664px] mx-auto w-full">
+      <div className="flex flex-col lg:flex-row max-w-main mx-auto w-full">
         <div className="w-full lg:w-1/2">
           <h4 className="text-3xl md:text-5xl font-semibold leading-[1.3]">
             Unveiling the Dynamic

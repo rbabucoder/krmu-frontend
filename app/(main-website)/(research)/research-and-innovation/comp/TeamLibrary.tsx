@@ -43,7 +43,7 @@ const TeamLibrary = () => {
   ];
 
   return (
-    <div className="max-w-[1664px] mx-auto w-full">
+    <div className="max-w-main mx-auto w-full">
       <h3 className="text-3xl mb-5 lg:mb-0 md:text-5xl font-semibold text-white">
         Team Library
       </h3>

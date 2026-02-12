@@ -8,8 +8,8 @@ type Props = {
 
 const ExaminationDownload = ({ heading, downloadCards }: Props) => {
   return (
-    <section className="py-[30px] px-4">
-      <div className="max-w-[1600px] mx-auto w-full">
+    <section className="py-section-sm px-4">
+      <div className="max-w-wide mx-auto w-full">
         <h2 className="sm:leading-[2] text-2xl md:text-4xl font-bold mt-2.5 mb-5 md:mb-[35px] text-center md:text-left">
           {heading}
         </h2>

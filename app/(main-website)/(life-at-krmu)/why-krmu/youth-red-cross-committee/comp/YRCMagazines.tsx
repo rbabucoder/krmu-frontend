@@ -4,9 +4,9 @@ import Link from "next/link";
 const YRCMagazines = () => {
   return (
     <section className="bg-[url(/bg-gradient-2.webp)]  px-4">
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row gap-10">
         <div className="lg:w-1/2 mb-5">
-          <div className="py-[30px] px-4 md:pl-[40px] md:pr-[30px] text-white border border-[#0060aa5e] bg-[#0060aa5e] mx-4 md:mx-8 min-h-[1px] h-full rounded-b-[20px]">
+          <div className="py-section-sm px-4 md:pl-[40px] md:pr-[30px] text-white border border-[#0060aa5e] bg-[#0060aa5e] mx-4 md:mx-8 min-h-[1px] h-full rounded-b-[20px]">
             <p className="text-2xl mt-2.5 mb-[15px]">
               The broad objectives of the Youth Red Cross Committee are to:
             </p>

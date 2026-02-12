@@ -14,8 +14,8 @@ const OnGoing = () => {
   ];
 
   return (
-    <section className="bg-[#c4d9f4] bg-cover bg-center pt-[50px] pb-[30px] px-4" id="_ongoing-collab">
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10 items-center">
+    <section className="bg-[#c4d9f4] bg-cover bg-center pt-section pb-section-sm px-4" id="_ongoing-collab">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row gap-10 items-center">
         <div className="lg:w-1/2">
           <RISlide slide={onGoingImgSlies} />
         </div>

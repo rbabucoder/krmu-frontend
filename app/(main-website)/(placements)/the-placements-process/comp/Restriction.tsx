@@ -1,7 +1,7 @@
 const Restriction = () => {
   return (
     <section className="px-4">
-      <div className="max-w-[1664px] mx-auto w-full pt-[30px] pb-[60px] px-[60px] bg-[#051630] rounded-[60px] text-white placementulli">
+      <div className="max-w-main mx-auto w-full pt-section-sm pb-section-lg px-[60px] bg-krmu-navy rounded-[60px] text-white placementulli">
         <div className="md:text-center">
           <h3 className="leading-[3] my-2.5 text-xl md:text-4xl">Restrictions</h3>
         </div>
@@ -30,8 +30,8 @@ const Restriction = () => {
           </li>
         </ul>
       </div>
-      <div className="max-w-[1664px] mx-auto w-full my-[60px]  text-white lg:flex">
-        <div className="lg:w-1/2 p-10 lg:p-[60px] bg-[#051630] rounded-[60px]">
+      <div className="max-w-main mx-auto w-full my-[60px]  text-white lg:flex">
+        <div className="lg:w-1/2 p-10 lg:p-[60px] bg-krmu-navy rounded-[60px]">
           <p>
             This policy is subject to changes at any stage at the discretion of
             the CDC/Institute’s authorities. The changes made will be notified

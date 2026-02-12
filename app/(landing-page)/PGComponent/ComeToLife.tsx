@@ -12,8 +12,8 @@ type Props = {
 
 const ComeToLife = ({ data }: Props) => {
   return (
-    <section className="py-10 px-4 bg-[#051630]">
-      <div className="max-w-[1400px] mx-auto w-full">
+    <section className="py-10 px-4 bg-krmu-navy">
+      <div className="max-w-narrow mx-auto w-full">
         {/* Header */}
         <div className="max-w-5xl mx-auto text-center">
           <h3

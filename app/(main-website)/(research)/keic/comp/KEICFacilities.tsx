@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const KEICFacilities = () => {
   return (
-    <section className="py-[50px] px-4 bg-[url(/keic/keic-gradient-1.webp)] bg-cover bg-no bg-center">
-      <div className="max-w-[1664px] mx-auto w-full">
+    <section className="py-section px-4 bg-[url(/keic/keic-gradient-1.webp)] bg-cover bg-no bg-center">
+      <div className="max-w-main mx-auto w-full">
         <div className="text-white">
           <h4 className="text-3xl md:text-5xl font-semibold leading-[1.5]">Facilities</h4>
           <p>

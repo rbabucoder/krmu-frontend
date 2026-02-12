@@ -103,12 +103,12 @@ const page = async () => {
         </section>
       )}
       <section className="p-5 md:p-10">
-        <div className="max-w-[1600px] mx-auto w-full">
+        <div className="max-w-wide mx-auto w-full">
           {codeofconductlists && (
             <ul className="lg:pl-10 my-4">
               {codeofconductlists.map((item) => {
                 return (
-                  <li key={item.id} className="mb-2.5 hover:text-[#0060aa]">
+                  <li key={item.id} className="mb-2.5 hover:text-krmu-blue">
                     <Link
                       href={item.listlink}
                       className="text-xl flex tracking-[-1px]"

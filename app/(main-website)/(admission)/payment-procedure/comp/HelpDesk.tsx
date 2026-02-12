@@ -1,7 +1,7 @@
 const HelpDesk = () => {
   return (
     <section className="pb-10">
-      <div className="max-w-[1664px] mx-auto w-full flex justify-center">
+      <div className="max-w-main mx-auto w-full flex justify-center">
         <div className="pp-hd-card">
           {" "}
           <p className="card-title">Help Desk Information</p>{" "}

@@ -171,12 +171,12 @@ const ProgrammesSearch = () => {
   }, [searchQuery, selectedSchool, selectedDegree, fetchProgrammes]);
 
   return (
-    <section className="pt-40 pb-[50px] px-4 bg-[#f9f9f9]">
+    <section className="pt-40 pb-section px-4 bg-krmu-gray-50">
       <ProgrammesHero />
 
-      <div className="max-w-[1320px] mx-auto w-full">
+      <div className="max-w-content mx-auto w-full">
         {/* FILTER BOX */}
-        <div className="bg-white rounded-[10px]">
+        <div className="bg-white rounded-button">
           <div className="py-2.5 px-5 flex flex-col lg:flex-row items-center gap-5">
             
             {/* SCHOOL DROPDOWN */}
@@ -207,9 +207,9 @@ const ProgrammesSearch = () => {
                           setSearchQuery(""); // clear search
                           setOpenSchoolDropdown(false);
                         }}
-                        className={`py-2 px-3 cursor-pointer hover:bg-[#f0f0f0] ${
+                        className={`py-2 px-3 cursor-pointer hover:bg-krmu-gray-100 ${
                           selectedSchool === school.school_category.slug
-                            ? "bg-[#f0f0f0] font-semibold"
+                            ? "bg-krmu-gray-100 font-semibold"
                             : ""
                         }`}
                       >
@@ -248,9 +248,9 @@ const ProgrammesSearch = () => {
                           setSearchQuery(""); // clear search
                           setOpenDegreeDropdown(false);
                         }}
-                        className={`py-2 px-3 cursor-pointer hover:bg-[#f0f0f0] ${
+                        className={`py-2 px-3 cursor-pointer hover:bg-krmu-gray-100 ${
                           selectedDegree === degree.slug
-                            ? "bg-[#f0f0f0] font-semibold"
+                            ? "bg-krmu-gray-100 font-semibold"
                             : ""
                         }`}
                       >
@@ -273,7 +273,7 @@ const ProgrammesSearch = () => {
                   className="block w-full bg-transparent text-lg font-semibold placeholder:text-base"
                   placeholder="Search by Programme Name…"
                 />
-                <Search className="text-[#e61f21]" />
+                <Search className="text-krmu-red" />
               </div>
             </div>
           </div>
@@ -289,7 +289,7 @@ const ProgrammesSearch = () => {
             programmes.map((item) => (
               <div
                 key={item.id}
-                className="bg-[#0a41a1] py-[15px] px-4 lg:py-[30px] lg:px-10 rounded-[15px] h-[175px] md:h-[235px] text-white relative"
+                className="bg-krmu-blue-dark py-compact px-4 lg:py-section-sm lg:px-10 rounded-[15px] h-[175px] md:h-[235px] text-white relative"
               >
                 <div className="mb-[30px]">
                   <h6 className="font-semibold text-xs lg:text-base mb-2 line-clamp-2 sm:line-clamp-3">
@@ -327,7 +327,7 @@ const ProgrammesSearch = () => {
           <div className="p-4 md:p-12 flex items-center justify-center">
             <button
               onClick={() => fetchProgrammes(false, searchQuery)}
-              className="py-[15px] px-[30px] bg-[#e61f21] text-white flex items-center gap-5 rounded-[10px] font-semibold cursor-pointer"
+              className="py-compact px-container-px bg-krmu-red text-white flex items-center gap-5 rounded-button font-semibold cursor-pointer"
               style={{ boxShadow: "rgba(0,0,0,0.35) 0px 5px 15px" }}
             >
               <span>View All Programmes</span>

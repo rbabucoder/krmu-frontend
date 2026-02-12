@@ -28,7 +28,7 @@ export default function Popup({
       {isOpen && (
         <div className="fixed inset-0 bg-opacity-50 flex justify-center items-center z-50 text-black">
           <div
-            className={`bg-[#ddd] p-5 max-w-[500px] w-full z-10 shadow-lg relative rounded-[10px]`}
+            className={`bg-[#ddd] p-5 max-w-[500px] w-full z-10 shadow-lg relative rounded-button`}
           >
             <div
               className={`flex mb-2.5 text-[${formBodyTextColor || "#000"}]`}

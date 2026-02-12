@@ -3,10 +3,10 @@ import Link from "next/link";
 const WardenHostel = () => {
   return (
     <section className="w-full py-10 md:py-20 bg-white">
-      <div className="max-w-[1400px] mx-auto flex flex-col lg:flex-row gap-16 items-start">
+      <div className="max-w-narrow mx-auto flex flex-col lg:flex-row gap-16 items-start">
         {/* LEFT CONTENT */}
         <div className="w-full lg:w-1/2 px-4">
-          <h2 className="text-3xl md:text-[40px] leading-tight font-semibold text-[#0b2b6a] mb-6">
+          <h2 className="text-3xl md:text-h1 leading-tight font-semibold text-[#0b2b6a] mb-6">
             Connect with the Warden
           </h2>
 
@@ -34,7 +34,7 @@ const WardenHostel = () => {
 
         {/* RIGHT HOSTEL FEES */}
         <div className="w-full lg:w-1/2">
-          <h3 className="text-[22px] font-semibold mb-6 px-4 sm:px-0">Hostel Fees</h3>
+          <h3 className="text-h5 font-semibold mb-6 px-4 sm:px-0">Hostel Fees</h3>
 
           <div className="border border-black max-w-[600px] overflow-x-auto">
             <table className="w-full border-collapse campus_fac_table">

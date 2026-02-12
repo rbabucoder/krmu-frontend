@@ -1,7 +1,7 @@
 const   VirtualTourHero = () => {
   return (
     <>
-      <h1 className="text-2xl lg:text-[64px] font-semibold text-white mb-5">
+      <h1 className="text-2xl lg:text-display font-semibold text-white mb-5">
         Explore Our Campus in <br />
         Immersive 360° Virtual Tour
       </h1>

@@ -3,9 +3,9 @@ import Link from "next/link";
 const OverviewYourInterest = () => {
   return (
     <section className="py-5 px-4 lg:p-[30px]">
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row items-center">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row items-center">
         <div className="lg:w-2/5">
-          <h4 className="text-3xl md:text-5xl lg:text-[64px] text-[#00a0e3] leading-[1.2] mb-5 lg:mb-0">
+          <h4 className="text-3xl md:text-5xl lg:text-display text-[#00a0e3] leading-[1.2] mb-5 lg:mb-0">
             Your Interest <br /> Our Platform
           </h4>
           <p className="text-[#00a0e3] text-2xl mb-2.5 lg:mb-0">KRMU Clubs and Societies</p>
@@ -28,7 +28,7 @@ const OverviewYourInterest = () => {
           </p>
           <Link
             href="/clubs-and-societies"
-            className="text-base py-[11px] px-[23px] text-white font-semibold rounded-[4px] bg-[#051630] inline-block mt-5"
+            className="text-base py-[11px] px-[23px] text-white font-semibold rounded-badge bg-krmu-navy inline-block mt-5"
             target="_blank"
           >
             Know More

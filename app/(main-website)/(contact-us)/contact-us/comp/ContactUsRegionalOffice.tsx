@@ -5,11 +5,11 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const ContactUsRegionalOffice = () => {
   return (
-    <section className="py-[60px] px-4 bg-[url(/contact-us/contactus-gradient.webp)] bg-cover bg-no-repeat bg-center">
-      <div className="max-w-[1664px] mx-auto w-full text-white">
+    <section className="py-section-lg px-4 bg-[url(/contact-us/contactus-gradient.webp)] bg-cover bg-no-repeat bg-center">
+      <div className="max-w-main mx-auto w-full text-white">
         <h3 className="text-3xl md:text-5xl font-semibold mb-5">KRMU Regional Office</h3>
       </div>
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row mb-10">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row mb-10">
         <div className="lg:w-3/4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             <div className="text-white">

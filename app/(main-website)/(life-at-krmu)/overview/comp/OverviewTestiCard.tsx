@@ -16,7 +16,7 @@ const OverviewTestiCard = ({
   profileImage,
 }: ProfileProp) => {
   return (
-    <div className="bg-white  text-black rounded-[30px]  h-full">
+    <div className="bg-white  text-black rounded-card  h-full">
       <div
         className="flex  flex-col gap-4 p-5 rounded-t-[30px]"
         style={{

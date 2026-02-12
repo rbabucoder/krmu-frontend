@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const ResearchCenterTable = () => {
   return (
-    <section className="py-[50px] px-4">
-      <div className="max-w-[1664px] mx-auto w-full">
+    <section className="py-section px-4">
+      <div className="max-w-main mx-auto w-full">
         <div className="res-cen-table-container w-fulll overflow-x-auto">
           <table className="res-cen-table">
             <tbody>

@@ -18,7 +18,7 @@ const SchoolLetsExplore = ({ content, list1, list2, list3 }: Props) => {
         backgroundImage: "linear-gradient(180deg,#051630 0%,#004e8a 100%)",
       }}
     >
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row items-center">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row items-center">
         <div className="w-full lg:w-2/6 text-white px-4">
           {/* <h4 className="mb-5 md:mb-0 text-2xl md:text-3xl lg:text-5xl font-semibold leading-[1.3] lg:mx-8 xl:mx-12">
             Let’s explore what makes KRMU’s SOET better than that of other
@@ -30,8 +30,8 @@ const SchoolLetsExplore = ({ content, list1, list2, list3 }: Props) => {
         </div>
         <div className="w-full lg:w-4/6 flex overflow-x-auto">
           <div className="w-[2000px] sm:w-full flex">
-            <div className="w-fit sm:w-[23%] text-white py-[30px]">
-              <div className="max-h-[60px] min-h-[60px] py-[30px]"></div>
+            <div className="w-fit sm:w-[23%] text-white py-section-sm">
+              <div className="max-h-[60px] min-h-[60px] py-section-sm"></div>
               <ul>
                 {list1 &&
                   list1.map((list) => {
@@ -49,7 +49,7 @@ const SchoolLetsExplore = ({ content, list1, list2, list3 }: Props) => {
               </ul>
             </div>
             <div
-              className="w-fit sm:w-[37%] py-[30px] rounded-[25px]"
+              className="w-fit sm:w-[37%] py-section-sm rounded-[25px]"
               style={{
                 backgroundImage:
                   "linear-gradient(180deg,rgba(255,255,255,.09) 0%,rgba(255,255,255,.0549) 100%)",
@@ -66,7 +66,7 @@ const SchoolLetsExplore = ({ content, list1, list2, list3 }: Props) => {
                         key={list2?.id}
                         className="min-h-[135px] h-full flex items-center gap-5 pl-5 py-[5.6px] border-b border-[#d9d9d957]"
                       >
-                        <ThumbsDown className="text-[#e31e24]" />
+                        <ThumbsDown className="text-krmu-red" />
                         <span className="text-base font-medium">
                           {list2?.listtext}
                         </span>
@@ -75,7 +75,7 @@ const SchoolLetsExplore = ({ content, list1, list2, list3 }: Props) => {
                   })}
               </ul>
             </div>
-            <div className="w-[550px] sm:w-[37%] py-[30px] rounded-[25px] bg-white">
+            <div className="w-[550px] sm:w-[37%] py-section-sm rounded-[25px] bg-white">
               <div className="max-h-[60px] min-h-[60px] text-center text-black text-2xl font-semibold">
                 {list3?.listheading}
               </div>
@@ -85,7 +85,7 @@ const SchoolLetsExplore = ({ content, list1, list2, list3 }: Props) => {
                     return (
                       <li
                         key={list?.id}
-                        className="min-h-[135px] h-full flex items-center gap-5 pl-5 py-[5.6px] border-b border-[#051630]"
+                        className="min-h-[135px] h-full flex items-center gap-5 pl-5 py-[5.6px] border-b border-krmu-navy"
                       >
                         <div>
                           {" "}

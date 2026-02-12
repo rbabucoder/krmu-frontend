@@ -23,8 +23,8 @@ const AcademicImgURL = [
 
 const AcademicSlide = () => {
   return (
-    <section className="bg-[#051630] py-10">
-      <div className="max-w-[1664px] mx-auto w-full">
+    <section className="bg-krmu-navy py-10">
+      <div className="max-w-main mx-auto w-full">
         <Carousel
           className="w-full"
           plugins={[

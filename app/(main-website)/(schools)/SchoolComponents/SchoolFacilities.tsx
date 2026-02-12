@@ -31,10 +31,10 @@ const SchoolFacilities = ({ fac_slides }: Props) => {
   }, [api]);
 
   return (
-    <div className="pt-[30px] pb-32 px-4 sm:pb-20 bg-[#051630]">
-      <div className="max-w-[1664px] mx-auto w-full">
+    <div className="pt-section-sm pb-32 px-4 sm:pb-20 bg-krmu-navy">
+      <div className="max-w-main mx-auto w-full">
         <div className="text-center text-white px-4">
-          <h5 className="text-3xl md:text-5xl lg:text-6xl xl:text-[80px] leading-[1.16] font-medium">
+          <h5 className="text-3xl md:text-5xl lg:text-6xl xl:text-hero leading-[1.16] font-medium">
             Facilities
           </h5>
         </div>
@@ -73,12 +73,12 @@ const SchoolFacilities = ({ fac_slides }: Props) => {
           </CarouselContent>
 
           <CarouselPrevious
-            className="bg-[#2c3a4f] text-[#bfc4ca] hover:bg-[#051630] hover:text-white cursor-pointer buttonPrevNextSize w-[60px] h-[60px]
+            className="bg-krmu-slate text-krmu-gray-300 hover:bg-krmu-navy hover:text-white cursor-pointer buttonPrevNextSize w-[60px] h-[60px]
            top-[115%] sm:top-[108%] xl:top-[105%] left-[20%] sm:left-[30%] xl:left-[45%]
         "
           />
           <CarouselNext
-            className="bg-[#2c3a4f] text-[#bfc4ca] hover:bg-[#051630] hover:text-white cursor-pointer buttonPrevNextSize w-[60px] h-[60px] 
+            className="bg-krmu-slate text-krmu-gray-300 hover:bg-krmu-navy hover:text-white cursor-pointer buttonPrevNextSize w-[60px] h-[60px] 
             top-[115%] sm:top-[108%]  xl:top-[105%] right-[20%] sm:right-[30%] xl:right-[45%]"
           />
         </Carousel>

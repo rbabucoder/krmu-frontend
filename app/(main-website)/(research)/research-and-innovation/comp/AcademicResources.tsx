@@ -4,11 +4,11 @@ import Link from "next/link";
 const AcademicResources = () => {
   return (
     <>
-      <div className="max-w-[1664px] mx-auto w-full text-white" id="_academics-resources">
+      <div className="max-w-main mx-auto w-full text-white" id="_academics-resources">
         <h3 className="mb-5 text-3xl md:text-[45px] font-semibold">Academic Resources</h3>
         <h4 className="mb-5 text-xl font-semibold">CENTRAL LIBRARY</h4>
       </div>
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row text-white text-justify gap-10">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row text-white text-justify gap-10">
         <div className="lg:w-1/2">
           <p>
             K.R. Mangalam University Library denoted as Central Library which
@@ -54,7 +54,7 @@ const AcademicResources = () => {
           </p>
         </div>
       </div>
-      <div className="max-w-[1664px] mx-auto w-full mt-10">
+      <div className="max-w-main mx-auto w-full mt-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           <div>
             <Image src="/academicResources/item-1.webp" width={490} height={278} alt="" />

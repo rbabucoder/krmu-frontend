@@ -13,7 +13,7 @@ type Props = {
 const PHDAdmissionAccordion = ({ acc }: Props) => {
   return (
     <section className="py-10 px-4">
-      <div className="max-w-[1664px] mx-auto w-full items-start">
+      <div className="max-w-main mx-auto w-full items-start">
 
         {/* FIXED: removed grid */}
         <Accordion
@@ -26,8 +26,8 @@ const PHDAdmissionAccordion = ({ acc }: Props) => {
             <AccordionItem
               key={i}
               value={`left-item-${i + 1}`}
-              className="bg-[#051630] text-white rounded-[40px]
-                         px-[25px] py-[15px] w-full lg:w-[calc(50%-10px)]"
+              className="bg-krmu-navy text-white rounded-pill
+                         px-[25px] py-compact w-full lg:w-[calc(50%-10px)]"
             >
               <AccordionTrigger className="text-base cursor-pointer p-0 data-[state=open]:pb-[25px]">
                 {item?.ques}

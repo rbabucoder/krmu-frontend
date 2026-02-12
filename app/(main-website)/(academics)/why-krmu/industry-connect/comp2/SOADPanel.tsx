@@ -2,10 +2,10 @@ import Image from "next/image";
 
 const SOADPanel = () => {
   return (
-    <section className="py-[50px] px-4">
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10">
+    <section className="py-section px-4">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row gap-10">
         <div className="w-full lg:w-1/2">
-          <h3 className="text-3xl lg:text-[38px] font-bold mb-5">Art Mural Event</h3>
+          <h3 className="text-3xl lg:text-h2 font-bold mb-5">Art Mural Event</h3>
           <p className="mb-5 text-lg">
             K.R. Mangalam University, in collaboration with Somany Ceramics,
             recently concluded an engaging four-day tile art mural event. Led by
@@ -27,7 +27,7 @@ const SOADPanel = () => {
           />
         </div>
       </div>
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10 items-center">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row gap-10 items-center">
         <div className="w-full lg:w-1/2">
           <Image
             src="https://www.krmangalam.edu.in/wp-content/uploads/2025/05/Picture1.jpgsoad.jpg"
@@ -38,7 +38,7 @@ const SOADPanel = () => {
           />
         </div>
         <div className="w-full lg:w-1/2">
-          <h3 className="text-3xl lg:text-[38px] font-bold mb-5">
+          <h3 className="text-3xl lg:text-h2 font-bold mb-5">
             Guest Lecture on Business in Design
           </h3>
           <p className="mb-5 text-lg">
@@ -51,9 +51,9 @@ const SOADPanel = () => {
           <p className="text-lg mb-5"></p>
         </div>
       </div>
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10 items-center mt-5">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row gap-10 items-center mt-5">
         <div className="w-full lg:w-1/2">
-          <h3 className="text-3xl lg:text-[38px] font-bold mb-5">
+          <h3 className="text-3xl lg:text-h2 font-bold mb-5">
             Guest Lecture on Future of Fashion
           </h3>
           <p className="mb-5 text-lg">

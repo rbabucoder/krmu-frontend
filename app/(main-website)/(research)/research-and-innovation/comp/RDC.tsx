@@ -4,7 +4,7 @@ import Link from "next/link";
 const RDC = () => {
   return (
     <>
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row items-center">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row items-center">
         <div className="lg:w-1/2 text-white">
           <h2 className="text-3xl md:text-5xl font-semibold mb-5">
             Research <br /> and Development Cell (RDC)

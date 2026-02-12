@@ -2,10 +2,10 @@ import Image from "next/image";
 
 const SolsPanel = () => {
   return (
-    <section className="py-[50px] px-4">
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10">
+    <section className="py-section px-4">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row gap-10">
         <div className="w-full lg:w-1/2">
-          <h3 className="text-3xl lg:text-[38px] font-bold mb-5">
+          <h3 className="text-3xl lg:text-h2 font-bold mb-5">
             Panel Discussion on Bridging the Gap: Navigating Internship
             Opportunities
           </h3>
@@ -35,7 +35,7 @@ const SolsPanel = () => {
           />
         </div>
       </div>
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10 my-10">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row gap-10 my-10">
         <div className="w-full lg:w-1/2">
           <Image
             src="https://www.krmangalam.edu.in/wp-content/uploads/2025/06/dssfd.webp"
@@ -46,7 +46,7 @@ const SolsPanel = () => {
           />
         </div>
         <div className="w-full lg:w-1/2">
-          <h3 className="text-3xl lg:text-[38px] font-bold mb-5">
+          <h3 className="text-3xl lg:text-h2 font-bold mb-5">
             Expert Talk on Global Trends in Higher Education
           </h3>
           <p className="mb-5 text-lg">
@@ -67,9 +67,9 @@ const SolsPanel = () => {
           </p>
         </div>
       </div>
-      {/* <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10 my-10">
+      {/* <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row gap-10 my-10">
         <div className="w-full lg:w-1/2">
-          <h3 className="text-3xl lg:text-[38px] font-bold mb-5">
+          <h3 className="text-3xl lg:text-h2 font-bold mb-5">
             Expert Lecture on Right to Privacy and Data Protection Law
           </h3>
           <p className="mb-5 text-lg">

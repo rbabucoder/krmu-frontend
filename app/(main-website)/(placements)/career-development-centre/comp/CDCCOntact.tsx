@@ -4,8 +4,8 @@ import React from "react";
 
 const CDCCOntact = () => {
   return (
-    <section className="bg-[url(/placements/contact-bg.webp)] bg-no-repeat bg-cover bg-center py-[30px] px-4">
-      <div className="max-w-[1664px] mx-auto lg:flex">
+    <section className="bg-[url(/placements/contact-bg.webp)] bg-no-repeat bg-cover bg-center py-section-sm px-4">
+      <div className="max-w-main mx-auto lg:flex">
         <div className="lg:w-1/2 text-[#3d5fa5]">
           <h4 className="leading-[1.2] text-[45px] font-semibold mb-5">
             Contact and Inquiries

@@ -3,8 +3,8 @@ import KeicSlide from "./KeicSlide";
 
 const KEIC = () => {
   return (
-    <section className="bg-black bg-cover bg-center pt-[50px] pb-[30px] px-4">
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10 items-center">
+    <section className="bg-black bg-cover bg-center pt-section pb-section-sm px-4">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row gap-10 items-center">
         <div className="lg:w-2/5">
           <KeicSlide />
         </div>

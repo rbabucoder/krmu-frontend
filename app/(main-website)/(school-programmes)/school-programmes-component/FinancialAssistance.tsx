@@ -31,7 +31,7 @@ const FinancialAssistance = ({
 }: Props) => {
   return (
     <section className="prog-global-padding bg-[#f8f9fd]">
-      <div className="max-w-[1320px] mx-auto w-full px-2.5 sm:px-4">
+      <div className="max-w-content mx-auto w-full px-2.5 sm:px-4">
         <div className="common-prog-container">
           <h2 className="heading">
             {heading}{" "}
@@ -42,7 +42,7 @@ const FinancialAssistance = ({
         <div>
           <div className="flex flex-wrap md:flex-nowrap justify-between gap-6 mt-6">
             <div
-              className="px-5 py-[30px] font-medium text-base text-[#db2a1a] text-center rounded-[35px] flex items-center justify-center w-full md:w-2/12"
+              className="px-5 py-section-sm font-medium text-base text-krmu-red-dark text-center rounded-[35px] flex items-center justify-center w-full md:w-2/12"
               style={{
                 boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
               }}
@@ -50,7 +50,7 @@ const FinancialAssistance = ({
               {point1}
             </div>
             <div
-              className="px-5 py-[30px] font-medium text-base text-[#db2a1a] text-center rounded-[35px]  flex items-center justify-center w-full md:w-5/12"
+              className="px-5 py-section-sm font-medium text-base text-krmu-red-dark text-center rounded-[35px]  flex items-center justify-center w-full md:w-5/12"
               style={{
                 boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
               }}
@@ -58,7 +58,7 @@ const FinancialAssistance = ({
               {point2}
             </div>
             <div
-              className="px-5 py-[30px] font-medium text-base text-[#db2a1a] text-center rounded-[35px]  flex items-center justify-center w-full md:w-4/12"
+              className="px-5 py-section-sm font-medium text-base text-krmu-red-dark text-center rounded-[35px]  flex items-center justify-center w-full md:w-4/12"
               style={{
                 boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
               }}
@@ -71,7 +71,7 @@ const FinancialAssistance = ({
         <div>
           <div className="flex flex-wrap md:flex-nowrap justify-between gap-6 md:mt-6">
             <div
-              className="px-5 py-[30px] font-medium text-base text-[#db2a1a] text-center rounded-[35px] flex items-center justify-center w-full md:w-3/12"
+              className="px-5 py-section-sm font-medium text-base text-krmu-red-dark text-center rounded-[35px] flex items-center justify-center w-full md:w-3/12"
               style={{
                 boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
               }}
@@ -79,7 +79,7 @@ const FinancialAssistance = ({
               {point4}
             </div>
             <div
-              className="px-5 py-[30px] font-medium text-base text-[#db2a1a] text-center rounded-[35px]  flex items-center justify-center w-full md:w-4/12"
+              className="px-5 py-section-sm font-medium text-base text-krmu-red-dark text-center rounded-[35px]  flex items-center justify-center w-full md:w-4/12"
               style={{
                 boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
               }}
@@ -87,7 +87,7 @@ const FinancialAssistance = ({
               {point5}
             </div>
             <div
-              className="px-5 py-[30px] font-medium text-base text-[#db2a1a] text-center rounded-[35px]  flex items-center justify-center w-full md:w-5/12"
+              className="px-5 py-section-sm font-medium text-base text-krmu-red-dark text-center rounded-[35px]  flex items-center justify-center w-full md:w-5/12"
               style={{
                 boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
               }}
@@ -98,7 +98,7 @@ const FinancialAssistance = ({
         </div>
         <div className="mt-6 flex flex-wrap md:flex-nowrap justify-center items-center gap-6">
           <div
-            className="px-5 py-[30px] font-medium text-base text-[#db2a1a] text-center rounded-[35px] flex items-center justify-center w-full md:w-4/12"
+            className="px-5 py-section-sm font-medium text-base text-krmu-red-dark text-center rounded-[35px] flex items-center justify-center w-full md:w-4/12"
             style={{
               boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
             }}

@@ -27,11 +27,11 @@ const DreamCareer = ({
 }: Props) => {
   return (
     <section className="prog-global-padding">
-      <div className="max-w-[1320px] mx-auto w-full flex flex-col-reverse md:flex-row gap-6 px-2.5 md:px-4">
+      <div className="max-w-content mx-auto w-full flex flex-col-reverse md:flex-row gap-6 px-2.5 md:px-4">
         {/* Left section */}
         <div className="w-full md:w-1/2">
           {/* Logos grid */}
-          <div className="p-2.5 sm:p-[30px] border border-[#d8d8d8] rounded-[30px] grid grid-cols-2">
+          <div className="p-2.5 sm:p-[30px] border border-[#d8d8d8] rounded-card grid grid-cols-2">
             {logos?.map((logo) => (
               <div
                 key={logo.id}
@@ -50,9 +50,9 @@ const DreamCareer = ({
           {/* Stats */}
           <div className="flex flex-wrap sm:flex-nowrap gap-6 mt-6">
             {/* Highest Package */}
-            <div className="w-full sm:w-3/5 p-2.5 sm:p-5 border border-[#d8d8d8] rounded-[30px] flex items-center justify-center">
+            <div className="w-full sm:w-3/5 p-2.5 sm:p-5 border border-[#d8d8d8] rounded-card flex items-center justify-center">
               <div className="text-center">
-                <h4 className="text-[#db2a1a] text-4xl md:text-[45px] font-normal">
+                <h4 className="text-krmu-red-dark text-4xl md:text-[45px] font-normal">
                   {highestpackagenum}
                 </h4>
                 <p>{highestpackagetitle}</p>
@@ -60,15 +60,15 @@ const DreamCareer = ({
             </div>
 
             {/* Recruiters & Assistance */}
-            <div className="w-full sm:w-2/5 p-2.5 sm:p-5 border border-[#d8d8d8] rounded-[30px]">
+            <div className="w-full sm:w-2/5 p-2.5 sm:p-5 border border-[#d8d8d8] rounded-card">
               <div className="text-center">
-                <h4 className="text-[#db2a1a] text-4xl md:text-[45px] font-normal">
+                <h4 className="text-krmu-red-dark text-4xl md:text-[45px] font-normal">
                   {/* {campusrecruitersnum} */}800+
                 </h4>
                 <p>{campusrecruitertitle}</p>
               </div>
               <div className="text-center mt-4">
-                <h4 className="text-[#db2a1a] text-4xl md:text-[45px] font-normal">
+                <h4 className="text-krmu-red-dark text-4xl md:text-[45px] font-normal">
                   {placementassistnum}
                 </h4>
                 <p>{placementassisttitle}</p>
@@ -79,8 +79,8 @@ const DreamCareer = ({
 
         {/* Right section */}
         <div className="w-full md:w-1/2">
-          <div className="md:pt-[150px] pt-3 pb-5 px-3 sm:px-10 lg:px-[50px] md:pb-[50px] rounded-[20px] bg-[#0a41a1] h-full text-white">
-            <h4 className="text-[32px] md:text-[50px] mb-5 font-normal leading-[1.2]">
+          <div className="md:pt-[150px] pt-3 pb-5 px-3 sm:px-10 lg:px-section md:pb-section rounded-panel bg-krmu-blue-dark h-full text-white">
+            <h4 className="text-h3 md:text-[50px] mb-5 font-normal leading-[1.2]">
               {heading}
             </h4>
             <p className="font-light text-base sm:text-xl leading-[1.4] md:leading-[2]">

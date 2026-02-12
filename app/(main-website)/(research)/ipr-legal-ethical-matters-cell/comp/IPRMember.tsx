@@ -46,7 +46,7 @@ const rdcTeamData = [
 ];
 const IPRMember = () => {
   return (
-    <div className="max-w-[1664px] mx-auto w-full mt-10">
+    <div className="max-w-main mx-auto w-full mt-10">
       <h3 className="text-3xl md:text-5xl text-white font-bold">
         Member of IPR Cell
       </h3>

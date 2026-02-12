@@ -48,11 +48,11 @@ const SchoolTestimonialsCard = ({ testimonials }: Props) => {
             })}
         </CarouselContent>
         <CarouselPrevious
-          className="bg-[#2c3a4f] text-[#bfc4ca] hover:bg-[#051630] hover:text-white cursor-pointer buttonPrevNextSize w-[60px] h-[60px]
+          className="bg-krmu-slate text-krmu-gray-300 hover:bg-krmu-navy hover:text-white cursor-pointer buttonPrevNextSize w-[60px] h-[60px]
          top-[115%] left-[20%] sm:left-[30%] xl:top-[80%] xl:left-[-66%]"
         />
         <CarouselNext
-          className="bg-[#2c3a4f] text-[#bfc4ca] hover:bg-[#051630] hover:text-white cursor-pointer buttonPrevNextSize w-[60px] h-[60px] 
+          className="bg-krmu-slate text-krmu-gray-300 hover:bg-krmu-navy hover:text-white cursor-pointer buttonPrevNextSize w-[60px] h-[60px] 
          top-[115%] right-[20%] sm:right-[30%] xl:top-[80%] xl:right-[145%]"
         />
       </Carousel>

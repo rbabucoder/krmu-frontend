@@ -4,7 +4,7 @@ import Link from "next/link";
 const InterRelaionForAdmission = () => {
   return (
     <section className="break-all sm:break-normal pt-10 px-4 bg-[url(/inter-relation/bg-2.png)] bg-cover bg-no-repeat bg-center">
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row">
         <div className="w-full lg:w-2/3">
           <h4 className="text-[28px] font-semibold text-white mb-5">
             FOR ADMISSIONS – INTERNATIONAL STUDENTS

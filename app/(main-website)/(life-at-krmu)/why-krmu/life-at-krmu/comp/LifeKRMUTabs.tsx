@@ -38,7 +38,7 @@ export default function LifeKRMUTabs() {
       {/* <div className="absolute inset-0 bg-black/60"></div> */}
 
       {/* MAIN WRAPPER */}
-      <div className="relative max-w-[1664px] mx-auto w-full flex items-center flex-col-reverse md:flex-row gap-10">
+      <div className="relative max-w-main mx-auto w-full flex items-center flex-col-reverse md:flex-row gap-10">
         {/* ------- RIGHT CONTENT (MOBILE FIRST) ------- */}
         <div className="order-1 md:order-2 md:w-3/4 text-white text-lg leading-relaxed">
           <p>{tabContent[active]}</p>
@@ -53,7 +53,7 @@ export default function LifeKRMUTabs() {
             {tabs.map((t) => (
               <li
                 key={t.id}
-                className={`relative pl-10 cursor-pointer  text-[22px] font-medium transition-all  text-black
+                className={`relative pl-10 cursor-pointer  text-h5 font-medium transition-all  text-black
                 ${active === t.id ? "font-bold text-white" : "opacity-70"}`}
                 onClick={() => setActive(t.id)}
               >

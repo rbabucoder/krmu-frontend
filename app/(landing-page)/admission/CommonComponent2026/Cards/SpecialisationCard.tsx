@@ -32,7 +32,7 @@ const SpecialisationCard = ({ data }: Props) => {
           dangerouslySetInnerHTML={{ __html: data.title }}
         />
 
-        <p className="text-xs text-[#7f7f7f]">{data.desc}</p>
+        <p className="text-xs text-krmu-gray-400">{data.desc}</p>
 
         {/* Extra Infos */}
         <div className="flex flex-col gap-4 my-10">
@@ -51,7 +51,7 @@ const SpecialisationCard = ({ data }: Props) => {
               <div className="w-[80%] sm:w-[90%]">
                 <h5>{info.title}</h5>
                 <p
-                  className="text-sm text-[#7f7f7f] break-word-custom"
+                  className="text-sm text-krmu-gray-400 break-word-custom"
                   dangerouslySetInnerHTML={{ __html: info.desc }}
                 />
               </div>
@@ -62,7 +62,7 @@ const SpecialisationCard = ({ data }: Props) => {
         {/* CTA */}
         {/* <Link
           href="#"
-          className="bg-[#0060aa] p-5 rounded-full text-white flex w-fit items-center gap-5"
+          className="bg-krmu-blue p-5 rounded-full text-white flex w-fit items-center gap-5"
         >
           Explore Programme <MoveUpRight color="#fff" />
         </Link> */}

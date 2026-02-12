@@ -12,7 +12,7 @@ const ReadingRoom = () => {
         concentration.
       </p>
       <div className="flex flex-col lg:flex-row gap-5">
-        <div className="w-full lg:w-1/2 p-5 bg-[#051630] text-white rounded-[20px]">
+        <div className="w-full lg:w-1/2 p-5 bg-krmu-navy text-white rounded-panel">
           <ul>
             <li className="flex gap-2.5 text-base pb-1.5">
               <div>
@@ -93,7 +93,7 @@ const ReadingRoom = () => {
             </li>
           </ul>
         </div>
-        <div className="w-full lg:w-1/2 p-5 bg-[#051630] text-white rounded-[20px]">
+        <div className="w-full lg:w-1/2 p-5 bg-krmu-navy text-white rounded-panel">
           <ul>
             <li className="flex gap-2.5 text-base pb-1.5">
               <div>

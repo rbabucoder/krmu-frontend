@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const ScholarNotes = () => {
   return (
-    <section className="bg-[url(/scholarship/notes-bg.webp)] bg-cover bg-no-repeat py-[30px] px-4">
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-5">
+    <section className="bg-[url(/scholarship/notes-bg.webp)] bg-cover bg-no-repeat py-section-sm px-4">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row gap-5">
         <div className="lg:w-1/5">
           <h3 className="text-5xl text-white font-semibold">Notes:</h3>
         </div>

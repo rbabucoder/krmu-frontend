@@ -4,7 +4,7 @@ import Link from "next/link";
 const IPRAchievement = () => {
   return (
     <section className="py-20 bg-[#2c172f] px-4">
-      <div className="max-w-[1600px] mx-auto w-full">
+      <div className="max-w-wide mx-auto w-full">
         <h3 className="text-3xl md:text-5xl font-semibold text-white mb-10">
           Achievements
         </h3>

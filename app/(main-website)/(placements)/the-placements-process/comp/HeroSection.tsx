@@ -3,7 +3,7 @@ import Image from "next/image";
 export const HeroSection = () => {
   return (
     <section className="pt-[25%] sm:pt-[15%] lg:pb-[9%] bg-[url(/programmes/InternationalCollaborationsBannerBackground.webp)] lg:bg-[url(/programmes/placebanner.jpg)] px-4">
-      <div className="text-white max-w-[1664px] mx-auto w-full">
+      <div className="text-white max-w-main mx-auto w-full">
         <div className="max-w-3xl my-[2.5] ">
           <h1 className="text-2xl sm:text-4xl font-semibold md:text-5xl mt-2.5 mb-3.5">The Placements Process</h1>
           <p>

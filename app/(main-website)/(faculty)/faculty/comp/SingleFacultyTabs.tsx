@@ -12,7 +12,7 @@ const SingleFacultyTabs = ({ facTabs }: Props) => {
 
   return (
     <section className="mt-[100px]">
-      <div className="max-w-[1600px] mx-auto w-full">
+      <div className="max-w-wide mx-auto w-full">
         <div className="flex w-full flex-col gap-6">
           {tabs.length > 0 ? (
             <Tabs

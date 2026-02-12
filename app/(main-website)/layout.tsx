@@ -69,7 +69,7 @@ export default function RootLayout({
         <NoPaperFormProvider />
         {children}
         <Footer />
-        {/* <Button className="bg-[#f00] border border-none py-[6px] px-[15px] fixed top-[40%] right-[-42px] rotate-90 rounded-sm h-[27px] z-10">
+        {/* <Button className="bg-[#f00] border border-none py-[6px] px-compact fixed top-[40%] right-[-42px] rotate-90 rounded-sm h-[27px] z-10">
           Enquire Now
         </Button> */}
         {/* <NpfPopupButton formId="d63cf9c4d3104c39f3ac28164701a69c" /> */}

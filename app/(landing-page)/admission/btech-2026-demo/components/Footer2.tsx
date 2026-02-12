@@ -37,7 +37,7 @@ const Footer2 = () => {
             </a>
             <a
               href="tel:+919311411717"
-              className="text-white bg-[#0060aa]  text-lg min-h-14 inline-flex items-center justify-center gap-2 font-semibold cursor-pointer rounded-xl
+              className="text-white bg-krmu-blue  text-lg min-h-14 inline-flex items-center justify-center gap-2 font-semibold cursor-pointer rounded-xl
               transistion-all duration-150 ease-out py-4 px-6 hover:-translate-y-0.5"
             >
               <svg

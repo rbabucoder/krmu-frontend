@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const SPRSPanel = () => {
   return (
-    <section className="py-[50px] px-4">
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10">
+    <section className="py-section px-4">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row gap-10">
         <div className="w-full lg:w-1/2">
           <p className="mb-5 text-lg">
             The School of Physiotherapy and Rehabilitation successfully

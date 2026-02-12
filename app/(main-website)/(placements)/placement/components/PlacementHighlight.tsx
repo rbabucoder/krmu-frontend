@@ -13,9 +13,9 @@ type Props = {
 const PlacementHighlight = ({ heading, slideImages, btn }: Props) => {
   return (
     <>
-      <section className="py-[30px] mt-5 px-4">
-        <div className="max-w-[1664px] mx-auto w-full mb-7">
-          <h2 className="text-[26px] md:text-5xl text-center font-semibold md:leading-[1.5] mb-5">
+      <section className="py-section-sm mt-5 px-4">
+        <div className="max-w-main mx-auto w-full mb-7">
+          <h2 className="text-h4 md:text-5xl text-center font-semibold md:leading-[1.5] mb-5">
             {heading}
           </h2>
           {/* <Carousel
@@ -50,7 +50,7 @@ const PlacementHighlight = ({ heading, slideImages, btn }: Props) => {
             {btn && (
               <Link
                 href={btn?.buttonlink}
-                className={`py-[11px] px-[23px] text-sm text-white bg-[#e20910] hover:bg-[#034272] rounded-sm font-medium inline-block ${
+                className={`py-[11px] px-[23px] text-sm text-white bg-[#e20910] hover:bg-krmu-navy-light rounded-sm font-medium inline-block ${
                   btn?.buttonclass || ""
                 }`}
                 target="_blank"

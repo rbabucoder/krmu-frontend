@@ -20,7 +20,7 @@ const AccCard = ({
 }: Props) => {
   return (
     <>
-      <div className="p-5 border border-[#e2e2e2] rounded-[10px] text-base min-h-72 h-full">
+      <div className="p-5 border border-[#e2e2e2] rounded-button text-base min-h-72 h-full">
         {bankImgs &&
           bankImgs?.map((img, i) => {
             return (

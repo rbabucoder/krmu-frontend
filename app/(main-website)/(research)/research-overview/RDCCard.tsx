@@ -13,7 +13,7 @@ const RDCCard = ({ name, desg, facUrl, facImgUrl }: Props) => {
   return (
     <Link
       href={facUrl || "#"}
-      className="bg-[url(/research/card-bg.webp)] bg-no-repeat text-white bg-cover flex flex-col sm:flex-row items-center justify-center rounded-[20px] mt-5"
+      className="bg-[url(/research/card-bg.webp)] bg-no-repeat text-white bg-cover flex flex-col sm:flex-row items-center justify-center rounded-panel mt-5"
       target="_blank"
     >
       <div className="md:w-1/4">

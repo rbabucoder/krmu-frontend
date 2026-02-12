@@ -1,7 +1,7 @@
 const InterRelationGlobal = () => {
   return (
     <section className="py-10 px-4">
-      <div className="max-w-[1664px] mx-auto w-full">
+      <div className="max-w-main mx-auto w-full">
         <h4 className="text-[28px] text-center font-semibold mb-10">
           Global Learning Experiences at KRMU
         </h4>

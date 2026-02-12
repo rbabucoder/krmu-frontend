@@ -20,11 +20,11 @@ const PHDHighlight = ({ heading, highlightheading, btn, imgUrl }: Props) => {
             "linear-gradient(95deg,#051630 2.68%,#015497 39.92%,#0060aa 77.91%,#e31e24 100%)",
         }}
       >
-        <div className="max-w-[1664px] mx-auto w-full px-4 mb-5 sm:mb-0">
-          <h4 className="text-[#0078bf] text-2xl md:text-4xl lg:text-[64px] leading-[1.2] font-medium">
+        <div className="max-w-main mx-auto w-full px-4 mb-5 sm:mb-0">
+          <h4 className="text-[#0078bf] text-2xl md:text-4xl lg:text-display leading-[1.2] font-medium">
             {heading}
           </h4>
-          <h4 className="text-2xl md:text-4xl lg:text-[64px] leading-[1.2] font-medium text-white">
+          <h4 className="text-2xl md:text-4xl lg:text-display leading-[1.2] font-medium text-white">
             {highlightheading}
           </h4>
         </div>
@@ -32,7 +32,7 @@ const PHDHighlight = ({ heading, highlightheading, btn, imgUrl }: Props) => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-3">
             <div className="w-full p-2.5 md:p-5 bg-[url(/schools/1.png)] bg-no-repeat bg-size-[10%] bg-transparent bg-right-bottom">
               <span
-                className="p-4 flex items-center justify-center w-[60px] h-[60px] bg-[#051630] rounded-full mb-5"
+                className="p-4 flex items-center justify-center w-[60px] h-[60px] bg-krmu-navy rounded-full mb-5"
                 style={{
                   boxShadow: "0px 5px 20px rgb(29 66 197 / 58%)",
                 }}
@@ -56,7 +56,7 @@ const PHDHighlight = ({ heading, highlightheading, btn, imgUrl }: Props) => {
             </div>
             <div className="w-full p-2.5 md:p-5 bg-[url(/schools/2.png)] bg-no-repeat bg-size-[10%] bg-transparent bg-right-bottom">
               <span
-                className="p-4 flex items-center justify-center w-[60px] h-[60px] bg-[#051630] rounded-full mb-5"
+                className="p-4 flex items-center justify-center w-[60px] h-[60px] bg-krmu-navy rounded-full mb-5"
                 style={{
                   boxShadow: "0px 5px 20px rgb(29 66 197 / 58%)",
                 }}
@@ -75,7 +75,7 @@ const PHDHighlight = ({ heading, highlightheading, btn, imgUrl }: Props) => {
             </div>
             <div className="w-full p-2.5 md:p-5 bg-[url(/schools/3.png)] bg-no-repeat bg-size-[10%] bg-transparent bg-right-bottom">
               <span
-                className="p-4 flex items-center justify-center w-[60px] h-[60px] bg-[#051630] rounded-full mb-5"
+                className="p-4 flex items-center justify-center w-[60px] h-[60px] bg-krmu-navy rounded-full mb-5"
                 style={{
                   boxShadow: "0px 5px 20px rgb(29 66 197 / 58%)",
                 }}
@@ -94,7 +94,7 @@ const PHDHighlight = ({ heading, highlightheading, btn, imgUrl }: Props) => {
             </div>
             <div className="w-full p-2.5 md:p-5 bg-[url(/schools/4.png)] bg-no-repeat bg-size-[10%] bg-transparent bg-right-bottom">
               <span
-                className="p-4 flex items-center justify-center w-[60px] h-[60px] bg-[#051630] rounded-full mb-5"
+                className="p-4 flex items-center justify-center w-[60px] h-[60px] bg-krmu-navy rounded-full mb-5"
                 style={{
                   boxShadow: "0px 5px 20px rgb(29 66 197 / 58%)",
                 }}
@@ -113,7 +113,7 @@ const PHDHighlight = ({ heading, highlightheading, btn, imgUrl }: Props) => {
             </div>
             <div className="w-full p-2.5 md:p-5 bg-[url(/schools/5.png)] bg-no-repeat bg-size-[10%] bg-transparent bg-right-bottom">
               <span
-                className="p-4 flex items-center justify-center w-[60px] h-[60px] bg-[#051630] rounded-full mb-5"
+                className="p-4 flex items-center justify-center w-[60px] h-[60px] bg-krmu-navy rounded-full mb-5"
                 style={{
                   boxShadow: "0px 5px 20px rgb(29 66 197 / 58%)",
                 }}
@@ -135,7 +135,7 @@ const PHDHighlight = ({ heading, highlightheading, btn, imgUrl }: Props) => {
             </div>
             <div className="w-full p-2.5 md:p-5 bg-[url(/schools/6.png)] bg-no-repeat bg-size-[10%] bg-transparent bg-right-bottom">
               <span
-                className="p-4 flex items-center justify-center w-[60px] h-[60px] bg-[#051630] rounded-full mb-5"
+                className="p-4 flex items-center justify-center w-[60px] h-[60px] bg-krmu-navy rounded-full mb-5"
                 style={{
                   boxShadow: "0px 5px 20px rgb(29 66 197 / 58%)",
                 }}
@@ -167,7 +167,7 @@ const PHDHighlight = ({ heading, highlightheading, btn, imgUrl }: Props) => {
           {btn?.btn_link && (
             <Link
               href={btn?.btn_link}
-              className={`py-3.5 px-8 bg-[#051630] font-bold rounded-sm inline-block text-white ${
+              className={`py-3.5 px-8 bg-krmu-navy font-bold rounded-sm inline-block text-white ${
                 btn?.btn_class || ""
               }`}
               target="_blank"

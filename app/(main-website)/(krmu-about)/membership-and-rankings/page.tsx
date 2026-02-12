@@ -81,9 +81,9 @@ const page = async () => {
   return ( 
     <>
       <section className="pt-40 pb-10 px-4 membership-ranking-bg">
-        <div className="max-w-[1600px] mx-auto w-full">
+        <div className="max-w-wide mx-auto w-full">
           <div className="text-white mb-10 px-4 lg:px-0 text-center md:text-left">
-            <h3 className="text-4xl mb-5 lg:text-[64px] font-bold">
+            <h3 className="text-4xl mb-5 lg:text-display font-bold">
               {membershipRanking?.title}
             </h3>
             <p>{membershipRanking?.description}</p>
@@ -105,7 +105,7 @@ const page = async () => {
                         className="w-full"
                       />
                     </Link>
-                    <Link href={member?.cardurl} className="font-semibold text-[22px] mt-5 max-w-[300px] w-full hover:text-[#0060aa]" target="_blank">
+                    <Link href={member?.cardurl} className="font-semibold text-h5 mt-5 max-w-[300px] w-full hover:text-krmu-blue" target="_blank">
                       {member.cardtitle}
                     </Link>
                   </div>
@@ -115,8 +115,8 @@ const page = async () => {
         </div>
       </section>
       <section>
-        <div className="max-w-[1600px] mx-auto w-full mb-10 px-4 text-center md:text-left">
-          <h3 className="text-4xl lg:text-[64px] text-[#0944c8] font-bold mb-10">
+        <div className="max-w-wide mx-auto w-full mb-10 px-4 text-center md:text-left">
+          <h3 className="text-4xl lg:text-display text-[#0944c8] font-bold mb-10">
             {membershipRanking?.rankingtitle}
           </h3>
 

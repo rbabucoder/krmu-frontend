@@ -1,7 +1,7 @@
 const HostelWarden = () => {
   return (
     <section className="py-10 px-4">
-      <div className="max-w-[1664px] mx-auto w-full lg:flex gap-10 text-center lg:text-left">
+      <div className="max-w-main mx-auto w-full lg:flex gap-10 text-center lg:text-left">
         <div className="lg:w-1/2">
           <h4 className="text-3xl md:text-4xl lg:text-5xl mb-5 font-semibold">
             Connect with the Warden

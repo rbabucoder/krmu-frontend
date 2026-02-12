@@ -22,8 +22,8 @@ const KEICPastEvents = () => {
   ];
 
   return (
-    <section className="py-[50px] px-4">
-      <div className="max-w-[1664px] mx-auto w-full">
+    <section className="py-section px-4">
+      <div className="max-w-main mx-auto w-full">
         <div>
           <h3 className="text-3xl md:text-5xl font-semibold mb-5">
             Past Events and Workshops

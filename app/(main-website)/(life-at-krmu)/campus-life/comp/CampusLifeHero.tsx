@@ -1,9 +1,9 @@
 const CampusLifeHero = () => {
   return (
     <section className="pt-[120px] pb-[100px] px-4">
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row items-center gap-10">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row items-center gap-10">
         <div className="lg:w-1/2"> 
-          <h1 className="text-3xl md:text-6xl lg:text-[80px] leading-[1.2] blue-gradient font-semibold">
+          <h1 className="text-3xl md:text-6xl lg:text-hero leading-[1.2] blue-gradient font-semibold">
             Discover You <br /> Second Home
           </h1>
           <h3 className="text-2xl font-semibold mb-5">

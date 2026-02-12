@@ -8,8 +8,8 @@ type Props = {
 const EditorialReflection = ({ content }: Props) => {
   return (
     <>
-      <section className="py-5 md:py-[50px] px-4">
-        <div className="max-w-[1664px] mx-auto w-full magazineref">
+      <section className="py-5 md:py-section px-4">
+        <div className="max-w-main mx-auto w-full magazineref">
           <BlocksRenderer content={content} />
         </div>
       </section>

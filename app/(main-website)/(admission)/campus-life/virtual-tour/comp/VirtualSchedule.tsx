@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const VirtualSchedule = () => {
   return (
-    <div className="flex flex-col lg:flex-row px-4 gap-10 max-w-[1664px] mx-auto w-full">
+    <div className="flex flex-col lg:flex-row px-4 gap-10 max-w-main mx-auto w-full">
       <div className="lg:w-[30%]">
         <h4 className="text-2xl md:text-4xl font-semibold leading-[1.5] mt-2.5 mb-[15px]">
           Schedule Your <br /> Exclusive Campus <br /> Tour Today!
@@ -16,7 +16,7 @@ const VirtualSchedule = () => {
         </p>
         <Link
           href="/campus-tour"
-          className="bg-[#cb000d] text-white rounded-full py-[13px] px-[29px] inline-block"
+          className="bg-krmu-red-dark text-white rounded-full py-[13px] px-[29px] inline-block"
           target="_blank"
         >
           Schedule Your Tour

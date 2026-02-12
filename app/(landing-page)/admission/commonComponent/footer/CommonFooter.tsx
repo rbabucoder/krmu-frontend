@@ -3,7 +3,7 @@ import Image from "next/image";
 const CommonFooter = () => {
   return (
     <section className="border-t border-[#ddd] px-4">
-      <div className="max-w-[1400px] mx-auto w-full">
+      <div className="max-w-narrow mx-auto w-full">
         <div className="flex flex-col lg:flex-row py-6 border-b border-[#ddd]">
           <div className="w-full lg:w-1/2 text-center sm:text-left">
             <Image

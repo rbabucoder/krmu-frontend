@@ -52,7 +52,7 @@ const PrintCoverageTabs = () => {
 
   return (
     <section className="py-16 bg-[url(/bg-gradient.webp)] bg-cover bg-no-repeat px-4">
-      <div className="max-w-[1664px] mx-auto w-full">
+      <div className="max-w-main mx-auto w-full">
         <Tabs value={activeYear} onValueChange={setActiveYear}>
           <TabsList className="bg-transparent mt-4 mb-14 flex-wrap gap-2">
             <TabsTrigger

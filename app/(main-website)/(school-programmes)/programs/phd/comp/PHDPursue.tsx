@@ -8,7 +8,7 @@ type Props = {
 const PHDPursue = ({ pursueContent }: Props) => {
   return (
     <section
-      className="bg-cover bg-no-repeat py-[60px] px-4"
+      className="bg-cover bg-no-repeat py-section-lg px-4"
       style={{
         background: `url(${STRAPI_URL}${pursueContent?.bgimage?.url})`,
         backgroundRepeat: 'no-repeat',
@@ -16,9 +16,9 @@ const PHDPursue = ({ pursueContent }: Props) => {
         backgroundSize: 'cover'
       }}
     >
-      <div className="flex flex-col lg:flex-row max-w-[1664px] mx-auto w-full">
+      <div className="flex flex-col lg:flex-row max-w-main mx-auto w-full">
         <div className="lg:w-2/5 text-white">
-          <h3 className="text-3xl md:text-[64px] font-semibold leading-[1.2] mb-5">
+          <h3 className="text-3xl md:text-display font-semibold leading-[1.2] mb-5">
             {pursueContent?.title}
           </h3>
           <div className="lg:leading-[2]">

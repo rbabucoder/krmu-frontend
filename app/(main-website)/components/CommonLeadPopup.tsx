@@ -99,7 +99,7 @@ const CommonLeadPopup = ({
             </button>
 
             {/* Header */}
-            <div className="bg-[#005da9] text-white text-center py-3 rounded-t-2xl text-lg font-semibold">
+            <div className="bg-krmu-blue text-white text-center py-3 rounded-t-2xl text-lg font-semibold">
               {form_name}
             </div>
 

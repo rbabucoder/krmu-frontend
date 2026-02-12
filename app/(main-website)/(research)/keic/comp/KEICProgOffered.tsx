@@ -1,7 +1,7 @@
 const KEICProgOffered = () => {
   return (
     <section className="py-10">
-      <div className="max-w-[1664px] mx-auto w-full">
+      <div className="max-w-main mx-auto w-full">
         <h4 className="text-3xl md:text-5xl text-center font-semibold mb-10">
           Programme Offered
         </h4>

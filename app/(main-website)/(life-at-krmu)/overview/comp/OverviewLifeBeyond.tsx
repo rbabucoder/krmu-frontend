@@ -1,8 +1,8 @@
 const OverviewLifeBeyond = () => {
   return (
     <section className="bg-[url(/gradient-2.webp)] bg-cover bg-no-repeat bg-center px-4 py-5 lg:py-0" id="lifeBeyond">
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row items-center gap-10">
-        <div className="lg:w-1/2 text-white lg:pt-[60px] lg:pr-[60px] lg:pb-[50px] lg:pl-[100px]">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row items-center gap-10">
+        <div className="lg:w-1/2 text-white lg:pt-section-lg lg:pr-[60px] lg:pb-section lg:pl-[100px]">
           <h2 className="text-3xl md:text-5xl font-semibold leading-[1.3] mb-5">
             A Life Beyond <br /> Academics
           </h2>

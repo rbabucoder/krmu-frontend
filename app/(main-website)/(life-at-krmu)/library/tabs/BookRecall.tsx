@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const BookRecall = () => {
   return (
-    <div className="max-w-[1664px] mx-auto w-full libtabcontent ">
+    <div className="max-w-main mx-auto w-full libtabcontent ">
       <p>Dynamic Resource Management</p>
       <h2>Book Recall and Reservation</h2>
       <p>

@@ -14,7 +14,7 @@ type Props = {
 const ExaminationFAQ = ({ heading, faqs }: Props) => {
   return (
     <section className="px-4">
-      <div className="max-w-[1664px] mx-auto w-full">
+      <div className="max-w-main mx-auto w-full">
         {/* Main Heading */}
         <h4 className="text-2xl md:text-4xl lg:text-5xl leading-[1.5] font-bold mt-2.5 mb-[15px]">
           {heading}

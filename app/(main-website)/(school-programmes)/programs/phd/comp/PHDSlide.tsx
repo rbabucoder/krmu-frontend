@@ -15,8 +15,8 @@ type Props = {
 
 const PHDSlide = ({ logoSlide }: Props) => {
   return (
-    <section className="bg-[#051630]">
-      <div className="max-w-[1664px] mx-auto w-full flex justify-between min-h-[130px] h-full">
+    <section className="bg-krmu-navy">
+      <div className="max-w-main mx-auto w-full flex justify-between min-h-[130px] h-full">
         <Carousel
           opts={{
             align: "start",

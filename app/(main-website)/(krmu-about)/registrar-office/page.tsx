@@ -98,13 +98,13 @@ const page = async () => {
         }}
       >
         <div className="max-w-7xl mx-auto w-full text-center text-white">
-          <h1 className="text-2xl md:text-4xl lg:text-[64px] font-bold">
+          <h1 className="text-2xl md:text-4xl lg:text-display font-bold">
             {breadcrumb?.breadcrumbtext}
           </h1>
         </div>
       </section>
       <section className="lg:py-12 lg:px-8 p-5">
-        <div className="max-w-[1600px] mx-auto w-full">
+        <div className="max-w-wide mx-auto w-full">
           <div className="lg:flex items-center justify-between">
             <div className="w-full lg:w-3/4">
               <p className="mb-5">{registrarData?.registrarinfo}</p>
@@ -144,7 +144,7 @@ const page = async () => {
         </div>
       </section>
       <section className="pt-10">
-        <div className="max-w-[1600px] mx-auto w-full pb-12 lg:py-0 px-5">
+        <div className="max-w-wide mx-auto w-full pb-12 lg:py-0 px-5">
           {departmentsData && <RegDepartment depData={departmentsData} />}
         </div>
       </section>

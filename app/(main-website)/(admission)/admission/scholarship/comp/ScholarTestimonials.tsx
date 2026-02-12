@@ -181,9 +181,9 @@ export const scholarTestimonials: ScholarTestimonial[] = [
 const ScholarTestimonials = () => {
   return (
     <section className="py-10 px-4">
-      <div className="max-w-[1664px] mx-auto w-full">
+      <div className="max-w-main mx-auto w-full">
         <div className="text-center">
-          <h3 className="text-[64px] font-semibold">Hear From Our Students</h3>
+          <h3 className="text-display font-semibold">Hear From Our Students</h3>
           <p>
             Hear from our scholarship awardees as they share how merit,
             dedication, and KRMU’s support helped them reach new heights.

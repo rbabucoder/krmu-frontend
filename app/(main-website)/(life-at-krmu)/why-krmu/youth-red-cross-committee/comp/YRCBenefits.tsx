@@ -3,10 +3,10 @@ import React from "react";
 
 const YRCBenefits = () => {
   return (
-    <section className="bg-[url(/bg-gradient-2.webp)] py-[50px]">
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10">
+    <section className="bg-[url(/bg-gradient-2.webp)] py-section">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row gap-10">
         <div className="lg:w-1/2 mb-5">
-          <div className="py-[30px] px-4 md:pl-[40px] md:pr-[30px] text-white border border-[#0060aa5e] bg-[#0060aa5e] mx-4 md:mx-8  rounded-b-[20px]">
+          <div className="py-section-sm px-4 md:pl-[40px] md:pr-[30px] text-white border border-[#0060aa5e] bg-[#0060aa5e] mx-4 md:mx-8  rounded-b-[20px]">
             <p className="text-2xl mt-2.5 mb-[15px]">
               Benefits of Youth Red Cross Committee Participation:
             </p>

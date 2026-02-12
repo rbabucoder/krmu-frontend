@@ -78,7 +78,7 @@ const page = () => {
     <>
       <IPRHeroSection />
       <IPRContent />
-      <section className="py-[50px] px-4 bg-[url(/ipr/grad-2.png)]">
+      <section className="py-section px-4 bg-[url(/ipr/grad-2.png)]">
         <IPRDrMessage />
         <IPRMember />
       </section>

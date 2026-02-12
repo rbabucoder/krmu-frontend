@@ -7,7 +7,7 @@ const GalleryGridCards = async () => {
   return (
     <>
       <section className="py-10 bg-[url(/gradient-1.webp)] bg-no-repeat bg-cover bg-center px-4">
-        <div className="max-w-[1664px] mx-auto w-full grid-cols-1 md:grid-cols-2 grid lg:grid-cols-4 gap-10">
+        <div className="max-w-main mx-auto w-full grid-cols-1 md:grid-cols-2 grid lg:grid-cols-4 gap-10">
           {galleryImages &&
             galleryImages.map((item) => {
               return (

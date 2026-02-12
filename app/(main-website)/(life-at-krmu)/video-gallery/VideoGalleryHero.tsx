@@ -14,7 +14,7 @@ const VideoGalleryHero = ({ title, bgurl }: Props) => {
         background: `url(${STRAPI_URL}${bgurl?.url})`,
       }}
     >
-      <div className="max-w-[1664px] mx-auto w-full">
+      <div className="max-w-main mx-auto w-full">
         <h1 className="text-xl md:text-6xl text-white text-center font-semibold my-5">
           {title}
         </h1>

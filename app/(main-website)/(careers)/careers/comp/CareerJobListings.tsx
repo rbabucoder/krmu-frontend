@@ -78,7 +78,7 @@ const CareerJobListings = () => {
         </div>
 
         {/* RESULTS */}
-        <div className="flex flex-col gap-[15px]">
+        <div className="flex flex-col gap-compact">
           {loading && <p>Loading...</p>}
 
           {!loading &&

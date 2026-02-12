@@ -7,8 +7,8 @@ type Props = {
 
 const FeeStructureSaarcApproval = ({ feeStructSAARCApproval }: Props) => {
   return (
-    <section className="py-[60px] px-4">
-      <div className="max-w-[1600px] mx-auto w-full py-[84px] text-center bg-[url(/feestucturebot.webp)] bg-cover bg-no-repeat rounded-[30px] text-white">
+    <section className="py-section-lg px-4">
+      <div className="max-w-wide mx-auto w-full py-[84px] text-center bg-[url(/feestucturebot.webp)] bg-cover bg-no-repeat rounded-card text-white">
         <p className="mb-5">
           Note: “The fee payable in subsequent years may increase upto 10% per
           annum”
@@ -24,7 +24,7 @@ const FeeStructureSaarcApproval = ({ feeStructSAARCApproval }: Props) => {
           {feeStructSAARCApproval?.fee_struct_click_here && (
             <Link
               href={feeStructSAARCApproval?.fee_struct_click_here || ""}
-              className="py-[11px] px-[23px] bg-[#e31e24] text-white rounded-[4px] mb-[30px]"
+              className="py-[11px] px-[23px] bg-krmu-red text-white rounded-badge mb-[30px]"
               target="_blank"
             >
               Click Here
@@ -33,7 +33,7 @@ const FeeStructureSaarcApproval = ({ feeStructSAARCApproval }: Props) => {
           {feeStructSAARCApproval?.office_order_url && (
             <Link
               href={feeStructSAARCApproval?.office_order_url || ""}
-              className="py-[11px] px-[23px] bg-[#e31e24] text-white rounded-[4px] mb-[30px]"
+              className="py-[11px] px-[23px] bg-krmu-red text-white rounded-badge mb-[30px]"
               target="_blank"
             >
               OFFICE ORDER REGARDING THE FEE REFUND POLICY

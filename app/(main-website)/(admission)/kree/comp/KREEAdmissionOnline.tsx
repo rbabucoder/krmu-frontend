@@ -3,7 +3,7 @@ import Image from "next/image";
 const KREEAdmissionOnline = () => {
   return (
     <section className="bg-[url(/admission/kree-helplingbg.webp)] lg:pt-10 bg-no-repeat bg-cover lg:pb-0 py-10 px-4">
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-20">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row gap-20">
         <div className="lg:w-2/5  justify-end hidden lg:flex">
           <Image
             src="/admission/admission.webp"

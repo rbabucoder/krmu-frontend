@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const DigitalLibrary = () => {
   return (
-    <div className="max-w-[1664px] mx-auto w-full libtabcontent ">
+    <div className="max-w-main mx-auto w-full libtabcontent ">
       <p>Digital Age Learning</p>
       <h2>Advanced Digital Library Services</h2>
       <p>

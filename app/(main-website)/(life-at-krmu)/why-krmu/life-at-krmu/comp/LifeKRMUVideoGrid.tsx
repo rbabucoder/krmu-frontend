@@ -1,7 +1,7 @@
 export const LifeKRMUVideoGrid = () => {
   return (
-    <section className="pt-[80px] pb-[60px] px-4">
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-5 lg:gap-16">
+    <section className="pt-[80px] pb-section-lg px-4">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row gap-5 lg:gap-16">
         <div className="lg:w-1/3">
           <iframe
             width="100%"

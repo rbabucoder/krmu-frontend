@@ -1,9 +1,9 @@
 const VisionMission = () => {
   return (
-    <section className="py-[50px] bg-[#051630]">
-      <div className="max-w-[1600px] mx-auto w-full flex flex-col lg:flex-row">
+    <section className="py-section bg-krmu-navy">
+      <div className="max-w-wide mx-auto w-full flex flex-col lg:flex-row">
         <div className="lg:w-2/5">
-          <div className="bg-white p-[30px] mx-4 lg:mx-8 rounded-[30px]">
+          <div className="bg-white p-[30px] mx-4 lg:mx-8 rounded-card">
             <h4 className="text-2xl font-semibold mb-5">
               Shaping Global Leaders and Well-Rounded Individuals
             </h4>

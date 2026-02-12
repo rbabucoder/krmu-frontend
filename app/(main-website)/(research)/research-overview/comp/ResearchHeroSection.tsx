@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const ResearchHeroSection = () => {
   return (
-    <section className="bg-[url(/placements/researchoverviewbg.webp)] bg-center bg-no-repeat bg-cover pt-[32%] md:pt-[10%] pb-[60px] px-4">
-      <div className="max-w-[1664px] mx-auto w-full text-white">
+    <section className="bg-[url(/placements/researchoverviewbg.webp)] bg-center bg-no-repeat bg-cover pt-[32%] md:pt-[10%] pb-section-lg px-4">
+      <div className="max-w-main mx-auto w-full text-white">
         <div className="text-white">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-[1.2] md:leading-[1.5]">
             Exploring New Frontiers in Research <br />
@@ -12,19 +12,19 @@ const ResearchHeroSection = () => {
           </h1>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 md:gap-16 my-10">
-          <div className="p-5 bg-[#051630] text-white font-semibold rounded-[14px] flex flex-col items-center justify-center text-center min-h-56">
+          <div className="p-5 bg-krmu-navy text-white font-semibold rounded-[14px] flex flex-col items-center justify-center text-center min-h-56">
             <span className="text-[44px] md:text-[65px] leading-[1.3]">
               200+
             </span>
             <span className="text-xl">Total number of Patents</span>
           </div>
-          <div className="p-5 bg-[#051630] text-white font-semibold rounded-[14px] flex flex-col items-center justify-center text-center min-h-56">
+          <div className="p-5 bg-krmu-navy text-white font-semibold rounded-[14px] flex flex-col items-center justify-center text-center min-h-56">
             <span className="text-[44px] md:text-[65px] leading-[1.3]">
               110+
             </span>
             <span className="text-xl">Number of Ph.D. Awarded</span>
           </div>
-          <div className="p-5 bg-[#051630] text-white font-semibold rounded-[14px] flex flex-col items-center justify-center text-center min-h-56">
+          <div className="p-5 bg-krmu-navy text-white font-semibold rounded-[14px] flex flex-col items-center justify-center text-center min-h-56">
             <span className="text-[44px] md:text-[65px] leading-[1.3]">
               2Cr+
             </span>
@@ -32,7 +32,7 @@ const ResearchHeroSection = () => {
               Total amount of consultancy <br /> grant awarded
             </span>
           </div>
-          <div className="p-5 bg-[#051630] text-white font-semibold rounded-[14px] flex flex-col items-center justify-center text-center min-h-56">
+          <div className="p-5 bg-krmu-navy text-white font-semibold rounded-[14px] flex flex-col items-center justify-center text-center min-h-56">
             <span className="text-[44px] md:text-[65px] leading-[1.3]">
               4000+
             </span>
@@ -73,7 +73,7 @@ const ResearchHeroSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-20 gap-5 gap">
           <Link
             href="/research-and-innovation"
-            className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit my-8"
+            className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-card text-white text-lg flex items-center justify-center font-semibold w-fit my-8"
             target="_blank"
           >
             <span>Research and Development Cell (RDC)</span>{" "}
@@ -86,7 +86,7 @@ const ResearchHeroSection = () => {
           </Link>
           <Link
             href="/cif"
-            className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8"
+            className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-card text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8"
             target="_blank"
           >
             <span>Central Instrumentation Facility (CIF)</span>{" "}
@@ -99,7 +99,7 @@ const ResearchHeroSection = () => {
           </Link>
           <Link
             href="/keic"
-            className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8"
+            className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-card text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8"
             target="_blank"
           >
             <span>
@@ -114,7 +114,7 @@ const ResearchHeroSection = () => {
           </Link>
           <Link
             href="/ipr-legal-ethical-matters-cell"
-            className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8"
+            className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-card text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8"
             target="_blank"
           >
             <span>IPR, Legal & Ethical Matters Cell</span>{" "}
@@ -127,7 +127,7 @@ const ResearchHeroSection = () => {
           </Link>
           <Link
             href="/research-and-innovation/#_ongoing-collab"
-            className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8"
+            className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-card text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8"
             target="_blank"
           >
             <span>Ongoing Projects and Collaborations</span>{" "}
@@ -140,7 +140,7 @@ const ResearchHeroSection = () => {
           </Link>
           <Link
             href="/research-and-innovation/#_res-highlights"
-            className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8"
+            className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-card text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8"
             target="_blank"
           >
             <span>Research Highlights</span>{" "}
@@ -153,7 +153,7 @@ const ResearchHeroSection = () => {
           </Link>
           <Link
             href="/research-and-innovation/#research-achievements"
-            className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8"
+            className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-card text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8"
             target="_blank"
           >
             <span>Research Achievements</span>{" "}
@@ -166,7 +166,7 @@ const ResearchHeroSection = () => {
           </Link>
           <Link
             href="/research-and-innovation/#_publications-achievements"
-            className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8"
+            className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-card text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8"
             target="_blank"
           >
             <span>Publications and Achievements</span>{" "}
@@ -179,7 +179,7 @@ const ResearchHeroSection = () => {
           </Link>
           <Link
             href="/research-and-innovation/#_academics-resources"
-            className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8"
+            className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-card text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8"
             target="_blank"
           >
             <span>Academic Research</span>{" "}

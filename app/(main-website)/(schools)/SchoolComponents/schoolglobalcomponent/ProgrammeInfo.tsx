@@ -168,7 +168,7 @@ const fetchProg = useCallback(
                 key={deg.tabValue}
                 value={deg.tabValue}
                 onClick={() => handleDegreeChange(deg.value)}
-                className="flex-none px-4 sm:px-8 py-2.5 sm:py-5 rounded-full cursor-pointer text-white data-[state=active]:bg-[#051630] data-[state=active]:font-bold"
+                className="flex-none px-4 sm:px-8 py-2.5 sm:py-5 rounded-full cursor-pointer text-white data-[state=active]:bg-krmu-navy data-[state=active]:font-bold"
               >
                 {deg.label}
               </TabsTrigger>
@@ -221,7 +221,7 @@ const fetchProg = useCallback(
 
       {/* RIGHT SIDE */}
       <div
-        className="xl:w-1/2 rounded-r-3xl bg-white py-[30px] pl-16 pr-10 -ml-10 hidden xl:block"
+        className="xl:w-1/2 rounded-r-3xl bg-white py-section-sm pl-16 pr-10 -ml-10 hidden xl:block"
         style={{
           boxShadow:
             "0px -0.6088px 2.21381px 0px rgba(0, 0, 0, 0.02), 0px -1.46302px 5.32008px 0px rgba(0, 0, 0, 0.03), 0px -2.75474px 10.01724px 0px rgba(0, 0, 0, 0.04), 0px -4.91399px 17.86905px 0px rgba(0, 0, 0, 0.04), 0px -9.19107px 33.42209px 0px rgba(0, 0, 0, 0.05), 0px -22px 80px 0px rgba(0, 0, 0, 0.07)",
@@ -229,7 +229,7 @@ const fetchProg = useCallback(
       >
         {criteria ? (
           <>
-            <div className="mt-20 text-xl font-semibold text-[#051630] mb-5">
+            <div className="mt-20 text-xl font-semibold text-krmu-navy mb-5">
               <p>Fee Structure</p>
             </div>
             <div className="flex gap-4">
@@ -276,7 +276,7 @@ const fetchProg = useCallback(
             <div className="flex gap-4">
               <Link
                 href={criteria.eligibility_utm_links || "#"}
-                className="text-[#E31E24] text-center font-bold text-base py-2.5 px-[30px] rounded-md"
+                className="text-krmu-red text-center font-bold text-base py-2.5 px-container-px rounded-md"
                 target="_blank"
                 style={{
                   boxShadow:
@@ -287,7 +287,7 @@ const fetchProg = useCallback(
               </Link>
               <Link
                 href={`/programs/${currentProgram?.programmeslug || "#"}`}
-                className="text-white bg-[#E31E24] text-center font-bold text-base py-2.5 px-[30px] rounded-md"
+                className="text-white bg-krmu-red text-center font-bold text-base py-2.5 px-container-px rounded-md"
                 target="_blank"
                 style={{
                   boxShadow:

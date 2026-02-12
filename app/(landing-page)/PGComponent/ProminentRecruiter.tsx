@@ -10,7 +10,7 @@ type Props = {
 const ProminentRecruiter = ({ data }: Props) => {
   return (
     <section className="py-16 px-4 overflow-hidden bg-white">
-      <div className="max-w-[1400px] mx-auto w-full">
+      <div className="max-w-narrow mx-auto w-full">
         <h3 className="text-3xl md:text-4xl text-center font-medium mb-20">
           {data?.title}
         </h3>
@@ -40,7 +40,7 @@ const ProminentRecruiter = ({ data }: Props) => {
       </div>
 
       {/* PEOPLE MARQUEE */}
-      <div className="max-w-[1400px] mx-auto w-full">
+      <div className="max-w-narrow mx-auto w-full">
         <div className="relative overflow-hidden mt-20">
           {/* <div className="pointer-events-none absolute left-0 top-0 h-full w-32 bg-gradient-to-r from-white to-transparent z-10" />
           <div className="pointer-events-none absolute right-0 top-0 h-full w-32 bg-gradient-to-l from-white to-transparent z-10" /> */}

@@ -31,7 +31,7 @@ const TableOfContentTab = ({ tocfaqs }: Props) => {
             value={section.tocpoint.toLowerCase()}
             className="relative text-xs md:text-xl cursor-pointer p-0 mb-5
                text-white md:text-black
-               data-[state=active]:md:text-[#0a41a1]
+               data-[state=active]:md:text-krmu-blue-dark
                data-[state=active]:bg-transparent
                data-[state=active]:shadow-none
                data-[state=active]:after:content-['']
@@ -43,7 +43,7 @@ const TableOfContentTab = ({ tocfaqs }: Props) => {
                data-[state=active]:md:after:w-[100px]
                data-[state=active]:after:w-[20px]
                data-[state=active]:after:h-[2px]
-               data-[state=active]:after:bg-[#0a41a1]"
+               data-[state=active]:after:bg-krmu-blue-dark"
           >
             {section.tocpoint}
           </TabsTrigger>

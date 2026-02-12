@@ -23,7 +23,7 @@ const ApplySection = () => {
 
   return (
     <section className="py-20 px-4 bg-white">
-      <div className="max-w-[1400px] mx-auto w-full text-center">
+      <div className="max-w-narrow mx-auto w-full text-center">
         {/* Header */}
         <h2 className="text-[#003d7a] text-5xl font-bold mb-4">
           Begin Your Journey at K.R. Mangalam<br /> University Now
@@ -36,11 +36,11 @@ const ApplySection = () => {
         <div className="flex justify-center mb-16">
           <Link
             href="#"
-            className="inline-flex items-center gap-3 bg-[#0060aa] text-white px-2 py-2 rounded-full hover:bg-[#004d8a] transition-colors group"
+            className="inline-flex items-center gap-3 bg-krmu-blue text-white px-2 py-2 rounded-full hover:bg-[#004d8a] transition-colors group"
           >
             <span className="text-lg font-medium">Apply for B.Tech 2026</span>
             <span className="bg-white rounded-full p-2 group-hover:translate-x-1 transition-transform">
-              <MoveUpRight className="text-[#0060aa]" size={20} />
+              <MoveUpRight className="text-krmu-blue" size={20} />
             </span>
           </Link>
         </div>

@@ -29,8 +29,8 @@ const ScholarTestimonialSlide = ({ data }: Props) => {
           ))}
         </CarouselContent>
 
-        <CarouselPrevious className="top-[110%] left-[20%] sm:left-[30%] xl:left-[88%] bg-[#051630] text-white w-16 h-16 scholTestibtn" />
-        <CarouselNext className="top-[110%] right-[20%] sm:right-[40%] xl:right-0 bg-[#051630] text-white w-16 h-16 scholTestibtn" />
+        <CarouselPrevious className="top-[110%] left-[20%] sm:left-[30%] xl:left-[88%] bg-krmu-navy text-white w-16 h-16 scholTestibtn" />
+        <CarouselNext className="top-[110%] right-[20%] sm:right-[40%] xl:right-0 bg-krmu-navy text-white w-16 h-16 scholTestibtn" />
       </Carousel>
     </div>
   );

@@ -7,9 +7,9 @@ const YRCCriteria = () => {
       style={{
         backgroundImage: "linear-gradient(180deg,#051630 0%,#0060aa 100%)",
       }}
-      className="py-[50px] px-4"
+      className="py-section px-4"
     >
-      <div className="max-w-[1664px] mx-auto w-full">
+      <div className="max-w-main mx-auto w-full">
         <div className="text-center text-white font-bold">
           <h3 className="mb-5">Criteria to join YRC</h3>
         </div>

@@ -4,9 +4,9 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <div className="break-all lg:break-normal">
-      <section className="pt-[140px] md:pt-[10%] pb-[60px] bg-[url(/krmu-committee/bg-banner.webp)] px-4">
+      <section className="pt-hero-top md:pt-[10%] pb-section-lg bg-[url(/krmu-committee/bg-banner.webp)] px-4">
         <div className="max-w-[1270px] mx-auto w-full text-white text-center">
-          <h1 className="mb-5 text-3xl sm:text-4xl md:text-[64px] font-semibold">
+          <h1 className="mb-5 text-3xl sm:text-4xl md:text-display font-semibold">
             KRMU Committee
           </h1>
           <p>
@@ -16,8 +16,8 @@ const Hero = () => {
             AICTE for the safe campus.
           </p>
         </div>
-        <div className="max-w-[1664px] mx-auto w-full flex gap-5 flex-col lg:flex-row mt-10">
-          <div className="w-full lg:w-1/2 p-5 bg-[#343537] text-white rounded-[20px] background-transparent">
+        <div className="max-w-main mx-auto w-full flex gap-5 flex-col lg:flex-row mt-10">
+          <div className="w-full lg:w-1/2 p-5 bg-[#343537] text-white rounded-panel background-transparent">
             <h3 className="mb-5 text-2xl">Anti-Discrimination Cell</h3>
             <p>
               The UGC Regulation on “Promotion of Equity in Higher Educational
@@ -36,7 +36,7 @@ const Hero = () => {
               community or category of students.
             </p>
           </div>
-          <div className="w-full lg:w-1/2 bg-[#343537] text-white rounded-[20px] p-5 background-transparent">
+          <div className="w-full lg:w-1/2 bg-[#343537] text-white rounded-panel p-5 background-transparent">
             <h3 className="mb-5 text-2xl">KRMU Anti-Discrimination Cell shall consist of the following members:</h3>
             <div className="table-1 transparent-table committee-table ">
               <table>
@@ -100,7 +100,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-[1664px] mx-auto w-full p-5 rounded-[20px] background-transparent mt-10 flex flex-col lg:flex-row ">
+        <div className="max-w-main mx-auto w-full p-5 rounded-panel background-transparent mt-10 flex flex-col lg:flex-row ">
           <div className="lg:w-1/2 text-white">
             <h4 className="text-xl font-semibold mb-5">
               Anti-Discrimination Cell Helpline
@@ -134,7 +134,7 @@ const Hero = () => {
         </div>
       </section>
       <section>
-        <div className="max-w-[1664px] mx-auto w-full p-5 rounded-[20px] mt-10 flex gap-5 flex-col lg:flex-row">
+        <div className="max-w-main mx-auto w-full p-5 rounded-panel mt-10 flex gap-5 flex-col lg:flex-row">
           <div className="w-full lg:w-[38%]">
             <div className="committeebox p-5 mb-5">
               <h5 className="text-2xl font-semibold leading-[1.3] mb-5">
@@ -238,9 +238,9 @@ const Hero = () => {
           </div>
         </div>
       </section>
-      <section className="py-20 bg-[#051630]">
-        <div className="max-w-[1664px] mx-auto w-full flex gap-5 flex-col lg:flex-row">
-          <div className="w-full lg:w-1/2 p-5 bg-[#343537] text-white rounded-[20px] background-transparent">
+      <section className="py-20 bg-krmu-navy">
+        <div className="max-w-main mx-auto w-full flex gap-5 flex-col lg:flex-row">
+          <div className="w-full lg:w-1/2 p-5 bg-[#343537] text-white rounded-panel background-transparent">
             <h3 className="mb-5 text-2xl font-semibold">
               KRMU Internal Complaints Committee (ICC)
             </h3>
@@ -268,7 +268,7 @@ const Hero = () => {
               inquiry of such complaint made.
             </p>
           </div>
-          <div className="w-full lg:w-1/2 bg-[#343537] text-white rounded-[20px] p-5 background-transparent">
+          <div className="w-full lg:w-1/2 bg-[#343537] text-white rounded-panel p-5 background-transparent">
             <h3 className="mb-5 text-2xl">KRMU Internal Complaints Committee (ICC) Committee shall consist of the following members:</h3>
             <div className="table-1 transparent-table committee-table">
               {" "}
@@ -356,7 +356,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-[1664px] mx-auto w-full p-5 rounded-[20px] background-transparent mt-10 flex flex-col lg:flex-row ">
+        <div className="max-w-main mx-auto w-full p-5 rounded-panel background-transparent mt-10 flex flex-col lg:flex-row ">
           <div className="lg:w-1/2 text-white">
             <h4 className="text-xl font-semibold mb-5">KRMU ICC Helpline:</h4>
             <p>
@@ -374,14 +374,14 @@ const Hero = () => {
               <Link
                 href="https://www.krmangalam.edu.in/pdfs/Committee-ICC-2023.pdf"
                 target="_blank"
-                className="py-[13px] px-[29px] text-base text-white bg-[#0060aa] rounded-[4px] w-fit leading-[1] font-medium flex gap-2.5 items-center"
+                className="py-[13px] px-[29px] text-base text-white bg-krmu-blue rounded-badge w-fit leading-[1] font-medium flex gap-2.5 items-center"
               >
                 <FileText color="#fff" />
                 Committee ICC 2023
               </Link>
               <Link
                 href="#"
-                className="py-[13px] px-[29px] text-base text-white bg-[#0060aa] rounded-[4px] block w-fit leading-[1] font-medium"
+                className="py-[13px] px-[29px] text-base text-white bg-krmu-blue rounded-badge block w-fit leading-[1] font-medium"
               >
                 Submit Complaint
               </Link>
@@ -393,7 +393,7 @@ const Hero = () => {
               <Link
                 href="https://www.krmangalam.edu.in/pdfs/ugc-regulation-2015.pdf"
                 target="_blank"
-                className="py-[13px] px-[29px] text-base text-white bg-[#0060aa] rounded-[4px] w-fit leading-[1] font-medium flex gap-2.5 items-center"
+                className="py-[13px] px-[29px] text-base text-white bg-krmu-blue rounded-badge w-fit leading-[1] font-medium flex gap-2.5 items-center"
               >
                 <FileText color="#fff" />
                 UGC Regulation 2015
@@ -401,7 +401,7 @@ const Hero = () => {
               <Link
                 href="http://ncw.nic.in/sites/default/files/SexualHarassmentofWomenatWorkPlaceAct2013_0.pdf"
                 target="_blank"
-                className="py-[13px] px-[29px] text-base text-white bg-[#0060aa] rounded-[4px] w-fit leading-[1] font-medium flex gap-2.5 items-center"
+                className="py-[13px] px-[29px] text-base text-white bg-krmu-blue rounded-badge w-fit leading-[1] font-medium flex gap-2.5 items-center"
               >
                 <FileText color="#fff" />
                 Sexual Harrasment of Women at Work Place 2013
@@ -411,7 +411,7 @@ const Hero = () => {
         </div>
       </section>
       <section>
-        <div className="max-w-[1664px] mx-auto w-full p-5 rounded-[20px] mt-10 flex gap-5 flex-col lg:flex-row">
+        <div className="max-w-main mx-auto w-full p-5 rounded-panel mt-10 flex gap-5 flex-col lg:flex-row">
           <div className="w-full lg:w-[38%]">
             <div className="committeebox p-5 mb-5">
               <h5 className="text-2xl font-semibold leading-[1.3] mb-5">
@@ -445,7 +445,7 @@ const Hero = () => {
                 <Link
                   href="https://www.krmangalam.edu.in/pdfs/anti-ragging-committee-of-krmu-2024.pdf"
                   target="_blank"
-                  className="py-[13px] px-[29px] text-base text-white bg-[#0060aa] rounded-[4px] w-fit leading-[1] font-medium flex gap-2.5 items-center justify-center"
+                  className="py-[13px] px-[29px] text-base text-white bg-krmu-blue rounded-badge w-fit leading-[1] font-medium flex gap-2.5 items-center justify-center"
                 >
                   <FileText color="#fff" />
                   Anti Ragging Committee AY 2024-25
@@ -453,7 +453,7 @@ const Hero = () => {
                 <Link
                   href="https://www.krmangalam.edu.in/pdfs/NATIONAL-RAGGING-PREVENTION-PROGRAMME-1.pdf"
                   target="_blank"
-                  className="py-[13px] px-[29px] text-base text-white bg-[#0060aa] rounded-[4px] w-fit leading-[1] font-medium flex gap-2.5 items-center justify-center"
+                  className="py-[13px] px-[29px] text-base text-white bg-krmu-blue rounded-badge w-fit leading-[1] font-medium flex gap-2.5 items-center justify-center"
                 >
                   <FileText color="#fff" />
                   Ragging Prevention Programme-1
@@ -461,7 +461,7 @@ const Hero = () => {
                 <Link
                   href="https://www.krmangalam.edu.in/krmu-committee/#"
                   target="_blank"
-                  className="py-[13px] px-[29px] text-base text-white bg-[#0060aa] rounded-[4px] w-fit leading-[1] font-medium flex gap-2.5 items-center justify-center"
+                  className="py-[13px] px-[29px] text-base text-white bg-krmu-blue rounded-badge w-fit leading-[1] font-medium flex gap-2.5 items-center justify-center"
                 >
                   Register Complaint
                 </Link>
@@ -568,7 +568,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-[1664px] mx-auto w-full committeebox p-5 my-5 flex flex-col lg:flex-row">
+        <div className="max-w-main mx-auto w-full committeebox p-5 my-5 flex flex-col lg:flex-row">
           <div className="w-full lg:w-1/3 p-5 lgp-[30px]">
             <h4 className="text-lg">
               <strong>
@@ -600,9 +600,9 @@ const Hero = () => {
           </div>
         </div>
       </section>
-      <section className="py-20 bg-[#051630]">
-        <div className="max-w-[1664px] mx-auto w-full flex gap-5 flex-col lg:flex-row">
-          <div className="w-full lg:w-[38%] p-5 bg-[#343537] text-white rounded-[20px] background-transparent">
+      <section className="py-20 bg-krmu-navy">
+        <div className="max-w-main mx-auto w-full flex gap-5 flex-col lg:flex-row">
+          <div className="w-full lg:w-[38%] p-5 bg-[#343537] text-white rounded-panel background-transparent">
             <h3 className="mb-5 text-2xl font-semibold">
               Grievance Redressal Committee
             </h3>
@@ -622,7 +622,7 @@ const Hero = () => {
               <Link
                 href="https://www.krmangalam.edu.in/pdfs/Committee-Grievance-Redressal-2023.pdf"
                 target="_blank"
-                className="py-[13px] px-[29px] text-base text-white bg-[#0060aa] rounded-[4px] w-fit leading-[1] font-medium flex gap-2.5 items-center mb-5"
+                className="py-[13px] px-[29px] text-base text-white bg-krmu-blue rounded-badge w-fit leading-[1] font-medium flex gap-2.5 items-center mb-5"
               >
                 <FileText color="#fff" />
                 Committee Grievance Redressal
@@ -630,13 +630,13 @@ const Hero = () => {
               <Link
                 href="https://www.krmangalam.edu.in/krmu-committee/#"
                 target="_blank"
-                className="py-[13px] px-[29px] text-base text-white bg-[#0060aa] rounded-[4px] w-fit leading-[1] font-medium flex gap-2.5 items-center"
+                className="py-[13px] px-[29px] text-base text-white bg-krmu-blue rounded-badge w-fit leading-[1] font-medium flex gap-2.5 items-center"
               >
                 Student Grievance
               </Link>
             </div>
           </div>
-          <div className="w-full lg:w-[58%] bg-[#343537] text-white rounded-[20px] p-5 background-transparent">
+          <div className="w-full lg:w-[58%] bg-[#343537] text-white rounded-panel p-5 background-transparent">
             <h3 className="mb-5 text-2xl">
               <strong>
                 KRMU Grievance Redressal Committee shall consist of the
@@ -713,7 +713,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-[1664px] mx-auto w-full p-5 rounded-[20px] background-transparent mt-10 flex flex-col lg:flex-row ">
+        <div className="max-w-main mx-auto w-full p-5 rounded-panel background-transparent mt-10 flex flex-col lg:flex-row ">
           <div className="text-white">
             <h4 className="text-xl font-semibold mb-5">
               KRMU Grievance Redressal Helpline:
@@ -733,7 +733,7 @@ const Hero = () => {
         </div>
       </section>
       <section>
-        <div className="max-w-[1664px] mx-auto w-full p-5 rounded-[20px] mt-10 flex gap-5 flex-col lg:flex-row">
+        <div className="max-w-main mx-auto w-full p-5 rounded-panel mt-10 flex gap-5 flex-col lg:flex-row">
           <div className="w-full lg:w-[38%]">
             <div className="committeebox p-5 mb-5">
               <h5 className="text-2xl font-semibold leading-[1.3] mb-5">
@@ -759,7 +759,7 @@ const Hero = () => {
                 <Link
                   href="https://www.krmangalam.edu.in/pdfs/student-discipline-committee-2024.pdf"
                   target="_blank"
-                  className="py-[13px] px-[29px] text-base text-white bg-[#0060aa] rounded-[4px] w-fit leading-[1] font-medium flex gap-2.5 items-center justify-center"
+                  className="py-[13px] px-[29px] text-base text-white bg-krmu-blue rounded-badge w-fit leading-[1] font-medium flex gap-2.5 items-center justify-center"
                 >
                   <FileText color="#fff" />
                   STUDENT DISCIPLINE COMMITTEE 2024
@@ -767,7 +767,7 @@ const Hero = () => {
                 <Link
                   href="https://www.krmangalam.edu.in/pdfs/COC-Revised-Handbook-of-COC-Professional-Ethics-and-Human-Values.pdf"
                   target="_blank"
-                  className="py-[13px] px-[29px] text-base text-white bg-[#0060aa] rounded-[4px] w-fit leading-[1] font-medium flex gap-2.5 items-center justify-center"
+                  className="py-[13px] px-[29px] text-base text-white bg-krmu-blue rounded-badge w-fit leading-[1] font-medium flex gap-2.5 items-center justify-center"
                 >
                   Code of Conduct
                 </Link>
@@ -850,7 +850,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-[1664px] mx-auto w-full committeebox p-5 my-5 flex flex-col lg:flex-row">
+        <div className="max-w-main mx-auto w-full committeebox p-5 my-5 flex flex-col lg:flex-row">
           <div className="w-full lg:w-1/2 p-5 lgp-[30px]">
             <h4 className="text-lg">
               <strong>KRMU Student Discipline Committee Helpline:</strong>

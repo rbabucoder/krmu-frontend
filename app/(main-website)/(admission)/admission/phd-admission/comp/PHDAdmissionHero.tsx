@@ -21,20 +21,20 @@ const PHDAdmissionHero = ({
 }: Props) => {
   return (
     <>
-      <section className="px-4 pt-[140px]">
-        <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row items-center">
+      <section className="px-4 pt-hero-top">
+        <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2">
             <h1 className="text-4xl md:text-[86px] font-semibold mb-2.5">
               {heading}
             </h1>
-            <p className="text-xl md:text-[22px] mb-5">
+            <p className="text-xl md:text-h5 mb-5">
               <strong>{subheading}</strong>
             </p>
             <p className="mb-10">{content}</p>
             {herobtn && herobtn?.btn_link ? (
               <Link
                 href={herobtn?.btn_link}
-                className="bg-[#cb000d] text-white rounded-full font-semibold py-[13px] px-[29px]"
+                className="bg-krmu-red-dark text-white rounded-full font-semibold py-[13px] px-[29px]"
                 target="_blank"
               >
                 {herobtn?.btn_text}

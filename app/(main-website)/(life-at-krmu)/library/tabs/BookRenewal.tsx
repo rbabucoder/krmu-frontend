@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const BookRenewal = () => {
   return (
-    <div className="max-w-[1664px] mx-auto w-full libtabcontent ">
+    <div className="max-w-main mx-auto w-full libtabcontent ">
       <p>Flexible Learning Support</p>
       <h2>Easy Book Renewal Process</h2>
       <p>

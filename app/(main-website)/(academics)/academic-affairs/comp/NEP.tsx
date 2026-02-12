@@ -4,7 +4,7 @@ import Link from "next/link";
 const NEP = () => {
   return (
     <section className="py-10 bg-[#e6f2ff] px-4">
-      <div className="max-w-[1664px] mx-auto w-full">
+      <div className="max-w-main mx-auto w-full">
         <h3 className="text-2xl md:text-4xl font-semibold mb-5">
           Aligning with National Education Policy (NEP – 2020)
         </h3>
@@ -15,7 +15,7 @@ const NEP = () => {
         </p>
         <Link
           href="https://truthful-cabbage-82fd27e8f6.media.strapiapp.com/Implementation_of_NEP_2020_91665fab31.pdf"
-          className="flex py-[11px] px-[23px] text-[13px] my-5 items-center w-fit text-white bg-black rounded-sm"
+          className="flex py-[11px] px-[23px] text-body-sm my-5 items-center w-fit text-white bg-black rounded-sm"
           target="_blank"
         >
           <ChevronRight className="h-[13px]" strokeWidth={5} />
@@ -28,7 +28,7 @@ const NEP = () => {
                 <CircleCheckBig size={28} strokeWidth={1.75} />{" "}
               </div>
               <span>
-                <span className="text-[#0060aa] text-base md:text-xl">
+                <span className="text-krmu-blue text-base md:text-xl">
                   Holistic and Multidisciplinary Education:{" "}
                 </span>
                 Following NEP’s guidelines, we have reshaped our curriculum to
@@ -41,7 +41,7 @@ const NEP = () => {
                 <CircleCheckBig size={28} strokeWidth={1.75} />{" "}
               </div>
               <span>
-                <span className="text-[#0060aa] text-base md:text-xl">
+                <span className="text-krmu-blue text-base md:text-xl">
                   Emphasis on Critical Thinking and Creativity:
                 </span>{" "}
                 We have adopted our teaching methods to foster critical thinking
@@ -56,7 +56,7 @@ const NEP = () => {
               </div>
 
               <span>
-                <span className="text-[#0060aa] text-base md:text-xl">
+                <span className="text-krmu-blue text-base md:text-xl">
                   Comprehensive Assessment Strategies:
                 </span>{" "}
                 Our assessment methods are being refined to align with NEP’s
@@ -70,7 +70,7 @@ const NEP = () => {
               </div>
 
               <span>
-                <span className="text-[#0060aa] text-base md:text-xl">
+                <span className="text-krmu-blue text-base md:text-xl">
                   Technology Integration:
                 </span>{" "}
                 In line with NEP’s focus on technology, we are expanding the use
@@ -84,7 +84,7 @@ const NEP = () => {
               </div>
 
               <span>
-                <span className="text-[#0060aa] text-base md:text-xl">
+                <span className="text-krmu-blue text-base md:text-xl">
                   Promotion of Indian Languages and Culture:
                 </span>{" "}
                 Echoing NEP’s emphasis on cultural heritage, we are introducing

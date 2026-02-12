@@ -2,10 +2,10 @@ import Image from "next/image";
 
 const SJMCPanel = () => {
   return (
-    <section className="py-[50px] px-4">
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10 mb-5 md:mb-10">
+    <section className="py-section px-4">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row gap-10 mb-5 md:mb-10">
         <div className="w-full lg:w-1/2">
-          <h3 className="text-3xl lg:text-[38px] font-bold mb-5">
+          <h3 className="text-3xl lg:text-h2 font-bold mb-5">
             Exclusive Networking Opportunities
           </h3>
           <p className="mb-5 text-lg">
@@ -37,7 +37,7 @@ const SJMCPanel = () => {
           />
         </div>
       </div>
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10 mb-5 md:mb-10">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row gap-10 mb-5 md:mb-10">
         <div className="w-full lg:w-1/2">
           <Image
             src="https://www.krmangalam.edu.in/wp-content/uploads/2025/05/Group-3.webp"
@@ -48,7 +48,7 @@ const SJMCPanel = () => {
           />
         </div>
         <div className="w-full lg:w-1/2">
-          <h3 className="text-3xl lg:text-[38px] font-bold mb-5">Session with RJ Naved</h3>
+          <h3 className="text-3xl lg:text-h2 font-bold mb-5">Session with RJ Naved</h3>
           <p className="mb-5 text-lg">
             At K.R. Mangalam University, we believe that collaboration between
             industry and academia is the key to driving innovation and
@@ -69,9 +69,9 @@ const SJMCPanel = () => {
           </p>
         </div>
       </div>
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10 mb-5 md:mb-10">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row gap-10 mb-5 md:mb-10">
         <div className="w-full lg:w-1/2">
-          <h3 className="text-3xl lg:text-[38px] font-bold mb-5">
+          <h3 className="text-3xl lg:text-h2 font-bold mb-5">
             Visit to the All India Radio
           </h3>
           <p className="mb-5 text-lg">
@@ -102,7 +102,7 @@ const SJMCPanel = () => {
           />
         </div>
       </div>
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10 mb-5 md:mb-10">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row gap-10 mb-5 md:mb-10">
         <div className="w-full lg:w-1/2">
           <Image
             src="https://www.krmangalam.edu.in/wp-content/uploads/2026/01/news24-800x557.jpg"
@@ -113,7 +113,7 @@ const SJMCPanel = () => {
           />
         </div>
         <div className="w-full lg:w-1/2">
-          <h3 className="text-3xl lg:text-[38px] font-bold mb-5">
+          <h3 className="text-3xl lg:text-h2 font-bold mb-5">
             Visit to News24 Channel
           </h3>
           <p className="mb-5 text-lg">
@@ -134,9 +134,9 @@ const SJMCPanel = () => {
           </p>
         </div>
       </div>
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10 mb-5 md:mb-10">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row gap-10 mb-5 md:mb-10">
         <div className="w-full lg:w-1/2">
-          <h3 className="text-3xl lg:text-[38px] font-bold mb-5">
+          <h3 className="text-3xl lg:text-h2 font-bold mb-5">
             Visit to Jagran Film Festival
           </h3>
           <p className="mb-5 text-lg">
@@ -164,7 +164,7 @@ const SJMCPanel = () => {
           />
         </div>
       </div>
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10 mb-5 md:mb-10">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row gap-10 mb-5 md:mb-10">
         <div className="w-full lg:w-1/2">
           <Image
             src="https://www.krmangalam.edu.in/wp-content/uploads/2026/01/vox-800x600.jpg"
@@ -175,7 +175,7 @@ const SJMCPanel = () => {
           />
         </div>
         <div className="w-full lg:w-1/2">
-          <h3 className="text-3xl lg:text-[38px] font-bold mb-5">
+          <h3 className="text-3xl lg:text-h2 font-bold mb-5">
             Participation in Vani: The Power of Words
           </h3>
           <p className="mb-5 text-lg">

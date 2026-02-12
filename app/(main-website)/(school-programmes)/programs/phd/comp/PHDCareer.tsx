@@ -13,14 +13,14 @@ type Props = {
 
 const PHDCareer = ({ careerOptions }: Props) => {
   return (
-    <section className="py-[60px] px-4">
-      <div className="max-w-[1664px] mx-auto w-full">
-        <h3 className="text-4xl mb-5 md:mb-0 md:text-[64px] text-[#0060aa] font-semibold">
+    <section className="py-section-lg px-4">
+      <div className="max-w-main mx-auto w-full">
+        <h3 className="text-4xl mb-5 md:mb-0 md:text-display text-krmu-blue font-semibold">
           {careerOptions?.title}
         </h3>
         <p>{careerOptions?.desc}</p>
       </div>
-      <div className="max-w-[1664px] mx-auto w-full mt-10 flex flex-col lg:flex-row gap-10">
+      <div className="max-w-main mx-auto w-full mt-10 flex flex-col lg:flex-row gap-10">
         <div className="lg:w-1/2">
           <ul className="text-xl ml-5 break-all sm:break-normal">
             {careerOptions?.careerpointers &&
@@ -32,7 +32,7 @@ const PHDCareer = ({ careerOptions }: Props) => {
              before:bg-no-repeat py-1.5
             "
                   >
-                    <span className="text-[#0060aa] font-semibold">
+                    <span className="text-krmu-blue font-semibold">
                       {counter?.listtext}
                     </span>
                     {" "}{counter?.listlink}
@@ -43,7 +43,7 @@ const PHDCareer = ({ careerOptions }: Props) => {
         </div>
         <div className="lg:w-1/2">
           {careerOptions?.testimonials?.length > 0 && (
-            <div className="p-5 md:pt-[50px] pb-[170px] md:pb-[100px] md:px-[70px] bg-[#051630] rounded-[58px]">
+            <div className="p-5 md:pt-section pb-[170px] md:pb-[100px] md:px-[70px] bg-krmu-navy rounded-[58px]">
               <h4 className="text-2xl font-semibold text-center text-white mb-5">
                 {careerOptions?.testimonialheading}
               </h4>

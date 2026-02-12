@@ -2,6 +2,7 @@ import * as cheerio from "cheerio";
 import { getFacultyBySlug, singleFaculty } from "@/lib/api/faculty";
 import FacultyTabsScript from "./FacultyTabsScript";
 import Image from "next/image";
+import "../faculty.css";
 
 import { Mail, Phone } from "lucide-react"; // NEW ICONS
 import { getWordImageById } from "@/lib/api/common";
@@ -92,14 +93,14 @@ const page = async ({ params }: Props) => {
               src={facImgUrl}
               width={272}
               height={292}
-              className="h-[292px] rounded-[20px] inline-block w-full sm:w-fit object-cover"
+              className="h-[292px] rounded-panel inline-block w-full sm:w-fit object-cover"
               alt=""
             />
           )}
         </div>
 
         <div className="fac_name_desg_int text-white">
-          <div className="py-[15px] border-b border-white">
+          <div className="py-compact border-b border-white">
             <h1 className="text-2xl lg:text-[35px] font-semibold">
               {facultyName}
             </h1>
@@ -121,7 +122,7 @@ const page = async ({ params }: Props) => {
               <li key={index} className="flex items-center gap-3">
                 {item.type === "email" && (
                   <div>
-                    <Mail className="w-7 h-7 p-1.5 bg-[#cb000d] flex items-center justify-center rounded-full" />
+                    <Mail className="w-7 h-7 p-1.5 bg-krmu-red-dark flex items-center justify-center rounded-full" />
                   </div>
                 )}
                 {item.type === "linkedin" && (
@@ -131,14 +132,14 @@ const page = async ({ params }: Props) => {
                       width={28}
                       height={28}
                       alt="Linkedin Icon"
-                      className="w-7 h-7 p-1.5 bg-[#cb000d] flex items-center object-contain justify-center rounded-full"
+                      className="w-7 h-7 p-1.5 bg-krmu-red-dark flex items-center object-contain justify-center rounded-full"
                     />
                   </div>
                 )}
                 {item.type === "phone" && (
                   <div>
                     {" "}
-                    <Phone className="w-7 h-7 p-1.5 bg-[#cb000d] flex items-center justify-center rounded-full" />
+                    <Phone className="w-7 h-7 p-1.5 bg-krmu-red-dark flex items-center justify-center rounded-full" />
                   </div>
                 )}
 

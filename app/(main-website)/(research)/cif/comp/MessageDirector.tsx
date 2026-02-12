@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const MessageDirector = () => {
   return (
-    <div className="max-w-[1664px] mx-auto w-full lg:flex items-center gap-10">
+    <div className="max-w-main mx-auto w-full lg:flex items-center gap-10">
       <div className="lg:w-1/2 text-white">
         <h2 className="text-2xl md:text-5xl font-bold mb-5 md:mb-10">Message of Director</h2>
         <p className="text-justify">

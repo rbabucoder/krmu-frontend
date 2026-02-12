@@ -21,14 +21,14 @@ const Footer = async () => {
     <>
       {/* <NpfPopup
         formId="d63cf9c4d3104c39f3ac28164701a69c"
-        btnClass={`bg-[#f00] text-white border border-none py-[6px] px-[15px] fixed top-[40%] right-[-42px] rotate-90 rounded-sm h-[27px] z-10 npfWidget-d63cf9c4d3104c39f3ac28164701a69c`}
+        btnClass={`bg-[#f00] text-white border border-none py-[6px] px-compact fixed top-[40%] right-[-42px] rotate-90 rounded-sm h-[27px] z-10 npfWidget-d63cf9c4d3104c39f3ac28164701a69c`}
         btnText="Enquire Now"
         showIcon={false}
       /> */}
 
       <Link
         href="/campus-life/virtual-tour"
-        className="bg-[#f00] text-white border border-none py-[6px] px-[15px] fixed top-[70%] right-[-57px] rotate-90 rounded-sm h-[27px] z-10"
+        className="bg-[#f00] text-white border border-none py-[6px] px-compact fixed top-[70%] right-[-57px] rotate-90 rounded-sm h-[27px] z-10"
       >
         360° Virtual Tour
       </Link>
@@ -36,7 +36,7 @@ const Footer = async () => {
  duration-[250ms] gap-2.5 translate-x-[274px] hover:translate-x-0 cursor-pointer justify-center items-center h-12 fixed top-[40%] right-0 p-4 text-base font-semibold">
   <Image src="/wp-content/images/message-regular-full.svg" width={20} height={20} alt="" /> Connect With Campus Pioneer</Link>
       
-      <section className="px-5 py-12 xl:p-[50px] bg-[#051630]">
+      <section className="px-5 py-12 xl:p-[50px] bg-krmu-navy">
         <div className="grid grid-cols-1 md:grid-cols-2  xl:flex gap-5">
           <div className="w-full  xl:w-1/4 xl:mx-7">
             {footerComp1 && (
@@ -56,7 +56,7 @@ const Footer = async () => {
                 {footerComp1?.footer_btn?.btn_link && (
                   <Link
                     href={footerComp1?.footer_btn?.btn_link || "#"}
-                    className={`text-white bg-[#cb000d] py-[5px] px-5 hover:bg-[#034272] rounded font-semibold ${
+                    className={`text-white bg-krmu-red-dark py-[5px] px-5 hover:bg-krmu-navy-light rounded font-semibold ${
                       footerComp1?.footer_btn?.btn_class || ""
                     }`}
                   >

@@ -2,10 +2,10 @@ import Image from "next/image";
 
 const CommunityConnectHero = () => {
   return (
-    <section className="bg-[url(/bg-gradient.webp)] bg-no-repeat bg-cover pt-[140px] px-4 lg:pt-[12%] pb-[10%]">
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row items-center text-white gap-10">
+    <section className="bg-[url(/bg-gradient.webp)] bg-no-repeat bg-cover pt-hero-top px-4 lg:pt-[12%] pb-[10%]">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row items-center text-white gap-10">
         <div className="lg:w-2/3">
-          <h1 className="text-3xl md:text-[40px] font-bold mb-5 leading-[1.2]">
+          <h1 className="text-3xl md:text-h1 font-bold mb-5 leading-[1.2]">
             National Service Scheme (NSS)-KRMU <br />
             <em>‘NOT ME BUT YOU’</em>
           </h1>

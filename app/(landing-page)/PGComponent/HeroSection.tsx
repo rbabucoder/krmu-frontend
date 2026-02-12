@@ -36,7 +36,7 @@ const HeroSection = ({
       //   backgroundPosition: "center",
       // }}
     >
-      <div className="max-w-[1400px] mx-auto w-full flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+      <div className="max-w-narrow mx-auto w-full flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
         {/* Left Content */}
         <div className="w-full lg:w-2/3 text-center lg:text-left px-4 container-1 md:px-0">
           <div className="max-w-[600px] w-full">
@@ -67,7 +67,7 @@ const HeroSection = ({
                 {primaryCta.label}
               </span>
               <div className="bg-white p-2 sm:p-3 rounded-full">
-                <MoveUpRight className="text-[#0060aa]" size={24} />
+                <MoveUpRight className="text-krmu-blue" size={24} />
               </div>
             </ScrollButton> */}
             {/* <Link
@@ -78,7 +78,7 @@ const HeroSection = ({
                 {primaryCta.label}
               </span>
               <div className="bg-white p-2 sm:p-3 rounded-full">
-                <MoveUpRight className="text-[#0060aa]" size={24} />
+                <MoveUpRight className="text-krmu-blue" size={24} />
               </div>
             </Link> */}
 
@@ -131,7 +131,7 @@ const HeroSection = ({
               {primaryCta.label}
             </span>
             <div className="bg-white p-2 sm:p-3 rounded-full">
-              <MoveUpRight className="text-[#0060aa]" size={24} />
+              <MoveUpRight className="text-krmu-blue" size={24} />
             </div>
           </Link> */}
           {/* <ScrollButton
@@ -143,7 +143,7 @@ const HeroSection = ({
               {primaryCta.label}
             </span>
             <div className="bg-white p-2 sm:p-3 rounded-full">
-              <MoveUpRight className="text-[#0060aa]" size={24} />
+              <MoveUpRight className="text-krmu-blue" size={24} />
             </div>
           </ScrollButton> */}
 

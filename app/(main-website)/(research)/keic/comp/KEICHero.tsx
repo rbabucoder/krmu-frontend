@@ -6,7 +6,7 @@ const KEICHero = () => {
       className="pt-[10%] pb-[5%] px-4 bg-[url(/keic/keicbg.webp)] bg-cover bg-center bg-no-repeat relative after:content-[''] after:absolute after:top-0 after:left-0
     after:w-full after:h-full after:bg-[#fffc]"
     >
-      <div className="max-w-[1664px] mx-auto w-full flex items-center flex-col lg:flex-row relative z-10">
+      <div className="max-w-main mx-auto w-full flex items-center flex-col lg:flex-row relative z-10">
         <div className="lg:w-1/3">
           <Image src="/keic/keicx.png" width={490} height={490} alt="" />
         </div>

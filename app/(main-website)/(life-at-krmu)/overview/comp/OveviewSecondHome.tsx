@@ -4,13 +4,13 @@ import Link from "next/link";
 const OveviewSecondHome = () => {
   return (
     <section className="py-12 px-4 lg:px-10">
-      <div className="max-w-[1344px] mx-auto w-full bg-[#f0f0f0] flex flex-col lg:flex-row items-center">
-        <div className="lg:w-2/5 pt-[60px] pr-[30px] pb-[50px] pl-[60px]">
+      <div className="max-w-[1344px] mx-auto w-full bg-krmu-gray-100 flex flex-col lg:flex-row items-center">
+        <div className="lg:w-2/5 pt-section-lg pr-[30px] pb-section pl-[60px]">
           <h4 className="text-3xl md:text-5xl font-semibold">
             Find Your <br /> Second Home
           </h4>
         </div>
-        <div className="lg:w-3/5 pt-[60px] pr-[30px] pb-[50px] pl-[60px]">
+        <div className="lg:w-3/5 pt-section-lg pr-[30px] pb-section pl-[60px]">
           <p className="text-xl mb-5">
             The KRMU hostels have well-ventilated rooms to provide the students
             with a rejuvenating atmosphere to relax and study. Our hostel rooms
@@ -21,7 +21,7 @@ const OveviewSecondHome = () => {
           </p>
           <Link
             href="/hostel"
-            className="py-[11px] px-[23px] text-white bg-[#0060aa] font-semibold text-base rounded-[4px] inline-block"
+            className="py-[11px] px-[23px] text-white bg-krmu-blue font-semibold text-base rounded-badge inline-block"
             target="_blank"
           >
             Know More

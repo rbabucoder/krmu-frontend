@@ -55,7 +55,7 @@ const IssueOfBooks = () => {
             return (
               <div
                 key={i}
-                className="p-5 rounded-[10px] bg-[#051630] text-white"
+                className="p-5 rounded-button bg-krmu-navy text-white"
               >
                 <p>{item?.content}</p>
               </div>

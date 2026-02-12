@@ -12,7 +12,7 @@ type Props = {
 
 const KREEApplyOnline = ({ appl_btn }: Props) => {
   return (
-    <section className="bg-[#051630] px-4">
+    <section className="bg-krmu-navy px-4">
       <div className="text-white w-full flex flex-col items-center lg:flex-row">
         <div className="lg:w-1/2  lg:pl-40 pt-6 lg:pt-20 mb-5">
           <h3 className="font-semibold text-3xl  md:text-5xl leading-[1.5]">
@@ -22,7 +22,7 @@ const KREEApplyOnline = ({ appl_btn }: Props) => {
           {appl_btn && appl_btn?.btn_link ? (
             <Link
               href={appl_btn?.btn_link}
-              className={`bg-[#e31e24] hover:bg-[#034272] text-white rounded-[4px] text-sm py-[11px] px-[23px] inline-block ${
+              className={`bg-krmu-red hover:bg-krmu-navy-light text-white rounded-badge text-sm py-[11px] px-[23px] inline-block ${
                 appl_btn?.btn_class || ""
               }`}
             >

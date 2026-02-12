@@ -4,7 +4,7 @@ import LifePeekSlide from "./LifePeekSlide";
 const LifeKRMUPeek = () => {
   return (
     <section className="py-10 px-4">
-      <div className="flex flex-col lg:flex-row max-w-[1664px] mx-auto w-full items-center">
+      <div className="flex flex-col lg:flex-row max-w-main mx-auto w-full items-center">
         <div className="w-full lg:w-2/3">
           <h4 className="text-3xl md:text-5xl font-semibold leading-[1.3]">
             A Peek into the Vibrant Student

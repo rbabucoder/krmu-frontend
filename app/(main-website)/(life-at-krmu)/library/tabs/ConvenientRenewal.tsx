@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const ConvenientRenewal = () => {
   return (
-    <div className="max-w-[1664px] mx-auto w-full libtabcontent ">
+    <div className="max-w-main mx-auto w-full libtabcontent ">
       <p>Stay Updated</p>
       <h2>Convenient Renewal Status Checks</h2>
       <p>

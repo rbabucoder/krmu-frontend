@@ -2,10 +2,10 @@ import Image from "next/image";
 
 const SMASPanel = () => {
   return (
-    <section className="py-[50px] px-4">
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10">
+    <section className="py-section px-4">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row gap-10">
         <div className="w-full lg:w-1/2">
-          <h3 className="text-3xl lg:text-[38px] font-bold mb-5">
+          <h3 className="text-3xl lg:text-h2 font-bold mb-5">
             Session on Emerging Trends and Innovation
           </h3>
           <p className="mb-5 text-lg">

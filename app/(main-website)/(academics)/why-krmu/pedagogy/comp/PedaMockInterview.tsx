@@ -10,7 +10,7 @@ type Props = {
 const PedaMockInterview = ({ title, content, imgUrl }: Props) => {
   return (
     <section className="my-10 px-4">
-      <div className="max-w-[1664px] mx-auto w-full pt-5 px-8 md:px-[60px] bg-[#0060aa] rounded-[90px] xl:flex items-center gap-14 overflow-hidden">
+      <div className="max-w-main mx-auto w-full pt-5 px-8 md:px-[60px] bg-krmu-blue rounded-[90px] xl:flex items-center gap-14 overflow-hidden">
         <div className="xl:w-1/2 text-white">
           <h4 className="text-2xl text-center md:text-left md:text-5xl mt-2.5 mb-[15px] font-semibold leading-[1.5]">
             {title}

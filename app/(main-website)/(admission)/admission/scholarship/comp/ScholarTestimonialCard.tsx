@@ -15,7 +15,7 @@ const ScholarTestimonialCard = ({ image, name, course, content }: Props) => {
   const limit = 220;
 
   return (
-    <div className="p-[30px] bg-[#051630] rounded-[32px]">
+    <div className="p-[30px] bg-krmu-navy rounded-[32px]">
       <div className="flex justify-center mb-5">
         <Image
           src={image}

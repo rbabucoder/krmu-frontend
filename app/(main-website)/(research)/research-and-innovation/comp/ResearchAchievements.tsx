@@ -27,7 +27,7 @@ const ResearchAchievements = () => {
       className="bg-[url(/research/gradient-3.webp)] bg-cover py-8 px-4"
       id="research-achievements"
     >
-      <div className="max-w-[1664px] mx-auto w-full">
+      <div className="max-w-main mx-auto w-full">
         <h3 className="text-3xl md:text-5xl text-white font-semibold mb-5 md:mb-10">
           Research Achievements
         </h3>

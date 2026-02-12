@@ -14,8 +14,8 @@ type Props = {
 const PHDTestimonialsAcc = ({ faqTitle, faqs }: Props) => {
   return (
     <>
-      <section className="py-[60px] px-4">
-        <div className="max-w-[1664px] mx-auto w-full">
+      <section className="py-section-lg px-4">
+        <div className="max-w-main mx-auto w-full">
           <h3 className="text-3xl md:text-5xl font-semibold mb-5">{faqTitle}</h3>
 
           <Accordion
@@ -30,7 +30,7 @@ const PHDTestimonialsAcc = ({ faqTitle, faqs }: Props) => {
                   <AccordionItem
                     key={faq?.id}
                     value={`item-${i + 1}`}
-                    className="last:border-b py-[15px] px-[25px] rounded-[8px] h-fit border border-[#d9dada]"
+                    className="last:border-b py-compact px-[25px] rounded-[8px] h-fit border border-[#d9dada]"
                   >
                     <AccordionTrigger className="text-xl text-[#716d6c] p-0 hover:no-underline cursor-pointer phd-acc-panel">
                       {faq?.ques}

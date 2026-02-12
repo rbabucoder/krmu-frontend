@@ -66,7 +66,7 @@ const AdvisoryLoop = ({ schoolCat }: Props) => {
           <Button
             onClick={handleLoadMore}
             disabled={loading}
-            className="py-3.5 px-8 bg-[#cb000d] font-bold rounded-sm text-sm sm:text-base text-white leading-[1] flex items-center"
+            className="py-3.5 px-8 bg-krmu-red-dark font-bold rounded-sm text-sm sm:text-base text-white leading-[1] flex items-center"
           >
             {loading ? "Loading..." : "Load More"}
           </Button>

@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const DSWMessage = () => {
   return (
-    <section className="py-[50px] bg-[url(/gradient-2.webp)] bg-no-repeat bg-cover bg-center px-4">
+    <section className="py-section bg-[url(/gradient-2.webp)] bg-no-repeat bg-cover bg-center px-4">
       <div
-        className="p-[30px] max-w-[1600px] mx-auto w-full text-white"
+        className="p-[30px] max-w-wide mx-auto w-full text-white"
         style={{
           background: `rgba(255,255,255,.13)`,
         }}

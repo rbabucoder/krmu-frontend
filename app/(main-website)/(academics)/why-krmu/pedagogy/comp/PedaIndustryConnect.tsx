@@ -20,7 +20,7 @@ const PedaIndustryConnect = ({
     <section className="my-10 px-4">
       <div
         className={`
-    max-w-[1664px] mx-auto w-full min-h-[580px] pt-5 px-8 lg:px-[60px]
+    max-w-main mx-auto w-full min-h-[580px] pt-5 px-8 lg:px-[60px]
     bg-[#b2010a] xl:bg-cover xl:bg-center xl:bg-no-repeat
     rounded-[90px] xl:flex items-center gap-14 overflow-hidden
   `}

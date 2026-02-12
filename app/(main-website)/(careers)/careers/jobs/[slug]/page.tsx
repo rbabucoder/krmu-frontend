@@ -61,8 +61,8 @@ const page = async ({ params }: Props) => {
     <section className="py-[140px] px-4">
       <div
         className={`${
-          jobId === 53831 ? "max-w-[800px]" : "max-w-[1600px]"
-        } mx-auto w-full flex flex-col lg:flex-row gap-[30px]`}
+          jobId === 53831 ? "max-w-[800px]" : "max-w-wide"
+        } mx-auto w-full flex flex-col lg:flex-row gap-section-sm`}
       >
         {jobId !== 53831 && currentSingleJob && (
           <div className="lg:w-1/2">
@@ -80,7 +80,7 @@ const page = async ({ params }: Props) => {
           <JobForm jobId={jobId} />
         </div>
       </div>
-      {/* <div className="max-w-[1600px] mx-auto w-full flex flex-col lg:flex-row gap-[30px]">
+      {/* <div className="max-w-wide mx-auto w-full flex flex-col lg:flex-row gap-section-sm">
         
           {
             jobId === '53831' ? '' : 

@@ -1,7 +1,7 @@
 const Stats = () => {
   return (
     <section className="p-5 sm:p-20 bg-[#0060AA] bg-[url(/semce/grid.svg)]">
-      <div className="max-w-[1400px] mx-auto w-full flex flex-col gap-5"> 
+      <div className="max-w-narrow mx-auto w-full flex flex-col gap-5"> 
         <div className="flex flex-col sm:flex-row gap-5">
           <span className="statsbg w-full sm:w-1/3">
             <strong>100%</strong> Practical Exposure

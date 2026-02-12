@@ -160,7 +160,7 @@ export default function GrievanceTabsUI() {
 
                 <Link
                   href="#"
-                  className="mt-5 inline-block py-3 px-6 bg-[#0060aa] rounded text-white font-medium"
+                  className="mt-5 inline-block py-3 px-6 bg-krmu-blue rounded text-white font-medium"
                 >
                   Student Grievance
                 </Link>

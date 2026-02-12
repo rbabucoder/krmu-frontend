@@ -67,7 +67,7 @@ export default function KRMUQSBrowser() {
   };
 
   return (
-    <div className="pt-[140px] max-w-5xl mx-auto p-4">
+    <div className="pt-hero-top max-w-5xl mx-auto p-4">
       {/* HEADER */}
       <div className="mb-4 flex justify-between items-center">
         <div className="flex items-center">

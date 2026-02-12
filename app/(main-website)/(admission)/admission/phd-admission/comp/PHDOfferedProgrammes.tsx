@@ -19,10 +19,10 @@ const PHDOfferedProgrammes = ({
   const offeredSchoolsData = offeredSchools?.offered_schools;
 
   return (
-    <section className="py-10 md:py-[60px]  bg-[url(/admission/phd-bg.webp)] bg-cover bg-no-repeat px-4">
-      <div className="max-w-[1664px] mx-auto w-full">
+    <section className="py-10 md:py-section-lg  bg-[url(/admission/phd-bg.webp)] bg-cover bg-no-repeat px-4">
+      <div className="max-w-main mx-auto w-full">
         <h2
-          className="text-white text-3xl md:text-[64px] font-semibold text-center leading-[1.2]"
+          className="text-white text-3xl md:text-display font-semibold text-center leading-[1.2]"
           dangerouslySetInnerHTML={{
             __html: heading,
           }}

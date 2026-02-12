@@ -18,7 +18,7 @@ const BankNbfc = ({ bankLoansCards, nbfccardsData }: Props) => {
   return (
     <>
       <section className="my-12 px-4">
-        <div className="max-w-[1664px] mx-auto w-full">
+        <div className="max-w-main mx-auto w-full">
           <Accordion
             type="single"
             collapsible
@@ -26,7 +26,7 @@ const BankNbfc = ({ bankLoansCards, nbfccardsData }: Props) => {
             defaultValue="item-1"
           >
             <AccordionItem value="item-1">
-              <AccordionTrigger className="bg-[#051630] text-white py-5 px-10 rounded-none text-xl font-semibold cursor-pointer hover:no-underline bankloanaccpanel">
+              <AccordionTrigger className="bg-krmu-navy text-white py-5 px-10 rounded-none text-xl font-semibold cursor-pointer hover:no-underline bankloanaccpanel">
                 Bank Loans
               </AccordionTrigger>
               <AccordionContent className="flex flex-col gap-4 text-balance">
@@ -48,7 +48,7 @@ const BankNbfc = ({ bankLoansCards, nbfccardsData }: Props) => {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
-              <AccordionTrigger className="bg-[#051630] text-white py-5 px-10 rounded-none text-xl font-semibold cursor-pointer hover:no-underline bankloanaccpanel">
+              <AccordionTrigger className="bg-krmu-navy text-white py-5 px-10 rounded-none text-xl font-semibold cursor-pointer hover:no-underline bankloanaccpanel">
                 NBFC’s
               </AccordionTrigger>
               <AccordionContent className="flex flex-col gap-4 text-balance">

@@ -1,7 +1,7 @@
 const KREEExaminationPattern = () => {
   return (
     <section className="py-[4%] px-4">
-      <div className="max-w-[1664px] mx-auto w-full">
+      <div className="max-w-main mx-auto w-full">
         <h4 className="text-xl md:text-5xl font-semibold text-center">
           KREE Examination Pattern
         </h4>

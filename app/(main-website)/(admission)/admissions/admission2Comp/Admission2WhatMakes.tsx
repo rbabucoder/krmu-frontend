@@ -6,9 +6,9 @@ const Admission2WhatMakes = () => {
   return (
     <section className="py-12 px-4">
       <div className="max-w-[600px] mx-auto w-full">
-        <h3 className="mb-5 text-3xl md:text-[40px] font-semibold text-[#0a41a1] text-center leading-[1.2]">
+        <h3 className="mb-5 text-3xl md:text-h1 font-semibold text-krmu-blue-dark text-center leading-[1.2]">
           What Makes K.R. Mangalam <br />
-          <span className="text-[#e61f21]">University The Best?</span>
+          <span className="text-krmu-red">University The Best?</span>
         </h3>
         <p className="font-semibold text-center">
           K.R. Mangalam University has established itself as the pinnacle of
@@ -19,7 +19,7 @@ const Admission2WhatMakes = () => {
         </p>
       </div>
 
-      <div className="max-w-[1320px] mx-auto w-full mt-5 hidden lg:flex  gap-6">
+      <div className="max-w-content mx-auto w-full mt-5 hidden lg:flex  gap-6">
         <div className="lg:w-1/2">
           <div className="custom-card mb-3">
             <Image

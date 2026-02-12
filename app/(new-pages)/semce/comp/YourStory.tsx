@@ -12,7 +12,7 @@ const YourStory = () => {
           the next viral brand SEMCE is where you start creating for the real
           world.
         </p>
-        <Link href="#" className="text-white bg-[#CA1B1F] px-6 py-3 rounded-[10px] font-semibold max-w-[240px] w-full text-xl mx-auto inline-block mt-10">Apply Now</Link>
+        <Link href="#" className="text-white bg-[#CA1B1F] px-6 py-3 rounded-button font-semibold max-w-[240px] w-full text-xl mx-auto inline-block mt-10">Apply Now</Link>
       </div>
     </section>
   );

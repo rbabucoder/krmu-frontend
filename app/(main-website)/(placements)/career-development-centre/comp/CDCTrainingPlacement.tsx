@@ -4,7 +4,7 @@ const CDCTrainingPlacement = () => {
   return (
     <>
       <section className="px-4">
-        <div className="max-w-[1664px] mx-auto w-full">
+        <div className="max-w-main mx-auto w-full">
           <p className="text-xl my-10 text-center md:text-left">
             <strong>
               The Career Development Center at KRMU offers training and

@@ -5,10 +5,10 @@ const OnlineFee = () => {
   return (
     <>
       <section className="px-4">
-        <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10">
+        <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row gap-10">
           <div className="lg:w-2/3 text-center">
             <h2
-              className="font-bold text-2xl lg:text-[64px] text-[#0060aa] my-5 lg:my-0"
+              className="font-bold text-2xl lg:text-display text-krmu-blue my-5 lg:my-0"
               style={{
                 textShadow: "-8px 6px 0px #ffefb8",
               }}
@@ -43,7 +43,7 @@ const OnlineFee = () => {
                 <div>
                   <Link
                     href="https://payment.collexo.com/user/login/?dest=/pay-fee/kr-mangalam-university-sohna-haryana-43490/"
-                    className="bg-[#e31e24] py-3 text-white text-base md:px-[29px] inline-block w-full md:text-2xl font-semibold leading-[1] rounded-b-[22px] hover:bg-[#034272]"
+                    className="bg-krmu-red py-3 text-white text-base md:px-[29px] inline-block w-full md:text-2xl font-semibold leading-[1] rounded-b-[22px] hover:bg-krmu-navy-light"
                     target="_blank"
                   >
                     <span>Pay Through Collexo</span>
@@ -65,7 +65,7 @@ const OnlineFee = () => {
                 <div>
                   <Link
                     href="https://krmu.icloudems.com/"
-                    className="bg-[#e31e24] py-3 text-white px-[29px] inline-block w-full text-base md:text-2xl font-semibold leading-[1] rounded-b-[22px] hover:bg-[#034272]"
+                    className="bg-krmu-red py-3 text-white px-[29px] inline-block w-full text-base md:text-2xl font-semibold leading-[1] rounded-b-[22px] hover:bg-krmu-navy-light"
                     target="_blank"
                   >
                     <span>Pay Through iCloud</span>
@@ -83,12 +83,12 @@ const OnlineFee = () => {
             />
           </div>
         </div>
-        <div className="max-w-[1664px] mx-auto w-full py-10">
-          <h3 className="text-[26px] md:text-5xl font-semibold pt-10 pb-5">
+        <div className="max-w-main mx-auto w-full py-10">
+          <h3 className="text-h4 md:text-5xl font-semibold pt-10 pb-5">
             Offline Fee Payment Options
           </h3>
           <ul>
-            <li className="flex items-center gap-5 text-xl py-[15px]">
+            <li className="flex items-center gap-5 text-xl py-compact">
               <div>
                 <span className="w-11 h-11 bg-[#141617] flex items-center justify-center text-white text-lg rounded-full">
                   1
@@ -98,7 +98,7 @@ const OnlineFee = () => {
               located at University Campus reception area, Ground Floor, A
               Block.
             </li>
-            <li className="flex items-center gap-5 text-xl py-[15px]">
+            <li className="flex items-center gap-5 text-xl py-compact">
               <div>
                 <span className="w-11 h-11 bg-[#141617] flex items-center justify-center text-white text-lg rounded-full">
                   2

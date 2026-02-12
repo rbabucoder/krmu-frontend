@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const OverviewTab = () => {
   return (
-    <div className="max-w-[1664px] mx-auto w-full libtabcontent flex flex-col lg:flex-row items-center gap-10">
+    <div className="max-w-main mx-auto w-full libtabcontent flex flex-col lg:flex-row items-center gap-10">
       <div className="w-full lg:w-1/2">
         <p>Library is in your Pocket, Smartphone to Smart Library</p>
         <h2>
@@ -18,24 +18,24 @@ const OverviewTab = () => {
           webpage.
         </p>
         <div className="flex flex-col lg:flex-row gap-5">
-          <div className="p-5 bg-[#051630] text-white w-full lg:w-1/2 rounded-[10px]">
+          <div className="p-5 bg-krmu-navy text-white w-full lg:w-1/2 rounded-button">
             <h4 className="my-2.5">Book Renewal 1:</h4>
             <p className="mb-5">Use your Roll No or Employee ID to Login</p>
             <Link
               href="https://bit.ly/3CEDfs8"
               target="_blank"
-              className="py-[11px] px-[23px] text-sm rounded-[4px] text-white bg-[#e31e24] hover:text-[#051630] hover:cursor-pointer"
+              className="py-[11px] px-[23px] text-sm rounded-badge text-white bg-krmu-red hover:text-krmu-navy hover:cursor-pointer"
             >
               Click Here
             </Link>
           </div>
-          <div className="p-5 bg-[#051630] text-white w-full lg:w-1/2 rounded-[10px]">
+          <div className="p-5 bg-krmu-navy text-white w-full lg:w-1/2 rounded-button">
             <h4 className="my-2.5">Book Renewal 2:</h4>
             <p className="mb-5">Use your Roll No or Employee ID to Login</p>
             <Link
               href="http://172.16.16.25:4444/"
               target="_blank"
-              className="py-[11px] px-[23px] text-sm rounded-[4px] text-white bg-[#e31e24] hover:text-[#051630] hover:cursor-pointer"
+              className="py-[11px] px-[23px] text-sm rounded-badge text-white bg-krmu-red hover:text-krmu-navy hover:cursor-pointer"
             >
               Click Here
             </Link>

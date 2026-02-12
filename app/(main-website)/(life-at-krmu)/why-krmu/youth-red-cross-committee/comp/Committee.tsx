@@ -4,8 +4,8 @@ import React from "react";
 const Committee = () => {
   return (
     <>
-      <section className="py-[50px] bg-[url(/bg-gradient.webp)] px-4">
-        <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row items-center gap-10">
+      <section className="py-section bg-[url(/bg-gradient.webp)] px-4">
+        <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row items-center gap-10">
           <div className="w-full lg:w-1/2 text-white">
             <h3 className="text-2xl mb-5 font-semibold">Committee:</h3>
             <p>

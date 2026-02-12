@@ -99,14 +99,14 @@ const page = async () => {
           }}
         >
           <div className="max-w-7xl mx-auto w-full text-center text-white">
-            <h1 className="text-2xl md:text-4xl lg:text-[64px] font-bold">
+            <h1 className="text-2xl md:text-4xl lg:text-display font-bold">
               {breadcrumb?.breadcrumbtext}
             </h1>
           </div>
         </section>
       )}
       <section className="lg:py-12 lg:px-8 p-5">
-        <div className="max-w-[1600px] mx-auto w-full">
+        <div className="max-w-wide mx-auto w-full">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 xl:gap-10 2xl:gap-16">
             {financeEmps &&
               financeEmps.map((emp) => {
@@ -136,7 +136,7 @@ const page = async () => {
                         <span className="leading-[2] font-bold">Email:</span>
                         <Link
                           href={`mailto:${emp?.email}`}
-                          className="hover:text-[#0060aa]"
+                          className="hover:text-krmu-blue"
                         >
                           <span className="leading-[2]">{emp?.email}</span>
                         </Link>

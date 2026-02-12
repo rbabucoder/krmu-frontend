@@ -3,7 +3,7 @@ import Image from "next/image";
 const KREESection = () => {
   return (
     <section className="py-[6%] px-4 bg-[url('/kree-bg.webp')] bg-cover bg-center bg-no-repeat">
-      <div className="flex items-center max-w-[1664px] mx-auto w-full">
+      <div className="flex items-center max-w-main mx-auto w-full">
         <div className="lg:w-1/2">
           <h3 className="leading-[1.5] text-2xl md:text-5xl text-white font-semibold">
             KREE Sections

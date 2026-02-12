@@ -59,7 +59,7 @@ const MobileHeader = ({ topbarmenu, navbarData, onClose }: Props) => {
 
   return (
     <>
-      <div className="pt-[50px] px-5 overflow-y-auto h-screen z-50 bg-[#051630] xl:hidden">
+      <div className="pt-section px-5 overflow-y-auto h-screen z-50 bg-krmu-navy xl:hidden">
         <div className="mobile-krmmenu-menu-container">
           <ul className="mobile-krmmenu-items">
             {/* Simple Link */}
@@ -86,8 +86,8 @@ const MobileHeader = ({ topbarmenu, navbarData, onClose }: Props) => {
                   openMenu === "academics" ? "max-h-[1000px]" : "max-h-0"
                 }`}
               >
-                <div className="bg-white p-5 mt-5 rounded-[10px]">
-                  <h5 className="mt-2.5 mb-[15px] leading-[1.2] text-[#051630] text-lg">
+                <div className="bg-white p-5 mt-5 rounded-button">
+                  <h5 className="mt-2.5 mb-[15px] leading-[1.2] text-krmu-navy text-lg">
                     {academicMenu?.academicmenu?.heading}
                   </h5>
                   <ul className="mb-5 space-y-2">
@@ -96,7 +96,7 @@ const MobileHeader = ({ topbarmenu, navbarData, onClose }: Props) => {
                         <li key={menu?.id}>
                           <Link
                             href={menu?.url || "#"}
-                            className={`text-black text-[13px] font-normal`}
+                            className={`text-black text-body-sm font-normal`}
                             onClick={onClose}
                           >
                             {menu?.title}
@@ -106,7 +106,7 @@ const MobileHeader = ({ topbarmenu, navbarData, onClose }: Props) => {
                     })}
                   </ul>
 
-                  <h5 className="mt-2.5 mb-[15px] leading-[1.2] text-[#051630] text-lg">
+                  <h5 className="mt-2.5 mb-[15px] leading-[1.2] text-krmu-navy text-lg">
                     {academicMenu?.discovermenu?.heading}
                   </h5>
                   <ul className="space-y-2">
@@ -115,7 +115,7 @@ const MobileHeader = ({ topbarmenu, navbarData, onClose }: Props) => {
                         <li key={menu?.id}>
                           <Link
                             href={menu?.url || "#"}
-                            className="text-black text-[13px] font-normal"
+                            className="text-black text-body-sm font-normal"
                             onClick={onClose}
                           >
                             {menu?.title}
@@ -157,8 +157,8 @@ const MobileHeader = ({ topbarmenu, navbarData, onClose }: Props) => {
                   openMenu === "admission" ? "max-h-[1000px]" : "max-h-0"
                 }`}
               >
-                <div className="bg-white p-5 mt-5  rounded-[10px]">
-                  <h5 className="mt-2.5 mb-[15px] leading-[1.2] text-[#051630] text-lg">
+                <div className="bg-white p-5 mt-5  rounded-button">
+                  <h5 className="mt-2.5 mb-[15px] leading-[1.2] text-krmu-navy text-lg">
                     {admissionMenu?.enrollnow?.heading}
                   </h5>
                   <ul className="mb-5">
@@ -167,7 +167,7 @@ const MobileHeader = ({ topbarmenu, navbarData, onClose }: Props) => {
                         <li key={menu?.id}>
                           <Link
                             href={menu?.url || "#"}
-                            className="text-black text-[13px] font-normal"
+                            className="text-black text-body-sm font-normal"
                             onClick={onClose}
                           >
                             {menu?.title}
@@ -176,7 +176,7 @@ const MobileHeader = ({ topbarmenu, navbarData, onClose }: Props) => {
                       );
                     })}
                   </ul>
-                  <h5 className="mt-2.5 mb-[15px] leading-[1.2] text-[#051630] text-lg">
+                  <h5 className="mt-2.5 mb-[15px] leading-[1.2] text-krmu-navy text-lg">
                     {admissionMenu?.visitus?.heading}
                   </h5>
                   <ul>
@@ -185,7 +185,7 @@ const MobileHeader = ({ topbarmenu, navbarData, onClose }: Props) => {
                         <li key={menu?.id}>
                           <Link
                             href={menu?.url || "#"}
-                            className="text-black text-[13px] font-normal"
+                            className="text-black text-body-sm font-normal"
                             onClick={onClose}
                           >
                             {menu?.title}
@@ -225,8 +225,8 @@ const MobileHeader = ({ topbarmenu, navbarData, onClose }: Props) => {
                   openMenu === "placement" ? "max-h-[1000px]" : "max-h-0"
                 }`}
               >
-                <div className="bg-white p-5 mt-5  rounded-[10px]">
-                  <h5 className="mt-2.5 mb-[15px] leading-[1.2] text-[#051630] text-lg">
+                <div className="bg-white p-5 mt-5  rounded-button">
+                  <h5 className="mt-2.5 mb-[15px] leading-[1.2] text-krmu-navy text-lg">
                     {placementMenu?.placement?.heading}
                   </h5>
                   <ul className="mb-5">
@@ -235,7 +235,7 @@ const MobileHeader = ({ topbarmenu, navbarData, onClose }: Props) => {
                         <li key={menu?.id}>
                           <Link
                             href={menu?.url || "#"}
-                            className="text-black text-[13px] font-normal"
+                            className="text-black text-body-sm font-normal"
                             onClick={onClose}
                           >
                             {menu?.title}
@@ -268,8 +268,8 @@ const MobileHeader = ({ topbarmenu, navbarData, onClose }: Props) => {
                   openMenu === "research" ? "max-h-[1000px]" : "max-h-0"
                 }`}
               >
-                <div className="bg-white p-5 mt-5  rounded-[10px]">
-                  <h5 className="mt-2.5 mb-[15px] leading-[1.2] text-[#051630] text-lg">
+                <div className="bg-white p-5 mt-5  rounded-button">
+                  <h5 className="mt-2.5 mb-[15px] leading-[1.2] text-krmu-navy text-lg">
                     {researchMenu?.research?.heading}
                   </h5>
                   <ul className="mb-5">
@@ -278,7 +278,7 @@ const MobileHeader = ({ topbarmenu, navbarData, onClose }: Props) => {
                         <li key={menu?.id}>
                           <Link
                             href={menu?.url || "#"}
-                            className="text-black text-[13px] font-normal"
+                            className="text-black text-body-sm font-normal"
                             onClick={onClose}
                           >
                             {menu?.title}
@@ -323,8 +323,8 @@ const MobileHeader = ({ topbarmenu, navbarData, onClose }: Props) => {
                   openMenu === "lifeatkrmu" ? "max-h-[1000px]" : "max-h-0"
                 }`}
               >
-                <div className="bg-white p-5 mt-5  rounded-[10px]">
-                  <h5 className="mt-2.5 mb-[15px] leading-[1.2] text-[#051630] text-lg">
+                <div className="bg-white p-5 mt-5  rounded-button">
+                  <h5 className="mt-2.5 mb-[15px] leading-[1.2] text-krmu-navy text-lg">
                     {lifeatkrmuMenu?.lifeatkrmu1?.heading}
                   </h5>
                   <ul className="mb-5">
@@ -333,7 +333,7 @@ const MobileHeader = ({ topbarmenu, navbarData, onClose }: Props) => {
                         <li key={menu?.id}>
                           <Link
                             href={menu?.url || "#"}
-                            className="text-black text-[13px] font-normal"
+                            className="text-black text-body-sm font-normal"
                             onClick={onClose}
                             target="_blank"
                           >
@@ -347,7 +347,7 @@ const MobileHeader = ({ topbarmenu, navbarData, onClose }: Props) => {
                         <li key={menu?.id}>
                           <Link
                             href={menu?.url || "#"}
-                            className="text-black text-[13px] font-normal"
+                            className="text-black text-body-sm font-normal"
                             onClick={onClose}
                           >
                             {menu?.title}
@@ -381,9 +381,9 @@ const MobileHeader = ({ topbarmenu, navbarData, onClose }: Props) => {
                   openMenu === "aboutus" ? "max-h-[1000px]" : "max-h-0"
                 }`}
               >
-                <div className="bg-white p-5 mt-5  rounded-[10px]">
+                <div className="bg-white p-5 mt-5  rounded-button">
                   
-                    <h5 className="mt-2.5 mb-[15px] leading-[1.2] text-[#051630] text-lg">
+                    <h5 className="mt-2.5 mb-[15px] leading-[1.2] text-krmu-navy text-lg">
                     {aboutusMenu?.overview?.heading}
                   </h5>
                     <ul className="mb-5">
@@ -392,7 +392,7 @@ const MobileHeader = ({ topbarmenu, navbarData, onClose }: Props) => {
                           <li key={menu?.id}>
                             <Link
                               href={menu?.url || "#"}
-                              className="text-black text-[13px] font-normal"
+                              className="text-black text-body-sm font-normal"
                               onClick={onClose}
                               target="_blank"
                             >
@@ -402,7 +402,7 @@ const MobileHeader = ({ topbarmenu, navbarData, onClose }: Props) => {
                         );
                       })}
                     </ul>
-                   <h5 className="mt-2.5 mb-[15px] leading-[1.2] text-[#051630] text-lg">
+                   <h5 className="mt-2.5 mb-[15px] leading-[1.2] text-krmu-navy text-lg">
                     {aboutusMenu?.administration?.heading}
                   </h5>
                      <ul className="mb-5">
@@ -411,7 +411,7 @@ const MobileHeader = ({ topbarmenu, navbarData, onClose }: Props) => {
                           <li key={menu?.id}>
                             <Link
                               href={menu?.url || "#"}
-                              className="text-black text-[13px] font-normal"
+                              className="text-black text-body-sm font-normal"
                               onClick={onClose}
                               target="_blank"
                             >

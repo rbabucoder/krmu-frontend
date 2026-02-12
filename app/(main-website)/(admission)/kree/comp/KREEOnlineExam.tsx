@@ -1,7 +1,7 @@
 const KREEOnlineExam = () => {
   return (
     <section className="pt-[3%] pb-[2%] px-4">
-      <div className="max-w-[1600px] mx-auto w-full">
+      <div className="max-w-wide mx-auto w-full">
         <h4 className="text-4xl md:text-5xl text-center font-semibold">
           Online Exam Format
         </h4>

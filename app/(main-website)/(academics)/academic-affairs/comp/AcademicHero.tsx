@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const AcademicHero = () => {
   return (
-    <section className="bg-[url(/academics/bg-gradient-1.webp)] bg-no-repeat bg-cover pt-[140px]">
-      <div className="max-w-[1664px] mx-auto w-full flex justify-center items-center flex-col">
+    <section className="bg-[url(/academics/bg-gradient-1.webp)] bg-no-repeat bg-cover pt-hero-top">
+      <div className="max-w-main mx-auto w-full flex justify-center items-center flex-col">
         <Image
           src="/academics/academic-affair-title.webp"
           width={1069}

@@ -5,7 +5,7 @@ import Image from "next/image"
 const BiggestBrand = () => {
   return (
     <section className="py-10 overflow-hidden">
-        <div className="max-w-[1664px] mx-auto w-full text-center instrument-serif px-4">
+        <div className="max-w-main mx-auto w-full text-center instrument-serif px-4">
             <h4 className="sm:text-3xl">Our students now build stories for</h4>
             <h3 className="text-4xl sm:text-5xl md:text-7xl">India’s biggest brands</h3>
         </div>

@@ -10,7 +10,7 @@ const ProminentRecruiters = ({ recruitLogos }: Props) => {
   return (
     <>
       <section className="py-10 px-4">
-        <div className="max-w-[1664px] mx-auto w-full">
+        <div className="max-w-main mx-auto w-full">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 sm:gap-10">
             {/* {Array.from({ length: 5 }).map((_, index) => ( */}
             {recruitLogos &&

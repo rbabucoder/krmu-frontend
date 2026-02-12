@@ -14,7 +14,7 @@ type Props = {
 const ClubAndSocietiesAcc = ({ accordionsData }: Props) => {
   return (
     <section>
-      <div className="max-w-[1664px] mx-auto w-full mb-10">
+      <div className="max-w-main mx-auto w-full mb-10">
         <Accordion
           type="single"
           collapsible
@@ -25,7 +25,7 @@ const ClubAndSocietiesAcc = ({ accordionsData }: Props) => {
             accordionsData.map((accordion, i) => {
               return (
                 <AccordionItem key={accordion?.id} value={`${i + 1}`}>
-                  <AccordionTrigger className="bg-[#051630] text-white rounded-none p-5 text-xl font-semibold hover:no-underline cursor-pointer">
+                  <AccordionTrigger className="bg-krmu-navy text-white rounded-none p-5 text-xl font-semibold hover:no-underline cursor-pointer">
                     {accordion?.title}
                   </AccordionTrigger>
                   <AccordionContent className="flex flex-col gap-4 text-balance p-5 clubsAcc">

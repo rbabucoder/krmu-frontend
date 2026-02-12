@@ -24,7 +24,7 @@ const TableOfContent = ({
 }: Props) => {
   return (
     <>
-      <section className="py-[50px]">
+      <section className="py-section">
         <div className="flex items-center lg:gap-6">
           <div className="w-1/4 hidden lg:block">
             {tocimg && (
@@ -40,9 +40,9 @@ const TableOfContent = ({
           <div className="w-full lg:w-3/4">
             <div className="mx-auto max-w-6xl">
               <div className="text-center mb-20">
-                <h3 className="text-[40px]  font-semibold mb-5 text-[#0a41a1]">
+                <h3 className="text-h1  font-semibold mb-5 text-krmu-blue-dark">
                   {heading}
-                  <span className="text-[#e61f21]">{highlight}</span>
+                  <span className="text-krmu-red">{highlight}</span>
                 </h3>
                 <p className="text-base">{desc}</p>
               </div>
@@ -53,7 +53,7 @@ const TableOfContent = ({
                 {(tocbtn?.buttonclass || tocbtn?.buttonlink) && (
                   <Link
                     href={tocbtn?.buttonlink}
-                    className={`${tocbtn?.buttonclass} p-4 text-white bg-[#0a41a1] text-base rounded-[8px]`}
+                    className={`${tocbtn?.buttonclass} p-4 text-white bg-krmu-blue-dark text-base rounded-[8px]`}
                   >
                     {tocbtn?.buttontext}
                   </Link>

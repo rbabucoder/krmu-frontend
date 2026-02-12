@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const MembersghipTab = () => {
   return (
-    <div className="max-w-[1664px] mx-auto w-full libtabcontent ">
+    <div className="max-w-main mx-auto w-full libtabcontent ">
       <p>Seamless Access to Knowledge:</p>
       <h2>Simplified Library Membership at KR Mangalam University</h2>
       <p>

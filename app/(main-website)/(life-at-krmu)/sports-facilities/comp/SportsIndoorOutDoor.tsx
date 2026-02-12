@@ -8,14 +8,14 @@ type Props = {
 
 const SportsIndoorOutDoor = ({ data }: Props) => {
   return (
-    <section className="py-[30px] px-4">
-      <div className="max-w-[1664px] mx-auto w-full">
+    <section className="py-section-sm px-4">
+      <div className="max-w-main mx-auto w-full">
         {data &&
           data.map((item, index) => (
             <div key={index} className="mb-12">
               {/* Heading */}
               <div className="text-center">
-                <h3 className="text-3xl md:text-[38px] mb-10 font-bold">
+                <h3 className="text-3xl md:text-h2 mb-10 font-bold">
                   {item?.heading}
                 </h3>
               </div>

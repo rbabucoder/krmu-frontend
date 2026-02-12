@@ -15,7 +15,7 @@ type Props = {
 const AboutUs = ({ title, description, image }: Props) => {
   return (
     <section className="py-10 md:py-14 lg:py-20 px-4">
-      <div className="max-w-[1400px] mx-auto w-full flex flex-col-reverse lg:flex-row gap-10 items-center">
+      <div className="max-w-narrow mx-auto w-full flex flex-col-reverse lg:flex-row gap-10 items-center">
         {/* Left Content */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">
           <h3 className="text-[#003fa1] text-2xl sm:text-3xl font-semibold mb-5">

@@ -1,7 +1,7 @@
 const KEICKeyInitiative = () => {
   return (
-    <section className="py-[50px] bg-[#051630] px-4">
-      <div className="max-w-[1664px] mx-auto w-full ">
+    <section className="py-section bg-krmu-navy px-4">
+      <div className="max-w-main mx-auto w-full ">
         <div>
           <h3 className="lg:mb-10 text-3xl mb-5 md:text-5xl text-white font-semibold">
             Key Initiatives and Support

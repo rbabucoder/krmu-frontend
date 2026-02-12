@@ -7,6 +7,7 @@ import Slider, { Settings } from "react-slick";
 // Import slick-carousel CSS
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "./timeline.css";
 
 const TimelineCarousel = () => {
   const [nav1, setNav1] = useState<Slider | null>(null);
@@ -73,7 +74,7 @@ const TimelineCarousel = () => {
   return (
     <div className=" pb-32 -mt-10 overflow-x-auto overflow-y-hidden no-scrollbar relative">
       {/* Timeline Nav */}
-      <div className="timeline  xl:pb-[50px] xl:pl-[180px]">
+      <div className="timeline  xl:pb-section xl:pl-[180px]">
         <Slider {...navSettings} ref={sliderRef1}>
           {timelineData.map((item, index) => (
             <div
@@ -112,7 +113,7 @@ const TimelineCarousel = () => {
                 <h4 className="md:text-8xl text-xs font-normal mb-2.5 sm:mb-5">
                   {item.year}
                 </h4>
-                <p className="text-xs md:text-[26px] mb-2.5 sm:mb-5">{item.title}</p>
+                <p className="text-xs md:text-h4 mb-2.5 sm:mb-5">{item.title}</p>
                 <p className="mb-2.5 text-xs sm:mb-2.5 md:text-lg">{item.subtitle}</p>
               </div>
             </div>

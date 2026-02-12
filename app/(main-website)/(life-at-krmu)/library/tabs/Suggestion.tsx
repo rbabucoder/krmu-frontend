@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Suggestion = () => {
   return (
-    <div className="max-w-[1664px] mx-auto w-full libtabcontent flex flex-col lg:flex-row items-center gap-10">
+    <div className="max-w-main mx-auto w-full libtabcontent flex flex-col lg:flex-row items-center gap-10">
       <div className="w-full lg:w-1/2">
         <p>Valuing Feedback</p>
         <h2>Library Complaint and Suggestion System</h2>

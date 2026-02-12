@@ -13,7 +13,7 @@ const IndustryExperts = ({ data }: Props) => {
     <section className="">
       <div className="w-full bg-[#003fa1] pt-12 px-5 sm:px-20">
         {/* Header */}
-        <div className="max-w-[1400px] mx-auto w-full">
+        <div className="max-w-narrow mx-auto w-full">
           <div className="flex flex-col lg:flex-row items-center justify-between text-white">
             <div className="w-full lg:w-1/2 text-center md:text-left md:border-l-2 border-white md:pl-5">
               <h3 className="text-sm">{data.eyebrow}</h3>
@@ -39,7 +39,7 @@ const IndustryExperts = ({ data }: Props) => {
               >
                 <span className="w-4/5 text-center">{data.cta.label}</span>
                 <span className="bg-white p-3 rounded-full w-1/5">
-                  <MoveUpRight className="text-[#0060aa]" size={30} />
+                  <MoveUpRight className="text-krmu-blue" size={30} />
                 </span>
               </Link> */}
 
@@ -55,7 +55,7 @@ const IndustryExperts = ({ data }: Props) => {
                     }}
                   />
                   <span className="bg-white p-3 rounded-full w-1/5">
-                    <MoveUpRight className="text-[#0060aa]" size={30} />
+                    <MoveUpRight className="text-krmu-blue" size={30} />
                   </span>
                 </ScrollButton>
               </div>
@@ -101,7 +101,7 @@ const IndustryExperts = ({ data }: Props) => {
                     }}
                   />
                   <span className="bg-white p-3 rounded-full w-1/5">
-                    <MoveUpRight className="text-[#0060aa]" size={30} />
+                    <MoveUpRight className="text-krmu-blue" size={30} />
                   </span>
                 </Link> */}
 
@@ -117,7 +117,7 @@ const IndustryExperts = ({ data }: Props) => {
                     }}
                   />
                   <span className="bg-white p-3 rounded-full w-1/5">
-                    <MoveUpRight className="text-[#0060aa]" size={30} />
+                    <MoveUpRight className="text-krmu-blue" size={30} />
                   </span>
                 </ScrollButton>
               </div>

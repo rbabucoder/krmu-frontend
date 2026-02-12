@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const CommunityConnectNSSAward = () => {
   return (
-    <section className="py-[60px] bg-[url(/gradient-4.webp)] bg-cover bg-no-repeat bg-center px-4">
-      <div className="max-w-[1664px] mx-auto w-full">
+    <section className="py-section-lg bg-[url(/gradient-4.webp)] bg-cover bg-no-repeat bg-center px-4">
+      <div className="max-w-main mx-auto w-full">
         <div>
           <h4 className="text-2xl mb-10 text-white font-semibold text-center">NSS Awards</h4>
         </div>
@@ -145,7 +145,7 @@ const CommunityConnectNSSAward = () => {
           <Link
             href="https://docs.google.com/forms/d/e/1FAIpQLSeC0NIGoHcymc2_V1TsHViBi2SMsITtGPwtbp1-rr6HXCLejg/viewform"
             target="_blank"
-            className="py-[13px] px-[29px] bg-[#e31e24] text-white rounded-[4px] font-semibold"
+            className="py-[13px] px-[29px] bg-krmu-red text-white rounded-badge font-semibold"
           >
             NSS Registration Form
           </Link>

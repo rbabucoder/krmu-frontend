@@ -10,10 +10,10 @@ type Props = {
 
 const PHDConnectingDream = ({ connectingTalent }: Props) => {
   return (
-    <section className="py-[50px] relative px-4">
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10">
+    <section className="py-section relative px-4">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row gap-10">
         <div className="w-full lg:w-3/5">
-          <h3 className="text-3xl mb-5 md:text-[64px] font-semibold leading-[1.2]">
+          <h3 className="text-3xl mb-5 md:text-display font-semibold leading-[1.2]">
             {connectingTalent?.title}
           </h3>
           {connectingTalent && (
@@ -30,7 +30,7 @@ const PHDConnectingDream = ({ connectingTalent }: Props) => {
           />
         </div>
       </div>
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-10 mt-10">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row gap-10 mt-10">
         {connectingTalent?.dreamcounter &&
           connectingTalent?.dreamcounter.map((counter) => {
             return (

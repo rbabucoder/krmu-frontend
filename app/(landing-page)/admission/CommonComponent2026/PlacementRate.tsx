@@ -8,7 +8,7 @@ const PlacementRate = () => {
           <span className="inline-block py-1 px-3 bg-[#2c7da01a] text-[#2c7da0] text-sm font-bold uppercase rounded-full mb-4">
             Why KRMU Law?
           </span>
-          <h2 className="text-2xl md:text-[40px] mb-4 font-bold">
+          <h2 className="text-2xl md:text-h1 mb-4 font-bold">
             92% Placement Rate. <br />
             Here's How We Do It.
           </h2>
@@ -70,7 +70,7 @@ const PlacementRate = () => {
               </ul>
             </div>
           </div>
-          <div className="p-6 rounded-2xl bg-[#f9fafb] transition-all duration-[250ms] ease-out hover:bg-white hover:shadow-[0_10px_15px_-3px_rgb(0_0_0/0.1),0_4px_6px_-4px_rgb(0_0_0/0.1)]">
+          <div className="p-6 rounded-2xl bg-krmu-gray-50 transition-all duration-[250ms] ease-out hover:bg-white hover:shadow-[0_10px_15px_-3px_rgb(0_0_0/0.1),0_4px_6px_-4px_rgb(0_0_0/0.1)]">
             <div
               className="w-14 h-14 inline-flex items-center justify-center text-white rounded-xl mb-4"
               style={{
@@ -95,7 +95,7 @@ const PlacementRate = () => {
               campus. Your internship network starts in your first year.
             </p>
           </div>
-          <div className="p-6 rounded-2xl bg-[#f9fafb] transition-all duration-[250ms] ease-out hover:bg-white hover:shadow-[0_10px_15px_-3px_rgb(0_0_0/0.1),0_4px_6px_-4px_rgb(0_0_0/0.1)]">
+          <div className="p-6 rounded-2xl bg-krmu-gray-50 transition-all duration-[250ms] ease-out hover:bg-white hover:shadow-[0_10px_15px_-3px_rgb(0_0_0/0.1),0_4px_6px_-4px_rgb(0_0_0/0.1)]">
             <div
               className="w-14 h-14 inline-flex items-center justify-center text-white rounded-xl mb-4"
               style={{
@@ -120,7 +120,7 @@ const PlacementRate = () => {
               lecture. Theory meets practice in every class.
             </p>
           </div>
-          <div className="p-6 rounded-2xl bg-[#f9fafb] transition-all duration-[250ms] ease-out hover:bg-white hover:shadow-[0_10px_15px_-3px_rgb(0_0_0/0.1),0_4px_6px_-4px_rgb(0_0_0/0.1)]">
+          <div className="p-6 rounded-2xl bg-krmu-gray-50 transition-all duration-[250ms] ease-out hover:bg-white hover:shadow-[0_10px_15px_-3px_rgb(0_0_0/0.1),0_4px_6px_-4px_rgb(0_0_0/0.1)]">
             <div
               className="w-14 h-14 inline-flex items-center justify-center text-white rounded-xl mb-4"
               style={{

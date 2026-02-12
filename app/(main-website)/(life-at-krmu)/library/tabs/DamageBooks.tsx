@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const DamageBooks = () => {
   return (
-    <div className="max-w-[1664px] mx-auto w-full libtabcontent ">
+    <div className="max-w-main mx-auto w-full libtabcontent ">
       <p>Preserving Resources</p>
       <h2>Addressing Book Damages</h2>
       <p>

@@ -40,7 +40,7 @@ const PhdWhatHappCard = () => {
             </div>
             <div className="text-center">
               <h4 className="text-2xl">EDM Fiesta 2025 </h4>
-              <div className="text-sm text-[#7F7F7F]">
+              <div className="text-sm text-krmu-gray-400">
                 {/* <p>
                   <i>K.R. Mangalam University</i>
                 </p> */}
@@ -71,7 +71,7 @@ const PhdWhatHappCard = () => {
             </div>
             <div className="text-center">
               <h4 className="text-2xl">Aarambh 2025</h4>
-              <div className="text-sm text-[#7F7F7F]">
+              <div className="text-sm text-krmu-gray-400">
                 {/* <p>
                   <i>Our campus was delighted with the presence of Mr. Aman Gupta</i>
                 </p> */}
@@ -102,7 +102,7 @@ const PhdWhatHappCard = () => {
             </div>
             <div className="text-center">
               <h4 className="text-2xl">IDEAS 3.0</h4>
-              <div className="text-sm text-[#7F7F7F]">
+              <div className="text-sm text-krmu-gray-400">
                 {/* <p>
                   <i>Our campus was delighted with the presence of Mr. Aman Gupta</i>
                 </p> */}
@@ -133,7 +133,7 @@ const PhdWhatHappCard = () => {
             </div>
             <div className="text-center">
               <h4 className="text-2xl">Student Life</h4>
-              <div className="text-sm text-[#7F7F7F]">
+              <div className="text-sm text-krmu-gray-400">
                 {/* <p>
                   <i>Our campus was delighted with the presence of Mr. Aman Gupta</i>
                 </p> */}

@@ -39,7 +39,7 @@ const LifeAsPhDScholar = ({ data }: Props) => {
         </div>
 
         {/* Facilities – Row 1 */}
-        <div className="max-w-[1400px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-6 mb-6">
+        <div className="max-w-narrow mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-6 mb-6">
           {data.facilities.map((facility) => (
             <div
               key={facility.id}
@@ -54,7 +54,7 @@ const LifeAsPhDScholar = ({ data }: Props) => {
         </div>
 
         {/* Facilities – Row 2 */}
-        <div className="max-w-[1400px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="max-w-narrow mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
           {data.additionalFacilities.map((facility) => (
             <div
               key={facility.id}

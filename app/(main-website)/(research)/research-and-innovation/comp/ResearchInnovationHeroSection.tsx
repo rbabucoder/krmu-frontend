@@ -3,10 +3,10 @@ import Link from "next/link";
 
 const ResearchInnovationHeroSection = () => {
   return (
-    <section className="pt-[140px] sm:pt-24 pb-5 px-4 bg-[url(/research/duotone-2.webp)] bg-cover bg-center">
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-16 lg:mt-5">
+    <section className="pt-hero-top sm:pt-24 pb-5 px-4 bg-[url(/research/duotone-2.webp)] bg-cover bg-center">
+      <div className="max-w-main mx-auto w-full flex flex-col lg:flex-row gap-16 lg:mt-5">
         <div className="lg:w-1/2">
-          <h1 className="text-3xl md:text-4xl md:text-[64px] md:my-12 leading-[1.2] font-semibold mb-5">
+          <h1 className="text-3xl md:text-4xl md:text-display md:my-12 leading-[1.2] font-semibold mb-5">
             Innovating for a Better Tomorrow
           </h1>
           <p className="text-xl leading-[1.5] text-justify mb-5">
@@ -25,28 +25,28 @@ const ResearchInnovationHeroSection = () => {
           </p>
           {/* <Link
             href="/PDF"
-            className="bg-[#e31e24] leading-[1.5] py-2.5 px-5 inline-block rounded-[4px] text-xl text-white md:leading-2.5 blink-effect"
+            className="bg-krmu-red leading-[1.5] py-2.5 px-5 inline-block rounded-badge text-xl text-white md:leading-2.5 blink-effect"
           >
             Policies and Publications
           </Link> */}
           <div className="flex flex-wrap gap-5">
             <Link
               href="/PDF"
-              className="bg-[#e31e24] leading-[1.5] py-2.5 px-5 inline-block rounded-[4px] text-xl text-white md:leading-2.5 blink-effect"
+              className="bg-krmu-red leading-[1.5] py-2.5 px-5 inline-block rounded-badge text-xl text-white md:leading-2.5 blink-effect"
               target="_blank"
             >
               Policies
             </Link>
             <Link
               href="/PDF/publications"
-              className="bg-[#e31e24] leading-[1.5] py-2.5 px-5 inline-block rounded-[4px] text-xl text-white md:leading-2.5 blink-effect"
+              className="bg-krmu-red leading-[1.5] py-2.5 px-5 inline-block rounded-badge text-xl text-white md:leading-2.5 blink-effect"
               target="_blank"
             >
               Publications
             </Link>
             <Link
               href="/PDF/conferences"
-              className="bg-[#e31e24] leading-[1.5] py-2.5 px-5 inline-block rounded-[4px] text-xl text-white md:leading-2.5 blink-effect"
+              className="bg-krmu-red leading-[1.5] py-2.5 px-5 inline-block rounded-badge text-xl text-white md:leading-2.5 blink-effect"
               target="_blank"
             >
               Conferences

@@ -4,9 +4,9 @@ import Link from "next/link";
 const PhdImportantNotification = () => {
   return (
     <section className="py-10 px-4">
-      <div className="max-w-[1320px] mx-auto w-full">
+      <div className="max-w-content mx-auto w-full">
         <div className="phdHeading">
-          <h2 className="text-[32px] font-semibold mb-2.5">
+          <h2 className="text-h3 font-semibold mb-2.5">
             Ph.D. at KRMU
           </h2>
           <div className="custom-border"></div>
@@ -118,7 +118,7 @@ const PhdImportantNotification = () => {
               </span>
               {/* <Link
                 href=""
-                className="inline-block mt-5 py-2.5 px-5 bg-[#005DA9] text-white text-center max-w-[354px] w-full text-xl font-semibold rounded-[10px]"
+                className="inline-block mt-5 py-2.5 px-5 bg-[#005DA9] text-white text-center max-w-[354px] w-full text-xl font-semibold rounded-button"
               >
                 Important Instructions
               </Link> */}

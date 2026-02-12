@@ -30,7 +30,7 @@ export const Leaderships = ({ data }: Props) => {
 
   return (
     <section className="pt-[120px] pb-20 bg-white">
-      <div className="max-w-[1664px] mx-auto w-full px-4">
+      <div className="max-w-main mx-auto w-full px-4">
 
         {/* ================= TOP SECTION ================= */}
         <div
@@ -39,11 +39,11 @@ export const Leaderships = ({ data }: Props) => {
         >
           {/* LEFT CONTENT */}
           <div className="md:w-3/5">
-            <h3 className="text-4xl text-[#0060aa] font-bold">
+            <h3 className="text-4xl text-krmu-blue font-bold">
               {selectedLeader.name}
             </h3>
 
-            <h4 className="text-lg text-[#0060aa] mt-3 font-semibold">
+            <h4 className="text-lg text-krmu-blue mt-3 font-semibold">
               {selectedLeader.desg}
             </h4>
 
@@ -67,7 +67,7 @@ export const Leaderships = ({ data }: Props) => {
                 {/* READ MORE / LESS */}
                 <button
                   onClick={() => setExpanded((prev) => !prev)}
-                  className="mt-4 text-[#0060aa] font-semibold hover:underline"
+                  className="mt-4 text-krmu-blue font-semibold hover:underline"
                 >
                   {expanded ? "Read less" : "Read more"}
                 </button>
@@ -104,7 +104,7 @@ export const Leaderships = ({ data }: Props) => {
                     <div
                       className={`bg-white border-b-2 transition-all duration-300 ${
                         isActive
-                          ? "border-[#0060aa]"
+                          ? "border-krmu-blue"
                           : "border-gray-200 opacity-80"
                       }`}
                     >

@@ -46,7 +46,7 @@ const ProgrammeStructure = ({
           {/* {(currbtn?.buttonclass || currbtn?.buttonlink) && (
             <Link
               href={currbtn?.buttonlink}
-              className={`p-2 sm:py-[15px] sm:px-[25px] inline-block font-normal rounded-[15px] text-xs sm:text-2xl w-full text-white bg-[#db2a1a] text-center mb-6 ${currbtn?.buttonclass}`}
+              className={`p-2 sm:py-compact sm:px-[25px] inline-block font-normal rounded-[15px] text-xs sm:text-2xl w-full text-white bg-krmu-red-dark text-center mb-6 ${currbtn?.buttonclass}`}
             >
               {currbtn?.buttontext}
             </Link>
@@ -55,7 +55,7 @@ const ProgrammeStructure = ({
           {currbtn?.buttonlink && (
             <CommonLeadPopup
               buttonText={currbtn?.buttontext}
-              buttonClassName={`p-2 sm:py-[15px] sm:px-[25px] inline-block font-normal rounded-[15px] text-xs sm:text-2xl w-full text-white bg-[#db2a1a] text-center mb-6`}
+              buttonClassName={`p-2 sm:py-compact sm:px-[25px] inline-block font-normal rounded-[15px] text-xs sm:text-2xl w-full text-white bg-krmu-red-dark text-center mb-6`}
               redirectUrl={currbtn?.buttonlink || "#"}
               form_name="Programme Handbook"
             />
@@ -63,14 +63,14 @@ const ProgrammeStructure = ({
           {/* {enable_disable_handbook === true ? (
             <CommonLeadPopup
               buttonText={currbtn?.buttontext}
-              buttonClassName={`p-2 sm:py-[15px] sm:px-[25px] inline-block font-normal rounded-[15px] text-xs sm:text-2xl w-full text-white bg-[#db2a1a] text-center mb-6`}
+              buttonClassName={`p-2 sm:py-compact sm:px-[25px] inline-block font-normal rounded-[15px] text-xs sm:text-2xl w-full text-white bg-krmu-red-dark text-center mb-6`}
               redirectUrl={currbtn?.buttonlink || "#"}
               form_name="Programme Handbook"
             />
           ) : (
             <Link
               href={currbtn?.buttonlink || "#"}
-              className={`p-2 sm:py-[15px] sm:px-[25px] inline-block font-normal rounded-[15px] text-xs sm:text-2xl w-full text-white bg-[#db2a1a] text-center mb-6`}
+              className={`p-2 sm:py-compact sm:px-[25px] inline-block font-normal rounded-[15px] text-xs sm:text-2xl w-full text-white bg-krmu-red-dark text-center mb-6`}
               target="_blank"
             >
               {currbtn?.buttontext}
@@ -81,13 +81,13 @@ const ProgrammeStructure = ({
             <PopupForm
               formId={currFormId}
               containerId={currFormContainerId}
-              buttonClass="p-2 sm:py-[15px] sm:px-[25px] inline-block font-normal rounded-[15px] text-xs sm:text-2xl w-full text-white bg-[#db2a1a] text-center mb-6"
+              buttonClass="p-2 sm:py-compact sm:px-[25px] inline-block font-normal rounded-[15px] text-xs sm:text-2xl w-full text-white bg-krmu-red-dark text-center mb-6"
               buttonText={currbtn?.buttontext}
             />
           ) : (
             <Link
               href={currbtn?.buttonlink || "#"}
-              className={`p-2 sm:py-[15px] sm:px-[25px] inline-block font-normal rounded-[15px] text-xs sm:text-2xl w-full text-white bg-[#db2a1a] text-center mb-6 ${
+              className={`p-2 sm:py-compact sm:px-[25px] inline-block font-normal rounded-[15px] text-xs sm:text-2xl w-full text-white bg-krmu-red-dark text-center mb-6 ${
                 currbtn?.buttonclass || ""
               }`}
               target="_blank"
@@ -101,7 +101,7 @@ const ProgrammeStructure = ({
               {currbtn.buttonclass === "progPopup" ? (
                 <Popup
                   buttonText={currbtn.buttontext || "Click Here"}
-                  buttonClass={`p-2 sm:py-[15px] sm:px-[25px] inline-block font-normal rounded-[15px] text-xs sm:text-2xl w-full text-white bg-[#db2a1a]  text-center mb-6 ${currbtn?.buttonclass}`}
+                  buttonClass={`p-2 sm:py-compact sm:px-[25px] inline-block font-normal rounded-[15px] text-xs sm:text-2xl w-full text-white bg-krmu-red-dark  text-center mb-6 ${currbtn?.buttonclass}`}
                   buttonIcon={null} // add an icon like <ArrowRight /> if needed
                   formBodyTextColor="#000"
                 >
@@ -113,7 +113,7 @@ const ProgrammeStructure = ({
               ) : currbtn.buttonlink ? (
                 <Link
                   href={currbtn.buttonlink}
-                  className={`p-2 sm:py-[15px] sm:px-[25px] inline-block font-normal rounded-[15px] text-xs sm:text-2xl w-full text-white bg-[#db2a1a] text-center mb-6 ${
+                  className={`p-2 sm:py-compact sm:px-[25px] inline-block font-normal rounded-[15px] text-xs sm:text-2xl w-full text-white bg-krmu-red-dark text-center mb-6 ${
                     currbtn.buttonclass || ""
                   }`}
                   target="_blank"
@@ -130,7 +130,7 @@ const ProgrammeStructure = ({
               <TabsTrigger
                 key={year.id}
                 value={value}
-                className="relative text-xs md:text-xl cursor-pointer data-[state=active]:shadow-none data-[state=active]:text-[#0a41a1]
+                className="relative text-xs md:text-xl cursor-pointer data-[state=active]:shadow-none data-[state=active]:text-krmu-blue-dark
                   data-[state=active]:after:content-['']
                   data-[state=active]:after:absolute
                   data-[state=active]:after:top-1/2
@@ -140,7 +140,7 @@ const ProgrammeStructure = ({
                   data-[state=active]:md:after:w-[100px]
                   data-[state=active]:after:w-[20px]
                   data-[state=active]:after:h-[2px]
-                  data-[state=active]:after:bg-[#0a41a1]"
+                  data-[state=active]:after:bg-krmu-blue-dark"
               >
                 {year.year}
               </TabsTrigger>
@@ -172,7 +172,7 @@ const ProgrammeStructure = ({
                         isYear ? "hidden" : ""
                       }`}
                     >
-                      <TabsList className="bg-[#0a41a1] p-2.5 h-16 mobsemtablist">
+                      <TabsList className="bg-krmu-blue-dark p-2.5 h-16 mobsemtablist">
                         {year.semester.map((sem) => {
                           const semValue = sem.semestername
                             .toLowerCase()
@@ -306,7 +306,7 @@ const ProgrammeStructure = ({
                                     <CommonLeadPopup
                                       key={btn?.id}
                                       buttonText={btn?.buttontext}
-                                      buttonClassName={`text-xs sm:text-xl p-5 font-semibold text-center border border-[#d5d5d5] text-[#dc2e25] bg-[#f0f0f0] rounded-[20px] inline-block`}
+                                      buttonClassName={`text-xs sm:text-xl p-5 font-semibold text-center border border-[#d5d5d5] text-[#dc2e25] bg-krmu-gray-100 rounded-panel inline-block`}
                                       redirectUrl={btn?.buttonlink || "#"}
                                       form_name={btn?.buttontext || ""}
                                     />
@@ -318,7 +318,7 @@ const ProgrammeStructure = ({
                                 //       key={btn?.id}
                                 //       formId={btn?.popupFormId}
                                 //       containerId={btn?.containerPopupFormId}
-                                //       buttonClass="text-xs sm:text-xl p-5 font-semibold text-center border border-[#d5d5d5] text-[#dc2e25] bg-[#f0f0f0] rounded-[20px] inline-block"
+                                //       buttonClass="text-xs sm:text-xl p-5 font-semibold text-center border border-[#d5d5d5] text-[#dc2e25] bg-krmu-gray-100 rounded-panel inline-block"
                                 //       buttonText={btn?.buttontext}
                                 //     />
                                 //   );
@@ -328,7 +328,7 @@ const ProgrammeStructure = ({
                                   <CommonLeadPopup
                                     key={btn?.id}
                                     buttonText={btn?.buttontext}
-                                    buttonClassName={`text-xs sm:text-xl p-5 font-semibold text-center border border-[#d5d5d5] text-[#dc2e25] bg-[#f0f0f0] rounded-[20px] inline-block ${
+                                    buttonClassName={`text-xs sm:text-xl p-5 font-semibold text-center border border-[#d5d5d5] text-[#dc2e25] bg-krmu-gray-100 rounded-panel inline-block ${
                                       btn?.buttonclass || ""
                                     }`}
                                     redirectUrl={btn?.buttonlink || "#"}
@@ -337,7 +337,7 @@ const ProgrammeStructure = ({
                                   // <Link
                                   //   key={btn?.id}
                                   //   href={btn?.buttonlink || "#"}
-                                  //   className={`text-xs sm:text-xl p-5 font-semibold text-center border border-[#d5d5d5] text-[#dc2e25] bg-[#f0f0f0] rounded-[20px] inline-block ${
+                                  //   className={`text-xs sm:text-xl p-5 font-semibold text-center border border-[#d5d5d5] text-[#dc2e25] bg-krmu-gray-100 rounded-panel inline-block ${
                                   //     btn?.buttonclass || ""
                                   //   }`}
                                   // >
@@ -351,13 +351,13 @@ const ProgrammeStructure = ({
                                   key={btn?.id}
                                   formId={btn?.popupFormId}
                                   containerId={btn?.containerPopupFormId}
-                                  buttonClass="text-xs sm:text-xl p-5 font-semibold text-center border border-[#d5d5d5] text-[#dc2e25] bg-[#f0f0f0] rounded-[20px] inline-block"
+                                  buttonClass="text-xs sm:text-xl p-5 font-semibold text-center border border-[#d5d5d5] text-[#dc2e25] bg-krmu-gray-100 rounded-panel inline-block"
                                   buttonText={btn?.buttontext}
                                 />
                                 // <Link
                                 //   key={btn.id}
                                 //   href={btn.buttonlink || "#"}
-                                //   className={`text-xs sm:text-xl p-5 font-semibold text-center border border-[#d5d5d5] text-[#dc2e25] bg-[#f0f0f0] rounded-[20px] inline-block ${
+                                //   className={`text-xs sm:text-xl p-5 font-semibold text-center border border-[#d5d5d5] text-[#dc2e25] bg-krmu-gray-100 rounded-panel inline-block ${
                                 //     btn.buttonclass || ""
                                 //   }`}
                                 // >

@@ -59,7 +59,7 @@ const ProgramHighlightSlider = ({ highlights }: Props) => {
               <div
                 className={`p-5 rounded-2xl text-center transition-all duration-300 shadow-md flex flex-col items-center justify-center h-full ${
                   current === i
-                    ? "bg-[#0a41a1] scale-105"
+                    ? "bg-krmu-blue-dark scale-105"
                     : "bg-white scale-95"
                 }`}
               >
@@ -89,7 +89,7 @@ const ProgramHighlightSlider = ({ highlights }: Props) => {
               key={i}
               onClick={() => api?.scrollTo(i)}
               className={`h-2 rounded-full transition-all duration-300 ${
-                current === i ? "bg-[#0a41a1] w-6" : "bg-gray-400 w-2"
+                current === i ? "bg-krmu-blue-dark w-6" : "bg-gray-400 w-2"
               }`}
             />
           ))}

@@ -32,7 +32,7 @@ const SchoolHero = ({
     >
       {fullWidth ? (
         // Full-width layout
-        <div className="max-w-[1664px] mx-auto w-full">
+        <div className="max-w-main mx-auto w-full">
           <div className="text-center text-white w-full">
             <h2 className="text-sm md:text-[28px] lg:mb-5 font-medium">
               {subheading}
@@ -46,7 +46,7 @@ const SchoolHero = ({
                   <Link
                     key={btn.id}
                     href={btn.buttonlink}
-                    className={`py-3.5 px-8 bg-[#cb000d] font-bold rounded-sm text-sm md:text-base ${
+                    className={`py-3.5 px-8 bg-krmu-red-dark font-bold rounded-sm text-sm md:text-base ${
                       btn.buttonclass || ""
                     }`}
                   >
@@ -56,7 +56,7 @@ const SchoolHero = ({
                   <Link
                     key={btn.id}
                     href={btn.buttonlink}
-                    className={`py-3.5 px-8 bg-[#cb000d] font-bold rounded-sm text-sm md:text-base ${
+                    className={`py-3.5 px-8 bg-krmu-red-dark font-bold rounded-sm text-sm md:text-base ${
                       btn.buttonclass || ""
                     }`}
                     target="_blank"
@@ -84,7 +84,7 @@ const SchoolHero = ({
                   <Link
                     key={btn.id}
                     href={btn.buttonlink}
-                    className="py-3.5 px-8 bg-[#cb000d] font-bold rounded-sm text-sm md:text-base"
+                    className="py-3.5 px-8 bg-krmu-red-dark font-bold rounded-sm text-sm md:text-base"
                   >
                     {btn.buttontext}
                   </Link>
@@ -92,7 +92,7 @@ const SchoolHero = ({
                   <Link
                     key={btn.id}
                     href={btn.buttonlink}
-                    className={`py-3.5 px-8 bg-[#cb000d] font-bold rounded-sm text-sm md:text-base ${
+                    className={`py-3.5 px-8 bg-krmu-red-dark font-bold rounded-sm text-sm md:text-base ${
                       btn.buttonclass || ""
                     }`}
                     target="_blank"

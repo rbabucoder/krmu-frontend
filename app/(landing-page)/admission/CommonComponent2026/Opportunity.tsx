@@ -11,7 +11,7 @@ type Props = {
 const Opportunity = ({ data }: Props) => {
   return (
     // <section className="pt-10 md:pt-28 pb-20 px-4">
-    //   <div className="max-w-[1400px] mx-auto w-full bg-[url(/landingpage/common/blue-box.webp)] bg-cover bg-no-repeat flex flex-col-reverse sm:flex-row items-center justify-between pt-10 px-10 rounded-4xl lg:h-[350px]">
+    //   <div className="max-w-narrow mx-auto w-full bg-[url(/landingpage/common/blue-box.webp)] bg-cover bg-no-repeat flex flex-col-reverse sm:flex-row items-center justify-between pt-10 px-10 rounded-4xl lg:h-[350px]">
     //     {/* Image */}
     //     <div className="sm:w-1/2 h-full relative">
     //       <div className="lg:absolute bottom-0 mt-5 md:mt-0">

@@ -4,17 +4,17 @@ import Image from "next/image";
 const TeamBehind = () => {
   return (
     <section className="py-10 bg-[url(/academics/bg-gradient-2.webp)] bg-cover bg-no-repeat px-4">
-      <div className="max-w-[1664px] mx-auto w-full text-white mb-5">
-        <h3 className="text-center text-2xl md:text-[40px] font-bold mb-5 leading-[1.2]">
+      <div className="max-w-main mx-auto w-full text-white mb-5">
+        <h3 className="text-center text-2xl md:text-h1 font-bold mb-5 leading-[1.2]">
           Team Behind Academic Affairs
         </h3>
         <p className="text-center text-xl mb-5">
           Meet the Pillars of Our Educational Endeavours
         </p>
       </div>
-      <div className="max-w-[1664px] mx-auto w-full xl:flex gap-[64px]">
+      <div className="max-w-main mx-auto w-full xl:flex gap-[64px]">
         <div className="w-full xl:w-1/2">
-          <div className="py-[30px] px-[30px] lg:flex gap-5 bg-[url(/academics/bg-gradient-3.webp)] bg-cover bg-no-repeat rounded-[20px]">
+          <div className="py-section-sm px-container-px lg:flex gap-5 bg-[url(/academics/bg-gradient-3.webp)] bg-cover bg-no-repeat rounded-panel">
             <div className="w-full lg:w-2/5 flex flex-col items-center">
               <Image
                 src="/academics/tania-2.webp"
@@ -43,7 +43,7 @@ const TeamBehind = () => {
               </p>
             </div>
           </div>
-          <div className="my-5 p-5 bg-[url(/academics/bg-gradient-5.webp)] bg-center bg-no-repeat bg-cover rounded-[20px] gap-3 text-white flex items-start md:items-center  md:h-28">
+          <div className="my-5 p-5 bg-[url(/academics/bg-gradient-5.webp)] bg-center bg-no-repeat bg-cover rounded-panel gap-3 text-white flex items-start md:items-center  md:h-28">
             <div>
               <span className="bg-white w-7 h-7 flex items-center justify-center rounded-full">
                 <Check strokeWidth={3} className="w-3.5 h-3.5 text-black" />
@@ -57,7 +57,7 @@ const TeamBehind = () => {
           </div>
         </div>
         <div className="w-full xl:w-1/2">
-          <div className="py-[30px] px-[30px] lg:flex gap-5 bg-[url(/academics/bg-gradient-4.webp)] bg-cover bg-no-repeat rounded-[20px]">
+          <div className="py-section-sm px-container-px lg:flex gap-5 bg-[url(/academics/bg-gradient-4.webp)] bg-cover bg-no-repeat rounded-panel">
             <div className="w-full lg:w-2/5 flex flex-col items-center">
               <Image
                 src="/academics/dilraj.webp"
@@ -85,7 +85,7 @@ const TeamBehind = () => {
               </p>
             </div>
           </div>
-          <div className="my-5 p-5 bg-[url(/academics/bg-gradient-6.webp)] bg-no-repeat bg-cover bg-center rounded-[20px] gap-3 text-white flex items-start md:items-center md:h-28">
+          <div className="my-5 p-5 bg-[url(/academics/bg-gradient-6.webp)] bg-no-repeat bg-cover bg-center rounded-panel gap-3 text-white flex items-start md:items-center md:h-28">
             <div>
               <span className="bg-white w-7 h-7 flex items-center justify-center rounded-full">
                 <Check strokeWidth={3} className="w-3.5 h-3.5 text-black" />

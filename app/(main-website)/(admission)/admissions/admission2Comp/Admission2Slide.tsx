@@ -16,7 +16,7 @@ const Admission2Slide = ({ item }: Props) => {
             width={325}
             height={300}
             alt=""
-            className="h-[130px] object-contain rounded-[20px] sm:rounded-none sm:h-full"
+            className="h-[130px] object-contain rounded-panel sm:rounded-none sm:h-full"
           />
         </div>
         <div className="text-center mt-5 sm:hidden">

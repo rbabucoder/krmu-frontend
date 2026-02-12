@@ -42,8 +42,8 @@ const interRoles = [
 
 const InterRelationRoles = () => {
   return (
-    <section className="py-10 bg-[#051630] px-4">
-      <div className="max-w-[1664px] mx-auto w-full">
+    <section className="py-10 bg-krmu-navy px-4">
+      <div className="max-w-main mx-auto w-full">
         <div className="w-full">
           <h3 className="text-3xl md:text-5xl text-center lg:text-left text-white font-semibold mb-5">
             Role of International Relations

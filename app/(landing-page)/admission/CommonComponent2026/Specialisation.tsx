@@ -16,7 +16,7 @@ const Specialisation = ({ data }: Props) => {
   return (
     // <section className="py-20 px-4 bg-[#f8f9fa]">
     <section className="pt-10 px-4 bg-[#fff]">
-      <div className="max-w-[1664px] mx-auto w-full">
+      <div className="max-w-main mx-auto w-full">
         <div className="flex lg:-mb-12">
           <div className="w-full text-center sm:text-left">
             {/* <h4

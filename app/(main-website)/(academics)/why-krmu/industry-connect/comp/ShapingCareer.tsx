@@ -9,15 +9,15 @@ type Props = {
 
 const ShapingCareer = ({ shapcareer }: Props) => {
   return (
-    <section className="py-[50px] px-4">
-      <div className="max-w-[1664px] mx-auto w-full">
-        <h3 className="text-2xl md:text-[38px] font-bold text-center">
+    <section className="py-section px-4">
+      <div className="max-w-main mx-auto w-full">
+        <h3 className="text-2xl md:text-h2 font-bold text-center">
           {shapcareer?.heading}
         </h3>
         <br />
         <BlocksRenderer content={shapcareer?.shaping_career} />
       </div>
-      <div className="max-w-[1664px] mx-auto w-full lg:flex items-center gap-14 mt-10">
+      <div className="max-w-main mx-auto w-full lg:flex items-center gap-14 mt-10">
         <div className="lg:w-1/2 rounded-sm border border-black">
           <Image
             src={`${STRAPI_URL}${shapcareer?.shaping_career_img_1?.url}`}

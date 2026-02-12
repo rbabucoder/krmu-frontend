@@ -4,7 +4,7 @@ import Link from "next/link";
 const SEMCEHeader = () => {
   return (
     <header className="bg-black p-2.5">
-      <div className="max-w-[1664px] mx-auto w-full flex flex-col md:flex-row items-center gap-5 md:gap-0">
+      <div className="max-w-main mx-auto w-full flex flex-col md:flex-row items-center gap-5 md:gap-0">
         <div className="w-full flex justify-center md:block md:w-1/2">
           <Image src="/semce/krmu-logo.svg" width={274} height={55} alt="KRMU Logo" />
         </div>

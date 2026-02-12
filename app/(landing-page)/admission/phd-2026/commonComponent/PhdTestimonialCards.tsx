@@ -20,7 +20,7 @@ const PhdTestimonialCards = () => {
         <CarouselItem className="md:basis-1/2">
           <div>
             <div
-              className="p-5 rounded-[20px] bg-white border-t-8 phdtestcard"
+              className="p-5 rounded-panel bg-white border-t-8 phdtestcard"
               style={{
                 boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
               }}
@@ -63,7 +63,7 @@ const PhdTestimonialCards = () => {
         <CarouselItem className="md:basis-1/2">
           <div>
             <div
-              className="p-5 rounded-[20px] bg-white border-t-8 phdtestcard"
+              className="p-5 rounded-panel bg-white border-t-8 phdtestcard"
               style={{
                 boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
               }}
@@ -107,7 +107,7 @@ const PhdTestimonialCards = () => {
         <CarouselItem className="md:basis-1/2">
           <div>
             <div
-              className="p-5 rounded-[20px] bg-white border-t-8 phdtestcard"
+              className="p-5 rounded-panel bg-white border-t-8 phdtestcard"
               style={{
                 boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
               }}

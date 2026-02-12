@@ -3,7 +3,7 @@ import Image from "next/image";
 const CommunityConnectNSSCommittee = () => {
   return (
     <section className="pt-[6%] px-4 pb-[9%] bg-[url(/bg-gradient.webp)]">
-      <div className="max-w-[1664px] mx-auto w-full text-white ">
+      <div className="max-w-main mx-auto w-full text-white ">
         <h2 className="text-3xl md:text-5xl mb-5 font-bold">NSS Committee</h2>
         <div className="flex pt-10">
           <div className="w-1/2">

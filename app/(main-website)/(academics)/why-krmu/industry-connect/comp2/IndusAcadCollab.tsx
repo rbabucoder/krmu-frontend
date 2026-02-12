@@ -111,7 +111,7 @@ experts via tutorials, Google Meet sessions, and shared learning materials.`,
 const IndusAcadCollab = () => {
   return (
     <section className="px-4">
-      <div className="max-w-[1664px] mx-auto w-full">
+      <div className="max-w-main mx-auto w-full">
         <h3 className="text-4xl font-semibold text-center">
           Industry–Academia Collaborations
         </h3>

@@ -91,8 +91,8 @@ const page = async () => {
 
   return (
     <>
-      <section className="bg-[url(/advisory-board.webp)] bg-cover bg-center px-4 lg:px-[30px] pt-[120px] xl:pt-[7%] ">
-        <div className="max-w-[1600px] mx-auto w-full text-center py-[6%] lg:px-[20%] text-white">
+      <section className="bg-[url(/advisory-board.webp)] bg-cover bg-center px-4 lg:px-container-px pt-[120px] xl:pt-[7%] ">
+        <div className="max-w-wide mx-auto w-full text-center py-[6%] lg:px-[20%] text-white">
           <div
             className={`${raleway.className} mb-5 leading-8`}
             style={{ fontFamily: "Raleway, Arial, Helvetica, sans-serif" }}
@@ -102,7 +102,7 @@ const page = async () => {
         </div>
       </section>
       <section className="pt-[6%]">
-        <div className="max-w-[1664px] mx-auto w-full">
+        <div className="max-w-main mx-auto w-full">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-4 gap-10 lg:gap-5 pb-[7%] xl:pb-0">
             <AdvisoryBoardCard advisoryMembers={advisoryMembers} />
           </div>

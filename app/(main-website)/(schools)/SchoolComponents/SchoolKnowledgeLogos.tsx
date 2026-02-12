@@ -14,7 +14,7 @@ type Props = {
 };
 const SchoolKnowledgeLogos = ({ logos }: Props) => {
   return (
-    <div className="bg-white  px-5 rounded-[20px]">
+    <div className="bg-white  px-5 rounded-panel">
       <Carousel
         opts={{
           align: "start",

@@ -318,7 +318,7 @@ const JobForm = ({ jobId }: Props) => {
         ${
           isSubmitting
             ? "bg-gray-400 cursor-not-allowed"
-            : "bg-[#cb000d] text-white hover:opacity-90"
+            : "bg-krmu-red-dark text-white hover:opacity-90"
         }`}
       >
         {isSubmitting ? "Submitting..." : "Submit"}

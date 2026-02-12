@@ -17,8 +17,8 @@ const ExaminationHero = ({ title, bgImgUrl }: Props) => {
         backgroundPosition: "center",
       }}
     >
-      <div className="max-w-[1600px] mx-auto w-full">
-        <h1 className="text-2xl md:text-5xl lg:text-[80px] font-semibold text-white z-10 relative">
+      <div className="max-w-wide mx-auto w-full">
+        <h1 className="text-2xl md:text-5xl lg:text-hero font-semibold text-white z-10 relative">
           {title}
         </h1>
       </div>

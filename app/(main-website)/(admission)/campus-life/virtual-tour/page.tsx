@@ -73,8 +73,8 @@ export async function generateMetadata(): Promise<Metadata> {
 const page = () => {
   return (
     <>
-      <section className="pt-[140px] pb-10 lg:pt-[187px] lg:pb-[374px] bg-[url(/virtual-tour/virtualtour-bg.webp)] bg-cover bg-no-repeat px-4">
-        <div className="max-w-[1664px] mx-auto w-full">
+      <section className="pt-hero-top pb-10 lg:pt-[187px] lg:pb-[374px] bg-[url(/virtual-tour/virtualtour-bg.webp)] bg-cover bg-no-repeat px-4">
+        <div className="max-w-main mx-auto w-full">
           <VirtualTourHero />
           <VirtualTour />
         </div>

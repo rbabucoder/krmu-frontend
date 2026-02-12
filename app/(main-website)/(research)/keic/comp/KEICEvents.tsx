@@ -1,7 +1,7 @@
 const KEICEvents = () => {
   return (
-    <section className="py-[50px] bg-[#0a75ad] px-4">
-      <div className="max-w-[1664px]  mx-auto w-full">
+    <section className="py-section bg-[#0a75ad] px-4">
+      <div className="max-w-main  mx-auto w-full">
         <div>
           <h3 className="text-3xl md:text-5xl font-semibold text-white mb-10">
             Events and Workshops

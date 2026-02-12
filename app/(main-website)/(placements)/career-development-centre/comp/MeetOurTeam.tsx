@@ -9,8 +9,8 @@ import Link from "next/link";
 
 const MeetOurTeam = () => {
   return (
-    <section className="py-10 md:py-[90px] bg-[#051630] px-4">
-      <div className="max-w-[1664px] mx-auto w-full text-white">
+    <section className="py-10 md:py-[90px] bg-krmu-navy px-4">
+      <div className="max-w-main mx-auto w-full text-white">
         <h3 className="text-3xl md:text-4xl font-semibold mb-5 text-center">
           Meet Our Career Development Center Team
         </h3>
@@ -26,7 +26,7 @@ const MeetOurTeam = () => {
                   className="z-10000 relative object-cover"
                 />
               </div>
-              <CardContent className="bg-[#cb000d] px-2.5 pt-2.5 pb-4 text-white flex items-center justify-center flex-col min-h-[202px] f-full">
+              <CardContent className="bg-krmu-red-dark px-2.5 pt-2.5 pb-4 text-white flex items-center justify-center flex-col min-h-[202px] f-full">
                 <CardTitle className="text-xl leading-[1.6] font-semibold mb-5">
                   Dr. Vibha Thakur
                 </CardTitle>

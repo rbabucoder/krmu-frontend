@@ -19,7 +19,7 @@ const WhyKRMangalam = ({
   return (
     <>
       <section className="h-full sm:h-[800px] pt-10 sm:py-10 bg-cover bg-no-repeat bg-center px-4 sm:bg-[url(/test-2.png)] whyBgStyle">
-        <div className="max-w-[1400px] mx-auto w-full flex justify-center flex-col">
+        <div className="max-w-narrow mx-auto w-full flex justify-center flex-col">
           <h4
             className="text-center text-2xl sm:text-3xl md:text-4xl text-white leading-[1.4] mb-2.5 font-semibold"
             dangerouslySetInnerHTML={{

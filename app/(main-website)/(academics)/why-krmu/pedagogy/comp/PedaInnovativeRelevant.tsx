@@ -8,7 +8,7 @@ type Props = {
 const PedaInnovativeRelevant = ({ title, content, imgUrl }: Props) => {
   return (
     <section className="px-4">
-      <div className="max-w-[1664px] mx-auto w-full lg:flex items-center gap-14">
+      <div className="max-w-main mx-auto w-full lg:flex items-center gap-14">
         <div className="lg:w-1/2">
           <h3 className="text-2xl lg:text-5xl text-center lg:text-left lg:leading-[1.5] font-semibold mt-2.5 mb-[15px]">
             {title}
