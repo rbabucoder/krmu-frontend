@@ -1,3 +1,4 @@
+import { sanitizeHtml } from "@/lib/utils/sanitize";
 import { BusinessLeaderContent, ProgramCardType } from "../admission/PGType";
 import SemesterTabs from "./SemesterTabs";
 

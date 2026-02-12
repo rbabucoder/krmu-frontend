@@ -1,4 +1,5 @@
 // import { ParagraphBlock } from "@/lib/types/about";
+import { sanitizeHtml } from "@/lib/utils/sanitize";
 import StatisticsCounter from "./schoolglobalcomponent/StatisticsCounter";
 import { CounterItem } from "@/lib/types/common";
 type Props = {
@@ -26,7 +27,7 @@ const SchoolInfoStatistics = ({
           {/* <BlocksRenderer content={desc} /> */}
           <div
             dangerouslySetInnerHTML={{
-              __html: desc,
+              __html: sanitizeHtml(desc || ""),
             }}
           />
         </div>

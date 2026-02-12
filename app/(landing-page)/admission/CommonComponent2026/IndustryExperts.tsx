@@ -1,6 +1,6 @@
+import { sanitizeHtml } from "@/lib/utils/sanitize";
 import { MoveUpRight } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import { IndustryExpertsSection } from "../law-2026/contentype";
 import ScrollButton from "./ScrollButton";
 
@@ -19,7 +19,7 @@ const IndustryExperts = ({ data }: Props) => {
               <h3 className="text-sm">{data.eyebrow}</h3>
               <h4
                 className="text-3xl md:text-4xl font-semibold leading-[1.2]"
-                dangerouslySetInnerHTML={{ __html: data.heading }}
+                dangerouslySetInnerHTML={{ __html: sanitizeHtml(data.heading || "") }}
               />
             </div>
 
@@ -28,7 +28,7 @@ const IndustryExperts = ({ data }: Props) => {
               <p
                 className="mb-5 hidden md:block"
                 dangerouslySetInnerHTML={{
-                  __html: data.description,
+                  __html: sanitizeHtml(data.description || ""),
                 }}
               />
 
@@ -51,7 +51,7 @@ const IndustryExperts = ({ data }: Props) => {
                   <span
                     className="w-4/5 text-center"
                     dangerouslySetInnerHTML={{
-                      __html: data.cta.label,
+                      __html: sanitizeHtml(data.cta.label || ""),
                     }}
                   />
                   <span className="bg-white p-3 rounded-full w-1/5">
@@ -86,7 +86,7 @@ const IndustryExperts = ({ data }: Props) => {
               <p
                 className="mb-5 text-center"
                 dangerouslySetInnerHTML={{
-                  __html: data.description,
+                  __html: sanitizeHtml(data.description || ""),
                 }}
               />
               <div className="flex justify-center">
@@ -113,7 +113,7 @@ const IndustryExperts = ({ data }: Props) => {
                   <span
                     className="w-4/5 text-center"
                     dangerouslySetInnerHTML={{
-                      __html: data.cta.label,
+                      __html: sanitizeHtml(data.cta.label || ""),
                     }}
                   />
                   <span className="bg-white p-3 rounded-full w-1/5">

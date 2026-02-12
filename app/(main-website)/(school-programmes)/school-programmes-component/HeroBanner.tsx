@@ -1,6 +1,7 @@
 "use client";
 
 import { STRAPI_URL } from "@/app/constant";
+import { sanitizeHtml } from "@/lib/utils/sanitize";
 import { loadNpfScript } from "@/lib/constants/loadNpfScript";
 import { HeroSection } from "@/lib/types/school-programme";
 import { MoveRight } from "lucide-react";
@@ -83,7 +84,7 @@ const HeroBanner = ({ title, highlightitle, heroSection, formId }: Props) => {
           {heroSection?.imgvideo === "Video" ? (
             <div
               dangerouslySetInnerHTML={{
-                __html: heroSection?.videofield || "",
+                __html: sanitizeHtml(heroSection?.videofield || ""),
               }}
             />
           ) : (

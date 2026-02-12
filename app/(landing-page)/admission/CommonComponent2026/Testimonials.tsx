@@ -1,3 +1,4 @@
+import { sanitizeHtml } from "@/lib/utils/sanitize";
 import { TestimonialsSection } from "../law-2026/contentype";
 import TestimonialCard from "./Cards/TestimonialCard";
 import {

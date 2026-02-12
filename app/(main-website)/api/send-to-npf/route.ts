@@ -17,12 +17,22 @@ export async function POST(req: Request) {
       campaign: body.form_name,
     };
 
+    const accessKey = process.env.NPF_ACCESS_KEY;
+    const secretKey = process.env.NPF_SECRET_KEY;
+
+    if (!accessKey || !secretKey) {
+      return NextResponse.json(
+        { success: false, error: "NPF API credentials not configured" },
+        { status: 500 }
+      );
+    }
+
     const res = await fetch("https://api.nopaperforms.io/lead/v1/create", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "access-key": "b55c252f6ae74783afa563c2854aecca",
-        "secret-key": "619fbbdcfe3d3dfbe40a234651058cb9",
+        "access-key": accessKey,
+        "secret-key": secretKey,
       },
       body: JSON.stringify(npfPayload),
     });

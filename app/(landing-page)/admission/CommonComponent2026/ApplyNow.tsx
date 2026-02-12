@@ -1,5 +1,5 @@
+import { sanitizeHtml } from "@/lib/utils/sanitize";
 import { MoveUpRight, Check } from "lucide-react";
-import Link from "next/link";
 import { ApplySectionData } from "../law-2026/contentype";
 import ScrollButton from "./ScrollButton";
 

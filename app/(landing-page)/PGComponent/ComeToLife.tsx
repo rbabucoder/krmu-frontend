@@ -1,7 +1,5 @@
+import { sanitizeHtml } from "@/lib/utils/sanitize";
 import { ArrowUpRight } from "lucide-react";
-import Link from "next/link";
-
-
 import { ComeToLifeSection } from "../admission/PGType";
 import CometoLifeSlide from "../admission/CommonComponent2026/CometoLifeSlide";
 import ScrollButton from "../admission/CommonComponent2026/ScrollButton";

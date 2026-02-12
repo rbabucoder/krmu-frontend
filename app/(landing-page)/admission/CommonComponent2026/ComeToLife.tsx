@@ -1,5 +1,5 @@
+import { sanitizeHtml } from "@/lib/utils/sanitize";
 import { MoveUpRight } from "lucide-react";
-import Link from "next/link";
 import CometoLifeSlide from "./CometoLifeSlide";
 import { ComeToLifeSection } from "../law-2026/contentype";
 import ScrollButton from "./ScrollButton";
@@ -17,7 +17,7 @@ const ComeToLife = ({ data }: Props) => {
           <h3
             className="text-2xl md:text-[40px] font-bold text-center mb-5"
             dangerouslySetInnerHTML={{
-              __html: "World-Class Facilities & Infrastructure",
+              __html: sanitizeHtml("World-Class Facilities & Infrastructure"),
             }}
           />
           {/* <p
@@ -48,7 +48,7 @@ const ComeToLife = ({ data }: Props) => {
       <div className="my-10">
         <p
           className="text-[#666666] text-center"
-          dangerouslySetInnerHTML={{ __html: data.footerText }}
+          dangerouslySetInnerHTML={{ __html: sanitizeHtml(data.footerText || "") }}
         />
 
         <div className="flex justify-center my-10">

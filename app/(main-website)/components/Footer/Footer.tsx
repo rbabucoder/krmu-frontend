@@ -2,6 +2,7 @@ import { STRAPI_URL } from "@/app/constant";
 import NpfChatbot from "@/app/NpfChatbot";
 import { getFooter } from "@/lib/api/footer";
 import { getPageAssets } from "@/lib/api/global-setting";
+import { sanitizeHtml } from "@/lib/utils/sanitize";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -155,7 +156,7 @@ const Footer = async () => {
                           <span className="text-white">
                             <div
                               dangerouslySetInnerHTML={{
-                                __html: comp4?.footer_info,
+                                __html: sanitizeHtml(comp4?.footer_info || ""),
                               }}
                             />
                           </span>
@@ -191,7 +192,7 @@ const Footer = async () => {
         </div>
       </section>
       {js_in_footer && (
-        <script dangerouslySetInnerHTML={{ __html: js_in_footer }} />
+        <script dangerouslySetInnerHTML={{ __html: sanitizeHtml(js_in_footer) }} />
       )}
 
     <NpfChatbot />

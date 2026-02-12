@@ -1,3 +1,4 @@
+import { sanitizeHtml } from "@/lib/utils/sanitize";
 import Image from "next/image";
 import { WhyKRMCard } from "../law-2026/contentype";
 
@@ -11,10 +12,7 @@ type Props = {
 
 const WhyKRMangalam = ({
   heading,
-  subheading,
   desc,
-  imgUrl,
-  whykrmCards,
 }: Props) => {
   return (
     <>
@@ -23,7 +21,7 @@ const WhyKRMangalam = ({
           <h4
             className="text-center text-2xl sm:text-3xl md:text-4xl text-white leading-[1.4] mb-2.5 font-semibold"
             dangerouslySetInnerHTML={{
-              __html: heading,
+              __html: sanitizeHtml(heading || ""),
             }}
           />
           <Image
@@ -37,7 +35,7 @@ const WhyKRMangalam = ({
           <p
             className="text-white md:text-[#c3c3ca] text-center my-5"
             dangerouslySetInnerHTML={{
-              __html: desc,
+              __html: sanitizeHtml(desc || ""),
             }}
           />
         </div>

@@ -1,14 +1,11 @@
-import { MoveUpRight } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import { OpportunitySection } from "../law-2026/contentype";
-import ScrollButton from "./ScrollButton";
 
 type Props = {
   data: OpportunitySection;
 };
 
-const Opportunity = ({ data }: Props) => {
+const Opportunity = ({}: Props) => {
   return (
     // <section className="pt-10 md:pt-28 pb-20 px-4">
     //   <div className="max-w-[1400px] mx-auto w-full bg-[url(/landingpage/common/blue-box.webp)] bg-cover bg-no-repeat flex flex-col-reverse sm:flex-row items-center justify-between pt-10 px-10 rounded-4xl lg:h-[350px]">

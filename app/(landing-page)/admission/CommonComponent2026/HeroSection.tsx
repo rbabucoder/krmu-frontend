@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { sanitizeHtml } from "@/lib/utils/sanitize";
 import { HeroMarqueeSection } from "../law-2026/contentype";
 import HeroMarquee from "./HeroMarquee";
 import NoPaperFormsWidget from "./NoPaperFormsWidget";
@@ -18,9 +18,6 @@ const HeroSection = ({
   content,
   desc,
   marqueeData,
-  heroBg,
-  middleImg,
-  mobileImg,
   lpclName,
 }: Props) => {
   return (
@@ -34,14 +31,14 @@ const HeroSection = ({
               <h1
                 className="text-white font-semibold text-2xl md:text-5xl leading-[1.4] z-10 relative"
                 dangerouslySetInnerHTML={{
-                  __html: content || "",
+                  __html: sanitizeHtml(content || ""),
                 }}
               />
             </div>
 
             <p
               dangerouslySetInnerHTML={{
-                __html: desc || "",
+                __html: sanitizeHtml(desc || ""),
               }}
               className="hidden sm:block"
             />
