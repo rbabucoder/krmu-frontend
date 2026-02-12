@@ -68,6 +68,7 @@ const SingleBlogHero = ({
               height={432}
               alt="Single Blog Title"
               className="rounded-lg w-full"
+              priority
             />
           )}
         </div>

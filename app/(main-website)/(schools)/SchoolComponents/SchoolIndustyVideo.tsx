@@ -1,3 +1,4 @@
+import { sanitizeHtml } from "@/lib/utils/sanitize";
 import { VIDEOIFRAME } from "@/lib/types/schools";
 
 type Props = {
@@ -20,7 +21,7 @@ const SchoolIndustyVideo = ({ heading, videoCards }: Props) => {
                   <div
                     className="w-full"
                     dangerouslySetInnerHTML={{
-                      __html: video?.videoiframefield,
+                      __html: sanitizeHtml(video?.videoiframefield || ""),
                     }}
                   />
                 </div>

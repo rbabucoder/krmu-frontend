@@ -1,6 +1,5 @@
-import { ChevronRight, MoveUpRight } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
+import { sanitizeHtml } from "@/lib/utils/sanitize";
+import { ChevronRight } from "lucide-react";
 import { HeroCTA, ImageType } from "../admission/PGType";
 import NoPaperFormsWidget from "../admission/CommonComponent2026/NoPaperFormsWidget";
 import ScrollButton from "../admission/CommonComponent2026/ScrollButton";
@@ -19,10 +18,7 @@ type Props = {
 const HeroSection = ({
   title,
   description,
-  primaryCta,
   secondaryCta,
-  image,
-  bgImage,
   formId,
   ugHeroClsName,
 }: Props) => {

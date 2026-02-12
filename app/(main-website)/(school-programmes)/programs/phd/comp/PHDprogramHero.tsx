@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { STRAPI_URL } from "@/app/constant";
+import { sanitizeHtml } from "@/lib/utils/sanitize";
 import NoPaperForm from "@/lib/constants/NoPaperForm";
 import { CounterBlock } from "@/lib/types/phd-programmes";
 
@@ -39,7 +40,7 @@ const PHDprogramHero = ({
           <div className="lg:w-3/5 text-white text-3xl md:text-5xl font-semibold p-5">
             <h1
               dangerouslySetInnerHTML={{
-                __html: heading,
+                __html: sanitizeHtml(heading || ""),
               }}
             />
           </div>

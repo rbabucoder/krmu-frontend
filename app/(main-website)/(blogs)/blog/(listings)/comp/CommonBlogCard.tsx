@@ -28,7 +28,6 @@ const CommonBlogCard = async ({ title, excerpt, slug, imgId, date }: Props) => {
     month: "short",
     year: "numeric",
   });
-  console.log("postDate", postDate);
 
   return (
     <div className="w-full">

@@ -5,7 +5,7 @@ export async function HomePageSEO(): Promise<HomepageSeoResponse["data"]> {
     `${FETCH_STRAPI_URL}/api/home-page?populate[seofields][populate][shareImage][fields][0]=url`,
     {
       next: {
-        revalidate: 30,
+        revalidate: 3600,
       },
     }
   );
@@ -79,7 +79,7 @@ export async function academicAffairsSEO(): Promise<
     `${FETCH_STRAPI_URL}/api/academic-affair?populate[seo][populate][shareImage][fields][0]=url`,
     {
       next: {
-        revalidate: 30,
+        revalidate: 3600,
       },
     }
   );
@@ -112,7 +112,7 @@ export async function pedagogySEO(): Promise<PedagogySeoResponse["data"]> {
     `${FETCH_STRAPI_URL}/api/pedagogy?populate[seo][populate][shareImage][fields][0]=url`,
     {
       next: {
-        revalidate: 30,
+        revalidate: 3600,
       },
     }
   );
@@ -150,7 +150,7 @@ export async function examinationSEO(): Promise<
     `${FETCH_STRAPI_URL}/api/examination?populate[seo][populate][shareImage][fields][0]=url`,
     {
       next: {
-        revalidate: 30,
+        revalidate: 3600,
       },
     }
   );
@@ -185,7 +185,7 @@ export async function internationCollaborationSEO(): Promise<
     `${FETCH_STRAPI_URL}/api/international-collaboration?fields[0]=title&populate[seo][populate][shareImage][fields][0]=url`,
     {
       next: {
-        revalidate: 30,
+        revalidate: 3600,
       },
     }
   );
@@ -217,7 +217,7 @@ export async function industryConnectSEO(): Promise<
     `${FETCH_STRAPI_URL}/api/industry-connect?fields[0]=title&populate[seo][populate][shareImage][fields][0]=url`,
     {
       next: {
-        revalidate: 30,
+        revalidate: 3600,
       },
     }
   );
@@ -250,7 +250,7 @@ export async function deanHonorsListSEO(): Promise<
     `${FETCH_STRAPI_URL}/api/dean-honor-list?fields[0]=title&populate[seo][populate][shareImage][fields][0]=url`,
     {
       next: {
-        revalidate: 30,
+        revalidate: 3600,
       },
     }
   );
@@ -280,7 +280,7 @@ export async function noticeSEO(): Promise<NoticeSeoResponse["data"]> {
     `${FETCH_STRAPI_URL}/api/notice?fields[0]=title&populate[seo][populate][shareImage][fields][0]=url`,
     {
       next: {
-        revalidate: 30,
+        revalidate: 3600,
       },
     }
   );

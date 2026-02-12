@@ -1,3 +1,4 @@
+import { sanitizeHtml } from "@/lib/utils/sanitize";
 import {
   Accordion,
   AccordionContent,

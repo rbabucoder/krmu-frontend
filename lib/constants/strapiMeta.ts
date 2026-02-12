@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { BlogSEO } from "../types/blogs/main-blogs";
 import * as cheerio from "cheerio";
+import { STRAPI_URL } from "@/app/constant";
 
 function decodeHtml(str: string = "") {
   const $ = cheerio.load(str);
@@ -33,7 +34,7 @@ export function strapiSeoToMetadata(seo: BlogSEO): Metadata {
     keywords: seo.metaKeyword ?? "",
 
     alternates: {
-      canonical: seo.canonical ?? "",
+      canonical: seo.canonical ?? undefined,
     },
 
     robots: {
@@ -44,11 +45,11 @@ export function strapiSeoToMetadata(seo: BlogSEO): Metadata {
     openGraph: {
       title: seo.metaTitle,
       description: seo.metaDescription,
-      url: seo.canonical ?? "",
+      url: seo.canonical ?? undefined,
       images: seo.shareImage
         ? [
             {
-              url: `${process.env.NEXT_PUBLIC_STRAPI_URL}${seo.shareImage.url}`,
+              url: `${STRAPI_URL}${seo.shareImage.url}`,
             },
           ]
         : [],

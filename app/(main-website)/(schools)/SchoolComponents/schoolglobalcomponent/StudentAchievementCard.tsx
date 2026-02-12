@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { STRAPI_URL } from "@/app/constant";
+import { sanitizeHtml } from "@/lib/utils/sanitize";
 import {
   Carousel,
   CarouselContent,
@@ -67,7 +68,7 @@ const StudentAchievementCard = ({ info, achievementsImages }: Props) => {
       <div>
         <div
           dangerouslySetInnerHTML={{
-            __html: textToShow,
+            __html: sanitizeHtml(textToShow || ""),
           }}
           className="student_achiev_content"
         />

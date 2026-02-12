@@ -33,6 +33,7 @@ const SingleFacultyHero = ({
               height={292}
               className="h-[292px] rounded-[20px] inline-block"
               alt={facName || ""}
+              priority
             />
           </div>
         </div>

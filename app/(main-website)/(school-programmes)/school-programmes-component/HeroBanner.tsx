@@ -1,6 +1,7 @@
 "use client";
 
 import { STRAPI_URL } from "@/app/constant";
+import { sanitizeHtml } from "@/lib/utils/sanitize";
 import { loadNpfScript } from "@/lib/constants/loadNpfScript";
 import { HeroSection } from "@/lib/types/school-programme";
 import { MoveRight } from "lucide-react";
@@ -83,7 +84,7 @@ const HeroBanner = ({ title, highlightitle, heroSection, formId }: Props) => {
           {heroSection?.imgvideo === "Video" ? (
             <div
               dangerouslySetInnerHTML={{
-                __html: heroSection?.videofield || "",
+                __html: sanitizeHtml(heroSection?.videofield || ""),
               }}
             />
           ) : (
@@ -93,6 +94,7 @@ const HeroBanner = ({ title, highlightitle, heroSection, formId }: Props) => {
                 width={600}
                 height={500}
                 alt={heroSection?.heroimg?.alternativeText || "Hero Image"}
+                priority
               />
             )
           )}
@@ -118,7 +120,7 @@ export default HeroBanner;
 // };
 
 // const HeroBanner = ({ title, highlightitle, heroSection, formId }: Props) => {
-//   console.log("formId", formId);
+//
 //   return (
 //     <section className="pt-24 sm:pt-40 sm:pb-[50px] px-2.5 sm:px-4">
 //       <div className="school-programme-max-width md:flex items-center justify-between">

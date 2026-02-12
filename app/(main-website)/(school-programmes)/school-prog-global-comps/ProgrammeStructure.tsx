@@ -5,6 +5,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { sanitizeHtml } from "@/lib/utils/sanitize";
 import { getDownloadProspectusSetting } from "@/lib/api/global-setting";
 import { ButtonType } from "@/lib/types/common";
 import { Year } from "@/lib/types/school-programme";
@@ -226,7 +227,7 @@ const ProgrammeStructure = ({
                                           <AccordionContent className="whitespace-pre-line text-sm text-gray-700 subAccPanelContent">
                                             <span
                                               dangerouslySetInnerHTML={{
-                                                __html: course.sub_name,
+                                                __html: sanitizeHtml(course.sub_name || ""),
                                               }}
                                             />
                                           </AccordionContent>

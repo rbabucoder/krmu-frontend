@@ -32,7 +32,7 @@ export async function getAllPrintCoverageYears() {
     const json: PrintCoverageYearsResponse = await res.json();
     return json.data;
   } catch (error) {
-    console.log(error);
+    console.error("Failed to fetch print coverages:", error);
   }
 }
 

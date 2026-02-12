@@ -1,4 +1,5 @@
 import { STRAPI_URL } from "@/app/constant";
+import { sanitizeHtml } from "@/lib/utils/sanitize";
 import { SchoolHeroBanner } from "@/lib/types/common";
 import { Button } from "@/lib/types/home";
 import Link from "next/link";
@@ -107,7 +108,7 @@ const SchoolHero = ({
             {videoFmt === "Iframe" ? (
               <div
                 className="w-full customSchoolIframeStyle"
-                dangerouslySetInnerHTML={{ __html: iframeContent }}
+                dangerouslySetInnerHTML={{ __html: sanitizeHtml(iframeContent || "") }}
               />
             ) : videoFmt === "videourl" ? (
               <video controls className="w-full">

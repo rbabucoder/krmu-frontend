@@ -1,6 +1,7 @@
 import { getHeaderMenu, getTopbarData } from "@/lib/api/common";
 import Header from "./Header";
 import { getPageAssets } from "@/lib/api/global-setting";
+import { sanitizeHtml } from "@/lib/utils/sanitize";
 
 const HeaderWrapper = async () => {
   const topbarData = await getTopbarData();
@@ -26,7 +27,7 @@ const HeaderWrapper = async () => {
         headerMenus={headerMenus}
       />
       {css_in_header && (
-        <style dangerouslySetInnerHTML={{ __html: css_in_header }} />
+        <style dangerouslySetInnerHTML={{ __html: sanitizeHtml(css_in_header) }} />
       )}
     </>
   );

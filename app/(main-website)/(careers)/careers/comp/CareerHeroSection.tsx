@@ -35,6 +35,7 @@ const CareerHeroSection = () => {
             height={543}
             alt=""
             className="hidden md:block"
+            priority
           />
           <div className="mt-10 flex flex-col gap-5 md:hidden">
             <div

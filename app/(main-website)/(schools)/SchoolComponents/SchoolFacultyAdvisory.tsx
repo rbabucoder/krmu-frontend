@@ -1,5 +1,5 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-
+import { sanitizeHtml } from "@/lib/utils/sanitize";
 import AdvisoryLoop from "./schoolglobalcomponent/AdvisoryLoop";
 import { FACADV } from "@/lib/types/schools";
 import StaticFacultyLoop from "./schoolglobalcomponent/StaticFacultyLoop";
@@ -18,7 +18,7 @@ const SchoolFacultyAdvisory = ({ schoolCat, fac_adv }: Props) => {
           <>
             <div
               dangerouslySetInnerHTML={{
-                __html: fac_adv?.fac_title,
+                __html: sanitizeHtml(fac_adv?.fac_title || ""),
               }}
               className="text-[45px] text-center"
             />

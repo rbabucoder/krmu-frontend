@@ -19,6 +19,7 @@ const AuthorHero = ({ imgUrl, AuthName, AuthDesg, AuthAbout }: Props) => {
               height={96}
               alt=""
               className="w-full h-full object-cover"
+              priority
             />
           </div>
         </div>

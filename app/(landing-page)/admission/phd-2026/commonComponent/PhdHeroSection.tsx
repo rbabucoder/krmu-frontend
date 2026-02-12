@@ -41,6 +41,7 @@ const PhdHeroSection = ({ formId }: Props) => {
             height={735}
             alt="Hero"
             className="-mb-20 xl:-mb-10"
+            priority
           />
         </div>
         <div className="w-full md:w-2/3 xl:w-1/3 flex justify-end">

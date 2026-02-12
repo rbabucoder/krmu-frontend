@@ -1,3 +1,4 @@
+import { sanitizeHtml } from "@/lib/utils/sanitize";
 import Image from "next/image";
 
 import NoPaperFormsWidget from "../admission/CommonComponent2026/NoPaperFormsWidget";

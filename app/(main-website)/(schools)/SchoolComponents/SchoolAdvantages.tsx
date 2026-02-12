@@ -1,4 +1,5 @@
 import { STRAPI_URL } from "@/app/constant";
+import { sanitizeHtml } from "@/lib/utils/sanitize";
 import { CardWithImage, StrapiMedia } from "@/lib/types/common";
 import Image from "next/image";
 
@@ -42,7 +43,7 @@ const SchoolAdvantages = ({
           {/* <p className="xl:pr-28 font-medium text-[#0060aa]"></p> */}
           {school_advantage && <div
             dangerouslySetInnerHTML={{
-              __html: school_advantage,
+              __html: sanitizeHtml(school_advantage || ""),
             }}
             className="xl:pr-28 font-medium adv_content"
           />}

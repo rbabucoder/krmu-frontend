@@ -1,4 +1,5 @@
 import { STRAPI_URL } from "@/app/constant";
+import { sanitizeHtml } from "@/lib/utils/sanitize";
 import { StrapiMedia } from "@/lib/types/common";
 import Image from "next/image";
 
@@ -36,7 +37,7 @@ const HomeTestimonialCard = ({
         <p
           className="my-5"
           dangerouslySetInnerHTML={{
-            __html: info,
+            __html: sanitizeHtml(info || ""),
           }}
         />
       </div>
