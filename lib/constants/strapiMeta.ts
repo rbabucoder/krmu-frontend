@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { BlogSEO } from "../types/blogs/main-blogs";
 import * as cheerio from "cheerio";
+import { STRAPI_URL } from "@/app/constant";
 
 function decodeHtml(str: string = "") {
   const $ = cheerio.load(str);
@@ -48,7 +49,7 @@ export function strapiSeoToMetadata(seo: BlogSEO): Metadata {
       images: seo.shareImage
         ? [
             {
-              url: `${process.env.NEXT_PUBLIC_STRAPI_URL}${seo.shareImage.url}`,
+              url: `${STRAPI_URL}${seo.shareImage.url}`,
             },
           ]
         : [],
