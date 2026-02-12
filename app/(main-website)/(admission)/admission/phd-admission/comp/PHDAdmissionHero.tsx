@@ -51,6 +51,7 @@ const PHDAdmissionHero = ({
                 height={654}
                 alt={heading || ""}
                 className="w-full"
+                priority
               />
             )}
           </div>

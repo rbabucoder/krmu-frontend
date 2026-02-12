@@ -34,7 +34,7 @@ export function strapiSeoToMetadata(seo: BlogSEO): Metadata {
     keywords: seo.metaKeyword ?? "",
 
     alternates: {
-      canonical: seo.canonical ?? "",
+      canonical: seo.canonical ?? undefined,
     },
 
     robots: {
@@ -45,7 +45,7 @@ export function strapiSeoToMetadata(seo: BlogSEO): Metadata {
     openGraph: {
       title: seo.metaTitle,
       description: seo.metaDescription,
-      url: seo.canonical ?? "",
+      url: seo.canonical ?? undefined,
       images: seo.shareImage
         ? [
             {

@@ -687,7 +687,7 @@ export default function InternationalRelationsForm() {
 //       });
 
 //       const uploadJson = await uploadRes.json();
-//       console.log("Upload response:", uploadJson);
+//
 
 //       // ✅ STRAPI v5 RESPONSE
 //       const uploadedFileId = uploadJson?.[0]?.id;
@@ -712,7 +712,7 @@ export default function InternationalRelationsForm() {
 //       });
 
 //       const entryJson = await entryRes.json();
-//       console.log("Entry response:", entryJson);
+//
 
 //       if (!entryRes.ok) {
 //         throw new Error("Entry creation failed");

@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: seo?.metaDescription || "",
     keywords: seo?.metaKeyword || "",
     alternates: {
-      canonical: seo?.canonical || "",
+      canonical: seo?.canonical || undefined,
     },
     robots: {
       index: true,
@@ -62,7 +62,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: seo?.metaTitle || "K.R. Mangalam University",
       description: seo?.metaDescription || "",
-      url: seo?.canonical || "",
+      url: seo?.canonical || undefined,
       siteName: "K.R. Mangalam University",
       images: shareImageUrl
         ? [

@@ -92,7 +92,7 @@ const Admission2Hero = () => {
           </Link> */}
         </div>
         <div className="hidden sm:block lg:w-1/2">
-          <Image src="/admission2/hero.png" width={636} height={523} alt="" />
+          <Image src="/admission2/hero.png" width={636} height={523} alt="" priority />
         </div>
       </div>
       {/* <div className="max-w-[1320px] mx-auto w-full">

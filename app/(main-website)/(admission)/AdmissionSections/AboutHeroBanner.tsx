@@ -136,6 +136,7 @@ const AboutHeroBanner = ({ banners }: AboutHeroBannerProps) => {
                       width={1200} // Specify the width
                       height={800} // Specify the height
                       className="w-full h-full object-cover"
+                      priority={index === 0}
                     />
                     {/* Reduced overlay effects for better image visibility */}
                     <div className="absolute inset-0 bg-black/15"></div>
