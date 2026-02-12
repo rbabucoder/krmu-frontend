@@ -19,12 +19,13 @@ import { StrapiMedia } from "@/lib/types/common";
   return (
     <>
       <video
-        className="w-auto min-w-full min-h-[600px] lg:min-h-screen max-w-none"
+        className="w-auto min-w-full min-h-[600px] lg:min-h-screen max-w-none bg-[#051630]"
         autoPlay
         muted
         loop
         playsInline
-        preload="none"
+        preload="auto"
+        poster="/heroimage1.webp"
       >
         <source src={videoUrl} type="video/mp4" />
         Your browser does not support the video tag.

@@ -49,12 +49,13 @@ const HomeNewsEventsCard: React.FC<HomeNewsEventsCardProps> = async ({
               alt={data.title?.rendered || ""}
               width={466}
               height={312}
+              sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
               className="w-full h-[420px] rounded-t-3xl object-fill"
             />
           )}
         </Link>
-        <div className="pt-5 pl-0 sm:pl-7 text-white">
-          <span className="text-sm text-[#898989]">
+        <div className="pt-5 pl-0 sm:pl-7 text-[var(--color-text-primary)]">
+          <span className="text-sm text-[var(--color-text-muted)]">
             Published On: {formattedDate}
           </span>
           <div className="flex flex-col">

@@ -1,5 +1,7 @@
 import { getTestimonialsData } from "@/lib/api/common";
 import HomeTestimonials from "../components/Testimonials/HomeTestimonials";
+import Section from "../components/Section";
+import ScrollReveal from "../components/ScrollReveal";
 
 interface HomeKRMTestimonialProps {
   title: string;
@@ -9,27 +11,19 @@ interface HomeKRMTestimonialProps {
 const HomeTestimonial = async ({ title, desc }: HomeKRMTestimonialProps) => {
   const testimonialsData = await getTestimonialsData();
   return (
-    <>
-      <section className="pt-12 pb-44 lg:py-40 px-5 lg:px-8 bg-[#051630] lg:-mt-[70px]">
-        <div className="lg:mx-9 2xl:pl-52 ">
-          <div className="xl:flex items-center text-white">
-            <div className="xl:w-[40%] xl:pr-10 text-center lg:text-left">
-              <h4 className="text-4xl lg:text-5xl xl:text-[64px] leading-[1.2] font-semibold mb-5">
-                {title}
-              </h4>
-              <p>
-                {desc}
-              </p>
-            </div>
-            <div className="xl:w-[60%] mt-10 xl:mt-0">
-              <div>
-                <HomeTestimonials testiData={testimonialsData} />
-              </div>
-            </div>
-          </div>
+    <Section>
+      <ScrollReveal>
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <h2 className="text-3xl md:text-4xl xl:text-5xl leading-[1.2] font-semibold mb-5 text-[var(--color-brand-navy)]">
+            {title}
+          </h2>
+          <p className="text-[var(--color-text-muted)]">{desc}</p>
         </div>
-      </section>
-    </>
+        <div>
+          <HomeTestimonials testiData={testimonialsData} />
+        </div>
+      </ScrollReveal>
+    </Section>
   );
 };
 

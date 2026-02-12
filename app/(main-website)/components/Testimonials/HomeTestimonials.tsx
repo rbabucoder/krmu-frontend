@@ -25,7 +25,9 @@ const HomeTestimonials = ({ testiData }: TestimonialProp) => {
         }}
         plugins={[
           Autoplay({
-            delay: 2000,
+            delay: 3000,
+            stopOnInteraction: false,
+            stopOnMouseEnter: true,
           }),
         ]}
       >
@@ -45,11 +47,13 @@ const HomeTestimonials = ({ testiData }: TestimonialProp) => {
             })}
         </CarouselContent>
         <CarouselPrevious
-          className="bg-[#2c3a4f] text-[#bfc4ca] hover:bg-[#051630] hover:text-white cursor-pointer buttonPrevNextSize w-[60px] h-[60px]
+          aria-label="Previous testimonial"
+          className="bg-krmu-slate text-krmu-gray-300 hover:bg-krmu-navy hover:text-white cursor-pointer buttonPrevNextSize w-[60px] h-[60px]
          top-[115%] left-[20%] sm:left-[30%] xl:top-[100%] xl:left-[-66%]"
         />
         <CarouselNext
-          className="bg-[#2c3a4f] text-[#bfc4ca] hover:bg-[#051630] hover:text-white cursor-pointer buttonPrevNextSize w-[60px] h-[60px] 
+          aria-label="Next testimonial"
+          className="bg-krmu-slate text-krmu-gray-300 hover:bg-krmu-navy hover:text-white cursor-pointer buttonPrevNextSize w-[60px] h-[60px]
          top-[115%] right-[20%] sm:right-[30%] xl:top-[100%] xl:right-[145%]"
         />
       </Carousel>

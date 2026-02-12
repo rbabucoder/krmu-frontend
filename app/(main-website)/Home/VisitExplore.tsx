@@ -1,5 +1,8 @@
 import { ButtonType } from "@/lib/types/common";
 import Link from "next/link";
+import Section from "../components/Section";
+import ScrollReveal from "../components/ScrollReveal";
+import { Button } from "@/components/ui/button";
 
 interface VisitExploreProp {
   title1: string;
@@ -15,31 +18,29 @@ const VisitExplore = ({
   visitexplorebtns,
 }: VisitExploreProp) => {
   return (
-    <section className="py-12 px-5 lg:py-20 lg:px-8 bg-[url(/visitbg.webp)] bg-cover bg-no-repeat">
-      <div className="max-w-[1664px] mx-auto w-full">
-        <div className="text-white text-center max-w-[1045px] mx-auto w-full">
-          <h4 className="text-4xl md:text-6xl xl:text-[80px]  leading-[1.13] my-5">
-            {title1} <br /> {title2}
-          </h4>
-
-          <p className="mb-5">{desc}</p>
-          <div className="flex flex-wrap gap-8 items-center justify-center">
-            {visitexplorebtns &&
-              visitexplorebtns.map((btn) => {
-                return (
-                  <Link
-                    key={btn?.id}
-                    href={btn?.buttonlink}
-                    className={`py-2.5 px-[18px] text-white bg-[#cb000d] hover:bg-[#034272] inline-block rounded-md text-base md:text-xl font-bold ${btn?.buttonclass}`}
-                  >
-                    {btn?.buttontext}
-                  </Link>
-                );
-              })}
-          </div>
+    <Section className="bg-[var(--color-brand-red)] py-12 lg:py-16">
+      <ScrollReveal>
+      <div className="text-white text-center max-w-3xl mx-auto">
+        <h2 className="text-3xl md:text-4xl xl:text-5xl leading-[1.2] font-semibold mb-4">
+          {title1} {title2}
+        </h2>
+        <p className="mb-8 text-white/90">{desc}</p>
+        <div className="flex flex-wrap gap-4 items-center justify-center">
+          {visitexplorebtns &&
+            visitexplorebtns.map((btn) => (
+              <Button
+                key={btn?.id}
+                asChild
+                size="lg"
+                className={`bg-white text-[var(--color-brand-red)] hover:bg-white/90 rounded-md px-8 text-base md:text-lg font-bold ${btn?.buttonclass}`}
+              >
+                <Link href={btn?.buttonlink}>{btn?.buttontext}</Link>
+              </Button>
+            ))}
         </div>
       </div>
-    </section>
+      </ScrollReveal>
+    </Section>
   );
 };
 

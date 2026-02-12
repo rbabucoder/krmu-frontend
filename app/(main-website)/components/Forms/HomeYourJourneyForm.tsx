@@ -45,9 +45,12 @@ const HomeYourJourneyForm = () => {
 
   return (
     <div className="relative w-full">
-      <form onSubmit={(e) => e.preventDefault()}>
-        {/* Search Input */}
+      <form onSubmit={(e) => e.preventDefault()} role="search">
+        <label htmlFor="programme-search" className="sr-only">
+          Search Programmes
+        </label>
         <input
+          id="programme-search"
           type="search"
           placeholder="Search Your Programmes"
           value={query}
@@ -62,8 +65,10 @@ const HomeYourJourneyForm = () => {
       {/* Dropdown Results */}
       {query.trim() !== "" && (
         <div
+          role="listbox"
+          aria-live="polite"
           className="absolute left-0 right-0 mt-2 bg-white rounded-md p-4 z-20
-               max-h-[300px] overflow-y-auto"
+               max-h-[min(300px,50vh)] overflow-y-auto"
           style={{ boxShadow: "0 0 6px -1px rgba(0,0,0,.3)" }}
         >
           {loading && <p className="text-sm">Searching...</p>}
@@ -76,7 +81,7 @@ const HomeYourJourneyForm = () => {
             programmes.map((item) => (
               <div key={item.id} className="mb-3 last:mb-0">
                 <Link href={`/programs/${item.programmeslug}`} target="_blank">
-                  <span className="text-lg font-semibold text-black hover:text-[#cb000d] cursor-pointer">
+                  <span className="text-lg font-semibold text-black hover:text-krmu-red-dark cursor-pointer">
                     {item.title}
                   </span>
                 </Link>
