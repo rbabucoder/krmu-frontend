@@ -547,7 +547,7 @@ export const programmeContent = {
   badge: "3 Specialisations",
   title: "KRMU’s Law Programmes",
   subtitle:
-    "All are programmes comprise of industry-relevant curriculum",
+    "All Our Programmes Comprise of Industry-relevant Curriculum",
 
   programmes: [
     {
@@ -557,6 +557,7 @@ export const programmeContent = {
       subtitle: "",
       desc: "Provides comprehensive legal education, strong understanding of legal systems, and foundation for successful legal practice.",
       duration: "5 Years",
+
       fee: "₹2,30,000",
       ctaText: "Apply Now !",
       ctaLink: "#apply-form",
@@ -578,10 +579,11 @@ export const programmeContent = {
       title: "LL.B. (Hons.)",
       subtitle: "",
       desc: "Develop strong procedural law knowledge, specialised expertise, practical skills, and an interdisciplinary foundation for diverse legal careers.",
-      duration: "5 Years",
+      duration: "3 Years",
       fee: "₹2,30,000",
       ctaText: "Apply Now !",
       ctaLink: "#apply-form",
+      eligibility: "Passed Bachelor's with 50% aggregate marks"
     },
   ],
 };

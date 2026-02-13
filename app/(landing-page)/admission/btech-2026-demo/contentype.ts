@@ -11,16 +11,18 @@ export type HeroContent = {
 
 
 export type ProgrammeCardItem = {
-  id: string; // ALWAYS keep id
+  id: string;
   tag: string;
   title: string;
   subtitle: string;
   desc: string;
   duration: string;
   fee: string;
+  eligibility?: string; // 👈 optional
   ctaText: string;
   ctaLink: string;
 };
+
 
 
 

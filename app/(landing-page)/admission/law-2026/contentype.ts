@@ -230,3 +230,17 @@ export type HeroMarqueeSection = {
   bgColor?: string; // optional (default red)
   speedClass?: string; // tailwind animation class
 };
+
+
+export type ProgrammeCardItem = {
+  id: string;
+  tag: string;
+  title: string;
+  subtitle: string;
+  desc: string;
+  duration: string;
+  fee: string;
+  eligibility?: string; // 👈 optional
+  ctaText: string;
+  ctaLink: string;
+};

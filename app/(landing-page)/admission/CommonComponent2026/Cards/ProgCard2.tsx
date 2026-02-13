@@ -42,7 +42,7 @@
 
 
 import Link from "next/link";
-import { ProgrammeCardItem } from "../../btech-2026-demo/contentype";
+import { ProgrammeCardItem } from "../../law-2026/contentype";
 
 type Props = {
   data: ProgrammeCardItem;
@@ -113,8 +113,12 @@ const ProgCard2 = ({ data }: Props) => {
 
   <span className="text-[#6b7280]">Eligibility</span>
   <span className="text-[#1f2937] font-semibold text-right">
+  {data.eligibility ?? "Passed 12th with 50% aggregate marks.*"}
+</span>
+
+  {/* <span className="text-[#1f2937] font-semibold text-right">
     Passed 12th with 50% aggregate marks
-  </span>
+  </span> */}
 
 </div>
 
