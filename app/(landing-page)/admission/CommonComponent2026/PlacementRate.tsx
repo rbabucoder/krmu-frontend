@@ -2,18 +2,18 @@ import Image from "next/image";
 
 const PlacementRate = () => {
   return (
-    <section className="py-20 px-0 bg-white" id="programs">
+    <section className="py-10 px-0 bg-white" id="programs">
       <div className="max-w-[1200px] px-4 sm:px-6 mx-auto w-full">
         <div className="max-w-[700px] mx-auto mb-12 text-center">
-          <span className="inline-block py-1 px-3 bg-[#2c7da01a] text-[#2c7da0] text-sm font-bold uppercase rounded-full mb-4">
+          <span className="inline-block py-1 px-3 bg-[#2c7da01a] text-[#2c7da0] text-sm font-bold uppercase rounded-full mb-7">
             Why KRMU?
           </span>
-          <h2 className="text-2xl md:text-[35px] mb-4 font-bold">
+          <h2 className="text-2xl md:text-[33px] mb-4 font-bold">
            92% Placement Rate @ KRMU: Possible? <br />
            Here’s How We Do It!
           </h2>
           <p className="text-[#4b5563] text-lg">
-At KRMU, we don’t just focus on conceptual clarity but career-readiness as well. Our multifaceted approach ensures you are well-prepared for the professional world. Here's how we make it happen
+At KRMU, we don’t just focus on conceptual clarity but career-readiness as well. Our multifaceted approach ensures you are well-prepared for the professional world. Here's how we make it happen!
 
           </p>
         </div>
@@ -133,7 +133,7 @@ Situated at the centre of India’s corporate landscape, where leading industry 
               </svg>
             </div>
             <h3 className="mb-3 font-bold text-2xl text-gray-900">
-              Updated Curriculum Made By Top Leaders
+              Updated Curriculum Made by Top Leaders
             </h3>
             <p className="text-gray-600">
 KRMU collaborates with the top industry leaders to ensure the course curriculum is aligned with the evolving market demands and employer expectations.

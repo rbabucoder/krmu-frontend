@@ -10,7 +10,6 @@ import {
   LifeAsPhDScholarSection,
   OpportunitySection,
   ProminentRecruit,
-  ProgrammeCardItem,
   ScholarResearchImpactSection,
   SpecialisationSection,
   TestimonialsSection,

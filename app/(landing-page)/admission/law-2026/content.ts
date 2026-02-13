@@ -540,3 +540,48 @@ export const applySectionData: ApplySectionData = {
     { id: 3, text: "18K+ Alumni Base" },
   ],
 };
+
+
+
+export const programmeContent = {
+  badge: "3 Specialisations",
+  title: "KRMU’s Law Programmes",
+  subtitle:
+    "All are programmes comprise of industry-relevant curriculum",
+
+  programmes: [
+    {
+      id: "1",
+      tag: "Popular Choice",
+      title: "B.A. LL.B. (Hons.)",
+      subtitle: "",
+      desc: "Provides comprehensive legal education, strong understanding of legal systems, and foundation for successful legal practice.",
+      duration: "5 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "2",
+      tag: "Top Pick",
+      title: "BBA. LL.B. (Hons.)",
+      subtitle: "",
+      desc: "Five-year integrated business and law programme preparing students for corporate legal challenges through practical experience.",
+      duration: "5 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "3",
+      tag: "High-In-Demand",
+      title: "LL.B. (Hons.)",
+      subtitle: "",
+      desc: "Develop strong procedural law knowledge, specialised expertise, practical skills, and an interdisciplinary foundation for diverse legal careers.",
+      duration: "5 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+  ],
+};

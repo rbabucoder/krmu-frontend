@@ -76,7 +76,7 @@ const ProgCard2 = ({ data }: Props) => {
         <p className="text-[#4b5563] mb-5">{data.desc}</p>
 
         {/* INFO BOX */}
-        <div className="flex flex-col mb-5 gap-2 p-4 bg-[#f9fafb] rounded-xl">
+        {/* <div className="flex flex-col mb-5 gap-2 p-4 bg-[#f9fafb] rounded-xl">
           <div className="flex justify-between text-sm">
             <span className="text-[#6b7280]">Duration</span>
             <span className="text-[#1f2937] font-semibold">
@@ -90,7 +90,37 @@ const ProgCard2 = ({ data }: Props) => {
               {data.fee}
             </span>
           </div>
-        </div>
+
+          <div className="flex justify-between text-sm">
+            <span className="text-[#6b7280]">Eligibility</span>
+            <span className="text-[#1f2937] font-semibold">
+              Passed 12th with 50% aggregate marks
+            </span>
+          </div>
+        </div> */}
+
+        <div className="grid grid-cols-[120px_1fr] gap-y-2 mb-5 p-4 bg-[#f9fafb] rounded-xl text-sm">
+
+  <span className="text-[#6b7280]">Duration</span>
+  <span className="text-[#1f2937] font-semibold text-right">
+    {data.duration}
+  </span>
+
+  {/* <span className="text-[#6b7280]">Annual Fee</span>
+  <span className="text-[#1f2937] font-semibold text-right">
+    {data.fee}
+  </span> */}
+
+  <span className="text-[#6b7280]">Eligibility</span>
+  <span className="text-[#1f2937] font-semibold text-right">
+    Passed 12th with 50% aggregate marks
+  </span>
+
+</div>
+
+
+        
+        
 
         {/* CTA */}
         <Link

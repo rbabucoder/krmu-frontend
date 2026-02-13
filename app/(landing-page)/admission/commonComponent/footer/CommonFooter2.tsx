@@ -6,14 +6,14 @@ const CommonFooter2 = () => {
       className="py-14 bg-white"
     >
       <div className="px-6 max-w-[1200px] mx-auto w-full">
-        <div className="text-center max-w-[700px] m-auto">
+        <div className="text-center max-w-[1000px] m-auto">
           <h2 className="text-black mb-4 text-2xl md:text-3xl font-bold leading-[1.2]">
-            Apply Today To Ascertain Your Tomorrow!
+            Apply Today to Ascertain Your Tomorrow!
             <br />
            With a 92% Placement Record, KRMU is a Name to Rely Upon!
           </h2>
           <p className="text-black text-lg mb-8">
-            Industry-aligned Courses | Top recruiters | Global exposure
+            Industry-Aligned Courses | Top Recruiters | Global Exposure
 
           </p>
 
@@ -71,7 +71,7 @@ const CommonFooter2 = () => {
               >
                 <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"></path>
               </svg>
-              <span>UGC Recognized</span>
+              <span>UGC Recognised</span>
             </div>
             <div className="flex items-center gap-2 text-sm text-black">
               <svg
@@ -85,7 +85,7 @@ const CommonFooter2 = () => {
               </svg>
               <span>NAAC A Accredited</span>
             </div>
-            <div className="flex items-center gap-2 text-sm text-black">
+            {/* <div className="flex items-center gap-2 text-sm text-black">
               <svg
                 width="24"
                 height="24"
@@ -96,7 +96,7 @@ const CommonFooter2 = () => {
                 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"></path>
               </svg>
               <span>BCI Approved</span>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

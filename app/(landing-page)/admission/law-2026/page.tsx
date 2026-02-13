@@ -28,14 +28,17 @@ import {
   lifeAsPhDScholarData,
   opportunityData,
   prominentRecruiters,
+  programmeContent,
   // scholarResearchImpactData,
-  specialisationData,
+  // specialisationData,
   testimonialsData,
   whyKRM,
 } from "./content";
 
 import { SeoData } from "./seo";
 import PlacementRate from "../CommonComponent2026/PlacementRate";
+import ProgrammeSection from "../CommonComponent2026/ProgrammeSection";
+import FAQSection2 from "../CommonComponent2026/FAQSection2";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -70,7 +73,7 @@ const page = () => {
   const recruiters = prominentRecruiters;
   const whykrm = whyKRM;
   const industryexpert = industryExperts;
-  const specialise = specialisationData;
+  // const specialise = specialisationData;
   const opport = opportunityData;
   const testiomonial = testimonialsData;
   // const scholarData = scholarResearchImpactData;
@@ -104,14 +107,16 @@ const page = () => {
         whykrmCards={whykrm?.whyKrmCards}
       /> */}
       {/* <IndustryExperts data={industryexpert} /> */}
-      <Specialisation data={specialise} />
+      {/* <Specialisation data={specialise} /> */}
+      <ProgrammeSection {...programmeContent} />
       <Opportunity data={opport} />
       {/* <FeeStructureTable /> */}
       {/* <Testimonials data={testiomonial} /> */}
       {/* <ScholarResearchImpact data={scholarData} /> */}
       <ComeToLife data={worldLifeData} />
       <LifeAsPhDScholar data={lifeData} />
-      <FAQ data={faqData} />
+      {/* <FAQ data={faqData} /> */}
+      <FAQSection2 data={faqData} />
       <BusinessHub data={businessData} formId={lawIdForm} />
       {/* <ApplySection data={applyData} /> */}
       <CommonFooter2 />
