@@ -8,6 +8,22 @@ export type HeroContent = {
   lpclName: string;
 };
 
+
+
+export type ProgrammeCardItem = {
+  id: string; // ALWAYS keep id
+  tag: string;
+  title: string;
+  subtitle: string;
+  desc: string;
+  duration: string;
+  fee: string;
+  ctaText: string;
+  ctaLink: string;
+};
+
+
+
 // Counter card type
 export type CounterItem = {
   title: string;

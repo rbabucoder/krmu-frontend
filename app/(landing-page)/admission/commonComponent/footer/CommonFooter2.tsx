@@ -1,9 +1,9 @@
 import { PhoneCall } from "lucide-react";
 
-const Footer2 = () => {
+const CommonFooter2 = () => {
   return (
     <section
-      className="py-24 bg-white"
+      className="py-14 bg-white"
     >
       <div className="px-6 max-w-[1200px] mx-auto w-full">
         <div className="text-center max-w-[700px] m-auto">
@@ -104,4 +104,4 @@ const Footer2 = () => {
   );
 };
 
-export default Footer2;
+export default CommonFooter2;

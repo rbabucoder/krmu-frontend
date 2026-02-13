@@ -5,6 +5,7 @@ import ComeToLife from "../CommonComponent2026/ComeToLife";
 import Counter from "../CommonComponent2026/Counter";
 import FAQ from "../CommonComponent2026/FAQ";
 import HeroSection from "../CommonComponent2026/HeroSection";
+import CommonFooter2 from "../commonComponent/footer/CommonFooter2";
 import IndustryExperts from "../CommonComponent2026/IndustryExperts";
 import LifeAsPhDScholar from "../CommonComponent2026/LifeAsPhDScholar";
 import Opportunity from "../CommonComponent2026/Opportunity";
@@ -35,6 +36,7 @@ import {
 
 import { SeoData } from "./seo";
 import { bcom2026Id } from "../constant/lpnpf";
+import PlacementRate from "../CommonComponent2026/PlacementRate";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -94,13 +96,14 @@ const page = () => {
       />
       <Counter counters={counters} />
       <ProminentRecruiter recruiters={recruiters} />
-      <WhyKRMangalam
+      <PlacementRate />
+      {/* <WhyKRMangalam
         heading={whykrm?.heading}
         subheading={whykrm?.subheading}
         desc={whykrm?.content}
         imgUrl={whykrm?.imgUrl}
         whykrmCards={whykrm?.whyKrmCards}
-      />
+      /> */}
       {/* <IndustryExperts data={industryexpert} /> */}
       <Specialisation data={specialise} />
       <Opportunity data={opport} />
@@ -111,7 +114,8 @@ const page = () => {
       <LifeAsPhDScholar data={lifeData} />
       <FAQ data={faqData} />
       <BusinessHub data={businessData} formId={bcomIdForm} />
-      <ApplySection data={applyData} />
+      {/* <ApplySection data={applyData} /> */}
+      <CommonFooter2 />
     </>
   );
 };

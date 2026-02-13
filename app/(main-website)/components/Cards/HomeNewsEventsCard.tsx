@@ -49,7 +49,7 @@ const HomeNewsEventsCard: React.FC<HomeNewsEventsCardProps> = async ({
               alt={data.title?.rendered || ""}
               width={466}
               height={312}
-              className="w-full h-[420px] rounded-t-3xl object-fill"
+              className="w-full rounded-t-3xl object-fill"
             />
           )}
         </Link>

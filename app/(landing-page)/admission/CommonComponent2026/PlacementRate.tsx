@@ -6,16 +6,15 @@ const PlacementRate = () => {
       <div className="max-w-[1200px] px-4 sm:px-6 mx-auto w-full">
         <div className="max-w-[700px] mx-auto mb-12 text-center">
           <span className="inline-block py-1 px-3 bg-[#2c7da01a] text-[#2c7da0] text-sm font-bold uppercase rounded-full mb-4">
-            Why KRMU Law?
+            Why KRMU?
           </span>
-          <h2 className="text-2xl md:text-[40px] mb-4 font-bold">
-            92% Placement Rate. <br />
-            Here's How We Do It.
+          <h2 className="text-2xl md:text-[35px] mb-4 font-bold">
+           92% Placement Rate @ KRMU: Possible? <br />
+           Here’s How We Do It!
           </h2>
           <p className="text-[#4b5563] text-lg">
-            While other law schools focus on theory, we focus on one thing:
-            making you hireable. Moot courts, internships, industry projects,
-            and a location that puts you at the center of corporate India.
+At KRMU, we don’t just focus on conceptual clarity but career-readiness as well. Our multifaceted approach ensures you are well-prepared for the professional world. Here's how we make it happen
+
           </p>
         </div>
         <div className="grid gap-6">
@@ -50,23 +49,22 @@ const PlacementRate = () => {
                 </svg>
               </div>
               <h3 className="text-2xl font-semibold">
-                Learn by Doing, Not Just Reading
+                Conceptual Clarity Meets Practical Precision
               </h3>
               <p className="text-[#4b5563] leading-[1.7]">
-                Our moot court isn't a once-a-semester event—it's woven into
-                your curriculum. Draft real petitions, argue real cases, and
-                build the confidence that sets you apart in interviews.
+We are the proponents of the ‘practice leads to perfection’ philosophy. Our programmes are meticulously designed to provide you with hands-on experience from day one.
+
               </p>
               <ul className="flex flex-col gap-2 mt-4 text-base">
                 <li className="relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-[#002d73] before:rounded-full pl-5 text-[#374151]">
-                  Mandatory moot court participation every semester
+                  Consistently updated & industry-relevant curriculum
                 </li>
                 <li className="relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-[#002d73] before:rounded-full pl-5 text-[#374151]">
-                  Legal aid clinic serving 500+ community members yearly
+                  Real-world exposure via industry partnerships and internships
                 </li>
-                <li className="relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-[#002d73] before:rounded-full pl-5 text-[#374151]">
+                {/* <li className="relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-[#002d73] before:rounded-full pl-5 text-[#374151]">
                   Mock trial competitions with practicing judges
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
@@ -87,12 +85,11 @@ const PlacementRate = () => {
               </svg>
             </div>
             <h3 className="mb-3 font-bold text-2xl text-gray-900">
-              Gurugram: India's Corporate Law Capital
+             Located in Gurugram: India’s Corporate Hub
             </h3>
             <p className="text-gray-600">
-              500+ Fortune 500 companies have offices here. Top law firms like
-              Cyril Amarchand, AZB, and Trilegal recruit directly from our
-              campus. Your internship network starts in your first year.
+Situated at the centre of India’s corporate landscape, where leading industry figures are located, KRMU provides an unparalleled network of experts and recruiters.
+
             </p>
           </div>
           <div className="p-6 rounded-2xl bg-[#f9fafb] transition-all duration-[250ms] ease-out hover:bg-white hover:shadow-[0_10px_15px_-3px_rgb(0_0_0/0.1),0_4px_6px_-4px_rgb(0_0_0/0.1)]">
@@ -112,12 +109,11 @@ const PlacementRate = () => {
               </svg>
             </div>
             <h3 className="mb-3 font-bold text-2xl text-gray-900">
-              Faculty Who've Argued & Won
+             Expert Faculty Brings Expertise to the Class
             </h3>
             <p className="text-gray-600">
-              Learn from practicing advocates, retired judges, and legal
-              scholars who bring decades of courtroom experience into every
-              lecture. Theory meets practice in every class.
+             From industry veterans to renowned scholars, our distinguished & dedicated faculty members bring invaluable real-world insights and experience to every class.
+
             </p>
           </div>
           <div className="p-6 rounded-2xl bg-[#f9fafb] transition-all duration-[250ms] ease-out hover:bg-white hover:shadow-[0_10px_15px_-3px_rgb(0_0_0/0.1),0_4px_6px_-4px_rgb(0_0_0/0.1)]">
@@ -137,12 +133,11 @@ const PlacementRate = () => {
               </svg>
             </div>
             <h3 className="mb-3 font-bold text-2xl text-gray-900">
-              Industry-Designed Curriculum
+              Updated Curriculum Made By Top Leaders
             </h3>
             <p className="text-gray-600">
-              Our syllabus is built with input from law firm partners and
-              corporate legal heads. You'll graduate knowing what hiring
-              managers actually need—not just what textbooks say.
+KRMU collaborates with the top industry leaders to ensure the course curriculum is aligned with the evolving market demands and employer expectations.
+
             </p>
           </div>
         </div>

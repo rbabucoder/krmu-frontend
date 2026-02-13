@@ -78,7 +78,7 @@ const ScholarNotes = () => {
           </div>
         </div>
         <div className="lg:w-2/5">
-          <div className="lg:flex gap-5 mb-8 hidden">
+          <div className="lg:flex gap-5 mb-8">
             <span className="rounded-full py-[3px] px-2 border border-white text-white w-[25px] h-[28px] flex items-center justify-center">
               7
             </span>

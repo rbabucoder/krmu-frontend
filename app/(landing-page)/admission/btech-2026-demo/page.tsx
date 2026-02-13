@@ -5,6 +5,7 @@ import ComeToLife from "../CommonComponent2026/ComeToLife";
 import Counter from "../CommonComponent2026/Counter";
 import FAQ from "../CommonComponent2026/FAQ";
 import HeroSection from "../CommonComponent2026/HeroSection";
+import CommonFooter2 from "../commonComponent/footer/CommonFooter2";
 import IndustryExperts from "../CommonComponent2026/IndustryExperts";
 import LifeAsPhDScholar from "../CommonComponent2026/LifeAsPhDScholar";
 import Opportunity from "../CommonComponent2026/Opportunity";
@@ -15,6 +16,8 @@ import Testimonials from "../CommonComponent2026/Testimonials";
 import WhyKRMangalam from "../CommonComponent2026/WhyKRMangalam";
 import { btechId } from "../constant/lpnpf";
 import FeeStructureTable from "./components/FeeStructure";
+import ProgrammeSection from "../CommonComponent2026/ProgrammeSection";
+
 import {
   applySectionData,
   businessHubData,
@@ -27,6 +30,7 @@ import {
   lifeAsPhDScholarData,
   opportunityData,
   prominentRecruiters,
+  programmeContent,
   // scholarResearchImpactData,
   specialisationData,
   testimonialsData,
@@ -34,7 +38,7 @@ import {
 } from "./content";
 
 import { SeoData } from "./seo";
-import Specilisation2 from "../CommonComponent2026/Specilisation2";
+import Specilisation2 from "../CommonComponent2026/ProgrammeSection";
 import PlacementRate from "../CommonComponent2026/PlacementRate";
 import FAQSection2 from "../CommonComponent2026/FAQSection2";
 import BusinessHub2 from "../CommonComponent2026/BusinessHub2";
@@ -113,7 +117,7 @@ const page = () => {
       /> */}
       {/* <IndustryExperts data={industryexpert} /> */}
       {/* <Specialisation data={specialise} /> */}
-      <Specilisation2 />
+      <ProgrammeSection {...programmeContent} />
       <Opportunity data={opport} />
       {/* <FeeStructureTable /> */}
       {/* <Testimonials data={testiomonial} /> */}
@@ -122,7 +126,8 @@ const page = () => {
       <LifeAsPhDScholar data={lifeData} />
       <FAQSection2 data={faqData} />
       <BusinessHub2 data={businessData} formId={btechIdForm} />
-      {/* <ApplySection data={applyData} /> */}
+      {/*  <ApplySection data={applyData} /> */}
+      <CommonFooter2 /> 
     </>
   );
 };

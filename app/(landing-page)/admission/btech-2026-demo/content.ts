@@ -10,6 +10,7 @@ import {
   LifeAsPhDScholarSection,
   OpportunitySection,
   ProminentRecruit,
+  ProgrammeCardItem,
   ScholarResearchImpactSection,
   SpecialisationSection,
   TestimonialsSection,
@@ -73,6 +74,65 @@ export const Counters: CounterItem[] = [
     subtitle: "Placement Record",
   },
 ];
+
+
+// import { ProgrammeCardItem } from "@/types/programme";
+
+export const programmeContent = {
+  badge: "7 Specializations",
+  title: "Choose Your Focus",
+  subtitle:
+    "All programs are 4-year B.Tech degrees with industry-integrated curriculum.",
+
+  programmes: [
+    {
+      id: "1",
+      tag: "Core",
+      title: "B.Tech CSE",
+      subtitle: "Foundational Computer Science",
+      desc: "Strong foundation in programming, algorithms, data structures, and system design via an industry-relevant curriculum",
+      duration: "4 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply for CSE",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "2",
+      tag: "Core",
+      title: "B.Tech CSE AI ML",
+      subtitle: "Foundational Computer Science",
+      desc: "Strong foundation in algorithms...",
+      duration: "4 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply for CSE",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "3",
+      tag: "Special",
+      title: "B.Tech CSE UI UX",
+      subtitle: "Foundational Computer Science",
+      desc: "Strong foundation in algorithms...",
+      duration: "4 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply for CSE",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "4",
+      tag: "Core",
+      title: "B.Tech CSE Hons",
+      subtitle: "Foundational Computer Science",
+      desc: "Strong foundation in algorithms...",
+      duration: "4 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply for CSE",
+      ctaLink: "#apply-form",
+    },
+  ],
+};
+
+
 
 // Recruiters list
 export const prominentRecruiters: ProminentRecruit[] = [
