@@ -619,6 +619,7 @@ export const programmeContent = {
     },
     {
       id: "2",
+      tag: "",
       title: "B.Sc. (Hons. / Hons. with Research) Chemistry",
       subtitle: "",
       desc: "Combines theory, practical training, and research in Chemistry, preparing students for advanced studies and careers.",
@@ -629,6 +630,7 @@ export const programmeContent = {
     },
     {
       id: "3",
+      tag: "",
       title: "B.Sc. (Hons.) Forensic Science",
       subtitle: "",
       desc: "Trains students in forensic techniques, crime scene investigation, and lab skills for investigative careers.",
