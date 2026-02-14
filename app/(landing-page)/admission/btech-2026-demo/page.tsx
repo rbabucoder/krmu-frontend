@@ -41,7 +41,6 @@ import { SeoData } from "./seo";
 import Specilisation2 from "../CommonComponent2026/ProgrammeSection";
 import PlacementRate from "../CommonComponent2026/PlacementRate";
 import FAQSection2 from "../CommonComponent2026/FAQSection2";
-import FAQSection2 from "../CommonComponent2026/FAQSection2";
 import BusinessHub2 from "../CommonComponent2026/BusinessHub2";
 
 export async function generateMetadata(): Promise<Metadata> {
