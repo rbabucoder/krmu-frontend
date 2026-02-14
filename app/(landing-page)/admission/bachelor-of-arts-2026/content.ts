@@ -682,6 +682,7 @@ export const programmeContent = {
     },
     {
       id: "5",
+      tag: "",
       title: "B.A. (Hons.) Psychology",
       subtitle: "",
       desc: "Prepares graduates for careers and higher studies in psychology across healthcare, education, corporate, NGOs, and government.",
@@ -692,6 +693,7 @@ export const programmeContent = {
     },
     {
       id: "6",
+      tag: "",
       title: "B.A. (Hons. / Hons. with Research) Psychology",
       subtitle: "",
       desc: "Studies human psychology, developing critical thinking, research, communication, and data skills for diverse careers.",
@@ -702,6 +704,7 @@ export const programmeContent = {
     },
     {
       id: "7",
+      tag: "",
       title: "B.A. (Hons.) Political Science",
       subtitle: "",
       desc: "Develops research skills through projects and collaboration, offering insights into politics, international relations, and administration.",
@@ -712,6 +715,7 @@ export const programmeContent = {
     },
     {
       id: "8",
+      tag: "",
       title: "B.A. (Hons. / Hons. with Research) Political Science",
       subtitle: "",
       desc: "Gain knowledge of politics, governance, and global affairs, developing research, critical thinking, and communication skills for careers.",
