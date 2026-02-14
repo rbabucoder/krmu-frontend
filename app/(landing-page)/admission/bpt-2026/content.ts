@@ -447,3 +447,27 @@ export const applySectionData: ApplySectionData = {
     { id: 3, text: "18K+ Alumni Base" },
   ],
 };
+
+
+
+export const programmeContent = {
+  badge: "Healing in Every Move",
+  title: "KRMU’s BPT Programme",
+  subtitle:
+    "Our Programme Comprise of Industry-relevant Curriculum",
+
+  programmes: [
+    {
+      id: "1",
+      tag: "Popular Choice",
+      title: "Bachelor of Physiotherapy",
+      subtitle: "",
+      desc: "The course equips graduates with practical skills, ethical insights, and comprehensive physiotherapy knowledge for diverse careers.",
+      duration: "4.5 Years",
+      eligibility: "Passed 12th with 50% aggregate marks.*",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+  ],
+};

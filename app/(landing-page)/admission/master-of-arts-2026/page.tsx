@@ -22,6 +22,7 @@ import {
   lifeAsPhDScholarData,
   mbaComparisonContent,
   PGProgrammeCard,
+  programmeContent,
   PGTestimonialsData,
   placementStatsContent,
   prominentRecruiterContent,
@@ -33,6 +34,8 @@ import ComeToLife from "../../PGComponent/ComeToLife";
 import { SeoData } from "./seo";
 import { Metadata } from "next";
 import HeroSection from "../../PGComponent/HeroSection";
+import CommonFooter2 from "../commonComponent/footer/CommonFooter2";
+import ProgrammeSection from "../CommonComponent2026/ProgrammeSection";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -100,8 +103,9 @@ const page = () => {
         image={aboutUsData?.image}
       />
       {/* <IndustryExperts data={indusExpData} /> */}
-      <BusinessLeader data={whyChooseData} progData={whyChooseProgCardData} />
-      <ProspectusDownload data={prospectusData} />
+      {/* <BusinessLeader data={whyChooseData} progData={whyChooseProgCardData} /> */}
+      <ProgrammeSection {...programmeContent} />
+      {/* <ProspectusDownload data={prospectusData} /> */}
       <AdmissionProcess
         eyebrow={admissionProcessData?.eyebrow}
         title={admissionProcessData?.title}
@@ -115,6 +119,7 @@ const page = () => {
       <LifeAsPhDScholar data={lifeData} />
       <BusinessHub data={businessData} formId={maFormId} />
       <FAQSection data={faqData} />
+      <CommonFooter2 />
     </>
   );
 };

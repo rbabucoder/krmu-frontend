@@ -534,3 +534,37 @@ export const applySectionData: ApplySectionData = {
     { id: 3, text: "18K+ Alumni Base" },
   ],
 };
+
+
+
+export const programmeContent = {
+  badge: "2 Specialisations",
+  title: "KRMU’s Forensic Science Programmes",
+  subtitle:
+    "All Our Programmes Comprise of Industry-relevant Curriculum",
+
+  programmes: [
+    {
+      id: "1",
+      tag: "Crime Science",
+      title: "B.Sc. (Hons.) Forensic Science",
+      subtitle: "",
+      desc: "Trains students in crime investigation and forensics, integrating science, law, and technology.",
+      duration: "3 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "2",
+      tag: "Research Focus",
+      title: "B.Sc. (Hons. / Hons. with Research) Forensic Science",
+      subtitle: "",
+      desc: "Develops analytical, critical, and observational skills for careers in forensics, crime investigation, and research.",
+      duration: "4 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+  ],
+};

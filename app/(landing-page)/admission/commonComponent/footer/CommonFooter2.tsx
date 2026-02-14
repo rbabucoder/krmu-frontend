@@ -1,4 +1,5 @@
 import { PhoneCall } from "lucide-react";
+import Link from "next/link";
 
 const CommonFooter2 = () => {
   return (
@@ -18,13 +19,13 @@ const CommonFooter2 = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4 items-center mb-10">
-            <a
-              href="#apply-form"
-              className="text-white bg-[linear-gradient(135deg,#e31e24_0%,#c41920_100%)] shadow-[0_4px_14px_0_rgba(227,30,36,0.35)] text-lg min-h-14 inline-flex items-center justify-center gap-2 font-semibold cursor-pointer rounded-xl
-              transistion-all duration-150 ease-out py-4 px-6 hover:-translate-y-0.5 hover:shadow-[0_6px_20px_0_rgba(227,30,36,0.45)] hover:bg-[linear-gradient(135deg,#ff4d52_0%,#e31e24_100%)]"
-            >
-              Enrol Now. Limited Seats Available!
-              <svg
+            <Link
+  href="#apply-form"
+  className="text-white bg-[linear-gradient(135deg,#e31e24_0%,#c41920_100%)] shadow-[0_4px_14px_0_rgba(227,30,36,0.35)] text-lg min-h-14 inline-flex items-center justify-center gap-2 font-semibold cursor-pointer rounded-xl
+  transition-all duration-150 ease-out py-4 px-6 hover:-translate-y-0.5 hover:shadow-[0_6px_20px_0_rgba(227,30,36,0.45)] hover:bg-[linear-gradient(135deg,#ff4d52_0%,#e31e24_100%)]"
+>
+  Enrol Now. Limited Seats Available!
+  <svg
                 width="20"
                 height="20"
                 viewBox="0 0 24 24"
@@ -34,7 +35,10 @@ const CommonFooter2 = () => {
               >
                 <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
-            </a>
+</Link>
+
+              
+            
             <a
               href="tel:+919311411717"
               className="text-white bg-[#0060aa]  text-lg min-h-14 inline-flex items-center justify-center gap-2 font-semibold cursor-pointer rounded-xl

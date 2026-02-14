@@ -495,3 +495,37 @@ export const applySectionData: ApplySectionData = {
     { id: 3, text: "18K+ Alumni Base" },
   ],
 };
+
+
+
+export const programmeContent = {
+  badge: "2 Specialisations",
+  title: "KRMU’s Education Programmes",
+  subtitle:
+    "All Our Programmes Comprise of Industry-relevant Curriculum",
+
+  programmes: [
+    {
+      id: "1",
+      tag: "Teaching Excellence",
+      title: "B.Ed.",
+      subtitle: "",
+      desc: "NCTE-approved programme preparing educators with curriculum design, teaching methods, lesson planning, and modern educational skills.",
+      duration: "2 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "2",
+      tag: "Future Educators",
+      title: "B.El.Ed.",
+      subtitle: "",
+      desc: "NCTE- and UGC-approved course preparing elementary educators with child development, psychology, theory, and practical teaching skills.",
+      duration: "4 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+  ],
+};

@@ -59,9 +59,17 @@ const ProgCard2 = ({ data }: Props) => {
       hover:shadow-[0_20px_25px_-5px_rgb(0_0_0/0.1),0_8px_10px_-6px_rgb(0_0_0/0.1)] w-full"
     >
       {/* TAG */}
-      <div className="absolute top-4 left-4 py-1 px-3 text-xs font-bold bg-[#e31e24] text-white uppercase rounded-full z-10">
+
+      {data?.tag?.trim() && (
+  <div className="absolute top-4 left-4 py-1 px-3 text-xs font-bold bg-[#e31e24] text-white uppercase rounded-full z-10">
+    {data.tag}
+  </div>
+)}
+
+
+      {/* <div className="absolute top-4 left-4 py-1 px-3 text-xs font-bold bg-[#e31e24] text-white uppercase rounded-full z-10">
         {data.tag}
-      </div>
+      </div> */}
 
       <div className="pt-12 px-6 pb-6 flex flex-col h-full">
         {/* TITLE */}
@@ -113,7 +121,7 @@ const ProgCard2 = ({ data }: Props) => {
 
   <span className="text-[#6b7280]">Eligibility</span>
   <span className="text-[#1f2937] font-semibold text-right">
-  {data.eligibility ?? "Passed 12th with 50% aggregate marks.*"}
+  {data.eligibility ?? "Passed 12th with 50% aggregate marks."}
 </span>
 
   {/* <span className="text-[#1f2937] font-semibold text-right">

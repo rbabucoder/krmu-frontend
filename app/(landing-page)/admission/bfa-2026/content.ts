@@ -443,3 +443,26 @@ export const applySectionData: ApplySectionData = {
     { id: 3, text: "18K+ Alumni Base" },
   ],
 };
+
+
+export const programmeContent = {
+  badge: "From vision to canvas",
+  title: "KRMU’s BFA Programme",
+  subtitle:
+    "Our Programme Comprise of Industry-relevant Curriculum",
+
+  programmes: [
+    {
+      id: "1",
+      tag: "Popular Choice",
+      title: "Bachelor of Fine Arts (BFA) (Painting & Applied Arts)",
+      subtitle: "",
+      desc: "The course combines studio learning, mentorship, painting techniques, & applied art for creative, practical design skills.",
+      duration: "4 Years",
+      eligibility: "Passed 12th with 50% aggregate marks.",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+  ],
+};

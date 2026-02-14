@@ -473,3 +473,48 @@ export const applySectionData: ApplySectionData = {
     { id: 3, text: "18K+ Alumni Base" },
   ],
 };
+
+
+
+export const programmeContent = {
+  badge: "3 Specialisations",
+  title: "KRMU’s Journalism & Mass Communication Programmes",
+  subtitle:
+    "All Our Programmes Comprise of Industry-relevant Curriculum",
+
+  programmes: [
+    {
+      id: "1",
+      tag: "Media Foundation",
+      title: "B.A. J.M.C",
+      subtitle: "",
+      desc: "Blends theory and practical training in journalism and media for analytical and creative skills.",
+      duration: "3 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "2",
+      tag: "Future Media Leaders",
+      title: "B.A. (Hons. / Hons. with Research) J.M.C",
+      subtitle: "",
+      desc: "Prepares future media leaders through traditional and digital media studies, internships, and workshops.",
+      duration: "4 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "3",
+      tag: "Advanced Media",
+      title: "M.A. J.M.C",
+      subtitle: "",
+      desc: "Blends theory and practice, covering media ethics, reporting, editing, and real-world exposure through workshops.",
+      duration: "2 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+  ],
+};

@@ -761,3 +761,58 @@ export const comeToLifeData: ComeToLifeSection = {
     },
   ],
 };
+
+
+export const programmeContent = {
+  badge: "4 Specialisations",
+  title: "KRMU’s M.A. Programmes",
+  subtitle:
+    "All Our Programmes Comprise of Industry-relevant Curriculum",
+
+  programmes: [
+    {
+      id: "1",
+      tag: "English Studies",
+      title: "M.A. English",
+      subtitle: "",
+      desc: "Develops skills in literature and theory, preparing students for academia, media, and publishing careers.",
+      duration: "2 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "2",
+      tag: "Economic Analysis",
+      title: "M.A. Economics",
+      subtitle: "",
+      desc: "Builds foundations in theory, analysis, and policy, developing skills for careers in research, banking, and analytics.",
+      duration: "2 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "3",
+      tag: "Political Insights",
+      title: "M.A. Political Science",
+      subtitle: "",
+      desc: "Gain expertise in political theory, governance, and public policy, developing skills for administration and academia careers.",
+      duration: "2 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "4",
+      tag: "Applied Psychology",
+      title: "M.A. Applied Psychology",
+      subtitle: "",
+      desc: "Combines theory and practical training, developing skills for behaviour analysis and mental health promotion.",
+      duration: "2 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+  ],
+};

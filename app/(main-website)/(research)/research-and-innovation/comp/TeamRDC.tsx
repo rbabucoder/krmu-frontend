@@ -9,7 +9,7 @@ const rdcTeamData = [
   },
   {
     name: "Dr. Seema Raj (M.Phil, PhD)",
-    desg: "Associate Dean Research Grant",
+    desg: "Dean Research",
     facultyUrl: "/faculty/dr-seema-raj",
     facImgUrl: "/teamrdc/seema.png",
   },

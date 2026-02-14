@@ -28,6 +28,7 @@ import {
   lifeAsPhDScholarData,
   opportunityData,
   prominentRecruiters,
+  programmeContent,
   // scholarResearchImpactData,
   specialisationData,
   testimonialsData,
@@ -37,6 +38,8 @@ import {
 import { SeoData } from "./seo";
 import { ba2026Id } from "../constant/lpnpf";
 import PlacementRate from "../CommonComponent2026/PlacementRate";
+import FAQSection2 from "../CommonComponent2026/FAQSection2";
+import ProgrammeSection from "../CommonComponent2026/ProgrammeSection";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -105,14 +108,16 @@ const page = () => {
         whykrmCards={whykrm?.whyKrmCards}
       /> */}
       {/* <IndustryExperts data={industryexpert} /> */}
-      <Specialisation data={specialise} />
+      {/* <Specialisation data={specialise} /> */}
+      <ProgrammeSection {...programmeContent} />
       <Opportunity data={opport} />
       {/* <FeeStructureTable /> */}
       {/* <Testimonials data={testiomonial} /> */}
       {/* <ScholarResearchImpact data={scholarData} /> */}
       <ComeToLife data={worldLifeData} />
       <LifeAsPhDScholar data={lifeData} />
-      <FAQ data={faqData} />
+      {/* <FAQ data={faqData} /> */}
+      <FAQSection2 data={faqData} />
       <BusinessHub data={businessData} formId={baIdForm} />
       {/* <ApplySection data={applyData} /> */}
       <CommonFooter2 />

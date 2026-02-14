@@ -508,3 +508,58 @@ export const applySectionData: ApplySectionData = {
     { id: 3, text: "18K+ Alumni Base" },
   ],
 };
+
+
+
+export const programmeContent = {
+  badge: "4 Specialisations",
+  title: "KRMU’s Pharma Programmes",
+  subtitle:
+    "All Our Programmes Comprise of Industry-relevant Curriculum",
+
+  programmes: [
+    {
+      id: "1",
+      title: "D.Pharm.",
+      subtitle: "",
+      desc: "Combines theory, laboratory work, and practical training in chemistry, pharmacology, biochemistry, and toxicology for pharmacy careers.",
+      duration: "2 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "2",
+      tag: "Industry Ready",
+      title: "B.Pharm.",
+      subtitle: "",
+      desc: "Gain pharmaceutical knowledge with theory, lab training, and industry exposure for careers in drug development, research, and healthcare.",
+      duration: "4 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "3",
+      tag: "Research Focus",
+      title: "M.Pharm. – Pharmaceutics",
+      subtitle: "",
+      desc: "Covers drug development, pharmaceutics, delivery systems, manufacturing, and research to build scientific and practical expertise.",
+      duration: "2 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "4",
+      tag: "Advanced Studies",
+      title: "M.Pharm. – Pharmacology",
+      subtitle: "",
+      desc: "Combines drug science, therapeutics, laboratory training, research, and projects to prepare graduates for pharmaceutical and healthcare careers.",
+      duration: "2 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+  ],
+};

@@ -497,3 +497,48 @@ export const applySectionData: ApplySectionData = {
     { id: 3, text: "18K+ Alumni Base" },
   ],
 };
+
+
+
+export const programmeContent = {
+  badge: "3 Specialisations",
+  title: "KRMU’s Medical & Allied Sciences Programmes",
+  subtitle:
+    "All Our Programmes Comprise of Industry-relevant Curriculum",
+
+  programmes: [
+    {
+      id: "1",
+      tag: "Emversity",
+      title: "B.Sc. (Hons.) Emergency Medical Technology",
+      subtitle: "",
+      desc: "Gain vital emergency care, lifesaving, and trauma management skills for fast-paced healthcare careers.",
+      duration: "3 + 1 Years (Including 1 Year Internship)",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "2",
+      tag: "Emversity",
+      title: "B.Sc. (Hons.) Respiratory Technology",
+      subtitle: "",
+      desc: "Develop essential respiratory care, diagnostics, and patient management skills for today’s advanced healthcare industry.",
+      duration: "3 + 1 Years (Including 1 Year Internship)",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "3",
+      tag: "Emversity",
+      title: "B.Sc. (Hons.) Cardiovascular Technology",
+      subtitle: "",
+      desc: "Gain expertise in cardiovascular diagnostics, interventional procedures, and patient care for advanced healthcare careers.",
+      duration: "3 + 1 Years (Including 1 Year Internship)",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+  ],
+};

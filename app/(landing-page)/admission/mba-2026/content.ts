@@ -742,3 +742,47 @@ export const comeToLifeData: ComeToLifeSection = {
     },
   ],
 };
+
+
+export const programmeContent = {
+  badge: "3 Specialisations",
+  title: "KRMU’s MBA Programmes",
+  subtitle:
+    "All Our Programmes Comprise of Industry-relevant Curriculum",
+
+  programmes: [
+    {
+      id: "1",
+      tag: "Tech-Driven MBA",
+      title: "MBA",
+      subtitle: "",
+      desc: "Integrates tools, expert sessions, and certifications for tech-driven career readiness, with IBM support.",
+      duration: "2 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "2",
+      tag: "Fintech Focus",
+      title: "MBA Fintech",
+      subtitle: "",
+      desc: "Prepares students for careers in technology-enabled finance, focusing on AI-driven financial products and services.",
+      duration: "2 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "3",
+      tag: "Digital Marketing MBA",
+      title: "MBA Digital Marketing",
+      subtitle: "",
+      desc: "Teaches digital marketing strategies to navigate entrepreneurial challenges in today’s world, developed with IIDE.",
+      duration: "2 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+  ],
+};

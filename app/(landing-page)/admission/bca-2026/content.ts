@@ -523,3 +523,58 @@ export const applySectionData: ApplySectionData = {
     { id: 3, text: "18K+ Alumni Base" },
   ],
 };
+
+
+export const programmeContent = {
+  badge: "4 Specialisations",
+  title: "KRMU’s BCA Programmes",
+  subtitle:
+    "All Our Programmes Comprise of Industry-relevant Curriculum",
+
+  programmes: [
+    {
+      id: "1",
+      tag: "IBM & Microsoft Certifications",
+      title: "BCA AI & Data Science",
+      subtitle: "",
+      desc: "Gain hands-on AI, Data Science, and Machine Learning expertise through industry-aligned learning and advanced analytics tools.",
+      duration: "3 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "2",
+      tag: "IBM & Microsoft Certifications",
+      title: "BCA (Hons. / Hons. with Research) AI & Data Science",
+      subtitle: "",
+      desc: "Develop practical AI, Data Science, and Machine Learning skills through industry-aligned learning and real-world data.",
+      duration: "4 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "3",
+      tag: "EC-Council",
+      title: "BCA Cyber Security",
+      subtitle: "",
+      desc: "Offers hands-on training in ethical hacking, network defence, and preparation for cybersecurity careers.",
+      duration: "3 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "4",
+      tag: "EC-Council",
+      title: "BCA (Hons. / Hons. with Research) Cyber Security",
+      subtitle: "",
+      desc: "Teaches ethical hacking, cyber defence, and penetration testing to prepare students for cybersecurity and IT careers.",
+      duration: "4 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+  ],
+};

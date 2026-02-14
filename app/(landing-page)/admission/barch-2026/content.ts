@@ -444,3 +444,26 @@ export const applySectionData: ApplySectionData = {
     { id: 3, text: "18K+ Alumni Base" },
   ],
 };
+
+
+export const programmeContent = {
+  badge: "Build Beyond Boundaries",
+  title: "KRMU’s B.Arch. Programme",
+  subtitle:
+    "Our Programme Comprise of Industry-relevant Curriculum",
+
+  programmes: [
+    {
+      id: "1",
+      tag: "Popular Choice",
+      title: "Bachelor of Architecture",
+      subtitle: "",
+      desc: "KRMU’s B.Arch. course develops creative, analytical architects skilled in designing functional, aesthetic, technology-driven spaces.",
+      duration: "5 Years",
+      eligibility: "Passed 12th with 50% aggregate marks.*",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+  ],
+};

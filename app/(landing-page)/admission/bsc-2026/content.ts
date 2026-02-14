@@ -596,3 +596,68 @@ export const applySectionData: ApplySectionData = {
     { id: 3, text: "18K+ Alumni Base" },
   ],
 };
+
+
+
+export const programmeContent = {
+  badge: "5 Specialisations",
+  title: "KRMU’s B.Sc. Programmes",
+  subtitle:
+    "All Our Programmes Comprise of Industry-relevant Curriculum",
+
+  programmes: [
+    {
+      id: "1",
+      tag: "Physics Advanced",
+      title: "B.Sc. (Hons. / Hons. with Research) Physics",
+      subtitle: "",
+      desc: "Builds physics foundations with advanced theory, labs, and technology for analytical, research-focused learning.",
+      duration: "4 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "2",
+      title: "B.Sc. (Hons. / Hons. with Research) Chemistry",
+      subtitle: "",
+      desc: "Combines theory, practical training, and research in Chemistry, preparing students for advanced studies and careers.",
+      duration: "4 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "3",
+      title: "B.Sc. (Hons.) Forensic Science",
+      subtitle: "",
+      desc: "Trains students in forensic techniques, crime scene investigation, and lab skills for investigative careers.",
+      duration: "3 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "4",
+      tag: "Forensic Research",
+      title: "B.Sc. (Hons. / Hons. with Research) Forensic Science",
+      subtitle: "",
+      desc: "Combines theory and hands-on training in crime scene investigation, evidence handling, and forensic analysis.",
+      duration: "4 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "5",
+      tag: "Integrated Forensics",
+      title: "Integrated/Dual Degree B.Sc.-M.Sc. (Forensic Science)",
+      subtitle: "",
+      desc: "Offers forensic science training, preparing students for crime scene analysis and investigative careers.",
+      duration: "5 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+  ],
+};

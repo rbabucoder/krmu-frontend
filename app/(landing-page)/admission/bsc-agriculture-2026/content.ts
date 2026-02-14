@@ -1,3 +1,4 @@
+import Eligibility from "@/app/(main-website)/(school-programmes)/school-programmes-component/Eligibility";
 import {
   ApplySectionData,
   BusinessHubSection,
@@ -433,5 +434,29 @@ export const applySectionData: ApplySectionData = {
     { id: 1, text: "UGC Approved University" },
     { id: 2, text: "NAAC ‘A’ Accredited " },
     { id: 3, text: "18K+ Alumni Base" },
+  ],
+};
+
+
+
+export const programmeContent = {
+  badge: "Learn Smart. Farm Smarter",
+  title: "KRMU’s B.Sc. (Hons.) Agriculture Programme",
+  subtitle:
+    "Our Programme Comprise of Industry-relevant Curriculum",
+
+  programmes: [
+    {
+      id: "1",
+      tag: "Popular Choice",
+      title: "B.Sc. (Hons.) Agriculture",
+      subtitle: "",
+      desc: "Four-year undergraduate programme delivering agrarian knowledge and practical skills per ICAR, preparing students for modern agricultural challenges.",
+      duration: "4 Years",
+      eligibility: "Passed 12th with 50% aggregate marks.*",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
   ],
 };

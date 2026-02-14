@@ -715,3 +715,36 @@ export const comeToLifeData: ComeToLifeSection = {
     },
   ],
 };
+
+
+export const programmeContent = {
+  badge: "2 Specialisations",
+  title: "KRMU’s MCA Programmes",
+  subtitle:
+    "All Our Programmes Comprise of Industry-relevant Curriculum",
+
+  programmes: [
+    {
+      id: "1",
+      tag: "Core MCA",
+      title: "MCA",
+      subtitle: "",
+      desc: "Gain practical learning through advanced labs, projects & internships, focusing on professional skills and creativity.",
+      duration: "2 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "2",
+      tag: "AI & ML Specialisation",
+      title: "MCA (AI & ML)",
+      subtitle: "",
+      desc: "Combines core computer science with AI, ML, data science, and analytics for advanced technical expertise.",
+      duration: "2 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+  ],
+};

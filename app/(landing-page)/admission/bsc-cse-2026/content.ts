@@ -498,3 +498,49 @@ export const applySectionData: ApplySectionData = {
     { id: 3, text: "18K+ Alumni Base" },
   ],
 };
+
+
+
+
+export const programmeContent = {
+  badge: "3 Specialisations",
+  title: "KRMU’s B.Sc. - CSE Programmes",
+  subtitle:
+    "All Our Programmes Comprise of Industry-relevant Curriculum",
+
+  programmes: [
+    {
+      id: "1",
+      tag: "IBM",
+      title: "B.Sc. (Hons.) Computer Science",
+      subtitle: "",
+      desc: "Build industry-ready skills in Cloud Computing, AI, and Software Development through hands-on, tech-driven learning.",
+      duration: "3 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "2",
+      tag: "Security Focus",
+      title: "B.Sc. (Hons.) Cyber Security",
+      subtitle: "",
+      desc: "Trains students in ethical hacking, network security, and cyber law for responsible cybersecurity careers.",
+      duration: "3 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "3",
+      tag: "Data Driven",
+      title: "B.Sc. (Hons.) Data Science",
+      subtitle: "",
+      desc: "Inculcates big data, machine learning, and predictive modelling skills through practical analytics training.",
+      duration: "3 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+  ],
+};

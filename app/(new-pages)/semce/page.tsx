@@ -26,9 +26,9 @@ const page = () => {
         <BiggestBrand />
         <ExploreProgrammes />
         <LearnByCreating />
-        <NewsletterSection />
+        {/* <NewsletterSection /> */}
         <LifeAtSEMCE />
-        <SEMCESlideSection />
+        {/* <SEMCESlideSection /> */}
         <Teachyou />
         <SEMCETestimonials />
         <SEMCEConversationSection />

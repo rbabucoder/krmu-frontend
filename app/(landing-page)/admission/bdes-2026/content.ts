@@ -566,3 +566,57 @@ export const applySectionData: ApplySectionData = {
     { id: 3, text: "18K+ Alumni Base" },
   ],
 };
+
+
+
+export const programmeContent = {
+  badge: "4 Specialisations",
+  title: "KRMU’s B.Des. Programmes",
+  subtitle:
+    "All Our Programmes Comprise of Industry-relevant Curriculum",
+
+  programmes: [
+    {
+      id: "1",
+      title: "B.Des. (Hons. / Hons. with Research) Fashion Design",
+      subtitle: "",
+      desc: "Four-year undergraduate programme combining fashion fundamentals, trends, design training, and business skills for dynamic industry careers.",
+      duration: "4 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "2",
+      title: "B.Des. (Hons. / Hons. with Research) Interior Design",
+      subtitle: "",
+      desc: "Four-year programme combining creativity, technical skills, and industry-focused learning to prepare students for interior design careers.",
+      duration: "4 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "3",
+      tag: "ImaginXP",
+      title: "B.Des. (Hons. / Hons. with Research) UX/UI & Interaction Design",
+      subtitle: "",
+      desc: "ImaginXP-supported programme teaching user research, interface design, prototyping, and usability for impactful digital experiences.",
+      duration: "4 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "4",
+      tag: "ImaginXP",
+      title: "B.Des. (Hons. / Hons. with Research) Game Design & Animation",
+      subtitle: "",
+      desc: "ImaginXP-supported course blending storytelling, character design, and projects, preparing students for global gaming and animation careers.",
+      duration: "4 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+  ],
+};

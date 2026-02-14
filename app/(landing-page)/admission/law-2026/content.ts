@@ -20,7 +20,7 @@ import {
 export const Hero: HeroContent = {
   title: `
     <span class="sm:hidden"><span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
-        Law
+        LAW
       </span> Admissions Open 2026–27</span>
       <span class="hidden sm:block">ADMISSIONS <br />
       OPEN FOR <br />
@@ -583,7 +583,7 @@ export const programmeContent = {
       fee: "₹2,30,000",
       ctaText: "Apply Now !",
       ctaLink: "#apply-form",
-      eligibility: "Passed Bachelor's with 50% aggregate marks"
+      eligibility: "Passed Bachelor's with 50% aggregate marks."
     },
   ],
 };

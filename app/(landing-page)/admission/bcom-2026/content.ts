@@ -571,3 +571,67 @@ export const applySectionData: ApplySectionData = {
     { id: 3, text: "18K+ Alumni Base" },
   ],
 };
+
+
+export const programmeContent = {
+  badge: "5 Specialisations",
+  title: "KRMU’s B.Com. Programmes",
+  subtitle:
+    "All Our Programmes Comprise of Industry-relevant Curriculum",
+
+  programmes: [
+    {
+      id: "1",
+      title: "B.Com. (Hons.)",
+      subtitle: "",
+      desc: "Build expertise in finance, accounting, law, and taxation for commerce and banking careers.",
+      duration: "3 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "2",
+      tag: "Research Path",
+      title: "B.Com. (Hons. / Hons. With Research)",
+      subtitle: "",
+      desc: "Build strong business foundations through theory, practical learning, research, and entrepreneurship for diverse careers.",
+      duration: "4 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "3",
+      tag: "Grant Thornton",
+      title: "B.Com. (Hons.) International Accounting and Finance (ACCA - UK)",
+      subtitle: "",
+      desc: "Grant Thornton-supported programme combining ACCA-aligned learning and international exposure for global finance careers.",
+      duration: "3 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "4",
+      tag: "Grant Thornton",
+      title: "B.Com. (Hons. / Hons. with Research) International Accounting and Finance (ACCA - UK)",
+      subtitle: "",
+      desc: "Supported by Grant Thornton, the course builds global accounting expertise and practical skills for international finance careers.",
+      duration: "4 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+    {
+      id: "5",
+      title: "B.Com. Programme",
+      subtitle: "",
+      desc: "Develop analytical, financial, and managerial skills for careers in marketing, finance, banking, and insurance.",
+      duration: "3 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+    },
+  ],
+};
