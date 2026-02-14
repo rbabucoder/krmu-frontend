@@ -616,6 +616,8 @@ export const programmeContent = {
       fee: "₹2,30,000",
       ctaText: "Apply Now !",
       ctaLink: "#apply-form",
+      eligibility: "Passed 12th with 50% aggregate marks.*",
+
     },
     {
       id: "2",
@@ -627,6 +629,7 @@ export const programmeContent = {
       fee: "₹2,30,000",
       ctaText: "Apply Now !",
       ctaLink: "#apply-form",
+      eligibility: "Passed 12th with 50% aggregate marks.*",
     },
     {
       id: "3",
@@ -638,6 +641,7 @@ export const programmeContent = {
       fee: "₹2,30,000",
       ctaText: "Apply Now !",
       ctaLink: "#apply-form",
+      eligibility: "Passed 12th with 50% aggregate marks.*",
     },
     {
       id: "4",
@@ -649,6 +653,7 @@ export const programmeContent = {
       fee: "₹2,30,000",
       ctaText: "Apply Now !",
       ctaLink: "#apply-form",
+      eligibility: "Passed 12th with 50% aggregate marks.*",
     },
     {
       id: "5",
@@ -660,6 +665,7 @@ export const programmeContent = {
       fee: "₹2,30,000",
       ctaText: "Apply Now !",
       ctaLink: "#apply-form",
+      eligibility: "Passed 12th with 50% aggregate marks.*",
     },
   ],
 };
