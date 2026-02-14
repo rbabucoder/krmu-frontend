@@ -578,6 +578,7 @@ export const programmeContent = {
   programmes: [
     {
       id: "1",
+      tag: "",
       title: "B.Des. (Hons. / Hons. with Research) Fashion Design",
       subtitle: "",
       desc: "Four-year undergraduate programme combining fashion fundamentals, trends, design training, and business skills for dynamic industry careers.",
@@ -588,6 +589,7 @@ export const programmeContent = {
     },
     {
       id: "2",
+      tag: "",
       title: "B.Des. (Hons. / Hons. with Research) Interior Design",
       subtitle: "",
       desc: "Four-year programme combining creativity, technical skills, and industry-focused learning to prepare students for interior design careers.",

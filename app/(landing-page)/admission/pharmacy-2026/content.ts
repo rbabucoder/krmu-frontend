@@ -520,6 +520,7 @@ export const programmeContent = {
   programmes: [
     {
       id: "1",
+      tag: "",
       title: "D.Pharm.",
       subtitle: "",
       desc: "Combines theory, laboratory work, and practical training in chemistry, pharmacology, biochemistry, and toxicology for pharmacy careers.",

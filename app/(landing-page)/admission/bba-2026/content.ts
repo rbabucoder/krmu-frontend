@@ -904,6 +904,7 @@ export const programmeContent = {
   programmes: [
     {
       id: "1",
+      tag: "",
       title: "BBA (Human Resource)",
       subtitle: "",
       desc: "Develop expertise in human capital, strategic HR, leadership, organisational development, and talent management.",
@@ -914,6 +915,7 @@ export const programmeContent = {
     },
     {
       id: "2",
+      tag: "",
       title: "BBA (Hons. / Hons. with Research) Human Resource",
       subtitle: "",
       desc: "Builds expertise in talent management, organisational performance, strategic HR, and leadership.",
@@ -946,6 +948,7 @@ export const programmeContent = {
     },
     {
       id: "5",
+      tag: "",
       title: "BBA Finance",
       subtitle: "",
       desc: "Builds expertise in risk management, investments, and corporate finance for financial leadership.",
@@ -956,6 +959,7 @@ export const programmeContent = {
     },
     {
       id: "6",
+      tag: "",
       title: "BBA (Hons. / Hons. with Research) Finance",
       subtitle: "",
       desc: "Enhances skills in corporate finance, investments, risk management, and analytics to prepare for financial leadership.",
@@ -1010,6 +1014,7 @@ export const programmeContent = {
     },
     {
       id: "11",
+      tag: "",
       title: "BBA Travel & Tourism",
       subtitle: "",
       desc: "Transforms your passion into a global career through hospitality, innovation, and experiences.",
@@ -1020,6 +1025,7 @@ export const programmeContent = {
     },
     {
       id: "12",
+      tag: "",
       title: "BBA (Hons. / Hons. with Research) Travel & Tourism",
       subtitle: "",
       desc: "Equips students with skills and knowledge to excel in the evolving global tourism industry.",

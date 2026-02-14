@@ -582,6 +582,7 @@ export const programmeContent = {
   programmes: [
     {
       id: "1",
+      tag: "",
       title: "B.Com. (Hons.)",
       subtitle: "",
       desc: "Build expertise in finance, accounting, law, and taxation for commerce and banking careers.",
@@ -625,6 +626,7 @@ export const programmeContent = {
     },
     {
       id: "5",
+      tag: "",
       title: "B.Com. Programme",
       subtitle: "",
       desc: "Develop analytical, financial, and managerial skills for careers in marketing, finance, banking, and insurance.",
