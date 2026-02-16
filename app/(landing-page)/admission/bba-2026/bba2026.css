@@ -4,6 +4,38 @@
 @custom-variant dark (&:is(.dark *));
 
 @layer utilities {
+
+
+   .heroBannerForm__form {
+    background: #fff;
+    width: 100%;
+    border-radius: 10px;
+    padding-top: 40px;
+
+    height: 583px;
+    position: relative;
+  }
+
+  .heroBannerForm-header {
+    text-align: center;
+    /* font-family: "Inter", serif !important; */
+    font-family: "Poppins", sans-serif !important;
+  }
+
+  .heroBannerForm-header h3 {
+    font-weight: 100;
+    font-size: 18px; 
+    line-height: 1;
+  }
+  .heroBannerForm-header h3 span {
+    display: block;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 1.1;
+    margin-top: 5px;
+  }
+
+
   .flash-border .heroBannerForm__form {
     border: 1px solid red;
     border-radius: 15px;
@@ -166,33 +198,6 @@
     box-shadow: none !important;
   }
 
-  .heroBannerForm__form {
-    background: #fff;
-    width: 100%;
-    border-radius: 10px;
-    padding-top: 40px;
-
-    height: 583px;
-    position: relative;
-  }
-
-  .heroBannerForm-header {
-    text-align: center;
-    font-family: "Poppins", sans-serif !important;
-  }
-
-  .heroBannerForm-header h3 {
-    font-weight: 100;
-    font-size: 18px;
-    line-height: 1;
-  }
-  .heroBannerForm-header h3 span {
-    display: block;
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 1.1;
-    margin-top: 5px;
-  }
 
   .npf_wgts iframe {
     border-radius: 14px;
