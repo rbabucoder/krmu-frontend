@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/admin", "/wp-admin", "/api", "/feed", "/tag"],
+        disallow: ["/admin", "/api", "/feed", "/tag"],
       },
     ],
     sitemap: "https://www.krmangalam.edu.in/sitemap.xml",

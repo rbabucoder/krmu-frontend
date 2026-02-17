@@ -29,8 +29,7 @@ export const Hero: HeroContent = {
        B.Tech.
       </span>
       <br />
-      PROGRAMMES 2026-27
-      </span>
+      PROGRAMMES<br />2026-27</span>
     `,
   desc: `Ideate, Innovate and Influence the Turf of Technology with our B.Tech. Programmes <br /> comprising an industry-driven curriculum to shape tomorrow’s tech leaders`,
   heroBg: "/wp-content/landingpage/btech-2026/btech.webp",
@@ -717,3 +716,13 @@ export const programmeContent = {
     },
   ],
 };
+
+
+export const eligibilityTerms = [
+  {
+    description: "*Eligibility: 50% marks in 10+2 examination with Physics & Maths as mandatory courses. For the remaining single course, select any course from Chemistry/ Computer Science/ Electronics/ Information Technology/ Biology/ Informatics Practices/Biotechnology/ Technical Vocational subject/ Agriculture/Engineering Graphics/ Business Studies/Entrepreneurship from any recognised Board/ University."
+  },
+  {
+    description: "# Lateral B.Tech. Courses are also available except for the Robotics & AI Course."
+  },
+];

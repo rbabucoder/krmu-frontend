@@ -35,7 +35,7 @@ export const heroContent: HeroContent = {
              ADMISSIONS <br>
 OPEN FOR<br><span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">MCA </span> <br>
 
- Programmes 2026-27</span>
+ Programmes <br />2026-27</span>
           `,
   description:
     "The MCA courses are meticulously prepared to enable students to comprehend complex coding processes that, in turn, lead to a successful career path. ",
@@ -750,3 +750,10 @@ export const programmeContent = {
     },
   ],
 };
+
+
+export const eligibilityTerms = [
+  {
+    description: "*Eligibility: Passed any graduation degree (e.g., B.E. / B.Tech./ B.Sc / B.Com. / B.A./ B. Voc./ BCA, etc.) with Mathematics at 10+2 level or at Graduation level with minimum 50% aggregate marks."
+  },
+];

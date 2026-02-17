@@ -460,3 +460,10 @@ export const programmeContent = {
     },
   ],
 };
+
+
+export const eligibilityTerms = [
+  {
+    description: "*Eligibility: Must have passed 10+2 or equivalent examination from any recognised board/university in Physics, Chemistry, Maths/Biology/Agriculture with a minimum of  50% aggregate marks. "
+  },
+];

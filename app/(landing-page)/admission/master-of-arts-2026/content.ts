@@ -35,7 +35,7 @@ export const heroContent: HeroContent = {
              ADMISSIONS <br>
 OPEN FOR<br><span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">M.A. </span> <br>
 
- Programmes 2026-27</span>
+ Programmes <br />2026-27</span>
           `,
   description:
     "The M.A. programmes at KRMU focus on subject expertise, practical application, and skill development, enabling graduates to excel across multiple career options or pursue further research",

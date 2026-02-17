@@ -35,7 +35,7 @@ export const heroContent: HeroContent = {
              ADMISSIONS <br>
 OPEN FOR<br><span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">LLM </span> <br>
 
- Programmes 2026-27</span>
+ Programmes <br />2026-27</span>
           `,
   description: "Advance Your Legal Expertise. Lead with Specialisation.",
   primaryCta: {

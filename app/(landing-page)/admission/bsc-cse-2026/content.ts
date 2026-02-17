@@ -28,8 +28,7 @@ export const Hero: HeroContent = {
       B.Sc. CSE 
       </span>
       <br />
-      PROGRAMMES 2026-27
-      </span>
+      PROGRAMMES<br />2026-27</span>
     `,
   desc: `Begin Your Journey into the World of Technology`,
   heroBg: "/wp-content/landingpage/bsc-cse-2026/bsc-cse.webp",
@@ -547,3 +546,10 @@ export const programmeContent = {
     },
   ],
 };
+
+
+export const eligibilityTerms = [
+  {
+    description: "*Eligibility: Passed 10+2 or equivalent from any recognised board/university in any stream with Mathematics/ Statistics/Computer Science/Information Science as one subject with minimum 50% aggregate marks."
+  },
+];

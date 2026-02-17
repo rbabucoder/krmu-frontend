@@ -29,7 +29,7 @@ export const Hero: HeroContent = {
       BCA
       </span>
       <br />
-      PROGRAMMES 2026-27
+      PROGRAMMES <br /> 2026-27
       </span>
     `,
   desc: `Start Your Journey into the World of IT and Applications`,

@@ -28,7 +28,7 @@ export const Hero: HeroContent = {
         LAW
       </span>
       <br />
-      PROGRAMMES 2026-27</span>
+      PROGRAMMES<br />2026-27</span>
     `,
   desc: `Shape Your Legal Journey with Practical and Career-Focused Learning`,
   heroBg: "/wp-content/landingpage/law-2026/law.webp",

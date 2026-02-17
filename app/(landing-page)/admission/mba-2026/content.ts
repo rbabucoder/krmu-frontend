@@ -34,7 +34,7 @@ export const heroContent: HeroContent = {
              ADMISSIONS <br>
 OPEN FOR<br><span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">MBA </span> <br>
 
- Programmes 2026-27</span>
+ Programmes <br />2026-27</span>
           `,
   description: `Learn from the top 1% of industry experts from EY, IIDE,<br /> and IBM`,
   primaryCta: {
@@ -753,7 +753,7 @@ export const programmeContent = {
   programmes: [
     {
       id: "1",
-      tag: "Tech-Driven MBA",
+      tag: "IBM",
       title: "MBA",
       subtitle: "",
       desc: "Integrates tools, expert sessions, and certifications for tech-driven career readiness, with IBM support.",
@@ -765,7 +765,7 @@ export const programmeContent = {
     },
     {
       id: "2",
-      tag: "Fintech Focus",
+      tag: "EY",
       title: "MBA Fintech",
       subtitle: "",
       desc: "Prepares students for careers in technology-enabled finance, focusing on AI-driven financial products and services.",
@@ -777,7 +777,7 @@ export const programmeContent = {
     },
     {
       id: "3",
-      tag: "Digital Marketing MBA",
+      tag: "IIDE",
       title: "MBA Digital Marketing",
       subtitle: "",
       desc: "Teaches digital marketing strategies to navigate entrepreneurial challenges in today’s world, developed with IIDE.",

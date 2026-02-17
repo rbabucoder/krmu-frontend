@@ -27,6 +27,7 @@ import {
   prominentRecruiterContent,
   programmeContent,
   prospectusDownloadContent,
+  eligibilityTerms,
 } from "./content";
 import FAQSection from "../../PGComponent/FAQ";
 import LifeAsPhDScholar from "../../PGComponent/LifeAsPhDScholar";
@@ -35,6 +36,7 @@ import { SeoData } from "./seo";
 import { Metadata } from "next";
 import CommonFooter2 from "../commonComponent/footer/CommonFooter2";
 import ProgrammeSection from "../CommonComponent2026/ProgrammeSection";
+import EligibilityTerms from "../commonComponent/EligibilityTerms";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -125,6 +127,7 @@ const page = () => {
       <LifeAsPhDScholar data={lifeData} />
       <BusinessHub data={businessData} formId={mcaFormId} />
       <FAQSection data={faqData} />
+      <EligibilityTerms items={eligibilityTerms} />
       <CommonFooter2 />
     </>
   );

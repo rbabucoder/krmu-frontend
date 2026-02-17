@@ -29,8 +29,7 @@ export const Hero: HeroContent = {
        Bachelor of Arts
       </span>
       <br />
-      PROGRAMMES 2026-27
-      </span>
+      PROGRAMMES<br />2026-27</span>
     `,
   desc: `The Bachelor of Arts programmes are designed to build critical thinking, communication, and analytical skills among students to prepare them for confident, career-ready roles across multiple sectors`,
   heroBg: "/wp-content/landingpage/ba-2026/ba.webp",

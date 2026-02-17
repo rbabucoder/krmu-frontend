@@ -28,8 +28,7 @@ export const Hero: HeroContent = {
        B.Tech.
       </span>
       <br />
-      PROGRAMMES 2026-27
-      </span>
+      PROGRAMMES<br />2026-27</span>
     `,
   desc: `Ideate, Innovate and Influence the Turf of Technology with our B.Tech. Programmes <br /> comprising an industry-driven curriculum to shape tomorrow’s tech leaders`,
   heroBg: "/wp-content/landingpage/btech-2026/btech.webp",
@@ -679,3 +678,13 @@ export const applySectionData: ApplySectionData = {
     { id: 3, text: "18K+ Alumni Base" },
   ],
 };
+
+
+export const eligibilityTerms = [
+  {
+    description: "Passed 12th with minimum 50% aggregate marks."
+  },
+  {
+    description: "Admission based on merit and personal interview."
+  },
+];

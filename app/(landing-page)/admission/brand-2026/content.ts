@@ -29,7 +29,7 @@ export const Hero: HeroContent = {
        UG & PG
       </span>
       <br />
-      PROGRAMMES 2026-27</span>
+      PROGRAMMES<br />2026-27</span>
     `,
   desc: `<span class="text-xs font-semibold p-2.5 bg-[#fcd404] text-black mt-2.5 block w-fit">Powered by Partnerships. Proven by Placements.</span>`,
   heroBg: "/wp-content/landingpage/bpt-2026/bpt.webp",

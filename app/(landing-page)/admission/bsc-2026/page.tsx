@@ -36,10 +36,12 @@ import {
   specialisationData,
   testimonialsData,
   whyKRM,
+  eligibilityTerms,
 } from "./content";
 import PlacementRate from "../CommonComponent2026/PlacementRate";
 import FAQSection2 from "../CommonComponent2026/FAQSection2";
 import ProgrammeSection from "../CommonComponent2026/ProgrammeSection";
+import EligibilityTerms from "../commonComponent/EligibilityTerms";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -120,6 +122,7 @@ const page = () => {
       <FAQSection2 data={faqData} />
       <BusinessHub data={businessData} formId={bscIdForm} />
       {/* <ApplySection data={applyData} /> */}
+      <EligibilityTerms items={eligibilityTerms} />
       <CommonFooter2 />
     </>
   );

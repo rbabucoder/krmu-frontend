@@ -29,8 +29,7 @@ export const Hero: HeroContent = {
        B.Sc.
       </span>
       <br />
-      PROGRAMMES 2026-27
-      </span>
+      PROGRAMMES<br />2026-27</span>
     `,
   desc: `Begin a focused and future-oriented academic journey with B.Sc. programmes <br /> designed to inculcate scientific thinking, <br /> problem-solving, and practical skills among <br /> students for diverse roles across emerging and established industries`,
   heroBg: "/wp-content/landingpage/bsc-2026/bsc.webp",
@@ -669,3 +668,10 @@ export const programmeContent = {
     },
   ],
 };
+
+
+export const eligibilityTerms = [
+  {
+    description: "*Eligibility: Passed the 10+2 or equivalent examination from any recognised board/ University in Science (Physics/Chemistry/Biology/Mathematics) with minimum 50% aggregate marks."
+  },
+];

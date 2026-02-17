@@ -17,6 +17,7 @@ import WhyKRMangalam from "../CommonComponent2026/WhyKRMangalam";
 import { btechId } from "../constant/lpnpf";
 import FeeStructureTable from "./components/FeeStructure";
 import ProgrammeSection from "../CommonComponent2026/ProgrammeSection";
+import EligibilityTerms from "../commonComponent/EligibilityTerms";
 
 import {
   applySectionData,
@@ -34,6 +35,7 @@ import {
   // scholarResearchImpactData,
   specialisationData,
   testimonialsData,
+  eligibilityTerms,
   whyKRM,
 } from "./content";
 
@@ -125,9 +127,10 @@ const page = () => {
       <ComeToLife data={worldLifeData} />
       <LifeAsPhDScholar data={lifeData} />
       <FAQSection2 data={faqData} />
-      <BusinessHub2 data={businessData} formId={btechIdForm} />
+      {/* <BusinessHub2 data={businessData} formId={btechIdForm} /> */}
       {/*  <ApplySection data={applyData} /> */}
-      <CommonFooter2 /> 
+      <EligibilityTerms items={eligibilityTerms} />
+      {/* <CommonFooter2 />  */}
     </>
   );
 };

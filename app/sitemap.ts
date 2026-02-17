@@ -94,11 +94,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/awards-and-achievements`,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
       url: `${baseUrl}/accreditations-recognition-and-approvals`,
       changeFrequency: "monthly",
       priority: 0.7,
@@ -134,11 +129,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/coc`,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
       url: `${baseUrl}/registrar-office`,
       changeFrequency: "monthly",
       priority: 0.7,
@@ -164,16 +154,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/library`,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/happenings/news-and-events`,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
       url: `${baseUrl}/happenings/news-and-events`,
       changeFrequency: "monthly",
       priority: 0.7,
@@ -185,11 +165,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     {
       url: `${baseUrl}/why-krmu/youth-red-cross-committee`,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/happenings/magzine-reflections`,
       changeFrequency: "monthly",
       priority: 0.7,
     },
@@ -390,11 +365,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     {
       url: `${baseUrl}/academic-affairs`,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/contact-us`,
       changeFrequency: "monthly",
       priority: 0.7,
     },

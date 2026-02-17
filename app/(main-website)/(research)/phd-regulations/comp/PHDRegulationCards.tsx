@@ -22,19 +22,27 @@ const PHDRegulationCards = () => {
             <li>
               <Link
                 className="hover:text-[#2d7cc1]"
+                href="https://www.krmangalam.edu.in/pdfs/Odd-Semester-2026-27-1st-Call-Ph.D-Admissions.pdf"
+              >
+                <strong>Odd Semester 2026-27</strong>
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="hover:text-[#2d7cc1]"
                 href="https://krmangalam.edu.in/pdfs/5R-Ph-D-Admission-advertisement-Details-E-2025-26.pdf"
               >
                 <strong>Even Semester 2025-26</strong>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 className="hover:text-[#2d7cc1]"
                 href="https://www.krmangalam.edu.in/pdfs/6R-Ph.D-Admission-advertisement-Details-O-2025-26-1.pdf"
               >
                 <strong>ODD Semester 2025-26</strong>
               </Link>
-            </li>
+            </li> */}
             {/* <li>
               <Link
                 className="hover:text-[#2d7cc1]"

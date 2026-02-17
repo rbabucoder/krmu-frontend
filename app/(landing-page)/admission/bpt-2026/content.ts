@@ -471,3 +471,10 @@ export const programmeContent = {
     },
   ],
 };
+
+
+export const eligibilityTerms = [
+  {
+    description: "*Eligibility: Candidates must have passed 10+2 or equivalent from an recognised board/university in any stream with Physics, Chemistry, Biology with a minimum of 50% aggregate marks."
+  },
+];
