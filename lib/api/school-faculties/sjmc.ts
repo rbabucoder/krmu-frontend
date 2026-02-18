@@ -108,4 +108,19 @@ export const sjmcFaculties: SchoolFacultiesType[] = [
     featured_media_url:
       "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Ms.-Aditi-Agarwal-SEMCE.jpg",
   },
+  {
+    id: 113711,
+    slug: "yashika-khandelwal",
+    title: {
+      rendered: "Yashika Khandelwal",
+    },
+    featured_media: 10763,
+    acf: {
+      "staff-qualification": "Ph.D (Pursuing)",
+      staff_designation: "Assistant  Professor",
+      schools: [1009],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Ms.-Yashika-Khandelwal-1-SEMCE.jpg",
+  },
 ];

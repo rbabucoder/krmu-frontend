@@ -199,4 +199,34 @@ export const solsFaculties: SchoolFacultiesType[] = [
     featured_media_url:
       "https://wp.krmangalam.edu.in/wp-content/uploads/2024/05/Dr.-Thomas-Monteiro.png",
   },
+  {
+    id: 113713,
+    slug: "dr-arti-sharma",
+    title: {
+      rendered: "Dr. Arti Sharma",
+    },
+    featured_media: 1024,
+    acf: {
+      "staff-qualification": "Ph.D.",
+      staff_designation: "Assistant Professor",
+      schools: [1043],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Dr.Arti-SharmaSOLS.jpg",
+  },
+  {
+    id: 113717,
+    slug: "dr-neha-sharma",
+    title: {
+      rendered: "Dr. Neha Sharma",
+    },
+    featured_media: 1024,
+    acf: {
+      "staff-qualification": "Ph.D.",
+      staff_designation: "Assistant Professor",
+      schools: [1043],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Dr.Neha-Sharma-SOLS.jpg",
+  },
 ];

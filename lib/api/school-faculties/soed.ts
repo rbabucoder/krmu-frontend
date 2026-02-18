@@ -137,4 +137,34 @@ export const soedFaculties: SchoolFacultiesType[] = [
     featured_media_url:
       "https://wp.krmangalam.edu.in/wp-content/uploads/2023/11/Dr.-Kanchan-Khatreja-SOED.jpg",
   },
+   {
+    id: 113722,
+    slug: "dr-anupam-bansal",
+    title: {
+      rendered: "Dr. Anupam Bansal",
+    },
+    featured_media: 9335,
+    acf: {
+      "staff-qualification": "Ph.D.",
+      staff_designation: "Assistant Professor",
+      schools: [1070],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Dr.-Anupam-Bansal-SOED.jpg",
+  },
+   {
+    id: 113719,
+    slug: "ms-richa-malaviya",
+    title: {
+      rendered: "Ms. Richa Malaviya",
+    },
+    featured_media: 9335,
+    acf: {
+      "staff-qualification": "Ph.D.",
+      staff_designation: "Assistant Professor",
+      schools: [1070],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Ms.-Richa-Malaviya-SOED.jpg",
+  },
 ];
