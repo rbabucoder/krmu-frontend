@@ -350,4 +350,34 @@ export const smasFaculties: SchoolFacultiesType[] = [
     featured_media_url:
       "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Mr.-Yash-Jasoria.png",
   },
+  {
+    id: 113427,
+    slug: "ms-vinita",
+    title: {
+      rendered: "Ms. Vinita",
+    },
+    featured_media: 101428,
+    acf: {
+      "staff-qualification": "Ph.D.",
+      staff_designation: "Assistant Professor",
+      schools: [],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Ms.-Vinita.jpg",
+  },
+  {
+    id: 113766,
+    slug: "dr-madhuri-grover",
+    title: {
+      rendered: "Dr Madhuri Grover",
+    },
+    featured_media: 101428,
+    acf: {
+      "staff-qualification": "Ph.D.",
+      staff_designation: "Assistant Professor",
+      schools: [],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Dr.-Madhuri-Grover.jpg",
+  },
 ];
