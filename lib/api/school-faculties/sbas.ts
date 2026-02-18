@@ -551,7 +551,7 @@ export const sbasFaculties: SchoolFacultiesType[] = [
     },
     featured_media: 106769,
     acf: {
-      "staff-qualification": "Ph.D in Physics",
+      "staff-qualification": "Ph.D",
       staff_designation: "Professor",
       schools: [787],
     },

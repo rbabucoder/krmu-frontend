@@ -615,7 +615,7 @@ export const soetFaculties: SchoolFacultiesType[] = [
     },
     featured_media: 9132,
     acf: {
-      "staff-qualification": "Assistant Professor, Chairperson- Centre of Excellence- Cybersecurity",
+      "staff-qualification": "Ph.D.",
       staff_designation: "Assistant  Professor",
       schools: [1266],
     },
