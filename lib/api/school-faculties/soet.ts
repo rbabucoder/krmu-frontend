@@ -169,21 +169,21 @@ export const soetFaculties: SchoolFacultiesType[] = [
     featured_media_url:
       "https://wp.krmangalam.edu.in/wp-content/uploads/2024/08/Dr.Rupesh-kumar-Tipu-SOET.png",
   },
-  {
-    id: 65464,
-    slug: "ms-radhika-gupta",
-    title: {
-      rendered: "Ms. Radhika Gupta",
-    },
-    featured_media: 65465,
-    acf: {
-      "staff-qualification": "M.Tech.",
-      staff_designation: "Associate Professor",
-      schools: [1266],
-    },
-    featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/09/Radhika-Gupta.jpg",
-  },
+  // {
+  //   id: 65464,
+  //   slug: "ms-radhika-gupta",
+  //   title: {
+  //     rendered: "Ms. Radhika Gupta",
+  //   },
+  //   featured_media: 65465,
+  //   acf: {
+  //     "staff-qualification": "M.Tech.",
+  //     staff_designation: "Associate Professor",
+  //     schools: [1266],
+  //   },
+  //   featured_media_url:
+  //     "https://www.krmangalam.edu.in/wp-content/uploads/2024/09/Radhika-Gupta.jpg",
+  // },
   {
     id: 65449,
     slug: "doctor-ayyala-kishore-ajay-kumar",
@@ -606,6 +606,96 @@ export const soetFaculties: SchoolFacultiesType[] = [
     },
     featured_media_url:
       "https://wp.krmangalam.edu.in/wp-content/uploads/2024/08/Ms.-Ruchika-Bhakhar-SOET.png",
+  },
+  {
+    id: 113752,
+    slug: "dr-surabhi-shanker",
+    title: {
+      rendered: "Dr. Surabhi Shanker",
+    },
+    featured_media: 9132,
+    acf: {
+      "staff-qualification": "Assistant Professor, Chairperson- Centre of Excellence- Cybersecurity",
+      staff_designation: "Assistant  Professor",
+      schools: [1266],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Dr.-Surabhi-Shanker-SOET.png",
+  },
+  {
+    id: 113754,
+    slug: "dr-rajesh-kumar-badrana",
+    title: {
+      rendered: "Dr. Rajesh Kumar Badrana",
+    },
+    featured_media: 9132,
+    acf: {
+      "staff-qualification": "Ph.D.",
+      staff_designation: "Assistant  Professor",
+      schools: [1266],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Mr.-Rajesh-Kumar-SOET.png",
+  },
+  {
+    id: 113751,
+    slug: "dr-feroz-ahmed",
+    title: {
+      rendered: "Dr. Feroz Ahmed",
+    },
+    featured_media: 9132,
+    acf: {
+      "staff-qualification": "Ph.D.",
+      staff_designation: "Assistant  Professor",
+      schools: [1266],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Dr.-Feroz-Ahmed-SOET.png",
+  },
+  {
+    id: 113757,
+    slug: "mrs-iflah-aijaz",
+    title: {
+      rendered: "Mrs. Iflah Aijaz",
+    },
+    featured_media: 9132,
+    acf: {
+      "staff-qualification": "Ph.D.",
+      staff_designation: "Assistant  Professor",
+      schools: [1266],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Ms.-Iflah-Aijaz-SOET.jpg",
+  },
+  {
+    id: 113760,
+    slug: "ms-kriti-sharma",
+    title: {
+      rendered: "Ms. Kriti Sharma",
+    },
+    featured_media: 9132,
+    acf: {
+      "staff-qualification": "Ph.D.",
+      staff_designation: "Assistant  Professor",
+      schools: [1266],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Ms.-Kriti-Sharma-SOET.jpg",
+  },
+  {
+    id: 113762,
+    slug: "ms-neha-kaushik",
+    title: {
+      rendered: "Ms Neha Kaushik",
+    },
+    featured_media: 9132,
+    acf: {
+      "staff-qualification": "Ph.D.",
+      staff_designation: "Assistant  Professor",
+      schools: [1266],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Ms.-Neha-kaushik-SOET.png",
   },
   // {
   //   id: 1226,

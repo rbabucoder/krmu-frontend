@@ -31,26 +31,41 @@ const YourJourney = ({ title, content, buttons }: YourJourneyProps) => {
               {content}
             </p>
             <div className="flex items-center justify-center xl:justify-start flex-col lg:flex-row gap-5 lg:gap-16">
-              {buttons &&
-                buttons.map((button, i) => (
-                  // <Link
-                  //   key={i}
-                  //   className={`text-[#e31e24] bg-white px-5 py-1.5 rounded-md font-bold ${
-                  //     button.buttonclass || ""
-                  //   }`}
-                  //   href={button.buttonlink}
-
-                  // >
-                  //   {button.buttontext}
-                  // </Link>
-                  <CommonLeadPopup
+              {/* <Link
                     key={i}
-                    buttonText={button.buttontext || "Download Prospectus"}
-                    buttonClassName={`text-[#e31e24] bg-white px-5 py-1.5 rounded-md font-bold ${button.buttonclass || ""}`}
-                    redirectUrl={button.buttonlink || "#"}
-                    form_name="Download Prospectus"
-                  />
-                ))}
+                    className={`text-[#e31e24] bg-white px-5 py-1.5 rounded-md font-bold ${
+                      button.buttonclass || ""
+                    }`}
+                    href={button.buttonlink}
+
+                  >
+                    {button.buttontext}
+                  </Link> */}
+              {buttons &&
+                buttons.map((button, i) =>
+                  button.buttonclass === "yourJourneyPopup" ? (
+                    <CommonLeadPopup
+                      key={i}
+                      buttonText={button.buttontext || "Download Prospectus"}
+                      buttonClassName={`text-[#e31e24] bg-white px-5 py-1.5 rounded-md font-bold ${
+                        button.buttonclass || ""
+                      }`}
+                      redirectUrl={button.buttonlink || "#"}
+                      form_name={button.buttontext || ""}
+                    />
+                  ) : (
+                    <Link
+                      key={i}
+                      className={`text-[#e31e24] bg-white px-5 py-1.5 rounded-md font-bold ${
+                        button.buttonclass || ""
+                      }`}
+                      href={button.buttonlink || "#"}
+                      target="_blank"
+                    >
+                      {button.buttontext}
+                    </Link>
+                  ),
+                )}
             </div>
           </div>
           <div className="w-full xl:w-1/2 flex justify-center mt-10 xl:mt-0 xl:justify-end">

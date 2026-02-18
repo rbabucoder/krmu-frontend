@@ -543,4 +543,64 @@ export const sbasFaculties: SchoolFacultiesType[] = [
     featured_media_url:
       "https://www.krmangalam.edu.in/wp-content/uploads/2023/10/chandar.webp",
   },
+  {
+    id: 113724,
+    slug: "dr-kumud-kant-awasthi",
+    title: {
+      rendered: "Dr. Kumud Kant Awasthi",
+    },
+    featured_media: 106769,
+    acf: {
+      "staff-qualification": "Ph.D in Physics",
+      staff_designation: "Professor",
+      schools: [787],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Dr.-Kumud-Kant-Awasthi-SBAS.png",
+  },
+  {
+    id: 113730,
+    slug: "ms-manju-yadav",
+    title: {
+      rendered: "Ms. Manju Yadav",
+    },
+    featured_media: 106769,
+    acf: {
+      "staff-qualification": "Ph.D",
+      staff_designation: "Assistant  Professor",
+      schools: [787],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Dr.-Manju-Yadav-SBAS.jpg",
+  },
+  {
+    id: 113747,
+    slug: "dr-monika-phougat",
+    title: {
+      rendered: "Dr. Monika Phougat",
+    },
+    featured_media: 106769,
+    acf: {
+      "staff-qualification": "Ph.D",
+      staff_designation: "Assistant Professor",
+      schools: [787],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Dr.-Monika-Phougat-SBAS-1.jpg",
+  },
+  {
+    id: 113749,
+    slug: "ms-nainy-khera",
+    title: {
+      rendered: "Ms. Nainy Khera",
+    },
+    featured_media: 106769,
+    acf: {
+      "staff-qualification": "Ph.D",
+      staff_designation: "Assistant Professor",
+      schools: [787],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Dr.-Nainy-Khera-SBAS-1.jpg",
+  },
 ];
