@@ -2,6 +2,7 @@ import { folderRouteSEO } from "@/lib/api/siteseo";
 import ResearchHeroSection from "./comp/ResearchHeroSection";
 import { Metadata } from "next";
 import { STRAPI_URL } from "@/app/constant";
+import PhdStudentTestimonials from "@/app/(landing-page)/admission/phd-2026/commonComponent/PhdStudentTestimonials";
 
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -69,6 +70,7 @@ const page = () => {
   return (
     <>
       <ResearchHeroSection />
+      <PhdStudentTestimonials />
     </>
   );
 };

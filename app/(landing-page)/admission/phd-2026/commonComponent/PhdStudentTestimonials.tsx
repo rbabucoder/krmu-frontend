@@ -2,7 +2,7 @@ import PhdTestimonialCards from "./PhdTestimonialCards";
 
 const PhdStudentTestimonials = () => {
   return (
-    <section className="py-20 px-4">
+    <section className="pt-20 pb-40 px-4 res-over-sec">
       <div className="max-w-[1300px] mx-auto w-full">
         <div className="whyphdHeading relative">
           <h2 className="text-[32px] font-semibold mb-2.5 text-center">

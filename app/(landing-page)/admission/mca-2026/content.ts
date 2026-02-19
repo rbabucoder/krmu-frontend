@@ -38,7 +38,7 @@ OPEN FOR<br><span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text
  Programmes <br />2026-27</span>
           `,
   description:
-    "The MCA courses are meticulously prepared to enable students to comprehend complex coding processes that, in turn, lead to a successful career path. ",
+    "The MCA courses are meticulously prepared <br />to enable students to comprehend complex<br /> coding processes that, in turn, lead to a<br /> successful career path. ",
   primaryCta: {
     label: "Apply Now",
     href: "#",

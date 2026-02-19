@@ -60,6 +60,8 @@ const blueBadge: string[] = [
   "GCEC Global Foundation",
   "Grant Thornton",
   "Emversity",
+  "IBM & Microsoft Certifications",
+  "EC-Council & IBM",
 ];
 
 const ProgCard2 = ({ data }: Props) => {

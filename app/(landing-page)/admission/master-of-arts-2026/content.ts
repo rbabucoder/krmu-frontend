@@ -38,7 +38,7 @@ OPEN FOR<br><span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text
  Programmes <br />2026-27</span>
           `,
   description:
-    "The M.A. programmes at KRMU focus on subject expertise, practical application, and skill development, enabling graduates to excel across multiple career options or pursue further research",
+    "The M.A. programmes at KRMU focus on  <br />subject expertise,  practical application,  and <br /> skill development, enabling graduates to excel <br /> across multiple career options or  <br />pursue further research",
   primaryCta: {
     label: "Apply Now",
     href: "#",

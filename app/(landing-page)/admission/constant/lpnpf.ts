@@ -23,3 +23,4 @@ export const bscForensic2026Id = "c1c75a1b86620168ef8c99a5147eb572";
 export const mba2026Id = "70d97092be6d93eed32d53d664e6b5b1";
 export const ma2026Id = "edf4e55943e79c01f6f79cd8078d730f";
 export const barch2026Id = "e034ae0078e8f391d54eb79b36c7714a";
+export const bfa2026Id = "fdb48cf1e93bce05a165612475aa2710";

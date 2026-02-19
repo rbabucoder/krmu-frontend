@@ -14,7 +14,7 @@ import ProminentRecruiter from "../CommonComponent2026/ProminentRecruiter";
 import Specialisation from "../CommonComponent2026/Specialisation";
 import Testimonials from "../CommonComponent2026/Testimonials";
 import WhyKRMangalam from "../CommonComponent2026/WhyKRMangalam";
-import { bdesGameId } from "../constant/lpnpf";
+import { bdesGameId, bfa2026Id } from "../constant/lpnpf";
 import FeeStructureTable from "./components/FeeStructure";
 import {
   applySectionData,
@@ -67,7 +67,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 const page = () => {
-  const bdesGameIdForm = bdesGameId;
+  const bfaIdForm = bfa2026Id;
   const heroContent = Hero;
   const counters = Counters;
   const recruiters = prominentRecruiters;
@@ -88,7 +88,7 @@ const page = () => {
     <>
       <HeroSection
         content={heroContent?.title}
-        formId={bdesGameIdForm}
+        formId={bfaIdForm}
         desc={heroContent?.desc}
         marqueeData={heroMarqData}
         heroBg={heroContent?.heroBg}
@@ -117,7 +117,7 @@ const page = () => {
       <LifeAsPhDScholar data={lifeData} />
       {/* <FAQ data={faqData} /> */}
       <FAQSection2 data={faqData} />
-      <BusinessHub data={businessData} formId={bdesGameIdForm} />
+      <BusinessHub data={businessData} formId={bfaIdForm} />
       {/* <ApplySection data={applyData} /> */}
       <CommonFooter2 />
     </>

@@ -15,6 +15,26 @@
 
 /* Custom utility class */
 @layer utilities {
+
+   .whyphdHeading {
+    /* padding: 40px 0px; */
+    position: relative;
+  }
+
+  .whyphdHeading .faded-text {
+    position: absolute;
+    left: 50%;
+    top: -12px;
+    transform: translateX(-50%);
+    font-size: 40px;
+    /* top: 0; */
+  }
+
+  @media (max-width: 640px) {
+    .whyphdHeading .faded-text {
+      font-size: 30px;
+    }
+  }
   .advSchoolImg {
     position: absolute;
     bottom: 0;
@@ -2967,7 +2987,27 @@
     top: 0;
     left: -40px;
   }
-
+  .phdwhatbtn {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  .custom-border {
+    background: #ff1515;
+    height: 5px;
+    width: 84px;
+    border-radius: 50px;
+  }
+  .phdwhatbtn svg {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .phdtestcard:nth-child(even) {
+    border-color: #e30016;
+  }
+  .phdtestcard:nth-child(odd) {
+    border-color: #005da9;
+  }
   .buttonPrevNextSize svg {
     width: 55px !important;
     height: 55px !important;

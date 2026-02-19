@@ -39,6 +39,7 @@ import { brand2026Id } from "../constant/lpnpf";
 import ProgramsSection from "./components/ProgramsSection";
 import PlacementRate from "../CommonComponent2026/PlacementRate";
 import FAQSection2 from "../CommonComponent2026/FAQSection2";
+import BrandFooter from "./components/BrandFooter";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -118,7 +119,7 @@ const page = () => {
       <FAQSection2 data={faqData} />
       <BusinessHub data={businessData} formId={brand2026IdForm} />
       {/* <ApplySection data={applyData} /> */}
-      <CommonFooter2 />
+      <BrandFooter />
     </>
   );
 };

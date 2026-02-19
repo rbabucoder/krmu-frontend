@@ -37,7 +37,7 @@ OPEN FOR<br><span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text
 
  Programmes <br />2026-27</span>
           `,
-  description: "Advance Your Legal Expertise. Lead with Specialisation.",
+  description: "Advance Your Legal Expertise. <br /> Lead with Specialisation.",
   primaryCta: {
     label: "Apply Now",
     href: "#",
