@@ -14,8 +14,6 @@ import Admission2Fee from "./admission2Comp/Admission2Fee";
 import { Metadata } from "next";
 import { folderRouteSEO } from "@/lib/api/siteseo";
 import { STRAPI_URL } from "@/app/constant";
-import ScholarshipSection from "./admission2Comp/ScholarshipSection";
-import FinancialAssistanceSection from "./admission2Comp/FinancialAssistanceSection";
 
 
 
@@ -93,8 +91,8 @@ const page = async () => {
       <Admission2Process />
       <Admission2WhatMakes />
       <Admission2Search />
-      <ScholarshipSection />
-      <FinancialAssistanceSection />
+      {/* <ScholarshipSection />
+      <FinancialAssistanceSection /> */}
       <Admission2Fee />
       <Admission2Alumni admAlumni={admAlumni} />
       <AdmissionTableOfContent

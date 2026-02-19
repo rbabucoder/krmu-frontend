@@ -738,7 +738,7 @@ export const programmeContent = {
     },
     {
       id: "2",
-      tag: "AI & ML Specialisation",
+      tag: "IBM & Microsoft Certifications",
       title: "MCA (AI & ML)",
       subtitle: "",
       desc: "Combines core computer science with AI, ML, data science, and analytics for advanced technical expertise.",
