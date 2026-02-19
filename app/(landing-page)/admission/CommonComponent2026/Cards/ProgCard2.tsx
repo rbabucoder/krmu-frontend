@@ -47,7 +47,20 @@ type Props = {
   data: ProgrammeCardItem;
 };
 
-const blueBadge = ["Popular Choice", "High-In-Demand"];
+const blueBadge: string[] = [
+  "ImaginXP",
+  "IBM",
+  "Microsoft Certifications",
+  "Xebia",
+  "IIDE",
+  "Safexpress",
+  "EY",
+  "EC-Council",
+  "Samatrix.io",
+  "GCEC Global Foundation",
+  "Grant Thornton",
+  "Emversity",
+];
 
 const ProgCard2 = ({ data }: Props) => {
   return (

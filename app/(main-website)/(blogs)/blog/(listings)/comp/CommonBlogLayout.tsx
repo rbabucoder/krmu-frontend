@@ -1,8 +1,8 @@
 import { getAllBlogsByPerPageOrCategorySlug } from "@/lib/api/blogs/main-blog";
-// import CommonBlogSidebar from "./CommonBlogSidebar";
-import { MainBlogs } from "@/lib/types/blogs/main-blogs";
-import CommonBlogCard from "./CommonBlogCard";
 import Pagination from "./Pagination";
+import { Suspense } from "react";
+import { BlogCardSkeleton } from "@/app/(main-website)/components/Skeleton/BlogCardSkeleton";
+import CommonBlogList from "./CommonBlogList";
 
 type Props = {
   searchParams: Promise<{ page?: string }>;
@@ -15,11 +15,12 @@ const CommonBlogLayout = async ({
   slug,
   mainBlogClass,
 }: Props) => {
-  const resolvedSearchParams = await searchParams; // ✅ Await it
+  const resolvedSearchParams = await searchParams;
   const currentPage = Number(resolvedSearchParams?.page) || 1;
   const blogsPerPage = 6;
 
-  const { blogs, totalPages } = await getAllBlogsByPerPageOrCategorySlug(
+  // ⭐ Fetch only pagination meta here
+  const { totalPages } = await getAllBlogsByPerPageOrCategorySlug(
     blogsPerPage,
     currentPage,
     slug
@@ -62,22 +63,26 @@ const CommonBlogLayout = async ({
 
   const pageNumbers = getPageNumbers(totalPages, currentPage);
 
-
-
   return (
     <>
-      <div className={mainBlogClass || ""}>
-        {blogs?.map((blog: MainBlogs, i: number) => (
-          <CommonBlogCard
-            key={i}
-            title={blog?.title?.rendered}
-            excerpt={blog?.excerpt?.rendered}
-            slug={blog?.slug}
-            imgId={blog?.featured_media}
-            date={blog?.modified_gmt}
-          />
-        ))}
-      </div>
+      {/* ⭐ Suspense handles skeleton on pagination */}
+      <Suspense
+        key={currentPage}
+        fallback={
+          <div className={mainBlogClass}>
+            {Array.from({ length: 6 }).map((_, i) => (
+              <BlogCardSkeleton key={i} />
+            ))}
+          </div>
+        }
+      >
+        <CommonBlogList
+          currentPage={currentPage}
+          slug={slug}
+          mainBlogClass={mainBlogClass}
+        />
+      </Suspense>
+
       {/* Pagination */}
       <Pagination
         currentPage={currentPage}

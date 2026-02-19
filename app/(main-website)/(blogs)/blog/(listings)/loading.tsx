@@ -1,6 +1,5 @@
 import { BlogCardSkeleton } from "@/app/(main-website)/components/Skeleton/BlogCardSkeleton";
 
-
 export default function Loading() {
   return (
     <>
