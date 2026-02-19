@@ -167,4 +167,19 @@ export const soedFaculties: SchoolFacultiesType[] = [
     featured_media_url:
       "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Ms.-Richa-Malaviya-SOED.jpg",
   },
+   {
+    id: 113786,
+    slug: "dr-monika-bishnoi",
+    title: {
+      rendered: "Dr. Monika Bishnoi",
+    },
+    featured_media: 9335,
+    acf: {
+      "staff-qualification": "Ph.D.",
+      staff_designation: "Assistant Professor",
+      schools: [1070],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Dr.-Monika-Bishnoi-SOED.jpg",
+  },
 ];

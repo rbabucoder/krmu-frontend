@@ -603,4 +603,64 @@ export const sbasFaculties: SchoolFacultiesType[] = [
     featured_media_url:
       "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Dr.-Nainy-Khera-SBAS-1.jpg",
   },
+  {
+    id: 113768,
+    slug: "dr-pooja-bansal",
+    title: {
+      rendered: "Dr. Pooja Bansal",
+    },
+    featured_media: 106769,
+    acf: {
+      "staff-qualification": "Ph.D",
+      staff_designation: "Assistant Professor",
+      schools: [787],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Dr.-Pooja-Bansal-SBAS.jpg",
+  },
+  {
+    id: 113771,
+    slug: "dr-gaurav-gupta",
+    title: {
+      rendered: "Dr. Gaurav Gupta",
+    },
+    featured_media: 106769,
+    acf: {
+      "staff-qualification": "Ph.D",
+      staff_designation: "Assistant Professor",
+      schools: [787],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Dr.-Gaurav-Gupta-SBAS.png",
+  },
+  {
+    id: 113773,
+    slug: "mr-ajay-kumar",
+    title: {
+      rendered: "Mr. Ajay Kumar",
+    },
+    featured_media: 106769,
+    acf: {
+      "staff-qualification": "Ph.D",
+      staff_designation: "Assistant Professor",
+      schools: [787],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Mr.-Ajay-Kumar-SBAS.png",
+  },
+  {
+    id: 113776,
+    slug: "dr-sourabh-kumar-singh",
+    title: {
+      rendered: "Dr. Sourabh Kumar Singh",
+    },
+    featured_media: 106769,
+    acf: {
+      "staff-qualification": "Ph.D",
+      staff_designation: "Assistant Professor",
+      schools: [787],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Dr.-Sourabh-Kumar-Singh-SBAS.png",
+  },
 ];

@@ -697,6 +697,53 @@ export const soetFaculties: SchoolFacultiesType[] = [
     featured_media_url:
       "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Ms.-Neha-kaushik-SOET.png",
   },
+  {
+    id: 113778,
+    slug: "dr-digvijay-singh",
+    title: {
+      rendered: "Dr. Digvijay Singh",
+    },
+    featured_media: 9132,
+    acf: {
+      "staff-qualification": "Ph.D.",
+      staff_designation: "Assistant  Professor",
+      schools: [1266],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Dr.Digvijay-Singh-SOET.png",
+  },
+
+  {
+    id: 113782,
+    slug: "mr-mohammad-aijaz",
+    title: {
+      rendered: "Mr. Mohammad Aijaz",
+    },
+    featured_media: 9132,
+    acf: {
+      "staff-qualification": "Ph.D.",
+      staff_designation: "Assistant  Professor",
+      schools: [1266],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Mr.-Mohammad-Aijaz-SOET.png",
+  },
+
+  {
+    id: 113784,
+    slug: "ms-swati-jain-kansal",
+    title: {
+      rendered: "Ms. Swati Jain Kansal",
+    },
+    featured_media: 9132,
+    acf: {
+      "staff-qualification": "Ph.D.",
+      staff_designation: "Assistant  Professor",
+      schools: [1266],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Ms.-Swati-Jain-Kansal-SOET.png",
+  },
   // {
   //   id: 1226,
   //   slug: "dr-pallavi-pandey",

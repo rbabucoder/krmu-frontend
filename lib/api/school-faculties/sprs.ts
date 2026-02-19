@@ -229,4 +229,19 @@ export const sprsFaculties: SchoolFacultiesType[] = [
     featured_media_url:
       "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.Ankita-SamuelP.T.jpg",
   },
+  {
+    id: 113780,
+    slug: "mansi-dewan",
+    title: {
+      rendered: "Dr. Mansi Dewan",
+    },
+    featured_media: 106768,
+    acf: {
+      "staff-qualification": "MPT",
+      staff_designation: "Assistant  Professor",
+      schools: [],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Dr.Mansi-DewanP.T.-sprs.jpg",
+  },
 ];
