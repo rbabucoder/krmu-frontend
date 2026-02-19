@@ -30,7 +30,7 @@ export const Hero: HeroContent = {
       <br />
       PROGRAMMES <br />2026-27 </span>
     `,
-  desc: `Start your healthcare journey with knowledgeable instructors, <br /> cutting-edge labs, industry-exposure, and career-focused <br />  curriculum`,
+  desc: `Start your healthcare journey with <br /> knowledgeable  instructors,  cutting-edge labs, <br /> industry-exposure, and career-focused <br />  curriculum`,
   heroBg:
     "/wp-content/landingpage/allied-health-science-2026/allied-health-science.webp",
   // middleImg: "/landingpage/law-2026/law.webp",

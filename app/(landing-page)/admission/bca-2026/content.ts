@@ -32,7 +32,7 @@ export const Hero: HeroContent = {
       PROGRAMMES <br /> 2026-27
       </span>
     `,
-  desc: `Start Your Journey into the World of IT and Applications`,
+  desc: `Start Your Journey into the World of <br />  IT and Applications`,
   heroBg: "/wp-content/landingpage/bca-2026/bca.webp",
   middleImg: "",
   mobileImg: "",

@@ -24,13 +24,13 @@ export const Hero: HeroContent = {
       </span> Admissions Open 2026–27</span>
       <span class="hidden sm:block">ADMISSIONS <br />
       OPEN FOR <br />
-      <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
-       Bachelor of <br /> Architecture
+      <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold">
+       Bachelor <br /> of  Architecture
       </span>
       <br />
-      PROGRAMME 2026-27 </span>
+      PROGRAMME <br /> 2026-27 </span>
     `,
-  desc: `From conceptual learning in classrooms to building creative constructions <br /> via immersive projects,  the B.Arch. course will enable you to shape the future of architecture`,
+  desc: `From conceptual learning in classrooms to <br /> building creative constructions via immersive <br />  projects,  the B.Arch. course will enable you <br />  to shape the future of architecture`,
   heroBg: "/wp-content/landingpage/barch-2026/barch.webp",
   // middleImg: "/landingpage/law-2026/law.webp",
   middleImg: "",

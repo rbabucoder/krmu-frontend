@@ -29,10 +29,10 @@ export const Hero: HeroContent = {
        B.Com.
       </span>
       <br />
-      PROGRAMMES 2026-27
+      PROGRAMMES <br /> 2026-27
      </span>
     `,
-  desc: `Choose from specialised, industry-backed B.Com. programmes and <br /> step confidently into the world of business and finance`,
+  desc: `Choose from specialised, <br /> industry-backed B.Com. <br />  programmes and  step confidently  <br />into the world of business <br /> and finance`,
   heroBg: "/wp-content/landingpage/bcom-2026/bcom.webp",
   middleImg: "",
   mobileImg: "",

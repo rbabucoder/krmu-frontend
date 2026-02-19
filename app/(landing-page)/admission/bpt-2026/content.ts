@@ -25,14 +25,14 @@ export const Hero: HeroContent = {
       <span class="hidden sm:block">
       ADMISSIONS <br />
       OPEN FOR <br />
-      <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
+      <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-bold">
        Bachelor of Physiotherapy
       </span>
       <br />
-      PROGRAMME 2026-27
+      PROGRAMME <br /> 2026-27
       </span>
     `,
-  desc: `Learn to Lead in the realm of healthcare under the expert guidance of our distinguished <br /> faculty while utilising state-of-the-art facilities for hands-on physiotherapy learning`,
+  desc: `Learn to Lead in the realm of healthcare under the expert <br /> guidance of our distinguished faculty while utilising <br /> state-of-the-art facilities for <br /> hands-on physiotherapy learning`,
   heroBg: "/wp-content/landingpage/bpt-2026/bpt.webp",
   middleImg: "",
   mobileImg: "",

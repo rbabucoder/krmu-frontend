@@ -31,7 +31,7 @@ export const Hero: HeroContent = {
       <br />
       PROGRAMMES<br />2026-27</span>
     `,
-  desc: `Begin a focused and future-oriented academic journey with B.Sc. programmes <br /> designed to inculcate scientific thinking, <br /> problem-solving, and practical skills among <br /> students for diverse roles across emerging and established industries`,
+  desc: `Begin a focused and future-oriented academic <br /> journey with B.Sc. programmes  designed to <br /> inculcate scientific thinking, <br /> problem-solving, and practical skills among <br /> students for diverse roles across emerging <br /> and established industries`,
   heroBg: "/wp-content/landingpage/bsc-2026/bsc.webp",
   // middleImg: "/landingpage/law-2026/law.webp",
   middleImg: "",

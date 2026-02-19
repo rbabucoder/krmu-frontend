@@ -22,15 +22,15 @@ export const Hero: HeroContent = {
   title: `
       ADMISSIONS <br />
       OPEN FOR <br />
-      <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-8xl font-bold">
+      <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-bold">
        B.Sc. (Hons.) Agriculture
       </span>
       <br />
-      PROGRAMME 2026-27 
+      PROGRAMME <br /> 2026-27 
     `,
-  desc: `Discover the foundation of agricultural excellence with K.R. Mangalam University’s <br />
-   four-year agriculture programme, designed to build strong agrarian knowledge, <br />practical expertise, and an understanding of modern farming practices`,
-  heroBg: "/wp-content/landingpage/bsc-agriculture-2026/bsc-agriculture.webp",
+  desc: `Discover the foundation of agricultural excellence <br /> with K.R. Mangalam University’s 
+   four-year agriculture programme, <br /> designed  to build strong agrarian knowledge, <br />practical expertise, and an understanding <br /> of modern farming practices`,
+  heroBg: "/wp-content/landingpage/bsc-agriculture-2026/bscbg.webp",
   // middleImg: "/landingpage/law-2026/law.webp",
   middleImg: "",
   mobileImg: "",

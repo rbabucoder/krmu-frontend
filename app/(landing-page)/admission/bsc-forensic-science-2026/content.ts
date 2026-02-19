@@ -29,10 +29,10 @@ export const Hero: HeroContent = {
       Forensic Science
       </span>
       <br />
-      PROGRAMMES 2026-27 
+      PROGRAMMES <br />2026-27 
       </span>
     `,
-  desc: `The Forensic Science courses strive to prepare the next generation of professional <br /> analysts who pursue truth with the precision of science and integrity`,
+  desc: `The Forensic Science <br /> courses strive to  prepare <br /> the next generation of <br /> professional  analysts <br /> who pursue  truth with the <br /> precision of science and integrity`,
   heroBg: "/wp-content/landingpage/bsc-forensic-science-2026/bsc-forensic.webp",
   // middleImg: "/landingpage/law-2026/law.webp",
   middleImg: "",

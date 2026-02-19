@@ -33,7 +33,7 @@ export const Hero: HeroContent = {
       <br />
       PROGRAMMES<br />2026-27</span>
     `,
-  desc: `Gain industry-focused education and build strong foundations in <br /> pharmaceutical sciences that prepare you for career-ready roles in the <br /> pharmacy sector `,
+  desc: `Gain industry-focused education and <br /> build strong foundations in  pharmaceutical <br /> sciences  that prepare you for career-ready <br /> roles in the  pharmacy sector `,
   heroBg: "/wp-content/landingpage/pharmacy-2026/pharmacy.webp",
   middleImg: "",
   mobileImg: "",

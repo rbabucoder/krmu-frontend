@@ -28,7 +28,7 @@
 //             <span className="text-[#6b7280]">Annual Fee</span>
 //             <span className="text-[#1f2937] font-semibold">₹2,30,000</span>
 //           </div>
-          
+
 //         </div>
 //         <Link href="#apply-form" className="w-full text-white bg-[#002d73] hover:bg-[#0052cc] hover:-translate-y-0.5 cursor-pointer py-3 px-5 mt-auto min-h-12 text-base font-semibold rounded-xl inline-flex justify-center items-center">
 //           Apply for CSE
@@ -40,13 +40,14 @@
 
 // export default ProgCard2;
 
-
 import Link from "next/link";
 import { ProgrammeCardItem } from "../../law-2026/contentype";
 
 type Props = {
   data: ProgrammeCardItem;
 };
+
+const blueBadge = ["Popular Choice", "High-In-Demand"];
 
 const ProgCard2 = ({ data }: Props) => {
   return (
@@ -61,11 +62,12 @@ const ProgCard2 = ({ data }: Props) => {
       {/* TAG */}
 
       {data?.tag?.trim() && (
-  <div className="absolute top-4 left-4 py-1 px-3 text-xs font-bold bg-[#e31e24] text-white uppercase rounded-full z-10">
-    {data.tag}
-  </div>
-)}
-
+        <div
+          className={`absolute top-4 left-4 py-1 px-3 text-xs font-bold ${blueBadge?.find((item) => item === data?.tag?.trim()) ? "bg-[#002d73]" : "bg-[#e31e24]"} text-white uppercase rounded-full z-10`}
+        >
+          {data.tag}
+        </div>
+      )}
 
       {/* <div className="absolute top-4 left-4 py-1 px-3 text-xs font-bold bg-[#e31e24] text-white uppercase rounded-full z-10">
         {data.tag}
@@ -108,31 +110,25 @@ const ProgCard2 = ({ data }: Props) => {
         </div> */}
 
         <div className="grid grid-cols-[120px_1fr] gap-y-2 mb-5 p-4 bg-[#f9fafb] rounded-xl text-sm">
+          <span className="text-[#6b7280]">Duration</span>
+          <span className="text-[#1f2937] font-semibold text-right">
+            {data.duration}
+          </span>
 
-  <span className="text-[#6b7280]">Duration</span>
-  <span className="text-[#1f2937] font-semibold text-right">
-    {data.duration}
-  </span>
-
-  {/* <span className="text-[#6b7280]">Annual Fee</span>
+          {/* <span className="text-[#6b7280]">Annual Fee</span>
   <span className="text-[#1f2937] font-semibold text-right">
     {data.fee}
   </span> */}
 
-  <span className="text-[#6b7280]">Eligibility</span>
-  <span className="text-[#1f2937] font-semibold text-right">
-  {data.eligibility ?? "Passed 12th with 50% aggregate marks."}
-</span>
+          <span className="text-[#6b7280]">Eligibility</span>
+          <span className="text-[#1f2937] font-semibold text-right">
+            {data.eligibility ?? "Passed 12th with 50% aggregate marks."}
+          </span>
 
-  {/* <span className="text-[#1f2937] font-semibold text-right">
+          {/* <span className="text-[#1f2937] font-semibold text-right">
     Passed 12th with 50% aggregate marks
   </span> */}
-
-</div>
-
-
-        
-        
+        </div>
 
         {/* CTA */}
         <Link

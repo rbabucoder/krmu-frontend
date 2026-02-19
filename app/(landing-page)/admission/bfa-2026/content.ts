@@ -29,10 +29,10 @@ export const Hero: HeroContent = {
        BFA
       </span>
       <br />
-      PROGRAMMES 2026-27
+      PROGRAMMES <br /> 2026-27
       </span>
     `,
-  desc: `A Structured Pathway to Professional Fine Arts Practice`,
+  desc: `A Structured Pathway to Professional <br /> Fine Arts Practice`,
   heroBg: "/wp-content/landingpage/bfa-2026/bfa.webp",
   // middleImg: "/landingpage/law-2026/law.webp",
   middleImg: "",

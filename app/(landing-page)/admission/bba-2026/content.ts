@@ -29,10 +29,10 @@ export const Hero: HeroContent = {
        BBA 
       </span>
       <br />
-      PROGRAMMES 2026-27
+      PROGRAMMES <br /> 2026-27
       </span>
     `,
-  desc: `Start Building Your Future in Business and Management`,
+  desc: `Start Building Your Future in <br /> Business and Management`,
   heroBg: "/wp-content/landingpage/bba-2026/bba.webp",
 
   middleImg: "",

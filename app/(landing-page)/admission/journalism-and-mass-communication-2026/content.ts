@@ -26,13 +26,13 @@ export const Hero: HeroContent = {
       ADMISSIONS <br />
       OPEN FOR <br />
       <span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold">
-       Journalism & Mass Communication
+       Journalism  & Mass <br /> Communication
       </span>
       <br />
-      PROGRAMMES 2026-27
+      PROGRAMMES <br /> 2026-27
       </span>
     `,
-  desc: `The JMC course focuses on developing critical thinking, communication skills, <br />creativity, and social awareness, preparing students for the fast-changing world of media, communication and storytelling`,
+  desc: `The JMC course focuses on developing critical <br /> thinking, communication skills, creativity, <br /> and social awareness, preparing students <br /> for the fast-changing world of media, <br /> communication and storytelling`,
   heroBg: "/wp-content/landingpage/sjmc-2026/sjmc.webp",
   // middleImg: "/landingpage/law-2026/law.webp",
   middleImg: "",

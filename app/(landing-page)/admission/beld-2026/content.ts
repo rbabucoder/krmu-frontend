@@ -29,10 +29,10 @@ export const Hero: HeroContent = {
        B.Ed. & <br /> B.El.Ed.
       </span>
       <br />
-      PROGRAMMES 2026-27
+      PROGRAMMES <br /> 2026-27
       </span>
     `,
-  desc: `Your path to pursuing a teaching career begins with K.R. Mangalam University’s <br />Education Programmes, preparing you to inspire the next generation`,
+  desc: `Your path to pursuing a teaching career begins <br /> with K.R. Mangalam University’s Education Programmes, <br /> preparing you to inspire the next generation`,
   heroBg: "/wp-content/landingpage/beld-2026/beld.webp",
   middleImg: "",
   mobileImg: "",

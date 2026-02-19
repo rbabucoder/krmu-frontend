@@ -36,7 +36,7 @@ OPEN FOR<br><span class="text-[#fcd404] text-2xl sm:text-3xl md:text-5xl lg:text
 
  Programmes <br />2026-27</span>
           `,
-  description: `Learn from the top 1% of industry experts from EY, IIDE,<br /> and IBM`,
+  description: `Learn from the top 1% of industry <br /> experts from EY, IIDE, and IBM`,
   primaryCta: {
     label: "Apply Now",
     href: "#",
