@@ -150,7 +150,7 @@ export const soedFaculties: SchoolFacultiesType[] = [
       schools: [1070],
     },
     featured_media_url:
-      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Dr.-Anupam-Bansal-SOED.jpg",
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/anupam-bansal.webp",
   },
    {
     id: 113719,
@@ -160,7 +160,7 @@ export const soedFaculties: SchoolFacultiesType[] = [
     },
     featured_media: 9335,
     acf: {
-      "staff-qualification": "Ph.D.",
+      "staff-qualification": "M.Phil.",
       staff_designation: "Assistant Professor",
       schools: [1070],
     },

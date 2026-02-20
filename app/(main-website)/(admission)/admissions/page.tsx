@@ -98,6 +98,7 @@ const page = async () => {
 
 
   const singleProgFAQLD = createProgFaqSchema(allFaqs);
+  console.log('singleProgFAQLD', singleProgFAQLD);
   return (
     <>
       <Script
