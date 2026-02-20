@@ -9,13 +9,11 @@ import Admission2Process from "./admission2Comp/Admission2Process";
 import Admission2Hero from "./admission2Comp/Admission2Hero";
 import Admission2Fee from "./admission2Comp/Admission2Fee";
 
-
-
 import { Metadata } from "next";
 import { folderRouteSEO } from "@/lib/api/siteseo";
 import { STRAPI_URL } from "@/app/constant";
-
-
+import { createProgFaqSchema } from "@/lib/api/common";
+import Script from "next/script";
 
 export async function generateMetadata(): Promise<Metadata> {
   const seoData = await folderRouteSEO("admissions");
@@ -84,9 +82,28 @@ const page = async () => {
   const admTOC = admission2Data?.adm_toc;
   const admAlumni = admission2Data?.adm2_alumni;
 
+  type FAQProg = {
+    ques: string;
+    ans: string;
+  };
 
+  const allFaqs: FAQProg[] = admTOC?.tocfaq.flatMap((section) =>
+    section.faq.map((item) => ({
+      id: item.id,
+      ques: item.ques,
+      ans: item.ans,
+      tocpoint: section.tocpoint, // optional, keep category info
+    })),
+  );
+
+
+  const singleProgFAQLD = createProgFaqSchema(allFaqs);
   return (
     <>
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: singleProgFAQLD }}
+      />
       <Admission2Hero />
       <Admission2Process />
       <Admission2WhatMakes />

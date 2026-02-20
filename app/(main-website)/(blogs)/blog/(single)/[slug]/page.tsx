@@ -99,7 +99,7 @@ const page = async ({ params }: Props) => {
           dangerouslySetInnerHTML={{
             __html: schemaScript
               .replace(/<script[^>]*>/g, "")
-              .replace(/<\/script>/g, ""),
+              .replace(/<\/script>/g, ""), 
           }}
           strategy="beforeInteractive"
         />

@@ -11,11 +11,11 @@ import LifeAsPhDScholar from "../CommonComponent2026/LifeAsPhDScholar";
 import Opportunity from "../CommonComponent2026/Opportunity";
 import ProminentRecruiter from "../CommonComponent2026/ProminentRecruiter";
 // import ScholarResearchImpact from "../CommonComponent2026/ScholarResearchImpact";
-import Specialisation from "../CommonComponent2026/Specialisation";
-import Testimonials from "../CommonComponent2026/Testimonials";
-import WhyKRMangalam from "../CommonComponent2026/WhyKRMangalam";
+// import Specialisation from "../CommonComponent2026/Specialisation";
+// import Testimonials from "../CommonComponent2026/Testimonials";
+// import WhyKRMangalam from "../CommonComponent2026/WhyKRMangalam";
 import { barch2026Id, bbaFormId, lawFormId } from "../constant/lpnpf";
-import FeeStructureTable from "./components/FeeStructure";
+// import FeeStructureTable from "./components/FeeStructure";
 import {
   applySectionData,
   businessHubData,
@@ -40,7 +40,7 @@ import { SeoData } from "./seo";
 import PlacementRate from "../CommonComponent2026/PlacementRate";
 import FAQSection2 from "../CommonComponent2026/FAQSection2";
 import ProgrammeSection from "../CommonComponent2026/ProgrammeSection";
-import Eligibility from "@/app/(main-website)/(school-programmes)/school-programmes-component/Eligibility";
+// import Eligibility from "@/app/(main-website)/(school-programmes)/school-programmes-component/Eligibility";
 import EligibilityTerms from "../commonComponent/EligibilityTerms";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -74,9 +74,9 @@ const page = () => {
   const heroContent = Hero;
   const counters = Counters;
   const recruiters = prominentRecruiters;
-  const whykrm = whyKRM;
-  const industryexpert = industryExperts;
-  const specialise = specialisationData;
+  // const whykrm = whyKRM;
+  // const industryexpert = industryExperts;
+  // const specialise = specialisationData;
   const opport = opportunityData;
   const testiomonial = testimonialsData;
   // const scholarData = scholarResearchImpactData;
@@ -84,7 +84,7 @@ const page = () => {
   const lifeData = lifeAsPhDScholarData;
   const faqData = faqSectionData;
   const businessData = businessHubData;
-  const applyData = applySectionData;
+  // const applyData = applySectionData;
   const heroMarqData = heroMarqueeData;
 
   return (
