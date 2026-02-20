@@ -15,7 +15,20 @@
 
 /* Custom utility class */
 @layer utilities {
+.interest-lists .list-items{
+ list-style: disc;
+ padding-left: 20px;
+ margin: 10px 0px;
+}
 
+.tab-content ol{
+  list-style: decimal;
+  padding-left: 40px;
+  margin: 10px 0px;
+}
+.tab-content ol li{
+  margin-bottom: 6px;
+}
    .whyphdHeading {
     /* padding: 40px 0px; */
     position: relative;
