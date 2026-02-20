@@ -24,7 +24,7 @@ export const sbasFaculties: SchoolFacultiesType[] = [
     },
     featured_media: 9826,
     acf: {
-      "staff-qualification": "Ph.D (Physics)",
+      "staff-qualification": "Ph.D. (Physics)",
       staff_designation: "Professor",
       schools: [],
     },
@@ -295,7 +295,7 @@ export const sbasFaculties: SchoolFacultiesType[] = [
     },
     featured_media: 101427,
     acf: {
-      "staff-qualification": "Ph.D in Forensic Science (Pursuing)",
+      "staff-qualification": "Ph.D. in Forensic Science (Pursuing)",
       staff_designation: "Assistant  Professor",
       schools: [787],
     },
@@ -310,7 +310,7 @@ export const sbasFaculties: SchoolFacultiesType[] = [
     },
     featured_media: 9979,
     acf: {
-      "staff-qualification": "Ph.D in Physics",
+      "staff-qualification": "Ph.D. in Physics",
       staff_designation: "Assistant  Professor",
       schools: [787],
     },
@@ -325,7 +325,7 @@ export const sbasFaculties: SchoolFacultiesType[] = [
     },
     featured_media: 9968,
     acf: {
-      "staff-qualification": "Ph.D in Physics",
+      "staff-qualification": "Ph.D. in Physics",
       staff_designation: "Assistant  Professor",
       schools: [787],
     },
@@ -340,7 +340,7 @@ export const sbasFaculties: SchoolFacultiesType[] = [
     },
     featured_media: 101949,
     acf: {
-      "staff-qualification": "Ph.D (Physics)",
+      "staff-qualification": "Ph.D. (Physics)",
       staff_designation: "Assistant  Professor",
       schools: [787],
     },
@@ -355,7 +355,7 @@ export const sbasFaculties: SchoolFacultiesType[] = [
     },
     featured_media: 9966,
     acf: {
-      "staff-qualification": "Ph.D (Chemistry)",
+      "staff-qualification": "Ph.D. (Chemistry)",
       staff_designation: "Assistant  Professor",
       schools: [787],
     },
@@ -370,7 +370,7 @@ export const sbasFaculties: SchoolFacultiesType[] = [
     },
     featured_media: 58922,
     acf: {
-      "staff-qualification": "Ph.D (Chemistry)",
+      "staff-qualification": "Ph.D. (Chemistry)",
       staff_designation: "Assistant  Professor",
       schools: [787],
     },
@@ -385,7 +385,7 @@ export const sbasFaculties: SchoolFacultiesType[] = [
     },
     featured_media: 9958,
     acf: {
-      "staff-qualification": "Ph.D in Physics",
+      "staff-qualification": "Ph.D. in Physics",
       staff_designation: "Assistant  Professor",
       schools: [787],
     },
@@ -400,7 +400,7 @@ export const sbasFaculties: SchoolFacultiesType[] = [
     },
     featured_media: 9943,
     acf: {
-      "staff-qualification": "Ph.D (Chemistry)",
+      "staff-qualification": "Ph.D. (Chemistry)",
       staff_designation: "Assistant  Professor",
       schools: [787],
     },
@@ -415,7 +415,7 @@ export const sbasFaculties: SchoolFacultiesType[] = [
     },
     featured_media: 9941,
     acf: {
-      "staff-qualification": "Ph.D (Physics)",
+      "staff-qualification": "Ph.D. (Physics)",
       staff_designation: "Assistant  Professor",
       schools: [787],
     },
@@ -430,7 +430,7 @@ export const sbasFaculties: SchoolFacultiesType[] = [
     },
     featured_media: 9887,
     acf: {
-      "staff-qualification": "Ph.D Mathematics",
+      "staff-qualification": "Ph.D. Mathematics",
       staff_designation: "Assistant  Professor",
       schools: [787],
     },
@@ -445,7 +445,7 @@ export const sbasFaculties: SchoolFacultiesType[] = [
     },
     featured_media: 9192,
     acf: {
-      "staff-qualification": "Ph.D (Mathematics)",
+      "staff-qualification": "Ph.D. (Mathematics)",
       staff_designation: "Assistant  Professor",
       schools: [787],
     },
@@ -460,7 +460,7 @@ export const sbasFaculties: SchoolFacultiesType[] = [
     },
     featured_media: 8922,
     acf: {
-      "staff-qualification": "Ph.D (Chemistry)",
+      "staff-qualification": "Ph.D. (Chemistry)",
       staff_designation: "Assistant  Professor",
       schools: [787],
     },
@@ -490,7 +490,7 @@ export const sbasFaculties: SchoolFacultiesType[] = [
     },
     featured_media: 9863,
     acf: {
-      "staff-qualification": "Ph.D (Mathematics)",
+      "staff-qualification": "Ph.D. (Mathematics)",
       staff_designation: "Associate Professor",
       schools: [],
     },
@@ -505,7 +505,7 @@ export const sbasFaculties: SchoolFacultiesType[] = [
     },
     featured_media: 9861,
     acf: {
-      "staff-qualification": "Ph.D (Physics)",
+      "staff-qualification": "Ph.D. (Physics)",
       staff_designation: "Associate Professor",
       schools: [787],
     },
@@ -520,7 +520,7 @@ export const sbasFaculties: SchoolFacultiesType[] = [
     },
     featured_media: 9862,
     acf: {
-      "staff-qualification": "Ph.D (Mathematics)",
+      "staff-qualification": "Ph.D. (Mathematics)",
       staff_designation: "Assistant Professor",
       schools: [787],
     },
@@ -536,7 +536,7 @@ export const sbasFaculties: SchoolFacultiesType[] = [
     },
     featured_media: 106769,
     acf: {
-      "staff-qualification": "Ph.D (Chemistry)",
+      "staff-qualification": "Ph.D. (Chemistry)",
       staff_designation: "Associate Professor",
       schools: [787],
     },
@@ -551,7 +551,7 @@ export const sbasFaculties: SchoolFacultiesType[] = [
     },
     featured_media: 106769,
     acf: {
-      "staff-qualification": "Ph.D",
+      "staff-qualification": "Ph.D.",
       staff_designation: "Professor",
       schools: [787],
     },
@@ -566,7 +566,7 @@ export const sbasFaculties: SchoolFacultiesType[] = [
     },
     featured_media: 106769,
     acf: {
-      "staff-qualification": "Ph.D",
+      "staff-qualification": "Ph.D.",
       staff_designation: "Assistant  Professor",
       schools: [787],
     },
@@ -581,7 +581,7 @@ export const sbasFaculties: SchoolFacultiesType[] = [
     },
     featured_media: 106769,
     acf: {
-      "staff-qualification": "Ph.D",
+      "staff-qualification": "Ph.D.",
       staff_designation: "Assistant Professor",
       schools: [787],
     },
@@ -596,7 +596,7 @@ export const sbasFaculties: SchoolFacultiesType[] = [
     },
     featured_media: 106769,
     acf: {
-      "staff-qualification": "Ph.D",
+      "staff-qualification": "Ph.D.",
       staff_designation: "Assistant Professor",
       schools: [787],
     },
@@ -611,7 +611,7 @@ export const sbasFaculties: SchoolFacultiesType[] = [
     },
     featured_media: 106769,
     acf: {
-      "staff-qualification": "Ph.D",
+      "staff-qualification": "Ph.D.",
       staff_designation: "Assistant Professor",
       schools: [787],
     },
@@ -626,7 +626,7 @@ export const sbasFaculties: SchoolFacultiesType[] = [
     },
     featured_media: 106769,
     acf: {
-      "staff-qualification": "Ph.D",
+      "staff-qualification": "Ph.D.",
       staff_designation: "Assistant Professor",
       schools: [787],
     },
@@ -641,7 +641,7 @@ export const sbasFaculties: SchoolFacultiesType[] = [
     },
     featured_media: 106769,
     acf: {
-      "staff-qualification": "Ph.D",
+      "staff-qualification": "Ph.D.",
       staff_designation: "Assistant Professor",
       schools: [787],
     },
@@ -656,7 +656,7 @@ export const sbasFaculties: SchoolFacultiesType[] = [
     },
     featured_media: 106769,
     acf: {
-      "staff-qualification": "Ph.D",
+      "staff-qualification": "Ph.D.",
       staff_designation: "Assistant Professor",
       schools: [787],
     },
