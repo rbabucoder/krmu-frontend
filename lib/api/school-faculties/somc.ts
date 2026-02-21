@@ -2,6 +2,21 @@ import { SchoolFacultiesType } from "@/lib/types/common";
 
 export const somcFaculties: SchoolFacultiesType[] = [
   {
+    id: 113794,
+    slug: "dr-deepak-maun",
+    title: {
+      rendered: "Dr. Deepak Maun",
+    },
+    featured_media: 55322,
+    acf: {
+      "staff-qualification": `<span class="text-base">Ph.D. (Innovation & Management in Education) (IIM Ahmedabad)</span>`,
+      staff_designation: "Director, Experiential Learning",
+      schools: [1126],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Deepak-Maun.jpg",
+  },
+    {
     id: 53038,
     slug: "dr-jitin-kumar-gambhir",
     title: {

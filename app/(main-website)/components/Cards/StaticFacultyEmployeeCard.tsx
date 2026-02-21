@@ -43,8 +43,18 @@ export const StaticFacultyEmployeeCard = ({
           </div>
 
           <span className=" md:text-2xl font-bold leading-[1]">{name}</span>
-          <span className="font-normal md:font-medium break-all">{desg}</span>
-          <span className="md:text-xl font-semibold">{qual}</span>
+          <span
+            className="font-normal md:font-medium break-all"
+            dangerouslySetInnerHTML={{
+              __html: desg,
+            }}
+          />
+          <span
+            className="md:text-xl font-semibold"
+            dangerouslySetInnerHTML={{
+              __html: qual,
+            }}
+          />
         </Link>
       </div>
     </>
