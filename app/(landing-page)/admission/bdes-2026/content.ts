@@ -28,10 +28,12 @@ export const Hero: HeroContent = {
        B.Des.
       </span>
       <br />
-      PROGRAMMES 2026-27
+      PROGRAMMES <br /> 2026-27
       </span>
     `,
-  desc: `Immerse yourself in an inspiring environment that nurtures creativity,<br /> ignites innovation, and transforms ideas into impactful design solutions`,
+  desc: `Immerse yourself in an inspiring environment that <br />
+   nurtures creativity, ignites innovation, and <br /> 
+   transforms ideas into impactful design solutions`,
   heroBg: "/wp-content/landingpage/bdes-2026/bdes.webp",
   middleImg: "",
   mobileImg: "",

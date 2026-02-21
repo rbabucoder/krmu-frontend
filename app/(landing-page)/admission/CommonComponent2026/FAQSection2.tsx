@@ -12,7 +12,7 @@ type Props = {
 
 const FAQSection2 = ({ data }: Props) => {
   return (
-    <section className="py-10 sm:py-20 px-4 bg-white">
+    <section className="py-10 px-4 bg-white">
       <div className="max-w-[1200px] mx-auto w-full">
         {/* Header */}
         <div className="text-center mb-12">

@@ -15,7 +15,7 @@ const CommonFooter = () => {
           </div>
           <div className="w-full lg:w-1/2"></div>
         </div> */}
-        <div className="py-4 border-b border-[#ddd]">
+        <div className="py-4 border-b border-[#ddd] bg-[#f0f0f0]">
           <div className="w-full text-center sm:text-center">
             <p>© Copyright K.R. Mangalam University. All Rights Reserved.</p>
           </div>

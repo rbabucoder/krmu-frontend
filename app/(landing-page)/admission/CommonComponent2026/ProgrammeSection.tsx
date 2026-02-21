@@ -15,7 +15,7 @@ const ProgrammeSection = ({
   programmes,
 }: Props) => {
   return (
-    <section className="py-20 bg-[#f9fafb]" id="programs">
+    <section className="py-10 bg-[#f9fafb]" id="programs">
       <div className="max-w-[1200px] px-4 sm:px-6 mx-auto">
 
         {/* HEADER */}

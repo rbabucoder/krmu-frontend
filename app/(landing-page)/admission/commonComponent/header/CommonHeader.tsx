@@ -22,7 +22,7 @@ export const CommonHeader = () => {
           {/* <button className="max-w-[180px] w-full py-[15px] px-[25px] text-white bg-[#e31e24] rounded-[15px]">
             Apply Now
           </button> */}
-          <ScrollButton targetId="apply-section" highlightClass="flash-border" btnClass="max-w-[180px] w-full py-[15px] px-[25px] text-white bg-[#e31e24] rounded-[15px]" >
+          <ScrollButton targetId="apply-section" highlightClass="flash-border" btnClass="max-w-[180px] w-full py-[10px] px-[25px] text-white bg-[#e31e24] rounded-[10px]" >
             Apply Now
           </ScrollButton>
         </div>

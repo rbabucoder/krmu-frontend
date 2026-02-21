@@ -7,7 +7,7 @@ type Props = {
 
 const ProminentRecruiter = ({ recruiters }: Props) => {
   return (
-    <section className="py-5 sm:py-10 px-4 overflow-hidden">
+    <section className="py-5 sm:pt-2.5 sm:pb-0.5 px-4 overflow-hidden bg-[#f0f0f0]">
       <div className="max-w-[1400px] mx-auto w-full">
         {/* <h3 className="text-4xl text-center text-[#003fa1] font-semibold">Our Prominent Recruiters</h3> */}
         <h3 className="text-2xl md:text-[40px] mb-4 font-bold text-center">Our Prominent Recruiters</h3>
@@ -19,7 +19,7 @@ const ProminentRecruiter = ({ recruiters }: Props) => {
             {[...recruiters, ...recruiters].map((rec, i) => (
               <div
                 key={i}
-                className="prominentrecruitShadow flex items-center justify-center min-w-[200px]"
+                className="prominentrecruitShadow flex items-center justify-center min-w-[200px] bg-white"
               >
                 <Image
                   src={rec.imgUrl}
