@@ -35,7 +35,7 @@ const LearnByCreating = () => {
           conversations.
         </p>
       </div>
-      <div className="max-w-[1664px] mx-auto w-full grid md:grid-cols-1 lg:grid-cols-3 gap-10 mt-10">
+      <div className="max-w-[1280px] mx-auto w-full grid md:grid-cols-1 lg:grid-cols-3 gap-10 mt-10">
         {LearnCreatingData &&
           LearnCreatingData?.map((item, i) => {
             return (

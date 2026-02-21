@@ -14,6 +14,7 @@ import SEMCESlideSection from "./comp/SEMCESlideSection";
 import ApplicationProcess from "./comp/ApplicationProcess";
 import HeroSection from "./comp/HeroSection";
 import SEMCEConversationSection from "./comp/SEMCEConversationSection";
+import SEMCEVideoSection from "./comp/SEMCEVideoSection";
 
 const page = () => {
   return (
@@ -27,11 +28,17 @@ const page = () => {
         <ExploreProgrammes />
         <LearnByCreating />
         {/* <NewsletterSection /> */}
+
         <LifeAtSEMCE />
         {/* <SEMCESlideSection /> */}
         <Teachyou />
         <SEMCETestimonials />
-        <SEMCEConversationSection />
+        {/* <SEMCEConversationSection /> */}
+        <SEMCEVideoSection
+          thumbnail="/semce-thumbnail.jpeg"
+          videoUrl="https://www.youtube.com/watch?v=8IFKA22GHmg&t=2s"
+          title="SEMCE Conversations"
+        />
         <EventsExperience />
         <ApplicationProcess />
         <YourStory />

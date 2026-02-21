@@ -23,8 +23,9 @@ const SEMCETestimonialCard = ({
           <Image
             src={url}
             alt={stu_name}
-            fill
-            className="object-cover"
+            width={560}
+            height={380}
+            className="object-cover object-top h-[380px]"
           />
 
           {/* Name Tag */}
@@ -53,18 +54,20 @@ const SEMCETestimonialCard = ({
             md:mt-0
             md:absolute
             md:left-1/2
-            md:-bottom-40
+            -bottom-40
+            xl:-bottom-30
             md:-translate-x-1/2
             w-full sm:w-[95%] md:w-[85%]
             bg-[#CA1B1F] text-white
-            p-5 sm:p-6 md:p-8
+            p-5 sm:p-6
             rounded-xl md:rounded-2xl
             shadow-lg
+          
           "
         >
-          <p className="text-sm sm:text-base leading-relaxed">
+          <span className="text-sm leading-relaxed">
             {stu_content}
-          </p>
+          </span>
         </div>
       </div>
     </div>

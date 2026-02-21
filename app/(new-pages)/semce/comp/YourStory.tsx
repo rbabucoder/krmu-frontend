@@ -5,7 +5,7 @@ const YourStory = () => {
     <section className="py-20 px-4">
       <div className="max-w-[800px] mx-auto w-full text-center">
         <h4 className="text-5xl mb-10">
-          Your <span className="text-7xl italic">Story</span> starts here
+          Your <span className="text-7xl italic instrument-serif">Story</span> starts here
         </h4>
         <p className="text-xl italic">
           Whether you dream of being on camera, behind the camera, or building

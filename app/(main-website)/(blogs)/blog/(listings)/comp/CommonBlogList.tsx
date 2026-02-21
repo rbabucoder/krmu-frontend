@@ -26,7 +26,7 @@ const CommonBlogList = async ({ currentPage, slug, mainBlogClass }: Props) => {
           excerpt={blog?.excerpt?.rendered}
           slug={blog?.slug}
           imgId={blog?.featured_media}
-          date={blog?.modified_gmt}
+          date={blog?.date_gmt}
         />
       ))}
     </div>
