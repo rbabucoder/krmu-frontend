@@ -1018,6 +1018,9 @@
   .feestructtable .table {
     width: 100%;
   }
+  .feestructtable table a:hover{
+    color: #0000ff;
+  }
 
   .feestructtable table {
     width: 100%;
