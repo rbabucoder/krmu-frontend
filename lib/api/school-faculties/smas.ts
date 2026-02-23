@@ -31,21 +31,21 @@ export const smasFaculties: SchoolFacultiesType[] = [
     featured_media_url:
       "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Rishi-Pal.png",
   },
-  {
-    id: 1111,
-    slug: "dr-sucheta",
-    title: {
-      rendered: "Dr. Sucheta",
-    },
-    featured_media: 1108,
-    acf: {
-      "staff-qualification": "Ph.D, & M.Pharm, B.Pharm ",
-      staff_designation: "Associate Professor",
-      schools: [],
-    },
-    featured_media_url:
-      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Sucheta.jpg",
-  },
+  // {
+  //   id: 1111,
+  //   slug: "dr-sucheta",
+  //   title: {
+  //     rendered: "Dr. Sucheta",
+  //   },
+  //   featured_media: 1108,
+  //   acf: {
+  //     "staff-qualification": "Ph.D, & M.Pharm, B.Pharm ",
+  //     staff_designation: "Associate Professor",
+  //     schools: [],
+  //   },
+  //   featured_media_url:
+  //     "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Sucheta.jpg",
+  // },
 
   {
     id: 8827,
@@ -184,36 +184,36 @@ export const smasFaculties: SchoolFacultiesType[] = [
       "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Farheen.jpg",
   },
 
-  {
-    id: 9021,
-    slug: "ms-meher-priya-sharma",
-    title: {
-      rendered: "Ms. Meher Priya Sharma",
-    },
-    featured_media: 9022,
-    acf: {
-      "staff-qualification": "M.Pharm (Pharmaceutics) ",
-      staff_designation: "Assistant  Professor",
-      schools: [],
-    },
-    featured_media_url:
-      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Ms.-Meher-Priya-Sharma.jpg",
-  },
-  {
-    id: 8985,
-    slug: "8985-2",
-    title: {
-      rendered: "Dr. Mohd. Mazhar",
-    },
-    featured_media: 8989,
-    acf: {
-      "staff-qualification": "Ph.D",
-      staff_designation: "Assistant  Professor",
-      schools: [1098],
-    },
-    featured_media_url:
-      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Mohd.-Mazhar.png",
-  },
+  // {
+  //   id: 9021,
+  //   slug: "ms-meher-priya-sharma",
+  //   title: {
+  //     rendered: "Ms. Meher Priya Sharma",
+  //   },
+  //   featured_media: 9022,
+  //   acf: {
+  //     "staff-qualification": "M.Pharm (Pharmaceutics) ",
+  //     staff_designation: "Assistant  Professor",
+  //     schools: [],
+  //   },
+  //   featured_media_url:
+  //     "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Ms.-Meher-Priya-Sharma.jpg",
+  // },
+  // {
+  //   id: 8985,
+  //   slug: "8985-2",
+  //   title: {
+  //     rendered: "Dr. Mohd. Mazhar",
+  //   },
+  //   featured_media: 8989,
+  //   acf: {
+  //     "staff-qualification": "Ph.D",
+  //     staff_designation: "Assistant  Professor",
+  //     schools: [1098],
+  //   },
+  //   featured_media_url:
+  //     "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Dr.-Mohd.-Mazhar.png",
+  // },
   {
     id: 8983,
     slug: "ms-manisha-singh",
@@ -229,21 +229,21 @@ export const smasFaculties: SchoolFacultiesType[] = [
     featured_media_url:
       "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Ms.-Manisha-Singh.jpg",
   },
-  {
-    id: 8968,
-    slug: "mr-prashant-sharma",
-    title: {
-      rendered: "Mr. Prashant Sharma",
-    },
-    featured_media: 8969,
-    acf: {
-      "staff-qualification": "M.Pharm (Pharmaceutics) ",
-      staff_designation: "Assistant  Professor",
-      schools: [1098],
-    },
-    featured_media_url:
-      "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Mr.-Prashant-Sharma.webp",
-  },
+  // {
+  //   id: 8968,
+  //   slug: "mr-prashant-sharma",
+  //   title: {
+  //     rendered: "Mr. Prashant Sharma",
+  //   },
+  //   featured_media: 8969,
+  //   acf: {
+  //     "staff-qualification": "M.Pharm (Pharmaceutics) ",
+  //     staff_designation: "Assistant  Professor",
+  //     schools: [1098],
+  //   },
+  //   featured_media_url:
+  //     "https://www.krmangalam.edu.in/wp-content/uploads/2024/01/Mr.-Prashant-Sharma.webp",
+  // },
   {
     id: 8963,
     slug: "dr-swati-kaushik",
@@ -274,21 +274,21 @@ export const smasFaculties: SchoolFacultiesType[] = [
     featured_media_url:
       "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Mr.-Debashish-Paramanick.png",
   },
-  {
-    id: 8947,
-    slug: "ms-renu-yadav",
-    title: {
-      rendered: "Ms. Renu Yadav",
-    },
-    featured_media: 8951,
-    acf: {
-      "staff-qualification": "Ph.D (Pursuing)",
-      staff_designation: "Assistant  Professor",
-      schools: [1098],
-    },
-    featured_media_url:
-      "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Ms.-Renu-Yadav.jpg",
-  },
+  // {
+  //   id: 8947,
+  //   slug: "ms-renu-yadav",
+  //   title: {
+  //     rendered: "Ms. Renu Yadav",
+  //   },
+  //   featured_media: 8951,
+  //   acf: {
+  //     "staff-qualification": "Ph.D (Pursuing)",
+  //     staff_designation: "Assistant  Professor",
+  //     schools: [1098],
+  //   },
+  //   featured_media_url:
+  //     "https://wp.krmangalam.edu.in/wp-content/uploads/2024/01/Ms.-Renu-Yadav.jpg",
+  // },
   {
     id: 8942,
     slug: "mr-mohit-agarwal",
@@ -379,5 +379,35 @@ export const smasFaculties: SchoolFacultiesType[] = [
     },
     featured_media_url:
       "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Dr.-Madhuri-Grover.jpg",
+  },
+  {
+    id: 113796,
+    slug: "dr-monika-kaushik",
+    title: {
+      rendered: "Dr. Monika Kaushik",
+    },
+    featured_media: 101428,
+    acf: {
+      "staff-qualification": "Ph.D.",
+      staff_designation: "Assistant Professor",
+      schools: [],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Dr.-Monika-Kaushik.jpg",
+  },
+  {
+    id: 113798,
+    slug: "dr-khushboo-saxena",
+    title: {
+      rendered: "Dr. Khushboo Saxena",
+    },
+    featured_media: 101428,
+    acf: {
+      "staff-qualification": "Ph.D.",
+      staff_designation: "Assistant Professor",
+      schools: [],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-23-at-12.06.271.jpeg",
   },
 ];

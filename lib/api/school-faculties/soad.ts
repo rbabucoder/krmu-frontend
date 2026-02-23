@@ -258,6 +258,21 @@ export const soadFaculties: SchoolFacultiesType[] = [
     featured_media_url:
       "https://www.krmangalam.edu.in/wp-content/uploads/2024/05/Tulika_Pahwa.webp",
   },
+  {
+    id: 113804,
+    slug: "ms-paramjeet-kaur",
+    title: {
+      rendered: "Paramjeet Kaur",
+    },
+    featured_media: 101926,
+    acf: {
+      "staff-qualification": "MBA",
+      staff_designation: "Assistant Professor",
+      schools: [787],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Ms.-Paramjeet-Kaur-SOAD.jpg",
+  },
   // {
   //   id: 43169,
   //   slug: "mr-koustav-nag",

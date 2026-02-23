@@ -663,4 +663,19 @@ export const sbasFaculties: SchoolFacultiesType[] = [
     featured_media_url:
       "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Dr.-Sourabh-Kumar-Singh-SBAS.png",
   },
+  {
+    id: 113802,
+    slug: "dr-garima-awasthi",
+    title: {
+      rendered: "Dr. Garima Awasthi",
+    },
+    featured_media: 106769,
+    acf: {
+      "staff-qualification": "Ph.D.",
+      staff_designation: "Professor",
+      schools: [787],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Dr.-Garima-Awasthi-SBAS.jpg",
+  },
 ];
