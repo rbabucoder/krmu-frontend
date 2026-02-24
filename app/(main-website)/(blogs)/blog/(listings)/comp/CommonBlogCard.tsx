@@ -23,6 +23,8 @@ const CommonBlogCard = async ({ title, excerpt, slug, imgId, date }: Props) => {
 
   if (!imgUrl) return null;
 
+  console.log('normalizedImgUrl', normalizedImgUrl);
+
   const postDate = new Date(date).toLocaleDateString("en-IN", {
     day: "numeric",
     month: "short",
