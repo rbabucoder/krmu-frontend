@@ -3,18 +3,13 @@ import { getAccrediationRecognitionApprovalData } from "@/lib/api/accrediationre
 import Image from "next/image";
 import Link from "next/link";
 
-
 import { Metadata } from "next";
 import { folderRouteSEO } from "@/lib/api/siteseo";
 
-
-
-
-
-
-
 export async function generateMetadata(): Promise<Metadata> {
-  const seoData = await folderRouteSEO("accreditations-recognition-and-approvals");
+  const seoData = await folderRouteSEO(
+    "accreditations-recognition-and-approvals",
+  );
   const seo = seoData[0];
 
   const shareImageUrl = seo?.shareImg?.url
@@ -74,7 +69,6 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-
 const page = async () => {
   const acraData = await getAccrediationRecognitionApprovalData();
 
@@ -98,22 +92,37 @@ const page = async () => {
                     key={member?.id}
                     className="bg-white text-center h-[431px] flex flex-col items-center justify-center  rounded-4xl membership-ranking-card p-5"
                   >
-                    <Link href={member?.cardurl} target="_blank">
+                    {member?.cardurl ? (
+                      <Link href={member.cardurl} target="_blank">
+                        <Image
+                          src={`${STRAPI_URL}${member.cardimg.url}`}
+                          width={274}
+                          height={274}
+                          alt={member.cardtitle || "acu"}
+                        />
+                      </Link>
+                    ) : (
                       <Image
                         src={`${STRAPI_URL}${member.cardimg.url}`}
                         width={274}
                         height={274}
-                        alt="acu"
-                        className=""
+                        alt={member.cardtitle || "acu"}
                       />
-                    </Link>
-                    <Link
-                      href={member?.cardurl}
-                      className="font-semibold text-[22px] mt-5 max-w-[300px] w-full hover:text-[#0060aa]"
-                      target="_blank"
-                    >
-                      {member.cardtitle}
-                    </Link>
+                    )}
+
+                    {member?.cardurl ? (
+                      <Link
+                        href={member.cardurl}
+                        target="_blank"
+                        className="font-semibold text-[22px] mt-5 max-w-[300px] w-full hover:text-[#0060aa]"
+                      >
+                        {member.cardtitle}
+                      </Link>
+                    ) : (
+                      <p className="font-semibold text-[22px] mt-5 max-w-[300px] w-full">
+                        {member.cardtitle}
+                      </p>
+                    )}
                   </div>
                 );
               })}

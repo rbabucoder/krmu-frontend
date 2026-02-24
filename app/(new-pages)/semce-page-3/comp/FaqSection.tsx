@@ -32,7 +32,7 @@ export default function FaqSection() {
     <section className="bg-[#145f99] py-16 px-4">
       <div className="max-w-[1100px] mx-auto">
         {/* TITLE */}
-        <h2 className={`text-center text-white text-3xl md:text-5xl mb-10 ${instrumentSerif.className}`}>
+        <h2 className={`text-xl md:text-4xl lg:text-6xl ${instrumentSerif.className} text-white text-center mb-10`}>
           Frequently asked questions
         </h2>
 

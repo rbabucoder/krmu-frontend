@@ -6,7 +6,7 @@ export default function EligibilityAdmissionFees() {
       <div className="max-w-[1400px] mx-auto">
         {/* TITLE */}
         <h2
-          className={`text-center text-3xl md:text-5xl font-semibold mb-10 ${instrumentSerif.className}`}
+          className={`text-xl md:text-4xl lg:text-6xl ${instrumentSerif.className} text-center mb-10`}
         >
           Eligibility, admissions and fees
         </h2>
