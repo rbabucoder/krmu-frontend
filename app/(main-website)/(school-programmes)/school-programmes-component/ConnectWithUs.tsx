@@ -27,7 +27,7 @@ export const ConnectWithUs = () => {
           </div>
           <div className="w-full md:w-4/12">
             <Link
-              href="#"
+              href="mailto:welcome@krmangalam.edu.in"
               className="bg-[#ffffff0d] backdrop-blur-[22px] p-2.5 border border-[#ffffff40] rounded-[30px] flex items-center break-all"
             >
               <div>
@@ -43,8 +43,9 @@ export const ConnectWithUs = () => {
           </div>
           <div className="w-full md:w-5/12">
             <Link
-              href="#"
+              href="https://share.google/1HhDvKtKG4otv2AkL"
               className="bg-[#ffffff0d] backdrop-blur-[22px] p-2.5 border border-[#ffffff40] rounded-[30px] flex items-center"
+              target="_blank"
             >
               <div>
                 <div className="w-[50px] h-[50px] bg-[#e31e24] flex items-center justify-center rounded-full">

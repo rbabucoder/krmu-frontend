@@ -38,9 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const seoData = await getSchoolSEO(slug);
 
-
   const seo = seoData[0]?.school_seo;
-
 
   const shareImageUrl = seo?.shareImage?.url
     ? `${STRAPI_URL}${seo?.shareImage?.url}`
@@ -104,14 +102,13 @@ export default async function Page({ params }: Props) {
   if (!school) return notFound();
 
   const schoolKnowComp = school.schoolcomps.find(
-    (component) => component.__component === "schoolcomponent.knowledge"
+    (component) => component.__component === "schoolcomponent.knowledge",
   );
 
   const schoolCat = school?.school_category?.name;
 
-  const schoolEventsAndExperience = await getEventsAndExperiencesBySchoolCat(
-    schoolCat
-  );
+  const schoolEventsAndExperience =
+    await getEventsAndExperiencesBySchoolCat(schoolCat);
 
   const degreeName = school?.degree?.name;
   const schoolCategoryName = school?.school_category?.name;
@@ -149,14 +146,14 @@ export default async function Page({ params }: Props) {
           alumniLogos={school.alumnilogo}
         />
       )}
-      (
+
       <SchoolProgrammeOffered
         degName={degreeName}
         schoolCategoryName={schoolCategoryName}
         title={school?.programme_offered?.title}
         content={school?.programme_offered?.content}
       />
-      )
+
       <SchoolExcitedAlready
         heading={school?.excitedtitle}
         desc={school?.exciteddescription}

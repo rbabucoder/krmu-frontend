@@ -48,7 +48,7 @@ const Eligibility = ({ elgibilities, mobherobtn, formId }: Props) => {
 
   return (
     <>
-      <div className="max-w-[1664px] w-full mx-auto sm:flex pb-[50px] px-2.5 md:px-4 mt-12md:mt-0">
+      <div className="max-w-[1664px] w-full mx-auto sm:flex pb-[50px] px-2.5 md:px-4 mt-12 md:mt-0">
         <div className="w-full sm:w-1/3 lg:w-1/4 sm:px-3 border-r sm:border-r border-[#dee2e6]">
           <h2 className="text-2xl leading-[1.2] text-[#0060aa] font-semibold mb-2">
             {elgibilities[0]?.title}

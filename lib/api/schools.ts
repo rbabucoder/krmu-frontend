@@ -241,7 +241,7 @@ export async function getSchoolInfoForFacultyBySlug(
   });
 
   if (!res.ok) throw new Error("Failed to fetch school info");
-  const json = res.json();
+  const json = await res.json();
   return json;
 }
 

@@ -27,7 +27,6 @@ const OurLocation = ({ badgetext, img1, img2 }: Props) => {
             {badgetext}
           </span>
           <h3 className="text-white text-2xl md:text-[28px] font-medium leading-[1] mb-4">
-            {/* {heading} */}
             Learn at One of India’s Biggest Business Hubs, Gurgaon
           </h3>
 
