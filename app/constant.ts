@@ -1,4 +1,4 @@
-export const STRAPI_URL = process.env.NEXT_PUBLIC_STRAPI_URL || "";
+export const STRAPI_URL = "";
 export const FETCH_STRAPI_URL = process.env.NEXT_PUBLIC_FETCH_STRAPI_URL || "";
 export const KRMUWordUrl = process.env.NEXT_PUBLIC_KRMU_WORD_URL || "";
 export const origUrl = process.env.NEXT_PUBLIC_MAIN_URL || "";
