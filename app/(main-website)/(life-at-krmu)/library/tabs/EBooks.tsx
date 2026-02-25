@@ -19,7 +19,7 @@ const EBooks = () => {
               <td>Automobile Engineering</td>
               <td>16</td>
               <td>
-                <Link href="#" target="_blank" rel="noopener noreferrer" rel="noopener">
+                <Link href="#" target="_blank" rel="noopener noreferrer" >
                   Download
                 </Link>
               </td>
@@ -29,7 +29,7 @@ const EBooks = () => {
               <td>Civil Engineering</td>
               <td>27</td>
               <td>
-                <Link href="#" target="_blank" rel="noopener noreferrer" rel="noopener">
+                <Link href="#" target="_blank" rel="noopener noreferrer">
                   Download
                 </Link>
               </td>
@@ -39,7 +39,7 @@ const EBooks = () => {
               <td>Computer Science Engineering/ IT</td>
               <td>27</td>
               <td>
-                <Link href="#" target="_blank" rel="noopener noreferrer" rel="noopener">
+                <Link href="#" target="_blank" rel="noopener noreferrer">
                   Download
                 </Link>
               </td>
@@ -49,7 +49,7 @@ const EBooks = () => {
               <td>Electronics &amp; Communication Engineering</td>
               <td>51</td>
               <td>
-                <Link href="#" target="_blank" rel="noopener noreferrer" rel="noopener">
+                <Link href="#" target="_blank" rel="noopener noreferrer">
                   Download
                 </Link>
               </td>
@@ -59,7 +59,7 @@ const EBooks = () => {
               <td>Mechanical Engineering</td>
               <td>34</td>
               <td>
-                <Link href="#" target="_blank" rel="noopener noreferrer" rel="noopener">
+                <Link href="#" target="_blank" rel="noopener noreferrer">
                   Download
                 </Link>
               </td>
@@ -69,7 +69,7 @@ const EBooks = () => {
               <td>Management</td>
               <td>04</td>
               <td>
-                <Link href="#" target="_blank" rel="noopener noreferrer" rel="noopener">
+                <Link href="#" target="_blank" rel="noopener noreferrer">
                   Download
                 </Link>
               </td>
@@ -104,7 +104,7 @@ const EBooks = () => {
                 <Link
                   href="https://www.krmangalam.edu.in/wp-content/uploads/2023/E-books/E-Books of School of Law, K.R. Mangalam University.pdf"
                   target="_blank" rel="noopener noreferrer"
-                  rel="noopener"
+                
                 >
                   Download
                 </Link>

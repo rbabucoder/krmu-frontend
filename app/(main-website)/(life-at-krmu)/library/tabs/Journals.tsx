@@ -96,7 +96,7 @@ const Journals = () => {
                 <Link
                   href="https://www.krmangalam.edu.in/wp-content/uploads/2023/Journals/Chemistry.docx"
                   target="_blank" rel="noopener noreferrer"
-                  rel="noopener"
+                  
                 >
                   Download
                 </Link>
@@ -110,7 +110,7 @@ const Journals = () => {
                 <Link
                   href="https://www.krmangalam.edu.in/wp-content/uploads/2023/Journals/Civil Engineering (OS) On-line Journals.docx"
                   target="_blank" rel="noopener noreferrer"
-                  rel="noopener"
+                  
                 >
                   Download
                 </Link>
@@ -124,7 +124,7 @@ const Journals = () => {
                 <Link
                   href="https://www.krmangalam.edu.in/wp-content/uploads/2023/Journals/Computer Science and Engineering (OS) On-line Journals.docx"
                   target="_blank" rel="noopener noreferrer"
-                  rel="noopener"
+                  
                 >
                   Download
                 </Link>
@@ -138,7 +138,7 @@ const Journals = () => {
                 <Link
                   href="https://www.krmangalam.edu.in/wp-content/uploads/2023/Journals/ECE and EEE (OS) On-line Journals.docx"
                   target="_blank" rel="noopener noreferrer"
-                  rel="noopener"
+                  
                 >
                   Download
                 </Link>
@@ -160,7 +160,7 @@ const Journals = () => {
                 <Link
                   href="https://www.krmangalam.edu.in/wp-content/uploads/2023/Journals/English.docx"
                   target="_blank" rel="noopener noreferrer"
-                  rel="noopener"
+                  
                 >
                   Download
                 </Link>
@@ -174,7 +174,7 @@ const Journals = () => {
                 <Link
                   href="https://www.krmangalam.edu.in/wp-content/uploads/2023/Journals/Law Journals.docx"
                   target="_blank" rel="noopener noreferrer"
-                  rel="noopener"
+                  
                 >
                   Download
                 </Link>
@@ -188,7 +188,7 @@ const Journals = () => {
                 <Link
                   href="https://www.krmangalam.edu.in/wp-content/uploads/2023/Journals/Library &amp; Information Science.docx"
                   target="_blank" rel="noopener noreferrer"
-                  rel="noopener"
+                  
                 >
                   Download
                 </Link>
@@ -202,7 +202,7 @@ const Journals = () => {
                 <Link
                   href="https://www.krmangalam.edu.in/wp-content/uploads/2023/Journals/Management (OS) On-line Journals.docx"
                   target="_blank" rel="noopener noreferrer"
-                  rel="noopener"
+                  
                 >
                   Download
                 </Link>
@@ -216,7 +216,7 @@ const Journals = () => {
                 <Link
                   href="https://www.krmangalam.edu.in/wp-content/uploads/2023/Journals/Maths.docx"
                   target="_blank" rel="noopener noreferrer"
-                  rel="noopener"
+                  
                 >
                   Download
                 </Link>
@@ -230,7 +230,7 @@ const Journals = () => {
                 <Link
                   href="https://www.krmangalam.edu.in/wp-content/uploads/2023/Journals/Mechanical Engineering (OS) On-line Journals.docx"
                   target="_blank" rel="noopener noreferrer"
-                  rel="noopener"
+                  
                 >
                   Download
                 </Link>
@@ -244,7 +244,7 @@ const Journals = () => {
                 <Link
                   href="https://www.krmangalam.edu.in/wp-content/uploads/2023/Journals/Pharmacy Journals.docx"
                   target="_blank" rel="noopener noreferrer"
-                  rel="noopener"
+                  
                 >
                   Download
                 </Link>
@@ -258,7 +258,7 @@ const Journals = () => {
                 <Link
                   href="https://www.krmangalam.edu.in/wp-content/uploads/2023/Journals/Physics.docx"
                   target="_blank" rel="noopener noreferrer"
-                  rel="noopener"
+                  
                 >
                   Download
                 </Link>
