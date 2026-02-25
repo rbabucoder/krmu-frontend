@@ -21,7 +21,7 @@ const ExploreCampus = () => {
           collaborations, and world-class infrastructure.
         </p>
         <div className="pt-[100px] pb-10 flex items-center justify-center">
-          <Link href="https://tourmkr.com/F1Zr0N570h" target="_blank">
+          <Link href="https://tourmkr.com/F1Zr0N570h" target="_blank" rel="noopener noreferrer">
             <Image
               src="/campus/clicktovirtualtour.webp"
               width={200}

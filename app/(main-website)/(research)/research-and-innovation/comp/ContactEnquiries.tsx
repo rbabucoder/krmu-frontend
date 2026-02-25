@@ -52,31 +52,31 @@ const ContactEnquiries = () => {
           </h4>
 
           <div className="flex gap-10 flex-wrap">
-            <Link href="https://dst.gov.in/call-for-proposals" target="_blank">
+            <Link href="https://dst.gov.in/call-for-proposals" target="_blank" rel="noopener noreferrer">
               DST
             </Link>
             <Link
               href="https://dbtindia.gov.in/whats-new/call-for-proposals"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
             >
               DBT
             </Link>
             <Link
               href="https://main.icmr.nic.in/call%20for%20proposals"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
             >
               ICMR
             </Link>
-            <Link href="https://www.birac.nic.in/" target="_blank">
+            <Link href="https://www.birac.nic.in/" target="_blank" rel="noopener noreferrer">
               BIRAC
             </Link>
-            <Link href="https://icssr.org/" target="_blank">
+            <Link href="https://icssr.org/" target="_blank" rel="noopener noreferrer">
               ICSSR
             </Link>
-            <Link href="https://www.who.int/" target="_blank">
+            <Link href="https://www.who.int/" target="_blank" rel="noopener noreferrer">
               WHO
             </Link>
-            <Link href="https://www.csir.res.in/" target="_blank">
+            <Link href="https://www.csir.res.in/" target="_blank" rel="noopener noreferrer">
               CSIR
             </Link>
           </div>

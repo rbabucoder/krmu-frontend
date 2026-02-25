@@ -7,6 +7,7 @@ import { MoveRight } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import NpfPopup from "../../components/NpfPopup";
+import { sanitizeHTML } from "@/lib/sanitize";
 
 type Props = {
   title: string;
@@ -21,20 +22,20 @@ const HeroBanner = ({ title, highlightitle, heroSection, formId }: Props) => {
   // useEffect(() => {
   //   if (!formId || !btnRef.current) return;
 
-    // loadNpfScript()
-    //   .then(() => {
-    //     // @ts-expect-error - test
-    //     new NpfWidgetsInit({
-    //       widgetId: formId,
-    //       baseurl: "widgets.nopaperforms.com",
-    //       formTitle: heroSection?.herobtn?.buttontext || "Apply Now",
-    //       titleColor: "#FF0033",
-    //       backgroundColor: "#ddd",
-    //       iframeHeight: "500px",
-    //       buttonTextColor: "#FFF",
-    //       target: btnRef.current,
-    //     });
-    //   })
+  // loadNpfScript()
+  //   .then(() => {
+  //     // @ts-expect-error - test
+  //     new NpfWidgetsInit({
+  //       widgetId: formId,
+  //       baseurl: "widgets.nopaperforms.com",
+  //       formTitle: heroSection?.herobtn?.buttontext || "Apply Now",
+  //       titleColor: "#FF0033",
+  //       backgroundColor: "#ddd",
+  //       iframeHeight: "500px",
+  //       buttonTextColor: "#FFF",
+  //       target: btnRef.current,
+  //     });
+  //   })
   //     .catch((err) => {
   //       console.error("Failed to load NPF script:", err);
   //     });
@@ -44,9 +45,9 @@ const HeroBanner = ({ title, highlightitle, heroSection, formId }: Props) => {
     <section className="pt-24 sm:pt-40 sm:pb-[50px] px-2.5 sm:px-4">
       <div className="school-programme-max-width md:flex items-center justify-between">
         <div className="w-full md:w-7/12">
-          <h4 className="text-xs sm:text-2xl font-medium leading-[1.2] mb-2">
+          <p className="text-xs sm:text-2xl font-medium leading-[1.2] mb-2">
             {heroSection?.subtitle}
-          </h4>
+          </p>
           <h1 className="text-4xl sm:text-[50px] font-semibold text-[#0060aa] leading-[1.2] mb-2">
             {title} <span className="text-[#e61f21]">{highlightitle}</span>
           </h1>
@@ -83,7 +84,7 @@ const HeroBanner = ({ title, highlightitle, heroSection, formId }: Props) => {
           {heroSection?.imgvideo === "Video" ? (
             <div
               dangerouslySetInnerHTML={{
-                __html: heroSection?.videofield || "",
+                __html: sanitizeHTML(heroSection?.videofield || ""),
               }}
             />
           ) : (
@@ -93,6 +94,7 @@ const HeroBanner = ({ title, highlightitle, heroSection, formId }: Props) => {
                 width={600}
                 height={500}
                 alt={heroSection?.heroimg?.alternativeText || "Hero Image"}
+                priority
               />
             )
           )}

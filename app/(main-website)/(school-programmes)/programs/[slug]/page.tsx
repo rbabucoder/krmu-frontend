@@ -19,7 +19,6 @@ import { getPHDProgramme } from "@/lib/api/phd-programmes";
 import PHDProgrammes from "../PHDProgramme";
 import {
   createBreadcrumbProgSchema,
-  createFaqSchema,
   createProgFaqSchema,
   getSchoolProgrammeSEO,
 } from "@/lib/api/common";

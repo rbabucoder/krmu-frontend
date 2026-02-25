@@ -33,7 +33,7 @@ const EventsAndNews = async ({
               <Link
                 href={newsandeventbtn?.buttonlink}
                 className={`py-2 px-[18px] text-white bg-[#cb000d] hover:bg-[#034272] inline-block rounded-md text-base md:text-xl font-bold ${newsandeventbtn?.buttonclass}`}
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
               >
                 {newsandeventbtn?.buttontext}
               </Link>

@@ -243,7 +243,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                   zenithLinks?.menuclass || ""
                 }`}
                 href={zenithLinks.url}
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
               >
                 <span>{zenithLinks.title}</span>
               </Link>
@@ -366,7 +366,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                           <Link
                             href="https://krmangalam.edu.in/pdfs/1r-ph-d-admission-advertisement-details-e-2025-26.pdf"
                             className="submenu_submenu_link"
-                            target="_blank"
+                            target="_blank" rel="noopener noreferrer"
                             download
                           >
                             Calls For Ph.D. Admission
@@ -394,7 +394,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                     sustainabilityLinks?.menuclass || ""
                   }`}
                   href={sustainabilityLinks.url}
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                 >
                   <span>{sustainabilityLinks.title}</span>
                 </Link>
@@ -527,7 +527,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                               menu.menuclass || ""
                             }`}
                           >
-                            <Link href={menu?.url} target="_blank">{menu?.title}</Link>
+                            <Link href={menu?.url} target="_blank" rel="noopener noreferrer">{menu?.title}</Link>
                           </li>
                         );
                       })}

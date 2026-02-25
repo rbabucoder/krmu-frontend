@@ -19,7 +19,7 @@ const FAQHero = ({ heading, subheading, btn }: Props) => {
             className={`py-[13px] px-[29px] text-white bg-[#cb000d] rounded-full font-semibold hover:bg-[#034272] ${
               btn?.btn_class || ""
             }`}
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
           >
             {btn?.btn_text}
           </Link>

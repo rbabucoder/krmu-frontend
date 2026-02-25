@@ -161,7 +161,7 @@ const Hero = () => {
               </h5>
               <p>
                 <strong>Email</strong>:<br />{" "}
-                <Link href="mailto:gssc@krmangalam.edu.in " target="_blank">
+                <Link href="mailto:gssc@krmangalam.edu.in " target="_blank" rel="noopener noreferrer">
                   gssc@krmangalam.edu.in{" "}
                 </Link>
               </p>
@@ -373,7 +373,7 @@ const Hero = () => {
             <div className="my-5 flex flex-col items-start gap-5">
               <Link
                 href="https://www.krmangalam.edu.in/pdfs/Committee-ICC-2023.pdf"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 className="py-[13px] px-[29px] text-base text-white bg-[#0060aa] rounded-[4px] w-fit leading-[1] font-medium flex gap-2.5 items-center"
               >
                 <FileText color="#fff" />
@@ -392,7 +392,7 @@ const Hero = () => {
             <div className="my-5 flex flex-col items-start gap-5">
               <Link
                 href="https://www.krmangalam.edu.in/pdfs/ugc-regulation-2015.pdf"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 className="py-[13px] px-[29px] text-base text-white bg-[#0060aa] rounded-[4px] w-fit leading-[1] font-medium flex gap-2.5 items-center"
               >
                 <FileText color="#fff" />
@@ -400,7 +400,7 @@ const Hero = () => {
               </Link>
               <Link
                 href="http://ncw.nic.in/sites/default/files/SexualHarassmentofWomenatWorkPlaceAct2013_0.pdf"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 className="py-[13px] px-[29px] text-base text-white bg-[#0060aa] rounded-[4px] w-fit leading-[1] font-medium flex gap-2.5 items-center"
               >
                 <FileText color="#fff" />
@@ -444,7 +444,7 @@ const Hero = () => {
               <div className="flex flex-col gap-5 my-5">
                 <Link
                   href="https://www.krmangalam.edu.in/pdfs/anti-ragging-committee-of-krmu-2024.pdf"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   className="py-[13px] px-[29px] text-base text-white bg-[#0060aa] rounded-[4px] w-fit leading-[1] font-medium flex gap-2.5 items-center justify-center"
                 >
                   <FileText color="#fff" />
@@ -452,7 +452,7 @@ const Hero = () => {
                 </Link>
                 <Link
                   href="https://www.krmangalam.edu.in/pdfs/NATIONAL-RAGGING-PREVENTION-PROGRAMME-1.pdf"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   className="py-[13px] px-[29px] text-base text-white bg-[#0060aa] rounded-[4px] w-fit leading-[1] font-medium flex gap-2.5 items-center justify-center"
                 >
                   <FileText color="#fff" />
@@ -460,7 +460,7 @@ const Hero = () => {
                 </Link>
                 <Link
                   href="https://www.krmangalam.edu.in/krmu-committee/#"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   className="py-[13px] px-[29px] text-base text-white bg-[#0060aa] rounded-[4px] w-fit leading-[1] font-medium flex gap-2.5 items-center justify-center"
                 >
                   Register Complaint
@@ -621,7 +621,7 @@ const Hero = () => {
             <div className="my-5 flex flex-col pga-5">
               <Link
                 href="https://www.krmangalam.edu.in/pdfs/Committee-Grievance-Redressal-2023.pdf"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 className="py-[13px] px-[29px] text-base text-white bg-[#0060aa] rounded-[4px] w-fit leading-[1] font-medium flex gap-2.5 items-center mb-5"
               >
                 <FileText color="#fff" />
@@ -629,7 +629,7 @@ const Hero = () => {
               </Link>
               <Link
                 href="https://www.krmangalam.edu.in/krmu-committee/#"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 className="py-[13px] px-[29px] text-base text-white bg-[#0060aa] rounded-[4px] w-fit leading-[1] font-medium flex gap-2.5 items-center"
               >
                 Student Grievance
@@ -758,7 +758,7 @@ const Hero = () => {
               <div className="flex flex-col gap-5 my-5">
                 <Link
                   href="https://www.krmangalam.edu.in/pdfs/student-discipline-committee-2024.pdf"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   className="py-[13px] px-[29px] text-base text-white bg-[#0060aa] rounded-[4px] w-fit leading-[1] font-medium flex gap-2.5 items-center justify-center"
                 >
                   <FileText color="#fff" />
@@ -766,7 +766,7 @@ const Hero = () => {
                 </Link>
                 <Link
                   href="https://www.krmangalam.edu.in/pdfs/COC-Revised-Handbook-of-COC-Professional-Ethics-and-Human-Values.pdf"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   className="py-[13px] px-[29px] text-base text-white bg-[#0060aa] rounded-[4px] w-fit leading-[1] font-medium flex gap-2.5 items-center justify-center"
                 >
                   Code of Conduct

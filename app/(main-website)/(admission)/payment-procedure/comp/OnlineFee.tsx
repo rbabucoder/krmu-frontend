@@ -44,7 +44,7 @@ const OnlineFee = () => {
                   <Link
                     href="https://payment.collexo.com/user/login/?dest=/pay-fee/kr-mangalam-university-sohna-haryana-43490/"
                     className="bg-[#e31e24] py-3 text-white text-base md:px-[29px] inline-block w-full md:text-2xl font-semibold leading-[1] rounded-b-[22px] hover:bg-[#034272]"
-                    target="_blank"
+                    target="_blank" rel="noopener noreferrer"
                   >
                     <span>Pay Through Collexo</span>
                   </Link>
@@ -66,7 +66,7 @@ const OnlineFee = () => {
                   <Link
                     href="https://krmu.icloudems.com/"
                     className="bg-[#e31e24] py-3 text-white px-[29px] inline-block w-full text-base md:text-2xl font-semibold leading-[1] rounded-b-[22px] hover:bg-[#034272]"
-                    target="_blank"
+                    target="_blank" rel="noopener noreferrer"
                   >
                     <span>Pay Through iCloud</span>
                   </Link>

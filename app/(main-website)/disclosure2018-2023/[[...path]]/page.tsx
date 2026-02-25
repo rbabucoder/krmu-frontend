@@ -84,7 +84,7 @@ export default function DisclosureBrowser() {
             <li>
               <Link
                 href="https://pub-b137783ba90b4afdb568942321f7a1ef.r2.dev/Main-disclosure2018-2023/disclosure2018-2023/NAAC2024/NAAC-2024-Reports/IIQA-K.R._MANGALAM_UNIVERSITY_iiqa.pdf"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 className="font-semibold hover:underline hover:text-blue-700"
               >
                 Institutional Information for Quality Assessment (IIQA)
@@ -93,7 +93,7 @@ export default function DisclosureBrowser() {
             <li>
               <Link
                 href="https://pub-b137783ba90b4afdb568942321f7a1ef.r2.dev/Main-disclosure2018-2023/disclosure2018-2023/NAAC2024/NAAC-2024-Reports/SSR-HRUNGN109306.pdf"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 className="font-semibold hover:underline hover:text-blue-700"
               >
                 Self Study Report
@@ -102,7 +102,7 @@ export default function DisclosureBrowser() {
             <li>
               <Link
                 href="https://pub-b137783ba90b4afdb568942321f7a1ef.r2.dev/Main-disclosure2018-2023/disclosure2018-2023/NAAC2024/NAAC-2024-Reports/SSR-Prequalified-HRUNGN109306.pdf"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 className="font-semibold hover:underline hover:text-blue-700"
               >
                 Self Study Report (Prequalified)
@@ -126,7 +126,7 @@ export default function DisclosureBrowser() {
                 <li>
                   <Link
                     href="https://pub-b137783ba90b4afdb568942321f7a1ef.r2.dev/Main-disclosure2018-2023/disclosure2018-2023/NAAC2024/NAAC-2024-Reports/SSR-Prequalified-HRUNGN109306.pdf"
-                    target="_blank"
+                    target="_blank" rel="noopener noreferrer"
                     className="hover:underline hover:text-blue-700"
                   >
                     Extended Profile
@@ -264,7 +264,7 @@ export default function DisclosureBrowser() {
             <div key={file.Key} className="py-1">
               <a
                 href={fileUrl}
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 rel="noreferrer"
                 className="hover:underline"
               >

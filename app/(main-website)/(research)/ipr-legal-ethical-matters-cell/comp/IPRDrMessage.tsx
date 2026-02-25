@@ -28,7 +28,7 @@ const IPRDrMessage = () => {
       <div className="lg:w-1/2 flex justify-center">
         <Link
           href="/faculty/dr-inderpreet-kaur-saggu/"
-          target="_blank"
+          target="_blank" rel="noopener noreferrer"
           className="text-center flex flex-col justify-center items-center"
         >
           <Image

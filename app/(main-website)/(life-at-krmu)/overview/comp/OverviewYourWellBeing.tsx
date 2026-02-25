@@ -10,7 +10,7 @@ const OverviewYourWellBeing = () => {
           </h3>
           <Link
             href="/student-welfare"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
             className="text-black text-base hover:bg-[#034272] hover:text-white bg-white py-[11px] px-[23px] rounded-[4px] font-semibold inline-block mt-5"
           >
             Know more about Student Welfare

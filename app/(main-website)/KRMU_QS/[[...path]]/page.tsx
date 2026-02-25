@@ -131,7 +131,7 @@ export default function KRMUQSBrowser() {
             <div key={file.Key} className="py-1">
               <a
                 href={fileUrl}
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 rel="noreferrer"
                 className="hover:underline"
               >

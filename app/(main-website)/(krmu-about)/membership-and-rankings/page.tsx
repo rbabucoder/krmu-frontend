@@ -4,13 +4,8 @@ import Ranking from "./Ranking";
 import { getMembershipAndRankingData } from "@/lib/api/membership-and-ranking";
 import { STRAPI_URL } from "@/app/constant";
 
-
 import { Metadata } from "next";
 import { folderRouteSEO } from "@/lib/api/siteseo";
-
-
-
-
 
 export async function generateMetadata(): Promise<Metadata> {
   const seoData = await folderRouteSEO("membership-and-rankings");
@@ -78,7 +73,7 @@ const page = async () => {
 
   const members = membershipRanking?.memberships;
 
-  return ( 
+  return (
     <>
       <section className="pt-40 pb-10 px-4 membership-ranking-bg">
         <div className="max-w-[1600px] mx-auto w-full">
@@ -96,7 +91,11 @@ const page = async () => {
                     key={member?.id}
                     className="bg-white text-center h-[431px] flex flex-col items-center justify-center  rounded-4xl membership-ranking-card px-5 pb-5"
                   >
-                    <Link href={member?.cardurl} target="_blank">
+                    <Link
+                      href={member?.cardurl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <Image
                         src={`${STRAPI_URL}${member.cardimg.url}`}
                         width={274}
@@ -105,7 +104,12 @@ const page = async () => {
                         className="w-full"
                       />
                     </Link>
-                    <Link href={member?.cardurl} className="font-semibold text-[22px] mt-5 max-w-[300px] w-full hover:text-[#0060aa]" target="_blank">
+                    <Link
+                      href={member?.cardurl}
+                      className="font-semibold text-[22px] mt-5 max-w-[300px] w-full hover:text-[#0060aa]"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       {member.cardtitle}
                     </Link>
                   </div>

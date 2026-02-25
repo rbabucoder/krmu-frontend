@@ -39,7 +39,7 @@ export const FacultyEmployeeCard = ({
         <Link
           href={`/faculty/${slug}`}
           className="hover:text-[#0060aa] cursor-pointer flex flex-col gap-1.5 text-base"
-          target="_blank"
+          target="_blank" rel="noopener noreferrer"
         >
           <div className="mb-4">
             {imgURL ? (

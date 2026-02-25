@@ -52,7 +52,7 @@ const Specialisation = ({
                         <div className="prog_highlight_content">
                           <a
                             href={specialisation?.link}
-                            target="_blank"
+                            target="_blank" rel="noopener noreferrer"
                             rel="noopener noreferrer"
                           >
                             <h5 className="title">{specialisation?.title}</h5>

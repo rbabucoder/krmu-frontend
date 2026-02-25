@@ -71,7 +71,7 @@ const ProgrammeStructure = ({
             <Link
               href={currbtn?.buttonlink || "#"}
               className={`p-2 sm:py-[15px] sm:px-[25px] inline-block font-normal rounded-[15px] text-xs sm:text-2xl w-full text-white bg-[#db2a1a] text-center mb-6`}
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
             >
               {currbtn?.buttontext}
             </Link>
@@ -90,7 +90,7 @@ const ProgrammeStructure = ({
               className={`p-2 sm:py-[15px] sm:px-[25px] inline-block font-normal rounded-[15px] text-xs sm:text-2xl w-full text-white bg-[#db2a1a] text-center mb-6 ${
                 currbtn?.buttonclass || ""
               }`}
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
             >
               {currbtn?.buttontext}
             </Link>
@@ -116,7 +116,7 @@ const ProgrammeStructure = ({
                   className={`p-2 sm:py-[15px] sm:px-[25px] inline-block font-normal rounded-[15px] text-xs sm:text-2xl w-full text-white bg-[#db2a1a] text-center mb-6 ${
                     currbtn.buttonclass || ""
                   }`}
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                 >
                   {currbtn.buttontext}
                 </Link>

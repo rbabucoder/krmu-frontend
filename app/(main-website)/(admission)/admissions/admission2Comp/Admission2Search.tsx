@@ -313,7 +313,7 @@ const Admission2Search = () => {
                     "programmeslug" in item ? item.programmeslug : item.phdslug
                   }`}
                   className="text-[10px] md:text-base font-medium border-b border-white"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                 >
                   Show More
                 </Link>

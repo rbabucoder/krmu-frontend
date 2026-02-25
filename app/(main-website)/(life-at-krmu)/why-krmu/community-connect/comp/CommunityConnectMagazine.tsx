@@ -129,14 +129,14 @@ const CommunityConnectMagazine = () => {
             <div className="flex flex-col sm:flex-row gap-5  mb-[30px]">
               <Link
                 href="https://krmangalam.edu.in/pdfs/legancy-of-service-final.pdf"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 className="common-btn-4"
               >
                 2023-2024
               </Link>
               <Link
                 href="https://krmangalam.edu.in/pdfs/nss_2024oct-dec-000.pdf"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 className="common-btn-4"
               >
                 2024-2025

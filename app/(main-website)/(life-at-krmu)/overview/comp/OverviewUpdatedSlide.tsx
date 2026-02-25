@@ -53,7 +53,7 @@ const OverviewUpdatedSlide = ({ data }: Props) => {
                       <Link
                         href={`/events-and-news/${item.slug}`}
                         className="text-white text-xs underline underline-offset-2"
-                        target="_blank"
+                        target="_blank" rel="noopener noreferrer"
                       >
                         Show More
                       </Link>

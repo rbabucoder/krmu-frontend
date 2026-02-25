@@ -60,7 +60,7 @@ const YourJourney = ({ title, content, buttons }: YourJourneyProps) => {
                         button.buttonclass || ""
                       }`}
                       href={button.buttonlink || "#"}
-                      target="_blank"
+                      target="_blank" rel="noopener noreferrer"
                     >
                       {button.buttontext}
                     </Link>
@@ -74,7 +74,7 @@ const YourJourney = ({ title, content, buttons }: YourJourneyProps) => {
               <Link
                 href="/programmes"
                 className="py-1.5 px-5 bg-[#cb000d] text-white w-full text-center rounded-md font-bold inline-block"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
               >
                 Explore Our Programmes
               </Link>

@@ -48,7 +48,7 @@ const SchoolNewsletter = ({ heading, desc, btns, newsletterbg }: Props) => {
                       key={btn?.id}
                       href={btn?.buttonlink || ""}
                       className={`py-3.5 px-8 bg-[#cb000d] font-bold rounded-sm inline-block text-sm md:text-base ${btn?.buttonclass}`}
-                      target="_blank"
+                      target="_blank" rel="noopener noreferrer"
                     >
                       {btn?.buttontext}
                     </Link>

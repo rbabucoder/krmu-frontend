@@ -139,14 +139,14 @@ const YRCMagazines = () => {
             <div className="flex flex-col sm:flex-row gap-5  mb-[30px]">
               <Link
                 href="http://krmangalam.edu.in/pdfs/yrc-magazine-2023-24.pdf"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 className="common-btn-4"
               >
                 2023-2024
               </Link>
               <Link
                 href="https://krmangalam.edu.in/pdfs/yrc-magazine-2024-2025.pdf"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 className="common-btn-4"
               >
                 2024-2025

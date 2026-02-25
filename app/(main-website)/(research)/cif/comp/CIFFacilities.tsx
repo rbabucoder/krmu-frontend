@@ -12,7 +12,7 @@ const CIFFacilities = () => {
             <Link
               href="/tga-dsc"
               className="text-white text-base font-semibold"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
             >
               TGA/DSC
             </Link>
@@ -21,7 +21,7 @@ const CIFFacilities = () => {
             <Link
               href="/fourier-transform-infrared-spectrometer-ftir"
               className="text-white text-base font-semibold"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
             >
               Fourier Transform Infrared Spectrometer (FTIR)
             </Link>
@@ -30,7 +30,7 @@ const CIFFacilities = () => {
             <Link
               href="/double-beam-uv-visible-spectrometer"
               className="text-white text-base font-semibold"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
             >
               Double beam UV-Visible Spectrometer
             </Link>
@@ -39,7 +39,7 @@ const CIFFacilities = () => {
             <Link
               href="/refrigerated-centrifuges"
               className="text-white text-base font-semibold"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
             >
               Refrigerated Centrifuge
             </Link>
@@ -48,7 +48,7 @@ const CIFFacilities = () => {
             <Link
               href="/lcr-meter-instrument"
               className="text-white text-base font-semibold"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
             >
               LCR Meter
             </Link>
@@ -57,7 +57,7 @@ const CIFFacilities = () => {
             <Link
               href="/muffle-furnance"
               className="text-white text-base font-semibold"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
             >
               Muffle Furnance
             </Link>

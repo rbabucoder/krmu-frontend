@@ -23,7 +23,7 @@ export const ConnectWithUs = () => {
                 <span className="">Call Us:</span>
                 <span>9311411717</span>
               </span>
-            </Link>
+            </Link> 
           </div>
           <div className="w-full md:w-4/12">
             <Link
@@ -45,7 +45,7 @@ export const ConnectWithUs = () => {
             <Link
               href="https://share.google/1HhDvKtKG4otv2AkL"
               className="bg-[#ffffff0d] backdrop-blur-[22px] p-2.5 border border-[#ffffff40] rounded-[30px] flex items-center"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
             >
               <div>
                 <div className="w-[50px] h-[50px] bg-[#e31e24] flex items-center justify-center rounded-full">

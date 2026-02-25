@@ -47,7 +47,7 @@ const SchoolCommenceJourney = ({
             </p>
             <p>
               At{" "}
-              <Link href="https://admissions.krmangalam.edu.in/" className="underline" target="_blank">
+              <Link href="https://admissions.krmangalam.edu.in/" className="underline" target="_blank" rel="noopener noreferrer">
                 admissions.krmangalam.edu.in
               </Link>{" "}
             </p>
@@ -164,7 +164,7 @@ const SchoolCommenceJourney = ({
             className={`py-3.5 px-8 bg-[#051630] font-bold rounded-sm inline-block text-white ${
               btn?.btn_class || ""
             }`}
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
           >
             {btn?.btn_text || ""}
           </Link>

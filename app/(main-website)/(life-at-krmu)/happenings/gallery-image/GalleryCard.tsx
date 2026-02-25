@@ -43,7 +43,7 @@ const GalleryCard = ({ title, date_text, slug, imageGallery }: Props) => {
         <div>
           <Link
             href={`/photo-gallery/${slug}`}
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
             className="italic text-white text-xs underline inline-block py-[29px]"
           >
             View More

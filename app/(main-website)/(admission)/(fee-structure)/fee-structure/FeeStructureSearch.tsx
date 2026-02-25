@@ -70,7 +70,7 @@ const FeeStructureSearch = () => {
             {!loading &&
               programmes.map((item) => (
                 <div key={item.id} className="mb-3 last:mb-0">
-                  <Link href={`/programs/${item.programmeslug}`} target="_blank">
+                  <Link href={`/programs/${item.programmeslug}`} target="_blank" rel="noopener noreferrer">
                     <span className="text-xl font-semibold hover:text-red-500">
                       {item.title}
                     </span>

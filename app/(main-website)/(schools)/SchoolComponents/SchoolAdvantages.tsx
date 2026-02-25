@@ -1,4 +1,5 @@
 import { STRAPI_URL } from "@/app/constant";
+import { sanitizeHTML } from "@/lib/sanitize";
 import { CardWithImage, StrapiMedia } from "@/lib/types/common";
 import Image from "next/image";
 
@@ -21,7 +22,7 @@ const SchoolAdvantages = ({
   return (
     <section className="py-8 bg-[url(/schools/advantages-bg.webp)] bg-no-repeat bg-center bg-cover relative px-4">
       <div className="absolute left-[32%] bottom-0 hidden lg:block">
-      {/* <div className="advSchoolImg hidden lg:block"> */}
+        {/* <div className="advSchoolImg hidden lg:block"> */}
         {advimg?.url && (
           <Image
             src={`${STRAPI_URL}${advimg?.url}`}
@@ -36,16 +37,18 @@ const SchoolAdvantages = ({
         <div className="w-full lg:w-1/2">
           <div className="max-w-[500px] 2xl:max-w-[600px] text-justify">
             <h4 className="text-6xl lg:text-9xl font-semibold">{heading}</h4>
-          <h5 className="text-5xl lg:text-[64px] font-semibold mb-5">
-            {subtitle}
-          </h5>
-          {/* <p className="xl:pr-28 font-medium text-[#0060aa]"></p> */}
-          {school_advantage && <div
-            dangerouslySetInnerHTML={{
-              __html: school_advantage,
-            }}
-            className="xl:pr-28 font-medium adv_content"
-          />}
+            <h5 className="text-5xl lg:text-[64px] font-semibold mb-5">
+              {subtitle}
+            </h5>
+            {/* <p className="xl:pr-28 font-medium text-[#0060aa]"></p> */}
+            {school_advantage && (
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: sanitizeHTML(school_advantage),
+                }}
+                className="xl:pr-28 font-medium adv_content"
+              />
+            )}
           </div>
         </div>
         <div className="w-full lg:w-1/2 mt-5 lg:mt-0 lg:flex flex-col items-end 2xl:block">
