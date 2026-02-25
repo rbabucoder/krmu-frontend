@@ -25,7 +25,7 @@ const PrintCoverageCard = ({ data }: PrintCoverageCardProps) => {
         {data.upload_data?.url ? (
           <a
             href={`${STRAPI_URL}${data.upload_data.url}`}
-            target="_blank" rel="noopener noreferrer"
+            target="_blank"
             rel="noopener noreferrer"
           >
             <Image
