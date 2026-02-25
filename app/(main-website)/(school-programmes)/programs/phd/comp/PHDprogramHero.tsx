@@ -3,6 +3,7 @@ import { useState } from "react";
 import { STRAPI_URL } from "@/app/constant";
 import NoPaperForm from "@/lib/constants/NoPaperForm";
 import { CounterBlock } from "@/lib/types/phd-programmes";
+import Image from "next/image";
 
 type Props = {
   heading: string;
@@ -29,12 +30,17 @@ const PHDprogramHero = ({
 
   return (
     <>
-      <section
-        className="pt-[140px] pb-32 lg:py-[8%]"
-        style={{
-          background: `url(${STRAPI_URL}${bgimg}) center/cover no-repeat`,
-        }}
-      >
+      <section className="pt-[140px] pb-32 lg:py-[8%] relative">
+        {bgimg && (
+          <Image
+            src={`${STRAPI_URL}${bgimg}`}
+            alt={heading || "hero"}
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover -z-10"
+          />
+        )}
         <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row items-center">
           <div className="lg:w-3/5 text-white text-3xl md:text-5xl font-semibold p-5">
             <h1

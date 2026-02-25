@@ -21,20 +21,20 @@ const HeroBanner = ({ title, highlightitle, heroSection, formId }: Props) => {
   // useEffect(() => {
   //   if (!formId || !btnRef.current) return;
 
-    // loadNpfScript()
-    //   .then(() => {
-    //     // @ts-expect-error - test
-    //     new NpfWidgetsInit({
-    //       widgetId: formId,
-    //       baseurl: "widgets.nopaperforms.com",
-    //       formTitle: heroSection?.herobtn?.buttontext || "Apply Now",
-    //       titleColor: "#FF0033",
-    //       backgroundColor: "#ddd",
-    //       iframeHeight: "500px",
-    //       buttonTextColor: "#FFF",
-    //       target: btnRef.current,
-    //     });
-    //   })
+  // loadNpfScript()
+  //   .then(() => {
+  //     // @ts-expect-error - test
+  //     new NpfWidgetsInit({
+  //       widgetId: formId,
+  //       baseurl: "widgets.nopaperforms.com",
+  //       formTitle: heroSection?.herobtn?.buttontext || "Apply Now",
+  //       titleColor: "#FF0033",
+  //       backgroundColor: "#ddd",
+  //       iframeHeight: "500px",
+  //       buttonTextColor: "#FFF",
+  //       target: btnRef.current,
+  //     });
+  //   })
   //     .catch((err) => {
   //       console.error("Failed to load NPF script:", err);
   //     });
@@ -93,6 +93,7 @@ const HeroBanner = ({ title, highlightitle, heroSection, formId }: Props) => {
                 width={600}
                 height={500}
                 alt={heroSection?.heroimg?.alternativeText || "Hero Image"}
+                priority={true}
               />
             )
           )}

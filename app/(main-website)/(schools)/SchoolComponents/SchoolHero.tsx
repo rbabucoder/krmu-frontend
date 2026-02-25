@@ -4,6 +4,7 @@ import { Button } from "@/lib/types/home";
 import Link from "next/link";
 import SchoolHeroSEMCE from "./SchoolHeroSEMCE";
 import SchoolHeroSBAS from "./SchoolHeroSBAS";
+import Image from "next/image";
 
 type Props = {
   title: string;
@@ -35,11 +36,21 @@ const SchoolHero = ({
         />
       ) : (
         <section
-          className={`pt-[150px] pb-20 ${
+          className={`pt-[150px] pb-20 relative ${
             fullWidth ? "lg:py-[18%]" : "lg:py-[10%]"
           } bg-cover bg-no-repeat bg-center px-4`}
-          style={{ backgroundImage: `url(${STRAPI_URL}${herobanner?.url})` }}
+          // style={{ backgroundImage: `url(${STRAPI_URL}${herobanner?.url})` }}
         >
+          {herobanner?.url && (
+            <Image
+              src={`${STRAPI_URL}${herobanner.url}`}
+              alt={"hero"}
+              fill
+              priority
+              sizes="100vw"
+              className="object-cover -z-10"
+            />
+          )}
           {fullWidth ? (
             <div className="max-w-[1664px] mx-auto w-full">
               <div className="text-center text-white w-full">
