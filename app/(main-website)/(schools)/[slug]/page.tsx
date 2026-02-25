@@ -147,12 +147,12 @@ export default async function Page({ params }: Props) {
         />
       )}
 
-      <SchoolProgrammeOffered
+      {/* <SchoolProgrammeOffered
         degName={degreeName}
         schoolCategoryName={schoolCategoryName}
         title={school?.programme_offered?.title}
         content={school?.programme_offered?.content}
-      />
+      /> */}
 
       <SchoolExcitedAlready
         heading={school?.excitedtitle}
