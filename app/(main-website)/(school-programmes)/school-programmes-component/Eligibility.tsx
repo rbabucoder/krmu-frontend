@@ -68,16 +68,15 @@ const Eligibility = ({ elgibilities, mobherobtn, formId }: Props) => {
           <h2 className="text-2xl leading-[1.2] text-[#0060aa] font-semibold mb-2 inline-block">
             {displayTitle}
             {isLong && !expanded && " "}
-
-            {isLong && (
-              <button
-                onClick={() => setExpanded(!expanded)}
-                className="text-xl leading-[1.2] text-[#0060aa] font-semibold mb-2 cursor-pointer ml-2"
-              >
-                {expanded ? "Read Less" : "Read More"}
-              </button>
-            )}
-          </h2>
+          </h2>{" "}
+          {isLong && (
+            <button
+              onClick={() => setExpanded(!expanded)}
+              className="text-xl leading-[1.2] text-[#0060aa] font-semibold mb-2 cursor-pointer"
+            >
+              {expanded ? "Read Less" : "Read More"}
+            </button>
+          )}
 
           <p className="mb-2.5">{elgibilities[2]?.subtitle}</p>
         </div>
