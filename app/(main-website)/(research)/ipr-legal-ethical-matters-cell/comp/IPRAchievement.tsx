@@ -11,7 +11,7 @@ const IPRAchievement = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
           <Link
             href="https://truthful-cabbage-82fd27e8f6.media.strapiapp.com/List_of_Patents_2da1e1d437.pdf"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
           >
             <Image
               src="/ipr/achievements/achiev-1.png"
@@ -23,7 +23,7 @@ const IPRAchievement = () => {
           </Link>
           <Link
             href="https://truthful-cabbage-82fd27e8f6.media.strapiapp.com/List_of_Patents_2da1e1d437.pdf"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
           >
             <Image
               src="/ipr/achievements/achiev-2.png"
@@ -35,7 +35,7 @@ const IPRAchievement = () => {
           </Link>
           <Link
             href="https://truthful-cabbage-82fd27e8f6.media.strapiapp.com/List_of_Patents_2da1e1d437.pdf"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
           >
             <Image
               src="/ipr/achievements/achiev-3.png"
@@ -47,7 +47,7 @@ const IPRAchievement = () => {
           </Link>
           <Link
             href="https://truthful-cabbage-82fd27e8f6.media.strapiapp.com/List_of_Patents_2da1e1d437.pdf"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
           >
             <Image
               src="/ipr/achievements/achiev-4.png"

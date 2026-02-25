@@ -45,7 +45,7 @@ export const ConnectWithUs = () => {
             <Link
               href="https://share.google/1HhDvKtKG4otv2AkL"
               className="bg-[#ffffff0d] backdrop-blur-[22px] p-2.5 border border-[#ffffff40] rounded-[30px] flex items-center"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
             >
               <div>
                 <div className="w-[50px] h-[50px] bg-[#e31e24] flex items-center justify-center rounded-full">

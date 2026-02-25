@@ -79,7 +79,7 @@ const SchoolHero = ({
                         className={`py-3.5 px-8 bg-[#cb000d] font-bold rounded-sm text-sm md:text-base ${
                           btn.buttonclass || ""
                         }`}
-                        target="_blank"
+                        target="_blank" rel="noopener noreferrer"
                       >
                         {btn.buttontext}
                       </Link>
@@ -114,7 +114,7 @@ const SchoolHero = ({
                         className={`py-3.5 px-8 bg-[#cb000d] font-bold rounded-sm text-sm md:text-base ${
                           btn.buttonclass || ""
                         }`}
-                        target="_blank"
+                        target="_blank" rel="noopener noreferrer"
                       >
                         {btn.buttontext}
                       </Link>

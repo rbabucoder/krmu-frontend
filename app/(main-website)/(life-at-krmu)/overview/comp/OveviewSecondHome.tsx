@@ -22,7 +22,7 @@ const OveviewSecondHome = () => {
           <Link
             href="/hostel"
             className="py-[11px] px-[23px] text-white bg-[#0060aa] font-semibold text-base rounded-[4px] inline-block"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
           >
             Know More
           </Link>

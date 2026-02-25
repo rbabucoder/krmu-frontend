@@ -24,7 +24,7 @@ const FeeStructureSaarc = ({ feeStructSAARC }: Props) => {
           <Link
             href={feeStructSAARC?.saarc_btn || ""}
             className="py-[11px] px-[23px] bg-[#e31e24] text-white rounded-[4px] mb-[30px]"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
           >
             Click Here
           </Link>

@@ -25,7 +25,7 @@ const FinancialAssistanceSection = () => {
 
           <Link
             href="https://www.krmangalam.edu.in/financial-assistance"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
             className="inline-block bg-white text-[#0f172a] font-bold px-7 py-3 rounded-lg hover:bg-gray-200 transition"
           >
             Know More →

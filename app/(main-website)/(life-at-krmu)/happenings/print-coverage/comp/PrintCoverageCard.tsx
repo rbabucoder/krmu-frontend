@@ -23,11 +23,7 @@ const PrintCoverageCard = ({ data }: PrintCoverageCardProps) => {
       </div>
       <div className="w-[30%] flex justify-center items-start">
         {data.upload_data?.url ? (
-          <a
-            href={`${STRAPI_URL}${data.upload_data.url}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={`${STRAPI_URL}${data.upload_data.url}`} target="_blank" rel="noopener noreferrer">
             <Image
               src="/life-at-krmu/pdficon.webp"
               width={30}

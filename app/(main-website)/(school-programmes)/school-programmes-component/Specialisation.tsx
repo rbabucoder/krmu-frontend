@@ -24,10 +24,10 @@ const Specialisation = ({
         <div className="lg:flex mt-12 lg:gap-6">
           <div className="w-full lg:w-1/2 sm:px-0 text-center">
             <Image
-              src="/programmes/specilasation.webp"
+              src="/programmes/specialisation.webp"
               width={636}
               height={652}
-              alt="specilisation"
+              alt={heading || ""}
               className="w-full h-full"
             />
           </div>

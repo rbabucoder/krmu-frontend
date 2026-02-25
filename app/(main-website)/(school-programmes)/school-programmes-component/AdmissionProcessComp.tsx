@@ -50,7 +50,7 @@ const AdmissionProcessComp = ({
                     href={`https://${card?.description}`}
                     key={card?.id}
                     className="admis_proc_btn_grid_item"
-                    target="_blank"
+                    target="_blank" rel="noopener noreferrer"
                   >
                     <div className="admis_proc_btn_content">
                       <button className="btn_text">{card?.title}</button>
@@ -81,7 +81,7 @@ const AdmissionProcessComp = ({
                     href={card?.link}
                     key={card?.id}
                     className="admis_proc_btn_grid_item"
-                    target="_blank"
+                    target="_blank" rel="noopener noreferrer"
                   >
                     <div className="admis_proc_btn_content">
                       <button className="btn_text">{card?.title}</button>
@@ -125,7 +125,7 @@ const AdmissionProcessComp = ({
                     <p className="z-10 leading-[1] text-sm text-[#0d6efd] break-all">
                       <Link
                         href={`https://${card?.description}`}
-                        target="_blank"
+                        target="_blank" rel="noopener noreferrer"
                       >
                         {card?.description}
                       </Link>

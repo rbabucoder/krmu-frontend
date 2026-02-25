@@ -36,6 +36,7 @@ const CareerProspects = ({
                 height={660}
                 className="w-full h-full lg:hidden"
                 alt={careerimg?.alternativeText || "Career Prospectus"}
+                sizes="(max-width: 1024px) 100vw, 660px"
               />
             )}
             <p className="mb-6">{desc}</p>
@@ -62,6 +63,7 @@ const CareerProspects = ({
                 height={660}
                 className="w-full h-full"
                 alt={careerimg?.alternativeText || "Career Prospectus"}
+                sizes="(max-width: 1024px) 100vw, 660px"
               />
             )}
           </div>

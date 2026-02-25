@@ -32,7 +32,7 @@ const ScholarshipSection = () => {
 
           <Link
             href="https://www.krmangalam.edu.in/admission/scholarship"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
             className="inline-block bg-white text-[#e31e24] font-bold px-7 py-3 rounded-lg hover:bg-gray-200 transition"
           >
             Know More →

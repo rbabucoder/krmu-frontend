@@ -22,7 +22,7 @@ const CareerSubmitResume = ({ openings }: Props) => {
             <Link
               href={openings?.opening_btn?.btn_link || "#"}
               className="flex items-center bg-white text-black py-[13px] px-[29px] w-fit gap-2.5 text-sm rounded-sm mt-5 font-medium"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
             >
               <span>Submit your Resume</span> <MoveRight />
             </Link>

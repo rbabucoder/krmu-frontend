@@ -23,14 +23,11 @@ const CommonBlogCard = async ({ title, excerpt, slug, imgId, date }: Props) => {
 
   if (!imgUrl) return null;
 
-  console.log('normalizedImgUrl', normalizedImgUrl);
-
   const postDate = new Date(date).toLocaleDateString("en-IN", {
     day: "numeric",
     month: "short",
     year: "numeric",
   });
-  console.log("postDate", postDate);
 
   return (
     <div className="w-full">
@@ -39,10 +36,13 @@ const CommonBlogCard = async ({ title, excerpt, slug, imgId, date }: Props) => {
         className="block w-full rounded-[24px]"
         style={{ boxShadow: `0px 0px 6px 0px #c6dcfd` }}
         target="_blank"
+        rel="noopener noreferrer"
       >
         <div className="p-2.5" data-test={imgUrl}>
           <div className="relative">
-            <span className="absolute bottom-0 right-0 text-xs bg-red-600 text-white py-2.5 px-5 rounded-tl-[24px]">{postDate}</span>
+            <span className="absolute bottom-0 right-0 text-xs bg-red-600 text-white py-2.5 px-5 rounded-tl-[24px]">
+              {postDate}
+            </span>
             {normalizedImgUrl && (
               <Image
                 src={normalizedImgUrl}

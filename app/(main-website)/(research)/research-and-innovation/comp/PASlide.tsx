@@ -41,7 +41,7 @@ const PASlide = ({ slide }: Props) => {
                       <Link
                         href={item?.link}
                         className="text-white"
-                        target="_blank"
+                        target="_blank" rel="noopener noreferrer"
                       >
                         {item?.content}
                         <Image

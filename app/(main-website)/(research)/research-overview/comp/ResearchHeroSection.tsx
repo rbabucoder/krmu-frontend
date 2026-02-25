@@ -74,7 +74,7 @@ const ResearchHeroSection = () => {
           <Link
             href="/research-and-innovation"
             className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit my-8"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
           >
             <span>Research and Development Cell (RDC)</span>{" "}
             <Image
@@ -87,7 +87,7 @@ const ResearchHeroSection = () => {
           <Link
             href="/cif"
             className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
           >
             <span>Central Instrumentation Facility (CIF)</span>{" "}
             <Image
@@ -100,7 +100,7 @@ const ResearchHeroSection = () => {
           <Link
             href="/keic"
             className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
           >
             <span>
               K.R. Mangalam Entrepreneurship and Innovation Center (KEIC)
@@ -115,7 +115,7 @@ const ResearchHeroSection = () => {
           <Link
             href="/ipr-legal-ethical-matters-cell"
             className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
           >
             <span>IPR, Legal & Ethical Matters Cell</span>{" "}
             <Image
@@ -128,7 +128,7 @@ const ResearchHeroSection = () => {
           <Link
             href="/research-and-innovation/#_ongoing-collab"
             className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
           >
             <span>Ongoing Projects and Collaborations</span>{" "}
             <Image
@@ -141,7 +141,7 @@ const ResearchHeroSection = () => {
           <Link
             href="/research-and-innovation/#_res-highlights"
             className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
           >
             <span>Research Highlights</span>{" "}
             <Image
@@ -154,7 +154,7 @@ const ResearchHeroSection = () => {
           <Link
             href="/research-and-innovation/#research-achievements"
             className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
           >
             <span>Research Achievements</span>{" "}
             <Image
@@ -167,7 +167,7 @@ const ResearchHeroSection = () => {
           <Link
             href="/research-and-innovation/#_publications-achievements"
             className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
           >
             <span>Publications and Achievements</span>{" "}
             <Image
@@ -180,7 +180,7 @@ const ResearchHeroSection = () => {
           <Link
             href="/research-and-innovation/#_academics-resources"
             className="min-h-24 py-[17px] px-10 bg-[#ffffff33] rounded-[30px] text-white text-lg flex items-center justify-center font-semibold w-fit sm:my-5 lg:my-8"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
           >
             <span>Academic Research</span>{" "}
             <Image

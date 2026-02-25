@@ -112,7 +112,7 @@ const page = async () => {
                     <Link
                       href={item.listlink}
                       className="text-xl flex tracking-[-1px]"
-                      target="_blank"
+                      target="_blank" rel="noopener noreferrer"
                     >
                       <Image
                         src={`${STRAPI_URL}${item.listicon.url}`}

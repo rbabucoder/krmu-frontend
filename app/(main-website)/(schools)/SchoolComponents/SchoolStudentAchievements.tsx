@@ -25,7 +25,7 @@ const SchoolStudentAchievements = ({ title, btn, schoolCat }: Props) => {
             <Link
               href={btn?.buttonlink}
               className={`py-3.5 px-8 bg-[#cb000d] font-bold rounded-sm inline-block text-white ${btn?.buttonclass}`}
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
             >
               {btn?.buttontext}
             </Link>

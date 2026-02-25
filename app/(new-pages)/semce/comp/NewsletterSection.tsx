@@ -21,9 +21,7 @@ export default function NewsletterSection() {
           target="_blank" rel="noopener noreferrer"
         >
           <div className="flex justify-between items-start mb-4">
-            <h3 className="text-2xl font-serif">
-              January to March 2025
-            </h3>
+            <h3 className="text-2xl font-serif">January to March 2025</h3>
             <span className="text-xl group-hover:translate-x-1 transition">
               ↗
             </span>
@@ -55,9 +53,7 @@ export default function NewsletterSection() {
           <div className="absolute inset-0 bg-black/20" />
 
           <div className="absolute inset-0 p-5 flex items-end justify-between text-white">
-            <h3 className="text-lg font-serif">
-              July to September 2024
-            </h3>
+            <h3 className="text-lg font-serif">July to September 2024</h3>
             <span className="text-xl">↗</span>
           </div>
         </Link>
@@ -78,9 +74,7 @@ export default function NewsletterSection() {
           <div className="absolute inset-0 bg-black/20" />
 
           <div className="absolute inset-0 p-5 flex items-end justify-between text-white">
-            <h3 className="text-lg font-serif">
-              October to December 2024
-            </h3>
+            <h3 className="text-lg font-serif">October to December 2024</h3>
             <span className="text-xl">↗</span>
           </div>
         </Link>

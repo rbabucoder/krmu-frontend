@@ -18,7 +18,7 @@ const IPRContent = () => {
           </p>
           <Link
             href="https://truthful-cabbage-82fd27e8f6.media.strapiapp.com/Revised_IPR_Policy_1_1_1d15d14fef.pdf"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
             className="bg-[#e31e24] text-white py-[11px] px-[23px] text-sm leading-4  rounded-[4px] font-medium"
           >
             IPR Policy

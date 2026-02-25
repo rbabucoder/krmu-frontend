@@ -25,7 +25,7 @@ const SchoolEventAndExperience = ({ title, desc, btn, eventsexp }: Props) => {
             <Link
               href={btn?.buttonlink}
               className="py-3.5 px-8 bg-[#cb000d] font-bold rounded-sm inline-block text-white mt-5"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
             >
               {btn?.buttontext}
             </Link>

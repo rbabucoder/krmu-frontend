@@ -35,7 +35,7 @@ const RDC = () => {
             <div className="text-center">
 
             <Image src="/research/seema.webp" width={431} height={537} alt="Seema" />
-            <Link href="/dr-seema-raj" target="_blank" className="text-white mt-1.5"><strong>Dr. Seema Raj</strong> | Dean Research</Link>
+            <Link href="/dr-seema-raj" target="_blank" rel="noopener noreferrer" className="text-white mt-1.5"><strong>Dr. Seema Raj</strong> | Dean Research</Link>
             </div>
             
         </div>

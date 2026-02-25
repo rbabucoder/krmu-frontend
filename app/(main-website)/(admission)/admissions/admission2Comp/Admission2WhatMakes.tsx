@@ -105,7 +105,7 @@ const Admission2WhatMakes = () => {
           <div className="flex items-center justify-center p-12">
             <Link
               href="/campus-life/virtual-tour"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               className="common-btn-1"
             >
               Explore our Campus <ArrowRight color="#fff" />

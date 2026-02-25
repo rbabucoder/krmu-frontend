@@ -16,7 +16,7 @@ const NEP = () => {
         <Link
           href="https://truthful-cabbage-82fd27e8f6.media.strapiapp.com/Implementation_of_NEP_2020_91665fab31.pdf"
           className="flex py-[11px] px-[23px] text-[13px] my-5 items-center w-fit text-white bg-black rounded-sm"
-          target="_blank"
+          target="_blank" rel="noopener noreferrer"
         >
           <ChevronRight className="h-[13px]" strokeWidth={5} />
           <span>Implementation of NEP – 2020</span>

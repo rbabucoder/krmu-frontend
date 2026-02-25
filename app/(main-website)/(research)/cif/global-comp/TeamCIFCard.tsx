@@ -7,7 +7,7 @@ const TeamCIFCard = () => {
   return (
     <Link
       href="/faculty/dr-prabhakar-bhandari"
-      target="_blank"
+      target="_blank" rel="noopener noreferrer"
       className="bg-[url(/research/card-bg.webp)] bg-no-repeat text-white bg-cover flex flex-col sm:flex-row items-center justify-center rounded-[20px] mt-5"
     >
       <div className="md:w-1/4">

@@ -25,7 +25,7 @@ const FeeStructureSaarcApproval = ({ feeStructSAARCApproval }: Props) => {
             <Link
               href={feeStructSAARCApproval?.fee_struct_click_here || ""}
               className="py-[11px] px-[23px] bg-[#e31e24] text-white rounded-[4px] mb-[30px]"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
             >
               Click Here
             </Link>
@@ -34,7 +34,7 @@ const FeeStructureSaarcApproval = ({ feeStructSAARCApproval }: Props) => {
             <Link
               href={feeStructSAARCApproval?.office_order_url || ""}
               className="py-[11px] px-[23px] bg-[#e31e24] text-white rounded-[4px] mb-[30px]"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
             >
               OFFICE ORDER REGARDING THE FEE REFUND POLICY
             </Link>

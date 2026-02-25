@@ -122,7 +122,7 @@ const ScholarNotes = () => {
               This policy is not applicable for Lateral Entry and Migration
               <p>
                 <strong>Important :</strong> For detailed sports scholarship{" "}
-                <Link href="https://www.krmangalam.edu.in/wp-content/uploads/2025/03/sports-club-sports-scholarship-policy-2025-26.pdf" target="_blank">Click here</Link>
+                <Link href="https://www.krmangalam.edu.in/wp-content/uploads/2025/03/sports-club-sports-scholarship-policy-2025-26.pdf" target="_blank" rel="noopener noreferrer">Click here</Link>
               </p>
             </span>
           </div>

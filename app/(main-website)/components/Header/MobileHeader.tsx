@@ -199,7 +199,7 @@ const MobileHeader = ({ topbarmenu, navbarData, onClose }: Props) => {
             </li>
             {zenithLinks && zenithLinks.__component === "menu.menu-links" && (
               <li className="pt-2.5 pb-4  font-semibold text-[#ff0010]">
-                <Link href={zenithLinks?.url || "#"} onClick={onClose} target="_blank">
+                <Link href={zenithLinks?.url || "#"} onClick={onClose} target="_blank" rel="noopener noreferrer">
                   {zenithLinks?.title}
                 </Link>
               </li>
@@ -296,7 +296,7 @@ const MobileHeader = ({ topbarmenu, navbarData, onClose }: Props) => {
                   <Link
                     href={sustainabilityLinks?.url || "#"}
                     onClick={onClose}
-                    target="_blank"
+                    target="_blank" rel="noopener noreferrer"
                   >
                     {sustainabilityLinks?.title}
                   </Link>
@@ -335,7 +335,7 @@ const MobileHeader = ({ topbarmenu, navbarData, onClose }: Props) => {
                             href={menu?.url || "#"}
                             className="text-black text-[13px] font-normal"
                             onClick={onClose}
-                            target="_blank"
+                            target="_blank" rel="noopener noreferrer"
                           >
                             {menu?.title}
                           </Link>
@@ -394,7 +394,7 @@ const MobileHeader = ({ topbarmenu, navbarData, onClose }: Props) => {
                               href={menu?.url || "#"}
                               className="text-black text-[13px] font-normal"
                               onClick={onClose}
-                              target="_blank"
+                              target="_blank" rel="noopener noreferrer"
                             >
                               {menu?.title}
                             </Link>
@@ -413,7 +413,7 @@ const MobileHeader = ({ topbarmenu, navbarData, onClose }: Props) => {
                               href={menu?.url || "#"}
                               className="text-black text-[13px] font-normal"
                               onClick={onClose}
-                              target="_blank"
+                              target="_blank" rel="noopener noreferrer"
                             >
                               {menu?.title}
                             </Link>
@@ -441,7 +441,7 @@ const MobileHeader = ({ topbarmenu, navbarData, onClose }: Props) => {
               <Link
                 key={menu?.id}
                 href={menu?.url || "#"}
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 className="text-white py-1.5 px-3 rounded-[5px] border border-white"
                 onClick={onClose}
               >

@@ -20,7 +20,7 @@ const SemesterCall = ({ heading, url }: Props) => {
         <Link
           href={url || "#"}
           className="underline flex items-center text-lg gap-1"
-          target="_blank"
+          target="_blank" rel="noopener noreferrer"
         >
           Download PDF
           <Image src="/white-pdf.webp" width={29} height={30} alt="" />
