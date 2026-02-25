@@ -29,7 +29,7 @@ const OverviewYourInterest = () => {
           <Link
             href="/clubs-and-societies"
             className="text-base py-[11px] px-[23px] text-white font-semibold rounded-[4px] bg-[#051630] inline-block mt-5"
-            target="_blank" rel="noopener noreferrer"
+            target="_blank"
           >
             Know More
           </Link>

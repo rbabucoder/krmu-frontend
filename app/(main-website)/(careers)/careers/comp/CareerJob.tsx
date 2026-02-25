@@ -13,7 +13,7 @@ const CareerJob = ({ title, slug }: Props) => {
       style={{
         boxShadow: `0 1px 4px 0 rgb(0 0 0 / 5%)`,
       }}
-      target="_blank" rel="noopener noreferrer"
+      target="_blank"
     >
       <h4
         className="text-lg font-semibold mb-[5px]"

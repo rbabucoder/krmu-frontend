@@ -32,7 +32,7 @@ const SingleBlogHeroAuthor = ({
           <span>
             KRMU Team
           </span>
-          {/* <Link href={`/author/${authorSlug}`} target="_blank" rel="noopener noreferrer">
+          {/* <Link href={`/author/${authorSlug}`} target="_blank">
             {authorName}
           </Link> */}
         </span>

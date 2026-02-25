@@ -30,7 +30,7 @@ export const PhotoGallery = ({ photoGallery }: Props) => {
           <Link
             href="/happenings/gallery-image"
             className="px-6 py-2 rounded-md bg-[#051630] text-white hover:bg-gray-800 transition"
-            target="_blank" rel="noopener noreferrer"
+            target="_blank"
           >
             View More
           </Link>

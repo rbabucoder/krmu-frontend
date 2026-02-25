@@ -93,7 +93,7 @@ const page = async () => {
                     className="bg-white text-center h-[431px] flex flex-col items-center justify-center  rounded-4xl membership-ranking-card p-5"
                   >
                     {member?.cardurl ? (
-                      <Link href={member.cardurl} target="_blank" rel="noopener noreferrer">
+                      <Link href={member.cardurl} target="_blank">
                         <Image
                           src={`${STRAPI_URL}${member.cardimg.url}`}
                           width={274}
@@ -113,7 +113,7 @@ const page = async () => {
                     {member?.cardurl ? (
                       <Link
                         href={member.cardurl}
-                        target="_blank" rel="noopener noreferrer"
+                        target="_blank"
                         className="font-semibold text-[22px] mt-5 max-w-[300px] w-full hover:text-[#0060aa]"
                       >
                         {member.cardtitle}

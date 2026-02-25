@@ -57,7 +57,7 @@ const AccCard = ({
               <Link
                 href={downloadUrl || "#"}
                 className="bg-[#288feb] py-1.5 px-2.5 flex text-white items-center gap-1 text-base"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
               >
                 <Image
                   src="/white-pdf.png"
@@ -72,7 +72,7 @@ const AccCard = ({
               <Link
                 href={quickApplyUrl || "#"}
                 className="bg-[#288feb] py-1.5 px-2.5 flex text-white items-center gap-1 text-base"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
               >
                 Quick Apply
               </Link>

@@ -12,7 +12,7 @@ const IPRFacilities = () => {
             <Link
               href="/patent"
               className="text-white text-base font-semibold"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
             >
               Patent
             </Link>
@@ -21,7 +21,7 @@ const IPRFacilities = () => {
             <Link
               href="/industrial-design"
               className="text-white text-base font-semibold"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
             >
               Industrial Design
             </Link>
@@ -30,7 +30,7 @@ const IPRFacilities = () => {
             <Link
               href="/copyright"
               className="text-white text-base font-semibold"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
             >
               Copyright
             </Link>
@@ -39,7 +39,7 @@ const IPRFacilities = () => {
             <Link
               href="/trade-mark"
               className="text-white text-base font-semibold"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
             >
               Trademark
             </Link>
@@ -48,7 +48,7 @@ const IPRFacilities = () => {
             <Link
               href="/ip-process-at-k-r-mangalam-university"
               className="text-white text-base font-semibold"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
             >
               IP Filing Processing at KRMU
             </Link>

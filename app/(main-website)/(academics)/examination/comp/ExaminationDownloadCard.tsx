@@ -28,7 +28,7 @@ export const ExaminationDownloadCard = ({ title, btn }: Props) => {
           className={`inline-block w-full text-center p-[5px] md:py-[13px] md:px-[29px] bg-[#e31e24] rounded-b-[22px] text-base md:text-2xl text-white font-semibold ${
             btn?.btn_class || ""
           }`}
-          target="_blank" rel="noopener noreferrer"
+          target="_blank"
         >
           {btn?.btn_text}
         </Link>

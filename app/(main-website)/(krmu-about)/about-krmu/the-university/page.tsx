@@ -253,7 +253,7 @@ const page = async () => {
                       ?.buttonlink
                   }
                   className={`p-2.5 px-[18px] bg-[#cb000d] text-base inline-block rounded-sm leading-4 text-white ${aboutData?.internationcollaboration?.intcollabbtn?.buttonclass}`}
-                  target="_blank" rel="noopener noreferrer"
+                  target="_blank"
                 >
                   {
                     aboutData?.internationcollaboration?.intcollabbtn

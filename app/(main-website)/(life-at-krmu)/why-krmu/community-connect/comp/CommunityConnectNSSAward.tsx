@@ -144,7 +144,7 @@ const CommunityConnectNSSAward = () => {
         <div className="flex items-center justify-center py-10">
           <Link
             href="https://docs.google.com/forms/d/e/1FAIpQLSeC0NIGoHcymc2_V1TsHViBi2SMsITtGPwtbp1-rr6HXCLejg/viewform"
-            target="_blank" rel="noopener noreferrer"
+            target="_blank"
             className="py-[13px] px-[29px] bg-[#e31e24] text-white rounded-[4px] font-semibold"
           >
             NSS Registration Form

@@ -20,10 +20,11 @@ export default function KRMUQSBrowser() {
    * /KRMU_QS/Advanced%20Criteria → Advanced Criteria
    */
   const relativePath = decodeURIComponent(
-    pathname.replace(/^\/KRMU_QS\/?/, "").replace(/\/$/, ""),
+    pathname.replace(/^\/KRMU_QS\/?/, "").replace(/\/$/, "")
   );
 
-  const r2Prefix = R2_ROOT + (relativePath ? `${relativePath}/` : "");
+  const r2Prefix =
+    R2_ROOT + (relativePath ? `${relativePath}/` : "");
 
   const [folders, setFolders] = useState<string[]>([]);
   const [files, setFiles] = useState<R2File[]>([]);
@@ -62,9 +63,7 @@ export default function KRMUQSBrowser() {
     parts.pop();
 
     const nextPath = parts.join("/");
-    router.push(
-      nextPath ? `/KRMU_QS/${encodeURIComponent(nextPath)}` : "/KRMU_QS",
-    );
+    router.push(nextPath ? `/KRMU_QS/${encodeURIComponent(nextPath)}` : "/KRMU_QS");
   };
 
   return (
@@ -73,7 +72,10 @@ export default function KRMUQSBrowser() {
       <div className="mb-4 flex justify-between items-center">
         <div className="flex items-center">
           {relativePath && (
-            <button onClick={goBack} className="mr-3 text-blue-600 font-medium">
+            <button
+              onClick={goBack}
+              className="mr-3 text-blue-600 font-medium"
+            >
               ◀ Back
             </button>
           )}
@@ -105,9 +107,7 @@ export default function KRMUQSBrowser() {
             <div
               key={folderPrefix}
               onClick={() =>
-                router.push(
-                  `/KRMU_QS/${encodeURIComponent(relativeFolderPath)}`,
-                )
+                router.push(`/KRMU_QS/${encodeURIComponent(relativeFolderPath)}`)
               }
               className="cursor-pointer text-blue-600 py-1"
             >
@@ -132,7 +132,7 @@ export default function KRMUQSBrowser() {
               <a
                 href={fileUrl}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noreferrer"
                 className="hover:underline"
               >
                 📄 {file.Key.replace(r2Prefix, "")}
@@ -144,3 +144,4 @@ export default function KRMUQSBrowser() {
     </div>
   );
 }
+  

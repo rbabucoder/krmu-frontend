@@ -17,7 +17,7 @@ const VirtualSchedule = () => {
         <Link
           href="/campus-tour"
           className="bg-[#cb000d] text-white rounded-full py-[13px] px-[29px] inline-block"
-          target="_blank" rel="noopener noreferrer"
+          target="_blank"
         >
           Schedule Your Tour
         </Link>

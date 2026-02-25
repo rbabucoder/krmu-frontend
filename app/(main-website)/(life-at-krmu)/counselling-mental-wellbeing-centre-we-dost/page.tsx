@@ -233,14 +233,14 @@ const page = () => {
             <div>
               <Link
                 href="https://krmangalam.edu.in/pdfs/we-dost/we-dost-constitution-1.pdf"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
                 className="p-5 block font-semibold text-white bg-[#ff0000] text-center text-xl mb-5"
               >
                 We Dost Constitution-1
               </Link>
               <Link
                 href="https://krmangalam.edu.in/pdfs/we-dost/we-dost-constitution-2.pdf"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
                 className="p-5 block font-semibold text-white bg-[#ff0000] text-center text-xl"
               >
                 We Dost Constitution-2
@@ -250,7 +250,7 @@ const page = () => {
 
               <Link
                 href="https://krmangalam.edu.in/pdfs/we-dost/duty-roster-october-2024.pdf"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
                 className="p-5 block font-semibold text-white bg-[#ff0000] text-center text-xl mb-5"
               >
                 SOP-WE DOST
@@ -263,7 +263,7 @@ const page = () => {
             <div>
               <Link
                 href="https://krmangalam.edu.in/pdfs/we-dost/leaflet-english-hindi-wellbeing-centre-size-a4.pdf"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
                 className="p-5 block font-semibold text-white bg-[#ff0000] text-center text-xl mb-5"
               >
                 Duty Roster October 2024
@@ -273,7 +273,7 @@ const page = () => {
 
               <Link
                 href="https://krmangalam.edu.in/pdfs/we-dost/duty-roster-october-2024.pdf"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
                 className="p-5 block font-semibold text-white bg-[#ff0000] text-center text-xl mb-5"
               >
                 SOP-WE DOST
@@ -286,7 +286,7 @@ const page = () => {
             <div>
               <Link
                 href="https://krmangalam.edu.in/pdfs/we-dost/annua-report-2023-24-counselling-and-mental-wellbeing-centre-k.pdf"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
                 className="p-5 block font-semibold text-white bg-[#ff0000] text-center text-xl mb-5"
               >
                 Annual Report 2023-24 Counselling and Mental Wellbeing Centre K
@@ -294,7 +294,7 @@ const page = () => {
 
               <Link
                 href="https://krmangalam.edu.in/pdfs/we-dost/annual-report-2024-25.pdf"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
                 className="p-5 block font-semibold text-white bg-[#ff0000] text-center text-xl mb-5"
               >
                 Annual Report 2024-25

@@ -26,7 +26,7 @@ const OverviewInnovate = async () => {
             </p>
             <Link
               href="/krmu-campus-facilities"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
               className="py-[13px] px-[29px] bg-black text-white rounded-[4px] text-base font-medium inline-block"
             >
               Explore KRMU Facilities
@@ -54,7 +54,7 @@ const OverviewInnovate = async () => {
                 </p>
                 <Link
                   href="https://www.instagram.com/krmuniv/"
-                  target="_blank" rel="noopener noreferrer"
+                  target="_blank"
                   className="border border-[#e31e24] py-2 px-5 rounded-full text-[#e31e24] inline-block"
                 >
                   Check Instagram
@@ -70,7 +70,7 @@ const OverviewInnovate = async () => {
                 <Link
                   href="/happenings/news-and-events"
                   className="text-white bg-[#e31e24] py-[11px] px-[23px] rounded-[4px]"
-                  target="_blank" rel="noopener noreferrer"
+                  target="_blank"
                 >
                   View More
                 </Link>

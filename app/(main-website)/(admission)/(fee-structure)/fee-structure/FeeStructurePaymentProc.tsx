@@ -23,7 +23,7 @@ const FeeStructurePaymentProc = () => {
             <Link
               href="/payment-procedure"
               className="text-[#af406a] hover:text-[#0060aa]"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
             >
               Read More
             </Link>

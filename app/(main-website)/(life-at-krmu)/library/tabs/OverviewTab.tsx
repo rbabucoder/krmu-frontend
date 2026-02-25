@@ -23,7 +23,7 @@ const OverviewTab = () => {
             <p className="mb-5">Use your Roll No or Employee ID to Login</p>
             <Link
               href="https://bit.ly/3CEDfs8"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
               className="py-[11px] px-[23px] text-sm rounded-[4px] text-white bg-[#e31e24] hover:text-[#051630] hover:cursor-pointer"
             >
               Click Here
@@ -34,7 +34,7 @@ const OverviewTab = () => {
             <p className="mb-5">Use your Roll No or Employee ID to Login</p>
             <Link
               href="http://172.16.16.25:4444/"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
               className="py-[11px] px-[23px] text-sm rounded-[4px] text-white bg-[#e31e24] hover:text-[#051630] hover:cursor-pointer"
             >
               Click Here

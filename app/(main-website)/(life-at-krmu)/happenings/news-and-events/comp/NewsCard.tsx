@@ -69,7 +69,7 @@ const NewsCard = ({ title, slug, firstImage, publishedAt }: NewsCardProps) => {
 
         <Link
           href={`/events-and-news/${slug || "#"}`}
-          target="_blank" rel="noopener noreferrer"
+          target="_blank"
           className="italic text-white text-xs underline inline-block py-[29px]"
         >
           View More

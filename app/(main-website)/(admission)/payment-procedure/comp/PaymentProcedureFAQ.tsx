@@ -41,7 +41,7 @@ const PaymentProcedureFAQ = () => {
                 <p>
                   For 1st Semester, students may login to the Collexo and can
                   check the status in his/her account. For 2nd Semester onwards
-                  you can visit this link- <Link href="https://krmu.icloudems.com/" target="_blank" rel="noopener noreferrer">https://krmu.icloudems.com/</Link>
+                  you can visit this link- <Link href="https://krmu.icloudems.com/" target="_blank">https://krmu.icloudems.com/</Link>
                 </p>
               </AccordionContent>
             </AccordionItem>

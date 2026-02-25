@@ -92,7 +92,7 @@ const TabScroll = () => {
                     href="https://www.krmangalam.edu.in/clubs-and-societies/"
                     className="student_welfare-blink-effect"
                     style={{ color: "red" }}
-                    target="_blank" rel="noopener noreferrer"
+                    target="_blank"
                   >
                     Know More
                   </Link>

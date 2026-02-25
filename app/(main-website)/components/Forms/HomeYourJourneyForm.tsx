@@ -75,7 +75,7 @@ const HomeYourJourneyForm = () => {
           {!loading &&
             programmes.map((item) => (
               <div key={item.id} className="mb-3 last:mb-0">
-                <Link href={`/programs/${item.programmeslug}`} target="_blank" rel="noopener noreferrer">
+                <Link href={`/programs/${item.programmeslug}`} target="_blank">
                   <span className="text-lg font-semibold text-black hover:text-[#cb000d] cursor-pointer">
                     {item.title}
                   </span>

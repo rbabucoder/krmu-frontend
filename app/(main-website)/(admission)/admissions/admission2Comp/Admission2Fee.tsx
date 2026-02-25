@@ -196,7 +196,7 @@ const Admission2Fee = () => {
             style={{
               boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
             }}
-            target="_blank" rel="noopener noreferrer"
+            target="_blank"
           >
             View Fees Structure
           </Link>

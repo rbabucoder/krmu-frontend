@@ -11,7 +11,7 @@ const ResearchCenterTable = () => {
                 <td>
                   <Link
                     href="https://www.krmangalam.edu.in/centre-of-excellence-artificial-intelligence/"
-                    target="_blank" rel="noopener noreferrer"
+                    target="_blank"
                   >
                     <strong>
                       Centre of Excellence in Artificial Intelligence (CoE-AI)
@@ -21,7 +21,7 @@ const ResearchCenterTable = () => {
                 <td>
                   <Link
                     href="https://krmangalam.edu.in/pdfs/coe-ai-annual-report-2024-25.pdf"
-                    target="_blank" rel="noopener noreferrer"
+                    target="_blank"
                   >
                     View Report
                   </Link>
@@ -31,7 +31,7 @@ const ResearchCenterTable = () => {
                 <td>
                   <Link
                     href="https://www.krmangalam.edu.in/cif/"
-                    target="_blank" rel="noopener noreferrer"
+                    target="_blank"
                   >
                     <strong>
                       Centre of Excellence for Advanced Material Research
@@ -42,7 +42,7 @@ const ResearchCenterTable = () => {
                 <td>
                   <Link
                     href="https://www.krmangalam.edu.in/pdfs/ceamr-annual-report-2024-25.pdf"
-                    target="_blank" rel="noopener noreferrer"
+                    target="_blank"
                   >
                     View Report
                   </Link>
@@ -50,7 +50,7 @@ const ResearchCenterTable = () => {
               </tr>
               <tr>
                 <td>
-                  <Link href="" target="_blank" rel="noopener noreferrer">
+                  <Link href="" target="_blank">
                     <strong>
                       Centre of Excellence for Sustainable Development Goals
                       (CoE-SDG)
@@ -60,7 +60,7 @@ const ResearchCenterTable = () => {
                 <td>
                   <Link
                     href="https://krmangalam.edu.in/pdfs/coe-sdg-annual-report-2024-25.pdf"
-                    target="_blank" rel="noopener noreferrer"
+                    target="_blank"
                   >
                     View Report
                   </Link>
@@ -70,7 +70,7 @@ const ResearchCenterTable = () => {
                 <td>
                   <Link
                     href="https://www.krmangalam.edu.in/keic/"
-                    target="_blank" rel="noopener noreferrer"
+                    target="_blank"
                   >
                     <strong>
                       K.R. Mangalam Entrepreneurship and Incubation Centre
@@ -81,7 +81,7 @@ const ResearchCenterTable = () => {
                 <td>
                   <Link
                     href="https://krmangalam.edu.in/pdfs/keic-foundation-annual-report-2024-25.pdf"
-                    target="_blank" rel="noopener noreferrer"
+                    target="_blank"
                   >
                     View Report
                   </Link>

@@ -36,7 +36,7 @@ const OfferedProgrammeCard = ({ heading, content, url, imgUrl }: Props) => {
           <Link
             href={url || "#"}
             className="underline text-white text-sm underline-offset-4"
-            target="_blank" rel="noopener noreferrer"
+            target="_blank"
           >
             Read More
           </Link>

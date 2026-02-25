@@ -104,7 +104,7 @@ export default function GrievanceTabsUI() {
                     <Link
                       className="flex items-center gap-2 text-[#001f3f] hover:text-[#0056b3] font-medium"
                       href={item.link}
-                      target="_blank" rel="noopener noreferrer"
+                      target="_blank"
                     >
                       <Download size={18} /> {item.title}
                     </Link>

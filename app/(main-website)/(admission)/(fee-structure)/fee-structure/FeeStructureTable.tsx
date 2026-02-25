@@ -37,7 +37,7 @@ const FeeStructureTable = ({ feeStructTab }: Props) => {
             href="https://www.krmangalam.edu.in/pdfs/Fee-Structure-2025-26.pdf"
             className="bg-[#898989] sm:leading-[3] inline-block w-full text-center text-sm sm:text-2xl p-5 sm:py-3.5 sm:px-[55px] rounded-none data-[state=active]:bg-[#051630] data-[state=active]:text-white
              text-black  font-semibold"
-            target="_blank" rel="noopener noreferrer"
+            target="_blank"
           >
             Download Fee Structure
           </Link> */}

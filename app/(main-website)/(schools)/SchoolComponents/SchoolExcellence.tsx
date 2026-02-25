@@ -18,7 +18,7 @@ const SchoolExcellence = ({ title1, title2, btn1, btn2 }: Props) => {
             <Link
               href={btn1?.buttonlink}
               className={`py-3.5 px-8 bg-[#cb000d] font-bold rounded-sm inline-block text-sm sm:text-base text-white ${btn1?.buttonclass}`}
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
             >
               {btn1?.buttontext}
             </Link>
@@ -32,7 +32,7 @@ const SchoolExcellence = ({ title1, title2, btn1, btn2 }: Props) => {
             <Link
               href={btn2?.buttonlink}
               className={`py-3.5 px-8 bg-[#cb000d] font-bold rounded-sm inline-block text-sm sm:text-base text-white ${btn2?.buttonclass}`}
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
             >
               {btn2?.buttontext}
             </Link>

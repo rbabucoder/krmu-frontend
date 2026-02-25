@@ -24,6 +24,28 @@ const Eligibility = ({ elgibilities, mobherobtn, formId }: Props) => {
   const isLong = longTitle.length > maxChars;
   const displayTitle = expanded ? longTitle : longTitle.slice(0, maxChars);
 
+  // useEffect(() => {
+  //   if (!formId || !btnRef.current) return;
+
+  //   loadNpfScript()
+  //     .then(() => {
+  //       // @ts-expect-error - test
+  //       new NpfWidgetsInit({
+  //         widgetId: formId,
+  //         baseurl: "widgets.nopaperforms.com",
+  //         formTitle: "Apply Now",
+  //         titleColor: "#FF0033",
+  //         backgroundColor: "#ddd",
+  //         iframeHeight: "500px",
+  //         buttonTextColor: "#FFF",
+  //         target: btnRef.current,
+  //       });
+  //     })
+  //     .catch((err) => {
+  //       console.error("Failed to load NPF script:", err);
+  //     });
+  // }, [formId, mobherobtn?.buttontext]);
+
   return (
     <>
       <div className="max-w-[1664px] w-full mx-auto sm:flex pb-[50px] px-2.5 md:px-4 mt-12 md:mt-0">
@@ -46,15 +68,16 @@ const Eligibility = ({ elgibilities, mobherobtn, formId }: Props) => {
           <h2 className="text-2xl leading-[1.2] text-[#0060aa] font-semibold mb-2 inline-block">
             {displayTitle}
             {isLong && !expanded && " "}
-          </h2>{" "}
-          {isLong && (
-            <button
-              onClick={() => setExpanded(!expanded)}
-              className="text-xl leading-[1.2] text-[#0060aa] font-semibold mb-2 cursor-pointer"
-            >
-              {expanded ? "Read Less" : "Read More"}
-            </button>
-          )}
+
+            {isLong && (
+              <button
+                onClick={() => setExpanded(!expanded)}
+                className="text-xl leading-[1.2] text-[#0060aa] font-semibold mb-2 cursor-pointer ml-2"
+              >
+                {expanded ? "Read Less" : "Read More"}
+              </button>
+            )}
+          </h2>
 
           <p className="mb-2.5">{elgibilities[2]?.subtitle}</p>
         </div>

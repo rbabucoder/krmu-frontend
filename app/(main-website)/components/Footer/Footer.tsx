@@ -117,7 +117,7 @@ const Footer = async () => {
                           <Link
                             href={comp3?.url || "#"}
                             className="leading-[27.2px] text-base flex items-baseline justify-between"
-                            target="_blank" rel="noopener noreferrer"
+                            target="_blank"
                           >
                             {comp3?.title}
                             <Image

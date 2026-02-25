@@ -306,7 +306,7 @@ const ProgrammesSearch = () => {
                     "programmeslug" in item ? item.programmeslug : item.phdslug
                   }`}
                   className="text-[10px] md:text-base font-medium border-b border-white"
-                  target="_blank" rel="noopener noreferrer"
+                  target="_blank"
                 >
                   Show More
                 </Link>

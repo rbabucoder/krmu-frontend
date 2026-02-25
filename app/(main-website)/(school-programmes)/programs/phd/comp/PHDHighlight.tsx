@@ -49,7 +49,7 @@ const PHDHighlight = ({ heading, highlightheading, btn, imgUrl }: Props) => {
               </p>
               <p>
                 At{" "}
-                <Link href="https://admissions.krmangalam.edu.in/" target="_blank" rel="noopener noreferrer" className="underline">
+                <Link href="https://admissions.krmangalam.edu.in/" target="_blank" className="underline">
                   admissions.krmangalam.edu.in
                 </Link>{" "}
               </p>
@@ -170,7 +170,7 @@ const PHDHighlight = ({ heading, highlightheading, btn, imgUrl }: Props) => {
               className={`py-3.5 px-8 bg-[#051630] font-bold rounded-sm inline-block text-white ${
                 btn?.btn_class || ""
               }`}
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
             >
               {btn?.btn_text}
             </Link>

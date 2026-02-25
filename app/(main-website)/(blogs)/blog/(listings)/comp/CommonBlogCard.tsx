@@ -38,7 +38,7 @@ const CommonBlogCard = async ({ title, excerpt, slug, imgId, date }: Props) => {
         href={`/blog/${slug}`}
         className="block w-full rounded-[24px]"
         style={{ boxShadow: `0px 0px 6px 0px #c6dcfd` }}
-        target="_blank" rel="noopener noreferrer"
+        target="_blank"
       >
         <div className="p-2.5" data-test={imgUrl}>
           <div className="relative">

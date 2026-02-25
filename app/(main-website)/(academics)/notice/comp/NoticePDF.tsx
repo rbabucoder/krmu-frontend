@@ -20,7 +20,7 @@ const NoticePDF = ({ noticePDFS }: Props) => {
                   <p className="mb-5">{item?.content}</p>
                   <Link
                     href={item?.pdf_url || "#"}
-                    target="_blank" rel="noopener noreferrer"
+                    target="_blank"
                     className="py-[9px] px-5 text-xs bg-[#e31e24] rounded-sm font-semibold"
                   >
                     View File

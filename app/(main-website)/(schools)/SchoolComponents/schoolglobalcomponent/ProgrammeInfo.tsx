@@ -204,7 +204,7 @@ const fetchProg = useCallback(
                       <Link
                         href={`/programs/${prog.programmeslug || "#"}`}
                         className="block w-full h-full"
-                        target="_blank" rel="noopener noreferrer"
+                        target="_blank"
                       >
                         {prog.title} {prog.highlightitle}
                       </Link>
@@ -277,7 +277,7 @@ const fetchProg = useCallback(
               <Link
                 href={criteria.eligibility_utm_links || "#"}
                 className="text-[#E31E24] text-center font-bold text-base py-2.5 px-[30px] rounded-md"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
                 style={{
                   boxShadow:
                     "0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 0px 0px 1px rgba(103, 110, 118, 0.16), 0px 2px 5px 0px rgba(103, 110, 118, 0.08)",
@@ -288,7 +288,7 @@ const fetchProg = useCallback(
               <Link
                 href={`/programs/${currentProgram?.programmeslug || "#"}`}
                 className="text-white bg-[#E31E24] text-center font-bold text-base py-2.5 px-[30px] rounded-md"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
                 style={{
                   boxShadow:
                     "0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 0px 0px 1px rgba(103, 110, 118, 0.16), 0px 2px 5px 0px rgba(103, 110, 118, 0.08)",

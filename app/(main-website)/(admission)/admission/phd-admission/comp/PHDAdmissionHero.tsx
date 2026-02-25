@@ -35,7 +35,7 @@ const PHDAdmissionHero = ({
               <Link
                 href={herobtn?.btn_link}
                 className="bg-[#cb000d] text-white rounded-full font-semibold py-[13px] px-[29px]"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
               >
                 {herobtn?.btn_text}
               </Link>
