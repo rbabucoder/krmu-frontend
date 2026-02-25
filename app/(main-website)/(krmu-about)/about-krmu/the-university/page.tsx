@@ -9,17 +9,9 @@ import HallofFame from "../HallofFame";
 import AdvisoryOrDean from "../AdvisoryOrDean";
 import IndustryCollabLogos from "../IndustryCollabLogos";
 
-
-
-
 import { Metadata } from "next";
 import { folderRouteSEO } from "@/lib/api/siteseo";
-
-
-
-
-
-
+import PioneerExcellence from "@/app/(main-website)/Home/PioneerExcellence";
 
 export async function generateMetadata(): Promise<Metadata> {
   const seoData = await folderRouteSEO("the-university");
@@ -81,7 +73,6 @@ export async function generateMetadata(): Promise<Metadata> {
     },
   };
 }
-
 
 const page = async () => {
   const aboutData = await getAboutKRMU();
@@ -253,7 +244,8 @@ const page = async () => {
                       ?.buttonlink
                   }
                   className={`p-2.5 px-[18px] bg-[#cb000d] text-base inline-block rounded-sm leading-4 text-white ${aboutData?.internationcollaboration?.intcollabbtn?.buttonclass}`}
-                  target="_blank" rel="noopener noreferrer"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {
                     aboutData?.internationcollaboration?.intcollabbtn
@@ -298,6 +290,7 @@ const page = async () => {
           </div>
         </div>
       </section>
+      <PioneerExcellence />
     </>
   );
 };

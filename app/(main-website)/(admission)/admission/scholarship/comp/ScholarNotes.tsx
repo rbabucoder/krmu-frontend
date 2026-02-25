@@ -14,8 +14,7 @@ const ScholarNotes = () => {
                 1
               </span>
               <span className="text-white font-semibold text-base">
-                Above scholarship is applicable only on the first year Programme
-                fee
+                Applicable only on the Programme Fee for Semester 1
               </span>
             </div>
             <div className="flex gap-5 mb-8">
@@ -23,8 +22,24 @@ const ScholarNotes = () => {
                 2
               </span>
               <span className="text-white font-semibold text-base notesul">
-                This scholarship policy (Part A, Part B and Part C) is not
-                applicable for D.Pharm
+                2nd Instalment and 3rd instalment (where applicable) of
+                scholarship amount will be paid by cheque if the student fulfils
+                ALL the criteria [a), b), c)] listed under:- 
+                <ul>
+                  {" "}
+                  <li>
+                    Attendance in immediately preceding semester is 75% or
+                    above.
+                  </li>{" "}
+                  <li>
+                    The student has cleared examination of ALL the subjects
+                    which were on offer in the immediately preceding semester.
+                  </li>{" "}
+                  <li>
+                    There is no case of indiscipline, unfair means or
+                    misconduct.  
+                  </li>{" "}
+                </ul>
               </span>
             </div>
             <div className="flex gap-5 mb-8">
@@ -32,8 +47,7 @@ const ScholarNotes = () => {
                 3
               </span>
               <span className="text-white font-semibold text-base">
-                Part A and Part C is not applicable for LLB (Hons.) and B.Ed
-                program. (Only Part B is applicable)
+                No two scholarships can be combined or offered to students.
               </span>
             </div>
             <div className="flex gap-5 mb-8">
@@ -41,9 +55,7 @@ const ScholarNotes = () => {
                 4
               </span>
               <span className="text-white font-semibold text-base">
-                No two scholarships will be combined: For CUET Scholarship
-                either percentage (CUET-1) or percentile (CUET-2) will be
-                considered
+                This policy is not applicable for M. Pharma.
               </span>
             </div>
             <div className="flex gap-5 mb-8">
@@ -51,8 +63,7 @@ const ScholarNotes = () => {
                 5
               </span>
               <span className="text-white font-semibold text-base">
-                Part A Scholarship will be awarded on the basis of an overall
-                aggregate marks obtained in the last qualifying examination
+                This policy is not applicable for Lateral Entry and Migration.
               </span>
             </div>
             <div className="flex gap-5 mb-8">
@@ -122,7 +133,13 @@ const ScholarNotes = () => {
               This policy is not applicable for Lateral Entry and Migration
               <p>
                 <strong>Important :</strong> For detailed sports scholarship{" "}
-                <Link href="https://www.krmangalam.edu.in/wp-content/uploads/2025/03/sports-club-sports-scholarship-policy-2025-26.pdf" target="_blank" rel="noopener noreferrer">Click here</Link>
+                <Link
+                  href="https://www.krmangalam.edu.in/wp-content/uploads/2025/03/sports-club-sports-scholarship-policy-2025-26.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Click here
+                </Link>
               </p>
             </span>
           </div>
