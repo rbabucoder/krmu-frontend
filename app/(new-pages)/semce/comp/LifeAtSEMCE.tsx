@@ -15,11 +15,11 @@ const LifeAtSEMCE = () => {
             <CirclePlay className="absolute bottom-2.5 left-2.5" color="#fff" size={40} strokeWidth={1.5} />
           </Link>
           <Link href="#" className="w-full relative inline-block">
-            <Image src="/wp-content/semce/semce-1.jpg" width={214} height={280} alt="" className="w-full" />
+            <Image src="/wp-content/semce/semce-main/reel-2.jpg" width={214} height={280} alt="" className="w-full" />
             <CirclePlay className="absolute bottom-2.5 left-2.5" color="#fff" size={40} strokeWidth={1.5} />
           </Link>
           <Link href="#" className="w-full relative inline-block">
-            <Image src="/wp-content/semce/semce-1.jpg" width={214} height={280} alt="" className="w-full" />
+            <Image src="/wp-content/semce/semce-main/reel-3.jpg" width={214} height={280} alt="" className="w-full" />
             <CirclePlay className="absolute bottom-2.5 left-2.5" color="#fff" size={40} strokeWidth={1.5} />
           </Link>
          

@@ -16,8 +16,8 @@ export default function EventsExperienceSection() {
 
         <div>
           {" "}
-          <div className="relative bg-[url(/wp-content/semce/experience.webp)] bg-no-repeat bg-cover bg-center md:bg-left-bottom rounded-[28px] p-8 lg:p-10 md:h-[450px]
-           overflow-hidden flex flex-col justify-around items-start">
+          <div className="relative bg-[url(/wp-content/semce/semce-main/gemini.webp)] bg-no-repeat bg-cover bg-center md:bg-left-bottom rounded-[28px] p-8 lg:p-10 md:h-[450px]
+           overflow-hidden flex flex-col justify-around items-start text-white">
             {/* TEXT */}
             <p className="text-sm max-w-md">
               The School of Emerging Media and Creator Economy regularly

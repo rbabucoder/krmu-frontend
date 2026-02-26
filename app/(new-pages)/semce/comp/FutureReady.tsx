@@ -30,7 +30,7 @@ const FutureReady = () => {
           </div>
           <div className="w-full lg:w-5/12 2xl:w-3/12">
             <Image
-              src="/semce/futureready.svg"
+              src="/wp-content/semce/semce-main/future.jpg"
               width={328}
               height={350}
               alt="Future Ready"

@@ -5,19 +5,19 @@ const LearnCreatingData = [
     heading: "Build your own channel",
     content:
       "No need to wait years to become a news anchor or storyteller start publishing from day one.",
-    url: "/wp-content/semce/item-1.jpg",
+    url: "/wp-content/semce/semce-main/build-channel.jpg",
   },
   {
     heading: "Work with real brands",
     content:
       "Learn how media agencies and creators build campaigns that drive attention and revenue.",
-    url: "/wp-content/semce/item-2.png",
+    url: "/wp-content/semce/semce-main/real-brand.jpg",
   },
   {
     heading: "Launch your venture",
     content:
       "Whether it’s an agency, media startup, or your personal brand, learn how to build from scratch.",
-    url: "/wp-content/semce/item-3.png",
+    url: "/wp-content/semce/semce-main/venture.png",
   },
 ];
 
