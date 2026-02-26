@@ -29,36 +29,37 @@ const faqs = [
 
 export default function FaqSection() {
   return (
-    <section className="bg-[#145f99] py-16 px-4">
+    <section className="bg-[#145f99] py-12 md:py-16 px-4">
       <div className="max-w-[1100px] mx-auto">
         {/* TITLE */}
-        <h2 className={`text-xl md:text-4xl lg:text-6xl ${instrumentSerif.className} text-white text-center mb-10`}>
+        <h2
+          className={`text-2xl sm:text-3xl md:text-4xl lg:text-6xl ${instrumentSerif.className} text-white text-center mb-10`}
+        >
           Frequently asked questions
         </h2>
 
         {/* CARD */}
-        <div className="bg-[#f3f3f3] rounded-3xl p-6 md:p-10 space-y-8">
+        <div className="bg-[#f3f3f3] rounded-3xl p-5 sm:p-6 md:p-10 space-y-6 md:space-y-8">
           {faqs.map((item, i) => {
             return (
-              <div key={i}>
-                {/* QUESTION */}
-                <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-full bg-[#145f99]" />
+              <div key={i} className="space-y-3">
+                {/* QUESTION ROW */}
+                <div className="flex items-start gap-3 md:gap-4">
+                  {/* DOT */}
+                  <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-[#145f99] shrink-0" />
 
-                  <button className="bg-[#e31e24] text-white px-6 py-3 rounded-full text-left font-normal">
+                  {/* QUESTION */}
+                  <button className="bg-[#e31e24] text-white px-4 md:px-6 py-3 rounded-full text-left text-sm md:text-base font-normal w-full">
                     {item.q}
                   </button>
                 </div>
 
                 {/* ANSWER */}
-                <div className="lg:flex">
-                    <div className="w-2/12 hidden lg:block"></div>
-                         <div className="w-10/12 mt-4 bg-[#dcdcdc] rounded-xl p-5 text-sm md:text-base italic text-gray-800 font-medium">
-                  {item.a}
+                <div className="pl-11 md:pl-14">
+                  <div className="bg-[#dcdcdc] rounded-xl p-4 md:p-5 text-sm md:text-base italic text-gray-800 font-medium">
+                    {item.a}
+                  </div>
                 </div>
-                </div>
-
-           
               </div>
             );
           })}

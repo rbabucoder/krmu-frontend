@@ -2,15 +2,15 @@ import { inter } from "../lib/font";
 
 export default function LearnByDoingSection() {
   return (
-    <section className={`bg-[#e31e24] py-20 px-4 ${inter.className}`}>
+    <section className={`bg-[#e31e24] py-10 md:py-20 px-4 ${inter.className}`}>
       <div className="max-w-[1400px] mx-auto">
         {/* HEADER */}
         <div className="text-center text-white max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-[56px] font-extrabold mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-[56px] font-extrabold mb-4">
             Learn by doing, not just reading
           </h2>
 
-          <p className="text-2xl opacity-95 font-light leading-[1.2] italic">
+          <p className="text-xl md:text-2xl opacity-95 font-light leading-[1.2] italic">
             At the MA level, your work is expected to look and feel
             professional. <br /> The programme is built around projects, labs
             and internships that mirror real world roles.
@@ -18,7 +18,7 @@ export default function LearnByDoingSection() {
         </div>
 
         {/* GRID */}
-        <div className="flex gap-5 mt-14">
+        <div className="grid grid-cols-1 md:flex gap-5 mt-14">
           {/* FULL WIDTH CARD */}
           <div className="bg-[#1f679f] rounded-[22px] px-8 py-5 text-white border border-[#2b7fbe] w-full md:w-1/2 lg:w-5/12">
             <h3 className="text-xl md:text-2xl font-semibold mb-2">
@@ -44,7 +44,7 @@ export default function LearnByDoingSection() {
             </p>
           </div>
         </div>
-        <div className="flex gap-5 mt-5">
+        <div className="grid grid-cols-1 md:flex gap-5 mt-5">
           {/* FULL WIDTH CARD */}
           <div className="bg-[#1f679f] rounded-[22px] px-8 py-5 text-white border border-[#2b7fbe] w-full md:w-1/2 lg:w-7/12 flex flex-col justify-center">
             <h3 className="text-xl md:text-2xl font-semibold mb-2">
@@ -71,7 +71,7 @@ export default function LearnByDoingSection() {
             </p>
           </div>
         </div>
-        <div className="flex gap-5 mt-5">
+        <div className="grid grid-cols-1 md:flex gap-5 mt-5">
           {/* FULL WIDTH CARD */}
           <div className="bg-[#1f679f] rounded-[22px] px-8 py-5 text-white border border-[#2b7fbe] w-full md:w-1/2 lg:w-5/12 flex flex-col justify-center">
             <h3 className="text-xl md:text-2xl font-semibold mb-2">
@@ -96,7 +96,7 @@ export default function LearnByDoingSection() {
             </p>
           </div>
         </div>
-        <div className="flex gap-5 mt-5">
+        <div className="grid grid-cols-1 md:flex gap-5 mt-5">
           {/* FULL WIDTH CARD */}
           <div className="bg-[#1f679f] rounded-[22px] px-8 py-5 text-white border border-[#2b7fbe] md:w-6/12 flex flex-col justify-center">
             <h3 className="text-xl md:text-2xl font-semibold mb-2">

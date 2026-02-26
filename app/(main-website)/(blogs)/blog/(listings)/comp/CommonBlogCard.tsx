@@ -29,6 +29,8 @@ const CommonBlogCard = async ({ title, excerpt, slug, imgId, date }: Props) => {
     year: "numeric",
   });
 
+  console.log('normalizedImgUrl', normalizedImgUrl);
+
   return (
     <div className="w-full">
       <Link
@@ -38,7 +40,7 @@ const CommonBlogCard = async ({ title, excerpt, slug, imgId, date }: Props) => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <div className="p-2.5" data-test={imgUrl}>
+        <div className="p-2.5" data-test={imgUrl} data-test2={normalizedImgUrl}>
           <div className="relative">
             <span className="absolute bottom-0 right-0 text-xs bg-red-600 text-white py-2.5 px-5 rounded-tl-[24px]">
               {postDate}

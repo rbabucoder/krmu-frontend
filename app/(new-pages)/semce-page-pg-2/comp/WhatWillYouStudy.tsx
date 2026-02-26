@@ -50,46 +50,49 @@ const yearPointers = [
     },
   },
 ];
+
 const WhatWillYouStudy = () => {
   return (
-    <section className="py-16 px-4">
+    <section className="py-12 md:py-16 px-4">
       <div className="max-w-[1200px] mx-auto w-full">
+        {/* TITLE */}
         <h3
-          className={`text-xl md:text-4xl lg:text-6xl ${instrumentSerif.className} text-center mb-3`}
+          className={`text-3xl md:text-4xl lg:text-6xl ${instrumentSerif.className} text-center mb-3`}
         >
           What you will study over 2 years
         </h3>
-        <p className="text-xl text-center italic text-gray-500 font-medium">
+
+        <p className="text-sm sm:text-base md:text-lg text-center italic text-gray-500 font-medium max-w-3xl mx-auto">
           From theory and global media to creator economy, research, data
           journalism and digital entrepreneurship.
         </p>
-        {yearPointers &&
-          yearPointers?.map((item) => {
-            return (
-              <div
-                key={item.year.id}
-                className={`bg-[#E31E23] py-10 px-20 rounded-2xl text-white my-10 relative `}
-              >
-                <span
-                  className="absolute -bottom-10 -right-5 text-[400px]
-              text-white/30 leading-[1] font-bold"
-                >
-                  {item.year.id}
-                </span>
-                <h4 className="font-bold text-5xl leading-tight mb-3">
-                  {item?.year?.heading}
-                </h4>
-                <p className="text-xl">{item?.year?.subHeading}</p>
-                <ul
-                  className={`pl-20 text-xl italic flex flex-col gap-5 my-8 list-disc max-w-4xl`}
-                >
-                  {item?.year?.yearpointer?.map((pointer, i) => (
-                    <li key={i}>{pointer}</li>
-                  ))}
-                </ul>
-              </div>
-            );
-          })}
+
+        {yearPointers?.map((item) => (
+          <div
+            key={item.year.id}
+            className="bg-[#E31E23] p-6 sm:p-8 md:p-12 lg:px-16 rounded-2xl text-white my-8 md:my-10 relative overflow-hidden"
+          >
+            {/* BIG NUMBER */}
+            <span className="absolute bottom-0 right-2 md:right-4 text-[120px] sm:text-[180px] md:text-[260px] lg:text-[320px] text-white/20 leading-none font-bold pointer-events-none">
+              {item.year.id}
+            </span>
+
+            {/* CONTENT */}
+            <h4 className="font-bold text-xl sm:text-2xl md:text-3xl lg:text-5xl leading-tight mb-3 max-w-3xl">
+              {item.year.heading}
+            </h4>
+
+            <p className="text-sm sm:text-base md:text-lg opacity-95 max-w-2xl">
+              {item.year.subHeading}
+            </p>
+
+            <ul className="pl-5 sm:pl-6 md:pl-8 text-sm sm:text-base md:text-lg italic flex flex-col gap-3 md:gap-5 my-6 md:my-8 list-disc max-w-3xl">
+              {item.year.yearpointer.map((pointer, i) => (
+                <li key={i}>{pointer}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
     </section>
   );
