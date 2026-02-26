@@ -54,10 +54,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
         <ul className="flex items-center gap-2.5">
           {academicMenu && (
             <li className="relative krm-sub-menu-has-children">
-              <Link
-                className="font-medium text-xs xl:text-sm text-white flex items-center gap-2.5 min-h-[64px]"
-                href="/"
-              >
+              <div className="font-medium text-xs xl:text-sm text-white flex items-center gap-2.5 min-h-[64px]">
                 <span>{academicMenu?.title}</span>
                 <Image
                   alt="white chevron"
@@ -65,7 +62,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                   height={11}
                   src="/white-down-chevron.svg"
                 />
-              </Link>
+              </div>
               <div className="absolute flex right-0 translate-x-[80%] 2xl:translate-x-[50%] min-w-[1000px] w-full krmsubmenu-container krmsubmenu-1">
                 <div className="rounded-l-sm bg-white w-3/5 pt-[30px] px-[30px] pb-[15px] flex">
                   <div className="pr-[30px] border-r border-[#d9dada]">
@@ -116,7 +113,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                overflow-hidden"
                   style={{
                     backgroundImage: `url(${STRAPI_URL}${academicMenu?.backgroundimage?.url})`,
-                    backgroundColor: '#fff'
+                    backgroundColor: "#fff",
                   }}
                 >
                   <div className="flex flex-col z-10 text-white w-full">
@@ -157,10 +154,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
 
           {admissionMenu && (
             <li className="relative krm-sub-menu-has-children">
-              <Link
-                className="font-medium text-xs xl:text-sm text-white flex items-center gap-2.5 min-h-[64px]"
-                href={admissionMenu?.backgroundimage?.url}
-              >
+              <div className="font-medium text-xs xl:text-sm text-white flex items-center gap-2.5 min-h-[64px]">
                 <span>{admissionMenu?.title}</span>
                 <Image
                   alt="white chevron"
@@ -168,7 +162,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                   height={11}
                   src="/white-down-chevron.svg"
                 />
-              </Link>
+              </div>
               <div className="absolute flex right-0 translate-x-[50%] min-w-[1000px] w-full krmsubmenu-container krmsubmenu-2">
                 <div className="rounded-l-sm bg-white w-3/5 pt-[30px] px-[30px] pb-[15px] flex">
                   <div className="pr-[30px] border-r border-[#d9dada]">
@@ -243,7 +237,8 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                   zenithLinks?.menuclass || ""
                 }`}
                 href={zenithLinks.url}
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <span>{zenithLinks.title}</span>
               </Link>
@@ -251,10 +246,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
           )}
           {placementMenu && (
             <li className="relative krm-sub-menu-has-children">
-              <Link
-                className="font-medium text-xs xl:text-sm text-white flex items-center gap-2.5 min-h-[64px]"
-                href="/"
-              >
+              <div className="font-medium text-xs xl:text-sm text-white flex items-center gap-2.5 min-h-[64px]">
                 <span>{placementMenu?.title}</span>
                 <Image
                   alt="white chevron"
@@ -262,7 +254,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                   height={11}
                   src="/white-down-chevron.svg"
                 />
-              </Link>
+              </div>
               <div className="absolute flex right-0 translate-x-[50%] min-w-[1000px] w-full krmsubmenu-container krmsubmenu-2">
                 <div className="rounded-l-sm bg-white w-1/2 pt-[30px] px-[30px] pb-[15px] flex">
                   <div className="pr-[30px]">
@@ -311,10 +303,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
           )}
           {researchMenu && (
             <li className="relative krm-sub-menu-has-children">
-              <Link
-                className="font-medium text-xs xl:text-sm text-white flex items-center gap-2.5 min-h-[64px]"
-                href="/"
-              >
+              <div className="font-medium text-xs xl:text-sm text-white flex items-center gap-2.5 min-h-[64px]">
                 <span>{researchMenu?.title}</span>
                 <Image
                   alt="white chevron"
@@ -322,7 +311,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                   height={11}
                   src="/white-down-chevron.svg"
                 />
-              </Link>
+              </div>
               <div className="absolute flex right-0 translate-x-[20%] min-w-[1000px] w-full krmsubmenu-container krmsubmenu-2">
                 <div className="w-1/2 px-[30px] bg-[url(/menu-4.webp)] bg-cover bg-center bg-no-repeat relative krmsubmenu-img-container flex items-end rounded-l-[10px] overflow-hidden">
                   <div className="grid grid-cols-2 w-full z-50">
@@ -394,7 +383,8 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                     sustainabilityLinks?.menuclass || ""
                   }`}
                   href={sustainabilityLinks.url}
-                  target="_blank" rel="noopener noreferrer"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <span>{sustainabilityLinks.title}</span>
                 </Link>
@@ -403,10 +393,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
 
           {lifeatkrmuMenu && (
             <li className="relative krm-sub-menu-has-children">
-              <Link
-                className="font-medium text-xs xl:text-sm text-white flex items-center gap-2.5 min-h-[64px]"
-                href="/"
-              >
+              <div className="font-medium text-xs xl:text-sm text-white flex items-center gap-2.5 min-h-[64px]">
                 <span>{lifeatkrmuMenu?.title}</span>
                 <Image
                   alt="white chevron"
@@ -414,7 +401,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                   height={11}
                   src="/white-down-chevron.svg"
                 />
-              </Link>
+              </div>
               <div className="absolute flex right-0 translate-x-[20%] min-w-[1000px] w-full krmsubmenu-container krmsubmenu-2">
                 <div
                   className="w-2/5 px-[30px] bg-[url(/menu-5.webp)] bg-cover bg-center bg-no-repeat relative krmsubmenu-img-container flex items-end rounded-l-[10px] 
@@ -475,10 +462,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
           )}
           {aboutusMenu && (
             <li className="relative krm-sub-menu-has-children">
-              <Link
-                className="font-medium text-xs xl:text-sm text-white flex items-center gap-2.5 min-h-[64px]"
-                href="/"
-              >
+              <div className="font-medium text-xs xl:text-sm text-white flex items-center gap-2.5 min-h-[64px]">
                 <span>{aboutusMenu?.title}</span>
                 <Image
                   alt="white chevron"
@@ -486,7 +470,7 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                   height={11}
                   src="/white-down-chevron.svg"
                 />
-              </Link>
+              </div>
               <div className="absolute flex right-0 min-w-[1000px] w-full krmsubmenu-container krmsubmenu-1">
                 <div
                   className="w-1/2 px-[30px] bg-[url(/menu-6.webp)] bg-cover bg-center bg-no-repeat relative krmsubmenu-img-container flex items-end rounded-l-[10px] 
@@ -527,7 +511,13 @@ const NavbarMenu = ({ mainMenu }: Props) => {
                               menu.menuclass || ""
                             }`}
                           >
-                            <Link href={menu?.url} target="_blank" rel="noopener noreferrer">{menu?.title}</Link>
+                            <Link
+                              href={menu?.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              {menu?.title}
+                            </Link>
                           </li>
                         );
                       })}

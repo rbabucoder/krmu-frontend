@@ -1,8 +1,8 @@
 import Link from "next/link";
 
-const ScholarNotes = () => {
+const ScholarNotesUG = () => {
   return (
-    <section className="bg-[url(/scholarship/notes-bg.webp)] bg-cover bg-no-repeat py-[30px] px-4">
+    <section className="bg-[url(/scholarship/notes-bg.webp)] bg-cover bg-no-repeat py-[30px] px-4 mt-10">
       <div className="max-w-[1664px] mx-auto w-full flex flex-col lg:flex-row gap-5">
         <div className="lg:w-1/5">
           <h3 className="text-5xl text-white font-semibold">Notes:</h3>
@@ -14,7 +14,8 @@ const ScholarNotes = () => {
                 1
               </span>
               <span className="text-white font-semibold text-base">
-                Applicable only on the Programme Fee for Semester 1
+                Above scholarship is applicable only on the first year Programme
+                fee
               </span>
             </div>
             <div className="flex gap-5 mb-8">
@@ -22,24 +23,8 @@ const ScholarNotes = () => {
                 2
               </span>
               <span className="text-white font-semibold text-base notesul">
-                2nd Instalment and 3rd instalment (where applicable) of
-                scholarship amount will be paid by cheque if the student fulfils
-                ALL the criteria [a), b), c)] listed under:- 
-                <ul>
-                  {" "}
-                  <li>
-                    Attendance in immediately preceding semester is 75% or
-                    above.
-                  </li>{" "}
-                  <li>
-                    The student has cleared examination of ALL the subjects
-                    which were on offer in the immediately preceding semester.
-                  </li>{" "}
-                  <li>
-                    There is no case of indiscipline, unfair means or
-                    misconduct.  
-                  </li>{" "}
-                </ul>
+                This scholarship policy (Part A, Part B and Part C) is not
+                applicable for D.Pharm
               </span>
             </div>
             <div className="flex gap-5 mb-8">
@@ -47,7 +32,8 @@ const ScholarNotes = () => {
                 3
               </span>
               <span className="text-white font-semibold text-base">
-                No two scholarships can be combined or offered to students.
+                Part A and Part C is not applicable for LLB (Hons.) and B.Ed
+                program. (Only Part B is applicable)
               </span>
             </div>
             <div className="flex gap-5 mb-8">
@@ -55,7 +41,9 @@ const ScholarNotes = () => {
                 4
               </span>
               <span className="text-white font-semibold text-base">
-                This policy is not applicable for M. Pharma.
+                No two scholarships will be combined: For CUET Scholarship
+                either percentage (CUET-1) or percentile (CUET-2) will be
+                considered
               </span>
             </div>
             <div className="flex gap-5 mb-8">
@@ -63,7 +51,8 @@ const ScholarNotes = () => {
                 5
               </span>
               <span className="text-white font-semibold text-base">
-                This policy is not applicable for Lateral Entry and Migration.
+                Part A Scholarship will be awarded on the basis of an overall
+                aggregate marks obtained in the last qualifying examination
               </span>
             </div>
             <div className="flex gap-5 mb-8">
@@ -149,4 +138,4 @@ const ScholarNotes = () => {
   );
 };
 
-export default ScholarNotes;
+export default ScholarNotesUG;
