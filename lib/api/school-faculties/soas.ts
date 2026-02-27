@@ -92,4 +92,34 @@ export const soasFaculties: SchoolFacultiesType[] = [
     featured_media_url:
       "https://www.krmangalam.edu.in/wp-content/uploads/2023/11/Mask-group-64.webp",
   },
+  {
+    id: 113816,
+    slug: "dr-agnibha-sinha",
+    title: {
+      rendered: "Dr. Agnibha Sinha",
+    },
+    featured_media: 1212,
+    acf: {
+      "staff-qualification": "Ph.D.",
+      staff_designation: "Assistant Professor",
+      schools: [1178],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Dr.-Agnibha-Sinha-SOAS-1.jpg",
+  },
+  {
+    id: 113818,
+    slug: "dr-jay-nath-patel",
+    title: {
+      rendered: "Dr. Jay Nath Patel",
+    },
+    featured_media: 1212,
+    acf: {
+      "staff-qualification": "Ph.D.",
+      staff_designation: "Assistant Professor",
+      schools: [1178],
+    },
+    featured_media_url:
+      "https://wp.krmangalam.edu.in/wp-content/uploads/2026/02/Dr.-Jay-Nath-Patel1.jpg",
+  },
 ];
