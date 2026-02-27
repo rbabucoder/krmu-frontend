@@ -16,7 +16,7 @@ type Props = {
 
 const ProgrammeInfo = ({ catName }: Props) => {
   const [programs, setPrograms] = useState<Record<string, ProgrammeCardData[]>>(
-    {}
+    {},
   );
   const [activeDegree, setActiveDegree] = useState("Undergraduate Programmes");
   const [activeProgramId, setActiveProgramId] = useState<number | null>(null);
@@ -30,45 +30,48 @@ const ProgrammeInfo = ({ catName }: Props) => {
   ];
 
   // Fetch programmes
-const fetchProg = useCallback(
-  async (deg: string) => {
-    try {
-      let data: ProgrammeCardData[] = [];
+  const fetchProg = useCallback(
+    async (deg: string) => {
+      try {
+        let data: ProgrammeCardData[] = [];
 
-      if (deg === "Doctoral Programmes") {
-        // ✅ Fetch Ph.D. data (returns PhdProgrammeCardData[])
-        const phdData = await getSchoolProgrammePhdDataDegree(
-          "Doctoral Programme",
-          catName
-        );
+        if (deg === "Doctoral Programmes") {
+          // ✅ Fetch Ph.D. data (returns PhdProgrammeCardData[])
+          const phdData = await getSchoolProgrammePhdDataDegree(
+            "Doctoral Programme",
+            catName,
+          );
 
-        // ✅ Map Ph.D. data to ProgrammeCardData structure
-        data =
-          phdData?.map((item) => ({
-            id: item.id,
-            documentId: item.documentId,
-            title: item.heading,
-            programmeslug: item?.phdslug, // use category slug or add your own if exists
-            highlightitle: "",
-            criteria: item.criteria,
-          })) || [];
-      } else {
-        // ✅ Fetch UG/PG/Diploma data
-        const programmeData = await getSchoolProgrammeInfoByDegree(deg, catName);
-        data = programmeData || [];
+          // ✅ Map Ph.D. data to ProgrammeCardData structure
+          data =
+            phdData?.map((item) => ({
+              id: item.id,
+              documentId: item.documentId,
+              title: item.heading,
+              programmeslug: item?.phdslug, // use category slug or add your own if exists
+              highlightitle: "",
+              criteria: item.criteria,
+            })) || [];
+        } else {
+          // ✅ Fetch UG/PG/Diploma data
+          const programmeData = await getSchoolProgrammeInfoByDegree(
+            deg,
+            catName,
+          );
+          data = programmeData || [];
+        }
+
+        // ✅ Update state
+        setPrograms((prev) => ({ ...prev, [deg]: data }));
+        if (data.length > 0) {
+          setActiveProgramId(data[0].id);
+        }
+      } catch (err) {
+        console.error("Failed to fetch programmes:", err);
       }
-
-      // ✅ Update state
-      setPrograms((prev) => ({ ...prev, [deg]: data }));
-      if (data.length > 0) {
-        setActiveProgramId(data[0].id);
-      }
-    } catch (err) {
-      console.error("Failed to fetch programmes:", err);
-    }
-  },
-  [catName]
-);
+    },
+    [catName],
+  );
 
   // const fetchProg = useCallback(
   //   async (deg: string) => {
@@ -141,7 +144,7 @@ const fetchProg = useCallback(
   // Current selected or hovered program
   const currentProgram =
     programs[activeDegree]?.find(
-      (p) => p.id === (hoverProgramId ?? activeProgramId)
+      (p) => p.id === (hoverProgramId ?? activeProgramId),
     ) || null;
 
   const criteria = currentProgram?.criteria;
@@ -204,7 +207,8 @@ const fetchProg = useCallback(
                       <Link
                         href={`/programs/${prog.programmeslug || "#"}`}
                         className="block w-full h-full"
-                        target="_blank" rel="noopener noreferrer"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         {prog.title} {prog.highlightitle}
                       </Link>
@@ -237,24 +241,30 @@ const fetchProg = useCallback(
                 <p className="mb-5 font-normal text-base uppercase leading-[1]">
                   Semester I
                 </p>
-                <p className="text-base uppercase leading-[1] font-bold">
-                  Rs. {criteria.semester_i || "N/A"}/-
+                <p className="text-base  leading-[1] font-bold">
+                  {criteria.semester_i === "TBD" ? "" : "Rs."}{" "}
+                  {criteria.semester_i || "N/A"}{" "}
+                  {criteria.semester_i === "TBD" ? "" : "/-"}
                 </p>
               </div>
               <div className="border-r border-black pr-4">
                 <p className="mb-5 font-normal text-base uppercase leading-[1]">
                   Semester II
                 </p>
-                <p className="text-base uppercase leading-[1] font-bold">
-                  Rs. {criteria.semester_ii || "N/A"}/-
+                <p className="text-base  leading-[1] font-bold">
+                  {criteria.semester_ii === "TBD" ? "" : "Rs."}{" "}
+                  {criteria.semester_ii || "N/A"}{" "}
+                  {criteria.semester_ii === "TBD" ? "" : "/-"}
                 </p>
               </div>
               <div>
-                <p className="mb-5 font-normal text-base uppercase leading-[1]">
+                <p className="mb-5 font-normal text-base  leading-[1]">
                   Programme Fee Per Year
                 </p>
                 <p className="text-base uppercase leading-[1] font-bold">
-                  Rs. {criteria.programme_fee_per_year || "N/A"}/-
+                  {criteria.programme_fee_per_year === "TBD" ? "" : "Rs."}{" "}
+                  {criteria.programme_fee_per_year || "N/A"}{" "}
+                  {criteria.programme_fee_per_year === "TBD" ? "" : "/-"}
                 </p>
               </div>
             </div>
@@ -277,7 +287,8 @@ const fetchProg = useCallback(
               <Link
                 href={criteria.eligibility_utm_links || "#"}
                 className="text-[#E31E24] text-center font-bold text-base py-2.5 px-[30px] rounded-md"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{
                   boxShadow:
                     "0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 0px 0px 1px rgba(103, 110, 118, 0.16), 0px 2px 5px 0px rgba(103, 110, 118, 0.08)",
@@ -288,7 +299,8 @@ const fetchProg = useCallback(
               <Link
                 href={`/programs/${currentProgram?.programmeslug || "#"}`}
                 className="text-white bg-[#E31E24] text-center font-bold text-base py-2.5 px-[30px] rounded-md"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{
                   boxShadow:
                     "0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 0px 0px 1px rgba(103, 110, 118, 0.16), 0px 2px 5px 0px rgba(103, 110, 118, 0.08)",
