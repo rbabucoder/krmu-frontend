@@ -1031,7 +1031,7 @@
   }
   .feestructtable table tr:first-child td {
     font-weight: bold;
-    text-align: center;
+    /* text-align: center; */
   }
 
   .feestructtable table,

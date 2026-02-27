@@ -15,7 +15,7 @@ const KREEEnroll = ({ kreeEnrolData }: Props) => {
     <section className="py-[4%] px-4">
       <div className="max-w-[1267px] mx-auto w-full">
         <h2 className="kree-titlecolor text-5xl font-semibold text-center leading-[1.5] mt-2.5 mb-[15px]">
-          KREE 2025
+          KREE 2026
         </h2>
 
         <p className="mb-5">
