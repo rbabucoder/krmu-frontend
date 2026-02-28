@@ -14,13 +14,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const photoGalleryUsingSlug = await getGallerImagesUsingSlug(slug);
 
   const photoGalleryData = photoGalleryUsingSlug.find(
-    (item) => item.slug === slug
+    (item) => item.slug === slug,
   );
+
+  const currentPhotoGalleryURL = `https://www.krmangalam.edu.in/photo-gallery/${slug}`;
 
   const title = photoGalleryData?.title;
 
   return {
-    title: title || "K.R. Mangalam University",
+    title: `${title} -  Photo Gallery | KRMU` || "K.R. Mangalam University",
+    alternates: {
+      canonical: currentPhotoGalleryURL || "",
+    },
   };
 }
 
@@ -29,7 +34,7 @@ const page = async ({ params }: Props) => {
   const photoGalleryUsingSlug = await getGallerImagesUsingSlug(slug);
 
   const photoGalleryData = photoGalleryUsingSlug.find(
-    (item) => item.slug === slug
+    (item) => item.slug === slug,
   );
 
   if (!photoGalleryData) {

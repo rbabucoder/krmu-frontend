@@ -43,7 +43,7 @@ export const ConnectWithUs = () => {
           </div>
           <div className="w-full md:w-5/12">
             <Link
-              href="https://share.google/1HhDvKtKG4otv2AkL"
+              href="https://maps.app.goo.gl/vaYSxzfRzMd1XvFs8"
               className="bg-[#ffffff0d] backdrop-blur-[22px] p-2.5 border border-[#ffffff40] rounded-[30px] flex items-center"
               target="_blank" rel="noopener noreferrer"
             >

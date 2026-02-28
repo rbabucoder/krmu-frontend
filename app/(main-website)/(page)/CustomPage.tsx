@@ -5,6 +5,8 @@ type Props = {
   slug: string;
 };
 
+
+
 const CustomPage = async ({ slug }: Props) => {
   const allCustomPages = await getCustomPageData(slug);
 

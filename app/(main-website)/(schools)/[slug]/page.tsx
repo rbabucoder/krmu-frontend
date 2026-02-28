@@ -28,6 +28,7 @@ import { checkCustomPage } from "@/lib/constants/page";
 import CustomPage from "@/app/(main-website)/(page)/CustomPage";
 import { STRAPI_URL } from "@/app/constant";
 import { getSchoolSEO } from "@/lib/api/website-seo";
+import { folderRouteSEO } from "@/lib/api/siteseo";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -37,52 +38,100 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params; // ✅ no await
 
   const seoData = await getSchoolSEO(slug);
+  const customSEO = await folderRouteSEO(slug);
 
-  const seo = seoData[0]?.school_seo;
+  const custPage = await checkCustomPage(slug);
+  const isPage = custPage[0];
 
-  const shareImageUrl = seo?.shareImage?.url
-    ? `${STRAPI_URL}${seo?.shareImage?.url}`
-    : undefined;
+  if (isPage?.is_custom_page === "custom_page") {
+    const seo = customSEO[0];
+    const shareImageUrl = seo?.shareImg?.url
+      ? `${STRAPI_URL}${seo?.shareImg?.url}`
+      : undefined;
+    return {
+      title: seo?.title || "K.R. Mangalam University",
+      description: seo?.metaDescription || "",
+      keywords: seo?.keyword || "",
+      alternates: {
+        canonical: seo?.canonicalUrl || "",
+      },
+      robots: {
+        index: true,
+        follow: true,
+      },
 
-  return {
-    title: seo?.metaTitle || "K.R. Mangalam University",
-    description: seo?.metaDescription || "",
-    keywords: seo?.metaKeyword || "",
-    alternates: {
-      canonical: seo?.canonical || "",
-    },
-    robots: {
-      index: true,
-      follow: true,
-    },
+      // ✅ Open Graph (Facebook, LinkedIn, WhatsApp)
+      openGraph: {
+        title: seo?.title || "K.R. Mangalam University",
+        description: seo?.metaDescription || "",
+        url: seo?.canonicalUrl || "",
+        siteName: "K.R. Mangalam University",
+        images: shareImageUrl
+          ? [
+              {
+                url: shareImageUrl,
+                width: 1200,
+                height: 630,
+                alt: seo?.title || "K.R. Mangalam University",
+              },
+            ]
+          : [],
+        type: "website",
+      },
 
-    // ✅ Open Graph (Facebook, LinkedIn, WhatsApp)
-    openGraph: {
+      // ✅ Twitter Card
+      twitter: {
+        card: "summary_large_image",
+        title: seo?.title || "K.R. Mangalam University",
+        description: seo?.metaDescription || "",
+        images: shareImageUrl ? [shareImageUrl] : [],
+      },
+    };
+  } else {
+    const seo = seoData[0]?.school_seo;
+    const shareImageUrl = seo?.shareImage?.url
+      ? `${STRAPI_URL}${seo?.shareImage?.url}`
+      : undefined;
+    return {
       title: seo?.metaTitle || "K.R. Mangalam University",
       description: seo?.metaDescription || "",
-      url: seo?.canonical || "",
-      siteName: "K.R. Mangalam University",
-      images: shareImageUrl
-        ? [
-            {
-              url: shareImageUrl,
-              width: 1200,
-              height: 630,
-              alt: seo?.metaTitle || "K.R. Mangalam University",
-            },
-          ]
-        : [],
-      type: "website",
-    },
+      keywords: seo?.metaKeyword || "",
+      alternates: {
+        canonical: seo?.canonical || "",
+      },
+      robots: {
+        index: true,
+        follow: true,
+      },
 
-    // ✅ Twitter Card
-    twitter: {
-      card: "summary_large_image",
-      title: seo?.metaTitle || "K.R. Mangalam University",
-      description: seo?.metaDescription || "",
-      images: shareImageUrl ? [shareImageUrl] : [],
-    },
-  };
+      // ✅ Open Graph (Facebook, LinkedIn, WhatsApp)
+      openGraph: {
+        title: seo?.metaTitle || "K.R. Mangalam University",
+        description: seo?.metaDescription || "",
+        url: seo?.canonical || "",
+        siteName: "K.R. Mangalam University",
+        images: shareImageUrl
+          ? [
+              {
+                url: shareImageUrl,
+                width: 1200,
+                height: 630,
+                alt: seo?.metaTitle || "K.R. Mangalam University",
+              },
+            ]
+          : [],
+        type: "website",
+      },
+
+      // ✅ Twitter Card
+      twitter: {
+        card: "summary_large_image",
+        title: seo?.metaTitle || "K.R. Mangalam University",
+        description: seo?.metaDescription || "",
+        images: shareImageUrl ? [shareImageUrl] : [],
+      },
+    };
+  }
 }
 
 export default async function Page({ params }: Props) {
