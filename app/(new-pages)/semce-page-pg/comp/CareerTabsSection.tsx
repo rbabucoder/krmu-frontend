@@ -9,7 +9,7 @@ export default function CareerTabsSection() {
             Where this MA can take you
           </h2>
 
-          <p className="text-gray-600 mt-3 text-2xl italic">
+          <p className="text-gray-600 mt-3 text-sm md:text-2xl italic">
             Move from being a content executor to a media professional who can
             research, design and lead.
           </p>

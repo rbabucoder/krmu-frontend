@@ -27,10 +27,9 @@ const tabs: TabType[] = [
   {
     label: "For working professionals",
     content: [
-      "Upskill in multimedia storytelling",
-      "Learn creator economy strategies",
-      "Build advanced digital media skills",
-      "Leadership roles in media & communication",
+      "Move into strategy and leadership roles inside media and content teams",
+      "Strengthen your research and analytical skills for better editorial and business decisions",
+      "Build a portfolio and dissertation that support higher studies like M.Phil or Ph.D in media and communication",
     ],
   },
 ];
@@ -60,9 +59,9 @@ export default function CareerTabs() {
 
       {/* RIGHT CONTENT */}
       <div className="flex-1 border rounded-2xl p-5 md:p-10 xl:p-20">
-        <ul className="list-disc pl-6 space-y-2 font-medium text-lg">
+        <ul className="list-disc pl-6 space-y-2 font-medium sm:text-2xl">
           {tabs[active].content.map((item, i) => (
-            <li key={i}>{item}</li>
+            <li key={i} className="mb-2.5 pb-2.5">{item}</li>
           ))}
         </ul>
       </div>

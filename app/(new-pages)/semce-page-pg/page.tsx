@@ -17,8 +17,8 @@ const page = () => {
       <LearnByDoingSection />
       <CareerTabsSection />
       <FacultySection />
-      <EligibilityAdmissionFees />
       <PostgraduateCreateSection />
+      <EligibilityAdmissionFees />
       <FaqSection />
     </>
   );

@@ -9,7 +9,7 @@ export default function FacultySection() {
             Learn from editors, creators and researchers
           </h2>
 
-          <p className="text-gray-600 mt-3 text-2xl italic">
+          <p className="text-gray-600 mt-3 text-sm sm:text-2xl italic">
             A faculty mix that brings together newsroom experience, creator
             economy work and academic research.
           </p>

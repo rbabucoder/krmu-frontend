@@ -10,7 +10,7 @@ export default function PostgraduateCreateSection() {
             See what our postgraduates create
           </h2>
 
-          <p className="text-gray-600 mt-3 text-2xl">
+          <p className="text-gray-600 mt-3 text-sm md:text-2xl">
             The MA programme is designed so that every semester adds to your
             portfolio and your research profile.
           </p>
@@ -24,7 +24,7 @@ export default function PostgraduateCreateSection() {
         </div>
 
         {/* FOOT TEXT */}
-        <p className="text-center text-gray-500 italic mt-8 text-xl">
+        <p className="text-center text-gray-500 italic mt-8 text-sm sm:text-xl">
           By the time you graduate, you are not just carrying a postgraduate
           degree — you are carrying work you can show to editors, hiring
           managers, collaborators and investors.

@@ -55,7 +55,7 @@ export default function FaqSection() {
                 </div>
 
                 {/* ANSWER */}
-                <div className="pl-11 md:pl-14">
+                <div className="sm:pl-11 md:pl-14">
                   <div className="bg-[#dcdcdc] rounded-xl p-4 md:p-5 text-sm md:text-base italic text-gray-800 font-medium">
                     {item.a}
                   </div>

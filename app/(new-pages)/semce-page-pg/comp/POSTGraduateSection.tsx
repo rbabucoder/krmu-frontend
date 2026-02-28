@@ -1,10 +1,12 @@
+"use client";
+
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+
 import POSTGraduationSlide from "./POSTGraduationSlide";
 
 const POSTGraduateSection = () => {
@@ -16,27 +18,50 @@ const POSTGraduateSection = () => {
     },
     {
       id: 2,
-      title: "Long form feature stories, investigations and explainers",
+      title: "Short films, OTT pilots and documentary projects",
       imgURL: "/orange-card.webp",
     },
     {
       id: 3,
-      title: "Long form feature stories, investigations and explainers",
+      title: "Multimedia news packages for web, TV and mobile",
       imgURL: "/orange-card.webp",
     },
     {
       id: 4,
-      title: "Long form feature stories, investigations and explainers",
+      title: "Audio series, podcasts and radio shows",
       imgURL: "/orange-card.webp",
     },
     {
       id: 5,
-      title: "Long form feature stories, investigations and explainers",
+      title: "Data driven stories, charts and visual explainers",
+      imgURL: "/orange-card.webp",
+    },
+    {
+      id: 6,
+      title: "Integrated campaigns and brand communication decks",
+      imgURL: "/orange-card.webp",
+    },
+    {
+      id: 7,
+      title: "Community and creator economy projects with growth metrics",
+      imgURL: "/orange-card.webp",
+    },
+    {
+      id: 8,
+      title:
+        "A dissertation or capstone project that connects research with real media practice",
       imgURL: "/orange-card.webp",
     },
   ];
   return (
-    <Carousel className="w-full">
+    <Carousel
+      className="w-full"
+      plugins={[
+        Autoplay({
+          delay: 1500,
+        }),
+      ]}
+    >
       <CarouselContent className="-ml-1">
         {items.map((item) => (
           <CarouselItem key={item.id} className="md:basis-1/2  lg:basis-1/3">

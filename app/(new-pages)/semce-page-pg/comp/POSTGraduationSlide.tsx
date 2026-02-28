@@ -8,17 +8,18 @@ type Props = {
 const POSTGraduationSlide = ({ title, imgURL }: Props) => {
   return (
     <div className="flex flex-col gap-2.5">
-      <div className="h-[317px] rounded-2xl">
+      <div className="h-[317px] rounded-2xl relative">
         <Image
           src={imgURL}
-          width={300}
-          height={300}
+          fill
           className="object-cover h-full w-full rounded-2xl"
-          alt=""
+          alt={title || ""}
         />
       </div>
 
-      <p className="font-medium text-black text-2xl">{title}</p>
+      <p className="font-medium text-black text-center md:text-left tex-lg md:text-xl">
+        {title}
+      </p>
     </div>
   );
 };

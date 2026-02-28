@@ -39,15 +39,15 @@ const HeroSection = () => {
       <div className="max-w-[1664px] mx-auto w-full text-white px-5 sm:px-8 lg:px-12 pt-32 sm:pt-40 pb-20 relative z-10">
         <h1
           className="league-gothic font-bold leading-[1.1]
-        text-3xl sm:text-4xl mb-6"
+        text-3xl sm:text-4xl mb-6 text-center md:text-left"
         >
           MA IN JOURNALISM
-          <br />
+          <br className="hidden sm:block" />
           <span
             className={`
           text-4xl sm:text-6xl lg:text-7xl xl:text-[80px] block mt-2 ${instrumentSerif.className}`}
           >
-            Digital Media and the <br /> Creator Economy
+            Digital Media and the <br className="hidden sm:block" /> Creator Economy
           </span>
         </h1>
         {/* 
