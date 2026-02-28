@@ -72,7 +72,7 @@ export type SpecialisationCardItem = {
 export type SpecialisationSection = {
   subheading: string;
   heading: string; // supports <br />
-  specilisationCard: SpecialisationCardItem[];
+  SpecialisationCard: SpecialisationCardItem[];
 };
 
 // Main Opportunity Section

@@ -173,7 +173,7 @@ export const industryExperts: IndustryExpertsSection = {
 export const specialisationData: SpecialisationSection = {
   subheading: `Choose from KRMU’s BBA (UG) programmes and start building your future in business and management.`,
   heading: `KRMU’s B.Tech. Programmes`,
-  specilisationCard: [
+  SpecialisationCard: [
     {
       imgUrl:
         "/landingpage/btech-2026/specialisations/B.Tech.-Computer-Science-and-Engineering-(CSE).webp",

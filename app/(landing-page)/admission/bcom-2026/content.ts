@@ -186,7 +186,7 @@ export const industryExperts: IndustryExpertsSection = {
 export const specialisationData: SpecialisationSection = {
   subheading: `Choose your specialisation based on your interests and career goals.`,
   heading: `Our B.Com. Programmes & Specialisations`,
-  specilisationCard: [
+  SpecialisationCard: [
     {
       imgUrl: "/landingpage/bcom-2026/specialisations/B.Com.-(Hons.).webp",
       title: `B.Com. (Hons.) `,

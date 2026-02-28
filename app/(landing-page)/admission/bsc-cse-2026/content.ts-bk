@@ -162,7 +162,7 @@ export const industryExperts: IndustryExpertsSection = {
 export const specialisationData: SpecialisationSection = {
   subheading: `Choose from KRMU's B.Sc. (UG) programmes to begin creating your career in the information technology sector.`,
   heading: `Our B.Sc. - CSE  Programmes`,
-  specilisationCard: [
+  SpecialisationCard: [
     {
       imgUrl: "/landingpage/common/dummy.png",
       title: `B.Sc. (Hons.) Computer Science (with Academic Support of IBM)`,

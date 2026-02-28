@@ -185,7 +185,7 @@ export const industryExperts: IndustryExpertsSection = {
 export const specialisationData: SpecialisationSection = {
   subheading: `Choose the specialisations based on your interest and career goals!`,
   heading: `KRMU’s B.Des. Programmes`,
-  specilisationCard: [
+  SpecialisationCard: [
     {
       imgUrl:
         "/landingpage/bdes-2026/program/bachelor-of-design-bdes-hons-hons-with-research-fashion-design.jpg",

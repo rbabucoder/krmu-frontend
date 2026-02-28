@@ -168,7 +168,7 @@ export const industryExperts: IndustryExpertsSection = {
 export const specialisationData: SpecialisationSection = {
   subheading: ``,
   heading: `KRMU’s B.Arch. Programme`,
-  specilisationCard: [
+  SpecialisationCard: [
     {
       imgUrl: "/landingpage/barch-2026/specialisations/1.webp",
       title: `Bachelor of Architecture`,

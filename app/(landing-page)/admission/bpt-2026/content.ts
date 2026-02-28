@@ -155,7 +155,7 @@ export const industryExperts: IndustryExpertsSection = {
 export const specialisationData: SpecialisationSection = {
   subheading: ``,
   heading: `KRMU’s BPT Programme`,
-  specilisationCard: [
+  SpecialisationCard: [
     {
       imgUrl: "/landingpage/bpt-2026/specialisations/1.webp",
       title: `Bachelor of Physiotherapy`,

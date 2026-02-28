@@ -44,9 +44,9 @@ const HeroBanner = ({ title, highlightitle, heroSection, formId }: Props) => {
     <section className="pt-24 sm:pt-40 sm:pb-[50px] px-2.5 sm:px-4">
       <div className="school-programme-max-width md:flex items-center justify-between">
         <div className="w-full md:w-7/12">
-          <h4 className="text-xs sm:text-2xl font-medium leading-[1.2] mb-2">
+          <p className="text-xs sm:text-2xl font-medium leading-[1.2] mb-2">
             {heroSection?.subtitle}
-          </h4>
+          </p>
           <h1 className="text-4xl sm:text-[50px] font-semibold text-[#0060aa] leading-[1.2] mb-2">
             {title} <span className="text-[#e61f21]">{highlightitle}</span>
           </h1>

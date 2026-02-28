@@ -175,7 +175,7 @@ export const industryExperts: IndustryExpertsSection = {
 export const specialisationData: SpecialisationSection = {
   subheading: ``,
   heading: `KRMU’s Forensic Science Courses`,
-  specilisationCard: [
+  SpecialisationCard: [
     {
       imgUrl:
         "/landingpage/bsc-forensic-science-2026/specialisations/B.Sc.-(Hons.)-Forensic-Science.webp",

@@ -170,7 +170,7 @@ export const industryExperts: IndustryExpertsSection = {
 export const specialisationData: SpecialisationSection = {
   subheading: ``,
   heading: `KRMU’s Journalism & Mass Communication Courses`,
-  specilisationCard: [
+  SpecialisationCard: [
     {
       imgUrl: "/landingpage/sjmc-2026/prog/ba-jmc.jpg",
       title: `B.A. (Journalism and Mass Communication)`,

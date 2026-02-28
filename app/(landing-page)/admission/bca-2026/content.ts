@@ -168,7 +168,7 @@ export const industryExperts: IndustryExpertsSection = {
 export const specialisationData: SpecialisationSection = {
   subheading: `Begin your journey into the IT industry by choosing KRMU’s BCA programmes.`,
   heading: `Our BCA Programmes`,
-  specilisationCard: [
+  SpecialisationCard: [
     {
       imgUrl:
         "/landingpage/bca-2026/specialisations/BCA-(AI-&-Data-Science)-with-Academic-Support-of-IBM-&-Powered-by-Microsoft-Certifications.webp",

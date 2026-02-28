@@ -177,7 +177,7 @@ export const industryExperts: IndustryExpertsSection = {
 export const specialisationData: SpecialisationSection = {
   subheading: `Choose the Education Programme based on your interest and career goals!`,
   heading: `KRMU’s Education Programmes `,
-  specilisationCard: [
+  SpecialisationCard: [
     {
       imgUrl: "/landingpage/beld-2026/specialisations/bed.webp",
       title: `Bachelor of Education (B.Ed.)`,

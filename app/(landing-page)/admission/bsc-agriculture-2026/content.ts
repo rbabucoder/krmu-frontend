@@ -147,7 +147,7 @@ export const industryExperts: IndustryExpertsSection = {
 export const specialisationData: SpecialisationSection = {
   subheading: `Your Future, Our Priority`,
   heading: `KRMU’s B.Sc. (Hons.) Agriculture Programme`,
-  specilisationCard: [
+  SpecialisationCard: [
     {
       imgUrl: "/landingpage/bsc-agriculture-2026/prog/bsc-agri.jpg",
       title: `B.Sc. (Hons.) Agriculture`,

@@ -176,7 +176,7 @@ export const industryExperts: IndustryExpertsSection = {
 export const specialisationData: SpecialisationSection = {
   subheading: `Choose your specialisations based on your interests and career goals.`,
   heading: `Our B.Sc. Programmes & Specialisations `,
-  specilisationCard: [
+  SpecialisationCard: [
     {
       imgUrl:
         "/landingpage/bsc-2026/specialisations/B.Sc.-(Hons.--Hons.-with-Research-)-Physics.webp",

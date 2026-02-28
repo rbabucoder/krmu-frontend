@@ -194,7 +194,7 @@ export const specialisationData: SpecialisationSection = {
   subheading:
     "Choose from KRMU’s undergraduate law programmes and begin your journey into the legal profession.",
   heading: `Our Undergraduate Law Programmes`,
-  specilisationCard: [
+  SpecialisationCard: [
     {
       imgUrl: "/landingpage/law-2026/prog/BA-LL.B-Hons.jpg",
       title: `B.A. LL.B. (Hons.)`,

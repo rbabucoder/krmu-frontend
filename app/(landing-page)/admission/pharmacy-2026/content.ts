@@ -168,7 +168,7 @@ export const specialisationData: SpecialisationSection = {
 
 Our Pharma Programmes & Specialisations `,
   heading: `Our Pharma Programmes & Specialisations   `,
-  specilisationCard: [
+  SpecialisationCard: [
     {
       imgUrl: "/landingpage/pharmacy-2026/specilisation/d-pharm.jpg",
       title: `D.Pharm. `,

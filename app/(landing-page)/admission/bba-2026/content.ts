@@ -166,7 +166,7 @@ export const industryExperts: IndustryExpertsSection = {
 export const specialisationData: SpecialisationSection = {
   subheading: `Choose from KRMU’s BBA  programmes and start building your future in business and management.`,
   heading: `Our BBA  Programmes`,
-  specilisationCard: [
+  SpecialisationCard: [
     {
       imgUrl: "/landingpage/bba-2026/programs/bba-hr.jpg",
       title: `BBA (Human Resource)`,

@@ -149,7 +149,7 @@ export const industryExperts: IndustryExpertsSection = {
 export const specialisationData: SpecialisationSection = {
   subheading: `Choose the specialisations based on your interest and career goals!`,
   heading: `Our BFA  Programme`,
-  specilisationCard: [
+  SpecialisationCard: [
     {
       imgUrl: "/landingpage/bfa-2026/specialisations/1.webp",
       title: `Bachelor of Fine Arts (BFA) (Painting & Applied Arts)`,

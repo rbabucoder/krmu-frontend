@@ -26,26 +26,16 @@ const TableOfContent = ({
     <>
       <section className="py-[50px]">
         <div className="flex items-center lg:gap-6">
-          <div className="w-1/4 hidden lg:block relative">
-            {/* {tocimg && (
-              <Image
-                src={`${STRAPI_URL}${tocimg?.url}`}
-                width={476}
-                height={876}
-                alt={tocimg.alternativeText || "Table of content"}
-                className="w-full h-full"
-              />
-            )} */}
-            {tocimg?.url && (
-              <Image
-                src={`${STRAPI_URL}${tocimg?.url}`}
-                alt={tocimg.alternativeText || "Table of content"}
-                width={476}
-                height={876}
-                sizes="100vw"
-                className="object-cover -z-10"
-              />
-            )}
+          <div className="w-1/4 hidden lg:block relative h-full min-h-[796px]">
+              {tocimg?.url && (
+                <Image
+                  src={`${STRAPI_URL}${tocimg?.url}`}
+                  alt={tocimg.alternativeText || "Table of content"}
+                  fill
+                  className="object-cover"
+                />
+              )}
+           
           </div>
           <div className="w-full lg:w-3/4">
             <div className="mx-auto max-w-6xl">

@@ -54,9 +54,9 @@ const SchoolHero = ({
           {fullWidth ? (
             <div className="max-w-[1664px] mx-auto w-full">
               <div className="text-center text-white w-full">
-                <h2 className="text-sm md:text-[28px] lg:mb-5 font-medium">
+                <p className="text-sm md:text-[28px] lg:mb-5 font-medium">
                   {subheading}
-                </h2>
+                </p>
                 <h1 className="text-2xl md:text-4xl lg:text-8xl font-semibold leading-[1.2]">
                   {title}
                 </h1>
@@ -91,9 +91,9 @@ const SchoolHero = ({
           ) : (
             <div className="max-w-[1850px] mx-auto w-full xl:flex items-center justify-between">
               <div className="text-center text-white w-full xl:w-1/2 xl:pr-52">
-                <h2 className="text-sm md:text-[28px] lg:mb-5 font-medium">
+                <p className="text-sm md:text-[28px] lg:mb-5 font-medium">
                   {subheading}
-                </h2>
+                </p>
                 <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold leading-[1.2]">
                   {title}
                 </h1>

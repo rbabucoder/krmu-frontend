@@ -172,7 +172,7 @@ export const industryExperts: IndustryExpertsSection = {
 export const specialisationData: SpecialisationSection = {
   subheading: `Choose your specialisation based on your interests and career goals.`,
   heading: `Our Medical & Allied Sciences Programmes & Specialisations`,
-  specilisationCard: [
+  SpecialisationCard: [
     {
       imgUrl: "/landingpage/allied-health-science-2026/specialisations/s1.webp",
       title: `B.Sc. (Hons.) Emergency Medical Technology with Academic & Industry support of Emversity`,

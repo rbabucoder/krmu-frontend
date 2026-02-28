@@ -177,7 +177,7 @@ export const industryExperts: IndustryExpertsSection = {
 export const specialisationData: SpecialisationSection = {
   subheading: `Choose your specialisations based on your interests and career goals. `,
   heading: `Our B.A. Programmes & Specialisations`,
-  specilisationCard: [
+  SpecialisationCard: [
     {
       imgUrl:
         "/landingpage/bachelor-of-arts-2026/specialisations/B.A.-(Hons.)-English.webp",

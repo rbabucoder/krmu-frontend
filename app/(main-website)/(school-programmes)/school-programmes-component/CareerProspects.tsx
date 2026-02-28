@@ -24,21 +24,12 @@ const CareerProspects = ({
   return (
     <>
       <section className="prog-global-padding bg-[#f8f9fd]">
-        <div className="max-w-[1320px] mx-auto w-full xl:flex px-2.5 md:px-4">
+        <div className="max-w-[1320px] mx-auto w-full px-2.5 md:px-4">
+          <h3 className="text-4xl md:text-[40px] font-semibold text-[#0a41a1] mb-6 text-center sm:text-left">
+            {heading} <span className="text-[#db2a1a]">{highlight}</span>
+          </h3>
+          <div className="flex flex-col-reverse lg:flex-row">
           <div className="w-full xl:w-1/2">
-            <h3 className="text-4xl md:text-[40px] font-semibold text-[#0a41a1] mb-6 text-center sm:text-left">
-              {heading} <span className="text-[#db2a1a]">{highlight}</span>
-            </h3>
-            {careerimg?.url && (
-              <Image
-                src={`${STRAPI_URL}${careerimg?.url}`}
-                width={660}
-                height={660}
-                className="w-full h-full lg:hidden"
-                alt={careerimg?.alternativeText || "Career Prospectus"}
-                sizes="(max-width: 1024px) 100vw, 660px"
-              />
-            )}
             <p className="mb-6">{desc}</p>
             <div>
               {careercards &&
@@ -55,7 +46,7 @@ const CareerProspects = ({
                 })}
             </div>
           </div>
-          <div className="w-full xl:w-1/2 hidden lg:block">
+          <div className="w-full xl:w-1/2">
             {careerimg?.url && (
               <Image
                 src={`${STRAPI_URL}${careerimg?.url}`}
@@ -66,6 +57,7 @@ const CareerProspects = ({
                 sizes="(max-width: 1024px) 100vw, 660px"
               />
             )}
+          </div>
           </div>
         </div>
         <div className="max-w-[1320px] mx-auto w-full flex justify-center mt-4">

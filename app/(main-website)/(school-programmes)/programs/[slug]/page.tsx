@@ -25,6 +25,9 @@ import {
 } from "@/lib/api/common";
 import { Metadata } from "next";
 import Script from "next/script";
+// import ProgTestimonials, {
+//   TestimonialsSection,
+// } from "../prog-comp/ProgTestimonials";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -69,8 +72,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+
+
+
+
 const page = async ({ params }: Props) => {
   const { slug } = await params; // ✅ await params
+
+
+
 
   const allSchoolProgrammeData = await getSchoolProgrammeData(slug);
   const allSinglePHDProgramme = await getPHDProgramme(slug);
@@ -277,6 +287,7 @@ const page = async ({ params }: Props) => {
             logos={financialAssistanceSection?.financelogos}
           />
         )}
+        {/* <ProgTestimonials data={BALLBtestimonialsData} /> */}
         {tocSection && (
           <TableOfContent
             heading={tocSection?.heading}
@@ -295,6 +306,7 @@ const page = async ({ params }: Props) => {
             img2={ourLocationSection?.img2}
           />
         )}
+
         <ConnectWithUs />
       </main>
     </>

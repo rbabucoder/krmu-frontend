@@ -27,7 +27,7 @@ const ProgrammesConnectWithUs = () => {
           </div>
           <div className="w-full md:w-4/12">
             <Link
-              href="#"
+              href="mailto:welcome@krmangalam.edu.in"
               className="bg-[#ffffff0d] backdrop-blur-[22px] p-2.5 border border-[#ffffff40] rounded-[30px] flex items-center break-all"
             >
               <div>

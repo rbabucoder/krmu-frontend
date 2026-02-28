@@ -179,7 +179,7 @@ export const industryExperts: IndustryExpertsSection = {
 export const specialisationData: SpecialisationSection = {
   subheading: `Begin your journey into the world of hospitality by choosing Hotel Management (UG) programme `,
   heading: `Our Hotel-Management (UG) Programme`,
-  specilisationCard: [
+  SpecialisationCard: [
     {
       imgUrl: "/landingpage/common/dummy.png",
       title: `Hotel-Management (UG) Programme`,

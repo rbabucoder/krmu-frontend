@@ -41,15 +41,15 @@ const Specialisation = ({ data }: Props) => {
             className="w-full"
           >
             <CarouselContent
-              className={`mb-10 sm:my-12 ${data?.specilisationCard?.length === 1 ? "justify-center" : ""}`}
+              className={`mb-10 sm:my-12 ${data?.SpecialisationCard?.length === 1 ? "justify-center" : ""}`}
             >
-              {data?.specilisationCard.map((card, index) => (
+              {data?.SpecialisationCard.map((card, index) => (
                 <CarouselItem key={index} className="lg:basis-1/2 xl:basis-1/3">
                   <SpecialisationCard data={card} />
                 </CarouselItem>
               ))}
             </CarouselContent>
-            {data?.specilisationCard?.length > 3 && (
+            {data?.SpecialisationCard?.length > 3 && (
               <div className="pt-10 hidden sm:block">
                 <CarouselPrevious className="bottom-0 top-full left-[25%] sm:left-0 md:top-0 md:left-[85%] xl:left-[90%] xlright-0 landingpagePrevArrow" />
                 <CarouselNext className="bottom-0 top-full md:top-0 right-[25%] sm:right-0 landingpageNextArrow" />
