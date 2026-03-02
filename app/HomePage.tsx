@@ -81,7 +81,7 @@ export default async function HomePage() {
         />
       )}
 
-      <main className="w-full testing class">
+      <main className="w-full">
         {aDecadeData && (
           <ADecade
             leftContent={aDecadeData?.adecadeleftcol}
