@@ -568,6 +568,18 @@ export const programmeContent = {
       ctaLink: "#apply-form",
       eligibility: "Passed 12th with 50% aggregate marks.*",
     },
+        {
+      id: "3",
+      tag: "Integrated Forensics",
+      title: "Integrated/Dual Degree B.Sc.-M.Sc. (Forensic Science)",
+      subtitle: "",
+      desc: "Offers forensic science training, preparing students for crime scene analysis and investigative careers.",
+      duration: "5 Years",
+      fee: "₹2,30,000",
+      ctaText: "Apply Now !",
+      ctaLink: "#apply-form",
+      eligibility: "Passed 12th with 50% aggregate marks.*",
+    },
   ],
 };
 

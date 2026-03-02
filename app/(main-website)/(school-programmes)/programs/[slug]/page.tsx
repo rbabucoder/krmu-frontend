@@ -25,6 +25,9 @@ import {
 } from "@/lib/api/common";
 import { Metadata } from "next";
 import Script from "next/script";
+import { BALLBtestimonialsData } from "../progdata/sols";
+import ProgTestimonials from "../prog-comp/ProgTestimonials";
+import { BAArchtestimonialsData } from "../progdata/soad";
 // import ProgTestimonials, {
 //   TestimonialsSection,
 // } from "../prog-comp/ProgTestimonials";
@@ -72,15 +75,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-
-
-
-
 const page = async ({ params }: Props) => {
   const { slug } = await params; // ✅ await params
 
+  const testimonialsMap: Record<string, any> = {
+    "ba-llb-hons": BALLBtestimonialsData,
+    "barch-architecture": BAArchtestimonialsData,
 
+    // "bba-llb-hons": BBALLBtestimonialsData,
+    // "llm": LLMtestimonialsData,
+  };
 
+  const testimonialsData = testimonialsMap[slug];
 
   const allSchoolProgrammeData = await getSchoolProgrammeData(slug);
   const allSinglePHDProgramme = await getPHDProgramme(slug);
@@ -158,6 +164,7 @@ const page = async ({ params }: Props) => {
       url: `https://www.krmangalam.edu.in/programs/${schemaSlug}`,
     },
   ]);
+
   return (
     <>
       <Script
@@ -180,8 +187,12 @@ const page = async ({ params }: Props) => {
             highlightitle={highlightTitle || ""}
             heroSection={heroSection}
             formId={heroSection?.formId}
+            slug={slug}
           />
         )}
+
+      
+
         {eligibilitySection && (
           <Eligibility
             elgibilities={eligibilitySection?.elgibility}
@@ -287,7 +298,7 @@ const page = async ({ params }: Props) => {
             logos={financialAssistanceSection?.financelogos}
           />
         )}
-        {/* <ProgTestimonials data={BALLBtestimonialsData} /> */}
+        {testimonialsData && <ProgTestimonials data={testimonialsData} />}
         {tocSection && (
           <TableOfContent
             heading={tocSection?.heading}

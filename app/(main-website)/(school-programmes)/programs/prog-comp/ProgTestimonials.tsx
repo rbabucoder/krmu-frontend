@@ -46,10 +46,10 @@ const ProgTestimonials = ({ data }: Props) => {
         </div>
 
         {/* Carousel */}
-        <div className="w-full mt-10">
+        <div className="w-full mt-5">
           <Carousel opts={{ align: "start", loop: true }} className="w-full">
             {/* <CarouselContent className="mb-10 sm:my-12 sm:pr-[20%]"> */}
-            <CarouselContent className="mb-10 sm:my-12">
+            <CarouselContent className="mb-10 sm:my-12f justify-center">
               {data.testimonials.map((item, index) => (
                 // <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 pl-2">
                 <CarouselItem

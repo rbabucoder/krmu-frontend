@@ -7,15 +7,23 @@ import { MoveRight } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import NpfPopup from "../../components/NpfPopup";
+import IndusLearning from "../programs/prog-comp/IndusLearning";
 
 type Props = {
   title: string;
   highlightitle: string;
   heroSection: HeroSection;
   formId?: string; // dynamic form id
+  slug: string;
 };
 
-const HeroBanner = ({ title, highlightitle, heroSection, formId }: Props) => {
+const HeroBanner = ({
+  title,
+  highlightitle,
+  heroSection,
+  formId,
+  slug,
+}: Props) => {
   // const btnRef = useRef<HTMLButtonElement>(null);
 
   // useEffect(() => {
@@ -64,6 +72,8 @@ const HeroBanner = ({ title, highlightitle, heroSection, formId }: Props) => {
               showIcon={true}
             />
           )}
+
+          {slug === "bba-digital-marketing" && <IndusLearning />}
 
           {/* {formId ? (
             <button

@@ -7,7 +7,7 @@ export const BALLBtestimonialsData: TestimonialsSection = {
     {
       image: "/landingpage/law-2026/testimonials/1.webp",
       videoUrl: "#",
-      quote: `Completing BBA LL.B. (Hons.) from K.R. Mangalam University in 2023 enhanced my 
+      quote: `Completing BBA.LLB (Hons) from K.R. Mangalam University in 2023 enhanced my 
 legal reasoning and business acumen. Pursuing a Master's in Corporate Law at the 
 University of Edinburgh deepened my understanding of global corporate governance, 
 equipping me with analytical skills for a successful legal career.`,
