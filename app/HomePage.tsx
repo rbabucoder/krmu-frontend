@@ -73,13 +73,13 @@ export default async function HomePage() {
 
   return (
     <>
-      {hero && (
+      {/* {hero && (
         <HeroSection
           title={hero?.title}
           subtitle={hero?.subtitle}
           video={hero?.HeroSectionVideo}
         />
-      )}
+      )} */}
       <main className="w-full">
         {aDecadeData && (
           <ADecade
