@@ -1,6 +1,6 @@
 export const SeoData = {
-  title: "Btech KRMU Admissions Open 2025-26",
+  title: "B.Tech. KRMU Admissions Open 2025-26",
   description:
-    "",
-  shareImage: "",
+    "Apply for B.Tech. Admissions 2026",
+  shareImage: "https://www.krmangalam.edu.in/wp-content/landingpage/common/krmlogo.webp",
 };

@@ -1,7 +1,5 @@
 import Image from "next/image";
 import ScrollButton from "../../CommonComponent2026/ScrollButton";
-import AnimatedCounter from "../../CommonComponent2026/AnimatedCounter";
-import KRMUTimer from "../../CommonComponent2026/KRMUTimer";
 
 export const CommonHeader = () => {
   return (
