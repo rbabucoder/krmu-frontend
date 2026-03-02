@@ -73,14 +73,15 @@ export default async function HomePage() {
 
   return (
     <>
-      {/* {hero && (
+      {hero && (
         <HeroSection
           title={hero?.title}
           subtitle={hero?.subtitle}
           video={hero?.HeroSectionVideo}
         />
-      )} */}
-      <main className="w-full">
+      )}
+
+      <main className="w-full testing class">
         {aDecadeData && (
           <ADecade
             leftContent={aDecadeData?.adecadeleftcol}
